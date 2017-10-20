@@ -1,0 +1,104 @@
+
+
+yprime=input('         y''= ','s'); 
+diffeq=inline(yprime,'t','y');    % convert to in-line function
+gphtitle=sprintf('Direction Field for y''=%s',yprime); % Create a title
+title(gphtitle);    % add title to graph to identify ode
+    tspan=[t0,tmax];        % set up t-interval for solving ode from (t0,tmax)
+    [t,y]=ode45(diffeq,tspan,y0);   % call ODE solver to get solution curve forwards
+    plot(t,y,'r');                  % plot forward solution curve 
+    plot(t0,y0,'rd');               % mark initial condition with a diamond
+ 
+
+
+
+
+function rk=f(t,y)
+mass=80;
+g=9.81;
+rk=g+4/15*y^2/mass;
+%clear all
+timerange=[0,30];
+intialvelocity=0;
+[t,y]=ode45(@f,timerange,intialvelocity)
+plot(t,y)
+ylabel('velocity (m/s)')
+xlabel('time (s)')
+
+
+
+figure;                   % open a new figure window
+hold on;                  % allow multiple plots
+ldrag=inline('49*(1-exp(-t/5))','t');                   % define function
+qdrag=inline('49*(-1+exp(2*t/5))/(1+exp(2*t/5))','t');  % define function
+fplot(ldrag,[0,25],'b');
+fplot(qdrag,[0,25],'r');
+title('Velocities from Linear and Quadratic Drag');
+
+ 
+figure;
+x=linspace(-10,10,100);    %  defines x as an array of 100 values equally spaced from -10 to 10
+y=-sqrt(2*log(1+x.*x)+4);  % '.*' is entry-by-entry array multiplication
+plot(x,y);                 % plots the pairs (x(i),y(i)) 
+axis([-10 10 -10 10]);     % re-set window range to where I want it
+title(sprintf('Graph of y=-sqrt(Log(1+x^2)+4)'));
+  
+
+figure;
+x=linspace(-10,10,100);    %  defines x as an array of 100 values equally spaced from -10 to 10
+g=2*log(1+x.*x)+4;         % '.*' is entry-by-entry array multiplication
+plot(x,g,'r');             % plots the pairs (x(i),g(i)) in red
+axis([-10 10 -10 20]);     % re-set window range to where I want it
+title(sprintf('The Function Under the Radical is Never Negative'));
+
+
+clear;                          % Free memory -- this does not affect the figure
+diffeq=inline('y^2-t^2','t','y');     % Define function
+tspan=[0,1];                   % sets the t-range to be (0,1)
+[t,y]=ode45(diffeq,tspan,1);   % solve for 0 < t < 1 with y0=1
+plot(t,y,'r');                 % plots the solution curve in red
+tspan=[0,-1]                   % sets the t-range to be (-1,0)
+[t,y]=ode45(diffeq,tspan,1);   % solve for -1 < t <0 with y0=1
+plot(t,y,'k');                 % plots the solution curve in black
+
+
+
+clear;                          % Free memory -- this does not affect the figure
+diffeq=inline('y^2-t^2','t','y');     % Define function
+h=0.01;                         % Set stepsize
+t0=0;                           % Set initial t-value
+y0=0.6;                         % Set initial y-value
+t=[0:h:5];                      % Make an array of t's from 0 to 5 with stepsize h
+num=size(t,2);                  % How many t's do we have?
+y(1)=y0;                        % Our first data pt. is (t0,y0)
+for i=2:num                     % Loop to implement Euler's method
+  y(i)=y(i-1)+feval(diffeq,t(i-1),y(i-1))*h;     % y(i)=y(1-i)+h*f'(t(i-1),y(i-1))
+  end
+plot(t,y,'k');                  % Plot results in black on same figure
+
+
+
+
+ >> % First, define our functions 
+  >> q=inline('exp(-t)./(2*cos(t))','t');  % This is the term to be integrated
+  >> u=inline('3/2*exp(t)+1/2*cos(t)-5/2*sin(t)-1/2*t.*cos(t)-1/2*cos(t).*log(cos(t))+1/2*t.*sin(t)-1/2*sin(t).*log(cos(t))','t');
+  >> % Now, plot the solution for t > 0
+  >> tpts=linspace(0,1.57,500);            % define the t-values of first data points
+  >> zpts=cumtrapz(tpts,feval(q,tpts));    % qpts(i) is the def. int. of q from 0 to tpts(i).
+  >> upts=feval(u,tpts);                   % These are the other terms of y(t) 
+  >> % Plot the first half of the solution: t > 0
+  >> figure
+  >> hold on
+  >> plot(tpts,upts+qpts)                  % y(t) = u(t) + q(t)
+  >> % Repeat for t < 0
+  >> tpts=linspace(-1.57,0,500);            
+  >> zpts=cumtrapz(tpts,feval(q,tpts));    
+  >> upts=feval(u,tpts);                   
+  >> % Plot the second half of the solution: t < 0
+  >> plot(tpts,upts+qpts)                  % y(t) = u(t) + q(t)
+  >> % Add title and axis labels
+  >> title('Solution to y''''''-y''''+y''-y = sec(t), y(0)=2, y''(0)=-1, y''''(0)=1')
+  >> xlabel('t');ylabel('y(t)');
+
+  
+  

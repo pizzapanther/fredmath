@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Haunted House 2012</title>
+<style type="text/css">
+.style1 {
+	font-size: 22pt;
+	color: #00FF00;
+	margin-top: 3px;
+	font-family: Algerian;
+}
+.style2 {
+	font-size: 12pt;
+	color: #00FF00;
+}
+.style3 {
+	font-size: 11pt;
+	color: #00FF00;
+	font-family: "Arial Black";
+}
+</style>
+
+<bgsound loop="-1" src="Halloween.mp3" />
+
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'haunted_10/buttonA.jpg',/*url*/'haunted_10/buttonB.jpg')"
+	style="background-color: #10902A">
+<center>
+<p>
+<strong>
+<span class="style1">Haunted House 2012 (None)</span></p>
+
+  	<p> 
+	<a href="../index.html"> 
+	<img id="img1" alt="Home Page" height="25" 
+		onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'haunted_10/buttonB.jpg')" 
+		onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'haunted_10/button9.jpg')" 
+		onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'haunted_10/buttonA.jpg')" 
+		onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'haunted_10/buttonA.jpg')" 
+		src="haunted_10/button9.jpg" style="border: 0" width="125" />
+		<!-- MSComment="ibutton" fp-style="fp-btn: Brick Row 2; fp-font-style: Bold; fp-font-size: 11" fp-title="Home Page" --></a></p>
+	<p>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//set image paths
+src = ["2012/100_0566.JPG", "2012/100_0567.JPG", "2012/100_0568.JPG",
+	"2012/100_0569.JPG","2012/100_0570.JPG", "2012/100_0571.JPG", "2012/100_0572.JPG",
+	"2012/IMAG0056.jpg", "2012/IMAG0057.jpg", "2012/IMAG0058.jpg",
+	"2012/IMAG0059.jpg", "2012/IMAG0069.jpg", "2012/IMAG0070.jpg",
+	"2012/IMAG0071.jpg", "2012/IMAG0072.jpg", "2012/IMAG0073.jpg",
+	"2012/IMAG0074.jpg", "2012/IMAG0075.jpg"
+	]
+
+//set duration for each image
+duration = 5;
+//Please do not edit below
+ads=[]; ct=0;
+function switchAd() {
+var n=(ct+1)%src.length;
+if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+document["Ad_Image"].src = ads[ct=n].src;
+}
+ads[n=(ct+1)%src.length] = new Image;
+ads[n].src = src[n];
+setTimeout("switchAd()",duration*1000);
+}
+function doLink(){
+location.href = url[ct];
+} onload = function(){
+if (document.images)
+switchAd();
+}
+//-->
+</SCRIPT>
+
+<a href="javascript:doLink();" onmouseover="status=url[ct];return true;" onmouseout="status=''">
+	<img name="Ad_Image" src="2012/100_0566.JPG" border="0"> </img>  </a>
+ </p>
+</center>
+
+</body>
+</html>

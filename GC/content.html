@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<title>GC Math Content</title>
+
+</head>
+<style type="text/css">
+.style10 {
+	text-align: center;
+	font-size: 8pt;
+	font-family: Arial;
+	margin-top: 35px;
+}
+
+body {
+	margin: 10px;
+	background-color: #E6E5E5;
+	}
+</style>
+
+<body >
+
+<br />
+
+<center>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+//set image paths
+src = ["slideshow/img-1.jpg", "slideshow/img-2.jpg", "slideshow/img-3.jpg"
+	]
+
+//set duration for each image
+duration = 3;
+//Please do not edit below
+ads=[]; ct=0;
+function switchAd() {
+var n=(ct+1)%src.length;
+if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+document["Ad_Image"].src = ads[ct=n].src;
+}
+ads[n=(ct+1)%src.length] = new Image;
+ads[n].src = src[n];
+setTimeout("switchAd()",duration*1000);
+}
+function doLink(){
+location.href = url[ct];
+} onload = function(){
+if (document.images)
+switchAd();
+}
+//-->
+</SCRIPT>
+
+<a href="javascript:doLink();" onmouseout="status=''">
+	<img name="Ad_Image" src="slideshow/img-1.jpg" border="0"> </img>  </a>
+</center>
+
+<br />	<br />
+
+
+<CENTER class="style10" >
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+		document.write("This site last modified on:  " + document.lastModified);
+	// --> 
+	</SCRIPT>
+</CENTER>
+
+</body>
+
+</html>

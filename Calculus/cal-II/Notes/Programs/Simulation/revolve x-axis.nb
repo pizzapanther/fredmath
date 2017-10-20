@@ -1,0 +1,235 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     10151,        226]
+NotebookOptionsPosition[      9540,        203]
+NotebookOutlinePosition[     10181,        227]
+CellTagsIndexPosition[     10084,        222]
+WindowFrame->Palette*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Theta]Max$$ = 0.01, Typeset`show$$ = True,
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`\[Theta]Max$$], 0.01, "Revolve"}, 0.01, 2 Pi, 
+      0.01}, {{
+       Hold[$CellContext`\[Theta]Max$$], 0.01, ""}, 0.01, 2 Pi, 0.01}, {
+      Hold[
+       Row[{
+         Manipulate`Place[1], 
+         Spacer[20], 
+         Manipulate`Place[2]}]], Manipulate`Dump`ThisIsNotAControl}}, 
+    Typeset`size$$ = {522., {141.5, 146.5}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`\[Theta]Max$115859$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     2, StandardForm, "Variables" :> {$CellContext`\[Theta]Max$$ = 0.01}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`\[Theta]Max$$, $CellContext`\[Theta]Max$115859$$, 
+         0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Grid[{{
+          Column[{
+            Framed[
+             Pane[
+             "Revolving the region \!\(\*\nStyleBox[\"R\",\n\
+FontSlant->\"Italic\"]\) generates a solid of revolution.", {
+              216, Automatic}, $CellContext`bcPBS], $CellContext`bcFO], 
+            Show[{
+              Plot[
+               $CellContext`funcLTC6F26[$CellContext`x], {$CellContext`x, \
+-0.3, 4}, PlotStyle -> {{Thick, Black}}], 
+              Plot[
+               $CellContext`funcLTC6F26[$CellContext`x], {$CellContext`x, 0.3,
+                 3.7}, Filling -> 0, PlotStyle -> {{Thick, Black}}, 
+               FillingStyle -> $CellContext`bcAreaPositiveColor]}, ImageSize -> 
+             3 72, AxesOrigin -> {0, 0}, 
+             PlotRange -> {{-0.5, 4.5}, {-0.5, 2.5}}, AxesStyle -> 
+             Arrowheads[{0, 0.04}], 
+             AxesLabel -> {
+              "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", 
+               "\!\(\*\nStyleBox[\"y\",\nFontSlant->\"Italic\"]\)"}, 
+             Ticks -> {{{
+                0.3, "\!\(\*\nStyleBox[\"a\",\nFontSlant->\"Italic\"]\)"}, {
+                3.7, "\!\(\*\nStyleBox[\"b\",\nFontSlant->\"Italic\"]\)"}}, 
+               None}, BaseStyle -> {"Text", 13}, Epilog -> {
+               Text[
+               "\!\(\*FormBox[\n RowBox[{\"y\", \"=\", \n  RowBox[{\"f\", \"(\
+\", \"x\", \")\"}]}],\n TraditionalForm]\)", {2, 2}, {-1, -1}], 
+               Text[
+               "\!\(\*FormBox[\"R\",\n TraditionalForm]\)", {
+                2, 0.7}, {-1, -1}]}]}, BaseStyle -> {"TR"}], 
+          Show[{
+            ParametricPlot3D[{$CellContext`x, 0, 
+              $CellContext`funcLTC6F26[$CellContext`x]}, {$CellContext`x, \
+-0.5, 4}, PlotStyle -> {{Thick, Black}}], 
+            
+            ParametricPlot3D[{
+             0.3, (Sin[(($CellContext`x - 0.3)/
+                  3.4) $CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[0.3], (
+               Cos[(($CellContext`x - 0.3)/
+                  3.4) $CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[0.3]}, {$CellContext`x, 0.3, 3.7}, {$CellContext`u, 
+              0, 1}, PlotStyle -> ControlActive[
+               FaceForm[{
+                 Opacity[1], 
+                 Darker[$CellContext`bcAreaPositiveColor]}, {
+                 Opacity[1], $CellContext`bcSurfaceTop}], 
+               FaceForm[{
+                 Opacity[0.5], 
+                 Darker[$CellContext`bcAreaPositiveColor]}, {
+                 Opacity[0.5], $CellContext`bcSurfaceTop}]], Mesh -> None, 
+             PlotPoints -> 20, MaxRecursion -> 0], 
+            
+            ParametricPlot3D[{$CellContext`x, (
+               Sin[$CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[$CellContext`x], (
+               Cos[$CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[$CellContext`x]}, {$CellContext`x, 0.3, 
+              3.7}, {$CellContext`u, 0, 1}, PlotStyle -> ControlActive[{
+                Opacity[1], $CellContext`bcAreaPositiveColor}, {
+                Opacity[0.5], $CellContext`bcAreaPositiveColor}], Mesh -> 
+             None, PlotPoints -> 20, MaxRecursion -> 0], 
+            
+            ParametricPlot3D[{
+             3.7, (Sin[(($CellContext`x - 0.3)/
+                  3.4) $CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[3.7], (
+               Cos[(($CellContext`x - 0.3)/
+                  3.4) $CellContext`\[Theta]Max$$] $CellContext`u) \
+$CellContext`funcLTC6F26[3.7]}, {$CellContext`x, 0.3, 3.7}, {$CellContext`u, 
+              0, 1}, PlotStyle -> ControlActive[
+               FaceForm[{
+                 Opacity[1], $CellContext`bcSurfaceTop}, {
+                 Opacity[1], 
+                 Darker[$CellContext`bcAreaPositiveColor]}], 
+               FaceForm[{
+                 Opacity[0.5], $CellContext`bcSurfaceTop}, {
+                 Opacity[0.5], 
+                 Darker[$CellContext`bcAreaPositiveColor]}]], Mesh -> None, 
+             PlotPoints -> 20, MaxRecursion -> 0], 
+            RevolutionPlot3D[{$CellContext`x, 0, 
+              $CellContext`funcLTC6F26[$CellContext`x]}, {$CellContext`x, 0.3,
+               3.7}, {$CellContext`\[Theta], -$CellContext`\[Theta]Max$$, 0}, 
+             RevolutionAxis -> {1, 0, 0}, Mesh -> None, PlotPoints -> 20, 
+             MaxRecursion -> 1, PlotStyle -> ControlActive[
+               FaceForm[{
+                 Opacity[1], 
+                 Darker[$CellContext`bcAreaPositiveColor]}, {
+                 Opacity[1], $CellContext`bcSurfaceTop}], 
+               FaceForm[{
+                 Opacity[0.5], 
+                 Darker[$CellContext`bcAreaPositiveColor]}, {
+                 Opacity[0.5], $CellContext`bcSurfaceTop}]]], 
+            Graphics3D[{
+              Text[
+              "\!\(\*\nStyleBox[\"a\",\nFontSlant->\"Italic\"]\)", {
+               0.3, 0, 0}, {0, 1.5}], 
+              Text[
+              "\!\(\*\nStyleBox[\"b\",\nFontSlant->\"Italic\"]\)", {
+               3.7, 0, 0}, {0, 1.5}], 
+              Text[
+              "\!\(\*\nStyleBox[\"x\",\nFontSlant->\"Italic\"]\)", {
+               4.5, 0, 0}, {0, -1}], 
+              Text[
+              "\!\(\*\nStyleBox[\"y\",\nFontSlant->\"Italic\"]\)", {
+               0, 0, 2.5}, {0, -1}], 
+              Line[{{-0.5, 0, 0}, {4.2, 0, 0}}], 
+              Line[{{0, 0, -2.5}, {0, 0, 2.5}}]}]}, 
+           PlotRange -> {{-0.5, 4.5}, {-2.5, 2.5}, {-2.5, 2.5}}, 
+           AxesOrigin -> {0, 0, 0}, Axes -> False, Boxed -> False, Lighting -> 
+           "Neutral", ImageSize -> {4 72, 4 72}, BoxRatios -> {1, 1, 1}, 
+           ViewPoint -> {10, -10, 5}, BaseStyle -> {"Text", 13}]}}, 
+        Alignment -> {Center, Top}], 
+      "Specifications" :> {{{$CellContext`\[Theta]Max$$, 0.01, "Revolve"}, 
+         0.01, 2 Pi, 0.01, ControlType -> Slider, ImageSize -> Small, 
+         ControlPlacement -> 1}, {{$CellContext`\[Theta]Max$$, 0.01, ""}, 
+         0.01, 2 Pi, 0.01, ControlType -> Trigger, DefaultDuration -> 10, 
+         AppearanceElements -> {"PlayPauseButton", "ResetButton"}, 
+         ControlPlacement -> 2}, 
+        Row[{
+          Manipulate`Place[1], 
+          Spacer[20], 
+          Manipulate`Place[2]}]}, 
+      "Options" :> {
+       ControlPlacement -> Top, LabelStyle -> 11, AppearanceElements -> 
+        "ResetButton", FrameLabel -> 
+        Style["FIGURES 6.26 and 6.27", "FigureFont", Smaller]}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{571., {196., 201.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({{$CellContext`bcPBS = 
+         BaseStyle -> {
+           LineIndent -> 0, LinebreakAdjustments -> {1, 1, 0, 0, 0}, 
+            LineBreakWithin -> Automatic, Hyphenation -> True, TextAlignment -> 
+            Left, FontSize -> 13}, $CellContext`bcFO = {
+          RoundingRadius -> 5, FrameStyle -> 
+           GrayLevel[0.85]}, $CellContext`funcLTC6F26[
+           Pattern[$CellContext`x, 
+            Blank[]]] := 
+         Sqrt[4 - $CellContext`x], $CellContext`bcAreaPositiveColor = 
+         RGBColor[0.796, 0.91, 0.855], 
+         Attributes[PlotRange] = {ReadProtected}, $CellContext`bcSurfaceTop = 
+         RGBColor[0.85, 0.6, 0.2]}; {Null}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], NotebookDefault,
+ CellChangeTimes->{
+  3.508069142099704*^9, 3.524152866590849*^9, {3.5241531043061824`*^9, 
+   3.524153105606184*^9}, {3.5241531641682663`*^9, 3.5241531679582715`*^9}},
+ CellTags->"FIGURES 6.26 and 6.27  \[LightBulb]"]
+},
+WindowSize->{Fit, Fit},
+WindowMargins->{{517, Automatic}, {Automatic, 171}},
+WindowFrame->"Palette",
+WindowElements->{},
+WindowFrameElements->{"CloseBox", "MinimizeBox"},
+FrontEndVersion->"7.0 for Microsoft Windows (64-bit) (February 18, 2009)",
+StyleDefinitions->"Palette.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "FIGURES 6.26 and 6.27  \[LightBulb]"->{
+  Cell[546, 20, 8990, 181, 399, NotebookDefault,
+   CellTags->"FIGURES 6.26 and 6.27  \[LightBulb]"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"FIGURES 6.26 and 6.27  \[LightBulb]", 9958, 216}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[546, 20, 8990, 181, 399, NotebookDefault,
+ CellTags->"FIGURES 6.26 and 6.27  \[LightBulb]"]
+}
+]
+*)
+
+(* End of internal cache information *)

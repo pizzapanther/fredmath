@@ -1,0 +1,918 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     42002,        909]
+NotebookOptionsPosition[     41680,        894]
+NotebookOutlinePosition[     42088,        911]
+CellTagsIndexPosition[     42045,        908]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Internal", " ", "cache", " ", 
+     RowBox[{"information", ":", 
+      RowBox[{
+      "NotebookFileLineBreakTest", " ", "NotebookFileLineBreakTest", " ", 
+       RowBox[{"NotebookDataPosition", "[", 
+        RowBox[{"145", ",", "7"}], "]"}], " ", 
+       RowBox[{"NotebookDataLength", "[", 
+        RowBox[{"12037", ",", "260"}], "]"}], " ", 
+       RowBox[{"NotebookOptionsPosition", "[", 
+        RowBox[{"11464", ",", "237"}], "]"}], " ", 
+       RowBox[{"NotebookOutlinePosition", "[", 
+        RowBox[{"12076", ",", "261"}], "]"}], " ", 
+       RowBox[{"CellTagsIndexPosition", "[", 
+        RowBox[{"11988", ",", "256"}], "]"}], " ", "WindowFrame"}]}]}], 
+    "\[Rule]", "Palette"}], "*)"}], 
+  RowBox[{
+   RowBox[{"Notebook", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Cell", "[", 
+       RowBox[{
+        RowBox[{"BoxData", "[", 
+         RowBox[{"TagBox", "[", 
+          RowBox[{
+           RowBox[{"StyleBox", "[", 
+            RowBox[{
+             RowBox[{"DynamicModuleBox", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"$CellContext`xValue$$", "=", "1"}], ",", 
+                 RowBox[{
+                 "$CellContext`\[Theta]Max$$", "=", "2.701199464137594"}], 
+                 ",", 
+                 RowBox[{"Typeset`show$$", "=", "True"}], ",", 
+                 RowBox[{"Typeset`bookmarkList$$", "=", 
+                  RowBox[{"{", "}"}]}], ",", 
+                 RowBox[{"Typeset`bookmarkMode$$", "=", "\"\<Menu\>\""}], ",",
+                  "Typeset`animator$$", ",", 
+                 RowBox[{"Typeset`animvar$$", "=", "1"}], ",", 
+                 RowBox[{"Typeset`name$$", "=", "\"\<\\\"untitled\\\"\>\""}], 
+                 ",", 
+                 RowBox[{"Typeset`specs$$", "=", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Hold", "[", "$CellContext`xValue$$", "]"}], ",", 
+                    "1", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}], ",", "0.3", ",", "3.7"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Hold", "[", "$CellContext`\[Theta]Max$$", "]"}], 
+                    ",", "0.01", ",", "\"\<Revolve\>\""}], "}"}], ",", "0.01",
+                     ",", 
+                    RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Hold", "[", "$CellContext`\[Theta]Max$$", "]"}], 
+                    ",", "0.01", ",", "\"\<\>\""}], "}"}], ",", "0.01", ",", 
+                    RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Hold", "[", 
+                    RowBox[{"Row", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Manipulate`Place", "[", "1", "]"}], ",", 
+                    RowBox[{"Spacer", "[", "50", "]"}], ",", 
+                    RowBox[{"Manipulate`Place", "[", "2", "]"}], ",", 
+                    RowBox[{"Spacer", "[", "10", "]"}], ",", 
+                    RowBox[{"Manipulate`Place", "[", "3", "]"}]}], "}"}], 
+                    "]"}], "]"}], ",", "Manipulate`Dump`ThisIsNotAControl"}], 
+                    "}"}]}], "}"}]}], ",", 
+                 RowBox[{"Typeset`size$$", "=", 
+                  RowBox[{"{", 
+                   RowBox[{"522.", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"141.5", ",", "146.5"}], "}"}]}], "}"}]}], ",", 
+                 RowBox[{"Typeset`update$$", "=", "0"}], ",", 
+                 "Typeset`initDone$$", ",", 
+                 RowBox[{"Typeset`skipInitDone$$", "=", "False"}], ",", 
+                 RowBox[{"$CellContext`xValue$115967$$", "=", "0"}], ",", 
+                 RowBox[{"$CellContext`\[Theta]Max$115968$$", "=", "0"}]}], 
+                "}"}], ",", 
+               RowBox[{"DynamicBox", "[", 
+                RowBox[{
+                 RowBox[{"Manipulate`ManipulateBoxes", "[", 
+                  RowBox[{"2", ",", "StandardForm", ",", 
+                   RowBox[{"\"\<Variables\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"$CellContext`xValue$$", "=", "1"}], ",", 
+                    RowBox[{"$CellContext`\[Theta]Max$$", "=", "0.01"}]}], 
+                    "}"}]}], ",", 
+                   RowBox[{"\"\<ControllerVariables\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Hold", "[", 
+                    RowBox[{
+                    "$CellContext`xValue$$", ",", 
+                    "$CellContext`xValue$115967$$", ",", "0"}], "]"}], ",", 
+                    RowBox[{"Hold", "[", 
+                    RowBox[{
+                    "$CellContext`\[Theta]Max$$", ",", 
+                    "$CellContext`\[Theta]Max$115968$$", ",", "0"}], "]"}]}], 
+                    "}"}]}], ",", 
+                   RowBox[{"\"\<OtherVariables\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "Typeset`show$$", ",", "Typeset`bookmarkList$$", ",", 
+                    "Typeset`bookmarkMode$$", ",", "Typeset`animator$$", ",", 
+                    "Typeset`animvar$$", ",", "Typeset`name$$", ",", 
+                    "Typeset`specs$$", ",", "Typeset`size$$", ",", 
+                    "Typeset`update$$", ",", "Typeset`initDone$$", ",", 
+                    "Typeset`skipInitDone$$"}], "}"}]}], ",", 
+                   RowBox[{"\"\<Body\>\"", "\[RuleDelayed]", 
+                    RowBox[{"Grid", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Column", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Framed", "[", 
+                    RowBox[{
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    "\"\<Cross sections of a solid of revolution are circular \
+disks of radius \\!\\(\\*FormBox[\\n RowBox[{\\\"f\\\", \\\"(\\\", \\\"x\\\", \
+\\\")\\\"}],\\n TraditionalForm]\\) and area \\!\\(\\*FormBox[\\n \
+RowBox[{\\\"\[Pi]\\\", \\\" \\\", SuperscriptBox[\\n   RowBox[{\\\"f\\\", \\n \
+   RowBox[{\\\"(\\\", \\\"x\\\", \\\")\\\"}]}], \\\"2\\\"]}],\\n \
+TraditionalForm]\\).\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"216", ",", "Automatic"}], "}"}], ",", 
+                    "$CellContext`bcPBS"}], "]"}], ",", "$CellContext`bcFO"}],
+                     "]"}], ",", 
+                    RowBox[{"Show", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Plot", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", "]"}], 
+                    ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", 
+                    RowBox[{"-", "0.3"}], ",", "4"}], "}"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{"Thick", ",", "Black"}], "}"}], "}"}]}]}], "]"}], 
+                    ",", 
+                    RowBox[{"Plot", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", "]"}], 
+                    ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"Filling", "\[Rule]", "0"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{"Thick", ",", "Black"}], "}"}], "}"}]}], ",", 
+                    RowBox[{
+                    "FillingStyle", "\[Rule]", 
+                    "$CellContext`bcAreaPositiveColor"}]}], "]"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"3", " ", "72"}]}], ",", 
+                    RowBox[{"AxesOrigin", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+                    RowBox[{"PlotRange", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "0.5"}], ",", "4.5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "0.5"}], ",", "2.5"}], "}"}]}], "}"}]}], ",", 
+                    RowBox[{"AxesStyle", "\[Rule]", 
+                    RowBox[{"Arrowheads", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0.04"}], "}"}], "]"}]}], ",", 
+                    RowBox[{"AxesLabel", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"y\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}]}], ",", 
+                    RowBox[{"Ticks", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "0.3", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"a\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "3.7", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"b\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "$CellContext`xValue$$", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}]}], "}"}], ",", "None"}], "}"}]}], ",", 
+                    RowBox[{"BaseStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<Text\>\"", ",", "13"}], "}"}]}], ",", 
+                    RowBox[{"Epilog", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*FormBox[\\n RowBox[{\\\"y\\\", \\\"=\\\", \
+\\n  RowBox[{\\\"f\\\", \\\"(\\\", \\\"x\\\", \\\")\\\"}]}],\\n \
+TraditionalForm]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", "2"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", 
+                    "$CellContext`bcR", ",", "Thick", ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`xValue$$", 
+                    "]"}]}], "}"}]}], "}"}], "]"}]}], "}"}]}]}], "]"}]}], 
+                    "}"}], ",", 
+                    RowBox[{"BaseStyle", "\[Rule]", 
+                    RowBox[{"{", "\"\<TR\>\"", "}"}]}]}], "]"}], ",", 
+                    RowBox[{"Show", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ParametricPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0", ",", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", 
+                    RowBox[{"-", "0.5"}], ",", "4"}], "}"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{"Thick", ",", "Black"}], "}"}], "}"}]}]}], "]"}], 
+                    ",", 
+                    RowBox[{"ParametricPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0.3", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{"$CellContext`funcLTC6F28", "[", "0.3", "]"}]}], 
+                    ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{"$CellContext`funcLTC6F28", "[", "0.3", "]"}]}]}],
+                     "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`u", ",", "0", ",", "1"}], "}"}], 
+                    ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"ControlActive", "[", 
+                    RowBox[{
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    RowBox[{
+                    "Darker", "[", "$CellContext`bcAreaPositiveColor", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    RowBox[{
+                    "Darker", "[", "$CellContext`bcAreaPositiveColor", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}]}], "]"}]}], "]"}]}], 
+                    ",", 
+                    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+                    RowBox[{"PlotPoints", "\[Rule]", "20"}], ",", 
+                    RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+                    RowBox[{"ParametricPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", "$CellContext`\[Theta]Max$$", "]"}], 
+                    " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", 
+                    "]"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", "$CellContext`\[Theta]Max$$", "]"}], 
+                    " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", 
+                    "]"}]}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`u", ",", "0", ",", "1"}], "}"}], 
+                    ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"ControlActive", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    "$CellContext`bcAreaPositiveColor"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    "$CellContext`bcAreaPositiveColor"}], "}"}]}], "]"}]}], 
+                    ",", 
+                    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+                    RowBox[{"PlotPoints", "\[Rule]", "20"}], ",", 
+                    RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+                    RowBox[{"ParametricPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`xValue$$", 
+                    "]"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`xValue$$", 
+                    "]"}]}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`u", ",", "0", ",", "1"}], "}"}], 
+                    ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"ControlActive", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    "$CellContext`bcB"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.9", "]"}], ",", 
+                    "$CellContext`bcB"}], "}"}]}], "]"}]}], ",", 
+                    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+                    RowBox[{"PlotPoints", "\[Rule]", "20"}], ",", 
+                    RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+                    RowBox[{"ParametricPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"3.7", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{"$CellContext`funcLTC6F28", "[", "3.7", "]"}]}], 
+                    ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Cos", "[", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"$CellContext`x", "-", "0.3"}], ")"}], "/", 
+                    "3.4"}], ")"}], " ", "$CellContext`\[Theta]Max$$"}], 
+                    "]"}], " ", "$CellContext`u"}], ")"}], " ", 
+                    RowBox[{"$CellContext`funcLTC6F28", "[", "3.7", "]"}]}]}],
+                     "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`u", ",", "0", ",", "1"}], "}"}], 
+                    ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"ControlActive", "[", 
+                    RowBox[{
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    RowBox[{"Darker", "[", "$CellContext`bcAreaPositiveColor",
+                     "]"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    RowBox[{
+                    "Darker", "[", "$CellContext`bcAreaPositiveColor", 
+                    "]"}]}], "}"}]}], "]"}]}], "]"}]}], ",", 
+                    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+                    RowBox[{"PlotPoints", "\[Rule]", "20"}], ",", 
+                    RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+                    RowBox[{"RevolutionPlot3D", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0", ",", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`x", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`x", ",", "0.3", ",", "3.7"}], "}"}],
+                     ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`\[Theta]", ",", 
+                    RowBox[{"-", "$CellContext`\[Theta]Max$$"}], ",", "0"}], 
+                    "}"}], ",", 
+                    RowBox[{"RevolutionAxis", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], ",", 
+                    RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+                    RowBox[{"PlotPoints", "\[Rule]", "20"}], ",", 
+                    RowBox[{"MaxRecursion", "\[Rule]", "1"}], ",", 
+                    RowBox[{"PlotStyle", "\[Rule]", 
+                    RowBox[{"ControlActive", "[", 
+                    RowBox[{
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    RowBox[{
+                    "Darker", "[", "$CellContext`bcAreaPositiveColor", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "1", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"FaceForm", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    RowBox[{
+                    "Darker", "[", "$CellContext`bcAreaPositiveColor", 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Opacity", "[", "0.5", "]"}], ",", 
+                    "$CellContext`bcSurfaceTop"}], "}"}]}], "]"}]}], 
+                    "]"}]}]}], "]"}], ",", 
+                    RowBox[{"Graphics3D", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"a\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0.3", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "1.5"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", "0", ",", "0"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "1.5"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"b\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3.7", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "1.5"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"4.5", ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Text", "[", 
+                    RowBox[{
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"y\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "2.5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "0.5"}], ",", "0", ",", "0"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"4.2", ",", "0", ",", "0"}], "}"}]}], "}"}], 
+                    "]"}], ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "2.5"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "2.5"}], "}"}]}], "}"}], 
+                    "]"}], ",", "$CellContext`bcR", ",", "Thick", ",", 
+                    RowBox[{"Line", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", "0", ",", "0"}], 
+                    "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"$CellContext`xValue$$", ",", "0", ",", 
+                    RowBox[{
+                    "$CellContext`funcLTC6F28", "[", "$CellContext`xValue$$", 
+                    "]"}]}], "}"}]}], "}"}], "]"}]}], "}"}], "]"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"PlotRange", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "0.5"}], ",", "4.5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "2.5"}], ",", "2.5"}], "}"}]}], "}"}]}], ",", 
+                    RowBox[{"AxesOrigin", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+                    RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+                    RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+                    RowBox[{"Lighting", "\[Rule]", "\"\<Neutral\>\""}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"4", " ", "72"}], ",", 
+                    RowBox[{"4", " ", "72"}]}], "}"}]}], ",", 
+                    RowBox[{"BoxRatios", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], ",", 
+                    RowBox[{"ViewPoint", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"10", ",", 
+                    RowBox[{"-", "10"}], ",", "5"}], "}"}]}], ",", 
+                    RowBox[{"BaseStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"\"\<Text\>\"", ",", "13"}], "}"}]}]}], "]"}]}], 
+                    "}"}], "}"}], ",", 
+                    RowBox[{"Alignment", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Center", ",", "Top"}], "}"}]}]}], "]"}]}], ",", 
+                   RowBox[{"\"\<Specifications\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "$CellContext`xValue$$", ",", "1", ",", 
+                    "\"\<\\!\\(\\*\\nStyleBox[\\\"x\\\",\\nFontSlant->\\\"\
+Italic\\\"]\\)\>\""}], "}"}], ",", "0.3", ",", "3.7", ",", 
+                    RowBox[{"ControlType", "\[Rule]", "Slider"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "Small"}], ",", 
+                    RowBox[{"ControlPlacement", "\[Rule]", "1"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "$CellContext`\[Theta]Max$$", ",", "0.01", ",", 
+                    "\"\<Revolve\>\""}], "}"}], ",", "0.01", ",", 
+                    RowBox[{"2", " ", "Pi"}], ",", 
+                    RowBox[{"ControlType", "\[Rule]", "Slider"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "Small"}], ",", 
+                    RowBox[{"ControlPlacement", "\[Rule]", "2"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    "$CellContext`\[Theta]Max$$", ",", "0.01", ",", 
+                    "\"\<\>\""}], "}"}], ",", "0.01", ",", 
+                    RowBox[{"2", " ", "Pi"}], ",", 
+                    RowBox[{"ControlType", "\[Rule]", "Trigger"}], ",", 
+                    RowBox[{"DefaultDuration", "\[Rule]", "10"}], ",", 
+                    RowBox[{"AppearanceElements", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "\"\<PlayPauseButton\>\"", ",", "\"\<ResetButton\>\""}], 
+                    "}"}]}], ",", 
+                    RowBox[{"ControlPlacement", "\[Rule]", "3"}]}], "}"}], 
+                    ",", 
+                    RowBox[{"Row", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Manipulate`Place", "[", "1", "]"}], ",", 
+                    RowBox[{"Spacer", "[", "50", "]"}], ",", 
+                    RowBox[{"Manipulate`Place", "[", "2", "]"}], ",", 
+                    RowBox[{"Spacer", "[", "10", "]"}], ",", 
+                    RowBox[{"Manipulate`Place", "[", "3", "]"}]}], "}"}], 
+                    "]"}]}], "}"}]}], ",", 
+                   RowBox[{"\"\<Options\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ControlPlacement", "\[Rule]", "Top"}], ",", 
+                    RowBox[{"LabelStyle", "\[Rule]", "11"}], ",", 
+                    RowBox[{
+                    "AppearanceElements", "\[Rule]", "\"\<ResetButton\>\""}], 
+                    ",", 
+                    RowBox[{"FrameLabel", "\[Rule]", 
+                    RowBox[{"Style", "[", 
+                    RowBox[{
+                    "\"\< \>\"", ",", "\"\<FigureFont\>\"", ",", "Smaller"}], 
+                    "]"}]}]}], "}"}]}], ",", 
+                   RowBox[{"\"\<DefaultOptions\>\"", "\[RuleDelayed]", 
+                    RowBox[{"{", "}"}]}]}], "]"}], ",", 
+                 RowBox[{"ImageSizeCache", "\[Rule]", 
+                  RowBox[{"{", 
+                   RowBox[{"571.", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"196.", ",", "201."}], "}"}]}], "}"}]}], ",", 
+                 RowBox[{"SingleEvaluation", "\[Rule]", "True"}]}], "]"}], 
+               ",", 
+               RowBox[{"Deinitialization", "\[RuleDelayed]", "None"}], ",", 
+               RowBox[{"DynamicModuleValues", "\[RuleDelayed]", 
+                RowBox[{"{", "}"}]}], ",", 
+               RowBox[{"Initialization", "\[RuleDelayed]", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"$CellContext`bcPBS", "=", 
+                    RowBox[{"BaseStyle", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"LineIndent", "\[Rule]", "0"}], ",", 
+                    RowBox[{"LinebreakAdjustments", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "1", ",", "0", ",", "0", ",", "0"}], 
+                    "}"}]}], ",", 
+                    RowBox[{"LineBreakWithin", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"Hyphenation", "\[Rule]", "True"}], ",", 
+                    RowBox[{"TextAlignment", "\[Rule]", "Left"}], ",", 
+                    RowBox[{"FontSize", "\[Rule]", "13"}]}], "}"}]}]}], ",", 
+                    RowBox[{"$CellContext`bcFO", "=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"RoundingRadius", "\[Rule]", "5"}], ",", 
+                    RowBox[{"FrameStyle", "\[Rule]", 
+                    RowBox[{"GrayLevel", "[", "0.85", "]"}]}]}], "}"}]}], ",", 
+                    RowBox[{
+                    RowBox[{"$CellContext`funcLTC6F28", "[", 
+                    RowBox[{"Pattern", "[", 
+                    RowBox[{"$CellContext`x", ",", 
+                    RowBox[{"Blank", "[", "]"}]}], "]"}], "]"}], ":=", 
+                    RowBox[{"Sqrt", "[", 
+                    RowBox[{"4", "-", "$CellContext`x"}], "]"}]}], ",", 
+                    RowBox[{"$CellContext`bcAreaPositiveColor", "=", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.796", ",", "0.91", ",", "0.855"}], "]"}]}], 
+                    ",", 
+                    RowBox[{
+                    RowBox[{"Attributes", "[", "PlotRange", "]"}], "=", 
+                    RowBox[{"{", "ReadProtected", "}"}]}], ",", 
+                    RowBox[{"$CellContext`bcR", "=", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.8", ",", "0", ",", "0.4"}], "]"}]}], ",", 
+                    RowBox[{"$CellContext`bcSurfaceTop", "=", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.85", ",", "0.6", ",", "0.2"}], "]"}]}], ",", 
+                    RowBox[{"$CellContext`bcB", "=", 
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0", ",", "0.4", ",", "0.8"}], "]"}]}]}], "}"}], 
+                    ";", 
+                    RowBox[{"{", "Null", "}"}]}], "}"}], ";", 
+                  RowBox[{"Typeset`initDone$$", "=", "True"}]}], ")"}]}], ",", 
+               RowBox[{"SynchronousInitialization", "\[Rule]", "True"}], ",", 
+               RowBox[{"UnsavedVariables", "\[RuleDelayed]", 
+                RowBox[{"{", "Typeset`initDone$$", "}"}]}], ",", 
+               RowBox[{"UntrackedVariables", "\[RuleDelayed]", 
+                RowBox[{"{", "Typeset`size$$", "}"}]}]}], "]"}], ",", 
+             "\"\<Manipulate\>\"", ",", 
+             RowBox[{"Deployed", "\[Rule]", "True"}], ",", 
+             RowBox[{"StripOnInput", "\[Rule]", "False"}]}], "]"}], ",", 
+           RowBox[{"Manipulate`InterpretManipulate", "[", "1", "]"}]}], "]"}],
+          "]"}], ",", "NotebookDefault", ",", 
+        RowBox[{"CellChangeTimes", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"3.508069142262085*^9", ",", "3.524152884211873*^9", ",", 
+           RowBox[{"{", 
+            RowBox[{"3.5242313742405815`*^9", ",", "3.5242313907436047`*^9"}],
+             "}"}]}], "}"}]}], ",", 
+        RowBox[{"CellTags", "\[Rule]", "\"\<   \[LightBulb]\>\""}]}], "]"}], 
+      "}"}], ",", 
+     RowBox[{"WindowSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Fit", ",", "Fit"}], "}"}]}], ",", 
+     RowBox[{"WindowMargins", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"553", ",", "Automatic"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Automatic", ",", "81"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"WindowFrame", "\[Rule]", "\"\<Palette\>\""}], ",", 
+     RowBox[{"WindowElements", "\[Rule]", 
+      RowBox[{"{", "}"}]}], ",", 
+     RowBox[{"WindowFrameElements", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<CloseBox\>\"", ",", "\"\<MinimizeBox\>\""}], "}"}]}], ",", 
+     RowBox[{
+     "FrontEndVersion", "\[Rule]", 
+      "\"\<8.0 for Microsoft Windows (64-bit) (February 23, 2011)\>\""}], ",", 
+     RowBox[{"StyleDefinitions", "\[Rule]", "\"\<Palette.nb\>\""}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"End", " ", "of", " ", "Notebook", " ", "Content"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Internal", " ", "cache", " ", "information"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"CellTagsOutline", " ", "CellTagsIndex"}], "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<FIGURE 6.28  \[LightBulb]\>\"", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"Cell", "[", 
+         RowBox[{
+         "546", ",", "20", ",", "10914", ",", "215", ",", "399", ",", 
+          "NotebookDefault", ",", 
+          RowBox[{"CellTags", "\[Rule]", "\"\< \[LightBulb]\>\""}]}], "]"}], 
+        "}"}]}], "}"}]}], "*)"}], "\n", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"CellTagsIndex", " ", "CellTagsIndex"}], "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\"\<  \[LightBulb]\>\"", ",", "11871", ",", "250"}], "}"}], 
+      "}"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"NotebookFileOutline", " ", 
+     RowBox[{"Notebook", "[", 
+      RowBox[{"{", 
+       RowBox[{"Cell", "[", 
+        RowBox[{
+        "546", ",", "20", ",", "10914", ",", "215", ",", "399", ",", 
+         "NotebookDefault", ",", 
+         RowBox[{"CellTags", "\[Rule]", "\"\<  \[LightBulb]\>\""}]}], "]"}], 
+       "}"}], "]"}]}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "End", " ", "of", " ", "internal", " ", "cache", " ", "information"}], 
+    "*)"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{
+  3.5242330353449326`*^9, {3.5243095066091557`*^9, 3.524309529250188*^9}}]
+},
+WindowSize->{1178, 880},
+WindowMargins->{{22, Automatic}, {Automatic, 12}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 41131, 872, 1892, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
