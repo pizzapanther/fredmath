@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick ] (0, 0)  to (3, 0);
+	\draw [very thick, dashed ] (0, 0) -- +(90 : 2.5);
+	\draw [very thick ] (0, 0) -- +(25 : 2.8);
+	\draw [very thick ] (0, 0) -- +(155 : 2.8);
+	\draw [very thick ] (0, 0) -- +(180 : 2.8);
+
+	\draw [ thick, red] (1.1, 0)  to [bend right] (1.1, .5);
+	\draw [red] (1.45, .3) node  { \Large $\alpha$} ;
+
+	\draw [ thick, blue] (.6, 0)  to [bend right] (-.6, .25);
+	\draw [blue] (.4, .6) node  { \Large $\beta$} ;
+
+	\draw [ thick, red] (-1.1, 0)  to [bend left] (-1.1, .5);
+	\draw [red] (-1.45, .3) node  { \Large $\alpha$} ;
+
+	\draw (0, -.25) node { \large  $\textbf {\textit O} $};
+	\draw (3, -.25) node { \large $\textbf {\textit x} $};
+	\draw (2.95, 1.4) node { \large  $\textbf {\textit A} $};
+	\draw (-2.7, 1.4) node { \large  $\textbf {\textit B} $};
+	\draw (-2.8, -.25) node { \large  $\textbf {\textit D} $};
+	\draw (0, 2.7) node { \large  $\textbf {\textit C} $};
+
+
+\end{tikzpicture} 
+
+\end{document}

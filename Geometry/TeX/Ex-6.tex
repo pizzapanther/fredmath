@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage{unicode-math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick ] (0, 0)  to (3, 0);
+	\draw [very thick ] (0, 0) -- +(36 : 2.5);
+	\draw [very thick ] (0, 0) -- +(108 : 2.5);
+	\draw [very thick ] (0, 0) -- +(216 : 2.5);
+	\draw [very thick ] (0, 0) -- +(360-144 : 2.8);
+	\draw [very thick, dashed , blue] (0, 0) -- +(18 : 2.4);
+	\draw [very thick, dashed , blue] (0, 0) -- +(72 : 2.35);
+	\draw [very thick, dashed , blue] (0, 0) -- +(162 : 2.4);
+	\draw [very thick, dashed , blue] (0, 0) -- +(-72 : 2.2);
+
+	\draw (0, -.3) node { \large  $\textbf {\textit O} $};
+	\draw (2.8, -.25) node { \large  $\textbf {\textit A} $};
+	\draw (2.25, 1.6) node { \large  $\textbf {\textit B} $};
+	\draw (-1, 2.6) node { \large  $\textbf {\textit C} $};
+	\draw (-1.9, -1.9) node { \large  $\textbf {\textit D} $};
+
+	\draw (2.6, .9)  [blue] node { \large $\textbf {\textit x} $};	
+	\draw (.8, 2.5)  [blue] node { \large $\textbf {\textit y} $};	
+	\draw (-2, .9) [blue] node { \Large $\textbf {\textit z} $};
+	\draw (.85, -1.8)  [blue] node { \large $\textbf {\textit w} $};	
+
+\end{tikzpicture} 
+
+\end{document}

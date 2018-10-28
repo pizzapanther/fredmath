@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick ] (-.5, 0)  to (3, 0);
+	\draw [very thick ] (0, -.5)  to (0, 3);
+
+	\draw [very thick ] (0, 0) -- (2.673, 1.362) ; 
+%	\draw (.8, .25) node {  $45^\circ $ };
+	\draw[ very thick, blue, dashed] (0, 0) -- +(13.5 : 3); 
+	\draw[ very thick, blue, dashed] (0, 0) -- +(58.5 : 3); 
+	\draw [thick, red] (0, 0) -- +(36 : 3); 
+
+	\draw (-.25, -.25) node { \large $\textbf {\textit O} $};
+	\draw (3, -.25) node { \large $\textbf {\textit A} $};
+	\draw (2.9, 1.4) node { \large  $\textbf {\textit B} $};
+	\draw (-.25, 3) node { \large  $\textbf {\textit C} $};
+	\draw [blue] (3.2, .8) node { \large  $\textbf {\textit x} $};
+	\draw [blue] (1.5, 2.75) node { \large  $\textbf {\textit y} $};
+	\draw [red] (2.4, 1.95) node { \large  $\textbf {\textit z} $};
+
+
+\end{tikzpicture} 
+
+\end{document}
