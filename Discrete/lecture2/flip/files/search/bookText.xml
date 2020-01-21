@@ -1,0 +1,3254 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Search><pages Count="49"><page Index="1"><![CDATA[Lecture Two
+
+
+
+
+
+           Section 2.1  Sequences and Summations
+
+
+
+
+           Sequences
+
+           Definition
+
+           A sequence is a function from a subset of the set of integers (usually either the set {0, 1, 2, } or the set
+           {1, 2, 3, } to a set S. We use the notation  a  to denote the image of the integer n. We call  a  a term of
+                                                       n                                              n
+           the sequence.
+
+                                          1
+           The sequence  a n  , where  a   n
+                                        n
+
+           The list of the terms of this sequence: 1,    1 ,    1 ,    1  ,
+                                                   2   3  4
+
+
+           Definition
+
+           A geometric progression is a sequence of the form  ,   ,  ar 2 ,    ,  ar n ,     where the initial term a and
+                                                             a ar
+           the common ratio r are real numbers.
+
+
+                                     
+                                               
+                                                           2
+           The common ratio for:  6,   12,  24,   48,    ,     n 1   6 ,     is     12    2
+                                                                               6
+
+
+           Definition
+           An arithmetic progression is a sequence of the form  , a a d  , a   2 , d  , a nd  ,    where the initial
+
+           term a and the common difference d are real numbers.
+
+
+
+           Recurrence Relations
+
+           Definition
+                                                   
+           A recurrence relation for the sequence  a n   is an equation that expresses  a  in terms of one or more of
+                                                                                     n
+           the previous terms of the sequence, namely,  a  ,  a  ,  a  ,    ,  a  ,    , for all integers n with  n   n ,
+                                                       0    1   2       n 1                                0
+           where  n  is a nonnegative integer. A sequence is called a solution of a recurrence relation if its terms
+                   0
+           satisfy the recurrence relation. (A recurrence relation is said to recursively define a sequence.)
+
+
+
+                                                              1]]></page><page Index="2"><![CDATA[Example
+                
+
+           Let  a n   be a sequence that satisfies the recurrence relation  a   n  a n 1    3  for  n  1, 2, 3,    and
+                              2
+           suppose that   a  . What are  a ,  a , and  a ?
+                          0                1    2       3
+           Solution
+
+               a   a   3   
+                            2 3
+                                   5
+                1    0
+               a   a   3   
+                            5 3 8
+                2    1
+               a   a    
+                         3 8 3 11
+                3     2
+
+
+           Example
+
+                
+           Let  a n   be a sequence that satisfies the recurrence relation  a   n  a n  1    a n  2   for  n   2, 3, 4,     and
+
+                             3
+                                        5
+           suppose that  a   and  a  . What are  a , and  a ?
+                         0           1                2        3
+           Solution
+               a   a   a         2
+                              5 3 
+                2    1    0
+               a   a   a          3
+                              2 5  
+                3     2   1
+
+
+           Definition
+
+           The Fibonacci sequence,  f  ,  f  ,  f  ,    ,  is defined by the initial conditions  f   0,   f   1,  and the
+                                     0   1   2                                         0       1
+           recurrence relation
+
+                   f    f     f      for  n   2 3, 4,,
+                    n    n  1  n  2
+
+
+           Example
+
+           Find the Fibonacci number  f  ,  f  ,  f  ,  f  ,  and   f
+                                       2   3   4   5        6
+
+           Solution
+
+                f    f   f   
+                              1 0 1
+                2    1    0
+                f   f   f   
+                              1 1 2
+                3     2   1
+                f   f   f   2 1 3 
+                4     3    2
+                f   f   f  3 2 
+                                     5
+                5     4    3
+                f   f   f  5 3 8 
+                6     5    4
+
+                                                              2]]></page><page Index="3"><![CDATA[Example
+
+           Determine whether the sequence   , where  a    3n  for every nonnegative integer n, is a solution of
+                                            a
+                                              n
+                                                         n
+           the recurrence relation  a   2a    a    for n = 2, 3, 4, . . . . Answer the same question whenere
+                                   n     n  1  n  2
+                  n
+           a   2  and where  a 
+                                   5
+                                n
+             n
+           Solution
+               Suppose that  a  3n . Then, for  n  ,
+                                                  2
+                             n
+                                         3 n 
+               2a     a           2 3 n  1      2
+                  n  1  n  2
+                                   2 3n 
+                               6n       6
+                               3n   a      Is a solution of the recurrence relation
+                                     n
+                                  n
+               Suppose that  a   2 . Then, for  n  ,
+                                                  2
+                             n
+               2a     a       2 2   n  1   2 n  2              or    a  1, a    2, a 
+                                                                                                 4
+                  n  1  n  2                                              0       1        2
+                                                                                     2 2 1 3 
+                               2 n  2 2     1   2   2              2a   a             a
+                                                                                  0
+                                                                                                   2
+                                                                             1
+                                     1
+                                  1
+                               2 n  
+                                     4
+                                  3
+                               2 n  
+                                  4
+                               3 2   n 2
+                                n
+                               2   a    Is not a solution of the recurrence relation
+                                     n
+               Suppose that  a  . Then, for  n  ,
+                                                 2
+                                 5
+                             n
+                                   
+               2a     a       2 5 5  5   a
+                  n  1  n  2               n
+               Is a solution of the recurrence relation
+
+
+           Example
+
+           Find the formalc for the sequences with the following first five terms:
+
+               a)  1,   1 ,   1 ,  1 ,   1
+                     2   4   8 16
+               b)  1, 3, 5, 7, 9
+               c)  1, 1, 1, 1, 1
+           Solution
+
+
+               a)  The sequence with  a   1  , n = 0, 1, 2, , This proposed sequence is a geometric progression
+                                       n    n
+                                           2
+                  with  a   and  r   1  .
+                           1
+                                     2
+
+
+                                                              3]]></page><page Index="4"><![CDATA[b)  Each term is obtained by adding 2 to the previous term, The sequence with  a   2n   1, n = 0, 1,
+                                                                                            n
+                  2, , This proposed sequence is an arithmetic progression with  a   and  d  .
+                                                                                              2
+                                                                                    1
+                                                                                    n
+                                                                                 
+               c)  The terms alternate between 1 and 1, The sequence with  a     1 , n = 0, 1, 2, , This
+                                                                            n
+                  proposed sequence is an geometric progression with  a   and  r     1.
+                                                                         1
+
+
+           Example
+
+           How can we produce the terms of a sequence if the first 10 terms are 1, 2, 2, 3, 3, 3, 4, 4, 4, 4?
+
+           Solution
+               In this sequence, the integer 1 appears once, the integer 2 appears twice, the integer 3 appears three
+               times, the integer 4 appears four times. A reasonable rule for generating this sequence is that the
+               integer n appears exactly n times.
+               The sequence generated this is possible match.
+
+
+
+           Example
+
+           How can we produce the terms of a sequence if the first 10 terms are 5, 11, 17, 23, 29, 35, 41, 47, 53, 59?
+           Solution
+
+                     
+               d  11 5   6
+               The sequence can be obtained by adding 6 to previous term. This produce to  a      6 n    1 .
+                                                                                              5
+                                                                                          n
+                                                                            6
+                                                                 5
+               This sequence is an arithmetic progression with  a   and  d  .
+
+
+           Example
+
+           How can we produce the terms of a sequence if the first 10 terms are 1, 3, 4, 7, 11, 18, 29, 47, 76, 123?
+
+           Solution
+
+               4 = 1 + 3
+               7 = 4 + 3
+               11 = 4 + 7
+               And so on. We can see that the third term is the sum of the two previous term.
+               The sequence is determined by the recurrence relation  L   L    L    with initial conditions
+                                                                     n    n  1  n  2
+               L   1 and  L  .
+                               2
+                1          1
+
+
+
+
+
+
+
+
+
+
+                                                              4]]></page><page Index="5"><![CDATA[Some Useful Sequences
+                              2
+                             n      1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 
+                              3
+                             n      1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 
+                              4
+                             n      1, 16, 81, 256, 625, 1296, 2401, 4096, 6561, 10000, 
+                              n
+                             2      2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 
+                              n
+                             3      3, 9, 27, 81, 243, 729, 2187, 6561, 19683, 59049, 
+                               ! n    1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 
+                              f     1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 
+                              n
+
+
+
+
+           Summations
+
+           To find the sum of many terms of an infinite sequence, it is easy to express using summation notation.
+                                                m
+                                                 a k    a   a  a     a m
+                                                                   3
+                                                              2
+                                                         1
+                                               k 1
+                                                 n   a k  or     m k n  a
+                                                                            k
+                                                                       
+                                                  k m
+           The index of summation runs through all integers starting with its lower limit and ending with its upper
+           limit.
+
+           The large uppercase Greek letter sigma, , is used to denote summation.
+
+
+
+
+           Example
+                                                                                              
+           Use the summation notation to express the sun of the first 100 terms of the sequence  a  j  , where
+
+           a    1   for j = 1, 2, 3, 
+             j   j
+
+           Solution
+
+               100
+                  1 j
+
+                j 1
+
+
+
+
+
+
+
+
+
+
+
+                                                              5]]></page><page Index="6"><![CDATA[Example
+                                 5
+                                    2
+           What is the value of     j
+
+                                j 1
+           Solution
+
+                5
+                   j  1   2  3   4  5
+                         2
+                                  2
+                     2
+                                            2
+                                       2
+                              2
+                j 1
+                        1 4 9 16 25
+                                
+                       55
+
+
+           Example
+                                 8
+                                       k
+                                     
+           What is the value of       1
+                               k  4
+           Solution
+                8
+                    1  k     4     5     6     7     8
+                    
+                                     1
+                                            1
+                                                    1
+                                                            1
+                             1
+               k  4
+                                 1 
+                           1      1      1
+                                          1 
+                           1
+
+
+           Theorem
+
+           If a and r are real numbers and  r  , then
+                                             0
+                    n         ar n 1  a
+                      ar      r  1    if   r  1
+                          j
+                             
+                             
+                   j 0        n    1 a  if   r 11
+           Proof
+
+                          n
+                    n         j
+               Let  S      ar
+                         j 0
+                        n
+                 n          j
+                S r    r  ar
+
+                       j 0
+                       n
+                           j 1
+                         ar
+
+                      j 0
+                                                              6]]></page><page Index="7"><![CDATA[n 1
+                           k
+                         ar            Shifting the index of summation with  k   j   1
+                      k  1
+                       n
+                           k     n 1   
+                         ar   ar      a
+
+                      k  0
+                                     
+                      S   ar n 1  a
+                       n
+                                     
+               rS   S    ar n 1   a
+                 n     n
+               r    1 S   ar n 1   a
+                       n
+                       n 1
+               S    ar     a
+                 n     r  1
+                                      n           n
+                                 n           j  
+               If r = 1, then the  S    a   1    a  n    1 a
+
+                                     j  0        j  0
+
+
+
+           Double summations
+
+           Double summations arise in many contexts (as in the analysis of nested loops in computer programs). An
+           example of a double summation is
+                    4   3
+                         ij
+
+
+                   i  1 j  1
+
+           To evaluate the double sum, first expand the inner summation and then continue by computing the outer
+           summation
+
+                    4   3       4
+                                i   2i  3i 
+                           ij 
+                   i 1 j 1    i 1
+
+                                4
+                              
+                                  6i
+                               i 1
+                                      
+                              6 12 18 24
+                               60
+
+
+
+
+
+
+
+
+
+
+                                                              7]]></page><page Index="8"><![CDATA[Some Useful Summation Formulae
+                                            Sum                         Closed Form
+                                   n
+                                     ar    r    0             ar n 1   a  ,   r 
+                                        k
+                                                                                 1
+                                  k  0                             r  1
+                                   n
+                                     k                             n n    1
+
+
+                                  k  1                              2
+                                   n
+                                     k                             n n   1 2n    1
+                                       2
+                                  k  1                                 6
+
+                                   n
+                                     k                           n 2  n    1  2
+                                       3
+                                  k  1                               4
+                                   
+                                     x k ,    x  1             1 x
+                                                                   1
+                                                                   
+                                  k  0
+                                   
+                                     kx k  1 ,    x           1 x   2
+                                                                     1
+                                                  1
+                                                                    
+                                  k  1
+
+
+           Example
+                               
+           What is the value of     s 0,2,4  s
+
+
+           Solution
+                  s 0,2,4      s     6
+                                 0 2 4  
+
+
+
+
+           Example
+
+                                100
+                                     2
+           What is the value of     k
+                               k  50
+           Solution
+                100      100       49                                 n
+                   k   2          k                                 k  2    n n   1 2n   6   1
+                               2
+                                        2
+                             k 
+               k  50     k  1    k  1                             k  1
+
+                         100 101 201      49 50 99      338,350 40,425   297,925
+                               6            6
+
+                                                              8]]></page><page Index="9"><![CDATA[Exercises         Section 2.1  Sequences and Summations
+
+
+
+                                                                        n   n
+                                                                   2
+                                                                       3
+           1.   Find these terms of the sequence  a n  , where  a         5
+                                                               n
+                    ) a  a   b ) a   c ) a   d ) a
+                       0       1       4        5
+
+                                                      
+           2.   What is the term  a  of the sequence  a   , if   a  equals
+                                   8                   n       n
+                       n 1                     n             n
+                                              1
+                   a ) 2        b ) 7       c ) 1        d )     2
+
+                                                                         
+           3.   What are the terms  a  ,  a  a  ,  and  a  of the sequence  a  , if   a  equals
+                                          ,
+                                     0   1   2        3                   n        n
+                   a ) 2    n   1    b )  n    1  n 1     c )   n    d )   n    n
+                                                   2        2  2
+
+                    ) e     2  n     f  ) 3           g ) 7 4    n       h ) 2   n     2  n
+
+           4.   Find at least three different sequences beginning with the terms 1, 2, 4 whose terms are generated by
+                a simple formula or rule.
+
+           5.   Find at least three different sequences beginning with the terms 3, 5, 7 whose terms are generated by
+                a simple formula or rule.
+
+           6.   Find the first five terms of the sequence defined by each of these recurrence relations and initial
+                conditions.
+                  a)  a   6a    , a    2
+                        n     n 1    0
+                  b)  a    a 2  , a   2
+                        n    n 1   1
+
+                  c)  a    a     3a    , a   1,  a 
+                                                        2
+                        n    n  1   n  2   0      1
+                                     2
+                  d)  a    na     n a    , a    1, a  1
+                        n     n  1    n  2   0       1
+                  e)  a   a      a   , a    1,  a   2,  a 
+                                                               0
+                        n    n  1  n  3   0      1       2
+
+           7.   Find the first six terms of the sequence defined by each of these recurrence relations and initial
+                conditions.
+                  a)  a    2a    , a    1
+                        n      n 1    0
+                  b)  a   a      a    , a    2,   a  
+                                                         1
+                        n    n  1  n  2   0       1
+                  c)  a   3a 2  , a    1
+                        n     n 1   0
+                                     2
+                  d)  a    na     n a    , a     1, a 
+                                                            0
+                        n     n  1    n  2   0        1
+                  e)  a   a      a     a    ,    a  1,  a   2,  a 
+                                                                       2
+                        n    n 1   n 2   n 3     0      1       2
+                                                              9]]></page><page Index="10"><![CDATA[n
+                               5 3     for  n 
+           8.   Let  a   2     n           0, 1, 2,
+
+                      n
+                                  ,
+                  a)  Find  a  ,  a  a  ,  a  ,and  a
+                             0   1   2   3       4
+                  b)  Show that  a   5a   6a ,  a   5a   6a , and  a   5a   6a
+                                  2     1     0   3      2     1       4     3     2
+                  c)  Show that  a   5a      6a    for all integers n with  n 
+                                                                              2
+                                  n     n  1   n  2
+
+                                 
+           9.   Is the sequence  a n   a solution of the recurrence relation  a   n  8a n  1    16a n  2   if
+                  a)  a   0?
+                        n
+                  b)  a   1?
+                        n
+                             n
+                  c)  a    2 ?
+                        n
+                             n
+                  d)  a    4 ?
+                        n
+                              n
+                  e)  a   n 4 ?
+                        n
+                                      n
+                  f)  a      n   3 4 ?
+                            2 4 
+                                    n
+                        n
+                            
+                  g)  a     4  n ?
+                        n
+                  h)  a   n 2 n
+                              4 ?
+                        n
+
+                                 
+                                                                                                  9
+           10.  Is the sequence  a n   a solution of the recurrence relation  a   a n  1   2a n  2   2n   if
+                                                                          n
+                  i)  a   
+                             n
+                                2
+                        n
+                  j)  a   5    n   n   2
+                               1
+                        n
+                                      n
+                  k)  a   3    n    2  
+                               1
+                                             2
+                                         n
+                        n
+                  l)  a      n   n  2
+                           7 2  
+                        n
+
+           11.  A person deposits $1,000.00 in an account that yields 9% interest compounded annually.
+                  a)  Set up a recurrence relation for the amount in the account at the end of n years.
+                  b)  Find an explicit formula for the amount in the account at the end of n years.
+                  c)  How much money will the account contain after 100 years?
+
+           12.  Suppose that the number of bacteria in a colony triples every hour.
+                  a)  Set up a recurrence relation for the number of bacteria after n hours have elapsed.
+                  b)  If 100 bacteria are used to begin new colony, how many bacteria will be in the colony in 10
+                      hours?
+
+           13.  A factory makes custom sports cars at an increasing rate. In the first month only one car is made, in
+                the second month two cars are made, and so on, with n cars made in the nth month.
+
+
+                                                             10]]></page><page Index="11"><![CDATA[a)  Set up a recurrence relation for the number of cars produced in the first n months by this
+                      factory.
+                  b)  How many cars are produced in the first year?
+                  c)  Find an explicit formula for the number of cars produced in the first n months by this factory
+
+           14.  For each of these lists of integers, provide a simple formula or rule that generates the terms of an
+                integer sequence that begins with the given list. Assuming that your formula or rule is correct,
+                determine the next three terms of the sequence.
+                  a)  1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 
+                  b)  1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 
+                  c)  1, 0, 2, 0, 4, 0, 8, 0, 16, 0, 
+                  d)  3, 6, 12, 24, 48, 96, 192, 
+                  e)  15, 8, 1, 6, 13, 20, 27, 
+                  f)  3, 5, 8, 12, 17, 23, 30, 38, 47, 
+
+                  g)  2, 16, 54, 128, 250, 432, 686, 
+                  h)  2, 3, 7, 25, 121, 721, 5041, 40321, 
+                  i)  3, 6, 11, 18, 27, 38, 51, 66, 83, 102, 
+                  j)  7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 
+                  k)  1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010, 1011, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             11]]></page><page Index="12"><![CDATA[Section 2.2  Algorithms
+
+
+
+           Introduction
+
+           Definition
+
+           An algorithm is a finite sequence of precise instructions for performing a computation or for solving a
+           problem.
+
+                 A program is one type of algorithm
+                       O All programs are algorithms
+                        O Not all algorithms are programs!
+
+                 Directions to somebody’s house is an algorithm
+                 A recipe for cooking a cake is an algorithm
+                 The steps to compute the cosine of 90° is an algorithm
+
+
+           Properties of Algorithms
+
+           Input: An algorithm has input values from a specified set.
+           Output: From each set of input values an algorithm produces output values from a specified set. The
+                   output values are the solution to the problem.
+           Definiteness: The steps of an algorithm must be defined precisely.
+
+           Correctness: An algorithm should produce the correct output values for each set of input values.
+           Finiteness: An algorithm should produce the desired output after a finite (but perhaps large) number of
+                       steps for any input in the set.
+           Effectiveness: It must be possible to perform each step of an algorithm exactly and in a finite amount
+                         of time.
+           Generality: The procedure should be applicable for all problems of the desired form, not just for a
+                        particular set of input values.
+
+
+
+           Algorithm 1  Finding the Maximum Element in a Finite Sequence
+
+
+           Given a list, how do we find the maximum element in the list?
+           To express the algorithm, we’ll use pseudocode
+
+                 Pseudocode is kinda like a programming language, but not really
+
+
+
+
+
+
+
+
+
+
+
+                                                             12]]></page><page Index="13"><![CDATA[Example
+
+           Show that Algorithm 1 for finding the maximum element in a finite sequence of integers has all the
+           properties listed.
+           Solution
+
+               The input to Algorithm 1 is a sequence of integers. The output is the largest integer in the sequence.
+               Each step of the algorithm is precisely defined, because only assignments, a finite loop, and
+               conditional statements occur.
+               The values of the variable max equals the maximum terms when the algorithm terminates.
+               The initial value of max is the first term; as successive terms of the sequence are examined. This
+               argument shows that when all the terms have been examined, max equal the value of the largest
+               term and it will take n steps.
+               Algorithm 1 is general, because it can be used to find the maximum of any finite sequence of
+               integers.
+
+                                                
+                Procedure max  a  a    2  ,    ,  a n
+                                    ,
+                                   1
+                max:=  a
+                         1
+                for i := 2 to n
+
+
+                      if max   a then   max : a
+                                             
+                                i                i
+                return max{max is the largest element}
+
+
+           Searching Algorithms
+
+           Given a list, find a specific element in the list. There are two types:
+               1.   Linear search
+               2.   Binary search
+
+
+
+           Algorithm 2  Linear Search
+
+           Given a list which does not have to be sorted, find element in the list
+
+                                                      ,
+                procedure linear_search (x: integer; a  a  ,    ,  a : integers)
+                                                     1   2        n
+                i := 1
+                while ( i ≤ n and  i     n  and   x   a i 
+
+
+                       : i   i   1
+                if  i ≤ n then location := i
+                else location := 0
+                {location is the subscript of the term that equals x, or it is 0 if x is not found}
+
+
+
+
+
+                                                             13]]></page><page Index="14"><![CDATA[Algorithm 3  Binary Search
+
+           Given a list which must be sorted, find element in the list
+
+               procedure linear_search (x: integer; a  a  ,    ,  a : increasing integers)
+                                                     ,
+                                                   1   2        n
+               i  := 1   { i is left endpoint of search interval }
+               j := n    { j is right endpoint of search interval }
+               while i < j
+
+               begin
+                    m  :    i    j  / 2       {m is the point in the middle }
+
+                    if  x   a    then i := m+1
+                            m
+                    else j := m
+
+               end
+               if x =  a  then location := i
+                      i
+               else location := 0
+               {location is the subscript of the term that equals x, or it is 0 if x is not found}
+
+                          x   1 4  location  7
+
+
+           Sorting
+
+           Ordering the elements of a list is a problem that occurs in many contexts. Suppose that we have a list of
+           elements  of  a set.  Suppose that we  have  a  way to  order  elements  of the  set.  Sorting  is  putting  these
+           elements into a list in which the elements are in increasing order.
+
+           There are two types:
+                 Bubble sort
+
+                 Insertion sort
+
+
+
+           Bubble Sort
+
+           The bubble sort is one of the simplest sorting algorithms, but not one of the most efficient. It takes
+           successive elements and “bubbles” them up the list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             14]]></page><page Index="15"><![CDATA[Example
+
+           Use the bubble sort to put 3, 2, 4, 1, 5 into increasing order.
+           Solution
+
+               First Pass        3          2          2         2
+                                 2          3          3         3
+                                 4          4          4         1
+                                 1          1          1         4
+                                 5          5          5         5
+
+
+               Second Pass          2           2          2
+                                    3           3          1
+                                    4           1          3
+                                    1           4          4
+                                    5          5           5
+
+
+               Third Pass        2          1
+                                 1          2
+                                 3          3
+                                 4          4
+
+                                 5          5
+
+               Fourth Pass            1
+                                      2
+                                      3
+
+                                      4
+                                      5
+
+
+
+
+           Algorithm 4  Bubble
+
+                                                                            2
+                                        ,
+               procedure bubblesort ( a  a  ,    ,  a : real numbers with  n  )
+                                      1   2        n
+                for i := 1 to n  1
+                   for j := 1 to n  i
+
+                       if  a   a   1
+                           j    j
+                           then interchange  a    and a  1
+                                             j        j
+
+
+
+
+
+
+
+                                                             15]]></page><page Index="16"><![CDATA[Bubble sort running time
+           Outer for loop does n – 1 iterations
+
+           Inner for loop does:
+                   n – 1 iterations the first time
+                   n – 2 iterations the second time
+
+                                               2
+                                       2 1
+           Total: n  1        2       n   n
+                        n 
+                                                2
+                                           2
+           The bubble sort will take about  n  time.
+
+
+
+           Insertion sort
+
+           The insertion sort is another simple sorting algorithm, but inefficient. It starts with a list with one
+           element, and inserts new elements into their proper place in the sorted part of the list
+
+
+           Algorithm 5  Insertion sort
+                                                       
+                                           ,
+               procedure insertion_sort  a  a 2  ,    ,  a n
+                                          1
+                      for j := 2 to n                      take successive elements in the list
+                  begin
+                      i := 1                           find where that element should be
+                      while   a   a                   in the sorted portion of the list
+                               j   i
+                             i := i +1
+                      m                               move all elements in the sorted portion of the list
+                        : a
+                            i
+                      for k := 0 to j-i-1              that are greater than the current element up by one
+                                    
+                             a     : a
+                                
+                                        
+                               j k     j k  1
+                         : m
+                      a                               put the current element into it’s proper place
+                        i
+                                                 
+                   end  a  a 2  ,    ,  a  are sorted             in the sorted portion of the list
+                          ,
+                                      n
+                         1
+                                             2
+           The insertion sort will take about  n  time.
+
+
+           Comparison of Running Times
+
+           Searches
+                  Linear: n steps
+                  Binary:  log n   steps
+                               2
+                  Binary search is about as fast as you can get
+
+
+
+                                                             16]]></page><page Index="17"><![CDATA[Sorts
+
+                          2
+               Bubble:  n   steps
+                            2
+               Insertion:  n   steps
+               There are other, more efficient, sorting techniques
+
+                    In principle, the fastest are heap sort, quick sort, and merge sort
+                    These each take  n    log n  steps
+                                             2
+                    In practice, quick sort is the fastest, followed by merge sort
+
+
+
+           Algorithm 6  Greedy Change-Making Algorithm
+
+               procedure change ( c  c  ,    ,  c : values of denominations of coins, where  c  c     c ; n: a
+                                    ,
+                                   1   2       r                                           1   2         r
+                                 positive integer)
+                for i := 1 to r
+                    d                                 d  counts the coins of denomination c  used
+                       : 0
+                      i                                 i                                 i
+                    While  n  c
+                                i
+                          d   : d   1               Add a coin of denomination c
+                           i     i                                                i
+                               
+                           : n   n c
+                                  i
+               { d  is the number of coins of denomination  c  in the change for i = 1, 2, , r}
+                  i                                        i
+
+
+           Definition
+
+           If n is a positive integer, then n cents in change using quarters, dimes, nickels, and pennies using the
+           fewest coins possible has at most two dimes, at most one nickel, at most four pennies, and cannot have
+           two dimes and a nickel. The amount of change in dimes, nickels, and pennies cannot exceed 24 cents
+
+
+           Theorem
+
+           The greedy algorithm (6) produces change using the fewest coins possible.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             17]]></page><page Index="18"><![CDATA[Exercises          Section 2.2  Algorithms
+
+
+
+
+           1.   List all the steps used by the Algorithm 1 to find the maximum of the list
+                       1, 8, 12, 9, 11, 2, 14, 5, 10, 4.
+
+           2.   Devise an algorithm that finds the sum of all the integers in a list.
+
+           3.   Describe an algorithm that takes as an input a list of n integers and produces as output the largest
+                difference obtained by subtracting an integer in the list from the one following it.
+
+           4.   Describe an algorithm that takes as an input a list of n integers in non-decreasing order and
+                produces the list of all values that occur more than once.
+
+           5.   Describe an algorithm that takes as an input a list of n integers and finds the location of the last
+                even integer in the list or returns 0 if there are no even integers in the list.
+
+
+           6.   Describe an algorithm that interchanges the values of the variables x and y, using only
+                assignments. What is the minimum number of assignment statements needed to do this?
+
+           7.   List all the steps used to search for 9 in the sequence 1, 3, 4, 5, 6, 7, 9, 11 using
+                  a)  a linear search            b) a binary earch
+
+           8.   Describe an algorithm that inserts an integer x in the appropriate position into the list
+                 a  ,  a  ,    ,  a  of integers that are in increasing order.
+                  1   2        n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             18]]></page><page Index="19"><![CDATA[Section 2.3 – Divisibility and Modular Arithmetics
+
+
+
+           Division
+
+
+           Definition
+
+           If a and b are integers with  a  , we say that a divides b if there is an integer c such that b   ac , or
+                                          0
+           equivalently, if   b   is an integers. When a divides b we say that a is a factor or divisor of b, and that b is
+                           a
+           multiple of a. The notation  | a b  denotes that a divides b. We write  |a b  when a does not divide b.
+
+
+
+           Example
+
+           Determine whether 3| 7  and whether 3 | 12.
+
+           Solution
+
+               We see that 3| 7 , because 7/3 is not integer.
+               3 | 12 because 12/3 = 4.
+
+
+           Example
+
+           Let n and d be positive integers. How many positive integers not exceeding n are divisible by d?
+
+           Solution
+
+               The positive integers divisible by d are all the integers of the form dk, where k is a positive integer.
+               Hence, the number of positive integers divisible by d that do not exceed n equals the number of
+                                                                    
+               integers k with  0   k   n  / d . Therefore, there are  / n d  positive integers not exceeding n that are
+               divisible by d.
+
+
+           Theroem
+
+           Let a, b, and c integers, where  a  . Then
+                                             0
+               i)  If a | b and a | c, then a | (b + c);
+
+               ii)  If a | b, then a | bc  for all integers c;
+
+               iii) If a | b and b | c, then a | c.
+
+
+
+
+
+
+
+
+
+
+                                                             19]]></page><page Index="20"><![CDATA[Proof   (i)
+
+               Suppose If a | b and a | c. Then, from the definition of divisibility, it follows that there are integers s
+               and t with b = as and c = at. Hence,
+                                            
+                                          
+                                
+                        
+                      b c   as at     a s t
+
+
+
+               Therefore, a divides b + c.
+
+
+           Corollary
+
+           If a, b, and c integers, where  a  , such that a | b and a | c, then a | mb + nc whenever m and n are
+                                           0
+           integers.
+
+
+
+           The Division Algorithm
+
+           Theroem
+
+           Let a be an integer and d a positive integer. Then there are unique integers q and r, with 0   r   d , such
+
+           that  a   dq r .
+                      
+
+
+           Definition
+
+
+           In the equality given in the division algorithm, d is called the divisor, a called the dividend, q is called the
+           quotient, and r is called the remainder. This notation is used to express the quotient and remainder:
+                                                q   a div  d ,  r   a mod  d
+
+
+
+           Example
+
+           What are the quotient and remainder when 101 is divided by 11?
+
+           Solution
+                        
+                   
+               101 11 9 2
+               Hence, the quotient when 101 is divided by 11 is 9 = 101 div 11,
+               and the remainder is 2 = 101 mod 11.
+
+
+
+
+
+
+
+
+                                                             20]]></page><page Index="21"><![CDATA[Example
+
+           What are the quotient and remainder when 11 is divided by 3?
+           Solution
+
+                        4 
+                   
+                11 3       1
+               Hence, the quotient when 11  is divided by 3 is 4 = 11  div 3,
+               and the remainder is 1 = 11  mod 3.
+
+
+
+           Modular Arithmetic
+
+           Definition
+
+           If a and b are integers and m is positive integer, then a is congruent to b modulo m if m divides a  b. We
+                                         
+           use the notation  a  b  mod  m  to indicate that a is congruent to b modulo m. We say that
+                         
+           a  b  mod  m  is a congruence and that m is its modulus (plural moduli). If a and b are not congruent
+                                             
+           modulo m, we write  a  mod  m
+                                  b
+
+
+           Theorem
+                                                                                    
+           Let a and b be integers, and let m be a positive integer. Then  a   b  mod  m  if and only if
+           a mod   m     b mod  m
+
+
+
+           Example
+
+           Determine whether 17 is congruent to 5 modulo 6 and whether 24 and 14 are congruent modulo 6.
+           Solution
+
+                                                                       
+               Because 6 divides 17  5 = 12, we see that 17   5  mod 6 .
+                                                                   
+               24  14 = 10 is not divisible by 6, we see that  24 14 mod 6 
+
+
+           Theorem
+
+           Let m be a positive integer. The integers a and b are congruent modulo m if and only if there is an integer
+           k such that  a   b km .
+                            
+
+           Proof
+                               
+               If  a  b  mod  m  that implies by the definition of congruence to  m a b   . Which is that there is an
+                                                                                   |
+               integer k such that  a b  km    a   b km  .
+
+
+
+
+                                                             21]]></page><page Index="22"><![CDATA[
+                                                                                 
+               Conversely, if there is an integer k such that  a   b km , then  km   a b . Hence, m divides a  b, so
+                                 
+               that  a  b  mod  m
+
+
+
+           Theorem
+                                                                           
+                                                      
+           Let m be a positive integer. If  a   b  mod  m  and  c   d   mod  m , then
+                                                                                        
+                                    a c        mod m      and       ac  bd   mod m
+                                      
+                                           b d
+
+           Proof
+                                                        
+                                                                             
+               Using direct proof. Because  a  b  mod  m  and c   d   mod  m , by the theorem that are integers s
+               and t with b        and   d  
+                                               c tm . Hence,
+                             a sm
+                                                                                             
+                   b d    a sm   c tm     a c     m s t            a c   b d    mod m
+               And
+                                                                                        
+                                       
+                                            
+                                
+                                                        
+                   bd   a sm c tm      ac m  at   sc stm          ac   bd   mod m
+                          
+
+
+           Corollary
+           Let a and b be integers, and let m be a positive integer. Then
+                        
+                     
+                                                 b mod
+                   a b  mod    m        a mod  m       m   mod  m
+               and
+                   ab mod  m         a mod  m b mod  m   mod  m
+
+
+
+           Arithmetic Modulo m
+
+                                                 
+                                                                                             
+           We define addition by:  a   b   a b  mod  m and multiplication by  a   b   a b  mod  m
+                                              
+                                                                                           
+                                     m                                            m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             22]]></page><page Index="23"><![CDATA[Exercises  Section 2.3 – Divisibility and Modular Arithmetics
+
+
+
+           1.   Does 17 divide each of these numbers?
+
+
+
+                   a ) 68 b ) 84 c ) 35 d ) 1001
+
+           2.   Prove that if a is an integer other than 0, then
+                                              0
+                   a ) 1    divides a  b ) a divides
+           3.   Show that if  | a b and  | b a , where a and b are integers, then a = b or a = b.
+
+           4.   Show that if a, b, and c are integers, where  a   and c  , such that  ac bc , then  | a b
+                                                              0
+                                                                                       |
+                                                                        0
+           5.   What are the quotient and remainder when
+                  a)  19 is divided by 7?
+                  b)  111 is divided by 11?
+                  c)  789 is divided by 23?
+                  d)  1001 is divided by 13?
+                  e)  0 is divided by 19?
+                  f)  3 is divided by 5?
+                  g)  1 is divided by 3?
+                  h)  4 is divided by 1?
+
+           6.   What time does a 12-hour clock read
+                  a)  80 hours after it reads 11:00?
+                  b)  40 hours before it reads 12:00?
+                  c)  100 hours after it reads 6:00?
+
+           7.   What time does a 24-hour clock read
+
+                  a)  100 hours after it reads 2:00?
+                  b)  45 hours before it reads 12:00?
+                  c)  168 hours after it reads 19:00?
+
+                                                           
+                                                                               
+           8.   Suppose a and b are integers,  a    4 mod13 ,  and b    9 mod13 . Find the integer c with  0   c   12
+                such that
+
+                                    
+                  a)  c  9a mod13
+                                     
+                  b)  c  11b mod13
+                                      
+                  c)  c   a b mod13
+                           
+                                         
+                  d)  c   2a   3b mod13
+                                         
+                  e)  c   a   2  b 2 mod13
+                                         
+                  f)  c   a   3  b 3 mod13
+
+
+                                                             23]]></page><page Index="24"><![CDATA[9.  Suppose a and b are integers,  a  11  mod   19  ,  and b   3  mod   19  . Find the integer c with
+                 0   c   10 such that
+
+                           
+                  a)  c   a b  mod   19 
+                  b)  c   7a   3b  mod   19 
+
+                  c)  c   2a   2  3b 2     mod   19 
+
+                  d)  c   a   3  4b 3     mod   19 
+
+
+                                                                   
+           10.  Let m be a positive integer. Show that  a  b mod  m  if  a mod  m  b mod  m
+
+           11.  Show that if n and k are positive integers, then  / n k           n  1      1
+                                                                         k 
+
+           12.  Evaluate these quantities
+                  a)  17 mod 2
+                  b)  144 mod 7
+                  c)  101 mod 13
+                  d)  199 mod 19
+                  e)  13 mod 3
+                  f)  97 mod 11
+
+           13.  Find a div m and a mod m when
+                  a)  a = 228, m = 119
+                  b)  a = 9009, m = 223
+                  c)  a = 10101, m = 333
+
+                  d)  a = 765432, m = 38271
+
+           14.  Find the integer a such that
+                  a)  a   15 mod   27   and   26   a   0
+
+
+                  b)  a   24 mod   31   and   15   a  15
+
+                  c)  a  99 mod   41   and   100   a  140
+
+
+                  d)  a   43 mod   23   and   22   a   0
+
+                  e)  a  17 mod   29   and   14  a  14
+
+
+
+           15.  Decide whether each of these integers is congruent to 5 modulo 17.
+                   a ) 37      b ) 66       c ) 17    d ) 67
+
+           16.  Find each of these values.
+                  a)   133   mod   23 261   mod   23   mod   23
+
+
+                                                             24]]></page><page Index="25"><![CDATA[b)  457 mod    23 182   mod   23   mod   23
+                                   
+                  c)  177 mod    31 270 mod    31   mod   31
+                        2         
+                  d)  19  mod     41  mod
+                                         9
+                        3         2
+                  e)  32  mod     13  mod   11
+
+                         2         3
+                  f)   99  mod    32  mod   15
+
+                        4        2
+                  g)  3  mod     17  mod   11
+
+                        3          2
+                  h)  19   mod  23   mod  31
+
+                        3          4
+                  i)   89  mod    79  mod   26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             25]]></page><page Index="26"><![CDATA[Section 2.4 – Integer Representations and Algorithms
+
+
+
+           Representations of integers
+
+
+           Theorem
+
+           Let b be an integer greater that 1. Then if n is a positive integer, it can be expressed uniquely in the form
+                          n   a b  a    b        a b a
+                               k k    k   1 k   1   1     0
+                                                  ,
+           Where k is a nonnegative integer  a  ,  a    ,  a  are nonnegative integers less than b, and  a 
+                                                                                                         0
+                                             0   1       k                                           k
+
+
+           Example
+
+           What is the decimal expansion of the integer that has 1 0101 1111    as its binary expansion?
+                                                                            2
+           Solution
+
+               1 0101 1111    1 2   8   0 2   7   1 2   6   0 2   5   1 2   4   1 2   3   1 2   2   1 2   1  1 2   0
+                            2
+                                351
+
+
+           Octal and Hexadecimal Expansions
+
+           Base 8 expansions are called octal expansions.
+
+           Base 16 expansions are called hexadecimal expansions.
+
+
+           Example
+
+           What is the decimal expansion of the number with octal expansion 7016  ?
+                                                                                   8
+           Solution
+                                    2
+                                                0
+                         7 8  
+                                       1 8  
+               7016      3  0 8     1  6 8
+                      8
+                         3598
+
+
+           Example
+
+           What is the decimal expansion of the number with hexadecimal expansion 2AE   0B  16  ?
+
+           Solution
+
+               2AE 0B  16    2 16  4   10 16  3   14 16  2   0 16  1  11 16  0
+                            175627
+
+
+
+                                                             26]]></page><page Index="27"><![CDATA[Base Conversion
+
+
+           The algorithm for constructing the base b expansion of an integer n, divide n by b to obtain a quotient and
+           remainder, that is,
+                   n   bq   a  ,   0   a 
+                                              b
+                         0    0           0
+                   q   bq   a  ,    0   a 
+                                              b
+                    0     1    1           1
+
+
+           Example
+
+           Find the octal expansion of 12345 
+                                              10
+           Solution
+               12345          1
+                       8 1543
+                     
+               1543 8 192 
+                              7
+               192        0
+                     8 24 
+                    8 3 0
+               24   
+                   
+               3 8 0 3
+               12345      30071 
+                       10          8
+
+
+           Example
+
+
+           Find the hexadecimal expansion of 177130  
+                                                      10
+           Solution
+
+                           
+               177130 16 11070    10       0   A 
+                       
+                                            1
+               11070 16 691     14   14   E 
+               691 16 4    3 3
+                       
+                  
+               43 16 2 11         11   B 
+                      
+                 
+               2 16 0 2
+               177130      2 3B EA 
+                        10           16
+
+
+           Example
+
+           Find the bianry expansion of 241 
+                                             10
+           Solution
+
+               241 2 120    1
+               120   2 60   0
+               60   2 30    0
+               30   2 15    0
+
+                                                             27]]></page><page Index="28"><![CDATA[15   2 7 1 
+               7   
+                   2 3 1
+                  2 1 1
+               3   
+                  
+               1 2 0 1
+               241    11110001 
+                    1 0             2
+
+                                      Representation of the Integers 0 through 15.
+
+            Decimal         0    1    2    3    4    5     6    7     8    9     10    11   12    13    14    15
+            Hexadecimal     0    1    2    3    4    5     6    7     8    9     A     B     C    D     E     F
+            Octal           0    1    2    3    4    5     6    7    10    11    12    13   14    15    16    17
+            Binary          0    1   10   11   100   101   110   111   1000  1001  1010  1011  1100  1101  1110  1111
+
+
+           Example
+
+           Find the octal and hexadecimal expansions of 11 1110 1011 1100         
+                                                                            2
+           Solution
+
+
+
+               Octal:  11 1110 1011 1100     011 111  010 111  100 
+
+
+
+                                            2                         2
+                                                 37274 
+                                                        8
+               Hexadecimal:  11 1110 1011 1100    0011 1110 1011 1100  
+
+
+
+
+
+
+                                                 2                          2
+                                                    3EBC  
+                                                             16
+
+
+           Example
+           Find the binary expansions of 765   and  8D 
+                                                      A
+                                              8            16
+           Solution
+
+               765    111 110 101 
+                     8                2
+                8A D    1010 1000 1101      
+                      16                   2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             28]]></page><page Index="29"><![CDATA[Algorithms for Integer Operations
+
+
+           Addition Algorithm
+           To add a and b, first add their rightmost bits. This gives
+
+               a   b   c  2 s
+                0    0    0      0
+
+               a   b  c   c  
+                                2 s
+                1    1   0    1      1
+
+
+           Example
+
+           Add  a   1110   and   b   1011 
+                          2                   2
+           Solution
+
+               a   b                                c   0,   s  1
+                         0 1 0 2 1
+                0    0                                      0        0
+               a   b  c                           c   1,   s 
+                             1 1 0 1 2 0
+                                                                       0
+                1    1   0                                  1       1
+               a   b   c                          c   1,   s 
+                             1 0 1 1 2 0
+                                                                        0
+                2    2    1                                 2       2
+               a   b  c                           c   1,   s  1
+                             1 1 1 1 2 1
+                3    3    2                                 3       3
+               Therefore,  s     11001 
+                             a b
+                                            2
+               (carry ) c   1 1 1
+                                1 1 1 0
+
+                               1 0 1 1
+                        s   1   1 0 0 1
+
+
+
+           Example
+
+
+           How many additions of bits are required to use Algorithm 2 to add two integers with n bits (or less) in
+           their binary representations?
+
+           Solution
+               Two integers are added by successively adding pairs of bits. Adding each pair of bits and the carry
+               requires two additions of bits. Thus, the total number of additions of bits used is less than twice the
+               number of bits in the expansion. Hence, the number of additions of bits used by Algorithm 2 to add
+               two n-bit integers is O(n).
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             29]]></page><page Index="30"><![CDATA[Multiplication Algorithm
+
+                      0     1             n 1 
+           ab  a b 0  2  b 1 2    b n 1 2
+
+                         0                      n 1 
+                                    1
+                    a b 0  2    a b 1 2     a b n 1 2
+
+
+           Algorithm: Multiplication of Integers
+
+           for j := 0 to n  1
+                                     
+                  if b   then c    : a  shifted j places
+                          1
+                      j            j
+                           
+                  else c  : 0
+                         j
+           p := 0
+           for j := 0 to n  1
+                         
+                     : p   p c
+                            j
+           Return p {p is the value of ab}
+
+
+
+           Example
+
+           Find the product of  a   110   and b  101 
+                                        2              2
+           Solution
+
+                   110
+                    101
+                  11 0
+
+                  0 0 0
+
+
+               1 1 0
+               1111 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             30]]></page><page Index="31"><![CDATA[Modular Exponential
+
+
+                                  n
+           It is important to find b  mod  m  efficiently, where b, n and m are large integers.
+
+                                       2 a
+                n
+                                     1
+               b   b a k   1  2   k   1    a    0   b a k   1  2   k   1    b a 1  2   b   a 0
+
+           Example
+
+                      11
+           Compute 3
+
+           Solution
+                                         8 2 1
+               11   1011      3 11    3 3 3
+                          2
+                                          2
+                         4
+                2
+                                   8
+               3   9, 3    81, 3        6561
+                                       81
+
+                11    8 2 1
+               3    3 3 3
+
+                    6561 9 3 
+                         
+                    177,147
+
+
+
+           Example
+           Use Algorithm 5 to find 3 644 mod   645
+
+           Solution
+
+                                                                       2
+               i  0    a   0   x  1                       Power   3 mod    645 9 mod    645 9
+                                                                                  
+                                                                                               
+                        0
+                                                                       2
+               i  1   a   0    x  1                       Power   9 mod    645 81 mod    645 81
+                                                                                  
+                                                                                                
+                       1
+               i   2    a  1   x   1  81 mod  645   81   Power  81 mod    645   6561 mod   645 111
+                                                                        2
+                                                                                                   
+                        2
+                                                                         2
+               i  3   a   0    x  81                      Power   111 mod    645 12,321 mod    645   66
+                                                                                    
+                       3
+                                                                        2
+               i   4    a   0    x  81                    Power   66 mod    645  4356 mod   645   486
+                        4
+                                                                         2
+               i  5    a   0    x  81                     Power   486 mod    645   236,196 mod   645 126
+                                                                                                        
+                       5
+                                                                         2
+               i  6    a   0   x  81                      Power   126 mod    645 15,876 mod     645  396
+                                                                                    
+                        6
+                                                                         2
+               i  7    a  1   x   81 396   mod  645   471    Power   396 mod   645 156,816   mod   645  81
+                        7
+                                                                        2
+               i  8   a   0    x   471                    Power   81 mod    645   6561 mod   645 111
+                                                                                                   
+                       8
+               i  9    a  1   x   471  111  mod  645  36
+                       9
+
+           This shows that following steps of Algorithm 5 produces the result 3 644  mod  645   36
+
+
+                                                             31]]></page><page Index="32"><![CDATA[Exercises  Section 2.4 – Integer Representations and Algorithms
+
+
+
+           1.   Convert the decimal expansion of each of these integers to a binary expansion
+                   a)  321             b)  1023           c)  100632          d)  231             e)  4532
+
+           2.   Convert binary the expansion of each of these integers to a decimal expansion
+
+                       a)  11011                      b)  10 1011 0101              c)  111011 1110          d)
+                                   2                                      2                                2
+
+                       e)  1111100 0001 1111          f)  11111                     g)  10 0000 0001         h)
+
+
+
+                                                2                   2                                      2
+                           10 0101 0101                   110 1001 0001 0000                                   k)
+
+
+
+                       i)                 2             j)                       2
+
+           3.   Convert the binary expansion of each of these integers to an octal expansion
+                    a)  1111 0111                          b)  1010 1010 1010 
+
+
+
+                                   2                                              2
+                    c)  111 0111 0111 0111                 d)  101 0101 0101 0101 
+
+
+                                             2                                        2
+
+           4.   Convert the octal expansion of each of these integers to a binary expansion
+                   a)  572           b)  1604          c)  423           d)  2417 
+                             8                    8                 8                    8
+
+           5.   Convert the hexadecimal expansion of each of these integers to a binary expansion
+                   a)  80E                     b)  135AB                    c)   ABBA 
+                             16                              16                             16
+                   d)   DEFACED                e)   BADFACED                f)   ABCDEF   
+                                    16                             16                          16
+
+           6.   Show that the binary expansion of a positive integer can be obtained from its hexadecimal expansion
+                by translating each hexadecimal digit into a block of four binary digits.
+
+           7.   Show that the binary expansion of a positive integer can be obtained from its octal expansion by
+                translating each octal digit into a block of three binary digits.
+
+           8.   Explain how to convert from binary to base 64 expansions and from base 64 expansions to binary
+                expansions and from octal to base 64 expansions and from base 64 expansions to octal expansions
+
+           9.   Find the sum and product of each of these pairs of numbers. Express your answers as a base 3
+                expansions
+                    a)  112  ,  210                      b)  2112  ,  12021 
+                             3         3                                3           3
+                    c)  20001  ,  1111                   d)  120021  ,  2002 
+                                3         3                               3          3
+
+
+
+
+
+
+                                                             32]]></page><page Index="33"><![CDATA[10.  Find the sum and product of each of these pairs of numbers. Express your answers as an octal
+                expansion.
+
+                    a)  763  ,  147                      b)  6001  ,  272 
+                             8         8                                8         8
+                    c)  1111  ,  777                     d)  54321  ,  3456 
+                              8         8                                8          8
+
+           11.  Find the sum and product of each of these pairs of numbers. Express your answers as an
+                hexadecimal expansion.
+                                                                                A
+                    a)  1AE   ,   BBC                    b)  20CBA    ,   01 
+                              16          16                              16         16
+                    c)   ABCDE    ,  1111                d)   0000E     ,   BAAA 
+                                                                  E
+                                  16         16                            16           16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             33]]></page><page Index="34"><![CDATA[Section 2.5 – Primes and Greatest Common Divisors
+
+
+
+           Primes
+
+
+           Definition
+           An integer p greater than 1 is called prime of the only positive factors of p are 1 or p.
+           A positive integer that is greater than 1 and is not prime is called composite.
+
+
+           Example
+
+           The integer 7 is prime because its only positive factors are 1 and 7.
+           The integer 9 is composite because its is divisible by 3.
+
+
+           Theorem  The Fundamental Theorem of Arithmetic
+
+           Every integer greater than 1 can be written uniquely as a prime or as the product of two or more primes
+           where the prime factors are written in order of nondecreasing size.
+
+
+           Example
+
+           Find the prime factorization of 100, 641, 999, and 1024.
+           Solution
+
+                                    2
+                                2
+                       
+               100   2 2 5 5    2  5
+                   
+               641 641
+                                 3
+               999          3 37
+                     3 3 3 37 
+                                   
+               1024   2 2 2 2 2 2      2 2  2 2   2 10
+
+
+           Trial Division
+
+
+           Theroem
+           If n is a composite integer, then n has a prime divisor less than or equal to  n
+
+           Proof
+                                                                                             
+             If n is composite, then it has a factor a (by definition of a composite integer) with 1 a   n . Hence, by
+             the definition of a factor, we have  n   ab , b  positive integer  1  .
+
+             If  a   n  and  b    n , then  ab   n   n  , which is a contradiction. Consequently,
+                                                          n
+             a    n and b   n . Because both a and b are divisors of n, we see that n has a positive divisor not
+             exceeding  n . This divisor is either prime or, by the fundamental theorem of arithmetic, has a prime
+
+             divisor less than itself. In either case, n has a prime divisor less than or equal to  n .
+
+                                                             34]]></page><page Index="35"><![CDATA[Example
+
+           Show that 101 is prime
+           Solution
+
+               The only primes not exceeding  101  are 2, 3, 5, 7. Because 101 is not divisible by 2, 3, 5, or 7 (the
+
+               quotient of 101 and each of these integers is not an integer). It follows that 101 is prime.
+
+
+           Example
+           Find the prime factorization of 7007
+
+           Solution
+
+               None of the primes 2, 3, and 5 divides 7007. However, 7 divides 7007, with  7007   1001, and
+                                                                                          7
+               1001    143,  143    13. Because 13 is prime, the procedure is completed.
+                 7           11
+               It follows that the prime factorization is 70 07  7    2  11  13
+
+
+
+           The Sieve of Eratosthenes
+
+           The Sieve of Eratosthenes can be used to find all primes not exceeding a specified positive integer. For
+           example, begin with the list of integers between 1 and 100.
+
+           a.  Delete all  the integers, other than 2, divisible by 2.
+           b.  Delete all the integers, other than 3, divisible by 3.
+           c.  Next, delete all the integers, other than 5, divisible by 5.
+           d.  Next, delete all the integers, other than 7, divisible by 7.
+           e.  Since all the remaining integers  are not divisible by any of the previous integers, other than 1, the
+               primes are:   {2,3,7,11,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89, 97}
+
+
+           If an integer n is a composite integer, then it has a prime divisor less than or equal to  n .
+           To see this, note that if n = ab, then   a   n or b   n .
+
+           Trial division, a very inefficient method of determining if a number n  is prime, is to try every integer i ≤
+
+             n  and see if n is divisible by i.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             35]]></page><page Index="36"><![CDATA[The Sieve of Eratosthenes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           The infinitude of Primes
+
+                                                                                                   ,
+           It has long been known that there are infinitely many primes. This means that whenever  p  p  ,    ,  p
+                                                                                                  1   2       n
+           are the n smallest primes, we know there is a larger.
+
+
+           Theorem
+
+           There are infinitely may primes.
+
+                                                    ,
+           Proof:  Assume finitely many primes:   p  p  ,    ,  p
+                                                   1   2       n
+           Let  q   p p     p   1. Either q is prime or by the fundamental theorem of arithmetic it is a product of
+                    1 2       n
+           primes. But none of the primes  p  divides q since if   p  | q, then  p   divide   q   p p     p   1
+                                           i                    i           i              1 2       n
+           .Hence, there is a prime not on the list  p  p  ,    ,  p It is either q, or if q is composite, it is a prime
+                                                   ,
+                                                  1   2        n
+                                                             36]]></page><page Index="37"><![CDATA[,
+           factor of q. This contradicts the assumption that   p  p  ,    ,  p  are all the primes. Consequently, there
+                                                            1   2        n
+           are infinitely many primes.
+
+
+           Mersenne Primes
+
+           Definition
+
+                                        p
+
+           Prime numbers of the form  2   , where  p is prime, are called Mersenne primes.
+                                           1
+
+           Example
+                                        5
+                2
+                                           1 37, 2  
+                   1 3, 2  
+               2          3  1 7, 2              7  1 127  are Mersenne primes.
+                      
+               2 11   1 2047  is not a Mersenne prime since 2047 = 23∙89.
+
+                                                       p
+           There is an efficient test for determining if   2   is prime. The largest known prime numbers are
+                                                          1
+           Mersenne primes. 47 Mersenne primes were known, the largest  is 2 43,112,609  − 1, which has nearly 13
+           million decimal digits.
+
+
+           Distribution of Primes
+
+           Mathematicians have been interested in the distribution of prime numbers among the positive integers. In
+           the nineteenth century, the prime number theorem was proved which gives an asymptotic estimate for the
+           number of primes not exceeding x.
+
+
+
+           Theorem  Prime Number
+           The ratio of the number of primes not exceeding x and   x   approaches 1 as x grows without bound. (lnx
+                                                                ln x
+           is the natural logarithm of x),
+
+
+           The theorem tells us that the number of primes not exceeding x, can be approximated by   x  .
+                                                                                                 ln x
+           The odds that a randomly selected positive integer less than n is prime are approximately
+
+            / ln /n  n   n   1
+                         ln n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             37]]></page><page Index="38"><![CDATA[Greatest Common Divisor
+
+
+           Definition
+           Let a and b be integers, not both zero. The largest integer d such that d | a and also d | b is called the
+           greatest common divisor of a and b. The greatest common divisor of a and b is denoted by gcd(a,b).
+
+           One can find greatest common divisors of small numbers by inspection.
+
+           Example
+
+           What is the greatest common divisor of 24 and 36?
+
+           Solution
+
+               gcd(24,26) = 12
+
+
+           Example
+
+           What is the greatest common divisor of 17 and 22?
+           Solution
+
+               gcd(17,22) = 1
+
+
+           Definition
+           The integers a and b are relatively prime if their greatest common divisor is 1.
+
+           Example 17 and 22
+
+
+           Definition
+                                                                          
+                                                                                                 
+           The integers  a  a  ,    ,  a are pairwise relatively prime if  gcd a a     1 whenever 1 i   j  .
+                                                                             ,
+                          ,
+                                                                                                          n
+                         1   2        n                                     i   j
+
+           Example
+           Determine whether the integers 10, 17 and 21 are pairwise relatively prime.
+
+           Solution
+               Because gcd(10,17) = 1, gcd(10,21) = 1, and gcd(17,21) = 1, 10, 17, and 21 are pairwise relatively
+               prime.
+
+
+           Example
+
+           Determine whether the integers 10, 19, and 24 are pairwise relatively prime.
+
+           Solution
+               Because gcd(10,24) = 2, 10, 19, and 24 are  not pairwise relatively prime.
+                                                             38]]></page><page Index="39"><![CDATA[Least Common Multiple
+
+
+           Definition
+
+           The least common multiple of the positive integers a and b is the smallest positive integer that is divisible
+           by both a and b. It is denoted by lcm(a,b).
+
+           The least common multiple can also be computed from the prime factorizations.
+
+                                                                  
+                                                                     ,b
+                                                                                    ,b
+                                                       ,b
+                                             
+                                                             p
+                                     lcm  , a  b   p max a 1 1  max a 2 2   p max a n n 
+                                                  1           2              n
+           This number is divided by both a and b and no smaller number  is divided by a and b.
+
+           Example
+                     3 5 2   4 3    max 3,4   max 5,3   max 2,0 
+
+               lcm  2 3 7 , 2 3      2        3         7 
+                                      4
+                                             2
+                                         5
+                                     2  3  7
+
+
+           Theorem
+                                                                       
+                                                             
+           Let a and b be positive integers. Then  ab   gcd  , a b lcm a b
+                                                                    ,
+
+
+           Euclidean Algorithm
+
+           The Euclidian algorithm is an efficient method for computing the greatest common divisor of two
+           integers. It is based on the idea that gcd(a,b) is equal to gcd(a,c) when a > b and c is the remainder when
+           a is divided by b.
+
+
+           Lemma 1
+                                                                        
+                                                                                   
+                      
+           Let  a   bq r , where a, b, q, and r are integers. Then  gcd a b   gcd  , b r
+                                                                    ,
+
+           Proof
+             Suppose that d divides both a and b. Then d also divides a − bq = r. Hence, any common divisor of a
+             and b must also be any  common divisor of b and r. Suppose that d divides both b and r. Then d also
+             divides bq + r = a. Hence, any common divisor of a and b must also be a common divisor of b and r.
+                                           
+                                
+             Therefore,  gcd  ,a b   gcd  ,b r .
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             39]]></page><page Index="40"><![CDATA[Example
+
+           Find  gcd (91, 287)
+           Solution
+
+               287 = 91 ∙ 3 + 14        Divide 287 by 91
+
+                91 = 14 ∙ 6 + 7         Divide 91 by 14
+                14 =  7 ∙ 2 + 0         Divide 14 by 7
+
+               gcd (287, 91) = 7
+
+
+
+           Example
+
+           Find  gcd (414, 662)
+
+           Solution
+               662 = 414 ∙ 1 + 248      Divide 662 by 414
+
+               414 = 248 ∙ 1 + 166      Divide 414 by 248
+
+               248 = 166 ∙ 1 + 82       Divide 248 by 166
+               166 = 82 ∙ 2 + 2         Divide 166 by 82
+
+                82 = 2 ∙ 41 + 0         Divide 82 by 2
+
+               gcd(414, 662) = 2
+
+
+           Euclidean Algorithm
+
+             procedure gcd(a, b: positive integers)
+             x := a
+             x := b
+             while   y ≠ 0
+                    r := x mod y
+                    x := y
+                    y := r
+             return x {gcd(a,b) is x}
+
+
+           GCDs as Linear Combinations
+
+           Bézout’s Theorem
+
+           If a and b are positive integers, then there exist integers s and t such that  gcd(a,b) = sa + tb.
+
+
+
+
+
+                                                             40]]></page><page Index="41"><![CDATA[Definition
+           If a and b are positive integers, then integers s and t such that  gcd(a,b) = sa + tb are called Bézout
+           coefficients of a and b. The equation gcd(a,b) = sa + tb  is called Bézout’s identity.
+
+
+           Example
+
+           Express gcd(252,198) = 18 as a linear combination of 252 and 198.
+
+           Solution
+               First use the Euclidean algorithm to show gcd(252,198) = 18
+                 i.   252 = 1∙198 + 54
+                ii.   198 = 3 ∙54 + 36
+                iii.   54 = 1 ∙36 + 18
+                iv.   36 = 2 ∙18
+
+               Now working backwards, from  iii and i above
+                  18 = 54 −  1 ∙36
+                  36 = 198 −  3 ∙54
+                                nd
+                                                    st
+               Substituting the 2  equation into the 1  yields:
+                  18 = 54 −  1 ∙(198 −  3 ∙54 )= 4 ∙54 −  1 ∙198
+               Substituting 54 = 252 −  1 ∙198 (from i)) yields:
+                   18 = 4 ∙(252 −  1 ∙198) −  1 ∙198 = 4 ∙252 −  5 ∙198
+
+               This method illustrated above is a two pass method. It first uses the Euclidian algorithm to find the
+               gcd and then works backwards to express the gcd as a linear combination of the original two integers.
+               A one pass method, called the extended Euclidean algorithm, is developed in the exercises.
+
+
+
+           Lemma 2
+
+           If a, b, and c are positive integers such that gcd(a, b) = 1 and a | bc, then a | c.
+
+           Proof
+             Assume gcd(a, b) = 1 and a | bc
+             Since gcd(a, b) = 1, by Bézout’s Theorem  there are integers s and t such that  sa + tb = 1.
+             Multiplying both sides of the equation by c, yields sac + tbc = c.   a | tbc and  a divides sac + tbc since
+             a | sac and a|tbc. We conclude a | c, since  sac + tbc = c.
+
+
+
+           Lemma 3
+
+           If p is prime and   p a a    a , then  p a for some i.
+                                1 2     n           i
+             Lemma 3 is crucial in the proof of the uniqueness of prime factorizations.
+
+
+
+                                                             41]]></page><page Index="42"><![CDATA[Uniqueness of Prime Factorization
+
+
+           We will prove that a prime factorization of a positive integer  where the primes are in nondecreasing order
+           is unique.
+
+           Proof  (by contradiction)
+           Suppose that the positive integer n can be written as a product of primes in two distinct ways:
+               n   p p     p  and  n   q q    q
+                    1 2      s          1 2      t
+           Remove all common primes from the factorizations to get
+                          p p        p    q q       q
+                           i 1  i 2  i u    j 1  j 2  j v
+           By Lemma 3, it follows that    p  divides  q  , for some k, contradicting the assumption that  p  and
+                                          i 1         j k                                               i 1
+           q    are distinct primes.
+             j k
+           Hence, there can be at most one factorization of n into primes in nondecreasing order.
+
+
+           Dividing Congruences by an Integer
+
+           Theorem
+
+           Let m be a positive integer and let a, b, and c be integers. If ac ≡ bc (mod m) and gcd(c,m) = 1, then a ≡ b
+           (mod m).
+
+
+           Proof
+
+             Since ac ≡ bc (mod m), m | ac − bc = c(a − b)   by Lemma 2  and the fact that gcd(c,m) = 1, it follows
+             that   m | a − b.  Hence, a ≡ b (mod m).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             42]]></page><page Index="43"><![CDATA[Exercises  Section 2.5 – Primes and Greatest Common Divisors
+
+
+
+
+           1.   Determine whether each of these integers is prime.
+                  a)  21              b)  29              c)  71            d)  97              e)  111
+
+                  f)  143             g)  19              h)  27             i)  93             j)  101
+                  k)  107             l)  113
+
+           2.   Find the prime factorization of each these integers.
+
+                  a)  88              b)  126             c)  729            d)  1001           e)  1111
+                  f)  909,090         g)  39              h)  81             i)  101            j)  143
+
+                  k)  289             l)  899
+
+           3.   Find the prime factorization of 10!
+
+           4.   Show that if  a m   1 is composite if a and m are integers greater than 1 and m is odd. [Hint: Show
+                                                        m
+                that x + 1 is a factor of the polynomial  a   1 if m is odd]
+
+                                                               n
+           5.   Show that if  2 m   1 is an odd prime, then  m   2  for some nonnegative integer n. [Hint: First show
+                                                                                      
+                                                  k
+                                                                                  k
+                the polynomial identity  x m   1   x  1     x k t   1     x   k t   2      x  1  holds, where  m   kt  and t
+                                                                                      
+                                                                                     
+                is odd]
+
+           6.   Which positive integers less than 12 are relatively prime to 12?
+           7.   Which positive integers less than 30 are relatively prime to 30?
+
+           8.   Determine whether the integers in each of these sets are pairwise relatively prime.
+
+                  a)  21, 34, 55         b)  14, 17, 85        c)  25, 41, 49, 64    d)  17, 18, 19, 23
+                  e)  11, 15, 19         f)  14, 15, 21        g)  12, 17, 31, 37     h)  7, 8, 9, 11
+
+           9.   We call a positive integer perfect if it equals the sum of its positive divisors other than itself
+
+                  a)  Show that 6 and 28 are perfect.
+                                  p 1   p                             p
+                  b)  Show that  2     2  1  is a perfect number when  2    is prime
+                                                                            1
+
+                              n
+                                  1
+           10.  Show that if  2   is prime, then n is prime.  Hint: Use the identity
+                                                                 
+                                                             a
+                            a
+                 2 ab   1   2  1      2   a b   1    2   a b   2     2  1
+                                 
+                                                                 
+                                                                 
+
+           11.  Determine whether each of these integers is prime, verifying some of Mersenne’s claims
+                                                9
+                       7
+                  a)  2                   b)  2                  c)  2 11  1            d)  2 13   1
+                           1
+                                                   1
+
+                                                             43]]></page><page Index="44"><![CDATA[12.  What are the greatest common divisors of these pairs of integers?
+
+                        2
+                           3
+                               5
+                  a)  2  3  5 , 2    5  3   3  5   2
+                                            9
+                           
+                                                 
+                                  
+                                              
+
+                  b)  2 3 5 7 11 13, 2  11  3 11 17 14
+                             17
+
+                  c)  17, 17
+                  d)  2   2  7, 5 13    3 
+                  e)  0, 5
+
+                                   
+                          
+                  f)  2 3 5 7, 2 3 5 7 
+                           3
+                              3
+                       7
+                  g)  3  5  7 , 2 11  3   5  5   9
+
+                                  9
+                                      7
+                                         5
+                                             3
+                            
+                  h)  11 13 17, 2   3  5  7
+                        
+
+                         31
+
+                  i)  23 , 23  17
+                                    
+                                        
+                         
+                            
+                  j)  41 43 53, 41 43 53
+
+                  k)  1111, 0
+
+
+           13.  What is the least common multiple of each pair
+                                   5
+                                          2
+                                       3
+                           3
+                               5
+                        2
+                  a)  2  3  5 , 2  3  5
+
+                                            9
+                                  
+                           
+                                              
+                                                 
+
+                  b)  2 3 5 7 11 13, 2  11  3 11 17 14
+                             17
+
+                  c)  17, 17
+                  d)  2   2  7, 5 13    3 
+                  e)  0, 5
+                                   
+                          
+                  f)  2 3 5 7, 2 3 5 7 
+                           3
+                              3
+                       7
+                  g)  3  5  7 , 2 11  3   5  5   9
+
+                                         5
+                                             3
+                                  9
+                                      7
+                            
+                  h)  11 13 17, 2   3  5  7
+                        
+
+                         31
+                  i)  23 , 23    17
+                                        
+                            
+                         
+                  j)  41 43 53, 41 43 53
+                                    
+
+                  k)  1111, 0
+
+           14.  Find gcd(1000, 625) and lcm(1000, 625) and verify that  gcd 100, 625    lcm  100, 625    1000 625  
+           15.  Find gcd(92928, 123552) and lcm(92928, 123552) and verify that
+                                    
+                 gcd 92928, 123552 lcm   92928, 123552        92928 123552
+
+
+           16.  Use the Euclidean algorithm to find
+                  a)  gcd 1, 5            b)  gcd 100, 101       c)  gcd 123, 277       d)  gcd 1529, 14039   
+                  e)  gcd 1529, 14038      f)  gcd 12, 18       g)  gcd 111, 201       h)  gcd 1001, 1331   
+                                                                            
+                  i)  gcd 12345, 54321       j)  gcd 1000, 5040       k)  gcd 9888, 6060   
+
+                                                             44]]></page><page Index="45"><![CDATA[17.  Prove that the product of any three consecutive integers is divisible by 6.
+
+           18.  Show that if a, b, and m are integers such that  m   and  a    b mod  m  , then
+                                                                 2
+                          
+                                       
+                 gcd  ,a  m   gcd  ,b  m
+           19.  Prove or disprove that  n   2  79n   1601 is prime whenever n is a positive integer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             45]]></page><page Index="46"><![CDATA[Section 2.6 – Applications of Congurences
+
+
+
+
+           Hashing Functions
+
+           Definition
+
+           A hashing function h assigns memory location h(k) to the record that has k as its key.
+
+           A common hashing function is  h(k) = k mod m, where m is the number of memory locations. Because
+           this hashing function is onto, all memory locations are possible.
+
+
+           Example
+           Find the memory locations assigned by the hashing function h(k) = k mod 111 to the records of customers
+           with Social Security numbers 064212848, 037149212, and 107405723.
+
+           Solution
+
+               This hashing function  assigns the records of customers with social security numbers as keys to
+               memory locations in the following manner:
+
+                  h(064212848) = 064212848 mod 111 = 14
+                  h (037149212) = 037149212 mod 111 = 65
+                  h (107405723) = 107405723 mod 111 = 14,
+               But since location 14 is already occupied, the record is assigned to the next available position, which
+               is 15.
+
+
+
+           The hashing function is not one-to-one as there are many more possible keys than memory locations.
+           When more than one record is assigned to the same location, we say a collision occurs.  Here a collision
+           has been resolved by assigning the record to the first free location. For collision resolution, we can use a
+           linear probing function:
+                                                    ,
+                                            h k
+                                    h  , k  i       i  mod  m ,  where i from 0 to m – 1.
+           There are many other methods of handling with collisions. You may cover these in a later CS course.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             46]]></page><page Index="47"><![CDATA[Pseudorandom Numbers
+
+
+           Randomly chosen numbers are needed for many purposes, including computer simulations.
+           Pseudorandom numbers are not truly random since they are generated by systematic methods.
+           The linear congruential method is one commonly used procedure for generating pseudorandom numbers.
+           Four integers are needed: the modulus m, the multiplier a, the increment c, and seed x , with  2   a   m , 0
+                                                                                             0
+                                                                                    
+           ≤ c < m,   0   x   m . We generate a sequence of pseudorandom numbers  x   , with 0   x   m  for all
+                         0                                                           m              n
+           n, by successively using the recursively defined function
+                                                                  
+                                                  x       ax   c  mod  m
+                                                   n 1      n
+
+           Example
+
+           Find the sequence of pseudorandom numbers generated by the linear congruential method with modulus
+                                                                 3
+           m = 9, multiplier a = 7, increment c = 4, and seed  x  .
+                                                             0
+           Solution
+                                                                                                      
+               Compute the terms of the sequence by successively using the congruence  x      7x   4  mod  9   ,
+                                                                                       n 1      n
+                         3
+               with  x  .
+                     0
+                                
+                                                  
+                                              
+                   x   7x  4  mod   9    7 3 4  mod  9     25 mod  9     7
+                    1      0
+                                
+                   x    7x   4  mod  9    7 7 4      mod  9     53 mod  9     8
+                    2      1
+                                
+                                                   
+                                              
+                   x    7x  4  mod  9     7 8 4  mod  9     60 mod  9     6
+                    3      2
+                                
+                                                   
+                                              
+                   x    7x   4  mod  9     7 6 4  mod  9     46 mod  9    1
+                    4      3
+                                
+                                                  
+                   x    7x  4  mod  9     7 1 4  mod           9     2
+                                              
+                                                         9 11 mod
+                    5      4
+                                
+                   x    7x   4  mod  9     7 2 4      mod   9 18   mod  9     0
+                    6      5
+                                
+                   x    7x  4  mod  9    7 0 4      mod  9    4 mod  9     4
+                    7      6
+                                
+                                                   
+                   x    7x  4  mod  9     7 4 4  mod  9     32 mod  9     5
+                                              
+                    8      7
+                                
+                   x    7x   4  mod  9    7 5 4      mod  9     39 mod  9     3
+                    9      8
+               The sequence generated is 3, 7, 8, 6, 1, 2, 0, 4, 5, 3, 7, 8, 6, 1, 2, 0, 4, 5, 3, …  It repeats after
+               generating 9 terms.
+
+
+             Commonly, computers use a linear congruential generator with increment c = 0. This is called a pure
+                                                                       31
+                                                                                             5
+               multiplicative generator. Such a generator with modulus 2  − 1 and multiplier  7  = 16,807 generates
+                31
+               2 − 2 numbers before  repeating.
+
+                                                             47]]></page><page Index="48"><![CDATA[Check Digits:  UPCs
+
+
+           A common method of detecting errors in strings of digits is to add an extra digit at the end, which is
+           evaluated using a function. If the final digit is not correct, then the string is assumed not to be correct.
+
+
+           Example
+           Retail products are identified by their Universal Product Codes (UPCs). Usually these have 12 decimal
+           digits, the last one being the check digit. The check digit is determined by the congruence:
+
+                       3x  x   3x   x   3x   x   3x   x   3x   x    3x   x     0  mod   10 
+                         1    2     3   4     5    6     7    8     9    10     11   12
+
+             a)  Suppose that the first 11 digits of the UPC are 79357343104. What is the check digit?
+             b)  Is 041331021641 a valid UPC?
+
+           Solution
+                                    
+               a)  3 7 9 3 3 5 3 7 3 3 4 3 3 1 0 3 4 x                    0  mod   10 
+                                                                     12
+                     
+                   98 x      0  mod   10 
+                        12
+                   x     0  mod   10 .   So, the check digit is 2.
+                    12
+                                      3 1 3  
+                     0 4 3  
+               b)  3      1 3 3         0 2 3               mod  10 
+                                                       1 6
+                                                             3 4 1 0
+                   44   4     mod   10 
+                   Hence, 041331021641  is not a valid UPC.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             48]]></page><page Index="49"><![CDATA[Exercises           Section 2.6 – Applications of Congurences
+
+
+
+           1.   Find the memory locations assigned by the hashing function h(k) = k mod 97 to the records of
+                customers with Social Security numbers?
+                 a)  034567981              b)  183211232           c)  220195744           d)  987255335
+                 e)  104578690              f)  432222187           g)  372201919           h)  501338753
+
+           2.   A parking lot has 31 visitor spaces, numbered from 0 to 30. Visitors are assigned parking spaces
+                using the hashing function h(k) = k mod 31, where k is the number formed from the first three digits
+                on a visitor’s license plate.
+                  a)  Which spaces are assigned by the hashing function to cars that have these first three digits on
+                      their license plates: 317, 918, 007, 100, 111, 310
+                  b)  Describe a procedure visitors should follow to find a free parking space, when the space they
+                      are assigned is occupied.
+
+           3.   Find the sequence of pseudorandom numbers generated by the linear congruential generator
+                                      
+                  a)  x        3x   2  mod   13 with seed  x  1.
+                        n 1     n                         0
+                                     
+                                                              3
+                                             7
+                  b)  x        4x   1  mod  with seed  x  .
+                        n 1     n                        0
+
+           4.   Find the sequence of pseudorandom numbers generated by using the pure multiplicative generator
+                 x      3x  mod   11 with seed  x  .
+                                                    2
+                  n 1    n                     0
+
+           5.   The first nine digits of the ISBN-10 of the European version of the fifth edition of this book are
+                       
+                  
+                 0 07 119881. What is the check digit for that book?
+
+           6.   The ISBN-10 of the sixth edition of Elementary Number Theory and Its Applications is
+                 0 321 500 1 8Q     , where Q is a digit. Find the value of Q.
+
+
+                                                                             ,
+           7.   The USPS sells money orders identified by 11-digit number  x  x   ,    ,  x . The first ten digits
+                                                                            1   2       11
+                identify the money order:  x   is a check digit that satisfies  x    x   x     x   mod  9   .  Find
+                                           11                              11    1    2        10
+                the check digit for the USPS money orders that have identification number that start with these ten
+                digits
+                 a)  7555618873             b)  6966133421          c)  8018927435          d)  3289744134
+                 e)  74051489623            f)  88382013445         g)  56152240784         h)  66606631178
+
+           8.   Determine which single digit errors are detected by the USPS money order code.
+
+           9.   Determine which transposition errors are detected by the USPS money order code.
+
+
+
+
+
+
+                                                             49]]></page></pages></Search>
