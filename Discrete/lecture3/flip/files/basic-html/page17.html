@@ -152,77 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Lamé’s Theorem
+    <pre style="white-space:pre-line"><code>Fibonacci Numbers
 
-             Let a and b be positive integers with a ≥ b.  Then the number of divisions used by the Euclidian
-                                      
-             algorithm to find  gcd a  b  is less than or equal to five times the number of decimal digits in b.
-                                  ,
+             Example
 
-             Proof
+             The Fibonacci numbers are defined as follows:
 
-                                                                     
-                When we use the Euclidian algorithm to find gcd  ,a  b  with a ≥ b,
-                                              
-                n divisions  are used to obtain  with a   r 0 , b   r 1   :
+                     f =  0
+                      0
+                     f = 1
+                      1
+                     f =  f    +  f
+                     n     n−  1  n−  2
+             Find  f  ,  f  ,  f  ,  f
+                   2   3   4  5
+             Solution
 
-                    r   r q   r   0   r   r
-                     0   1 1    2       2    1
-                    r   r q   r   0   r   r
-                     1   2 2    3       3    1
+                 f =  f +  f
+                  2    1    0
+                      10
+                    = +
+                    = 1
 
+                 f =  f +  f
+                  3    2    1
+                    = 11+
+                    =  2
 
-                    r      r  q      r   0   r   r
-                     n 2   n 1 n 1  n       n    n 1
-                    r      r q
-                     n 1   n n
+                 f =  f +  f
+                  4    3    2
+                    =  21+
+                    =  3
 
-                                                                          2
-                Since each quotient  q  q  ,   , q    is at least 1 and  q  :
-                                      ,
-                                     1   2       n 1                 n
-                    r   1   f
-                     n       2
-                    r      2r   2 f   f
-                     n 1    n     2    3
-                    r      r     r   f   f   f
-                     n  2  n  1  n    3    2    4
-
-                    r   r   r   f     f      f
-                     2    3   4    n  1  n  2   n
-                    b   r   r   r   f   f    f
-                        1    2   3     n    n  1  n  1
-
-                                                                                              
-                It follows that if n divisions are used by the Euclidian algorithm to find gcd a  b  with a ≥ b, then
-                                                                                          ,
-                b   f   .   f      n 1 , for n &gt; 2, where      1  5  . Therefore, b     n 1 .
-                      n 1   n 1                               2
-
-                Because  log   0.208   1 , logb   n    1 log   n  1 . Hence,  n  1 5 logb 
-
-                                        5                         5
-                                                               k
-                Suppose that b has k decimal digits. Then b &lt; 10  and  logb  . It  follows that n − 1 &lt; 5k and
-                                                                            k
-                since k is an integer, n ≤  5k.
-
-                As a consequence of Lamé’s Theorem, O(log b) divisions are used by the Euclidian algorithm to
-                              
-                          ,
-                find gcd a  b whenever a &gt; b.
+                 f =  f +  f
+                  5    4    3
+                    =  32+
+                    = 5
 
 
+             Example
 
 
+             Show that whenever  n ≥  3,  f =  α  n− 2 , where α =  1+  5
+                                         n                       2
+             Solution
+                                      2
+                Basis Step: n = 3, α&lt; =   f
+                                           3
+                                               2
+                                   2
+                           n = 4,  α=      1+  5   
+                                          2  
+
+                                     =  6 25+
+                                          4
 
 
+                                     =  3+  5  &lt;  3 =  f
+                                          2          4
 
-
-
-
-
-                                                             17</code></pre>
+                Inductive Step: Assume that  P  holds   f = α k− 2
+                                              k
+                                                        k
+                                                              153</code></pre>
      	</div>
     
      </div>

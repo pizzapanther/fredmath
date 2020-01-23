@@ -152,80 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises  Section 1.2 – Propositional Equivalences
+    <pre style="white-space:pre-line"><code>Example
+
+                                            q
+             Show that  ( p¬  →  ) q  and  p ∧¬  are logically equivalent.
+
+             Solution
+
+                ¬ ( p →   ) q ≡¬ ( pq¬ ∨  )
+                          ≡ ¬ ( p¬  ) ∧¬
+                                       q
+                          ≡  p ∧¬
+                                  q
+
+                                     p     q      p  → q    ¬  ( p  →  ) q     ¬q    p ∧¬q
+                                     T     T        T           F         F          F
+                                     T     F        F           T         T          T
+
+                                     F     T        T           F         F          F
+                                     F     F        T           F         T          F
 
 
+             Example
 
-           1.   Use the truth table to verify these equivalences
-                  a)  p    T  p
-                  b)  p      F  p
+                                                   q
+             Show that  ( p¬  ∨¬     ))  and  p¬ ∧¬  are logically equivalent by developing a series of logical
+                              ( pq∧
+             equivalences.
 
-                  c)  p      F  F
-                  d)  p    T  T
-                  e)  p  p   p
+             Solution
 
-                  f)  p   p   p
+                                     p
+                ¬ ( p ∨ ( pq¬∧  )) ≡ ¬∧ ¬ ( pq¬∧  )            By De Morgan’s law
+                                 ≡ ¬ p ∧ ( p ∨¬  ) q           Double negation law
 
-                                 
-                           
-                              
-           2.   Show that   p  and p are logically equivalent
-           3.   Use the truth table to verify the commutative laws
-                         
-                                  p
-                  a)  p q q
-                         
-                  b)  p q q 
-                                  p
+                                 ≡  ( p¬∧  p ) ( p∨ ¬∧ ¬  ) q    Distribution law
 
-           4.   Use the truth table to verify the associative laws
-                                             
-                  a)   p q      p  q r
-                         
-                                         
-                             r
-                                             
-                         
-                                         
-                  b)   p q      p  q r
-                             r
-
-           5.   Show that each of these conditional statements is a tautology by using truth result tables.
-                  a)   p q     p
-                         
-                                 
-                  b)  p    p q
-                              
-                  c)        p    q
-                        p
-                            
-                         
-                  d)   p q     p     q
-                  e)    p    q 
-                                    p
-                  f)       p   p q      
-                                        q
-                                    
-                                q 
-                      
-                  g)   p   q          r       p    r
-                      
-                  h)      p   p    q      q
-
-                                q
-           6.   Show that  p   and  p q     p     q  are logically equivalent
-                           
-           7.   Show that   p       q  and  p     q are logically equivalent
-
-           8.   Show that  p   and  q   are logically equivalent
-                                               p
-                                q
-           9.   Show that  p    q  and  p     q are logically equivalent
-           10.  Show that  p   q   p     r  and  p   q r    are logically equivalent
+                                                                 p
+                                 ≡ F  ∨ ¬       ) q            ¬∧    p ≡ F
+                                       ( p ∧¬
+                                 ≡ ( p¬ ∧¬  ) q ∨ F            Commutative law for disjunction
+                                         q
+                                 ≡ ¬ p ∧¬                      Identity law
 
 
-           11.  Show that  p   r  q     r  and  p q     r  are logically equivalent
-                                                             15</code></pre>
+             Example
+
+             Show that ( pq∧  ) →  ( pq∨  )  is a tautology.
+
+
+             Solution
+                ( pq∧  ) →  ( pq∨  ) ≡  ¬  ( pq∧  ) ( pq∨  ∨  )
+
+
+                                  ≡  ( p¬ ∨¬ q ) ( pq∨  ∨  )    By De Morgan’s law
+                                    ( p
+                                            ) ( qq
+                                  ≡ ¬∨     p ∨ ¬∨      )       By Associative and commutative laws
+                                  ≡   ∨ T T
+                                  ≡ T
+
+                                                              15</code></pre>
      	</div>
     
      </div>

@@ -152,31 +152,31 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>n 1
-                           k
-                         ar            Shifting the index of summation with  k   j   1
-                      k  1
+    <pre style="white-space:pre-line"><code>n+ 1
+                     ∑      k
+                                                                               j
+                    =     ar            Shifting the index of summation with k = + 1
+                      k  1 =
                        n
-                           k     n 1   
-                         ar   ar      a
+                     ∑      k  (   n+ 1   )
+                    =     ar +  ar     −  a
 
-                      k  0
-                                     
-                      S   ar n 1  a
+                      k= 0
+                                     )
+                    =  S +  ( ar n+ 1 −  a
                        n
-                                     
-               rS   S    ar n 1   a
+                                     )
+               rS =  S +  ( ar n+ 1 −  a
                  n     n
-               r    1 S   ar n 1   a
+               (r −  ) 1 S =  ar n+ 1 −  a
                        n
-                       n 1
-               S    ar     a
-                 n     r  1
-                                      n           n
-                                 n           j  
-               If r = 1, then the  S    a   1    a  n    1 a
 
-                                     j  0        j  0
+               S =   ar n+ 1 − a
+                 n     r − 1
+                                      n           n
+                                 n ∑          j  ∑
+               If r = 1, then the  S =   a ( ) 1  =  a = (n +  ) 1 a
+                                     j= 0         j= 0
 
 
 
@@ -185,26 +185,26 @@ function MM_swapImage() { //v3.0
            Double summations arise in many contexts (as in the analysis of nested loops in computer programs). An
            example of a double summation is
                     4   3
-                         ij
+                   ∑∑      ij
 
 
-                   i  1 j  1
+                   i= 1 j= 1
 
            To evaluate the double sum, first expand the inner summation and then continue by computing the outer
            summation
 
                     4   3       4
-                                i   2i  3i 
-                           ij 
-                   i 1 j 1    i 1
+                   ∑∑ ∑            (i +  2i +  3i )
+                           ij =
 
+                   i= 1 j= 1    i= 1
                                 4
-                              
-                                  6i
-                               i 1
-                                      
-                              6 12 18 24
-                               60
+                              ∑
+                             =     6i
+                               i= 1
+
+                             =  6 12 18 24+  +  +
+                             = 60
 
 
 
@@ -215,7 +215,7 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              7</code></pre>
+                                                             93</code></pre>
      	</div>
     
      </div>

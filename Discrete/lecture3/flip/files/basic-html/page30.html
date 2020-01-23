@@ -152,39 +152,37 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Division Rule
-
-             Definition
-             There are n/d ways to do a task if it can be done using a procedure that can be carried out in n ways,
-             and for every way w, exactly d of the n ways correspond to way w.
-               Restated in terms of sets: If the finite set A is the union of n pairwise disjoint subsets each with d
-                elements, then n = |A|/d.
-               In terms of functions: If f is a function from A to B, where both are finite sets, and for every value y
-                ∈ B there are exactly d values x ∈ A such that f(x) = y, then   |B| = |A|/d.
+    <pre style="white-space:pre-line"><code>Counting Subsets of a Finite Set
 
 
+          Example
 
-             Example
+          Use the product rule to show that the number of different subsets of a finite set S is 2 S  .
 
-             How many ways are there to seat four people around a circular table, where two seatings are
-             considered the same when each person has the same left and right neighbor?
+          Solution
+             When the elements of S are listed in an arbitrary order, there is a one-to-one correspondence between
+                                                               th
+             subsets of S and bit strings of length |S|.  When the i  element is in the subset, the bit string has a 1 in
+             the ith position and a 0 otherwise.
 
-             Solution
-
-                Number the seats around the table from 1 to 4 proceeding clockwise.
-                There are four ways to select the person for seat 1, 3 for seat 2, 2, for seat 3, and one way for seat
-                4.
-                Thus there are 4! = 24 ways to order the four people.
-                But since two seatings are the same when each person has the same left and right neighbor, for
-                every choice for seat 1, we get the same seating.
-                Therefore, by the division rule, there are 24/4 = 6 different seating arrangements.
+             By the product rule, there are  2 S   such bit strings, and therefore  2  S   subsets.
 
 
 
+          Product Rule in Terms of Sets
 
-
-
-
+                       ,
+                   ,
+            If  A A      , A  are finite sets, then the number of elements in the Cartesian product of these sets
+                 1   2        m
+             is the product of the number of elements of each set.
+            The task of choosing an element in the Cartesian product  A ×  A ×    ×  A is done by choosing an
+                                                                      1    2           m
+                                             ,
+             element in  A , an element in  A and an element in  A .
+                          1                 2                        m
+            By the product rule, it follows that:  A ×  A ×   ×  A  =  A ⋅  A ⋅   ⋅   A
+                                                  1    2          m      1    2        m
 
 
 
@@ -218,7 +216,17 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             30</code></pre>
+
+
+
+
+
+
+
+
+
+
+                                                           166</code></pre>
      	</div>
     
      </div>

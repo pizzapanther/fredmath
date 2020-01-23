@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 56 - Discrete Lecture 4</title>
+        <title>Page 56 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 56 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 56 - Lecture 4</div>
         <div id="content-top2">P. 56</div>
      </div>
      <div id="content-middle">
@@ -152,53 +152,48 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 4.7  Representing Graphs and Graph
-
-                                               Isomorphism
+    <pre style="white-space:pre-line"><code>Incidence Matrices
 
 
-
-             Use the adjacency list to represent the given graph, then represent with an adjacency matrix
-
-               1.                                   2.
-
-
-
-
-
-
-
-
-
-
-
-
-               3.                                  4.
-
-
+                      V E
+                                                                ,
+                                                                                                  ,
+             Let G = ( ,   )  be undirected graph. Suppose that v v 2 , , v  are the vertices and e  e 2 , , e
+                                                                                                 1
+                                                               1
+                                                                                                            n
+                                                                          n
+             are the edges of G. Then the incident matrix with respect to this ordering of V and E is the  nm
+                                                                                                     ×
+             matrix  M  =    m    , where
+                             ij   
+                                  1 when edge e  is incident with v
+                                 
+                           m =                   j                 i
+                             ij
+                                   0  otherwise
 
 
+             Example
+
+             Represent the graph shown with an incidence matrix.
+             Solution
+
+                The incidence matrix is
+
+                         e  e e  e e   e
+                          1  2  3   4  5   6
+                    v 1    11 0000
+                    v 2      0 01 1 01      
+                    v 3    0000 11
+                    v 4      1 0 1 000      
+
+                    v 5      01 01 1 0      
 
 
+             Example
 
-
-
-
-
-
-
-             5.   Draw a graph with the given adjacency
-
-                                              ) b    0 0 1 1          ) c    1 1 1 0
-                     ) a    0 1 0                                                 
-                          1 0 1                    0 0 1 0                0 0 1 0  
-                                  
-                                                  1 1 0 1                1 0 1 0
-                            0 1 0                                               
-                                                    1 1 1 0                1 1 1 0  
-
-             6.   Represent the given graph using adjacency matrix
-                    a)                             b)                            c)
+             Represent the graph shown below with an incidence matrix.
 
 
 
@@ -212,19 +207,19 @@ function MM_swapImage() { //v3.0
 
 
 
+             Solution
 
-             7.   Draw an undirected graph represented by the given adjacency
-                                                                        ) c    0 1  3 0  4
-                                              ) b  1   2 0 1                            
-                     ) a  1   3 2                                        1  2 1  3 0  
-                                                  2 0 3 0                3 1 1 0 1
-                                  
-                           3 0  4                 0   3 1 1                            
-                             2 4 0                                     0  3 0 0    2 
-                                                    1  0 1 0                 4 0 1  2 3   
+                The incidence matrix is
 
+                         e  e e  e e   e   e  e
+                          1  2  3  4  5   6   7   8
+                    v 1    111 00000
+                    v 2      0 111 0 11 0          
+                    v 3    000 11 000
 
-                                                             56</code></pre>
+                    v 4      000000 11             
+                    v 5      0000 11 00            
+                                                            246</code></pre>
      	</div>
     
      </div>

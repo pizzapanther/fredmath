@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 44 - Discrete Lecture 4</title>
+        <title>Page 44 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 44 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 44 - Lecture 4</div>
         <div id="content-top2">P. 44</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Handshake Theorem
+    <pre style="white-space:pre-line"><code>Definition
 
 
-             If G is any graph, then the sum of the degrees of all the vertices of G equals twice the number of edges
-                                                     ,
-             of G. Specially, if the vertices of G are  v  v  ,   , v , where n is a nonegative integer, then
-                                                    1   2       n
-                                                
-                                                                          
-                                                          
-                                         
-                    The total degree of G  deg v 1    deg v 2        deg v n
-                                                                       
-                                            2   the number of edges of G
+             Let m and n be a positive integers. A complete bipartite graph on (m, n) vertices, denoted  K   is a
+                                                                                                       , mn
+                                                 ,
+             simple graph with distinct vertices v  v  ,   , v   and  w  w    ,  ,  , w that satisfies the following
+                                                1  2        m        1    2       n
+             properties:
+             For all i, k = 1, 2, …, m and for all  j, l = 1, 2, …, n,
 
-             Corollary
-
-             The total degree of a graph is even.
-
-
-             Example
-
-             Draw a graph with the specified properties or show that no such graph exists.
-                a)  A graph with four vertices of degrees 1, 1, 2, and 3
-                b)  A graph with four vertices of degrees 1, 1, 3, and 3
-                c)  A simple graph with four vertices of degrees 1, 1, 2, and 3
-
-             Solution
-
-                a)  No such graph is possible. By Corollary, the total degree of a graph is even.
-                    But a graph with four vertices of degrees 1, 1, 2, and 3 would have a total degree of
-                      
-                    1 1 2    which is odd.
-                              3
-                                 7
-                b)  Let G be any of the graphs shown below
-
-
-
-
-
-
-
-                    In each case, no matter how the edges are labeled,  deg a      deg   1b    and
-
-                                   
-                    deg   c   deg d  3
-                c)  There is no simple graph with four vertices of degrees 1, 1, 3, and 3.
+                1.  There is an edge from each vertex  v  to each vertex  w
+                                                      i                  j
+                2.  There is no edge from each vertex  v  to any other vertex v
+                                                       i                     k
+                3.  There is no edge from each vertex  w  to any other vertex  w
+                                                        j                     l
 
 
              Example
 
-             Is it possible in a group of 9 people for each to be friends with exactly five others?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Definition
+
+
+             A graph H is said to be a subgraph of a graph if, and only if, every vertex in H is also a vertex in G,
+             every edge in H is also an edge in G, and every edge in H has the same endpoints as it has in G.
+
+
+             Example
+
+                                                                                  {
+                                                            {
+                                                               ,
+                                                                                     ,
+                                                                                         ,
+             List all subgraphs of the graph G with vertex set  v v 2 }  and edge set  e  e  e 3 }  where the
+                                                              1
+                                                                                    1
+                                                                                        2
+             endpoints of e  are  v and  v , the endpoints of e  are v and v  and e  is a loop atv .
+                          1      1      2                    2      1      2       3            1
              Solution
 
-                Imagine constructing an “acquaintance graph” in which each of the nine people represented by a
-                vertex and 2 vertices are joined by an edge if, and only if, the people they represent are friends.
-                Suppose each of the people were friends with exactly five others. Then the degree of each of the 9
-                vertices of the graph would be 5, and so the total degree of the graph would be 45 (odd).
-                Contradicts Corollary, which says that the total degree of a graph is even.
-                Therefore, the answer is no.
 
-                                                             44</code></pre>
+
+
+
+
+
+
+
+
+                                                            234</code></pre>
      	</div>
     
      </div>

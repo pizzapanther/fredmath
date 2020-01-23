@@ -152,49 +152,47 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>We can use an iterative approach to solve this recurrence relation by repeatedly expressing Hn in terms
+                of the previous terms of the sequence.
 
-             Find a recurrence relation for C , the number of ways to parenthesize the product of  n + 1 numbers,
-                                           n
-             x  x  x     x   , to specify the order of multiplication. For example,C  , since all the possible
-                                                                                      5
-              0   1   2     n                                                     3
-             ways to parenthesize 4 numbers are
-                        x  x 1    x   3      x   x  x 2   x   3      x   x 1   x  x 3 
-                                                                                      
-                               x 
-                                                                                         2
-                                                                                0
-                       0
-                                                        1
-                                                   0
-                                2
-                                   x 
-                    x      x  x            x   x   x   x  
-                     0     1   2    3             0    1    2   3
-             Solution
-                Note that however parentheses are inserted in  x   x  x  x   , one  “∙” operator remains  outside
-                                                              0   1   2     n
-                all parentheses. This final operator appears between two of the n + 1 numbers, say  x  and  x  .
-                                                                                                 k       k  1
-                Since there are C  ways  to insert parentheses in the product  x  x   x  x   and C     ways
-                                                                                                    
-                                 k                                           0   1   2     k       n k   1
-                to insert parentheses in the product  x  x       x   , we have
-                                                    k   1  k   2  n
-                    C    C C      C C          C    C   C    C
-                      n    0  n 1   1 n  2        n 2 1     n 1 0
-                          n 1
-                          
-                             C C  n k  1
-                                    
-                                k
-                          k 0
-                The initial conditions are C   C   1.
-                                           0    1
+                    H =   2H     + 1
+                      n       n− 1
+                            (
+                         =  22H n− 2  +  1 +  )  1
+
+                            2
+                         = 2 H     ++
+                                     21
+                               n− 2
+                                        )
+                         =  2 2 ( 2H n− 3  + 1 ++
+                                            21
+                            3
+                                      2
+                                          21
+                         =  2 H    +  2 ++
+                               n− 3
+                             
+                         =  2 n−  1 H + 2 n−  2  + 2 n−  3  + ++      since  H = 1
+                                                        21
+                                 1                                            1
+                                                    21
+                         =  2 n−  1  +  2 n−  2  +  2 n−  3 + ++
+                                                        Using the formula for the sum of the terms of geometric series
+                            n
+                         =  2 − 1
 
 
+                There was a myth created with the puzzle. Monks  in a tower in Hanoi are transferring 64 gold disks
+                from one peg to another following the rules of the puzzle.  They move one disk each day. When the
+                puzzle is finished, the world will end.
+                Using this formula for the 64 gold disks of the myth,
+                     64
+                    2   − 1 = 18,446, 744,073, 709,551,615 days are needed to solve the puzzle, which is more than
+                    500 billion years.
 
+                Reve’s puzzle (proposed in 1907 by Henry Dudeney) is similar but has 4 pegs. There is a well-known
+                unsettled conjecture for the minimum number of moves needed to solve this puzzle.
 
 
 
@@ -208,31 +206,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             49</code></pre>
+                                                              185</code></pre>
      	</div>
     
      </div>

@@ -152,54 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>15.  How many positive integers less  than 1000
+    <pre style="white-space:pre-line"><code>Division Rule
 
-                    g)  Are divisible by 7?
-                    h)  Are divisible by 7 but not by 11?
-                    i)  Are divisible by both 7 and 11?
-                    j)  Are divisible by either 7 or 11?
-                    k)  Are divisible by exactly one of 7 and 11?
-                    l)  Are divisible by neither 7 nor 11?
-                    m)  have distinct digits?
-                    n)  have distinct digits and are even?
 
-             16.  A committee is formed consisting of one representative from each of the 50 states in the United
-                  States, where the representative from a state is either the governor or one of the two senators
-                  from that state. How many ways are there to form this committee?
+             Definition
 
-             17.  How many license plates can be made using either three digits followed by three uppercase
-                  English letters or three uppercase English letters followed by three digits?
+             There are n/d ways to do a task if it can be done using a procedure that can be carried out in n ways, and
+             for every way w, exactly d of the n ways correspond to way w.
+               Restated in terms of sets: If the finite set A is the union of n pairwise disjoint subsets each with d
+                elements, then n = |A|/d.
 
-             18.  How many license plates can be made using either two uppercase English letters followed by
-                  four digits or two digits followed by four uppercase English letters?
+               In terms of functions: If f is a function from A to B, where both are finite sets, and for every value y ∈
+                B there are exactly d values x ∈ A such that f(x) = y, then   |B| = |A|/d.
 
-             19.  How many license plates can be made using either three uppercase English letters followed by
-                  three digits or four uppercase English letters followed by two digits?
 
-             20.  How many strings of eight English letter are there
-                  a)  that contain no vowels, if letters can be repeated?
-                  b)  that contain no vowels, if letters cannot be repeated?
-                  c)  that start with a vowel, if letters can be repeated?
-                  d)  that start with a vowel, if letters cannot be repeated?
-                  e)  That contain at least one vowel, if letters can be repeated?
-                  f)  That contain at least one vowel, if letters cannot be repeated?
 
-             21.  How many ways are there to seat four of a group of ten people around a circular table where two
-                  seatings are considered the same when everyone has the same immediate left and immediate right
-                  neighbor?
+             Example
+             How many ways are there to seat four people around a circular table, where two seatings are considered
+             the same when each person has the same left and right neighbor?
 
-             22.  In how many ways can a photographer at a wedding arrange 6 people in a row from a group of 10
-                  people, where the bride and the groom are among these 10 people, if
-                  a)  The bride must be in the picture?
-                  b)  Both the bride and groom must be in the picture?
-                  c)  Exactly one of the bride and the groom is in the picture?
+             Solution
 
-             23.  How many different types of homes are available if a builder offers a choice of 6 basic plans, 3
-                  roof styles, and 2 exterior finishes?
-             24.  A menu offers a choice of 3 salads, 8 main dishes, and 7 desserts. How many different meals
-                  consisting of one salad, one main dish, and one dessert are possible?
+                Number the seats around the table from 1 to 4 proceeding clockwise.
+                There are four ways to select the person for seat 1, 3 for seat 2, 2, for seat 3, and one way for seat 4.
 
-                                                             33</code></pre>
+                Thus, there are 4! = 24 ways to order the four people.
+                But since two seating’s are the same when each person has the same left and right neighbor, for every
+                choice for seat 1, we get the same seating.
+
+                Therefore, by the division rule, there are 24/4 = 6 different seating arrangements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              169</code></pre>
      	</div>
     
      </div>

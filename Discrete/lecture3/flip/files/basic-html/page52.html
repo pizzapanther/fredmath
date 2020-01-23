@@ -154,72 +154,78 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-             What is the solution to the recurrence relation  a   a    2a      with  a    2  and a    7 ?
-                                                           n     n  1     n  2       0           1
-             Solution
-                The characteristic equation is   r  2   r    2   0.
-                Its roots are r = 2 and r = −1. Therefore, {an} is a solution to the recurrence relation if and
-                                               n
-                                    n
-                                            
-                 only if   a     2       1 , for some constants   and    .
-                          n     1        2                             1       2
-                To find the constants   and    , note that
-                                       1       2
-                           a             2
-                             0     1     2
-                             a    2        7 .
-                             1       1     2
-                Solving these equations, we find that     3  and      1.
-                                                      1            2
+          Find a recurrence relation for C , the number of ways to parenthesize the product of  n + 1 numbers,
+                                        n
+          x ⋅  x ⋅  x   x ⋅  , to specify the order of multiplication. For example,C = , since all the possible ways
+                                                                                   5
+           0   1   2     n                                                     3
+          to parenthesize 4 numbers are
+                  ( (  x ⋅  0  x 1 ) )  x ⋅  3     ( x ⋅  0  ( x ⋅  1  x 2 ))  x ⋅  3     ( x ⋅  0  x ⋅  1 ) ( x ⋅  2  x 3 )
+                            x ⋅
+                             2
 
-                                                                  3 2  
-                Hence, the solution is the sequence {an} with  a    n    1  n
-                                                              n
+                                x ⋅
+                 x ⋅  ( (  x ⋅  x  ) )        x ⋅  ( x ⋅  ( x ⋅  x  ))
+                  0     1   2    3             0    1    2   3
+          Solution
+             Note that however parentheses are inserted in  x ⋅  x ⋅  x   x ⋅  , one  “∙” operator remains  outside all
+                                                           0   1   2     n
+             parentheses. This final operator appears between two of the n + 1 numbers, say  x  and  x  . Since
+                                                                                            k       k+ 1
+             there are C  ways  to insert parentheses in the product  x ⋅  x ⋅  x   x ⋅  and C   ways  to insert
+                                                                                           −−
+                        k                                           0   1   2     k       nk   1
+             parentheses in the product  x    x ⋅  ⋅   x ⋅  , we have
+                                         k+  1  k+  2    n
 
-
-             An Explicit Formula for the Fibonacci Numbers
-
-             Example
-
-             We can use Theorem to find an explicit formula for the Fibonacci numbers. The sequence of Fibonacci
-             numbers satisfies the recurrence relation  f   f    f        with the initial conditions:  f    0
-                                                      n     n  1   n  2                              0
-             and  f   1.
-                  1
-             Solution
-
-                                                        2
-                                                            r
-                The roots of the characteristic equation   r     are  r     1  5
-                                                               1 0
-                                                                         1,2     2
-                 Therefore, from the theorem it follows that the Fibonacci numbers are given by
-                                                                  n               n
-                                                          1  5         1  5 
-                                                 f                        
-                                                  n     1    2       2    2   
+                 C =   C C     +  CC      +   +  C  C +  C    C
+                   n    0 n−  1    1 n−  2       n−  21     n−  1 0
+                          1
+                       n−
+                       ∑
+                     =     CC   nk   1
+                                 −−
+                             k
+                       k= 0
+             The initial conditions are C =  C = 1.
+                                        0    1
 
 
-                Using the initial conditions  f    0  and  f   1 , we have
-                                             0           1
-                     f            0
-                      0     1     2
-                             1  5        1  5 
-                     f                           1
-                     1     1    2     2     2  
-                                                  
-                            
-                The solution to these simultaneous equations for    and   is      1   and       1
-                                                                  1       2     1     5        2       5
-                Consequently, the Fibonacci numbers are given by
-                                  n           5  n
-                         
-                               5 
-                 f    1   1       1   1   
-                  n     5   2        5    2   
 
-                                                             52</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           188</code></pre>
      	</div>
     
      </div>
@@ -229,7 +235,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page51.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>&nbsp;&nbsp;&nbsp;<a href="page55.html">55</a>&nbsp;&nbsp;&nbsp;<a href="page56.html">56</a>&nbsp;&nbsp;&nbsp;<a href="page57.html">57</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>
              </td>
              <td width="35%"><a href="page53.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

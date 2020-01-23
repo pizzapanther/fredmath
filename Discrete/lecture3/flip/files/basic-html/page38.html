@@ -152,66 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Corollary
-
-             Let n and r be nonnegative integers with     r ≤ n. Then C(n, r) = C(n, n − r).
-
-             Proof
-                                                       
-                From Theorem 2, it follows that   , n r      ! n
-                                                C
-                                                               
-                                                           r !(n r )!
-                    C
-                  and   , n n    r      ! n              ! n
-                                  (n  r )! n     n   r !     (n   r )! ! r
-                   Hence, C(n, r) = C(n, n − r).
+    <pre style="white-space:pre-line"><code>Section 3.4 − Permutations and Combinations
 
 
-             Definition
 
-             A combinatorial proof of an identity is a proof that uses one of the following methods.
-                A double counting proof uses counting arguments to prove that both sides of an identity count the
-                  same objects, but in different ways.
-                A bijective proof  shows that there is a bijection between the sets of objects counted by the two
-                  sides of the identity.
+          Permutation
 
 
-             Example
-
-             How many ways are there to select five players from a 10-member tennis team to make a trip to a
-             match at another school?
-
-             Solution
-
-                                                       
-                The number of combinations is  10, 5        10!      252
-                                               C
-                                                                      
-                                                                
-                                                           5! 10 5 !
+          A permutation of a set of distinct objects is an arrangement of the objects is a specific Order Without
+          repetition. An ordered arrangement of r elements of a set is called an r -permutation.
 
 
-             Example
-             A group of 30 people have been trained as astronauts to go on the first mission to Mars. How many
-             ways are there to select a crew of six people to go on this mission?
+          Theorem
 
-             Solution
+                                                               n
+          If n is a positive integer and r is an integer with 1 r≤ ≤ , then there are
+                                                 )
+                                           P ( ,nr =  ( n n − 1 )(n − 2 ) (n r−+  ) 1
+          r –permutation of a set with n distinct elements.
 
-                The number of possible crews is  30, 6C     30!    593,775
-                                                            6!24!
+          Proof
+
+             Use the product rule. The first element can be chosen in n ways. The second in n −  1 ways, and so on
+             until there are (n − ( r − 1)) ways to choose the last element.
 
 
-             Example
+          Corollary
+                                           n
+          If n and r are integers with 1 r≤ ≤ , then
+                                                     P    , nr  =  (nr− ! n  )!
 
-             How many bits strings of length n contain exactly r 1s?
 
-             Solution
 
-                The positions of r 1s in a bit string of length n form an r-combination of the set 1,2,3,  ,   n .
-                                 
-                There are   ,C n  r .
-                                                             38</code></pre>
+
+          Example
+
+          In mid 2007, eight candidates sought the Democratic nomination for president. In how many ways could
+          voters rank their first, second, and third choices?
+          Solution
+
+              P   = 336                                                    8 Math   →   Prob →     (nPr )   3
+               8,3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           174</code></pre>
      	</div>
     
      </div>

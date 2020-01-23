@@ -152,106 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>In these equivalences, T denotes the compound proposition that is always true and F denotes the
-           compound proposition that is always false.
+    <pre style="white-space:pre-line"><code>Example
 
+                                         q
+          Show that  ( pq¬  ∨  )  and  p¬ ∧¬  are logically equivalent.
+          Solution
 
-                                                   Logical Equivalences
-                                          Equivalence                       Name
-                                            p   T  p
-                                            p     F  p          Identity laws
-                                            p   T  T
+                                            )
+                p     q    pq        ( ∨ pq     ¬p   ¬q       ¬ ∧¬p  q
+                             ∨   ¬
+                T     T      T         F         F      F        F
 
-                                           p     F  F           Domination laws
-                                            p  p   p
-                                            p   p   p           Idempotent laws
+                T     F      T         F         F      T        F
 
-                                                 p             Double negation law
-                                              p 
-                                          p q q     p
-                                             
-                                             
+                F     T      T         F         T      F        F
+                F     F      F         T         T      T        T
+
+             The truth table shows that  ( pq¬  ∨  ) ↔ ¬ ∧¬  is a tautology and these compound propositions are
+                                                          q
                                                      p
-                                          p q q                  Commutative laws
-                                                           
-                                                        
-                                        
-                                      p q      p  q r
-                                            r
-                                                           
-                                                        
-                                        
-                                      p q      p  q r        Associative laws
-                                            r
-                                                              
-                                        
-                                                           
-                                             p q 
-                                  p  q r           p r
-                                                              
-                                                           
-                                  p  q r           p r      Distributive  laws
-                                             p q 
-                                        
-                                              
-                                           
-                                        p q    
-                                                         q
-                                                   p
-                                                                  De Morgan’s laws
-                                              
-                                           
-                                        p q   
-                                                         q
-                                                   p
-                                                   
-                                                
-                                         p   p q 
-                                                      p
-                                                                  Absorption laws
-                                                   
-                                               
-                                         p   p q 
-                                                      p
-                                           p T
-                                                p
-                                                                  Negation laws
-                                                p
-                                           p   F
+             logically equivalent.
 
-                    Logical Equivalences Involving                   Logical Equivalences Involving
-                    Conditional Statements                           Biconditional Statements
-                           q
-                                p q
-                      p                                             p      p  q          r
-                                                                                         q 
-                                                                             q
-                           q
-                                                                                         q
-                      p                                            p    
-                                                                                  p
-                                     p
-                                                                             q
-                                q
-                        
-                                    q
-                      p q                                            p      p q    p     q
-                               p
-                                                                             q
-                      p q    p     q                              p     q   p  
-                                                                                           q
-                        p    q   p 
-                                        q
-                                                     
-                               p 
-                       p  q          r   p  q r
-                                                  
-                       p  r  q   r   p q     
-                                                    r
-                       p  q   p     r   p  q r  
-                       p  r  q   r   p q     
-                                                    r
-                                                             12</code></pre>
+
+          Example
+
+          Show that  p →  and  pq¬∨  are logically equivalent.
+                         q
+          Solution
+
+                p    q    ¬p      ¬∨pq       p → q
+
+               T     T     F        T          T
+
+               T     F     F        F          F
+               F     T     T        T          T
+               F     F     T        T          T
+
+                                            q
+             The truth table shows that  p →  and  pq¬∨  are logically equivalent.
+
+
+          Example
+
+          Show that  p ∨  (qr∧  )  and ( pq∨  ) ( pr∧  ∨  ) are logically equivalent. This is the distributive law of
+          disjunction over conjunction.
+
+          Solution
+
+                                                        )
+                                       ∧
+                 p      q      r      qr        ∨ p  ( ∧ qr    pq       pr       ( ∨  pq ) ( ∨  ∧ p  ) r
+                                                                ∨
+                                                                          ∨
+                T       T      T       T           T            T        T               T
+                T       T      F       F           T            T        T               T
+                T       F      T       F           T            T        T               T
+                T       F      F       F           T            T        T               T
+                F       T      T       T           T            T        T               T
+                F       T      F       F           F            T        F               F
+                F       F      T       F           F            F        T               F
+                F       F      F       F           F            F        F               F
+
+                                                            12</code></pre>
      	</div>
     
      </div>

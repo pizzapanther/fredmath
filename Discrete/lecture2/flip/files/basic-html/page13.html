@@ -156,8 +156,8 @@ function MM_swapImage() { //v3.0
 
            Show that Algorithm 1 for finding the maximum element in a finite sequence of integers has all the
            properties listed.
-           Solution
 
+           Solution
                The input to Algorithm 1 is a sequence of integers. The output is the largest integer in the sequence.
                Each step of the algorithm is precisely defined, because only assignments, a finite loop, and
                conditional statements occur.
@@ -165,20 +165,20 @@ function MM_swapImage() { //v3.0
                The initial value of max is the first term; as successive terms of the sequence are examined. This
                argument shows that when all the terms have been examined, max equal the value of the largest
                term and it will take n steps.
+
                Algorithm 1 is general, because it can be used to find the maximum of any finite sequence of
                integers.
 
-                                                
-                Procedure max  a  a    2  ,    ,  a n
+                                {
+                Procedure max  a a     2  ,  , a n }
                                     ,
                                    1
                 max:=  a
                          1
                 for i := 2 to n
+                      if max &lt;  a then   max : a=
 
 
-                      if max   a then   max : a
-                                             
                                 i                i
                 return max{max is the largest element}
 
@@ -191,18 +191,18 @@ function MM_swapImage() { //v3.0
 
 
 
-           Algorithm 2  Linear Search
+           Algorithm 2 − Linear Search
 
            Given a list which does not have to be sorted, find element in the list
 
                                                       ,
-                procedure linear_search (x: integer; a  a  ,    ,  a : integers)
+                procedure linear_search (x: integer; a a   ,  , a : integers)
                                                      1   2        n
                 i := 1
-                while ( i ≤ n and  i     n  and   x   a i 
+                while ( i ≤ n and  i ≤  (  n  and  x ≠  a i )
 
-
-                       : i   i   1
+                          i
+                       : i = + 1
                 if  i ≤ n then location := i
                 else location := 0
                 {location is the subscript of the term that equals x, or it is 0 if x is not found}
@@ -211,7 +211,7 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             13</code></pre>
+                                                             99</code></pre>
      	</div>
     
      </div>

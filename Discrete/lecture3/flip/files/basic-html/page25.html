@@ -152,57 +152,51 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> 
-             5.   Give a recursive definition of the sequence  a n  ,  n  1, 2, 3,   if
+    <pre style="white-space:pre-line"><code>Theorem
 
-                    a)  a   6n           b)  a    2n   1                 n           d)  a 
-                                                                                                 5
-                         n                      n                c)  a   10                 n
-                                                                      n
-                    e)  a   4n   2                       n     g)  a     n n    1           2
-                                                        1
-                                                   1
-                         n                f)  a                    n                h)  a    n
-                                               n                                             n
+                                                   ( ) 1
+             If T is a full binary tree, then  ( ) ≤  nT  2 hT +  −  1
 
-             6.   Prove that  f  2    f  2      f  2    f f   when n is a positive integer and  f  is the nth Fibonacci
-                              1    2         n    n n 1                                  n
-                  number.
+             Proof
+                Use structural induction.
 
-             7.   Prove that  f   f      f      f   when n is a positive integer and  f  is the nth Fibonacci
-                              1    3        2n 1   2n                                  n
-                  number.
+                Basis step:  The result holds for a full binary tree consisting only of a root, n(T) = 1 and h(T) = 0.
+                           Hence, n(T) = 1  ≤ 2 0+1  – 1   = 1.
 
-             8.   Give a recursive definition of
-                  a)  The set of odd positive integers
-                  b)  The set of positive integers powers of 3
-                  c)  The set of polynomial with integer coefficients
-                  d)  The set of even integers
-                  e)  The set of positive integers congruent to 2 modulo 3.
-                  f)  The set of positive integers  not divisible by 5
-
-
-             9.   Let S be the subset of the set of ordered pairs of integers defined recursively by
-                    Basis step: (0, 0) ∊ S.
-                    Recursive step: If (a, b) ∊ S, then a  2, b    3   and a  3, b    2 
-                                                                  S
-                                                                                        S
-                  a)  List the elements of S produced by the first five applications of the recursive definition.
-                  b)  Use strong induction on the number of applications of the recursive step of the definition to
-                                   
-                      show that 5 a b  when (a, b) ∊ S.
-                                                             
-                  c)  Use structural induction to show that 5 a b  when (a, b) ∊ S.
-
-             10.  Let S be the subset of the set of ordered pairs of integers defined recursively by
-                    Basis step: (0, 0) ∊ S.
-                    Recursive step: If (a, b) ∊ S, then  ,a  b    1   S , a  1, b    1   and a   2, b    1 
-                                                                                S
-                                                                                                      S
-                  a)  List the elements of S produced by the first five applications of the recursive definition.
-                  b)  Use strong induction on the number of applications of the recursive step of the definition to
-                      show that  a   2b  whenever (a, b) ∊ S.
-                  c)  Use structural induction to show that  a   2b  whenever (a, b) ∊ S.
+                                                                       ( )
+                                          ( )
+                                                                                 ( ) 1
+                                                   ( ) 1+
+                                                                                   2
+                Recursive step:  Assume  n T 1  ≤  2 hT 1  −  1 and also  n T 2  ≤  2 hT +  −  1
+                                whenever T  and T  are full binary trees.
+                                            1      2
+                    n ( ) 1T =  +  n T +  ( ) ( )                     (by recursive formula of n(T))
+                                      n T
+                                          2
+                                  1
+                                            
+                                  ( ) 1 +
+                                                  ( ) 1 +
+                                                           
+                           1
+                         ≤+     2 hT 1  − 1 +  2 hT 2  − 1          (by inductive hypothesis)
+                                                           
+                                            
+                                                        
+                                      ( ) 1 hT+ 
+                         ≤ ⋅        hT 1   ,2  ( ) 1+  2      − 1
+                           2 max 2
+                                                    
+                                                                           (
+                                                  +
+                               max (hT       ( )) 1                           x  y     max ( , xy )
+                                     ( ) 1, hT+
+                         =  22 ⋅       1       2    −  1              ( max 2 ,2  )  =  2      )
+                                ( )
+                         =  22⋅  ht  −  1                             (by recursive definition of h(T))
+                              ( ) 1+
+                         =  2 ht   − 1
 
 
 
@@ -212,7 +206,31 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             25</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              161</code></pre>
      	</div>
     
      </div>

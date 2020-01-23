@@ -152,67 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Negating Multiple Quantifiers
+    <pre style="white-space:pre-line"><code>Example
 
 
-           The negation rules for single quantifiers:
-                   xP   x       x
-                                x P
-                   xP   x       x
-                                x P
-                 Essentially, you change the quantifier(s), and negate what it’s quantifying
+                                                                                           Cx
+             Translate the statement   ∀  ( x C ( ) x ∨∃  ( y C ( ) y ∧  F ( , xy )))  into English, Where  ( )  is “x has a
+                               )
+             computer,”  ( ,F x y  is “x and y  are friends,” and the domain for both x and y consists of all students in
+             your school.
+
+             Solution
+
+                The statement says
+                    For every student x in your school, x has a computer or there is a student y such that y has a
+                    computer and x and y are friends.
+                In other words
+                    Every student in your school has a computer or has a friend who has a computer.
 
 
-           Example
-                                                     
-                                                 
-           Express the negation of the statement  x y xy    1  so that no negation precedes a quantifier
-           Solution
+             Example
 
-               The negation is:  x   y xy    1
+                                                                                                                 )
+                                                                                     )
+             Translate the statement   ∃ x y∀ ∀  ( z F ( ,x y ) F∧  ( ,x z ) ( y∧  ≠  z )) → ¬ F ( ,y z  into English, where  ( ,F ab
+             means a and b are friends and the domain for both x, y and z consists of all students in your school.
 
-               Which is equivalent:    x   y xy    1
-                                         x y
-                                           xy    1
-                                       x   y xy    1
+             Solution
 
-
-
-                                                         
-                  
-                x y zP x y z        x      , , y z
-                                           y zP x
-                            , ,
-                                       x y 
-                                                   , , y z
-                                           zP x     
-                                                       
-                                            , , y z
-                                       x y z P x
+                The original statement says:
+                    There is a student x such that for all students y and all students z other than y, if x and y are friends
+                    and x and z are friends, then y and z are not friends.
+                In other words
+                    There is a student none of whose friends are also friends with each other.
 
 
+             Example
 
-           Consider ¬(xy P(x,y)) = xy ¬P(x,y)
-                 The left side is saying “for all x, there exists a y such that P is true”
-                 To disprove it (negate it), you need to show that “there exists an x such that for all y, P is false”
+             Express the statement “Everyone has exactly one best friend” as a logical expression involving predicates,
+             quantifiers with domain consisting of all people, and logical connectives.
+
+             Solution
+
+                For every person x, x has exactly one best friend y. “ x∀ (person x has exactly one best friend)” with
+                domain consisting of all people.
+                For every person z, if person z is not person y, then z is not the best friend of x.
+                           )
+                Let  ( ,B xy  be the statement “y is the best friend of x”.
+                Therefore; the statement can be expressed as:
+                              )
+                            ,
+                    ∃     ( ( y B x y ∧∀  ( ( z z ≠  ) y → ¬ B ( ,x z )))
+                The original statement can be expressed as:
+                                 )
+                    ∀ x∃    ( ( y B x y ∧∀  ( ( z z ≠  ) y → ¬ B ( ,x z )))
+                              ,
 
 
-           Consider ¬(xy P(x,y)) = xy ¬P(x,y)
-                 The left side is saying “there exists an x such that for all y, P is true”
-                 To disprove it (negate it), you need to show that “for all x, there exists a y such that P is false”
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             31</code></pre>
+                                                              31</code></pre>
      	</div>
     
      </div>

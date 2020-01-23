@@ -152,69 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Proofs by Contradiction
+    <pre style="white-space:pre-line"><code>Example
 
-           The basic ides of a proof of contradiction is to assume that the statement we want to prove is false.
-           That is, the supposition that p is false followed necessarily by the conclusion q from not p, where q is
-           false, which implies that p is true.
-               Given a statement p, assume it is false, assume ¬ p
-                    Prove that ¬ p cannot occur
-                      o  A contradiction exists
-                      o  Given a statement of the form p → q
-                      o  To assume it’s false, you only have to consider the case where p is true and q is false
+          Prove that the sum of two rational numbers is rational. (Note that if we include the implicit quantifiers
+          here, the theorem we want to prove is “For every real number r and every real number s, if r and s are
+          rational numbers, the r + s is rational.)
 
+          Solution
 
-           Example
+                                                                                                             p
+                                                                                             0
+             From the definition of a rational number, that there exist integers p and q with  q ≠  such that  r =  ,
+                                                                                                            q
+                                          0
+             and integers t and u with u ≠  such that  s =  t  .
+                                                         u
+                 rs+=   p  +  t
+                        q   u
 
-
-           Show that at least four of any 22 days must fall on the same day of the week.
-           Solution
-
-               Let p be the proposition “at least four of any 22 days must fall on the same day of the week”
-               Suppose that ¬ p is true   “at most three of the 22 days fall on the same day of the week”.
-               There are 7 days per week   at most 3 of the chosen days could fall on that day. That contradicts the
-               premise that we have 22 days under consideration.
-                                                                                  
-               If r is the statement that 22 days are chosen, that we have shown that  p  r  .
-                                                                                                r
-               We know that p is true. We have proved that at least four of any 22 days must fall on the same day of
-               the week.
+                        pu qt+
+                      =
+                          qu
+                                                          0
+                          0
+                                    0
+             Because  q ≠  and u ≠ , it follows that  qu ≠ . Therefore; we have r + s is rational.
 
 
-           Example
+          Example
 
-           Prove that  2  is irrational by giving a proof by contradiction.
+                                        2
+          Prove that n is an integer and  n  is odd, then n is odd
 
-           Solution
+          Solution
 
-               Let p be the proposition “ 2  is irrational”.  Suppose that ¬ p is true   “ 2  is rational”.
-               If  2  is rational,  a and b   2   a
-                                
-                                                   b
-                           2      2   a 2      2   b   a
-                        2
-                            a
-                                                     2
-                                                          2
-                         
-                     2
-                            b              b 2
-                              2
-               It follows that  a  is even, that implies a must also be even. Therefore, by the definition of an even
-                                                                        2
-                                                                                        2
-               integer then we can let  a   2c  for some integer c. Thus,  2b   4c 2    b   2c 2
+                                                                         2
+                                              2
+                                                                                 1
+             Suppose that n is an integer and  n  is odd. Then,  k∃ ∈  ∋  n =  2k + .
+                            1
+              ⇒= ±     2k +  (which is not useful).
+                n
+             By using proof by contraposition, the statement n is not odd, that means n is even.
+             That implies that  k∃ ∈  ∋  n = 2k .
+                                                                                                   2
+             To prove the theorem, we need to show that this hypothesis implies the conclusion that  n  is not odd,
+                          2
+             that means  n  is even.
+                  2
+                           2
+                 n =  ( )
+                       2k
+                         2
+                     = 4k
+                        ( )
+                     = 22k  2
 
-                                                        2
-               By the definition of even, this means that b  is even, that implies b must also be even as well.
 
-               The assumption of ¬ p leads to the equation  2   a  ,  where a and b have no common factors, but
-                                                               b
-               both a and b are even, that is, 2 divides both a and b. However, our assumption ¬ p leads to the
-               contradiction that 2 divides both a and b and 2 doesn’t divide both a and b, ¬ p must be false.
-               That is, the statement p “ 2  is irrational” is true.
+                                  2
+             Which implies that n  is even.
+                                                      2
+             We have proved that n is an integer and  n  is odd, then n is odd by a proof of contraposition.
 
-                                                             40</code></pre>
+
+
+
+
+
+
+
+
+                                                            40</code></pre>
      	</div>
     
      </div>

@@ -153,63 +153,66 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Definition
-           Let p and q be propositions. The disjunction of p and q, denoted by  p q , is the proposition “p or q.“
 
-           The disjunction  p q  is false when both p and q are false and it’s true otherwise.
-
-
-                         Truth Table for the Conjunction          Truth Table for the Disjunction of
-                              of Two Propositions.                       Two Propositions.
-                           p       q          p q                  p        q          p q
-
-                          T        T            T                  T         T            T
-                          T        F            F                  T         F            T
-
-                          F        T            F                  F         T            T
-                          F        F            F                  F         F            F
-
-
-           Example
-
-           Find the disjunction of the propositions p and q where p is the proposition “your PC has more than 16GB
-           free hard disk space” and q is the proposition “your PC processor runs faster than 1 GHz.”
-
-           Solution
-                                   
-               The disjunction is  p q  and can be expressed as:
-                 Your PC has more than 16GB free hard disk space, or the processor in your PC runs faster than 1
-                  GHz.
-
-
-           Definition
-           Let p and q be propositions. The exclusive or of p and q, denoted by  p  , is the proposition that is true
-                                                                                  q
-           when exactly one of p and q is true and is false otherwise.
-
-
-                        Truth Table for the Exclusive Or           Truth Table for the Conditional
-                                                                                   p
-                              of Two Propositions.                       Statement  q .
-                           p       q          p q                  p        q          p q
-                          T        T           F                   T         T            T
-
-                          T        F            T                  T         F            F
-                          F        T            T                  F         T            T
-                          F        F           F                   F         F            T
+             Let p and q be propositions. The disjunction of p and q, denoted by  pq∨ , is the proposition “p or q.“
+             The disjunction  pq∨  is false when both p and q are false and it’s true otherwise.
 
 
 
+                          Truth Table for the Conjunction          Truth Table for the Disjunction of
+                               of Two Propositions.                       Two Propositions.
+                                                                                            ∨
+                                                 ∧
+                            p        q         pq                    p         q          pq
+                            T        T           T                   T        T             T
+                            T        F           F                   T        F             T
+                            F        T           F                   F        T             T
+
+                            F        F           F                   F        F            F
 
 
 
+             Example
+
+             Find the disjunction of the propositions p and q where p is the proposition “your PC has more than 16GB
+             free hard disk space” and q is the proposition “your PC processor runs faster than 1 GHz.”
+             Solution
+
+                                    ∨
+                The disjunction is  p q  and can be expressed as:
+                  Your PC has more than 16GB free hard disk space, or the processor in your PC runs faster than 1
+                    GHz.
 
 
+             Definition
 
+             Let p and q be propositions. The exclusive or of p and q, denoted by  p ⊕ , is the proposition that is true
+                                                                                   q
+             when exactly one of p and q is true and is false otherwise.
+
+
+                          Truth Table for the Exclusive Or          Truth Table for the Conditional
+                               of Two Propositions.                       Statement  →p  q .
+
+                            p        q         p ⊕q                  p        q          p  → q
+
+                            T        T           F                   T        T            T
+
+                            T        F           T                   T        F            F
+
+                            F        T           T                   F        T            T
+
+                            F        F           F                   F        F            T
 
 
 
 
-                                                              3</code></pre>
+
+
+
+
+
+                                                               3</code></pre>
      	</div>
     
      </div>

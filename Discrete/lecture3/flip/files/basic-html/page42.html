@@ -152,53 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>21.  Suppose that a department contains 10 men and 15 women. How many ways are there to form a
-                  committee with six members if it must have
-                    a)  The same number of men and women?
-                    b)  More women than men?
+    <pre style="white-space:pre-line"><code>Example
 
-             22.  How many bit strings contain exactly eight 0s and 10 1s if every 0 must be immediately followed
-                  by a 1?
+          A group of 30 people have been trained as astronauts to go on the first mission to Mars. How many ways
+          are there to select a crew of six people to go on this mission?
 
-             23.  How many bit strings contain exactly five 0s and 14 1s if every 0 must be immediately followed
-                  by two 1s?
+          Solution
+             The number of possible crews is
 
-             24.  A concert to raise money for an economics prize is to consist of 5 works; 2 overtures, 2 sonatas,
-                  and a piano concerto.
-                    a)  In how many ways can the program be arranged?
-                    b)  In how many ways can the program be arranged if an overture must come first?
+                      )
+              C (30, 6 =   30!
+                          6!24!
+                        =  593,775  ways
 
-             25.  A zydeco band from Louisiana will play 5 traditional and 3 original Cajun compositions at a
-                  concert. In how many ways can they arrange the program if
-                    a)  The begin with a traditional piece?
-                    b)  An original piece will be played last?
-             26.  In an election with 3 candidates for one office and 6 candidates for another office, how many
-                  different ballots may be printed?
 
-             27.  A business school gives courses in typing, shorthand, transcription, business English, technical
-                  writing, and accounting. In how many ways can a student arrange a schedule if 3 courses are
-                  taken? assume that the order in which courses are schedules matters.
+          Example
 
-             28.  If your college offers 400 courses, 25 of which are in mathematics, and your counselor arranges
-                  your schedule of 4 courses by random selection, how many schedules are possible that do not
-                  include a math course? Assume that the order in which courses are scheduled matters.
+          How many bits strings of length n contain exactly r 1s?
 
-             29.  A baseball team has 19 players. How many 9-player batting orders are possible?
+          Solution
 
-             30.  A chapter of union Local 715 has 35 members. In how many different ways can the chapter
-                  select a president, a vice-president, a treasurer, and a secretary?
+             The positions of r 1s in a bit string of length n form an r-combination of the set {1,2,3, ,  } n . There
+                        )
+                 C
+             are  ( , n r .
 
-             31.  An economics club has 31 members.
-                    a)  If a committee of 4 is to be selected, in how many ways can the selection be made?
-                    b)  In how many ways can a committee of at least 1 and at most 3 be selected?
 
-             32.  In a club with 9 male and 11 female members, how many 5-member committees can be chosen
-                  that have
-                    a)  All men?
-                    b)  All women?
-                    c)  3 men and 2 women?
+          Example
+          Suppose that there are 9 faculty members in the mathematics department and 11 in the computer science
+          department. How many ways are there to select a committee to develop a discrete mathematics course at a
+          school if the committee is to consist of three faculty member from the mathematics department and four
+          from the computer science department?
 
-                                                             42</code></pre>
+          Solution
+
+              C (9, 3 ⋅  ) (11, 4 = C  )  9!  ⋅  11!
+                                  3!6! 4!7!
+
+                                =  27,720  ways
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           178</code></pre>
      	</div>
     
      </div>

@@ -152,54 +152,46 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Structural Induction
+    <pre style="white-space:pre-line"><code>Well-Formed Formulae in Propositional Logic
+
+          Definition
+
+          The set of well-formed formulae in propositional logic involving T, F, propositional variables, and
+          operators from the set {¬, ∧, ∨, →, ↔}.
+
+          Basis step:  T, F, and s, where s is a propositional variable, are well-formed formulae.
+          Recursive step:  If E and F are well formed formulae, then   (¬ E), (E ∧ F), (E ∨ F), (E → F), (E ↔ F),
+                          are well-formed formulae.
 
 
-             Example
+          Examples
 
-             Show that the set S defined  by specifying that 3 ∊ S and that if x ∊ S and   y ∊  S, then x + y is in S, is
-             the set of all positive integers that are multiples of 3.
-             Solution
-
-                Let A be the set of all positive integers divisible by 3.
-                To prove that A = S, show that A is a subset of S and S is a subset of A.
-                    A⊂ S:  Let P(n) be the statement that 3n belongs to S.
-
-                           Basis step:  3∙1 = 3 ∊ S, by the first part of recursive definition.
-                           Inductive step:  Assume P(k) is true. By the second part of the recursive definition, if 3k
-                           ∊ S, then since 3 ∊ S, 3k + 3 = 3(k + 1) ∊ S. Hence, P(k + 1) is true.
-                    S ⊂ A:
-                           Basis step:  3 ∊ S by the first part of recursive definition, and   3 = 3∙1.
-                           Inductive step:  The second part of the recursive definition adds  x + y to S, if both x and
-                           y are in S. If x and y are both in A, then both x and y are divisible by 3. It follows that
-                           x   is divisible by 3.
-                               y
+             ((p ∨q) → (q ∧ F)) is a well-formed formula.
+                 pq ∧  is not a well formed formula.
 
 
-             Full Binary Trees
 
-             Definition
+          Rooted Trees
 
-                        h T
-             The height    of a full binary tree T is defined recursively as follows:
+          Definition
 
-                                                                                               0
-                Basis step:  The height of a full binary tree T consisting of only a root r is     .
-                                                                                        h T
-                Recursive step:  If T  and T  are full binary trees, then the full binary tree T  T T  has height
-                                    1      2                                                  1 2
-                                                     
-                                 h   1 maxT      h T 1  ,h T 2  .
+          The set of rooted trees, where a rooted tree consists of a set of vertices containing a distinguished vertex
+          called the root, and edges connecting these vertices, can be defined recursively by these steps:
 
-
-             The number of vertices  n(T) of a full binary tree T satisfies the following recursive formula:
-
-                Basis step:  The number of vertices of a full binary tree T consisting of only a root r is n(T) = 1.
-                Recursive step:  If T  and T  are full binary trees, then the full binary tree T  T T  has the
-                                    1      2                                                  1 2
-                                                                  
-                                                   n T  
-                                number of vertices    1 n T    1    n T 2  .
+          Basis step:  A single vertex r is a rooted tree.
+                                                                                         r r
+                                             ,
+                                         ,
+          Recursive step:  Suppose that T T      , T   are disjoint rooted trees with roots  ,  ,  , r ,
+                                        1   2       n                                     1  2       n
+                      respectively. Then the graph formed by starting with a root r, which is not in any of the
+                                     ,
+                                         ,
+                      rooted trees T T      , T , and adding an edge from r to each of the vertices
+                                   1    2       n
+                       r r  ,  , r , is also a rooted tree.
+                        ,
+                       1   2       n
 
 
 
@@ -213,7 +205,22 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             22</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           158</code></pre>
      	</div>
     
      </div>

@@ -152,78 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Section 3.5 − Applications of Recurrence Relations
 
-             Find a recurrence relation and give initial conditions for the number of bit strings of length n without
-             two consecutive 0s. How many such bit strings are there of length five?
+
+
+             Modeling with Recurrence Relations
+
+             Definition
+
+             A recurrence relation for the sequence {an} is an equation that expresses an in terms of one or more of the
+
+                                                       ,
+                                                           ,
+             previous terms of the sequence, namely,  a  a    , a   , for all integers n with  n ≥  n , where  n  is a
+                                                     0   1        n− 1                           0          0
+             nonnegative integer
+
+
+             Example
+
+             A young pair of rabbits (one of each gender) is placed on an island. A pair of rabbits does not breed until
+             they are 2 months old. After they are 2 months old, each pair of rabbits produces another pair each month.
+             Find a recurrence relation for the number of pairs of rabbits on the island after n months, assuming that
+             rabbits never die.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Modeling the Population Growth of Rabbits on an Island
              Solution
 
-                Let an  denote the number of bit strings of length  n without two consecutive 0s.  To obtain a
-                                       
-                recurrence relation for  a n   note that the number of bit strings of length n that do not have two
+                Let  f  be the number of pairs of rabbits after n months.
+                      n
+                      There are is  f = 1 pairs of rabbits on the island at the end of the first month.
+                                     1
 
-                consecutive 0s is the number of bit strings ending with a 0 plus the number of such bit strings
-                ending with a 1.
-                   Now assume that n ≥ 3.
-                 The bit strings of length n ending with 1 without two consecutive 0s are the bit strings of length n
-
-                −1 with no two consecutive 0s with a 1  at the end. Hence, there are  a   such bit strings.
-                                                                                   n 1
-                The bit strings of length n ending with 0 without two consecutive 0s are the bit strings of length n
-
-                −2 with no two consecutive 0s with 10  at the end. Hence, there are  a   such bit strings.
-                                                                                   n 2
-                We conclude that  a   a      a    for n ≥ 3.
-                                   n     n  1  n  2
-
-                The initial conditions are:
-                        a   2 , since both the bit strings 0 and 1 do not have consecutive 0s.
-                         1
-                        a   3, since the bit strings 01, 10, and 11 do not have consecutive 0s, while 00 does.
-                         2
-                   To obtain  a , we use the recurrence relation three times to find that:
-                             5
-                      a   a   a         5
-                                     3 2 
-                       3    2    1
-                      a   a   a         8
-                                     5 3 
-                       4    3    2
-                                     8 5 13
-                      a   a   a   
-                       5    4    3
+                      We also have  f =  1 because the pair does not breed during the first month.
+                                       2
+                      To find the number of pairs on the island after n months, add the number on the island after the
+                       previous month,  f    , and the  number of newborn pairs, which equals  f  , because each
+                                         n− 1                                                  n− 2
+                       newborn pair comes from a pair at least two months old.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             47</code></pre>
+                                                              183</code></pre>
      	</div>
     
      </div>

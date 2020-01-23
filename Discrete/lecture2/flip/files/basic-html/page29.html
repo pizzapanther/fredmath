@@ -154,56 +154,50 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Algorithms for Integer Operations
 
-
            Addition Algorithm
+
            To add a and b, first add their rightmost bits. This gives
 
-               a   b   c  2 s
+                             2 s
+               a +  b =  c ⋅+
                 0    0    0      0
-
-               a   b  c   c  
                                 2 s
+               a +  b + c =  c ⋅+
                 1    1   0    1      1
 
 
            Example
 
-           Add  a   1110   and   b   1011 
+
+           Add  a = (1110 )   and   b = (1011 )
                           2                   2
            Solution
-
-               a   b                                c   0,   s  1
-                         0 1 0 2 1
+               a +  b =  01 0 21+= ⋅ +                 ⇒   c =  0,  s =  1
                 0    0                                      0        0
-               a   b  c                           c   1,   s 
-                             1 1 0 1 2 0
-                                                                       0
+               a +  b + c =  1 1 0 12 0++ =⋅ +         ⇒   c =  1,  s =  0
                 1    1   0                                  1       1
-               a   b   c                          c   1,   s 
-                             1 0 1 1 2 0
-                                                                        0
+               a +  b +  c = 1 0 1 12 0+ += ⋅ +        ⇒   c =  1,  s =  0
                 2    2    1                                 2       2
-               a   b  c                           c   1,   s  1
-                             1 1 1 1 2 1
+               a +  b + c =  111 1 2 1++ =⋅ +          ⇒   c =  1,  s =  1
                 3    3    2                                 3       3
-               Therefore,  s     11001 
-                             a b
-                                            2
-               (carry ) c   1 1 1
-                                1 1 1 0
 
-                               1 0 1 1
-                        s   1   1 0 0 1
+               Therefore,  s =  ab+ = (11001 )
+                                            2
+               (carry ) c   1 11
+
+                                11 1 0
+
+                            +   10 1 1
+                        s   1   10 01
 
 
 
            Example
 
-
            How many additions of bits are required to use Algorithm 2 to add two integers with n bits (or less) in
            their binary representations?
-
            Solution
+
                Two integers are added by successively adding pairs of bits. Adding each pair of bits and the carry
                requires two additions of bits. Thus, the total number of additions of bits used is less than twice the
                number of bits in the expansion. Hence, the number of additions of bits used by Algorithm 2 to add
@@ -220,7 +214,7 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             29</code></pre>
+                                                            115</code></pre>
      	</div>
     
      </div>

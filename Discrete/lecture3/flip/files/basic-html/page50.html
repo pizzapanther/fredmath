@@ -152,48 +152,44 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 3.5  Applications of Recurrence Relations
+    <pre style="white-space:pre-line"><code>Example
 
+          Find a recurrence relation and give initial conditions for the number of bit strings of length n without two
+          consecutive 0s. How many such bit strings are there of length five?
 
+          Solution
 
-             1.   a)  Find a recurrence relation for the number of permutation of a set with n elements
-                  b)  Use the recurrence relation to find the number of permutations of a set with n elements using
-                      iteration.
+             Let an  denote the number of bit strings of length  n without two consecutive 0s.  To obtain a
+                                   { }
+             recurrence relation for  a n   note that the number of bit strings of length n that do not have two
 
-             2.   A vending machine dispensing books of stamps accepts only one-dollar coins, $1 bills, and $5
-                  bills.
-                  a)  Find a recurrence relation for the number of ways to deposit n dollars in the vending machine,
-                      where the order in which the coins and bills are deposited matter.
-                  b)  What are the initial conditions?
-                  c)  How many ways are there to deposit $10 for a book of stamps?
+             consecutive 0s is the number of bit strings ending with a 0 plus the number of such bit strings ending
+             with a 1.
+                Now assume that n ≥ 3.
+              The bit strings of length n ending with 1 without two consecutive 0s are the bit strings of length n −1
+             with no two consecutive 0s with a 1  at the end. Hence, there are  a   such bit strings.
+                                                                             n− 1
+             The bit strings of length n ending with 0 without two consecutive 0s are the bit strings of length n −2
+             with no two consecutive 0s with 10  at the end. Hence, there are  a   such bit strings.
+                                                                             n− 2
 
-             3.   a)  Find a recurrence relation for the number of bit strings of length n that contain three
-                      consecutive 0s.
-                  b)  What are the initial conditions?
-                  c)  How many bit strings of length seven contain three consecutive 0s?
+             We conclude that  a =  a    +  a     for n ≥ 3.
+                                n     n−  1  n−  2
+             The initial conditions are:
 
-             4.   a)  Find a recurrence relation for the number of bit strings of length n that do not contain three
-                      consecutive 0s.
-                  b)  What are the initial conditions?
-                  c)  How many bit strings of length seven do not contain three consecutive 0s?
-
-             5.   a)  Find a recurrence relation for the number of ways to climb n stairs if the person climbing the
-                      stairs can take one stair or two stairs at a time.
-                  b)  What are the initial conditions?
-                  c)  In how many can this person climb a flight of eight stairs
-
-
-
-
-
-
-
-
-
-
-
-
-
+                     a =  2 , since both the bit strings 0 and 1 do not have consecutive 0s.
+                      1
+                     a =  3, since the bit strings 01, 10, and 11 do not have consecutive 0s, while 00 does.
+                      2
+                To obtain  a , we use the recurrence relation three times to find that:
+                           5
+                   a =  a +  a =  32 5+=
+                    3    2    1
+                   a =  a +  a = + =
+                                  53 8
+                    4     3    2
+                   a =  a +  a =  8 5 13+=
+                    5     4    3
 
 
 
@@ -212,7 +208,19 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             50</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           186</code></pre>
      	</div>
     
      </div>
@@ -222,7 +230,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page49.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page45.html">45</a>&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>&nbsp;&nbsp;&nbsp;<a href="page55.html">55</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page45.html">45</a>&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>
              </td>
              <td width="35%"><a href="page51.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

@@ -152,58 +152,29 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-                                   n
-                              n
-             Show that every  2   2  checkerboard with one square removed can be tiled using right triominoes.
-             A right triomino is an L-shaped tile which covers three squares at a time.
+    <pre style="white-space:pre-line"><code>( 7 k+  2  +  8 2k+  1 )  is divisible by 57, by the inductive hypothesis,
+
+
+                                        57 8 ⋅  2k+ 1  is divisible by 57, since it is an integer multiplied by 57.
+                      Thus,  P    is true.
+                             k+ 1
+
+                By mathematical induction, the statement 7 n+  2  + 8 2n+  1  is divisible by 57 is true, for every positive
+
+                integer n.
 
 
 
+             Number of Subsets of a Finite Set
 
-             Solution
-                                                      n
-                                                           n
-                Let P(n) be the proposition that every  2  2  checkerboard with one square removed can be tiled
-                using right triominoes. Use mathematical induction to prove that P(n) is true for all positive
-                integers n.
-                Basis Step:  P(1) is true, because each of the four 2 ×2 checkerboards with one square removed can
-                be tiled using one right triomino.
+             Inductive Hypothesis
+                                                                                k
+             For an arbitrary nonnegative integer k, every set with k elements has  2  subsets.
 
 
-
-
-
-
-
-                                                                     k
-                                                                         k
-                Inductive Step:  Assume that  P(k) is true for every   2  2 checkerboard, for some positive
-                integer k. with one square removed can be tiled using right triominoes.
-
-                    Consider a 2 k+1  ×2 k+1  checkerboard with one square removed. Split this checkerboard into four
-                                          k
-                                              k
-                    checkerboards of size 2  ×2 ,by dividing it in half in both directions.
-
-
-
-
-
-
-
-
-
-
-                                                               k
-                                                           k
-                    Remove a square from one of the four  2   2 checkerboards. By the inductive hypothesis, this
-                    board can be tiled.  Also by the inductive hypothesis, the other three boards can be tiled with
-                    the square from the corner of the center of the original board removed. We can then cover the
-                    three adjacent squares with a triominoe.
-                                      k  1  k  1
-                    Hence, the entire  2    2    checkerboard with one square removed can be tiled using right
-                    triominoes.
+             Let T be a set with k + 1 elements. Then T =  S  { } a , where a ∈ T and S = T − {a}.
+             Hence |T| = k.
+             For each subset X of S, there are exactly two subsets of T, i.e., X and   X  { } a .
 
 
 
@@ -222,7 +193,36 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              9</code></pre>
+
+
+
+
+
+
+
+
+                                                k
+             By the inductive hypothesis S  has  2 subsets. Since there are two subsets of T for each subset of S, the
+             number of subsets of T  is  22⋅  k  =  2 k  1 +
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              145</code></pre>
      	</div>
     
      </div>

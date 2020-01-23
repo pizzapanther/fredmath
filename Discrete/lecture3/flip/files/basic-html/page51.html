@@ -152,72 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.6  Solving Linear Recurrence Relations
+    <pre style="white-space:pre-line"><code>Example
 
-
-
-
-             Definition
-
-             A linear homogeneous recurrence relation of degree k with constant coefficients is a recurrence
-             relation of the form
-                           a     c  a     c  a         c  a
-                             n    1  n1     2  n2         k  n k
-
-             Where c   , c ,  c   ,   are real numbers, and   c    0
-                     1   2      k                         k
-
-               It is linear because the right-hand side is a sum of the previous terms of the sequence each
-                multiplied by a function of n.
-
-               It is homogeneous because no terms occur that are not multiples of the  a  s . Each coefficient is a
-                                                                                       j
-                constant.
-
-                The degree is k  because   a  is expressed in terms of the previous k terms of the sequence.
-                                           n
-
-
-             Solving Linear Homogeneous Recurrence Relations
-
-                                                                         n
-             The basic approach is to look for solutions of the form   a    r , where r is a constant.
+             A computer system considers a string of decimal digits a valid code-word if it contains an even number of
+             0 digits. For instance, 1230407869 is valid, whereas 1230407869 is not valid. Let  a  be the number of
+                                                                                             0
+             valid n-digit code-words. Find a recurrence relation for  a .
                                                                     n
-                             n
-             Note that  a    r  is a solution to the recurrence relation  a    c  a    c  a     c  a     if
-                        n                                             n     1  n1    2  n2         k  n k
-             and only if   r n    c  r n1    c  r n2     c  r n k .
-                               1         2              k
-             Algebraic manipulation yields the characteristic equation:
+             Solution
 
-                             r  k   c  r  k  1   c  r k  2    c  r  n  k    0
-                                  1         2              k   1
-                                           n
-             The sequence {an} with  a    r  is a solution if and only if r is a solution to the characteristic
-                                      n
-             equation. The solutions to the characteristic equation are called the characteristic roots of the
-             recurrence relation. The roots are used to give an explicit formula for all the solutions of the recurrence
-             relation.
+                Note that  a =  because there are 10 one-digit strings, and only one, namely the string 0, is not valid.
+                               9
+                           1
+                A recurrence relation can be derived for this sequence by considering how a valid n-digit string can be
+
+                obtained from strings of n – 1 digits. There are two ways to form a valid string with n digits from a
+                string with one fewer digit.
 
 
-             Theorem
+                1.  A valid string with n digits can be obtained by appending a valid string of n – 1 digits with a digit
+                    other than 0. This appending can be done in 9 ways. Hence, a valid string with n digits can be
+                    formed in this manner in 9a     ways.
+                                               n− 1
 
-             Let  c  and  c  be real numbers. Suppose that  r  2   c  r   c    0  has two distinct roots r  and  r .
-                  1       2                                     1     2                            1      2
-             Then the sequence {an} is a solution to the recurrence relation  a   c  a   c  a   if and only if
-                                                                           n    1 n  1   2  n  2
-             for n = 0, 1, 2, … , where   and    are constants.
-                                        1       2
-                                       n
-                              n
-                    a       r    r
-                      n     1  1    2  2
-                                                                       n
-                                                              n
-             This shows that the sequence   with  a      r     r  is a solution of the recurrence relation.
-                                          a
-                                            n         n     1  1    2  2
-                                                             51</code></pre>
+                2.  A valid string with n digits can be obtained by appending a 0 to a string of length n – 1 that is not
+                    valid. The number of ways that this can be done equals the number of invalid (n – 1)-digit strings.
+
+                    Because there are 10 n− 1  strings of length n – 1, and  a   are valid, there are 10 n− 1  − a   valid
+                                                                        n− 1                            n− 1
+                    n –digit strings obtained by appending an invalid string of length n – 1 with a 0.
+
+                    Because all valid strings of length n are produced in one of these two ways, it follows that there
+                    are
+
+                           a =  9a     +  ( 10 n− 1 −  a  )
+                             n     n−  1           n−  1
+
+                               = 8a    + 10 n− 1
+                                   n− 1
+
+                      Valid strings of length n.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              187</code></pre>
      	</div>
     
      </div>
@@ -227,7 +227,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page50.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>&nbsp;&nbsp;&nbsp;<a href="page55.html">55</a>&nbsp;&nbsp;&nbsp;<a href="page56.html">56</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>&nbsp;&nbsp;&nbsp;<a href="page51.html">51</a>&nbsp;&nbsp;&nbsp;<a href="page52.html">52</a>&nbsp;&nbsp;&nbsp;<a href="page53.html">53</a>&nbsp;&nbsp;&nbsp;<a href="page54.html">54</a>
              </td>
              <td width="35%"><a href="page52.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

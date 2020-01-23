@@ -152,79 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  k  2  2k  1 
-                                         7     8       is divisible by 57, by the inductive hypothesis,
+    <pre style="white-space:pre-line"><code>Example
 
+                                                   3
+                                                       n
+          Use mathematical induction to prove that  n −  is divisible by 3, for every positive integer n.
+          Solution
+                                              3
+             Let P(n) be the proposition that  n −  is divisible by 3.
 
-                                        57 8   2k 1  is divisible by 57, since it is an integer multiplied by 57.
-                      Thus,  P    is true.
-                             k  1
-
-                By mathematical induction, the statement 7 n  2   8 2n  1  is divisible by 57 is true, for every
-
-                positive integer n.
-
-
-
-             Number of Subsets of a Finite Set
-
-             Inductive Hypothesis
-                                                                                k
-             For an arbitrary nonnegative integer k, every set with k elements has  2  subsets.
-
-             Let T be a set with k + 1 elements. Then T   S    a , where a ∈ T and S = T − {a}.  Hence |T| = k.
-
-             For each subset X of S, there are exactly two subsets of T, i.e., X and   X    a .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                k
-             By the inductive hypothesis S  has  2 subsets. Since there are two subsets of T for each subset of S, the
-             number of subsets of T  is  2 2   k    2 k 1
+                                                 n
+                                         3
+                                             10
+             Basis Step:    For n = 1 ⇒ 1 −=  which is divisible by 3  ⇒  P  is true.
+                                                                              1
+                                                     3
+             Inductive Step. Assume that  P  holds  k −  is divisible by 3
+                                                        k
+                                           k
+                   We need to prove that   P    is true, that is  (k +  ) 1  3  −  (k +  ) 1  is divisible by 3
+                                           k+ 1
+                           3
+                                        3
+                                              2
+                                                      1 k
+                     (k +  ) 1 − (k +  ) 1 =  k + 3k + 3k +− − 1
+                                                  2
+                                        3
+                                     =  k −+   3k +  3k
+                                            k
+                                                          )
+                                     =  ( k −  3  k +  ) (  2  k
+                                                 3 k +
+                                     (  3   )
+                                      k −  k  is divisible by 3, by the inductive hypothesis,
+                                              )
+                                      (
+                                         2
+                                     3 k +  k  is divisible by 3, since it is an integer multiplied by 3.
+                   Thus,  P    is true.
+                          k+ 1
+                                                       3
+             By mathematical induction, the statement  n −  is divisible by 3 is true, for every positive integer n.
+                                                           n
 
 
 
+          Example
+
+          Use mathematical induction to prove that 7 n+  2  + 8 2n+  1  is divisible by 57, for every nonnegative integer
+          n.
+
+          Solution
+                                          2
+                                              1
+             Basis Step:    For n = 0 ⇒  7 + 8 =  49 8 57+ =   which is divisible by 57  ⇒  P  is true.
+                                                                                           0
+             Inductive Step: Assume that  P  holds 7 k+  2  +  8 2k+  1  is divisible by 57
+                                           k
+                                                                            ) 11
+                                                               12
+                 We need to prove that   P    is true, that is  7 k++  +  8  ( 2 k++  =  7 k+ 3  +  8 2k+ 3  is also divisible
+                                         k+ 1
+                 by 57
+
+                     7 k+  3  +  8 2k+  3  =  77⋅  k+  2  +  8 ⋅  2  8 2k+  1
+
+                                  =  7 7⋅  k+  2  +  64 8⋅  2k+  1
 
 
+                                              78
+                                  =  7 7⋅  k+  2  +⋅  2k+  1  +  578⋅  2k+  1
+                                       (  k+  2  2k+  1 )    2k+  1
+                                  =  7 7⋅    +  8     +  57 8⋅
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              8</code></pre>
+                                                           144</code></pre>
      	</div>
     
      </div>

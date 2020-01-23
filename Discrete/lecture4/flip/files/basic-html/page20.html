@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 20 - Discrete Lecture 4</title>
+        <title>Page 20 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 20 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 20 - Lecture 4</div>
         <div id="content-top2">P. 20</div>
      </div>
      <div id="content-middle">
@@ -152,57 +152,55 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Proof
+    <pre style="white-space:pre-line"><code>Transitive Closures
 
-                Suppose there is a path from a to b in R. Let m be the length of the shortest such path.
-                                                                    a
-                                                                                b
-                Suppose that  x  , x  x  ,   , x  , x , where  x   and  x  , is such a path.
-                                    ,
-                               0   1  2        m 1  m          0           m
-                Suppose that a = b and that m &gt; n, so that  m   n   1.
-                By the pigeonhole principle, because there are n vertices in A, among m vertices  x  , x    , x ,
-                                                                                                    ,
-                                                                                               0   1       m
-                at least two are equal.
-                Suppose that  x   x  with 0    j   m  1. Then the path contains a circuit from  x  to itself.
-                                              i
-                               i    j                                                            i
-                This circuit can be deleted from the path from a to b, leaving a path, namely,
-                               ,
-                 x  , x    , x  x    ,   , x , from a to b of shorter length. Hence, the path of shortest length
-                       ,
-                  0   1       i   j 1     m
-                must have less than or equal to n.
+             Definition
+
+                                                                    *
+             Let R be a relation on a set A. The connectivity relation  R  consists of the pairs (a, b) such that there
+             is a path of length at least one from a to b in R.
 
 
 
+             Example
+                                                                                                              n
+             Let R be the relation on the set of all people in the world that contains (a, b) if a has met b. What is R ,
+                                                                   *
+             where n is a positive integer greater than one? What is R ?
+
+             Solution
+                              *
+                                                                                )
+                The relation  R  contain (a, b) if there is a person c such that ( ,a c ∈  and , that is, if there is a
+                                                                                   R
+                person c such that a has met c and c has met b.
+                            n
+                Similarly,  R  consists of those pairs (a, b) such that there are people  x x  ,  , x   such that a
+                                                                                      ,
+                                                                                     1   2       n− 1
+                has met  x .  x  has met  x  ,  ,  x   has met b.
+                          1   1           2       n− 1
+                              *
+                The relation  R  contains (a, b) if there is a sequence of people, starting with a and ending with b,
+                such that each person in the sequence has met next person in the sequence.
 
 
+             Example
 
+             Let R be the relation on the set of all states in U.S. that contains (a, b) if state a and state b have a
+                                                                               *
+                                      n
+             common border. What is R , where n is a positive integer? What is R ?
+             Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                              n
+                The relation  R  contain (a, b), where it is possible to go from state a to state b by crossing exactly
+                                             *
+                n state borders. The relation  R consists of the ordered pairs (a, b), where it is possible to go from
+                state a to state b crossing as many borders as necessary.
+                                               *
+                The only ordered pairs not in  R  are those containing sates that are not connected to the
+                continental U.S.
 
 
 
@@ -217,11 +215,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-                                                             20</code></pre>
+                                                            210</code></pre>
      	</div>
     
      </div>

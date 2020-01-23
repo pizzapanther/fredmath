@@ -152,75 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Lamé’s Theorem
 
-                                               *
-             If Σ = {a,b}, show that aab is in  .
+             Let a and b be positive integers with a ≥ b.  Then the number of divisions used by the Euclidian algorithm
+                             )
+             to find gcd ( ,a b  is less than or equal to five times the number of decimal digits in b.
 
-                                                 *
-                             *
-                Since λ ∊   and a ∊ Σ, a ∊  .
-                                                  *
-                             *
-                Since a ∊   and a ∊ Σ, aa ∊  .
-                                                     *
-                              *
-                Since aa ∊   and b ∊  Σ, aab ∊  .
+             Proof
 
+                                                                     )
+                When we use the Euclidian algorithm to find gcd ( ,a b  with a ≥ b,
+                                                                 )
+                                              (
+                n divisions  are used to obtain  with a =  r 0 , b =  r :
+                                                               1
+                    r =  rq +  r    0 ≤  r ≤  r
+                     0   11     2       2    1
+                    r =  rq +   r   0 ≤  r ≤  r
+                     1   22     3       3    1
+                       
+                    r    =  r  q    +  r   0 ≤  r ≤  r
+                     n−  2  n−  1 n−  1  n     n    n−  1
+                    r    =  rq
+                     n− 1   nn
 
+                                      ,
+                Since each quotient  q q  ,   , q    is at least 1 and  q ≥ :
+                                                                          2
+                                     1   2       n− 1                 n
+                    r ≥  1 =  f
+                     n       2
+                    r    ≥  2r ≥  2 f =  f
+                     n− 1    n     2    3
+                    r    ≥  r   +  r ≥  f +  f =  f
+                     n−  2  n−  1  n    3    2    4
+                           
 
-             String Concatenation
+                    r ≥  r +  r ≥  f   +  f    =  f
+                     2    3   4    n−  1  n−  2   n
 
-             Definition
+                    b =  r ≥  r +  r ≥  f +  f  =  f
+                        1    2   3    n    n−  1   n+  1
 
-                                                                                                           *
-             Two strings can be combined via the operation of concatenation. Let Σ be a set of symbols and   be
-             the set of strings formed from the symbols in Σ. We can define the concatenation of two strings,
+                                                                                              )
+                It follows that if n divisions are used by the Euclidian algorithm to find gcd ( ,a b  with a ≥ b, then
 
-             denoted by ∙, recursively as follows.
-                                 *
-             Basis step: If w   , then w ∙ λ= w.
-                                                                                 
-                                      *
-                                                    *
-             Recursive step: If  w   and  w  and x  Σ, then   w      w x    w   w   x .
-                                1             2                         1    2       1    2
-                  Often  w  w  is written as  w w .
-                            1   2               1 2
-                  If  w   abra  and  w   cadabra , the concatenation  w w   abracadabra .
-                        1              2                                1 2
+                b ≥  f   .   f  ≥α  n− 1 , for n &gt; 2, where α = 1+  5  .
+                      n+ 1   n+ 1                               2
 
+                Therefore, b &gt;α n− 1 .
 
-             Length of a String
+                                                b
+                Because, logα ≈  0.208 &gt;  1 , log &gt; (n −  ) 1 logα &gt;  n − 1 .
+                                         5                         5
+                           1 5 logb⋅
+                Hence,  n −&lt;
+                                                               k
+                                                                            k
+                Suppose that b has k decimal digits. Then b &lt; 10  and  logb &lt; . It  follows that n − 1 &lt; 5k and since k
+                is an integer, n ≤  5k.
 
-             Example
+                As a consequence of Lamé’s Theorem, O(log b) divisions are used by the Euclidian algorithm to find
+                         )
+                gcd ( ,a b whenever a &gt; b.
 
-             Give a recursive definition of l(w), the length of the string w.
-
-             Solution
-                The length of a string can be recursively defined by:
-                l(w) = 0;
-                                        *
-                l(wx) = l(w) + 1 if  w  and x ∊ Σ.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             19</code></pre>
+                                                              155</code></pre>
      	</div>
     
      </div>

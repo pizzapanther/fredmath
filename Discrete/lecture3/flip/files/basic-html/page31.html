@@ -152,76 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Tree Diagrams
-
-             Definition
-
-             We can solve many counting problems through the use of tree diagrams, where   a branch represents a
-             possible choice and the leaves represent possible outcomes.
+    <pre style="white-space:pre-line"><code>Basic Counting Principles
 
 
 
-             Example
+             Definition:  The Sum Rule
 
-             How many bit strings of length four do not have two consecutive 1s?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             Solution
-
-                There are eight bits strings of length four without two consecutive 1s
+             If a task can be done either in one of  n  ways or in one of  n ways to do the second task, where none of
+                                                  1                    2
+             the set of  n  ways is the same as any of the  n ways, then there are  n +  n ways to do the task.
+                       1                                 2                      1    2
 
 
              Example
 
-             Suppose that “I Love Discrete Math” T-shirts come in five different sizes: S,M,L,XL, and XXL. Each
-             size comes in four colors (white, red, green, and black), except XL, which comes only in red, green,
-             and black, and XXL, which comes only in green and black. What is the minimum number of stores
-             that the campus book store needs to stock to have one of each size and color available?
+             The mathematics department must choose either a student or a faculty member as a representative for a
+             university committee. How many choices are there for this representative if there are 37 members of the
+             mathematics faculty and 83 mathematics majors and no one is both a faculty member and a student.
 
              Solution
 
+                By the sum rule it follows that there are 37 + 83 = 120 possible ways to pick a representative.
+
+
+             Example
+
+             A student can choose a computer project from one of three lists. The three lists contain 23, 15, and 19
+             possible projects, respectively. No project is on more than one list. How many possible projects are there
+             to choose from?
+             Solution
+
+                Since no project is on more than one list, by the sum rule there are 23 + 15 + 19 = 57 ways to choose a
+                project.
 
 
 
+             The Sum Rule in terms of sets
+
+             The sum rule can be phrased in terms of sets.
+
+                    |A ∪ B|= |A| + |B| as long as A and B are disjoint sets.
+
+             Or more generally,  A   A     A    =  A +  A +     +  A   when  A   A = ∅ for all i, j.
+                                 1     2         m     1     2          m          i    j
+
+
+             Example
+
+             Suppose statement labels in a programming language can be either a single letter or a letter followed by a
+             digit. Find the number of possible labels.
+
+             Solution
+                Use the product rule.  26 + 26 ∙ 10 = 286
 
 
 
-
-
-
-
-
-
-
-                The store must stock 17 T-shirts.
-
-
-
-
-
-
-
-
-
-
-
-                                                             31</code></pre>
+                                                              167</code></pre>
      	</div>
     
      </div>

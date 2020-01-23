@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 21 - Discrete Lecture 4</title>
+        <title>Page 21 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 21 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 21 - Lecture 4</div>
         <div id="content-top2">P. 21</div>
      </div>
      <div id="content-middle">
@@ -152,29 +152,17 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises  Section 4.3 – Closures of Relations
+    <pre style="white-space:pre-line"><code>Theorem
 
+                                                                                 *
+             The transitive closure of a relation R equals the connectivity relation  R .
 
+             Lemma
 
-
-             1.   Let R be the relation on the set {0, 1, 2, 3} containing the ordered pairs (0, 1), (1, 1), (1, 2), (2, 0),
-                  (2, 2), and (3, 0).  Find the
-                    a)  Reflexive closure of R.
-                    b)  Symmetric closure of R.
-
-             2.   Let R be the relation    , a  b  | a    b  on the set of integers. What is the reflexive closure of R?
-
-                                                         
-             3.   Let R be the relation    , a  b  | a divides b  on the set of integers. What is the symmetric closure
-                  of R?
-
-             4.   How can the directed graph representing the reflexive closure of a relation on a finite set be
-                  constructed from the directed graph of the relation?
-
-             5.   Draw the directed graph of the reflexive, symmetric, and both reflexive and symmetric closure of
-                  the relations with the directed graph shown
-
-                  a)                            b)                            c)
+             Let A be a set with n elements, and let R be the relation on A. If there is a path of length at least one in
+             R from a to b, then there is such a path with length not exceeding n. Moreover, when  a ≠ , if there is
+                                                                                                   b
+             a path of length at least one in R from a to b, then there is such a path with length not exceeding n – 1.
 
 
 
@@ -188,34 +176,63 @@ function MM_swapImage() { //v3.0
 
 
 
-             6.    1. Determine whether these sequences of vertices are paths in this directed graph
-                      a)  a, b, c, e
-                      b)  b, e, c, b, e
-                      c)  a, a, b, e, d, e
-                      d)  b, c, e, d, a, a, b
-                      e)  b, c, c, b, e, d, e, d
-                      f)  a, a, b, b, c, ,c, b, e, d
 
-                  2. Find all circuits of length three in the directed graph
+             Proof
 
-             7.   Let R be the relation on the set {1, 2, 3, 4, 5} containing the ordered pairs (1, 3), (2, 4), (3, 1), (3,
-                  5), (4, 3), (5, 1), and (5, 2). Find
-                                        3
-                          2
-                                                                      5
-                                                                                      6
-                                                       4
-                                                                                                     *
-                     ) a  R        ) b  R         ) c  R         ) d  R          ) e  R         ) f  R
+                Suppose there is a path from a to b in R. Let m be the length of the shortest such path.
+                                ,
+                                                                    a
+                                    ,
+                Suppose that  x  x x    ,  , x   , x , where  x =  and  x     =  b , is such a path.
+                               0   1  2        m− 1  m          0           m
+                Suppose that a = b and that m &gt; n, so that  m ≥+ 1.
+                                                             n
+                                                                                                    ,
+                                                                                                 ,
+                By the pigeonhole principle, because there are n vertices in A, among m vertices  x  x  , x ,
+                                                                                               0   1       m
+                at least two are equal.
+                                                  j
+                Suppose that  x =  x  with 0 i≤ &lt; ≤  m − 1. Then the path contains a circuit from  x  to itself. This
+                               i    j                                                            i
+                circuit can be deleted from the path from a to b, leaving a path, namely,
+                               ,
+                 x  , x    ,  , x x  ,   , x , from a to b of shorter length. Hence, the path of shortest length
+                  0   1       i   j+ 1     m
+                must have less than or equal to n.
 
-             8.   Let R be the relation on the pair (a, b) if a and b are cities such that there is a direct non-stop
-                  airline flight from a to b. When is (a, b) in
-                         2
-                                         3
-                                                        *
-                    ) a  R          ) b  R         ) c  R
 
-                                                             21</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            211</code></pre>
      	</div>
     
      </div>

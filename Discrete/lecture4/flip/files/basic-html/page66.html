@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 66 - Discrete Lecture 4</title>
+        <title>Page 66 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 66 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 66 - Lecture 4</div>
         <div id="content-top2">P. 66</div>
      </div>
      <div id="content-middle">
@@ -152,53 +152,7 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.9  Euler and Hamilton Paths
-
-
-
-             The town of  Konigsberg  was divided into 4 sections by the branches of the Pregel River. The town
-             people took long walks through town. They wondered whether it was possible to start at some location
-             in the town, travel across all the bridges once without crossing and bridge twice, and return to the
-             starting point.
-
-                                          C
-
-
-
-
-                                          A
-                                                          D
-
-
-
-                                        B
-
-                                          Konigsberg  Town                         Multigraph
-
-             The Swiss mathematician Leonhard Euler solved this problem. His solution, published in 1736, may be
-             the first use of graph theory. Euler studied this problem using the multigraph obtained when the four
-             regions are represented by vertices and the bridges by edges.
-
-
-             Definition
-
-             Let G be a graph. An Euler Circuit for G is a circuit that contains every vertex and every edge of G.
-             That is, an Euler circuit for G is a sequence of adjacent vertices and edges in G that has at least one
-             edge, starts and ends at the same vertex, uses every vertex of G at least once, and uses every edge of G
-             exactly once.
-
-
-
-             Theorem
-
-             A connected multigraph with at least two vertices has an Euler circuit if and only if each of its vertices
-             has even degree.
-
-
-             Theorem
-
-             A connected multigraph has Euler path but not an Euler circuit if and only if it has exactly 2 vertices of
-             odd degree.
+    <pre style="white-space:pre-line"><code>Example
 
 
 
@@ -210,7 +164,63 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             66</code></pre>
+
+
+
+
+
+
+                                  G                   G
+                                    1                   2
+             The graph G  is connected, because for every pair of distinct vertices there is a path between them.
+                         1
+             However, the graph G is not connected.
+                                  2
+             For instance, there is no path in G between vertices a and b.
+                                             2
+
+
+             Connected and Disconnected Graphs
+
+             Example
+
+             Which of the following graphs are connected?
+
+
+
+
+
+
+
+
+
+
+
+                               (a)                             (b)                          (c)
+             Solution
+
+                The graph represented in (a) is connected, whereas those of (b) and (c) are not.
+                To understand why (c) is not connected, two edges may cross at a point that is not a vertex.
+
+                Thus the graph in (c) can be drawn as follows:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            256</code></pre>
      	</div>
     
      </div>

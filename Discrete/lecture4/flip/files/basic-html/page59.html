@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 59 - Discrete Lecture 4</title>
+        <title>Page 59 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 59 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 59 - Lecture 4</div>
         <div id="content-top2">P. 59</div>
      </div>
      <div id="content-middle">
@@ -152,48 +152,14 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.8  Connectivity
+    <pre style="white-space:pre-line"><code>deg ( ) a =  in G, a must correspond to either t, u ,x, or y in H, because these are the vertices of
+                          2
+                degree 2 in H.
 
-
-
-             Paths
-
-             A path is a sequence of edges that begins at a vertex of a graph and travels from vertex to vertex along
-             edges of the graph.
-
-
-             Definitions
-
-             Let G be a graph, and let v and w be vertices in G.
-             A walk from v to w is a finite alternating sequence of adjacent vertices and edges of G. Thus a walk
-             has the form
-                           v e v e      v   e v
-                            0 1 1 2      n 1 n n
-
-             Where the v’s represent vertices, the e’s represents edges,  v   , v  v   w  and for all i = 1, 2, , n,
-                                                                      0       n
-             v    and  v  are the endpoints of e . The trivial walk from v to v consists of the single vertex v.
-              i 1     i                      i
-             A trail from v to w is a walk from v to w that does not contain a repeated edge.
-
-             A closed walk is a walk that starts and ends at the same vertex.
-
-             A circuit is a closed walk that contains at least one edge and does not contain a repeated edge.
-
-             A simple circuit is a circuit that does not any other repeated vertex except first and last.
-
-
-                                Repeated Edge?     Repeated Vertex    Starts & Ends at   Must Contain at
-                                                                      Same Point?        Least One Edge?
-                Walk                Allowed            Allowed            Allowed              No
-                Trail                  No              Allowed            Allowed              No
-                Path                   No                 No                No                 No
-                Closed Walk         Allowed            Allowed              Yes                Yes
-                Circuit                No              Allowed              Yes                Yes
-                Simple Circuit         No          First & last only        Yes                Yes
-
-
-             Notation for Walks
+                However, each of these four vertices in H is adjacent to another vertex of degree 2 in H, which is
+                not true for a in G. Therefore, G & H are not isomorphic.
+                Another way to see that G & H are not isomorphic is by checking the subgraphs of G & H  shown
+                below, they have a different shape.
 
 
 
@@ -203,14 +169,58 @@ function MM_swapImage() { //v3.0
 
 
 
-             The notation e e e e  refers unambiguous to the following walk:  v e v e e v e v . On the other
-                           1 2 4 3                                            1 1 2 2 4 3 3 2
-             hand, the notation e is ambiguous if used to refer to a walk. It could mean either  v e v  or v e v .
-                                1                                                           1 1 1      2 1 1
-             The notation v v  is ambiguous if used to refer to a walk. It could mean  v e v  or v e v . On the
-                           2 3                                                       2 2 3      2 3 3
-             other hand,
-                                                             59</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+             Example
+             Determine whether the graphs shown below are isomorphic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               G                           H
+             Solution
+
+                Both graphs G & H have 6 vertices and 7 edges.
+                Also both have 4 vertices of degree 2 and 2 vertices of degree 3.
+                From the subgraphs of G & H, all vertices of degree 2 and the edges connecting them are
+                isomorphic.
+
+                u   ↔   v      u u u u   ↔   v v v v
+                  1      6     456 2          5 1 2 3
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            249</code></pre>
      	</div>
     
      </div>

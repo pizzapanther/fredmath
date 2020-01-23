@@ -152,74 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Logical Equivalences Involving Quantifiers
 
-           What are the negations of the statements “There is an honest politician” and “All Americans eat
-           cheeseburgers”?
-           Solution
+             Definition
 
-               Let    x  denote “x is honest.”
-                   H
-               Then the statement “there is an honest politician” is represented by  x H x   
-               The negation statement is  x H    x , which is equivalent to  x  H x      .
-
-               This negation can be expressed as “All politicians are not honest”
-
-
-               Let    x  denote “x eats cheeseburgers.”
-                   G
-                                                                                            
-                                                                                     
-               Then the statement “All Americans eat cheeseburgers” is represented by  x G x
-                                                                                  
-               The negation statement is  x G   x , which is equivalent to  x  G x .
-                                                                             
-                                                                          
-               This negation can be expressed as “There is an American who does not eat cheeseburgers.”
+             Statements involving predicates and quantifiers are logically equivalent if and only if they have the same
+             truth value no matter which predicates are substituted into these statements and which domain of
+             discourse is used for the variables in these propositional functions. We use the notation  S ≡ T  involving
+             predicates and quantifiers are logically equivalent.
 
 
 
-           Example
-                                                                               
-           What are the negations of the statements  x  x    2    x  and  x  x     2    2
+
+             Negating Quantified Expressions
+
+             We will often want to consider the negation of a quantified expression. For instance, consider the negation
+             of the statement
+                “Every student in your class has taken a course in calculus”
 
 
-           Solution
-                                     2                           2                2   
-                               
-               The negation of  x  x    x  is the statement  x  x   x     x   x   x
-                                                  
-                                       
-               Which can be written as  x  x     2  x
-                                    2                           2                 2   
-                               
-               The negation of  x  x   2  is the statement  x  x  2       x   x   2
-                                                  
-                                       
-               Which can be written as  x  x     2  2
+             This statement is a universal quantification, namely,  x P x∀  ( )
+             where  ( ) x  is the statement “x has taken a course in calculus” and the domain consists of the students in
+                   P
+             your class.
+             The negation of this statement is “ It is not the case that every student in your class who has not taken a
+             course in calculus”. This is simply the existential quantification of the negation of the original proposition
+             function, namely,  x P x∃ ¬  ( ).
+
+             This example illustrates the following logical equivalence:
+
+                                                    ¬∀  x P ( ) x ≡ ∃ x  P¬  ( ) x
+
+                                  x  Q
+                    ¬∃ x Q ( ) x ≡ ∀ ¬  ( ) x
+
+
+                      De Morgan’s Laws for Quantifiers
+
+               Negation      Equivalent Statement     When Is Negation True?            When False?
+
+                                                                                      There is an x for which
+               ¬∃ x P ( ) x        ∀¬      ( ) x     For every x,  ( ) x  is false
+                                     x P
+                                                                  P
+                                                                                      P ( ) x  is true
+                                                     There is an x for which  ( ) x
+                                                                             P
+               ¬∀  x P ( ) x       ∃ x P¬  ( ) x                                      For every x,  ( ) x  is true
+                                                                                                   P
+                                                     is false
 
 
 
-           Example
 
-           Consider these statements, of which the first three are premises and the fourth is a valid conclusion
-               “All hummingbirds are richly colored”
-               “No large birds live on honey”
-               “Birds that do not live on honey are dull in color”
-               “Hummingbirds are small”
-           Let    x ,    x ,    x and    x  be the statements “x is a hummingbird, “ “x is large,” “x lives on
-               P
-                             R
-                      Q
-                                       S
-           honey,” and “ x is richly colored,” respectively. Assuming that the domain consists of all birds, express
-                                                                                      S
-                                                                            R
-           the statements in the argument using quantifiers and    x ,    x ,    x and    x .
-                                                              P
-                                                                     Q
-           Solution
-                                                             23</code></pre>
+
+
+
+
+
+
+
+
+                                                              23</code></pre>
      	</div>
     
      </div>

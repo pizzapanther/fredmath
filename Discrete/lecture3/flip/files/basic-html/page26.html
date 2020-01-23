@@ -152,63 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.3  The Basics of Counting
+    <pre style="white-space:pre-line"><code>Exercises         Section 3.2 − Recursive Definitions and Structural Induction
 
 
 
 
-             Basic Counting Principle
-
-             The Product Rule
-             A procedure can be broken down into a sequence of two tasks. There are  n  ways to do the first task
-                                                                                    1
-             and  n  ways to do the second task. Then there are  n  n ways to do the procedure
-                  2                                            1   2
-
-
-             Example
-
-             How many bit strings of length seven are there?
-
-             Solution
-                                                                            7
-                Since each of the seven bits is either a 0 or a 1, the answer is 2  = 128.
+                                                     fn
+                                 f
+          1.   Find  ( ) 1f  , ( ) 2f  , ( ) 3 , and  ( ) 4f   if  ( )  is defined recursively by  ( ) 0f  = 1 and for
+               n  = 0, 1, 2,
+                                                                          ( )
+                  a)  ( fn +  ) 1 =  fn                  b)  ( fn +  ) 1 =  3 fn
+                                  ( ) 2+
+                                                                         ( ) +
+                  c)  fn + (  ) 1 =  2 f  ( ) n          d)  fn + (  ) 1 =  fn  2  f  ( ) 1n +
 
 
-             Example
+                                                           fn
+                           f
+                     f
+          2.   Find  ( ) 1 , ( ) 2 , ( ) 3f  ,  ( ) 4f   and  ( ) 5f   if  ( )  is defined recursively by  ( ) 0f  = 3 and for
+               n  = 0, 1, 2,
+                                     ( )
+                  a)  ( fn +  ) 1 =  −  2 fn            b)  ( fn +  ) 1 =  3 fn
+                                                                          ( ) 7+
+                                   ( )/3
+                                                                        ( ) −
+                  c)  fn + (  ) 1 =  3 f n              d)  fn + (  ) 1 =  fn  2  2 f  ( ) 2n −
 
-             A new company with just two employees rents a floor of a building with 12 offices. How many ways
-             are there to assign different offices to these two employees?
-             Solution
-                The procedure of assigning offices to these 2 employees consists of assigning an office to one employee,
-                which can be done in 12 ways, then assigning an office to the second different from the office assigned to
-                the first, which can be done in 11 ways.
-                By the product rule, there are 12 11  132  wa  s y  to assign offices to these 2 employees.
-                                                
+          3.   Find  ( ) 2f  , ( ) 3f  ,  ( ) 4f   and  ( ) 5f   if  ( )  is defined recursively by  ( ) 0f  =  f  ( ) 1 = 1 and for
+                                                     fn
+               n  = 1, 2,
+
+                  a)  ( fn +  ) 1 =  fn  ( fn −  ) 1        b)  ( fn +  ) 1 =  fn      ) 1
+                                                                            ( ) ( fn −
+                                  ( ) −
+                                                 3
+                                                                            ( ) / fn −
+                                  ( ) +
+                  c)  fn + (  ) 1 =  fn  2  ( f n −  ) 1    d)  ( fn +  ) 1 =  fn  (    ) 1
+
+          4.   Determine whether each of these proposed definitions is a valid recursive definition of a function f
+               from the set of nonnegative integers to the set of integers. If f is well defined, fund a formula for
+                 ( )  when n is nonnegative integer and prove that your formula is valid.
+                fn
+                 a)  ( ) 0f  =  0,   fn  2  ( f n −  ) 2    for  n ≥  1
+                                 ( ) =
+                                 ( ) =
+                 b)  ( ) 0 = f  1,   fn  −  ( fn −  ) 1    for  n ≥  1
+                 c)  f  ( ) 0 =  1,   fn  ( f n −  ) 1 −  1   for  n ≥  1
+                                 ( ) =
+                                            ( ) =
+                 d)  ( ) 0f  =  2,   f  ( ) 1 =  3,   fn  ( fn −  ) 1 −  1    for  n ≥  2
+                                           ( ) =
+                 e)  f  ( ) 0 =  1,   f  ( ) 1 =  2,   fn  2  ( fn −  ) 2     for  n ≥  2
+                 f)  f  ( ) 0 =  1,   f  ( ) 1 =  0,   f  ( ) 2 =  2, fn  2  ( f n −  ) 3     for  n ≥  3
+                                                     ( ) =
+                 g)  ( ) 0f  =  0,   f  ( ) 1 =  1,   fn  2  ( fn +  ) 1     for  n ≥  2
+                                           ( ) =
+                 h)  ( ) 0f  =  0,   f  ( ) 1 =  1,   fn  2  ( fn −  ) 1     for  n ≥  2
+                                           ( ) =
+                                                                  1
+                                 ( ) =
+                                                                         fn
+                 i)  f  ( ) 0 =  2,   fn  ( f n −  ) 1  if n is odd and  n ≥  and  ( ) =  2  ( fn −  ) 2  if n is even and
+                     n ≥  2
+                                                                   1
+                 j)  f  ( ) 0 = 1,   fn   ( −  ) 1  if n is odd and  n ≥  and  ( ) 9fn =  ( fn −  ) 2  if n is even and
+                                 ( ) 3 fn=
+                     n ≥  2
 
 
-             Example
 
-             There are 32 microcomputers in a computer center. Each microcomputer has 24 ports. How many
-             different ports to a computer in the center are there?
-
-             Solution
-                32 24     768  p t  or s
-
-
-
-             Example
-
-             How many different license plates can be made if each plate contains a sequence of three uppercase
-             English letters followed by three digits?
-
-             Solution
-                By the product rule, there are 26 ∙ 26 ∙ 26 ∙ 10 ∙ 10 ∙ 10 = 17,576,000 different possible license
-                plates.
-
-
-
-                                                             26</code></pre>
+                                                           162</code></pre>
      	</div>
     
      </div>

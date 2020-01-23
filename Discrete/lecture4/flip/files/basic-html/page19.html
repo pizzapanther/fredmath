@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 19 - Discrete Lecture 4</title>
+        <title>Page 19 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 19 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 19 - Lecture 4</div>
         <div id="content-top2">P. 19</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Transitive Closures
+    <pre style="white-space:pre-line"><code>Example
 
+             Which of the following are paths in the directed graph:
 
-             Definition
+                a , , , ; b e  d    a ,, , , e  c  d  b ;   b  , , , , , , ;a  c  b a  a  b   d  c ;   c ,, ;  b a    e , , b a , , ,, e b a  b   ?
+                                                                ,
+             What are the lengths of those that are paths?
+             Which of the paths in this list are circuits?
 
-                                                                     *
-             Let R be a relation on a set A. The connectivity relation  R  consists of the pairs (a, b) such that there
-             is a path of length at least one from a to b in R.
-
-
-
-             Example
-                                                                                                              n
-             Let R be the relation on the set of all people in the world that contains (a, b) if a has met b. What is R ,
-                                                                   *
-             where n is a positive integer greater than one? What is R ?
              Solution
 
-                              *
-                                                                                
-                The relation  R  contain (a, b) if there is a person c such that  ,a  c   and , that is, if there is a
-                                                                                    R
-                person c such that a has met c and c has met b.
-                            n
-                Similarly,  R  consists of those pairs (a, b) such that there are people  x  x  ,   , x   such that a
-                                                                                      ,
-                                                                                     1  2        n 1
-                has met  x .  x  has met  x  ,   , x   has met b.
-                          1    1           2       n 1
-                              *
-                The relation  R  contains (a, b) if there is a sequence of people, starting with a and ending with b,
-                such that each person in the sequence has met next person in the sequence.
+                Each of (a, b), (b, e), and (e, d) is an edge a, b, e, d is
+                a path of length 3
+                (c, d) is not an edge, therefore a, e, c, d, b is not a
 
+                path
 
-             Example
+                b ,a, c, b, a, a, b is a path of length 6
 
-             Let R be the relation on the set of all states in U.S. that contains (a, b) if state a and state b have a
-                                                                               *
-                                      n
-             common border. What is R , where n is a positive integer? What is R ?
-             Solution
-                              n
-                The relation  R  contain (a, b), where it is possible to go from state a to state b by crossing exactly
-                                              *
-                n state borders. The relation  R consists of the ordered pairs (a, b), where it is possible to go from
-                state a to state b crossing as many borders as necessary.
-                                               *
-                The only ordered pairs not in  R  are those containing sates that are not connected to the
-                continental U.S.
+                d, c is a path of length 1
+                c, b, a is a path of length 2
+
+                e, b, a, b, a, b, e is a path of length 6
+
+                The 2 paths b, a, c, b, a, a, b and e, b, a, b, a, b, e are circuits because they begin and end the same
+                vertex.
+                The paths a, b, e, d; c, b, a; and d, c are not circuits
 
 
              Theorem
 
-                                                                                 *
-             The transitive closure of a relation R equals the connectivity relation  R .
+             Let R be a relation on a set A. There is a path of length n, where n is a positive integer, from a to b if
+                                 n
+                            )
+             and only if ( , a b ∈ R
 
-             Lemma
+             Proof
 
-             Let A be a set with n elements, and let R be the relation on A. If there is a path of length at least one in
-             R from a to b, then there is such a path with length not exceeding n. Moreover, when  a  , if there is
-                                                                                                   b
-             a path of length at least one in R from a to b, then there is such a path with length not exceeding n – 1.
+              Using mathematical induction
+                                                                       )
+              There is a path from a to b of length one if and only if ( ,a b ∈ , which is true when n = 1.
+                                                                           R
+              Assume that the theorem is true for a positive integer n.
+                                                                                             A
+              We need to prove that there is a path of length n + 1 from a to b if and only if c∈  such there is a
+                                                                                                n
+                                                                                            )
+                                                 )
+              path of length 1 from a to c, so ( ,ac ∈ R , and  path of length n from c to b ( ,cb ∈ R .
+              Consequently, by the inductive hypothesis, there is a path of length n + 1 from a to b if and only if
+                                                               n
+                                                                                                     )
+                                            )
+                                                           )
+              there is an element c with ( ,ac ∈ R  and ( ,cb ∈  R . But there is such an element iff ( ,a b ∈ R n+ 1 .
+                                                                         )
+              Therefore, there is a path of length n + 1 from a to b iff ( ,a b ∈ R n+ 1 . This completes the proof.
 
-                                                             19</code></pre>
+
+
+
+
+
+                                                            209</code></pre>
      	</div>
     
      </div>

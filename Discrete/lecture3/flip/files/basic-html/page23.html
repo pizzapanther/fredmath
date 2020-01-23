@@ -152,47 +152,17 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-                                                     1
-             If T is a full binary tree, then      n T  2 h T     1
+    <pre style="white-space:pre-line"><code>Definition
 
-             Proof
-                Use structural induction.
-                Basis step:  The result holds for a full binary tree consisting only of a root, n(T) = 1 and h(T) = 0.
-                           Hence, n(T) = 1  ≤ 2 0+1  – 1   = 1.
-                                                h T                        h T 
-                                                     1
-                                                                                   1
-                                                                                   2
-                                                     1
-                Recursive step:  Assume  n T 1    2       1 and also  n T 2    2      1whenever T  and T
-                                                                                                      1
-                                                                                                             2
-                                are full binary trees.
-                    n T                                         (by recursive formula of n(T))
-                                    
-                                      n T
-                        1 n T
-                                  1
-                                          2
-                                                           
-                                            
-                          1    2 h   1T   1   1   2 h   1T   2   1    (by inductive hypothesis)
-                                                           
-                                            
-                                                        
-                                     h T      1 h T     1   2
-                                       1
-                           2 max 2
-                                         ,2          1
-                                                    
-                                                                           
-                                               1
-                               max  h T     1, h T                      x  y     max  , x y  
-                           2 2       1       2     1                max 2 ,2       2
-                           2 2  h   t   1                        (by recursive definition of h(T))
-                                1
-                           2 h t     1
+             The set of extended binary trees can be defined recursively by these steps:
+             Basis step:  The empty set is an extended binary tree.
+
+             Recursive step:  If  T  and T  are disjoint extended binary trees, there is an extended binary tree, denoted
+                                 1      2
+                      by TT⋅   , consisting of a root r together with edges connecting the root to each of the roots of
+                          1   2
+                      the left subtree T  and the right subtree T  when these trees are nonempty.
+                                      1                       2
 
 
 
@@ -223,6 +193,19 @@ function MM_swapImage() { //v3.0
 
 
 
+                                                    Extended Binary Trees
+
+
+             Definition
+
+             The set of full binary trees can be defined recursively by these steps:
+             Basis step:  There is a full binary tree consisting only of a single vertex r.
+
+             Recursive step:  If  T  and T  are disjoint full binary trees, there is a full binary tree, denoted by TT⋅  ,
+                                 1      2                                                                   1  2
+                      consisting of a root r together with edges connecting the root to each of the roots of the left
+                      subtree T  and the right subtree T .
+                              1                       2
 
 
 
@@ -230,7 +213,19 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             23</code></pre>
+
+
+
+
+
+
+
+
+
+
+                                                       Full Binary Trees
+
+                                                              159</code></pre>
      	</div>
     
      </div>

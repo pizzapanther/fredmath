@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 32 - Discrete Lecture 4</title>
+        <title>Page 32 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 32 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 32 - Lecture 4</div>
         <div id="content-top2">P. 32</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem – The Principle of Well-Ordered Induction
+    <pre style="white-space:pre-line"><code>Definition
 
-
-             Suppose that S is a well-ordered set. Then     is true for all  x  , if
-                                                      P x
-                                                                             S
-             Inductive Step: For every  y S , if     is true for all  x   with  x  y , then    y  is true.
-                                                                       S
-                                                                                          P
-                                               P x
-
-             Proof
-                                                                                                
-              Suppose it is not the case that     is true for all  x  . Then there is an element  y S  such that,
-                                                                   S
-                                            P x
-               P   y  is false.
-                                                             
-                                           
-              Consequently, the set  A   x S P   x  is false  is nonempty. Because S is well ordered, A has a
-                                               |
-              least element a. By the choice of a as a least element of A, we know that     is true for all with
-                                                                                     P x
-               x   a . This implies by the inductive step     is true. This contradiction shows that     must be
-                                                                                                  P x
-                                                       P a
-              true for all  x  .
-                             S
-
+                                                )
+             The elements a and b of poset ( ,S    are called comparable if either  a   or b  . When a and b
+                                                                                    b
+                                                                                             a
+                                                            a
+             are elements of S such that neither  a   nor b  , a and b are called incomparable.
+                                                  b
 
              Example
 
-             Determine whether  3, 5  4, 8   , whether  3, 8  4, 5   , and whether  4, 9  4, 11   in the poset
-                 ,     , where    is the lexicographic ordering constructed from the usual ≤ relation on   .
-
+             In the poset ( ,|    )  are the integers 3 and 9 comparable? Are 5 and 7 comparable?
              Solution
 
-                Because 3 &lt; 4, it follows that  3, 5  4, 8    and that  3, 8  4, 5   . We have  4, 9  4, 11  ,
-                                                            
-
-                because the first entries of   4, 9      and  4, 11  are the same but 9 &lt; 11.
+                The integers 3 and 9 are comparable, because 3 | 9.
+                The integers 5 and 7 are incomparable, because 5|7  and 7|5
 
 
-             Maximal and Minimal Elements
+             Definition
 
-             An element of a poset is called maximal if it is not less than any element of the poset. That is, a is
+                     )
+             If ( ,S    is a poset and every two elements of S are comparable, S is called a totally ordered or
+             linearly ordered set, and   is called a total order or a linear order. A totally ordered set is also
 
-             maximal in the poset  , S     if there is no element  b   such that  a  b .
-                                                                  S
-             Similarly, an element of a poset is called minimal if it is not greater than any element of the poset. That
+             called a chain.
 
-                                                                         S
-             is, a is minimal in the poset   ,S     if there is no element  b   such that  b  a .
-             Maximal and minimal elements are easy to spot using a Hasse diagram. They are the “top” and
-             “bottom” elements in the diagram.
+             Example
 
-             Sometimes there is an element in a poset that is greater than every other element. Such that an element
-             is called the greatest element. That is, a s the greatest element of the poset  ,S  
+                                                                     a
+                                                            b
+             The poset ( ,  ≤  )  is totally ordered, because  a ≤  or b ≤  whenever a and b are integers.
 
+             Example
 
+                       (  +  )
+             The poset    ,|   is not totally ordered, because it contains elements that are incomparable, such as 5
 
-
-
-
-
+             and 7.
 
 
+             Definition
 
 
+                     )
+             If ( , S    is well-ordered set if it is a poset such that   is a total ordering and every nonempty
+             subset of S has a least element.
 
-                                                             32</code></pre>
+
+             Example
+                                                                       (
+                                                                                     ,
+                                                                          ,
+                                                                                
+             The set of ordered pairs of positive integers,    +  ×   +  , with  a  a 2 ) ( b b 2 )  if  a &lt; b , or if
+                                                                                              1
+                                                                                    1
+                                                                         1
+                                                                                                   1
+             a =  b and  a &lt;  b (Lexicographic ordering), is a well-ordered set.
+              1    1      2    2
+             The set Z, with the usual ≤ ordering, is not well-ordered because the set of negative integers, which is
+             a subset of Z, has no least element.
+
+
+                                                            222</code></pre>
      	</div>
     
      </div>

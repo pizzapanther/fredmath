@@ -152,57 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 3.4  Permutations and Combinations
+    <pre style="white-space:pre-line"><code>Combination
 
 
 
-             1.   Decide whether the situation involves permutations or combinations
-                    a)  A batting order for 9 players for a baseball game
-                    b)  An arrangement of 8 people for a picture
-                    c)  A committee of 7 delegates chosen from a class of 30 students to bring a petition to the
-                       administration
-                    d)  A selection of a chairman and a secretary from a committee of 14 people
-                    e)  A sample of 5 items taken from 71 items on an assembly line
-                    f)  A blend of 3 spices taken from 7 spices on a spice rack
-                    g)  From the 7 male and 10 female sales representatives for an insurance company, team of 8
-                       will be selected to attend a national conference on insurance fraud.
-                    h)  Marbles are being drawn without replacement from a bag containing 15 marbles.
-                    i)  The new university president named 3 new officers a vice-president of finance, a vice-
-                       president of academic affairs, and a vice-president of student affairs.
-                    j)  A student checked out 4 novels from the library to read over the holiday.
-                    k)  A father ordered an ice cream cone (chocolate, vanilla, or strawberry) for each of his 4
-                       children.
+          Definition
+          An r-combination of elements of a set is an unordered selection of r elements from the set. Thus, an    r-
+          combination is simply a subset of the set with r elements
 
-                                                                                    
-             2.   How many different permutations are the of the set a, b, c, d, e, f, g ?
-                                                             
-             3.   How many permutations of a, b, c, d, e, f, g end with a?
+          Combination of a set of n distinct objects taken r @ a time without repetition is an r element subset of
 
-             4.   Find the number of 5-permutations of a set with nine elements
-             5.   In how many different orders can five runners finish a race if no ties are allowed?
+          the set of n objects.
 
-             6.   A coin flipped eight times where each flip comes up either heads or tails. How many possible
-                  outcomes
-                    a)  Are there in total?
-                    b)  Contain exactly three heads?
-                    c)  Contain at least three heads?
-                    d)  Contain the same number of heads and tails?
+          The arrangement of the elements doesn’t matter.
 
-             7.   A coin flipped 10 times where each flip comes up either heads or tails. How many possible
-                  outcomes
-                    a)  Are there in total?
-                    b)  Contain exactly two heads?
-                    c)  Contain at least three heads?
-                    d)  Contain the same number of heads and tails?
-
-             8.   How many bit strings of length 12 contain
-                    a)  Exactly three 1s?
-                    b)  At most three 1s?
-                    c)  At least three 1s?
-                    d)  An equal number of 0s and 1s?
+                                                           P
+                                                      n
+                                            C      =      =  , nr  =  ! n
+                                                                    !(
+                                                      r
+                                                , nr        ! r  rn r−   )!
+                 n  Math → Prob → 3(nCr)  r
 
 
-                                                             40</code></pre>
+          Example
+
+          Let S be the set {a, b, c, d}. Then {a, c, d} is a 3-combination from S. It is the same as {d, c, a} since the
+          order listed does not matter.
+
+          Solution
+
+             C(4,2) = 6 because the 2-combinations of {a, b, c, d} are the six subsets
+              {a, b}, {a, c}, {a, d}, {b, c}, {b, d}, and {c, d}.
+
+
+          Theorem
+          The number of r-combinations of a set with n elements, where n ≥ r ≥ 0, equals
+                                                   C ( ,   ) =    ! n
+                                                      nr
+                                                               !( −
+                                                              rn r   )!
+          Proof
+
+             By the product rule P(n, r) = C(n, r) ∙ P(r, r). Therefore,
+
+                     )
+              C ( , nr =  P ( ,nr )
+                        P ( ,rr )
+                             ! n
+                         (nr   )!
+                            −
+                       =     ! r
+                         (rr  )!
+                           −
+                       =      ! n
+                          !(
+                         rn r−  )!
+
+
+
+
+
+
+
+
+                                                           176</code></pre>
      	</div>
     
      </div>

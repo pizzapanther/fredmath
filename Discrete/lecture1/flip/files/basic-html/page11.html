@@ -152,66 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-                                    
-           Show that   p q      and  p   are logically equivalent.
-                                           q
-           Solution
-                                             
-                 p     q     p q       p q    p   q       p  q
-
-                 T     T      T          F         F     F         F
-                 T     F      T          F         F     T         F
-                 F     T      T          F         T     F         F
-                 F     F      F          T         T     T         T
-
-               The truth table shows that   p q         is a tautology and these compound propositions are
-                                                            q
-                                                       p
-               logically equivalent.
+    <pre style="white-space:pre-line"><code>Section 1.2 – Propositional Equivalences
 
 
-           Example
-                                     
-                                 
-                           q
-           Show that  p   and  p q are logically equivalent.
-           Solution
-                 p    q     p        p q    p  q
-
-                 T    T      F        T         T
-                 T    F      F        F         F
-
-                 F    T      T        T         T
-                 F    F      T        T         T
-                                                       
-                                                    
-                                             q
-               The truth table shows that  p   and  p q  are logically equivalent.
 
 
-           Example
-                               
-           Show that  p   q r  and  p q         
-                            
-                                        
-                                              p r  are logically equivalent. This is the distributive law of
-           disjunction over conjunction.
-           Solution
-                                                          
-                  p      q       r     q r        p    q r    p q     p  r        p    q   p   r
+             Introduction
 
-                  T      T       T       T           T           T         T              T
-                  T      T       F       F           T           T         T              T
-                  T      F       T       F           T           T         T              T
-                  T      F       F       F           T           T         T              T
-                  F      T       T       T           T           T         T              T
-                  F      T       F       F          F            T         F              F
-                  F      F       T       F          F            F         T              F
-                  F      F       F       F          F            F         F              F
-                The truth table Show that  p   q r    and  p q    p r     are logically equivalent.
+             An important type of step used in a mathematical argument is the replacement of a statement with another
+             statement with the same truth value.
 
-                                                             11</code></pre>
+
+             Definition
+
+             A compound proposition that is always true, no matter what the truth values of the proposition variables
+             that occur in it, is called a tautology. A compound proposition that is always false is called contradiction.
+             A compound proposition that is neither a tautology nor a contradiction is called a contingency.
+
+
+             Example
+
+                   p     ¬p      p ∨¬p        p ∧¬p
+
+                   T      F         T           F
+
+                   F      T         T           F
+
+                      p
+                 p ∨¬  is always true, it is tautology
+                      p
+                 p ∧¬  is always false, it is contradiction.
+
+
+
+             Logical Equivalences
+
+             Definition
+
+                                                                                 q
+             Compound propositions p and q are called logically equivalent if  p ↔  is a tautology. The notation
+             p q≡  denotes that p and q are logically equivalent.
+
+
+                                                      De Morgan’s Laws
+
+                                                      ¬ ( pq∧  ) ≡ ¬ ∨¬
+                                                                   p
+                                                                        q
+                                                                   p
+                                                                        q
+                                                      ¬ ( pq∨  ) ≡ ¬ ∧¬
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              11</code></pre>
      	</div>
     
      </div>

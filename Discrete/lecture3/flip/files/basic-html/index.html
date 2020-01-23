@@ -158,7 +158,7 @@ function MM_swapImage() { //v3.0
 
 
 
-             Section 3.1  Mathematical Induction
+             Section 3.1 − Mathematical Induction
 
 
 
@@ -166,18 +166,20 @@ function MM_swapImage() { //v3.0
              Introduction
 
              Suppose we have an infinite ladder:
+
                 1.  We can reach the first rung of the ladder.
+
                 2.  If we can reach a particular rung of the ladder,
                     then we can reach the next rung.
 
-             From (1), we can reach the first rung. Then by
-             applying (2), we can reach the second rung. Applying
-             (2) again, the third rung. And so on.  We can apply (2)
-             any number of times to reach any particular rung, no
-             matter how high up.
+             From (1), we can reach the first rung.
+             Then by applying (2), we can reach the second rung.
+             Applying (2) again, the third rung. And so on.
 
-             This example motivates proof by mathematical
-             induction.
+             We can apply (2) any number of times to reach any
+             particular rung, no matter how high up.
+
+             This example motivates proof by mathematical induction.
 
 
 
@@ -188,24 +190,25 @@ function MM_swapImage() { //v3.0
              Mathematical Induction
 
              Principle of Mathematical Induction
-             To prove that P(n) is true for all positive integers n, we
+             To prove that P(n) is true for all positive integers n, we complete these steps:
 
-             complete these steps:
                   Basis Step: Show that P(1) is true.
                   Inductive Step: Show that P(k) → P(k + 1)  is true for all positive integers k.
+             To complete the inductive step, assuming the inductive hypothesis that P(k) holds for an arbitrary integer
+             k, show that must P(k + 1) be true.
 
-             To complete the inductive step, assuming the inductive hypothesis that P(k) holds for an arbitrary
-             integer k, show that  must P(k + 1) be true.
+
+             Steps in Applying the Principle of Mathematical Induction
+
+                1)  Show that  P  is true.
+                               1
+
+                2)  Assume that  P  is true, and then prove that  P   is true.
+                                  k                             k  1 +
 
 
-             Climbing an Infinite Ladder Example:
 
-              BASIS STEP: By (1), we can reach rung 1.
-              INDUCTIVE STEP: Assume the inductive hypothesis that we can reach rung k. Then by (2), we can
-                                  reach rung k + 1.
-                  Hence, P(k) → P(k + 1) is true for all positive integers k. We can reach every rung on the ladder.
-
-                                                              1</code></pre>
+                                                              137</code></pre>
      	</div>
     
      </div>

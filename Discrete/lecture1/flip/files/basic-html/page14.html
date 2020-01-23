@@ -152,83 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Logical Equivalences Involving                    Logical Equivalences Involving
+                  Conditional Statements                            Biconditional Statements
 
-                      
-           Show that   p                    q
-                             p q  and  p   are logically equivalent by developing a series of logical
-           equivalences.
-           Solution
-
-                 p                             By De Morgan’s law
-                                         p q
-                       p q
-                                   p
-                                 p   p     q          Double negation law
-                                           p 
-                                  p 
-                                      p           q     Distribution law
-                                F    p    q             p   F
-                                                                   p
-                                         q  F            Commutative law for disjunction
-                                  p 
-                                        q
-                                 p                       Identity law
-
-
-           Example
-
-                            
-                                      
-           Show that  p q      p q  is a tautology.
-                                   
-                         
-           Solution
-                p q     p q      p q    p q    
-                                    p  
-                                              p q
-                                         q              By De Morgan’s law
-                                    p 
-                                             q q
-                                       p               By Associative and commutative laws
-                                    T T
-
-                                 T
+                         q
+                     p → ≡¬    pq∨                                    p ↔≡     ( p → q ∧        ) r
+                                                                                      ) (q →
+                                                                           q
+                               q
+                         q
+                     p → ≡ ¬ ∨¬                                       p ↔ ≡¬ ↔ ¬
+                                                                           q
+                                                                                 p
+                                                                                       q
+                                    p
+                              p
+                                  q
+                     pq∨ ≡¬ →                                         p ↔  q ≡ ( pq∧  ) ( p∨ ¬ ∧¬  ) q
+                                                                                         q
+                     pq∧ ≡ ¬  ( p → ¬  ) q                            ¬ ( p ↔  ) q ≡  p ↔¬
+                    ¬ ( p →   ) q ≡  p ∧¬
+                                      q
+                    ( p →  q ) ( p∧  →  ) r ≡  p →  (q r∧  )
+                    ( p →  r ) (q∧  →  r ) ( p q≡  ∨  ) →  r
+                    ( p →  q ) ( p∨  →  ) r ≡  p →  (q r∨  )
+                    ( p →  r ) (q∨  →  r ) ( p q≡  ∧  ) →  r
 
 
+            ¬ (  p ∨  p ∨  2  ∨  p n ) (  p ∧¬ p ∧  2  ∧¬ p n )
+                                  ≡ ¬
+                                       1
+                1
+                                  ≡ ¬
+            ¬ (  p ∧  p ∧  2  ∧  p n ) (  p ∨¬ p ∨  2  ∨¬ p n )
+                                       1
+                1
 
 
+          Using De Morgan’s Laws
+
+          The two logical equivalences known as De Morgan’s laws are particularly important. The equivalence
+                            q
+                       p
+                                                              q
+                                                         p
+          ¬ ( pq∨  ) ≡ ¬ ∧¬  and similarly  ( pq¬  ∧  ) ≡ ¬ ∨¬
 
 
+          Example
 
+          Use De Morgan’s laws to express the negations of “Miguel has a cellphone and he has a laptop computer”
+          and “Heather will go to the concert or Steve will go to the concert.”
+          Solution
 
+             Let:  p be “Miguel has a cellphone”
+                   q be “Miguel has a laptop computer”
+             can be expressed as  pq∧
 
+                                                                    q
+             By De Morgan’s laws  ( pq¬  ∧  )  is equivalent to  p¬ ∨¬ .We can express the negation of our
+             original statement as “Miguel does not have a cellphone or he does not have a laptop computer”
 
+             Let:  r be “Heather will go to the concert”
+                   s be “Steve will go to the concert”
+             can be expressed as  r ∨
+                                     s
+                                               r
+             By De Morgan’s laws  (r¬   ∨  ) s ≡ ¬ ∧¬ . We can express the negation of our original statement as
+                                                     s
+             “Heather will not go to the concert and Steve will not go to the concert.”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             14</code></pre>
+                                                            14</code></pre>
      	</div>
     
      </div>

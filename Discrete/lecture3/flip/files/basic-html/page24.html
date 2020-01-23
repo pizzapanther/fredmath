@@ -152,92 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 3.2  Recursive Definitions and Structural Induction
+    <pre style="white-space:pre-line"><code>Structural Induction
+
+          Example
+
+          Show that the set S defined  by specifying that 3 ∊ S and that if x ∊ S and   y ∊  S, then x + y is in S, is the
+          set of all positive integers that are multiples of 3.
+
+          Solution
+
+             Let A be the set of all positive integers divisible by 3.
+             To prove that A = S, show that A is a subset of S and S is a subset of A.
+                 A⊂ S:  Let P(n) be the statement that 3n belongs to S.
+                        Basis step:  3∙1 = 3 ∊ S, by the first part of recursive definition.
+
+                        Inductive step:  Assume P(k) is true. By the second part of the recursive definition, if 3k ∊
+                        S, then since 3 ∊ S, 3k + 3 = 3(k + 1) ∊ S.
+
+                         Hence, P(k + 1) is true.
+
+                 S ⊂ A:
+                        Basis step:  3 ∊ S by the first part of recursive definition, and   3 = 3∙1.
+                        Inductive step:  The second part of the recursive definition adds  x + y to S, if both x and y
+                                      are in S.
+                                       If x and y are both in A, then both x and y are divisible by 3. It follows that
+                                        x +  is divisible by 3.
+                                           y
+
+
+
+          Full Binary Trees
+
+          Definition
+
+                     hT
+          The height  ( ) of a full binary tree T is defined recursively as follows:
+
+             Basis step:  The height of a full binary tree T consisting of only a root r is  ( ) 0hT = .
+
+             Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has height
+                                 1       2                                                 12
+                                               ( ) ( ))
+                              h ( ) 1 maxT = +  ( h T 1  ,h T 2  .
+
+
+          The number of vertices  n(T) of a full binary tree T satisfies the following recursive formula:
+
+             Basis step:  The number of vertices of a full binary tree T consisting of only a root r is n(T) = 1.
+
+             Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has the number
+                                 1       2                                                 12
+                                                           n T
+                             of vertices  ( ) 1n T =  +  n T +  ( ) ( ) .
+                                                      1
+                                                              2
 
 
 
 
-                                                                                      f
-                                                       f
-                              f
-                                    f
-                                               f
-             1.   Find    1 ,   2 ,   3 , and    4  if    n  is defined recursively by    0  1 and for
-                        f
-                  n   0, 1, 2,
 
-                          
-                    a)  f n    1   f n                 b)  f n     1   3 f    n
-                                      2
-                                                                
-                    c)  f n     1   2 f    n        d)  f n     1   f    n  2    f n 
-                                                                                     1
-
-                              f
-                        f
-                                    f
-             2.   Find    1 ,   2 ,   3 ,    4  and    5  if    n  is defined recursively by    0   and for
-                                                                                                   3
-                                                                                            f
-                                                              f
-                                           f
-                                                     f
-                  n   0, 1, 2,
-
-                          
-                                                                
-                    a)  f n    1   2 f    n         b)  f n    1  3 f n 
-                                                                             7
-                                      /3
-                                                               
-                    c)  f n     1   3 f n             d)  f n    1   f    n  2   2 f n 
-                                                                                      2
-
-                              f
-             3.   Find    2 ,   3 ,    4  and    5  if    n  is defined recursively by    0   f  f    1   1 and for
-                                               f
-                                                        f
-                        f
-                                     f
-                  n   1, 2,
-                                                                   
-                          
-                    a)  f n    1   f    n    f n    1    b)  f n    1   f n   1
-                                                                                 f n 
-                                                                   
-                                                                               / f n 
-                                                   3
-                          
-                    c)  f n    1   f    n  2     f n    1    d)  f n    1   f n     1
-
-             4.   Determine whether each of these proposed definitions is a valid recursive definition of a function
-                  f from the set of nonnegative integers to the set of integers. If f is well defined, fund a formula for
-                   f    n  when n is nonnegative integer and prove that your formula is valid.
-                    a)  f    0   0,   f    n   2   f n    2    for  n 
-                                                             1
-                    b)  f    0  1,   f    n     f n    1    for  n  1
-                    c)  f    0  1,   f    n    f n    1  1   for  n  1
-                    d)  f    0   2,   f    1   3,   f    n    f n    1  1    for  n 
-                                                                         2
-                    e)  f    0  1,   f    1   2,   f    n   2   f n    2     for  n 
-                                                                        2
-                                                                                 3
-                    f)  f    0  1,   f    1   0,   f    2   2, f    n   2   f n    3     for  n 
-                    g)  f    0   0,   f    1  1,   f    n   2   f n    1     for  n 
-                                                                        2
-                    h)  f    0   0,   f    1  1,   f    n   2   f n    1     for  n 
-                                                                        2
-                    i)  f    0   2,   f    n    f n    1  if n is odd and  n   and    n   f  2   f n    2  if n is even and
-                                                                     1
-                        n   2
-                    j)  f    0  1,   f    n   3   f n    1  if n is odd and  n   and    n   f  9   f n    2  if n is even and
-                                                                      1
-                        n   2
-
-
-
-
-                                                             24</code></pre>
+                                                           160</code></pre>
      	</div>
     
      </div>

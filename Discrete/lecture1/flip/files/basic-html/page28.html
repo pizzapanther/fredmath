@@ -152,95 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-                                                                                                               
-                      
-           Let   , x  y  be the statement "x y    0". What are the truth values of the quantifications  y x P x  y
-                                                                                                     
-                                                                                                  
-               P
-                                                                                                           ,
-                            
-           and  x y P     ,x  y  where the domain for all variables consists of all real numbers?
-           Solution
-                                              
-                                    
-                                 
-                                          ,
-               The quantification  y x P x  y denotes the proposition
-
-                                                                                          
-                                                                                   P
-                         There is a real number y, such that for every real number x,   , x  y
-                                                                                         
-               No matter what value of y is chosen, there is only one value of x for which  x y   0. Because there is
-                                                                                                  
-               no real number y such that  x y   0 for all real numbers x, the statement  y x P x  y  is false.
-                                                                                      
-                                                                                        
-                                           
-                                                                                              ,
-               x   1 0
-                    
-
-                                              
-                                    
-                                 
-                                          ,
-               The quantification  x y P x  y denotes the proposition
-
-                         For every real number x, there is a real number y such that   , x  y 
-                                                                                  P
-                                                                
-                                                          P
-                    “For all x, there exists a y such that   , x  y ”
-
-               x    0      y   x
-                   y
-                                                
-                                    
-                                      
-                                            ,
-               Hence, the statement  x y P x  y  is true.
-                                                                 
-                    There exists an x such that for all y   , x  y is true”
-                                                          P
+    <pre style="white-space:pre-line"><code>Section 1.4 – Nested Quantifiers
 
 
 
-               Quantifications of Two variables
-                 Statement           When True?                              When False?
-                 x y P   ,x  y                                        There is a pair  , x  y  for which
-                                  P  ,x  y  is true for every pair  , x  y
-                                         
-                                                                                 
-                            
-                  
-                 x y P  , x  y                                          P  , x  y  is false.
-                                                                                                         
-                                  For every x there is a y for which      There is an x such that   , x  y is
-                                                                                                  P
-                            
-                 x y P   ,x  y
-                                         
-                                  P  , x  y  is true.                    false for every y.
-                                                                 
-                                                          P
-                            
-                 
-
-                 x y P  , x  y    There is an x for which   , x  y is   For every x there is a y for which
-                                                                                 
-                                  true for every y.                       P  , x  y  is false.
-                 x y P   ,x  y   There is a pair  , x  y  for which
-                                                                                 
-                                                                          P  , x  y  is false for every pair  , x  y
-                                         
-                           
-                 y x P   ,x  y    P  ,x  y  is true.
 
 
-                                                             28</code></pre>
+          Introduction
+
+          Nested quantifiers commonly occur in mathematics and computer science. Nested quantifiers can
+          sometimes be difficult to understand.
+          We will see how to use nested quantifiers to express mathematical statements such as “The sum of two
+          positive integers is always positive.” We will show how nested quantifiers can be used to translate
+          sentences such as “Everyone has exactly one best friend” into logical statements.
+
+
+          Example
+
+                                       ( (
+                                             ) ( y &lt;
+          Translate the statement  x y x &gt;  0 ∧        ) 0 →  ( xy &lt;  0 ))
+                                 ∀∀
+          Where the domain for both variables consists of all real numbers.
+          Solution
+
+             This statement says that for every real number x and every real number y, if  x &gt;  and  y &lt; , then
+                                                                                                     0
+                                                                                          0
+              xy &lt; 0 . That is, this statement says that for all real numbers x and y, if x is positive and y is negative,
+             then xy is negative.
+             This can be stated more succinctly as
+             “The product of a positive real number and a negative real number is always a negative real number.”
+
+
+
+          The Order of Quantifiers
+
+          Example
+
+                     )
+          Let  ( ,P x y  be the statement "x y  yx  ". What are the truth values of the quantifications
+                                          += +
+                       )
+                                          )
+                             ∀∀
+          ∀∀      ( ,x  y  and  y x P ( ,x  y  where the domain for all variables consists of all real numbers?
+            x y P
+          Solution
+             The quantification  x y P x  y∀∀  ( ,  ) denotes the proposition
+
+                        For all real numbers x, for all real numbers y,  x +=  yx+
+                                                                        y
+
+                                             )
+             The quantification  y x P∀∀  ( ,x  y denotes the proposition
+
+                        For all real numbers y, for all real numbers x,  x +=  yx+
+                                                                        y
+             Which they have the same meaning.
+                                                        )
+                                     )
+             Therefore;  x y P∀∀  ( ,x  y  and  y x P∀∀  ( ,x  y  have the same meaning, and both are true. This
+             illustrates the principle that the order of nested universal quantifiers in a statement without other
+             quantifiers can be changed without changing the meaning of the quantified statement.
+
+
+
+                                                            28</code></pre>
      	</div>
     
      </div>

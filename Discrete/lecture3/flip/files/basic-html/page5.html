@@ -152,65 +152,50 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Proving Inequalities
+    <pre style="white-space:pre-line"><code>Example
 
+             Use mathematical induction to prove this formula for the sum of a finite number of terms of a geometric
+             progression with initial term a and common ratio r:
 
-             Example
+                                   n                                  n+ 1
+                                 ∑   ar =  j  a +  ar +  ar +  2  +  ar =  n  ar r − 1 − a  when   r ≠  1
 
-                                                                             n
-             Prove that the statement is true for every positive integer n.   n   2
-
+                                  j= 0
+             for all nonnegative integers n.
              Solution
-                                             ?
-                                               1
-                                             
-                Basis Step:    For n = 1  1 2     P  is true.
-                                                         1
-                Inductive Step. Assume that  P  is true  k   2 k
-                                              k
-                                                                
-                We need to prove that   P    is true, that is   k   1 2 k 1
-                                        k  1
-                           k  1   k   k   2k
 
-                                   2 2   k
-                                        
-                                   2 k 1
-                    Thus,  P    is true.
-                           k  1
+                                             +
+                Basis Step:  For n = 0 ⇒   ar 0 1  −  a  =  ar −  a  =  ( ar −  ) 1  =  a ; hence  P  is true.
+                                             r −  1    r − 1    r −  1              0
 
-                By mathematical induction, the statement  n   2 n    is true.
+                Inductive Step:  a +  ar +  ar +  2  +  ar =  k  ar k+ 1  −  a   is true for every positive integer k.
+                                                            r − 1
 
+                           a +  ar +  ar +  2  +  ar +  k  ar k+ 1  =  ar k+ 2  − a   ?
+                                                               r − 1
 
-             Example
+                    a +  ar +  ar +  2  ar + +  k  ar k+ 1  =  ar k+ 1 − a  +  ar k+ 1
+                                                       r − 1
 
-                                                                        n
-             Prove that the statement is true for every positive integer n.  2   ! n  for every integer n with  n 
-                                                                                                          4
-             Solution
-                                               ?
-                                             4
-                Basis Step:    For n = 4   2  4!     16   24     P  is true.
-                                                                        4
-                                                        k
-                Inductive Step. Assume that  P  is true  2   ! k
-                                              k
-                      We need to prove that   P   is true, that is   2 k 1    k    1 !
-                                              k  1
+                                                             a
+                                                     ar k+  1 −+  ar k+  1 (r −  ) 1
+                                                   =          r − 1
+                                                                ar
+                                                             a
+                                                   =  ar k+  1 −+ r − k+  1  2  − ar k+  1
+                                                      a
+                                                   =  −+  ar 1 k+ 2
+                                                        r −
 
-                                    k
-                                          2 2
-                                      2
-                           2 k  1    2     k
-                                   2 k   !
-                                   k    1 ! k       2   k   1
+                                                   =  ar k+ 2 1 − a        √
+                                                        r −
+                      Hence  P     is also true.
+                              k+ 1
+                By mathematical induction, the statement
+                  n                                  n+ 1
+                 ∑  ar =  j  a +  ar +  ar +  2  +  ar =  n  ar  r − 1 −  a , when r ≠  1 is true
 
-                                   k    1 ! 
-
-                      Thus,  P    is true.
-                             k  1
-                                                          n
-                By mathematical induction, the statement  2   ! n is true.
+                 j= 0
 
 
 
@@ -220,7 +205,20 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              5</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              141</code></pre>
      	</div>
     
      </div>

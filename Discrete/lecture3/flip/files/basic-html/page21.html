@@ -152,81 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
-             The set of extended binary trees can be defined recursively by these steps:
+    <pre style="white-space:pre-line"><code>Example
 
-             Basis step:  The empty set is an extended binary tree.
-             Recursive step:  If  T  and T  are disjoint extended binary trees, there is an extended binary tree,
-                                 1      2
-                      denoted by T  T , consisting of a root r together with edges connecting the root to each of
-                                  1   2
-                      the roots of the left subtree T  and the right subtree T  when these trees are nonempty.
-                                                 1                       2
+                                             *
+             If Σ = {0, 1}, the strings in in Σ  are the set of all bit strings, λ,0,1, 00,01,10, 11, etc.
 
 
+             Example
+
+                                                *
+             If Σ = {a, b}, show that aab is in Σ .
+
+                             *
+                                                 *
+                Since λ ∊ Σ  and a ∊ Σ, a ∊ Σ .
+                                                  *
+                             *
+                Since a ∊ Σ  and a ∊ Σ, aa ∊ Σ .
+                              *
+                                                     *
+                Since aa ∊ Σ  and b ∊  Σ, aab ∊ Σ .
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                   Extended Binary Trees
-
+             String Concatenation
 
              Definition
 
-             The set of full binary trees can be defined recursively by these steps:
+                                                                                                           *
+             Two strings can be combined via the operation of concatenation. Let Σ be a set of symbols and Σ  be
 
-             Basis step:  There is a full binary tree consisting only of a single vertex r.
+             the set of strings formed from the symbols in Σ. We can define the concatenation of two strings, denoted
+             by ∙, recursively as follows.
 
-             Recursive step:  If  T  and T  are disjoint full binary trees, there is a full binary tree, denoted by
-                                 1      2
-                      T  T , consisting of a root r together with edges connecting the root to each of the roots of
-                       1   2
-                      the left subtree T  and the right subtree T .
-                                      1                       2
-
-
-
-
-
-
-
-
+                                 *
+             Basis step: If w ∈ Σ , then w ∙ λ= w.
+                                                    *
+                                      *
+             Recursive step: If  w ∈Σ  and  w ∈Σ and x ∈ Σ, then   w ⋅    ( wx =  ) ( w ⋅  w  ) x .
+                                1             2                         1    2       1    2
+                  Often  w ⋅ w  is written as  w w .
+                            1   2               12
+                  If  w =  abra  and  w =  cadabra , the concatenation  w w =  abracadabra .
+                        1              2                                12
 
 
+             Length of a String
+
+             Example
+
+             Give a recursive definition of l(w), the length of the string w.
+
+             Solution
+
+                The length of a string can be recursively defined by:
+                l(w) = 0;
+
+                                        *
+                l(wx) = l(w) + 1 if  w∈Σ  and x ∊ Σ.
 
 
 
 
 
-
-
-                                                     Full Binary Trees
-
-                                                             21</code></pre>
+                                                              157</code></pre>
      	</div>
     
      </div>

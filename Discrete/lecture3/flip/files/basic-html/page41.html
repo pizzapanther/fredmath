@@ -152,57 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>9.   A group contains n men and n women. How many ways are there to arrange these people in a
-                  row if the men and women alternate?
+    <pre style="white-space:pre-line"><code>Example
 
-             10.  In how many ways can a set of two positive integers less than 100 be chosen?
+             How many poker hands of five cards can be dealt from a standard deck of 52 cards? Also, how many
+             ways are there to select 47 cards from a deck of 52 cards?
 
-             11.  In how many ways can a set of five letters be selected from the English alphabet?
+             Solution
 
-             12.  How many subsets with an odd number of elements does a set with 10 elements have?
-             13.  How many subsets with more than two elements does a set with 100 elements have?
-
-             14.  How many ways are there for eight men and five women to stand in a line so that no two women
-                  stand next to each other?
-
-             15.  How many ways are there for six men and 10 women to stand in a line so that no two men stand
-                  next to each other?
-
-             16.  A professor writes 40 discrete mathematics true/false questions. Of the statements in these
-                  questions. 17 are true. If the questions can be positioned in any order, how many different answer
-                  keys are possible?
-
-             17.  Thirteen people on a softball team show up for a game.
-                    a)  How many ways are there to choose 10 players to take the field?
-                    b)  How many ways are there to assign the 10 positions by selecting players from the 13 people
-                       who show up?
-                    c)  Of the 13 people who show up, there are three women. How many ways are there to choose
-                       10 players to take the field if at least one of these players must be a woman?
-
-             18.  A club has 25 members
-                    a)  How many ways are there to choose four members of the club to serve on an executive
-                       committee?
-                    b)  How many ways are there to choose a president, vice president, secretary, and treasurer of
-                       the club, where no person can hold more than one office?
-
-             19.  How many 4-permutations of the positive integers not exceeding 100 contain three consecutive
-                  integers, k, k + 1, k + 2, in the order
-                    a)  Where these consecutive integers can perhaps be separated by other integers in the
-                       permutation?
-                    b)  Where they are in consecutive positions in the permutation?
-
-             20.  The English alphabet contains 21 constants and five vowels. How many strings of six lowercase
-                  letters of the English alphabet contain
-                    a)  Exactly one vowel?
-                    b)  Exactly two vowels?
-                    c)  At least one vowel?
-                    d)  At least two vowels?
+                Since the order in which the cards are dealt does not matter, the number of five card hands is:
+                         )
+                C  (52, 5 =     52!
+                            5!(52 5)!−
+                          = 2,598,960  ways
 
 
+             Corollary
+
+             Let n and r be nonnegative integers with     r ≤ n. Then C(n, r) = C(n, n − r).
+
+             Proof
+
+                                                       )
+                                                C
+                From Theorem 2, it follows that  ( ,  =        ! n
+                                                   nr
+                                                           rn r   )!
+                                                            !( −
+                    C
+                              )
+                  and  ( , nn r =           ! n        =      ! n
+                           −
+                                                              )! !
+                                                           −
+                                  (nr   −  )! n  (nr−  )! −    (n rr
+                                         
+                   Hence, C(n, r) = C(n, n − r).
+
+
+             Definition
+             A combinatorial proof of an identity is a proof that uses one of the following methods.
+                A double counting proof uses counting arguments to prove that both sides of an identity count the
+                  same objects, but in different ways.
+                A bijective proof  shows that there is a bijection between the sets of objects counted by the two sides
+                  of the identity.
+
+
+             Example
+
+             How many ways are there to select five players from a 10-member tennis team to make a trip to a match
+             at another school?
+
+             Solution
+                The number of combinations is
+
+                C  (10, 5 =    10!
+                         )
+                            5! (10 5−  )!
+                          = 252  ways
 
 
 
-                                                             41</code></pre>
+
+
+                                                              177</code></pre>
      	</div>
     
      </div>

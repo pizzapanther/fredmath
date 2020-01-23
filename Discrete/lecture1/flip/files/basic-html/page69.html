@@ -152,64 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 1.8  Set Operations
+    <pre style="white-space:pre-line"><code>A
+                    x∈     B                    Using the definition of union
+                    AB ⊆    A   B
+
+
+                                                    
+                2.  We need to show that  A   B ⊆  AB
+                    Suppose that  x∈  A  B ⇒    x∈  A  or ∈  x  B   (by the definition of union)
+                    x∉  A or x∉  B               Using the definition of the complement
+
+                    ¬  ( x∈  ) A  ∨  ¬  ( x∈  B )    True
+
+                    ¬  ( x∈  A ∧  B )            By applying De Morgan’s law of the proposition
+
+
+                    ¬  ( x∈  AB  )              Using the definition of the intersection
+
+                    x∈  AB                      Using the definition of complement
+
+                    That shows that  A   B ⊆  AB
+
+
+                Therefore;  AB =  A   B
+
+
+             Example
+
+
+             Use set builder notation and logical equivalences to establish the first De Morgan law  AB =  A   B
+
+             Solution
+
+                 AB =  {x x∉  AB  }               By definition of complement
+
+
+                       =  { x ¬  ( x∈  ( AB  ))}
+
+
+                       =  { x ¬  ( x∈  A  ∧   x∈  B )}     By definition of complement
+
+
+                       =  { x ¬  ( x∈  ) A ∨  ¬  ( x∈  B )}    By the first De Morgan law for logical equivalences
+
+
+                       =  {x x∉  A   x B∨  ∉  }     By definition of does not belong symbol
+                                          }
+                       =  { x x∈  A  ∨   x∈  B      By definition of complement
+
+                                     }
+                               A
+                       = { xx∈    B                By definition of union
+                       =  A   B
 
 
 
-           1.   Let A be the set of students who live within one mile of school and let B be the set of students who
-                walk to classes. Describe the students in each of these sets.
-                  a)  A B
-                  b)  A B
-                        
-                  c)  A B
-                        
-                  d)  B A
-
-           2.   Let A = {1, 2, 3, 4, 5}  and B = {0, 3, 6}
-
-                  a)  A B
-                  b)  A B
-                  c)  A B
-                  d)  B A
-
-           3.   Let A = {a, b, c, d, e}  and B = {a, b, c, d, e, f, g, h}
-                  a)  A B
-                  b)  A B
-
-                  c)  A B
-                        
-                  d)  B A
-
-           4.   Prove the domination laws by showing that
-                  a)  A U    U
-                  b)  A U     A
-
-                  c)  A       A
-                  d)  A   
-
-           5.   Prove the complement laws by showing that
-                            
-                  a)  A   A U
-                  b)  A   A  
-
-           6.   Show that
-                  a)  A     A
-                  b)    A  
-
-           7.   Prove the absorption law by showing that if A and B are sets, then
-
-                                 
-                  a)  A    A B    A
-
-                                 
-                  b)  A    A B    A
 
 
 
 
 
 
-                                                             69</code></pre>
+                                                              69</code></pre>
      	</div>
     
      </div>

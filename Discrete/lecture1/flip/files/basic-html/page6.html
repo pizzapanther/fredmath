@@ -152,64 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Truth Tables of Compound Propositions
+    <pre style="white-space:pre-line"><code>Example
 
+          Let p be the statement “You can take the flight,” and let q be the statement “You buy a ticket.” Then
+          p ↔  q is the statement:  “You can take the flight if and only if you buy a ticket.”
 
-           Example
+          Solution
 
-           Construct the truth table of the compound proposition  p     q   p q  
-
-           Solution
-                                                                                   
-                  p      q    q       p   q      p q         p  q    p q
-
-                  T      T     F         T            T                  T
-                  T      F     T         T            F                  F
-                  F      T     F         F            F                  T
-                  F      F     T         T            F                  F
-
-
-           Precedence of Logical Operators
-
-
-                   Precedence of Logical Operators
-                      Operator         Precedence
-                                           1
-                                           2
-                                           3
-
-                                           4
-                                           5
-
-                 
-                     
-                                   
-               p q r  means  p q     r
-
-
-           Logic and Bit Opertions
-                                                           Bit Operators OR, AND, and XOR
-                True Value    Bit
-                                                         x    y    x  y     x   y     x  y
-                     T         1
-
-                     F         0                         0    0      0         0          0
-                                                         0    1      1         0          1
-                                                         1    0      1         0          1
-                                                         1    1      1         1          0
-
-
-           Definition
-
-           A bit string is a sequence of zero or more bits. The length of this string is the number of bits in the string.
+             This statement is true if p and q are either both true or false, that is, if you buy a ticket and can take the
+             flight or if you do not buy a ticket and you cannot take the flight.
+             It is false when p and q have opposite truth values, that is, when you do not buy a ticket, but you can
+             take the flight, and when you buy a ticket but you cannot take the flight.
 
 
 
+          Truth Tables of Compound Propositions
+
+          Example
+
+
+          Construct the truth table of the compound proposition ( p ∨¬  ) q → ( pq∧  )
+
+          Solution
+
+                                                                                 )
+                                                     ∧
+                 p     q     ¬q      p ∨¬q         pq         ( ∨¬q    ) → pq
+                                                                           ( ∧
+                                                                p
+                T      T      F         T            T                 T
+                T      F      T         T           F                  F
+
+                F      T      F         F           F                  T
+
+                F      F      T         T           F                  F
+
+
+
+          Precedence of Logical Operators
+
+                  Precedence of Logical Operators
+
+                     Operator         Precedence
+                        ¬                 1
+
+                        ∧                 2
+
+                        ∨                 3
+
+                        →                 4
+
+                        ↔                 5
+
+
+              pqr∧∨  means ( pq∧     ) r∨
 
 
 
 
-                                                              6</code></pre>
+                                                            6</code></pre>
      	</div>
     
      </div>

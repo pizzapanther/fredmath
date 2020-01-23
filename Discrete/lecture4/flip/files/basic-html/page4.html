@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 4 - Discrete Lecture 4</title>
+        <title>Page 4 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 4 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 4 - Lecture 4</div>
         <div id="content-top2">P. 4</div>
      </div>
      <div id="content-middle">
@@ -152,98 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Symmetric
+    <pre style="white-space:pre-line"><code>Example
 
-             Definition
-
-                                                               R  whenever  b 
-             A relation R on a set A is called symmetric if  a              a   ,   R , for all  a   , b   A .
-                                                          b   ,
-                                             
-                                
-                     a     b a  b   R    , b  a  R 
-                             ,
-                                                                    R  and  a 
-             A relation R on a set A such that for all  a   , b   A , if  b   b   ,   R , then  a   is called
-                                                               a   ,
-                                                                                                b
-             antisymmetric.
-                                             
-                     a       b  , a  b    R    ,b  a  R    a   b 
-
-
-
-             Example
-
-             Is the “divides” relation on the set of positive integers symmetric? Is it antisymmetric?
+             Is the “divides” relation on the set of positive integers reflexive?
 
              Solution
 
-                It is antisymmetric because 1 2  bur  2|1
+                Because  aa  whenever a is a positive integer, the “divides” relation is reflexive.
+                (0 is doesn’t divide 0)
 
 
+
+             Symmetric
+
+
+             Definition
+                                                                                   )
+                                                                                       R
+                                                                  R
+                                                          ba
+             A relation R on a set A is called symmetric if ( ,   )∈  whenever ( , ab ∈ , for all  , ab∈ .
+                                                                                                       A
+                                 )
+                                              )
+                    ∀∀      ( ( ,a  b ∈ R → ( ,b a ∈ R )
+                      a b
+                                                                                   )
+                                                                    )
+                                                                                      R
+                                                                                                  b
+             A relation R on a set A such that for all  , ab∈ , if ( , ab ∈  and ( , ba ∈ , then  a =  is called
+                                                         A
+                                                                       R
+             antisymmetric.
+                                  )
+                                              )
+                               ,
+                    ∀∀       ( ( ( a  b ∈ R ∧  ( ,b a ∈ R ) →  (a =  b ))
+                      a b
+
+
+             Example
+             Is the “divides” relation on the set of positive integers symmetric? Is it antisymmetric?
+             Solution
+                It is antisymmetric because 12  but  2|1
 
 
              Example
 
              Consider the following relations on {1,2 ,3 ,4}:
-                 R      1, 1 ,                       3, 4 , 4, 1 , 4, 4    
 
-
-                            1, 2 , 2, 1 , 2, 2 ,
-                                                                  
-
-                                                          
+                                                                        )}
+                                                         ) (
+                                                                 ) (
+                           ) (1, 2 , 2, 1 , 2, 2 ,
+                 R  =  ( { 1, 1 ,  ) (    ) (    ) (3, 4 , 4, 1 , 4, 4
                   1
-                 R      1, 1 ,           
-
-                            1, 2 , 2, 1
+                 R  =  ( { 1, 1 ,  ) (    )}
+                           ) (1, 2 , 2, 1
                   2
-                 R      1, 1 ,       1, 4 , 2, 1 , 2, 2 ,                   
-                            1, 2 ,
-
-                                                          3, 3 , 4, 1 , 4, 4
-
-
-
-                                                  
-                                           
+                                                 ) (
+                                          ) (
+                           ) (1, 2 ,
+                                                         ) (3, 3 , 4, 1 , 4, 4
+                 R  =  ( { 1, 1 ,  ) (1, 4 , 2, 1 , 2, 2 ,       ) (    ) (     )}
                   3
-                 R      2, 1 ,       3, 2 , 4, 1 , 4, 2 , 4, 3    
-
-                                                           
-
-                                                   
-                                            
-
-                             3, 1 ,
-
+                                                                 )}
+                                                          ) (
+                                          ) (
+                                                  ) (
+                            ) (3, 1 ,
+                 R  =  ( { 2, 1 ,  ) (3, 2 , 4, 1 , 4, 2 , 4, 3
                   4
-                 R      1, 1 ,       1, 3 ,                               3, 3 ,       4, 4    
-
-                            1, 2 ,
-                                           1, 4 , 2, 2 , 2, 3 , 2, 4 ,
-                                                                                 3, 4 ,
-
-
+                                                                                ) (3,4 , 4,4
+                 R  =  ( { 1, 1 ,  ) (1, 3 ,     ) (     ) (     ) (     ) (3, 3 ,      ) (     )}
+                                          ) (1,4 , 2,2 , 2, 3 , 2,4 ,
+                           ) (1,2 ,
                   5
-                           
-                 R      3, 4
+                            )}
+                 R  =  ( { 3, 4
                   6
               Which of these relations are symmetric and which are antisymmetric?
-             Solution
-                The relations  R and  R  are symmetric because in each case (b, a) belongs to the relation
-                               2       3
-                                                      
-                                                                                            
-                whenever (a, b) does. 1, 2     and   2, 1   in  R 1, 2    2, 1,       1, 4,       and   4, 1   in  R .
-                                                            2                                     3
-                The relations  R ,  R ,  R and  R  are antisymmetric because for each relations there is no pair of
-                               1    4   5       6
-                elements a and b with  a   such that both (a, b) and (b, a) belong to the relation.
-                                          b
-
-                                                              4</code></pre>
+                                                            194</code></pre>
      	</div>
     
      </div>

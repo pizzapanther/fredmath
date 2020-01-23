@@ -157,17 +157,18 @@ function MM_swapImage() { //v3.0
 
 
 
+
            Hashing Functions
 
            Definition
 
            A hashing function h assigns memory location h(k) to the record that has k as its key.
-
            A common hashing function is  h(k) = k mod m, where m is the number of memory locations. Because
            this hashing function is onto, all memory locations are possible.
 
 
            Example
+
            Find the memory locations assigned by the hashing function h(k) = k mod 111 to the records of customers
            with Social Security numbers 064212848, 037149212, and 107405723.
 
@@ -175,10 +176,12 @@ function MM_swapImage() { //v3.0
 
                This hashing function  assigns the records of customers with social security numbers as keys to
                memory locations in the following manner:
+                  h(064212848) = 064212848 mod 111 = 14                     064212848 111*    578494 + 14
+                                                                                       =
+                  h (037149212) = 037149212 mod 111 = 65                    037149212 111*=   334677 +  65
 
-                  h(064212848) = 064212848 mod 111 = 14
-                  h (037149212) = 037149212 mod 111 = 65
-                  h (107405723) = 107405723 mod 111 = 14,
+                                                                                       =
+                  h (107405723) = 107405723 mod 111 = 14                    107405723 111*    967619 + 14
                But since location 14 is already occupied, the record is assigned to the next available position, which
                is 15.
 
@@ -188,9 +191,9 @@ function MM_swapImage() { //v3.0
            When more than one record is assigned to the same location, we say a collision occurs.  Here a collision
            has been resolved by assigning the record to the first free location. For collision resolution, we can use a
            linear probing function:
+                                    hk     ) (hk  i  =  ( ) ) mod  m ,  where i from 0 to m – 1.
+                                      ( , i
                                                     ,
-                                            h k
-                                    h  , k  i       i  mod  m ,  where i from 0 to m – 1.
            There are many other methods of handling with collisions. You may cover these in a later CS course.
 
 
@@ -211,8 +214,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-                                                             46</code></pre>
+                                                            132</code></pre>
      	</div>
     
      </div>
@@ -222,7 +224,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page45.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page41.html">41</a>&nbsp;&nbsp;&nbsp;<a href="page42.html">42</a>&nbsp;&nbsp;&nbsp;<a href="page43.html">43</a>&nbsp;&nbsp;&nbsp;<a href="page44.html">44</a>&nbsp;&nbsp;&nbsp;<a href="page45.html">45</a>&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page41.html">41</a>&nbsp;&nbsp;&nbsp;<a href="page42.html">42</a>&nbsp;&nbsp;&nbsp;<a href="page43.html">43</a>&nbsp;&nbsp;&nbsp;<a href="page44.html">44</a>&nbsp;&nbsp;&nbsp;<a href="page45.html">45</a>&nbsp;&nbsp;&nbsp;<a href="page46.html">46</a>&nbsp;&nbsp;&nbsp;<a href="page47.html">47</a>&nbsp;&nbsp;&nbsp;<a href="page48.html">48</a>&nbsp;&nbsp;&nbsp;<a href="page49.html">49</a>&nbsp;&nbsp;&nbsp;<a href="page50.html">50</a>
              </td>
              <td width="35%"><a href="page47.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

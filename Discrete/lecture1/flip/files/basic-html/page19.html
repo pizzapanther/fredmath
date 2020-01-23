@@ -152,77 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
+    <pre style="white-space:pre-line"><code>Example
 
-                                           P
-           The universal quantification of    x  is the statement
-                    P
-                  “   x  for all values of x in the domain.”
-           The notation  x P x    denotes the universal quantification of    x . Here  is called the universal
-                                                                       P
-                                                                              
-                                     
-                                                       
-                               
-           quantifier. We read  x P x  as “for all  x P x ”  or “for every  x P x ”. An element for which    x  is
-                                                                                                         P
-                                                    
-                                              
-           false is called a counterexample of   x P x .
+                       )
+             Let  ( ,A cn  denote the statement “Computer c is connected to netwrok n,” where c is a variable
+             representing a computer and n is a variable representing a network. Suppose that the computer MATH1 is
+             connected to network CAMPUS2, but not to network CAMPUS1. What are the values of
+                                         A
+             A (MATH  1,CAMPUS     ) 1  and  (MATH 1,CAMPUS    ) 2 ?
+             Solution
 
-                Statement      When True?                            When False?
-                  x P   x    P   x  is true for every x.        There is an x for which    x  is false.
-                                                                                              P
+                Because MATH1 is not connected to the CAMPUS1 network, we see that  (MATH         1,CAMPUS    ) 1 is
+                                                                                        A
 
-                               There is an x for which    x  is
-                                                       P
-                  x P   x                                          P   x  is false for every x.
-                               true.
-
-
-           Example
-
-
-           Let    x  be the statement "x   1 x  ".  What is the truth value of the quantification  x P   x , where the
-               P
-
-           domain consists of all real numbers?
-           Solution
-                                                                                  
-                                                                            
-                        P
-               Because    x  is true for all real numbers x, the quantification  x P x  is true.
-
-
-           Example
-
-                                                                                                
-           Let    x  be the statement "x   2".  What is the truth value of the quantification  x Q x , where the
-                                                                                          
-               Q
-           domain consists of all real numbers?
-           Solution
-
-               Q   x  is not true for every real number x, because,    3Q   is false.
-               That is,  x  3 is a counterexample for the statement  x Q x    . Thus  x Q x    is false.
+                false.
+                However, because MATH1 is connected to the CAMPUS2 network, we see that
+                 A (MATH  1,CAMPUS     ) 2  is true.
 
 
 
-           Example
+                                                         x
+                                             0
+                 Consider the statement if  x &gt;  then  : x = + 1
+                When this statement is encountered in a program, the value of the variable x at the point in the
+                execution of the program is inserted into  ( ) x , which is  x &gt; . If  ( ) x  is true for this value of x, the
+                                                                                 P
+                                                        P
+                                                                           0
+                                                                                               P
+                assignment statement  :x = + 1 is executed. So the value of x is increased by 1. If  ( ) x  is false for
+                                          x
+                this value of x, the assignment statement is not executed, so the value of x is not changed.
 
-                                                                             2
-           What is the truth value of  x P x   , where    x is the statement "x  10" and the domain consists of
-                                                     P
 
-           the positive integers not exceeding 4?
-           Solution
+             Preconditions and Postconditions
 
-                                                                        2
-               The domain consists of the integers 1, 2, 3, and 4. Since "4  10" is false, it follows that  x P x    is
+             Predicates are also used to establish the correctness of computer programs, that is, to show that computer
+             programs always produce desired output given valid input.
+             The statements that describe valid input are known as preconditions and the conditions that the output
+             should satisfy when the program has run are known as postconditions.
 
-               false.
 
-                                                             19</code></pre>
+             Quantifiers
+
+             To create a proposition from a propositional function is called quantification.  Quantification expresses
+             the extent to which a predicate is true over a range of elements. The words all, some, many, none and few
+             are used in quantifications.
+             The area of logic that deals with predicates and quantifiers is called the predicate calculus.
+
+             There are two quantifiers
+                      Existential Quantifier    “∃” reads “there exists”
+
+                      Universal Quantifier      “∀” reads “for all”
+             Each is placed in front of a propositional function and binds it to obtain a proposition with semantic
+             value.
+
+
+
+
+                                                              19</code></pre>
      	</div>
     
      </div>

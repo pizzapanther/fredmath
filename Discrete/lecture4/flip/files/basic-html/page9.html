@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 9 - Discrete Lecture 4</title>
+        <title>Page 9 - Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 9 - Discrete Lecture 4</div>
+        <div id="content-top1">Page 9 - Lecture 4</div>
         <div id="content-top2">P. 9</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,93 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises  Section 4.1 – Relations and Their Properties
+    <pre style="white-space:pre-line"><code>Theorem
 
+                                                   n
+             The relation on a set A is transitive iff  R ⊆  R  for n = 1, 2, 3, ….
 
+             Proof
 
-                                                                                                            R
-                                                                                                       a   ,
-             1.   List the ordered pairs in the relation R from A = {0, 1, 2, 3, 4} to B = {0, 1, 2, 3} where  b 
-                  if and only if
-                                                                                 b
-                            b
-                     ) a     a                    a  ) b  b   4        ) c     a 
-                                                                                     
-                                                          1
-                      ) d     a   b            ) e     gcd  a,b          ) f     lcm a,b 
-                                                                                         2
-
-                                                                                   
-                                                                     
-             2.    ) a  List all the ordered pairs in the relation  R     , a  b  a divides  b  on the set {1, 2, 3, 4, 5, 6}
-                   ) b  Display this relation graphically.
-                   ) c  Display this relation in tabular form.
-
-
-             3.   For each of these relations on the set {1, 2, 3, 4}, decide whether it is reflexive, symmetric,
-                  antisymmetric and transitive
-                    a)  {(2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4)}
-                    b)  {(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (4, 4)}
-                    c)  {(2, 4), (4, 2)}
-                    d)  {(1, 2), (2, 3), (3, 4)}
-                    e)  {(1, 1), (2, 2), (3, 3), (4, 4)}
-                    f)  {(1, 3), (1, 4), (2, 3), (2, 4), (3, 1), (3, 4)}
-
-             4.  Determine whether the relation R on the set of all people is reflexive, symmetric, antisymmetric,
-                                              R
-                                         a   ,
-                 and/or transitive, where  b   if and only if
-                    a)  a is taller than b.
-                    b)  a and b were born on the same day
-                    c)  a has the same first name as b.
-                    d)  a and b have a common grandparent.
-
-             5.   Determine whether the relation R on the set of all real numbers is reflexive, symmetric,
-                                                             
-                  antisymmetric, and/or transitive, where  , x  y  R  if and only if
-                         x  ) a  y   0    ) b     x     y    ) c     x   y  is a rational number    ) d     x   2y
-                     ) e     xy   0    ) f     xy   0    ) g     x  1                   )    x  h  1 or y   1
-
-             6.   Determine whether the relation R on the set of all integers numbers is reflexive, symmetric,
-                                                             
+                                                                       2
+                               n
+                                                                                                     )
+                                                                                      )
+                                                                                                 bc
+                                                                                         R
+                                                                                                        R
+                Suppose that  R ⊆  R  for n = 1, 2, 3, …. In particular,  R ⊆  R . If ( , ab ∈  and ( ,  ∈ , then
+                                                     2
+                                                                  2
+                                                )
+                                                                                              )
+                                                                                          ac
+                                                                                                 R
+                by definition of composite, ( ,a c ∈ R . Because  R ⊆  R , this means that ( ,  ∈ . Hence, R is
+                transitive.
+                Using mathematical induction to prove the only if part of the theorem
+                               n
+                Assume that  R ⊆   R  where n is a positive integer. This is the inductive hypothesis.
+                To complete the inductive step we must show that this implies that  R n+ 1  is also a subset of R.
+                                                                  n
+                                  )
+                                                                                                      A
+                Assume that ( , a b ∈ R n+ 1 , then because  R n+ 1  =  R  , there is an element x with  x∈  such
+                                                                     R
+                                                                                        n
+                                              n
+                          )
+                                         )
+                             R
+                      ax
+                that ( ,  ∈  and ( , x b ∈  R . The inductive hypothesis, namely, that  R ⊆  R , implies that
+                     )
+                ( , xb ∈
+                         R
+                                                                                                      )
+                                                             )
+                                                                             )
+                                                                                                         R
                                                                  R
-                  antisymmetric, and/or transitive, where  ,x  y   if and only if
-                          y
-                    ) a     x                  ) b     xy  1   ) c     x   y  1  or  x   y  1   ) d     x    y mod   7
-                                                                        2
-                    ) e     x is a multiple of  y    ) f     x   y    ) g     x   y
-                                                        2
+                                                                                R
+                Furthermore, because R is transitive, and ( ,a x ∈  and ( ,x b ∈ , it follows that ( ,a b ∈ .
+                                  n
+                This shows that  R ⊆  R .
 
-             7.   Show that the relation  R      on nonempty set S is symmetric and transitive, but not reflexive.
 
-             8.   Show that the relation  R      on nonempty set  S      is reflexive, symmetric and transitive.
 
-                                                              9</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            199</code></pre>
      	</div>
     
      </div>
