@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 217 - ODE-Book</title>
+        <title>Page 217 - Differential Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 217 - ODE-Book</div>
+        <div id="content-top1">Page 217 - Differential Book</div>
         <div id="content-top2">P. 217</div>
      </div>
      <div id="content-middle">
@@ -160,11 +160,13 @@ function MM_swapImage() { //v3.0
 
         A sinusoidal forcing is giving by the model:
 
-                       x′′ + 2cx′ +ω 2 x =  F  cos tω
+                                               ω
+                       x′′ + 2cx′ +ω 2 x =  F  cos t
                                    0      0
             F :  Amplitude if the driving force (constant)
               0
-            ω :   driving frequency.
+            ω
+               :   driving frequency.
             c:   damping constant.
             ω : natural frequency.
               0
@@ -174,13 +176,14 @@ function MM_swapImage() { //v3.0
 
                                         0
         The undamped equation has c =  or
-                       x′′ +ω 2 x =  F  cos tω
+                                         ω
+                       x′′ +ω 2 x =  F  cos t
                              0     0
         The homogeneous equation is:  x′′ +ω 2 x = 0
                                              0
 
-                                       2
                                             2
+                                       2
         The characteristic equation:  λ + ω =   0 ⇒ λ        = ±ω     i
                                             0            1,2      0
         With general solution:       x   =  C  cosω  t +  C  sin ω    t
@@ -190,27 +193,38 @@ function MM_swapImage() { //v3.0
         2.6-2      Case 1     ω≠ ω
                                     0
 
-        The particular solution is given by the form:  x  =  a cos tbω+  sin tω
+                                                                        ω
+        The particular solution is given by the form:  x  =  a cos tb sin t
+                                                              ω+
                                                      p
-
+                       a
                 x′ = −ω   sin tbω + ω cos tω
-                       a
                  p
                        a
-                x′′ = −ω  2 cos tbω − ω 2 sin tω
+                                           ω
+                               ω
+                x′′ = −ω  2 cos tbω   2 sin t
+                                  −
                  p
-
                                                                t b
-            x′′ + ω 2 x  = − aω 2 cos tbω− ω 2 sin tω+ ω 2  ( cosa  ω+  sin  ) t ω
+                                   ω−
+            x′′ + ω 2 x  = − aω 2 cos tbω  2 sin tω+ ω 2  ( cosa  ω+  sin  ) t ω
               p    0  p                               0
-                        = − aω 2  cos tbω− ω 2 sin tω+ ω 2 a cos tω+ ω 2 b sin tω
+                                   ω−
+                        = − aω 2  cos tbω 2 sin tω+ ω 2 a cos tω+ ω 2 b sin t
+                                                                        ω
                                                       0           0
+                                               (
                            (
-                                                  2
                               2
-                        =  a ω − ω 2 ) cos tbω +  ( ω − ω 2 ) sin tω
+                                                  2
+                                                             ω
+                                         ω
+                        =  a ω − ω 2 ) cos tb ω − ω    2 ) sin t
+                                            +
                               0                   0
-                        =  F  cos tω
+                        =  F  cos t
+                                 ω
                            0</code></pre>
      	</div>
     

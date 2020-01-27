@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 287 - ODE-Book</title>
+        <title>Page 287 - Differential Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 287 - ODE-Book</div>
+        <div id="content-top1">Page 287 - Differential Book</div>
         <div id="content-top2">P. 287</div>
      </div>
      <div id="content-middle">
@@ -157,8 +157,10 @@ function MM_swapImage() { //v3.0
           3.5-4  Matrix Notation for Linear Systems
 
 
+                                     t
+                                               t
+                          x′     a  ()  a  ()         a   ()   t    x     ft
                                                                              () 
-                          x′     a  ()t  a  ()t       a   ()t     x     ft
                           1      11      12             1n       1      1  
                           x′ 2      a 21 () t  a 22 () t    a 2n  () t      x 2      f 2 () t  
                               =                                    +     
@@ -166,22 +168,24 @@ function MM_swapImage() { //v3.0
                           x′      a  () t  a  () t    a   () t      x      f  () t  
                           n     1 n      n 2            nn       n      n  
 
-
           In simple form, we can rewrite:
 
-                         x′ ()t =  A () ()t x  t +  f  ()t
-
+                                    x
+                                  t
+                           t
+                         x′ () =  A () () +  f  ()
+                                            t
+                                      t
                          x = ′  Ax +  f
 
 
           Example 1
-
                                         x′ =  x +  2x
                                        
           Given the linear system        1   1     2
                                          x′ =  2x +  x 2
-                                                1
                                          2
+                                                1
           Write in the form  x′ =  Ax +  f
 
           Solution
@@ -200,11 +204,12 @@ function MM_swapImage() { //v3.0
           3.5-5  Example of a Spring-Mass (mechanical)
 
                                                                                                      ()
-          Two masses move on a frictionless surface under the influence of external forces  F  ()t and Ft , and
+          Two masses move on a frictionless surface under the influence of external forces  F  () and Ft , and
+                                                                                             t
                                                                                            1        2
-          they are also constraint by the three springs whose constant are  k  , , k  and  k
+                                                                           k
+          they are also constraint by the three springs whose constant are  k  , , and  k
                                                                         1   2        3
-
                                                    F 1(t)             F 2(t)
 
 

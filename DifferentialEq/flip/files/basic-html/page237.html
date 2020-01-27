@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 237 - ODE-Book</title>
+        <title>Page 237 - Differential Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 237 - ODE-Book</div>
+        <div id="content-top1">Page 237 - Differential Book</div>
         <div id="content-top2">P. 237</div>
      </div>
      <div id="content-middle">
@@ -156,8 +156,8 @@ function MM_swapImage() { //v3.0
 
         Example 1
 
-                                                                                                x
                                                                                             y
+                                                                                                x
         Compute the first four step in the Euler's method approximation to the solution of  y′ = −   with (1) 1y  = ,
         using the step size  h =  0.1. Compare the result with the actual solution to the initial value problem.
 
@@ -168,48 +168,56 @@ function MM_swapImage() { //v3.0
 
                 y =  y +  hy −  (  x  )
                  1    0       0    0
-                   =  1 0.1+  (1 1−  )
+                      +
+                   =  1 0.1 (1 1−  )
                    = 1
-                x =  x + =   1 0.1+  = 1.1
+                x =  x + =   1 0.1=  1.1
+                              +
                           h
                  1    0
             The second step:
                                     )
                 y =  y +  hy −  (  x
                  2    1       1   1
-                   =  1 0.1+  (1 1.1−  )
-
+                   =  1 0.1 (1 1.1−  )
+                      +
                    = 0.99
+                                     =
+                                +
                           h
-                x =  x + =   1.1 0.1 1.2+  =
+                x =  x + =   1.1 0.1 1.2
                  2    1
             The third step:
                 y =  y +  hy −  (  x  )
                  3    2       2    2
                                          )
-                   =  0.99 0.1 (0.99 1.2
-                          +
                                     −
+                          +
+                   =  0.99 0.1 (0.99 1.2
                    = 0.969
+                x =  x + =   1.2 0.1 1.3
+                                 +
+                                      =
                           h
-                x =  x + =   1.2 0.1 1.3+  =
                  3    2
             The fourth step:
                 y =  y +  hy −  (  x  )
                  4     3      3    3
-                   =  0.969 0.1+  (0.969 1.3−  )
-
+                   =  0.969 0.1 (0.969 1.3−  )
+                           +
                    = 0.9359
-                x =  x + =   1.3 0.1 1.4+  =
                           h
+                x =  x + =   1.3 0.1 1.4
+                                      =
+                                 +
                  3    2
                                          x
                                       y
-            The exact solution to  y′ = − is () 1 x e= +−  x− 1
                                              yx
+            The exact solution to  y′ = − is () 1 x e= +−  x− 1
                                  x           y : Euler's       y  - exact         Error
-                                                                k
                                                k
+                                                                k
                                   k
                                  1.0             1.0              1.0               0
                                  1.1             1.0            0.9948           −0.0052

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 88 - ODE-Book</title>
+        <title>Page 88 - Differential Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 88 - ODE-Book</div>
+        <div id="content-top1">Page 88 - Differential Book</div>
         <div id="content-top2">P. 88</div>
      </div>
      <div id="content-middle">
@@ -169,30 +169,34 @@ function MM_swapImage() { //v3.0
                         = 300 2t+
 
                             ()
-                    () =
                    ct      xt
-                          300 2t+                                     1.5 lb  /gal
+                    () =
+                          300 2t                                      1.5 lb/gal
+                             +
+
+
                                                                       3 gal/min
-                   Rate in  3=  gal   1.5×  lb
+                                   ×
+                   Rate in  3=  gal   1.5  lb
                               min       gal
                            =  4.5  lb  / min
-
-
                    Rate out  1  =  ×  x
-                                   300 2t+
+                                   300 2t
+                                      +
                             =    x     lb /m in
-                              300 2t                                                        1 gal   /min
+
+                              300 2t                                                        1 gal/min
                                   +
                     dx  =  4.5 −  x
-                    dt        300 2t+
-
+                                  +
+                    dt        300 2t
                     dx  +   1    x =  4.5
                     dt   300 2t+
 
                                   ∫   1   dt
                                       +
-                            () =
                            ut    e  300 2t                 d  (300 +  2t ) =  2dt
+                            () =
                                   1 ∫  1   d (300 2t+  )
                                         +
                                =  e 2 300 2t
@@ -201,18 +205,20 @@ function MM_swapImage() { //v3.0
 
                                         +
                                =  e ln (300 2t ) 1/2
-                               =   300 2t+
-
-                           ∫ 4.5 300 2t dt+  =  4.5 1 2 (300 2t+  ) 2/3
+                               =   300 2t
+                                       +
+                           ∫ 4.5 300 2t dt =  4.5 1 2 (300 2t+  ) 2/3
+                                     +
                                                   23
 
                                                          )
-                   xt         1     ( 1.5 (300 2t+  ) 3/2  +  C
                      ( ) =
-                           300 2t+
+                   xt         1     ( 1.5 (300 2t+  ) 3/2  +  C
+                               +
+                           300 2t
                         =  1.5 (300 2t+  ) +  C
-                                          300 2t+
-
+                                          300 2t
+                                              +
                               +
                         =  450 3t +    C
                                      300 2t
