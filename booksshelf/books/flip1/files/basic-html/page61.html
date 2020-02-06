@@ -152,66 +152,42 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>0 &lt;  x −  2 &lt;  δ
-
-                           − ( 2 −  4 ε  −  )  x  2 &lt;  4 ε &lt; −  +  − 2
-
-
-                             2 − +  4 ε  −  x  2 &lt;  4 ε &lt; −  + − 2
-
-                             4 ε  −  x   4 ε &lt;&lt;  +
-
-                           ∴   0 &lt;  x −  2 &lt;  δ  ⇒  f  ( ) 4x −  &lt;  ε
-
-
-
-             Example
-
-                              ( )
-             Given that  lim f x =  L and     lim g ( ) x =  M , prove that  lim f x + (  ( )  gx  L +  M
-                                                                                       ( )) =
-                        x→  c                 x→  c                     x→  c
-             Solution
-
-                We need to show that given ε &gt; 0 there exists a δ  &gt; 0 such that for all x:
-
-                                              −
-                                        0 &lt;  x c &lt;  δ  ⇒     f  ( ) x +  gx −  +  )  ε
-                                                                     ( ) (L M &lt;
-                 f  ( ) x +  gx −  ( ) (L M = +  )  f  ( ) x +  gx −  ( ) L M
-                                                           −
-
-                                         =  ( f  ( ) x −  L ) ( gx+  ( ) M−  )  Triangle Inequality ab ≤  a +  b
-                                                                                                  +
-
-                                                                    )
-                                         ≤  ( f  ( ) x −  L +  ) ( gx − ( ) M
+    <pre style="white-space:pre-line"><code>Example
 
                              ( )
-                Since  lim f x =   L , there exists a number δ &gt;  such that for all x:
-                                                                0
-                       x→ c                                 1
-                           0 &lt;  x c &lt;  δ   ⇒     f  ( ) x −  L &lt;  ε
-                                 −
-                                        1                   2
+             Prove that lim f x =  if
+                                   4
+                       x→ 2
+                                           x   2 , x ≠  2
+                                   f  ( ) x = 
+                                             1,  x =  2
+             Solution
+                We need to show that given ε &gt; 0 there exists a δ  &gt; 0 such that for all x:
 
-                                      ( )
-                Similarly, since  lim gx =  M , there exists a number δ  &gt; 0  such that for all x:
-                                x→ c                                   2
-                                                  ( ) M−
-                           0 &lt;  x c−  &lt;  δ  ⇒    gx        &lt;  ε
-                                        2                    2
-                Let δ  =  min δ  {  1 , δ  2 } , the smaller of δ  1  and δ  2  . If  0 &lt;  xc−  &lt;  δ  then 0 &lt;  xc−  &lt;  δ , so
-                                                                                                   1
-                                                   gx −
-                 f  ( ) x −  L &lt;  ε  and  xc−  &lt;  δ , so  ( ) M &lt;  ε  . Therefore
-                             2               2                  2
-                                                 f  ( ) x +  gx −  +  )   ε  +  ε  =  ε
-                                                         ( ) (L M &lt;
-                                                                          2   2
-               This show that  lim f x + (  ( )  gx  L +  M
-                                             ( )) =
-                              x→  c
+                                               0 &lt;  x −  2 &lt;  δ  ⇒  f x −     ε
+                                                                     ( ) 4 &lt;
+
+                1.  Solve the inequality  ( ) 4f x −  &lt;  ε  to find an open interval containing  x =  on which the
+                                                                                             2
+                                                                                         0
+                    inequality holds for all  x ≠  x .
+                                                0
+
+                                               2
+                                       f
+                      For  x ≠  x =  2 ,  ( ) x =  x , and the inequality to solve is  x −  2  4 &lt;  ε :
+                               0
+                             x −  2  4 &lt;  ε
+                                  2
+                                     4 ε −&lt;
+                             ε   x − &lt;                  Add 4 to all sides
+                                    2
+                           4 ε  −  x &lt;+                 Square root
+                                        4 ε &lt;
+                             4 ε  −  x &lt;   4 ε &lt;  +     Assume ε  &lt; 4
+                             4 ε  −  x   4 ε &lt;&lt;  +
+                    The inequality  ( ) 4f x −  &lt;  ε  holds for all  x ≠  in the open interval  (  4 ε  −  , 4 ε  +  )
+                                                                 2
 
 
 
@@ -221,6 +197,34 @@ function MM_swapImage() { //v3.0
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                2.  Find a value of δ  &gt; 0 that places the open interval (2 δ  −  , 2 +  ) δ   inside the interval
+                    (  4 ε  −  , 4 ε  +  ) .
+
+
+                    Take δ to be the distance from  x =  to the nearer endpoint of  (  4 ε  −  , 4 ε  +  ) .
+                                                       2
+                                                   0
+                                                     )
+                    ⇒  δ  =  min 2 − (  4 ε  −  , 4 ε  +  −  2 .
 
 
                                                               61</code></pre>
