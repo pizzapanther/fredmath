@@ -111,6 +111,7 @@ LoadingJS.prototype = {
 	},
 	
 	destroy : function(){
+<<<<<<< HEAD
 
 		animateOnce(this.bg , {"opacity":"0"} , 0.6 ,function(){
 			this.img3.attr("class", "");
@@ -119,6 +120,26 @@ LoadingJS.prototype = {
 			this.image.attr("src", "");
 			$("body").css({"background-color" : ""});
 		}.bind(this));
+=======
+		if(global.isIE8()||global.isIE9()){
+			this.bg.animate({"opacity":"0"},0.6,function(){
+				this.img3.attr("class", "");
+				$("body>style").html("");
+				this.bg.remove();
+				this.image.attr("src", "");
+				$("body").css({"background-color" : ""});
+			}.bind(this));
+		}else{
+			animateOnce(this.bg , {"opacity":"0"} , 0.6 ,function(){
+				this.img3.attr("class", "");
+				$("body>style").html("");
+				this.bg.remove();
+				this.image.attr("src", "");
+				$("body").css({"background-color" : ""});
+			}.bind(this));
+		}
+		
+>>>>>>> e0beffd4e86399de2a43c77cedf2309601ec601b
 	},
 	
 	initCss : function(){
