@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick, ->] (-3,0) -- (6, 0) ;
+\draw [very thick, ->] (0, -.5) -- (0, 4.5) ;
+
+% T(u) and T(v)
+\draw [very thick, green!50!black, -> ] (0,0) -- (5,  2) ;
+\draw [very thick,  green!50!black, -> ] (0,0) -- (-2, 4) ;
+\fill [green!50!black ]  (5,  2) circle (0.05) ;
+\fill [green!50!black ] (-2, 4) circle (0.05) ;
+
+% u and v
+\draw [very thick, blue, -> ] (0,0) -- (2.5, 1) ;
+\draw [very thick, blue, -> ] (0,0) -- (-1, 2) ;
+\fill (2.5, 1) circle (0.05) ;
+\fill (-1, 2) circle (0.05) ;
+
+\draw (6, .3) node {  \textbf { \textit x } };
+\draw (.25, 4.5) node {  \textbf { \textit y } };
+
+\draw (2.6, .8) node { \large \textbf { \textit u } };
+\draw (-1.2, 1.9) node { \large  \textbf { \textit v } };
+
+\draw (5, 2.25) node { \small  \textbf {\textit T}(\textbf{\textit u}) };
+\draw (-2, 4.25) node { \small  \textbf {\textit T}(\textbf {\textit v}) };
+
+
+\draw (.5, -.1) -- (.5, .1) ;
+\draw (1, -.1) -- (1, .1) ;
+\draw (1.5, -.1) -- (1.5, .1) ;
+\draw (2, -.1) -- (2, .1) ;
+\draw (2.5, -.1) -- (2.5, .1) ;
+\draw (3, -.1) -- (3, .1) ;
+\draw (3.5, -.1) -- (3.5, .1) ;
+\draw (4, -.1) -- (4, .1) ;
+\draw (4.5, -.1) -- (4.5, .1) ;
+\draw (5, -.1) -- (5, .1) ;
+\draw (5.5, -.1) -- (5.5, .1) ;
+
+\draw (-.5, -.1) -- (-.5, .1) ;
+\draw (-1, -.1) -- (-1, .1) ;
+\draw (-1.5, -.1) -- (-1.5, .1) ;
+\draw (-2, -.1) -- (-2, .1) ;
+\draw (-2.5, -.1) -- (-2.5, .1) ;
+%\draw (-3, -.1) -- (-3, .1) ;
+
+%\draw (-.1, -2) -- (.1, -2) ;
+%\draw (-.1, -1.5) -- (.1, -1.5) ;
+%\draw (-.1, -1) -- (.1, -1) ;
+%\draw (-.1, -.5) -- (.1, -.5) ;
+
+\draw (-.1, .5) -- (.1, .5) ;
+\draw (-.1, 1) -- (.1, 1) ;
+\draw (-.1, 1.5) -- (.1, 1.5) ;
+\draw (-.1, 2) -- (.1, 2) ;
+\draw (-.1, 2.5) -- (.1, 2.5) ;
+\draw (-.1, 3) -- (.1, 3) ;
+\draw (-.1, 3.5) -- (.1, 3.5) ;
+\draw (-.1, 4) -- (.1, 4) ;
+
+
+\end{tikzpicture} 
+\end{document}

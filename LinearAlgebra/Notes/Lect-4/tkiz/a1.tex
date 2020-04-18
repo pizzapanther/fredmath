@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick, ->] (-2,0) -- (2.5, 0) ;
+\draw [very thick, ->] (0,0) -- (0, 1.8) ;
+
+\draw [very thick, ->, blue] (0,0) -- (-1, 1) ;
+\draw [very thick, ->, blue] (0,0) -- (1, 1) ;
+\draw [ thick, dashed] (-1, 1) -- (1, 1) ;
+\fill (-1, 1) circle (0.05) ;
+\fill (1, 1) circle (0.06) ;
+
+\draw (2.6, .3) node {  \textbf { \textit x } };
+\draw (.25, 1.8) node {  \textbf { \textit y } };
+ \draw   (1.5, 1) node { \small (\emph  {x, y}) } ;
+ \draw   (-1.55, 1) node { \small (\emph  {-x, y}) } ;
+
+\draw (.65, .4) node { \small  \textbf { \textit x } };
+\draw (-.8, .35) node { \small  \textbf T({\textit x}) };
+
+\end{tikzpicture} 
+\end{document}

@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick, ->] (-.2,0) -- (2.5, 0) ;
+\draw [very thick, ->] (0, -.2) -- (0, 2.4) ;
+
+\draw [very thick, blue, -> ] (0,0) -- (1, 1.73) ;
+\draw [very thick, blue, -> ] (0,0) -- (1.88, .68) ;
+
+\draw [ thick, dashed, ->] (1.88, .68)  to [bend right] (1, 1.73) ;
+\draw [ thick,  ->] (.5, .2)  to [bend right] (.3, .5) ;
+
+
+\draw (2.5, .25) node {  \textbf { \textit x } };
+\draw (-.25, 2.3) node {  \textbf { \textit y } };
+\draw (.65, .55) node { \large   $\theta$  };
+\draw (2, .5) node { \large  \textbf { \textit v } };
+\draw (1, 2) node {   \textbf T({\textit v}) };
+
+\end{tikzpicture} 
+\end{document}

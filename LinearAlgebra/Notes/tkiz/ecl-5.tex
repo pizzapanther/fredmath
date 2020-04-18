@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+%\begin{tikzpicture}
+\begin{circuitikz}
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.5 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+
+\draw [ultra thick, <-] (3.9, 2) -- (4, 2) ;
+\draw [ultra thick, -> ] (3.9, 0) -- (4, 0) ;
+\draw [ultra thick, <- ] (3.9, -2) -- (4, -2) ;
+
+\draw [ thick]  (0, 2)  	to [R ]  (3, 2) -- (4.25, 2)   
+	to [battery1]  (6, 2) ; 
+
+\draw [ thick]  (0, 0) 	to [R] (3, 0) -- (6, 0); 
+
+\draw [ thick]  (0, -2)  to [R ] (3, -2)-- (4.25, -2) 
+	to [battery1]  (6, -2) ;  
+
+\draw [ thick] (0, -2) -- (0, 2) ;
+\draw [ thick] (6, -2) -- (6, 2) ;
+
+\draw [thick] (0, 0 ) circle (.2) ;
+\fill  [blue!20] (0, 0 ) circle (.2) ;
+
+\draw [thick] (6, 0 ) circle (.2) ;
+\fill  [blue!20] (6, 0 ) circle (.2) ;
+
+\draw  (1.5, 2.5) node {\large $R_1$ = 1$\Omega$};
+\draw  (1.5, 0.5) node {\large $R_2$ = 2$\Omega$};
+\draw  (1.5, -1.5) node {\large $R_3$ = 4$\Omega$};
+
+\draw (5.5, 2.65) node { \large  \textbf 5 V };
+\draw (5.5, -2.5) node { \large  \textbf 8 V };
+
+\draw (1.5, 1.5) node { \large  \textbf { \textit I$_1 $ } };
+\draw (1.5, -.5) node { \large  \textbf { \textit I$_2 $ } };
+\draw (1.5, -2.5) node { \large  \textbf { \textit I$_3 $ } };
+
+\end{circuitikz}
+%\end{tikzpicture} 
+\end{document}

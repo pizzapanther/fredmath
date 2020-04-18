@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 44 - SOL-Cal-III_lecture-2</title>
+        <title>Page 44 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 44 - SOL-Cal-III_lecture-2</div>
+        <div id="content-top1">Page 44 - Cal_lecture-3</div>
         <div id="content-top2">P. 44</div>
      </div>
      <div id="content-middle">
@@ -154,51 +154,47 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
+
           Express   dw as a function of t, then evaluate   dw  at the given value of t.
                                                      dt
                    dt
-                  2   2    2 
-          w  ln x   y   z   , x   cos , t  y   sin , t  z   4 t , t 
-                                                                    3
-
+                (  2   2    2 )
+          w =  ln x +  y +  z  , x =  cos ,  y =  sin , z =  4 t , t =  3
+                                         t
+                                                   t
           Solution
 
-              dw    f   dx     f dy    f   dz
-              dt     x dt   y dt   z dt
+
+              dw  =  f ∂  dx  +  ∂  f dy  +  f ∂  dz
+              dt    ∂  x dt  ∂  y dt  ∂  z dt
 
 
-                                                            
-                       2x       sint      2y      cost       2z          2  1    
-                          2
-                     2
-                                                                2
-                                                                     2
-                                           2
-                                                2
-                   x   y   z 2          x   y   z 2        x   y   z 2     t    
-                                               
-                    2cos sint  2sin cost  4 4 t t   1/2 
-                         t
-                                     t
-                 
-                              cos t   2  sin t   2  16t
-                    16
-                     
+                 =      2x      ( sint +  )    2y      (cost +  )   2z          2  1    
+                                 −
+                   x +  2  y +  2  z 2    x +  2  y +  2  z 2  x +  2  y +  2  z 2     t    
+                                              ( )(
+                   −  2cos sint +  t  2sin cost +  t  4 4 tt − 1/2 )
+                 =
+                              cos t +  2  sin t +  2  16t
+
+                 =   16
+                     +
                    1 16t
-                          2   2    2 
-                 w   ln x   y   z
-                          2       2       
-                     ln cos t  sin t  16t
-                     ln 1 16t  
+                        (  2   2    2 )
+                 w =  ln x +  y +  z
 
+                       (   2       2       )
+                   =  ln cos t +  sin t +  16t
 
-                 dw     16
-                        
-                  dt   1 16t
-              dw   3   16
-                        
-              dt      1 16    3
-                       16
+                   =  ln (1 16t+  )
+
+                 dw  =   16
+                  dt   1 16t+
+
+              dw ( ) 3 =  16
+              dt      1 16+  ( ) 3
+
+                     =  16
                        49
 
 
@@ -207,24 +203,24 @@ function MM_swapImage() { //v3.0
 
           Express   dw as a function of t, then evaluate   dw  at the given value of t.
                    dt                                dt
-          w     sin xy , x   , t  y   ln , t  z   e t 1 , t  1
-              z
-
+          w =  z −  sin xy , x =  , t  y =  ln , z =  e t− 1 , t = 1
+                                       t
           Solution
-                                                       
-               w     y  cos xy    x   cos xy         1 e t 1      w     w dx     w  dy     w dz
+
+                                                      ( )
+              ∂ w  = −  cos xy )( ) ( x cos xy ) ( )  +  ( ) 1 e t− 1      ∂  w  =  ∂  w dx  +  ∂  w  dy  +  ∂  w dz
                                                1
-                               1
-               t                              t                            t    x dt   y dt    z dt
-                   ln cos lnt   t  t  cos lnt     t   e t 1
+                   ( y
+                               1 +−
+               t ∂                             t                             t ∂  ∂  x dt  ∂  y dt  ∂  z dt
+                 =  −  (ln cos lnt )  (t  t ) cos lnt−  (  ) t +  e t− 1
 
-                                 
-                   ln t    1 cos lnt   t  e t 1
+                 =  −  (ln t +  ) 1 cos ( lnt  ) t +  e t− 1
 
-              w   z   sin xy
+                  z
+              w = −  sin xy
 
-
-                                                            44</code></pre>
+                                                           220</code></pre>
      	</div>
     
      </div>

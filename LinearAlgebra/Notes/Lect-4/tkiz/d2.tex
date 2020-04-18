@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usetikzlibrary{decorations.markings}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.4 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+
+
+\begin{tikzpicture}
+
+\fill [cyan!20] (-.4, -.8) -- (-.4, .8) -- (.4, 1.3) -- (.4, -.2) -- (-.4, -.8) ;
+\draw [very thick, ->] (0,0) -- (2, 0) ;
+\draw [very thick, ->] (0, 0) -- (0, 1.7) ;
+\draw [very thick, ->] (0, 0) -- (-1, -1) ;
+
+\draw [very thick, ->, blue] (0,0) -- (.75, 1) ;
+\draw [very thick, ->, blue] (0,0) -- (-.75, 1) ;
+
+\draw [ thick, middlearrow={>}]  (.75, 1) -- (-.75, 1) ;
+
+\draw (-1.2, -.9) node {  \textbf { \textit x } };
+\draw (2, -.25) node {  \textbf { \textit y } };
+\draw (-.25, 1.7) node {  \textbf { \textit z } };
+
+\draw   (-1.5, 1) node { \small (\emph  {x,-y,z}) } ;
+\draw   (1.3, 1) node { \small (\emph  {x,y,z}) } ;
+
+\draw (.75, .4) node { \small  \textbf { \textit x } };
+\draw (-.8, .2) node { \small  \textbf T({\textit x}) };
+
+
+\end{tikzpicture} 
+
+\end{document}

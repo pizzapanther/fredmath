@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 226 - SOL-Cal-III_lecture-2</title>
+        <title>Page 226 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 226 - SOL-Cal-III_lecture-2</div>
+        <div id="content-top1">Page 226 - Cal_lecture-3</div>
         <div id="content-top2">P. 226</div>
      </div>
      <div id="content-middle">
@@ -152,98 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-                      2
-                           2
-                                                                   
-                                                 2
-                     x   x   4x   1      2x   1    impossible
-                 x     y
-                                 2
-                           2
-                      2
-                                             2
-                     x   x   4x   1     x   1     x    1    y
-                                                 6             6
-                              1      1         1     1    
-                 The point:     ,     , 0 ,       ,    , 0
-                                           
-                                              
-                                                             
-                              6      6          6    6    
-             For  
-                     1
-                    x    1      y   0
-                  x   2y
-                    y    1     x 
-                  y  2x            0
-                  2
-                 z   1     z   1
-                 The point: 0, 0,     1
+    <pre style="white-space:pre-line"><code>
+                             1
+             Maximum is −  @   −      1  , −  1  ,  3   ,    1  ,  1  ,  3   ,  −  1  ,  1  ,  3    ,    1  , −  1  ,  3 
+                             2         2     2   2         2  2  2         2  2  2          2  2  2   
+                                         )
+             Minimum is  1 @  (0, 0, 1
+                          −
 
-                                                    2
-                                                              2
-                                                          2
-                                         , ,  y  z 
-                                       f x        x   y   z
-                    1      1                1   1   1
-                      ,      , 0                 
-                                  
-                    6       6               6   6   3
-                     1     1                    1
-                                  
-                       ,    , 0
-                      6     6                   3
-                     0, 0,     1               1
-
-             Maximum is 1 @  0, 0,       1
-                                                
-                                                   
-                                                                  
-                          1
-             Minimum is   @         1  ,   1  , 0 ,    1  ,  1  , 0
-                                                                  
-                                                
-                                                   
-                          3       6       6          6    6    
 
 
           Exercise
+
           Use Lagrange multipliers to find the maximum and minimum values of f (when they exist) subject to the
           given constraint
-                   
-                                                         2
-                                                     2
-                                                2
-          f   , ,x  y  z    2y   z  subject to  x   y   z  1
-                       x
 
+                                                                                     0
+                                                         z
+                  f x      )    xyz   subject to x +  y +=  1 with  x ≥  0,  y ≥  0,  z ≥
+                   ( , ,  y  z =
           Solution
-                                                                   ˆ
-                            ˆ
+                                                  ˆ
+                                                                                 ˆ
+                           ˆ
+               f
+              ∇=   1   yz  i +  1 xz  ˆ j +  1  xy  k         f ∇ =  f i +  ˆ  f  ˆ j +  fk
+                   2   xyz    2   xyz     2  xyz                   x     y     z
+                    )
+              g ( ,x y = +  y + −=
+                        x
+                                  10
+                               z
+                           ˆ
                    ˆ
-                        ˆ
-               f   2 j                      f   f i   ˆ  f  ˆ j   f k
-                   i
-                           k
-                                                    x      y     z
+               g
+              ∇=   i +  ˆ j +
+                          k
+                                                           )
+              1  yz  i ˆ  1 xz   ˆ j + +  1  xy  k =  ˆ  λ ( i +  ˆ  ˆ j +  k    f ∇=  λ∇ g
+                                                          ˆ
+              2  xyz     2   xyz    2   xyz
+                        1   yz
+                     λ =  2
+                 i ˆ        xyz
+                    
+                  ˆ j   λ    1 xz  →  λ =  =  1  yz  =  1 xz  =  1  xy
+                    
                          2
-                                   2
-                              2
-                    
-              g  , x  y   x   y   z  1
-                                 ˆ
-                      ˆ
-                            ˆ
-               g   2xi  2yj   2zk
-                                            
-                      ˆ
-                                           ˆ
-                   ˆ
-              i   ˆ  2 j      2xi   ˆ  2yj   2zk      f    g
-                                     ˆ
-                      k
-                                                           226</code></pre>
+                                          2
+                                                              2
+                                                    2
+                             xyz
+                 k ˆ        xy               xyz       xyz      xyz
+                    
+                     λ =  1
+                        2   xyz
+                    
+                                   y
+                                         0
+                 xy =  xz =  yz  x ,,  z  ≠
+                 x =  y =  z
+                   xy =   xz  →  x =  0,  y =  z
+                 
+                  xy =  yz →  y =  0,  x =  z
+                      yz      z   0,      y
+                  xz =     →=         x =
+                     z
+                 y
+              x + +=    1
+                         z
+             For  x =  y =
+                 3z = 1 →=     1  =  y =  x
+                            z
+                                3
+                            ( 1  1  1 )
+                 The point:   3 ,  3 ,  3
+             For  x =  y =  0
+                 z = 1
+                                   )
+                 The point: (0, 0, 1
+
+
+                                                           402</code></pre>
      	</div>
     
      </div>

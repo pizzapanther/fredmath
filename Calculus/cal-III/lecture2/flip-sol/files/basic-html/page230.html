@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 230 - SOL-Cal-III_lecture-2</title>
+        <title>Page 230 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 230 - SOL-Cal-III_lecture-2</div>
+        <div id="content-top1">Page 230 - Cal_lecture-3</div>
         <div id="content-top2">P. 230</div>
      </div>
      <div id="content-middle">
@@ -154,70 +154,81 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-          Use Lagrange multipliers to find the dimensions of the right circular cylinder of minimum surface area
-                                                             3
-                                                         
-          (including the circular ends) with a volume of 32  in
+
+          Use Lagrange multipliers to find the maximum and minimum values of f (when they exist) subject to the
+          given constraint
+                        22
+          f  ( , ,x y  z =  )  x y z  subject to  2x +  2  y +  2  z =  2  25
+
           Solution
-                        3
-             V   32 i n
 
-             Circular cylinder:  Let r: radius  h: height
-             Surface area:  A   2 r     2  2 rh
-                                         
-                                   2
-             Volume:        V   r h
-                                                                     2
-             Suffices to Minimize   , r  h      r   2    rh  subject to  r h   32
-                                                                  
-                                   f
-              f   ,r  h      r   2    rh
-                           ˆ
-               f   2r    h i   ˆ j r
-
-              g  , r  h     r h   2  32
-                       ˆ
-                g   2rhi  r 2 ˆ j
-
-              2r    h i   ˆ  ˆ  j r  2rh i    ˆ  r    2  ˆ  j    f     g
-
-               2 rh    2r   h
-              
-                  r  2        r   1
-                       r             
-              
-
-              2 1  h   2  1    h
-                       
-              h   2
-                  
-
-                2
-              r h   32
-               2   32
-                 3
-
-                3                1    3 
-                   16           2    2
-
-              r   2  3  2    in   h   4  3  2   in
-                                    
-
-
-
-          Exercise
-
-                                            2
+                       2
+                         ˆ
+                               2
+                                  ˆ
+                                       22 ˆ
+                                                                                 ˆ
+               f ∇=  2xy zi +  2x yzj +  x y k              ∇ f =  f i +  ˆ  f  ˆ j +  fk
+                                                                   x     y      z
+              g ( ,x y =  )  2x +  2  y +  2  z −  2  25
+                                 ˆ
+                      ˆ
+                            ˆ
+               g
+              ∇=   4xi + 2yj + 2zk
+                                                           )
+                                                          ˆ
+              2xy zi +  2  ˆ  2x yzj +  2  ˆ  x y k =  22 ˆ  λ ( 4xi +  ˆ  2yj +  ˆ  2zk    f ∇=  λ∇ g
+                 4 x = λ  2xyz  →  x =  0,   λ  =  1  yz
+                            2
+                                                  2
+              i ˆ                             2
+                
+                           2
                                                  2
-                                       2
-          Find the point(s) on the cone  z   x   y   0 that are closest to the point 1, 3, 1   . Give an argument
-          showing you have found an absolute minimum of the distance function.
-          Solution
-
+              ˆ j     2 y = λ  2x yz  →  y =  0,   λ  =  x z
+                
+                                             22
+              k ˆ        22                xy
+                
+                   2 z λ  xy      →    λ =  =  2z
+             ∴    (0, 0, 0     )
+                                           2
+              λ =  1  y z =  2  x z   →  2    y =  2  2x
+                  2
+                           22
                                                     2
-              f   , ,x y z  x     1  2    y    3  2    z    1
+              λ =  1  yz =  2  xy     →    z =  2  x =  2  1  y
+                  2         2z                  2
+              2x +  2  y +  2  z =  2  25
+              y +  2  y +  2  1  y =  2  25
+                        2
+              5  y =  2  25 →  y =  ±  5  2  =  ±  10
+              2                       5
 
-                                                           230</code></pre>
+
+              x =  2  1  y =  2  5 →  x =  z =  ±  5
+                   2
+                                     )
+                  ± ∴  (  5, ±  10, ±  5
+
+                            22
+                       )
+              f  ( ,,x y  z =  x y z
+                 (
+               f  ±  5,   ±  10,    5 ) ( )( ) 5 ==  5 10  50 5
+                                                     )
+                                     ) ( )( )(
+
+              f  ( ±  5,   ±  10,   −  5 =  5 10 −  5 = − 50 5
+                                                       )
+             Maximum is 50 5  @   ±  (   5, ±  10,   5
+                                                          )
+             Minimum is  50 5−    @   ±  (  5, ±  10, −  5
+
+
+
+                                                           406</code></pre>
      	</div>
     
      </div>

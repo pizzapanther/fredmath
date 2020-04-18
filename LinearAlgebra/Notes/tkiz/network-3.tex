@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick] (0, 0) rectangle (5, 3) ;
+\draw [very thick] (0, 0) -- (5, 3) ;
+\draw [very thick] (0, 3) -- (5, 0) ;
+
+\draw [ultra thick,  -> ] (2.5, 0) -- (2.6, 0) ;
+\draw [ultra thick,  -> ] (2.6, 3) -- (2.5, 3) ;
+\draw [ultra thick,  -> ] (0, 1.6) -- (0, 1.5) ;
+\draw [ultra thick,  -> ] (5, 1.5) -- (5, 1.6) ;
+
+\draw [ultra thick,  -> ] (1.5, .9) -- (1.4, .82) ;
+\draw [ultra thick,  -> ] (3.85, .7) -- (3.95, .62) ;
+
+\draw [ultra thick,  -> ] (1.4, 2.18) -- (1.5, 2.1) ;
+\draw [ultra thick,  -> ] (4, 2.4) -- (3.9, 2.32)  ;
+
+\fill [blue!10] (0, 0) circle (.25);
+\draw [very thick] (0, 0) circle (.25); 
+\fill [blue!10] (5, 0) circle (.25);
+\draw [very thick] (5, 0) circle (.25); 
+
+\fill [blue!10] (5, 3) circle (.25);
+\draw [very thick] (5, 3) circle (.25); 
+\fill [blue!10] (0, 3) circle (.25);
+\draw [very thick] (0, 3) circle (.25); 
+\fill [blue!10] (2.5, 1.5) circle (.25);
+\draw [very thick] (2.5, 1.5) circle (.25); 
+
+\draw (-.4, 1.5) node { \Large  \textbf { \textit x$_1 $ } };
+\draw (1, 2) node { \Large  \textbf { \textit x$_2 $ } };
+\draw (4., 2) node { \Large  \textbf { \textit x$_3 $ } };
+\draw (5.5, 1.45) node { \Large  \textbf { \textit x$_4 $ } };
+\draw (2.5, -.4) node { \Large  \textbf { \textit x$_5 $ } };
+
+\draw (.9, 1) node { \large  \textbf { 10} };
+\draw (4, 1) node { \large  \textbf { 10} };
+\draw (2.5, 3.3) node { \large  \textbf { 20} };
+
+\draw [red] (-.05, 0) node { \large  \textbf { 1} };
+\draw [red] (-.05, 3) node { \large  \textbf { 2} };
+\draw [red] (4.95, 3) node { \large  \textbf { 3} };
+\draw [red] (4.95, 0) node { \large  \textbf { 4} };
+\draw [red] (2.45, 1.5) node { \large  \textbf { 5} };
+
+\end{tikzpicture} 
+\end{document}

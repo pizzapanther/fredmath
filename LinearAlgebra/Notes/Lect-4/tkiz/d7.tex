@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usetikzlibrary{decorations.markings}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+
+\tikzset{middlearrow/.style={
+        decoration={markings,
+            mark= at position 0.8 with {\arrow{#1}} ,
+        },
+        postaction={decorate}
+    }
+}
+
+\begin{tikzpicture}
+
+\fill [gray!15] (0, 0) -- (-.13, -1.2) -- (-1.24, -.14) -- (0, 0) ;
+
+
+
+\fill [ thick, gray!15, rotate=-45 ] (0, -1) ellipse (.75 and .28) ;
+\draw [ thick, gray!30, rotate=-45 ] (0, -1) ellipse (.75 and .28) ;
+
+\fill [cyan!15] (0,0) --  (-.2, -1) -- (-.75, -.75) -- (-1, -.2) -- (0, 0) ;
+
+\draw [very thick, ->] (0,0) -- (1.5, 0) ;
+\draw [very thick, ->] (0, 0) -- (0, 1.5) ;
+\draw [very thick, ->] (0, 0) -- (-1.2, -1.2) ;
+
+\draw [ dashed,  thick, middlearrow={>}] (-.2, -1) to[bend right]  (-1, -.2) ;
+
+\draw [very thick, ->, blue] (0,0) -- (-.2, -1) ;
+\draw [very thick, ->, blue] (0,0) -- (-1, -.2) ;
+
+\draw (-1.4, -1.1) node {  \textbf { \textit x } };
+\draw (1.5, -.25) node {  \textbf { \textit y } };
+\draw (-.25, 1.5) node {  \textbf { \textit z } };
+
+\draw (.10, -.5) node { \footnotesize  \textbf { \textit x } };
+\draw (-.5, .1) node { \footnotesize  \textbf { \textit w } };
+\draw (-.55, -.8) node {  $\theta$  };
+
+\end{tikzpicture} 
+\end{document}

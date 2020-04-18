@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [ gray] (-.2, 0) -- (1.5, 0) ;
+\draw [ gray] (0, -.2) -- (0, 1.5) ;
+\draw [very thick, gray] (0, 0) rectangle (1, 1) ;
+
+\draw [thick, ->] (.7, .3) -- (.95, .3);
+\draw [thick, ->] (.7, .6) -- (.95, .6);
+\draw [thick, ->] (.3, .7) -- (.3, .95);
+\draw [thick, ->] (.6, .7) -- (.6, .95);
+
+\draw [very thick, blue, -> ] (0, 0) -- (1, 0) ;
+\draw [very thick, blue, -> ] (0, 0) -- (0, 1) ;
+
+ \draw   (1, -.25) node { \footnotesize ({\textit k},0) } ;
+ \draw   (-.4, .9) node { \footnotesize (0,{\textit k}) } ;
+
+\end{tikzpicture} 
+\end{document}

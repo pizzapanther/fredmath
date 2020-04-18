@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 42 - SOL-Cal-III_lecture-2</title>
+        <title>Page 42 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 42 - SOL-Cal-III_lecture-2</div>
+        <div id="content-top1">Page 42 - Cal_lecture-3</div>
         <div id="content-top2">P. 42</div>
      </div>
      <div id="content-middle">
@@ -154,73 +154,64 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-          Express A implicitly as a function of a, b, and c and calculate    A  and   A  .
-                                                                       a      b 
+
+          Express A implicitly as a function of a, b, and c and calculate   ∂ A  and   ∂ A .
+                                                                       a ∂     b ∂
 
           Solution
 
-               2
-                    2
-                         2
-              a   b  c   2bc cos A
-                    a   b   c  2bc cos A 
-                           2
-                                2
-                      2
-                   a 
-                                                   a
-                 2a   2bc sin   A   A   →    A    bc sin A
-                                           a 
-                                  a 
-                 a  b   c  2bc cos A 
-                   2
-                            2
-                        2
-               b 
-                                             
+              a =  2  b +  2  c −  2  2bc cos A
+
+                  ∂ ( a =  2  b +  2  c −  2  2bc cos A )
+                   a ∂
+
+                 2a =  (2bc sin  ) A  ∂ A    →   ∂ A  =  a
+                                  a ∂      a ∂  bc sin A
+
+              ∂  ( a =  2  b +  2  c −  2  2bc cos A )
+               b ∂
+                                             ∂
                                               A
-                 0   2b  2 cos A   2bc sin A  
-                           c
-                                              b 
-                      c cos A b
-                  
-                               
+                 0 =  2b −  2 cos A +  c  2bc sin A ( )
+                                              b ∂
+                 ( )  =  c cos Ab
                    A
-                    b 
+                  ∂
+                               −
                             sin A
                           bc
+                    b ∂
 
 
           Exercise
           An important partial differential equation that describes the distribution of heat in a region at time t can be
           represented by the one-dimensional heat equation
-                                                         f       2  f
-                                                         t    x   2
 
-          Show that    sinu x ,t     x e      t    satisfies the heat equation for constants  and . What is the
+                                                         f ∂  =  ∂  2  f
+                                                         t ∂   x ∂  2
 
-          relationship between  and  for this function to be a solution?
-
+          Show that  ( ) sin    ( ) x eα  ⋅  −  t β   satisfies the heat equation for constants α  and β . What is the
+                    u
+                        , xt =
+          relationship between α and β for this function to be a solution?
           Solution
 
-                             
-              u     sin    x e     t 
+
+              u =  −  β  sin ( x eα  ) ⋅  −  t β
                t
-              u     cos    x e       t 
+                            )
+              u =  α  cos α  ( x e ⋅  −  t β
                x
-                               
-              u       2 sin    x e     t 
+              u   =  −  α  2 sin ( x eα  ) ⋅  −  t β
                xx
-                   f     2 f
-             For                u   u
-                   t   x   2     t    xx
 
-                sin       t      2 sin     t 
-                      x e 
-                                           x e 
+                   f ∂  ∂  2 f
+             For     =       →    u =  u
+                   t∂   x ∂  2     t    xx
 
-                      2
+              −  β  sin ( ) x eα  ⋅  −  t β  −  α =  2 sin ( ) x eα  ⋅  −  t β
 
+             ⇒  β    α =  2
 
 
 
@@ -229,7 +220,8 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            42</code></pre>
+
+                                                           218</code></pre>
      	</div>
     
      </div>
