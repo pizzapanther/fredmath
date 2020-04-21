@@ -10,31 +10,29 @@
 \begin{document}
 \begin{tikzpicture}
 
-\fill [cyan!30] (-1.05, 0) rectangle  (1.05, 2.05) ;
-\fill [white, thick, domain= -1.05:1.05, variable=\x] plot ({\x},{ \x*\x  + 1});
+\draw [ultra thick, -> ] (0, 0) -- (0, 4.6) ;
 
-\draw[blue, very thick, domain= -1.05:1.05, variable=\x] plot ({\x},{ \x*\x  + 1});
+\fill [gray!30] (0, 0) ellipse (1.5 and .6) ;
 
-\draw [ultra thick, -> ] (0, -.5) -- (0, 2.8) ;
-\draw [ultra thick, -> ] (-2, 0) -- (2, 0) ;
+\fill [yellow!50!orange!40, variable=\x,samples=50,domain=-1.4:1.4]  plot ({\x}, {4 - 0.6*pow(\x,2)});
+\fill [ yellow!50!orange!40 ]  (-1.38, 2.83)  arc  (-170: -10 : 1.4 and 0.3) ; 
+\draw [brown, densely dotted ]  (-1.38, 2.82)  arc  (170: 10 : 1.4 and 0.3) ; 
 
-\draw [thick] (1.05, -.1) -- (1.05, .1) ;
-\draw [thick] (-1.05, -.1) -- (-1.05, .1) ;
+\draw [ thick , dashed] (0, 3) -- (0, 4) ;
+\draw [ultra thick ] (0, 0) -- (0, 2) ;
+\draw [ultra thick, -> ] (-1.5, 0.75) -- (2, -1) ;
+\draw [ultra thick, -> ] (1.5, .75) -- (-2, -1) ;
+\draw [thick]  (-.1, 4) -- (.1, 4) ;
 
-\draw [thick] (-.1, 2) -- (.1, 2) ;
+\draw (-2.2, -1.2) node { \large  \textbf \textit $x$ };
+\draw (2.2, -1) node { \large   \textbf \textit $y$ };
+\draw (-.25, 4.65) node { \large  \textbf \textit $z$ };
+\draw (-1.2, 0) node {   \textbf \textit $R$ };
 
-\draw [thick] (-1.05, 0) -- (-1.05, 2.1) ;
-\draw [thick] (1.05, 0) -- (1.05, 2.1) ;
-
-\draw (2.25, 0) node { \large  \textbf  \textit $t$ };
-\draw (0, 3.05) node { \large  \textbf \textit $u$ };
-\draw [blue] (1, 2.3) node {  \textbf \textit $u$ = sec $t$ };
-
-\draw (-.25, 2) node {  2 };
-\draw (-.15, .85) node {  1 };
-\draw (-1.05, -.35) node { - $\frac {\pi}{3}$};
-\draw (1.05, -.35) node { $\frac {\pi}{3}$};
-
+\draw (.2, 4.15) node {4} ;
+\draw (1.5, 2.5) node {  \textbf \textit $z$ = 4 - ${x^2}$ - ${y^2}$ };
+\draw (-.9, -.7) node {1} ;
+\draw (.9, -.7) node {1} ;
 
 \end{tikzpicture} 
 \end{document}
