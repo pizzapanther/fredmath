@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 44 - SOL-Cal-III_lecture-3</title>
+        <title>Page 44 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 44 - SOL-Cal-III_lecture-3</div>
+        <div id="content-top1">Page 44 - Cal_lecture-3</div>
         <div id="content-top2">P. 44</div>
      </div>
      <div id="content-middle">
@@ -154,76 +154,83 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-          Consider the region   R     , x  y  :  x   y    1
+          Evaluate the integral over the given region
 
-             a)  Use a double integral to show that the area of R is 2.
-             b)  Find the volume of the square column whose base is R and whose upper surface is
-                        
-                 z  12 3x   4y .
-             c)  Find the volume of the solid above R and beneath the cylinder  x   2  z   2  1.
-
-             d)  Find the volume of the pyramid whose base is R and whose vertex is on the z-axis at 0, 0, 6 
-
+                 ∫∫  1 x +  2  y 2  dA R =  ( { , x  y ) :0 ≤  y ≤  x , 0 ≤  x ≤  } 2
+                          xy
+                      +
+                  R
           Solution
-                                y    x   1
-               1   x   0   
-                                     x
-                               y    1
-                               y    x   1
-              0   x  1    
-                                   x
-                              y    1
-                                             
-                        0
-                                         1 1 x
-             a)  A       x  x 1 1 dydx     x 1  dydx
-                        1 
-                       
-                                        0
-                          0  x  1 1   dx   1  1 x
-                        1 y   x      0  y  x 1  dx
 
 
-                          0  2x    2 dx    1    
-                        1              0  2 2x dx
+                  1 x+ ∫∫  xy +  y 2  dA =  2  x 1 x+ ∫ ∫  xy +  y 2  dydx
+                      2
+                                               2
+               R                    0   0
+                                      2   x
 
-                        2      0         2   1
-                      x   2x       2x   x
-                                 1            0
-                        
-                       1 2 2 1
-                      2
-                                                           
-                        0
-                                                       1 1 x
-                                   
-                                                                 
-             b)  V       x  x 1 1 12 3x  4   y dydx    x 1  12 3x   4   y dydx
-                       
-                        1 
-                                                      0
-                          0  12y  3xy   2   x  1 1   dx   1  12y  3xy   2   1 x
-                        1            2y     x        0             2y    x 1  dx
-
-                      0  12x  12 3x x    1    2 x    1  2   12    1  3x x    1    2     1  2  dx
-                                   
-                                                               x 
-                                                                                       x
-                        1   1
-                                                             2
-                                                         
-                                    
-                               0  12 1 x   1 x   1 x   12 x    1  3x x    1    2 x    1  2  dx
-                                               
-                                        3x
-                                                   2
-                          0  18x   24 6x  2  dx    1  24 30x    2 
-                        1                       0            6x   dx
+                                                                                      +
+                                                           +
+                                =  1        1 x+ ∫∫  x  d ( 1 x +  2  y 2 )  dx    d ( 1 x +  2  y 2 )  =  2ydy
+                                  2             2  +  y 2
+                                     0   0
+                                        x
+                                =  1 ∫ 2     ln 1 x+  (  2  +  y 2 )     x   dx
+                                  2  0                    0
 
 
 
+                                =  1 ∫ 2  x ln 1 2x+  ( (  2 ) −  x ln 1 x+  (  2 ))  dx
+                                  2  0
 
-                                                            44</code></pre>
+
+
+                                                                   (
+                                           (
+                                =  1 ∫  2 x ln 1 2x 2 ) dx −  1 ∫  2 x ln 1 x 2 ) dx
+                                                                     +
+                                             +
+                                  2  0                    2  0
+                                                                        (
+                                         (
+                                           +
+                                =  1 ∫  2 ln 1 2 x 2 ) ( 1 2x 2 )  −  1 ∫  2 ln 1 x 2 ) ( 1 x 2 )
+                                                                           +
+                                                                                 d
+                                                                                    +
+                                                   d
+                                                      +
+                                  8  0                           4  0
+                                              ∫ ln y dy =  y (ln y −  ) 1
+                                                          1
+                                                        −
+                                                                                        1
+                                                                       +
+                                                                                       −
+                                =  1 ( 1 2 x 2 ) ( ( ln 1 2x 2 ) )  2  −  1 ( 1 x 2 ) ( ( ln 1 x 2 ) )  2
+                                                 +
+                                                                                 +
+                                     +
+                                  8                          0     4                        0
+                                =  1 (9ln 9 9 1− +  ) −  1  (5ln 5 5 1− +  )
+                                  8                4
+                                =  9  ln 9 1−  5 ln 5 1
+                                       +
+                                                  −
+                                  8         4
+                                =  9  ln 9 −  5  ln 5
+                                  8      4
+
+
+
+
+
+
+
+
+
+
+                                                           476</code></pre>
      	</div>
     
      </div>

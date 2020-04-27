@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 87 - SOL-Cal-III_lecture-3</title>
+        <title>Page 87 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 87 - SOL-Cal-III_lecture-3</div>
+        <div id="content-top1">Page 87 - Cal_lecture-3</div>
         <div id="content-top2">P. 87</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                            1   tan  1     a        a  tan  1     a  cot tan  1  a    
-                                            2 2         2    2 1 a  2           1 a 2             
-                                                                                  
-                                                                   
-                                            1   tan   1     a        a  tan   1     a  1    
-                                            2 2         2    2 1 a  2           1 a 2 a   
-                                                                   
-                                                                                  
-                                            1   tan   1     a        a  tan   1     1      
-                                            2 2         2    2 1 a  2           1 a     2 
-                                                                   
-
-                                                                      
-                c)  lim    1   tan  1     a        a  tan  1   1        1  tan  1     a  tan  1   0
-                                                                                       
-                    a     2 2       2   2 1 a  2           1 a     2       2 2  2 1 a 2
-                                                  
-                                                                                                
-                                                                           1      0
-                                                                          2 2   2
-
-                                                                            2
-                                                                            8
+    <pre style="white-space:pre-line"><code>1
+                    ∫∫        2 1  2  2  dA = ∫ ∫ 1     2 1   2  2  dydx
 
 
-             Exercise
-             In polar coordinates an equation of an ellipse with eccentricity 0 e   1 and semimajor axis a is
-                                                                           
-                            
-                        a  1 e 2 
-                    r 
-                         
-                        1 e cos
-              a)  Write the integral that gives the area of the ellipse.
+                          +
+                                                     +
+                     R  ( 1 x +  y  )         0  0 ( 1 x +  y  )
+                                              π   secθ                       π   cscθ
+                                                                             2
+                                              4
+                                                           1
+                                                                                         1
+                                            ∫∫    0    ( 1 r 2 ) 2   rdrdθ =  π ∫∫ 0  ( 1 r 2 ) 2   rdrdθ +
+                                             0
+                                                         +
+                                                                                        +
+                                                π   secθ  d ( 1 r 2 )       4  π   cscθ  d ( 1 r 2 )
+                                                              +
+                                                                                            +
+                                                4
+                                                                              2
+                                            1 ∫∫                   dθ =   1  π ∫∫                 dθ +
+                                            2  0    0     ( 1 r 2 ) 2     2   4   0     ( 1 r 2 ) 2
+                                                            +
+                                                                                          +
+                                                  π                         π
+                                                                                            θ −
+                                            −  1 ∫  4  1    secθ  d θ =  1  π ∫  2  1  cscθ  d
+                                             2      1 r+  2  0         2      1 r+  2  0
+                                                 0
+                                                                           4
+                                                  π                           π
+                                            −  1  4      1   −  1  ∫      d θ =  1  2      1  −  1 dθ −   ∫    
+                                             2              2             2             2
+                                                 0    1 sec θ  +            π   1 csc θ  +
+                                                                             4
+                                                π                       π
+                                            1 ∫  4   sec θ  2  dθ =  1  π ∫  2  csc θ  2  dθ +
+                                            2      2 tan θ  +  2   2       2 cot θ  +  2
+                                               0
+                                                                       4
+                                                π                   π
+                                          =  1  4 2 tan θ ∫  d  (tanθ  )  −  1  2  2 cot θ ∫  d (cotθ  )     a + ∫  dx  =  1  tan − 1 x
+                                            2       +    2     2        +    2              2    2   a      a
+                                               0                   π                            x
+                                                                   4
+                                                                π                        π
+                                          =  1   tan −  1 tanθ        4  −  1  tan −   1 cotθ          2
+                                            22           2    0     22           2   π
+                                                                                          4
 
-                                                                          
-              b)  Show that the area of an ellipse is  ab, where b   2  a 2  1 e 2 
-                                                   
-             Solution
+                                          =  1       tan −  1 1  +  tan −  1 1    
+                                            22          2           2 
 
-                a)  A    1dA
+                                          =  1  tan − 1     1    
+                                             2         2 
 
+                                              1
+                b)  ∫∫        2 1  2  2  dA = ∫ ∫  a    2 1  2  2  dydx
 
-                         R
-                                      2
-                                   1 e
-                                 a  
-                           2
-                               1 e  cos
-                          0     0        r drd
+                          +
+                     R  ( 1 x +  y  )        0   0 1 x+ − 1 (  +  y  )          π
 
-                                     2
-                                  1 e
-                                a  
-                           2
-                               1 e  cos
-                b)  A    0    0         r drd
-
+                                                                                 2
+                                                                                                   1
+                                                                1
+                                            ∫ 0 tan  a ∫ 0 secθ  ( 1 r 2 ) 2   rdrd +  tan − 1 ∫∫ 0 a cscθ  ( 1 r 2 ) 2   rdrd
+                                                                                                             θ
+                                                                          θ =
+                                                                                                 +
+                                                                                     a
+                                                              +
 
 
-                         1  2 r 2  a  1 e  2    / 1 e  cos   d
-                         2  0       0
-
-
-
-
-                                                              87</code></pre>
+                                                              519</code></pre>
      	</div>
     
      </div>

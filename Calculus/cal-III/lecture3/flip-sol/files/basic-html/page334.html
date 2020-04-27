@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 334 - SOL-Cal-III_lecture-3</title>
+        <title>Page 334 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 334 - SOL-Cal-III_lecture-3</div>
+        <div id="content-top1">Page 334 - Cal_lecture-3</div>
         <div id="content-top2">P. 334</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> 1     3 
-                           
-                             36   1  u u   du
+    <pre style="white-space:pre-line"><code>Exercise
+
+                               ∂ ( , xy )
+             Find the Jacobian         of the transformation
+                               ∂ ( , uv )
+
+                           v
+                                       v
+              a)  x =  u cos ,  y =  u sin , z =  w
+              b)  x =  2u −  1,  y =  3v −  4, z =  1 (w −  ) 4
+                                              2
+             Solution
 
 
-                                 1  2  1  4   1
-                             36  2 u   4  u   1
+                    ∂ ( ,,x y z )  cosv − u sin v  0
+                a)            =  sin v  u cosv   0
+                    ∂ ( ,,u v w )
+                                  0       0      1
 
-                                 1  1   1   1 
-                             36  2    4    2    4
+                                      2
+                                               2
+                               =  u cos v u sin v
+                                         +
+                               =  u
 
-
-                             0
+                                20     0
+                    ∂ ( , , yz )
+                       x
+                b)            =  0 3   0
+                       uv
+                    ∂ ( , ,w )
+                                00     1
+                                       2
+                              = 3
 
 
              Exercise
 
+             Evaluate the appropriate determinant to show that the Jacobian of the transformation from Cartesian
 
-             Evaluate     1  2u  u u v    1  d du
-                                       
-                                                 v
+             ρφθ−space to Cartesian xyz−space is  ρ  2 sin
+                                                       φ
+             Solution
 
-             Solution     0  2u 2
+                              θ
+                                               θ
+                                           φ
+                         φ
+                 x =  ρ  sin cos ,  y =  ρ  sin sin , z =  ρ  cos φ
 
-                 x   , y  x   y   2
-                0   x   1
-                  u   x          x   u
-                               
-                                        u v
-                      x
-                  v    y        y   
-                       
-                 J   , u  v   1  0
-                            1 1
-                          1
+                                φ
+                                              φ
+                                                             φ
+                                                                         φ
+                                                                                      φ
+                 ∂ ( ,,x yz )  sin cosθ  ρ  cos cosθ    ρ −  sin sinθ  sin cosθ   ρ  cos cosθ
+                                                            φ
+                                              φ
+                                φ =
+                                                                                       φ
+                                                                          φ
+                   ρ
+                 ∂ ( ,, φθ )  sin sinθ   ρ  cos sinθ   ρ  sin cosθ     sin sinθ   ρ  cos sinθ
+                               cosφ         ρ −  sinφ       0            cosφ        ρ −  sinφ
+                            ρ =  2 cos φ  2  sin cos θ  2  ρ +  2 sin φ  3  sin θ  2  ρ +  2 sin cos φ  2  sin θ  2  ρ +  2 sin φ  3  cos θ  2
+                                         φ
+                                                                          φ
 
-                     x   0                      u   0
-                     x  1                       u  1
-                     x   y      u            v   2u
-                                          v
-                                      u
-                     x   y   2  u       v     2u   2
-                                      u v
-                                             2
-                                                2u
-                                            1
-                   1
-                    y y 2  x   y  dxdy    2u 2  u u v  1  d du
-                                                        
-                                                                  v
-                  0
-                                           0
-                                             1  2u          1/2
-                                                    2u v       d  2u v   du
-                                             0  1 2u 2
+                            ρ =  2 cos φ  2  sin φ  ( cos θ  2  +  sin θ  2  )  ρ +  2 sin φ  3  ( sin θ  2  +  cos θ  2  )
 
+                            ρ =  2 cos φ 2  sin +  ρ  2 sin φ  3
+                                         φ
+                              2         2       2
+                          =  ρ  sin φ  ( cos φ  sin φ +  )
 
-                                           2   2u v   3/2  2u  du
-                                            3  0             2u 2
+                          =  ρ  2  sin
+                                   φ
 
 
-
-                                          2  1   2  3/2  du
-                                          3   0
-
-
-                                          4 2
-                                            3
-
-                                                            334</code></pre>
+                                                            766</code></pre>
      	</div>
     
      </div>

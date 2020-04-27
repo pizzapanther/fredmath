@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 229 - SOL-Cal-III_lecture-3</title>
+        <title>Page 229 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 229 - SOL-Cal-III_lecture-3</div>
+        <div id="content-top1">Page 229 - Cal_lecture-3</div>
         <div id="content-top2">P. 229</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>7                        M
-                 x   10                  x    x
-                     5                         M
-                     4
-                    14
-                    25
+    <pre style="white-space:pre-line"><code>Exercise
+
+             A point mass m is a distance d from the center of a thin spherical shell of mass M and radius R. The
+             magnitude of the gravitational force on the point mass is given by the integral
+                                            2π
+                                                                              φθ
+                           F  ( ) d =  GMm ∫∫    π     (d − R cosφ  )sinφ    dd
+                                     4π    0     0  ( R +  2  d −  2  2Rd  cosφ ) 3/2
 
 
-             Exercise
+             Where G is the gravitational constant.
+                a)  Use the change of variable  x =  cosφ  to evaluate the integral and show that if d &gt;  R , then
 
-             Find the mass and center of mass of the thin rods with the following density functions.
-
-                              x    x 2  for   0    4
-                                                    x
-                                   2
-                                      16
+                    F d     GMm   , which means the force is the same as if the mass of the shell were concentrated
+                      ( ) =
+                              d 2
+                    at its center.
+                b)  Show that is d &lt;  (the point mass is inside the shell), then  F = .
+                                     r
+                                                                                  0
              Solution
-                              1
-                 M    0 4  2   16  x 2  dx
+                                                 2
+                a)  x =  cosφ  →   sinϕ  =  1 x
+                                              −
+                              ϕϕ
+                    dx =  −  sin d    →   dϕ =  −  dx
+                                                  −
+                                                1 x  2
+                     ϕ =   0  →  x =  1
+                    
+                     ϕ  π =  →  x =  −  1
 
 
-                             1
-                            2x   48  x 3       4
-                                   0
-                      8   4
-                          3
 
-                      20
-                       3
+                    Fd        GMm   ∫  2π d     ∫  1     (d −  Rx ) 1 x−  2     − dx
+                                          θ
+                      ( ) = −
+                               4π    0          − 1 R + (  2  d −  2  2xRd ) 3/2  1 x 2
+                                                                            −
+                                       1                                                 
+                          =  1 GMm                  d           −           Rx           ∫    dx
+                            2                2    2        3/2       2    2         3/2
+                                      − 1   ( R +  d −  2xRd )     ( R +  d −  2xRd )   
+                                                                                        
 
-                Center of mass:
+                                           1   d R + (  2  d −  2  2dRx )  1                       
+                          =  GMm    −      1                          −  ∫          Rx          dx   ∫  
+                               2     2R          2    2        3/2            2    2         3/2
+                                           −  1 R + (  d −  2dRx )      −  1 R + (  d −  2dRx )    
+                                                                                                   
 
-                         3
-                                                                           1
-                                     1
-                    x   20 0   4     2x   16 x 3        dx    x  M  a b x   x dx
+                              u =  R +  2  d −  2  2dRx →  du =  −  2dRdx
+                                                   )
+                              Rx =  1  ( R +  2  d −  2  u
+                                   2d
 
-                         3      x   2  1  x 4      4
-                         20      64      0
-                                  
-                               
-                         3  16 4
-                         20
-                         9
-                         5
-
-
-             Exercise
-
-             Find the mass and center of mass of the thin rods with the following density functions.
-                                                      x 
-                               x         for   0  
-                                   2 cos x
-
-             Solution
-                      
-                 M     2 cos x dx  
-                       0
-                                 
-                      2x   sin   x
-                                 0
-                      2 
+                             2 ∫   Rx          dx =  1 ∫    R + (  2  d −  2  u u − 3/2 )( −  1  ) du
+                                                                       )(
+                          ( R +  d −  2  2dRx ) 3/2  2d                           2Rd
 
 
-                                                            229</code></pre>
+
+                                                         1
+                                                   =  −  3Rd ∫   R +  ( (  2  d 2 ) u −  3/2  −  u −  1/2 ) du
+                                                           2
+
+
+
+                                                            661</code></pre>
      	</div>
     
      </div>
