@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 278 - SOL-Cal-III_lecture-3</title>
+        <title>Page 278 - Cal_lecture-3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 278 - SOL-Cal-III_lecture-3</div>
+        <div id="content-top1">Page 278 - Cal_lecture-3</div>
         <div id="content-top2">P. 278</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>Assume:  ρ = 1
 
-             Consider the following two- and three- dimensional regions. Compute the center of mass assuming
-             constant density. All parameters are positive real numbers.
-             A region is bounded by a paraboloid with a circular base of radius R and height h. How far from the
-             base is the center of mass?
+                                                                              2
+                                                                         3
+                The mass is the volume of a half-sphere of radius 4:   1  4π 4  = 18π =  m
+                                                                   2 3         3
+                                                 φ
+                In spherical coordinates  z =  ρ  cos
+                     M
+                 z =   xy
+                      m       2π   π  /2  4
+
+
+                   =   3     ∫∫ ∫          ρ cosφρ  2 sin d ddθ
+                                                        φ ρ φ
+                     128π    0    0      0
+
+
+                   =   3     ∫  2π  dθ     ∫  π  /2  1  sin 2 dφφ     ∫  a ρ 3  d     ρ    2sin cos =  sin 2
+                                                                                         φ
+                                                                                                     φ
+                                                                                              φ
+                     128π    0         0    2             0
+                        3
+                   = ( 128π )  (   2π  ) (  1 cos2φ  π /2    ( 1  ρ  4  4
+                                       −
+                                        4
+                                                       4
+                                                              0
+                                                 0
+                       3
+                           1
+                   = ( )( )( )
+                               64
+                           2
+                      64
+                  =  3
+                     2
+                                        (       3 )
+                ∴ The center of mass is  0,  0,    2
+
+
+             Exercise
+
+             Find the center of mass of the following solids, assuming a constant density of 1. Sketch the region and
+             indicate the location of the centroid. Use symmetry when possible and choose a convenient coordinate
+             system.
+                                                             2
+                                                                  2
+                The region bounded by the paraboloid   z =  x +  y  and the plane  z =  25
              Solution
 
-                                                      2
-                Equation of the paraboloid:  z   h  r
-                                                 R 2
-                0     R , 0     2 
-                    r
-                       2
-                m        R   hr  h  2   r dzdrd
-                      0
-                           0
-                                R 2
+                Given:  ρ = 1
 
-                         2 d   R  h
-                                  rz  hr 2  dr
-                               0
-                       0
-                                     R 2
-                        2    R         2  
-                              r h        hr 2    dr
-                        0    0         R 
-
-                          R  
-                     2      hr        h 2  r 3     dr
-                         0         R     
-                                           R
-                          1  2    h   4 
-                     2   hr       r  
-                          2      4R 2     0
-                         1   2   1   2 
-                     2  2  hR   4  hR
+                                 =
+                 z =  x +  2  y =  2  25 r 2  →  r =  5
+                             5
+                       2π
+                     ∫ ∫∫        25     r dz dr dθ
+                 m =  0     0   r 2
 
 
-                          2
-                      hR
-                     2
-                By symmetry;  x   y   0
 
-                             2
-                 z    2           R   hr  h   r  dzdr
-                                              z
-                                d
-                     hR 2  0       0     2
-                                         R 2
-
-
-                     2    R  rz 2  h  2  dr
-                     hR 2  0       hr
-                                    R 2
-                           R           2 4
-                     2       r h          2  h r      dr
-                    hR 2   0          R 4  
-
-
-                                                            278</code></pre>
+                   = ∫  0 2π  dθ     ∫  0 5 r (  z  25   dr
+                                         2
+                                        r
+                         ∫ 0  25r r
+                           5 (      3 )  dr
+                     2π
+                   =
+                                 −
+                              2
+                   = 2   ( 25  r −  1 r 4     5
+                      π
+                           2
+                                 4
+                                       0
+                                                            710</code></pre>
      	</div>
     
      </div>
