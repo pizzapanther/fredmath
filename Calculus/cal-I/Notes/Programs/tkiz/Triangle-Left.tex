@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+:Title:  2-tanks
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick] (0, 0) -- (5, 0) -- (5, 3) --  (0, 0);
+	\fill (4.85, 0) rectangle (5, .15);
+	\draw [<->] (0, -.25) -- (5, -.25) ;
+
+	\draw   (5.35, 1.52) node { $D$  };
+	\draw (1, .25) node {\large $ \theta $};
+
+	\draw (2.25, -.45) node { 20 };
+
+\end{tikzpicture} 
+\end{document}
