@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+:Title:  2-tanks
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill[left color=gray!80, right color=gray!60, middle  	color=white] (0,0) circle (2) ;
+	\draw [thick ] (0, 0) circle (2);
+
+	\draw [ very thick, red] (-2, 0) arc (180:75: 2 and 2);
+	\draw [very thick, blue] (-.2, 0) to [bend left] (0.08, .2) ;
+	\draw [very thick, red] (2, 0) -- (0.5, 1.95) ;
+
+	\draw [very thick, dashed] (0, 0) -- (0.5, 1.95) ;
+	\draw [very thick] (-2, 0) -- (2, 0) ;
+	\draw [very thick, green , ->] (-3.5, 1.2) -- (-2, .6) ;
+	\draw [very thick, green , ->] (2.7, 1.25) -- (1.5, .7) ;
+
+	\draw  (3, 1.5) node {\Large $\textbf {T$_1$ = 2 $\frac{mi}{hr}$ } $};
+	\draw  (-3, 1.5) node {\Large $\textbf {T$_2$ = 4 $\frac{mi}{hr}$ } $};
+	\draw   (.8, -.3) node { \large r=1  };
+	\draw  (.35, .25) node  { \Large $\theta$} ;
+	\draw [blue]  (-.6, .25) node  { \large $\pi-\theta$} ;
+	%\draw   (3.7, -0.6) node { \LARGE $\frac{dV}{dt}$ \large $=$ 9 \emph  {$ft^3$/min} };
+	
+\end{tikzpicture} 
+\end{document}
