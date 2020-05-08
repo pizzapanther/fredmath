@@ -152,64 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                           ln 1 x   0
-                                     lim           
-                                    x  0   tan x    0
-                                              1
-                                             
-                                     lim    1 x
-                                               2
-                                    x  0   sec x
-                                   1
+    <pre style="white-space:pre-line"><code>lim      2tan x  =  ∞
+                         2
+              x π→  /2 sec x   ∞
+                                              2
+                             =   lim      2sec x
+                                            2
+                               x π→  /2 2sec x tan x
+                                          x
+                             =   lim   cot
+                                →
+                               x π  /2
+                             =  0
 
-                                   1
-                       
-               lim   1 x  cot x    e   e
-              x 0 
+
+          Exercise
+                                                  x
+                                                     x
+          Apply l’Hôpital Rule to evaluate   lim   e −− 1
+                                           x→ 0    5x 2
+          Solution
+                     x
+                        x
+              l im   e −−   1 =  0
+              x→ 0    5x 2     0
+                                      x
+                             =  l im  e − 1  =  0
+                               x→ 0   10x    0
+
+                             =  lim    e x
+                               x→ 0  10
+
+
+                             =  1
+                               10
 
 
           Exercise
 
-          Evaluate the following limit    lim   sin x  tan x
-                                         x 
-                                            2
+          Apply l’Hôpital Rule to evaluate   lim    e −  x  sin x −  1
+                                           x→ 0 x +  4  8x +  3  12x 2
           Solution
-                                  
-               lim  sin x  tan x   1
-              x  
-                 2
-                                                           
-               lim   ln sin x  tan x    lim   tan x  sin x
-                                                   ln
-              x                   x    
-                 2                      2
-                                            ln sin x 
-                                     lim     cot x
-                                    x   
-                                        2
-                                              cos x
-                                     lim     sin x
-                                                 2
-                                    x      csc x
-                                        2
-                                      lim   cos x sin 2  x
-                                              sin x
-                                      x 
-                                          2
-                                                        
-                                                  x
-                                      lim   cos sin x
-                                           
-                                      x 
-                                          2
-                                    0
+                                      0
+              lim    e −  x  sin x −  1  =
+              x→ 0 x +  4  8x +  3  12x 2  0
 
-                                   0
+                                                 x
+                                                                0
+                                    =  lim      e − cos x     =
+                                      x→ 0 4x +  3  24x +  2  4 2 x  0
+                                                x
+                                    =  lim     e +  sin x
+                                      x→ 0 12x +  2  48x +  24
 
-               lim  sin x  tan x    e  1
-              x  
-                 2
+                                    =  1
+                                      24
 
 
 
@@ -219,7 +216,9 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                           156</code></pre>
+
+
+                                                           522</code></pre>
      	</div>
     
      </div>
