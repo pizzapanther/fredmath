@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 405 - SOL-Cal-II_lecture-2</title>
+        <title>Page 405 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 405 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 405 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 405</div>
      </div>
      <div id="content-middle">
@@ -154,73 +154,75 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
+           Use Euler’s method to calculate the first three approximations to the given initial value problem for the
+           specified increment size. Calculate the exact solution and investigate the accuracy of your approximations.
+           Round the results to four decimals
 
-           Verify that the given function y is a solution of the differential equation that follows it. Assume that
-                  ,
-             , C  C  and C  are arbitrary constants.   y =  Ct − 3 ; ty′ ( ) 3t +  y =  0
-                1         2
+                   y
+            y′ =  1−  ,  y ( ) 2 =  −  1, dx =  0.5
+                   x
            Solution
 
-               y =  Ct −  3  ⇒  y′ =  −  3Ct −  4
-                (     −  4 )   −  3      −  3     −  3
-               t − 3Ct    +  3Ct  =  −  3Ct  +  3Ct
-
-                                   =  0    √
-
-
-           Exercise
-
-           Verify that the given function y is a solution of the differential equation that follows it. Assume that
-                                                                                   ′′
-             , C  C  and C  are arbitrary constants.   y =  C  sin 4t +  C  cos 4 ;t  yt     =  0
-                                                                                    ( ) 16y+
-                  ,
-                1         2                                 1          2
-           Solution
-               y′ =  4C  cos 4t − 4C  sin 4t
-                      1            2
-               y′′ =  −  16C  sin 4t −  16C  cos 4t
-                         1            2
-               y ′′ ( ) 16t +  y =  −  16C  sin 4t −  16C  cos 4t +  16C  sin 4t +  16C  cos 4t
-                                  1            2            1            2
-                           =  0    √
+                            y 
+               y =  y +   1−   0    dx
+                1    0      x 
+                              0 
+                                     )
+                   = −+  ( 1−  − 2 1 ) (0.5
+                      1
+                   = − 0.25
 
 
-           Exercise
+                             y 
+               y =   y +  1−   1    dx
+                 2    1      x 
+                              1 
+                                           )
+                   =  −  0.25 +  ( 1−  − 0.25 ) (0.5
+                                  2.5
+                   =  0.3
+                             y 
+               y =   y +   1−   2    dx
+                3     2      x 
+                               2 
+                                      )
+                   =  0.3 +  ( 1−  0.3 ) (0.5
+                               3
+                   =  0.75
 
-           Verify that the given function y is a solution of the differential equation that follows it. Assume that
-
-                                                                             ′′
-             , C  C  and C  are arbitrary constants.   y =  C e − x  +  C e x ;  yx  y =  0
-                  ,
-                                                                              ( ) −
-                1         2                                 1        2
-           Solution
+                                               () 1
+               y′ +  1  y =  1   P () =  1  , Qx  =
+                                    x
+                    x                   x
+                                 ∫ 1 dx  ln x
+                          y =  e  x   =  e   =  x
+                           h
+                          ∫  ( ) 1 e ∫ 1 dx dx = ∫  x dx =  1  x 2
                                   x
-               y′ =  −  C e − x  +  C e
-                      1         2
-                                 x
-               y′′ =  C e − x  + C e
-                     1        2
-                                                         x
-                ′′
-               yx      y =  C e −  x  +  C e −  x  C e −  x  −  C e
-                  ( ) −
-                            1         2      1        2
-                         =  0    √
+                                                   2
 
+                                   )
+                         (
+                             2
+                yx      11  x +  C
+                  ( ) =
+                        x  2
+                             x
+                     =  1  x +  C
+                       2
+                y ( ) 2 =  1  ( ) 2 +  C  =  −  1
+                       2       2
 
+                      1+  C  =  −  1
+                          2
+                      C     2
+                       2  = −
+                      C  = − 4
 
-
-
-
-
-
-
-
-
-
-                                                              405</code></pre>
+                  ( ) =
+                yx     x  −  4
+                       2   x
+                                                              815</code></pre>
      	</div>
     
      </div>

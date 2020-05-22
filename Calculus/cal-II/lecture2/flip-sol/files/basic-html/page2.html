@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2 - SOL-Cal-II_lecture-2</title>
+        <title>Page 2 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 2 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 2</div>
      </div>
      <div id="content-middle">
@@ -154,19 +154,21 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>u =  ln 3x ⇒  du =  3  dx =  1  dx
                                  3x      x
-                dv =  dx ⇒=
-                              x
                           v
-            ∫  ln(3 ) x dx =  x ln(3 ) x − ∫  x dx
-                                       1
-                                       x
+                              x
+                dv =  dx ⇒=
+            ∫  ln 3x       x ln 3x   ∫  x dx
+                                         1
+                 ( ) dx =
+                              ( ) −
+                                         x
+                              x
+                       =  x ln(3 ) − ∫ dx
 
-
-                      =  x ln(3 )x − ∫ dx
-
-                                  x C
-                      =  x ln(3 )x −+
-                      =  x [ln(3 ) 1x −  ] C+
+                                   x C
+                       =  x ln(3 ) −+
+                              x
+                       =  x (ln(3 ) 1x −  ) C+
 
 
         Exercise
@@ -176,49 +178,47 @@ function MM_swapImage() { //v3.0
 
         Solution
 
-              ∫  x ln x  dx = ∫  ln xx  dx
-                  1
-                              1 1
+            ∫  x ln x dx = ∫  ln x   d  (ln x
+                 1
+                             1
+                                      )
 
+                       = ln ln x + C
 
-              u =  ln x ⇒  du =  1  dx
-                              x
-
-
-                    1
-                 ∫  x ln x  dx = ∫  1  du
-                               u
-                           =  ln uC+
-
-
-                           =  ln ln x + C
 
 
         Exercise
+                                  ∫   (ln x ) dx
+        Evaluate the integrals      x      2
 
-                                           2
-        Evaluate the integrals    ∫  x (ln x ) dx
 
         Solution
 
                 u =  ln x →   x =  e u                                                ∫ e 2u du
                                                   u
                 du =  1  dx ⇒   xdu =     dx →  dx =  e du
-                     x                                                  +      u 2     1  e 2u
-            ∫  x (ln x ) dx = ∫  e u e du                               −      2u      2 e 2u
+                     x                                                  +      u 2     1 e 2u
+                                                                                       2
+            ∫  x (ln x ) dx = ∫  e u e du                               −      2u      1 e 2u
                       2
-                                   2 u
                                 u
-                                                                                       1
+                                   2 u
                                                                                        4
                              ∫  u e                                     −      0
                                                                                        8
-                                 22u  du                                +      2       1  e 2u
+                                 22u   du                               +      2       1 e 2u
                            =
-                                 22u
-                           =  1 u e   −  1 ue 2u  +  1  e 2u  +  C
+                                 2 2u
+                           =  1  u e  −  1 ue 2u  +  1  e 2u  +  C
                               2         2        4
-                                                            2</code></pre>
+                           =  1  e 2u ( 2u −  2  2u +  1 +  )  C
+                              4
+
+                           =  1  x 2 (  ( 2 ln x ) −  2  2ln x +  1 +  )  C
+                              4
+
+
+                                                           412</code></pre>
      	</div>
     
      </div>

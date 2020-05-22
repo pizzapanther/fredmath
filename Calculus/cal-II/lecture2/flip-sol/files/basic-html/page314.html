@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 314 - SOL-Cal-II_lecture-2</title>
+        <title>Page 314 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 314 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 314 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 314</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise                                                              1
+    <pre style="white-space:pre-line"><code>Exercise
 
+        Estimate the minimum number of subintervals to approximate the integrals with an error of magnitude of
 
-        Find the Trapezoid & Simpson’s Rule approximations to and error to  ∫  e − x dx n =  8  subintervals
+                                                                ∫  3 (2x −  ) 1 dx
+            4
+           −
+              by (a) the Trapezoid Rule and (b) Simpson’s Rule.
+        10
+        Solution                                                  1
+                                                           −
+                          −
+            a)  )    x∆=i  31                       ∆=   ba
+                                                     x
+                          4                                n
+                       =  1
+                         2
 
+                            (
+                                 ( ))
+                   T =  1  ∆ x m f x
+                        2          i
+                      =  11 ( )
+                             24
+                        22
+                                                                                                            ( )
+                                                                                    ( )
+                                                                                                1
+                     =  6                                                 x       fx  i  =  2x −   m   mf x   i
+                                                                           i
+                                                                                             i
+                    f  ( ) x =  2x −  1 ⇒  f ′ ( ) x =  2        x        1              1          1      1
+                                                                  0
 
-        Solution                                                              0
-
-            Trapezoid Rule Method
-                                      ( )
-            n          x             fx               m f x⋅  ( )
-                        n                n                    n
-            0   0.0000000000     1.0000000000      1.0000000000
-            1   0.1250000000     0.8824969000      1.7649938000
-            2   0.2500000000     0.7788007800      1.5576015600
-            3   0.3750000000     0.6872892800      1.3745785600
-            4   0.5000000000     0.6065306600      1.2130613200
-            5   0.6250000000     0.5352614300      1.0705228600
-            6   0.7500000000     0.4723665500      0.9447331000
-            7   0.8750000000     0.4168620200      0.8337240400
-            8   1.0000000000     0.3678794400      0.3678794400
-            -------------------------------------------------------------------
-            Trapezoid Rule approximation ≈ 0.63294342
-
-
-            Simpson's Rule Method
-                                      ( )
-            n          x             fx               m f x⋅  ( )
-                        n                n                    n
-            0   0.0000000000   1.0000000000        1.0000000000
-            1   0.1250000000   0.8824969000        3.5299876000
-            2   0.2500000000   0.7788007800        1.5576015600
-            3   0.3750000000   0.6872892800        2.7491571200
-            4   0.5000000000   0.6065306600        1.2130613200
-            5   0.6250000000   0.5352614300        2.1410457200
-            6   0.7500000000   0.4723665500        0.9447331000
-            7   0.8750000000   0.4168620200        1.6674480800
-            8   1.0000000000   0.3678794400        0.3678794400
-            -------------------------------------------------------------------
-
-            Simpson's Rule approximation ≈ 0.63212141
-
-                       Exact         Trapezoid     Simpson
-               --------------------------------------------------------------
-               Value:  0.63212056   0.63294342   0.63212141
-               --------------------------------------------------------------
-               Error:                0.1302 %      0.0001 %
-
-
-
+                                   ⇒   f ′′ ( ) x =  0 =  M      x    1+  1  =  3        2          2      4
+                                                                  1
+                                                                          2
+                                                                              2
+                                   ⇒  Error =  0                 x        2              3          2      6
+                                                                  2
+                                                                  3
+                ii )   ∫ 1 3 (2x −  ) 1 dx =  ( x −  2    x  1 3     x    5              4          2      8
+                                                                          2
+                                                                 x
+                                                                                                           5
+                                                    )
+                                  =  ( 3 −  2  3 −  ) ( 1 −  2  1       4     3          5          1      24
 
 
 
+                                  =  6
 
+                                E T
+                iii )  Error =         × 100
+                            True  Value
+                                                                                                         ( )
+                                                                               ( )
+                                                                       x     fx     =  2x − 1   m     mf x
+                           = 0%                                         i        i      i                  i
+                                                                 x      1           1           1        1
+                                                                  0
+                          −
+                                                    −
+            b)  )    x∆=i  31                ∆=   ba             x      3
+                                              x
+                          4                         n             1     2           2           4        8
+                       =  1                                      x      2           3           2        6
+                                                                  2
+                         2                                       x      5
+                                    ( ))
+                   S =  1  ∆ x (∑ m f x                           3     2           4           4       16
+                        3             i                          x 4    3           5           1        5
+                             36
+                      =  11  ( )                                                                        36
+                        32
+                      = 6
 
+                    f  ( ) x =  2x −
+                               1
 
-
-
-
-                                                           314</code></pre>
+                   ⇒    f  (4)  ( ) x =  0 =  M
+                                                           724</code></pre>
      	</div>
     
      </div>

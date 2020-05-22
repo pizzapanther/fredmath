@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 338 - SOL-Cal-II_lecture-2</title>
+        <title>Page 338 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 338 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 338 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 338</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>∫  1 x x −  ∞  dx  1  = ∫  1 x x −  2  dx  1  + ∫  2 x x −  ∞  dx  1
-
-                     2
-                                                     2
-                                     2
-
-                           =  lim  ∫  2   dx    + c→∞∫  lim  c  dx
-
-                            b→  1 +  b x x −  2  1       2 x x −  2  1
-
-                                                     
-                           =  lim +       sec −  1  x       2  +  lim sec −  1  x        c
-                                                     
-                                                     
-                            b→  1           b   c→∞            2
-                                                            (
-                           =  lim  ( sec −  1  2 sec −  1 b +  )  lim sec −  1 c −  sec −  1 2 )
-                                           −
-                            b→  1 +                    c→∞
-                           =  ( π  3  −  0 +  ) ( π  2  −  π  3 )
-
-
-                           =  π
-                             2
-
-
-        Exercise                 ∞
-
-                              ∫    2xe − x 2
-        Evaluate the integral              dx
-
-        Solution                −∞
-
-                                0
-               ∞
-            ∫  −∞ 2xe −  x 2 dx = ∫  −∞ 2xe −  x 2 dx + ∫  0 ∞  2xe −  x 2 dx    d −  ( )  =  −  2xdx
-                                                                                      2
-                                                                                     x
-
-                               b→−∞∫    0  −  x 2  ( )   c→∞∫   c  −  x 2  ( )
-                                                    2
-                                                                            2
-                           =  −  lim   b  e    d −  x  −  lim   0  e   d −  x
-
-
-                                             0               c
-                                        −  x 2        −  x 2  
-                           =  −  lim    e    −  lim e     
-                                                      
-                               b→−∞          b  c→∞        0
-                                          −  b 2        −  c 2  
-                                        −
-                           =  −  lim    1 e     −  lim    e  −  1     =  −  (1 0−  ) (01−  −  )
-                                                                 
-                               b→−∞             c→∞           
-                           =  0
+    <pre style="white-space:pre-line"><code>Exercise
 
 
 
+        Find the Trapezoid & Simpson’s Rule approximations and error:   ∫  2  dx  n = 10  subintervals
+                                                                            x
+
+        Solution                                                         1
+            Trapezoid Rule Method
+                                                            ( )
+                                      ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   1.0000000000     1.0000000000      1.0000000000
+            1   1.1000000000     0.9090909100      1.8181818200
+            2   1.2000000000     0.8333333300      1.6666666600
+            3   1.3000000000     0.7692307700      1.5384615400
+            4   1.4000000000     0.7142857100      1.4285714200
+            5   1.5000000000     0.6666666700      1.3333333400
+            6   1.6000000000     0.6250000000      1.2500000000
+            7   1.7000000000     0.5882352900      1.1764705800
+            8   1.8000000000     0.5555555600      1.1111111200
+            9   1.9000000000     0.5263157900      1.0526315800
+            10  2.0000000000     0.5000000000      0.5000000000
+            -------------------------------------------------------------------
+            Trapezoid Rule approximation ≈ 0.69377140
 
 
+            Simpson's Rule Method
+                                      ( )
+                                                            ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   1.0000000000     1.0000000000      1.0000000000
+            1   1.1000000000     0.9090909100      3.6363636400
+            2   1.2000000000     0.8333333300      1.6666666600
+            3   1.3000000000     0.7692307700      3.0769230800
+            4   1.4000000000     0.7142857100      1.4285714200
+            5   1.5000000000     0.6666666700      2.6666666800
+            6   1.6000000000     0.6250000000      1.2500000000
+            7   1.7000000000     0.5882352900      2.3529411600
+            8   1.8000000000     0.5555555600      1.1111111200
+            9   1.9000000000     0.5263157900      2.1052631600
+            10  2.0000000000     0.5000000000      0.5000000000
+            -------------------------------------------------------------------
+            Simpson's Rule approximation ≈ 0.69315023
 
 
+                       Exact         Trapezoid     Simpson
+               ------------------------------------------------------------
+               Value:  0.69314718  0.69377140      0.69315023
+               ------------------------------------------------------------
 
+               Error:                 0.0901%      0.0004%
 
-
-
-
-
-
-
-                                                           338</code></pre>
+                                                           748</code></pre>
      	</div>
     
      </div>

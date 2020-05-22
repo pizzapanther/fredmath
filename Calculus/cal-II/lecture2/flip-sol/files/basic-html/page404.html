@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 404 - SOL-Cal-II_lecture-2</title>
+        <title>Page 404 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 404 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 404 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 404</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        Use Euler’s Method to solve  y′ =  2xy +  2 ,y  y (0) 3=   on the interval 0 ≤≤  and taking dx =  0.1.
-                                                                                 x
-                                                                                    1
-
-        Compare the approximation to the values of the exact solution.
-        Solution
-
-            dy  = (2x +
-             y          ) 2 dx
-
-            ln y =  x +  2  2xC+
-                             1
-                    2
-            y =  Ce x + 2x  →  3 =  C
-
-                       2
-              ( ) =
-            yx     3e x + 2x
-
-               t        Euler Method        Exact               Difference
-               0.000    3.0                 3.0                 0.0
-               0.100    3.6                 3.70103418          0.10103418
-               0.200    4.392               4.65812166          0.26612166
-               0.300    5.44608             5.9811466           0.5350666
-               0.400    6.8620608           7.83508942          0.97302862
-               0.500    8.78343782          10.47102887         1.68759105
-               0.600    11.41846917         14.27646374         2.85799457
-               0.700    15.07237931         19.85810604         4.78572673
-               0.800    20.19698827         28.17999386         7.98300559
-               0.900    27.46790405         40.79715256         13.32924851
-               1.000    37.90570759         60.25661077         22.35090318
+    <pre style="white-space:pre-line"><code>Solution              Section 2.7 – First-Order Linear Equations
 
 
-        Exercise
+        Exercise                                                                           x
+                                                                                         ∫  1  dt
+        Write an equivalent first-order differential equation and initial condition for y.   y =  t
 
-        Verify that the given function y is a solution of the differential equation that follows it. Assume that
 
-               ,
-          , C  C  and C  are arbitrary constants.   y =  Ce − 5t ; yt ′ ( ) 5y+  =  0
-             1         2
-        Solution
+        Solution                                                                          1
 
-            y =  Ce −  5t  ⇒  y′ =  −  5Ce −  5t  =  −  5y
+            ∫ 1 x 1  dt ⇒  dy  =  1
+                           dx
+                t
+                                x
+                   ∫ 1  t                           ∫ a
+            y        1 1  dt                          a  f  ()dx =
+                                                                 0
+                                                          x
+              ( ) 1 =
+                        1
+                  = lnt
+                        1
+                  =  ln1 ln1
+                       −
+                  =  0
 
-            y′ ( ) 5t +  y =  −  5y +  5y
 
-                       =  0   √
+            dy    1  ;  y    0
+            dx  =  x    ( ) 1 =
+
+
+        Exercise                                                                            x
 
 
 
+        Write an equivalent first-order differential equation and initial condition for  y =  2 −  ∫  (1 y+  (t  ) ) sint dt
+
+        Solution      x                                                                    0
+
+
+            y =  2 −  ∫  (1 y+  (t  ) ) sint dt
+
+
+            dy       0   (  ) ) sin x
+            dx  =  −  (1 yx+
 
 
 
+            y ( ) 0 =  2 −  ∫ 0 (1 y+  (t  ) ) sint dt                   ∫  a  f  () x dx =
+                                                                                       0
 
+                  =  2      0                                              a
 
+            dy  =  −  (1 yx+  (  ) ) sin ;x  y ( ) 0 =  2
+            dx
 
 
 
 
-                                                           404</code></pre>
+
+
+
+
+
+
+                                                           814</code></pre>
      	</div>
     
      </div>

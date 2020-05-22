@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 333 - SOL-Cal-II_lecture-2</title>
+        <title>Page 333 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 333 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 333 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 333</div>
      </div>
      <div id="content-middle">
@@ -154,8 +154,54 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-           A piece of wood paneling must be cut in the shape shown below. The coordinates of several point on its
-           curved surface are also shown (with units of inches).
+                                                                          ∫   ln 1 e+    dx n =
+           Find the Trapezoid & Simpson’s Rule approximations and error:     1  (     x )        8  subintervals
+
+
+           Solution                                                         0
+               Trapezoid Rule Method
+                                         ( )
+                                                              ( )
+               n          x             fx               m f x
+                                                            ⋅
+                           n                n                    n
+               0   0.0000000000     0.6931471800      0.6931471800
+               1   0.1250000000     0.7575990400      1.5151980800
+               2   0.2500000000     0.8259394200      1.6518788400
+               3   0.3750000000     0.8981232600      1.7962465200
+               4   0.5000000000     0.9740769800      1.9481539600
+               5   0.6250000000     1.0537006800      2.1074013600
+               6   0.7500000000     1.1368710100      2.2737420200
+               7   0.8750000000     1.2234445800      2.4468891600
+               8   1.0000000000     1.3132616900      1.3132616900
+               -------------------------------------------------------------------
+               Trapezoid Rule approximation ≈ 0.98411993
+
+               Simpson's Rule Method
+
+                                         ( )
+                                                              ( )
+               n          x             fx               m f x
+                                                            ⋅
+                           n                n                    n
+               0   0.0000000000     0.6931471800      0.6931471800
+               1   0.1250000000     0.7575990400      3.0303961600
+               2   0.2500000000     0.8259394200      1.6518788400
+               3   0.3750000000     0.8981232600      3.5924930400
+               4   0.5000000000     0.9740769800      1.9481539600
+               5   0.6250000000     1.0537006800      4.2148027200
+               6   0.7500000000     1.1368710100      2.2737420200
+               7   0.8750000000     1.2234445800      4.8937783200
+               8   1.0000000000     1.3132616900      1.3132616900
+               -------------------------------------------------------------------
+               Simpson's Rule approximation ≈ 0.98381891
+
+                         Exact          Trapezoid     Simpson
+               ----------------------------------------------------------------
+               Value:    0.98381904   0.98411993   0.98381891
+               ----------------------------------------------------------------
+               Error:                   0.0306 %      0.0000 %
+               ----------------------------------------------------------------
 
 
 
@@ -166,58 +212,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-               a)  Estimate the surface area of the paneling using the Trapezoid Rule
-               b)  Estimate the surface area of the paneling using a left Riemann sum.
-               c)  Could two identical pieces be cut from a 9-in by 9-in piece of wood?
-
-           Solution
-
-               a)  The trapezoid Rule gives
-
-                   (0 .25 1+  ) ⋅  +  (2.5 3.2 1+  ) ⋅  +  (3.2 +  ) 4 1⋅  +  (4 +  ) 6 1⋅  +  (6 +  ) 7 ⋅  2  +  (7 +  5.3 ) 1.5⋅  +  (3 0+  ) 0.5⋅
-                       2            2             2          2           2           2             2
-                      =  35.675
-
-               b)  The left Riemann sum gives
-
-                   0 1 2.5 1 3.2 1 4 1 6 2 7 1.5 5.3 0.5 ⋅+  ⋅+  ⋅+ ⋅+ ⋅ + ⋅  +  ⋅  =  34. 58
-
-
-               c)  Although the surface area of the piece appears to be less than half of 81 9=  2  (area of 99×  piece of
-                  wood), the shape prohibits the creation of two identical pieces.
-
-
-           Exercise
-
-                                                              0
-           The region bounded by the curves  y =    1   ,  x =  and  x = 10 is rotated about  x axis−  . Use Simpson’s
-                                                 1 e − x
-                                                  +
-           Rule with  n = 10 to estimate the volume of the resulting solid.
-           Solution
-
-               Using Disk method:
-
-
-
-               V = π ∫ 0 10 ( 1 e 1 − x ) 2   dx
-                            +
-
-
-
-                                                              333</code></pre>
+                                                              743</code></pre>
      	</div>
     
      </div>

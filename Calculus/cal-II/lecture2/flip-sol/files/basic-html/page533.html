@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 533 - SOL-Cal-II_lecture-2</title>
+        <title>Page 533 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 533 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 533 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 533</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,76 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>Exercise
 
 
-           A 30−volt electromotive force is applied to an LR-series circuit in which the inductance is 0.1 henry and the
-           resistance is 50 ohms.
-               a)  Find the current  ( ) ti   if  ( ) 0i  =  0
-               b)  Determine the current as t →∞
-                                           Et
-               c)  Solve the equation when  ( ) =  E  sin tω  and  ( ) 0i  =  i
-                                                    0                   0
+                                                                                              Mt
+           The growth of cancer turmors may be modeled by the Gomperts growth equation. Let  ( )  be the mass of
+                            0
+           the tumor for t ≥ . The relevant intial value problem is
+                                                dM  =  −  aM  ln  M  , M  ( ) 0 =  M
+                                                dt            K               0
+           Where a and K are positive constants and 0 &lt;  M  &lt;  K
+                                                          0
+
+                                                                                 1
+                                                                                            4
+                                               R M
+             a)  Graph the growth rate function  ( ) = − aM  ln  M   assuming a =  and  K = . For what values of M
+                                                                K
+                 is the growth rate positive? For what values of M is maximum?
+                                                                             1
+             b)  Solve the initial cvalue problem and graph the solution for a = ,  K = , and  M  = 1. Describe the
+                                                                                     4
+                                                                                              0
+                 groath pattern of the tumor. Is the growth unbounded? If not, what is the limiting size of the tumor?
+             c)  In the general equation, what is the meaning of K?
            Solution
 
-                                                                   ( )
-               a)  0.1 di  +  50i =  30                L di  +  Ri =  Et
-                      dt                                dt
-                   di  +  500i =  300
-                   dt
-                           ∫ 500dt   500t
-                          e       =  e
-
-                          ∫ 300e 500t dt =  3 e 500t
-                                         5
-                               (
-                                           )
-                              t
-                                                             0
-                   it     − 500 3 e 500t  + C          i ( ) 0 =
-                   ( ) e=
-                                5
-                          0 =  3  +  C  →   C =  −  3
-                              5               5
-                              e
-                   it    3  −  3 − 500t
-                    ( ) =
-                         5   5
-                        ( )
-                                         e
-               b)  lim it =   lim ( 3  −  3 − 500t )  =  3
-                   t→∞       t→∞   5   5           5
-               c)   di  +  500i =  10E  sin tω
-                   dt             0
-
-                      ∫ 10E 0  (sin t eω )  500t dt =
+                                           1 K
+               a)  RM =  ′ ( )  −  a ( ln  M  +  M  KM )
+                                   K
+                               (  M     )
+                          = − a  n l  K  + 1 =  0
 
 
-                                             ∫ sin tω
+                   ln  M  = − 1
+                      K
 
-                        +   e 500t           −  1  cos t ω
-                                              ω
-                        −  500e  500t        −  1  sin tω
-                                              ω 2
-                        +          4 500t        1
-                            25 10 e×         −    2 ∫  sin tω
-                                                ω
+                    M =  Ke − 1
+                      =  K
+                         e
 
-                                                     ∫  (sin t eω  dt =    −  ω cos t +  ω  ω  2  sin t eω      −  ω  2  ∫  (sin t eω
-                                          )  500t     1         500        500t  25 10×  4       )  500t dt
+                          1
+                  For a =  and  K =
+                                     4
+                   →  R ( ) = − M  ln  M
+                        M
+                                      4
 
-
-                                   2  +      4           500t                               500t
-                                                         )
-                                   ω   25 10×    ∫ (sin t e  dt =  1  (−  cos t +ω  ω  500sinω  ) t e
-                                                       ω
-                                      ω 2                         ω 2
+                    ∫       dM            ∫     a dt
+                b)    M  (ln M − ln K )  = −
 
 
-                                                              533</code></pre>
+
+                           d  (ln M −  ln K ) =  1  dM
+                                            M
+
+                    ∫  d  (ln M − ln K  )  = − ∫  a dt
+                                ln K
+                         ln M −
+
+
+                   ln ln M −  ln K =  −  at +  C
+                                           1
+                   ln  M  = Ce − at
+                     K
+
+                     ( ) =
+                   Mt     Ke Ce − at
+
+                  For a = ,  K = , and  M     = 1
+                          1
+                                  4
+                                           0
+                                                              943</code></pre>
      	</div>
     
      </div>

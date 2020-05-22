@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 336 - SOL-Cal-II_lecture-2</title>
+        <title>Page 336 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 336 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 336 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 336</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution              Section 2.6 – Improper Integrals
+    <pre style="white-space:pre-line"><code>Exercise
+
+                                                                          3
+        Find the Trapezoid & Simpson’s Rule approximations and error:        + ∫  1  5   dx n =  6  subintervals
+                                                                         0  1 x
+        Solution
+            Trapezoid Rule Method
+                                      ( )
+                                                            ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   0.0000000000     1.0000000000      1.0000000000
+            1   0.5000000000     0.9696969700      1.9393939400
+            2   1.0000000000     0.5000000000      1.0000000000
+            3   1.5000000000     0.1163636400      0.2327272800
+            4   2.0000000000     0.0303030300      0.0606060600
+            5   2.5000000000     0.0101362100      0.0202724200
+            6   3.0000000000     0.0040983600       0.0040983600
+            --------------------------------------------------------------------
+            Trapezoid Rule approximation ≈ 1.06427452
 
 
-        Exercise                  ∞
-                                ∫     dx
-        Evaluate the integral        x + 1
-                                      2
+            Simpson's Rule Method
 
-        Solution                  0
-
-            ∫  0 ∞  x +  2 dx  1  = b→∞∫  lim  0 b  x +  2 dx  1
-
-
-
-
-                                         b
-                       =  lim      tan − 1   x 
-                         b→∞            0
-
-                              (
-                       =  lim tan −  1 b −  tan −  1 0 )
-
-                         b→∞
-                       =  π −  0
-                         2
-                         π
-                       =  2
+                                      ( )
+                                                            ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   0.0000000000     1.0000000000      1.0000000000
+            1   0.5000000000     0.9696969700      3.8787878800
+            2   1.0000000000     0.5000000000      1.0000000000
+            3   1.5000000000     0.1163636400      0.4654545600
+            4   2.0000000000     0.0303030300      0.0606060600
+            5   2.5000000000     0.0101362100      0.0405448400
+            6   3.0000000000     0.0040983600      0.0040983600
+            -------------------------------------------------------------------
+            Simpson's Rule approximation ≈ 1.07491528
 
 
-
-        Exercise
-
-                              ∫  4  dx
-        Evaluate the integral       4 x−
-
-        Solution                0
-
-
-            ∫  0 4  4 x−  = b→ 4 − ∫  0 b (4 x−  ) − 1/2  dx
-                  dx
-                           lim
-
-
-
-
-                       =  lim  ∫  b −  (4 x−  ) − 1/2  d  (4 x−  )
-                         b→ 4 −  0
-
-                                               b
-                       =  −  2 lim −       (4 x ) 1/2     
-                                      −
-                            b→ 4               0
-
-                       =  −  2 lim −       (4 b ) 1/2  −  ( ) 4  1/2     
-                                      −
-                            b→ 4
-                       =  −  ( 20 2−  )
-                       = 4
+                       Exact         Trapezoid     Simpson
+               ------------------------------------------------------------
+               Value:  1.06587854  1.06427452      1.07491528
+               ------------------------------------------------------------
+               Error:                 0.150488%   .84782%
+               ------------------------------------------------------------
 
 
 
 
 
-                                                           336</code></pre>
+
+
+
+
+
+
+                                                           746</code></pre>
      	</div>
     
      </div>

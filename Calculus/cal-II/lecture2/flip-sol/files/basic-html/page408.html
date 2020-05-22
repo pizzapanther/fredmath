@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 408 - SOL-Cal-II_lecture-2</title>
+        <title>Page 408 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 408 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 408 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 408</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>yx           1
+              ( ) = −
+                      x +  x −  2  1
 
+                  =     1
+                   1 x    x 2
+                     −−
 
-        Verify that the given function y is a solution of the initial value problem that follows it.
-                       y =  −  3cos3 ;t  y′′ +  9y =  0,  y ( ) 0 =  −  3,  y′ ( ) 0 =  0
-        Solution
-
-            y =  −  3cos3t →   y ( ) 0 =  −  3cos0 =  −  3   √
-
-            y′ =  9sin 3t  →  y ( ) 0 =  0   √
-
-
-            y′′ =  27cos3t
-
-            y′′ +  9y =  27cos3t −  27cos3t =  0
-
-
-        Exercise
-
-        Verify that the given function y is a solution of the initial value problem that follows it.
-
-                       y =  1 ( e 2x  −  e − 2x ) ;  y′′ −  4y =  0,  y ( ) 0 =  0,  y′ ( ) 0 =  1
-                           4
-        Solution
-
-
-            y =  1 ( e 2x  −  e − 2x )  →  y ( ) 0 =  1 (11 =  )  0   √
-                                                 −
-                4                            4
-            y′   1 ( e 2x  +  e − 2x )  →  y′ =  ( ) 0 =  1  (1 1+  ) =   √
-                                                         1
-                 2                            2
-
-            y′′ =  e 2x  −  e − 2x
-
-            y′′ −  4y =  e 2x  − e −  2x  −  e 2x  +  e −  2x  =  0   √
+            y ( ) =     1
+               .5
+                    1 .5 .5  2
+                     −
+                         −
+                  =  4
 
 
         Exercise
 
-        Find the general solution of the differential equation  y′ =  xy
+        Use Euler’s method to calculate the first three approximations to the given initial value problem for the
+        specified increment size. Calculate the exact solution and investigate the accuracy of your approximations.
+        Round the results to four decimals
+         y′ =  ye x ,  y ( ) 0 =  2, dx =  0.5
 
         Solution
 
-            dy    xy
-            dx  =
-            dy  =  xdx
-             y
+            y =   y +    y e x   0  dx
+             1     0       0    
 
-               y ∫  = ∫  xdx
-              dy
+                        0
+                               )
+                      2e
+                =  2 + ( ) (0.5
 
-                      2
-            ln y =  1  x + C
-                   2
+                = 3
 
-             y =  e x 2 /2 C+
+            y =   y +      y e x   1    dx
+              2    1     1   
 
-                          e
-            yx      e x 2 /2 C
-              () = ±
-                                                           408</code></pre>
+                                )
+                = 3 + ( 3e 0.5 ) (0.5
+
+                =  5.47308
+
+                           x 
+            y =   y +    y e  2    dx
+              3    2     2    
+                                            )
+                = 5.47308 + ( 5.47308e 1 ) (0.5
+
+                = 12.9118
+
+            dy  =  ye
+                    x
+            dx
+            ∫∫        e dx
+               dy
+                       x
+                  =
+               y
+
+                       x
+                ln y = e + C
+                       0
+                    =
+                ln 2 e +  C
+                C  = ln 2 1
+                        −
+
+            ln y =  e +  x  ln 2 1
+                            −
+
+                                                           818</code></pre>
      	</div>
     
      </div>

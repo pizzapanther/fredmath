@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 518 - SOL-Cal-II_lecture-2</title>
+        <title>Page 518 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 518 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 518 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 518</div>
      </div>
      <div id="content-middle">
@@ -154,76 +154,78 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-        The consumption of a substrate in a reaction involving an enzyme is often modeled using Michaelis-Menton
+        When an infected person is introduced into a closed and otherwise healthy community, the number of people
+        who become infected with the disease (in the absence of any intervention) may be modeled by the logistic
+        equation
 
-                                                                                       s
-        Kinetics, which involves the initial value problem  ds  =  Qs  ,  ( ) 0s  =  s , where  ( ) t  is the amount of
-                                                         dt   K +  s         0
-                                    0
-        substrate present at time t ≥ , and Q and K are positive constants. Solve the initial value problem with
-                     5
-         Q = 10,  K = , and   s = 50. Notice that the solution can be expressed explicitly only with t as a function of
+                                               dP  =  kP ( 1−  P ) , P ( ) 0 =  P
+                                               dt          A              0
+        Where k is a positive infection rate, A is the number of people in the community, and  P  is the number of
+                                                                                            0
+        infected people at t = . The model assumes no recovery or intervention.
                               0
-        s. Describe how s behaves as t →∞ .
-
+          a)  Find the solution of the initial value problem in terms of k, A, and  P .
+                                                                               0
+          b)  Graph the solution in the case that k =  0.025,  A =  300, and  P = 1 .
+                                                                            0
+          c)  For fixed values of k and A, describe the long-term behavior of the solutions for any  P  with
+                                                                                                 0
+              0 &lt;  P &lt;  A
+                   0
         Solution
-
-            Given:  Q =  10 K =   5 s =    50
-                                       0
-            ds  =  Qs
-            dt   K +  s
-
-
-                =  − 50s
-                  5 s
-                    +
-            ∫  5 s+  ds = − ∫  50  dt
-
-                 s
-            ∫  ( )    ds =  −  ∫  50  dt
-                5
-                   1
-                 +
-                s
-            5ln ss+= −  50t + C
-            s =  50
-             0
-            5ln 50 50 =  C
-                   +
                            −
-            50t =  C −  5ln ss
-                          +
-            t =  1  (5ln 50 50 5ln ss    )
-                                      −
-                               −
-                50
-            As t →∞
-                      1
-                lim   ( 50  (5ln 50 50 5ln ss+  −  −  ))  =  ∞
+            a)   dP  =  kP (  AP )
+                dt          A
+                ∫  PA P    )  dP = ∫    k dt
+                      A
+                    (
+                       −
+                ∫  (  1  +  AP ) dP =  ∫    k dt
+                         1
+                   P
+                         −
+                ln P −  ln A P =  kt +  C
+                           −
+                                       1
+                ln   P   =  kt + C
+                   AP            1
+                     −
+                           kt
+                  P   = Ce
+                AP
+                  −
+                   P ( ) 0 =  P
+                            0
+                          P
+                   C =     0
+                        AP
+                          −
+                             0
 
-                lim   (5ln 50 50 5ln ss+  −  −  ) =  ∞
-
-                            −
-                lim   −  ( 5ln ss =  )  ∞
-                lim   (5ln ss+  ) = −∞
-
-                         )
-                lim  (ln s = −∞   when s =   0
-
-             lim  st    0
-                   ( ) =
-            t→∞
-
-
-
-
-
-
-
-
-
-
-                                                           518</code></pre>
+                  P   =   P 0   e
+                                 kt
+                  −
+                           −
+                AP       AP
+                              0
+                              P
+                                    kt
+                P = ( AP−  )   0   e
+                            AP   0
+                              −
+                ( A P +  0  P e kt ) P =  AP e
+                                          kt
+                   −
+                                        0
+                           0
+                           AP e kt                  AP
+                P ( ) t =    0             =          0
+                                                         )
+                         −
+                       AP +     P e kt       P + ( AP e    − kt
+                                                    −
+                            0    0            0        0
+                                                           928</code></pre>
      	</div>
     
      </div>

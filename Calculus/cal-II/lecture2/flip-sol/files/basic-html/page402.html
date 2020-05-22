@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 402 - SOL-Cal-II_lecture-2</title>
+        <title>Page 402 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 402 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 402 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 402</div>
      </div>
      <div id="content-middle">
@@ -154,77 +154,70 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-                                                                    y
-        Use the Euler method with  dx = 0.2  to estimate  ( ) 2y   if  y′ =   and  ( ) 1y  =  2 . What is the exact value of
-                                                                    x
-         y ( ) 2 ?
+        Many chemical reactions are the result of the interaction of 2 molecules that undergo a change to produce a
+        new product. The rate of the reaction typically depends on the concentrations of the two kinds of molecules.
+
+        If a is the amount of substance A and b is the substance B at time t = 0, and if x is the amount of product at
+        time t, then the rate of formation of x may be given by the differential equation
+                                     dx  =  ( ka −  x )(b −  x ) or   1       dx  =  k
+                                      dt                        (a −  xb   x ) dt
+                                                                      )( −
+        Where k is a constant for the reaction. Integrate both sides of this equation to obtain a relation between x and
+        t.
+            a)  If a b=
+            b)  If a b≠
+                                     0
+                                                0
+        Assume in each case that  x =  when t =
         Solution
 
-                           y 
-            y  ( ) 1 =  y +   0    dx
-             1        0    x 0 
-
-                        2
-                               )
-                  =  2 + ( ) (0.2
-                        1
-                  =  2.4
-
-                             y 
-            y  ( ) =   y +   1    dx
-                1.2
-              2         1    x 1 
-                             2.4
-                                     )
-                    =  2.4 + ( ) (0.2
-                             1.2
-                    =  2.8
-
-                         y 
-            y =   y +    2    dx
-              3    2    x
-                         2 
-                        2.8
-                                )
-                =  2.8 + ( ) (0.2
-                        1.4
-                =  3.2
-
-                         y 
-            y =   y +    3    dx
-              4    3     x 3 
-
-                        3.2
-                                )
-                =  3.2 + ( ) (0.2
-                        1.6
-                =  3.6
-
-                         y 
-            y =   y +    4    dx
-              5    4    x
-                         4 
-                        3.6
-                                )
-                =  3.6 + ( ) (0.2
-                        1.8
-                =  4
-
-                             dy
-            dy  =  y  ⇒   ∫∫        dx
-                                =
-            dx    x          y       x
-                           ln y =  ln x C+
-
-                           ln 2 =  ln1 C  +  →     C =  ln 2
-                           ln y =  ln x +  ln 2
-                              =  ln 2x
-
-              y =  2x
+                  1       dx =  kdt
+            (a −  xb     ) x
+                  )( −
+            a)  a =  b ⇒       1    dx =  kdt
+                            (a −  ) x  2
+                ∫  (a − 1  ) x  2  dx = ∫  kdt
 
 
 
-                                                           402</code></pre>
+
+                  1  =  kt + C
+                a −  x
+                        ( x t =  ) 0 =  0 ⇒  1  =  C
+                                         a
+                  1  =  kt +  1  =  kat + 1
+                a −  x      a     a
+
+                a −=      a
+                   x
+                       kat + 1
+                   a
+                x = −     a
+                       kat + 1
+                      2
+                 =   akt
+                    kat + 1
+
+
+            b)  a ≠  b ⇒          1      dx =  kdt
+                            (a −  xb    ) x
+                                 )( −
+                  (a xb x−∫  )( −  1  )  dx = ∫  k dt
+
+
+
+
+                             1       =   A   +  B
+                                                −
+                       (a −  xb     ) x  a −  x  bx
+                             )( −
+
+
+
+
+
+
+                                                           812</code></pre>
      	</div>
     
      </div>

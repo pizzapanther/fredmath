@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 517 - SOL-Cal-II_lecture-2</title>
+        <title>Page 517 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 517 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 517 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 517</div>
      </div>
      <div id="content-middle">
@@ -154,66 +154,63 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
+                                                                                                  0
+           A community of hares on an island has a population of 50 when observations begin at t = . The population
+                  0
+           for t ≥  is modeled by the initial value problem.
+                                               dP  =  0.08P ( 1−  P  ) , P ( ) 0 =  50
+                                               dt              200
+             d)  Find the solution of the initial value problem.
+             e)  What is the steady-state population?
 
-                                                                                                  yt
-           The reaction of chemical compounds can often be modeled by differential equations. Let  ( ) be the
-                                                         0
-           concentration of a substance in reaction for t ≥   (typical units of y are moles/L). The change in the
-                                                                       dy       n
-                                                                                             0
-           concentration of a substance, under appropriate conditions, is   = − ky , where  k &gt;  is a rate constant and
-                                                                       dt
-           the positive integer n is the order of the reaction.
-
-               a)  Show that for a first-order reaction (n =  ) 1 , the concentration obeys an exponential decay law.
-
-               b)  Solve the initial value problem for a second-order reaction (n =  ) 2  assuming  ( ) 0y  =  y
-                                                                                                      0
-               c)  Graph and compare the concentration for a first-order and second-order reaction with k =  0.1 and
-                   y =  1
-                    0
            Solution
 
-
-               a)  ∫  dy  = − ∫  kdt
-                      y
-
-                   ln y =  −  kt +  C
-                                 1
-                    ( ) =
-                   yt    Ce − kt
-
-                               dy      2
-               b)  n =  2 →       =  −  ky
-                               dt
-                       dy
-                   −   y ∫∫   kdt
-                          =
-                        2
-                   1  =  kt C+
-                   y
-
-                   y ( ) 0 =  y 0  →  1  =  C
-                                    y
-                                     0
-                   1  =  kt +  1
-                   y        y
-                             0
-                            y
-                             0
-                   y ( ) t = 1 ky t
-                           +
-                               0
-
-                   yt
-               c)  ( ) =    1
-                         1 0.1t
-                           +
-                   y =  1 →     C =  1
-                    0
-                   y ( ) t =  e − 0.1t
+                   ∫     200          ∫
+               a)    P (200 P−  )  dP =  0.08dt
 
 
+                   ∫  ( 1  +  200 P−  ) dP =  ∫  0.08 dt
+                             1
+                      P
+
+                   ln P +  ln 200 P−  =  0.08t +  C
+
+                   ln    P    =  0.08t + C
+                     200 − P
+
+                          P ( ) 0 = 50
+
+                          ln  50  =  C
+                            150
+                          ⇒  C =  −  ln3
+
+
+                   ln   P     =  0.08t − ln 3
+                     200 −  P
+                      P    =  e 0.08 ln3
+                                  t−
+                   200 P
+                       −
+                                  t
+                      P    =  e 0.08 ln3 − 1
+                                   e
+                   200 P
+                       −
+                      P    =  1 e 0.08t
+                       −
+                   200 P     3
+                   3P =  200e 0.08t  −  Pe 0.08t
+
+                     ( ) =
+                   Pt     200e 0.08t
+                          3 e+  0.08t
+                        =     200
+                          3e − 0.08t  + 1
+
+                          ( )
+               b)  lim Pt =    lim      200
+                   t→∞         t→∞  3e − 0.08t  + 1
+                             =  200
 
 
 
@@ -222,9 +219,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-                                                              517</code></pre>
+                                                              927</code></pre>
      	</div>
     
      </div>

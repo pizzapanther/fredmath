@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 399 - SOL-Cal-II_lecture-2</title>
+        <title>Page 399 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 399 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 399 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 399</div>
      </div>
      <div id="content-middle">
@@ -154,73 +154,76 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-           Use Euler’s method to calculate the first three approximations to the given initial value problem for the
-           specified increment size. Calculate the exact solution and investigate the accuracy of your approximations.
-           Round the results to four decimals
 
-            y′ =  x (1 y−  ),  y ( ) 1 =  0, dx =  0.2
+                                                                                                    ]
+           Let  R  be the region bounded by the graph of  y e − ax   and the  x-axis  on the interval [0, b  where  a &gt;
+                                                                                                                 0
+                                                          =
+                 1
+                                                                                                                )
+                   0
+           and b &gt; .  Let  R be the region bounded by the graph of  y e=  − ax   and the  x-axis  on the interval [ ,b ∞ .
+                            2
+           Let V  and V  be the volumes of the solids generated when  R  and  R  are revolved about the  x-axis . Find
+                1       2                                              1       2
+           and graph the relationship between a and b for which  V = V .
+                                                                 1    2
            Solution
 
-               y =  y +   x  ( 1 y−  ) dx
-                1     0    0      0
-                   =  0 +  ( 1 1 0 0.2−  )(  )
-
-                   =  0.2
-
-               y =   y +  x  ( 1 y−  ) dx
-                 2    1    1      1
-                   =  0.2 1.2+  (1 0.2 0.2−  )(  )
-
-                   =  0.392
-
-               y =   y +  x  ( 1 y−  ) dx
-                3     2    2      2
-                   =  0.392 1.4+  (1 0.392 0.2−  )(  )
-
-
-                   = .5622
-                 y′                 dy       xdx
-                −
-               1 y  =  xdx ⇒     ∫  1 y  =  ∫
-                                    −
-                                 ln 1 y−  =  1  x +  2  C
-                                           2
-                                            2
-                                         1 x + C
-                                  −
-                                 1 y =  e 2
-
+               Given:  R   : y =  e − ax  [0,  b ]
+                         1
+                                               ]
+                        R   : y = e − ax  [ , b ∞
                           2
-                       1 x + C
-                   1 e
-               y = −   2
 
-                                   2
-                                 1 1 + C
-                              −
-                      y ( ) 1 =  1 e 2   =  0
-                       1 + C
-                      e 2    = 1
-                      1  +  C =  0  ⇒    C =  −  1
-                      2                     2
 
-                           1 ( x − 1 )
-                              2
-                 ( ) 1 e
-               yx = −      2
-                                 2
-                            1 ( 1.6 − 1 )
-               y ( ) 1 e= −  2
-                 1.6
-                      ≈  0.5416
+               V =  π ∫ b ( e − ax ) 2  dx
+                1       0
 
+
+
+                   = π ∫ 0 b e − 2ax  dx
+
+
+
+                   = −  π  e − 2ax    b
+                       2a        0
+                                   )
+                              a
+                   =  −  π ( e − 2 b  −  1    unit 3
+                      2 a
+
+                      ∫  ∞ ( e − ax ) 2  dx
+               V =  π
+                2       b
 
 
 
 
+                   = π ∫ b ∞ e − 2ax  dx
 
 
-                                                              399</code></pre>
+
+                   = −  π  e − 2ax    ∞
+                       2a        b
+
+                   =  π e − 2ab      unit 3
+                     2 a
+
+
+               V =  V
+                1    2
+
+               −  π  ( e −  2ab  −  1 =  )  π  e −  2ab
+                 2a               2a
+               1 e −  2ab  =  e −  2ab
+                −
+               2e − 2ab  = 1
+                 1   =  1
+               e 2ab   2
+
+
+                                                              809</code></pre>
      	</div>
     
      </div>

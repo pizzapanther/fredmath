@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 306 - SOL-Cal-II_lecture-2</title>
+        <title>Page 306 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 306 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 306 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 306</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  ( ) 2  sin  π  +   ( ) 2  sin  3π  +  ( ) 2 sin  5π  +  ( ) 2  sin  7π  +  ( ) 2 sin  9π    
-                                                    5π
-                                                                                  9π
-                       π
-                                     3π
-                                                                   7π
-                                                                                                 π
-            M  ( ) 8 =    16  16    16       16    16       16    16       16    16       16    ( )
-                       11π  2    11π    13π  2    13π    15π  2    15π                         8
-                      +  ( )  sin    +  ( )    sin    +  ( )    sin                          
-                        16        16     16        16     16        16                       
-                      sin  π  +  9sin  3π  +  25sin 5π  +  49sin  7π  +  81sin  9π  +  121sin 11π    3
-                  =      16     16          16         16         16           16     π
-                      +  169sin 13π  +  225sin 15π                                   2,048
-                              16           16                                      
-
-                      0.19509 5.000132 20.7867403 67.3478925 79.4436077  +  +  +  +  π 3
-                  ≈                                                              
-                                                +
-                                 +
-                      100.607823 93.89136938 43.895322453                          2,048
-                  ≈  6.22414635
+    <pre style="white-space:pre-line"><code>Exercise
 
 
+        A single infected individual enters a community of n susceptible individuals. Let x be the number of newly
+        infected individuals at time t. The common epidemic model assumes that the disease spreads at a rate
+        proportional to the product of the total number infected and the number not yet infected. So,
 
-        Exercise
+                dx  =  ( kx +  1 )(n x−  )  and you obtain
+                dt
+                  ( x +∫  1
+                      1 )(n x )  dx = ∫  k dt      Solve for x as a function of t.
+                           −
 
-                                                    ∫   e    dx n =
-        Find the Midpoint Rule approximations to:      1  −  x        6  subintervals
+        Solution
+
+                  1       =   A  +   B
+                                     −
+                     −
+            ( x +  1 )(nx )  x +  1  nx
+                 =
+                1 An Ax Bx B
+                           +
+                                +
+                      −
+                     +
+                 − A B =  0
+                
+                     +
+                 nA B =  1
+                (n +  ) 1 A =  1  ⇒    A =  1  =  B
+                                     n + 1
+               ( x +∫  1 )(n x−  1  )   dx =  n +  1  1 ∫  x +  1 1  dx +  n +  1 1 ∫  n x   dx
+                                                             1
+                                                            −
 
 
-        Solution                                      0
-                   −
-                                                     x
-              x
-            ∆=   10    =  1                         ∆=   ba−
-                   6     6                                 n
-            x =  0
-             0
+                                                      −
+                                =   1  (ln x +−  ln nx   )
+                                              1
+                                  n + 1
+                                =   1  ln  x + 1
+                                  n +  1  nx
+                                           −
+            ∫  k dt = kt C
+                       +
 
-            x =  0 +  1  =  1                       x =  x +∆
-                                                              kx
-             1       6   6                           k    0
-                        1
-            x =  02+  ( )  =  1
-             2          6    3
-                       1
-            x =  03+  ( )  =  1
-             3         6     2
-                        1
-            x =   04+  ( )  =  2
-             4          6    3
 
-                       1
-            x =  05+  ( )  =  5
-             5         6     6
+              1  ln  x + 1  =  kt + C
+            n +  1  nx
+                      −
+                      0
+              ( x t =  ) 0 =
+            C =   1  ln  1
+                n + 1   n
 
-                        1
-            x =  06+  ( )  =  1
-             6          6
 
-            m =   1 ( 0 +  1 )  =  1                m =   x k  1 −  +  x k
-              1   2     6    12                       k       2
-                    (
-            m =   1 1  +  1 )  =  1
-              2   26     3    4
-                    (
-            m =   11   +  1 )  =  5
-              3   2 3    2    12
-                    (
-            m =   11   +  2 )  =  7
-              4   2 2    3    12
-                                                           306</code></pre>
+              1  ln  x + 1  =  kt +  1  ln  1
+            n +  1  n −  x      n +  1  n
+
+
+            ln  x + 1  −  ln  1  =  (n +  ) 1 kt
+               nx        n
+                 −
+                  +
+            ln  nx n  =  (n +  ) 1 kt
+                nx
+                 −
+               +
+            nx n   = e (n+  ) 1 kt
+               −
+             nx
+            nx n =  ne (n+  ) 1 kt  −  xe (n+  ) 1 kt
+               +
+                                                           716</code></pre>
      	</div>
     
      </div>

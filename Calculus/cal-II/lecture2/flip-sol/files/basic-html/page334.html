@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 334 - SOL-Cal-II_lecture-2</title>
+        <title>Page 334 - SOL_Cal-II_lecture-2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 334 - SOL-Cal-II_lecture-2</div>
+        <div id="content-top1">Page 334 - SOL_Cal-II_lecture-2</div>
         <div id="content-top2">P. 334</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Simpson's Rule Method
-                                       ( )
-              n          x            fx              m f x⋅  ( )
-                          n               n                  n
-              0     0.0000000000     0.2500000000      0.2500000000
-               1    1.0000000000     0.5344466454      2.1377865816
-               2    2.0000000000     0.7758034926      1.5516069851
-               3    3.0000000000     0.9073974671      3.6295898684
-               4    4.0000000000     0.9643510838      1.9287021676
-               5    5.0000000000     0.9866590924      3.9466363696
-               6    6.0000000000     0.9950608676      1.9901217351
-               7    7.0000000000     0.9981787276      3.9927149105
-               8    8.0000000000     0.9993294122      1.9986588244
-               9    9.0000000000     0.9997532261      3.9990129043
-               10  10.000000000     0.9999092063      0.9999092063
-               -----------------------------------------------------------------
-                Simpson Rule approximation  ≈ 8.8082465177
+    <pre style="white-space:pre-line"><code>Exercise
+
+                                                                        ∫        dx n =
+                                                                            5 x
+        Find the Trapezoid & Simpson’s Rule approximations and error:     1 x e          10  subintervals
 
 
-                  ∫ 10      1
-            V = π               2   dx
-                    0  ( 1 e+  − x )
-
-                                 )
-               ≈ π (8.8082465177
-                                  3
-               ≈  27.6719226   unit
-
-
-        Exercise
-
-
-        A pendulum with length L that makes a maximum angle θ  with the vertical. Using Newton’s Second Law
-                                                                0
-        it can be shown that the period T (the time for one complete swing) is given by
-
-
-
-                                             T =  4  L  ∫ π /2      dx
-                                                     g              2    2
-                                                          0     1 k−  sin x
-                       ( )
-                        1
-        Where  k =  sin  2 θ 0   and g is the acceleration due to gravity. If  L = 1 m   and θ =  42°, use Simpson’s Rule
-                                                                                     0
-        with  n = 10 to find the period.
-        Solution
+        Solution                                                         0
+            Trapezoid Rule Method
+                                      ( )
+                                                            ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   0.0000000000     0.0000000000      0.0000000000
+            1   0.1000000000     0.0000110500      0.0000221000
+            2   0.2000000000     0.0003908500      0.0007817000
+            3   0.3000000000     0.0032801600      0.0065603200
+            4   0.4000000000     0.0152762800      0.0305525600
+            5   0.5000000000     0.0515225400      0.1030450800
+            6   0.6000000000     0.1416879600      0.2833759200
+            7   0.7000000000     0.3384514200      0.6769028400
+            8   0.8000000000     0.7292652500      1.4585305000
+            9   0.9000000000     1.4523710400      2.9047420800
+            10  1.0000000000     2.7182818300      2.7182818300
+            -------------------------------------------------------------------
+            Trapezoid Rule approximation ≈ 0.40913975
 
 
+            Simpson's Rule Method
+                                      ( )
+                                                            ( )
+            n          x             fx               m f x
+                                                         ⋅
+                        n                n                    n
+            0   0.0000000000     0.0000000000       0.0000000000
+            1   0.1000000000     0.0000110500       0.0000442000
+            2   0.2000000000     0.0003908500      0.0007817000
+            3   0.3000000000     0.0032801600      0.0131206400
+            4   0.4000000000     0.0152762800      0.0305525600
+            5   0.5000000000     0.0515225400      0.2060901600
+            6   0.6000000000     0.1416879600      0.2833759200
+            7   0.7000000000     0.3384514200      1.3538056800
+            8   0.8000000000     0.7292652500      1.4585305000
+            9   0.9000000000     1.4523710400      5.8094841600
+            10  1.0000000000     2.7182818300      2.7182818300
+            -------------------------------------------------------------------
+            Simpson's Rule approximation ≈ 0.39580225
 
-            T =  4  L  ∫ π /2      dx
-                    g    0     1 k−  2 sin x
-                                        2
-
-
-              =  4   1  ∫ π /2           dx
-                                        (
-                    9.8   0     1 sin−  2 1  42 sin°  )  2  x
-                                         2
-
-
-                                                           334</code></pre>
+                       Exact         Trapezoid     Simpson
+            ----------------------------------------------------------------
+            Value:     0.39559955   0.40913975   0.39580225
+            ----------------------------------------------------------------
+            Error:                   3.4227 %       0.0512 %
+            ----------------------------------------------------------------
+                                                           744</code></pre>
      	</div>
     
      </div>
