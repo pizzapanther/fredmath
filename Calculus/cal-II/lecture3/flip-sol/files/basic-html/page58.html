@@ -152,66 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( )
-                   =   3  + 3  3 1  2
-                      16     4   4
+    <pre style="white-space:pre-line"><code>n− 1
 
-                   =  7 3
-                      64
+                H   =  r +  n ∑  r −  2  r 2               Since given  r =  a i− 1
+                  n              i    i+ 1                              i
+                           i= 1
 
-            b)  At stage n, there are 3 n− 1   triangles of side length   1   are removed.
-                                                                 2 n
+                              n− 1
+                                      i−
+                    =  a n−  1  +  ∑  a 22  −  a 2i
 
+                              i= 1
+                                1
+                              n−
+                                      i−
+                    =  a n−  1  +  ∑  a 22 ( 1 a 2 )
+                                           −
+                              i= 1
+                              n− 1
+                    =  a n −  1  +  ∑ a i −  1  1 a−  2
 
-               Each of those triangles has an area of   3  =   3
-                                                    44 ⋅  n  4 n+ 1
-                                       ( )
-                     =
-               Total  3 n− 1   3  =  3 3   n− 1
-                            4 n+ 1  16 4
-                          n
-                       3
-                              3
-                T =  16∑     ( ) k  1 −
-                 n            4
-                         k n 1 =
-                      16∑    ( ) k
-                       3
-                               3
-                   =           4
-                         k= 0
-                              3
-                          1− ( ) n
-                   =   3  ⋅   4
-                      16   1−  3
-                               4
+                              i= 1
 
+                                      n− 1
+                                   2
+                    =  a n−  1  +  1 a ∑  a i−  1          Since  0 a&lt; &lt; 1
+                                −
+                                      i= 1
 
-                   =   3      1− ( )   3  n 
-                      4      4   
-
-
-                                                                   3
-            c)  lim T =    lim    3      1− ( )   3  n        ( ) n  →    0
-                n →∞  n   n→∞    4      4                        4      n→∞
-
-                        =  3
-                           4
-
-            d)  The area of the triangle was originally   3  , so none of the original area is left.
-                                                      4
-
-
-
-
-
-
-
-
-
-
-
-
+                                                            n
+                                     
+                                        −
+                                                                       −
+                    =  a n− 1  +  1 a 2 1 a n− 1         ∑   r k  1 −  = 1 r n
+                                −
+                                     
+                                                                       −
+                                       1−  a                        1 r
+                                                           k  1 =
+                                             2 1 a   n−   1                 n− 1
+                                                
+            d)  lim H    =  lim a  n− 1  +  1 a    −                   lim a    =  0  (0 &lt;  a &lt;  ) 1
+                                           −
+                                
+                                                    −
+                n→∞    n   n→∞                   1 a                 n→∞
+                                         1
+                                  −
+                          =  0 +  1 a 2 ( )
+                                        1 a
+                                         −
+                               −
+                          =  1 a  2
+                             1 a
+                               −
+                               +
+                          =  1 a
+                             1 a
+                               −
 
 
 
@@ -225,7 +223,16 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            58</code></pre>
+
+
+
+
+
+
+
+
+
+                                                          1026</code></pre>
      	</div>
     
      </div>

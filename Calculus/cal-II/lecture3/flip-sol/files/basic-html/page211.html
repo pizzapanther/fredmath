@@ -152,76 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>∞        ∞
-                         n ∑
-                    ∑               ! n x n
-                Let     a =          n
-                    n= 1     n= 1  n
+    <pre style="white-space:pre-line"><code>1 sin
+               − ≤      π  ≤ 1
+                       2k
+               −  1  ≤  1  sin  π  ≤  1
+                 k 2  k 2    2k   k 2
 
-                          (n +  ) 1!x n+ 1  n n
-               ρ =  lim               ⋅
-                   n→∞     (n +  ) 1  n+ 1  ! n x n
-
-                              n
-                                                      n
-                 =  x  lim    ( ) n             lim  ( ) n  = e
-                     n→∞    n + 1              n→∞   n+ 1
-                    x
-                 =    &lt; 1
-                   e
-
-               If  x &lt;  e ⇒ −&lt;     x e&lt;  ⇒ The given series converges absolutely.
-                               e
-               If   x = ± , then
-                       e
-                                              n
-                   ln  ! n x n  =  ln ! lnn +  x −  n  lnn
-                      n n
-                                              n
-                            =  ln ! lnn +  e −  n  ln n
-                                                  n
-                                        1 n
-                            &gt;  n ln nn− ++ −   ln n
-                                 n
-                            =  ln n +−     n
-                                    1 ln n
-                            = 1
-
-                  ⇒    ! n x n  &gt;  e
-                      n n
-
-              Hence, the given series converges absolutely if  e−&lt;  x e&lt;  and diverges elsewhere.
+                                                         2
+               b =   1   converges by  p-series with ( p = ≥  ) 1
+                k    k 2
+               Therefore; the given series converges by Comparison Test.
 
 
-           Exercise                          ∞
+               Let   f  ( ) x =  1  sin  π
+                            x 2    2x
+                  ∞                        ∞
+                                                π
+                                                      π
+                            π
+                                      2
+                      x ∫  1 2  sin  2x   dx = − π ∫  sin  2x  d ( )
+                                                      2x
+                 1                        1
+                                 =  2  cos  π     ∞
+                                   π     2x   1
+
+                                 =  2 ( cos0 cos π )
+                                           −
+                                   π             2
+                                          )
+                                 =  2  (10
+                                       −
+                                   π
+                                 =  2
+                                   π
+               Therefore; the given series converges by Integral Test.
 
 
-           Let  S  be the nth partial sum of  ∑  a =  8 . Find the  lim  a  and  lim  S
-                 n                                k               k→∞    k     n→∞     n
-                                            k  1 =
+           Exercise
+
+
+           Use a Riemann sum argument to show that ln ! n ≥ ∫ n ln t dt =  n ln n n− +
+                                                                                   1
+
+                                                     ∞        1
+                                                   ∑      ! n x n
+           Then for what values of x does the series       n   converge absolutely? Converge conditionally?
+
+                                                    n= 1  n
+           Diverge? (Use the ratio test first)
 
            Solution
-               Since the series converges to 8, then  lim  a =
-                                                              0
-                                                   k→∞    k
-               Therefore; the partial sums converges to 8.
 
-                              8
-                    lim  S =
-                   n→∞    n
+                         +
+               lnn! =  ln1 ln2 ln3 +    +  lnn
+                              +
+                    = Sum of area of the shaded rectangles
 
 
+                    &gt; ∫  n lnt dt
+                        1
+                               n                                                                   
+                    = t lnt    t −
+                               1
+                    =  nlnn n−+  1
 
 
-
-
-
-
-
-
-
-
-                                                              211</code></pre>
+                                                             1179</code></pre>
      	</div>
     
      </div>

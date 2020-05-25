@@ -152,73 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                                                   ∞      n
-                                                                 ∑    ( )
-                                                                       3x
-           Find the interval of convergence of the power series       ( )!
-                                                                       2n
-                                                                  n= 0
-           Solution
+    <pre style="white-space:pre-line"><code>u               n+ 1
+                lim   n+ 1  =  lim    x  ⋅  n
+               n→∞    u n    n→∞    n + 1  x n
 
-                     u              ( ) n+ 1  ( )!
-                                     3x
-                                               2n
-                lim   n+ 1  =  lim          ⋅
-                                              3x
-               n→∞    u n    n→∞   (2n +  ) 2!  ( ) n
-                           =  3x  lim         1
-                                n→∞    (2n +  12n +  )(  ) 2
-                           =  0
-
-               →    R =  ∞
-
-               The series converges for all x. Therefore; the interval of convergence  (−∞ , ∞ )
-
-
-           Exercise
-                                                                   ∞
-                                                                 ∑         ( ) n
-                                                                            x
-           Find the interval of convergence of the power series       ( )!  3
-                                                                       2n
-                                                                  n= 0
-           Solution
-                     u                         n+  1         −  n
-                                                          x
-                                             x
-                                                     2n
-                lim   n+ 1  =  lim  (  2n +  ) 2 ! ( )  ⋅  ( )! ( )
-               n→∞    u n    n→∞             3            3
-                           =  x  lim  (  2n +  1 )(2n +  ) 2
-                             3  n→∞
-
-                           = ∞
-
-                                                0
-               The series converges only for  x =
-
-
-           Exercise
-                                                                   ∞
-                                                                 ∑        n      x n
-                                                                       −
-           Find the interval of convergence of the power series       ( ) 1  (n +  1 )(n +  ) 2
-                                                                  n= 1
-           Solution
-
-                     u                   n+ 1     (n +  1 )(n +  ) 2
-                lim   n+ 1  =  lim      x        ⋅
-               n→∞    u n    n→∞   (n +  2 )(n +  ) 3   x n
-
-                           =  x  lim    n + 1
-                               n→∞    n + 3
+                           =  x  lim    n
+                               n→∞    n + 1
                            =  x
 
 
                 x = 1 →   R =  1
 
-                                                              233</code></pre>
+               So, by the Ratio Test, the radius of convergence is  R = 1.
+               The series converges in the interval ( 1, 1 −  )
+                               ∞
+                              ∑    1
+               When  x = − 1         n  diverges  by p-serie s
+
+                              n= 1
+                             ∞       n
+                            ∑    ( ) 1−
+
+               When  x = 1         n     converges  by Alternat ing Serie s
+                            n= 1
+               Therefore; the interval of convergence  ( 1, 1 −  ]
+
+
+
+           Exercise                                                ∞
+
+                                                                 ∑         n        n
+           Find the interval of convergence of the power series       ( ) (n−  1  +  ) 1 x
+
+                                                                  n= 0
+           Solution
+
+                     u             (n +  ) 2 x n+ 1
+                lim   n+ 1  =  lim
+               n→∞    u n    n→∞     (n +  ) 1 x n
+
+                           =  x  lim    n + 2
+                               n→∞    n + 1
+
+                           =     x
+
+                x = 1 →   R =  1
+
+
+               The series converges in the interval ( 1, 1 −  )
+                               ∞
+                              ∑
+                                              r
+               When  x =  −  1    (n +  ) 1  dive ge s
+                              n= 0
+                             ∞
+                            ∑        n
+               When  x =  1       ( ) (n−  1  +  ) 1  diverge s
+
+                            n= 0
+               Therefore; the interval of convergence  ( 1, 1 −  )
+
+
+                                                             1201</code></pre>
      	</div>
     
      </div>

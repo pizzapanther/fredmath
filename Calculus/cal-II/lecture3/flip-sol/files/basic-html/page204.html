@@ -152,69 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>However;
+    <pre style="white-space:pre-line"><code>Exercise                                                          ∞
 
-             lim   a   =  lim     1
-            k→∞     k    k→∞    k ln k
+                                                                        ∑       ( ) 1  k
+                                                                                 −
+        Use any method to determine if the series converges or diverges.         k   − k
 
-                       =  0
-            This series converges conditionally by the Divergence Test.
-
-
-        Exercise
-
-                                                                          ∞
-                                                                        ∑          k  ln k
-                                                                               ( ) 1
-        Use any method to determine if the series converges or diverges.        −      2
-                                                                         k= 2        k
+                                                                         k= 0  e +  e
         Solution
 
 
-            Let   f  ( ) x =  ln x
-                          x 2
-                         2
-                     1 ( ) − 2 ln x
-                        x
-                               x
-             f ′ ( ) x =  x
-                           x 4
-                  =  x −  2 lnx  x
-                        x 4
+             a  =     1
+              k     k    − k
+                   e + e
+            Using Limit Comparison Test
 
-                  =  1 2ln x−
-                        x 3
-                                     0
-                             f ′
-            As x gets larger,  ( ) x &lt;
-            The given series decreases.
+            let  b  =  1
+                 k   e k
 
-             lim    ln k  =  ∞
-            k→∞    k 2   ∞
+                     ( ) k
+                      1
+                   =  e
+                                             (
+                                                       )
+            b converges by Geometric series  r =  1  &lt; 1
+             k                                    e
 
-                                 1
-                        =  lim    k
-                          k→∞    2k
+                   a                       e k 
+             lim     k  =  lim      1     ⋅   
+                                  k
+            k→∞    b k   k→∞    e +  e − k  1  
 
-                        =  lim    1
-                          k→∞    2k 2
-
-                        =  0
-
-            Therefore; the given series converges by Alternating Series Test.
+                        =  lim      e k
+                                  k
+                          k→∞    e +  e − k
+                        = 1
+            Therefore; the given series converges absolutely by the Limit Comparison Test.
 
 
         Exercise                                                          ∞
+
                                                                         ∑      ( ) 1  k
                                                                                 −
-        Use any method to determine if the series converges or diverges.          2
+        Use any method to determine if the series converges or diverges.         k  ln k
 
-                                                                         k= 2  k ln k
+                                                                         k= 2
         Solution
 
-            k  ln k &lt; 2  (k +  ) 1 ln 2  (k +  ) 1
+             a  =    1
+              k    k  ln k
+            Let   f  ( ) x =  1
+                          x ln x
 
-                                                           204</code></pre>
+            ∫  ∞  x ln x  dx = ∫  ∞  ln x  d  (ln x
+                   1
+                                 1
+                                          )
+                             2
+              2
+                                     ∞
+                                  )
+                          =  ln (ln x
+                                     2
+                                   ) ln ln 2
+                          =  ln (ln ∞−  (    )
+                          = ∞
+
+            Therefore; the given series diverges absolutely by Integral Test.
+
+                                                          1172</code></pre>
      	</div>
     
      </div>

@@ -152,42 +152,8 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-           Determine if the series converges or diverges. Give reasons for your answers. If a series converges, find its
-                    ∞
-                   ∑     3
-           sum.           n
-
-                   n= 0  5
-           Solution
-
-                ∞          ∞
-               ∑       3 n ∑  =   3 ( ) n
-                                 1
-                                 5
-               n= 0  5    n= 0
-               This geometric series:  r =  1  &lt; 1
-                                        5
-               The geometric series converges
-
-               S =   3   =  15
-                   1−  1    4
-                      5
-
-
-           Exercise
-
-
-           Determine if the series converges or diverges. Give reasons for your answers. If a series converges, find its
-                    ∞
-                   ∑     n
-           sum.          ln n
-                   n= 2
-           Solution
-
-               Since  n &gt;  lnn  ⇒     n   do not approach 0 as  n →∞
-                                 lnn
+    <pre style="white-space:pre-line"><code>lim  4n + 1  =  4  ≠  0
+               n→∞   3n − 1  3
 
                The series diverges
 
@@ -196,22 +162,62 @@ function MM_swapImage() { //v3.0
 
            Determine if the series converges or diverges. Give reasons for your answers. If a series converges, find its
                     ∞
-                   ∑      1
-           sum.         ln
-                          n
+                   ∑   ( 1    1  )
+           sum.         n  −  n +  2
+
                    n= 1
            Solution
 
-                ∞            ∞
-                       n ∑
-               ∑     ln 1  = −   ln n
+                        1
+                     1−
+               S =  ( ) (     1  −  1 ) ( 1  −  1 )  +  +   ( 1  −  1  )
+                           +
+                                     +
+                 n      3     2   4     3  5         n   n +  2
+                   =  1+  1  +  1  −  1
+                        2   n +  1 n +  2
+                lim S =    lim 1+ (  1  +  1  −  1  )
+               n→∞    n   n→∞       2  n +  1  n +  2
 
-                n= 1        n= 1
-                         =  −  (0 ln2 ln3+  +  +   )
+                        =  3
+                          2
 
-               The series diverges
+               The series converges
 
-                                                              37</code></pre>
+
+           Exercise
+
+           Determine if the series converges or diverges. Give reasons for your answers. If a series converges, find its
+                    ∞
+           sum.        ( n + ∑  1 1  −  n +  1  2 )
+
+                   n= 1
+           Solution
+
+                                     +
+               S =  ( 1  −  1 ) ( 1  −  1 ) ( 1  −  1 ) +  +   (  1  −  1  )
+                            +
+                 n    2  3     3   4    4   5         n +  1  n +  2
+                   =  1  −  1
+                     2   n + 2
+
+                 i
+                lm S    =  1
+               n→∞    n   2
+               The series converges
+
+
+
+
+
+
+
+
+
+
+
+
+                                                             1005</code></pre>
      	</div>
     
      </div>

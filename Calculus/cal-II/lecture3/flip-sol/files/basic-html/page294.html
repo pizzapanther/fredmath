@@ -154,79 +154,77 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-        Find the nth Taylor polynomial centered at c for the function   f  ( ) x =  ln ,x  n =  4, c =
-                                                                                               2
+
+        Find the Taylor series of the functions, where is the series representation valid?  ( ) sinf x =  x about    π
+                                                                                                           2
+
         Solution
 
-             f  ( ) x =  ln x →  f  ( ) 2 =  ln 2
+            Let  y =  x −  π  2  ⇒  x =  y +  π  2
+                      (    π )
+            sin x =  sin y +  2  =  cos y
 
-              ′
-             fx     1   →    f ′  ( ) 2 =  1
-               ( ) =
-                    x               2
-             f ′′ ( ) x =  −  1  →  f ′′ ( ) 2 =  −  1
-                      x 2                 4
-
-             f ′′′ ( ) x =  2  →  f ′′′ ( ) 2 =  1
-                     x 3               4
-
-             f  ( ) 4  ( ) x =  −  6  →  f  ( ) 4  ( ) 2 =  −  3
-                        x 4                   8
-
-
-                                                                                         4
-                                                                                        )
-                                                                   −
-                                                                                     −
-                                                 −
-            P  ( ) x =  fc  f ′ ( )(x c +  c  −  )  f ′′ ( ) c  (x c ) +  2  f  ( ) 3  ( ) c  (x c ) +  3  f ( ) 4  ( ) c  (x c
-                      ( ) +
-             4                             2!               3!               4!
-            P  ( ) ln 2= x  +  11 (x −  ) 2 −  1 (x −  ) 2  2  +  1  (x −  ) 2  3  −  1  (x −  ) 2  4
-              4            2 4         8            24           64
+                                 ∞       n
+                                ∑    ( ) 1   2n
+                                      −
+                              =        ( ) n  y
+                                      2!
+                                n= 0
+                                 ∞       n        2n
+                                ∑    ( ) 1  (  π )
+                                      −
+                              =        ( ) n  x −  2
+                                      2!
+                                n= 0
+                                  ∞
+                                ∑     ( ) 1  n (  π ) 2n
+                                       −
+                                                                      )
+                              =         ( )  x −  2         ( for all x
+                                         n
+                                       2!
+                                 n= 0
 
 
         Exercise
 
-        Find the nth Taylor polynomial centered at c for the function   f  ( ) x =  x 2  cos ,x  n =  2, c π=
+        Find the Taylor series of the functions, where is the series representation valid?
+
+                f  ( ) lnx =  x in powers of  x − 3
 
         Solution
-
-             f  ( ) x =  x 2 cos x →  f π  ( ) =  −  π  2
-
-                            −
-             fx     2 cosx  x x 2 sin x →   f π  ′  ( ) =  −  2π
-              ′
-               ( ) =
-             f ′′ ( ) x = 2cos x −  4 sinx  x −  x 2 cos x →  f π  ′′ ( ) = − +  2
-                                                               2 π
-
-                                          2
-                                                      2
-                                                                                                          2
-                                                                                                          )
-                                                                                                       −
-            P  ( ) x =  −  π  2  2π −  ( x π  −  ) +  π − 2  ( x π  −  )      P  ( ) x =  fc  f ′ ( )(xc +  c  −  )  f ′′ ( ) c  ( xc
-                                                                            ( ) +
-              2                            2                       2                            2!
+            Let  y =  x −  3 ⇒  x =  y +  3
 
 
-        Exercise
-                                                                                                        0
-        Find the nth−order Taylor polynomial centered at c for the function   f  ( ) sin2 ;x =  x  n = 3, c =
-        Solution
+            ln x =  ln ( y +  ) 3 =  ln3 1+      y   
+                                    3  
 
-                                             0
-              f  ( ) sin2x =  x    →   f  ( ) 0 =
-               ′
-              fx     2cos2x        →   f ′ ( ) 0 =
-                ( ) =
-                                              2
-              f ′′ ( ) x = − 4sin2x    →   f ′′ ( ) 00 =
-                                                8
-              f ′′′ ( ) x = − 8cos2x    →   f ′′′  ( ) 0 = −
+                =  ln3 ln 1+      y   
+                     +
+                             3 
+                         ∞       n     n+ 1
+                        ∑    ( 1) 
+                                    y
+                              −
+                 =  ln 3 +   n + 13
+                                   
+                        n= 0       
+                         ∞       n       n+ 1
+                        ∑    ( 1)  ( x −  ) 3
+                              −
+                 =  ln 3 +   n + 1     n+ 1
+                        n= 0          3
+                          ∞
+                        ∑        ( 1) n         n+ 1
+                                  −
+                 =  ln3+              n+ 1 ( x −  ) 3        (0 &lt; ≤   ) 6
+                                                                  x
+                         n= 0  (n +  ) 13
 
-                                                           294</code></pre>
+
+
+
+                                                          1262</code></pre>
      	</div>
     
      </div>

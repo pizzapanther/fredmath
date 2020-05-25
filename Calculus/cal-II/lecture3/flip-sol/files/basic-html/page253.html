@@ -152,78 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>0
+               At  x = ,
+                              ∑      ( ) 2  k  ∑    1
+                  the series is     2 ln k  =      ln k
+                                      k
+
+                          ln k &lt;
+                                k
+                           1  &gt;  1
+                          ln k   k
+                          1    diverges (p-series  p = ≤
+                                                   1 1)
+                          k
+                         ∴  Which diverges by Comprison Test.
+
+               The interval of convergence is the real line [ 4, 0 −  )
 
 
-           The series sin x =  x −  x 3  +  x 5  −  x 7  +  x 9  −  x 11  +   converges to sinx for all x.
-                                 3!   5!   7!   9!   11!
-             a)  Find the first six terms of a series for cosx. For what values of x should the series converge?
-             b)  By replacing x by 2x in the series for sinx, find a series that converges to sin2x for all x.
-             c)  Using the result in part (a) and series multiplication, calculate the first six term of a series for
-                 2sin cosx  x . Compare your answer with the answer in part (b).
-
-           Solution
-
-               a)  (sin x =  ) ′  cos x =  1−  x 2  +  x 4  −  x 6  +  x 8  −  x 10  +  
-                                       2!   4!   6!   8!   10!
-                           ∞            2n
-                          ∑       n+ 1 x
-                               −
-                   cos x =    ( ) 1   ( )!
-                                       2n
-                          n= 0
-                                    2n
-                    lim   x 2n+ 2  ⋅  ( )!  =  x 2  lim   1         =  0 1  ( ) x
-                                                                             ∀
-                                                                       &lt;
-                   n→∞  (2n +   ) 2 !  x 2n  n→∞   (2n +  1 )(2n +  ) 2
-                  The series converges for all values of x.
-
-                                 3 3
-                                                7 7
-                                        5 5
-                                                               11 11
-                                                        9 9
-               b)  sin 2x =  2x −  2 x  +  2 x  −  2 x  +  2 x  −  2 x  +  
-                                 3!      5!     7!      9!      11!
-                         =  2x −  8x 3  +  32x 5  −  128x 7  +  512x 9  −  2048x 11  +  
-                                 3!    5!      7!       9!       11!
+           Exercise
 
 
-                                     x 3  x 5  x 7   x 9  x 11       x 2   x 4  x 6  x 8  x 10    
-                       x
-               c)  2sin cos x =  2 x −    +  −     +    −     +    1−   +    −    +    −     +    
-                                     3!    5!   7!   9!   11!         2!   4!   6!   8!   10!     
-
-                                     x 2  x 4  x 6  x 8  x 10       x 3    x 2  x 4  x 6  x 8  x 10  
-                             =  2x   1−  +   −    +    −    +     −  2    1−  +  −    +    −    +    
-                                     2!   4!   6!   8!   10!        3!    2!   4!   6!   8!   10!    
-
-                                 +  2 x 5     1−  x 2  +  x 4  −  x 6  +  x 8  −  x 10  +      −  2  x 7      1−  x 2  +  x 4  −  x 6  +  x 8  −  x 10  +      
-                                   5!    2!   4!   6!   8!   10!        7!    2!   4!   6!   8!   10!    
+           Determine the centre, radius, and interval of convergence of the power series  x +  x 3  +  x 5  +  x 7  +  
+                                                                                           3     5    7
+           Solution                      ∞
 
 
-                                 +  2 x 9     1−  x 2  +  x 4  −  x 6  +  x 8  −  x 10  +      −  2  x 11     1−  x 2  +  x 4  −  x 6  +  x 8  −  x 10  +      
-                                   9!    2!   4!   6!   8!   10!        11!    2!   4!   6!   8!  10!     
+               x +  x 3  +  x 5  +  x 7  +  =  ∑  x 2k+ 1
+                   3     5    7               2 + 1
+                                               k
+                                        k= 0
+
+               a =   x 2k+ 1
+                k    2k + 1
+
+               By Ratio Test:
+
+                                         )
+               R =  lim   (  1   ⋅  2k +  3 x 2k+ 1                  R =  lim   a k
+                            k
+                   k→∞     2 +  1    1    x 2k+ 3                        k→∞   a k + 1
+
+                  =  lim    2k + 3     1    
+                    n→∞    2k + 1   x   2
+                   1 =
+
+               The radius of convergence is 1
+
+               The centre of convergence is  x  =  0
+
+               − 1 x &lt; 1
+                  &lt;
+               which the given series convergences absolutely
+                       1
+               At  x = − ,
+                                    ( ) 1  2k+ 1         1
+                                     −
+                  the series is       2 + ∑  k  1 ∑  =  2k +  −  1
+
+                          ∫  0 ∞  2x +  − 1 1 dx =  −  1 ∫  0 ∞  2x +  1  1 d (2x +  ) 1
+
+                                           2
 
 
 
-                             =  2x −  2x 3  +  2x 5  −  2x 7  +  2x 9  −  2x 11  −  2x 3  +  2x 5  −  2x 7  +  2x 9  −  2x 11
-                                     2!    4!    6!    8!    10!    3!   2!3!  4!3!  6!3!   8!3!
-                                  2x 5  2x 7  2x 9  2x 11  2x 7  2x 9  2x 11  2x 9  2x 11  2x 11
-                                 +    −     +     −      −     +     −      +           − −    +  
-                                  5!    5!2!  5!4!  5!6!   7!    7!2!  7!4!   9!    9!2!   11!
 
-                                                            9 9
-                                                                    11 11
-                                                     7 7
-                                             5 5
-                                     3 3
-                             =  2x −  2 x  +  2 x  −  2 x  +  2 x  −  2 x  +  
-                                      3!     5!      7!      9!      11!
-
-
-                                                              253</code></pre>
+                                                             1221</code></pre>
      	</div>
     
      </div>

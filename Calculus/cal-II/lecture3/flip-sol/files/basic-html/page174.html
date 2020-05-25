@@ -152,14 +152,35 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>lim    1   =  0    converges by Alternating Series Test
-            n→∞    n + 1
-             ∞   cosnπ      ∞
-            ∑     n +  1  = ∑   n +  1  1   diverges by a Limit Comparison to the divergent harmonic series
+    <pre style="white-space:pre-line"><code>Exercise
+                                                                                  ∞
+                                                                                 ∑    cosnπ
+        Determine if the series converge absolutely or conditionally, or diverges       n + 1
 
-            n= 0           n= 0
+                                                                                 n= 0
+        Solution
+
+             ∞             ∞        n
+                   n + ∑
+                      1 ∑
+                                 −
+                 cosnπ  =       ( ) 1 1
+                                n +
+            n= 0          n= 0
+            u    =     1     &lt;   1  =  u
+              n+ 1  (n +  ) 1 +  1  n + 1  n
+
+             lim    1   =  0    converges by Alternating Series Test
+            n→∞    n + 1
+             ∞              ∞
+                      1 ∑
+                   n + ∑
+                  cosnπ  =        1    diverges by a Limit Comparison to the divergent harmonic series
+            n= 0           n= 0  n +  1
+
                    a            cos nπ
-             lim    n  =  lim          ⋅  n
+                                        n
+             lim    n  =  lim          ⋅
             n→∞    b n   n→∞     n + 1  1
                        = 1
 
@@ -169,51 +190,34 @@ function MM_swapImage() { //v3.0
         Exercise
                                                                                   ∞
                                                                                  ∑        n+ 1
-        Determine if the series converge absolutely or conditionally, or diverges      ( ) 1−  arctan n
-
+        Determine if the series converge absolutely or conditionally, or diverges      −      arctan n
+                                                                                      ( ) 1
                                                                                  n= 1
         Solution
 
-
-             lim arct na  n =  π ≠  0
+                      a
+             lim arct n  n =  π ≠  0
             n→∞              2
-
             The given series diverges by the nth-Term Test.
 
 
         Exercise
                                                                                   ∞
                                                                                  ∑    cosnπ
-        Determine if the series converge absolutely or conditionally, or diverges        2
+        Determine if the series converge absolutely or conditionally, or diverges         2
 
                                                                                  n= 1   n
         Solution
-
-             ∞            ∞   ( ) 1−  n
-            ∑    cosnπ  = ∑      2
-                    2
-            n= 1   n      n= 1  n
-
-            u    =     1    &lt;  1  =  u
-             n+ 1         2    2    n
-                   (n +  ) 1  n
-
-             lim   1  =  0      converges by Alternating Series Test
-            n→∞    n 2
-             ∞
-            ∑      1 2    converges by p-series ( p = &gt;  ) 1
-                                                 2
-            n= 1  n
-            The given series converges absolutely.
+             ∞             ∞        n
+                     2 ∑
+            ∑    cosnπ  =       ( ) 1 2
+                                 −
+             n= 1  n       n= 1  n
 
 
 
 
-
-
-
-
-                                                           174</code></pre>
+                                                          1142</code></pre>
      	</div>
     
      </div>

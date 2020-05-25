@@ -152,65 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise                                                         ∞
+    <pre style="white-space:pre-line"><code>Exercise                                                          ∞
 
-                                                                           ∑       24⋅  k
-           Use any method to determine if the series converges or diverges.        (2k +  ) 1!
-
-                                                                           k= 0
-           Solution
-
-               Using Ratio Test:
-               a k+ 1   24⋅  k+ 1  (2k +  ) 1!
-
-                a    =  (2k +  ) 3! ⋅  k
-                  k                24 ⋅
-                     =         4
-                       (2k +  2 )(2k +  ) 3
-
-                                                                  a
-               ρ =  lim          4                     ρ =  lim    k+ 1
-                   k→∞    (2k +  2 )(2k +  ) 3             k→∞     a k
-                  =  0 &lt; 1
-
-               Therefore; the given series converges by Ratio Test.
-
-
-           Exercise                                                          ∞
-
-                                                                           ∑       9 k
-           Use any method to determine if the series converges or diverges.         ( ) k
-                                                                                   2!
-                                                                            k= 0
-           Solution
-
-               Using Ratio Test:
-               a k+ 1    9 k+ 1  ( ) k
-                                  2!
-                a    =  (2k +  ) 2! ⋅  k
-                  k                9
-                     =         9
-                       (2k +  12k +  )(  ) 2
-
-                                                                  a
-               ρ =  lim          9                     ρ =  lim    k+ 1
-                   k→∞    (2k +  12k +  )(  ) 2            k→∞     a k
-                  =  0 &lt; 1
-
-               Therefore; the given series converges by Ratio Test.
-
-
-           Exercise                                                          ∞
-
-                                                                           ∑      coth k
-           Use any method to determine if the series converges or diverges.         k
+                                                                           ∑       − k
+           Use any method to determine if the series converges or diverges.       ke
 
                                                                             k= 1
            Solution
 
+               Using Ratio Test:
+
+                                k
+               a k+ 1  (k +  ) 1 e −− 1
+                a    =     ke − k
+                  k
+                         ( )
+                     =  1 k + 1
+                       e    k
+                             1
+                     =  1 ( )
+                          1+
+                       e     k
+                          a
+               ρ =  lim    k+ 1
+                   k→∞     a k
+                                1
+                  =  lim    1 ( )
+                             1+
+                    k→∞   e     k
+                  =  1  &lt; 1
+                    e
+
+               Therefore; the given series converges by Ratio Test.
 
 
-                                                              197</code></pre>
+
+               Let  ( ) x =  xe − x
+                   f
+                                  − x
+                               ∫ e
+
+                  +      x       − e − x
+                  −      1       e − x
+
+
+               ∫ 1 ∞  xe −  x dx =  −  e −  x  ( x +  ) 1    1 ∞
+
+
+
+
+                              0 e
+                           = −+    − 1 ( ) 2
+                           =  2
+                             e
+
+               Therefore; the given series converges by Integral Test.
+
+
+
+
+
+
+
+
+
+
+
+                                                             1165</code></pre>
      	</div>
     
      </div>

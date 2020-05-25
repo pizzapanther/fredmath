@@ -152,76 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>− kt
-                    Ce     0
-                 =   0
-                   1 e−  − kt 0
-                      C
-                 =     0
-                    e kt 0  − 1
+    <pre style="white-space:pre-line"><code>Exercise
+
+        The concentration in the blood resulting from a single dose of a drug normally decreases with time as the
+        drug is eliminated from the body. Doses may therefore need to be repeated periodically to keep the
+        concentration from dropping below some particular level. One model for the effect of repeated doses gives
+
+        the residual concentration just before the (n +  ) 1 st  does as
+                                 −  kt      −  2kt          −  nkt
+                         R =  Ce    0  +  Ce    0  +   +  Ce    0
+                         n     0          0               0
+                                                                                    )
+                                                                                /
+        Where C = the change in concentration achievable by a single dose (mg mL ,
+                 0
+                                            ( )
+                k =  the elimination constant  h − 1  , and
+                t = time between doses (h).
+                 0
 
 
-            b)  Given: C =  1 mg  / mL,   k =  0.1 h − 1 ,  and t = 10 h
-                         0                               0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          a)  Write  R  in closed form as a single fraction, and find  R =  lim R
+                      n                                                n→∞   n
+          b)  Calculate  R  and  R   for C = 1 mg  / mL,  k = 0.1  h − 1 ,  and t = 10 h. How good as estimate of R is
+                         1       10       0                               0
+              R
+               10
+          c)  If  k =  0.01 h − 1  and t = 10 h, find the smallest n such that  R &gt;  1  . R
+                                  0                                      n   2
+        Solution
+
+                         −  kt      −  2kt           −  nkt
+            a)  R =  Ce     0  +  Ce    0  +   +  Ce    0
+                 n     0          0               0
+                           −  kt   −  kt   2      −  kt   n 
+                   =  C   e  0  +      e  0    +  +      e  0    
+                       0                               
+                                                           
                           −  kt    −  nkt 
                                  −
                          e   0    1 e  0  
-                R =  C                   
-                 n     0          − kt
-                               −
+                   = C                   
+                       0          − kt
                              1 e     0
-                        −  ( )( )   0.1 10  −  n ( )( )   0.1 10
-                      e            1 e          
-                                    −
-                   = 1             ( )( )       
-                             1 e  −  0.1 10
                                −
-                     e −  1 ( 1 e −  n )
-                           −
-                   =
-                        1 e−  − 1
-
-
-                     e −  1 ( 1 e −  1 )
-                           −
-                R =               =  e − 1
-                 1      1 e − 1
-                         −
-                   ≈  0.36787944
-
-
-                      e −  1 ( 1 e−  −  10 )
-                R   =
-                 10      1 e  − 1
-                           −
-                    ≈  0.58195028
-
-
-            c)  Given:  k =  0.01 h − 1  and t = 10 h
-                                         0
-
-                         e −  0.1 ( 1 e−  −  0.1n )
-                R =  C
-                 n     0     1 e−  − 0.1
-                      C
-                R =     0
-                    e kt 0  − 1
-                      C
-                  =     0
-                     e 0.1 − 1
-
-
-                R  =  1  C 0
-                2   2  e 0.1  − 1
-
-
-                                         e −  0.1 ( 1 e−  −  0.1n )  C
-                                ?
-                             n=
-                R &gt;  1  R  →      C                    &gt;  1    0
-                 n   2                 0     1 e−  − 0.1    2  e 0.1  −  1
-
-                                                           216</code></pre>
+                R =  lim R
+                    n→∞    n
+                             −  kt     −  nkt 
+                            e   0    1 e   0  
+                                     −
+                 =  lim C                                        lim e − nkt 0  =  0
+                    n→∞   0      1 e − kt 0                       n→∞
+                                  −
+                                                          1184</code></pre>
      	</div>
     
      </div>

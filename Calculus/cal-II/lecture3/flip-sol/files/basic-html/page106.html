@@ -153,88 +153,67 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>∞
-                                                                         ∑       1
-        Use any method to determine if the series converges or diverges       2 +  n
+                            ∑    1
+            Comparing with        2  , which is a convergent p-series, since  p =  2 1.
+                                                                               &gt;
+                             n= 1  n
 
-                                                                          n= 1
+                  (lnn ) 2           1
+            a =            ⇒   b =
+              n     n 3         n   n 2
+
+
+                  a          (ln n ) 2  2
+             lim   n  =  lim        ⋅  n
+            n→∞   b n  n→∞     n 3    1
+
+                              (ln n ) 2
+                       =  lim
+                         n→∞     n
+                                     1
+                               2ln n ( )
+                       =  lim        n
+                         n→∞      1
+                       =  2 lim  ln n
+                          n→∞    n
+                       =  0
+
+            Then, by Comparison Test, the given series converges.
+
+
+        Exercise
+                                                                           ∞
+                                                                         ∑     1 sin n
+                                                                                +
+        Use any method to determine if the series converges or diverges            2
+                                                                          n= 1   n
         Solution
 
-            2 +  n &lt;  n ⇒      1    ≥  1
-                             2 +  n   n
-
-                                      ∞
-                                                         1
-            By the p-series the series   n ∑ 1   diverges  p =
-                                     n= 1
-            The given series diverges by Comparison Test using p-series
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           106</code></pre>
+            Let b =   1
+                 n     2
+                     n
+             lim  1 sin n+   1  =  lim  (1 sin n )  which does not exist.
+                                          +
+            n→∞      n 2    n 2   n→∞
+            1 sin n  ≤  2  , then the given series converges by comparison test
+              +
+               n 2     n 2
+
+
+        Exercise
+                                                                           ∞
+                                                                         ∑      1
+        Use any method to determine if the series converges or diverges            n
+                                                                                +
+                                                                          n= 1  23
+        Solution
+
+            a =     1   &lt;  1  =  b
+              n   23  n   3 n    n
+                   +
+            So, by the Direct Comparison Test, the series converges.
+
+                                                          1074</code></pre>
      	</div>
     
      </div>

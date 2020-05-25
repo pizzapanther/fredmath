@@ -152,80 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  ∞  ( ) n 
-                               3x
-                     =  e   ∑      
-                                ! n  
-                           n= 0    
-                        ∞     nn
-                                               )
-                     = ∑     3 e  ! n x     ( for all x
-                       n= 0
+    <pre style="white-space:pre-line"><code>f ′′′ ( ) x =  1  e x /3  →  f ′′′ ( ) 0 =  1
+                        27                     27
+
+                f  ( ) 4  ( ) x =  1  e x /3  →  f  ( ) 4  ( ) 0 =  1
+                          81                       81
+
+
+
+                                       f ′′ ( ) 0  2  f  ( ) 3  ( ) 3  f ( ) 4  ( ) 0  4
+                                                       0
+               P  ( ) x =  f  ( ) 0 +  f ′ ( ) 0 x +  x +  x +         x
+                4                        2!         3!           4!
+                   x =
+               P  ( ) 1+   1  x +  1  x +  2  1  x +  3  1  x 4
+                4          3    18      162      1944
 
 
            Exercise
-                                              ( )
-                                                 3
-           Find the Maclaurin series for:    cos 2x
-
-           Solution                2         4        6
-                                           3
-                                                    3
-                                 3
-                               2x
-                                        2x
-                                                  2x
-                  ( )         ( ) ( ) ( )
-                      3
-               cos 2x    =  1−  2!   +    4!   −   6!   +  
-                               2 3
-                                       4 12
-                                                6 18
-                         =  1−  2 x  +  2 x  −  2 x  +  
-                                2!      4!      6!
-                            ∞  ( ) 1  n n
-                                −
-                                     4
-                                                         )
-                         = ∑     ( )!   x 6n   ( for all x
-                                  2
-                                   n
-                           n= 0
 
 
-           Exercise
-                                              (
-                                                     )
-           Find the Maclaurin series for:    cos 2x −π
-           Solution
-               cos (2x − π ) cos 2 cosx=  ( )  π + sin 2  π
-                                               ( )sinx
-                                  ( )
-                           = − cos 2x
-                               ∞  ( ) 1  n
-                                   −
-                           = − ∑   ( )! ( )  2n
-                                         2x
-                                    2n
-                              n= 0
-                             ∞  ( ) 1  n+ 1 n
-                                 −
-                                        4
-                           = ∑     ( )!    x 2n    ( for a l xl   )
-                                    2n
-                            n= 0
+           Find the nth Maclaurin polynomial for the function   f  ( ) x = sin , x  n = 5
 
-
-           Exercise
-                                                  x
-           Find the Maclaurin series for:     x 2 sin ( )
-                                                 3
            Solution
 
+                f  ( ) x =  sin x →  f  ( ) 0 =  0
+
+                f ′  ( ) x =  cos x →  f ′  ( ) 0 =  1
+
+                f ′′ ( ) x =  −  sin x →  f ′′ ( ) 0 =  0
 
 
+                f ′′′ ( ) x =  −  cos x →  f ′′′ ( ) 0 =  −  1
 
-                                                              281</code></pre>
+
+                f  ( ) 4  ( ) x =  sin x →  f  ( ) 4  ( ) 0 =  0
+
+
+                f  ( ) 5  ( ) x =  cos x →  f ( ) 5  ( ) 0 =  1
+
+
+                                       f ′′ ( ) 0  2  f ( ) 3  ( ) 3  f  ( ) 4  ( ) 0  4  f  ( ) 5  ( ) 5
+                                                       0
+                                                                                 0
+               P  ( ) x =  f  ( ) 0 +  f ′ ( ) 0 x +  x +  x +        x +          x
+                5                        2!         3!           4!           5!
+                                       5
+               P  ( ) x =  x −  1  x +  3  1  x
+                5          6      120
+
+
+           Exercise
+
+                                                                                    4
+                                                                           π
+           Find the nth Maclaurin polynomial for the function   f  ( ) x =  cos x , n =
+           Solution
+
+                f  ( ) x =  cos x →  π  f  ( ) 0 =  1
+
+                f ′  ( ) x =  −  π  sin x →  π  f ′  ( ) 0 =  0
+
+
+                f ′′ ( ) x =  −  π  2  cos x →  π  f ′′ ( ) 0 =  −  π  2
+
+
+                f ′′′ ( ) x =  π  3  sin x →  π  f ′′′ ( ) 0 =  0
+
+
+                                                             1249</code></pre>
      	</div>
     
      </div>

@@ -152,73 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise                                                          ∞
+    <pre style="white-space:pre-line"><code>=     2
+                         x
+                       e −  e − x
 
-                                                                        ∑
-                                                                                   k
-        Use any method to determine if the series converges or diverges.       sech
-                                                                         k= 0
-        Solution
+            ∫  1 ∞  e − 2 e − x  ⋅  e x   dx =  ∫  1 ∞  ( ) 2 x − 1 dx
+                                           2e
+                             x
+                  x
+                           e
+                                           x
+                                          e
+                                      ∞
+                                                            ( )
+                                  =        e − ∫  x  2  x   d e x
+                                     1   (     1 e +  )(  1 )
+                                      ∞                 
+                                                             ( )
+                                  =         x 1  −  x 1 1 ∫     d e x
 
-            a =   sech k
-              k
+                                     1     e −  1 e +
+                                    ∫  ∞    1     (  x   )  ∫  ∞    1     (  x   )
+                                  =  1   e −  x  1  d e −  1 −  1  e +  x  1  d e +  1
 
-            Let b =   1
-                 k   e k
 
-                     ( ) k
-                      1
-                   =  e
-                                                                 )
-                                                       (
-            ∑   b  converges by Geometric series with  r =  1  &lt; 1
-                                                            e
-                  k
-                   a
-             lim    k  =  lim      2      e ⋅  k
-                                 k
-            k→∞    b k   k→∞   e +  e − k
+                                      (
+                                                         )
+                                                            ∞
+                                  =  ln e −  x  1 −  ) (  x  1    1
+                                                ln e +
+                                        x      ∞
+                                  =  ln   e − 1 
+                                         x
+                                        e + 1  1
+                                       −
+                                  =  ln1 ln  e − 1
+                                           e + 1
+                                  = − ln  e − 1
+                                        e + 1
 
-                       =  lim      2
-                         k→∞   1 e  − 2k
-                                 +
-                       =  2
-
-            Therefore; the given series converges by Limit Comparison Test.
+            Therefore; the given series converges by Integral Test.
 
 
         Exercise                                                          ∞
-
-                                                                        ∑      ( ) 1−  k
-        Use any method to determine if the series converges or diverges.         2
-                                                                         k= 2  k −  1
+                                                                        ∑
+                                                                                   k
+        Use any method to determine if the series converges or diverges.       tanh
+                                                                         k  1 =
         Solution
+                                   x
+             lim   tanh =   lim   e +  e − x
+                       k
+                                   x
+            k→∞            k→∞    e −  e − x
+                         = 1 ≠  0
 
-                  ( ) 1  k
-                   −
-            a =
-              k   k −  1
-                   2
-             a  =    1
-              k    k − 1
-                    2
-            Let b =   1   converges by p−series ( p =  2 &gt;  ) 1
-                 k   k 2
-
-
-                   a
-             lim    k  =  lim     1    k ⋅  2
-                                 2
-            k→∞    b k   k→∞   k −  1
-                       = 1
-
-            Therefore; the given series converges absolutely by Limit Comparison Test.
+            Therefore; the given series diverges by Divergence Test.
 
 
 
 
 
-                                                           200</code></pre>
+
+
+
+
+
+
+                                                          1168</code></pre>
      	</div>
     
      </div>

@@ -152,78 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>So the loan will be paid off after 39 months.
+    <pre style="white-space:pre-line"><code>b)         a k        =    A    +    B
+               ( a k  1 +  −  1 a −  )(  k  1 )  a k  1 +  −  1  a −  k  1
 
 
+                                     a =  k  Aa −  k  A Ba k  1 +  −  B
+                                                   +
+                                                           −
+                                        =  Aa +  k  aBa −  k  A B
+                                       A aB =   1             1
+                                         +
+                                                   →   B =     1  =  −  A
+                                          −
+                                      − AB =   0           a −
+
+                                  =  1      1  −   1        (a ≠  ) 1
+                                    a − 1   a −  k  1  a k  1 +  −  1
 
 
+                ∑  ∞  (  k  1 +  a k  k  )  =  a − 1 ∑  ∞      k 1  −  k  1 1 +    
+                                           1
+                              )(
+                k  1 =  a   −  1 a −  1         k  1 =    a −  1 a  −  1
+
+               This series telescopes to gives
 
 
+                S =    1  ⋅      1  −  1    
+                 n   a −  1    a −  1  a n+ 1 − 1
 
 
+                 lim      1     converges only iff  a &gt; 1
+                n→∞   a n+ 1 − 1
 
 
+               Therefore, the series converges to:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                 lim S   =    1       if   a &gt; 1
+                n→∞    n   (a −  ) 1  2
 
 
 
         Exercise
 
-        An insulated windows consists of two parallel panes of glass with a small spacing between them. Suppose
-        that each pane reflects a fraction p of the incoming light and transmits the remaining light. Considering all
-        reflections of light between the panes, what fraction of the incoming light is ultimately transmitted by the
-        windows? Assume the amount of incoming light is 1.
+        Suppose you borrow $20,000 for a new car at a monthly interest rate of 0.75%. If you make payments of
+        $600/month, after how many months will the loan balance be zero? Estimate the answer by graphing the
+        sequence of loan balances and then obtain an exact answer using infinite series.
 
         Solution
-                                                                              th
-            Let  L  be the amount of light transmitted through the window the n  time the beam hits the second
+            B =   20,000
+              0
+            Let  B  be the loan after n months.
                  n
-                       L
-            pane ⇒      n  .
-                      1 p−
-             pL
-               n  : is the reflection to the first pane.
-            1 p−
-
-              2
-             p L n
-             1−  p  : is the reflection back to the second pane.
-            Thus,
-                            2
-                           p L
-                                    2
-            L     =  (1−  ) p  n  =  p L
-              n+ 1         1−  p       n
-                                                                                      2
-            The amount of light transmitted through the windows the first time is (1 p−  )
-            Thus the total amount is:
+                                            B =  n  1.0075 B n− 1  −  600
+                                                        ⋅
+                                                       (
+            B n− 1  =  1.0075 B n− 2  −  600   B =  n  1.0075 1.0075 B n− 2  −  600 −  )  600
+                                                               ⋅
+                          ⋅
+                                                         2
+                                               =  (1.0075 ) B n− 2  −  600 (1 1.0075+  )
+                                                         2
+                           ⋅
+            B n− 2  =  1.0075 B n− 3  −  600   B =  n  (1.0075 ) B n− 2  −  600 (1 1.0075+  )
 
 
-
-
-
-
-
-                                                            52</code></pre>
+                                                          1020</code></pre>
      	</div>
     
      </div>

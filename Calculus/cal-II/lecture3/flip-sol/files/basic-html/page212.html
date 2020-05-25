@@ -152,70 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>Using the ratio test
+                  ∞         ∞
+                 ∑     n ∑        ! nx n
+             Let      a =          n
 
-        It can be proved that if a series converges absolutely, then its terms may be summed in any order without
-        changing the value of the series. However, if a series converges conditionally, then the value of the series
-        depends on the order of summation. For example, the (conditionally convergent) alternating harmonic series
-        has the value
+                  n= 1     n= 1   n
 
-                                                 1−  1  +  1  −  1  +  =  ln2
-                                                     2   3  4
+                       (n +  ) 1!x n+ 1  n n
+            ρ =  lim               ⋅
+                n→∞     (n +  ) 1  n+ 1  ! n x n
 
-        Show that by rearranging the terms (so the sign pattern is ++−),
+                           n
+                                                   n
+              =  x  lim    ( ) n              lim  ( ) n  =  e
+                  n→∞    n + 1               n→∞  n+ 1
+                 x
+              =    &lt; 1
+                 e
 
-                                             1+  1  −  1  +  1  +  1  −  1  +  =  3 ln2
-                                                3   2   5  7   4        2
+            If  x &lt;
+                   e
+                 e
+                −&lt;   x e
+                      &lt;
+                The given series converges absolutely.
+            If   x = ± , then
+                    e
+                                           n
+                ln  ! n x n  =  ln ! ln x −  n  lnn
+                            n +
+                    n n
+                                           n
+                         =  ln ! lne+  n  n  −  ln n
+                                               n
+                         &gt;  n ln nn ++ −    ln n
+                                −
+                                     1 n
+                              n
+                         = ln n +−      n
+                                  1 ln n
+                         = 1
+               ⇒    ! n x n  &gt;  e
+                   n n
+                                                                &lt;
+           Hence, the given series converges absolutely if  e−&lt;  x e and diverges elsewhere.
+
+
+        Exercise                          ∞
+
+
+
+        Let  S  be the nth partial sum of  ∑  a =  8 . Find the  lim  a  and  lim  S
+              n                                k               k→∞    k      n→∞    n
+                                         k  1 =
         Solution
 
-            S =  1−  1  +  1  −  1  +  
-                   2
-                       3
-                           4
-                 ( ) (    1   1 ) ( 1   1 ) ( 1  1 )
-                     1
-               =  1−  2  +  3  −  4  +  5  −  6  +  7  −  8  +  
-                                     )
-            1 S =  1 ( 1−  1  +  1  −  1  +  
-            2     2     2   3  4
-                 =  1  −  1  +  1  −  1  +  
-                   2   4  6   8
+            Since the series converges to 8, then  lim  a =
+                                                           0
+                                                k→∞    k
+            Therefore; the partial sums converges to 8.
 
-
-               S =  ( ) (   1  −  1 ) ( 1  −  1 ) ( 1  −  1 ) +  =   ln 2
-                       1
-                                    +
-                                             +
-                          +
-                    1−
-            +         2     3   4    5   6     7   8
-              
-                1  S =  1  −  1  +   1   −  1   +      = 1  ln 2
-                2     2       4      6      8             2
-            3  S =  1+  1  −  1  +  1  +  1  −  1  +  
-            2        3   2   5   7   4
-                 =  3  ln 2
-                   2
+                           8
+                 lim  S =
+                n→∞    n
 
 
 
-        Exercise
 
-        A crew of workers is constructing a tunnel through a mountain. Understandably, the rate of construction
-        decreases because rocks and earth must be removed a greater distance as the tunnel gets longer. Suppose that
-        each week the crew digs 0.95 of the distance it dug the previous week. In the first week, the crew constructed
-        100 m of tunnel.
-          a)  How far does the crew dig in 10 weeks? 20 weeks? N weeks?
-          b)  What is the longest tunnel the crew can build at this rate?
-          c)  The time required to dig 100 m increases by 10% each week, starting with 1 week to dig the first 100 m.
-              Can the crew complete a 1.5 km tunnel in 10 weeks? Explain.
 
-        Solution
-            a)  Let T  be the amount of additional tunnel dug during week n. Then
-                     n
-                T =  100
-                 0
-                                                           212</code></pre>
+
+                                                          1180</code></pre>
      	</div>
     
      </div>

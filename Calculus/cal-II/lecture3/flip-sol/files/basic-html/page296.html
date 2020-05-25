@@ -152,77 +152,89 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>π
-              f ′′ ( ) x = − cos x   →   f ′′ ( )  = −  2 2
+    <pre style="white-space:pre-line"><code>(    π   π  )    (    π   π  )
+                −
+            sinx cos x =  sin x −  4  +  4  −  cos x −  4  +  4
+                                                            π
+                                        π
+                                                                                π
+                                                                                                    π
+                       =  cos x −  (  π  4 ) ( ) +  sin x −  (  π  4 ) ( )  −  cos x −  (  π  4 ) ( ) +  sin x −  (  π  4 ) ( )
+                                                                                                sin
+                                                       cos
+                                                                            cos
+                                    sin
+                                                                                                    4
+                                                            4
+                                                                                 4
                                         4
+                       =  cos x −  (  π  4 )  2 2  +  sin x −  (  π  4 )  2 2  −  cos x −  (  π  4 )  2 2  +  sin x −  (  π  4 )  2 2
+                               (
+                       =   2 sin x −  π )
+                                    4
+                              ∞
+                             ∑      ( ) 1  n  (  π ) 2n+ 1
+                                     −
+                                                                          )
+                       =  2          (2 +  ) 1!  x −  4         ( for all x
+                                     n
+                             n= 0
 
 
-            P ( ) x =  2  −  2 ( x −  π  ) −  2 ( x −  π  ) 2
-                     2    2      4     4      4
+        Exercise
+        Find the Taylor series of the functions, where is the series representation valid?
+                f x       2            π
+                  ( ) cos x about  =
+                                       8
+        Solution
+                                               (
+            cos 2 ( ) x =  1 (1 cos2x+  ) =  1 ( 1 cos 2x −  π  +  π  ))
+                                         +
+                       2              2              4   4
+                                                                   π
+                                              π
+                      =  1 ( 1 cos 2x −  (  π  ) ( ) −  sin 2x −  (  π  ) ( ))
+                                                              sin
+                                          cos
+                            +
+                        2              4      4             4      4
+                      =  1   1+  2  cos 2 x −  ( (  π  )) −  2  sin 2 x −  ( (  π  
+                        2     2           8      2           8 ))  
+                                ∞       n           2n        ∞        n            2n+ 1
+                                     −
+                                                                   −
+                      =  1  +  4 ∑  2  ( 1)  2 x −  ( (  π  ))    −  4 ∑  2  ( 1)  2 x −  ( (  π  ))
+                        2           ( )!         8               (2n +  ) 1!     8
+                                     2n
+                                n= 0                         n= 0
+                                  ∞
+                                                                                                 )
+                      =  1  +  1  ∑    ( ) 1  n      2 2n  ( x −  π  ) 2n  −  2 2n+ 1  ( x −  π  ) 2n+   1     ( for all x
+                                        −
+                        2   22                 ( )!    8      (2n +  ) 1!  8      
+                                               2n
+                                 n= 0
 
 
         Exercise
 
-        Find the nth−order Taylor polynomial centered at c for the function   f  ( ) ln ;x =  x  n =  2, c = 1
+        Find the Taylor series of the functions, where is the series representation valid?
 
+                       f  ( ) x =  x  in powers of  x − 1
+                                +
+                              1 x
         Solution
 
-              f  ( ) lnx =  x      →   f  ( ) 01 =
+              x  =   x −+      =  ( x −  ) 1 +  1
+                        11
+              +
+            1 x    1 x −+        ( x −  ) 1 +  2
+                          1 1
+                     +
+                  = 1−     1
+                       ( x −  ) 1 +  2
 
-
-                ( ) =
-              fx     1             →   f ′ ( ) 11 =
-               ′
-                     x
-              f ′′ ( ) x = −  1     →   f ′ ′ ( ) 1 = −
-                                               1
-                       x 2
-
-                                  2
-                       1
-            P ( ) x = −−  1 ( x −  ) 1
-                    x
-                          2
-
-
-        Exercise
-
-                                                                                                         0
-        Find the nth−order Taylor polynomial centered at c for the function   f  ( ) sinh2 ;x =  x  n =  4, c =
-        Solution
-
-              f  ( ) sinh2x =  x    →   f  ( ) 0 =
-                                               0
-              fx     2cosh2x        →   f ′ ( ) 0 =
-               ′
-                ( ) =
-                                               2
-              f ′′ ( ) x =  4sinh2x    →   f ′′ ( ) 00 =
-                                                8
-              f ′′′ ( ) 8cosh2x =  x    →   f ′′′ ( ) 0 =
-               ( )                       ( )
-                                          iv
-                iv
-                                                  0
-              f    ( ) 16sinh 2x =  x   →   f  ( ) 0 =
-
-                            3
-            P ( ) x =  2x −  8  x
-                        3!
-                           2x
-                  =  2x −  1 ( ) 3
-                        6
-
-
-
-
-
-
-
-
-
-
-                                                           296</code></pre>
+                                                          1264</code></pre>
      	</div>
     
      </div>

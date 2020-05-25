@@ -152,53 +152,31 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>d)  Suppose that  k =  0.2  h − 1  and the smallest effective concentration is 0.03 mg/mL. A single dose that
-               produces a concentration of 0.1 mg/mL is administered. About how long will the drug remain
-               effective?
+    <pre style="white-space:pre-line"><code>( 1 e − 0.1n )  1  1
+                  −
 
-        Solution
+                  e 0.1 −  1  &gt;  2  e 0.1 −  1
 
-                      C
-            a)  R =     0                                                ( R = C L )
-                    e kt 0  − 1
-                  kt
-                Re  0  =  R C+  =  C
-                              0    H
+                1 e−  − 0.1n  &gt;  1
+                            2
+                e − 0.1n  &lt;  1
+                         2
+                          1
+                −  0.1n &lt;  ln
+                          2
+                n &gt;  6.93
 
-                 kt    C
-                e  0  =  H
-                       C
-                         L
-
-                t =  1  ln C H
-                 0   k   C
-                           L
+                ⇒    n =  7
 
 
-            b)  t =   1  lne
-                 0   0.05
-                  =  20 hrs
+        Exercise
 
-                                  /
-                                                         , and  k =
-            c)  Given C    =  2 mg mL  C =    0.5 mg mL            0.02 h − 1
-                                      ,
-                                                     /
-                        H                 L
-                t =  1  ln C H
-                 0   k   C
-                           L
-                             2
-                  =   1  ln ( )
-                     0.02   0.5
-                  ≈  69.31 hrs
-
-               A dose raises every 69.31 hrs. the concentration by 1.5 mg mL
-                                                                         /
-            d)  t =  1  ln  0.1
-                 0   0.2   0.03
-
-                  ≈  6 hrs
+        If a drug is known to be ineffective below a concentration C  and harmful above some higher concentration
+                                                                  L
+         C   , one needs to find values of C  and t  that will produce a concentration that is safe (not above C  )
+          H                               0       0                                                         H
+        but effective (not below C ).
+                                  L
 
 
 
@@ -216,14 +194,31 @@ function MM_swapImage() { //v3.0
 
 
 
+        We therefore want to find values for C  and t for which
+                                              0      0
+                       R =  C    and   C +  R =  C
+                             L          0         H
+        Thus C =   C    − C . The resulting equation simplifies to
+                0    H     L
+
+                       t =  1  ln C H
+                        0   k   C
+                                  L
+        To reach an effective level rapidly, one might administer a “loading” dose that would produce a
+        concentration of C    mg  / mL. This could be followed every t hours by a dose that raises the concentration
+                           H                                         0
+        by C =   C   − C   mg  / mL .
+             0     H     L
+            a)  Verify the preceding equation for t .
+                                                 0
+            b)  If  k = 0.05  h − 1  and the highest safe concentration is e times the lowest effective concentration, find
+               the length of time between doses that will assure safe and effective concentrations.
 
 
 
 
 
-
-
-                                                           218</code></pre>
+                                                          1186</code></pre>
      	</div>
     
      </div>

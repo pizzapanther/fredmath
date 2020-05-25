@@ -154,70 +154,72 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise                                                          ∞
 
-                                                                        ∑      k e
-        Use any method to determine if the series converges or diverges.         π
-
-                                                                         k= 2  k
+                                                                        ∑          k+ 1  e k
+        Use any method to determine if the series converges or diverges.        −      (k +  ) 1!
+                                                                               ( ) 1
+                                                                         k  1 =
         Solution
 
 
-            ∑  ∞   k π ∑  e  =  ∞  π− e
-                                1
+             a  =    e k
+              k    (k +  ) 1!
 
-             k= 2  k     k= 2  k
+            Using the Ratio Test:
 
-                e
-            π −≈    3.141 2.718−
-                  ≈  .42 &lt; 1
+                   a               e k+ 1  (k +  ) 1!
+             lim    k+ 1  =  lim         ⋅        
+            k→∞     a k    k→∞   (k +  ) 2!  e k  
 
-            Therefore; the given series diverges by p-series ( p π=  − e &lt;  ) 1 .
+                         =  lim    e
+                           k→∞    k +  2
 
+                         =  0
 
-        Exercise
-
-                                                                          ∞
-                                                                        ∑         1
-        Use any method to determine if the series converges or diverges.              4
-
-                                                                         k= 3  (k −  ) 2
-        Solution
-
-            ∑  ∞      1  4 ∑  =  ∞  1 4
-
-
-
-             k= 3  (k −  ) 2  k= 1  k
-            Therefore; the given series converges by p-series ( p =  4 &gt;  ) 1 .
-
+            Therefore; the given series converges absolutely by Ratio Test.
 
 
         Exercise                                                          ∞
-                                                                        ∑      ( )   k
-                                                                                 2k
-        Use any method to determine if the series converges or diverges.         k + 1
 
-                                                                         k= 1
+                                                                        ∑          k
+        Use any method to determine if the series converges or diverges.               3
+                                                                                 2
+                                                                         k= 1  ( k + 1 )
         Solution
 
-                      2k
-             lim  k ( )    k  =  lim   2k
-            k→∞      k +  1    k→∞    k +  1
-
-                             =  2 &gt; 1
-
-            Therefore; the given series diverges by Root Test.
+            Let   f  ( ) x =  x
+                         ( x + 1 ) 3
+                            2
 
 
+            ∫  1 ∞    ( x + 1 ) 3 dx =  1 ∫  1 ∞    x +  (  2  1 ) (  2  1
+                                                3
+                                                           )
+                                               −
+                      x
+                                                   d x +
+                                2
+                    2
+                              =  −  1 ( x +  2  1 ) − 2  ∞
+                                  4             1
+
+
+                              = −  1    1       ∞
+                                  4 ( x + 1 ) 2  1
+                                      2
+
+
+                              =  −  1 ( 0 −  1 )
+                                  4     4
+
+                              =  1
+                                16
+
+            Therefore; the given series converges by Integral Test.
 
 
 
 
-
-
-
-
-
-                                                           208</code></pre>
+                                                          1176</code></pre>
      	</div>
     
      </div>

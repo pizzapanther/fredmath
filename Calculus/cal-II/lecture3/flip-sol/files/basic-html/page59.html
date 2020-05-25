@@ -154,74 +154,74 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-           The sides of a square are 16 inches in length. A new square is formed by connecting the midpoints of the
-           sides of the original square, and two of the triangles outside the second square are shaded.
-           Determine the area of the shaded regions
+           The fractal called the Sierpinski triangle is the limit of a sequence of figures. Starting with the equilateral
+                                                                                           1
+           triangle with sides of length 1, an inverted equilateral triangle with sides of length   is removed. Then, the
+                                                                                           2
+                                                                 1
+           three inverted equilateral triangles with sides of length   are removed from this figure.
+                                                                 4
 
-               a)  When this process is continued five more times
-               b)  When this pattern of shading is continued infinitely.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           The process continues in this way. Let T  be the total area of the removed triangles after stage n of the
+                                                  n
+                                                                               2
+           process. The area on equilateral triangle with side length L is  A =  3  L .
+                                                                           4
+             a)  Find T  and T  the total area of the removed triangles after stages 1 and 2, respectively.
+                       1       2
+             b)  Find T  for  n  = 1, 2, 3, 
+                       n
+             c)  Find  lim T
+                      n→∞   n
+             d)  What is the area of the original triangle that remains as  n →∞ ?
+
            Solution
+                           ( )
+               a)  T =   3 1   2
+                    1    4  2
 
-                                            1
-                                                         6
-                                              2
-                                             8
-               a)  The first process:  A =  2 ( )  = 6 4 =  2
-                                     1      2
-                                             1     2         5
-                                    A =  2   ( 42 )   = 3 2 =  2
-                                     2      2       
-                                                           4
-                                    A =  2 ( 1 ( ) 4  2 )  = 1 6 =  2
-                                     3      2
-
-                                             1     2        3
-                                    A =  2    ( 22     =  8 =  2
-                                     4        2  )   
+                      =   3
+                         16
 
 
-                                    A =  64 ( ) 2  − k
-                                     k
-                   A =  64 32 16 8 4 2+  +  + + +
-                            2
-                    = 126 in
+                   T =  T + 3A
+                    2    1
+                                   ( )
+                      =   3  +  3  3 1  2
+                         16     4   4
 
-                    ∞                                             a
-                   ∑      ( ) n    64                               0
-                           1
-               b)      64  2   =     1                        S = 1 r−
-                   n= 0          1−  2
-                               = 128 in 2
+                      =  7 3
+                         64
 
 
-           Exercise
-
-                                                            z
-           A right triangle XYZ is shown below where  XY =  and  X∠    =  θ . Line segments are continually drawn to
-           be perpendicular to the triangle.
+               b)  At stage n, there are 3 n− 1   triangles of side length   1   are removed.
+                                                                    2 n
 
 
+                  Each of those triangles has an area of   3  =   3
+                                                       44 ⋅  n  4 n+ 1
+                                          ( )
+                        =
+                  Total  3 n− 1   3  =  3 3  n− 1
+                               4 n+ 1  16 4
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              59</code></pre>
+                                                             1027</code></pre>
      	</div>
     
      </div>

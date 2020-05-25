@@ -152,75 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>≈ 31.77   weeks
 
-           The concentration in the blood resulting from a single dose of a drug normally decreases with time as the
-           drug is eliminated from the body. Doses may therefore need to be repeated periodically to keep the
-           concentration from dropping below some particular level. One model for the effect of repeated doses gives
-
-           the residual concentration just before the (n +  ) 1 st  does as
-                                    −  kt      −  2kt          −  nkt
-                           R =  Ce     0  +  Ce    0  +  +  Ce    0
-                            n     0          0               0
-                                                                                       )
-           Where C = the change in concentration achievable by a single dose (mg mL ,
-                                                                                   /
-                    0
-                                               ( )
-                   k =  the elimination constant  h − 1  , and
-                   t = time between doses (h).
-                   0
+                  So, it is not possible.
 
 
+           Exercise
+
+           Consider the alternating series
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             a)  Write  R  in closed form as a single fraction, and find  R =  lim R
-                         n                                               n→∞    n
-             b)  Calculate  R  and  R   for C = 1 mg  / mL,   k = 0.1  h − 1 ,  and t = 10 h. How good as estimate of R is
-                            1       10      0                                0
-                 R
-                  10
-             c)  If  k =  0.01 h − 1  and t = 10 h, find the smallest n such that  R &gt;  1  . R
-                                     0                                      n   2
+                           ∞                              4     if  k    is odd
+                          ∑   ( ) 1  k  1 +  a k  where a =  k   k + 1
+                               −
+                                                        
+                                                           2
+                                                                   k
+                          k  1 =                          k     if    is even
+                                                        
+               a)  Write out the first ten terms of the series, group them in pairs, and show that the even partial sums of
+                  the series form the (divergent) harmonic series.
+                                        0
+               b)  Show that  lim a =
+                             k→∞    k
+               c)  Explain why the series diverges even though the terms of the series approach zero.
            Solution
 
-                            −  kt      −  2kt          −  nkt
-               a)  R =  Ce     0  +  Ce    0  +   +  Ce    0
-                    n     0          0               0
-                             −  kt    −  kt   2     −  kt   n 
-                      =  C   e  0  +    e  0    +  +    e  0    
-                          0                               
-                                                             
-                             −  kt    −  nkt 
-                            e   0    1 e−  0  
-                      = C                   
-                          0         − kt
-                                1 e−    0
+               a)  The first ten terms of the series are:
 
-                   R =  lim R
-                       n→∞    n
-                                −  kt    −  nkt 
-                                       −
-                               e   0    1 e   0  
-                    =  lim C                                        lim e − nkt 0  = 0
-                      n→∞    0      1 e − kt 0                       n→∞
-                                     −
-                                                              215</code></pre>
+                                      1
+                          (21−  ) +  ( ) (  2  −  1 ) ( 1  −  1 ) ( 2  −  1 )
+                                                            +
+                                   1−
+                                         +
+                                                  +
+                                      2
+                                                         4
+                                                               5
+                                                                   5
+                                            3
+                                                3
+                                                     2
+                                 for even   k =  2i
+                  Suppose that  
+                                  for odd  k =  2i − 1
+                  Then the sum of the (k −  ) 1 st  term and the  thk  term is
+                          4  −  2  =  2
+                          k   k   k
+                                =  2
+                                  2i
+                                =  1
+                                  i
+                                                                               n
+                                                                              ∑    1
+                  Then the sum of the even partial sums of the given series is
+                                                                                   i
+                                                                               i− 1
+               b)  lim     4  =  lim   4  =  0
+                   k→∞   k + 1  k→∞    k
+
+                                ∃
+                  Given ε &gt;  0,   N  so that for k &gt;  N  we have   4  &lt; ε .
+                                   1                 1           k + 1
+                  Also   N∃  2  so that for  k &gt;  N ,   2  &lt;  ε .
+                                              2 k
+                  Let N be the larger of  N  or  N . Then for  k &gt;  N , we have a &lt;  as desired.
+                                                                                   ε
+                                          1
+                                                 2
+                                                                               k
+               c)  The series can be seen to diverge because the even partial sums have limit ∞.
+                  This does not contradict the alternating series test because the terms  a  are not nonincreasing.
+                                                                                      k
+
+
+
+                                                             1183</code></pre>
      	</div>
     
      </div>

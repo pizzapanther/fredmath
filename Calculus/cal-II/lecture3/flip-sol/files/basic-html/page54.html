@@ -154,74 +154,67 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
+        An insulated windows consists of two parallel panes of glass with a small spacing between them. Suppose
 
-        The fractal called the snowflake island (or Koch island) is constructed as flows: Let  I  be an equilateral
-                                                                                           0
-        triangle with sides of length 1. The figure  I  is obtained by replacing the middle third of each side of  I
-                                                  1                                                         0
-                                                                  1
-        with a new outward equilateral triangle with sides of length  . The process is repeated where  I   is
-                                                                  3                                 n+ 1
-        obtained by replacing the middle third of each side of  I with a new outward equilateral triangle with sides
-                                                              n
-        of length of   1  . The limiting figure as  n →∞  is called the snowflake island.
-                    3 n+ 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          a)  Let  L  be the perimeter of  I . Show that  lim L = ∞
-                   n                      n            n→∞    n
-          b)  Let  A  be the area of  I . Find  lim A . It exists!
-                   n                 n       n→∞    n
+        that each pane reflects a fraction p of the incoming light and transmits the remaining light. Considering all
+        reflections of light between the panes, what fraction of the incoming light is ultimately transmitted by the
+        windows? Assume the amount of incoming light is 1.
         Solution
 
-            a)  Triangle has 3 equal sizes, from  I  to  I  each side turn into 4, and so on.
-                                                0     1
+                                                                              th
+            Let  L  be the amount of light transmitted through the window the n  time the beam hits the second
+                  n
+                       L
+            pane ⇒      n  .
+                      1 p−
 
-                I    is obtained by  I  by dividing each edge into 3 equal parts, removing the middle part, and
-                 n+ 1               n
-               adding 2 parts equal to it. Thus 3 equal parts turn into 4, so  L  =  4  L
-                                                                          n+ 1  3 n
-                                                                          th
-               This is a geometric series with a ratio greater than 1, so the n  term grows without bound.
-                 lim L = ∞
-                n→∞    n
+             pL n
+            1 p−  : is the reflection to the first pane.
+              2
+             p L n  : is the reflection back to the second pane.
+             1−  p
 
-
-            b)  From part (a)  I  has 34⋅  n  sides of length   1  ; each of those sides turns into an added triangle in
-                              n                            n
-                                                          3
-                I    of sides length   1  .
-                 n+ 1               3 n+ 1
-
-               Thus the added area in  I    consists of 34⋅  n  equilateral triangles with side   1  .
-                                       n+ 1                                              3 n+ 1
-
-                                                                   2
-               The area of an equilateral triangle with side x is   3  x .
-                                                               4
-                                                  2
-                                           
-                                                 
-               Thus  A     =  A +⋅    n  3   1  
-                                  34
-                       n+ 1   n         4    3 n+ 1 
-
+            Thus,
+                            2
+                           p L
+                                    2
+            L     =  (1−  ) p  n  =  p L
+              n+ 1         1−  p       n
+                                                                                      2
+            The amount of light transmitted through the windows the first time is (1 p−  )
+            Thus the total amount is:
+                 ∞
+                ∑    p 2n  (1 p−  ) =  2  (1 p 2 2
+                                         )
+                                      −
+                i= 0                1 p−
+                                    1−  p
+                                  =
+                                    1+  p
 
 
-                                                            54</code></pre>
+        Exercise
+
+        Suppose a rubber ball, when dropped from a given height, returns to a fraction p of that height. In the
+
+        absence of air resistance, a ball dropped from a height h requires   2h   seconds to fall to the ground, where
+                                                                          g
+                     2
+         g ≈ 9.8  ms  is the acceleration due to gravity. The time taken to bounce up to a given to fall from that
+                  /
+        height to the ground. How long does it take a ball dropped from 10 m to come to rest?
+
+        Solution
+
+                                                 n
+                                 th
+            The height after the n  bounce is: 10p .
+
+            The total time spent in that bounce is:   2   20p n
+                                                          g
+
+            The total time before the ball comes to rest:
+                                                          1022</code></pre>
      	</div>
     
      </div>

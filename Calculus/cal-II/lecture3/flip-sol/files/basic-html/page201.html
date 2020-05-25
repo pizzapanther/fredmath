@@ -154,68 +154,71 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise                                                          ∞
 
-                                                                           ∑          k+ 1 k +  4
-                                                                                             2
-           Use any method to determine if the series converges or diverges.       ( ) 1−      2
-
-                                                                            k= 1           2 k + 1
+                                                                           ∑
+                                                                                      k
+           Use any method to determine if the series converges or diverges.       sech
+                                                                            k= 0
            Solution
 
-                        2
-                lim    k +  4    =  1  ≠  0
-                         2
-               k→∞    2k +  1     2
+               a =  sech k
+                k
 
-               Therefore; the given series diverges by Alternating series.
+               Let b =   1
+                    k   e k
 
-
-           Exercise                                                          ∞
-                                                                           ∑          k   − k
-           Use any method to determine if the series converges or diverges.        ( ) 1−   ke
-
-                                                                            k= 1
-           Solution
-
-               Using Ratio Test:
-
-                                              k
-                      a              (k +  ) 1 e −− 1
-                lim     k+ 1  =  lim
-               k→∞     a k    k→∞        ke − k
-
-                             =  1  lim  k + 1
-                               e  k→∞     k
-
-                             =  1  &lt; 1
-                               e
-
-               Therefore; the given series converges absolutely by Ratio Test.
-
-
-           Exercise                                                          ∞
-
-                                                                           ∑       ( ) 1  k
-                                                                                    −
-           Use any method to determine if the series converges or diverges.          2
-
-                                                                            k= 1   k +  1
-           Solution
-
-               b =    1   =  1
-                k      2    k
-                      k
+                         1
+                      = ( ) k
+                         e
+                                                          (
+                                                                    )
+               ∑   b  converges by Geometric series with  r =  1  &lt; 1
+                                                               e
+                     k
                       a
-                lim     k  =  lim     1     k ⋅
-                                      2
-               k→∞    b k   k→∞      k + 1
+                lim    k  =  lim      2     e ⋅  k
+                                   k
+               k→∞    b k  k→∞    e +  e − k
+                          =  lim      2
+                            k→∞   1 e  − 2k
+                                    +
+                          =  2
 
-                           =  lim    k
-                             k→∞     k 2
+               Therefore; the given series converges by Limit Comparison Test.
 
-                           = 1 ≠  0
-               Therefore; the given series diverges by Limit Comparison Test.
 
-                                                              201</code></pre>
+           Exercise
+                                                                             ∞
+                                                                           ∑      ( ) 1  k
+                                                                                   −
+           Use any method to determine if the series converges or diverges.         2  1
+                                                                            k= 2  k −
+           Solution
+
+                     ( ) 1  k
+                      −
+               a =
+                      2
+                k    k − 1
+               a   =    1
+                       2
+                 k   k −  1
+               Let b =   1   converges by p−series ( p =  2 &gt;  ) 1
+                    k     2
+                        k
+
+                      a
+                lim    k  =  lim    1    k ⋅  2
+                                   2
+               k→∞    b k  k→∞    k −  1
+                          = 1
+
+               Therefore; the given series converges absolutely by Limit Comparison Test.
+
+
+
+
+
+                                                             1169</code></pre>
      	</div>
     
      </div>

@@ -152,76 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  n− 1       2 1 a   n−   1                 n− 1
-                                                   
-                                                      −
-               d)  lim H    =  lim a     +   1 a                          lim a    =  0  (0 &lt;  a &lt;  ) 1
-                                              −
-                                   
-                                                       −
-                   n→∞    n   n→∞                   1 a                 n→∞
-                                            1
-                             =  0 +  1 a 2 ( )
-                                     −
-                                          1 a−
-                             =  1 a−  2
-                                1 a−
-                                  +
-                             =  1 a
-                                1 a−
+    <pre style="white-space:pre-line"><code>Exercise
 
 
-           Exercise
-           The fractal called the Sierpinski triangle is the limit of a sequence of figures. Starting with the equilateral
+                                                                                      ,
+           Imagine a stack of hemispherical soap bubbles with decreasing radii  r = 1, r r  , Let h  be the distance
+                                                                              1      2   3         n
+           between the diameters of bubble n and bubble n + 1, and  let  H  be the total height of the stack with n
+                                                                        n
+           bubbles.
+                                                                                                  2
+                                                                                                       2
+                                                                                             2
+                                                                                    2
+                                                                                         2
+                                                                                                           2
+             a)  Use the Pythagorean theorem to show that in a stack with n bubbles  h =  r − r ,  h =  r − r , and
+                                                                                    1   1    2    2   2    3
+                 so forth. Note that for the last bubble h =  r .
+                                                      n    n
+             b)  Use part (a) to show that the height of a stack with n bubbles is
+                                           H =    r −  2  r +  2  r −  2  r +  2  +   r 2  −  r +  2  r
+                                             n     1    2     2    3          n− 1  n    n
+             c)  The height of a stack of bubbles depends on how the radii decrease. Suppose that
 
-           triangle with sides of length 1, an inverted equilateral triangle with sides of length  1   is removed. Then, the
-                                                                                           2
-
-           three inverted equilateral triangles with sides of length   1   are removed from this figure.
-                                                                 4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           The process continues in this way. Let T  be the total area of the removed triangles after stage n of the
-                                                  n
-                                                                               2
-           process. The area on equilateral triangle with side length L is  A =  3  L .
-                                                                           4
-             a)  Find T  and T  the total area of the removed triangles after stages 1 and 2, respectively.
-                       1       2
-             b)  Find T  for  n  = 1, 2, 3, 
-                       n
-             c)  Find  lim T
-                      n→∞   n
-             d)  What is the area of the original triangle that remains as  n →∞ ?
+                 r = 1, r =  , a r =  a 2 ,  , r = a n− 1   where 0 a&lt; &lt; 1 is a fixed real number. In terms of a, find the
+                  1     2       3            n
+                 height  H  of a stack with n bubbles.
+                          n
+                                                                           )
+             d)  Suppose the stack in part (c) is extended indefinitely (n →∞ . In terms of a, how high would the stack
+                 be?
 
            Solution
-                           ( )
-               a)  T =   3 1   2
-                    1    4  2
 
-                      =   3
-                        16
+                                                         n
+               a)  Using the Pythagorean theorem; let k &lt; :
+                                                2
+                   r =  2  h +  2  r 2  ⇒  h =  2  r −  2  r
+                   1     1   2         1   1    2
+
+                                                 2
+                   r =  2  h +  2  r 2  ⇒  h =  2  r −  2  r
+                    2    2   3         2    2   3
+                                  ⇒
+                                        
+                                 ⇒    h =  2  r −  2  r 2
+                                       k    k   k+ 1
+
+               b)  Since  h =  2  r −  2  r 2 , h =  2  r −  2  r 2  and  h =  2  r −  2  r 2
+                          1   1    2     2    2   3          k    k    k+ 1
+                   H =   h +  h +    +  h  +  r
+                     n    1   2         n− 1  n
 
 
-                   T =  T +  3A
-                    2    1
+                       =   r −  2  r +  2  r −  2  r +  2  +   r 2  −  r +  2  r
+                           1    2      2    3          n − 1  n    n
+
+                                 1
+                                −
+                              n
+                          n ∑        2    2
+                       =  r +       r −  i  r i+ 1
+                               i= 1
+
+               c)  Given:  r = 1, r =  , a r = a 2 ,  , r =  a n− 1
+                          1      2       3            n
 
 
-                                                              57</code></pre>
+
+
+
+
+                                                             1025</code></pre>
      	</div>
     
      </div>

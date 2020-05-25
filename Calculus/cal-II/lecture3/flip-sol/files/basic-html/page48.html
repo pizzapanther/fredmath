@@ -152,58 +152,56 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>C =   0.98C +  0.002 =  0.98 (0.394 ) 0.002+  =  0.38812
-                         2        1
-                       C =  0.98C +   0.002 =  0.98 (0.38812 ) 0.002+  =  0.382358
-                         3        2
-                       C =  0.98C +   0.002 =  0.98 (0.382358 ) 0.002+  =  0.376710
-                         4        3
-                       C =  0.98C +   0.002 =  0.98 (0.376710 ) 0.002+  =  0.371176
-                         5        4
-            b)  For C &lt;  0.15
-                     n
-                        C  0         0.4
-                        C  1       0.394     C  26    0.277419     C  51  0.207066     C  76  0.164610
-                        C  2     0.38812     C  27    0.273870     C  52  0.204925     C  77  0.163318
-                        C  3    0.382358     C  28    0.270393     C  53  0.202826     C  78  0.162052
-                        C  4    0.376710     C  29    0.266985     C  54  0.200770     C  79  0.160811
-                        C  5    0.371176     C  30    0.263645     C  55  0.198754     C  80  0.159595
-                        C  6    0.365753     C  31    0.260372     C  56  0.196779     C  81  0.158403
-                        C  7    0.360438     C  32    0.257165     C  57  0.194843     C  82  0.157235
-                        C  8    0.355229     C  33    0.254022     C  58  0.192947     C  83  0.156090
-                        C  9    0.350124     C  34    0.250941     C  59  0.191088     C  84  0.154968
-                        C  10  0.345122     C  35     0.247922     C  60  0.189266     C  85  0.153869
-                        C  11  0.340219     C  36     0.244964     C  61  0.187481     C  86  0.152791
-                        C  12  0.335415     C  37     0.242065     C  62  0.185731     C  87  0.151736
-                        C  13  0.330707     C  38     0.239223     C  63  0.184016     C  88  0.150701
-                        C  14  0.326093     C  39     0.236439     C  64  0.182336     C  89  0.149687
-                        C  15  0.321571     C  40     0.233710     C  65  0.180689
-                        C  16  0.317139     C  41     0.231036     C  66  0.179076
-                        C  17  0.312797     C  42     0.228415     C  67  0.177494
-                        C  18  0.308541     C  43     0.225847     C  68  0.175944
-                        C  19  0.304370     C  44     0.223330     C  69  0.174425
-                        C  20  0.300282     C  45     0.220863     C  70  0.172937
-                        C  21  0.296277     C  46     0.218446     C  71  0.171478
-                        C  22  0.292351     C  47     0.216077     C  72  0.170048
-                        C  23  0.288504     C  48     0.213756     C  73  0.168648
-                        C  24  0.284734     C  49     0.211481     C  74  0.167275
-                        C  25  0.281039     C  50     0.209251     C  75  0.165929
+    <pre style="white-space:pre-line"><code>b)  S  =  1 ( 1−  1  +  1  −  1  +  1  −  1  +  +  1  −  1  )
+                 n    2    3   2   4   3   5       n   n +  2
 
-                                           L
-            c)  Assume that the  lim C = , then  L =   0.98L + 0.002
-                                n→∞    n
-                0.02L =  0.002
-                L =  0.1 = 1%0
+                   =  1 ( 1+  1  −  1  −  1  )
+                      2    2   n +  1  n +  2
+
+               ∴ Telescopes.
 
 
+            c)  lim   S =   1  lim  ( 1+  1  −  1  −  1  )
+                n→∞    n    2  n→∞      2   n +  1  n +  2
+
+                                  1
+                          =  1 ( )
+                              1+
+                            2     2
+                               3
+                          =  1 ( )
+                            22
+                          =  3
+                            4
+
+               ∴ Which is the sum of the series.
 
 
+        Exercise
 
+        Many people take aspirin on a regular basis as a preventive measure for heart disease. Suppose a person take
+        80 mg of aspirin every 24 hr. Assume also that aspirin has a half-life of 24 hr; that is, every 24 hr half of the
+        drug in the blood is eliminated.
+                                                       { }
+          a)  Find a recurrence relation for the sequence  d n   that gives the amount of drug in the blood after the
+               th
+              n  dose, where d =  80
+                               1
+                              { }
+          b)  Find the limit of  d n
 
+        Solution
+                          th
+            a)  After the n  dose is given, the amount of drug in the bloodstream is  d =  0.5d  + 80, since the
+                                                                                   n        n− 1
+               half-life is one day.
+               The initial value is d = 80
+                                    1
 
-
-
-
+            b)  Sum =   a  =   80  = 160
+                      1 r−   1−  1
+                                 2
+                The limit of this sequence is 160 mg.
 
 
 
@@ -211,7 +209,16 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            48</code></pre>
+
+
+
+
+
+
+
+
+
+                                                          1016</code></pre>
      	</div>
     
      </div>

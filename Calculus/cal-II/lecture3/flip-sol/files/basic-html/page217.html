@@ -152,74 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( 1 e − 0.1n )  1  1
-                     −
-
-                     e 0.1 −  1  &gt;  2  e 0.1  −  1
-
-                  1 e−  − 0.1n  &gt;  1
-                               2
-                   e − 0.1n  &lt;  1
-                            2
-                             1
-                   −  0.1n &lt;  ln
-                             2
-                   n &gt;  6.93 ⇒    n =  7
+    <pre style="white-space:pre-line"><code>− kt
+                       Ce     0
+                    =   0
+                        −
+                      1 e  − kt 0
+                         C
+                    =     0
+                       e kt 0  − 1
 
 
-           Exercise
-
-           If a drug is known to be ineffective below a concentration C  and harmful above some higher concentration
-                                                                     L
-           C   , one needs to find values of C  and t  that will produce a concentration that is safe (not above C  )
-             H                               0      0                                                          H
-           but effective (not below C ).
-                                     L
-
-
-
-
-
-
-
-
-
-
-
-
+               b)  Given: C =  1 mg  / mL,  k =  0.1  h − 1 ,  and t = 10 h
+                           0                                0
+                             −  kt    −  nkt 
+                                    −
+                            e   0    1 e  0  
+                   R =  C                   
+                    n     0          − kt
+                                  −
+                                1 e     0
+                         e −  ( )( )   0.1 10    1 e−  −  n ( )( )   0.1 10  
+                      = 1                          
+                                       0.1 10
+                                1 e  − ( )( )
+                                  −
+                        e −  1 ( 1 e −  n )
+                              −
+                      =
+                           1 e−  − 1
 
 
+                        e −  1 ( 1 e −  1 )
+                              −
+                   R =               =  e − 1
+                    1     1 e  − 1
+                            −
+                      ≈  0.36787944
 
 
+                               −
+                         e −  1 ( 1 e −  10 )
+                   R   =
+                    10      1 e  − 1
+                              −
+                       ≈  0.58195028
 
-           We therefore want to find values for C  and t for which
-                                                 0      0
-                          R =  C    and   C +  R =  C
-                                L          0         H
 
-           Thus C =   C    − C . The resulting equation simplifies to
-                              L
-                   0    H
-                          t =  1 ln C H
-                           0   k   C
-                                     L
-           To reach an effective level rapidly, one might administer a “loading” dose that would produce a
-           concentration of C    mg  / mL . This could be followed every t hours by a dose that raises the concentration
-                             H                                          0
-           by C =   C   − C   mg  / mL .
-                0     H     L
-               a)  Verify the preceding equation for t .
-                                                    0
+               c)  Given:  k =  0.01 h − 1  and t = 10 h
+                                            0
 
-               b)  If  k =  0.05  h − 1  and the highest safe concentration is e times the lowest effective concentration, find
-                  the length of time between doses that will assure safe and effective concentrations.
-                                                        /
-                                         ,
-               c)  Given C    =  2 mg mL  C =    0.5 mg mL  , and    k =  0.02 h − 1 ,  determine a scheme for
-                                     /
-                           H                 L
-                  administering the drug.
-                                                              217</code></pre>
+                                   −
+                            e −  0.1 ( 1 e −  0.1n )
+                   R =  C
+                    n     0     1 e − 0.1
+                                 −
+                         C
+                   R =  kt  0
+                       e  0  − 1
+                         C
+                     =     0
+                       e 0.1 − 1
+
+                   R  =  1  C 0
+                   2   2  e 0.1 − 1
+
+
+                                            e −  0.1 ( 1 e−  −  0.1n )  C
+                                   ?
+                                n=
+                   R &gt;  1 R   →      C                    &gt;  1   0
+                    n   2                 0     1 e − 0.1      2  e 0.1 −  1
+                                                 −
+                                                             1185</code></pre>
      	</div>
     
      </div>

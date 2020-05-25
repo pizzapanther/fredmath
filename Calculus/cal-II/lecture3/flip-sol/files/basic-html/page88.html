@@ -152,73 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>th
-                    mn
-               Let  ( )  be the x-coordinate of the midpoint of the n  domino. Then in order for the stack not to
-                                             th
-               fall over, the left edge of the n  domino must be placed directly under the center of gravity of
-                                                    n− 1
-                                                 n∑
-                                                 1
-               dominos 0 through  n − 1, which is      mi
-                                                         ( )
-                                                    i= 0
-                       1+  1  +  1  +  1  +  1  +  
-                          2   3   4   5
-                                n− 1        n
-                              n∑  1            k ∑  1
-                                     ( ) =
-               So  ( ) 1+  m n =   mi
-                                i= 0       k  1 =
-               Proof by induction;
-                       For  n = 1 ⇒  ( ) 1m  = 1 √   P  is true
-                                                 1
-                                               j
-                       Let  P  is true  ( ) =    k ∑ 1  =  1+  1  +  1  +  1  +  +  1  ;
-                                     mj
-                             j                          2   3   4        j
-                                             k  1 =
-                       we need to prove it is also true for  P
-                                                          j+ 1
+    <pre style="white-space:pre-line"><code>n &gt;  (250 ) 1/4   ≈  4
 
-                         ( +
-                       mj     ) 1 =  1+  1  +  1  +  1  +  +  1  +  1
-                                    2   3  4        j  j + 1
-                                    j
-                                  ∑   1    1
-                                =     k  +  j + 1
+                     4
+                   ∑     1
+                          5   ≈ 1.03634178 88
 
-                                  k  1 =
-                                   j+ 1
-                                  ∑   1
-                                =     k
-                                  k  1 =
-                       Therefore; the formula is clearly true by mathematical induction.
+                    k  1 =  k
+               The true value is  1.036927755 ≈
 
-            b)  For infinite number of dominos, because the overhang is the harmonic series, the distance is
-               potentially infinite. This series diverges so with enough dominoes.
+
+                 ∞
+                           ∞
+                                        ∞
+                ∑∑               1 2 ∑          1
+                     1
+            b)        2  =           +             2
+                                2k
+                k  1 =  k  k  1 = ∞  ( )  ∞  k  1 =  (2k −  ) 1
+                          4∑     1 2 ∑        1
+                          1
+                        =           +             2
+                            k  1 =  k  k  1 =  (2k −  ) 1
+
+                             ∞
+                   ∞
+                4∑∑                 1   2
+                       1
+                3
+                          =
+                        2
+                  k  1 =  k  k  1 =  (2k −  ) 1
+                 ∞
+                ∑       1   2  =  3 π 2
+                                46
+                k  1 =  (2k −  ) 1
+
+                              =  π 2
+                                 8
 
 
         Exercise
-                                                            { }
-                                                                                    k
-        A theorem states that the sequence of prime numbers  p k   satisfies  lim    k p ln k  .
-                                                                           k→∞
-                                                                       ∞
-                     ∞
-                   ∑       1                                         ∑       1
-        Show that          k ln k   diverges, which implies that the series      p
-                   k= 2                                               k= 1    k
-          (A prime number is a positive integer number that is divisible only by 1 and itself).
+
+        Consider a set of identical dominoes that are 2 inches long. The dominoes are stacked on top of each other
+        with their long edges aligned so that each domino overhangs the one beneath is as far as possible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            a)  If there are n dominoes in the stack, what is the greatest distance that the top domino can be made to
+                                                            th
+               overhang the bottom domino?  (Hint: Put the n  domino beneath the previous n −  1 dominoes.)
+            b)  If we allow for infinitely many dominoes in the stack, what is the greatest distance that the top
+               domino can be made to overhang the bottom domino?
 
         Solution
+            a)  The center of gravity of any stack of dominoes is the average of the locations of their centers.
 
-            Let  ( ) x =  1
-                f
-                        x ln x
-
-
-                                                            88</code></pre>
+                                                          1056</code></pre>
      	</div>
     
      </div>

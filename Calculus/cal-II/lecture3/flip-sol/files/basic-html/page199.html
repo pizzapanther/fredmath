@@ -152,77 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>=     2
-                           x
-                          e −  e − x
+    <pre style="white-space:pre-line"><code>a =   coth k
+                k      k
+                                                     1
+               Let b =  1   diverges by p−series  ( p = ≤  ) 1
+                    k   k
+                      a
+                                         ⋅
+                lim    k  =  lim  coth kk
+               k→∞    b k  k→∞      k     1
+                                       k
+                          =  lim  coth
+                            k→∞
+                                    k
+                          =  lim    e + e − k
+                                    k
+                            k→∞    e − e − k
 
-               ∫  1 ∞  e − 2 e − x  ⋅  e x   dx =  ∫  1 ∞  ( ) 2 x − 1 dx
-                                              2e
-                               x
-                     x
-                              e
-                                              x
-                                            e
-                                         ∞
-                                                               ( )
-                                     =       e − ∫  2        d e x
-                                        1   (  x  1 e +  )(  x  1 )
-                                         ∞
-                                                                ( )
-                                     =           x 1  −  x 1 1 ∫       d e x
+                          =  lim    e k
+                            k→∞   e k
 
-                                        1 ∞    e −  1 e +       ∞
-                                                                                    )
-                                                                             (
-                                                     (
-                                     =  ∫  1  e −  x 1  1  d e −  x  1 −  )  ∫  1  e +  x 1  1  d e +  x  1
+                          = 1 &gt;  0
 
-                                         (  x   ) (    x    )  ∞
-                                     =  ln e −  1 −  ln e +  1
-                                                              1
-
-                                            x
-                                           e − 1   ∞
-                                     =  ln     
-                                            x
-                                           e + 1  1
-                                     =  ln1 ln−  e − 1
-                                              e + 1
-
-                                     = − ln  e − 1
-                                           e + 1
-
-               Therefore; the given series converges by Integral Test.
+               Therefore; the given series diverges by Limit Comparison Test.
 
 
-           Exercise                                                          ∞
+           Exercise
+                                                                             ∞
+                                                                           ∑        1
+           Use any method to determine if the series converges or diverges.         sinh k
 
-                                                                           ∑
-           Use any method to determine if the series converges or diverges.       tanh
-                                                                                      k
                                                                             k= 1
            Solution
 
-                                      x
-                          k
-                lim   tanh =   lim   e +  e − x
-                                      x
-               k→∞            k→∞    e −  e − x
-                            = 1 ≠  0
-               Therefore; the given series diverges by Divergence Test.
+               a =     1
+                k    sinh k
+
+               Let b =   1
+                    k   e k
+
+                        ( ) k
+                         1
+                      =  e
+                                                          (
+                                                                    )
+               ∑   b  converges by Geometric series with  r =  1  &lt; 1
+                                                               e
+                     k
+                      a                    k
+                lim    k  =  lim    1   ⋅  e
+               k→∞    b k  k→∞    sinh k  1
+
+                          =  lim      2      e ⋅  k
+                                    k
+                            k→∞    e − e − k
+                          =  lim      2
+                            k→∞   1 e  − 2k
+                                    −
+                          =  2
+
+               Therefore; the given series converges by Limit Comparison Test.
 
 
-
-
-
-
-
-
-
-
-
-
-                                                              199</code></pre>
+                   f
+               Let  ( ) x =  1
+                          sinh x
+                                                             1167</code></pre>
      	</div>
     
      </div>
