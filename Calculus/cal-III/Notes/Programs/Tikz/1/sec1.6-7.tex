@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick] (0, 0) to (0, 2);
+	
+	\draw [very thick, red, ->] (0, 0) to (1.5, 1);
+	\draw [very thick ] (0, 0)  to (3.2, -1.1);
+
+	\draw  [thick, blue] (0, 0) to [bend left] (3, -1) ;
+	\draw [ thick]  (.4, -.16) arc (-20:44:.34) ;
+
+	\draw (0, 2.2) node {  \textbf {\textit A} };
+	\draw (0, -.2) node {  \textbf {\textit O} };
+	\draw (3.2, -1.3) node {  \textbf {\textit R} };
+	\draw (0.5, .6) node {  \textbf {\textit v}$_0$ };
+	\draw  (.65, -.05) node { $\alpha$ } ;
+	\draw   (-.2, 1) node  [rotate=90] { \small Vertical };
+	\draw   (1,- .6) node  [rotate=-25] { \small Hill };
+
+\end{tikzpicture} 
+\end{document}

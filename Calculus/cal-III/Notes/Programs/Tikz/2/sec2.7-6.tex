@@ -1,0 +1,42 @@
+% Axes
+\documentclass{article}
+\usepackage{tikz}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}%
+%%%>
+\begin{comment}
+:Title: x-y Axis
+
+\end{comment}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+	%\draw[domain=-2:2, blue ,variable=\x] plot ({\x},{\x*\x +\x + 1});
+	\draw[->,  very thick] (0, -.2) -- (0, 2.6);
+	\draw[->, very thick] (-.2, 0) -- (2.5, 0);	
+	%\draw [very thick , blue] (0, 0) circle (1) ;
+
+	\draw [ultra thick, red] (0, 0) -- (1, 2) -- (2, 2) -- (0, 0)  ;
+	\fill [blue]  (0, 0) circle (.08) ;
+	\fill  [blue] (1, 2) circle (.08) ;
+	\fill  [blue] (2, 2) circle (.08) ;
+	\draw (-.1, 1) -- (.1, 1) ;
+	\draw (-.1, 2) -- (.1, 2) ;
+	\draw (1, -.1) -- (1, .1) ;
+	\draw (2, -.1) -- (2, .1) ;
+
+	\draw (-.25, 2.6) node { \large \textbf  {\textit y} };
+	\draw (-.25, 1) node { 1 };
+	\draw (-.25, 2) node { 2 };
+	\draw (2.6,-.25) node { \large \textbf  {\textit x} };
+	\draw  (1,-.25) node { 1 };
+	\draw (2,-.25) node { 2 };
+
+\end{tikzpicture}
+\end{document}
+.424

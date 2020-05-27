@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, ->] (-2.5, 0)  to (3, 0);
+	\draw [very thick, ->] (0, -1.5)  to (0, 2);
+	\draw [ultra thick, blue] (0, 0) ellipse (2 and 1) ;
+
+	\draw [very thick, red, ->] (2, 0) to (2, .8) ;
+
+	\draw [very thick, red] (0, 0) to (.9, .9) ;
+	\draw [very thick, red, ->] (.9, .925) to (0.1, 1.1) ;
+	
+	\draw   (3.2, 0) node {  $\textbf {\textit x} $};
+	\draw   (0.25, 2) node {  $\textbf {\textit y} $} ;
+	\draw [ black!40!red]  (2.45, .45) node {  \small   $\textbf {\textit v(0)} $} ;
+	\draw [ black!40!red]  (.7, 1.3) node { $\textbf {\textit v}$($\frac {\pi}{4}$) } ;
+	\draw [ black!40!red]  (.8, .3) node { $\textbf {\textit a}$($\frac {\pi}{4}$) } ;
+
+	\draw   (2.2, -.2) node { \footnotesize  4}; 
+	\draw   (-2.2, .2) node { \footnotesize  -4}; 
+	\draw   (-.35, 1.25) node { \footnotesize $\sqrt{2} $ }; 
+	\draw   (-.35, -1.25) node { \footnotesize -$\sqrt{2} $ }; 
+
+\end{tikzpicture} 
+\end{document}

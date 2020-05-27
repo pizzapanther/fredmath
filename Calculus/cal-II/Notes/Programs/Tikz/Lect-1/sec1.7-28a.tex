@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \fill [gray!20 ]  (0, 0) rectangle (1.25, .75) ;
+  \draw [  thick ]  (0, 0) rectangle (1.25, .75) ;
+  \draw [ultra thick, blue, dashed] (-.45, 1.5) -- ( 1.75, 1.5);
+\draw [thick, ->] (-.5, 0) -- (2, 0) ;
+ \draw (2.2, 0) node { $x$} ;
+ \draw[thick, ->] (0, -.5) -- (0, 2);
+ \draw (0, 2.2) node { $y$} ;
+
+  \draw (.6, .6) node {\footnotesize $w$=10} ;  
+  \draw (-.2, 1.7) node { \footnotesize  11} ;
+  \draw (-.15, .75) node { \footnotesize  5 } ;  
+
+ \fill [red] (0, .4) rectangle (1.25, .45) ;
+ \draw [thick, <->] (1.1, .45) -- (1.1, 1.5) ;
+ \draw (1.4, 1.1) node { \footnotesize 11-$y$} ;
+
+\end{tikzpicture}
+\end{document}

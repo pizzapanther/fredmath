@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [cyan!20]  (0, 2) -- (2, 2) -- (2, 0) -- (0, 2) ;
+ 	\fill [white] (0, 2) arc (90:0: 2 and 2) ;
+
+	\draw [thick, ->] (-.25, 0) -- (2.5, 0) ;
+	\draw [thick, ->] (0, -.25) -- (0, 2.5) ;
+
+	\draw [ultra thick, black!30!green] (0, 2) -- (2, 2) -- (2, 0) ;
+ 	\draw [very thick, blue] (0, 2) arc (90:0: 2 and 2) ;
+
+	\fill [red] (1.55, 1.55) circle (.08);
+
+	\draw (2, -.25) node { \large $\textbf {\textit a} $};
+	\draw (-.25, 2) node { \large $\textbf {\textit a} $};
+	\draw (2.7, 0) node {  $\textbf {\textit x} $};
+	\draw (.2, 2.6) node {  $\textbf {\textit y} $};
+
+\end{tikzpicture} 
+\end{document}

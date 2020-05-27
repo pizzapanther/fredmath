@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, ->] (-.5, 0)  to (4, 0);
+	\draw [very thick, ->] (0, -.5)  to (0, 2);
+	\draw [very thick, red,  ->] (0, 0)  to (3.8, 1);
+	\draw [very thick, blue,  ->] (0, 0)  to (3, 0);
+	\draw [very thick, blue,  ->] (0, 0)  to (.8, 1);
+
+	\draw [thick, dashed] (.8, 1)  to (3.75, 1);
+	\draw [thick, dashed] (3, 0)  to (3.75, 1);
+
+	\draw [thick]  (1, 0) to [bend right]  (1, .25) ;
+	\draw [thick, ->] (0, .4) to [bend left]  (.2, .325) ;
+
+	\draw   (4.2, 0) node {  $\textbf {\textit E} $};
+	\draw   (0, 2.2) node {  $\textbf {\textit N} $};
+	\draw   (.5, 1.2) node {  $\textbf {\textit v} $};
+	\draw   (3, -.3) node {  $\textbf {\textit u} $};
+	\draw   (1.5, .625) node  [rotate=15] { \small $\textbf {\textit {u+v}} $};
+	\draw (1.4, .2) node { $\theta $ };
+	\draw (.275,.7) node { \footnotesize  $30^\circ $ };
+	\draw [blue]  (.65, .45) node  [rotate=45] { \small 70 };
+	\draw [blue] (1.5, -.25) node { \small 500} ;
+
+\end{tikzpicture} 
+\end{document}

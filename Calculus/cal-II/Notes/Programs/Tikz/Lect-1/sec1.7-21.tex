@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \fill [blue!50!cyan!20] (-1.5, 0) rectangle  (1.25, 3) ;
+  \fill [orange!30, rotate=45 ]  (0, .25) rectangle (1.5, 1.75) ;
+  \draw [ thick, rotate=45 ]  (0, .25) rectangle (1.5, 1.75) ;
+
+  \draw [thick, red, dashed ] (-.19, 2.3) -- (-.19, 3) ;
+  \draw (-.5, 2.6) node { \scriptsize 1 $m$} ;
+  \draw [ <->] (1, 1.4) -- (0, 2.4) ;
+  \draw (.6, 2.2) node { \scriptsize 3 $m$} ;
+  \draw (-.9, 1.9) node { \footnotesize 3}  ;
+
+\end{tikzpicture}
+\end{document}

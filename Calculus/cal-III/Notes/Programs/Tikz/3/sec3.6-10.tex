@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [yellow!40]  (-2, -2) -- (-2, 2) -- (2, 2) -- (2, -2) -- (1, -2) -- (1, -1)--(-1,-1)--(-1, -2)--(-2, -2) ;
+	\draw [thick]  (-2, -2) -- (-2, 2) -- (2, 2) -- (2, -2) -- (1, -2) -- (1, -1)--(-1,-1)--(-1, -2)--(-2, -2) ;
+
+	\draw [very thick, ->] (-2.5, 0) -- (2.8, 0) ;
+	\draw [very thick, ->] (0, -2.5) -- (0, 3) ;
+
+	\draw (-2, -2.3) node {  (-4, -4) } ;
+	\draw (2, -2.3) node {  (4, 4) } ;
+	\draw (-2, 2.2) node { (-4, 4) } ;
+	\draw (2, 2.2) node {  (4, 4) } ;
+	\draw (-.7, -.8) node {  (-2, -2) } ;
+	\draw (1, -.8) node {  (2, -2) } ;
+
+	\draw [red, thick] (1, 1.5) circle (.07) ;
+	\draw [red, thick] (-1, 1) circle (.07) ;
+	\draw [red, thick] (-1.5, -1) circle (.07) ;
+	\draw [red, thick] (1, 0) circle (.07) ;
+	\draw [red, thick] (2, -2) circle (.07) ;
+
+	\draw [black!40!green, thick, ->] (1.05, 1.5)  -- (2.5, 1.5) ;
+	\draw (3, 1.7) node {  (2, 3) } ;
+	\draw (3.5, 1.25) node { Pop=15,000 } ;
+
+	\draw [black!40!green, thick, ->] (-1.05, 1)  -- (-2.5, 1) ;
+	\draw (-3, 1.2) node {  (-2, 2) } ;
+	\draw (-3.5, .8) node { Pop=10,000 } ;
+
+	\draw [black!40!green, thick, ->] (-1.55, -1)  -- (-2.5, -1) ;
+	\draw (-3, -.8) node {  (-3, 2) } ;
+	\draw (-3.5, -1.2) node { Pop=15,000 } ;
+
+	\draw [black!40!green, thick, ->] (1, 0)  -- (2.3, -.8) ;
+	\draw (2.8, -.8) node {  (2, 0) } ;
+	\draw (3.3, -1.2) node { Pop=20,000 } ;
+
+	\draw (2.5, -2.7) node { Pop=5,000 } ;
+
+	\draw (3.1, 0) node { \large \emph x } ;
+	\draw (.25, 3) node { \large \emph y } ;
+
+\end{tikzpicture} 
+\end{document}

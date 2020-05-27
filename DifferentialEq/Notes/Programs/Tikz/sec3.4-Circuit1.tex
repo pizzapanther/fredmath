@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Parallel Circuit RLC
+\end{comment}
+
+\begin{document}
+\begin{circuitikz}  [ scale =1.2, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to [battery] (0,2)
+		to [L= {\Large $L $}] (4, 2)
+		to [R= {\Large $R$}] (4, 0)
+		to [C= {\Large $C$}] (0, 0);
+
+	\draw (-.7,1) node {\Large $E_0$ };
+
+%		\draw (3, 2.35) node { \large $\frac{1}{2}$\emph {m} };
+\end{circuitikz}
+\end{document}

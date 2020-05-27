@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill  [cyan!20] (4, 0) arc(0:180:4) ; 
+	\fill [white] (2, 0) arc(0:180:2) ; 
+
+	\draw [very thick, ->] (-4.5, 0)  to (4.5, 0);
+	\draw [very thick, ->] (0, -.5)  to (0, 4.5);
+
+	\draw [ultra thick, blue] (4, 0) arc(0:180:4) ; 
+	\draw  [ultra thick, blue] (2, 0) arc(0:180:2) ; 
+
+	\fill [red] (0, 1.98) circle (.08) ;
+
+	\draw (4.5, -.25) node { \large $\textbf {\textit x} $};
+	\draw (-.2, 4.6) node { \large $\textbf {\textit y} $};
+	\draw (-.2, 1.8) node {2} ;
+	\draw (.2, 4.2) node {4} ;
+
+	\draw (2, -.2) node {2} ;
+	\draw (4, -.2) node {4} ;
+	\draw (-2, -.2) node {-2} ;
+	\draw (-4, -.2) node {-4} ;
+
+	\draw (.8, 2.2) node { \large (0, $\frac {56}{9\pi}$) } ;
+
+\end{tikzpicture} 
+\end{document}

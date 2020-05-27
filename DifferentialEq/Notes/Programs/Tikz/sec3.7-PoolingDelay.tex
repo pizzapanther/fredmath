@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\usepackage{pst-circ}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+\usepackage{circuitikz}
+
+
+\begin{comment}
+:Title: Mixing Chamber
+\end{comment}
+
+\begin{document}
+\begin{circuitikz}
+
+	\fill  [color=cyan!20] (-.5, 2.3)  arc (0: 180: .25) ;
+	\fill  [color=cyan!20] (-.5, 2)  arc (0: -180: .25) ;
+	\fill  [color=cyan!20] (5.5, -2.25)  arc (0: 180: .25) ;
+	\fill  [color=cyan!20] (5.5, -2.5)  arc (0: -180: .25) ;
+	\fill  [color=cyan!20] (-1.5, 2) rectangle (0,2.3);
+	\fill  [color=cyan!20] (0, 0) rectangle (2.5,1.4);
+	\fill  [color=cyan!20] (2.1, 0) rectangle (2.5,-1.4);
+	\fill  [color=cyan!20] (2.1, -1.2) rectangle (4.5,-2.5);
+	\fill  [color=cyan!20] (4.5, -2.25) rectangle (6,-2.5);
+
+	\fill [color=cyan!20] (0, 2) to [bend left] (.7, 1.4) -- (1,1.4) to [bend right] (0, 2.3);
+
+	\draw[snake=coil, line after snake=0pt, segment aspect=0, ultra thick,
+              	segment length=14pt,color=cyan!20] (0, 1.35) -- (2.5, 1.35) ;
+	\fill  [color=cyan!20] (2.3, 0) to [bend right] (2.8,-1.3);
+	\fill  [color=cyan!20]  (2.4, -1) rectangle (2.7, -1.3);
+	\draw[snake=coil, line after snake=0pt, segment aspect=0, ultra thick,
+              	segment length=14pt,color=cyan!20] (2.2, -1.25) -- (4.5, -1.25) ;
+
+	\draw [ultra thick ] (0, 0) -- (0, 2) --  (-.5, 2) ;
+	\draw [ultra thick ] (-1, 2) -- (-1.5, 2);
+	\draw [ultra thick ] (-1, 2.3) -- (-1.5, 2.3);
+	\draw [ultra thick ] (-.5, 2.3) -- (2.5, 2.3) -- (2.5, -.5) -- (4.5, -.5) -- (4.5,-2.25) -- (5,-2.25);
+	\draw [ultra thick ] (0, 0) -- (2.15, 0) -- (2.15, -2.5) -- (5, -2.5);
+	\draw [ultra thick ] (5.5, -2.25) -- (6, -2.25) ;
+	\draw [ultra thick ] (5.5, -2.5) -- (6, -2.5) ;
+
+	\draw [ultra thick ] (-.75, 2.55) -- (-.75, 3.3) -- (6, 3.3) -- (6, .5) -- (7, .5) ;
+	\draw [ultra thick ] (-.6, 2.5)  -- (-.5, 3) -- (5, 3) -- (5,0) ;
+
+	\fill  [color=gray!30](3.9, -1.2) rectangle (4.35, -1.5);
+	\draw  [ultra thick ] (3.9, -1.2) rectangle (4.35, -1.5); 
+	\draw [ultra thick ]  (4.1, -1.2) -- (4.1, 0);
+	\draw [ultra thick, -> ]  (4.1, 0) -- (5.5, 0);
+
+	\ctikzset{bipoles/resistor/height=0.2}
+	\ctikzset{bipoles/resistor/width=0.55}
+	\draw  (5.6, -0.5) to [R] (5.6, .5 );
+	
+	\draw [very thick]  (5.6, -.4) -- (5.6, -.7) -- (7, -.7) ;
+
+	\draw [very thick] (-.5, 2.3)  arc (0: 180: .25) ;
+	\draw [very thick] (-.5, 2)  arc (0: -180: .25) ;
+	\draw  (-.55, 1.8) -- (-.9, 2.5);
+	\draw  (-.9, 1.8) -- (-.55, 2.5);
+
+	\draw [very thick] (5.5, -2.25)  arc (0: 180: .25) ;
+	\draw [very thick] (5.5, -2.5)  arc (0: -180: .25) ;
+	\draw  (5.1, -2.1) -- (5.45, -2.65);
+	\draw  (5.1, -2.65) -- (5.45, -2.1);
+
+	\draw [very thick, blue, ->] (-2.4, 2.15) -- (-1.6, 2.15);
+	\draw  [font=\itshape ]  (-2, 2.4) node {R$_1$}  ;
+	\draw [very thick, blue, ->] (2, -.3) -- (2, -1.2);
+	\draw  [font=\itshape ]  (1.7, -.8) node {R$_2$}  ;
+
+	\draw [very thick, blue, ->] (6.1, -2.35) -- (7, -2.35);
+	\draw  [font=\itshape ]  (6.45, -2.1) node {R$_3$}  ;
+
+	\draw  [font=\itshape ]  (1.2, 1.8) node { $ \textbf {Tank A}$ };
+	\draw  [font=\itshape ]  (1.25, .5) node { $ \textbf {V$_1$(t)}$ };
+
+	\draw  [font=\itshape ]  (3.1, -.9) node { $ \textbf {Tank B}$ };
+	\draw  [font=\itshape ]  (3.2, -2) node { $ \textbf {V$_2$(t)}$ };
+
+	\draw  [font=\itshape ]  (-.8, 1.5) node { $ \textbf {Pump}$ };
+	\draw  [font=\itshape ]  (6.5, -.2) node { $ \textbf {Power}$ };
+
+\end{circuitikz} 
+\end{document}

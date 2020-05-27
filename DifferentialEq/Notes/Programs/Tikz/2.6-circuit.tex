@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{50pt}
+
+\begin{comment}
+:Title: Parallel Circuit RLC
+\end{comment}
+
+\begin{document}
+
+\begin{circuitikz}  [ scale =1.2, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to [I, i={\large $I$\Large$_s(t)$}] (0,4)
+		to [short] (5,4)
+		to [short] (5, 3)
+		to [L={ \large $L$} ] (5,1) 
+		to [short] (5, 0)
+		to [short] (0, 0);
+
+	\draw (5,4) 
+		to [short] (4,3)
+		to [R= {\large $R  $} ] (4,1)
+		to [short] (5,0);
+		
+
+	\draw (5, 4) -- (6, 3) -- (6, 2.1);
+	\draw (5.8, 2.1) -- (6.2, 2.1);
+	\draw (5.8, 1.9) -- (6.2, 1.9);
+	\draw (6, 1.9) -- (6, 1) -- (5, 0);
+
+	  	% dots 
+	\fill[black] (5, 4) circle (2 pt);
+	\fill[black] (5, 0) circle (2 pt);
+
+	\draw  (6.4, 2) node {\large $C$};
+	\draw  (1.25, 2) node {\large $V(t)$};
+	\draw  (1.2, 3.7) node {\large $+$};
+	\draw  (1.2, .3) node {\large $-$};
+
+	% \draw [very thick, ->] (2.5, .5) to[bend right] (2.5, 1.5);
+%	to[ospst] (0,0);
+
+\end{circuitikz}
+\end{document}

@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Parallel Circuit RLC
+\end{comment}
+
+\begin{document}
+\begin{circuitikz}  [ scale =1.1, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to [battery, v={\Large $E $}] (0,3);
+	\draw (0,3) 
+		to [R= {\Large $R$}] (4, 3) 
+		to [switch ={\Large $S $} ] (4, 0)
+		to [L={\Large $L$}] (0, 0)  ;
+
+	\draw [very thick, blue, -> ] (1.1, 2)  arc (130: -10: 1.1) ;
+	\draw  (2, 1.5) node {\Large $I(t)$};
+
+\end{circuitikz}
+\end{document}

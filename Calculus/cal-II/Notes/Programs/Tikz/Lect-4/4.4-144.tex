@@ -1,0 +1,49 @@
+ 
+\documentclass{minimal}
+\usepackage{tikz}
+
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepackage[T1]{fontenc}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{12pt}
+
+\usepackage{mathtools}
+\usepgflibrary{fpu}
+
+\begin{comment}
+:Title: Polar Exponential
+
+\end{comment}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+	%\draw[thick, domain=-3:4] plot({\x},{( exp(-\x/6))}) ;
+
+%	\draw [ line width=1mm, color=blue, domain=-2*pi:2*pi, samples=200, smooth]
+%		plot (xy polar cs:angle=\x r, radius={exp(\x r /6) });
+
+	\node [ scale=1.6, color=blue] at (3,3) {$r=e^\theta /6$};
+	\fill [fill=red!80!black, opacity=0.5] plot [domain=pi/2 :3*pi/2 ] 
+		 (xy polar cs:angle=\x r, radius= {2+2*cos(\x r)});
+
+	 \draw[blue, line width=1mm, domain=-2*pi: 2*pi, smooth, variable=\t, samples=50]  
+		plot({cos(\t r+\t)}, { sin(\t r +\t)  });
+	
+	%\draw [ line width=1mm, color=black!60!green, domain=0:2*pi, samples=200, smooth]
+  	%	plot (xy polar cs:angle=\x r, radius={2-2*cos(\x r)});
+	%\node [ scale=1.6, color=black!60!green] at (-3,3) {$r=2-2\cos\theta$};	
+	%\fill [fill=red!80!black, opacity=0.5] plot [domain=-pi/2 :pi/2 ] 
+	%	 (xy polar cs:angle=\x r, radius= {2-2*cos(\x r)});
+
+	\draw[->, ultra thick] (-4.8, 0) -- (4.5, 0);	% x-axis
+	\draw[->,  ultra thick] (0, -2.7) -- (0, 3.5);	% y-axis
+	% Points
+	\draw [scale=1.4] (0.1, 1.7) node {$2$};
+
+\end{tikzpicture}
+\end{document}

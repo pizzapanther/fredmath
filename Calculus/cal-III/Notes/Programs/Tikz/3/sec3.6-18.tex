@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, ->] (-.2, 0)  to (3.5, 0);
+	\draw [very thick, ->] (0, -.2)  to (0, 3.2);
+
+	\draw [thick] (-.1, 2.5) -- (.1, 2.5) ;
+	\draw [very thick] (0, 0) -- (2, 2.5) -- (3, 0) ;
+	\draw [dashed] (2, 2.5) -- (2, 0) ;
+	\draw [thick, blue] (2, 2.5) -- (1.5, 0) ;
+	\draw [thick, blue] (0, 0) -- (2.5, 1.25) ;
+	\draw [thick, blue] (3, 0) -- (1, 1.25) ;
+	\fill [red] (1.67, .83) circle (.08) ;
+
+	\draw (3.7, 0) node { \large $\textbf {\textit x} $};
+	\draw (0.3, 3.2) node { \large  $\textbf {\textit y} $};
+
+	\draw (-.3, 2.5) node {  $\textbf {\textit h} $ };
+	\draw (3, -.3) node {  $\textbf {\textit b} $ };
+	\draw (2, -.3) node {  $\textbf {\textit a} $ };
+	\draw [red]  (1.5, 1.2) node { $\textbf {\textit M} $ };
+	\draw (2, 2.7) node {  $\textbf  (a, h) $ };
+	\draw (-.25, -.25) node { O };
+	
+\end{tikzpicture} 
+\end{document}

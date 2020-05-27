@@ -1,0 +1,40 @@
+
+\documentclass{minimal}
+\usepackage{tikz}
+
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\usepackage{pgfplots}
+\usepackage[T1]{fontenc}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{12pt}
+
+\begin{comment}
+:Title: Polar
+
+\end{comment}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture} 
+
+	\draw [ line width=1.5mm, color=blue, domain=0:2*pi, samples=200, smooth]
+  		plot (xy polar cs:angle=\x r, radius={5 -3*sin(\x r)});
+	\node [ scale=2.5, color=blue] at (5,2.5) {$r=5-3sin\theta$};
+	\fill [fill=red!80!black, opacity=0.5] plot [domain=pi/4 : 5*pi/4 ] 
+		 (xy polar cs:angle=\x r, radius= {5-3*sin(\x r)});
+
+	\draw [ line width=1.5mm, color=black!60!green, domain=0:2*pi, samples=200, smooth]
+  		plot (xy polar cs:angle=\x r, radius={5-3*cos(\x r)});
+	\node [ scale=2.5, color=black!60!green] at (-6,6) {$r=5-3cos\theta$};	
+	\fill [fill=red!80!black, opacity=0.5] plot [domain=-3*pi/4 : pi/4 ] 
+		 (xy polar cs:angle=\x r, radius= {5-3*cos(\x r)});
+
+	\draw[->, ultra thick] (-9, 0) -- (7, 0);	% x-axis
+	\draw[->,  ultra thick] (0, -9) -- (0, 7);	% y-axis
+	% Points
+	%\draw [scale=1.5] (2, -.25) node {$3$};
+
+\end{tikzpicture}
+
+\end{document}

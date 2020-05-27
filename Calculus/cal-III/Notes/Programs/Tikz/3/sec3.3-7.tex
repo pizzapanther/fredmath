@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick] (0, 0) -- (3, 0) -- (3, 1.5) -- (0, 0);
+	\fill (2.9,0) rectangle (3, .1) ;
+
+	\draw   (3.2, .5) node {  \emph    {u }} ;
+	\draw [red]   (1.5, -.4) node { \footnotesize $\sqrt \frac {1+e}{1-e}$} ;
+	\draw   (1.2, 1.1) node [rotate=27]  { \footnotesize  $\sqrt  {\frac {1+e}{1-e}+u^2 }$ } ;
+	\draw  (.8, .2) node { $\theta$ } ;
+
+\end{tikzpicture} 
+\end{document}

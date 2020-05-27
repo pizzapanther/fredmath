@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{20pt}
+
+\begin{comment}
+:Title: Resistor
+\end{comment}
+
+\begin{document}
+
+\begin{circuitikz}  [ scale =1.2, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0) -- (0,1)
+		to [R ] (0,2) 
+		to [short] (0,3) ;
+
+	\draw [very thick, blue, ->] (.35,1) -- (.35, 1.8);
+
+	\draw (1.1, 1.5) node {\large $V=IR$};
+	\draw (.3, .8) node {\large $+$} ;
+	\draw (.3, 2) node {\large $-$} ;
+
+\end{circuitikz}
+\end{document}

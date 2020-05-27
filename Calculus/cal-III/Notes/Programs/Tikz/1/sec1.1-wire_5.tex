@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [gray!30] (-.25, 0) rectangle (5.25, .2);
+	\draw [very thick] (-.25, 0) to (5.25, 0) ;
+
+	\draw [very thick, red] (0, 0) to (2.5,-2) ;
+	\draw [very thick, red] (5, 0) to (2.5,-2) ;
+
+	\draw [ultra thick, blue, ->] (2.5,-2) to (1, -.8) ;
+	\draw [ultra thick, blue, ->] (2.5,-2) to (4, -.8) ;
+	\draw [very thick] (2.5, -2) to (2.5, -2.5);
+	\draw [very thick] (2.1, -2.5) rectangle (2.9, -3);
+
+	\draw [thick] (.4 ,0)  to [bend left] (.35, -.3) ;
+	\draw [thick] (4.7, 0)  to [bend right] (4.8, -.2) ;
+
+	\draw (.7, -.225) node { \footnotesize  $45^\circ $ };
+	\draw (4.4, -.25) node  { \footnotesize  $45^\circ $ };
+	\draw (2.5, -2.75) node {$ \textbf {\textit w} $ };  % 
+	\draw (1.5, -1.5) node { $ \textbf F_1$ };
+	\draw (4.2, -1.15) node { $ \textbf F_2$ };
+
+\end{tikzpicture} 
+\end{document}

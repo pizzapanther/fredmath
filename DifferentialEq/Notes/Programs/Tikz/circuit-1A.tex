@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Circuit RLC
+\end{comment}
+
+\begin{document}
+
+\begin{circuitikz} [ scale =1.5, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to [vco ] (0,2)
+		to[R={\Large$R  $ }] (3,2)
+		to [short] (3, 0)
+		to[C={\Large$C  $} ] (0, 0);
+
+	\draw (-1.2,1) node {\Large $E=cost$ };
+
+\end{circuitikz}
+\end{document}

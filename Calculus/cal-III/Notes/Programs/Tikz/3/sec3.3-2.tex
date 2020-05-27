@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node [inner sep=0pt] 
+                { \includegraphics[width=5cm] {img1.png}} ;
+                
+	\draw   (-1.6, -2.35) node { \large  \emph    {x }} ;
+	\draw   (1.6, -2.35) node { \large  \emph  {y }} ;
+	\draw   (-.35, 2.7) node { \large  \emph  { z }} ;
+	\draw   (1.7, 1.9) node {   \emph  { z} =25 - {$\sqrt{(x^2+ y^2)}$ }} ;
+
+\end{tikzpicture} 
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, ->] (-.5, 0)  to (3.8, 0);
+	\draw [very thick, ->] (0, -.5)  to (0, 3.6);
+
+	\draw [very thick, blue] (0, 0)  -- (1.5, 2.7) -- (3, 0)  ;
+	\draw [thick, dashed] (1.5, 2.7) -- (1.5, 0)  ;
+	\fill [blue] (1.5, 2.7) circle (.06) ;
+
+	\draw [thick, green, ->]  (2.5, 1) -- (3.2, 1.2) ;
+	\draw  [red]  (3.3, 1.3) node { \large { 2} } ;
+	\draw [thick, green, ->]  (1, 1.9) -- (.5, 2.4) ;
+	\draw  [red]  (.3, 2.5) node { \large { 1} } ;
+
+	\draw (4.1, 0) node { \Large  $\textbf {\textit x} $};
+	\draw (-.25, 3.7) node { \Large $\textbf {\textit y} $};
+	\draw   (-.2, -.25) node { \large 0 } ;
+
+	\draw  (1.7, 3.1) node {\large ($\frac {s}{2}$, $\frac {s \sqrt {3}}{2}$)  };
+	\draw  (1.7, 3.6) node {(s cos60$^\circ$, s sin60$^\circ$)  };
+	\draw [red]  (.55, .25) node { 60$^\circ$  };
+	\draw   (3, -.28) node { \large {\textit s} } ;
+	\draw   (.5, 1.5) node { \Large {\textit s} } ;
+	\draw   (2.45, 1.5) node { \Large {\textit s} } ;
+
+\end{tikzpicture} 
+\end{document}

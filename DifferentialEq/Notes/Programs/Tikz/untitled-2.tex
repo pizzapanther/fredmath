@@ -1,0 +1,61 @@
+\documentclass{article}
+
+% PSTricks.
+\usepackage{
+  pst-circ,
+  pst-bspline,
+  pstricks-add
+}
+\psset{unit = 0.8}
+
+% Width and height of the diagram.
+\def\width{12 }
+\def\height{6 }
+
+% Calculating width and height of picture.
+\usepackage{expl3}
+\ExplSyntaxOn
+  \cs_new_eq:NN \calc \fp_eval:n
+\ExplSyntaxOff
+\newcommand*\Width{\calc{\width+0.4}}
+\newcommand*\Height{\calc{\height+0.82}}
+
+\begin{document}
+
+% Drawing.
+\begin{pspicture}(-0.4,-0.05)(\Width,\Height)
+  % Coordinates for the ends of the wires.
+  \pnodes{P}%
+    (0,0)(0,0)% Doubled to let the nodes start from P1 instead of P0.
+    (!0.7 \width mul 0)%
+    (\width,0)%
+    (0,\height)%
+    (!0.35 \width mul \height)%
+    (!0.7  \width mul \height)
+    (\width,\height)
+  % Wires and components.
+  \wire[arrows = o-o](P1)(P3)
+  \coil[arrows = o-](P4)(P5){$L$}
+  \resistor[arrows = -o, dipolestyle = zigzag](P5)(P6){$R$}
+  \wire[arrows = o-o](P6)(P7)
+  \capacitor[arrows = *-*](P2)(P6){$C$}
+  % Labels.
+  \uput[90](P1){$-$}
+  \uput[90](P3){$-$}
+  \uput[270](P4){$+$}
+  \uput[270](P7){$+$}
+ {\psset{linestyle = none}
+  \pcline(P1)(P4)
+  \ncput*{$v_1(t)$}
+  \pcline(P3)(P7)
+  \ncput*{$v_2(t)$}}
+  % Direction of the current.
+  \psBspline[arrows = ->]%
+       (!0.7 \width mul 3   sub \height 1 sub)%
+       (!0.7 \width mul 1.2 sub \height 1 sub)%
+       (!0.7 \width mul 1.2 sub 1)%
+       (!0.7 \width mul 3   sub 1)
+  \rput(!0.7 \width mul 2.2 sub \height 2 div){$i(t)$}
+\end{pspicture}
+
+\end{document}

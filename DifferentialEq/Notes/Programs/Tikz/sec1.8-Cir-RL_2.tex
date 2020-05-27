@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Parallel Circuit RLC
+\end{comment}
+
+\begin{document}
+\begin{circuitikz}  [ scale =1.1, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,3)
+		to [vco] (0,0);
+	\draw (0,3) 
+		to [R] (4, 3) -- (4, 0);
+	\draw (0, 0) to [L] (4, 0)  ;
+	\draw [very thick, blue, ->] (1.1, 2)  arc (130: -10: 1.1) ;
+
+
+	\draw  (2, 1.5) node {\Large $I(t)$};
+	\draw  (2, 3.5) node {\large R $\Omega$};
+	\draw  (2, -.35) node {\large L };
+	\draw  (-1.5, 1.5) node {\large E=$E_0sinwt$ };
+
+\end{circuitikz}
+\end{document}

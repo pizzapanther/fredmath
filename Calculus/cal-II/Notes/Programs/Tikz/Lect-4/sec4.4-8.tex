@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture} 
+	
+\fill [fill=red!20, opacity=0.5] plot [domain=0 :2* pi ] 
+		 (xy polar cs:angle=\x r, radius= { 2 - 2*sin(\x r)) } );
+\fill [fill=red!20, opacity=0.5] plot [domain=0 :2* pi ] 
+		 (xy polar cs:angle=\x r, radius= { 2 + 2*sin(\x r)) } );
+		 	 
+\draw [ line width=.7mm, color=blue, domain=0:2*pi, samples=200, smooth]
+  		plot (xy polar cs:angle=\x r, radius={ 2 - 2*sin(\x r)) } );
+\draw [ line width=.7mm, color=green!30!black, domain=0:2*pi, samples=200, smooth]
+  		plot (xy polar cs:angle=\x r, radius={ 2 + 2*sin(\x r)) } );
+  		
+\node [ scale=1, blue ] at (-1.85,  -4.3) { \Large $r=2-2sin\theta $};
+\node [ scale=1, green!30!black ] at (1.85,  4.3) { \Large  $r=2+2sin\theta $};
+	
+\draw[->, ultra thick] (-3.5, 0) -- (3.5, 0);
+\draw[->,  ultra thick] (0, -4.75) -- (0, 5);
+
+\draw [scale=1.5] (.75, -.15) node {$1$};
+\draw [scale=1.5] (1.35, -.25) node { \Large $2$};
+\draw [scale=1.5] (-1.45, -.25) node { \Large $-2$};
+
+\draw[semithick] (-1,-.1) -- (-1, .1);
+\draw[semithick] (-2,-.1) -- (-2, .1);
+\draw[semithick] (2,-.1) -- (2, .1);
+\draw[semithick] (-.1, 1) -- (.1, 1);
+\draw[semithick] (-.1, -1) -- (.1, -1);
+
+\end{tikzpicture}
+\end{document}

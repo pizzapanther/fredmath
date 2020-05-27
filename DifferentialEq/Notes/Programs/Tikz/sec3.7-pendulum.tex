@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+
+\begin{comment}
+:Title:  One Spring
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [color=gray!20] (-.5, 3.3) rectangle (5,3) ;
+	\draw  [very thick ] (-.5, 3) -- (5, 3);
+	\draw  [thick, gray ] (0, 3) -- (.5, .5);
+	\draw  [thick, gray ] (3.5, 3) -- (4.15, .6);
+
+	\fill [color= blue!5 ] (.5, .5) circle (.2);
+	\draw [thick, blue ] (.5, .5) circle (.2);
+	\fill [color= blue!5 ] (4.2, .5) circle (.2);
+	\draw [thick, blue ] (4.2, .5) circle (.2);
+
+ 	\draw[snake=coil, line after snake=0pt, segment aspect=0, very thick,
+              segment length=6pt] (.7, .5) -- (4, .5) ;
+
+	\draw  [thick, dashed ] (0, 0) -- (0, 3);
+	\draw  [thick, dashed ] (3.5, 0) -- (3.5, 3);
+
+	\draw [->] (0, .25)  to (.35, 0.25);
+	\draw [->] (3.5, .25)  to (4, .25);
+
+	\draw  (.3, 0) node  { \emph {$x_1$}} ;
+	\draw  (3.8, 0) node  { \emph {$x_2$}} ;
+	\draw [red] (.4, 1.8) node {  \emph {l}};
+	\draw [red] (4, 1.8) node {  \emph {l}};
+	\draw  (4.2, .5 ) node {  \emph {m}};
+	\draw  (0.5, .5 ) node {  \emph {m}};
+	\draw  (2.25, .8 ) node {  \emph {k}};
+
+\end{tikzpicture} 
+\end{document}

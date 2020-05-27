@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \fill [gray!10 ]  (0, 0) circle (1.5) ;
+  \draw [ very thick ]  (0, 0) circle (1.5) ;
+
+  \draw [thick, -> ] (-2, 0) -- (2.5, 0) ;
+ \draw (2.7, 0) node { \large  $x$} ;
+ \draw [thick, -> ]  (0, -2) -- (0, 3.3) ;
+  \draw (0, 3.5) node { \large $y$} ;
+  
+  
+  \draw (1.65, -.3) node { \large 3 } ;  
+  \draw [ultra thick,  blue, dashed] (-1.75, 2.5) -- (2, 2.5) ;
+  \draw (-.2, 2.75) node { \large 5 } ;
+
+ \fill [red] (-1.4, .5) rectangle (1.4, .6) ;
+ \draw [thick, <->] (-1, .6) -- (-1, 2.5) ;
+ \draw (-1.4, 1.6) node {\large  5-$y$ } ;
+ \draw (.6, .8) node { \large $x$ } ;
+
+\end{tikzpicture}
+\end{document}

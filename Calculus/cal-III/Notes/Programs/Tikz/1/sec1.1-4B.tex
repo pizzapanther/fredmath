@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, blue,  ->] (0, 0)  to (2, 0);
+	\draw [very thick, blue, ->] (0, 0)  to (-1, 2);
+	\draw [very thick, blue, ->] (0, 0)  to (-1, -2);
+
+	\draw [very thick, black!30!green,  ->] (2, 0)  to (3, -1.8);
+	\draw [very thick, red,  ->] (0, 0)  to (2, -3.5);
+	\draw [ultra thick, blue,  ->] (3, -1.8)  to (2, -3.5);
+	
+	\draw   (1, 0.2) node { \large $\textbf {\textit u} $};
+	\draw   (-.35, 1.2) node {  \large  $\textbf {\textit v} $};
+	\draw   (-.3, -1.2) node {  \large  $\textbf {\textit w} $};
+
+	\draw [ black!30!green]  (3, -.9) node {  \large  $\textbf {\textit {-v}} $};
+	\draw [red]  (.5, -2.3) node {  \large  $\textbf {\textit {u-v+w}} $};
+	\draw   (2.4, -2.2) node {  \large  $\textbf {\textit w} $};
+
+\end{tikzpicture} 
+\end{document}

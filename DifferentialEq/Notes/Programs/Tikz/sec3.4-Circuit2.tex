@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Parallel Circuit RLC
+\end{comment}
+
+\begin{document}
+\begin{circuitikz}  [ scale =1.2, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to [V = {\Large E}] (0,3)
+		to [L= {\Large $L $}] (4, 3)
+		to [R= {\Large $R$}] (4, 0);
+	\draw (4,3) -- (6,3)
+		to [C= {\Large $C$}] (6, 0)
+		to [short]  (0 ,0);
+
+	\draw [ultra thick, blue, ->] (0, 2.3) -- (0, 2.4);
+	\draw (.3, 2.3) node {\Large $i_1$};
+
+	\draw [ultra thick, blue, ->] (4, 2.4) -- (4, 2.3);
+	\draw (4.35, 2.4) node {\Large $i_2$};
+
+	\draw [ultra thick, blue, ->] (4.7, 3) -- (4.8, 3);
+	\draw (4.75, 2.65) node {\Large $i_3$};
+
+
+\end{circuitikz}
+\end{document}

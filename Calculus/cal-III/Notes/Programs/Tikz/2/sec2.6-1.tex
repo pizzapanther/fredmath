@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}%
+
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick] (0, 0) ellipse (2 and 1) ;
+	\fill [left color=gray!70, right color=gray!90, middle color=gray!10] (2,0) -- (2, 5) -- (-2, 5) -- (-2, 0) -- (2, 0)  ;
+	\fill [left color=gray!70, right color=gray!90, middle color=gray!10](0, 0) ellipse (2 and 1) ;
+	\fill [left color=gray!70, right color=gray!90, middle color=gray!10](0, 5) ellipse (2 and 1) ;
+
+	\draw [very thick] (0, 5) ellipse (2 and 1) ;
+	\draw [very thick] (0, 5) ellipse (1.9 and .9) ;
+	\draw [very thick] (-2,0) -- (-2, 5) ;
+	\draw [ very thick] (2,0) -- (2, 5) ;
+
+	\draw [thick] (2.1, 5) -- (2.6, 5) ;
+	\draw [thick] (2.1, 0) -- (2.6, 0) ;
+	\draw [thick, <->] (2.4, .05) -- (2.4, 4.95) ;
+
+	\draw [thick, blue] (-2, 5.1) -- (-2, 6) ;
+	\draw [thick, blue] (-1.9, 5.1) -- (-1.9, 6) ;
+	\draw [thick, ->] (-2.7, 5.4) -- (-2.05, 5.7) ;
+	\draw [thick, <-] (-1.85, 5.8) -- (-1.4, 6) ;
+	\draw [thick] ( -1.4, 6) -- (-1.4, 6.4) ;
+
+	\draw [thick, red] (0, 5) -- (1.5, 5.5) ;
+	\fill  (0, 5) circle (0.08) ;
+	\draw [thick] (0, 5.1) -- (0, 6.5) ;
+	\draw [thick] (1.5, 5.5) -- (1.5, 6.8) ;
+	\draw (.7, 6.55) -- (.7, 6.9) ;
+	\draw [very thick, <->] (.05, 6.3) -- (1.45, 6.7) ;
+
+	\draw (3.5, 2.5) node { \Large \textbf  {\textit h}=50 {\textit cm} };
+	\draw [blue] (-1.8, 6.6) node { \Large \textbf  {\textit t}=0.1 {\textit cm} };
+	\draw [red] (1, 7.1) node { \Large \textbf  {\textit r}=10 {\textit cm} };
+
+\end{tikzpicture}
+\end{document}

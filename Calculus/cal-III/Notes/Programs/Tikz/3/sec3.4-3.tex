@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [thick, ->] (-1, .2) -- (2, -.4) ;
+	\draw [thick, ->] (0, 0) -- (0, 3) ;
+	\draw [thick, ->] (0, 0) -- (-.8, -1) ;
+
+	\draw  [very thick, blue] (0, 0) -- (1.5, 2);
+	\draw  [very thick, blue] (0, 0) -- (-1.5, 2);
+
+%	\draw [very thick, black!60!green] (.5, -.87)  -- (1.5, .13) ;
+
+	\draw (-.5, -1) node {  \emph x };
+	\draw (1.9, -.7) node {  \emph y };
+	\draw (-.25, 2) node {  \emph z };
+
+\end{tikzpicture}
+\end{document}

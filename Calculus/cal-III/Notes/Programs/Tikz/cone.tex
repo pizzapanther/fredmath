@@ -1,0 +1,116 @@
+\documentclass[tikz,border=10pt,multi]{standalone}
+\usetikzlibrary{shapes.symbols}
+\makeatletter
+\pgfdeclareradialshading[tikz@ball]{water}{\pgfpoint{-0.15cm}{0.4cm}}{%
+  rgb(0cm)=(1,1,1);
+  color(0.35cm)=(tikz@ball!35!white);
+  color(0.75cm)=(tikz@ball!80!white);
+  rgb(1cm)=(1,1,1)
+}
+\tikzoption{water color}{\pgfutil@colorlet{tikz@ball}{#1}\def\tikz@shading{water}\tikz@addmode{\tikz@mode@shadetrue}}
+
+\def\tikz@falsetext{false}
+\tikzset{
+    shade/.code={
+        \edef\tikz@temp{#1}%
+        \ifx\tikz@temp\tikz@falsetext%
+            \tikz@addmode{\tikz@mode@shadefalse}%
+        \else%
+            \tikz@addmode{\tikz@mode@shadetrue}%
+        \fi
+    }
+}
+\makeatother
+% still Claudio's code
+\tikzset{%
+  water particle/.style={
+    circle,
+    inner sep=2pt,
+    shading=water,
+    water color=#1,
+  },
+  water cold particle/.style={
+    water particle=blue!30!white
+  },
+  water warm particle/.style={
+    water particle=blue!40!cyan!80!black
+  },
+  water hot particle/.style={
+    water particle=cyan!60!black
+  },
+  cloud drop/.style={
+    cloud,
+    cloud puffs=6,
+    inner color=blue!20!white,
+    outer color=cyan!60!black,
+    aspect=2,
+    inner sep=2.5pt,
+  },
+}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.75,important line/.style={thick}]
+  \draw [opacity=1,important line] (-2,4) -- (2,4) -- (0,0) -- cycle;%big triangle
+  \draw [important line,fill=white,opacity=1] (0,4) circle (2cm and 0.4cm);%top of cone
+  \begin{scope}
+    \clip (1.49,2.98) arc (0:180:1.49cm and 0.3cm) -- (0,0) -- cycle;
+    \shade[bottom color=cyan!60!black, top color=blue!20!white] (-1.5,-0.1) rectangle (1.5,3.3);
+
+    \foreach \hotparticles in {1,...,70}{
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult}
+      \node[water hot particle] at (\xpos,\ypos) {};
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{-4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult}
+      \node[water hot particle] at (\xpos,\ypos) {};
+    }
+    \foreach \warmparticles in {1,...,45}{
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult+1}
+      \node[water warm particle] at (\xpos,\ypos) {};
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{-4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult+1}
+      \node[water warm particle] at (\xpos,\ypos) {};
+    }
+
+    \foreach \coldparticles in {1,...,25}{
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult+2.5}
+      \node[water cold particle] at (\xpos,\ypos) {};
+      \pgfmathrandom{}
+      \pgfmathsetmacro\xpos{-4*\pgfmathresult}
+      \pgfmathrandom{}
+      \pgfmathsetmacro\ypos{2*\pgfmathresult+2.5}
+      \node[water cold particle] at (\xpos,\ypos) {};
+    }
+  \end{scope}
+  \draw  (-1.49,2.98) -- (0,0) -- (1.49,2.98);%smmall triangle
+  \draw [blue] (0,3) circle (1.49cm and 0.3cm); %top of small cone
+  \draw[dashed] (0,0) -- (0,4) --(2,4); %dashed lines
+  \draw (1,4.18) node{\scriptsize $ 2 $}; % number
+  \draw[dashed] (0,2.98) -- (1.49,2.98); %dashed line
+  \draw (0.745,3.12) node{\scriptsize $ r $}; % r
+  \draw[|<->|] (2.4,0) -- (2.4,4); %lenght indicator
+  \draw[white, fill=white] (2.3,1.75) rectangle (2.5,2.25); %an empty box for the space in middle
+  \draw (2.4,2) node{\scriptsize $ 4 $}; %a number
+  \draw[|<->|] (1.65,0) -- (1.65,2.98); %lenght indicator
+  \draw[white, fill=white] (1.45,1.24) rectangle (1.65,1.74);%white rectangle for a space in middle
+  \draw (1.65,1.49) node{\scriptsize $ h $};% h
+  \draw[gray,ultra thick] (-3,4) -- (-3,4.5)--(-2.5,4.8); %shower
+  \foreach \i in {(-1.7,4.5),(-1.1,4.1),(-.6,3.7)} \node [cloud drop] at \i {};
+  \draw [important line] (-2,4) arc (180:360:2cm and 0.4cm);%top of cone
+  \draw[gray,fill=gray] (-2.35,4.8) circle (5pt); %here the rectangle must join at middle with circle
+  \draw[gray,fill=gray] (-2.35,4.8) -- ++(45:.25) -- ++(-45:.25) -- ++(-135:.5) -- ++(135:.25) -- cycle;
+\end{tikzpicture}
+\end{document}

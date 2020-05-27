@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [blue!10] (-.625, .85)-- (0, 0) -- (.625, .85) ;
+  	\fill [blue!40] (0, 1) ellipse (.725 and .125) ;
+  	\fill [blue!40] (0, .9) ellipse (.625 and .125) ;
+	\fill [blue!40] (-.625, .85) -- (.625, .85) -- (.725, 1) -- (-.725, 1)  ;
+
+	\fill [blue!60]  (-1.5, .4) -- (-1.8, 2.1)  to [bend left]  (-1.7, 2.2)  to [bend left]  (-1.3, 2) -- (-.15, .4) 
+			(-.05, .4) -- (-1.2, 2.1) to [bend right]  (-1.8, 2.3) to [bend right] (-1.9, 2.15) -- (-1.6, .4) ;
+	\draw (-1.5, .4) -- (-1.8, 2.1)  to [bend left]  (-1.7, 2.2)  to [bend left]  (-1.3, 2) -- (-.15, .4) ;
+	\draw  (-1.6, .4) -- (-1.9, 2.15)  to [bend left]  (-1.8, 2.3)  to [bend left]  (-1.2, 2.1) -- (-.05, .4) ;
+
+	\draw [ blue] (0, 1) ellipse (.725 and .125 ) ;
+	\draw [ blue] (0, .9) ellipse (.625 and .125) ;
+
+	\fill [ gray!40]  (-2, .1) rectangle (-1, .4) ;
+	\draw (-2, .1) rectangle (-1, .4) ;
+	\draw (-1.5, .25) node {\tiny $PUMP$ } ;
+
+	\fill [blue!80] (-1, .2) -- (-.9, .2) to [bend left] (-.8, .15) -- (-.8, 0) -- ( -.7, 0) -- (-.7, .15)
+			to [bend right] (-.8, .275) -- (-1, .3) ;
+	
+	\draw [ dashed] (0, 0) -- (0, 2) -- (1.5, 2) ;
+	\draw [thick , dashed] (0, .99) -- ( .725, .99) ;
+	\draw [very thick] (1.5, 2) -- (0, 0) -- (-1.5, 2);
+	\draw  [very thick]  (0, 2) ellipse (1.5 and .2 ) ;
+
+	\draw  ( 1.6, 2) -- (1.8, 2) ;
+	\draw (.05, 0) -- (1.8, 0) ;
+	\draw [<-] (1.7, 0) -- (1.7, .85) ;
+	\draw [-> ] ( 1.7, 1.15) -- (1.7, 2) ;
+	\draw (1.7, 1) node { \tiny 4 $m$ } ;
+	
+	\draw (.6, 2.08) node { \tiny 3 $m$ } ;
+	\draw [ ->, red] ( .4, 1.3) -- (.3, 1) ;
+	\draw (.4, 1.4) node { \tiny $r$ } ;
+	
+	\draw (.85, 1) -- ( 1.2, 1) ;
+	\draw (.85, .9) -- ( 1.2, .9) ;
+	\draw (1, .6) node { \tiny $dh$ } ;
+	\draw [->] (1, .7) -- (1, .9);
+	\draw [<-] (1, 1) -- (1, 1.2) ;
+
+	\draw (.15, .5) node { \tiny $h$} ;
+	\draw [<->] (.25, 0) -- (.25, 1) ;
+	
+	
+
+\end{tikzpicture}
+\end{document}

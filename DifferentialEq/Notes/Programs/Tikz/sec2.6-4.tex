@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+:Title:  One Spring
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	%\fill [cyan!20] (-1.5, 2) rectangle (6.5,5);
+	\fill [cyan!20] (-1.5, 2) rectangle (0,4);
+	\fill [cyan!20] (4, 2) rectangle (6.5,5);
+	\fill [cyan!20] (-1.5, 4) rectangle (6.5,5);
+	\fill [cyan!60] (-1.5, -1) rectangle (6.5,2);
+	
+	\draw [ultra thick, blue] (-1.5, 2) -- (6.5, 2);
+	\fill [right color =gray!60,  middle color=gray!30, left  color=white] (2,0) rectangle (4,4);
+	\fill [gray!30] (0, 0) rectangle (4, 2);
+	\fill [right color =gray!60,  middle color=gray!30, left  color=white]  (2, 2) ellipse ( 2 and .5);
+	\fill  [gray!30] (0, 0) arc (-180:0: 2 and .5);
+	\fill [right color =gray!60,  middle color=gray!30, left  color=white]  (2, 4) ellipse (2 and .5);
+
+	\draw [very thick] (0, 0) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (0, 0) arc (180:0: 2 and .5);
+
+	\draw [very thick] (0, 2) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (0, 2) arc (180:0: 2 and .5);
+
+	\draw [very thick] (2, 4) ellipse (2 and .5) ;
+
+	\draw [very thick] (0, 0) -- (0, 4);
+	\draw [very thick] (4, 0) -- (4, 4);
+	\draw [dashed, very thick] (2, 4) -- (4, 4);
+	
+	\draw [very thick] (4, 0) -- (4.6, 0);
+	\draw [very thick,  <-> ] (4.3, .05) -- (4.3, 1.95);
+
+	\draw [very thick] (-.05, 0) -- (-.5, 0);
+	\draw [very thick] (-.05, 4) -- (-.5, 4);
+	\draw [very thick,  <-> ] (-.2, .05) -- (-.2, 3.95);
+	
+%	\draw[dashed, very thick] (0, 2) to [bend left] (4, 2);
+
+	\draw   [font=\itshape ] (2.8, 4.2) node { \Large  $\textbf {r} $};	% \emph
+	\draw   [font=\itshape ] (4.5, 1) node { \Large $\textbf{x}$ };
+	\draw    [font=\itshape ] (-.5, 2.5) node { \Large  $\textbf{h}$ };
+	\draw    [font=\itshape ] (5.2, 2.3) node { \large  $\textbf{Waterline}$ };
+
+
+\end{tikzpicture} 
+\end{document}

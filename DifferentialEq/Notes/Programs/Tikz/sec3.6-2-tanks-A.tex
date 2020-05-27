@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+:Title:  2-tanks
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [gray!30] (-.3, 6) -- (.5, 6) to [bend left] (.7, 5.7) -- (.7, 5.2)
+		-- (1, 5.2) -- (1, 5.9) to [bend right] (.6,6.3) -- (-.3, 6.3) ;
+	\draw [very thick] (-.3, 6) -- (.5, 6) to [bend left] (.7, 5.7) -- (.7, 5.2)
+		-- (1, 5.2) -- (1, 5.9) to [bend right] (.6,6.3) -- (-.3, 6.3)   to [bend left] (-.3, 6) ;
+		
+	\fill [right color =gray!30,  middle color=gray!10, left  color=white] (2,0) rectangle (4,4);
+	\fill [cyan!30] (0, 0) rectangle (4, 3);
+	\fill [cyan!30] (2, 3) ellipse ( 2 and .5);
+	\fill  [cyan!30] (0, 0) arc (-180:0: 2 and .5);
+	\fill [right color =gray!30,  middle color=gray!20, left  color=white]  (2, 4) ellipse (2 and .5);
+	\draw [very thick] (0, 0) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (0, 0) arc (180:0: 2 and .5);
+	\draw [very thick] (0, 3) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (0, 3) arc (180:0: 2 and .5);
+	\draw [very thick] (2, 4) ellipse (2 and .5) ;
+	\draw [very thick] (0, 0) -- (0, 4);
+	\draw [very thick] (4, 0) -- (4, 4);
+
+	\fill [cyan!30] (3.9, 1.4) rectangle (7, 1.7);
+	\draw [very thick] (3.9, 1.4) --  (7, 1.4) -- (7, 1.7) -- (3.9, 1.7) to [bend right] (3.9, 1.4);
+	\fill [cyan!30] (3.9, 0.7) rectangle (7, 1);
+	\draw [very thick] (3.9, 0.7) --  (7, 0.7) -- (7, 1) -- (3.9, 1) to [bend right] (3.9, 0.7);	
+	
+	\fill [right color =gray!30,  middle color=gray!10, left  color=white] (7,0) rectangle (11,4);
+	\fill [cyan!30] (7, 0) rectangle (11, 3);
+	\fill [cyan!30] (9, 3) ellipse ( 2 and .5);
+	\fill  [cyan!30] (7, 0) arc (-180:0: 2 and .5);
+	\fill [right color =gray!30,  middle color=gray!20, left  color=white]  (9, 4) ellipse (2 and .5);
+	\draw [very thick] (7, 0) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (7, 0) arc (180:0: 2 and .5);
+	\draw [very thick] (7, 3) arc (-180:0: 2 and .5);
+	\draw [dashed, very thick] (7, 3) arc (180:0: 2 and .5);
+	\draw [very thick] (9, 4) ellipse (2 and .5) ;
+	\draw [very thick] (7, 0) -- (7, 4);
+	\draw [very thick] (11, 0) -- (11, 4);
+
+	\fill [cyan!30]  (11, .1) -- (11.3, .1) to [bend left] (11.5, -.3) -- (11.5, -.6)
+		-- (11.8, -.6) -- (11.8, -.3) to [bend right] (11.35, .4) -- (11 , .4) ;
+	\draw [very thick]  (11, .1) -- (11.3, .1) to [bend left] (11.5, -.3) -- (11.5, -.6)
+		-- (11.8, -.6) -- (11.8, -.2) to [bend right] (11.35, .4) -- (11 , .4)  to [bend right]  (11, .1) ;
+
+	\draw [ blue, ->, line width=3pt] (.85, 5) -- (.85, 4) ;
+	\draw [ blue, ->, line width=3pt] (11.65, -.7) -- (11.65, -1.4) ;
+	\draw [ ->, line width=2pt] (6.5, 2) -- (4.5, 2) ;
+	\draw [ ->, line width=2pt] (4.5, .4) -- (6.5, .4) ;
+
+	\draw   (2, 1.5) node { \Large  $\textbf {Tank A} $};
+	\draw   (0.3, 6.6) node { \LARGE 5 \Large  $\textbf {L/min} $};
+	\draw   (9, 1.5) node { \Large  $\textbf {Tank B} $};
+	\draw   (11.5, -1.8) node { \LARGE 5 \Large  $\textbf {L/min} $};
+	\draw   [font=\itshape ] (5.6, 2.5) node {  \LARGE 4  \Large $\textbf {L/min} $};
+	\draw   [font=\itshape ] (5.4, 0) node { \LARGE 9  \Large  $\textbf { L/min} $};
+	
+\end{tikzpicture} 
+\end{document}

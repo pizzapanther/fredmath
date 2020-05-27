@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [thick, ->] (-2.25, 0) -- (2.5, 0) ;
+	\draw [thick, ->] (0, -.25) -- (0, 2.5) ;
+
+	\draw [blue, domain=0: 180, very thick] plot(\x: 2 );
+
+	\fill [red] (0, 1.27) circle (.08);
+
+	\draw (2, -.25) node {  $\textbf {\textit r} $};
+	\draw (-.25, 2.1) node { $\textbf {\textit r} $};
+	\draw (2.7, 0) node {  $\textbf {\textit x} $};
+	\draw (.2, 2.6) node {  $\textbf {\textit y} $};
+	\draw (.65, 1.2) node {(0, $\frac{2r}{\pi}$) } ;
+
+\end{tikzpicture} 
+\end{document}

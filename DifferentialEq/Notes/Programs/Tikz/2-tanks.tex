@@ -1,0 +1,68 @@
+
+\documentclass{article}
+\usepackage{tikz}
+%%%<
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}%
+%%%>
+\begin{comment}
+:Title: arc
+
+\end{comment}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+\clip(-4,-2) rectangle (11,5);
+\draw [rotate around={0:(0.5,3)}] (0.5,3) ellipse (1.51cm and 0.19cm);
+\draw (-1,3)-- (-1,0);
+\draw (2,3)-- (2,0);
+\draw [rotate around={0:(0.5,0)}] (0.5,0) ellipse (1.51cm and 0.19cm);
+\draw [rotate around={0:(5.5,3)}] (5.5,3) ellipse (1.51cm and 0.19cm);
+\draw (4,3)-- (4,0);
+\draw (7,3)-- (7,0);
+\draw [rotate around={0:(5.5,0)}] (5.5,0) ellipse (1.51cm and 0.19cm);
+\draw (-3,4.4)-- (-1,4.4);
+\draw (-3,4)-- (-1,4);
+\draw [shift={(-1.6,4.2)}] plot[domain=-0.32:0.32,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(-0.4,4.2)}] plot[domain=2.82:3.46,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw (2,2.4)-- (4,2.4);
+\draw (2,2)-- (4,2);
+\draw [shift={(3.4,2.2)}] plot[domain=-0.32:0.32,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(4.6,2.2)}] plot[domain=2.82:3.46,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw (2,1)-- (4,1);
+\draw (2,0.6)-- (4,0.6);
+\draw [shift={(3.39,0.8)}] plot[domain=-0.32:0.32,variable=\t]({1*0.64*cos(\t r)+0*0.64*sin(\t r)},{0*0.64*cos(\t r)+1*0.64*sin(\t r)});
+\draw [shift={(4.59,0.8)}] plot[domain=2.82:3.47,variable=\t]({1*0.62*cos(\t r)+0*0.62*sin(\t r)},{0*0.62*cos(\t r)+1*0.62*sin(\t r)});
+\draw [shift={(1.4,2.2)}] plot[domain=-0.32:0.32,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(2.6,2.2)}] plot[domain=2.82:3.46,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(1.4,0.8)}] plot[domain=-0.32:0.32,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(2.6,0.8)}] plot[domain=2.82:3.46,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw (7,1)-- (7.4,1);
+\draw (7,0.6)-- (7.4,0.6);
+\draw (7.6,0.4)-- (7.6,-0.2);
+\draw (8,0.4)-- (8,-0.2);
+\draw [shift={(7.4,0.4)}] plot[domain=0:1.57,variable=\t]({1*0.2*cos(\t r)+0*0.2*sin(\t r)},{0*0.2*cos(\t r)+1*0.2*sin(\t r)});
+\draw [shift={(7.4,0.4)}] plot[domain=0:1.57,variable=\t]({1*0.6*cos(\t r)+0*0.6*sin(\t r)},{0*0.6*cos(\t r)+1*0.6*sin(\t r)});
+\draw [shift={(7.8,0.4)}] plot[domain=4.39:5.03,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(7.8,-0.8)}] plot[domain=1.25:1.89,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(6.4,0.8)}] plot[domain=-0.32:0.32,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw [shift={(7.6,0.8)}] plot[domain=2.82:3.46,variable=\t]({1*0.63*cos(\t r)+0*0.63*sin(\t r)},{0*0.63*cos(\t r)+1*0.63*sin(\t r)});
+\draw (-0.8,4.2)-- (-0.4,4.2);
+\draw [->] (-0.2,4) -- (-0.2,3.4);
+\draw [shift={(-0.4,4)}] plot[domain=0:1.57,variable=\t]({1*0.2*cos(\t r)+0*0.2*sin(\t r)},{0*0.2*cos(\t r)+1*0.2*sin(\t r)});
+\draw [->] (3.4,2.6) -- (2.6,2.6);
+\draw [->] (2.6,0.4) -- (3.4,0.4);
+\draw [->] (7.8,-0.4) -- (7.8,-1.2);
+\draw (-.2,4) node[anchor=north west] {$20 gal/min$};
+\draw (2,3.2) node[anchor=north west] {$10 gal/min$};
+\draw (2,0.4) node[anchor=north west] {$30 gal/min$};
+\draw (8.1,-0.5) node[anchor=north west] {$20 gal/min$};
+\draw (0.06,2.29) node[anchor=north west] {$\# 1$};
+\draw (5.2,2.26) node[anchor=north west] {$\#2$};
+
+
+\end{tikzpicture}
+\end{document}

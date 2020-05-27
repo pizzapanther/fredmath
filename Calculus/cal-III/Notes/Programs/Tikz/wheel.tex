@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node [inner sep=0pt] 
+                {\includegraphics[width=5cm]{wheel.png}};
+	\draw [thick, dashed] (-.5, 2.5) -- (.8, 2.5) ;
+	\draw [thick, dashed] (-.5, .65) -- (.5, .65) ;
+	\draw [thick, ->] (-.45, -.1) -- (2, -.1);
+	\draw [thick, ->] (-.75, -3) -- (-.75, 3);
+	\draw [thick, <->] (.15, -.05) -- (.15, .6) ;
+	
+	\draw  (-.1, 2.2) node  {  $60^\circ $} ;
+	\draw   (1, 2.1) node { \small \emph  {handle} };
+	\draw   (.5, 1.4) node { 25 \emph  {cm} };
+	\draw   (.75, .3) node { 10 \emph  {cm} };
+
+\end{tikzpicture} 
+\end{document}

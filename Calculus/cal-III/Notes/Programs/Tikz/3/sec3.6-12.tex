@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+ 	\fill [brown!60] (0, 0) circle (2) ;
+ 	\fill [white] (.75, 0) circle (1.25) ;
+
+	\fill [red] (0, 0) circle (.08);
+	\fill [red] (.75, 0) circle (.08);
+	\draw [red, thick] (0, 0) -- (-1.4, 1.4) ; 
+	\draw [red, thick] (.75, 0) -- (.8, -1.25) ; 
+
+	\fill (-.5, 0) circle (.08) ;
+	\fill (2, 0) circle (.08) ;
+
+	\draw (-.6, 1) node { \large $\textbf {\textit R} $};
+	\draw (1, -.8) node { \large $\textbf {\textit r} $};
+	\draw (-.85, 0) node { \large $\textbf {\textit P} $};
+	\draw (2.3, 0) node { \large $\textbf {\textit Q} $};
+
+\end{tikzpicture} 
+\end{document}

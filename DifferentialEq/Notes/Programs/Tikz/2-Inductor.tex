@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{20pt}
+
+\begin{comment}
+:Title: Inductor
+\end{comment}
+
+\begin{document}
+
+\begin{circuitikz}  [ scale =1.2, american]
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0) -- (0,1)
+		to [L ] (0,2) 
+		to [short] (0,3) ;
+
+	\draw [very thick, blue, ->] (.25,1) -- (.25, 1.9);
+
+	\draw (1.1, 1.5) node {\large $V=L $ \Large$\frac{di}{dt}$};
+	\draw (-.3, .8) node {\large $+$} ;
+	\draw (-.3, 2) node {\large $-$} ;
+
+\end{circuitikz}
+\end{document}

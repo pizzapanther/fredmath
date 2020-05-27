@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+:Title:  2-tanks
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [right color =gray!30,  middle color=gray!10, left  color=white] (.5, 3) -- (3.5, 3) -- (4, 4) --(0, 4) -- (.5, 3) ;
+	\fill [right color =gray!30,  middle color=gray!20, left  color=white]  (2, 4) ellipse (2 and .5);
+	\fill [cyan!30] (2, 3) ellipse ( 1.5 and .5);
+	\fill  [cyan!30] (2, 0) -- (3.5, 3) -- (0.5, 3) -- (2, 0);
+
+	\draw [very thick] (.55, 3) arc (-180:0: 1.45 and .5);
+	\draw [dashed, very thick] (.55, 3) arc (180:0: 1.45 and .5);
+	\draw [very thick] (2, 4) ellipse (2 and .5) ;
+	\draw [very thick] (2, 0) -- (0, 4) ;
+	\draw [very thick] (2, 0) -- (4, 4) ;
+
+	\draw[snake=coil, line after snake=0pt, segment aspect=0, ultra thick,
+              segment length=10pt,color=cyan!30] (1.95, -.05) -- (1.95, -.5) ;
+	\draw [very thick] (2, 0.02) circle (.05);
+	\draw [very thick] (2, 4) circle (.03);
+	\draw [very thick] (2, 4) -- (4, 4) ;
+	\draw [very thick, dashed] (4, 4) -- (5, 4) ;
+	\draw [very thick] (3.5, 2.925) -- (4, 2.925) ;
+	\draw [very thick, dashed] (2, 0) -- (5, 0) ;
+	\draw [ thick, <->] (3.75, 0.05) -- (3.75, 2.9) ;
+	\draw [ thick, <->] (4.5, 0.05) -- (4.5, 3.95) ;
+	\draw [thick, ->] (2.4, -.25) -- (2.05, -.05) ;
+	\draw [thick, ->] (2.5, 4.75) -- (3.1, 4.05) ;
+
+	\draw   (2, 3) node { \Large  $\textbf {A}_w $};
+	\draw   (2.75, -.25) node {  $\textbf {hole} $};
+	\draw   (3.5, 1.5) node {  $\textbf {h} $};
+	\draw   (5, 2) node { 20 \emph  {ft} };
+	\draw   (2.5, 5) node { 8 \emph  {ft} };
+	
+\end{tikzpicture} 
+\end{document}

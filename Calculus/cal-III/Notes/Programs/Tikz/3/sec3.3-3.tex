@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node [inner sep=0pt] 
+                { \includegraphics[width=4cm] {img2.png}} ;
+                
+	\draw   (-1.6, -1) node { \large  \emph    {x }} ;
+	\draw   (1.6, -1) node { \large  \emph  {y }} ;
+	\draw   (-.3, 1.2) node { \large  \emph  { z }} ;
+
+	\draw   (1.7, .9) node { \footnotesize \emph  { z =e$^{-(x^2+ y^2)/8} - e^{-2}$ } } ;
+
+\end{tikzpicture} 
+\end{document}

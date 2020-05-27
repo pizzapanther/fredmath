@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [very thick, ->] (-2, 0)  to (2.6, 0);
+	\draw [very thick, ->] (0, -.5)  to (0, 3.3);
+	\draw [very thick, ->] (0, 0)  to (-1.5, -1);
+
+	\draw[ultra thick, domain=-1.5:1.5, ,variable=\x] plot ({\x},{\x*\x });
+	\draw [very thick] (0, 2.3) ellipse (1.5 and .5) ;
+
+	\fill [blue] (0, 2.25) circle (.07) ;
+	\draw [blue, thick] (0, 2.25) -- (1.5, 2.25) ;
+	\draw [red, thick] (0, 1.4) -- (1.2, 1.4) ;
+
+	\draw (-.2, .8) node { \large $\textbf {\textit z} $};
+	\draw (.6, 1.6) node {  $\textbf {\textit R} $};
+	\draw (.8, 2.4) node {  $\textbf {\textit r} $};
+	\draw (-.25, 2.25) node { \large $\textbf {\textit h} $};
+
+\end{tikzpicture} 
+\end{document}

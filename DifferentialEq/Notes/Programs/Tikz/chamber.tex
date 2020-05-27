@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\usepackage{pst-circ}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}%
+
+\begin{comment}
+:Title: Mixing Chamber
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+	
+	\draw [ultra thick ] (0, 0) rectangle (5, 2.5);
+	\fill [color=cyan!30] (0,0) rectangle (5, 2.5) ;
+
+	% Left side
+	\fill [color=cyan!30] (0, 1) -- (-1, 1) to [bend right] (-1, 1.5) -- (0, 1.5) ;
+	\fill [color=gray] (-1, 1.5) to [bend left] (-1, 1) to [bend left] (-1.05, 1.4) ;
+	\draw [very thick ] (0, 1) -- (-1, 1) to [bend right] (-1, 1.5) -- (0, 1.5) ;
+	\draw [very thick ] (-1.05, 1) to [bend left] (-1, 1.4) ;
+
+	% Right side
+	\fill [color=cyan!30] (5, 1) -- (6, 1) to [bend right] (6, 1.5) -- (5, 1.5) ;
+	\fill [color=gray] (6, 1.5) to [bend left] (6, 1) to [bend left] (6.05, 1.4) ;
+	\draw [very thick ] (5, 1) -- (6, 1) to [bend right] (6, 1.5) -- (5, 1.5) ;
+	\draw [very thick ] (6.05, 1) to [bend left] (6, 1.4) ;
+
+	% Top side
+	\fill [color=cyan!30] (2.5, 2.5) -- (2.5, 3.5) to [bend right] (3, 3.5) -- (3, 2.5) ;
+	\fill [color=gray] (2.6, 3.5) to [bend right] (3, 3.5) to [bend right] (2.6, 3.5) ;
+	\draw [very thick ] (2.5, 2.5) -- (2.5, 3.5) to [bend right] (3, 3.5) -- (3, 2.5) ;
+	\draw [very thick ] (3, 3.5) to [bend right] (2.6, 3.45) ;
+
+	% Arrows
+	\draw [ blue, ultra thick, ->] (-3.5, 1.25) -- (-1.25, 1.25);
+	\draw [ blue, ultra thick, ->] (6.3, 1.25) -- (9, 1.25);
+	\draw [ blue, ultra thick, ->] (2.75, 4.7) -- (2.75, 3.7);
+
+	\draw (2.5, .5) node { \large $\textbf {Mixing Chamber}$ };
+	\draw (-2.3, 1.6) node { \large Inflow};
+	\draw (-3.2, .75) node { \large 10} [font=\itshape ] (-2.1, .75) node { \large gal/min};
+	\draw (6.6, .75) node {\large 10+} ;
+	\draw [font=\itshape ]  (7.9, .75) node {\large r gal/min} ;
+	\draw (7.4, 1.6) node { \large Ouflow};
+	% \draw [blue] (2, -.25) node { \large $\textbf {Aquarium} $};
+	\draw  [font=\itshape ]  (2.7, 5) node {\large $ \textbf {Dye solution}$ };
+	\draw [font=\itshape ] (3.9, 4.1) node { \large r gal/min};
+
+\end{tikzpicture} 
+\end{document}

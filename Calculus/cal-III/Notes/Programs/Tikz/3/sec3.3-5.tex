@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+   \draw [very thick, blue]  (2, 0) arc (0:90:2) ;
+	\draw [thick] (0, 0) -- (2, 2) ;
+	\draw [thick, dashed, red] (1.4, 0) -- (1.4, 1.4) ;
+	\draw [thick, green] (2, 0) -- (2, 2) ;
+
+	\draw [very thick, ->] (-.2, 0) -- (2.5, 0) ;
+	\draw [very thick, ->] (0, -.2) -- (0, 2.5) ;
+
+	\draw   (2.5, -.25) node {  \emph    {x }} ;
+	\draw   (-.2, 2.5) node {  \emph  {y }} ;
+	\draw [red]   (1.6, .6) node {  \emph  {a }} ;
+	\draw   (2, -.25) node { 1} ;
+	\draw   (.8, 1.1) node { 1} ;
+	\draw  (.4, .2) node { $\theta$ } ;
+
+
+\end{tikzpicture} 
+\end{document}

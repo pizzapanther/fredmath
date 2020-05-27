@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\setlength{\PreviewBorder}{25pt}
+
+\begin{comment}
+:Title: Node
+\end{comment}
+
+\begin{document}
+
+\begin{circuitikz} [ scale =1, american] % [font=\sffamily]
+\begin{tikzpicture}
+
+	\newcommand*{\equal}{=}
+	\draw  (0,0)
+		to[V,v=$V_s$] (0,3)
+		to [short] (7, 3)
+		to[R=$R_1 $ ] (7,0)
+		to [short] (5, 0)
+		to[R=$R_2  $ ] (3,0)
+		to[R=$R_3 $ ] (0,0);
+
+	  	% dots 
+	\fill[black] (0,0) circle (2 pt);
+	\fill[black] (5,0) circle (2 pt);
+	\fill[black] (5,3) circle (2 pt);
+	\fill[black] (2.75,0) circle (2 pt); 
+	\draw  (-.1,- .3) node {$a$};
+	\draw (2.7,- .3) node {$b$};
+	\draw (5, -.3) node {$c$};
+	\draw (5, 3.3) node {$d$};
+
+	\draw  (.9, 1.5) node {$i_s$};
+	\draw  (6, 1.5) node {$i_1$};
+	\draw  (6.6, 2.2) node {$+$};
+	\draw  (6.6, .8) node {$-$};
+	\draw  (6.6, 1.5) node {$v_1$};
+
+	\draw  (4, 1) node {$i_2$};
+	\draw  (3.2, .4) node {$+$};
+	\draw  (4.7, .4) node {$-$};
+	\draw  (4, .4) node {$v_2$};
+
+	\draw  (1.5, 1) node {$i_3$};
+	\draw  (.8, .4) node {$-$};
+	\draw  (2.2, .4) node {$+$};
+	\draw  (1.5, .4) node {$v_2$};
+
+	% Arrows
+	\draw [very thick, ->, blue]  (6.25, 2)--(6.25, 1);
+	\draw [very thick, ->, blue]  (3.5, .7)--(4.5, .7);
+	\draw [very thick, ->, blue]  (2, .7)--(1, .7);
+	\draw [very thick, ->, blue]  (.6, 1)--(.6, 2);
+
+\end{tikzpicture} 
+\end{circuitikz}
+\end{document}

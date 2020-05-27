@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [blue!50!cyan!50] (-1.5, -1) rectangle (1.5, 4) ;
+	\fill [ blue!10] (0, 0) circle (.5) ;
+	\draw [thick] (0, 0) circle (.5) ;
+	
+	\draw [ ->] (-1.7, 0) -- (1.8, 0) ;
+	\draw (2, 0) node { $x$ } ;
+	\draw [ ->] (0, -1) -- (0, 4.3) ;
+	\draw (0, 4.5) node { \footnotesize $y$ } ;
+	\draw  (-.1, 4) -- (.1, 4) ;
+	\draw (-.2, 4) node { \footnotesize 8} ;
+
+	\draw (.6, -.2) node { \footnotesize 1} ;
+	\draw (-.8, -.6) node {  \tiny  \textbf  {$Observation$} } ;
+	\draw (-.8, -.8) node {  \tiny \textbf  {$window$} } ;
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+\usepackage{tikz-3dplot}
+
+\begin{document}
+
+% sqare of half axes
+\newcommand{\asa}{2}
+\newcommand{\bsa}{0.5}
+\newcommand{\csa}{0.5}
+% view angle
+\tdplotsetmaincoords{70}{135}
+
+
+\begin{tikzpicture}[scale=2,tdplot_main_coords,line join=bevel,fill opacity=.8]
+    \pgfsetlinewidth{.1pt}
+    \tdplotsphericalsurfaceplot[parametricfill]{72}{36}%
+        {1/sqrt((sin(\tdplottheta))^2*(cos(\tdplotphi))^2/\asa+
+        (sin(\tdplottheta))^2*(sin(\tdplotphi))^2/\bsa + (cos(\tdplottheta))^2/\csa)} % function defining radius
+        {black} % line color
+        {2*\tdplottheta} % fill
+        {\draw[color=black,thick,->] (0,0,0) -- (2,0,0) node[anchor=north east]{$x$};}% x-axis
+        {\draw[color=black,thick,->] (0,0,0) -- (0,1.5,0) node[anchor=north west]{$y$};}% y-axis
+        {\draw[color=black,thick,->] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};}% z-axis
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+
+\begin{comment}
+:Title:  One Spring
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+	\fill [color=gray!20] (0, -.25) rectangle (8.5,0) ;
+	\draw  [very thick ] (0,0) -- (8.5,0);
+
+	\fill [color=gray!20] (8.5, -.25) rectangle (8.7,1) ;
+	\draw  [very thick ] (8.5, 0) -- (8.5, 1);
+	
+	\fill [color= blue!20 ] (2,0.05) rectangle (3, .8);
+	\draw [very thick,  blue ] (2,0.025) rectangle (3, .8);
+
+	\draw [very thick] (3, .4) -- (3.5, .4);
+ 	\draw[snake=coil, line after snake=0pt, segment aspect=0, very thick,
+              segment length=6pt] (3.5, .4) -- (4.5, .4) ;
+	\draw [very thick] (4.5, .4) -- (5, .4);
+	\fill [color= blue!20 ] (5,0.05) rectangle (6, .8);
+	\draw [very thick,  blue ] (5,0.025) rectangle (6, .8);
+
+	\draw [very thick] (6, .4) -- (6.8, .4);
+ 	\draw[snake=coil, line after snake=0pt, segment aspect=0, very thick,
+              segment length=6pt] (6.8, .4) -- (7.8, .4) ;
+	\draw [very thick] (7.8, .4) -- (8.5, .4);
+
+	\draw  [thick, dashed ] (2.5, 0) -- (2.5, -1);
+	\draw  [thick, dashed ] (5.5, 0) -- (5.5, -1);
+
+
+	\draw  (2.5, .4 ) node {  \emph {$m_1$}};
+	\draw  (5.5, .4 ) node {  \emph {$m_2$}};
+
+	\draw  (4, .75 ) node {  \emph {$k_1$}};
+	\draw  (7.25, .75 ) node {  \emph {$k_2$}};
+	\draw  (3, -.5 ) node {  \emph {$x>0$}};
+	\draw  (2.5, -1.1 ) node {  \emph {$x=0$}};
+
+	\draw  (6, -.5 ) node {  \emph {$y>0$}};
+	\draw  (5.5, -1.1 ) node {  \emph {$y=0$}};
+
+\end{tikzpicture} 
+\end{document}

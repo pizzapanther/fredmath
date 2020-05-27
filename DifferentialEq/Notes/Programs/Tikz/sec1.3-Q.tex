@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{10pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+%	\draw [thick ] (1.8, 2.5) circle (.15);
+%	\fill [gray!20] (1.8, 2.5) circle (.15);
+	\draw [very thick, blue] (0.03, 2.5) arc (-180: -90: 2.5 and 1.5);
+	\draw [ thick, blue, ->] (.8, 1.2) -- (1.1, 1.05);
+
+	\draw  [very thick, -> ] (0, 2.5) -- (3.5, 2.5);
+	\draw  [very thick, <- ] (0, 0) -- (0, 2.52);
+	\fill  (0.01, 2.5) circle (.06);
+	\fill  (2.5, 1) circle (.06);
+	
+	\draw [thick ] (1.25, 1.2) circle (.125);
+	\fill [gray!30] (1.25, 1.2) circle (.125);
+
+	\draw (-.25, 0) node { \emph {y} };
+	\draw (-.1, 2.7) node { \emph {P} };
+	\draw (3.5, 2.75) node { \emph {x} };
+	\draw (3.25, 1.25) node { \emph {Q}($x_0$, $y_0$)};
+
+\end{tikzpicture} 
+\end{document}

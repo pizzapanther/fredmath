@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \fill [blue!50!cyan!20] (0, 0) rectangle  (2, 3) ;
+
+  \fill [red!30 ]  (1, 1) circle (.5) ;
+	\draw [very thick] (1, 1) circle (.5) ;
+  \fill   (1, 1) circle (.03) ;
+  
+  \draw [ <->] (1, 1.5) -- (1, 3);
+  \draw (1.5, .9) node { \scriptsize 2 $ft$ } ;
+	\draw [thick, dashed]  (1, 1) -- (1.4, .6) ;
+  \draw (1.25, 2.2) node { \scriptsize 5$ft$ } ;
+
+\end{tikzpicture}
+\end{document}

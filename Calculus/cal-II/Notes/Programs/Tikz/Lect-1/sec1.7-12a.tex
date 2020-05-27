@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+  \fill [gray!20] (0, 0) rectangle (4, 1) ;
+  \draw [very thick]  (0, 0) rectangle (4, 1) ;
+
+	\fill [red] (.01, .3) rectangle (3.99, .4) ;
+
+	\draw [thick, -> ] (-.3, 0) -- (4.5, 0);
+	\draw (4.7, 0) node { $x$ } ;
+	\draw [thick, -> ] (0, -.3) -- (0, 1.5) ;
+	\draw (0, 1.7) node {$y$} ;
+
+	\draw (-.2, 1) node {10} ;
+	\draw (2, .65) node { $w(y) = 40$ };
+
+\end{tikzpicture}
+\end{document}
