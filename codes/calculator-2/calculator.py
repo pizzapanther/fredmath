@@ -16,15 +16,14 @@
 import sys
 import re
 import os
-#import math
+
 import sympy
 import unicodedata
 from decimal import Decimal, getcontext
 
 
 from math import *
-from math import sqrt
-#from fractions import Fraction
+
 
 from sympy import *
 from sympy import sympify
@@ -54,9 +53,6 @@ from PyQt5.QtCore import *
 #-----------------------------------------------------------------------
 #   Characters Symbol
 #-----------------------------------------------------------------------
-
-
-#Pi = 3.14159265358979323846264338327950288419716939937510582097497
 
 
 PiSymbol =  unicodedata.lookup("GREEK SMALL LETTER PI")
@@ -106,19 +102,29 @@ class Calculator(QWidget):
         self.setWindowTitle('Fredo Calculator')
         self.setStyleSheet("background-color: dodgerblue;")
 
+
         self.display = QLineEdit(self)
         self.display.setStyleSheet("background-color: white;")
         self.display.setReadOnly(True)
         self.display.setAlignment(Qt.AlignLeft)
         self.display.setAlignment(Qt.AlignTop)
 
-        self.display.move(10, 20)
-        self.display.resize(860, 110)
+        self.display.move(10, 10)
+        self.display.resize(860, 45)
 
         font = self.display.font()
         font.setPointSize(font.pointSize() + 2)
         self.display.setFont(font)
 
+
+        self.display2 = QTextBrowser(self)
+        self.display2.setAcceptRichText(True)
+        self.display2.setOpenExternalLinks(True)
+        self.display2.setGeometry(10, 45, 860, 90)
+        self.display2.setStyleSheet("background-color: white;")
+        font = self.display2.font()
+        font.setPointSize(font.pointSize() + 2)
+        self.display2.setFont(font)
 
 
 
@@ -907,7 +913,7 @@ class Calculator(QWidget):
         labelA.show()
 
 
-#   Entry
+#   Entry Box
 
         self.display1 = QLineEdit(self)
         self.display1.setStyleSheet("background-color: white;")
@@ -931,7 +937,7 @@ class Calculator(QWidget):
 
 #  --------------------------------------
 #
-#     Drawing Rectangles and Lines
+#     Drawing: Rectangles and Lines
 #
 #  --------------------------------------
 
@@ -974,6 +980,9 @@ class Calculator(QWidget):
         painter5.drawLine(510, 710, 510, 800)
 
 
+
+#  ----------------------------------------------------
+#
 #  ----------------------------------------------------
 #
 #  ----------------------------------------------------
@@ -983,18 +992,24 @@ class Calculator(QWidget):
 
 
 ############
+#
 #   CLEAR
+#
 ############
 
     def clear_solution(self):
         self.display.setText("")
 
 
-############
-#   Close
-############
+
+####################
+#
+#   Close Message
+#
+####################
 
     def shut_down(self):
+
         choice = QtWidgets.QMessageBox.question(self, 'Close!',
                      "Close?",QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
 
@@ -1004,8 +1019,11 @@ class Calculator(QWidget):
             pass
 
 
+
 ##################
+#
 #    Back Space
+#
 #################
 
     def BackSpace(self):
@@ -1016,6 +1034,15 @@ class Calculator(QWidget):
 
         self.display.setText(text)
 
+
+
+# ---------------------------------------
+#
+#   Digits 1 thru 9 & 0
+#   Clicking on the toggle
+#   it will display the proper number
+#
+# ---------------------------------------
 
 
 #############
@@ -1151,9 +1178,11 @@ class Calculator(QWidget):
 
 
 
-#################
-#   Plus Sign
-################
+#########################
+#
+#   Plus Sign Display
+#
+#########################
 
     def PlusSign(self):
 
@@ -1165,9 +1194,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-#################
-#   Minus Sign
-################
+
+##############################
+#
+#   Minus Sign Display
+#
+#############################
 
     def MinusSign(self):
 
@@ -1179,9 +1211,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-##################
-#   Product Sign
-##################
+
+#############################
+#
+#   Product Sign Display
+#
+#############################
 
     def Product(self):
 
@@ -1193,9 +1228,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-#################
-#   Divide Sign
-################
+
+#############################
+#
+#   Divide Sign display
+#
+#############################
 
     def Divide(self):
 
@@ -1208,9 +1246,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-################
-#   Digit dot
-###############
+
+#############################
+#
+#   Digit dot display
+#
+#############################
 
     def digitdot(self):
         clickedButton = self.sender()
@@ -1221,9 +1262,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-################
-#   open  para
-###############
+
+#############################
+#
+#   open  para display
+#
+#############################
 
     def OpenBrk(self):
         clickedButton = self.sender()
@@ -1234,9 +1278,12 @@ class Calculator(QWidget):
         self.display.setText(str(num) + str(digitValue))
 
 
-#################
-#   close  para
-################
+
+#############################
+#
+#   close  para display
+#
+#############################
 
     def CloseBrk(self):
         clickedButton = self.sender()
@@ -1248,62 +1295,108 @@ class Calculator(QWidget):
 
 
 
-##########################
-#   Plus  Minus
-#   add error if no number
+#############################
 #
-##########################
+#   Plus  Minus
+#
+#############################
 
     def PlusMinus(self):
-        clickedButton = self.sender()
-        PMsign = str(clickedButton.text())
 
+        err = " No Input "
         PMsign = self.display.text()
-        value = float(PMsign)
 
-        if value > 0.0:
+        if PMsign == "":
+            PMsign = err
+
+        # Checking if the value is positive
+        # then recopy with minus sign in front
+        elif float(PMsign) > 0.0:
             PMsign = "-" + PMsign
 
-        elif value < 0.0:
+
+        # if minus in the front
+        # it will delete the minus sign
+        else:
             PMsign = PMsign[1:]
 
         self.display.setText( str(PMsign))
 
 
 
-#################
-#   n Factorial
-################
+###############################
+#
+#   n Factorial Calculation
+#
+###############################
 
     def Factorial(self):
 
         n = self.display.text()
         err = " No Input "
 
-        print (type(n))
+        # Error message if no input exits
         if n == "" :
             self.display.setText( ' ' + str(err) )
 
+        # if the number is negative
+        # Absolute value the number before the calculation
         elif n.isdigit() :
+
             n = abs(int(n) )
             factorial = 1
 
+            # loop product of sequence number
+            # number facotrial
             for j in range(1, n+1):
                 factorial = factorial*j
 
-            self.display.setText( str(n) + '! = ' + format(factorial ,",d"))
+            self.display2.setText( str(n) + '! = ' + format(factorial ,",d"))
 
         else:
             n = float(n)
             factorial = math.gamma(n + 1)
 
-            self.display.setText( str(n) + '! = ' + str(factorial) )
+            self.display2.setText( str(n) + '! = ' + str(factorial) )
 
 
 
-##############
-#   Square
-##############
+###################
+#   n Factorial
+#   Derivation
+###################
+
+    def FactCal(self):
+
+        n = self.nb
+        factorial = 1
+
+        for j in range(1, n+1):
+            factorial = factorial*j
+
+
+#######################
+#   Double Factorial
+#   Derivation
+#######################
+
+    def DFactCal(self):
+
+        n = self.nb
+        factorial = 1
+
+        for j in range(1, 2*n-4, 2):
+            factorial = factorial*j
+
+
+
+
+#############################
+#
+#   Square the number
+#   By mulplying by itself
+#
+#############################
 
     def Squarenb(self):
 
@@ -1317,13 +1410,17 @@ class Calculator(QWidget):
             x = float(self.display.text() )
             sq = x * x
 
-            self.display.setText( str(x) + '^2  = ' + str(sq ))
+            self.display2.setText( str(x) + '^2  = ' + f"{sq:,}" )
 
 
 
-##############
-#   Cubic
-##############
+##################################
+#
+#   Cubic Calculation
+#   Just multiply input number
+#   3 times
+#
+#################################
 
     def Cubenb(self):
 
@@ -1337,13 +1434,17 @@ class Calculator(QWidget):
             x = float(self.display.text() )
             cub = x * x * x
 
-            self.display.setText( str(x) + '^3  = ' + str(cub ))
+            self.display2.setText( str(x) + '^3  = ' + f"{cub:,}" )
 
 
 
-##################
-#   Square  Root
-#################
+################################
+#
+#   Square  Root Calculation
+#   Using python math
+#   to calculate the number
+#
+################################
 
     def SquareRoot(self):
 
@@ -1358,15 +1459,33 @@ class Calculator(QWidget):
             xx = abs(xx1)
             sqR = sqrt(xx)
 
-            self.display.setText( ' sqrt(' + str(x) +\
+            self.display2.setText( ' sqrt(' + str(x) +\
                                  ') = ' + str(sqR) + ' i')
 
         else:
-            sqR = sqrt(xx1)
+            n = xx1
 
-            self.display.setText( ' sqrt(' + str(x) + ') =  ' + str(sqR))
+            sol = self.sqRootCal(n)
+
+            self.display2.setText( ' sqrt(' + str(x) + ') =  ' + str(sol))
 
 
+#######################
+#
+#   Square  Root
+#   Derivation
+#
+#######################
+
+    def sqRootCal(self, n):
+        xs = n
+        ys = 1
+
+        while(xs > ys):
+            xs = (xs + ys) / 2
+            ys = n / xs
+
+        return xs
 
 
 
@@ -1387,13 +1506,13 @@ class Calculator(QWidget):
             xx = abs(xx1)
             cbR = xx **(1/3)
 
-            self.display.setText( cbRoot + '(' + str(x) +\
+            self.display2.setText( cbRoot + '(' + str(x) +\
                              ') = ' + str(cbR) + ' i')
 
         else:
             cbR = xx1 **(1/3)
 
-            self.display.setText( cbRoot + '(' + str(x) + ') =  ' + str(cbR))
+            self.display2.setText( cbRoot + '(' + str(x) + ') =  ' + str(cbR))
 
 
 
@@ -1412,11 +1531,11 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx == 0.0:
-            self.display.setText( ' 1/' + str(x) + ' = ' + "oo" )
+            self.display2.setText( ' 1/' + str(x) + ' = ' + "oo" )
 
         else:
             y = 1 / xx
-            self.display.setText( ' 1/ ' + str(x) + ' =   ' + str(y))
+            self.display2.setText( ' 1/ ' + str(x) + ' =   ' + str(y))
 
 
 
@@ -1484,7 +1603,7 @@ class Calculator(QWidget):
 ########################
 
     def PieCal(self):
-        getcontext().prec = 100
+        getcontext().prec = 200
         MAX = 10000
         pi1 = 0
 
@@ -1563,7 +1682,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'cos(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'cos(' + infSymbol + ') = '+ str(inf0) )
 
         else:
 
@@ -1597,7 +1716,7 @@ class Calculator(QWidget):
                 else:
                     self.CosCal()
 
-            self.display.setText( 'cos(' + str(xx1) +\
+            self.display2.setText( 'cos(' + str(xx1) +\
                              str(sign)+ ') = ' + str(self.cosine))
 
 
@@ -1640,7 +1759,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
 
         else:
 
@@ -1673,7 +1792,7 @@ class Calculator(QWidget):
                 else:
                     self.SinCal()
 
-            self.display.setText( 'sin(' +str(xx1) + str(sign)+ \
+            self.display2.setText( 'sin(' +str(xx1) + str(sign)+ \
                                 ') = ' + str(self.sine))
 
 
@@ -1694,7 +1813,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'tan(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'tan(' + infSymbol + ') = '+ str(inf0) )
 
         else:
 
@@ -1735,7 +1854,7 @@ class Calculator(QWidget):
 
       ######
 
-            self.display.setText( 'tan(' +str(xx1)+ str(sign) + ') = ' + tana)
+            self.display2.setText( 'tan(' +str(xx1)+ str(sign) + ') = ' + tana)
 
 
 
@@ -1755,7 +1874,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'cot(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'cot(' + infSymbol + ') = '+ str(inf0) )
 
     ######
             # Degree toggle
@@ -1794,7 +1913,7 @@ class Calculator(QWidget):
 
       ######
 
-            self.display.setText( 'cot(' +str(xx1)+ str(sign) + ') = ' + cota)
+            self.display2.setText( 'cot(' +str(xx1)+ str(sign) + ') = ' + cota)
 
 
 
@@ -1814,7 +1933,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'csc(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'csc(' + infSymbol + ') = '+ str(inf0) )
 
         else:
 
@@ -1852,7 +1971,7 @@ class Calculator(QWidget):
                     csca = str(1 / self.sine)
 
     ######
-            self.display.setText( 'csc(' +str(xx1) + str(sign)+ ') = ' + csca)
+            self.display2.setText( 'csc(' +str(xx1) + str(sign)+ ') = ' + csca)
 
 
 
@@ -1872,7 +1991,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'sec(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'sec(' + infSymbol + ') = '+ str(inf0) )
 
         else:
 
@@ -1910,7 +2029,7 @@ class Calculator(QWidget):
                     seca = str(1 / self.cosine)
 
     ######
-            self.display.setText( 'sec(' +str(xx1) + str(sign)+ ') = ' + seca)
+            self.display2.setText( 'sec(' +str(xx1) + str(sign)+ ') = ' + seca)
 
 
 
@@ -1939,26 +2058,26 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
 
         elif float(xx1) > 1.0:
-            self.display.setText( 'arccos(' +str(xx1) +\
+            self.display2.setText( 'arccos(' +str(xx1) +\
                                  ') = does not exist  > 1')
 
         elif float(xx1) < -1.0:
-            self.display.setText( 'arccos(' +str(xx1) +\
+            self.display2.setText( 'arccos(' +str(xx1) +\
                                 ') = does not exist  < -1')
 
         elif float(xx1) == 1.0:
             angle = 0
             angle1 = 0
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
         elif float(xx1) == -1.0:
             angle1 = 180
             angle = PiSymbol
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
         else:
@@ -1980,7 +2099,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
@@ -2001,30 +2120,30 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif xx1 == infSymbol:
-            self.display.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
+            self.display2.setText( 'sin(' + infSymbol + ') = '+ str(inf0) )
 
 
         elif float(xx1) > 1.0:
-            self.display.setText( 'arcsin(' +str(xx1) +\
+            self.display2.setText( 'arcsin(' +str(xx1) +\
                              ') = does not exist > 1' )
 
 
         elif float(xx1) < -1.0:
-            self.display.setText( 'arcsin(' +str(xx1) +\
+            self.display2.setText( 'arcsin(' +str(xx1) +\
                              ') = does not exist < -1')
 
 
         elif float(xx1) == 1.0:
             angle = PiSymbol + '/2'
             angle1 = 90
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
         elif float(xx1) == -1.0:
             angle = '3' + PiSymbol + '/2'
             angle1 = '270 '
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
@@ -2047,7 +2166,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccos(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
@@ -2069,14 +2188,14 @@ class Calculator(QWidget):
             angle = PiSymbol + '/2'
             angle1 = '90'
 
-            self.display.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
+            self.display2.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol )
 
         elif xx1 == '-'+infSymbol:
             angle = '3'+PiSymbol + '/2'
             angle1 = '270'
 
-            self.display.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
+            self.display2.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol )
 
         else:
@@ -2093,7 +2212,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arctan(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arctan(' +str(xx1) + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol )
 
 
@@ -2115,14 +2234,14 @@ class Calculator(QWidget):
             angle = '0 rad'
             angle1 = '  = 0' + degSymbol
 
-            self.display.setText( 'arctan(' + infSymbol + ') = '\
+            self.display2.setText( 'arctan(' + infSymbol + ') = '\
                                  + str(angle) + str(angle1) )
 
         elif xx1 == '-'+infSymbol:
             angle = PiSymbol
             angle1 = '180'
 
-            self.display.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
+            self.display2.setText( 'arctan(' + infSymbol + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol )
 
 
@@ -2140,7 +2259,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arccot(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccot(' +str(xx1) + ') = ' + str(angle)\
                          + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
@@ -2163,7 +2282,7 @@ class Calculator(QWidget):
             angle = '= 0 or ' + PiSymbol + '- rad'
             angle1 = '    = 0' + degSymbol + ' or 180-' + degSymbol
 
-            self.display.setText( 'arccsc(' + infSymbol + ') '\
+            self.display2.setText( 'arccsc(' + infSymbol + ') '\
                              + str(angle) + str(angle1))
 
 
@@ -2171,20 +2290,20 @@ class Calculator(QWidget):
             angle = PiSymbol + '+ or  2' + PiSymbol + '- rad  '
             angle1 = '  = 180+' + degSymbol + ' = 360-' + degSymbol
 
-            self.display.setText( 'arccsc(' + infSymbol + ') = ' +str(angle)\
+            self.display2.setText( 'arccsc(' + infSymbol + ') = ' +str(angle)\
                                  +str(angle1))
 
 
         elif float(xx1) == 1.0:
-            self.display.setText('arccsc(' +str(xx1) + ') = ' + PiSymbol +\
+            self.display2.setText('arccsc(' +str(xx1) + ') = ' + PiSymbol +\
                                  '/2  rad' + '    = 90 ' + degSymbol )
 
         elif float(xx1) == -1.0:
-            self.display.setText('arccsc(' +str(xx1) + ') = 3' + PiSymbol +\
+            self.display2.setText('arccsc(' +str(xx1) + ') = 3' + PiSymbol +\
                              '/2  rad' + '    = 270 ' + degSymbol )
 
         elif -1.0 < float(xx1) < 1.0:
-            self.display.setText('arccsc(' +str(xx1) + ') = does not exist')
+            self.display2.setText('arccsc(' +str(xx1) + ') = does not exist')
 
 
 
@@ -2216,7 +2335,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arccsc(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arccsc(' +str(xx1) + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol)
 
 
@@ -2240,7 +2359,7 @@ class Calculator(QWidget):
             angle = PiSymbol + '/2-  rad'
             angle1 = '   = 90-' + degSymbol + ' or 270+' + degSymbol
 
-            self.display.setText( 'arcsec(' + infSymbol + ') = '\
+            self.display2.setText( 'arcsec(' + infSymbol + ') = '\
                              + str(angle) + str(angle1))
 
 
@@ -2248,21 +2367,21 @@ class Calculator(QWidget):
             angle = PiSymbol + '/2+  or 3' + PiSymbol + '/2-  rad'
             angle1 = '   = 90+' + degSymbol + ' or 270-' + degSymbol
 
-            self.display.setText( 'arcsec(-' + infSymbol + ') = '\
+            self.display2.setText( 'arcsec(-' + infSymbol + ') = '\
                              + str(angle)+ str(angle1))
 
 
         elif float(xx1) == 1:
-            self.display.setText('arcsec(' +str(xx1) + ') =  0' )
+            self.display2.setText('arcsec(' +str(xx1) + ') =  0' )
 
         elif float(xx1) == -1:
             angle = PiSymbol + ' rad'
             angle1 = '   = 180' + degSymbol
-            self.display.setText('arcsec(' +str(xx1) + ') =  '\
+            self.display2.setText('arcsec(' +str(xx1) + ') =  '\
                              + str(angle) + str(angle1) )
 
         elif -1 < float(xx1) < 1:
-            self.display.setText('arcsec(' +str(xx1) + ') = does not exist')
+            self.display2.setText('arcsec(' +str(xx1) + ') = does not exist')
 
 
         else:
@@ -2294,7 +2413,7 @@ class Calculator(QWidget):
             angle1 = "%5.2f "  % (angle1)
             angle = "%5.8f "  % (angle)
 
-            self.display.setText( 'arcsec(' +str(xx1) + ') = ' + str(angle)\
+            self.display2.setText( 'arcsec(' +str(xx1) + ') = ' + str(angle)\
                              + ' rad' + '    = ' + str(angle1) + degSymbol )
 
 
@@ -2337,7 +2456,7 @@ class Calculator(QWidget):
             cosh =(expe + expe2) / 2
             cosh = "%20.15f "  % (cosh)
 
-            self.display.setText( ' cosh(' +str(xx1) + ') = ' + str(cosh) )
+            self.display2.setText( ' cosh(' +str(xx1) + ') = ' + str(cosh) )
 
 
 
@@ -2373,7 +2492,7 @@ class Calculator(QWidget):
             sinh =(expe - expe2) / 2
             sinh = "%15.10f "  % (sinh)
 
-            self.display.setText( ' sinh(' +str(xx1) + ') = ' + str(sinh) )
+            self.display2.setText( ' sinh(' +str(xx1) + ') = ' + str(sinh) )
 
 
 
@@ -2409,7 +2528,7 @@ class Calculator(QWidget):
             tanh =(expe - expe2) / (expe + expe2 )
             tanh = "%15.10f "  % (tanh)
 
-            self.display.setText( ' tanh(' +str(xx1) + ') = ' + str(tanh) )
+            self.display2.setText( ' tanh(' +str(xx1) + ') = ' + str(tanh) )
 
 
 
@@ -2449,7 +2568,7 @@ class Calculator(QWidget):
             csch = 2 / (expe - expe2)
             csch = "%15.10f "  % (csch)
 
-            self.display.setText( ' csch(' +str(xx1) + ') = ' + str(csch) )
+            self.display2.setText( ' csch(' +str(xx1) + ') = ' + str(csch) )
 
 
 
@@ -2485,7 +2604,7 @@ class Calculator(QWidget):
             sech =  2 / (expe + expe2)
             sech = "%15.10f "  % (sech)
 
-            self.display.setText( ' sech(' +str(xx1) + ') = ' + str(sech) )
+            self.display2.setText( ' sech(' +str(xx1) + ') = ' + str(sech) )
 
 
 
@@ -2504,7 +2623,7 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif float(xx1) == 0:
-            self.display.setText( ' coth(0) = oo' )
+            self.display2.setText( ' coth(0) = oo' )
 
         else:
             xx = float(xx1)
@@ -2525,7 +2644,7 @@ class Calculator(QWidget):
             coth =  (expe + expe2) / (expe - expe2)
             coth = "%15.10f "  % (coth)
 
-            self.display.setText( ' coth(' +str(xx1) + ') = ' + str(coth) )
+            self.display2.setText( ' coth(' +str(xx1) + ') = ' + str(coth) )
 
 
 
@@ -2598,7 +2717,7 @@ class Calculator(QWidget):
             expe = expe + (xx**i ) / factorial
 
         expe = "%20.25f "  % (expe)
-        self.display.setText( ' e^(' +str(xx1) + ') = ' + str(expe) )
+        self.display2.setText( ' e^(' +str(xx1) + ') = ' + str(expe) )
 
 
 
@@ -2618,10 +2737,10 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif float(xx1) == 0:
-            self.display.setText( ' ln(0) = -oo' )
+            self.display2.setText( ' ln(0) = -oo' )
 
         elif float(xx1) < 0:
-            self.display.setText( ' ln(' + str(xx1) + ') = '\
+            self.display2.setText( ' ln(' + str(xx1) + ') = '\
                                  + 'does not exist' )
 
         elif 0 < xx <= 2:
@@ -2631,7 +2750,7 @@ class Calculator(QWidget):
                 loge = loge + ((-1)**(i+1) * (xx - 1)**(i)) / i
 
             loge = "%10.30f "  % (loge)
-            self.display.setText( ' ln(' +str(xx1) + ') = ' + str(loge) )
+            self.display2.setText( ' ln(' +str(xx1) + ') = ' + str(loge) )
 
         else:
             loge = 0
@@ -2640,7 +2759,7 @@ class Calculator(QWidget):
                 loge = loge + 2 *( ((xx - 1) / (xx+1)) )**(2*i-1) / (2*i-1)
 
             loge = "%10.30f "  % (loge)
-            self.display.setText( ' ln(' +str(xx1) + ') = ' + str(loge) )
+            self.display2.setText( ' ln(' +str(xx1) + ') = ' + str(loge) )
 
 
 
@@ -2660,10 +2779,10 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif float(xx1) == 0:
-            self.display.setText( ' log(0) = -oo' )
+            self.display2.setText( ' log(0) = -oo' )
 
         elif float(xx1) < 0:
-            self.display.setText( ' log(' + str(xx1) + ') = '\
+            self.display2.setText( ' log(' + str(xx1) + ') = '\
                                  + 'does not exist' )
 
         elif 0 < xx <= 2:
@@ -2682,7 +2801,7 @@ class Calculator(QWidget):
             log10 = float(loge / ln10)
             log10 = "%10.30f "  % (log10)
 
-            self.display.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
+            self.display2.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
 
         else:
             loge = 0
@@ -2699,7 +2818,7 @@ class Calculator(QWidget):
             log10 = float(loge / ln10)
             log10 = "%10.10f "  % (log10)
 
-            self.display.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
+            self.display2.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
 
 
 
@@ -2720,14 +2839,14 @@ class Calculator(QWidget):
             self.display.setText( ' ' + str(err) )
 
         elif float(xx1) == 0:
-            self.display.setText( ' log(0) = -oo' )
+            self.display2.setText( ' log(0) = -oo' )
 
         elif float(xx1) < 0:
-            self.display.setText( ' log(' + str(xx1) + ') = '\
+            self.display2.setText( ' log(' + str(xx1) + ') = '\
                                  + 'does not exist' )
 
         elif base == "":
-            self.display.setText( ' No Base selected' )
+            self.display2.setText( ' No Base selected' )
 
 
         elif 0 < xx <= 2:
@@ -2747,7 +2866,7 @@ class Calculator(QWidget):
             log10 = float(loge / logb)
             log10 = "%10.30f "  % (log10)
 
-            self.display.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
+            self.display2.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
 
         else:
             loge = 0
@@ -2765,7 +2884,7 @@ class Calculator(QWidget):
             log10 = float(loge / logb)
             log10 = "%10.10f "  % (log10)
 
-            self.display.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
+            self.display2.setText( ' log(' +str(xx1) + ') = ' + str(log10) )
 
 
 
@@ -2789,8 +2908,13 @@ class Calculator(QWidget):
     def EqualSign(self):
 
         inp = self.display.text()
+        err = " No Input "
 
-        if  PiSymbol in inp:
+        if inp == "":
+            sol = err
+
+
+        elif  PiSymbol in inp:
             self.PieCal()
             inp2 = inp.replace(PiSymbol , str(self.pie) )
 
@@ -2802,14 +2926,14 @@ class Calculator(QWidget):
             inpe = inp.replace(expSymbol , str(self.expe) )
 
             sol = sympify(inpe)
-            sol = "%2.40f "  % (sol)
+            sol = "%2.60f "  % (sol)
 
 
         else:
             sol = sympify(self.display.text())
             sol = "%2.40f "  % (sol)
 
-        self.display.setText( self.display.text() + ' = ' + str(sol))
+        self.display2.setText( self.display.text() + ' = ' + str(sol))
 
 
 
