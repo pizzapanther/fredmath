@@ -1424,7 +1424,7 @@ class Calculator(QWidget):
             x = float(self.display.text() )
             cub = x * x * x
 
-            self.display.setText( str(x) + '^3  = ' + str(cub ))
+            self.display.setText( str(x) + '^3  = ' + f"{cub:,}" )
 
 
 
@@ -1497,7 +1497,7 @@ class Calculator(QWidget):
             cbR = xx **(1/3)
 
             self.display.setText( cbRoot + '(' + str(x) +\
-                             ') = ' + str(cbR) + ' i')
+                             ') = -' + str(cbR))
 
         else:
             cbR = xx1 **(1/3)

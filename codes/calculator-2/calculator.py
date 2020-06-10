@@ -113,18 +113,18 @@ class Calculator(QWidget):
         self.display.resize(860, 45)
 
         font = self.display.font()
-        font.setPointSize(font.pointSize() + 2)
+        font.setPointSize(font.pointSize() + 1)
         self.display.setFont(font)
 
 
         self.display2 = QTextBrowser(self)
         self.display2.setAcceptRichText(True)
         self.display2.setOpenExternalLinks(True)
-        self.display2.setGeometry(10, 45, 860, 90)
+        self.display2.setGeometry(10, 45, 860, 100)
         self.display2.setStyleSheet("background-color: white;")
-        font = self.display2.font()
-        font.setPointSize(font.pointSize() + 2)
-        self.display2.setFont(font)
+#        font = self.display2.font()
+#        font.setPointSize(font.pointSize() + 1)
+#        self.display2.setFont(font)
 
 
 
@@ -143,7 +143,7 @@ class Calculator(QWidget):
         clean_btn.setStyleSheet("background-color: springgreen;\
                                  font: italic;")
         clean_btn.setFont(QFont('Sanserif', 10))
-        clean_btn.move(100, 160)
+        clean_btn.move(100, 175)
         clean_btn.resize(110, 50)
         clean_btn.clicked.connect(self.clear_solution)
 
@@ -156,7 +156,7 @@ class Calculator(QWidget):
         close_btn.setStyleSheet("background-color: salmon;\
                                  font: italic; ")
         close_btn.setFont(QFont('Sanserif', 10))
-        close_btn.move(400, 160)
+        close_btn.move(400, 175)
         close_btn.resize(110, 50)
         close_btn.clicked.connect(self.shut_down)
 
@@ -169,7 +169,7 @@ class Calculator(QWidget):
         back_btn.setStyleSheet("background-color: lightgrey;\
                                  font: italic;")
         back_btn.setFont(QFont('Sanserif', 10))
-        back_btn.move(675, 160)
+        back_btn.move(675, 175)
         back_btn.resize(110, 50)
         back_btn.clicked.connect(self.BackSpace)
 
@@ -184,7 +184,7 @@ class Calculator(QWidget):
         btn1 = QPushButton("1", self)
         btn1.setStyleSheet("background-color: lightblue;")
         btn1.setFont(QFont('Sanserif', 12))
-        btn1.move(50, 250)
+        btn1.move(50, 260)
         btn1.resize(50, 50)
         btn1.clicked.connect(self.digit1)
 
@@ -195,7 +195,7 @@ class Calculator(QWidget):
         btn2 = QPushButton("2", self)
         btn2.setStyleSheet("background-color: lightblue;")
         btn2.setFont(QFont('Sanserif', 12))
-        btn2.move(120, 250)
+        btn2.move(120, 260)
         btn2.resize(50, 50)
         btn2.clicked.connect(self.digit2)
 
@@ -206,7 +206,7 @@ class Calculator(QWidget):
         btn3 = QPushButton("3", self)
         btn3.setStyleSheet("background-color: lightblue;")
         btn3.setFont(QFont('Sanserif', 12))
-        btn3.move(190, 250)
+        btn3.move(190, 260)
         btn3.resize(50, 50)
         btn3.clicked.connect(self.digit3)
 
@@ -218,7 +218,7 @@ class Calculator(QWidget):
         btn4 = QPushButton("4", self)
         btn4.setStyleSheet("background-color: lightblue;")
         btn4.setFont(QFont('Sanserif', 12))
-        btn4.move(260, 250)
+        btn4.move(260, 260)
         btn4.resize(50, 50)
         btn4.clicked.connect(self.digit4)
 
@@ -230,7 +230,7 @@ class Calculator(QWidget):
         btn5 = QPushButton("5", self)
         btn5.setStyleSheet("background-color: lightblue;")
         btn5.setFont(QFont('Sanserif', 12))
-        btn5.move(330, 250)
+        btn5.move(330, 260)
         btn5.resize(50, 50)
         btn5.clicked.connect(self.digit5)
 
@@ -242,7 +242,7 @@ class Calculator(QWidget):
         btn6 = QPushButton("6", self)
         btn6.setStyleSheet("background-color: lightblue;")
         btn6.setFont(QFont('Sanserif', 12))
-        btn6.move(50, 325)
+        btn6.move(50, 335)
         btn6.resize(50, 50)
         btn6.clicked.connect(self.digit6)
 
@@ -254,7 +254,7 @@ class Calculator(QWidget):
         btn7 = QPushButton("7", self)
         btn7.setStyleSheet("background-color: lightblue;")
         btn7.setFont(QFont('Sanserif', 12))
-        btn7.move(120, 325)
+        btn7.move(120, 335)
         btn7.resize(50, 50)
         btn7.clicked.connect(self.digit7)
 
@@ -266,7 +266,7 @@ class Calculator(QWidget):
         btn8 = QPushButton("8", self)
         btn8.setStyleSheet("background-color: lightblue;")
         btn8.setFont(QFont('Sanserif', 12))
-        btn8.move(190, 325)
+        btn8.move(190, 335)
         btn8.resize(50, 50)
         btn8.clicked.connect(self.digit8)
 
@@ -278,7 +278,7 @@ class Calculator(QWidget):
         btn9 = QPushButton("9", self)
         btn9.setStyleSheet("background-color: lightblue;")
         btn9.setFont(QFont('Sanserif', 12))
-        btn9.move(260, 325)
+        btn9.move(260, 335)
         btn9.resize(50, 50)
         btn9.clicked.connect(self.digit9)
 
@@ -290,7 +290,7 @@ class Calculator(QWidget):
         btn0 = QPushButton("0", self)
         btn0.setStyleSheet("background-color: lightblue;")
         btn0.setFont(QFont('Sanserif', 12))
-        btn0.move(330, 325)
+        btn0.move(330, 335)
         btn0.resize(50, 50)
         btn0.clicked.connect(self.digit0)
 
@@ -304,7 +304,7 @@ class Calculator(QWidget):
         btdot.setStyleSheet("background-color: white;\
                              font: bold;")
         btdot.setFont(QFont('Sanserif', 20))
-        btdot.move(50, 400)
+        btdot.move(50, 410)
         btdot.resize(50, 50)
         btdot.clicked.connect(self.digitdot)
 
@@ -317,7 +317,7 @@ class Calculator(QWidget):
         plus_minus.setStyleSheet("background-color: white;\
                                  font: bold;")
         plus_minus.setFont(QFont('Sanserif', 12))
-        plus_minus.move(120, 400)
+        plus_minus.move(120, 410)
         plus_minus.resize(60, 50)
         plus_minus.clicked.connect(self.PlusMinus)
 
@@ -330,7 +330,7 @@ class Calculator(QWidget):
         btopen.setStyleSheet("background-color: \
                                 white;")
         btopen.setFont(QFont('Sanserif', 12))
-        btopen.move(190, 400)
+        btopen.move(190, 410)
         btopen.resize(60, 50)
         btopen.clicked.connect(self.OpenBrk)
 
@@ -343,7 +343,7 @@ class Calculator(QWidget):
         btclose.setStyleSheet("background-color: white;\
                                 font: bold;")
         btclose.setFont(QFont('Sanserif', 11))
-        btclose.move(260, 400)
+        btclose.move(260, 410)
         btclose.resize(60, 50)
         btclose.clicked.connect(self.CloseBrk)
 
@@ -356,7 +356,7 @@ class Calculator(QWidget):
         btequal.setStyleSheet("background-color: white;\
                              font: bold;")
         btequal.setFont(QFont('Sanserif', 13))
-        btequal.move(330, 400)
+        btequal.move(330, 410)
         btequal.resize(60, 50)
         btequal.clicked.connect(self.EqualSign)
 
@@ -370,7 +370,7 @@ class Calculator(QWidget):
         btplus.setStyleSheet("background-color: yellow;\
                              font: bold;")
         btplus.setFont(QFont('Sanserif', 14))
-        btplus.move(430, 240)
+        btplus.move(430, 250)
         btplus.resize(65, 50)
         btplus.clicked.connect(self.PlusSign)
 
@@ -383,7 +383,7 @@ class Calculator(QWidget):
         btproduct.setStyleSheet("background-color: yellow;\
                                  font: bold;")
         btproduct.setFont(QFont('Sanserif', 12))
-        btproduct.move(510, 240)
+        btproduct.move(510, 250)
         btproduct.resize(65, 50)
         btproduct.clicked.connect(self.Product)
 
@@ -396,7 +396,7 @@ class Calculator(QWidget):
         btsqrt.setStyleSheet("background-color: lightgray;\
                              font: bold;")
         btsqrt.setFont(QFont('Sanserif', 11))
-        btsqrt.move(590, 240)
+        btsqrt.move(590, 250)
         btsqrt.resize(65, 50)
         btsqrt.clicked.connect(self.SquareRoot)
 
@@ -409,7 +409,7 @@ class Calculator(QWidget):
         btcbrt.setStyleSheet("background-color: lightgray;\
                              font: bold;")
         btcbrt.setFont(QFont('Sanserif', 18))
-        btcbrt.move(670, 240)
+        btcbrt.move(670, 250)
         btcbrt.resize(65, 50)
         btcbrt.clicked.connect(self.CubeRoot)
 
@@ -421,7 +421,7 @@ class Calculator(QWidget):
         btNroot = QPushButton(self)
         btNroot.setStyleSheet("background-color: lightgray;\
                                  font: bold;")
-        btNroot.move(750, 240)
+        btNroot.move(750, 250)
         btNroot.resize(65, 50)
         btNroot.clicked.connect(self.NRoot)
         btNroot.setIcon(QIcon('img/n-root.png'))
@@ -435,7 +435,7 @@ class Calculator(QWidget):
         btminus.setStyleSheet("background-color: yellow; \
                                 font: bold;")
         btminus.setFont(QFont('Sanserif', 14))
-        btminus.move(430, 320)
+        btminus.move(430, 330)
         btminus.resize(65, 50)
         btminus.clicked.connect(self.MinusSign)
 
@@ -448,7 +448,7 @@ class Calculator(QWidget):
         btdivide.setStyleSheet("background-color: yellow;\
                                  font: bold;")
         btdivide.setFont(QFont('Sanserif', 16))
-        btdivide.move(510, 320)
+        btdivide.move(510, 330)
         btdivide.resize(65, 50)
         btdivide.clicked.connect(self.Divide)
 
@@ -463,7 +463,7 @@ class Calculator(QWidget):
         btsq.setStyleSheet("background-color: lightgray;\
                             font: bold;")
         btsq.setFont(QFont('Sanserif', 11))
-        btsq.move(590, 320)
+        btsq.move(590, 330)
         btsq.resize(65, 50)
         btsq.clicked.connect(self.Squarenb)
 
@@ -477,7 +477,7 @@ class Calculator(QWidget):
         btcube.setStyleSheet("background-color: lightgray;\
                              font: bold;")
         btcube.setFont(QFont('Sanserif', 11))
-        btcube.move(670, 320)
+        btcube.move(670, 330)
         btcube.resize(65, 50)
         btcube.clicked.connect(self.Cubenb)
 
@@ -491,7 +491,7 @@ class Calculator(QWidget):
         btpwrn.setStyleSheet("background-color: lightgray; \
                              font: bold;")
         btpwrn.setFont(QFont('Sanserif', 10))
-        btpwrn.move(750, 320)
+        btpwrn.move(750, 330)
         btpwrn.resize(65, 50)
         btpwrn.clicked.connect(self.NPower)
 
@@ -505,7 +505,7 @@ class Calculator(QWidget):
         btpi.setStyleSheet("background-color: lightgray;\
                              font: bold;")
         btpi.setFont(QFont('Sanserif', 10))
-        btpi.move(430, 400)
+        btpi.move(430, 410)
         btpi.resize(65, 50)
         btpi.clicked.connect(self.PieClick)
 
@@ -518,7 +518,7 @@ class Calculator(QWidget):
         btnfct.setStyleSheet("background-color: lightgray;\
                             font: bold;")
         btnfct.setFont(QFont('Sanserif', 10))
-        btnfct.move(510, 400)
+        btnfct.move(510, 410)
         btnfct.resize(65, 50)
         btnfct.clicked.connect(self.Factorial)
 
@@ -531,7 +531,7 @@ class Calculator(QWidget):
         btnRcp.setStyleSheet("background-color: lightgray;\
                             font: bold;")
         btnRcp.setFont(QFont('Sanserif', 10))
-        btnRcp.move(590, 400)
+        btnRcp.move(590, 410)
         btnRcp.resize(65, 50)
         btnRcp.clicked.connect(self.Reciprocal)
 
@@ -544,7 +544,7 @@ class Calculator(QWidget):
         btinf.setStyleSheet("background-color: lightgray;\
                             font: bold;")
         btinf.setFont(QFont('Sanserif', 18))
-        btinf.move(750, 400)
+        btinf.move(750, 410)
         btinf.resize(65, 50)
         btinf.clicked.connect(self.infToggle)
 
@@ -558,7 +558,7 @@ class Calculator(QWidget):
 #  ----------------------------------------------------
 
         self.frame1 = QFrame(self)
-        self.frame1.move(25, 475)
+        self.frame1.move(25, 485)
 
         self.radioBtn1 = QRadioButton("deg", self.frame1)
         self.radioBtn1.setFont(QFont('Times New Roman', 10))
@@ -589,7 +589,7 @@ class Calculator(QWidget):
         btCosine.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btCosine.setFont(QFont('Times New Roman', 11))
-        btCosine.move(145, 485)
+        btCosine.move(145, 495)
         btCosine.resize(100, 50)
         btCosine.clicked.connect(self.Cosine)
 
@@ -602,7 +602,7 @@ class Calculator(QWidget):
         btSine.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSine.setFont(QFont('Times New Roman', 11))
-        btSine.move(265, 485)
+        btSine.move(265, 495)
         btSine.resize(100, 50)
         btSine.clicked.connect(self.Sine)
 
@@ -615,7 +615,7 @@ class Calculator(QWidget):
         btSine.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSine.setFont(QFont('Times New Roman', 11))
-        btSine.move(385, 485)
+        btSine.move(385, 495)
         btSine.resize(100, 50)
         btSine.clicked.connect(self.Tangent)
 
@@ -628,7 +628,7 @@ class Calculator(QWidget):
         btSine.setStyleSheet("background-color: lightblue;\
                                 font: bold;")
         btSine.setFont(QFont('Times New Roman', 11))
-        btSine.move(505, 485)
+        btSine.move(505, 495)
         btSine.resize(100, 50)
         btSine.clicked.connect(self.Secant)
 
@@ -641,7 +641,7 @@ class Calculator(QWidget):
         btSine.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSine.setFont(QFont('Times New Roman', 11))
-        btSine.move(625, 485)
+        btSine.move(625, 495)
         btSine.resize(100, 50)
         btSine.clicked.connect(self.Cosecant)
 
@@ -654,7 +654,7 @@ class Calculator(QWidget):
         btSine.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSine.setFont(QFont('Times New Roman', 11))
-        btSine.move(745, 485)
+        btSine.move(745, 495)
         btSine.resize(100, 50)
         btSine.clicked.connect(self.Cotangent)
 
@@ -676,7 +676,7 @@ class Calculator(QWidget):
         btArccos.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArccos.setFont(QFont('Times New Roman', 10))
-        btArccos.move(140, 550)
+        btArccos.move(140, 560)
         btArccos.resize(110, 50)
         btArccos.clicked.connect(self.ArcCosine)
 
@@ -689,7 +689,7 @@ class Calculator(QWidget):
         btArcsin.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArcsin.setFont(QFont('Times New Roman', 10))
-        btArcsin.move(260, 550)
+        btArcsin.move(260, 560)
         btArcsin.resize(110, 50)
         btArcsin.clicked.connect(self.ArcSine)
 
@@ -702,7 +702,7 @@ class Calculator(QWidget):
         btArctan.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArctan.setFont(QFont('Times New Roman', 10))
-        btArctan.move(380, 550)
+        btArctan.move(380, 560)
         btArctan.resize(110, 50)
         btArctan.clicked.connect(self.ArcTangent)
 
@@ -715,7 +715,7 @@ class Calculator(QWidget):
         btArcsec.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArcsec.setFont(QFont('Times New Roman', 10))
-        btArcsec.move(500, 550)
+        btArcsec.move(500, 560)
         btArcsec.resize(110, 50)
         btArcsec.clicked.connect(self.ArcSecant)
 
@@ -728,7 +728,7 @@ class Calculator(QWidget):
         btArccsc.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArccsc.setFont(QFont('Times New Roman', 10))
-        btArccsc.move(620, 550)
+        btArccsc.move(620, 560)
         btArccsc.resize(110, 50)
         btArccsc.clicked.connect(self.ArcCosecant)
 
@@ -741,7 +741,7 @@ class Calculator(QWidget):
         btArccot.setStyleSheet("background-color: lightblue;\
                                  font: bold;")
         btArccot.setFont(QFont('Times New Roman', 10))
-        btArccot.move(740, 550)
+        btArccot.move(740, 560)
         btArccot.resize(110, 50)
         btArccot.clicked.connect(self.ArcCotangent)
 
@@ -763,7 +763,7 @@ class Calculator(QWidget):
         btCosh.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btCosh.setFont(QFont('Times New Roman', 11))
-        btCosh.move(40, 640)
+        btCosh.move(40, 650)
         btCosh.resize(100, 50)
         btCosh.clicked.connect(self.CosineHyp)
 
@@ -776,7 +776,7 @@ class Calculator(QWidget):
         btSinh.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSinh.setFont(QFont('Times New Roman', 11))
-        btSinh.move(160, 640)
+        btSinh.move(160, 650)
         btSinh.resize(100, 50)
         btSinh.clicked.connect(self.SineHyp)
 
@@ -789,7 +789,7 @@ class Calculator(QWidget):
         btTanh.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btTanh.setFont(QFont('Times New Roman', 11))
-        btTanh.move(280, 640)
+        btTanh.move(280, 650)
         btTanh.resize(100, 50)
         btTanh.clicked.connect(self.TangentHyp)
 
@@ -803,7 +803,7 @@ class Calculator(QWidget):
         btSech.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btSech.setFont(QFont('Times New Roman', 11))
-        btSech.move(400, 640)
+        btSech.move(400, 650)
         btSech.resize(100, 50)
         btSech.clicked.connect(self.SecHyp)
 
@@ -816,7 +816,7 @@ class Calculator(QWidget):
         btCsch.setStyleSheet("background-color: lightblue;\
                              font: bold;")
         btCsch.setFont(QFont('Times New Roman', 11))
-        btCsch.move(520, 640)
+        btCsch.move(520, 650)
         btCsch.resize(100, 50)
         btCsch.clicked.connect(self.CscHyp)
 
@@ -829,7 +829,7 @@ class Calculator(QWidget):
         btCoth.setStyleSheet("background-color: lightblue; \
                             font: bold;")
         btCoth.setFont(QFont('Times New Roman', 11))
-        btCoth.move(640, 640)
+        btCoth.move(640, 650)
         btCoth.resize(100, 50)
         btCoth.clicked.connect(self.CotHyp)
 
@@ -852,7 +852,7 @@ class Calculator(QWidget):
                             text-align:center;")
 
         btexp.setFont(QFont('Times New Roman', 16))
-        btexp.move(60, 730)
+        btexp.move(60, 740)
         btexp.resize(80, 50)
         btexp.clicked.connect(self.Exp1)
 
@@ -865,7 +865,7 @@ class Calculator(QWidget):
         btexpx.setStyleSheet("background-color: lightblue;\
                              font: italic;")
         btexpx.setFont(QFont('Times New Roman', 11))
-        btexpx.move(165, 730)
+        btexpx.move(165, 740)
         btexpx.resize(80, 50)
         btexpx.clicked.connect(self.Exponential)
 
@@ -878,7 +878,7 @@ class Calculator(QWidget):
         btloge.setStyleSheet("background-color: lightblue;\
                              font: italic;")
         btloge.setFont(QFont('Times New Roman', 11))
-        btloge.move(270, 730)
+        btloge.move(270, 740)
         btloge.resize(80, 50)
         btloge.clicked.connect(self.LogE)
 
@@ -891,7 +891,7 @@ class Calculator(QWidget):
         btlog10.setStyleSheet("background-color: lightblue;\
                              font: italic;")
         btlog10.setFont(QFont('Times New Roman', 10))
-        btlog10.move(375, 730)
+        btlog10.move(375, 740)
         btlog10.resize(80, 50)
         btlog10.clicked.connect(self.Log10)
 
@@ -908,7 +908,7 @@ class Calculator(QWidget):
         labelA.setText('Base')
         labelA.setStyleSheet("font: bold;")
         labelA.setFont(QFont('Times New Roman', 10))
-        labelA.move(530, 730)
+        labelA.move(530, 740)
         labelA.resize(80, 50)
         labelA.show()
 
@@ -919,7 +919,7 @@ class Calculator(QWidget):
         self.display1.setStyleSheet("background-color: white;")
         self.display1.setReadOnly(False)
         self.display1.setAlignment(Qt.AlignCenter)
-        self.display1.move(620, 730)
+        self.display1.move(620, 740)
         self.display1.resize(50, 50)
 
 
@@ -929,10 +929,21 @@ class Calculator(QWidget):
         btlogB.setStyleSheet("background-color: lightblue;\
                              font: italic;")
         btlogB.setFont(QFont('Times New Roman', 10))
-        btlogB.move(700, 730)
+        btlogB.move(700, 740)
         btlogB.resize(80, 50)
         btlogB.clicked.connect(self.LogBase)
 
+
+
+#   Fredo Label
+
+        labelA = QLabel(self)
+        labelA.setText('Fredo')
+        labelA.setStyleSheet("font: Italic;")
+        labelA.setFont(QFont('Times New Roman', 14))
+        labelA.move(50, 820)
+        labelA.resize(200, 50)
+        labelA.show()
 
 
 #  --------------------------------------
@@ -947,37 +958,43 @@ class Calculator(QWidget):
         painter.begin(self)
         painter.setPen(QPen(Qt.black, 5, Qt.SolidLine))
         painter.setBrush(QBrush(Qt.green, Qt.DiagCrossPattern))
-        painter.drawRect(30, 235, 370,150)
+        painter.drawRect(35, 250, 360,145)
 
         painter2 = QPainter()
         painter2.begin(self)
         painter2.setPen(QPen(Qt.blue, 3, Qt.SolidLine))
-        painter2.drawRect(70, 150, 740, 70)
+        painter2.drawRect(70, 160, 740, 75)
 
         painter3 = QPainter()
         painter3.begin(self)
         painter3.setPen(QPen(Qt.green, 4, Qt.SolidLine))
-        painter3.drawLine(10, 465, 870, 465)
+        painter3.drawLine(10, 475, 870, 475)
 
         painter4 = QPainter()
         painter4.begin(self)
         painter4.setPen(QPen(Qt.green, 2, Qt.SolidLine))
-        painter4.drawLine(10, 620, 870, 620)
-
-        painter5 = QPainter()
-        painter5.begin(self)
-        painter5.setPen(QPen(Qt.green, 2, Qt.SolidLine))
-        painter5.drawLine(10, 710, 870, 710)
-
-        painter5 = QPainter()
-        painter5.begin(self)
-        painter5.setPen(QPen(Qt.green, 10, Qt.SolidLine))
-        painter5.drawLine(10, 800, 870, 800)
+        painter4.drawLine(10, 630, 870, 630)
 
         painter5 = QPainter()
         painter5.begin(self)
         painter5.setPen(QPen(Qt.yellow, 4, Qt.SolidLine))
-        painter5.drawLine(510, 710, 510, 800)
+        painter5.drawLine(510, 720, 510, 810)
+
+        painter6 = QPainter()
+        painter6.begin(self)
+        painter6.setPen(QPen(Qt.green, 2, Qt.SolidLine))
+        painter6.drawLine(10, 720, 870, 720)
+
+        painter7 = QPainter()
+        painter7.begin(self)
+        painter7.setPen(QPen(Qt.green, 10, Qt.SolidLine))
+        painter7.drawLine(10, 810, 870, 810)
+
+        painter8 = QPainter()
+        painter8.begin(self)
+        painter8.setPen(QPen(Qt.blue, 3, Qt.SolidLine))
+        painter8.drawLine(10, 818, 870, 818)
+
 
 
 
@@ -1459,12 +1476,13 @@ class Calculator(QWidget):
             xx = abs(xx1)
             sqR = sqrt(xx)
 
+            nbi = '<font color=red size=4 style=bold> i </font>'
+
             self.display2.setText( ' sqrt(' + str(x) +\
-                                 ') = ' + str(sqR) + ' i')
+                                 ') = ' + str(sqR) + str(nbi))
 
         else:
             n = xx1
-
             sol = self.sqRootCal(n)
 
             self.display2.setText( ' sqrt(' + str(x) + ') =  ' + str(sol))
@@ -1507,7 +1525,7 @@ class Calculator(QWidget):
             cbR = xx **(1/3)
 
             self.display2.setText( cbRoot + '(' + str(x) +\
-                             ') = ' + str(cbR) + ' i')
+                             ') = -' + str(cbR))
 
         else:
             cbR = xx1 **(1/3)
