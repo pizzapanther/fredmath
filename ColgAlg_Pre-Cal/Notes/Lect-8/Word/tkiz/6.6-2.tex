@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\pagestyle{empty}
+\usepgfplotslibrary{polar}
+
+
+\begin{document}
+\begin{tikzpicture}
+\begin{polaraxis}
+
+
+\addplot [red,mark=*] coordinates {(120, 2)}; 
+
+\node at (axis cs: 88, 2) {(2,$-240^\circ $) } ;
+
+\filldraw[fill=green!20!white, draw=green!50!black]
+		(0,0) -- (10mm,0mm) arc (0:-240:10mm) -- cycle;
+		
+\addplot  [ultra thick, blue , ->] coordinates  {(0, 0) (120, 4) } ;		
+
+\end{polaraxis}
+\end{tikzpicture}
+\end{document}

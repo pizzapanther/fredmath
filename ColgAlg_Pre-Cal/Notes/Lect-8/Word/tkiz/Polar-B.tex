@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.5in,paper=a4paper]{geometry}
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{5pt}
+\usepackage{euler}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+ 
+\begin{document}
+\thispagestyle{empty} 
+ 
+\begin{center}
+   \begin{tikzpicture}
+     \foreach \r in {1, 2,...,5}
+       \draw[SteelBlue3, thick] (0,0) circle (\r);    
+     \foreach \r in {0.5, 1.5,...,5}
+       \draw[Azure4, thin] (0,0) circle (\r);
+     \foreach \a in {0, 1,...,359}
+       \draw[Azure4] (\a:5.5) -- (\a:5.8);
+     \foreach \a in {0, 5,...,359}
+       \draw[Azure4] (\a:5.5) -- (\a:5.8);      
+     \foreach \a in {0, 15,...,359}
+       \draw[thick,Azure4] (\a:1) -- (\a:5.8); 
+     \foreach \a in {0, 30,...,359}
+       \draw[thick,Azure4] (0, 0) -- (\a:5.8);
+     \foreach \r in {1, 2,...,5}
+       \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
+     \foreach \a in {0, 90,...,359}
+       \draw[very thick] (0, 0) -- (\a:5.8);
+     \foreach \a in {0, 15,...,359}
+       \draw (\a: 6.3) node {$\a^\circ$};
+     %Central point
+     \draw[fill=red] (0,0) circle(0.7mm);
+
+
+  \begin{polaraxis}[hide axis,anchor=origin,disabledatascaling,at={(0pt,0pt)},x=1cm,y=1cm]
+   
+%  \addplot+[mark=none,domain=0:720,samples=600,thick]  {30*sin(2*x)*cos(2*x)}; 
+
+     \end{polaraxis}
+   \end{tikzpicture}
+\end{center}
+ 
+\end{document}
