@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 17 - SOL-Lecture 2</title>
+        <title>Page 17 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 17 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 17 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 17</div>
      </div>
      <div id="content-middle">
@@ -152,63 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             What are the quotient and remainder when
-              a)  19 is divided by 7?
-              b)  111 is divided by 11?
-              c)  789 is divided by 23?
-              d)  1001 is divided by 13?
-              e)  0 is divided by 19?
-              f)  3 is divided by 5?
-              g)  1 is divided by 3?
-              h)  4 is divided by 1?
-             Solution
-
-                a)  19   7 2  5        q    2 and  r    5
-
-                                11 
-                b)   111 11      10  q      11 and   r   10
-                              
-                c)  789   23 34  7     q   34 and   r    7
-
-                d)  1001  13 77  0     q   77 and   r    0
-
-                e)  0  19 0  0         q   0 and   r    0
-
-                f)  3  5 0  3          q   0 and   r    3
-
-                g)   1  3  1          q     1 and  r    2
-                           
-                              2
-                h)  4  1 4  0          q    4 and  r    0
+    <pre style="white-space:pre-line"><code>temp  : x
+                          =
+                        y
+                      : x =
+                      : y = temp
 
 
 
              Exercise
 
-             What time does a 12-hour clock read
-              a)  80 hours after it reads 11:00?
-              b)  40 hours before it reads 12:00?
-              c)  100 hours after it reads 6:00?
+             List all the steps used to search for 9 in the sequence 1, 3, 4, 5, 6, 7, 9, 11 using
+              a) a linear search         b) a binary search
              Solution
 
-                a)  11 80  mod  1    2  11 8   7, the clock reads 7:00.
+                a)  Note that n = 8 and x = 9.
 
-                b)  12  40  mod  1    2    28  mod  1    2   (12  40 = 28)
-                                      28   36  mod 1    2
-                                   = 8
-                    The clock reads 8:00.
-                c)  6 100  mod 1    2   6 4  10, the clock reads 10:00.
+                                                                 ,
+                            procedure linear_search (x: integer; a a  ,  , a : integers)
+                                                                1   2       n
+                           i := 1
+                                                             )
+                           while ( i ≤ 8 and  i ≤  (  8  and   ≠  9  a
+                                                            i
+                                      i
+                                    : i = + 1
+                                                                      st
+                    The while loop is executed as long as i ≤ 8 and the i  element is not equal to 9.
+                        i = 1, a = 1; 9 ≠ 1
+                                1
+                        i =  2, a =  3; 9 ≠
+                                           3
+                                2
+                                           4
+                        i =  3, a =  4; 9 ≠
+                                3
+                                           5
+                        i =  4, a =  5; 9 ≠
+                                4
+                                           6
+                        i =  5, a =  6; 9 ≠
+                                5
+                                            7
+                        i =  6, a =  7; 9 ≠
+                                6
+                                          =
+                        i =  7, a =  7;  99
+                                7
+                    Therefore the body of the loop is not executed (so i is still equal to 7), and control passes beyond
+                    the loop.
+                           if  i ≤ n then location := i
+
+                           else location := 0
+                    The else clause is not executed. This completes the procedure, so location has the correct value,
+                    namely 7, which indicates the location of the element x in the list: 9 is the seventh element.
 
 
-
-
-
-
-
-
-                                                             17</code></pre>
+                                                          ,
+                b)  procedure linear_search (x: integer; a a  ,  , a : increasing integers)
+                                                        1   2        n
+                    i  := 1
+                    j := 8
+                    while i &lt; j
+                                                         +
+                    The while step is executed, first m =  18  =  4
+                                                         2
+                    Then since x (= 9) is greater than  a  ( 5=  ) , the statement  :i =  m + 1 is executed, so i has the value
+                                                      4
+                    5.
+                                                              69</code></pre>
      	</div>
     
      </div>

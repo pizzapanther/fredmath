@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 54 - SOL-Lecture 3</title>
+        <title>Page 54 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 54 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 54 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 54</div>
      </div>
      <div id="content-middle">
@@ -153,60 +153,67 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
-             Suppose that a department contains 10 men and 15 women. How many ways are there to form a
-             committee with six members if it must have
-              a)  The same number of men and women?
-              b)  More women than men?
 
-             Solution
+        A coin flipped 10 times where each flip comes up either heads or tails. How many possible outcomes
+          a)  Are there in total?
+          b)  Contain exactly two heads?
+          c)  Contain at most three tails?
+          d)  Contain the same number of heads and tails?
 
-                a)  C      C     54,600  wa ys
-                      10,3  15,3
-                b)  There are C     ways  to choose the committee to be composed only of women
-                               15,6
-                    C      C    ways  if there are to be five women and one man, and C    C     ways  if there
-                      15,5  10,1                                                      15,4   10,2
-                    are to be four women and two men.
-                    Therefore C      C     C     C     C       96,460  ways
-                                15,6   15,5   10,1   15,4   10,2
+        Solution
 
+                                                           10
+            a)  Each flip can be either heads or tails: There are 2 = 10 24 possible coutcomes
 
-             Exercise
+            b)  C     =  45  outcomes
+                 10,2
+            c)  At most three tails means: 3, 2, 1, 0 tails.
+                C      C     + +  C  +  C    = 176  outcomes
 
-             How many bit strings contain exactly eight 0s and 10 1s if every 0 must be immediately followed by a
-             1?
-             Solution
+                 10,3    10,2   10,1    10,0
+            d)  To have an equal number of heads and tails means 5 heads and 5 tails.
 
-
-                 0 1     0 1    0 1    0 1    0 1     0 1    0 1     0 1   1  1
-                There are 8 blocks consisting of the string 01
-
-                C        45  ways
-                  10,2
+               Therefore; C      =  252  outcomes
+                            10,5
 
 
-             Exercise
+        Exercise
 
-             How many bit strings contain exactly five 0s and 14 1s if every 0 must be immediately followed by
-             two 1s?
+        How many bit strings of length 12 contain?
 
-             Solution
-                Glue 2 1’s to the right of each 0, giving a collection of 9 tokens: five 001’s and four 1’s.
+          a)  Exactly three 1s?
+          b)  At most three 1s?
+          c)  At least three 1s?
+          d)  An equal number of 0s and 1s?
 
-                C      126  ways
-                  9,4
+        Solution
+
+            a)  We need to choose the 3 positions that contains the 1’s
+                C      =  220  ways
+
+                 12, 3
+
+            b)  At most three 1’s means to contains 3, 2, 1, 0 −1’s:
+                C      C     + +  C  +  C    = 299  strings
+                 12,3    12,2   12,1    12,0
 
 
-             Exercise
+            c)  At least three 1’s means to contains 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 −1’s:
+                                                                                                     s
+                C    +  C   +  C   +  C   +C     +  C   +  C   +  C    +  C    +  C     =  4017  strin g
+                 12,3   12,4   12,5    12,6  12,7   12,8   12,9   12,10   12,11   12,12
+               OR
 
-             A concert to raise money for an economics prize is to consist of 5 works; 2 overtures, 2 sonatas, and a
-             piano concerto.
-              a)  In how many ways can the program be arranged?
-              b)  In how many ways can the program be arranged if an overture must come first?
+                2 12  −  C  −  C   −  C   =  4096 66−  −  1 2 1 =−  417  stri ngs
+                                                                0
+                       12,2   12,1    12,0
+            d)  To have an equal number of 0’s and 1’s means 6 1’s.
+               Therefore;  (12, 6C  )  =  924  strings
 
-             Solution
 
-                                                             54</code></pre>
+
+
+                                                          158</code></pre>
      	</div>
     
      </div>

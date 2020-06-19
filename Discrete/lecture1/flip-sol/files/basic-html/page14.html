@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 14 - SOL-Lecture 1</title>
+        <title>Page 14 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 14 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 14 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 14</div>
      </div>
      <div id="content-middle">
@@ -153,71 +153,65 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
-                                                         
-             Show that  p  q          r  and  p   q r  are logically equivalent
-                                                      
-                                p 
-             Solution
-                 p  q   p     r  will be true when either of the conditional statements is true. The conditional
-
-                statement will be true if p is false, or if q in one case or r in the other case is true, when  q r  is
-                                                  
-                                               
-                true, which is precisely  p   q r  is true. Since the two propositions are true in exactly the same
-                situation, they are logically equivalent.
 
 
-             Exercise
+                                           q
+          Show that  ( p¬  ↔  ) q  and  p ↔¬  are logically equivalent
+          Solution
+                                                                                q
+                                                           q
+             The proposition  ( p¬  ↔  ) q  is true when  p ↔  is false. Since  p ↔  is true when  p  and  q  have
+             the same truth value, it is false when  p  and  q  have different truth values (either  p  is true and  q  is
+                                                                              q
+             false, or vice versa). These are precisely the cases in which  p ↔¬  is true. Therefore these two
+             expressions are logically equivalent.
 
-                               q 
-                                                 
-             Show that  p  r          r  and  p q     r  are logically equivalent
-             Solution
+                                     p  q     p  ↔ q    ¬ ( ↔p    ) q     ¬q   p  ↔¬q
 
-                                    q 
-                In order for  p  r         r to be false, we must have both of the two implications false, which
-
-                                                                                                            
-                happens exactly when r is false and both p and q are true. But this precisely the case in which p q
-                                                
-                is true and r is false, which is  p q     r  is false. Therefore these two expressions are logically
-                equivalent.
-
-
-             Exercise
-
-                               q 
-             Show that  p  q          r   p    r  is a tautology
-
-             Solution
-                                      q
-                                                                                                  r
-                Given that p and  p   are both true, we conclude that q is true; from that and  q   we conclude
-                that r is true.
+                                     T  T        T           F         F        F
+                                     T   F       F           T         T        T
+                                     F  T        F           T         F        T
+                                     F   F       T           F         T        F
 
 
+          Exercise
 
-             Exercise
+                         q
+                                        p
+          Show that  p →  and  q¬ → ¬  are logically equivalent
+          Solution
+             It is easy to see from the definitions of conditional statement and negation of these propositions is
+             false in the case which p is true and q is false the proposition is false, and true in the other three cases.
+             Therefore these two expressions are logically equivalent.
 
-             Show that  p q    p r      q r   is a tautology
+                                      p  q      p  → q    ¬q   ¬p       ¬ →¬p
+                                                                          q
+                                      T  T        T        F      F          T
+                                      T    F      F        T      F         F
+                                      F  T        T        F      T          T
+
+                                      F    F      T        T      T          T
 
 
-             Solution
-                                 
-                The conclusion  q r  will be true in every case except when q and r are both false. But if q and r
-                are both false, then one of  p q or  p r     is false, because one of p or  p  is false. Thus in this
-                                            
-                        
-                case  p q         
-                             p r  is false. An conditional statement in which the conclusion is true or the
-                hypothesis is false.
+          Exercise
+
+                           q
+                                        q
+          Show that  p¬↔  and  p ↔¬  are logically equivalent
+          Solution
+
+             The proposition  p¬↔  is true when  p¬  and  q  have the same truth values, which means that  p
+                                    q
+             and  q  have different truth values (either  p  is true and  q  is false, or vice versa). By the same
+                                                                  q
+             reasoning, these are exactly the cases in which  p ↔¬ is true. Therefore these two expressions are
+
+             logically equivalent.
 
 
 
 
-
-
-                                                             14</code></pre>
+                                                            14</code></pre>
      	</div>
     
      </div>

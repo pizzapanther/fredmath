@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 23 - SOL-Lecture 1</title>
+        <title>Page 23 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 23 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 23 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 23</div>
      </div>
      <div id="content-middle">
@@ -152,53 +152,55 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-              f)    x yQ  , x  y
-                     
-             Solution
-                a)  There exist students x and y such that x has sent a message to y.
-                    In other words, there is some student in your class who has sent a message to some student in
-                    your class.
-                b)  There exists a student x for every student y such that x has sent a message to every y.
-                    In other words, there is a student in your class who has sent a message to every student in your
-                    class.
-                c)  For every student x in your class there exists a student y such that x has sent a message to y.
-                    In other words, every student in your class has sent a message to at least one student in your
-                    class.
-                d)  There exists a student y for every student x such that y has sent a message to every x.
-                    In other words, there is a student in your class who has sent a message to every student in your
-                    class.
-                e)  For every student y in your class there exists a student x such that y has sent a message to x.
-                    In other words, every student in your class has sent a message to at least one student in your
-                    class.
-                f)  Every student in your class has sent a message to every student in your class.
+    <pre style="white-space:pre-line"><code>Solution           Section 1.4 – Nested Quantifiers
+
 
 
 
              Exercise
 
-             Express each of these statements using predicates, quantifiers, logical connectives, and mathematical
-             operators where the domain consists of all integers.
-              a)  The product of two negative integers is positive.
-              b)  The average of two positive integers is positive.
-              c)  The difference of two negative integers is not necessarily negative.
-              d)  The absolute value of the sum of two integers does not exceed the sum of the absolute values of
-                  these integers.
+             Translate these statements into English, where the domain for each variable consists of all real numbers
+                    x
+              a)  ∀∃    ( y x &lt;  ) y
+              b)  ∃∀    ( y xy =  ) y
+                    x
+                                                       ))
+                    xy
+              c)  ∀∀      ( ( ( x ≥ 0 ) ( y∧  &lt; 0 )) → ( x y− &gt;  0
+                                                     ))
+                    x
+              d)  ∀∀      ( ( ( y  x ≥ 0 ) ( y∧  ≥ 0 )) → ( xy ≥ 0
+              e)  ∀∀      ( z xy =  ) z
+                    x y∃
+                               y
+              f)  ∀∀    ∃  ( x = +  ) z
+                    x yz
              Solution
 
-                a)   x     y x  0    0  xy  0 
-                                   y 
-                                                  
-                                                         
-                                   y 
-                b)          x   0    0       x y    0
-                      x y
-                                                         
-                                                 2      
-                                          x y 
-                c)   x    y x  0   0        0 
-                                  y 
-                d)   x   y x y    x   y  
+                a)  For every real number x there exists a real number y such that x is less than y. Basically, there is a
+                    larger number.
+
+                b)  There exists real number x such that for every a real number y,  xy = . This is asserting the
+                                                                                      y
+                    existence of a multiplication identity for the real numbers, and the statement is true, since we can
+                    take  x = 1.
+
+                c)  For every real number x and real number y, if x is nonnegative and y is negative, then the
+                    difference  x y−  is positive. More simply, a nonnegative number minus a negative number is
+                    positive which is true.
+
+                d)  For every real number x and real number y, if x is positive and y is positive, then the product  xy  is
+                    positive. More simply, a product of 2 positive numbers is positive.
+
+
+                e)  For every real number x and real number y, there exists a real number z such that the product
+                         z
+                    xy = . More simply, the real numbers are closed under multiplication.
+
+                f)  For every real number x and real number y, there exists a real number z such that the product
+                                                                            −
+                          +
+                    x =  yz . This is a true statement, since we can take  z =  x y  in each case.
 
 
 
@@ -211,7 +213,16 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             23</code></pre>
+
+
+
+
+
+
+
+
+
+                                                              23</code></pre>
      	</div>
     
      </div>

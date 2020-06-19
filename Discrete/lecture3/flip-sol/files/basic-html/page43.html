@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 43 - SOL-Lecture 3</title>
+        <title>Page 43 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 43 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 43 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 43</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-             How many strings of eight English letter are there
-              a)  That contains no vowels, if letters can be repeated?
-              b)  That contains no vowels, if letters cannot be repeated?
-              c)  That starts with a vowel, if letters can be repeated?
-              d)  That starts with a vowel, if letters cannot be repeated?
-              e)  That contains at least one vowel, if letters can be repeated?
-              f)  That contains at least one vowel, if letters cannot be repeated?
+    <pre style="white-space:pre-line"><code>22 1
+                                                                        ⋅⋅
+                          =
+                12 ⋅  n− 2 ⋅  1 2 n− 2     bit strings                1 22    ⋅⋅⋅
 
-             Solution
-
-                                                               
-                a)  There are 8 slots which can be filled with  26 5   21 non-vowels.
-                                          8
-                    By the product rule:  21   37 822 859 361 strings
-                                                         ,
-
-                                                     ,
-                                                ,
-                       
-                                    
-                                       
-                                           
-                          
-                             
-                                 
-                b)  21 20 19 18 17 16 15 14    8 204 716 800 strings
-                                                 ,
-                                                      ,
-
-                                                          ,
-                c)  5  26   7  40 159 050 880 strings
-                               ,
-
-                                       ,
-                                   ,
-                                    
-                                
-                                       
-                                           
-                d)  5 25 24 23 22 21 20 19     12 113 640 000 strings
-                             
-                     
-                         
-                                                      ,
-                                                           ,
-
-                                                  ,
-                e)  By the product rule:  26   8  21   8  171 004 205 215 strings
-                                                               ,
-                                                           ,
-
-                                                       ,
-                           7
-                      
-                f)  8 5 21    72 043 541 640 strings               1    2    3    4   5    6    7    8
-
-                                 ,
-                                     ,
-                                         ,
-                                                                    NV  NV  NV  NV  NV  NV  NV  NV
-                                                                a   21  21  21  21  21  21  21  21
-                                                                    21  20  19  18  17  16  15  14
-                                                                b
-                                                                    V    L    L    L   L    L    L    L
-                                                                c   5   26  26  26  26  26  26  26
-                                                                d   5   25  24  23  22  21  20  19
 
              Exercise
-             How many ways are there to seat four of a group of ten people around a circular table where two
-             seatings are considered the same when everyone has the same immediate left and immediate right
-             neighbor?
-             Solution
-                The count ordered arrangements of length 4 from the 10 people, then we get 10 9 8 7     5040
-                arrangements.
-                However, we can rotate the people around the table in 4 ways and get the same seating
-                arrangement, so the overcounts by a factor of 4.
-                                                     s
-                Therefore, there are   5040   1260  way
-                                      4
+             How many strings are there of lowercase letters of length four or less, not counting the empty string?
 
-                                                             43</code></pre>
+             Solution
+
+                The number of strings of length 4 or less by counting the number of the strings of length 0 i≤≤
+                                                                                                             4
+                There are 26 letters to choose from, and a string of length i is specified by choosing its characters, one
+                after another.
+                                             i
+                The product rules there are  26
+                  4
+                ∑   26 =  i  1 26 26 +  2  26 +  3  26
+                                               4
+                                +
+                           +
+                 i= 0
+                        =  475,255
+
+
+
+             Exercise
+             How many strings are there of four lowercase letters that have the letter x in them?
+
+             Solution
+
+                                                             4
+                Number of strings of length of 4 lowercase:  26
+                                                                          4
+                Number of strings of length of 4 lowercase other than x:  25
+                   4
+                         4
+
+                26 −  25 =  66,  5 3 1   strings
+
+
+             Exercise
+
+             How many positive integers between 50 and 100
+              a)  Are divisible by 7? Which integers are these
+              b)  Are divisible by 11? Which integers are these
+              c)  Are divisible by 7 and 11? Which integers are these
+
+             Solution
+
+                a)  Neither 50 nor 100 is divisible by 7
+                    There are   50  = 7  integers less than 50 that are divisible by 7
+                               7
+
+                    There are  100  = 14  integers less than 100 that are divisible by 7
+                               7
+                    This leaves 14 7− =  numbers between 50 and 100 that are divisible by 7.
+                                       7
+                    They are 56, 63, 70, 77, 84, 91, and 98.
+
+                b)  Neither 50 nor 100 is divisible by 11
+
+                                                               147</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 13 - SOL-Lecture 1</title>
+        <title>Page 13 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 13 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 13 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 13</div>
      </div>
      <div id="content-middle">
@@ -152,63 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>g)
 
-                       
-             Show that   p      q  and  p     q are logically equivalent
-             Solution
-                The proposition   p     q  is true when  p   is false. Since  p   is true when  p  and  q
-                                                                                   q
-                                                              q
-                have the same truth value, it is false when  p  and  q  have different truth values (either  p  is true
-                and  q  is false, or vice versa). These are precisely the cases in which  p     q is true. Therefore
-                these two expressions are logically equivalent.
 
-                                      p   q     p   q      p          q   p     q
-                                                              q
-                                      T  T        T            F         F       F
-                                      T    F      F            T         T       T
-                                      F   T       F            T         F       T
-                                      F    F      T            F         T       F
+                   p  q     r    p → q   q  → r    ( →  p  ) ( → q  ∧ q  ) r   p → r      ( →  ) ( → q  ∧  ) → q   p    ( → r  p  ) r
+
+                   T  T  T         T        T              T               T                     T
+                   T  T  F         T        F              F               F                     T
+                   T    F  T       F        T              F               T                     T
+                   T    F  F       F        T              F               F                     T
+                   F  T  T         T        T              T               T                     T
+
+                   F  T  F         T        F              F               T                     T
+                   F    F  T       T        T              T               T                     T
+                   F    F  F       T        T              T               T                     T
+
+                h)
+
+                     p  q   p  → q   p   ∧ ( →p   ) q       ∧  ( →p  q ) →   p    q
+
+                    T  T        T           T                  T
+                    T    F      F           F                  T
+                    F  T        T           F                  T
+                    F    F      T           F                  T
+
 
 
              Exercise
 
-                                   
-                                           p
                             q
-             Show that  p   and  q   are logically equivalent
-             Solution
-                It is easy to see from the definitions of conditional statement and negation of these propositions is
-                false in the case which p is true and q is false the proposition is false, and true in the other three
-                cases. Therefore these two expressions are logically equivalent.
-
-                                        p   q     p q      q   p        p
-                                                                            q
-                                        T  T        T        F     F          T
-                                        T   F       F        T     F          F
-
-                                        F   T       T        F     T          T
-                                        F   F       T        T     T          T
-
-
-             Exercise
-
-             Show that  p    q  and  p     q are logically equivalent
-
+             Show that  p ↔  and ( pq∧   ) ( p∨ ¬ ∧¬  ) q  are logically equivalent
              Solution
 
-                                                      
-                The proposition  p    q  is true when  p  and  q  have the same truth values, which means that  p
-                and  q  have different truth values (either  p  is true and  q  is false, or vice versa). By the same
-                reasoning, these are exactly the cases in which  p     q is true. Therefore these two expressions
+                The proposition  p ↔  is true when  p  and  q  have the same true or false value.  Since  p  and  q  are
+                                      q
+                             ∧
+                truth, then  pq  only true. When  p  and  q  are false, then the negation  p¬  and  q¬  are true, then
+                       q
+                ¬ p ∧¬  is true. Therefore ( pq∧  ) ( p∨ ¬ ∧¬  ) q  is true only when both are true. Therefore these two
+                expressions are logically equivalent.
 
-                are logically equivalent.
+                            p   q    pq       ¬p   ¬q   ¬ ∧¬p    q    ( ∧pq ) (¬ ∧¬p     ) q    p ↔ q
+                                       ∧
+                                                                             ∨
+
+                           T  T        T       F     F        F                T               T
+                           T    F      F       F     T        F                F               F
+                           F  T        F       T     F        F                F               F
+                           F    F      F       T     T        T                T               T
 
 
 
 
-                                                             13</code></pre>
+
+
+
+
+
+                                                              13</code></pre>
      	</div>
     
      </div>

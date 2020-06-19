@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 13 - SOL-Lecture 2</title>
+        <title>Page 13 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 13 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 13 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 13</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Describe an algorithm that takes as an input a list of n integers and produces as output the largest
-             difference obtained by subtracting an integer in the list from the one following it.
-             Solution
+    <pre style="white-space:pre-line"><code>=  n +  (n −  1 +  ) (n −  ) 2 +  c n− 3
 
 
-                For i going from 1 through n  1, compute the value of the i    1  st   element in the list minus the
-                 st
-                i  element in the list. If this is larger than the answer, reset the answer to be this value.
+                       
 
+                        =  n +  (n −  1 ) (n+  −  ) 2 +  +   1 c      n +  (n −  1 ) (n+  −  ) 2 +  +   1 =  ( nn +  ) 1
+                                                    +
+                                                       0
+                                                                                                   2
+                           ( nn +  ) 1
+                        =         +  0
+                             2
+                           2
+                        =  n +  n
+                            2
 
+                            2
+                    c   = 12 + 12
+                     12      2
+                        =  78
 
-             Exercise
-
-             Describe an algorithm that takes as an input a list of n integers in non-decreasing order and produces
-             the list of all values that occur more than once.
-             Solution
-                                                             
-                Procedure negatives  a  a        , a n  :integers
-                                        ,
-                                             ,
-                                           2
-                                       1
-                k:=  0
-                for i := 1 to n
-                           if  a   then   : k   k   1
-                                  0
-                               i
-                return k { the number of negative integers in the list}
+                           2
+                c)  c =  n +  n
+                     n      2
 
 
              Exercise
 
-             Describe an algorithm that takes as an input a list of n integers and finds the location of the last even
-             integer in the list or returns 0 if there are no even integers in the list.
+             For each of these lists of integers, provide a simple formula or rule that generates the terms of an integer
+             sequence that begins with the given list. Assuming that your formula or rule is correct, determine the next
+             three terms of the sequence.
+
+                a)  1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, …
+
+                b)  1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, …
+                c)  1, 0, 2, 0, 4, 0, 8, 0, 16, 0, …
+
+                d)  3, 6, 12, 24, 48, 96, 192, …
+
+                e)  15, 8, 1, −6, −13, −20, −27, …
+
+                f)  3, 5, 8, 12, 17, 23, 30, 38, 47, …
+                g)  2, 16, 54, 128, 250, 432, 686, …
+
+                h)  2, 3, 7, 25, 121, 721, 5041, 40321, …
+
+                i)  3, 6, 11, 18, 27, 38, 51, 66, 83, 102, …
+
+                j)  7, 11, 15, 19, 23, 27, 31, 35, 39, 43, …
+                k)  1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010, 1011, …
+
 
              Solution
-                                           
-                                                                    
-                                                   ,
-                Procedure last even loction  a  a      , a n  :integers
-                                               ,
-                                              1
-                                                  2
-                k:=  0
-                for i := 1 to n
-                           if  a  is even  then   :k 
-                                                  i
-                               i
-                return k { is the desired location (or 0 if there are no evens)}
-
-
-
-             Exercise
-             Describe an algorithm that interchanges the values of the variables x and y, using only assignments.
-             What is the minimum number of assignment statements needed to do this?
-
-             Solution
-
-                                                               x
-                We cannot simply write  :x   followed by  :y  .
-                                            y
-                    temp : x
-                                                             13</code></pre>
+                a)  We have one 1 and one 0, then two 1 and two 0, then three of each, and so on increasing the
+                    repetition by one each time. Since we have only one at the end, then we need three 1 and four 0 to
+                    continue the sequence.
+                b)  A pattern is that the positive integers are increasing order, with odd number showing once and
+                    each even number repeated.
+                    Thus, the next terms are 9, 10, 10.
+                                                              65</code></pre>
      	</div>
     
      </div>

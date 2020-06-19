@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 65 - SOL-Lecture 3</title>
+        <title>Page 65 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 65 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 65 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 65</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-                i)  The characteristic polynomial is  r   4r    0   r   5, 1
-                                                            5
-                                                   
-                                                                     
-                    The general solution:  a        5  n     1   n      5  n   
-                                           n    1          2       1          2
-                          
-                         2      5  0       2     
-                                
-                                                   
-                              1          2            1    2            1,       3
-                                  1
-                         
-                        8      5         8   5            1         2
-                               
-                             1         2               1    2
-                    Therefore, the solution is  a     n   3
-                                                      5
-                                              n
+    <pre style="white-space:pre-line"><code>2 140 8 288
+                    a =  2a +  a =⋅        +=
+                     8      7    3
+                    a =  2a +  a =   2 288 16 592
+                                           +
+                                      ⋅
+                                               =
+                     9      8    4
+                                       ⋅
+                                                =
+                                            +
+                    a   =  2a +  a =  2 592 33 1217
+                     10      8   5
+                    Therefore, there are 1217 ways to deposit $10.
 
 
              Exercise
-             How many different messages can be transmitted in n microseconds using three different signals if one
-             signal requires 1 microsecond for transmittal, the other two signals require 2 microseconds each for
-             transmittal, and a signal in a message is followed immediately by the next signal?
-
-             Solution
-                The model is the recurrence relation   a   a    a    a       a     2a    with  a   a   1
-                                                      n    n 1   n 2   n 2    n 1    n 2       0    1
-                                                 2
-                                                     r
-                                                           0
-                                                        2
-                The characteristic polynomial is  r   
-                So the roots are 1, and 2
-                                                              n
-                                                   
-                The general solution:     a       1  n      2
-                                           n    1          2
-                Plugging in initial conditions gives
-                                                
-                     
-                           
-                    1      1  0     2 0    1   
-                         1          2              1    2
-                    1     1  1    2 1    1     2         1 ,      2
-                         1         2                1     2          1  3     2    3
-                Therefore, the solution is in n microseconds   a   1   1  n    2 n
-                                                                    
-                                                                             2  messages can be transmitted.
-                                                             n   3         3
-
-
-
-             Exercise
-             In how many ways can a  2 n  rectangular checkerboard be tiled using 1 2  and  2 2  pieces?
+             a)  Find a recurrence relation for the number of bit strings of length n that contain three consecutive 0s.
+             b)  What are the initial conditions?
+             c)  How many bit strings of length seven contain three consecutive 0s?
 
              Solution
 
-                Let t  be the number of ways like to tile a  2 n  board with 1 2  and  2 2  pieces. To obtain the
-                     n
-                recurrence relation, imagine what tiles are placed at the left-hand end of the board. We can place a
-                2 2  tile there, leaving a  2  n    2 board to be tiled, which of course can be done in t  ways.
-                  
-                                                                                                   n 2
-                We can place a 1 2  tile at the edge, oriented vertically, leaving  2  n    1  board to be tiled, which
+                a)  Let  a  be the number of bit strings of length n containing three consecutive 0’s. In order to
+                         n
+                    construct a bit string of length n containing three consecutive 0’s we could start with 1 and follow
+                    with a string of length n – 1 three consecutive 0’s, or we could start with a 01 and follow with a
+                    string of length n – 2 three consecutive 0’s, or we could start with a 001 and follow with a string of
+                    length n – 3 three consecutive 0’s, or we could start with a 000 and follow with a string of length n
+                    – 3.
+                    These 4 cases are mutually exclusive and exhaust the possibilities for how the string might start. We
 
-                of course can be done in t   ways. Finally, we can place two 1 2  tiles horizontally, one above
-                                         n 1
-                the other, leaving a   2  n    2  board to be tiled, which of course can be done in t  ways. These
-                                                                                               n 2
-                3 possibilities are disjoint.
+                    can write down the recurrence relation, valid for all  n ≥  3: a =  a  +  a  +  a  +  2 n− 3
+                                                                               n    n −  1  n −  2  n −  3
 
-                                                             65</code></pre>
+                b)  There are no bit strings of length 0, 1, or 2 containing 3 consecutive 0’s, so the initial conditions are
+                    a =  a =  a =  0
+                     0    1    2
+
+                                         0
+                c)  a =  a +  a +  a +  2
+                     3     2   1    0
+                        = +++
+                          000 1
+                        = 1
+
+                                         1
+                    a =  a +  a +  a +  2
+                     4     3   2    1
+                        = 10 0 2
+                           +++
+                        = 3
+                                         2
+                    a =  a +  a +  a +  2
+                     5     4   3    2
+                        = 31 0 4
+                           ++
+                                 +
+                        = 8
+                                         3
+                    a =  a +  a +  a +  2
+                     6     5   4    3
+                        = 8 31 8
+                           +
+                              ++
+                        =  20
+                                         4
+                    a =  a +  a +  a +  2
+                     7     6    5   4
+                                                               169</code></pre>
      	</div>
     
      </div>

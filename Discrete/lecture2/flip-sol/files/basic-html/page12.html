@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 12 - SOL-Lecture 2</title>
+        <title>Page 12 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 12 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 12 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 12</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 2.2  Algorithms
+    <pre style="white-space:pre-line"><code>Exercise
+
+          Suppose that the number of bacteria in a colony triples every hour.
+
+           a)  Set up a recurrence relation for the number of bacteria after n hours have elapsed.
+           b)  If 100 bacteria are used to begin new colony, how many bacteria will be in the colony in 10 hours?
+          Solution
+
+             a)  Since the number of bacteria triples every hour, the recurrence relation should say that the number
+                 of bacteria after n hours is 3 times the number of bacteria after n – 1 hours.
+                 Let  a  denote the number of bacteria after n hours, this statement translates into the recurrence
+                      n
+                 relation a = 3a
+                           n     n− 1
+             b)  The initial condition is a = 100 .
+                                         0
+                 a =  3 a ⋅
+                   n      n− 1
+                        2
+                     = 3 ⋅ a
+                            n− 2
+                       
+
+                      3=  n  a ⋅
+                            0
+                 n = 10
+
+                     a   = 100 3 ⋅  10
+                      10
+                        = 5,904,900
+
+
+          Exercise
+
+          A factory makes custom sports cars at an increasing rate. In the first month only one car is made, in the
+          second month two cars are made, and so on, with n cars made in the nth month.
+
+           a)  Set up a recurrence relation for the number of cars produced in the first n months by this factory.
+           b)  How many cars are produced in the first year?
+           c)  Find an explicit formula for the number of cars produced in the first n months by this factory
+
+          Solution
+
+             a)  Let  c  be the number of cars produced in the first n months.
+                      n
+                 The initial condition is c = .
+                                             0
+                                         0
+                 Since n cars are made in the nth month then c = c    +  n, where  c   is the first  n–1 months
+                                                             n    n− 1             n− 1
+
+             b)  The number of cars produced in the first year is c  .
+                                                                12
+                 Plug in n = 12 , we get
+                        +
+                 c =  nc
+                  n        n− 1
+                     =  n +  (n −  ) 1 +  c n− 2
 
 
 
-
-             Exercise
-
-             List all the steps used by the Algorithm 1 to find the maximum of the list
-                           1, 8, 12, 9, 11, 2, 14, 5, 10, 4.
-             Solution
-
-                The for loop then begins, with i set equal from 2 to  n  10(number of the sequence).
-                The statement of the loop is executed since 2 &lt; 10. This is an if  then statement.
-
-                    max:=  1
-                    for i := 2 to 10
-
-
-                    if max  a then   max : a
-                                           
-                              i                i
-                a   a   8, since 1 &lt; 8, then  max : 8
-                                                   
-                  i    2
-                a   a   12 , since 8 &lt; 12, then  max : 12
-                                                     
-                  i    3
-                a   a   9, since 12 &lt; 9 is not true, then max : 12
-                  i    4
-                a   a   11, since 12 &lt; 11 is not true, then max  : 12
-                                                                
-                  i    5
-                                                              
-                a   a   2 , since 12 &lt; 2 is not true, then max  : 12
-                  i    6
-                a   a   14, since 12 &lt; 14, then  max : 14
-                                                       
-                  i    7
-                                                              
-                a   a   5 , since 14 &lt; 5 is not true, then max : 14
-                  i    8
-                                                                
-                a   a   10, since 14 &lt; 10 is not true, then max : 14
-                  i    9
-                                                               
-                a   a     4 , since 14 &lt; 4 is not true, then max : 14
-                  i   10
-                Therefore max has the value  14
-
-
-
-             Exercise
-
-             Devise an algorithm that finds the sum of all the integers in a list.
-
-             Solution
-                                                        
-                                       ,
-                Procedure sum  a  a        , a n  :integers
-                                   ,
-                                      2
-                                  1
-                sum:=  a
-                        1
-                for i := 2 to n
-                        sum : sum a  
-                                      i
-                return sum{ is the sum of all the elements in the list}
-
-
-
-
-                                                             12</code></pre>
+                                                            64</code></pre>
      	</div>
     
      </div>

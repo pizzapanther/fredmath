@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 35 - SOL-Lecture 3</title>
+        <title>Page 35 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 35 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 35 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 35</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>next round gives us (6, 9), (7, 8), and (9, 6). Add (8, 12), (9, 11), (10, 10), (11, 9), and (12, 8);
-                    and a fifth set of applications adds (10, 15), (11, 4), (12, 13), (13, 12), (14, 1), and (15, 10).
+    <pre style="white-space:pre-line"><code>For  n ≡  ( 2 mod  ) 3  we have  ( ) 2 f n=  ( −  ) 3 =  22 ⋅  (n− 3+  ) 13/  =  22 ⋅  (n+  ) 13/  2 ⋅  − 1  =  2 (n+  ) 13/   as
+                                               f n
+                    desired
 
-                                                      
-                        P
-                b)  Let    n  be the statement that 5 a b when (a, b) ∊ S is obtained by n applications to the
-                    recursive step.
-                    For  n  ,    0P   is true, since the only element of S obtained with no applications of the
-                            0
-                                                  
-                    recursive step is (0, 0), and 5 0 0
-                                                            
-                    Assume the inductive hypothesis that 5 a b  whenever (a, b) ∊ S is obtained by k or fewer
-                    applications of the recursive step, and consider an element obtained with  k   applications of
-                                                                                              1
-                                                                                                      
-                    the recursive step. Since the final application of the recursive step to an element a, b  must
-                                                  
-                    applied to an element, that 5 a b.
-                                                                     2 b
-                                                                                              2
-                                                                            3
-                    We need to check that this inequality implies 5 a     and 5 a    .
-                                                                                       3 b
-                                                              
-                                                                                          
-                    This is clear, since each is equivalent to 5 a b   5  and 5 divides both  a b   and 5.
-                                                         
-                c)  This holds for the basis step, since 5 0 0
-                                                                                               
-                                         
-                    If this holds for a, b , then it also holds for the elements obtained from a, b  in the
-                    recursive step by the same argument as in part (b).
+                g)  f  ( ) 2 = 2 f  ( ) 3  This is not valid, since  ( ) 3f   has not been defined
+
+
+                                                                          4
+                h)  ( ) 2 = f  2 f⋅  ( ) 1 =  2 ( ) 1 =  2    f  ( ) 3 =  2 f  ( ) 2 = 2 ( ) 2 =
+                                                          1
+                                                                                                    f
+                    This is invalid, because the value at  n =  is defined in 2 conflicting ways, first as  ( ) 1 = 1 and then
+                                   −
+                    as  ( ) 1f  =  2 f  (1 1 =  )  2 f  ( ) 0 =  2 ( ) 0 =  0
+                                                                               4
+                i)  f  ( ) 1 =  f  ( ) 0 =               f  ( ) 2 =  2 f  ( ) 0 =  2 ( ) 2 =
+                                  2
+                                   4
+                     f  ( ) 3 =  f  ( ) 2 =              f  ( ) 4 =  2 f  ( ) 2 =  2 ( ) 4 =
+                                                                               8
+                                                                      3
+                    This is invalid, since we have a conflict for odd  n ≥ .
+                                  f
+                     On one hand  ( ) 3 =  f  ( ) 2 , but the other hand  ( ) 3f  =  2 f  ( ) 1 .
+                                             2
+                    However,  ( ) 1f  =  f  ( ) 0 =  and  ( ) 2f  =  2 f  ( ) 0 = , so these apparently conflicting rules tell us that
+                                                                   4
+                     f  ( ) 3 =  22⋅=  on the other hand. We got the same answer either way.
+                                 4
+                    The sequence: 2, 2, 4, 4, 8, 8, …
+                                                                              9
+                                          3
+                j)  f  ( ) 1 = 3 f  ( ) 0 = 3 ( ) 1 =    f  ( ) 2 = 9 f  ( ) 0 = 9 ( ) 1 =
+                     f  ( ) 3 = 3 f  ( ) 2 = 3 ( ) 9 =  27   f  ( ) 4 = 9 f  ( ) 2 = 9 ( ) 9 = 81
+
+                    The sequence: 1, 3, 9, 27, 81, …
+                    This is a valid, since we conjecture the formula  ( ) 3f n =  n
+
+                                                      0
+                    By induction:  Basis step:  ( ) 0f  = 3 = 1
+
+                    If     f k =  k
+                            ( ) 3
+                    Then  ( f k +  ) 1 =  3 f  ( ) 33k =  ⋅  k =  3 k+ 1
 
 
              Exercise
+                                                      { }
+             Give a recursive definition of the sequence  a n  ,  n  = 1, 2, 3, if
 
-             Let S be the subset of the set of ordered pairs of integers defined recursively by
-                    Basis step: (0, 0) ∊ S.
-                    Recursive step: If (a, b) ∊ S, then  , a  b    1   S , a  1,  b    1   and a   2, b    1 
-                                                                               S
-                                                                                                     S
-              a)  List the elements of S produced by the first five applications of the recursive definition.
-              b)  Use strong induction on the number of applications of the recursive step of the definition to show
-                  that  a   2b  whenever (a, b) ∊ S.
-              c)  Use structural induction to show that  a   2b  whenever (a, b) ∊ S.
-
+                                                                          n
+                                                                                               5
+                a)  a =   6n            b)  a =  2n + 1                 10            d)  a =
+                      n                      n                 c)  a =                     n
+                                                                    n
+                              2
+                                                                              ) 1
+                e)  a =   4n −                          n     g)  a =    ( nn +                 2
+                                                   ( ) 1
+                      n                f)  a =  1+−                 n                 h)  a =  n
+                                                                                           n
+                                             n
              Solution
-                a)  Apply each recursive step rules to the only element given in the basis step, we see that (0, 1),
-                    (1, 1) and (2, 1) are in S.
-                    2nd step: (0, 2), (1, 2), (2, 2), (3, 2) and (4, 2).
-                     rd
-                    3  step: (0,3), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3) and (6, 3).
-                     th
-                    4  step: (0, 4), (1, 4), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4), (7, 4) and (8,4)
-                     th
-                    5  step: (0, 5), (1, 5), (2, 5), (3, 5), (4, 5), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5), and (10, 5)
-                b)  Let    n  be the statement that  a   2b  whenever (a, b) ∊ S is obtained with no applications of
-                        P
-                    the recursive step.
-                    For the basis step, the only element of S obtained with no applications of the recursive step is
-                    0, 0    , then 0   2 0  is true. Therefore    0P   is true.
-                    Assume that  a   2b  whenever (a, b) ∊ S is obtained by k or fewer applications of the recursive
-                    step. Consider an element obtained with k + 1 applications of the recursive step.
-                                                             35</code></pre>
+                         6
+                a)  a =
+                     1
+                     a =  12 6 +  6
+                             =
+                      2
+                                 +
+                             =
+                     a =  18 1  26
+                      3
+                          
+                                                               139</code></pre>
      	</div>
     
      </div>

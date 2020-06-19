@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 48 - SOL-Lecture 3</title>
+        <title>Page 48 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 48 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 48 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 48</div>
      </div>
      <div id="content-middle">
@@ -153,60 +153,62 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
-                                                        
-             How many permutations of a, b, c, d, e, f, g end with a?
 
-             Solution
-                                                                                                           
-                To find the permutation to with a, then we may forget about the a, and leave us b, c, d, e, f, g
+        How many ways are there to seat four of a group of ten people around a circular table where two seatings
+        are considered the same when everyone has the same immediate left and immediate right neighbor?
 
-                 P 6, 6        7 20
+        Solution
 
-
-             Exercise
-
-             Find the number of 5-permutations of a set with nine elements
-
-             Solution
-
-                 P 9, 5       15,120    by Theorem
+            The count ordered arrangements of length 4 from the 10 people, then we get 10 9 8 7 5040
+                                                                                        ⋅ ⋅⋅ =
+            arrangements.
+            However, we can rotate the people around the table in 4 ways and get the same seating arrangement, so
+            the overcounts by a factor of 4.
 
 
-             Exercise
+            Therefore, there are  5040   = 12 60   ways
 
-             In how many different orders can five runners finish a race if no ties are allowed?
-
-             Solution
-                 P 5, 5       1 20
+                                  4
 
 
+        Exercise
 
-             Exercise
+        In how many ways can a photographer at a wedding arrange 6 people in a row from a group of 10 people,
+        where the bride and the groom are among these 10 people, if
+          a)  The bride must be in the picture?
+          b)  Both the bride and groom must be in the picture?
+          c)  Exactly one of the bride and the groom is in the picture?
 
-             A coin flipped eight times where each flip comes up either heads or tails. How many possible
-             outcomes
-              a)  Are there in total?
-              b)  Contain exactly three heads?
-              c)  Contain at least three heads?
-              d)  Contain the same number of heads and tails?
-             Solution
+        Solution
 
-                                                               8
-                a)  Each flip can be either heads or tails: There are  2   256 possible coutcomes
+            a)  The bride is in any of the 6 positions.
+                          1    2    3    4    5    6
+                          B    P    P    P    P   P
 
-                           
-                b)  C 8, 3    56  outc ome s
-                c)  At least three heads means: 3, 4, 5, 6, 7, 8 heads.
-                    C 8, 3    C  8, 4    C  8, 5    C  8, 6    C  8, 7    C  8, 8       2 91  o  utcom se
+                          1    9    8    7    6   5
+               Then, it will leave us with 5 remaining positions.
+               This can be done in 9 8 7 6 5 15120⋅⋅ ⋅ ⋅ =   ways.
+               Therefore  6 1512⋅  0  =  90, 720 ways
 
-                    OR
-                    256 C  8, 0    C  8, 1    C  8, 2     256 28 8 1       219  outcomes
-                d)  To have an equal number of heads and tails means 4 heads and 4 tails.
+            b)  The bride is in any of the 6 positions.
+                         1   2    3    4    5    6
 
-                    Therefore;  8, 4  C    70  outc ome s
+                        B    G    P    P    P   P
+                        1    1    8    7    6    5
+               Then place the groom in any of the 5 remaining positions.
+               Then, it will leave us with 4 remaining positions in the picture.
+               This can be done in 8 7 6 5 1680⋅ ⋅⋅ =   ways.
 
 
-                                                             48</code></pre>
+               Therefore  6 5 1 806⋅ ⋅   = 5 0 40,  0 ways
+            c)  For the just the bride to be in the picture: 90720 50400 40 320,−  =   ways.
+               There are 40,320 ways for just the groom to be in the picture.
+
+                                             ,
+               Therefore, 40320 40320 +  = 80 640 w   ays
+        Exercise
+
+                                                          152</code></pre>
      	</div>
     
      </div>

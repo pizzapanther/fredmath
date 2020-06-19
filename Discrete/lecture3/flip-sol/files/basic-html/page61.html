@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 61 - SOL-Lecture 3</title>
+        <title>Page 61 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 61 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 61 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 61</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>length n – 1 not containing three consecutive 0’s, or we could start with 01 and follow with a
-                    string of length n – 2 not containing three consecutive 0’s, or we could start with a 001 and
-                    follow with a string of length n – 3 not containing three consecutive 0’s. These 3 cases are
-                    mutually exclusive and exhaust the possibilities for how the string might start since it cannot
-                    start 000. We can write down the recurrence relation, valid for all
-                    n   3: a   a      a    a
-                             n    n 1   n 2   n 3
-                b)  There are no bit strings of length 0, 1, or 2 containing 3 consecutive 0’s, so the initial
-                    conditions are  a  1; a   2  and   a    4
-                                    0       1              2
-                c)  a   a   a   a    
-                                        4 2 1 7
-                     3     2   1    0
-                    a   a   a   a   7 4 2 13  
-                     4     3   2    1
-                    a   a   a   a   13 7 4    24
-                                            
-                     5     4   3    2
-                                           
-                    a   a   a   a   24 13 7     44
-                                               
-                     6     5    4   3
-                                                
-                                                    
-                                           
-                    a   a   a   a   44 24 13 81
-                     7     6    5   4
-                    Therefore there are 81 bits of length 7 that do not contain three consecutive 0’s.
+    <pre style="white-space:pre-line"><code>Exercise
+
+             If your college offers 400 courses, 25 of which are in mathematics, and your counselor arranges your
+             schedule of 4 courses by random selection, how many schedules are possible that do not include a math
+             course? Assume that the order in which courses are scheduled matters.
+
+             Solution
+                           )
+                                     4)
+                                            9
+                                        =
+                  ( P nonmath =  P (375,   1. 46 10 10
+                                                ×
+
+
+             Exercise
+             A baseball team has 19 players. How many 9-player batting orders are possible?
+
+             Solution
+
+
+                 P (19,9)    3.352 10  =  ×  10
 
 
              Exercise
 
-             a)  Find a recurrence relation for the number of ways to climb n stairs if the person climbing the stairs
-                can take one stair or two stairs at a time.
-             b)  What are the initial conditions?
-             c)  In how many can this person climb a flight of eight stairs
+             A chapter of union Local 715 has 35 members. In how many different ways can the chapter select a
+             president, a vice-president, a treasurer, and a secretary?
+
              Solution
 
-                a)  Let  a  be the number of ways to climb n stairs. In order to climb n stairs, a person must either
-                         n
-                                                                     
-                    start with a step of one stair and climb n – 1 stairs   a n 1   or else start with a step of two stairs
-                                              
-                    and then climb n – 2 stairs  a n 2   or else start with a step of two stairs and then climb n – 3
+                 P (35,4) = 1,256,640
 
-                               
-                    stairs  a n 3  . From this analysis we can immediately write down the recurrence relation, valid
 
-                    for all  n   3: a  a    a     a
-                                    n    n 1   n 2   n 3
-                b)  The initial conditions are  a  1, a  1 and   a    2, since there is one way to climb no
-                                              0        1             2
-                    stairs (do nothing), clearly only one way to climb one stair, and two ways to climb stairs (one
-                    step twice or two steps at once).
-                                               
-                c)  Each term in our sequence  a n   is the sum of the previous three terms, so the sequence begins
+             Exercise
 
-                    a   1,  a  1,  a   2,  a   4,  a   7,  a  13,  a   24,  a   44,  a   81
-                     0       1      2       3       4       5       6        7        8
-                    Thus a person can climb a flight of 8 stairs in 81 ways under the restrictions in this problem.
+             An economics club has 31 members.
 
+              a)  If a committee of 4 is to be selected, in how many ways can the selection be made?
+              b)  In how many ways can a committee of at least 1 and at most 3 be selected?
+
+             Solution
+
+                a)  C     =  31,465
+                      31,4
+
+                b)   P (at least  1 and at most  3 be selected ) C=  31,1  +  C 31,2  +  C 31,3
+
+                                                            =  31 465 4495
+                                                                      +
+                                                                +
+                                                            =  4991
 
 
 
-                                                             61</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+                                                               165</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 12 - SOL-Lecture 1</title>
+        <title>Page 12 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 12 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 12 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 12</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>g)
+    <pre style="white-space:pre-line"><code>e)  ¬  ( p →  ) q →  p
+                  p
+           f)      ¬∧ ( pq∨  ) →
+                             
+                                 q
+                             
+           g)  ( p →     q ) (q∧  →  ) r     →  ( p →  ) r
+           h)      p ∧  ( p →  ) q     →  q
 
-                                                                                                               
-                                                                                         
-                p   q    r    p q   q    r      p     q   q   r   p  r       q   r   q   p     r
-                                                                                                        p
-                T  T  T         T        T               T              T                      T
-                T  T  F         T        F               F              F                      T
+          Solution
 
-                T    F  T       F        T               F              T                      T
-                T    F  F       F        T               F              F                      T
-                F    T  T       T        T               T              T                      T
-                F    T  F       T        F               F              T                      T
-                F    F  T       T        T               T              T                      T
-                F    F  F       T        T               T              T                      T
+               a)                                              b)
 
-                h)
+                                                                         p   q    pq      ( ∧pq  ) → p
+                                                                                    ∧
+                       p  q     pq       p →  ( ∨pq
+                                                    )
+                                  ∨
+                                                                        T  T        T           T
+                       T  T       T           T
+                       T   F      T           T                         T    F     F            T
+                                                                                                T
+                                                                        F  T
+                                                                                   F
+                       F  T       T           T
+                       F   F      F           T                         F    F     F            T
+               c)                                              d)
 
-                                            q   
-                     p   q   p  q   p    p              q     p   p    q
+                                                                           ∧
+                  p   q   ¬p   p   → q   ¬    → p        ) q     p  q   pq   p      → q    ( ∧  pq ) → p      ) q
+                                                                                                      ( →
+                                                 ( →p
+                  T  T      F       T            T              T  T       T        T               T
+                  T    F    F       F            T              T    F     F        F               T
+                  F  T      T       T            T               F  T      F        T               T
+                  F    F    T       T            T               F   F     F        T               T
 
-                    T  T        T           T                  T
-                    T    F      F           F                  T
-                    F    T      T           F                  T
-                    F    F      T           F                  T
+             e)
 
+                     p  q   p  → q   ¬   ( →p   ) q   ¬  ( → p  q ) → p
+                    T  T        T          F               T
 
+                    T    F      F          T               T
+                    F  T        T          F               T
+                    F    F      T          F               T
 
-             Exercise
+             f)
 
-             Show that  p   and  p q    p     q  are logically equivalent
-                            q
-             Solution
-                                      q
-                The proposition  p   is true when  p  and  q  have the same true or false value.  Since  p  and  q
-                                
-                                                                                         
-                                                                                                  
-                are truth, then  p q only true. When  p  and  q  are false, then the negation  p  and  q  are true,
-                     
-                                                   
-                then  p   is true. Therefore  p q            q  is true only when both are true. Therefore
-                            q
-                                                        p
-                these two expressions are logically equivalent.
+                                                                  ¬∧
+                     p  q   p  → q   ¬   ( →p   ) q       p  ( ∨pq ) → q
+                                                                  
 
-                          p   q     p q   p   q    q   p q           p     q    p  q
-                                                          p
-                                                                            
-
-                          T  T       T       F     F        F                T                T
-                          T   F      F       F     T        F                F                F
-                          F   T      F       T     F        F                F                F
-                          F   F      F       T     T        T                T                T
-
-
-
-
+                    T  T        T          F                 T
+                    T    F      F          T                 T
+                    F  T        T          F                 T
+                    F    F      T          F                 T
 
 
 
 
 
-                                                             12</code></pre>
+
+
+
+
+                                                            12</code></pre>
      	</div>
     
      </div>

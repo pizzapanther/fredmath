@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 16 - SOL-Lecture 1</title>
+        <title>Page 16 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 16 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 16 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 16</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,32 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 1.3 – Predicates and Quantifiers
+    <pre style="white-space:pre-line"><code>Exercise
 
+          Show that | (NAND) is functionally complete
 
+          Solution
 
-
-             Exercise
-
-             Let    x  denote the statement "x  4". What are these truth values?
-                 P
-                                                   P
-                    a)    0     b)    4      c)    6
-                       P
-                                     P
-             Solution
-                                 
-                a)  True, since  0 4
-                                 
-                b)  True, since  4 4
-                c)  False, since 7  4
-
-
-             Exercise
-
-
-                                                 x
-                 P
-             Let    x  be the statement "the word   contains the letter a ". What are these truth values?
-                                
-                                                                                            
-                                                     
-                                                                         
-                    a)  orange          b)  lemon            c)  true         d)   false
-                                            P
-                                                                                    P
-                       P
-                                                                  P
-             Solution
-                a)  True, since there is an a in orange.
-                b)  False, since there is no a in lemon.
-                c)  False, since there is no a in true.
-                d)  True, since there is an a in false.
-
-
-             Exercise
-
-
-                                                                x 
-             State the value of x after the statement if    x  then  : 1 is executed, where    x  is the statement
-                                                                                         P
-                                                    P
-             "x  1", if the value of x when the statement is reached is
-                    a)  x        b)  x  1      c)  x 
-                          0
-                                                       2
-             Solution
-                a)  x is still equal to 0, since the condition is false.
-
-                b)  x is still equal to 0, since the condition is false.
-
-                c)  x is still equal to 1 at the end, since the condition is true, so the statement  : 1x   is executed.
+             Equivalence of NOT:
+                             p
+                     pp ≡¬
+                     ¬ ( p ∧  ) p ≡¬          Equivalence of NAND
+                                  p
+                     ¬ ( ) p ≡¬               Idempotent law
+                              p
+             Equivalence of AND:
+                                   )
+                       ∧
+                     p q ≡¬   ( pq            Definition of NAND
+                     pp
+                                                              )
+                                )
+                     ( pq ) ( p p q           Negation of ( pq
+             Equivalence of OR:
+                     pq ≡ ¬   ( p¬ ∧¬  ) q    DeMorgan’s equivalence of OR
+                       ∨
+                    We can do AND and OR with NANDs, also do ORs with NANDs
+             Thus, NAND is functionally complete.
 
 
 
@@ -222,7 +188,44 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             16</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            16</code></pre>
      	</div>
     
      </div>

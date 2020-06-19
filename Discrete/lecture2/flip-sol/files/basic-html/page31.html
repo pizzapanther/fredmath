@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 31 - SOL-Lecture 2</title>
+        <title>Page 31 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 31 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 31 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 31</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4
-                                                    2
-                b)  20CBA       2 * 16   0  12 * 16  11 * 16  10  134 , 330
-                             16
-                                     2
-                     A
-                     01     10 * 16  0 * 16  12   , 2 561
-                          16
-                    20CBA      A       134 , 330   , 2  561   20CBA     A       134 , 330  561 
-                                  01
-                                                                                                      , 2
-                                                                                 01
-                            16         16                                   16        16
-                                           136 , 891                                     344 , 019 , 130
-                    136891  16 8555  11              11   B    344019130   16  21501195  10       10    A
-                    8555  16 534  11                 11   B    21501195   16 1343824   11            11   B
-                    534  16 33  6                               1343824   16 83989  0
-                    33  16 2  1                                 83989  16  5249  5
-                    2                                              5249  16 328
-                                   A
-                    20CBA        01     21,6BB                                1
-                             16        16                          328  16 20  8
-                                                                   20  16 1 4
-                                                                   1
+    <pre style="white-space:pre-line"><code>A       B        B       A
+                c)     16      16       16       16     ⇒ ( ABBA  )   = (1010 1011 1011 1010  )
+                    1010     1011    1011     1010                 16                          2
+                         2       2        2        2
 
-                                                                                                     A
-                                                                   20CBA        0   1    14,815 0 , B
-                                                                                 A
-                                                                            16        16
-                                         4
+
+                     D        E       F        A       C        E        D
+                d)     16      16       16      16       16       16      16
+                    1101    1110     1111     1010    1100     1110    1101
+                         2       2        2        2       2        2       2
+                          ⇒ ( DEFACED     )   =  (1101 1110 1111 1010 1100 1110 1101      )
+                                           1 6                                         2
+
+
+                     B        A       D        F        A       C        E       D
+                e)     16      16       16      16       16       16      16       16
+                    1011    1010     1101     1111    1010     1100    1110     1101
+                         2       2        2       2        2        2       2        2
+                          ⇒ ( BADFACE    D )   =  (1011 1010 1101 1111 1010 1100 1110 1101   )
+                                            1 6                                               2
+
+
+                       A       B        C       D        E        F
+                f)      16       16      16       16      16       16
+                     1010     1011    1100     1101    1110     1111
+                          2        2       2        2       2        2
+                          ⇒ ( A BCDEF   )   =  (1010 1011 1100 1101 1110 1111   )
+                                         1 6                                    2
+
+
+             Exercise
+
+             Show that the binary expansion of a positive integer can be obtained from its hexadecimal expansion by
+             translating each hexadecimal digit into a block of four binary digits.
+
+             Solution
+
+                Let ( h   h  h  )   be the hexadecimal expansion of a positive integer. The value of that integer is
+                     
+                         2  1  0  16
+                h   + h  ⋅16 + h  ⋅16 2  +  = h  + h  ⋅ 2 4  + h  ⋅ 2 8  + 
+                  0    1        2              0    1        2
+                If we replace each hexadecimal digit  h by its binary expansion (b  b  b  b  ) , then
+                                                      i                          3 i  2 i  1 i  0 i  2
+                h =   b  0 i  +  2b  1 i  +  4b  2 i  + 8b
+                  i
+                                            3 i
+                Therefore the value of the entire number is
+
+                b    + 2b   + 4b   + 8b    + (b  + 2b   + 4b    + 8b  )⋅ 2 4
+                  00     01     02      03    10     11      12     13
+                                                                 +  (b 20  + 2b 21  + 4b 22  + 8b 23  )⋅ 2 8  + 
+
                                                    4
-                                                             2
-                c)  ABCDE       10 * 16  11 * 16  12 * 16  13 * 16  14   703 , 710
-                              16
-                                             2
-                                    3
-                    1111    1 * 16  1 * 16  1 * 16  1   4369
-                          16
-                                                                                                           
-                    ABCDE       1111     703 , 710   4369   ABCDE       1111     703 , 710 4369
-                              16         16                                  16        16
-                                             708 , 079                                     , 3 074 , 508 , 990
-                    708079  16  44254  15          15    F     3074508990   16 192156811   14    14   E
-                    44254  16  2765  14            14    E     192156811   16 12009800  11        11   B
-                    2765  16 172  13                        13   D   12009800  16 750612  8
-                    172  16 10  12                    12   C      750612  16 46913 4
-                    10                                   10    A     46913  16 2932  1
+                                                            5
+                                                                             7
+                                                                     6
+                    = b 00  + 2b 01  + 4b 02  + 8b 03  + 2 b 10  + 2 b 11  + 2 b 12  + 2 b 13
+                                                 10
+                                        9
+                                8
+                                                           11
+                                    + 2 b  + 2 b  + 2 b  + 2 b   + 
+                                  20       21        22        23
+                Which is the value of the binary expansion ( b  23 b 22 b 21 b 20 b 13 b 12 b 11 b 10 b 03 b 02 b 01 b 00  )
+                                                                                                         2
 
-
-                     ABCDE       1111     AC D               2932  16 183  4
-                                                 , EF
-                              16         16                        183  16 11 7
-                                                                   11                                                      11   B
-
-                                                                    ABCDE       1111     B 7,414,8BE
-                                                                             16         16
-
-
-                                         5
-                     E
-                d)   0000E      14 * 16  14  14 , 680 , 078
-                              16
-                                                 2
-                                       3
-                    BAAA      11 * 16  10 * 16  10 * 16  10   47 , 786
-                            16
-                     0000EE     BAAA      14 , 680 , 078  47 , 786
-                              16          16
-                                              14 , 727 , 864
-
-                           14727864   16 920491  8
-                           920491   16 57530  11                11   B
-                           57530  16  3595  10                    10    A
-                                                             31</code></pre>
+                                                              83</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 15 - SOL-Lecture 1</title>
+        <title>Page 15 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 15 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 15 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 15</div>
      </div>
      <div id="content-middle">
@@ -154,79 +154,66 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-             Show that | (NAND) is functionally complete
+
+             Show that ( p →  q ) ( p∨  →  ) r  and  p →  (qr∨  )  are logically equivalent
+
+             Solution
+                ( p →  q ) ( p∨  →  ) r  will be true when either of the conditional statements is true. The conditional
+
+                statement will be true if p is false, or if q in one case or r in the other case is true, when qr∨  is true,
+                                             )
+                which is precisely  p →  (qr  is true. Since the two propositions are true in exactly the same
+                                          ∨
+                situation, they are logically equivalent.
+
+
+             Exercise
+
+             Show that ( p →  r ) (q∨  →  ) r  and ( pq∧  ) →  r  are logically equivalent
+
              Solution
 
-                Equivalence of NOT:
-                        p p    p
+                In order for ( p →  r ) (q∨  →  ) r to be false, we must have both of the two implications false, which
 
-                          p    p           Equivalence of NAND
-                                     p
-                           p                Idempotent law
-                                 p
+                happens exactly when r is false and both p and q are true. But this precisely the case in which pq∧  is
 
-                Equivalence of AND:
-                                      
-                          
-                        p q     p q           Definition of NAND
-                        p p
-                                                                 
-                                   
-                         p q   p p q          Negation of  p q
-                Equivalence of OR:
-                          
-                                  p 
-                        p q             q    DeMorgan’s equivalence of OR
-                       We can do AND and OR with NANDs, also do ORs with NANDs
-                Thus, NAND is functionally complete.
+                true and r is false, which is ( pq∧  ) →  r  is false. Therefore these two expressions are logically
+
+                equivalent.
 
 
 
+             Exercise
+
+             Show that ( p →  q ∧  ) (q →  ) r →  ( p →  ) r  is a tautology
+
+             Solution
+
+                Given that p and  p →  are both true, we conclude that q is true; from that and q →  we conclude
+                                      q
+                                                                                                  r
+                that r is true.
 
 
 
+             Exercise
 
+             Show that ( pq∨  ) ( pr∨¬ ∨  ) → (qr∨  ) is a tautology
 
+             Solution
 
+                The conclusion qr∨  will be true in every case except when q and r are both false. But if q and r are
+                both false, then one of  pq∨  or  pr¬∨  is false, because one of p or  p¬  is false. Thus in this case
 
-
-
-
-
+                ( pq∨  ) ( pr∧¬ ∨  )  is false. An conditional statement in which the conclusion is true or the hypothesis
+                is false.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             15</code></pre>
+                                                              15</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 64 - SOL-Lecture 3</title>
+        <title>Page 64 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 64 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 64 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 64</div>
      </div>
      <div id="content-middle">
@@ -152,101 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>0      2  0     2 0    0   
-                                                    
-                         
-                               
-                             1          2               1    2              1,      1
-                                   1
-                                
-                          
-                        4       2    2 1    4   2  2          1          2
-                             1          2                 1     2
-                                                   n
-                    Therefore, the solution is  a   2    n
-                                                         2
-                                              n
-                                                     2
-                                                                         1
-                e)  The characteristic polynomial is  r   1    0   r  
-                                                        4                2
-                                                     1
-                                                               1
-                                                   
-                    The general solution:  a       n       n        2    n       2    n
-                                           n    1    2      2 2       1            2
-                                           1
-                                 1
-                                                       
-                        1       0       0    1     
-                               
-                         
-                             1   2      2 2               1    2               1 ,      1
-                                 1
-                                           1
-                        0       1      1     0    1    1        1   2      2   2
-                         
-                               
-                             1   2      2 2               2   1  2   2
-                                                               
-                                                      1
-                    Therefore, the solution is  a    1   n    1 1  n
-                                                     
-                                              n   2   2     2 2
-                                                     n  1    n  1
-                                                    1
-                                                               1
-                                                   2        2
-                                                     2
-                f)  The characteristic polynomial is  r     0      r   2, 3
-                                                           6
-                                                        r
-                                                              n
-                                                   
-                    The general solution:  a       2  n      3
-                                           n    1          2
-                         3      2  0     3 0    3    
-                              1          2               1    2           3 ,     12
-                        6     2  1    3 1    6   2  3      1   5     2    5
-                             1         2                 1     2
-                                                     
-                    Therefore, the solution is  a   3   2  n   12 n
-                                                              3
-                                              n   5         5
-                                                     2
-                g)  The characteristic polynomial is  r  7r  10   0   r   2, 5
-                                                   n
-                                                           n
-                    The general solution:  a     2    5
-                                           n    1       2
-                                0
-                                                 
-                          
-                        2    2     5 0     2      
-                             1       2              1     2          3,      1
-                               1
-                                               
-                         
-                       1     2    5 1     1 2    5          1        2
-                            1       2               1     2
-                                                          n
-                    Therefore, the solution is  a   3 2  n   5
-                                              n
-                                                     2
-                h)  The characteristic polynomial is  r  6r    0    r   3,   
-                                                            9
-                                                                                  3
-                    The general solution:  a       3  n     n   3  n
-                                           n    1          2
-                           3      3  0        3  0    3 
-                                              0
-                                1          2                     1                  3,      2
-                         3     3  1       3  1     3   3   3  1        2
-                                           1
-                              1          2                        1       2
-                    Therefore, the solution is  a    3   3  n   2n   3  n    3 2n    3  n
-                                               n
-                                                             64</code></pre>
+    <pre style="white-space:pre-line"><code>Solution          Section 3.5 − Applications of Recurrence Relations
+
+
+
+
+        Exercise
+        a)  Find a recurrence relation for the number of permutation of a set with n elements
+        b)  Use the recurrence relation to find the number of permutations of a set with n elements using iteration.
+
+        Solution
+
+            a)  A permutation of a set with n elements of a choice of a first element, followed by a permutation of a
+               set of  n − 1  elements. Therefore  P = nP    with P =   1
+                                                 n     n− 1          0
+            b)  P =  nP
+                 n     n− 1
+                   =   ( nn −  ) 1 P n− 2
+
+                            ) 1
+                                 ⋅⋅
+                   =   ( nn −  21 P
+                                     0
+                   =   ! n
+
+
+        Exercise
+
+        A vending machine dispensing books of stamps accepts only one-dollar coins, $1 bills, and $5 bills.
+          a)  Find a recurrence relation for the number of ways to deposit n dollars in the vending machine, where
+              the order in which the coins and bills are deposited matter.
+          b)  What are the initial conditions?
+          c)  How many ways are there to deposit $10 for a book of stamps?
+
+        Solution
+
+            a)  Let  a  be the number of ways to deposit n dollars in the vending machine. We must express  a in
+                     n                                                                                     n
+               terms of earlier terms in the sequence. If we want to deposit n dollars, we may start with a dollar
+               coin and then deposit n – 1 dollars. This gives us  a   ways to deposit n dollars.
+                                                                 n− 1
+               We can start with a dollar bill and then deposit n – 1 dollars. This gives us  a   more ways to
+                                                                                         n− 1
+               deposit n dollars.
+               Finally, we can deposit a five-dollar bill and follow that with n – 5 dollars; there are  a  ways to
+                                                                                                  n− 5
+               do this, Therefore the recurrence relation is  a =  2a  +  a    for  n ≥  5
+                                                           n      n −  1  n −  5
+                                                                                                       2
+            b)  We need initial conditions for all n from 0 to 4. Clearly,  a = 1 (deposit nothing) and  a =
+                                                                       0                           1
+               (deposit either the dollar coin or the dollar bill)
+                                                        4
+                                    3
+                      2
+                a =  2 =  4; a =   2 =  8 and    a =   2 = 16
+                 2             3                   4
+            c)  a =  2a +  a =  2 16
+                                  ( ) 1 33+=
+                 5     4    0
+                a =  2a +  a =  2 33
+                                 ( ) 2 68+=
+                 6     5    1
+                                  ( ) 4 140+=
+                a =  2a +  a =  2 68
+                 7      6    2
+                                                          168</code></pre>
      	</div>
     
      </div>

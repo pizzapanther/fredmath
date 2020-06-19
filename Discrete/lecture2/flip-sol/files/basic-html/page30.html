@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 30 - SOL-Lecture 2</title>
+        <title>Page 30 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 30 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 30 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 30</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>d)
-                          5 4 3 2 1                                    4      3      2
-                                                                    5 8  
-                                                                                  3 8    
-                    
-                                                        54321          4 8         2 8 1 22,737
-                              3 4 5 6                           8
-                                                                             2
-                                                                   3 8  
-                                                                                 5 8 6 1838
-                          5 7 7 7 7                     3456      3   4 8    
-                                                               8
-                                                                  
-                                                        54321  3456     22,737 1838     41,790,606
-                    54321    3456    57 77,7              8        8
-                            8         8                       41790606 8 5223825 6
-                                                                          
-                                                                                      
-                                                                                    
-                                                                        
-                                                              5223825 8 652978 1
-                                                                       
-                                                                                 
-                                                              652978 8 81622 2
-                                                                                
-                                                                      
-                                                              81622 8 10202 6
-                                                                      
-                                                                               
-                                                              10202 8 1275 2
-                                                              1275 8 159 3   
-                                                                   
-                                                                          
-                                                              159 8 19 7
-                                                                   
-                                                              19 8 2 3
-                                                              2
-                                                                  
-                                                        54321  3456      237,326,216
-                                                                8        8
+    <pre style="white-space:pre-line"><code>Exercise
 
+          Convert the octal expansion of each of these integers to a binary expansion
 
-             Exercise
-             Find the sum and product of each of these pairs of numbers. Express your answers as a hexadecimal
-             expansion.
-                  a)  1AB   ,  BBC                    b)  20CBA    ,   01 
-                                                                             A
-                            16          16                             16         16
-                  c)   ABCDE     ,  1111              d)   0000E     ,  BAAA  
-                                                               E
-                                16          16                          16            16
-             Solution
+             a)  (572 )     b)  (1604 )      c)  (423 )      d)  (2417 )      e)  (73567 )       f)  (52525 )
+                       8               8               8                8                 8                 8
+          Solution
+               Octal      0   1    2     3    4    5     6    7     10    11   12    13    14    15    16    17
+               Binary     0   1    10   11   100   101   110   111   1000   1001   1010   1011   1100   1101   1110   1111
 
-                       Decimal       0   1   2    3   4    5   6    7    8    9    10   11   12    13   14   15
-                       Hexadecimal   0   1   2    3   4    5   6    7    8    9    A    B     C    D    E     F
+                  5      7       2
+             a)     8      8      8           ⇒ (527  )  = (1 0111 10 10 )
+                 101    111     010                    8                2
+                     2      2      2
 
-                               2
-                a)  1AB   1 * 16  10 * 16  11  427
-                                 2
-                    BBC   11 * 16  11 * 16  12   3004
+                 1     6       0      4
+             b)   8     8       8      8      ⇒ (1604  )  = (11 1000 0100 )
+                 1    110    000     100                8                  2
+                  2       2      2       2
 
-                                                                          
-                     1AB  BBC     427  3004                      1AB  BBC   427  3004 
-                                  3431                                             , 1 282 , 708
-                     3431  16 214  7                             1282708   16 80169  4
-                     214  16 14  6                               80169   16 5010  9
-                     14                          14   D            5010  16  313  2
+                  4       2      3
+             c)     8      8       8          ⇒ (432  )  = (1 0001 00 11 )
+                 100     010    011                    8                2
+                     2      2       2
 
-                     1AB BBC      D 67                            313  16 19  9
-                                                                    19  16 1 3
-                                                                    1
-
-                                                                    1AB  BBC   139,294
+                  7       3      5      6      7
+             d)     8      8      8      8       8    ⇒ (73567 )  =  (111 0111 0111 0111 )
+                 111    011     101    110    111               8                         2
+                     2      2      2       2      2
+                  5       2      5      2       5
+             e)     8      8      8       8      8    ⇒ (52525 )  = (101 0101 0101 0101  )
+                 101    010     101    010    101               8                         2
+                     2      2      2       2      2
 
 
 
-                                                             30</code></pre>
+
+          Exercise
+
+          Convert the hexadecimal expansion of each of these integers to a binary expansion
+
+               a)  (80E )                    b)  (135AB )                   c)  ( ABBA )
+                         16                              16                             16
+               d)  (DEFACED    )             e)  (BADFACED    )             f)  ( ABCDEF   )
+                                16                             16                           16
+          Solution
+
+                   Hexadecimal   0   1   2   3   4   5    6    7    8     9     A     B     C    D     E     F
+                   Binary       0   1   10   11   100   101   110   111  1000   1001   1010   1011   1100   1101   1110   1111
+                   8       0        E
+             a)     16       16       16      ⇒ (80 E )   =  (1000 0000 1110 )
+                 1000     0000     1110                16                     2
+                      2        2        2
+                   1       3        5        A       B
+             b)     16      16       16       16       16
+                 0001     0011     0101    1010     1011
+                      2        2       2        2        2
+                       ⇒ (135  AB )   =  (0001 0011 0101 1010 1011  )
+                                   16                                2
+
+                                                            82</code></pre>
      	</div>
     
      </div>

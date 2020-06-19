@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 10 - SOL-Lecture 1</title>
+        <title>Page 10 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 10 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 10 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 10</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Use the truth table to verify the associative laws
-              a)   p q   r   p  q r  
-                                         
-                     
-              b)   p q      p  q r
-                                     
-                         r
-             Solution
-                a)
-                                                                                
-                     p   q    r     p q        p q    r    q  r     p    q r
-
-                     T  T     T       T            T           T           T
-                     T  T     F       T            T           T           T
-                     T   F    T       T            T           T           T
-                     T   F    F       T            T           F           T
-                     F   T    T       T            T           T           T
-                     F  T     F       T            T           T           T
-                     F   F    T       F            T           T           T
-
-                     F   F    F       F           F            F           F
-                                          
-                                       
-                       
-                           r
-                     p q      p  q r   is true
-
-                b)
-                                                                            
-                                                            
-                     p   q    r     p q     p q    r   q r       p    q r
-                     T  T     T      T          T           T          T
-                     T  T     F      T          F           F          F
-
-                     T   F    T      F          F           F          F
-                     T   F    F      F          F           F          F
-                     F   T    T      F          F           T          F
-                     F   T    F      F          F           F          F
-                     F   F    T      F          F           F          F
-                     F   F    F      F          F           F          F
-
-                     p q   r   p  q r    is true
+    <pre style="white-space:pre-line"><code>Solution  Section 1.2 – Propositional Equivalences
 
 
 
-             Exercise
-             Show that each of these conditional statements is a tautology by using truth result tables.
-
-              a)   p q     p
-              b)  p    p q  
-
-              c)        p    q
-                    p
-              d)   p q     p    q
 
 
+          Exercise
 
-                                                             10</code></pre>
+          Use the truth table to verify these equivalences
+
+             a)  p ∧   ≡T  p             b)  p ∨   ≡ F  p            c)  p ∧   ≡ F  F
+             d)  p ∨   ≡T  T             e)  p ∨  p ≡  p             f)  p ∧  p ≡  p
+
+          Solution
+              p      p ∧        p ∨T        p ∧F       p ∨F       p ∨T  p    p ∧  p
+
+              T        T          T          F           T          T          T
+              F        F          F          F           T          F          F
+
+                     hold        hold       hold       hold       hold       hold
+
+
+          Exercise
+
+          Show that  ( p¬¬  )  and p are logically equivalent
+
+          Solution
+                         (
+              p   ¬p   ¬¬p   )
+              T   F      T
+              F   T      F
+
+
+             Therefore,  ( p¬¬  )  and p are logically equivalent
+
+
+          Exercise
+
+          Use the truth table to verify the commutative laws
+           a)  pq∨ ≡∨      p
+                       q
+                       q
+           b)  pq∧ ≡∧      p
+          Solution
+
+                       p  q     pq        q ∨ p                    p  q     pq        q ∧ p
+                                                                              ∧
+                                  ∨
+                      T  T       T          T                      T  T       T         T
+                      T    F     T          T                      T   F      F         F
+
+                      F  T       T          T                      F  T       F         F
+                      F    F     F          F                      F   F      F         F
+
+                                 Identical                                  Identical
+
+
+
+
+                                                            10</code></pre>
      	</div>
     
      </div>

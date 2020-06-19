@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 34 - SOL-Lecture 3</title>
+        <title>Page 34 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 34 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 34 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 34</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-             Give a recursive definition of
-                  a)  The set of odd positive integers
-                  b)  The set of positive integers powers of 3
-                  c)  The set of polynomial with integer coefficients
-                  d)  The set of even integers
-                  e)  The set of positive integers congruent to 2 modulo 3.
-                  f)  The set of positive integers  not divisible by 5
+    <pre style="white-space:pre-line"><code>1 01
+                f  ( ) 2 =  f  ( ) 1 −= −= −
+                                         1
+               The sequence: 1 0, ,  −  1,  −  2,  −  3,  ⇒   f  ( ) 1n =  −  n
+               By induction:
+               The basis step:  ( ) 0f  = −=
+                                      10 1
+                         ( ) 1 k
+               If      f k = −
+                                   ( ) 1 1 k −=−
+               Then      ( f k +  ) 1 =  f k −=−  1 1   (k +  ) 1
+                              1 31 2
+            d)   f  ( ) 2 =  f  ( ) 1 −=  −=
+                              1 21 1
+                f  ( ) 3 =  f  ( ) 2 −=  −=
+                                         3
+               Given:  ( ) 0f  = 2,  f  ( ) 1 =
+                                                              −
+               Then the sequence: 2, 3, 2, 1, 0, … ⇒   f  ( ) n =  4 n
+               By induction:  Basis step:  ( ) 0f  =  2  and  ( ) 1 =  41 3
+                                                                −=
+                                                        f
+               If      f  ( ) k = 4 k−
+               Then      ( f k +  ) 1 =  f  ( ) 14k −= − −= − (k +  ) 1
+                                                  14
+                                               k
+                                                     2
+                                2
+            e)   f  ( ) 2 =  2 f  ( ) 0 =      f  ( ) 1 =
+                                                                      4
+                f  ( ) 3 =  2 f  ( ) 1 =  22  4  f  ( ) 4 =  2 f  ( ) 2 =  2 ( ) 2 =
+                                 ( ) =
+                f  ( ) 5 = 2 f  ( ) 3 =  24 =  f  ( ) 6 =  2 f  ( ) 4 =  2 ( ) 4 =
+                                                                     8
+                                 ( ) 8
+               Then the sequence: 1, 2, 2, 4, 4, 8, 8, … ⇒   f n =  ( ) 2 (n+  ) 12 /
 
-             Solution
-
-                a)  Off integers are obtained from other odd integers by adding 2. Thus we can define this set S as
-                    follows 1 S ; and if  n S, then    n 
-                             
-                                                        2 S .
-                b)  Powers of 3 are obtained from other powers of 3 by multiplying by 3. Thus we can define this
-                    set S as follows 3 ; and if  n  S  S, then    3n  S .
-                c)  There are several ways to do this. One that is suggested by Horner’s method is as follows. We
-                                                                                                             S
-                                                                                                      p
-                    assume that the variable for these polynomials is the letter x. All integers are in S; if    x 
-                                                  n
-                    and n is any integer, then  xp x   is in S.
-                    Another method constructs the polynomials term by term. Its base case is to let 0 be in S; and
-
-                    its inductive step is to say that if    x  , c is an integer, and n is a nonnegative integer, then
-                                                    p
-                                                           S
-                             n
-                    p   x   cx  is in S.
-                d)  Off integers are obtained from other even integers by adding 2. Thus we can define this set S as
-                    follows  2 ; and if  n S, then    n            2 S
-                                                         2 S   and   n  .
-                               S
-                                                                                   S
-                e)  The smallest positive integer congruent to 2 modulo 3 is 2, so  2 . All the others can be
-                    obtained by adding multiples of 3,so the inductive step is that  n S, then    n 
-                                                                                                3 S
-                f)  The positive integers no divisible by 5 are the ones congruent to 1, 2, 3, or 4 modulo 5. Thus we
-                                                   
-                                                        2 S,  
-                    can define this set S as follows 1 S,     3 S, and   ; and if  n   S, then    n 
-                                                                                                      5 S
-                                                                         4 S
+               By induction:  Basis step:  ( ) 0f  =  2 (0 12/+  )  = 1 and  f  ( ) 1 =  2 (1 12/+  )  =  2  and
 
 
-             Exercise
+               If       f  ( ) 2k =  (k+  ) 12/
+               Then
+                                              +
+                                                                                            ) ) 2/+
+                                       ⋅
+                                                       ⋅
+                  ( f k +  ) 1 =  2  ( f k −  ) 1 =  22 (k− 11 ) 2/  =  22 k/ 2  =  2 (k/  ) 2 1+  =  2 (k+  ) 2 2/  =  2  ( ( k+ 11
+            f)  f  ( ) 3 =  2 f  ( ) 0 =  21  2  f  ( ) 4 =  2 f  ( ) 1 =  20    f  ( ) 5 = 2 f  ( ) 2 =  2 ( ) 2 =
+                                                               ( ) 0=
+                                 ( ) =
+                                                                                                        4
+                                                              ( ) =
+                                                                                                8
+                                       4
+                f  ( ) 6 =  2 f  ( ) 3 =  2 ( ) 2 =    f  ( ) 7 =  2 f  ( ) 4 = 20  0  f  ( ) 8 =  2 f  ( ) 5 =  2 ( ) 4 =
+               This is valid, since the values n = 0, 1, 2 are given. The sequence: 1, 0, 2, 2, 0, 4, 4, 0, 8, …
+                  We conjecture the formula                     Prove
+                                                                       /
+                   f  ( ) n =  2 n  3 /    when  n ≡  ( 0 mod  ) 3     f  ( ) 0 =  2 03  = 1
+                   f  ( ) 0n =  when  n ≡  ( 1 mod  ) 3       f  ( ) 1 =
+                                                                    0
+                                                                                 1
+                                                                                    2
+                   f  ( ) 2n =  (n+  ) 13 /   when  n ≡  ( 2 mod  ) 3    f  ( ) 2 =  2 (21 3/+  )  =  2 =
+               Assume the inductive hypothesis that the formula is valid for smaller inputs. Then
 
-             Let S be the subset of the set of ordered pairs of integers defined recursively by
-                    Basis step: (0, 0) ∊ S.
-                    Recursive step: If (a, b) ∊ S, then a   2,  b    3   and a  3,  b    2 
-                                                                                       S
-                                                                  S
-              a)  List the elements of S produced by the first five applications of the recursive definition.
-              b)  Use strong induction on the number of applications of the recursive step of the definition to show
-                  that 5 a b  when (a, b) ∊ S.
-
-              c)  Use structural induction to show that 5 a b  when (a, b) ∊ S.
-
-             Solution
-
-                a)  Apply each recursive step rules to the only element given in the basis step, we see that (2, 3)
-                    and (3, 2) are in S. If we apply the recursive step to these we add (4, 6), (5, 5) and (6, 4). The
-
-                                                             34</code></pre>
+               For  n ≡  ( 0 mod  ) 3  we have  ( ) 2f n =  f  ( ) 22n =  ⋅  (n−  ) 33/  =  22 n  3 /  2 ⋅  − 1  =  2 n  3 /   as desired
+                                                                          ⋅
+               For  n ≡  ( 1 mod  ) 3  we have  ( ) n = 2  ( f n −  ) 3 =  20 0  as desired
+                                          f
+                                                               ⋅=
+                                                          138</code></pre>
      	</div>
     
      </div>

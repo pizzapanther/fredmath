@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 15 - SOL-Lecture 2</title>
+        <title>Page 15 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 15 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 15 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 15</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                                 
-                       4 1 5, m 
-                    i              5 8   6 x    9     6
-                                                             
-                                                       a
-                                        2                  6
-                                        
-                                                                 
-                                                              
-                       6 1 7, m 
-                    i              7 8    7 x    9     9  fails thus  : j  m , so  : 7
-                                                                                       j 
-                                                       a
-                                        2                  7
-                    At this point i  j , the condition  x   a  is true, location is set to 7, as it should be, and the
-                                                         i
-                    algorithm is finished.
+    <pre style="white-space:pre-line"><code>Solution          Section 2.2 − Algorithms
+
+
 
 
              Exercise
-                                                                                                 ,
-                                                                                                      ,
-             Describe an algorithm that inserts an integer x in the appropriate position into the list  a  a    , a
-                                                                                                1   2        n
-             of integers that are in increasing order.
+
+             List all the steps used by the Algorithm 1 to find the maximum of the list
+                           1, 8, 12, 9, 11, 2, 14, 5, 10, 4.
              Solution
-                                                            
-                                      ,
-                procedure insert  x ,a  a      , a n  :  integers
-                                           ,
-                                     1
-                                         2
-                a     : x    1
-                  n 1
-                i := 1
-                while   x   a
-                            i
-                    i := i +1            {The loop ends when i is the index for x}
-                    j 
-                for  : 0    n i          {Shove the rest of the list to the right}
-                                to
-                                
-                        a      : a
-                         n j 1    n j
-                                    
-                          
-                a 
-                   : x
-                  i
-                {x has been inserted into the correct spot in the list, now of length n + 1}
+
+                The for loop then begins, with i set equal from 2 to n = 10 (number of the sequence).
+                The statement of the loop is executed since 2 &lt; 10. This is an if … then statement.
+                    max:=  1
+                    for i := 2 to 10
+
+
+                    if max &lt;  a then   max : a=
+                              i               i
+                 a = a =  8, since 1 &lt; 8, then max  :8
+                                                   =
+                  i    2
+                                                     =
+                 a =  a = 12 , since 8 &lt; 12, then max : 12
+                  i    3
+                 a = a =  9, since 12 &lt; 9 is not true, then max  : 12
+                                                              =
+                  i    4
+                 a = a =  11, since 12 &lt; 11 is not true, then max  : 12
+                                                                =
+                  i    5
+                                                              =
+                 a = a =  2 , since 12 &lt; 2 is not true, then max  : 12
+                  i    6
+                                                       =
+                 a =  a = 14, since 12 &lt; 14, then max : 14
+                  i    7
+                                                              =
+                 a = a =  5 , since 14 &lt; 5 is not true, then max  : 14
+                  i    8
+                                                                =
+                 a =  a = 10, since 14 &lt; 10 is not true, then max : 14
+                  i    9
+                                                               =
+                 a =  a  =  4 , since 14 &lt; 4 is not true, then max : 14
+                  i   10
+                Therefore max has the value  14
+
+
+             Exercise
+
+             Devise an algorithm that finds the sum of all the integers in a list.
+
+             Solution
+                                {                        }
+                                   ,
+                                       ,
+                Procedure sum  a  a       , a n  :integers
+                                      2
+                                  1
+                sum:=  a
+                        1
+                for i := 2 to n
+                        sum : sum a
+                                   +
+                             =
+                                      i
+                return sum{ is the sum of all the elements in the list}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             15</code></pre>
+                                                              67</code></pre>
      	</div>
     
      </div>

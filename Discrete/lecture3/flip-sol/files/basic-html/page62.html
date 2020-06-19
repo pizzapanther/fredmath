@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 62 - SOL-Lecture 3</title>
+        <title>Page 62 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 62 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 62 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 62</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 3.6  Solving Linear Recurrence Relations
+    <pre style="white-space:pre-line"><code>Exercise
+
+        In a club with 9 male and 11 female members, how many 5-member committees can be chosen that have
+
+          a)  All men?
+          b)  All women?
+          c)  3 men and 2 women?
+
+        Solution
+                       =
+            a)  C (9,5)  126
+            b)  C (11,5)  462
+                        =
+                                  84 55  46
+                      ⋅
+            c)  C (9,3) C (11,2) =  ( )( )  =      , 20
+
+
+        Exercise
+        In a club with 9 male and 11 female members, how many 5-member committees can be selected that have
+
+          a)  At least 4 women?
+          b)  No more than 2 men?
+
+        Solution
+                                                  3,432
+                                        ⋅
+                               +
+                       ⋅
+            a)  C (11,4) C (9,1) C (11,5) C (9,0) =
+            b)  C (9,0) C (11,5) C (9,1) C (11,4) C (9,2) C  1 ( 1,3) = 9,   372
+                                       ⋅
+                                                +
+                               +
+                       ⋅
+                                                         ⋅
+
+
+        Exercise
+        In a game of musical chairs, 12 children will sit in 11 chairs arranged in a row (one will be left out). In how
+        many ways can this happen, if we count rearrangements of the children in the chairs as different outcomes?
+
+        Solution
+            P (12,11) =  479,001,600   different         outcomes
 
 
 
+        Exercise
 
-             Exercise
+        A group of 3 students is to be selected from a group of 14 students to take part in a class in cell biology.
+          a)  In how many ways can this be done?
+          b)  In how many ways can the group who will not take part be chosen?
 
-             Determine which of these are linear and homogeneous recurrence relations with constant coefficients.
-             Also find the degree of those that are
+        Solution
 
-              a)  a   3a       4a    5a
-                    n     n 1    n 2     n 3
-              b)  a    2na      a
-                    n      n  1  n  2
-              c)  a    a      a
-                    n    n  1  n  4
-              d)  a    a      2
-                    n    n 1
+                  14
+            a)        =  364  ways
+                  3  
 
-              e)  a    a 2    a
-                    n    n 1   n 2
-              f)  a    a
-                    n    n 2
-              g)  a    a      n
-                    n    n 1
-              h)  a   3a
-                    n     n 2
-              i)  a   3
-                    n
-
-              j)  a    a 2
-                    n    n 1
-              k)  a    a      2a
-                    n    n  1   n  3
-                        a
-              l)  a     n 1
-                    n    n
-
-             Solution
-
-                a)  Linear (terms  a  all to the first power), has constant coefficients (3, 4 and 5), and is
-                                   i
-                    homogeneous (no terms are functions of just n); has  degree 3
-                b)  Linear (terms  a  all to the first power), doesn’t have constant coefficients (2n), and is
-                                   i
-                    homogeneous
-                c)  Linear, homogeneous, with constant coefficients; degree 4
-                d)  Linear with constant coefficients, not homogeneous because of 2
-
-                e)  Not linear since  a 2
-                                     n 1
-                f)  Linear, homogeneous, with constant coefficients; degree 2
-                g)  Linear but not homogeneous because of the n.
-                h)  Linear, homogeneous, with constant coefficients; degree 2
-                i)  Linear with constant coefficients, not homogeneous because of 3
-
-                j)  Not linear since  a 2
-                                     n 1
-                k)  Linear, homogeneous, with constant coefficients; degree 3
-                l)  Linear with constant coefficients, not homogeneous
-
-                                                             62</code></pre>
+                  14
+            b)        =  364  ways
+                  11 
+                                                          166</code></pre>
      	</div>
     
      </div>

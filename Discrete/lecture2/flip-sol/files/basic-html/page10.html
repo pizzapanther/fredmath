@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 10 - SOL-Lecture 2</title>
+        <title>Page 10 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 10 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 10 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 10</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>4  We get
+             h)  Let  a = 8a     − 16a    =  n 2 n
+                      n      n−  1    n−  2
+                                     2 n−
+                     n 2 n  8⋅  (n −  ) 1 4  1  6 1 ⋅ −  (n −  ) 2  2 n−  4  2
+                       4 =
+                                                )
+                          =  84 ⋅  n− 2  ( (  n −  2  2n +  1 4 − ⋅  2 n⋅  (  2  −  4n +  4 ))
 
-             A factory makes custom sports cars at an increasing rate. In the first month only one car is made, in the
-             second month two cars are made, and so on, with n cars made in the nth month.
-              a)  Set up a recurrence relation for the number of cars produced in the first n months by this factory.
-              b)  How many cars are produced in the first year?
-              c)  Find an explicit formula for the number of cars produced in the first n months by this factory
+                                        2
+                          = 16 4 ⋅  n− 2 ( 2n − 4n + 2 n−  2  + 4n −  4 )
 
-             Solution
-                                                                                                          0
-                a)  Let c  be the number of cars produced in the first n months. The initial condition is c  .
-                         n                                                                             0
-                    Since n cars are made in the nth month then c   c     n, where c    is the first  n–1 months
-                                                                n    n 1            n 1
-                b)  The number of cars produced in the first year is  c  . Plug in n  12 , we get
-                                                                   12
-                    c   n c
-                           
-                     n        n 1
-                          n  n    1  c n 2
+                                 2
+                          = 4 n ( n −  2 )
 
-                                   n 
-                          n  n  1      2  c n 3
+                               n
+                          =  n 4  which is a false statement
 
-                                                                                                n n    1
-                                   n 
-                          n  n  1      2                     n  n  1      2    1 
-                                                  1 c
-                                                                               n 
-                                                       0                                           2
-                            n n    1
-                                   0
-                             2
-                           2
-                          n  n
-                            2
-
-                     c     12 2   12    78
-                      12      2
-
-                           2
-                c)  c   n   n
-                     n      2
+                            4  is a solution of the recurrence relation.
+                 ∴  a =  n 2 n
+                     n
 
 
+          Exercise
 
-             Exercise
+                         { }
+          Is the sequence  a n   a solution of the recurrence relation a =  n  a n−  1  +  2a n−  2  +  2n −  9 if
+           a)  a = −+
+                          2
+                      n
+                 n
+           b)  a =   5 ( ) 1−  n  − n +  2
+                 n
+                               n
+                      ( ) 1
+                                      2
+                                   n
+           c)  a =   3 −  n  + 2 − +
+                 n
+                     72 −+
+           d)  a = ⋅    n   n   2
+                 n
+          Solution
+                                                     +
+             a)  a     +  2a   +  2n −  9 =  −  (n −  ) 1 +  2 2 −  (n −   ) 2 +  2 +   2n −  9
+                   n −  1  n −  2                                   
+                                               +
+                                                              +
+                                                  −
+                                       = − n + 1 2 2n +  4 4 2n −    9
+                                                           +
+                                       = −+   2
+                                          n
+                                         a
+                                       =  n
+             b)  a    +  2a    +  2n −  9 5 −  ( ) 1  n−  1 −  (n −  ) 1 +  2 2 5 −   ( ) 1  n−  2  −  (n −  ) 2 +  2 +    2n −  9
+                                                               +
+                                       =
+                   n −  1  n −  2                                                        
+                                                                              
+                                       = 5 −  n −  1  −  n + +    ( ) 1  n −  2  − n +  4 + 2n − 9
+                                          ( ) 1
+                                                        3 2 5 −
+                                                                              
+                                                                            8 2n −
+                                       = 5 ( ) 1−  n −  1  −  n ++  ( ) 1−  n −  2  − 2n ++  9
+                                                        3 10
 
-             For each of these lists of integers, provide a simple formula or rule that generates the terms of an
-             integer sequence that begins with the given list. Assuming that your formula or rule is correct,
-             determine the next three terms of the sequence.
+                                       = 5 ( ) 1−  n −  1  + 10 ( ) 1−  n −  1 ( ) 1−  −  1  −  n + 2
 
-                    a)  1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 
-                    b)  1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 
-                    c)  1, 0, 2, 0, 4, 0, 8, 0, 16, 0, 
-                    d)  3, 6, 12, 24, 48, 96, 192, 
-                    e)  15, 8, 1, 6, 13, 20, 27, 
-                    f)  3, 5, 8, 12, 17, 23, 30, 38, 47, 
-                    g)  2, 16, 54, 128, 250, 432, 686, 
-                    h)  2, 3, 7, 25, 121, 721, 5041, 40321, 
+                                       =  5 ( ) 1−  n −  1  −  10 ( ) 1−  n −  1 −  n +  2
 
-                                                             10</code></pre>
+                                                      n
+                                       = − 5 ( ) 1−  n− 1  −+ 2
+
+                                             1
+                                         ( ) ( ) 1
+                                       = − 1 5 −    n− 1 − n +  2
+
+                                                            62</code></pre>
      	</div>
     
      </div>

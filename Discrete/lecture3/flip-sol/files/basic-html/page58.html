@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 58 - SOL-Lecture 3</title>
+        <title>Page 58 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 58 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 58 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 58</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a)  C (16, )  120  samples
-                           2
-                  b)  C (16,4  )  1820  samples
+    <pre style="white-space:pre-line"><code>Exercise
 
-                            
-                  c)  C 9,2    36  samples
+        How many 4-permutations of the positive integers not exceeding 100 contain three consecutive integers, k,
+        k + 1, k + 2, in the order
 
+          a)  Where these consecutive integers can perhaps be separated by other integers in the permutation?
+          b)  Where they are in consecutive positions in the permutation?
+        Solution
 
+            a)  The consecutive numbers are 5, 6, 7, since can be separate by other integers the permutation can be
+               written as 5, 6, 32, 7.
+               In order to specify such 4-permutation, we need to choose 3 consecutive integers. They can be {1,
+               2, 3} to (98, 99, 100}; thus, there are 98 possibilities. There are 4 possibilities, we need to decide
+               which 97 other positive integers not exceeding 100 is to fill this slot, and there are 97 choices.
+               In fact, every 4-permutation consisting of 4 consecutive numbers, in order, has been double
+               counted.
+               Therefore, we need to subtract the number of such 4-permutations. Clearly there are 97 of them.
+               Further thought shows that every other 4-permutation in our collection arises in a unique way.
+               Therefore  98 4 97 97 =⋅⋅  −  37,927
 
-             Exercise
-
-             A bag contains 5 black, 1 red, and 3 yellow jelly beans; you take 3 at random. How many samples are
-             possible in which the jelly beans are
-
-              a)  All black?
-              b)  All red?
-              c)  All yellow?
-              d)  2 black and 1 red?
-              e)  2 black and 1 yellow?
-              f)  2 yellow and 1 black?
-              g)  2 red and 1 yellow?
-
-             Solution
-
-                a)  C     10
-                      5,3
-                b)  No 3 read. C      0
-                                1,3
-                c)  C     1
-                      3,3
-                d)  C    C    10
-                      5,2 1,1
-                e)  C    C    30
-                      5,2  3,1
-                f)  C   C     15
-                      3,2  5,1
-                g)  There is only 1 red.
+            b)  The consecutive numbers be consecutive in the 4-permutation.
+               There are only 2 places to put the fourth number in slot 1 and slot 4.
+               Therefore, 98 2 97 97 =⋅⋅  −  18,915
 
 
 
+        Exercise
 
+        The English alphabet contains 21 constants and five vowels. How many strings of six lowercase letters of
+        the English alphabet contain?
+          a)  Exactly one vowel?
+          b)  Exactly two vowels?
+          c)  At least one vowel?
+          d)  At least two vowels?
 
+        Solution
+            a)  This can be done 6 ways. We need to choose the vowel and this can be done in 5 ways. Each other 5
+                                                                            5
+               positions can contain any of the 21 consonants, so there are  21  ways to fill the rest of the string.
+                                                          ,0
 
+               Therefore, the answer is 6 5 21  ⋅ ⋅  5  = 122,5 33 30 ways
+            b)  The position of the vowels can be done in  (6, 2C     ) 15 ways=  . We need to choose the 2 vowels in
+                                                                                                  4
+                 2
+                5  ways. Each other 4 positions can contain any of the 21 consonants, so there are  21  ways to fill
+               the rest of the string.
+                                                 4
+                                                         3
+               Therefore, the answer is 15 5⋅  2  ⋅  21  = 72, 9 0,375 ways
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                             58</code></pre>
+            c)  Count the number of strings with no vowels and subtract this from the total number of stings.
+                        6
+                  6
+                26 −  21  =  223,149,655  wa ys
+                                                          162</code></pre>
      	</div>
     
      </div>

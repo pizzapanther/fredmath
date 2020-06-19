@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 39 - SOL-Lecture 2</title>
+        <title>Page 39 - Discrete Lecture 2 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 39 - SOL-Lecture 2</div>
+        <div id="content-top1">Page 39 - Discrete Lecture 2 SOL</div>
         <div id="content-top2">P. 39</div>
      </div>
      <div id="content-middle">
@@ -154,117 +154,75 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-             Find gcd(92928, 123552) and lcm(92928, 123552) and verify that
-                                 
+             Find the prime factorization of 10!
 
-             gcd 92928, 123552 lcm   92928, 123552       92928 123552
              Solution
 
-                          8
-                                 2
-                       
-                             
-                92928 2 3 11
-                123552 2 3 11 13  5   3   
-                                                
-                                     2  
-                gcd 92928, 123552     5  3 11 1056
+                10 !=  3628800
 
-                                                2
-                                            3
-                                                     
-                                                  
-                                     2 
-                                             
+                10 !=  (2 ⋅ 5 ) !
 
-                lcm 92928, 123552     8  3 11 13 10,872,576
-                                                              5       8  3    2   
-                gcd 92928, 123552    lcm  92928, 123552      2 3 11 2 3 11 13       
-                                                                  4
-                                                                      3
-                                                                        
-                                                                   
-                                                            2 13   3 11 13
-                                                             
-                                                 5
-                                                                      4
-                                                     3
-                                 
-                                                                           3
-                                      8
-                                                                        
-                                                                            
-                                                       
-                                                   
-                                         
-                                                          
-                92928 123552     2 3 11 2  2 3 11 13    2 13  3 11 13
-                                                          92928 123552 
-                                    
-                gcd 92928, 123552 lcm    92928, 123552                    11,481,440,256
 
+             Exercise
+
+                           m
+                              1
+             Show that if  a +  is composite if a and m are integers greater than 1 and m is odd. [Hint: Show that x +
+             1 is a factor of the polynomial  a m  + 1 if m is odd]
+
+             Solution
+                                                                 (
+                                                                                               )
+                Since m is odd, then we can factor a m  + 1= (a +  ) 1 a m −  1  − a m −  2  + a m −  3  − − 1
+
+                                                                            1 a
+                Because a and m are both greater than 1, we know that 1 a&lt; +&lt;    m  + 1 . This provides a factoring of
+                 a m  + 1 into proper factors, so  a m  + 1is composite.
 
 
 
              Exercise
-             Use the Euclidean algorithm to find
-                                                          
-                                                                                  
-                                                                                                             
-               a)  gcd , 5              b)  gcd 100, 101      c)  gcd 123, 277       d)  gcd 1529, 14039
 
-                       1
-
-
-                                                       
-                                                                                                           
-                                    
-                                                                                 
-
-               e)  gcd 1529, 14038      f)  gcd 12, 18        g)  gcd 111, 201       h)  gcd 1001, 1331
-
-
-
-                                                                                    
-                                     
-                                                            
-               i)  gcd 12345, 54321   j)  gcd  1000, 5040   k)  gcd   9888, 6060
-
-
-
+                                                           n
+                          m
+             Show that if  2 + 1 is an odd prime, then m =  2  for some nonnegative integer n. [Hint: First show the
+                                                                               
+                                                 
+                                                                           k
+                                  m
+                                           k
+                                     1
+             polynomial identity  x + =  ( x + 1 x kt−  ( 1 )  −  x  ( kt−  ) 2  + −  x + 1  holds, where m =  kt  and t is odd]
+                                                                               
+                                                )
+                                                 
+                                                                               
              Solution
-                a)  5 = 1 ∙ 5 + 0
-                            
-                                       
-                    gcd   gcd     1
-                          5 , 1
-                                    0 , 1
-                b)  101 = 100 ∙ 1 + 1
-                    1 = 1 ∙ 1 + 0
-                                                        
-                                              
-                    gcd 100 ,  101   100  1 ,    gcd   1
-                                 gcd
-                                                     0 , 1
-                c)  277 = 123 ∙ 2  + 31
-                    123 = 31 ∙ 3 + 30
-                    31 = 30 ∙ 1 + 1
-                    30 = 1 ∙ 30 + 0
-                                  
-                                                                                  
-                             2 ,
-                                                                                0 , 1
-                                                     31
-                                                                        gcd
-                                                            gcd
-                                               gcd
-                    gcd 123 77  gcd  123 ,  31    ,  30      ,  1      1
-                                                                  30
-                d)  14039 = 1529 ∙ 9  + 278
-                    1529 = 278 ∙ 5  + 139
-                    278 = 139 ∙ 2  + 0
-                    gcd 1529,  14039  gcd  1529,  278  gcd  278,  139  gcd  139,  0  139
-                                                             39</code></pre>
+                              k
+                Assume  y =  x , then the claimed identity is
+                    (y t  + 1 ) ( += y  1 )(y  − t  1  − y  − t  2  + y  − t  3  − − y  +  ) 1
+                By multiplying out the right-hand side and noticing the “telescoping” that occurs.
+                Let show that m is a power of 2 that is only prime factor is 2.
+
+                Suppose to the contrary that m has an odd prime factor t and m =  kt , where k is a positive integer.
+                                                                                k
+                                                                                                     k
+                                                                                      
+                Letting  =x  2  in the identity given in the hint, we have 2 m  + 1 =  (2 + 1 )( ). Because  2 + 1 &gt;  1 and
+                                                                                                 k
+                the prime 2 m  + 1 can have no proper factor greater than 1, we must have 2 m  + 1 =  2 + 1, so  m =
+                                                                                                               k
+                and  =t  1 contradicting the fact that t is prime. This completes the proof by contradiction.
+
+
+
+
+
+
+
+
+
+                                                              91</code></pre>
      	</div>
     
      </div>

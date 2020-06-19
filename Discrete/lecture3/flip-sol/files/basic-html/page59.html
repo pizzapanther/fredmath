@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 59 - SOL-Lecture 3</title>
+        <title>Page 59 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 59 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 59 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 59</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 3.5  Applications of Recurrence Relations
+    <pre style="white-space:pre-line"><code>d)  Subtracting the total number of strings from the number of strings with no vowels and the number
 
+                    of strings with one vowel. Answer:   26 −  6  21 −  6  6 521  =⋅  ⋅  5  1 0 , 0 626,6 25 ways
 
 
 
              Exercise
-
-             a)  Find a recurrence relation for the number of permutation of a set with n elements
-             b)  Use the recurrence relation to find the number of permutations of a set with n elements using
-                iteration.
+             Suppose that a department contains 10 men and 15 women. How many ways are there to form a committee
+             with six members if it must have
+              a)  The same number of men and women?
+              b)  More women than men?
 
              Solution
 
-                a)  A permutation of a set with n elements of a choice of a first element, followed by a permutation
-                    of a set of  n  1  elements. Therefore  P   nP  with  P   1
-                                                         n      n 1         0
-                b)  P   nP        n n    1 P     n n    1  2     !
-                                                             1 P   n
-                     n      n  1          n  2                 0
+                a)  C     ⋅ C    = 54,600 ways
+                      10,3  15,3
+
+                b)  There are C     ways  to choose the committee to be composed only of women
+                               15,6
+                    C     ⋅ C    ways  if there are to be five women and one man, and C   ⋅ C    ways  if there are
+                      15,5  10,1                                                      15,4   10,2
+                    to be four women and two men.
+
+                    Therefore, C     +  C   ⋅  C   +  C   ⋅  C   =  96,460 ways
+                                15,6    15,5  10,1    15,4  10,2
 
 
              Exercise
-             A vending machine dispensing books of stamps accepts only one-dollar coins, $1 bills, and $5 bills.
-              a)  Find a recurrence relation for the number of ways to deposit n dollars in the vending machine,
-                  where the order in which the coins and bills are deposited matter.
-              b)  What are the initial conditions?
-              c)  How many ways are there to deposit $10 for a book of stamps?
+
+             How many bit strings contain exactly eight 0s and 10 1s if every 0 must be immediately followed by a 1?
 
              Solution
 
-                a)  Let  a  be the number of ways to deposit n dollars in the vending machine. We must express
-                         n
-                    a in terms of earlier terms in the sequence. If we want to deposit n dollars, we may start with
-                     n
-                    a dollar coin and then deposit n – 1 dollars. This gives us  a   ways to deposit n dollars.
-                                                                             n 1
-                    We can start with a dollar bill and then deposit n – 1 dollars. This gives us  a   more ways to
-                                                                                             n 1
-                    deposit n dollars.
-                    Finally, we can deposit a five-dollar bill and follow that with n – 5 dollars; there are  a  ways
-                                                                                                       n 5
-                    to do this, Therefore the recurrence relation is  a   2a    a   for  n  5
-                                                                  n      n  1  n  5
 
-                b)  We need initial conditions for all n from 0 to 4. Clearly,  a  1 (deposit nothing) and  a 
-                                                                                                            2
-                                                                            0                           1
-                    (deposit either the dollar coin or the dollar bill)
-                                                            4
-                           2
-                                         3
-                    a   2   4; a    2   8 and     a   2   16
-                     2              3                  4
-                                        1 33 
-                c)  a   2a   a    2 16
-                     5      4    0
-                    a   2a   a   2 33       68
-                                        2 
-                     6      5   1
-                    a   2a   a    2 68
-                                        4 140 
-                     7      6    2
-                    a   2a   a   2 140 8     288
-                     8      7    3
-                    a   2a   a    2 288 16     592
-                     9      8    4
-                                                             59</code></pre>
+                  0  1    0  1   0  1    0  1   0  1    0  1   0  1   0  1   1  1
+
+                There are 8 blocks consisting of the string 01
+                C      =  45 ways
+                  10,2
+
+
+             Exercise
+
+             How many bit strings contain exactly five 0s and 14 1s if every 0 must be immediately followed by two 1s?
+
+             Solution
+
+                Glue 2 1’s to the right of each 0, giving a collection of 9 tokens: five 001’s and four 1’s.
+                C     = 126 ways
+                  9,4
+
+
+
+
+
+
+
+
+
+
+
+                                                               163</code></pre>
      	</div>
     
      </div>

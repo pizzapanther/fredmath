@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 40 - SOL-Lecture 3</title>
+        <title>Page 40 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 40 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 40 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 40</div>
      </div>
      <div id="content-middle">
@@ -152,63 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>They are 55, 66, 77, 88, and 99.
+    <pre style="white-space:pre-line"><code>Exercise
 
-                c)  A number is divisible by 7 and 11 which is 77. There is only one such number between 50 and
-                    100, namely 77.
+        Let S be the subset of the set of ordered pairs of integers defined recursively by
+               Basis step: (0, 0) ∊ S.
+                                                                        ) 1
+               Recursive step: If (a, b) ∊ S, then ( ,a b +∈ , (a + 1,  b +∈  and (a + 2,  b +∈
+                                                       ) 1
+                                                          S
+                                                                                              ) 1
+                                                                           S
+                                                                                                 S
+          a)  List the elements of S produced by the first five applications of the recursive definition.
+          b)  Use strong induction on the number of applications of the recursive step of the definition to show that
+              a ≤  2b  whenever (a, b) ∊ S.
+          c)  Use structural induction to show that  a ≤  2b  whenever (a, b) ∊ S.
+        Solution
+            a)  Apply each recursive step rules to the only element given in the basis step, we see that (0, 1), (1, 1)
+               and (2, 1) are in S.
+               2nd step: (0, 2), (1, 2), (2, 2), (3, 2) and (4, 2).
+                 rd
+               3  step: (0,3), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3) and (6, 3).
+                 th
+               4  step: (0, 4), (1, 4), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4), (7, 4) and (8,4)
+                 th
+               5  step: (0, 5), (1, 5), (2, 5), (3, 5), (4, 5), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5), and (10, 5)
+                    P
+            b)  Let  ( ) n  be the statement that  a ≤  2b  whenever (a, b) ∊ S is obtained with no applications of the
+               recursive step.
+               For the basis step, the only element of S obtained with no applications of the recursive step is
+                (0, 0    ) , then 0 20≤⋅ is true. Therefore  ( ) 0P   is true.
+
+               Assume that  a ≤  2b  whenever (a, b) ∊ S is obtained by k or fewer applications of the recursive step.
+               Consider an element obtained with k + 1 applications of the recursive step.
+
+                                                                                             12
+               We know that  a ≤ 2b , we need to check this inequality implies  a ≤  ( 2 b +  ) 1 ,  a +≤  (b +  ) 1 , and
+                   22
+                a + ≤   (b +  ) 1 .
+                                                    ≤
+               Thus is clear that 02, 1 2 ≤  ≤    and   22 , respectively, to  a ≤  2b  to obtain these inequalities.
+            c)  This holds for the basis step, since  00≤ .
+                                    )
+                                                                                           )
+               If this holds for ( ,a b , then it also holds for the elements obtained from ( ,a b in the recursive
+                                                    ≤
+               step, since adding  02, 1 2 ≤  ≤    and   22 , respectively, to  a ≤  2b  yiekds  a ≤  ( 2 b +  ) 1 ,
+                   12
+                                         ≤
+                a +≤    (b +  ) 1 , and  a + 22 (b +  ) 1 .
 
 
 
-             Exercise
-             How many positive integers less than 100
-
-              a)  Are divisible by 7?
-              b)  Are divisible by 7 but not by 11?
-              c)  Are divisible by both 7 and 11?
-              d)  Are divisible by either 7 or 11?
-              e)  Are divisible by exactly one of 7 and 11?
-              f)  Are divisible by neither 7 nor 11?
-
-             Solution
-                    7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98 are divisible by 7
-                    11, 22, 33, 44, 55, 66, 77, 88, 99 are divisible by 11
 
 
-                           th
-                a)  Every 7  number is divisible by 7. Therefore,  99   14  such numbers. The  k th   multiple of 7
-                                                                 7
-                    does not occur until the number 7k has been reached.
-
-                b)  There are 13 such numbers since 77 is the only one divisible by 11.
-
-                c)  There is only 1 number (77) divisible by both 7 and 11
-
-                d)   99    9  such numbers and 14 such numbers divisible by 7 and only 1 is divisible by 11.
-                    11
-                                          
-                                             
-                    Therefore, there are 14 9 1   22  divisible by either 7 or 11
-                e)  The number of numbers divisible of them:  22 1   21       (subtract (d) from (c))
-                                                                
-                f)  Subtract part (d) from the total number of positive integers less than 100.
-                       
-                    99 22    77
 
 
-             Exercise
 
-             How many positive integers less than 1000
 
-              a)  Are divisible by 7?
-              b)  Are divisible by 7 but not by 11?
-              c)  Are divisible by both 7 and 11?
-              d)  Are divisible by either 7 or 11?
-              e)  Are divisible by exactly one of 7 and 11?
-              f)  Are divisible by neither 7 nor 11?
-              g)  Have distinct digits?
-              h)  Have distinct digits and are even?
-             Solution
-                                                             40</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                          144</code></pre>
      	</div>
     
      </div>

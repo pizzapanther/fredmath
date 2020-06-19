@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 5 - SOL-Lecture 1</title>
+        <title>Page 5 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 5 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 5 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 5</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>d)  Your mind will decay if and only if you watch television.
+    <pre style="white-space:pre-line"><code>g)  If you read the newspaper every day, you will be informed, and conversely.
+              h)  It rains if it is a weekend day, and it is a weekend day if it rains.
+              i)  You can see the wizard only if the wizard is not in, and the wizard is not in only if you can see him
+
+             Solution
+
+                a)  You buy an ice cream cone if and only if it is hot outside.
+                b)  You win the contest if and only if you hold the only winning ticket.
+
+                c)  You get promoted if and only if you have connection.
+                d)  Your mind will decay if and only if you watch television.
 
                 e)  The trains run late if and only if you watch television.
-
                 f)  For you to get an A in this course if and only if you learn how to solve discrete mathematics
                     problems.
+
 
 
              Exercise
 
              Construct a truth table for each of these compound propositions.
 
-              a)  p    p                    i)   p    q         p    o)   p   q          q
-                                                                                            p 
-                                                               q
-              b)  p   p                     j)   p    q   q    p      p)   p q    r
-                                                                                      
-              c)  p     p                   k)  p    p q                   q)   p q    r
-                                                            
-                                                                                      
-                                                         
-              d)  p     p
-                                                                  
-                                                        
-                                                                                      
-                                                     
-                                                               
-              e)  p     q                   l)   p q     p q              r)   p q    r
-                                                                                      
-              f)    p   q                   m)  q      p   p    q    s)   p q    r
-                                                                                         
-                                                                                      
-                                                           p 
-              g)   p     q               n)   p  q           q       t)   p q 
-                                                                                              r
+                        p
+              a)  p ∧¬                         i)  ( p →   ) q ↔ ( q¬ → ¬  ) p    o)  ( p →  q ) ( p∧¬ →  ) q
+              b)  p ∨¬                         j)  ( p →  ) q →  (q →  ) p       p)  ( pq∨  ) r∨
+                        p
+                         p
+              c)  p → ¬                        k)  p ⊕  ( pq                     q)  ( pq ∧  ) r
+                                                             )
+                                                                                        ∨
+                                                          ∨
+                         p
+              d)  p ↔¬
+              e)  p → ¬                        l)  ( pq∧  ) →  ( pq∨  )          r)  ( pq∧  ) r∨
+                         q
+                    p
+              f)  ¬↔                           m)  (q → ¬   ) p ↔  ( p ↔  ) q    s)  ( pq∧  ) r∧
+                         q
+                                                           ) ( p →
+                                                                                                r
                               q
-                        
-                                   
-              h)   p q      p q
-                     
-                               
+              g)  ( p ∨¬  ) q →                n)  ( p →  q ∨¬        ) q        t)  ( pq∨  ) ∧¬
+              h)  ( pq∨  ) →  ( pq∧  )
              Solution
-                  a)                              b)                              c)
+                  a)                               b)                               c)
 
-                       p    p      p   p            p    p      p   p            p     p        p   p
-                      T      F         F              T      F         T               T      F        F
-                      F      T         F               F     T         T               F     T         T
-                  d)                              e)                              f)
+                       p     ¬p      p ∧¬p              p     ¬p      p ∨¬p              p     ¬p      p  →¬p
+                       T      F        F                T      F         T               T      F         F
+                       F      T        F                F      T         T               F      T         T
 
-                       p    p        p   p       p     q    q        p   q    p     q    q        p  q
-                      T      F         F            T     T     F        F          T     T     F        F
-                      F      T         F            T     F     T        T          T     F     T        T
 
-                                                    F     T     F        T          F     T     F        T
-                                                    F     F     T        T          F     F     T        F
 
-                  g)                                             h)
+                  d)                               e)                               f)
 
-                                                                                                             
-                                                                                      
-                                                                             
-                                                                                                        
-                     p   q   q   p     q    p  q  q        p   q   p q   p q    q          p q
-                                                                                              p
-                     T  T     F       T             T              T  T      T        T              T
-                     T   F    T       T             F              T   F     T        F              F
-                     F  T     F        F            T              F  T      T        F              F
-                     F   F    T       T             F              F   F     F        F              T
+                                                                                                          p
+                                                      p    q     ¬q    p  →¬q          p    q     ¬q   ¬↔ q
+                       p     ¬p     p  ↔¬p
+                       T      F         F            T     T      F        F          T     T      F        F
+                       F      T         F            T     F      T        T          T     F      T        T
+                                                     F     T      F        T          F     T      F        T
+                                                     F     F      T        T          F     F      T        F
 
 
 
 
-
-
-                                                              5</code></pre>
+                                                               5</code></pre>
      	</div>
     
      </div>

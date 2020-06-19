@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 25 - SOL-Lecture 1</title>
+        <title>Page 25 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 25 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 25 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 25</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                       
-                 T
-             Let   , x  y  mean that student x likes cuisine y, where the domain for x consists of all students at your
-             school and the domain for y consists of all cuisines. Express each of these statements by a simple
-             English sentence.
-                           
-              a)   T  , A  J
-                                  
-                                                      
-              b)   xT   , x  Korean  xTx  , x  Mexican
-                                                
-                                         
-              c)     y T Monique  y   ,   T Jay  y
-                                             ,
-                    x z
-              d)           y x    z     T x y    ,  
-                                               T z y
-                                            ,
-                                            
-                                 
-              e)         y T  , x y  T   , z y
-                    x z
-                                            
-                                  
-              f)         y T  , x y  T   , z y
-                    x z
-             Solution
-                a)  A does not like J cuisine
-                b)  Some student at your school likes Korean cuisine, and everyone at your school likes Mexican
-                    cuisine.
-                c)  There is some cuisine that Monique and Jay likes.
-                d)  For every pair of distinct students at your school, there is some cuisine that at least one them
-                    does not like.
-                e)  There are two students at your school who have exactly the same cuisines (tastes).
-                f)  For every pair of students at your school, there is some cuisine about which they have the same
-                    opinion (either they both like it or they both do not like it).
+    <pre style="white-space:pre-line"><code>c)  ∃  x ∃  ( ( y  x &lt;  0 ) ( y∧  &lt;  0 ) ( x∧  −  y ≥  0 ))
 
+                      xy
+                d)  ∀∀    ( x y+  ≤  x +  y  )
 
 
              Exercise
-                       
-             Let   , x  y  be the statement “ x loves y”, where the domain for both x and y consists of all people in
-                 L
-             the world. Use quantifiers to express each of these statements.
-              a)  Everybody loves Jerry.
-              b)  Everybody loves somebody.
-              c)  There is somebody whom everybody loves.
-              d)  Nobody loves everybody.
-              e)  There is somebody whom Lois does not love.
-              f)  There is somebody whom no one loves.
-              g)  There is exactly one person whom everybody loves.
-              h)  There are exactly two people whom L loves.
-              i)  Everyone loves himself or herself.
-              j)  There is someone who loves no one besides himself or herself.
 
+
+             Rewrite these statements so that the negations only appear within the predicates
+                                )
+              a)  ¬∃ y xP  ( ,x y
+                      ∀
+                                )
+              b)  ¬∀ ∃     ( , x y
+                      x yP
+                                          ))
+                                  ¬
+              c)  ¬∃   ( y Q ( ) y ∧ ∀ x R ( ,xy
              Solution
-                                  
-                a)   x L  ,x  Jerry
-                                 
-                b)    x y L   ,x  y
 
-                                                             25</code></pre>
+                                                  )
+                                 )
+                a)  ¬∃ y xP  ( ,x y ≡ ∀ y¬∀ xP ( ,x y
+                        ∀
+                                                 )
+                                   ≡∀ y x P  ( ,xy
+                                         ¬
+                                       ∃
+                                                 )
+                                 )
+                b)  ¬∀ x yP  ( ,x y ≡ ∃ x¬∃ yP ( ,x y
+                         ∃
+                                                 )
+                                   ≡∃ ∀ ¬    ( ,xy
+                                      x y P
+                                                                        ))
+                c)  ¬∃  ( y Q ( ) y ∧∀ x R ( ,xy )) ≡ ∀ y¬ (Q ( ) y ∧∀ x R ( ,xy
+                                                                ¬
+                                    ¬
+                                             ≡∀   ( y ¬ Q ( ) y ∨ ¬ ( x R∀ ¬  ( ,xy )))
+                                                                     ))
+                                             ≡∀   ( y ¬ Q ( ) y ∨ ∃ xR ( ,x y
+
+
+             Exercise
+
+             Express the negations of each of these statements so that all negation symbols immediately precede
+             predicates.
+                                   )
+                    x y zT
+              a)  ∀∃   ∀    ( , ,x y z
+                                            )
+                              )
+                    x yP
+              b)  ∀∃     ( ,x y ∨ ∀∃    ( ,x y
+                                  x yQ
+             Solution
+                a)  ( x y zT¬ ∀∃ ∀  ( , ,x y z )) ≡ ∀∃  ∀  ( , ,x y z )
+                                           ¬
+                                               x y zT
+                                                 ∀
+                                             ¬
+                                         ≡ ∃ x ∃ y zT  ( , ,x y z )
+
+                                         ≡  x y ∀ ∃∀  ¬  zT  ( , ,x y z )
+                                                            )
+                                            x y z T
+                                         ≡∃ ∀ ∃   ¬   ( , ,x yz
+                                  )
+                b)  ( x yP¬ ∀∃  ( ,x y ∨ ∀∃  ( ,x y )) ≡ ¬ ( x yP∃∀  ( ,x y )) ¬∧  ( x yQ∀∃  ( ,x y ))
+                                       x yQ
+                                                                  ))
+                                                   ≡∃ x¬ ( yP∃  ( ,x y ∧ ∃ x¬ ( yQ∃  ( ,x y ))
+                                                                  )
+                                                                      x y Q
+                                                       ∀
+                                                          ¬
+                                                   ≡∃ x y P  ( ,xy ∧ ∃∀   ¬   ( ,xy )
+                                                              25</code></pre>
      	</div>
     
      </div>

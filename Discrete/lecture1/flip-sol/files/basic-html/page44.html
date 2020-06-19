@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 44 - SOL-Lecture 1</title>
+        <title>Page 44 - Discrete Lecture 1 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 44 - SOL-Lecture 1</div>
+        <div id="content-top1">Page 44 - Discrete Lecture 1 SOL</div>
         <div id="content-top2">P. 44</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>b)  {a, b, c, d, e} = A
 
-             Prove the absorption law by showing that if A and B are sets, then
-                             
-              a)  A    A B    A
+             c)  ∅, since there are no elements in A that are not in B.
 
-                             
-              b)  A    A B    A
-             Solution
-
-                                           
-                a)  Suppose  x  A   A B , then  x  A and  x  A B  by the definition of intersection. We have
-                    x  A and in the latter case  x  A  or x  B  by the definition of union. Since both of these are
-                    true,  x A B by the definition of intersection, and we have shown that the right-hand side is
-
-                    a subset of the left-hand side.
-
-                                                                     
-                b)  Suppose  x  A   A B        x A or x   A B  by definition of union.
-
-                    x  A or     x A and  x    B 
-
-                                                                                                     
-                    By the definition of the intersection, in any event,  x A.  Therefore,  x  A   A B  as well.
-                    That proves that the right-hand side is a subset of the left-hand side.
+             d)  {f, g, h}
 
 
-             Exercise
+          Exercise
 
-             Show that if A, B, and C are sets, then  A B C   A B C
+          Prove the domination laws by showing that
+           a)  AU =   U
+           b)  AU =    A
+           c)  A ∅=     A
+                 
+           d)  A ∅= ∅
 
-             Solution
+          Solution
 
-                Suppose  x  A B C , then  x    A B C , which means that x fails to be in at least one of these
-                three sets. In other words,  x  A   x  or  B or    x C . This is equivalent to saying that
-                 x  A   x  or  B or    x C . Therefore  x A  B  C .
+                                  ∨∈
+             a)  A U =  {xx∈   A x U    }
+                                     }
+                                A
+                        = {xx∈∨T
+                          x T
+                        = { }
+                        = U
 
-                Conversely, if  x A  B   C , then  x  A   xor   B or  x C  . This means  x  A   xor   B or  x C  ,
-                so x cannot be in the intersection of A, B, and C. Since  x A B C , we conclude that
-                 x A B C , as desired.
+             b)  A U =  {xx∈   A x U    }
+                                  ∧∈
+                                     }
+                                A
+                        = {xx∈∧T
+                        = {xx∈  A }
 
-                                                               Or
+                        =  A
 
-                     A  B   C       A B C         A B C          A        B       C         A B C
+                                  ∨
+             c)  A ∅ =  {xx∈   A x∈∅    }
+                                      }
+                        = {xx∈∨ F
+                                A
+                        = {xx∈  A }
 
-                     1    1    1        1             0           0       0       0             0
-                     1    1    0        0             1           0       0       1             1
-                     1    0    1        0             1           0       1       0             1
-                     1    0    0        0             1           0       1       1             1
-                     0    1    1        0             1           1       0       0             1
-                     0    1    0        0             1           1       0       1             1
-                     0    0    1        0             1           1       1       0             1
+                        =  A
 
-                     0    0    0        0             1           1       1       1             1
+                                  ∧
+             d)  A ∅ =  {xx∈   A x∈∅    }
+                                      }
+                        = {xx∈∧ F
+                                A
+                        = {x   F }
+
+                        = ∅
 
 
+          Exercise
 
+          Prove the complement laws by showing that
 
-                                                             44</code></pre>
+           a)  A   AU
+                      =
+           b)  A   A = ∅
+
+          Solution
+                                                            44</code></pre>
      	</div>
     
      </div>

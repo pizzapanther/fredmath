@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 11 - SOL-Lecture 3</title>
+        <title>Page 11 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 11 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 11 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 11</div>
      </div>
      <div id="content-middle">
@@ -154,97 +154,80 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-                                                                 n  1  2n  1
-             Use mathematical induction to prove that 21 divides  4   5      whenever n is a positive integer.
+
+             Use mathematical induction to prove that 21 divides  4 n +  1 + 5 2n −  1  whenever n is a positive integer.
              Solution
 
-                For n = 1   4   2  5   1  21, which is divisible by 21; Hence  P  is true.
-                                                                           1
-                                         k  1  2k  1
-                Assume that 21 divides  4     5      is true.
-                                                  k         2 k  
-                                                                   1 1
-                                                       1 1
-                We need to prove that 21 divides  4        5         is also true
 
-                  k        2 k       k    1  2k   2 1
-                                                        
-                                   1 1
-                       1 1
-                4         5           4 4      5
-                                                    2
-                                        4 4   k    1   5  5 2k  1
-                                        4 4   k    1   25 5   2k  1
-                                                         
-                                                     
-                                        4 4   k   1   4 21 5   2k 1
-                                        4 4   k    1    4 5   2k   1  21 5   2k   1
-                                        4   4 k   1   5 2k   1     21 5   2k  1
-                                                         
-                                                        k  1  2k  1                        2k 1
-                By the inductive hypothesis, 21 divides  4   5      and certainly 21 divides 5   , so 21
-                divides their sum.
-                                              n  1  2n  1
-                 The statement 21 divides  4     5      is true
+                For n = 1 ⇒  4 +  2  5 =  1  21, which is divisible by 21; Hence  P  is true.
+                                                                           1
+                Assume that 21 divides  4 k  1 +  + 5 2k−  1   is true.
+
+                                                                  ) 11
+                                                      ) 1 1
+                We need to prove that 21 divides  4 (k+ +  + 5  ( 2 k+ −    is also true
+                                                       21
+                4 (k+  ) 1 1+  +  5  ( 2 k+  ) 11−  =  44 (k+  ) 1  +  5 2k+−
+                                         ⋅
+                                      =  44 ⋅  (k+  ) 1  +  5 ⋅  2  5 2k− 1
+                                      =  4 4 ⋅  (k+  ) 1  +  25 5 ⋅  2k− 1
+
+                                      =  4 4 ⋅  (k+  ) 1  +  (4 21 5 ⋅  )  2k− 1
+                                                     +
+                                      =  4 4 ⋅  (k+  ) 1  +⋅  2k−  1 + 21 5 ⋅  2k−  1
+                                                   4 5
+                                         ⋅
+                                      =  4 4 (k+  ) 1  +  5 2k−   1  +   21 5 ⋅  2k−  1
+                                          
+                                                         
+                By the inductive hypothesis, 21 divides  4 k  1 +  + 5 2k−  1  and certainly 21 divides 5 2k− 1 , so 21 divides
+                their sum.
+
+                ∴ The statement 21 divides  4 n+  1 + 5 2n−  1  is true
 
 
 
              Exercise
 
-                                                                                 2
                                                                                                              n
-             Prove that the statement is true for every positive integer n. 1 2.2 3.2    n .2 n 1   1 n    1 .2
-                                                                             
-                                                                        
+             Prove that the statement is true for every positive integer n. 1 2.2 3.2+  +  2  +  +  n .2 n− 1  =  1 +  (n −  ) 1 .2
              Solution
                                     ?
                                                1
-                (2)  For n = 1  1 1   1   1 2  1 0 1; hence  P  is true.
-                                                     
-                                    
+                                                    −
+                (2)  For n = 1 ⇒ 1 1=  +  (1−  ) 12 = 1 0 1; hence  P  is true.
+                                                       =
                                                                    1
-                                 2
                                                             k
-                (3)  1 2.2 3.2          k .2 k 1   1 k    1 .2 is true
-                       
-                            
+                       +
+                            +
+                (3)  1 2.2 3.2 +  2    +  k .2 k− 1  =  1+  (k −  ) 1 .2 is true
 
-                                                                           
-                                             2
-                                         
-                                  1 2.2 3.2         k .2 k  1   k    1 .2 k   1 1   1    k  1   k  1 ?
-                                    
-                                                                                          1 .2
+                                                                          ) 11
+                                    +
+                                  1 2.2 3.2 +  2   +  k .2 k  1 −  +  (k +  ) 1 .2 (k+ −  =  1+  ( ( k +  1 −  ) ) 1 .2 k+  1 ?
+                                         +
 
-                                                              
-                                                                              k
-                                                                                            1 1
-                                 2
-                       
-                      1 2.2 3.2         k .2 k 1  k    1 .2 k   1 1  1  k    1 .2  k    1 .2 k 
-                            
+                                                             ) 11
+                                                                                            11
+                       +
+                            +
+                      1 2.2 3.2 +  2   +  k .2 k  1 −  +  (k +  ) 1 .2 (k+ −  1+=  (k −  ) 1 .2 +  k  (k +  ) 1 .2 k+−
+                                                                      +
+                                                                   =  1 k .2 −  k  1.2 +  k  (k +  ) 1 .2 k
+                                                                   =  1 k+  .2 −  k  1.2 +  k  k .2 +  k  1.2 k
+                                                                     1 2 .2
+                                                                   = +   1 k  k
 
-                                                                                 k
-                                                                           k
-                                                                    1 k  .2  1.2  k    1 .2 k
+                                                                   =  1 +  (k +  ) 0 .2 k+ 1
 
-                                                                                 k
-                                                                           k
-                                                                                       k
-                                                                       .2  1.2  k .2  1.2 k
-                                                                     1 k
+                                                                   =  1 +  ( ( k +  1 ) ) 1 .2−  k+ 1  √
 
-                                                                     1 2 .2k  1  k
-
-                                                                    1 k    0 .2 k 1
-
-                                                                    1    k  1   1 .2  k 1  
 
                       Hence  P     is true.
-                              k  1
-                The statement 1 2.2 3.2    2     n .2 n 1   1 n    1 .2 n  is true
-
-                                                             11</code></pre>
+                              k+ 1
+                The statement 1 2.2 3.2+  +  2  +  +  n .2 n− 1  =  1 +  (n −  ) 1 .2 n    is true
+                                                               115</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 67 - SOL-Lecture 3</title>
+        <title>Page 67 - Discrete Lecture 3 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 67 - SOL-Lecture 3</div>
+        <div id="content-top1">Page 67 - Discrete Lecture 3 SOL</div>
         <div id="content-top2">P. 67</div>
      </div>
      <div id="content-middle">
@@ -153,88 +153,78 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
-             Find the solution to  a   7a   6a       with  a   9,  a  10 and  a   32
-                                  n     n  2    n  3        0       1           2
+
+             a)  Find a recurrence relation for the number of ways to climb n stairs if the person climbing the stairs can
+                take one stair or two stairs at a time.
+             b)  What are the initial conditions?
+             c)  In how many can this person climb a flight of eight stairs
+
              Solution
+                a)  Let  a  be the number of ways to climb n stairs. In order to climb n stairs, a person must either start
+                         n
+                                                                (
+                    with a step of one stair and climb n – 1 stairs   a n− 1 )  or else start with a step of two stairs and then
+                                                                                                           (
+                                     (
+                    climb n – 2 stairs  a n− 2 )  or else start with a step of two stairs and then climb n – 3 stairs  a n− 3 ) .
+                    From this analysis we can immediately write down the recurrence relation, valid for all
+                    n ≥  3: a =  a    +  a   +  a
+                             n    n−  1  n−  2   n−  3
 
-                This is a third degree recurrence relation.
-                                                 3
-                The characteristic polynomial is  r  7r  
-                                                            0
-                                                         6
-                                                                        6
-                By the rational root test, the possible rational roots are       1, 2, 3, 6    
+                b)  The initial conditions are  a = 1, a = 1 and   a =   2, since there is one way to climb no stairs
+                                              0        1             2
+                    (do nothing), clearly only one way to climb one stair, and two ways to climb stairs (one step twice
+                    or two steps at once).
 
-                                                                        1
-                We find that  r     1 (using calculator).
-                            1 1   0    7   6
-                                                                 2
-                                   1   1   6           Q   x   r   6  r  2 r    3
-                                                                    r
-                               1   1   6  0
+                                              { }
+                c)  Each term in our sequence  a n   is the sum of the previous three terms, so the sequence begins
 
-                       2
-                  3
-                r   6r  12r    r  1 r   2 r    3 
-                                8
-                                                         0
-                So the roots are  2, 1, and 3.
-                                                                         n
-                                                   
-                                                              
-                The general solution:     a       2  n       1  n     3
-                                           n    1           2          3
-                Plugging in initial conditions gives
-                                 
-                                            
-                    a           2  0       1  0     3 0    9     
-                         9 
-                                                                 
-                     0        1          2          3               1    2    3
-                                     1
-                                               1
-                                 
-                                            
-                            
-                    a   10      2      1    3 1    10   2      3
-                     1         1          2         3                  1    2     3
-                                  
-                                             
-                    a   32       2  2       1  2     3 2    32   4    9
-                            
-                     2         1           2          3                 1    2     3
-                       The solution to the system of equations is    3,       8 and  
-                                                                                              4
-                                                                  1         2             3
-                Therefore the specific solution is    a   3   n   8   n   4 3   n
-                                                                      1
-                                                             2
-                                                     n
+                    a =  1,  a = 1,  a =  2,  a =  4,  a = 7,  a = 13,  a = 24,  a =  44,  a = 81
+                     0       1      2       3       4       5       6        7        8
+                    Thus, a person can climb a flight of 8 stairs in 81 ways under the restrictions in this problem.
 
 
-             Exercise
-             Find the solution to  a   5a   4a       with  a   3, a   2, a   6 and  a 
-                                                                                             8
-                                  n     n  2   n  4         0       1       2          3
-             Solution
-                This is a fourth degree recurrence relation.
-                                                 4
-                                                       2
-                The characteristic polynomial is  r  5r  
-                                                              0
-                                                          4
-                                  2     2   
-                That implies to:  r  1 r   4   r  1 r  1 r  2 r    2 
-                                                                             0
-                So the roots are 1, 1, 2, 2
-                                                                   n
-                The general solution:     a          1  n     2      2  n
-                                           n    1    2           3      4
-                Plugging in initial conditions gives
-                                               0
-                        3        1  0     2      2  0    3        
-                             1    2          3      4                   1    2    3    4
-                                                             67</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                               171</code></pre>
      	</div>
     
      </div>
@@ -244,7 +234,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page66.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page62.html">62</a>&nbsp;&nbsp;&nbsp;<a href="page63.html">63</a>&nbsp;&nbsp;&nbsp;<a href="page64.html">64</a>&nbsp;&nbsp;&nbsp;<a href="page65.html">65</a>&nbsp;&nbsp;&nbsp;<a href="page66.html">66</a>&nbsp;&nbsp;&nbsp;<a href="page67.html">67</a>&nbsp;&nbsp;&nbsp;<a href="page68.html">68</a>&nbsp;&nbsp;&nbsp;<a href="page69.html">69</a>&nbsp;&nbsp;&nbsp;<a href="page70.html">70</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page62.html">62</a>&nbsp;&nbsp;&nbsp;<a href="page63.html">63</a>&nbsp;&nbsp;&nbsp;<a href="page64.html">64</a>&nbsp;&nbsp;&nbsp;<a href="page65.html">65</a>&nbsp;&nbsp;&nbsp;<a href="page66.html">66</a>&nbsp;&nbsp;&nbsp;<a href="page67.html">67</a>&nbsp;&nbsp;&nbsp;<a href="page68.html">68</a>&nbsp;&nbsp;&nbsp;<a href="page69.html">69</a>&nbsp;&nbsp;&nbsp;<a href="page70.html">70</a>&nbsp;&nbsp;&nbsp;<a href="page71.html">71</a>&nbsp;&nbsp;&nbsp;<a href="page72.html">72</a>
              </td>
              <td width="35%"><a href="page68.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>
