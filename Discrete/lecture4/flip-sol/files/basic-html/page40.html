@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 40 - SOL-Lecture 4</title>
+        <title>Page 40 - Dicrete Lecture 4 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 40 - SOL-Lecture 4</div>
+        <div id="content-top1">Page 40 - Dicrete Lecture 4 SOL</div>
         <div id="content-top2">P. 40</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>, and  e  are adjacent to e
+                        ,
+                 e  , e e
+                  2   3   8        9                 1
+                 e   and  e  are loops.
+                  6       7
+                 e   and  e  are parallel; e   and  e  are parallel
+                  4       5               8       9
+                 v  is an isolated vertex.
+                  6
+                 Degree of v =
+                                5
+                            3
+                 Total degree = 20
+                   ,
 
-           Let G be an undirected graph with a loop at every vertex. Show that the relation R on the set of vertices of
-                                                                          
-           G such that uRv  if and only if there is an edge associated to  ,u  v  is a symmetric, reflexive relation on
-           G.
-           Solution
-
-                                                            
-               If uRv , then there is edge associated with  , u  v , and since the graph is undirected, this is also edge
-                                   
-               joining vertices  , v  u  and therefore. So, R is symmetric.
-               The relation is reflexive because the loops guarantees that uRu  for each vertex u.
-
-
-           Exercise
-
-           Explain how graphs can be used to model electronic mail messages in a network. Should the edges be
-           directed or undirected? Should multiple edges be allowed? Should loops be allowed? Describe a graph
-           that models the electronic mail sent in a network in a particular week.
-           Solution
-
-               We can have a vertex for each mailbox or e-mail address in the network, with a directed edge between
-               two vertices if a message is sent from the tail of the edge to the head.
-               We use directed edge for each message sent during the week.
-
-
-
-           Exercise
-
-           A bipartite graph G is a simple graph whose vertex set can be portioned into two disjoint nonempty
-           subsets V  and V  such that vertices in V  may be connected to vertices in V , but no vertices in V  are
-                    1       2                      1                                  2                     1
-           connected to other vertices in V  and no vertices in V  are connected to other vertices in V . For
-                                         1                     2                                   2
-           example, the graph G illustrated in (i) can be redrawn as shown in (ii). From the drawing in (ii), you can
-           see that G is bipartite with mutually disjoint vertex set V   v  ,  v  , v    and V   v  ,  v  , v  
-                                                                 1     1   3   5        1     2   4   6
-                         (i)                               (ii)
+             b)  e e    , and  e  are incident on v
+                  1   2        7                 1
+                 v , v   and  v  are adjacent to v
+                  1   2       3                 3
+                 e   and  e  are adjacent to e
+                  2       7                 1
+                 e   and  e  are loops.
+                  1       3
+                 e   and  e  are parallel
+                  4       5
+                 Isolated vertex: none.
+                                2
+                 Degree of v =
+                            3
+                 Total degree = 14
 
 
-                              v                                 v 1           v 2
-                               1                 v
-                                                  3
-                                                                v             v
-                                                                 3              4
-                              v                                 v             v
-                                6                v               5             6
-                                                  4
+          Exercise
 
+          Let G be a simple graph. Show that the relation R on the set of vertices of G such that uRv  if and only if
+                                           }
+          there is an edge associated to { ,u v  is a symmetric, irreflexive relation on G.
+          Solution
 
-                                       v
-                                         5
+             In a simple graph, edges are undirected.
+                                                           }
+             If uRv , then there is edge associated with { ,u v . But { ,u  v } { ,v u=  } , so this edge is associated with
+                  }
+             { ,v u  and, therefore. So, R is symmetric.
+                                                                                              }
+             A simple graph does not allow loops; that is if there is an edge associated with { ,u v , then u ≠ .
+                                                                                                          v
+             Thus uRu  never holds, and so by definition R is irreflexive.
 
 
 
 
 
-                                                             40</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           220</code></pre>
      	</div>
     
      </div>

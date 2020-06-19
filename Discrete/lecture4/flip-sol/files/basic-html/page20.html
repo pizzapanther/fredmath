@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 20 - SOL-Lecture 4</title>
+        <title>Page 20 - Dicrete Lecture 4 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 20 - SOL-Lecture 4</div>
+        <div id="content-top1">Page 20 - Dicrete Lecture 4 SOL</div>
         <div id="content-top2">P. 20</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1   0  0  0  1   0  0  1  0  0     1 1 1 1 0
-                            0  0  1  0  0   0  0  0  1  0     1 0 0 0 1  
-                                                                         
-               b)  M       1   1  1  1  0  1  0  0  0  1     1 0 1 1 1 
-                     R 3                                                 
-                            1  0  0  0  1   0  0  1  0  0     1 1 1 1 0  
-                                                                         
-                            0  0  1  1  0     1  1  0  1  0    1 0 1 0 1 
+    <pre style="white-space:pre-line"><code>Exercise
 
-                           1 1   1  1   0   0  0  1  0  0     1 0 1 1 1 
-                                                                        
-                           1 0   0  0   1   0  0  0  1  0     1 1 1 1 0 
-               c)  M        1 0  1  1  1  1  0  0  0  1     1 1 1 1 1 
-                     R 4                                                
-                           1 1   1  1   0   0  0  1  0  0     1 0 1 1 1 
-                                                                        
-                            1 0  1  0   1     1  1  0  1  0    1 1 1 1 1 
+          1. Determine whether these sequences of vertices are paths in this directed graph
 
-                           1 0 1 1 1     0  0  1  0   0     1 1 1 1 1
-                                                                       
-                           1 1 1 1 0      0  0  0  1  0     1 0 1 1 1  
-               d)  M        1 1 1 1 1   1  0  0  0   1     1 1 1 1 1
-                     R 5                                               
-                           1 0 1 1 1      0  0  1  0  0     1 1 1 1 1  
-                                                                       
-                            1 1 1 1 1       1  1  0  1  0    1 1 1 1 1 
+                 a)  a, b, c, e
+                 b)  b, e, c, b, e
+                 c)  a, a, b, e, d, e
+                 d)  b, c, e, d, a, a, b
+                 e)  b, c, c, b, e, d, e, d
+                 f)  a, a, b, b, c, ,c, b, e, d
 
-                           1 1 1 1 1    0   0  1  0  0     1 1 1 1 1
-                                                                      
-                           1 0 1 1 1     0  0  0  1  0     1 1 1 1 1  
-               e)  M        1 1 1 1 1  1   0  0  0  1     1 1 1 1 1
-                     R 6                                              
-                           1 1 1 1 1      0  0  1  0  0     1 1 1 1 1 
-                                                                      
-                            1 1 1 1 1       1  1  0  1  0    1 1 1 1 1 
+          2. Find all circuits of length three in the directed graph
 
-                            1 1 1 1 1
-                                       
-                            1 1 1 1 1  
-               f)  M       1 1 1 1 1
-                     R *               
-                            1 1 1 1 1  
-                                       
-                            1 1 1 1 1  
+          Solution
+
+             a)  This is a path
+             b)  This is not a path (no edge from e to c)
+
+             c)  This is a path
+             d)  This is not a path (no edge from d to a)
+
+             e)  This is a path
+             f)  This is not a path (no loop at b)
+
+             2. A circuit of length 3 can be written as a sequence of 4 vertices.
+
+                 Start @ b: bccb and beab
+
+                 Start @ c: ccbc and cbcc
+                 Start @ d: deed, eede and edee
+
+                 eabe, dead, eade, abea, adea, aaaa, cccc, and eeee
 
 
+          Exercise
 
-
-
-
-
-
-
-
-
-
+          Let R be the relation on the set {1, 2, 3, 4, 5} containing the ordered pairs (1, 3), (2, 4), (3, 1), (3, 5), (4,
+          3), (5, 1), and (5, 2). Find
+                                                   4
+                                    3
+                                                                   5
+                                                                                                  *
+                                                                                  6
+                     2
+               a ) R          b ) R          c ) R           d ) R          e ) R           f  ) R
+          Solution
+                      00 1 00
+                      000 1 0       
+                                    
+              M   =   1 000 1
+                R                   
+                      00 1 00       
+                                    
+                      1 10 10       
 
 
 
@@ -216,14 +214,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-                                                             20</code></pre>
+                                                           200</code></pre>
      	</div>
     
      </div>

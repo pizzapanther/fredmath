@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 51 - SOL-Lecture 4</title>
+        <title>Page 51 - Dicrete Lecture 4 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 51 - SOL-Lecture 4</div>
+        <div id="content-top1">Page 51 - Dicrete Lecture 4 SOL</div>
         <div id="content-top2">P. 51</div>
      </div>
      <div id="content-middle">
@@ -152,44 +152,10 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>SOLUTION                     Section 4.9  Euler and Hamilton Paths
+    <pre style="white-space:pre-line"><code>Exercise
 
-
-
-           Exercise
-
-           Determine whether the given graph has an Euler circuit. Construct such a circuit
-           when one exists. If no Euler circuit exists, determine whether the graph has an
-           Euler path and construct such a path if one exists.
-
-           Solution
-               The vertices a, b, c, e have degree 3, therefore the graph has no Euler circuit.
-               It is not Euler path since there is more than 2 vertices with an odd degree.
-
-
-
-           Exercise
-
-           Determine whether the given graph has an Euler circuit. Construct such a
-           circuit when one exists. If no Euler circuit exists, determine whether the
-           graph has an Euler path and construct such a path if one exists.
-
-           Solution
-               All the vertex degree are even, so there is an Euler circuit.
-               Circuit form: a, b, c, f, i, h, g, d, e, h, f, e, b, d, a
-
-
-
-           Exercise
-
-           Determine whether the given graph has an Euler circuit. Construct such a circuit
-           when one exists. If no Euler circuit exists, determine whether the graph has an
-           Euler path and construct such a path if one exists.
-
-           Solution
-               The vertices a, d have degree 3, therefore the graph has no Euler circuit.
-               It has an Euler path a, e, c, e, b, e, d, b, a, c, d. (it has exactly 2 vertices of odd
-               degree)
+             Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to the
+             graph below.
 
 
 
@@ -202,6 +168,46 @@ function MM_swapImage() { //v3.0
 
 
 
+              a) v ev e v e v e v            b) ve ve v e v e ve v               c) v
+                  0 1 1 10 5 9 2 2 1             4 7 2 95 10 1 32 95                 2
+              d) v vv vvv                    e) vv vv vvv v                      f) e ee e
+                  5 234 45                       2345 2 432                         5 8 10 3
+
+             Solution
+
+                a)  It is trail since no repeated edge.
+                    It is not a path, repeated vertex v
+                                                   1
+                    It is not a circuit, since it ends at a vertex other than the one at which it beganv
+                                                                                                0
+
+                b)  It is a walk; it is not a trail since it has a repeated edge  e .
+                                                                          9
+                    It is not a circuit, since it ends at a vertex other than the one at which it began v .
+                                                                                                4
+                c)  It is a closed walk, starts and ends at the same vertex  v .
+                                                                         2
+                    It is a trail since no repeated edge.
+                    It is not a path or a circuit, since no edge.
+
+
+                d)  It is a path and it is circuit but not a simple circuit since it has a repeated vertex v
+                                                                                                  4
+                e)  It is a closed walk, starts and ends at the same vertex  v .
+                                                                         2
+                                                                         {
+                                                            {
+                    It is not a trail since it has repeated edges  v 2 , v 3 }   &   v v 4 } .
+                                                                             ,
+                                                                            3
+                f)  It is a path, it is not a circuit, since it ends at a vertex other than the one at which it began.
+
+
+
+             Exercise
+
+             Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to the
+             graph below.
 
 
 
@@ -212,7 +218,9 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                             51</code></pre>
+
+
+                                                              231</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 29 - SOL-Lecture 4</title>
+        <title>Page 29 - Dicrete Lecture 4 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 29 - SOL-Lecture 4</div>
+        <div id="content-top1">Page 29 - Dicrete Lecture 4 SOL</div>
         <div id="content-top2">P. 29</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>SOLUTION                     Section 4.5   Partial Orderings
+    <pre style="white-space:pre-line"><code>This relation is an equivalence relation.
+                    The equivalence classes are {a, d} and {b, c}
+
+                c)  The relation is reflexive since there is a loop at each vertex.
+                    It is symmetric since every edge has 2 vertices and pointing in the both direction.
+                    It is not transitive (a, b) and (b, c) but not (a, c).
 
 
+             Exercise
 
-           Exercise
+             Which of these collections of subsets are partitions of {1, 2, 3, 4, 5, 6}
 
-           Which of these relations on {0, 1, 2, 3} are partial orderings? Determine the properties of a partial
-           ordering that the others lack.
-             a)  {(0, 0), (1, 1), (2, 2), (3, 3)}
-             b)  {(0, 0), (1, 1), (2, 0), (2, 2), (2, 3), (3, 2), (3, 3)}
-             c)  {(0, 0), (1, 1), (1, 2), (2, 2), (3, 3)}
-             d)  {(0, 0), (1, 1), (1, 2), (1, 3), (2, 2), (2, 3), (3, 3)}
-             e)  {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2), (3, 3)}
-             f)  {(0, 0), (2, 2), (3, 3)}
-             g)  {(0, 0), (1, 1), (2, 0), (2, 2), (2, 3), (3, 3)}
-             h)  {(0, 0), (1, 1), (1, 2), (2, 2), (3, 1), (3, 3)}
-             i)  {(0, 0), (1, 1), (1, 2), (1, 3), (2, 0), (2, 2), (2, 3), (3, 0), (3, 3)}
-             j)  {(0, 0), (0, 1), (0, 2), (0, 3), (1, 0), (1, 1), (1, 2), (1, 3), (2, 0), (2, 2), (3, 3)}
+                a)  {1, 2}, {2, 3, 4}, {4, 5, 6}
+                b)  {1}, {2, 3, 6}, { 4}, {5}
+                c)  {2, 4, 6}, {1, 3, 5}
+                d)  {1, 4, 5}, {2, 6}
 
-           Solution
+             Solution
 
-               a)  This relation is reflexive because each of 0, 1, 2, 3 is related to itself.
-                  This relation is antisymmetric because a to be related to b is for a to be equal to b
-                  Since a is related to b and b related to c and  a   b   c , then a is related to c. So the relation is
-                  transitive.
-                  The equality relation on any set satisfies all three conditions, therefore is a partial ordering.
-               b)  It is reflexive but it is not antisymmetric since we have  2 3R  and 3 2R  but  2  . Therefore this is
-                                                                                              3
-                  not a partial ordering.
-               c)  This relation is reflexive because each of 0, 1, 2, 3 is related to itself.
-                  This relation is antisymmetric because a to be related to b is for a to be equal to b
-                                                                1 2 
-                  It is transitive for the same reason and 1 1 and  R    1 2
-                                                                          R
-                                                         R
-                  Therefore is a partial ordering.
-               d)  This relation is reflexive because each of 0, 1, 2, 3 is related to itself.
-                  This relation is antisymmetric because a to be related to b is for a to be equal to b
-                                                                1 2 
-                                                                                       3 3 
-                                                         R
-                                                                                                 R
-                                                                               R
-                                                                          R
-                  It is transitive for the same reason and 1 1 and  R    1 2 , 1 3 and  R       1 3 , and
-                   2 3R  and  3 3R    2 3R
-                  Therefore is a partial ordering.
-               e)  It is reflexive but it is not antisymmetric since we have  0 1R  and 1 0R  but 0 1 . Therefore this is
-                  not a partial ordering.
-               f)  Since 1 is not related to itself, so this relation is not reflexive. Therefore R is not a partial ordering.
-               g)  This relation is reflexive because each of 0, 1, 2, 3 is related to itself.
-                  This relation is antisymmetric because a to be related to b is for a to be equal to b
-                  It is transitive for the same reason and  2 0R  and  0 0R    2 0R , and  2 3R  and  3 3R    2 3R
-                  Therefore is a partial ordering.
+                a)  This is not a partition, since the sets are not pairwise disjoint. 2 and 4 appear in 2 of the sets.
+
+                b)  This is a partition
+                c)  This is a partition
+
+                d)  This is not a partition, since element 3 is missing from the sets
+
+
+             Exercise
+
+             Which of these collections of subsets are partitions of {−3, −2, −1, 0, 1, 2, 3}
+
+                a)  {−3, −1, 1, 3}, {−2, 0, 2}
+                b)  {−3, −2, −1, 0}, {0, 1, 2, 3}
+                c)  {−3, 3}, {−2, 2}, {−1, 1}, {0}
+                d)  {−3, −2, 2, 3}, {−1, 1}
+
+             Solution
+
+                a)  This a partition, since it satisfies the definition
+                b)  This is not a partition, since the subsets are not disjoint
+
+                c)  This a partition, since it satisfies the definition
+                d)  This is not a partition, since the union of the subsets leaves out 0
 
 
 
 
-                                                             29</code></pre>
+
+
+
+
+
+
+
+
+
+
+                                                              209</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 27 - SOL-Lecture 4</title>
+        <title>Page 27 - Dicrete Lecture 4 SOL</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 27 - SOL-Lecture 4</div>
+        <div id="content-top1">Page 27 - Dicrete Lecture 4 SOL</div>
         <div id="content-top2">P. 27</div>
      </div>
      <div id="content-middle">
@@ -154,48 +154,44 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-           Suppose that A is a nonempty set, and f is a function that has A as its domain. Let R be the relation on A
-           consisting of all ordered pairs (x, y) such that    x   f    y
-                                                        f
-               a)  Show that R is an equivalence relation on A.
-               b)  What are the equivalence classes of R?
+             Define three equivalence relations on the set of buildings on a college campus. Determine the equivalence
+             classes for each of these equivalence relations.
 
-           Solution
+             Solution
 
-               a)  It is reflexive since    x   f    x  for all  x 
-                                      f
-                                                              A
-                  It is symmetric since    x   f    y , then    y   f    x
-                                        f
-                                                           f
-                  It is transitive since    x   f    y  and   y   f    z  then    x   f    z
-                                                        f
-                                                                           f
-                                      f
-               b)  The equivalence class of x is the set of all  y   such that    y   f    x  (definition of inverse).
-                                                                           f
-                                                               A
-                                                                      1
-                  Thus the equivalence classes are precisely the sets  f    b  for every b in the range of f.
+                Two buildings are equivalent, if they were opened during the same year; an equivalence class consists
+                of the set of buildings opened in a given year.
+                For another example, we can define 2 buildings to be equivalent if they have the same number of
+                stories; the equivalence classes are the set of 1-story buildings, the set of 2-story buildings, and so on.
+                The third example, partition the set of all buildings into 2 classes – those in which you do have a class
+                this semester and those in which you don’t. Every building in which you have a class is equivalent to
+                every building in which you have a class (including itself), and every building in which you don’t
+                have a class is equivalent to every building in which you don’t have a class.
 
 
-           Exercise
+             Exercise
 
-           Suppose that A is a nonempty set, and R is an equivalence relation on A. Show that there is a function f
-                                              
-           with A as its domain such that  , x  y   if and only if    x   f    y
-                                                 R
-                                                                 f
-           Solution
-               The function that sends each  x   to its equivalence class [x] is obviously such a function.
-                                               A
+             Let R be the relation on the set of all sets of real numbers such that S R T if and only if S and T have the
+             same cardinality. Show that R is an equivalence relation. What are the equivalence classes of the sets {0,
+             1, 2} and  Z ?
+             Solution
 
+                Two sets have the same cardinality if there is a bijection (1−1 and onto function) from one set to the
+                other.
+                We need to prove that R is reflexive, symmetric, and transitive.
+                Every set has the same cardinality as itself because of the identity function.
 
-           Exercise
-
-           Determine whether the relation with the directed graph shown is an equivalence relation
-
-                 a)                             b)                            c)
+                If f is a bijection from S to T, then  f  − 1  is a bijection from T tot S, so R is symmetric.
+                If f is a bijection from S to T, and g is a bijection from T to U, then  g f   is a bijection from S to U, so
+                R is transitive.
+                The equivalence class {1, 2, 3} is the set of all 3-element sets of real numbers, including such sets as
+                                  (
+                                            )
+                {4, 25, 1948} and  e, , π  2 .
+                            Z
+                Similarly, [ ] is the set of all infinite countable sets of real numbers, such as the set of natural
+                numbers, the set of rational numbers, and the set of the prime numbers, but not including the set  {1,
+                2, 3} (it’s too small) or the set of all real numbers (too big).
 
 
 
@@ -209,17 +205,11 @@ function MM_swapImage() { //v3.0
 
 
 
-           Solution
-
-               a)  The relation is reflexive since there is a loop at each vertex.
-                  It is symmetric since every edge has 2 vertices and pointing in the both direction.
-                  It is not transitive since we have {d, a} and {a, c} but not {d, a}
-               b)  The relation is reflexive since there is a loop at each vertex.
-                  It is symmetric since every edge has 2 vertices and pointing in the both direction.
 
 
 
-                                                             27</code></pre>
+
+                                                              207</code></pre>
      	</div>
     
      </div>
