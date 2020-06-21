@@ -152,69 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-             Use mathematical induction to prove this formula for the sum of a finite number of terms of a geometric
-             progression with initial term a and common ratio r:
-
-                                   n                                  n+ 1
-                                 ∑   ar =  j  a +  ar +  ar +  2  +  ar =  n  ar r − 1 − a  when   r ≠  1
-
-                                  j= 0
-             for all nonnegative integers n.
-             Solution
-
-                                             +
-                Basis Step:  For n = 0 ⇒   ar 0 1  −  a  =  ar −  a  =  ( ar −  ) 1  =  a ; hence  P  is true.
-                                             r −  1    r − 1    r −  1              0
-
-                Inductive Step:  a +  ar +  ar +  2  +  ar =  k  ar k+ 1  −  a   is true for every positive integer k.
-                                                            r − 1
-
-                           a +  ar +  ar +  2  +  ar +  k  ar k+ 1  =  ar k+ 2  − a   ?
-                                                               r − 1
-
-                    a +  ar +  ar +  2  ar + +  k  ar k+ 1  =  ar k+ 1 − a  +  ar k+ 1
-                                                       r − 1
-
-                                                             a
-                                                     ar k+  1 −+  ar k+  1 (r −  ) 1
-                                                   =          r − 1
-                                                                ar
-                                                             a
-                                                   =  ar k+  1 −+ r − k+  1  2  − ar k+  1
-                                                      a
-                                                   =  −+  ar 1 k+ 2
-                                                        r −
-
-                                                   =  ar k+ 2 1 − a        √
-                                                        r −
-                      Hence  P     is also true.
-                              k+ 1
-                By mathematical induction, the statement
-                  n                                  n+ 1
-                 ∑  ar =  j  a +  ar +  ar +  2  +  ar =  n  ar  r − 1 −  a , when r ≠  1 is true
-
-                 j= 0
+    <pre style="white-space:pre-line"><code>Exercises          Section 3.1 − Mathematical Induction
 
 
 
 
+             1.   Prove that  1 +  2  3 +  2  5 +  2  +  (2n +   ) 1  2  =  1 (n +  12n +  )(  12n +  )(  ) 3  whenever n is a nonnegative
+                                                           3
+                  integer.
 
 
+             2.   Prove that  1 1! 2 2!⋅+ ⋅ + + n  ! n ⋅  =  (n +  ) 1 ! 1−  whenever n is a positive integer.
+                                                                   )
+                                          2
+             3.   Prove that  3 35 35 +        +⋅   n   3 ( 5 n+ 1  − 1  whenever n is a nonnegative integer.
+                                                  35 =
+                               +⋅ +⋅
+                                                         4
+                                                                ( ) 7
+             4.   Prove that   2 27 27− ⋅ +⋅  2  − +⋅ ( ) 7−  n  = 1−−  n+ 1   whenever n is a nonnegative integer.
+                                                  2
+                                                                  4
+             5.   Find a formula for the sum of the first n even positive integers. Prove the formula.
+
+             6.   a) Find a formula for    1  +  1  +  +   1     by examining the values of this expression for
+                                        12 ⋅  2 3 ⋅       ( nn +  ) 1
+                     values of this expression for small values of n.
+                  b) Prove the formula.
 
 
+                              2
+                                   2
+                                        2
+             7.   Prove that  1 − 2 + 3 −    + −   n−  1 2  ( ) 1  n−  1  ( nn +  ) 1   whenever n is a positive integer.
+                                               ( ) 1
+                                                       n = −
+                                                                        2
+                                                         n
+                                                        ∑      k          n+ 1
+             8.   Prove that for very positive integer n,    k 2 =  (n −  ) 12  +  2.
+                                                        k  1 =
+             9.   Prove that for very positive integer n, 12 2 3 ⋅+ +  ( nn +  ) 1 =  1  ( nn + 1 )(n +  ) 2 .
+                                                        ⋅ +
+                                                                                 3
+             10.  Prove that for very positive integer n,
 
+                        +
+                  1 23 234 + ⋅  ⋅    +   ( nn +  1 )(n +  ) 2 =  1  ( nn +  1 )(n +  2 )(n +  ) 3
+                      ⋅
+                   ⋅
+                                                        4
 
+                      Pn
+                                                                     2
+             11.  Let  ( ) be the statement that 1+  1  +  1  + +  1  &lt;−  1   where n is an integer greater than 1.
+                                                    4   9       n 2      n
+                    a)  Show is the statement  ( ) 2P  ?
+                    b)  Show that  ( ) 2P   is true, completing the basis step of the proof.
+                    c)  What is the inductive hypothesis?
+                    d)  What do you need to prove in the inductive step?
+                    e)  Complete the inductive step.
+                    f)  Explain why these steps show that this inequality is true whenever n is an integer greater than
+                       1.
 
-
-
-
-
-
-
-
-
+                              n
+             12.  Prove that  3 &lt;  ! n  if n is an integer greater than 6.
 
 
 

@@ -152,64 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-             It follows that  a  is even, that implies a must also be even. Therefore, by the definition of an even
-             integer then we can let  a = 2c  for some integer c.
+    <pre style="white-space:pre-line"><code>Example
 
-                            2
-                      2
-             Thus,  2b =  4c
+          Show that these statements about the integer n are equivalent:
+
+              p  :   n is even
+               1
+              p  :   n − 1 is odd
+               2
                      2
-                    b =  2c 2
-
-                                                       2
-             By the definition of even, this means that b  is even, that implies b must also be even as well.
-
-             The assumption of ¬ p leads to the equation  2 =  a  ,  where a and b have no common factors, but
-                                                              b
-             both a and b are even, that is, 2 divides both a and b.
-
-             However, our assumption ¬ p leads to the contradiction that 2 divides both a and b and 2 doesn’t
-             divide both a and b, ¬ p must be false.
-             That is, the statement p “ 2  is irrational” is true.
-
-
-
-          Proofs of Equivalence
-
-                                                                                                q
-          To prove a theorem that is a biconditional statement, that is, a statement of the form  p ↔ , we must
-          show that  p →  and  q →  p  are both true. The validity of this approach is based on the tautology
-                         q
-
-                                              ( p ↔  ) q ↔  ( p →  q ) (q∧  →  ) p
-
-
-
-          Example
-
-                                                                          2
-          Prove the theorem “If n is an integer, then n is odd if and only if  n  is odd”
+              p  :   n  is even
+               3
           Solution
 
-                                           2
-             Let: p is “n is odd” and q is “ n  is odd”.
-                                                "
-             The theorem has the form: " p iff  q . To prove this theorem, we need to show that  p →  and
-                                                                                                   q
-              q →  p  are both true.
+             We will show that these 3 statements are equivalent by showing that the condition statements
+              p →   p  ,  p →   p  p →  ,  p  are true.
+               1     2    2      3    3     1
+             Using a direct proof to show that  p →  p .
+                                               1      2
+             Suppose that n is even, then  n =  2k  for some  k ∈ .
+                 n −=       1
+                    12k −
+                      =  ( 2 k −  ) 1 +  1
 
-             Using direct proof, we assume that n is odd, is a true statement. By the definition of an odd integer, it follows
-                                                                       2
-             that  n =  2k + 1, where k is some integer. We need to show that n  is odd.
-                  2
-                             2
-                 n =  (2k +  ) 1
-                    =  4k +  2  4k +  1
-                       (
-                    =  22k +  2  2k +  )  1   2k +  2  2k =  K
+               This means that  n − 1 is odd because it is of the form  2m + 1, where m is the integer  k − 1.
+               Therefore the statement  p →  p   is true.
+                                        1      2
+             Also using a direct proof to show that  p →  p .
+                                                    2     3
+                                                12k +
+             Suppose that  n − 1 is even, then  n −=    1 for some  k ∈ .
+                 n = 2k +  2
+                   2
+                 n =  (2k +  ) 2  2
 
-                    =  2K + 1
+                     =  4k +  2  8k +  4
+                        (
+                     =  22k +  2  4k +  2 )
+               Hence,  n − 1 is even. Therefore the statement  p →  p is true.
+                                                             2      3
+
+             Using a proof by contraposition to prove p →   p . That is, we have to prove that if n is not even,
+                                                      3      1
+                    2
+             then  n  is not even.
+                                                                                            2
+             To prove the theorem, we need to show that this hypothesis implies the conclusion that  n  is not odd, that
+                                                    ( )
+                                        2
+                                               2
+                                                                             2
+                     2
+                                2
+                                     2k
+             means  n  is even. n = ( ) =   4k =  22k  2  , which implies that  n  is even.
+                                                  2
+             We have proved that n is an integer and  n  is odd, then n is odd by a proof of contraposition. Therefore,
+              p →   p  is true.
+               3     1
+             This completes the proof.
+
+
+
+
 
 
 

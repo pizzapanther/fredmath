@@ -152,71 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>For n = 2: (n +  ) 1  3  =  3 =  3  2 ≥  2  9
-                                       7 3 =
-                                   3
-                                            3
-             For n = 3: (n +  ) 1  3  =  4 =  64 ≥ 3 =  27
-                                  3
-                                             4
-             For n = 4: (n +  ) 1  3  = 5 = 125 ≥ 3 = 81
-                                                                            n
-             We have used the method of exhaustion to prove that (n +  ) 1  3  ≥  3  if n is a positive integer with
-              n ≤ 4
+    <pre style="white-space:pre-line"><code>Uniqueness Proofs
+
+          A theorem may state that only one such value exists. Theorem statements that involve the word ``unique''
+          are known as uniqueness theorems. Typically the proof of such a statement follows the idea that we
+          assume there are two elements that satisfy the conclusion of the statement and then show that these
+          elements are identical.
+
+             Existence: We show that an element x with the desired property exists.
+             Uniqueness: We show that if  y ≠ , then y does not have the desired property.
+                                              x
+          Equivalently, we can show that if x and y both have the desired property, then x = y.
+
 
 
           Example
 
-                                           2
-          Prove that if n is an integer, then  n ≥
-                                               n
+                                                                                                             0
+          Show that if x and y are real numbers and  x ≠ , then there is a unique real number r such that  xr y+=
+                                                      0
           Solution
+                                               y
+                                                           
+             The solution of  xr y+=  is  r = −  because  x −  y     += − y += 0. Consequently, a real number r
+                                     0
+                                                                    y
+                                                                            y
+                                                           
+                                               x              x  
+                                      0
+                                  y
+             exists for which  xr += . This is the existence part of the proof.
+                                                                                                 y
+                                                             0
+                                                                          y
+                                                                                  y
+             Suppose that s is a real number such that  xs y+= , then  xr +=  xs + , where  r = − .
+                                                                                                 x
+                  y
+              xr +=   xs +  y ⇒   xr =  xs   ( x ≠  ) 0    →  r =  s
+             This means that if  s ≠ , then  xs y  0. This establishes the uniqueness part of the proof.
+                                   r
+                                             +≠
 
-                                                  2
+
+          Proof Strategies
+          Usually, when you are working on a proof, you should use the logical forms of the givens and goals to
+          guide you in choosing what proof strategies to use. Generally, if the statement is a conditional statement,
+          we should try a direct proof; if this fails, we can try an indirect proof. If neither of these approaches
+          works, you might try a proof by contradiction.
+
+
+          Example
+
+
+          Given two positive numbers x and y, their arithmetic mean is    x +  y   and their geometric mean is  xy .
                                                                         2
-                                                     0
-                                                                           n
-             Case 1: When n = 0, that implies to 0 ≥ . It follows that  n ≥  is true.
-                                                           2
-                                                                                 2
-                                                               n
-                                                                                     n
-             Case 2: When  n ≥ 1, ⇒  n n⋅ ≥ 1 n⋅ , we obtain n ≥  It follows that  n ≥  is true.
-                                         2
-                                                               2
-                                                                  n
-                                            0
-             Case 3: When  n ≤−  1, but n ≥ . It follows that  n ≥  is true.
-                                     2
-             Because the inequality  n ≥  holds in all three cases, we can conclude that if n is an integer, then
-                                         n
-               2
-                   n
-              n ≥ .
-
-
-          Example
-          Show that if x and y are integers and both xy and x + y are even, then both x and y are even.
+          When we compare the arithmetic and geometric means of pairs of distinct positive real numbers, we find
+                                                                                                             6
+          that the arithmetic mean is always greater than the geometric mean. For example, when  x =  and  y = ,
+                                                                                                  4
+                    +
+          we have   46  = 5 &gt;  4 6⋅=   24 . Can we prove that this inequality is always true?
+                    2
           Solution
-
-             Using the proof by contraposition:
-             Suppose that x and y are not both even. That is, x is odd or y is odd (or both).
-
-             Assume that x is odd, so that  x =  2k + 1 for some integer k.
-             Case 1: y even ⇒  y =  2n
-
-                        y
-                                1 2n
-                     x + =  2k ++
-                          =  ( 2 kn+  ) 1+      is odd
-             Case 2: y odd ⇒  y =  2n +  1
-
-                     xy =  (2k +  1 )(2n +  ) 1
-                        =  4kn +  2k +  2n +  1
-
-                        =  ( 22kn k n++  ) 1+    is odd
-
-             This completes the proof by contraposition.
+             To prove   x +  y  &gt;  xy
+                         2
 
 
                                                             48</code></pre>

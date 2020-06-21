@@ -152,84 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>5.   Let R be the relation represented by the matrix
-
-                                    01 0
-                                           
-                           M    =    0 01
-                              R           
-                                      11 0  
-
-                                                4
-                                        3
-                                2
-                    Find:   a)  R   b)  R   c)  R
-
-             6.   Draw the directed graph that represents the relation
-                                                                          )}
-                                          ) ( ,
-                                                                   ,
-                                   ,
-                                           ,
-                                                  ) ( ,
-                                                   ,
-                                                           ,
-                                                          ) ( ,
-                                                                  ) ( ,
-                                   ) ( ,
-                           ) ( ,
-                      ( { , a  a   a  b   b  c   c b   c d   d  a   d  b
-                            ,
-
-
-             7.   Determine whether the relations represented by the directed graphs are reflexive, irreflexive,
-                  symmetric, antisymmetric, and/or transitive
-                   a)                            b)                             c)
+    <pre style="white-space:pre-line"><code>Section 4.3 – Closures of Relations
 
 
 
 
+             Closures
+
+             The reflexive closure of R can be formed by adding to R all pairs of the form (a, a) with  a ∈ , not
+                                                                                                      A
+             already in R.
+             The reflexive closure of R equals  R  ∆  where
+             ∆=   ( { ,aa a∈ A }  is the diagonal relation on A.
+                      ) |
 
 
-                   d)                            e)                             f)
+             Example
+
+                                                                ) |
+             What is the reflexive closure of the relation  R =  ( { ,a b a b&lt;  } on the set of integers?
+             Solution
+
+                The reflexive closure of R is the relation
+                    R   ∆=  ( { , a b a b   ) | &lt;  } { , a a a∈  (  ) |  }
+
+                          =  ( { ,a b a b≤  }
+                                  ) |
+
+
+             Example
+
+
+                                                                  ) |
+             What is the symmetric closure of the relation  R =  ( { ,a b a &gt;  } b  on the set of positive integers?
+             Solution
+
+                The symmetric closure of R is the relation
+                    R   R − 1  =  ( { ,a b a &gt;  ) |  b   } { ,b a a &gt;  (  ) |  } b
+
+                                    ) |
+                             =  ( { ,a b a ≠  } b
+
+
+             Path in Directed Graphs
+
+             Definition
+
+                                                                            (      ) (       ) (      )
+             A path from a to b in the directed graph G is a sequence of edges  x 0 , x 1  , x x 2  , x 2 , x 3  ,
+                                                                                         ,
+                                                                                        1
+                                                                         a
+                                                                                     b
+              ,  ( x n− 1 , x n )  in G, where n is nonnegative integer, and  x =  and  x = , that is, a sequence of edges
+                                                                     0
+                                                                                 n
+             where the terminal vertex of an edge is the same as the initial vertex in the next edge in the path. The path
+                             ,
+                                     ,
+                                 ,
+             is denoted by  x  x x      , x   , x  and has length n. We view the empty set of edges as a path of
+                            0  1   2       n− 1  n
+             length zero from a to a. A path of length  n ≥ 1 that begins and ends at the same vertex is called a circuit
+             or cycle.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            207</code></pre>
+                                                              207</code></pre>
      	</div>
     
      </div>

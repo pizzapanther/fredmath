@@ -152,63 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>We can use an iterative approach to solve this recurrence relation by repeatedly expressing Hn in terms
+                of the previous terms of the sequence.
 
-             How many poker hands of five cards can be dealt from a standard deck of 52 cards? Also, how many
-             ways are there to select 47 cards from a deck of 52 cards?
+                    H =   2H     + 1
+                      n       n− 1
+                            (
+                         =  22H n− 2  +  1 +  )  1
 
-             Solution
-
-                Since the order in which the cards are dealt does not matter, the number of five card hands is:
-                         )
-                C  (52, 5 =     52!
-                            5!(52 5)!−
-                          = 2,598,960  ways
-
-
-             Corollary
-
-             Let n and r be nonnegative integers with     r ≤ n. Then C(n, r) = C(n, n − r).
-
-             Proof
-
-                                                       )
-                                                C
-                From Theorem 2, it follows that  ( ,  =        ! n
-                                                   nr
-                                                           rn r   )!
-                                                            !( −
-                    C
-                              )
-                  and  ( , nn r =           ! n        =      ! n
-                           −
-                                                              )! !
-                                                           −
-                                  (nr   −  )! n  (nr−  )! −    (n rr
-                                         
-                   Hence, C(n, r) = C(n, n − r).
+                            2
+                         =  2 H    ++
+                                     21
+                               n− 2
+                                        )
+                         =  2 2 ( 2H n− 3  + 1 ++
+                                           21
+                            3
+                                      2
+                                          21
+                         =  2 H    +  2 ++
+                               n− 3
+                             
+                         =  2 n −  1 H + 2 n −  2  + 2 n −  3  + ++   since  H = 1
+                                                        21
+                                 1                                             1
+                                                    21
+                         =  2 n −  1 + 2 n −  2  +  2 n −  3  + ++
+                                                        Using the formula for the sum of the terms of geometric series
+                            n
+                         =  2 − 1
 
 
-             Definition
-             A combinatorial proof of an identity is a proof that uses one of the following methods.
-                A double counting proof uses counting arguments to prove that both sides of an identity count the
-                  same objects, but in different ways.
-                A bijective proof  shows that there is a bijection between the sets of objects counted by the two sides
-                  of the identity.
+                There was a myth created with the puzzle. Monks  in a tower in Hanoi are transferring 64 gold disks
+                from one peg to another following the rules of the puzzle.  They move one disk each day. When the
+                puzzle is finished, the world will end.
+                Using this formula for the 64 gold disks of the myth,
+
+                    2   − 1 = 18,446, 744,073, 709,551,615 days are needed to solve the puzzle, which is more than
+                     64
+                    500 billion years.
+
+                Reve’s puzzle (proposed in 1907 by Henry Dudeney) is similar but has 4 pegs. There is a well-known
+                unsettled conjecture for the minimum number of moves needed to solve this puzzle.
 
 
-             Example
 
-             How many ways are there to select five players from a 10-member tennis team to make a trip to a match
-             at another school?
 
-             Solution
-                The number of combinations is
 
-                C  (10, 5 =    10!
-                         )
-                            5! (10 5−  )!
-                          = 252  ways
+
+
+
+
+
 
 
 

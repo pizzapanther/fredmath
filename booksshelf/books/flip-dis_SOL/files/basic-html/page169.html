@@ -152,75 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2 140 8 288
-                    a =  2a +  a =⋅        +=
-                     8      7    3
-                    a =  2a +  a =   2 288 16 592
-                                           +
-                                      ⋅
-                                               =
-                     9      8    4
-                                       ⋅
-                                                =
-                                            +
-                    a   =  2a +  a =  2 592 33 1217
-                     10      8   5
-                    Therefore, there are 1217 ways to deposit $10.
+    <pre style="white-space:pre-line"><code>Exercise
+
+             How many 4-permutations of the positive integers not exceeding 100 contain three consecutive integers, k,
+             k + 1, k + 2, in the order
+
+              a)  Where these consecutive integers can perhaps be separated by other integers in the permutation?
+              b)  Where they are in consecutive positions in the permutation?
+             Solution
+
+                a)  The consecutive numbers are 5, 6, 7, since can be separate by other integers the permutation can be
+                    written as 5, 6, 32, 7.
+                    In order to specify such 4-permutation, we need to choose 3 consecutive integers. They can be {1,
+                    2, 3} to (98, 99, 100}; thus, there are 98 possibilities. There are 4 possibilities, we need to decide
+                    which 97 other positive integers not exceeding 100 is to fill this slot, and there are 97 choices.
+                    In fact, every 4-permutation consisting of 4 consecutive numbers, in order, has been double
+                    counted.
+                    Therefore, we need to subtract the number of such 4-permutations. Clearly there are 97 of them.
+                    Further thought shows that every other 4-permutation in our collection arises in a unique way.
+                    Therefore  98 4 97 97 =⋅⋅  −  37,927
+
+                b)  The consecutive numbers be consecutive in the 4-permutation.
+                    There are only 2 places to put the fourth number in slot 1 and slot 4.
+                    Therefore, 98 2 97 97 =⋅⋅  −  18,915
+
 
 
              Exercise
-             a)  Find a recurrence relation for the number of bit strings of length n that contain three consecutive 0s.
-             b)  What are the initial conditions?
-             c)  How many bit strings of length seven contain three consecutive 0s?
+
+             The English alphabet contains 21 constants and five vowels. How many strings of six lowercase letters of
+             the English alphabet contain?
+              a)  Exactly one vowel?
+              b)  Exactly two vowels?
+              c)  At least one vowel?
+              d)  At least two vowels?
 
              Solution
+                a)  This can be done 6 ways. We need to choose the vowel and this can be done in 5 ways. Each other 5
+                                                                                5
+                    positions can contain any of the 21 consonants, so there are  21  ways to fill the rest of the string.
+                                                              ,0
 
-                a)  Let  a  be the number of bit strings of length n containing three consecutive 0’s. In order to
-                         n
-                    construct a bit string of length n containing three consecutive 0’s we could start with 1 and follow
-                    with a string of length n – 1 three consecutive 0’s, or we could start with a 01 and follow with a
-                    string of length n – 2 three consecutive 0’s, or we could start with a 001 and follow with a string of
-                    length n – 3 three consecutive 0’s, or we could start with a 000 and follow with a string of length n
-                    – 3.
-                    These 4 cases are mutually exclusive and exhaust the possibilities for how the string might start. We
+                    Therefore, the answer is 6 5 21  ⋅ ⋅  5  = 122,5 33 30 ways
+                b)  The position of the vowels can be done in  (6, 2C     ) 15 ways=  . We need to choose the 2 vowels in
+                                                                                                      4
+                     2
+                    5  ways. Each other 4 positions can contain any of the 21 consonants, so there are  21  ways to fill
+                    the rest of the string.
+                                                     4
+                    Therefore, the answer is 15 5⋅  2 ⋅  21  =  72, 9 0,375 ways
 
-                    can write down the recurrence relation, valid for all  n ≥  3: a =  a  +  a  +  a  +  2 n− 3
-                                                                               n    n −  1  n −  2  n −  3
-
-                b)  There are no bit strings of length 0, 1, or 2 containing 3 consecutive 0’s, so the initial conditions are
-                    a =  a =  a =  0
-                     0    1    2
-
-                                         0
-                c)  a =  a +  a +  a +  2
-                     3     2   1    0
-                        = +++
-                          000 1
-                        = 1
-
-                                         1
-                    a =  a +  a +  a +  2
-                     4     3   2    1
-                        = 10 0 2
-                           +++
-                        = 3
-                                         2
-                    a =  a +  a +  a +  2
-                     5     4   3    2
-                        = 31 0 4
-                           ++
-                                 +
-                        = 8
-                                         3
-                    a =  a +  a +  a +  2
-                     6     5   4    3
-                        = 8 31 8
-                           +
-                              ++
-                        =  20
-                                         4
-                    a =  a +  a +  a +  2
-                     7     6    5   4
+                                                             3
+                c)  Count the number of strings with no vowels and subtract this from the total number of stings.
+                            6
+                       6
+                    26 −  21  =  223,149,655  wa ys
                                                                169</code></pre>
      	</div>
     

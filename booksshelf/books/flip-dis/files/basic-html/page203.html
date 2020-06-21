@@ -152,87 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.2 – Representing Relations
+    <pre style="white-space:pre-line"><code>    1       
+                      1         
+                                
+                              0
+                                
+                           0    
 
+             A relation R on A is antisymmetric iff ( ,a b ) R∈  and ( ,b a ) R∈     ⇒   a =  b
 
-
-             Representing Relations Using Matrices
-
-             A relation between finite sets can be represented using a zero-one matrix. Suppose that R is a relation
-
-                                                          ,
-                                                              ,
-                                  ,
-             from  A = { a 1 , a 2 , a   ,a m }  to  B = { b 1 , b  b   ,b n } . The relation R can be represented by the
-                                                             3
-                                                         2
-                                 3
-             matrix  M  = { }    where
-                           m
-                      a      ij
-                                         (
-                                  1    if   a  b  ) ∈ R
-                                            ,
-                           m =            i   j
-                                 
-                                         (
-                             ij
-                                  0    if   a  b  ) ∉ R
-                                            ,
-                                          i   j
-
-
-             Example
-             Suppose that A = {1, 2, 3} and B = {1, 2}. Let R the relation from A to B containing (a, b) if
-             a∈   , A b∈  B , and a &gt; b. What is the matrix representing R is  a  = 1,  a =  2,  a = 3, and
-                                                                         1       2      3
-             b = 1,  b = 2 ?
-              1      2
-             Solution
-                                          )}
-                           ) (3, 1 ,
-                 R  =  ( { 2, 1 ,  ) (3, 2
-                             00
-                                
-                    M    =    10
-                       R       
-                               11  
+                           1       
+                               0   
+                                   
+                     0            0
+                        0          
+                                   
+                          1         
 
 
              Example
 
+             Suppose that the relation R on the set is represented by the matrix
+                             11 0
+                                   
+                    M    =   11 1
+                       R          
+                               01 1  
+             Is R reflexive, symmetric, and/or antisymmetric?
 
-                                                      ,
-                                                  ,
-                                                          ,
-                         ,
-             Let   A = { a a 2 , a 3 } and  B = { b 1 , b b  b b 5 } . Which ordered pairs are in the relation R
-                                                 2
-                                                         4
-                                                     3
-                       1
-             represented by the matrix
-                                    0 1 000
-                                                  
-                           M    =    10 1 10  ?
-                              R                  
-                                      1 01 01  
              Solution
-                     ( {                                                              )}
-                                      ) (
-                                                                   ) (
-                 R =  a 1 ,b 2 ) (  2 ,b , a 2 ,b 3 ) (  2 ,b 4 ) (  3 ,b , a 3 ,b 3 ) (  3 ,b 5
-                                                                             , a
-                                                          , a
-                                                 , a
-                             , a
-                                                                 1
-                                    1
-                                                 )
-                                                                     A
-                                                    R
-             A relation R on A is reflexive if ( ,a a ∈  whenever  a ∈
-                                                            203</code></pre>
+                Because the diagonal elements are equal to 1, R is reflexive.
+                 M is symmetric and it is not antisymmetric.
+                   R
+
+
+
+             Relations Using Diagraphs
+
+             Definition
+
+             A directed graph, or diagraph, consists of a set V of vertices (or nodes) together with a set E ordered
+             pairs of elements of V called edges (or arcs). The vertex a is called the initial vertex of the edge (a, b),
+             and the vertex b is called the terminal vertex of this edge.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              203</code></pre>
      	</div>
     
      </div>

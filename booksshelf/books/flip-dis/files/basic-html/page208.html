@@ -152,72 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.3 – Closures of Relations
+    <pre style="white-space:pre-line"><code>Example
+
+          Which of the following are paths in the directed graph: a, b, e,
+          d;  a, e, c, d, b;  b ,a, c, b, a, a, b;  d, c;  c, b, a;  e, b, a, b, a,
+          b, e?
+          What are the lengths of those that are paths?
+          Which of the paths in this list are circuits?
+
+          Solution
+
+             Each of (a, b), (b, e), and (e, d) is an edge a, b, e, d is a
+             path of length 3
+             (c, d) is not an edge, therefore a, e, c, d, b is not a path
+             b ,a, c, b, a, a, b is a path of length 6
+             d, c is a path of length 1
+             c, b, a is a path of length 2
+             e, b, a, b, a, b, e is a path of length 6
+             The 2 paths b, a, c, b, a, a, b and e, b, a, b, a, b, e are circuits because they begin and end the same
+             vertex.
+             The paths a, b, e, d; c, b, a; and d, c are not circuits
+
+
+          Theorem
+
+          Let R be a relation on a set A. There is a path of length n, where n is a positive integer, from a to b if and
+
+          only if ( , a b ) R∈  n
+
+
+          Proof
+
+           Using mathematical induction
+           There is a path from a to b of length one if and only if ( ,a b ) R∈ , which is true when n = 1.
+           Assume that the theorem is true for a positive integer n.
+
+           We need to prove that there is a path of length n + 1 from a to b if and only if  c ∈  A  such there is a path
+           of length 1 from a to c, so ( ,ac ) R∈ , and  path of length n from c to b ( , cb ) R∈  n .
+
+           Consequently, by the inductive hypothesis, there is a path of length n + 1 from a to b if and only if there
+                                                                                             )
+           is an element c with ( ,ac ) R∈  and ( , cb ) R∈  n . But there is such an element iff ( ,a b ∈ R n+ 1 .
+                                                                      )
+           Therefore, there is a path of length n + 1 from a to b iff ( ,a b ∈ R n+ 1 . This completes the proof.
 
 
 
 
-             Closures
-
-             The reflexive closure of R can be formed by adding to R all pairs of the form (a, a) with  a ∈ , not
-                                                                                                      A
-             already in R.
-
-             The reflexive closure of R equals  R   ∆  where
-             ∆=   ( { ,aa ) | a ∈ A }   is the diagonal relation on A.
 
 
 
-             Example
-
-             What is the reflexive closure of the relation  R =  ( { ,a b ) |  a &lt;  } b  on the set of integers?
-
-             Solution
-
-                The reflexive closure of R is the relation
-
-                                  ) |
-                    R   ∆=  ( { , a b   a &lt;  b } { , a a   a ∈  (  ) |    }
-                          =  ( { ,a b ) |  a ≤  } b
 
 
 
-             Example
-
-             What is the symmetric closure of the relation  R =  ( { ,a b ) |   a &gt;  } b  on the set of positive integers?
-
-             Solution
-
-                The symmetric closure of R is the relation
-
-                    R   R − 1  =  ( { ,ab ) | a &gt;  b } { ,b a  (  ) | a &lt;  } b
-                             =  ( { ,a b ) |   a ≠  } b
 
 
-
-             Path in Directed Graphs
-
-             Definition
-                                                                            (
-                                                                                ,
-                                                                                    ,  x x
-             A path from a to b in the directed graph G is a sequence of edges  x  x 1 ) (  1 ,  2 ) (  2 , x 3 ) ,
-                                                                                               ,  x
-                                                                              0
-                                                                          a
-                                                                                      b
-              ,  ( x n− 1 ,  x n )  in G, where n is nonnegative integer, and  x =  and  x = , that is, a sequence of
-                                                                                  n
-                                                                      0
-             edges where the terminal vertex of an edge is the same as the initial vertex in the next edge in the path.
-                                      ,
-             The path is denoted by  x  x x   ,  , x   , x  and has length n. We view the empty set of edges as
-                                          ,
-                                     0  1   2        n− 1  n
-             a path of length zero from a to a. A path of length  n ≥  that begins and ends at the same vertex is
-                                                                 1
-             called a circuit or cycle.
-                                                            208</code></pre>
+                                                           208</code></pre>
      	</div>
     
      </div>

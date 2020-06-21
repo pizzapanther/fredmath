@@ -154,43 +154,51 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-          A group of 30 people have been trained as astronauts to go on the first mission to Mars. How many ways
-          are there to select a crew of six people to go on this mission?
+          Find a recurrence relation and give initial conditions for the number of bit strings of length n without two
+          consecutive 0s. How many such bit strings are there of length five?
 
           Solution
 
-             The number of possible crews is
-                      )
-              C (30, 6 =   30!
-                          6!24!
-                        =  593,775  ways
+             Let an  denote the number of bit strings of length  n without two consecutive 0s.  To obtain a
+                                   { }
+             recurrence relation for  a n   note that the number of bit strings of length n that do not have two
+             consecutive 0s is the number of bit strings ending with a 0 plus the number of such bit strings ending
+             with a 1.
+                Now assume that n ≥ 3.
+              The bit strings of length n ending with 1 without two consecutive 0s are the bit strings of length n −1
+             with no two consecutive 0s with a 1  at the end. Hence, there are  a   such bit strings.
+                                                                             n− 1
+             The bit strings of length n ending with 0 without two consecutive 0s are the bit strings of length n −2
+             with no two consecutive 0s with 10  at the end. Hence, there are a   such bit strings.
+                                                                             n− 2
+
+             We conclude that  a =  a    + a     for n ≥ 3.
+                                n     n −  1  n −  2
+             The initial conditions are:
+
+                     a =  2 , since both the bit strings 0 and 1 do not have consecutive 0s.
+                      1
+                     a =  3, since the bit strings 01, 10, and 11 do not have consecutive 0s, while 00 does.
+                      2
+                To obtain a , we use the recurrence relation three times to find that:
+                           5
+                                    +=
+                   a =  a +  a =  32 5
+                    3     2   1
+                                    +
+                                       =
+                   a =  a +  a =  53 8
+                    4     3    2
+                                    +=
+                   a =  a +  a =  8 5 13
+                    5     4    3
 
 
-          Example
-
-          How many bits strings of length n contain exactly r 1s?
-
-          Solution
-
-             The positions of r 1s in a bit string of length n form an r-combination of the set {1,2,3, ,  } n . There
-                        )
-                 C
-             are  ( , n r .
 
 
-          Example
 
-          Suppose that there are 9 faculty members in the mathematics department and 11 in the computer science
-          department. How many ways are there to select a committee to develop a discrete mathematics course at a
-          school if the committee is to consist of three faculty member from the mathematics department and four
-          from the computer science department?
 
-          Solution
 
-              C (9, 3 ⋅  ) (11, 4 = C  )  9!  ⋅  11!
-                                  3!6! 4!7!
-
-                                =  27,720  ways
 
 
 

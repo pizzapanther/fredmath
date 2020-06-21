@@ -152,60 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Structural Induction
+    <pre style="white-space:pre-line"><code>Subtraction Rule
+
+
+          Definition
+          If a task can be done either in one of n ways or in one of  n  ways, then the total number of ways to do
+                                               1                    2
+          the task is  n + n minus the number of ways  to do the task that are common to the two different ways.
+                      1    2
+                                                                                 
+          Also known as, the principle of inclusion-exclusion:  A B =  A +  B −  A B
+
+
 
           Example
 
-          Show that the set S defined  by specifying that 3 ∊ S and that if x ∊ S and   y ∊  S, then x + y is in S, is the
-          set of all positive integers that are multiples of 3.
+          How many bit strings of length eight either start with a 1 bit or end with the two bits 00?
 
           Solution
-
-             Let A be the set of all positive integers divisible by 3.
-             To prove that A = S, show that A is a subset of S and S is a subset of A.
-                 A⊂ S:  Let P(n) be the statement that 3n belongs to S.
-
-                        Basis step:  3∙1 = 3 ∊ S, by the first part of recursive definition.
-                        Inductive step:  Assume P(k) is true. By the second part of the recursive definition, if 3k ∊
-                        S, then since 3 ∊ S, 3k + 3 = 3(k + 1) ∊ S.
-
-                         Hence, P(k + 1) is true.
-
-                 S ⊂ A:
-                        Basis step:  3 ∊ S by the first part of recursive definition, and   3 = 3∙1.
-                        Inductive step:  The second part of the recursive definition adds  x + y to S, if both x and y
-                                      are in S.
-                                       If x and y are both in A, then both x and y are divisible by 3. It follows that
-                                        x +  is divisible by 3.
-                                           y
+             Use the subtraction rule.
+                                                                            7
+               Number of bit strings of length eight that start with a 1 bit:  2 = 128
+                                                                            6
+               Number of bit strings of length eight that start with bits 00:  2 =  64
+               Number of bit strings of length eight that start with a 1 bit and end
+                                5
+                 with bits 00 : 2 =  32
+             Hence, the number is 128 + 64 − 32 = 160.
 
 
+          Example
 
-          Full Binary Trees
+          A computer company receives 350 applications from computer graduates for a job planning a line of new
+          Web servers. Suppose that 220 of these applicants majored in computer science, 147 majored in business,
+          and 51 majored both in computer science and in business. How many of these applicants majored neither
+          in computer science nor in business?
 
-          Definition
+          Solution
+             Let   A: majored in computer science
 
-                     hT
-          The height  ( ) of a full binary tree T is defined recursively as follows:
+                   B: majored in business
 
-             Basis step:  The height of a full binary tree T consisting of only a root r is  ( ) 0hT = .
+                                  
+              A B =    A +  B −  A B
+                
 
-             Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has height
-                                 1       2                                                 12
-                                               ( ) ( ))
-                              h ( ) 1 maxT = +  ( h T 1  ,h T 2  .
+                           +
+                                −
+                     =  220 147 51
+
+                     = 316
+              350 316 =   34
+                  −
+
+             We conclude that 34 of the applicants majored neither in computer science nor in business
 
 
-          The number of vertices  n(T) of a full binary tree T satisfies the following recursive formula:
 
-             Basis step:  The number of vertices of a full binary tree T consisting of only a root r is n(T) = 1.
 
-             Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has the number
-                                 1       2                                                 12
-                                                           n T
-                             of vertices  ( ) 1n T =  +  n T +  ( ) ( ) .
-                                                      1
-                                                              2
+
 
 
 

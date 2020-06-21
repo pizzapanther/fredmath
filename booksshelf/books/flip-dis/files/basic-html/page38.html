@@ -152,62 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Proof by Contraposition
+    <pre style="white-space:pre-line"><code>Vacuous and Trivial Proofs
 
-          In logic, proof by contrapositive is a form of proof that establishes the truth or validity of a proposition by
-          demonstrating the truth or validity of the converse of its negated parts.
-                                                                                       p
-                                                                 q
-          To prove by contraposition, consider an implication  p → , prove that  q¬ → ¬ ,
-                 •  If the antecedent  q¬  is false, then the contrapositive is always true.
-                 •  Show that if  q¬  is true, then  p¬  is true
+          If p is a conjunction of other hypotheses and we know one or more of these hypotheses is false, then p is
+                           q
+          false and so  p →  is vacuously true regardless of the truth value of q.
+                                       q
+          If we know q is true then  p →  is true regardless of the truth value of p, this called Trivial Proofs.
 
-          To perform an indirect proof, do a direct proof on the contrapositive.
+          Example
+
+                                                                               2
+                                                                                   n
+                                                       P
+          Show that the proposition  ( ) 0P   is true, where  ( ) n  is “If  n &gt; , then  n &gt; ”  and the domain consists
+                                                                      1
+          of all integers.
+          Solution
+                                                             2
+                                                                0
+             Using a vacuous proof;  ( ) 0P   is “If 01&gt; , then 0 &gt; ” . Indeed, the hypothesis  01&gt;  is false. This
+             tells us that  ( ) 0P   is automatically true.
 
 
           Example
 
-          Prove that if n is an integer and 3n + 2 is odd, then n is odd.
-
+                                                                             n
+                                                                        n
+          Let  ( ) n  be “If a and b are positive integers with  ab , then a ≥ b ,” where the domain consists of all
+              P
+                                                             ≥
+          nonnegative integers. Show that  ( ) 0  is true.
+                                          P
           Solution
-             The first step in a proof by contraposition is to assume that the conclusion of the conditional statement
-             “3n + 2 is odd, then n is odd” is false. Assume that n is even, then by the definition of an even integer,
-              n =  2k for some integer k.
 
-                      2 3 2
-                 3n +=    ( ) 2k +
-                        = 6k +
-                               2
-                        =   ( 2 3k +  ) 1
+                                                                               0
+                                                       0
+                                                            0
+                                                                          0
+             The proposition  ( ) 0P   is “If   ab≥ , then  a ≥ b .” Because  a = b = 1, the conclusion of the
+             conditional statement is true. Hence, this conditional statement, which is  ( ) 0P  , is true.
 
-             This show 3n +  is even, because it is a multiple of 2, therefore not odd. This is the negation of the
-                             2
-             theorem of the conditional statement implies that the hypothesis is false; the original conditional
-             statement is true.
-             Our proof by contraposition succeeded; we have proved the theorem “If 3n + 2 is odd, then n is odd.”
 
+          Definition
+
+
+                                                                           0
+          The real number r is rational if there exist integers p and q with q ≠  such that  r =  p  . A real number
+                                                                                           q
+          that is not rational is called irrational.
 
 
           Example
 
-          Prove that if  n =  ab  where a and b are positive integers, then  a ≤  n  or b ≤  n .
+          Prove that the sum of two rational numbers is rational. (Note that if we include the implicit quantifiers
+          here, the theorem we want to prove is “For every real number r and every real number s, if r and s are
+          rational numbers, the r + s is rational.)
 
           Solution
 
-             By using proof by contraposition, let assume that the conclusion of the conditional statement “if
-              n =  ab  where a and b are positive integers, then  a ≤  n  or b ≤  n ” is false.
-              ( a ≤  n ∨  ) ( b ≤  n  is false.
-                                )
 
-             Using the meaning of disjunction together with De Morgan’s law, that implies that both  a ≤  n  and
-
-              b ≤  n  are false
-                  ⇒   a &gt;   n  and b &gt;  n
-             Then
-
-              ab &gt;  n n
-                 =  n
-
+                                                                                             0
+             From the definition of a rational number, that there exist integers p and q with q ≠  such that  r =  p  ,
+                                                                                                            q
+                                          0
+             and integers t and u with u ≠  such that  s =  t  .
+                                                         u
                                                             38</code></pre>
      	</div>
     

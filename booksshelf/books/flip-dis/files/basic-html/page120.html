@@ -152,64 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.5 – Primes and Greatest Common Divisors
+    <pre style="white-space:pre-line"><code>Example
+
+
+          Find  gcd (91, 287)
+          Solution
+
+             287 = 91 ∙ 3 + 14        Divide 287 by 91
+
+              91 = 14 ∙ 6 + 7         Divide 91 by 14
+              14 =  7 ∙ 2 + 0         Divide 14 by 7
+
+             gcd (287, 91) = 7
+
+
+
+          Example
+
+          Find  gcd (414, 662)
+
+          Solution
+             662 = 414 ∙ 1 + 248      Divide 662 by 414
+
+             414 = 248 ∙ 1 + 166      Divide 414 by 248
+
+             248 = 166 ∙ 1 + 82       Divide 248 by 166
+             166 = 82 ∙ 2 + 2         Divide 166 by 82
+
+              82 = 2 ∙ 41 + 0         Divide 82 by 2
+
+             gcd(414, 662) = 2
+
+
+          Euclidean Algorithm
+
+           procedure gcd(a, b: positive integers)
+           x := a
+           x := b
+           while   y ≠ 0
+                  r := x mod y
+                  x := y
+                  y := r
+           return x {gcd(a,b) is x}
+
+
+          GCDs as Linear Combinations
+
+          Bézout’s Theorem
+
+          If a and b are positive integers, then there exist integers s and t such that  gcd(a,b) = sa + tb.
 
 
 
 
-           Primes
 
-           Definition
-
-           An integer p greater than 1 is called prime of the only positive factors of p are 1 or p.
-           A positive integer that is greater than 1 and is not prime is called composite.
-
-
-           Example
-           The integer 7 is prime because its only positive factors are 1 and 7.
-           The integer 9 is composite because its is divisible by 3.
-
-
-           Theorem − The Fundamental Theorem of Arithmetic
-
-           Every integer greater than 1 can be written uniquely as a prime or as the product of two or more primes
-           where the prime factors are written in order of nondecreasing size.
-
-
-           Example
-
-
-           Find the prime factorization of 100, 641, 999, and 1024.
-           Solution
-                                2
-                   =
-               100 2 2 5 5⋅ ⋅ ⋅ =  2 5⋅  2
-               641 641=
-                                 3
-               999 3 3 3 37= ⋅⋅⋅  =  3 37⋅
-               1024 22222 2= ⋅⋅⋅⋅⋅⋅⋅⋅⋅          10
-                                         22 2=
-                                    2 2
-
-
-           Trial Division
-
-
-           Theroem
-           If n is a composite integer, then n has a prime divisor less than or equal to  n
-
-           Proof
-             If n is composite, then it has a factor a (by definition of a composite integer) with 1 a n&lt;&lt; . Hence, by
-
-             the definition of a factor, we have  n =  ab , b ( positive integer ) 1&gt; .
-             If  a &gt;  n  and b &gt;    n , then  ab &gt;  n ⋅  n =  n, which is a contradiction. Consequently,
-
-             a ≤   n and b ≤  n . Because both a and b are divisors of n, we see that n has a positive divisor not
-             exceeding  n . This divisor is either prime or, by the fundamental theorem of arithmetic, has a prime
-
-             divisor less than itself. In either case, n has a prime divisor less than or equal to  n .
-
-                                                            120</code></pre>
+                                                           120</code></pre>
      	</div>
     
      </div>

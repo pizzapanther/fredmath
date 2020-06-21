@@ -152,68 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.5 − Partial Orderings
+    <pre style="white-space:pre-line"><code>Definition
+
+                                                )
+             The elements a and b of poset  ( , S    are called comparable if either  a   or b  . When a and b are
+                                                                                    b
+                                                                                             a
+             elements of S such that neither a b  nor b a , a and b are called incomparable.
+
+             Example
 
 
+             In the poset  ( ,|    )  are the integers 3 and 9 comparable? Are 5 and 7 comparable?
+             Solution
+
+                The integers 3 and 9 are comparable, because 3 | 9.
+                The integers 5 and 7 are incomparable, because 5|7 and 7|5
 
 
              Definition
 
-             A relation R on set S is called a partial ordering or partial order if it is reflexive, antisymmetric, and
-             transitive. A set S together with a partial ordering R is called a partially ordered set, or poset, and is
-             denoted by (S, R). Members of S are called elements of the poset.
+                     )
+             If ( ,S    is a poset and every two elements of S are comparable, S is called a totally ordered or linearly
+             ordered set, and   is called a total order or a linear order. A totally ordered set is also called a chain.
 
 
              Example
 
-             Show that the “greater than or equal” relation ( ) ≥  is a partial ordering on the set of integers
-             Solution
 
-                Because  a ≥   for every integer a, ≥ is reflexive.
-                             a
-                                            b
-                If  a ≥  and b ≥ , then  a = . Hence, ≥ is symmetric.
-                      b
-                                 a
-                                 c
-                                                  c
-                If  a ≥  and b ≥  imply that  a ≥ . Hence, ≥ is transitive.
-                      b
-                It follows that  ( ) ≥  is a partial ordering on the set of integers and ( ,  ≥  )  is a poset.
-
+                                                                     a
+                                                            b
+             The poset ( ,  ≤  )  is totally ordered, because  a ≤  or  b ≤  whenever a and b are integers.
 
              Example
-             Show that the inclusion relation ⊆ is a partial ordering on the power set of a set S.
+                       (  +  )
 
-             Solution
+             The poset    ,|  is not totally ordered, because it contains elements that are incomparable, such as 5
+             and 7.
 
-                Because  A ⊆  A whenever is a subset of S. ⊆ is reflexive.
-                It is antisymmetric because  A ⊆  B  and  B ⊆  A imply that A =  B
-                 A ⊆  B  and  B ⊆  C  imply that A ⊆ C , Hence ⊆ is transitive.
-                                                            (
-                                                                      )
-                Hence,  ⊆ is a partial ordering on  ( )  and  ( ),PS   ⊆  is a poset.
-                                                 PS
 
+             Definition
+
+
+             If ( , S    is well-ordered set if it is a poset such that   is a total ordering and every nonempty subset of
+                     )
+             S has a least element.
 
              Example
+                                                                      (
+                                                                                    ,
+                                                                          ,
+             The set of ordered pairs of positive integers,   +  ×  +  , with  a  a 2 ) ( b b 2 )  if  a &lt;  b , or if  a =  b 1
+                                                                               
+                                                                        1
+                                                                                   1
+                                                                                                  1
+                                                                                                           1
+                                                                                              1
+             and  a &lt; b (Lexicographic ordering), is a well-ordered set.
+                  2    2
+             The set Z, with the usual ≤ ordering, is not well-ordered because the set of negative integers, which is a
+             subset of Z, has no least element.
 
-             Let R be the relation on the set of people such that  xRy  if x and y are people and x is older than y.
-             Show that is not a partial ordering,
-
-             Solution
-
-                 R is not reflexive, because no person is older than herself or himself  xRx
-                 R is antisymmetric because if a person x is older than y, then y is not older than x. That is xRy ,
-                 then  yRx .
-
-                 The relation is transitive because a person x is older than y, then y is older than z, then x is older
-                 than z.
-                 R is not a partial ordering.
 
 
 
-                                                            221</code></pre>
+
+                                                              221</code></pre>
      	</div>
     
      </div>

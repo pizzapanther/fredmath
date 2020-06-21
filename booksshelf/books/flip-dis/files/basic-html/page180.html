@@ -152,51 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>9.   A group contains n men and n women. How many ways are there to arrange these people in a row if
-               the men and women alternate?
+    <pre style="white-space:pre-line"><code>Example
 
-          10.  In how many ways can a set of two positive integers less than 100 be chosen?
 
-          11.  In how many ways can a set of five letters be selected from the English alphabet?
-          12.  How many subsets with an odd number of elements does a set with 10 elements have?
+          Find a recurrence relation for C , the number of ways to parenthesize the product of  n + 1 numbers,
+                                        n
+          x ⋅  x ⋅  x   x ⋅  , to specify the order of multiplication. For example,C = , since all the possible ways
+                                                                                   5
+           0   1   2     n                                                     3
+          to parenthesize 4 numbers are
+                  ( (  x ⋅  0  x 1 ) )  x ⋅  3     ( x ⋅  0  ( x ⋅  1  x 2 ))  x ⋅  3     ( x ⋅  0  x ⋅  1 ) ( x ⋅  2  x 3 )
+                            x ⋅
+                             2
 
-          13.  How many subsets with more than two elements does a set with 100 elements have?
-          14.  How many ways are there for eight men and five women to stand in a line so that no two women
-               stand next to each other?
+                                x ⋅
+                 x ⋅  ( (  x ⋅  x  ) )        x ⋅  ( x ⋅  ( x ⋅  x  ))
+                   0    1   2    3             0    1    2   3
+          Solution
 
-          15.  How many ways are there for six men and 10 women to stand in a line so that no two men stand
-               next to each other?
+             Note that however parentheses are inserted in  x ⋅  x ⋅  x   x ⋅  , one  “∙” operator remains  outside all
+                                                           0   1   2     n
+             parentheses. This final operator appears between two of the n + 1 numbers, say  x  and  x  . Since
+                                                                                            k       k+ 1
+             there are C  ways  to insert parentheses in the product  x ⋅  x ⋅  x   x ⋅  and C   ways  to insert
+                                                                                           −−
+                        k                                           0   1   2     k       nk   1
+             parentheses in the product  x    x ⋅  ⋅   x ⋅  , we have
+                                         k+  1  k+  2    n
+                 C =   C C     +  CC      +   +  C  C +  C    C
+                   n    0 n−  1  1  1 n−  2      n−  21     n−  1 0
+                       n−
+                       ∑
+                     =     CC   nk   1
+                                 −−
+                             k
+                       k= 0
+             The initial conditions are C =  C = 1.
+                                        0    1
 
-          16.  A professor writes 40 discrete mathematics true/false questions. Of the statements in these
-               questions. 17 are true. If the questions can be positioned in any order, how many different answer
-               keys are possible?
 
-          17.  Thirteen people on a softball team show up for a game.
-                 a)  How many ways are there to choose 10 players to take the field?
-                 b)  How many ways are there to assign the 10 positions by selecting players from the 13 people
-                    who show up?
-                 c)  Of the 13 people who show up, there are three women. How many ways are there to choose 10
-                    players to take the field if at least one of these players must be a woman?
 
-          18.  A club has 25 members
-                 a)  How many ways are there to choose four members of the club to serve on an executive
-                    committee?
-                 b)  How many ways are there to choose a president, vice president, secretary, and treasurer of the
-                    club, where no person can hold more than one office?
 
-          19.  How many 4-permutations of the positive integers not exceeding 100 contain three consecutive
-               integers, k, k + 1, k + 2, in the order
-                 a)  Where these consecutive integers can perhaps be separated by other integers in the
-                    permutation?
-                 b)  Where they are in consecutive positions in the permutation?
 
-          20.  The English alphabet contains 21 constants and five vowels. How many strings of six lowercase
-               letters of the English alphabet contain
 
-                 a)  Exactly one vowel?
-                 b)  Exactly two vowels?
-                 c)  At least one vowel?
-                 d)  At least two vowels?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                                                            180</code></pre>

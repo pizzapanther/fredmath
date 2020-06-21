@@ -154,61 +154,63 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-        A coin flipped 10 times where each flip comes up either heads or tails. How many possible outcomes
-          a)  Are there in total?
-          b)  Contain exactly two heads?
-          c)  Contain at most three tails?
-          d)  Contain the same number of heads and tails?
+        How many license plates can be made using either three uppercase English letters followed by three digits
+        or four uppercase English letters followed by two digits?
 
         Solution
 
-                                                           10
-            a)  Each flip can be either heads or tails: There are 2 = 10 24 possible coutcomes
-
-            b)  C     =  45  outcomes
-                 10,2
-            c)  At most three tails means: 3, 2, 1, 0 tails.
-                C      C     + +  C  +  C    = 176  outcomes
-
-                 10,3    10,2   10,1    10,0
-            d)  To have an equal number of heads and tails means 5 heads and 5 tails.
-
-               Therefore; C      =  252  outcomes
-                            10,5
+                              2
+               3
+                                       3 0 6 0 license plates
+                                    ,
+            26 10 + ⋅  3  26 1 ⋅  4  0  =  63 27 ,
 
 
         Exercise
+        How many strings of eight English letter are there.
 
-        How many bit strings of length 12 contain?
-
-          a)  Exactly three 1s?
-          b)  At most three 1s?
-          c)  At least three 1s?
-          d)  An equal number of 0s and 1s?
+          a)  That contains no vowels, if letters can be repeated?
+          b)  That contains no vowels, if letters cannot be repeated?
+          c)  That starts with a vowel, if letters can be repeated?
+          d)  That starts with a vowel, if letters cannot be repeated?
+          e)  That contains at least one vowel, if letters can be repeated?
+          f)  That contains at least one vowel, if letters cannot be repeated?
 
         Solution
+                          1    2   3    4    5    6    7    8
+                         NV  NV  NV    NV  NV  NV  NV      NV
+                     a   21  21  21  21  21  21  21  21
+                     b   21  20  19  18  17  16  15  14
+                          V   L    L    L    L    L    L    L
 
-            a)  We need to choose the 3 positions that contains the 1’s
-                C      =  220  ways
+                     c    5   26  26  26  26  26  26  26
+                     d    5   25  24  23  22  21  20  19
 
-                 12, 3
+            a)  There are 8 slots which can be filled with  26 5−=  21 non-vowels.
+                                      8
+                                            ,
+               By the product rule:  21 = 37 822, 8593 ,  61 strings
+            b)  21 20 19 18 17 16 15 14 =⋅  ⋅  ⋅  ⋅  ⋅  ⋅  ⋅  8 2 ,  04 716, 800    strings
+                                                  ,
 
-            b)  At most three 1’s means to contains 3, 2, 1, 0 −1’s:
-                C      C     + +  C  +  C    = 299  strings
-                 12,3    12,2   12,1    12,0
+
+            c)  5 26  ⋅  7  = 40 159,  5 0 0 880 strings
+                                   ,
+
+                           ,
+            d)  5 25 24 23 22 21 20 19 ⋅  ⋅  ⋅  ⋅  ⋅  ⋅  ⋅  = 12 113 640 000 strings,  ,  ,
 
 
-            c)  At least three 1’s means to contains 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 −1’s:
-                                                                                                     s
-                C    +  C   +  C   +  C   +C     +  C   +  C   +  C    +  C    +  C     =  4017  strin g
-                 12,3   12,4   12,5    12,6  12,7   12,8   12,9   12,10   12,11   12,12
-               OR
+                                      8
+                                            8
+            e)  By the product rule:  26 − 21  = 171 004, 2 5 215 strings    ,
+                                                         0
+                                                   ,
+                      7
+            f)  8 52 ⋅  1  =  72 043 5 ,  41 40 strings   , 6
+                 ⋅
+                             ,
 
-                2 12  −  C  −  C   −  C   =  4096 66−  −  1 2 1 =−  417  stri ngs
-                                                                0
-                       12,2   12,1    12,0
-            d)  To have an equal number of 0’s and 1’s means 6 1’s.
-               Therefore;  (12, 6C  )  =  924  strings
 
 
 

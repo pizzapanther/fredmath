@@ -152,71 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Some Useful Summation Formulae
-                                            Sum                         Closed Form
-                                   n
-                                  ∑   ar k  (    r ≠  ) 0         ar n+ 1 − a ,  r ≠ 1
+    <pre style="white-space:pre-line"><code>Algorithm 3 − Binary Search
 
 
-                                  k= 0                              r − 1
-                                   n
-                                  ∑   k                            ( nn +  ) 1
+          Given a list which must be sorted, find element in the list
+
+             procedure linear_search (x: integer; a a  ,   , a : increasing integers)
+                                                   ,
+                                                  1   2        n
+             i  := 1    { i is left endpoint of search interval }
+             j := n     { j is right endpoint of search interval }
+             while i &lt; j
+             begin
+
+                   m :=     (i +  j ) / 2       {m is the point in the middle }
+
+                   if  x &gt;  a   then i := m+1
+                          m
+                   else j := m
+             end
+
+             if x =  a  then location := i
+                     i
+             else location := 0
+             {location is the subscript of the term that equals x, or it is 0 if x is not found}
+
+                         x =  4 1  location  7
 
 
-                                  k  1 =                             2
-                                   n
-                                  ∑   k                            ( nn +  1 )(2n +  ) 1
-                                       2
-                                  k  1 =                                6
-                                   n
-                                  ∑   k                           n 2 (n +  ) 1  2
-                                       3
+          Sorting
 
-                                  k= 1                                4
-                                   ∞
-                                  ∑   x k ,  x &lt; 1               1 x−
-                                                                   1
+          Ordering the elements of a list is a problem that occurs in many contexts. Suppose that we have a list of
+          elements of a set. Suppose that we have a way to order elements of the set. Sorting is putting these elements
+          into a list in which the elements are in increasing order.
 
-                                  k= 0
-                                   ∞                                 1
-                                  ∑   kx k  1 −  ,   x &lt;         (1 x−  ) 2
-                                                  1
+          There are two types:
+               Bubble sort
 
-                                  k  1 =
-
-
-           Example
-                               ∑
-           What is the value of     s∈ [0,2,4 ] s
-
-
-           Solution
-               ∑   s∈ [0,2,4 ]     s = 024  ++  =  6
-
+               Insertion sort
 
 
 
+          Bubble Sort
 
-           Example
+          The bubble sort is one of the simplest sorting algorithms, but not one of the most efficient. It takes
+          successive elements and “bubbles” them up the list.
 
-                                100
-                                ∑     2
-           What is the value of     k
-                               k= 50
-           Solution
-                100      100       49                                 n
-               ∑    k =  ∑∑            k                             ∑   k =  nn   12n +  )(  ) 1
-                                                                               ( +
-                                        2
-                               2
-                      2
-                                                                          2
-                              k −
-                                                                                    6
-               k= 50      k  1 =   k  1 =                            k = 1
-                       =  100 101 201 49 50 99⋅  ⋅  −  ⋅  ⋅  =  338,350 40,425−    = 297,925
-                               6            6
-                                                             94</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            94</code></pre>
      	</div>
     
      </div>

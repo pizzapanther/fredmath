@@ -155,78 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>Exercise
 
 
-        Prove that the statement is true for every positive integer n. 1 +  2  2 +  2  3 +  2  +  n =  2  ( nn +  1 )(2n +  ) 1
-                                                                                                6
+        Use mathematical induction to prove that 21 divides  4 n +  1 + 5 2n −  1  whenever n is a positive integer.
         Solution
 
-                                 ?  1 1+  ( 1) (2( ) 1 )  1(2)(3)
-                                          1 +
-                               2
-            (1)  For n = 1 ⇒ 1 =                =       =  6  = 1√  ; hence  P  is true.
-                                        6           6     6                 1
-            (2)  1 +  2  2 +  2  3 +  2  +  k =  2  ( kk +  1 )(2k +  ) 1  is true
-                                               6
-                                                                              1
-                              1 +  2  2 +  2  3 +  2  +  k +  2  (k +  ) 1  2  =  (k +  1 ) ( ( k +  1 +  ) ) ( (2 k +  1 +  ) ) 1  ?
-                                                                             6
+            For n = 1
 
-                1 +  2  2 +  2  3 +  2  +  k +  2  (k +  ) 1  2  =  ( kk +  1 )(2k +  ) 1  +  (k +  ) 1  2
-                                                        6
+                4 +  2  5 =  1  21, which is divisible by 21
+                Hence  P  is true.
+                        1
 
-                                                    ( kk +  1 )(2k +  ) 1 +  ( 6 k +  ) 1  2
-                                                =
-                                                               6
-                                                  (k +  1 ) (2k     k +  ) 1 +  ( 6 k +  ) 1   
-                                                =
-                                                               6
-                                                            2
-                                                         
-                                                                k
-                                                  (k +  ) 12k ++   6k + 6   
-                                                         
-                                                =                       
-                                                             6
-                                                         
-                                                  (k +  ) 12k +  2  7k +  6   
-                                                         
-                                                =                   
-                                                            6
-                                                  (k +  1 ) ( ( k +  22k +  )(  3 ))
-                                                =
-                                                             6
-                                                              11
-                                                                          +
-                                                  (k + 1 ) ( ( k ++  )(2k + 2 1 ))
-                                                =
-                                                                6
-                                                  (k +  1 ) ( ( k +  1 ) ) ( (2 k+  1  +  1 ) ) 1+
-                                                =                                √
+            Assume that 21 divides  4 k  1 +  + 5 2k−  1   is true.
+            We need to prove that 21 divides 4 (k+  ) 1 1+  + 5  ( 2 k+  ) 11−  is also true
 
-                                                                6
+                                                   21
+            4 (k+  ) 1 1+  +  5  ( 2 k+  ) 11−  =  44 ⋅  (k+  ) 1  +  5 2k+−
+
+                                  =  44 ⋅  (k+  ) 1  +  5 ⋅  2  5 2k− 1
+
+                                                 ⋅
+                                  =  4 4 (k+  ) 1  +  25 5 2k− 1
+                                     ⋅
+                                     ⋅
+                                  =  4 4 (k+  ) 1  +  (4 21 5+  )⋅  2k− 1
+                                  = 4 4 ⋅  (k+  ) 1  +⋅  2k−  1  + 21 5 ⋅  2k−  1
+                                               4 5
+                                  =  4 4 (k+  ) 1  +  5 2k−   1  +   21 5 ⋅  2k−  1
+                                     ⋅
+                                      
+                                                     
+               By the inductive hypothesis, 21 divides  4 k  1 +  + 5 2k−  1  and certainly 21 divides 5 2k− 1 , so 21 divides
+               their sum.
                  Hence  P      is true.
                           k+ 1
-
-            The statement 1 +  2  2 +  2  3 +  2  +  n =  2  ( nn +  1 )(2n +  ) 1  is true
-                                                        6
+            ∴  By the mathematical induction, the given statement is true.
 
 
 
+        Exercise
+                                                                                                        n
+        Prove that the statement is true for every positive integer n. 1 2.2 3.2+  +  2  +  +  n .2 n− 1 =  1 +  (n −  ) 1 .2
 
+        Solution
+            For n = 1
 
+                 ?
+                            1
+                                 −
+                                    =
+                 =
+                1 1 +  (1−  ) 12 = 1 0 1
+               Hence  P  is true.
+                        1
+                                                   k
+                       2
+                  +
+            1 2.2 3.2 +…+      k .2 k− 1  = 1+ (k −  ) 1 .2 is true
+             +
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                       ) 11
+                 +
+                      +
+                1 2.2 3.2 +  2   +  k .2 k  1 −  +  (k +  ) 1 .2 (k+ −  =  1+  ( ( k +  1 −  ) ) 1 .2 k+  1 ?
+                                                                                      11
+                      +
+                 +
+                1 2.2 3.2 +  2   +  k .2 k  1 −  +  (k +  ) 1 .2 (k+  ) 11−  1 +=  (k −  ) 1 .2 +  k  (k +  ) 1 .2 k+−
+                                                              +
+                                                           =  1 k .2 −  k  1.2 +  k  (k +  ) 1 .2 k
 
                                                           116</code></pre>
      	</div>

@@ -152,81 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Given that  ab=  but if a is a descendant of b, then b cannot be a descendant of a. So, the relation
-                 is vacuously antisymmetric.
-                 if a is a descendant of b and b is a descendant of c, then a is a descendant of c. So, the R is
-                 transitive.
-                 Therefore, this relation is a poset.
+    <pre style="white-space:pre-line"><code>SOLUTION                    Section 4.4 – Equivalence Relations
 
-             h)  Since anyone and himself have a common friend, then this relation is not reflexive, so this relation
-                 is not a poset.
 
 
           Exercise
 
-          Which of these are posets?
-                                                                    )
-                                                )
-                                                                                         )
-                a)  (Z, =)            b)  (Z,  ≠          c)  (Z,  ≥           d)  (Z, | /
-                          )
-                                                                    )
-                                                                                         )
-                                                )
-                e)  (R,  =            f)  (R,  &lt;          g)  (R,  ≤           h)  (R,  ≠
+          Which of these relations on {0, 1, 2, 3} are equivalence relations?
+          Determine the properties of an equivalence relation that the others lack.
+          What are the equivalence classes of the equivalence relations?
+             a)  {(0, 0), (1, 1), (2, 2), (3, 3)}
+             b)  {(0, 0), (0, 2), (2, 0), (2, 2), (2, 3), (3, 2), (3, 3)}
+             c)  {(0, 0), (1, 1), (1, 2), (2, 1), (3, 2), (3, 3)}
+             d)  {(0, 0), (1, 1), (1, 3), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)}
+             e)  {(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 2), (3, 3)}
+
           Solution
-             a)  The equality relation of any set satisfies all three conditions. Therefore, a partial order.
-             b)  This is not a poset since the relation is not reflexive (a ≠  ) a
-
-             c)  The relation is reflexive since the relation involved the equality sign.
-
-             d)  This is not a poset since the relation is not reflexive  2| ( ) 2
+             a)  This is an equivalence relation. It is reflexive, symmetric and transitive.
+                 The equivalence classes all have just one element.
+                 Each element is in an equivalence class by itself.
 
 
-             e)  The equality relation of any set satisfies all three conditions. Therefore, a partial order.
-             f)  This is not a poset since the relation is not reflexive  2 &lt; (  ) 2
+             b)  This is not reflexive since pair (1, 1) is missing. It is symmetric and it is not transitive since the
+                 pairs (0, 2) and (2, 3) are there, but not (0, 3).
+                 This is not an equivalence relation.
 
+             c)  This is an equivalence relation. It is reflexive, symmetric and transitive.
+                 The elements 1 and 2 are in one equivalence class, and 0 and 3 are each in their own equivalence
+                 class.
 
-             g)  The relation is reflexive since the relation involved the equality sign.
+             d)  This is reflexive and symmetric and it is not transitive since the pairs (1, 3) and (3, 2) are there, but
+                 not (1, 2).
+                 This is not an equivalence relation.
 
-             h)  This is not a poset since the relation is not reflexive (22=  )
-
-                                                                 ≠
-                                                        R
-                 It is not antisymmetric since 1 2R  and   21  but  1 2
-                                                       =
-                                              R
-                 It is not transitive 1 2R  and   21  but  1 1  ⇒  1   R1
+             e)  This is reflexive, it is not symmetric since (2, 1) is missing and it is not transitive since the pairs
+                 (2, 0) and (0, 1) are there, but not (2, 1).
+                 This is not an equivalence relation.
 
 
           Exercise
 
-          Determine whether the relations represented by these zero-one matrices are partial orders
-
-                      111                   111                   1 01              1 00
-                                                                             
-                                            
-                                                     
-                    
-                             
-                                                                                                 
-                                                                                        
-                a)  11 0                b)  01 0                c)       11 0     d)  01 0
-                                                                                                 
-                                                                             
-                                                                                        
-                    
-                                            
-                             
-                                                     
-                        0 01                0 01                0 01            1 01  
-                      111 0                 10 10
-                      01 1 0                01 1 0   
-                e)                    f)             
-                      00 11                 00 11
-                                                     
-                      1 1 01                1 1 01   
-          Solution
+          Which of these relations on the set of all people are equivalence relations?
+          Determine the properties of an equivalence relation that the others lack.
+          What are the equivalence classes of the equivalence relations?
+                                                  }
+             a)  ( { ,a  b a and b are the same age
+                       ) |
+                                                       }
+                       ) |
+             b)  ( { ,a  b a and b have the same parents
+                                                         }
+                       ) |
+             c)  ( { ,a  b a and b share a common parent
+                                          }
+             d)  ( { ,a  b a and b have met
+                       ) |
+                                                           }
+             e)  ( { ,a  b a and b speak a common language
+                       ) |
                                                            212</code></pre>
      	</div>
     

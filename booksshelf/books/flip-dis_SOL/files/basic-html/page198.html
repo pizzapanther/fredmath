@@ -152,59 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>SOLUTION                    Section 4.3 – Closures of Relations
+    <pre style="white-space:pre-line"><code>=  R
+                              5
+             g)  R ⊕   R =  ( R   R  ) ( R   R  )
+                                      
+                   1    3     1    3      3     1
+                                                                                       }
+                          =  { ( ,a b ∈  )  R 2  | a b and a b } { ( ,a b ∈  )  R 2  | a b and a b
+                                                     ≥
+                                                                          &lt;
+                                                                                    ≤
+                                           &gt;
+                          =  R  R                   (From part a)
+                              1    3
+                          =  R
+                              6
+             h)  R ⊕   R =  ( R   R  ) ( R   R   )
+                                       
+                   2     4     2    4       4    2
+                            {         2                 } {          2                 }
+                                                                                    &lt;
+                                           ≥ R
+                          =  ( ,a b ∈  )  | a b and a b     ( ,a b ∈   )  | a b and a b
+                                                     &gt;
+                                                                          ≤ R
+                          =  R  R                   (From part a)
+                              1    3
+                          =  R
+                              6
+             i)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
+                   1   1            1               1
+                                              c
+                                      c   a
+                        a &gt; b and b &gt;⇒ &gt;  (clearly) that means( ,ac    ) R∈  1  (Transitive).
+                 Therefore,  R  R =  R
+                             1    1    1
 
+             j)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
+                   1   2             2               1
+                       a ≥ b and b &gt;⇒ &gt;  (clearly) that means( ,ac   ) R∈  1  . Therefore,  R  R =  R
+                                            c
+                                    c   a
+                                                                                             2
+                                                                                         1
+                                                                                                   1
+                                                      }
+             k)  R   R =   ( {  , a  ) b ∈  R  and  ( , b c ∈  ) R
+                   1   3             3              1
+                                                             2
+                       a &lt;  b and b &gt;  c . Therefore,  R  R = R
+                                                   1   3
+             l)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
+                   1   4             4               1
+                     a ≤  b and b &gt;  c . Clearly this can always be done simply by choosing b to be large enough.
+                                           2
+                    Therefore,  R   R = R
+                                 1   4
+             m)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
+                   1   5             5               1
+                     a = b and b &gt;  iff a &gt; c. Therefore,  R  R =  R
+                                  c
+                                                         1    5    1
+                                                      }
+             n)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R
+                   1   6             6               1
+                     a ≠  b and b &gt;  c . Clearly this can always be done simply by choosing b to be large enough.
+                                           2
+                    Therefore,  R   R = R
+                                 1   6
+             o)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
+                   2   3             3               2
+                     a &lt;  b and b ≥  c . Clearly this can always be done simply by choosing b to be large enough.
+                                           2
+                    Therefore,  R  R = R
+                                 2    3
 
-
-
-          Exercise
-
-          Let R be the relation on the set {0, 1, 2, 3} containing the ordered pairs (0, 1), (1, 1), (1, 2), (2, 0),
-          (2, 2), and (3, 0).  Find the
-             a)  Reflexive closure of R.
-             b)  Symmetric closure of R.
-
-          Solution
-             a)  The reflexive closure of R is R with all (a, a). In this case the closure of R is
-                 {(0, 0), (0, 1), (1, 1), (1, 2), (2,0), (2, 2), (3, 0), (3, 3)}
-
-
-             b)  The symmetric closure of R is R with (b, a) for which (a, b) is in R.
-                 In this case the symmetric of R is
-                 {(0, 1), (0, 2), (0, 3), (1, 0) (1, 1), (1, 2), (2,0), (2, 1) (2, 2), (3, 0)}
-
-
-          Exercise
-
-                                    ) |
-          Let R be the relation  ( { ,a b a ≠  } b  on the set of integers. What is the reflexive closure of R?
-          Solution
-
-             When we add all the pairs (x, x) to the given relation we have all of  Z×Z, which the relation will
-             always holds.
-
-
-          Exercise
-
-                                                 }
-          Let R be the relation  ( { , a  b a divides b  on the set of integers. What is the symmetric closure of R?
-                                    ) |
-          Solution
-
-             To form the symmetric closure, we need to add all the pairs (b, a) such that (a, b) is in R.
-             We need to include pairs (b, a) such that a divides b, which is equivalent to saying that we need to
-             include all the pairs (a, b) such that b divides a.
-             Thus the closure is {(a, b) | a divides b or b divides a}
-
-
-          Exercise
-
-          How can the directed graph representing the reflexive closure of a relation on a finite set be constructed
-          from the directed graph of the relation?
-          Solution
-
-             To form a reflexive closure, we simply need to add a loop at each vertex that does not already have
-             one.
 
                                                            198</code></pre>
      	</div>

@@ -152,7 +152,39 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Sieve of Eratosthenes
+    <pre style="white-space:pre-line"><code>Uniqueness of Prime Factorization
+
+          We will prove that a prime factorization of a positive integer  where the primes are in nondecreasing order
+          is unique.
+
+
+          Proof  (by contradiction)
+          Suppose that the positive integer n can be written as a product of primes in two distinct ways:
+              n =  pp     p  and  n =  qq    q
+                   12       s          12      t
+          Remove all common primes from the factorizations to get
+                         pp       p   =  q q      q
+                          i 1  i 2  i u   j 1  j 2   j v
+          By Lemma 3, it follows that    p  divides  q  , for some k, contradicting the assumption that  p  and
+                                        i 1          j k                                              i 1
+          q   are distinct primes.
+            j k
+          Hence, there can be at most one factorization of n into primes in nondecreasing order.
+
+
+
+          Dividing Congruences by an Integer
+
+          Theorem
+          Let m be a positive integer and let a, b, and c be integers. If ac ≡ bc (mod m) and gcd(c,m) = 1, then a ≡ b
+          (mod m).
+
+
+
+          Proof
+
+           Since ac ≡ bc (mod m), m | ac − bc = c(a − b)   by Lemma 2  and the fact that gcd(c,m) = 1, it follows
+           that   m | a − b.  Hence, a ≡ b (mod m).
 
 
 
@@ -183,51 +215,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           The infinitude of Primes
-
-                                                                                                   ,
-           It has long been known that there are infinitely many primes. This means that whenever  p p  ,  , p
-                                                                                                  1   2        n
-           are the n smallest primes, we know there is a larger.
-
-
-           Theorem
-
-           There are infinitely may primes.
-
-                                                    ,
-           Proof:  Assume finitely many primes:   p p   ,  , p
-                                                   1   2       n
-           Let  q =  pp     p +  1. Either q is prime or by the fundamental theorem of arithmetic it is a product of
-                    12        n
-           primes. But none of the primes  p  divides q since if   p  | q, then  p   divide   q −  pp    p =  1
-                                           i                     i           i             12        n
-           .Hence, there is a prime not on the list  p p  ,  , p It is either q, or if q is composite, it is a prime
-                                                   ,
-                                                  1   2        n
-
-                                                            122</code></pre>
+                                                           122</code></pre>
      	</div>
     
      </div>

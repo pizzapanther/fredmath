@@ -152,88 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>8.   Let R be the relation on the pair (a, b) if a and b are cities such that there is a direct non-stop
-
-                  airline flight from a to b. When is (a, b) in
-
-                                         3
-                          2
-                                                        *
-                     ) a  R         ) b  R          ) c  R
-
-             9.   Let R be the relation on the set of all students containing the ordered pair (a, b) if a and b are in at
-                  least one common class and a ≠ b. When is (a, b) in
-                          2
-                                         3
-                                                        *
-                     ) a  R         ) b  R         ) c  R
-
-                                                                     *
-             10.  Suppose that the relation R is reflexive. Show that  R  is reflexive.
-                                                                      *
-             11.  Suppose that the relation R is symmetric. Show that  R  is symmetric.
-                                                                          2
-             12.  Suppose that the relation R is irreflexive. Is the relation  R  necessarily irreflexive.
+    <pre style="white-space:pre-line"><code>Section 4.4 – Equivalence Relations
 
 
 
 
+             Definition
+             A relation on a set A is called an equivalence relation if it is reflexive, symmetric, and transitive.
 
 
+             Definition
+
+             Two elements a and b that related by an equivalence relation are called equivalent. The notation  a   is
+                                                                                                              b
+             often used to denotes that a and b are equivalent elements with respect to a particular equivalence relation.
 
 
+             Example
 
 
+             Let R be the relation on the set of integers such that aRb if and only if a = b or a = −b. It follows that R is
+             an equivalence relation.
 
 
+             Example
+
+             Let R be the relation on the set of real numbers such that aRb if and only if a −b is an integer . Is R an
+             equivalence relation?
+
+             Solution
+                Because a – a = 0 is an integer for all real numbers a, aRa for all real numbers a. Hence, R is reflexive
+                Suppose that aRb, then a – b is an integer, so b – a and b – c are integers.
+                Therefore, a – c = (a – b) + (b – c) is also an integer. Hence, aRc.
+                Thus, R is transitive. Consequently, R is an equivalence relation.
 
 
+             Example
 
 
+                                                                         ,
+             Let m be an integer with m &gt; 1. Show that the relation  R =  ( { a  b ) | a ≡ b  (mod  m  } )  is an equivalence
+             relation on the set of integers.
+             Solution
 
+                 a ≡  b  (mod  m ) iff m divides a – b.
+                Since  0 =  0 m  then a – a = 0 is divisible by m. Hence,  a ≡  a  (mod  m ) , so congruence modulo m is
+                           ⋅
+                reflexive.
+                Suppose that  a ≡ b  (mod  m ), then a – b is divisible by m, so a – b = km, where k is an integer. It
 
+                follows that b – a = (−k)m, so b ≡  a  (mod  m ). Hence, congruence modulo m is symmetric.
+                Suppose that  a ≡ b  (mod  m ) and b ≡  c  (mod  m ), then m divides both a – b and b – c. so  a −=  km
+                                                                                                          b
+                                                                                                   +
+                        c
+                and  b − =  lm, where k and l are integers. It follows that a c− =  (a b−  ) (b c+  −  ) =  km lm = (k l m+  ) ,
+                so  a ≡  c  (mod  m ) . Hence, congruence modulo m is transitive.
+                The congruence modulo m is an equivalence relation.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            213</code></pre>
+                                                              213</code></pre>
      	</div>
     
      </div>

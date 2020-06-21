@@ -152,68 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>j)  Not linear since  a 2
+                                 n− 1
 
-        Find the general form of the solutions of the recurrence relation   a = 8a  − 16a
-                                                                        n      n−  2    n−  4
-        Solution
-
-            This is a fourth-degree recurrence relation.
-                                                                 )
-                                                                  2
-            The characteristic polynomial is r −  4  8r +  2  16 =  ( r −  2  4
-
-            ( r −  2  4 ) 2  =  (r −  2 ) (r + 2  ) 2  2  = 0
-
-
-            The roots are −2 and 2, each with multiplicity 2.
-
-            The general solution:    a =  α  2 +  n  α  n  2 ⋅  n  +  α  ( ) 2  n  +  α −  n ⋅  ( ) 2  n
-                                                                              −
-                                       n    1       2         3          4
-
+            k)  Linear, homogeneous, with constant coefficients; degree 3
+            l)  Linear with constant coefficients, not homogeneous
 
 
         Exercise
-        What is the general form of the solutions of a linear homogeneous recurrence relation if its characteristic
-        equation has roots 1, 1, 1, 1, −2, −2, −2, 3, 3, −4?
 
+        Solve these recurrence relations together with the initial conditions given
+
+          a)  a =  2a       for n ≥  1,  a =  3
+               n      n− 1               0
+          b)  a =  5a     −  6a     for n ≥  2,  a =  1,  a =  0
+               n      n −  1  n −  2              0       1
+          c)  a =  4a     −  4a      for n ≥  2,  a =  6,  a =  8
+               n      n−  1   n−  2               0        1
+          d)  a =  4a       for n ≥  2,  a =  0,  a =  4
+               n      n− 2                0       1
+                   a
+          e)  a =    n− 2   for  n ≥  2,  a =  1,  a =  0
+               n     4                   0       1
+          f)  a =  a    +  6a      for n ≥  2,  a =  3,  a =  6
+               n     n −  1  n −  2              0       1
+          g)  a =  7a     −  10a     for n ≥  2,  a =  2,  a =  1
+               n      n −  1   n −  2              0       1
+          h)  a =  −  6a   −  9a      for n ≥  2,  a =  3,  a =  −  3
+               n       n−  1   n−  2               0       1
+          i)  a     =  −  4a  +  5a   for n ≥  0,  a =  2,  a =  8
+               n +  2     n −  1  n                0       1
         Solution
 
-            There are 4 distinct roots, so t = . The multiplicities are 4, 3, 2, and 1.
-                                           4
-            The general solution:
-            a =  ( α   +  α  n α  +  n +  2  α  n 3 ) ( α  +  α  n α  +  n 2 ) ( ) 2  n
-                                                 +
-                                                                           −
-              n     1,0   1,1     1,2      1,3       2,0    2,1     2,2
-                                              −
-                         +  ( α  3,0  +  α  3,1 n ) 3 +  n  α  4,0  ( ) 4  n
 
-
-
-        Exercise
-        What is the general form of the solutions of a linear homogeneous recurrence relation if its characteristic
-        equation has roots  −1, −1, −1, 2, 2, 5, 5, 7?
-
-        Solution
-
-            There are 4 distinct roots, so t = . The multiplicities are 3, 2, 2, and 1.
-                                           4
-               The general solution:
-                                                                   n
-                                                                  2 +
-                a =  ( α   +  α  n α  +  n 2 ) ( ) 1  n  +  ( α  +  α  n ) ( α  +  α  n ) 5 +  n  α  7 n
-                                            −
-                 n     1,0    1,1    1,2              2,0    2,1         3,0    3,1        4,0
-
-
-
-
-
-
-
-
+                                                    =
+            a)  The characteristic polynomial is  r − 20 ⇒    r =  2
+                                               n
+               The general solution:  a = α  2
+                                       n    1
+                   3 α  =  2 0  →  α  =  3
+                        1           1
+                                               ⋅
+               Therefore, the solution is a  = 32 n
+                                          n
+            b)  The characteristic polynomial is  r 2  − 5r + 6 0 ⇒  r =  2, 3
+                                                          =
+                                                      n
+                                               n
+               The general solution:  a = α  2 +  α  3
+                                       n    1       2
+                   1 α =  2 +  0  α  3 0  →  1 α =  α +
+                        1       2              1    2     ⇒     α  3, α =  =  −  2
+                   0 α  =  2 +  1  α  3 1  →  02 α =  3 α +     1        2
+                        1       2               1     2
+                                              32 −⋅
+               Therefore, the solution is  a  =⋅  n  23 n
+                                          n
+            c)  The characteristic polynomial is  r 2  − 4r +=      r =  2, 2
+                                                        4 0 ⇒
+               The general solution:  a = α  2 +  n  α  n  2 ⋅  n
+                                       n    1       2
 
 
 

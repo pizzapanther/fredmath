@@ -152,73 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Division Rule
+    <pre style="white-space:pre-line"><code>Corollary
+
+             Let n and r be nonnegative integers with     r ≤ n. Then C(n, r) = C(n, n − r).
+
+             Proof
+
+                                                C
+                                                       )
+                From Theorem 2, it follows that  ( , nr =      ! n
+                                                            !( −
+                                                           rn r   )!
+                               )
+                  and  ( , nn r =           ! n        =      ! n
+                    C
+                           −
+                                                              )! !
+                                                            −
+                                  (nr   −  )! n  (nr−  )! −    (n rr
+                                         
+                   Hence, C(n, r) = C(n, n − r).
 
 
              Definition
-
-             There are n/d ways to do a task if it can be done using a procedure that can be carried out in n ways, and
-             for every way w, exactly d of the n ways correspond to way w.
-               Restated in terms of sets: If the finite set A is the union of n pairwise disjoint subsets each with d
-                elements, then n = |A|/d.
-
-               In terms of functions: If f is a function from A to B, where both are finite sets, and for every value y ∈
-                B there are exactly d values x ∈ A such that f(x) = y, then   |B| = |A|/d.
-
+             A combinatorial proof of an identity is a proof that uses one of the following methods.
+                A double counting proof uses counting arguments to prove that both sides of an identity count the
+                  same objects, but in different ways.
+                A bijective proof  shows that there is a bijection between the sets of objects counted by the two sides
+                  of the identity.
 
 
              Example
-             How many ways are there to seat four people around a circular table, where two seatings are considered
-             the same when each person has the same left and right neighbor?
+
+             How many ways are there to select five players from a 10-member tennis team to make a trip to a match
+             at another school?
 
              Solution
 
-                Number the seats around the table from 1 to 4 proceeding clockwise.
-                There are four ways to select the person for seat 1, 3 for seat 2, 2, for seat 3, and one way for seat 4.
-
-                Thus, there are 4! = 24 ways to order the four people.
-                But since two seating’s are the same when each person has the same left and right neighbor, for every
-                choice for seat 1, we get the same seating.
-
-                Therefore, by the division rule, there are 24/4 = 6 different seating arrangements.
+                                                       )
+                The number of combinations is  (10, 5 =       10!      252
+                                               C
+                                                                      =
+                                                                −
+                                                           5! (10 5 )!
 
 
+             Example
+             A group of 30 people have been trained as astronauts to go on the first mission to Mars. How many ways
+             are there to select a crew of six people to go on this mission?
+
+             Solution
+                                                C
+                                                         )
+                The number of possible crews is  (30, 6 =    30!    593,775
+                                                                  =
+                                                            6!24!
 
 
+             Example
 
+             How many bits strings of length n contain exactly r 1s?
 
+             Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                The positions of r 1s in a bit string of length n form an r-combination of the set {1,2,3, ,  } n . There
+                           )
+                are  ( ,C n r .
                                                               169</code></pre>
      	</div>
     

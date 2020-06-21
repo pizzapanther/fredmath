@@ -152,58 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The truth table Show that  p ∨  (qr∧  )  and ( pq∨  ) ( pr∧  ∨  ) are logically equivalent.
-             In these equivalences, T denotes the compound proposition that is always true and F denotes the
-             compound proposition that is always false.
+    <pre style="white-space:pre-line"><code>≡ ¬
+             ¬ ( p ∨  p ∨  2  ∨  p n ) (  p ∧¬ p ∧  2  ∧¬ p n )
+                                        1
+                 1
+                                   ≡ ¬
+             ¬ ( p ∧  p ∧  2  ∧  p n ) (  p ∨¬ p ∨  2  ∨¬ p n )
+                 1
+                                        1
 
-                                                    Logical Equivalences
 
-                                           Equivalence                       Name
+             Using De Morgan’s Laws
 
-                                             p ∧   =T  p
-                                                                    Identity laws
-                                             p ∨   = F  p
+             The two logical equivalences known as De Morgan’s laws are particularly important. The equivalence
+                     )
+                  ∨
+                               q
+             ¬ ( pq ≡ ¬ ∧¬  and similarly  ( pq¬    ∧  ) ≡ ¬ ∨¬
+                          p
+                                                            p
+                                                                 q
 
-                                             p ∨   ≡T  T
-                                                                    Domination laws
-                                             p ∧   ≡ F  F
 
-                                             p ∨  p ≡  p
-                                                                    Idempotent laws
-                                             p ∧  p ≡  p
+             Example
+             Use De Morgan’s laws to express the negations of “Miguel has a cellphone and he has a laptop computer”
+             and “Heather will go to the concert or Steve will go to the concert.”
 
-                                            ¬¬    )   p             Double negation law
-                                              ( p ≡
-                                            pq∨ ≡∨     p
-                                                   q
-                                                                    Commutative laws
-                                            pq∧ ≡∧     p
-                                                   q
-                                      ( pq∨  ) r∨  ≡  p ∨  (qr∨  )
-                                                                    Associative laws
-                                      ( pq∧  ) r∧  ≡  p ∧  (qr∧  )
+             Solution
+                Let:  p be “Miguel has a cellphone”
+                      q be “Miguel has a laptop computer”
+                can be expressed as  pq
+                                      ∧
+                                                                       q
+                By De Morgan’s laws  ( pq¬  ∧  )  is equivalent to  p¬ ∨¬ .We can express the negation of our
+                original statement as “Miguel does not have a cellphone or he does not have a laptop computer”
 
-                                    p ∨  (qr∧  ) ( pq≡  ∨  ) ( pr∧  ∨  )
-                                                                    Distributive  laws
-                                    p ∧  (qr∨  ) ( pq≡  ∧  ) ( pr∨  ∧  )
+                Let:  r be “Heather will go to the concert”
+                      s be “Steve will go to the concert”
+                can be expressed as  r ∨
+                                       s
+                By De Morgan’s laws  (r¬  ∨   ) s ≡ ¬ ∧¬ . We can express the negation of our original statement as
+                                                  r
+                                                       s
+                “Heather will not go to the concert and Steve will not go to the concert.”
 
-                                        ¬ ( pq∧  ) ≡ ¬ ∨¬
-                                                     p
-                                                          q
-                                                                    De Morgan’s laws
-                                                     p
-                                                          q
-                                        ¬ ( pq∨  ) ≡ ¬ ∧¬
-                                           p ∨  ( pq∧  ) ≡  p
-                                                                    Absorption laws
-                                           p ∧  ( pq∨  ) ≡  p
 
-                                                  p
-                                            p ∨¬ ≡ T
-                                                                    Negation laws
-                                                  p
-                                            p ∧¬ ≡ F
+             Example
 
+                                            q
+             Show that  ( p¬  →  ) q  and  p ∧¬  are logically equivalent.
+             Solution
+                                                        p     q     p → q     ¬  ( p →  ) q     ¬q    p ∧¬q
+                ¬ ( p →   ) q ≡¬ ( pq¬ ∨  )
+                                                        T     T       T           F         F         F
+                          ≡ ¬ ( p¬  ) ∧¬                T     F       F           T         T          T
+                                       q
+                                  q
+                          ≡  p ∧¬
+                                                        F     T       T           F         F         F
+                                                        F     F       T           F         T         F
 
 
 

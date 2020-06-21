@@ -152,61 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-          For each of these relations on the set {1, 2, 3, 4}, decide whether it is reflexive, symmetric, antisymmetric
-          and transitive
-           a)  {(2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4)}
-           b)  {(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (4, 4)}
-           c)  {(2, 4), (4, 2)}
-           d)  {(1, 2), (2, 3), (3, 4)}
-           e)  {(1, 1), (2, 2), (3, 3), (4, 4)}
-           f)  {(1, 3), (1, 4), (2, 3), (2, 4), (3, 1), (3, 4)}
-
-          Solution
-
-             a)  This relation is not reflexive, since (1, 1) is not included
-                 It is not symmetric, since (2, 4) is included but not (4, 2)
-                 It is not antisymmetric, since it includes (2, 3) and (3, 2) but 2 ≠ 3
-                 (2, 3 ) &  (3, 4 )  →  (2, 4)   &  (3,2 ) &  (2,4 )  →  (3,4)    It is transitive.
-                 (2, 3 ) &  (3, 2 )  →  (2, 2)   (3, 2 ) &  (2, 3 )  →  (3, 3)
-
-             b)  This relation is reflexive, since (1, 1), (2, 2), (3, 3), and (4, 4)} are included
-                 It is symmetric, since (2, 1) and (1, 2) are included
-                 It is not antisymmetric, since it includes (2, 1) and (1, 2) but 2 ≠ 1
-                      )
-                 (2, 1 &      (1, 2   )  →  (2, 2)  It is transitive.
-
-                  (1, 2 ) &  (2, 1 )  →  (1, 1)
-
-             c)  This relation is not reflexive, since (1, 1) is not included
-                 It is symmetric, since (2, 4) and (4, 2) are included
-                 It is not antisymmetric, since it includes (2, 4) and (4, 2) but 2 ≠ 4
-                 It is not transitive, since it includes (2, 4) and (4, 2) but not (2, 2)
-             d)  This relation is not reflexive, since (1, 1) is not included
-                 It is not symmetric, since (1, 2) is included but not (2, 1)
-                 It is antisymmetric, since no cases of (a, b) and (b, a) both being in the relation
-                 It is not transitive, since it includes (1, 2) and (2, 3) but not (1, 3)
-
-             e)  This relation is reflexive, since (1, 1), (2, 2), (3, 3), and (4, 4)} are included and it is symmetric
-                 It is antisymmetric, since no cases of (a, b) and (b, a) both being in the relation
-                 It is transitive, since the only time the hypothesis ( ,a  b ) R∈∧ ( ,b c ) R∈  is met is when  abc≡ ≡
-
-             f)  This relation is not reflexive, since (1, 1) is not included
-                 It is not symmetric, since (1, 4) is included but not (4, 1)
-                 It is not antisymmetric, since it includes (1, 3) and (3, 1)
-                 It is not transitive, since it includes (2, 3) and (3, 1) but not (2, 1)
+    <pre style="white-space:pre-line"><code>h)  The characteristic polynomial is  r +  2  6r +  9 0 ⇒  r =  −  3, −  3
+                                                          =
+               The general solution:  a  = α  ( ) 3  n  +  α  n −  ( ) 3  n
+                                              −
+                                       n    1          2
+                                         0 −
+                              −
+                       3 α  =  ( ) 3  0  +  α  ( )( ) 3  0  3 α →  =
+                            1          2                     1           ⇒     α  3, α =  =  −  2
+                               1
+                                       1 −
+                     3 α − =  ( ) 3 + α −  ( )( ) 3  1  →  3 = − 3 α −  3 α + −  1      2
+                          1         2                         1      2
+                                                 ( ) 3
+               Therefore, the solution is   a  =  3⋅−  n  −  2n ( ) 3−  n  =  (32n−  )( ) 3−  n
+                                          n
+                                                        5 0 ⇒
+            i)  The characteristic polynomial is  r 2  + 4r −=      r = − 5, 1
+                                                         n
+               The general solution:  a  = α  ( ) 5  n  α  1 = α+  ( ) 5  n  +  α
+                                              −
+                                                                 −
+                                       n    1          2      1           2
+                    2 α =  ( ) 5  0  α +  →  2 α =   α +
+                            −
+                         1          2             1    2    ⇒    α  −  1, α =  =  3
+                           −
+                   8 α =  ( ) 5 +  1  α  →  8 =  5α −  α +       1         2
+                        1          2               1    2
+                                               ( ) 5
+               Therefore, the solution is  a  = − −  n  + 3
+                                          n
 
 
+        Exercise
+
+        How many different messages can be transmitted in n microseconds using three different signals if one
+        signal requires 1 microsecond for transmittal, the other two signals require 2 microseconds each for
+        transmittal, and a signal in a message is followed immediately by the next signal?
+
+        Solution
+
+            The model is the recurrence relation  a =  a   +  a   +  a   =  a   +  2a     with  a =  a = 1
+                                                 n     n −  1  n −  2  n −  2  n −  1  n −  2   0    1
+                                             2
+                                                r
+                                                     =
+            The characteristic polynomial is  r −− 20
+            So, the roots are −1, and 2
+                                                          n
+            The general solution:    a   = α  ( ) 1  n  +  α  2
+                                              −
+                                       n    1          2
+            Plugging in initial conditions gives
+                1 α =  ( ) 1−  0  α +  2 0  →  1 α =  α +
+                    1          2               1    2
+                1 α  =  ( ) 1−  1 +  α  2 1  →  1=  −  α  2 α +     ⇒    α  1 , α =  =  2
+                    1          2               1      2         1   3     2   3
+                                                                        2
+            Therefore, the solution is in n microseconds   a =  1 ( ) 1  n  +  2 n   messages can be transmitted.
+                                                                −
+                                                         n   3         3
 
 
 
+        Exercise
+        In how many ways can a  2 n×  rectangular checkerboard be tiled using 12×  and  22×  pieces?
+
+        Solution
 
 
 
-
-
-                                                           182</code></pre>
+                                                          182</code></pre>
      	</div>
     
      </div>

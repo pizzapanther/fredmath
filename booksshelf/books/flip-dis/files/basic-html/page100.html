@@ -152,57 +152,59 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Algorithm 3 − Binary Search
+    <pre style="white-space:pre-line"><code>Proof   (i)
 
+             Suppose If a | b and a | c. Then, from the definition of divisibility, it follows that there are integers s
+             and t with b = as and c = at. Hence,
 
-           Given a list which must be sorted, find element in the list
-
-               procedure linear_search (x: integer; a a  ,  , a : increasing integers)
-                                                     ,
-                                                   1   2        n
-               i  := 1   { i is left endpoint of search interval }
-               j := n    { j is right endpoint of search interval }
-               while i &lt; j
-               begin
-
-                    m  :=     (i +  j ) / 2       {m is the point in the middle }
-
-                    if  x &gt;  a    then i := m+1
-                            m
-                    else j := m
-               end
-
-               if x =  a  then location := i
-                      i
-               else location := 0
-
-               {location is the subscript of the term that equals x, or it is 0 if x is not found}
-
-                          x =  4 1  location  7
-
-
-           Sorting
-
-           Ordering the elements of a list is a problem that occurs in many contexts. Suppose that we have a list of
-           elements of  a set. Suppose  that we  have  a  way to order  elements of the  set.  Sorting  is putting these
-           elements into a list in which the elements are in increasing order.
-
-           There are two types:
-                 Bubble sort
-
-                 Insertion sort
-
-
-           Bubble Sort
-
-           The bubble sort is one of the simplest sorting algorithms, but not one of the most efficient. It takes
-           successive elements and “bubbles” them up the list.
+                     b c+=  as at =   ( a s t+  )
+                              +
 
 
 
 
 
 
+             Therefore, a divides b + c.
+
+
+          Corollary
+
+                                          0
+          If a, b, and c integers, where  a ≠ , such that a | b and a | c, then a | mb + nc whenever m and n are
+          integers.
+
+
+
+          The Division Algorithm
+
+          Theroem
+
+          Let a be an integer and d a positive integer. Then there are unique integers q and r, with 0 ≤ &lt;  d , such
+                                                                                                  r
+          that a = dq r .
+                     +
+
+
+          Definition
+
+          In the equality given in the division algorithm, d is called the divisor, a called the dividend, q is called the
+
+          quotient, and r is called the remainder. This notation is used to express the quotient and remainder:
+                                              q =  a div  d ,  r =  a mod  d
+
+
+
+          Example
+
+          What are the quotient and remainder when 101 is divided by 11?
+          Solution
+
+             101 11 9 2
+                     ⋅+
+                 =
+             Hence, the quotient when 101 is divided by 11 is 9 = 101 div 11,
+             and the remainder is 2 = 101 mod 11.
 
 
 
@@ -211,9 +213,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-                                                            100</code></pre>
+                                                           100</code></pre>
      	</div>
     
      </div>

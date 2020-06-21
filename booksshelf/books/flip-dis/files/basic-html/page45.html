@@ -152,67 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Counterexamples
+    <pre style="white-space:pre-line"><code>Section 1.6 − Proof Methods and Strategy
 
-             To show that a statement of the form  x P x∀  ( )  is false, we need only find a counterexample, that is, an
 
-             example of x for which  ( ) x  is false.
-                                    P
+
+
+             Introduction
+
+
+             The strategy behind constructing proofs includes selecting a proof method and then successfully
+             constructing an argument step by step, based on this method.
+
+
+             Exhaustive Proof and Proof by Cases
+
+                                                         (
+             To prove a conditional statement of the form   p ∨  1  p ∨  2  ∨  p n ) →  q
+
+
+             The tautology     ( p ∨  p ∨  ∨  p  ) →  q ↔      ( p →  q ∧  ) (  p →  q ∧  )  ∧  ( p →  q ) 
+                                1    2        n             1          2               n       
+             can be used as a rule of inference
+             Such an argument is called a proof by cases. Sometimes to prove that a conditional statement  p →  is
+                                                                                                            q
+             true, it is convenient to use a disjunction  p ∨  p ∨  ∨  p  instead of p as the hypothesis of the
+                                                      1    2         n
+             conditional statement, where p and  p ∨  p ∨   ∨  p  are equivalent.
+                                                1     2        n
+
+
+             Exhaustive Proof
+
+
+             Also known as proof  by cases, perfect induction, or the brute force method, is a method of mathematical
+             proof in which the statement to be proved is split into a finite number of cases and each case is checked to
+             see if the proposition in question holds.
+
+
+             Theorem
+             A proposition that has been proved to be true
+
+                •  Two special kinds of theorems: Lemma and Corollary.
+                •  Lemma: A theorem that is usually not too interesting in its own right but is useful in proving
+                    another theorem.
+                •  Corollary: A theorem that follows quickly from another theorem.
+
 
 
              Example
 
-             Show that the statement “Every positive integer is the sum of the squares of two integers” is false.
+                                  n
+             Prove that (n +  ) 1  3  ≥  3  if n is a positive integer with  n ≤
+                                                                    4
              Solution
 
-                To show that this statement is false, we look for a counterexample, which is a particular integer that is
-                not the sum of the squares of two integers.
-                To choose a counterexample, we can select 3 because it cannot be written as the sum of the squares of
-                two integers.
-
-                                               2
-                                                   2
-                                                                 3
-                Let use 0 and 1 which implies 0 + 1 =  0 1 1+= ≠ .
-                Therefore, we can’t get 3 as the sum of two terms of which is 0 or 1.
-                Consequently, we have shown that “Every positive integer is the sum of the squares of two integers”
-                is false.
-
-
-
-             Mistakes in Proofs
-
-             Each step of a mathematical proof needs to be correct and the conclusion needs to follow logically from
-             the steps that precede it. Many mistakes result from the introduction of steps that do not logically follow
-             from those that precede it.
-
-
-
-             Example
-
-                                                  2
-             What is wrong with this “proof?”: If  n  is positive, then n is positive.
-                                    2
-                                                                                                         2
-              Proof: Suppose that  n  is positive. Because the conditional statement “If n is positive, then  n  is
-                      positive” is true, we can conclude that n is positive.
-
-             Solution
-
-                                                           2
-                Let  ( ) n  be “n is positive” and  ( )  be “ n  is positive.”
-                                                Qn
-                    P
-                                                            ( )) .
-                The statement can be written:  ( n P n∀  ( ) →  Qn
-                                                             2
-                A counterexample is supplied by  n = − ⇒   n =  1 is positive, but n is negative.
-                                                      1
-
-
-
-
-
+                Using a proof by exhaustion:
+                                             1
+                For n = 1: (n +  ) 1  3  =  2 =  3  8 ≥ 3 = 3
 
                                                               45</code></pre>
      	</div>

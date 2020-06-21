@@ -152,56 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>We can use an iterative approach to solve this recurrence relation by repeatedly expressing Hn in terms
-                of the previous terms of the sequence.
-
-                    H =   2H     + 1
-                      n       n− 1
-                            (
-                         =  22H n− 2  +  1 +  )  1
-
-                            2
-                         = 2 H     ++
-                                     21
-                               n− 2
-                                        )
-                         =  2 2 ( 2H n− 3  + 1 ++
-                                            21
-                            3
-                                      2
-                                          21
-                         =  2 H    +  2 ++
-                               n− 3
-                             
-                         =  2 n−  1 H + 2 n−  2  + 2 n−  3  + ++      since  H = 1
-                                                        21
-                                 1                                            1
-                                                    21
-                         =  2 n−  1  +  2 n−  2  +  2 n−  3 + ++
-                                                        Using the formula for the sum of the terms of geometric series
-                            n
-                         =  2 − 1
+    <pre style="white-space:pre-line"><code>The solutions to the recurrence relation are of the form  a =  α  1 ⋅  n  +  α  2 ⋅  n  +  α  3 ⋅  n   where α ,
+                                                                        n    1        2        2             1
+                α and α are constants.
+                  2       3
+                      a    2 α =  =  α +  α +
+                       0        1    2    3
+                    
+                      a 1  5 α = =  1  α +  2  2 α ⋅ +  3  3 ⋅  α →  1  1  α=  2  = − 1   and   α  3  =  2
+                    
+                      a = 15 α =  1  α +  2  4 α ⋅ +  3  9 ⋅
+                       2
+                                 n
+                          n
+                a =   1 2 +   23
+                               ⋅
+                       −
+                  n
 
 
-                There was a myth created with the puzzle. Monks  in a tower in Hanoi are transferring 64 gold disks
-                from one peg to another following the rules of the puzzle.  They move one disk each day. When the
-                puzzle is finished, the world will end.
-                Using this formula for the 64 gold disks of the myth,
-                    2   − 1 = 18,446, 744,073, 709,551,615 days are needed to solve the puzzle, which is more than
-                     64
-                    500 billion years.
+             Theorem
 
-                Reve’s puzzle (proposed in 1907 by Henry Dudeney) is similar but has 4 pegs. There is a well-known
-                unsettled conjecture for the minimum number of moves needed to solve this puzzle.
+             Let  c  c  ,  , c be real numbers. Suppose that the characteristic equation
+                   ,
+                  1   2       k
+                           r −  k  cr k−  1 −  c r k−  2  −  −  c =  0
+                                 1        2              k
+             has t distinct roots  ,  ,  , r  with multiplicities  m m  ,  , m  respectively so that m ≥ 1 for i =
+                                                                    ,
+                               r r
+                                1  2       k                      1    2        k                      i
+             0, 1, 2, …, t  and m +  m +    +   m =  k Then a sequence {an}   is a solution of the recurrence relation
+                               1     2          t
+                            a =  ca      +  c a    +   +  c a
+                             n    1 n −  1  2 n −  2      k nk
+                                                              −
+                                                                1
+                    iff    a =     α  +  α  n +  +  α      n ⋅  m − 1   r n
+                             n       1,0  1,1      1,m − 1            1
+                                                        1
+                                 +      α  +  α  n +  +  α   n ⋅  m − 1     r n
+                                                                   2
+                                    2,0    2,1         2,m − 1          2
+                                                           2
+                                                                   m − 1   n
+                                     +    α +  +  α  n +  +  α  n ⋅  t    r
+                                         t ,0   ,1 t       , t m − 1       t
+                                                              t
+                  for n = 0, 1, 2, …, where α   are constants for 1≤ i ≤ t  and 0 ≤  j ≤ mi−1.
+                                           , ij
 
 
 
+             Example
 
 
+             Suppose that the roots of the characteristic equation of a linear homogeneous recurrence relation are 2, 2,
+             2, 5, 5, and 9 (that is, there are three roots, the root 2 with multiplicity three, the root 5 with multiplicity
+             two, and the root 9 with multiplicity one). What is the form of the general solution?
+             Solution
 
-
-
-
+                The general form of the solution is:
+                    ( α  1,0  +  α  1,1 n α  +  1,2  n ⋅  2 ) ( α  2,0  +  α  2,1 n ) 5 +  n  α  3,0 9
+                                                                          n
+                                             n
+                                            2 +
 
 
 

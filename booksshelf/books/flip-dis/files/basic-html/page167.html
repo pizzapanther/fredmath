@@ -152,58 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Basic Counting Principles
+    <pre style="white-space:pre-line"><code>Example
 
+             How many ways are there to select a first-prize winner, a second prize winner, and a third-prize winner
+             from 100 different people who have entered a contest?
 
+             Solution
 
-             Definition:  The Sum Rule
+                 P (100,3 ) 100 99 98=  ⋅  ⋅  = 970,200
 
-             If a task can be done either in one of  n  ways or in one of  n ways to do the second task, where none of
-                                                  1                    2
-             the set of  n  ways is the same as any of the  n ways, then there are  n +  n ways to do the task.
-                       1                                 2                      1    2
 
 
              Example
 
-             The mathematics department must choose either a student or a faculty member as a representative for a
-             university committee. How many choices are there for this representative if there are 37 members of the
-             mathematics faculty and 83 mathematics majors and no one is both a faculty member and a student.
-
+             Suppose that there are eight runners in a race. The winner receives a gold medal, the second-place finisher
+             receives a silver medal, and the third-place finisher receives a bronze medal. How many different ways
+             are there to award these medals, if all possible outcomes of the race can occur and there are no ties?
              Solution
 
-                By the sum rule it follows that there are 37 + 83 = 120 possible ways to pick a representative.
+                                         6
+                                  =
+                There are:  (8,3P  ) 8 7 ⋅⋅ =  6 3 3    ways
 
 
              Example
 
-             A student can choose a computer project from one of three lists. The three lists contain 23, 15, and 19
-             possible projects, respectively. No project is on more than one list. How many possible projects are there
-             to choose from?
+             Suppose that a saleswoman has to visit eight different cities. She must begin her trip in a specified city,
+             but she can visit the other seven cities in any order she wishes. How many possible orders can the
+             saleswoman use when visiting these cities?
+
              Solution
+                The first city is chosen, and the rest are ordered arbitrarily. Hence the orders are:
 
-                Since no project is on more than one list, by the sum rule there are 23 + 15 + 19 = 57 ways to choose a
-                project.
+                         7! 5040=
 
+                If she wants to find the tour with the shortest path that visits all the cities, she must consider 5040
+                paths!
 
-
-             The Sum Rule in terms of sets
-
-             The sum rule can be phrased in terms of sets.
-
-                    |A ∪ B|= |A| + |B| as long as A and B are disjoint sets.
-
-             Or more generally,  A   A     A    =  A +  A +     +  A   when  A   A = ∅ for all i, j.
-                                 1     2         m     1     2          m          i    j
 
 
              Example
 
-             Suppose statement labels in a programming language can be either a single letter or a letter followed by a
-             digit. Find the number of possible labels.
+             How many permutations of the letters ABCDEFGH contain the string ABC ?
 
              Solution
-                Use the product rule.  26 + 26 ∙ 10 = 286
+                We solve this problem by counting the permutations of six objects, ABC, D, E, F, G, and H.
+                          6! 720=
+
+
+
+
+
+
+
+
+
 
 
 

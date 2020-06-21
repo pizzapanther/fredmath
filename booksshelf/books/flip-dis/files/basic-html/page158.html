@@ -152,69 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Well-Formed Formulae in Propositional Logic
+    <pre style="white-space:pre-line"><code>Example
 
-          Definition
+          How many functions are there from a set with m elements to a set with n elements?
 
-          The set of well-formed formulae in propositional logic involving T, F, propositional variables, and
-          operators from the set {¬, ∧, ∨, →, ↔}.
-
-          Basis step:  T, F, and s, where s is a propositional variable, are well-formed formulae.
-          Recursive step:  If E and F are well formed formulae, then   (¬ E), (E ∧ F), (E ∨ F), (E → F), (E ↔ F),
-                          are well-formed formulae.
-
-
-          Examples
-
-             ((p ∨q) → (q ∧ F)) is a well-formed formula.
-                 pq ∧  is not a well formed formula.
+          Solution
+              Since a function represents a choice of one of the n elements of the codomain for each of the m
+                                                                                      m
+              elements in the domain, the product rule tells us that there are n n⋅  n =   n  such functions.
 
 
 
-          Rooted Trees
+          Counting One-to-One Functions
+          Example
 
-          Definition
 
-          The set of rooted trees, where a rooted tree consists of a set of vertices containing a distinguished vertex
-          called the root, and edges connecting these vertices, can be defined recursively by these steps:
+          How many one-to-one functions are there from a set with m elements to one with n elements?
+          Solution
 
-          Basis step:  A single vertex r is a rooted tree.
-                                                                                         r r
+             Suppose the elements in the domain are a a    ,  , a . There are n ways to choose the value of a
+                                                       ,
+                                                      1   2       m                                           1
+             and n − 1 ways to choose a , etc. The product rule tells us that there are
+                                        2
+               ( nn −  1 )(n −  ) 2    (  n m−  +  ) 1  such functions.
+
+
+
+          Counting Subsets of a Finite Set
+          Example
+
+
+          Use the product rule to show that the number of different subsets of a finite set S is 2 S  .
+          Solution
+
+             When the elements of S are listed in an arbitrary order, there is a one-to-one correspondence between
+             subsets of S and bit strings of length |S|.  When the ith element is in the subset, the bit string has a 1 in
+
+             the ith position and a 0 otherwise. By the product rule, there are 2 S   such bit strings, and therefore
+
+              2  S   subsets.
+
+
+
+          Product Rule in Terms of Sets
+
+                   ,
+                       ,
+            If  A A      , A  are finite sets, then the number of elements in the Cartesian product of these sets
+                 1   2        m
+             is the product of the number of elements of each set.
+            The task of choosing an element in the Cartesian product  A ×  A ×    ×  A is done by choosing an
+                                                                      1    2           m
+             element in  A , an element in  A and an element in  A .
                                              ,
-                                         ,
-          Recursive step:  Suppose that T T      , T   are disjoint rooted trees with roots  ,  ,  , r ,
-                                        1   2       n                                     1  2       n
-                      respectively. Then the graph formed by starting with a root r, which is not in any of the
-                                     ,
-                                         ,
-                      rooted trees T T      , T , and adding an edge from r to each of the vertices
-                                   1    2       n
-                       r r  ,  , r , is also a rooted tree.
-                        ,
-                       1   2       n
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                          1                 2                        m
+            By the product rule, it follows that:  A ×  A ×   ×  A  =  A ⋅  A ⋅   ⋅   A
+                                                  1    2          m      1    2        m
 
 
 

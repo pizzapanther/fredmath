@@ -152,56 +152,37 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>e)  This is just a closed walk starting and ending at v . It is not a circuit because edge e  is
-                                                                   1                                 1
-                    repeated.
-                f)  The first vertex of this walk is the same as its last vertex, but it does not contain an edge, and so
-                    it is not a circuit, It is a closed walk from v  to v . (It is also a trail from v  to v )
-                                                             1    1                        1     1
+    <pre style="white-space:pre-line"><code>Exercises         Section 4.8 −  Connectivity
 
 
-             Example
 
-
+             1.   Does each of these lists of vertices form a path in the following graph? Which paths are simple?
+                  Which are circuits? Which are the lengths of those that are paths?
+                                                      a         b
+                                                                          c
 
 
 
 
 
+                                                    d          e
+
+                    a) a, e, b, c, b     b) a, e, a, d, b, c, a    c) e, b, a, d, b, e   d) c, b , d, a, e, c
+
+             2.   Does each of these lists of vertices form a path in the following graph? Which paths are simple?
+                  Which are circuits? Which are the lengths of those that are paths?
+                                                      a  V      b          c
+
+                                                            V       V
+                                                    V  V        V     V
 
 
+                                                    d     V     e
 
+                    a) a, b, e, c, b     b) a, d, a, d, a          c) a, d, b, e, a   d) a, b , e, c, b, d, a
 
-
-
-
-
-             The given graph, a, d, c, f, e is a simple path of length 4, because {a, d}, {d, c}, {c, f}, and {f, e} are all
-             edges.
-             However, d, e, c, a is not a path, because {e, c} is not an edge.
-             Note that b, c, f, e, b is a circuit of length 4 because {b, c}, {c, f}, {f, e}, and {e, b} are edges, and this
-             path begins and ends at b.
-
-             The path a, b, e, d, a, b, which is of length 5, is not simple because it contains the edge {a, b} twice.
-
-
-
-             Connectedness
-
-             Definition
-
-             Let G be a graph. Two vertices v and w of G are connected if, and only if, there is a walk from v to w.
-
-             The graph G is connected if, and only if, given any two vertices v and w in G, there is a walk from v to
-             w. Symbolically,
-                           G is connected   ⇔∀      vertices v , w  V∈  ( ),G ∃  a walk from v to w .
-
-
-             Definition
-
-             An undirected graph is called connected if there is a path between every pair of distinct vertices of the
-             graph. An undirected graph that is not connected is called disconnected. We say that we disconnect a
-             graph when we remove vertices or edges, or both, to produce a disconnected subgraph.
+             3.   Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to
+                  the graph below.
 
 
 
@@ -209,7 +190,34 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            255</code></pre>
+
+
+
+
+                    a) v ev e v e v e v          b) ve ve v e v e ve v               c) v
+                        0 1 1 10 5 9 2 2 1           4 7 2 95 10 1 32 95                2
+                    d) v vv vvv                  e) vv vv vvv v                      f) e e e e
+                        5 234 45                     2345 2 432                         5 8 10 3
+
+             4.   Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to
+                  the graph below.
+
+
+
+
+
+
+
+
+
+                    a) v e v e v e v e v e v e v   b) vv vv v                        c) vvv vv vv
+                        1 2 23 34 45 2 2 1 1 0              2345 2                       4 2345 2 4
+                    d) vv v vv vv                       e) v v vv vvv                f) v vvv
+                        215 2 3 4 2                         05 234 2 1                  5 4 21
+
+
+
+                                                              255</code></pre>
      	</div>
     
      </div>

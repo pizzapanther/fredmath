@@ -152,83 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>, and  e  are adjacent to e
-                        ,
-                 e  , e e
-                  2   3   8        9                 1
-                 e   and  e  are loops.
-                  6       7
-                 e   and  e  are parallel; e   and  e  are parallel
-                  4       5               8       9
-                 v  is an isolated vertex.
-                  6
-                 Degree of v =
-                                5
-                            3
-                 Total degree = 20
-                   ,
+    <pre style="white-space:pre-line"><code>Given that  ab=  but if a is a descendant of b, then b cannot be a descendant of a. So, the relation
+                 is vacuously antisymmetric.
+                 if a is a descendant of b and b is a descendant of c, then a is a descendant of c. So, the R is
+                 transitive.
+                 Therefore, this relation is a poset.
 
-             b)  e e    , and  e  are incident on v
-                  1   2        7                 1
-                 v , v   and  v  are adjacent to v
-                  1   2       3                 3
-                 e   and  e  are adjacent to e
-                  2       7                 1
-                 e   and  e  are loops.
-                  1       3
-                 e   and  e  are parallel
-                  4       5
-                 Isolated vertex: none.
-                                2
-                 Degree of v =
-                            3
-                 Total degree = 14
+             h)  Since anyone and himself have a common friend, then this relation is not reflexive, so this relation
+                 is not a poset.
 
 
           Exercise
 
-          Let G be a simple graph. Show that the relation R on the set of vertices of G such that uRv  if and only if
-                                           }
-          there is an edge associated to { ,u v  is a symmetric, irreflexive relation on G.
+          Which of these are posets?
+                                                                    )
+                                                )
+                                                                                         )
+                a)  (Z, =)            b)  (Z,  ≠          c)  (Z,  ≥           d)  (Z, | /
+                          )
+                                                                    )
+                                                                                         )
+                                                )
+                e)  (R,  =            f)  (R,  &lt;          g)  (R,  ≤           h)  (R,  ≠
           Solution
+             a)  The equality relation of any set satisfies all three conditions. Therefore, a partial order.
+             b)  This is not a poset since the relation is not reflexive (a ≠  ) a
 
-             In a simple graph, edges are undirected.
-                                                           }
-             If uRv , then there is edge associated with { ,u v . But { ,u  v } { ,v u=  } , so this edge is associated with
-                  }
-             { ,v u  and, therefore. So, R is symmetric.
-                                                                                              }
-             A simple graph does not allow loops; that is if there is an edge associated with { ,u v , then u ≠ .
-                                                                                                          v
-             Thus uRu  never holds, and so by definition R is irreflexive.
+             c)  The relation is reflexive since the relation involved the equality sign.
+
+             d)  This is not a poset since the relation is not reflexive  2| ( ) 2
 
 
+             e)  The equality relation of any set satisfies all three conditions. Therefore, a partial order.
+             f)  This is not a poset since the relation is not reflexive  2 &lt; (  ) 2
 
 
+             g)  The relation is reflexive since the relation involved the equality sign.
+
+             h)  This is not a poset since the relation is not reflexive (22=  )
+
+                                                                 ≠
+                                                        R
+                 It is not antisymmetric since 1 2R  and   21  but  1 2
+                                                       =
+                                              R
+                 It is not transitive 1 2R  and   21  but  1 1  ⇒  1   R1
 
 
+          Exercise
 
+          Determine whether the relations represented by these zero-one matrices are partial orders
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                      111                   111                   1 01              1 00
+                                                                             
+                                            
+                                                     
+                    
+                             
+                                                                                                 
+                                                                                        
+                a)  11 0                b)  01 0                c)       11 0     d)  01 0
+                                                                                                 
+                                                                             
+                                                                                        
+                    
+                                            
+                             
+                                                     
+                        0 01                0 01                0 01            1 01  
+                      111 0                 10 10
+                      01 1 0                01 1 0   
+                e)                    f)             
+                      00 11                 00 11
+                                                     
+                      1 1 01                1 1 01   
+          Solution
                                                            220</code></pre>
      	</div>
     

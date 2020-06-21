@@ -152,75 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( 7 k+  2  +  8 2k+  1 )  is divisible by 57, by the inductive hypothesis,
-
-
-                                        57 8 ⋅  2k+ 1  is divisible by 57, since it is an integer multiplied by 57.
-                      Thus,  P    is true.
-                             k+ 1
-
-                By mathematical induction, the statement 7 n+  2  + 8 2n+  1  is divisible by 57 is true, for every positive
-
-                integer n.
-
-
-
-             Number of Subsets of a Finite Set
-
-             Inductive Hypothesis
-                                                                                k
-             For an arbitrary nonnegative integer k, every set with k elements has  2  subsets.
-
-
-             Let T be a set with k + 1 elements. Then T =  S  { } a , where a ∈ T and S = T − {a}.  Hence |T| = k.
-             For each subset X of S, there are exactly two subsets of T, i.e., X and   X  { } a .
+    <pre style="white-space:pre-line"><code>Section 3.2 − Recursive Definitions and Structural Induction
 
 
 
 
+             Recursive Algorithms
 
 
+             Definition
+             A recursive or inductive definition of a function consists of two steps.
+
+              1.  BASIS STEP: Specify the value of the function at zero.
+              2.  RECURSIVE STEP: Give a rule for finding its value at an integer from its values at smaller
+                  integers.
 
 
+             Example
+
+             Suppose f is defined by:
+                     f  ( ) 0 =  3
+                     fn    ) 1 =  2 fn
+                                  ( ) 3+
+                      ( +
+             Find f(1), f(2), f(3), f(4)
+
+             Solution
+                f(1) = 2f(0) + 3 = 2∙3 + 3 = 9
+                f(2) = 2f(1)+ 3 = 2∙9 + 3 = 21
+                f(3) = 2f(2) + 3 = 2∙21 + 3 = 45
+                f(4) = 2f(3) + 3 = 2∙45 + 3 = 93
 
 
+             Example
+
+             Give a recursive definition of the factorial function n!
+
+             Solution
+
+                f(0) = 1
+                f(n + 1) = (n + 1)∙ f(n)
+                These 2 equations define n!
 
 
+             Example
+                                           n
+             Give a recursive definition of  a , where a is a nonzero real number and n is a nonnegative integer.
+             Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                k
-             By the inductive hypothesis S  has  2 subsets. Since there are two subsets of T for each subset of S, the
-             number of subsets of T  is  22⋅  k  =  2 k  1 +
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  0
+                 a = 1
+                            n
+                 a n+ 1  =  aa  for n = 0, 1, 2, 3, ….
+                         ⋅
+                                          n
+                These 2 equations define  a  for all nonnegative integers n.
 
 
                                                               145</code></pre>

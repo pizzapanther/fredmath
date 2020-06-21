@@ -152,61 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Proofs by Contradiction
+    <pre style="white-space:pre-line"><code>Proofs of Equivalence
 
-             The basic ides of a proof of contradiction is to assume that the statement we want to prove is false.
-             That is, the supposition that p is false followed necessarily by the conclusion q from not ¬p, where q is
-             false, which implies that p is true.
+                                                                                                   q
+             To prove a theorem that is a biconditional statement, that is, a statement of the form  p ↔ , we must
+                            q
+             show that  p →  and q →   p  are both true. The validity of this approach is based on the tautology
+                                                ( p ↔   ) q ↔  ( p →  q ∧  ) (q →  ) p
 
-                Given a statement p, assume it is false, assume ¬ p
-
-                    •  Prove that ¬ p cannot occur
-                       o  A contradiction exists
-                       o  Given a statement of the form p → q
-                       o  To assume it’s false, you only have to consider the case where p is true and q is false
 
 
              Example
 
-             Show that at least four of any 22 days must fall on the same day of the week.
-
+                                                                            2
+             Prove the theorem “If n is an integer, then n is odd if and only if  n  is odd”
              Solution
 
-                Let p be the proposition “at least four of any 22 days must fall on the same day of the week”
-                Suppose that ¬ p is true  ⇒ “at most three of the 22 days fall on the same day of the week”.
+                                              2
+                Let: p is “n is odd” and q is “n  is odd”.
+                                                   "
+                The theorem has the form: " p iff  q . To prove this theorem, we need to show that  p →  and
+                                                                                                      q
+                 q →  p  are both true.
 
-                There are 7 days per week  ⇒ at most 3 of the chosen days could fall on that day.
-                That contradicts the premise that we have 22 days under consideration.
+                Using direct proof, we assume that n is odd, is a true statement. By the definition of an odd integer, it follows
+                                                                          2
+                that  n =  2k + 1, where k is some integer. We need to show that  n  is odd.
+                                                           )
+                                                  (
+                                      2
+                                                     2
+                     2
+                                                               =
+                                               =
+                    n =  (2k +  ) 1  2  =  4k + 4k + 12 2k + 2k + 12K + 1            2k +  2  2k =  K
+                                                                    2
+                                                                                                          q
+                By the definition of an odd integer, we can conclude that  n  is also an odd integer. Therefore,  p →  is
+                true.
+                                              2
+                                                                        2
+                Suppose that n is an integer and  n  is odd. Then,  k∃ ∈  ∋  n =  2k +  ⇒= ±  2k +  (which is not
+                                                                                                 1
+                                                                                      n
+                                                                                1
+                useful). By using proof by contraposition, the statement n is not odd, that means n is even. That implies that
+                ∃ k ∈  ∋  n =  2k .
+                                                                                               2
+                To prove the theorem, we need to show that this hypothesis implies the conclusion that  n  is not odd, that
+                                                       ( )
+                                           2
+                                                                                2
+                                                 2
+                                   2
+                        2
+                                        2k
+                means  n  is even. n =  ( ) =  4k =  22k  2  , which implies that  n  is even.
+                                                     2
+                We have proved that n is an integer and  n  is odd, then n is odd by a proof of contraposition. Therefore,
+                 q →  p  is true.
+                             q
+                Because  p →  and q →    p  are both true, we have shown that the theorem is true.
 
-                If r is the statement that 22 days are chosen, that we have shown that
-
-                                  ) r
-                    ¬ p → (r ∧¬ .
-                We know that p is true. We have proved that at least four of any 22 days must fall on the same day of
-                the week.
 
 
-             Example
 
-             Prove that  2  is irrational by giving a proof by contradiction.
 
-             Solution
 
-                Let p be the proposition “ 2  is irrational”.  Suppose that ¬ p is true  ⇒ “ 2  is rational”.
 
-                If  2  is rational,  a and b∃  ∋  2 =  a
-                                                    b
-                    ( ) ( )     2
-                         2
-                              a
-                       2
-                           =
-                              b
-                    2 =  a 2
-                        b 2
-                       2
-                            2
-                      2b = a
+
+
+
+
+
+
 
 
 

@@ -152,78 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
-
-             The set of extended binary trees can be defined recursively by these steps:
-             Basis step:  The empty set is an extended binary tree.
-
-             Recursive step:  If  T  and T  are disjoint extended binary trees, there is an extended binary tree, denoted
-                                 1      2
-                      by TT⋅   , consisting of a root r together with edges connecting the root to each of the roots of
-                          1   2
-                      the left subtree T  and the right subtree T  when these trees are nonempty.
-                                      1                       2
+    <pre style="white-space:pre-line"><code>Basic Counting Principles
 
 
+             Definition:  The Sum Rule
+
+             If a task can be done either in one of n  ways or in one of n ways to do the second task, where none of
+                                                  1                    2
+             the set of n  ways is the same as any of the n ways, then there are n +  n ways to do the task.
+                       1                                 2                      1    2
 
 
+             Example
+
+             The mathematics department must choose either a student or a faculty member as a representative for a
+             university committee. How many choices are there for this representative if there are 37 members of the
+             mathematics faculty and 83 mathematics majors and no one is both a faculty member and a student.
+
+             Solution
+                By the sum rule it follows that there are 37 + 83 = 120 possible ways to pick a representative.
 
 
+             Example
 
+             A student can choose a computer project from one of three lists. The three lists contain 23, 15, and 19
+             possible projects, respectively. No project is on more than one list. How many possible projects are there
+             to choose from?
 
+             Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                Since no project is on more than one list, by the sum rule there are 23 + 15 + 19 = 57 ways to choose a
+                project.
 
 
 
+             The Sum Rule in terms of sets
+
+             The sum rule can be phrased in terms of sets.
+                    |A ∪ B|= |A| + |B| as long as A and B are disjoint sets.
+
+
+             Or more generally,  A   A     A    =  A +  A +     +  A   when  A   A = ∅ for all i, j.
+                                 1     2         m     1     2          m          i    j
+
+
+             Example
+
+             Suppose statement labels in a programming language can be either a single letter or a letter followed by a
+             digit. Find the number of possible labels.
+             Solution
+
+                Use the product rule.  26 + 26 ∙ 10 = 286
 
 
 
-
-
-                                                    Extended Binary Trees
-
-
-             Definition
-
-             The set of full binary trees can be defined recursively by these steps:
-             Basis step:  There is a full binary tree consisting only of a single vertex r.
-
-             Recursive step:  If  T  and T  are disjoint full binary trees, there is a full binary tree, denoted by TT⋅  ,
-                                 1      2                                                                   1  2
-                      consisting of a root r together with edges connecting the root to each of the roots of the left
-                      subtree T  and the right subtree T .
-                              1                       2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                       Full Binary Trees
 
                                                               159</code></pre>
      	</div>

@@ -152,71 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>5.   Define three equivalence relations on the set of buildings on a college campus. Determine the
-                  equivalence classes for each of these equivalence relations.
-
-             6.   Let R be the relation on the set of all sets of real numbers such that S R T if and only if S and T
-                  have the same cardinality. Show that R is an equivalence relation. What are the equivalence
-                  classes of the sets {0, 1, 2} and  Z ?
-
-             7.   Suppose that A is a nonempty set, and f is a function that has A as its domain. Let R be the
-                                                                            f
-                  relation on A consisting of all ordered pairs (x, y) such that  ( ) x =  f  ( ) y
-                    a)  Show that R is an equivalence relation on A.
-                    b)  What are the equivalence classes of R?
-
-             8.   Suppose that A is a nonempty set, and R is an equivalence relation on A. Show that there is a
-                                                              )
-                                                                                  f
-                                                                  R
-                  function f with A as its domain such that ( ,x y ∈  if and only if  ( ) x =  f  ( ) y
-
-             9.   Determine whether the relation with the directed graph shown is an equivalence relation
-
-                   a)                            b)                           c)
+    <pre style="white-space:pre-line"><code>Section 4.5 − Partial Orderings
 
 
 
 
+          Definition
+
+          A relation R on set S is called a partial ordering or partial order if it is reflexive, antisymmetric, and
+          transitive. A set S together with a partial ordering R is called a partially ordered set, or poset, and is
+          denoted by (S, R). Members of S are called elements of the poset.
+
+
+          Example
+
+          Show that the “greater than or equal” relation ( ) ≥  is a partial ordering on the set of integers
+          Solution
+
+             Because  a ≥   for every integer a, ≥ is reflexive.
+                          a
+             If  a ≥  and  b ≥ , then  a = . Hence, ≥ is symmetric.
+                              a
+                                          b
+                    b
+             If  a ≥  and  b ≥  imply that   a ≥ . Hence, ≥ is transitive.
+                                                c
+                    b
+                              c
+             It follows that  ( ) ≥  is a partial ordering on the set of integers and  ( ,  ≥  )  is a poset.
+
+
+          Example
+
+          Show that the inclusion relation ⊆ is a partial ordering on the power set of a set S.
+          Solution
+
+             Because  A ⊆  A whenever is a subset of S. ⊆ is reflexive.
+             It is antisymmetric because  A ⊆  B  and  B ⊆  A imply that A =
+                                                                         B
+              A ⊆ B  and  B ⊆  C  imply that A ⊆  C , Hence ⊆ is transitive.
+                                                                   )
+                                                         (
+             Hence,  ⊆ is a partial ordering on  ( )  and  ( ),PS   ⊆  is a poset.
+                                              PS
+
+
+          Example
+          Let R be the relation on the set of people such that  xRy  if x and y are people and x is older than y. Show
+
+          that is not a partial ordering,
+          Solution
+
+              R is not reflexive, because no person is older than herself or himself  xRx
+              R is antisymmetric because if a person x is older than y, then y is not older than x. That is xRy , then
+               yRx .
+
+              The relation is transitive because a person x is older than y, then y is older than z, then x is older than
+              z.
+              R is not a partial ordering.
 
 
 
 
-
-
-
-
-
-
-
-             10.  Which of these collections of subsets are partitions of {1, 2, 3, 4, 5, 6}
-
-                                                  }
-                    a)  {1, 2 ,        } {4, 5, 6
-                            } {2, 3, 4 ,
-                                    } { } { }
-                    b)  { } {2, 3, 6 ,   4 ,  5
-                        1 ,
-                               } {
-                                          }
-                    c)  {2, 4, 6 ,  1, 3, 5
-                               } {2, 6
-                    d)  {1, 4, 5 ,     }
-
-             11.  Which of these collections of subsets are partitions of {−3, −2, −1, 0, 1, 2, 3}
-
-                   a)  { 3, 1, 1, 3−−  },  2, {−  0,  } 2
-                   b)  { 3, 2, 1, 0−− −  },  {0, 1, 2,   } 3
-
-                   c)  {−  3, 3 , 2, 2 , 1, 1 , }{−  }{−  }  { } 0
-                         3, 2, 2, 3}{, 1, −
-                   d)  {−−                 } 1
-
-
-
-
-
-                                                            220</code></pre>
+                                                           220</code></pre>
      	</div>
     
      </div>

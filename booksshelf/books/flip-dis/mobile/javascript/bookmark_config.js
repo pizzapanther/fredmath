@@ -1,1 +1,1 @@
-﻿var ols=[{caption:"Discrete_lecture1",page:"1",url:"",level:"1",children:[]},{caption:"Discrete_lecture2",page:"87",url:"",level:"1",children:[]},{caption:"Discrete_Lecture3",page:"137",url:"",level:"1",children:[]},{caption:"Discrete_lecture4",page:"191",url:"",level:"1",children:[]}];
+﻿var ols=[{caption:"Discrete_lecture1",page:"1",url:"",level:"1",children:[]},{caption:"Discrete_lecture2",page:"81",url:"",level:"1",children:[]},{caption:"Discrete_lecture3",page:"131",url:"",level:"1",children:[]},{caption:"Discrete_lecture4",page:"191",url:"",level:"1",children:[]}];

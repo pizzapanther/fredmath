@@ -152,68 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a)                                  b)                              c)
+    <pre style="white-space:pre-line"><code>aRb and  bRd    ⇒  aRd
+
+             b)  This is relation is not transitive since there no relation (arrow) from c and b.
+             c)  This relation is reflexive since all points have an arrow to itself.
+                 This relation is antisymmetric since no pair of arrows going in opposite directions between 2
+                 different points.
+                 Therefore, this relation is a partial order.
 
 
-
-
-
-
-
-
-
-
-
-
-           d)                                   e)                             f)
-
-
-
-
-
-
-
-
-
-
+          Exercise
+                                          (
+                   )
+                                             ,
+          Let ( ,S R  be a poset. Show that  S R − 1 )  is also a poset, where  R − 1  is the inverse of R. The poset
+          (  , S R − 1 )  is called the dual of ( ,S R .
+                                             )
 
 
           Solution
-             a)
+             Since R is reflexive, then  R − 1  is clearly reflexive.
 
-                   v             v
-                    1              2
+                                                                                       ) R
+                               ) R
+                                               b
+             Suppose that ( ,ab ∈   − 1  and  a ≠ . Then ( ,ba ) R∈ , so ( ,ab ) R∉ , so ( ,ba ∉  − 1
+                                     ) R
+             If ( ,ab ) R∈  − 1  and ( ,bc ∈  − 1 , then ( ,ba ) R∈  and ( ,cb ) R∈ , since R is transitive, so ( ,ca ) R∈ ,
+                           ) R
+             therefore ( , ac ∈  − 1 , thus  R − 1  is transitive.
+                        (    − 1 )
+                          ,
+             Therefore  S R       is a poset
 
-                   v              v
-                    3              4
 
+          Exercise
 
-                 {
-             b)  v v   2 , v 3 }  form a triangle, we can’t create a bipartite graph G.
-                    ,
+          Draw the Hasse diagram for the “greater than or equal to” relation on {0, 1, 2, 3, 4, 5}
+
+          Solution
+
+                  0
+
                    1
-             c)
 
-                   v             v
-                    1              2
+                   2
+                   3
+                   4
 
-                   v              v
-                    3              4
-                   v              v
-                    5              6
-
-                 {
-             d)  v 2 ,  v 4  ,  v 5 }  form a triangle, therefore we can’t create a bipartite graph G.
+                  5
 
 
-             e)
 
-                   v             v
-                    1              2
-                   v
-                    3
-                   v              v
-                    4              5
+
+
+
+
+
+
 
 
 

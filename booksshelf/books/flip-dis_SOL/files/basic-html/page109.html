@@ -152,11 +152,23 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1  +  1  +   +   1    +       1       =   k +  1  =  k +  1
-                           12 ⋅  2 3 ⋅       ( kk +  1 ) (k +  1 )(k +  2 ) (k +  ) 1 +  1  k +  2
+    <pre style="white-space:pre-line"><code>1  =  1    √
 
-                     1  +  1  +        1    +       1       =  k  +       1
-                    12    2 3     +  ( k k +  1 ) (k +  1 )(k +  ) 2  k +  1  (k +  1 )(k +  ) 2
+                                    2   2
+                    Hence  P  is true.
+                            1
+
+                    Assume that   1  +  1  +   +   1    =  k   is true
+                                 12 ⋅  2 3 ⋅      ( kk +  ) 1  k +  1
+
+                    We need to prove that  P    is also true
+                                           k+ 1
+                            1  +  1  +   +   1    +       1       =   k +  1  =  k +  1
+                           12    2 3         ( kk +  1 ) (k +  1 )(k +  2 ) (k +  ) 1 +  1  k +  2
+                                   ⋅
+                             ⋅
+                     1  +  1  +   +   1    +       1       =  k  +       1
+                    12    2 3         ( k k +  1 ) (k +  1 )(k +  ) 2  k +  1  (k +  1 )(k +  ) 2
                            ⋅
                      ⋅
                                                                 ( kk +  ) 2 +  1
@@ -166,103 +178,68 @@ function MM_swapImage() { //v3.0
                                                             =  k +  2  2k +  1
                                                               (k +  1 )(k +  ) 2
 
-
                                                                 (k +  ) 1  2
                                                             =
                                                               (k +  1 )(k +  ) 2
 
 
                                                             =  k + 1     √
-                                                              k +  2
+                                                              k + 2
                       Hence  P     is true.
                               k+ 1
-                ∴ The statement    1  +  1  +   +   1     is true
-                                          ⋅
-                                  12⋅   2 3         ( nn +  ) 1
-
+                ∴  By the mathematical induction, the given statement is true.
 
 
              Exercise
 
-                         2
                                   2
                              2
+                         2
                                          ( ) 1
+             Prove that  1 − 2 + 3 −   +−    n−  1 2  ( ) 1  n−  1  ( nn +  ) 1   whenever n is a positive integer.
                                                  n = −
-             Prove that  1 −  2 + 3 −  +−    n−  1 2  ( ) 1  n−  1  ( nn +  ) 1   whenever n is a positive integer.
                                                                   2
              Solution
-                                            ( )
-                                  2
-                (1) For n = 1 ⇒ 1 =  ( ) 1−  0 12   ⇒=
-                                                   1 1; hence  P  is true.
-                                             2                   1
+                (1) For n = 1
+                                   ( )
+                         2
+                       1 =  ( ) 1−  0 12
+                                    2
+                       1 1    √
+                         =
+                       Hence  P  is true.
+                                1
+
                                            2
                                       2
                                  2
                                                   ( ) 1
-                (2) Assume that 1 −  2 + 3 −   +−    k−  1 2  ( ) 1  k  1 −  ( kk +  ) 1    is true
                                                           k = −
+                (2) Assume that 1 −  2 +  3 −   +−   k−  1 2  ( ) 1  k  1 −  ( kk +  ) 1  is true
                                                                            2
-                                                                            k
-                                           2
-                                                    2
                                                2
-                                                           ( ) 1
-                                                                           1
-                                                                                        ( ) 1
+                                           2
+                                                                            k
+                                                    2
                                                                    k +−
-                    We need to prove that 1 −  2 + 3 −   +−    k− 1 2  ( ) (k +   ) 1  2  = −  k  (k +  1 )(k +  ) 2   is also
+                                                                                        ( ) 1
+                    We need to prove that 1 − 2 +  3 −   +−    k− 1 2  ( ) (k +   ) 1  2  = −  k  (k +  1 )(k +  ) 2   is also
+                                                                           1
+                                                           ( ) 1
                                                                                                     2
                     true
                                                                                                 2
                                                        k
                           2
-                     2
                               2
-                                                                  ( ) 1
-                                      ( ) 1
-                                                     1
-                    1 − 2 +  3 −   +−    k−  1 2  ( ) (k +   ) 1  2  = −  k  1 −  ( kk +  ) 1  +− 1  k  ) 1
-                                              k +−
+                     2
                                                                                     ( ) (k +
+                                      ( ) 1
+                                              k +−
+                                                                  ( ) 1
+                    1 − 2 +  3 −   +−    k−  1 2  ( ) (k +   ) 1  2  = −  k  1 −  ( kk +  ) 1  +− 1  k  ) 1
+                                                     1
                                                                               2
-                                                                        k
-                                                                                                   
-                                                                                
-                                                                  =  ( ) (k +  1 ) ( ) 1  − 1 1 k +  (k +  ) 1
-                                                                     −
-                                                                                  −
-                                                                      1
-                                                                                
-                                                                                                   
-                                                                                        2
-                                                                                
-                                                                                                   
-                                                                                           )
-                                                                                (
-                                                                                   k
-                                                                                      k
-                                                                  = ( ) (k− 1  k  +  ) 1 − ++ 1
-                                                                                   2
-                                                                                 k
-                                                                                   +
-                                                                  =  ( ) (k−  1  k  +  ) 1 ( )
-                                                                                     1
-                                                                                 2
-
-                                                                  =  ( ) (k−  1  k  +  ) 1 ( k + 2 )   √
-                                                                                   2
-                      Hence  P     is true.
-                              k+ 1
-                                            2
-                                   2
-                                        2
-                                                    ( ) 1
-                                                            n =
-                ∴ The statement  1 −   2 + 3 −   +−    n −  1 2  ( ) 1−  n −  1  ( nn +  ) 1  is true
-                                                                            2
-
                                                                109</code></pre>
      	</div>
     

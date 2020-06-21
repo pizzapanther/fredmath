@@ -152,67 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Definition
 
-           Show that 101 is prime
-
-           Solution
-
-               The only primes not exceeding  101  are 2, 3, 5, 7. Because 101 is not divisible by 2, 3, 5, or 7 (the
-               quotient of 101 and each of these integers is not an integer). It follows that 101 is prime.
+             If a and b are positive integers, then integers s and t such that  gcd(a,b) = sa + tb are called Bézout
+             coefficients of a and b. The equation gcd(a,b) = sa + tb  is called Bézout’s identity.
 
 
-           Example
+             Example
 
-           Find the prime factorization of 7007
+             Express gcd(252,198) = 18 as a linear combination of 252 and 198.
+             Solution
 
-           Solution
+                First use the Euclidean algorithm to show gcd(252,198) = 18
+                  i.   252 = 1∙198 + 54
+                  ii.   198 = 3 ∙54 + 36
+                 iii.   54 = 1 ∙36 + 18
+                 iv.   36 = 2 ∙18
 
-               None of the primes 2, 3, and 5 divides 7007. However, 7 divides 7007, with  7007  = 1001, and
-                                                                                          7
-               1001 = 143,  143  = 13. Because 13 is prime, the procedure is completed.
-                 7           11
-
-               It follows that the prime factorization is70 07  7 11⋅ =  2  ⋅  13
-
-
-
-           The Sieve of Eratosthenes
-
-           The Sieve of Eratosthenes can be used to find all primes not exceeding a specified positive integer. For
-           example, begin with the list of integers between 1 and 100.
-
-           a.  Delete all  the integers, other than 2, divisible by 2.
-           b.  Delete all the integers, other than 3, divisible by 3.
-           c.  Next, delete all the integers, other than 5, divisible by 5.
-           d.  Next, delete all the integers, other than 7, divisible by 7.
-           e.  Since all the remaining integers  are not divisible by any of the previous integers, other than 1, the
-               primes are:   {2,3,7,11,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89, 97}
+                Now working backwards, from  iii and i above
+                    18 = 54 −  1 ∙36
+                    36 = 198 −  3 ∙54
+                Substituting the 2  equation into the 1  yields:
+                                 nd
+                                                     st
+                    18 = 54 −  1 ∙(198 −  3 ∙54 )= 4 ∙54 −  1 ∙198
+                Substituting 54 = 252 −  1 ∙198 (from i)) yields:
+                     18 = 4 ∙(252 −  1 ∙198) −  1 ∙198 = 4 ∙252 −  5 ∙198
+                This method illustrated above is a two pass method. It first uses the Euclidian algorithm to find the
+                gcd and then works backwards to express the gcd as a linear combination of the original two integers.
+                A one pass method, called the extended Euclidean algorithm, is developed in the exercises.
 
 
 
-           If an integer n is a composite integer, then it has a prime divisor less than or equal to  n .
-           To see this, note that if n = ab, then   a ≤  n or b ≤  n .
+             Lemma 2
 
-           Trial division, a very inefficient method of determining if a number n  is prime, is to try every integer i ≤
-             n  and see if n is divisible by i.
+             If a, b, and c are positive integers such that gcd(a, b) = 1 and a | bc, then a | c.
 
-
-
-
-
-
+             Proof
+              Assume gcd(a, b) = 1 and a | bc
+              Since gcd(a, b) = 1, by Bézout’s Theorem  there are integers s and t such that  sa + tb = 1.
+              Multiplying both sides of the equation by c, yields sac + tbc = c.   a | tbc and  a divides sac + tbc since
+              a | sac and a|tbc. We conclude a | c, since  sac + tbc = c.
 
 
 
+             Lemma 3
+             If p is prime and   pa a   a , then  pa for some i.
+                                 12       n          i
+               Lemma 3 is crucial in the proof of the uniqueness of prime factorizations.
 
 
 
-
-
-
-
-                                                            121</code></pre>
+                                                              121</code></pre>
      	</div>
     
      </div>

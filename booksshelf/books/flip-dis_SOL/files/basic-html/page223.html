@@ -152,16 +152,44 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>SOLUTION  Section 4.7 − Representing Graphs and Graph
-
-                                                   Isomorphism
+    <pre style="white-space:pre-line"><code>SOLUTION  Section 4.6 − Graphs: Definitions and Basic Properties
 
 
 
 
              Exercise
 
-             Use the adjacency list to represent the given graph, then represent with an adjacency matrix
+             Determine whether the graph shown has directed or undirected edges, whether it has multiple edges, and
+             whether it has one or more loops.
+                     a)                              b)                             c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     d)                              e)                             f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     g)
 
 
 
@@ -175,48 +203,23 @@ function MM_swapImage() { //v3.0
 
 
              Solution
+                a)  This is a simple graph; the edges are undirected, and there are no parallel edges or loops.
 
+                b)  This is a multigraph; the edges are undirected, and there are no loops, but there are parallel edges.
+                c)  This is a pseudograph; the edges are undirected, and there are no parallel edges or loops.
 
-                                 Adjacent                    0 111
-                   Vertex                                              
-                                 Vertices                    1 0 01    
-                      a            b, c                        1 0 01  
+                d)  This is a multigraph; the edges are undirected, and there are no loops, but there are parallel edges.
+                e)  This is a directed graph; the edges are directed, and there are no parallel edges.
 
-                      b            a, d                      111 0     
-                      c            a, d
+                f)  This is a directed multigraph; the edges are directed, and there are parallel edges.
 
-                      d           a, b, c
-
-
-             Exercise
-
-             Use the adjacency list to represent the given graph, then represent with an adjacency matrix
+                g)  This is a directed multigraph; the edges are directed, and there is a set of parallel edges.
 
 
 
 
 
 
-
-
-
-
-
-
-
-             Solution
-
-                                Adjacent                     01 01 0
-                    Vertex                                                
-                                Vertices                     1 00 11      
-
-                      a           b, d                         000 11   
-                      b          a, d, e                     111 00       
-                      c           d, e                         0 11 00     
-
-                      d          a, b, c
-
-                      e           b, c
 
 
                                                               223</code></pre>

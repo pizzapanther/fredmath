@@ -154,67 +154,59 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-             A group contains n men and n women. How many ways are there to arrange these people in a row if the
-             men and women alternate?
+             How many ways are there to seat four of a group of ten people around a circular table where two seatings
+             are considered the same when everyone has the same immediate left and immediate right neighbor?
 
              Solution
 
-                                                                                                       )
-                Consider the order in which the men appear relative to each other. There are n men  ( , nn =  ! n
-                                                                                                 P
-                arrangements is allowed.
-                                                                                                             )
-                Consider the order in which the women appear relative to each other. There are n women  ( ,P nn =  ! n
-                arrangements is allowed.
-                Men and women must alternate, and there are the same number of men and women; therefore there are
-                exactly 2 possibilities: either the row with a man ends with a woman or it starts with a woman ends
-                with a man.
-
-                By the product rule there are  ! !n  n  2 =  2 ( ) !n  2    ways
+                The count ordered arrangements of length 4 from the 10 people, then we get 10 9 8 7⋅ ⋅⋅ =  5040
+                arrangements.
+                However, we can rotate the people around the table in 4 ways and get the same seating arrangement, so
+                the overcounts by a factor of 4.
 
 
+                Therefore, there are  5040   = 12 60   ways
 
-             Exercise
-             In how many ways can a set of two positive integers less than 100 be chosen?
-
-             Solution
-
-
-                C       =  4851  ways
-                  99, 2
+                                      4
 
 
              Exercise
 
-             In how many ways can a set of five letters be selected from the English alphabet?
+             In how many ways can a photographer at a wedding arrange 6 people in a row from a group of 10 people,
+             where the bride and the groom are among these 10 people, if
+              a)  The bride must be in the picture?
+              b)  Both the bride and groom must be in the picture?
+              c)  Exactly one of the bride and the groom is in the picture?
 
              Solution
 
-                C       = 65,780  ways
-                  26, 5
+                a)  The bride is in any of the 6 positions.
+                          1    2    3    4    5    6
+                          B    P    P    P    P   P
+                          1    9    8    7    6   5
 
+                    Then, it will leave us with 5 remaining positions.
+                    This can be done in 9 8 7 6 5 15120⋅⋅ ⋅ ⋅ =   ways.
+                    Therefore 6 1512⋅  0  =  90, 720 ways
+
+                b)  The bride is in any of the 6 positions.
+
+                         1   2    3    4    5    6
+                        B    G    P    P    P   P
+                        1    1    8    7    6    5
+                    Then place the groom in any of the 5 remaining positions.
+                    Then, it will leave us with 4 remaining positions in the picture.
+                    This can be done in 8 7 6 5 1680⋅ ⋅⋅ =   ways.
+
+                                            ,
+                    Therefore 6 5 1 806⋅ ⋅   =  5 0 40 0 ways
+                c)  For the just the bride to be in the picture: 90720 50400 40 320,−  =   ways.
+                    There are 40,320 ways for just the groom to be in the picture.
+
+                                                 ,
+                    Therefore, 40320 40320 +  = 80 640 ways
 
              Exercise
-
-             How many subsets with an odd number of elements does a set with 10 elements have?
-
-             Solution
-
-
-                C     +  C   +  C  +C     +  C    =  512  subsets
-                  10,1   10,3   10,5  10,7   10,9
-
-
-
-
-
-
-
-
-
-
-
-
                                                                159</code></pre>
      	</div>
     

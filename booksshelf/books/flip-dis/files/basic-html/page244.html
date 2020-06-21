@@ -152,69 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.7 − Representing Graphs and Graph Isomorphism
+    <pre style="white-space:pre-line"><code>Determining whether Two Simple Graphs are Isomorphic
+
+          Sometimes it is not hard to show that two graphs are not isomorphic. In Particular, we can show that two
+          graphs are not isomorphic if we can find a property only one of the two graphs has, but that is preserved
+          by isomorphism. A property preserved by isomorphism of graphs is called a graph invariant.
+
+
+          Example
+
+          Show that the graphs shown below are not isomorphic
 
 
 
 
-             Sometimes, two graphs have exactly the same form, in the sense that there is a one-to-one
-             correspondence between their vertex sets that preserves edges. In such case, we say that the two graphs
-             are isomorphic.
-
-
-             Adjacency
-
-             Use the adjacency lists to describe the given graph
-
-                                                                     Adjacency List for a Simple Graph
-
-                                                                     Vertex          Adjacent Vertices
-
-                                                                       a                  b, c , e
-                                                                       b                     a
-
-                                                                        c                 a, d, e
-
-                                                                       d                    c, e
-                                                                        e                 a, c , d
 
 
 
 
-                                                                    Adjacency List for a Directed Graph
-                                                                     Initial Vertex    Terminal Vertices
-
-                                                                           a                b, c, d, e
-
-                                                                           b                  b, d
-                                                                           c                 a, c, e
-
-                                                                           d
-
-                                                                           e                 b, c , d
 
 
 
-             Adjacency Matrices
 
-                                    )
-                                                                  n
-             Suppose that G =  ( ,V E  is a simple graph where  V = . Suppose that the vertices of G are listed
-                                                               (
-                           ,
-             arbitrary as  v v  , , v . The adjacency matrix A  or A  )  of G, with respect to this listing of the
-                         1   2      n                                G
-             vertices, is the  nn×  zero-one matrix with 1 as its (i, j)th entry when  v  and  v are adjacent, and 0 as
-                                                                                i       j
-             its (i, j)th entry when they are not adjacent.
-                                        {
-                                  1  if   v  ,v  }    is an edge of G
-                           a =           i   j
-                                 
-                             ij
-                                  0 otherwise
-                                 
-                                                            244</code></pre>
+
+
+
+
+
+                        G                          H
+          Solution
+
+             Both graphs G & H have 5 vertices and 6 edges.
+             H has a vertex of degree one, @ e, whereas G has no vertices of degree one.
+             It follows that G & H are not isomorphic.
+
+
+          Example
+
+          Determine whether the graphs shown below are isomorphic
+
+
+
+
+
+
+
+
+
+
+
+
+                               G                                   H
+
+          Solution
+
+             Both graphs G & H have 8 vertices and 10 edges.
+             Also both have 4 vertices of degree 2 and 4 vertices of degree 3.
+                       2
+              deg ( ) a =  in G, a must correspond to either t, u ,x, or y in H, because these are the vertices of degree
+             2 in H. However, each of these four vertices in H is adjacent to another vertex of degree 2 in H, which
+             is not true for a in G. Therefore, G & H are not isomorphic.
+
+
+
+
+                                                           244</code></pre>
      	</div>
     
      </div>

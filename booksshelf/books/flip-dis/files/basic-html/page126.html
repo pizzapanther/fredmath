@@ -152,61 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-
-           Find  gcd (91, 287)
-           Solution
-
-               287 = 91 ∙ 3 + 14        Divide 287 by 91
-
-                91 = 14 ∙ 6 + 7         Divide 91 by 14
-                14 =  7 ∙ 2 + 0         Divide 14 by 7
-
-               gcd (287, 91) = 7
-
-
-
-           Example
-
-           Find  gcd (414, 662)
-
-           Solution
-               662 = 414 ∙ 1 + 248      Divide 662 by 414
-
-               414 = 248 ∙ 1 + 166      Divide 414 by 248
-
-               248 = 166 ∙ 1 + 82       Divide 248 by 166
-               166 = 82 ∙ 2 + 2         Divide 166 by 82
-
-                82 = 2 ∙ 41 + 0         Divide 82 by 2
-
-               gcd(414, 662) = 2
-
-
-           Euclidean Algorithm
-
-             procedure gcd(a, b: positive integers)
-             x := a
-             x := b
-             while   y ≠ 0
-                    r := x mod y
-                    x := y
-                    y := r
-             return x {gcd(a,b) is x}
-
-
-           GCDs as Linear Combinations
-
-           Bézout’s Theorem
-
-           If a and b are positive integers, then there exist integers s and t such that  gcd(a,b) = sa + tb.
+    <pre style="white-space:pre-line"><code>Section 2.6 – Applications of Congurences
 
 
 
 
 
-                                                            126</code></pre>
+          Hashing Functions
+
+          Definition
+
+          A hashing function h assigns memory location h(k) to the record that has k as its key.
+          A common hashing function is  h(k) = k mod m, where m is the number of memory locations. Because
+          this hashing function is onto, all memory locations are possible.
+
+
+          Example
+
+          Find the memory locations assigned by the hashing function h(k) = k mod 111 to the records of customers
+          with Social Security numbers 064212848, 037149212, and 107405723.
+
+          Solution
+
+             This hashing function  assigns the records of customers with social security numbers as keys to
+             memory locations in the following manner:
+                 h(064212848) = 064212848 mod 111 = 14
+                 h (037149212) = 037149212 mod 111 = 65
+                 h (107405723) = 107405723 mod 111 = 14,
+
+             But since location 14 is already occupied, the record is assigned to the next available position, which
+             is 15.
+
+
+
+          The hashing function is not one-to-one as there are many more possible keys than memory locations.
+          When more than one record is assigned to the same location, we say a collision occurs.  Here a collision
+          has been resolved by assigning the record to the first free location. For collision resolution, we can use a
+          linear probing function:
+                                                  ,
+                                     ( , i
+                                   hk    ) (hk  i  =  ( ) ) mod  m ,  where i from 0 to m – 1.
+          There are many other methods of handling with collisions. You may cover these in a later CS course.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           126</code></pre>
      	</div>
     
      </div>

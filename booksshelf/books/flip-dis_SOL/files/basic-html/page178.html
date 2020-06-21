@@ -154,76 +154,76 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-        Find the solution to  a =  5a   −  4a     with a =    3, a =  2, a =  6 and a =  8
-                             n      n−  2   n−  4         0       1      2           3
+        a)  Find a recurrence relation for the number of ways to climb n stairs if the person climbing the stairs can
+            take one stair or two stairs at a time.
+        b)  What are the initial conditions?
+        c)  In how many can this person climb a flight of eight stairs
 
         Solution
-            This is a fourth-degree recurrence relation.
-                                                  2
-                                             4
-                                                        =
-            The characteristic polynomial is r − 5r − 40
-                                  )(
-            That implies to:  r − (  2  1 r −  2  4 =  )  (r −  1 )(r +  1 )(r −  2 )(r +  ) 2 =  0
-            So, the roots are 1, −1, 2, −2
+            a)  Let  a  be the number of ways to climb n stairs. In order to climb n stairs, a person must either start
+                     n
+                                                            (
+               with a step of one stair and climb n – 1 stairs   a n− 1 )  or else start with a step of two stairs and then
+                                                                                                      (
+                                 (
+               climb n – 2 stairs  a n− 2 )  or else start with a step of two stairs and then climb n – 3 stairs  a n− 3 ) .
+               From this analysis we can immediately write down the recurrence relation, valid for all
+                n ≥  3: a =  a    +  a   +  a
+                         n    n−  1  n−  2  n−  3
 
-            The general solution:    a =  α    α +  ( ) 1−  n  α +  2 +  n  α  ( ) 2−  n
-                                       n    1    2          3       4
-            Plugging in initial conditions gives
+            b)  The initial conditions are a = 1, a = 1 and    a =  2, since there is one way to climb no stairs
+                                          0       1             2
+               (do nothing), clearly only one way to climb one stair, and two ways to climb stairs (one step twice
+               or two steps at once).
 
-                   3 α =    α +  ( ) 1−  0  α +  2 +  0  α  ( ) 2−  0  →  3 α =  α +  α +  α +
-                        1    2          3       4                  1    2     3    4
-                   10 α =    α +  ( ) 1−  1  α +  2 +  1  α  ( ) 2−  1  →  10 α =  α −  2 α +  2 α −
-                         1    2          3      4                   1    2      3     4
+                                          { }
+            c)  Each term in our sequence  a n   is the sum of the previous three terms, so the sequence begins
 
-                                                   −
-                   6 α =    α +  ( ) 1  2  α +  2 +  2  α  ( ) 2  2  →  6 α =  α +  4 α +  4 α +
-                                −
-                        1    2          3       4                   1    2     3     4
-                                   3       3          3
-                                                   −
-                   8 α =    α +  ( ) 1 + −  α  2 +  α  ( ) 2  →  8 α =  α −  8α +  8α −
-                        1    2          3       4                  1    2     3      4
-                   The solution to the system of equations is α  α =  α =  = 1 and α     =  0
-                                                             1     2    3              4
-            Therefore, the solution is  a  = 1+ −  n  +  2 n
-                                             ( ) 1
-                                      n
+                a =  1,  a = 1,  a =  2,  a = 4,  a =  7,  a = 13,  a =  24,  a = 44,  a =  81
+                 0      1       2      3       4       5        6        7        8
+               Thus, a person can climb a flight of 8 stairs in 81 ways under the restrictions in this problem.
 
 
 
-        Exercise
 
-        Find the recurrence relation  a =  6a  −  12a    +  8a     with a =    −  5, a =  4 and a =  88
-                                     n      n −  1   n −  2  n −  3        0        1          2
-        Solution
 
-            This is a third-degree recurrence relation.
-                                             3
-                                                  2
-            The characteristic polynomial is r − 6r + 12r −=
-                                                           8 0
-            By the rational root test, the possible rational roots are  1,±  ±  2, ±  4, ±  8
-            We find that  r =  (using calculator).
-                            2
-                       2 1 −  6 12     −  8
-                                                            2
-                                                                              2
-                                                      ( ) =
-                                                                    4
-                              2   − 8  8            Qx     r −  4r +=   (r −  ) 2
-                          1 − 4   4    0
-                   2
-             3
-            r −  6r + 12r −=   (r −  ) 2  3  = 0
-                            8
-            Hence the only root is 2, with multiplicity 3.
-                                                                 2
-                                               n
-            The general solution:    a =  α  2 +  α  n  2 ⋅  n  + α  n ⋅−  n
-                                                                   ( ) 2
-                                       n    1       2         3
-            Plugging in initial conditions gives
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                                           178</code></pre>
      	</div>
     

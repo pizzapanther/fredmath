@@ -152,75 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
-
-             A directed graph (or digraph) (V, E) consists of a nonempty set of vertices V and a set of directed
-             edges (or arcs) E. Each directed edge is associated with an ordered pair of vertices. The directed edge
-
-             associated with the ordered pair (u, v) is said to start at u and end at v.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             Special Graphs
-
+    <pre style="white-space:pre-line"><code>The concept of Degree
              Definition
 
-             A simple graph is a graph that does not have any loops or parallel edges. In a simple graph, an edge
-                                                   }
-             with endpoints v and w is denoted { , u v
+
+                                                                              ( )
+             Let G be a graph and v a vertex of G. The degree of v, denoted deg v , equals the number of edges that
+             are incident on v, with an edge that is a loop counted twice. The total degree of G is the sum of the
+             degrees of all vertices of G.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
              Example
 
-             Draw all simple graphs with the four vertices {u, v, w, x} and two edges, one of which is {u, v}
 
+             Find the degree of each vertex of the graph G shown below. Then find
+             the total degree of G.
              Solution
+                    ( )
+                                                            (
+                                                                          )
+                deg v 1  =  0  since no edge is incident on v   v  is isolated
+                                                         1
+                                                              1
+                    ( )
+                deg v 2  =  2  since both e and  e  are incident on v
+                                                2
+                                                                   2
+                                         1
+                    ( )
+                deg v 3  =  4 since both e and  e  are incident on v  and the loop e  is also incident on v
+                                                                  3
+                                                                                                        3
+                                         1
+                                                2
+                                                                                  3
+                              (contributes 2 to the degree of v )
+                                                             3
+                                                  ( )
+                                        ( )
+                                                            ( )
+                Total degree of G = deg v 1  +  deg v 2  +  deg v 3  =  0 24 =  6
+                                                                        +
+                                                                     +
 
-
-
-
-
-
-
-
-
-
-             Definition
-
-             Let n be a positive integer. A complete graph on n vertices, denoted  K  is a simple graph with n
-                                                                                 n
-             vertices and exactly one edge connecting each pair of distinct vertices.
-
-             The complete graphs  K  K   , K  , K  , and  K  can be drawn as follows
-                                     ,
-                                   1    2    3   4         5
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            233</code></pre>
+                                                              233</code></pre>
      	</div>
     
      </div>

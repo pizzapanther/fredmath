@@ -152,36 +152,41 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Guidelines:   Mathematical Induction Proofs
+    <pre style="white-space:pre-line"><code>Inductive Step: Assume that  P  holds   f = α k− 2
+                                              k         k
+                                                                        ) 1 2
+                We need to prove that   P    is true, that is    f  =  α  (k+−  =  α  k  1 −   is also true.
+                                        k+ 1                 k+ 1
+                                                                      2
+                                                                                    +
+                              2
+                                                          2
+                     α k  1 −  = α ⋅α k−  3             α=       1+  5     =  3 +  5  =  2 1+  5  = 1+ 1+  5  = 1+α
+                                                                2         2         2            2
+                          =  (α +  ) 1 ⋅α k− 3
+
+                          = α k−  2  +α k−  3
+                    By the inductive hypothesis, we have   f &gt;α k−  2  f    &gt;α k−  3
+                                                           k            k  1 −
+
+                    Therefore.  f   =  f +  f    &gt; α k−  2  +α k−  3  = α k  1 −
+                                k+  1  k     k−  1
+
+                Hence,  P     is true. This completes the proof.
+                         k  1 +
 
 
-             Template for Proofs by Mathematical Induction
 
-             1.  Express the statement that is to be proved in the form “for all  n ≥  , b P ( ) n ” for a fixed integer b.
 
-                                                                            P
-             2.  Write out the words “Basis Step” or “step 1”. Then show that  ( ) b  is true, taking care that the correct
-                value of b is used. This completes the first part of the proof.
-             3.  Write out the words “Inductive Step.”
-             4.  State and clearly identify, the inductive hypothesis, in the form “assume that  ( )  is true for an
-                                                                                           Pk
-                                          b
-                arbitrary fixed integer  k ≥ .”
-             5.  State what needs to be proved under the assumption that the inductive hypothesis is true. That is, write
-                          Pk
-                out what  ( +    ) 1  says.
-                                    Pk
-                                                                        Pk
-             6.  Prove the statement  ( +  ) 1  making use the assumption  ( ) . Be sure that your proof is valid for
-                                                                                                          b
-                                      b
-                all integers k with  k ≥ , taking care that the proof works for small values of k, including  k =
-             7.  Clearly identify the conclusion of the inductive step, such as by saying “this completes the inductive
-                step.”
-             8.  After completing the basis step and the inductive step. State the conclusion, namely that by
 
-                                        Pn
-                mathematical induction,  ( ) is true for all integers n with  nb≥ .
+
+
+
+
+
+
+
+
 
 
 

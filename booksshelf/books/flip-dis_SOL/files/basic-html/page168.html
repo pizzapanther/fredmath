@@ -152,71 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 3.5 − Applications of Recurrence Relations
+    <pre style="white-space:pre-line"><code>Exercise
 
-
-
-
-        Exercise
-        a)  Find a recurrence relation for the number of permutation of a set with n elements
-        b)  Use the recurrence relation to find the number of permutations of a set with n elements using iteration.
+        A professor writes 40 discrete mathematics true/false questions of the statements in these questions. 17 are
+        true. If the questions can be positioned in any order, how many different answer keys are possible?
 
         Solution
 
-            a)  A permutation of a set with n elements of a choice of a first element, followed by a permutation of a
-               set of  n − 1  elements. Therefore  P = nP    with P =   1
-                                                 n     n− 1          0
-            b)  P =  nP
-                 n     n− 1
-                   =   ( nn −  ) 1 P n− 2
-
-                            ) 1
-                                 ⋅⋅
-                   =   ( nn −  21 P
-                                     0
-                   =   ! n
+                            10
+                         ×
+            C       =  8.9 10    answers
+              40,17
 
 
         Exercise
 
-        A vending machine dispensing books of stamps accepts only one-dollar coins, $1 bills, and $5 bills.
-          a)  Find a recurrence relation for the number of ways to deposit n dollars in the vending machine, where
-              the order in which the coins and bills are deposited matter.
-          b)  What are the initial conditions?
-          c)  How many ways are there to deposit $10 for a book of stamps?
+        Thirteen people on a softball team show up for a game.
+          a)  How many ways are there to choose 10 players to take the field?
+          b)  How many ways are there to assign the 10 positions by selecting players from the 13 people who
+              show up?
+          c)  Of the 13 people who show up, there are three women. How many ways are there to choose 10
+              players to take the field if at least one of these players must be a woman?
+
+        Solution
+            a)  C      =  286 ways
+
+                 13,10
+
+            b)  The order in which the choices are made:  P    = 1,037,836,800 ways
+                                                         13,10
+            c)  There is only one way to choose the 10 players without choosing a woman, since there are exactly
+               10 men.
+
+               Therefore, there are 286 1 =−  28 5 ways       to choose the players if at least one of them must be a
+               woman.
+
+
+
+        Exercise
+
+        A club has 25 members
+          a)  How many ways are there to choose four members of the club to serve on an executive committee?
+          b)  How many ways are there to choose a president, vice president, secretary, and treasurer of the club,
+              where no person can hold more than one office?
 
         Solution
 
-            a)  Let  a  be the number of ways to deposit n dollars in the vending machine. We must express  a in
-                     n                                                                                     n
-               terms of earlier terms in the sequence. If we want to deposit n dollars, we may start with a dollar
-               coin and then deposit n – 1 dollars. This gives us  a   ways to deposit n dollars.
-                                                                 n− 1
-               We can start with a dollar bill and then deposit n – 1 dollars. This gives us  a   more ways to
-                                                                                         n− 1
-               deposit n dollars.
-               Finally, we can deposit a five-dollar bill and follow that with n – 5 dollars; there are  a  ways to
-                                                                                                  n− 5
-               do this, Therefore the recurrence relation is  a =  2a  +  a    for  n ≥  5
-                                                           n      n −  1  n −  5
-                                                                                                       2
-            b)  We need initial conditions for all n from 0 to 4. Clearly,  a = 1 (deposit nothing) and  a =
-                                                                       0                           1
-               (deposit either the dollar coin or the dollar bill)
-                                                        4
-                                    3
-                      2
-                a =  2 =  4; a =   2 =  8 and    a =   2 = 16
-                 2             3                   4
-            c)  a =  2a +  a =  2 16
-                                  ( ) 1 33+=
-                 5     4    0
-                a =  2a +  a =  2 33
-                                 ( ) 2 68+=
-                 6     5    1
-                                  ( ) 4 140+=
-                a =  2a +  a =  2 68
-                 7      6    2
+            a)  Since the order of choosing the members is not relevant, we need to use a combination
+
+                C (25,4 )  = 12,650 ways
+            b)  Since the order of choosing the members is matter, we need to use a permutation.
+
+                               6
+                P (25,  ) 4  = 303, 00 ways
+
+
+
+
+
+
                                                           168</code></pre>
      	</div>
     

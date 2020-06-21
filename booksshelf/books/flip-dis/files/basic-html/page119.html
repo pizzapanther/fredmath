@@ -152,33 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>10.  Find the sum and product of each of these pairs of numbers. Express your answers as an octal
-                expansion.
-                    a)  (763 ) ,  (147 )                     b)  (6001 ) ,  (272 )
-                             8         8                               8          8
-                    c)  (1111 ) ,  (777 )                    d)  (54321 ) ,  (3456 )
-                              8         8                                8          8
+    <pre style="white-space:pre-line"><code>Least Common Multiple
 
-           11.  Find the sum and product of each of these pairs of numbers. Express your answers as an
-                hexadecimal expansion.
+             Definition
 
-                    a)  (1AE )  ,  (BBC  )                   b)  (20CBA  )  ,  ( 01A  )
-                              16          16                              16         16
-                                                                  E
-                    c)  ( ABCDE  )  ,  (1111 )               d)  ( 0000E  )   ,  (BAAA )
-                                  16          16                           16           16
+             The least common multiple of the positive integers a and b is the smallest positive integer that is divisible
+             by both a and b. It is denoted by lcm(a,b).
 
+             The least common multiple can also be computed from the prime factorizations.
 
+                                                                   (
+                                                                                      ,
+                                                        ( ,
+                                                                      ,b
+                                                                                    nn
+                                               )
+                                                         11
+                                      lcm ( , a  b =  p max ab  ) max a 2 2 )   p max (ab  )
+                                                              p
+                                                    1          2               n
+             This number is divided by both a and b and no smaller number  is divided by a and b.
 
+             Example
+                    (  35 2    4 3 )   max (3,4 )  max (5,3 )  max (2,0 )
+                lcm  237 , 2 3      =  2         3 ⋅       7 ⋅
 
+                                               2
+                                           5
+                                    =  2 ⋅  4  37
+                                             ⋅
 
 
+             Theorem
+                                                               )
+                                                                         )
+             Let a and b be positive integers. Then  ab =  gcd ( ,ab lcm⋅  ( ,ab
 
 
+             Euclidean Algorithm
 
+             The Euclidian algorithm is an efficient method for computing the greatest common divisor of two
+             integers. It is based on the idea that gcd(a,b) is equal to gcd(a,c) when a &gt; b and c is the remainder when
+             a is divided by b.
 
 
+             Lemma 1
+                                                                                    )
+             Let  a bq r=  + , where a, b, q, and r are integers. Then gcd ( ,ab =  ( ,b r
+                                                                         ) gcd
 
+             Proof
+              Suppose that d divides both a and b. Then d also divides a − bq = r. Hence, any common divisor of a
+              and b must also be any  common divisor of b and r. Suppose that d divides both b and r. Then d also
+              divides bq + r = a. Hence, any common divisor of a and b must also be a common divisor of b and r.
+                                             )
+              Therefore, gcd ( ,ab ) gcd=  ( ,b r .
 
 
 
@@ -191,47 +219,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            119</code></pre>
+                                                              119</code></pre>
      	</div>
     
      </div>

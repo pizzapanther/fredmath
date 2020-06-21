@@ -152,77 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>13.  Let R be the relation on the set of all states in the U.S. consisting of pairs (a, b) where state a
-                  borders state b. Find
-
-                    a)  R − 1     b)   R
-
-                                 ) (
-                                        ) (3,4  and
-             14.  Let  R  =  ( { 1,2 , 2, 3 ,   )}
-                       1
-                  R   =  ( { 1, 1 ,  ) (    ) (     ) (    ) (3, 1 ,      ) (3, 3 ,       )}
-                                                                   ) (3, 2 ,
-                             ) (1, 2 , 2, 1 , 2, 2 , 2, 3 ,
-                                                                                  ) (3, 4  be relation from
-                    2
-                    {1, 2, 3} to {1, 2, 3, 4}. Find
-                      ) a  R   R          ) b  R   R           ) c  R − R           ) d  R −  R
-                           1    2               1    2               1    2                2    1
-
-                                                                         )}
-             15.  Let the relation  R =  ( { 1, 2 ,   ) (  ) (    ) (3, 1   and the relation
-                                           ) (1, 3 ,  2, 3 ,  2, 4 ,
-                                                    )}
-                                            ) (
-                             ) (3, 1 ,
-                  S =   ( {   2, 1 ,   ) (3, 2 ,  4, 2 .  Find  SR
-
-                                                                                }
-                                            }
-              16.  R =   { ( ,a b ∈  )  2   a &gt; R  b    R =  { ( ,a b ∈  )  2   a ≤ R  b
-                     1                                    4
-                                                                                }
-                    R =  { ( ,a b ∈  )  2    a b≥ R  }    R =  { ( ,a b ∈  )  2      a = R  b
-                      2                                   5
-                                                                                }
-                    R =  { ( , a b ∈  )  2   a b&lt; R  }    R =  { ( ,a b ∈  )  2   a ≠ R  b
-                      3                                   6
-
-                    Find the following:
-
-                     ) a  R  R                    ) f  R −  R                 ) k  R   R
-                          1    3                       2    1                      1    3
-                     ) b  R   R                  ) g  R ⊕  R                 ) l  R  R
-                          1    5                       1    3                      1    4
-
-                     ) c  R  R                   ) h  R ⊕ R                  m ) R   R
-                          2    4                       2     4                      1    5
-                      ) d  R  R                  ) i  R   R                  ) n  R   R
-                          3     5                     1    1                       1    6
-                     ) e  R −  R                  ) j  R   R                  ) o  R   R
-                          1    2                       1   2                        2   3
-
-             17.  Let  R and R  be the “divides” and “is a multiple of” relations on the set of all positive integers,
-                       1        2
-                                                                                                         }
-                                                                }
-                                                                                  )
-                  respectively. That is  R =  ( { a,  b )   | a  divides  b  and  R =  ( { a,  b |  a  is a multiple of  b
-                                        1                               2
-                    Find the following:
-                     ) a  R  R                   ) c  R − R                   ) e  R ⊕  R
-                          1    2                      1     2                      1     2
-                     ) b  R   R                  ) d  R −  R
-                          1    2                       2    1
+    <pre style="white-space:pre-line"><code>Section 4.2 – Representing Relations
 
 
 
+          Representing Relations Using Matrices
+
+          A relation between finite sets can be represented using a zero-one matrix. Suppose that R is a relation
+
+                           ,
+                                                           ,
+                                                       ,
+                               ,
+          from  A = { a 1 , a  a   ,a m }  to  B = { b 1 , b  b   ,b n } . The relation R can be represented by the
+                         2
+                              3
+                                                      2
+                                                          3
+          matrix  M  = { }    where
+                        m
+                   a      ij
+                                    (
+                               1  if a  b  ) ∈ R
+                                       ,
+                        m =          i   j
+                              
+                                    (
+                          ij
+                               0  if a  b  ) ∉ R
+                                       ,
+                                     i   j
 
 
+          Example
+          Suppose that A = {1, 2, 3} and B = {1, 2}. Let R the relation from A to B containing (a, b) if a A∈  , b B ,
+                                                                                                           ∈
+          and a &gt; b. What is the matrix representing R is  a  = 1,  a = 2,  a =  3, and b = 1,  b =  2 ?
+                                                         1      2       3           1      2
+          Solution
+                                                       0 0
+                                                           
+             R = {(2, 1), (3, 1), (3, 2)}     M    =    10
+                                                 R        
+                                                         1 1  
 
 
-                                                            202</code></pre>
+          Example
+
+                                                        ,
+                      ,
+                                                ,
+          Let   A = { a a 2 , a 3 } and  B = { b 1 , b b  b b 5 } . Which ordered pairs are in the relation R
+                                                    ,
+                                                  3
+                                              2
+                     1
+                                                       4
+          represented by the matrix
+                                 0 1 0 0 0
+                                               
+                        M    =    10 1 10  ?
+                           R                  
+                                   1 01 01  
+          Solution
+                                                        , a
+                           ,  a
+                                    , a
+                                                                            , a
+              R =  ( {  a 1 ,b 2 ) (  2  ,b 1 ) (  2 ,b 3 ) (  2 ,b 4 ) (  3 ,b 1 ) (  3 ,b 3 ) (  3 ,b 5 )}
+                                                                  , a
+                                              ,  a
+          A relation R on A is reflexive if  ( ,a a ∈  whenever  a ∈
+                                              )
+                                                                  A
+                                                 R
+                                      1           
+                 M    = ( M   ) t       1        
+                    R       R                   
+                                                 
+                                                1 
+
+          A relation R on A is symmetric
+                                                           202</code></pre>
      	</div>
     
      </div>

@@ -152,81 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>6 α =   α +  ( ) 1 +  1  α  2 1  →  6 α =  α −  2α +
-                                 −
-                         1    2          3              1    2      3
-                    ⇒    α   6, α =    −  2, α =  =  −  1
-                         1         2         3
+    <pre style="white-space:pre-line"><code>+++
+                        =  20 8 3 16
+                        =  47
 
-                    0 α =   α +  ( ) 1−  2  α +  2 2  →  0 α =  α +  4 α +
-                         1    2          3               1    2      3
-
-                                                −
-                Therefore, the solution is  a =  6 2 −  ( ) 1  n  −  2 n
-                                           n
-
+                    Therefore, there are 47 bits of length 7 containing three consecutive 0’s.
 
 
              Exercise
-             Find the solution to  a =  7a  +  6a      with a =   9, a =  10 and a =  32
-                                  n     n −  2   n −  3       0       1           2
+
+             a)  Find a recurrence relation for the number of bit strings of length n that do not contain three consecutive
+                0s.
+             b)  What are the initial conditions?
+             c)  How many bit strings of length seven do not contain three consecutive 0s?
              Solution
 
-                This is a third-degree recurrence relation.
-                                                 3
-                                                         60
-                The characteristic polynomial is r − 7r −=
-                                                                        6
-                By the rational root test, the possible rational roots are  ±  { } =  ±  {1, 2, 3, 6      }
-                                                                        1
-                We find that  r = − 1 (using calculator).
-                           −  11   0   −  7 −  6
-                                                                 2
-                                                                    r
-                                  − 1   1   6           Qx      r −−   6 = (r + 2 )(r −  ) 3
-                                                          ( ) =
-                               1 −  1 −  6  0
+                a)  Let  a  be the number of bit strings of length n do not contain three consecutive 0’s. In order to
+                         n
+                    construct a bit string of length n of this type we could start with 1 and follow with a string of length
+                    n – 1 not containing three consecutive 0’s, or we could start with 01 and follow with a string of
+                    length n – 2 not containing three consecutive 0’s, or we could start with a 001 and follow with a
+                    string of length n – 3 not containing three consecutive 0’s.
+                    These 3 cases are mutually exclusive and exhaust the possibilities for how the string might start
+                    since it cannot start 000.
+                    We can write down the recurrence relation, valid for all n ≥  3: a =  a  +  a  +  a
+                                                                                   n    n−  1  n−  2  n−  3
 
-                  3
-                       2
-                                8
-                r −  6r + 12r −=   (r + 1 )(r + 2 )(r −  ) 3 =
-                                                         0
-                So, the roots are  −2, −1, and 3.
-                The general solution:
-                                                   n
-                    a =  α  ( ) 2  n  +  α  ( ) 1  n  +  α  3
-                             −
-                                         −
-                     n     1          2          3
-                Plugging in initial conditions gives
+                b)  There are no bit strings of length 0, 1, or 2 containing 3 consecutive 0’s, so the initial conditions are
+                    a =  1; a =   2 and    a =  4
+                     0        1              2
 
-                                            −
-                                 −
-                    a    9 α =  =  ( ) 2  0  α +  ( ) 1  0  α +  3 0  →  9 α =  α +  α +
-                     0        1          2          3               1    2    3
-                    a =  10 α =  ( ) 2 +  1  α  ( ) 1 +  1  α  3 1  →  10 =  2α −  α −  3α +
-                                 −
-                                            −
-                     1         1          2         3                  1    2     3
-                                     2           2      2
-                    a =  32 α =  ( ) 2−  α +  ( ) 1−  α +  3  →  32 =  4 α  α +  9 α +
-                     2         1           2          3                 1    2     3
-                       The solution to the system of equations is α  −  3,  α =  =  8 and α  =  4
-                                                                  1         2              3
+                c)  a =  a +  a +  a
+                     3     2   1    0
+                        =  4 21
+                           ++
+                        =  7
 
-                Therefore, the specific solution is    a  = − 3 ( ) 2−  n  + 8 ( ) 1−  n  +⋅  n
-                                                                            43
-                                                     n
+                    a =  a +  a +  a
+                     4     3    2   1
+                        =  7 42
+                           ++
+                        = 13
+                    a =  a +  a +  a
+                     5     4    3   2
+                        = 13 7 4
+                            ++
+                        =  24
 
-
-
-
-
-
-
-
-
+                    a =  a +  a +  a
+                     6     5    4   3
+                        =  24 13 7
+                            +
+                                 +
+                        =  44
+                    a =  a +  a +  a
+                     7     6    5   4
+                            +
+                                 +
+                        =  44 24 13
+                        = 81
+                    Therefore, there are 81 bits of length 7 that do not contain three consecutive 0’s.
                                                                177</code></pre>
      	</div>
     

@@ -152,55 +152,53 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a)  Set up a recurrence relation for the number of cars produced in the first n months by this
-                      factory.
-                  b)  How many cars are produced in the first year?
+    <pre style="white-space:pre-line"><code>Sorts
 
-                  c)  Find an explicit formula for the number of cars produced in the first n months by this factory
+                            2
+              •  Bubble:  n   steps
+                              2
+              •  Insertion:  n   steps
+              •  There are other, more efficient, sorting techniques
 
-           14.  For each of these lists of integers, provide a simple formula or rule that generates the terms of an
-                integer sequence that begins with the given list. Assuming that your formula or rule is correct,
-                determine the next three terms of the sequence.
-
-                  a)  1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, …
-                  b)  1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, …
-                  c)  1, 0, 2, 0, 4, 0, 8, 0, 16, 0, …
-                  d)  3, 6, 12, 24, 48, 96, 192, …
-                  e)  15, 8, 1, −6, −13, −20, −27, …
-                  f)  3, 5, 8, 12, 17, 23, 30, 38, 47, …
-                  g)  2, 16, 54, 128, 250, 432, 686, …
-
-                  h)  2, 3, 7, 25, 121, 721, 5041, 40321, …
-                  i)  3, 6, 11, 18, 27, 38, 51, 66, 83, 102, …
-                  j)  7, 11, 15, 19, 23, 27, 31, 35, 39, 43, …
-                  k)  1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010, 1011, …
+                      In principle, the fastest are heap sort, quick sort, and merge sort
+                      These each take  n    log n  steps
+                                               2
+                      In practice, quick sort is the fastest, followed by merge sort
 
 
 
+             Algorithm 6 − Greedy Change-Making Algorithm
+
+                procedure change ( c c    ,  , c : values of denominations of coins, where c &gt;  c &gt;   &gt;  c ; n: a
+                                      ,
+                                    1   2        r                                          1    2        r
+                                  positive integer)
+                 for i := 1 to r
+                         :0
+                      d =                               d  counts the coins of denomination c  used
+                       i                                  i                                 i
+                      While  nc≥
+                                 i
+                           d  : d +  1                  Add a coin of denomination c
+                               =
+                             i    i                                                i
+                             : n =  nc
+                                 −
+                                    i
+                { d  is the number of coins of denomination c  in the change for i = 1, 2, …, r}
+                   i                                         i
 
 
+             Definition
+
+             If n is a positive integer, then n cents in change using quarters, dimes, nickels, and pennies using the
+             fewest coins possible has at most two dimes, at most one nickel, at most four pennies, and cannot have
+             two dimes and a nickel. The amount of change in dimes, nickels, and pennies cannot exceed 24 cents
 
 
+             Theorem
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             The greedy algorithm (−6) produces change using the fewest coins possible.
 
 
 
@@ -216,13 +214,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-                                                             97</code></pre>
+                                                              97</code></pre>
      	</div>
     
      </div>

@@ -152,69 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Fibonacci Numbers
+    <pre style="white-space:pre-line"><code>Structural Induction
 
              Example
 
-             The Fibonacci numbers are defined as follows:
+             Show that the set S defined  by specifying that 3 ∊ S and that if x ∊ S and   y ∊  S, then x + y is in S, is the
+             set of all positive integers that are multiples of 3.
 
-                     f =  0
-                      0
-                     f = 1
-                      1
-                     f =  f    +  f
-                     n     n−  1  n−  2
-             Find  f  ,  f  ,  f  ,  f
-                   2   3   4  5
              Solution
 
-                 f =  f +  f
-                  2    1    0
-                      10
-                    = +
-                    = 1
+                Let A be the set of all positive integers divisible by 3.
+                To prove that A = S, show that A is a subset of S and S is a subset of A.
+                    A⊂ S:  Let P(n) be the statement that 3n belongs to S.
 
-                 f =  f +  f
-                  3    2    1
-                    = 11+
-                    =  2
-
-                 f =  f +  f
-                  4    3    2
-                      21
-                    = +
-                    =  3
-
-                 f =  f +  f
-                  5    4    3
-                    =  32+
-                    = 5
+                           Basis step:  3∙1 = 3 ∊ S, by the first part of recursive definition.
+                           Inductive step:  Assume P(k) is true. By the second part of the recursive definition, if 3k ∊
+                           S, then since 3 ∊ S, 3k + 3 = 3(k + 1) ∊ S. Hence, P(k + 1) is true.
+                    S ⊂ A:
+                           Basis step:  3 ∊ S by the first part of recursive definition, and   3 = 3∙1.
+                           Inductive step:  The second part of the recursive definition adds  x + y to S, if both x and y
+                                                                                                               y
+                           are in S. If x and y are both in A, then both x and y are divisible by 3. It follows that  x +
+                           is divisible by 3.
 
 
-             Example
+             Full Binary Trees
+
+             Definition
+
+                        hT
+             The height  ( ) of a full binary tree T is defined recursively as follows:
+
+                Basis step:  The height of a full binary tree T consisting of only a root r is  ( ) 0hT = .
+                Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has height
+                                    1      2                                                  12
+
+                                                      ,h T
+                                 h T           (  ( ) ( ))    .
+                                  ( ) 1 max h T= +
+                                                           2
+                                                    1
+
+             The number of vertices  n(T) of a full binary tree T satisfies the following recursive formula:
+                Basis step:  The number of vertices of a full binary tree T consisting of only a root r is n(T) = 1.
+
+                Recursive step:  If T  and T  are full binary trees, then the full binary tree T = TT  has the number
+                                    1      2                                                  12
+                                                             n T
+                                of vertices  ( ) 1n T =  +  n T +  ( ) ( ) .
+                                                         1
+                                                                 2
 
 
-             Show that whenever  n ≥  3,  f =  α  n− 2 , where α =  1+  5
-                                         n                       2
-             Solution
-                                      2
-                Basis Step: n = 3, α&lt; =   f
-                                           3
-                                               2
-                                   2
-                           n = 4,  α=      1+  5   
-                                          2  
-
-                                     =  6 25+
-                                          4
 
 
-                                     =  3+  5  &lt;  3 =  f
-                                          2          4
 
-                Inductive Step: Assume that  P  holds   f = α k− 2
-                                              k
-                                                        k
+
+
+
+
+
+
+
+
                                                               153</code></pre>
      	</div>
     

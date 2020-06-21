@@ -152,65 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises          Section 3.1 − Mathematical Induction
+    <pre style="white-space:pre-line"><code>Lamé’s Theorem
+
+          Let a and b be positive integers with a ≥ b.  Then the number of divisions used by the Euclidian algorithm
+                          )
+          to find gcd ( ,a b  is less than or equal to five times the number of decimal digits in b.
+
+          Proof
+
+                                                                  )
+             When we use the Euclidian algorithm to find gcd ( ,a b  with a ≥ b,
+                                           (
+                                                              )
+             n divisions  are used to obtain  with a =  r 0 , b =  r :
+                                                            1
+                                   ≤
+                 r =  rq +  r    0 r ≤   r
+                  0    11    2       2    1
+                 r =  rq +   r   0 ≤  r ≤  r
+                  1   22      3       3   1
+                     
+                 r    =  r  q    +  r   0 r ≤   r
+                                          ≤
+                  n −  2  n −  1 n−  1  n   n    n −  1
+                 r    =  rq
+                  n− 1   nn
+
+             Since each quotient  q q   ,  , q    is at least 1 and  q ≥ :
+                                   ,
+                                                                       2
+                                  1   2        n− 1                 n
+                 r ≥  1 =  f
+                  n        2
+                 r    ≥  2r ≥  2 f =  f
+                  n− 1    n     2     3
+                 r    ≥  r   +  r ≥  f +  f =  f
+                  n−  2  n−  1  n    3    2    4
+                        
+
+                 r ≥  r +  r ≥  f   +  f    =  f
+                  2    3   4    n −  1  n −  2  n
+                 b =  r ≥  r +  r ≥  f +  f  =  f
+                     1    2   3     n    n −  1  n +  1
+
+                                                                                           )
+             It follows that if n divisions are used by the Euclidian algorithm to find gcd ( ,a b  with a ≥ b, then
+
+              b ≥  f  .   f   ≥α n− 1 , for n &gt; 2, where α =  1+  5  . Therefore, b &gt;α n− 1 .
+                   n+ 1   n+ 1                               2
+
+             Because  logα ≈ 0.208 &gt;  1 , log &gt; (n −  ) 1 logα &gt;  n − 1  . Hence,  n −&lt;
+                                             b
+                                                                               1 5 logb⋅
+                                     5                          5
+                                                            k
+             Suppose that b has k decimal digits. Then b &lt; 10  and  logb &lt; . It  follows that n − 1 &lt; 5k and since k
+                                                                         k
+             is an integer, n ≤  5k.
+
+             As a consequence of Lamé’s Theorem, O(log b) divisions are used by the Euclidian algorithm to find
+                      )
+              gcd ( ,a b whenever a &gt; b.
 
 
 
 
-          1.   Prove that  1 +  2  3 +  2  5 +  2  +  (2n +   ) 1  2  =  1 (n +  12n +  )(  12n +  )(  ) 3  whenever n is a nonnegative
-                                                        3
-               integer.
-
-          2.   Prove that  1 1! 2 2!+  +  n  ! n ⋅  = (n +  ) 1 ! 1 whenever n is a positive integer.
-                           ⋅+ ⋅
-                                                        −
-                                                                 )
-                                       2
-          3.   Prove that  3 35 35 +        +⋅   n   3 ( 5 n+ 1 − 1  whenever n is a nonnegative integer.
-                                               35 =
-                            +⋅ +⋅
-                                                      4
-                                                             ( ) 7
-          4.   Prove that   2 27 27− ⋅ +⋅  2  − +⋅ ( ) 7−  n  =  1−−  n+ 1   whenever n is a nonnegative integer.
-                                               2
-                                                               4
-          5.   Find a formula for the sum of the first n even positive integers. Prove the formula.
-
-          6.   a) Find a formula for    1  +  1  +  +   1     by examining the values of this expression for
-                                     12 ⋅  2 3 ⋅       ( nn +  ) 1
-                  values of this expression for small values of n.
-               b) Prove the formula.
-
-                           2
-                                     2
-                                2
-                                            ( ) 1
-          7.   Prove that  1 −  2 +  3 −  + −   n−  1 2  ( ) 1  n−  1  ( nn +  ) 1   whenever n is a positive integer.
-                                                    n = −
-                                                                     2
-                                                      n
-                                                     ∑      k          n+ 1
-          8.   Prove that for very positive integer n,    k 2 =  (n −  ) 12  +  2.
-                                                     k  1 =
-                                                     ⋅ +
-          9.   Prove that for very positive integer n, 12 2 3 ⋅+ +  ( nn +  ) 1 =  1  ( nn + 1 )(n +  ) 2 .
-                                                                              3
-          10.  Prove that for very positive integer n,
-               1 23 234⋅  ⋅  +  ⋅  ⋅  +  +   ( nn +  1 )(n +  ) 2 =  1  ( nn +  1 )(n +  2 )(n +  ) 3
-                                                     4
-
-                   Pn
-                                                                  2
-          11.  Let  ( ) be the statement that 1+  1  +  1  + +  1  &lt;−  1   where n is an integer greater than 1.
-                                                 4   9       n 2      n
-                 a)  Show is the statement  ( ) 2P  ?
-
-                 b)  Show that  ( ) 2P   is true, completing the basis step of the proof.
-                 c)  What is the inductive hypothesis?
-                 d)  What do you need to prove in the inductive step?
-                 e)  Complete the inductive step.
-                 f)  Explain why these steps show that this inequality is true whenever n is an integer greater than
-                    1.
 
 
 

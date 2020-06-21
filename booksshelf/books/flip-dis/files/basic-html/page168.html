@@ -152,65 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Subtraction Rule
+    <pre style="white-space:pre-line"><code>Combination
+
 
           Definition
 
-          If a task can be done either in one of  n ways or in one of   n  ways, then the total number of ways to do
-                                               1                    2
-          the task is  n + n minus the number of ways  to do the task that are common to the two different ways.
-                      1    2
-          Also known as, the principle of inclusion-exclusion:  A B =  A +  B −  A B
 
+          An r-combination of elements of a set is an unordered selection of r elements from the set. Thus, an    r-
+          combination is simply a subset of the set with r elements
+          Combination of a set of n distinct objects taken r @ a time without repetition is an r element subset of
 
+          the set of n objects.
 
+          The arrangement of the elements doesn’t matter.
 
-          Example
-
-          How many bit strings of length eight either start with a 1 bit or end with the two bits 00?
-
-          Solution
-             Use the subtraction rule.
-                                                                            7
-               Number of bit strings of length eight that start with a 1 bit:   2 = 128
-                                                                            6
-               Number of bit strings of length eight that start with bits 00:  2 =  64
-               Number of bit strings of length eight that start with a 1 bit and end
-
-                                5
-                 with bits 00 : 2 =  32
-             Hence, the number is 128 + 64 − 32 = 160.
+                                                           P
+                                                      n
+                                            C      =      =  , nr  =  ! n
+                                                                    !( −
+                                                      r
+                                                , nr        ! r  rn r    )!
+                 n  Math → Prob → 3(nCr)  r
 
 
           Example
 
-          A computer company receives 350 applications from computer graduates for a job planning a line of new
-          Web servers. Suppose that 220 of these applicants majored in computer science, 147 majored in business,
-          and 51 majored both in computer science and in business. How many of these applicants majored neither
-          in computer science nor in business?
+
+          Let S be the set {a, b, c, d}. Then {a, c, d} is a 3-combination from S. It is the same as {d, c, a} since the
+          order listed does not matter.
+          Solution
+
+             C(4,2) = 6 because the 2-combinations of {a, b, c, d} are the six subsets
+              {a, b}, {a, c}, {a, d}, {b, c}, {b, d}, and {c, d}.
+
+
+          Theorem
+          The number of r-combinations of a set with n elements, where n ≥ r ≥ 0, equals
+
+                                                          )
+                                                   C ( , nr =     ! n
+                                                              rn r   )!
+                                                               !( −
+          Proof
+             By the product rule P(n, r) = C(n, r) ∙ P(r, r). Therefore,
+                                      ! n
+                                     −
+                     )
+              C ( , nr =  P ( ,nr )  =  (nr )!  =  ! n
+                                              !( −
+                        P ( ,rr )     ! r    rn r   )!
+                                  (rr   )!
+                                     −
+
+          Example
+
+          How many poker hands of five cards can be dealt from a standard deck of 52 cards? Also, how many
+          ways are there to select 47 cards from a deck of 52 cards?
 
           Solution
-             Let   A: majored in computer science
-
-                   B: majored in business
-
-              A B =   A +  B −  A B
-
-                     =  220 147 51+  −
-
-                     = 316
-              350 316 −  =  34
-
-             We conclude that 34 of the applicants majored neither in computer science nor in business.
-
-
-
-
-
-
-
-
-
+             Since the order in which the cards are dealt does not matter, the number of five card hands is:
+              C (52, 5 =     52!      2,598,960
+                      )
+                                     =
+                               −
+                         5!(52 5)!
                                                            168</code></pre>
      	</div>
     

@@ -152,54 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
+    <pre style="white-space:pre-line"><code>Example
 
-             There is a simple path between every pair distinct vertices of a connected undirected graph.
-
-             Proof
+             Which of the undirected graph have Euler circuit? Of those that do not, which have an Euler path?
 
 
-                                                                                         V E
-                Let u and v be two distinct vertices of the connected undirected graph G = ( ,  ) . Because G is
-                                                                           ,
-                                                                               ,
-                                                                                                    u
-                connected, there is at least one path between u and v.  Let  x  x  , x  where  x =  and
-                                                                          0   1       n         0
-                 x = , be the vertex sequence of a path of least length.
-                      v
-                  n
-                This path of least length is simple.
-                                                                                              j
-                To see this, suppose it is not simple. Then  x =  x  for some i and j with 0 i≤ &lt; .
-                                                           i    j
-                This means that there is a path from u to v of shorter length with vertex sequence
-                 x  , x   ,  , x   x  ,   , x  obtained by deleting the edges corresponding to the vertex sequence
-                  0   1       i− 1  j     n
-                   ,
-                 x    , x
-                  i       j− 1
 
 
-             Definition
 
-             A graph H is a connected component of a graph G if, and only if,
 
-              •  H is subgraph of G;
-              •  H is connected; and
 
-              •  No connected subgraph of G has H as a subgraph and contains vertices or edges that are not in H.
+
+
+
+                           G              G                 G
+                             1             2                 3
+             Solution
+
+                The graph G has Euler circuit, for example, a, e, c, d, e, b, a.
+                             1
+                G & G  do not have Euler circuit. Because vertices a, b, c, d of G  & a, b of G have degree 3
+                  2     3                                                         2            3
+                G  has an Euler path, a, c, d, e, b, d, a, b.  G  does not have Euler path.
+                  3                                         2
 
 
              Example
 
-             What are the connected components of the graph H shown below?
+             Which of the undirected graph have Euler circuit? Of those that do not, which have an Euler path?
 
 
 
 
 
 
+
+
+
+
+
+                        G                 G                 G
+                         1                 2                 3
+             Solution
+
+                The graph G  has Euler circuit, for example, a, g, c, b, g, e, d, f, a.
+                             2
+                G & G  do not have Euler circuit. Because vertices a, b, c, d of G  have degree 1 (odd) & c, b of
+                  1     3                                                        1
+                G have degree 3
+                  3
+                G  has an Euler path, c, a, b, c, d, b.  but G  does not have Euler path.
+                  3                                       1
+
+
+             Example
+
+             Show that the graph below does not have an Euler circuit
 
 
 
@@ -213,14 +221,7 @@ function MM_swapImage() { //v3.0
 
 
              Solution
-
-                The graph H is the union of the three disjoint connected subgraphs  H  H  , and H .
-                                                                                    ,
-                                                                                   1    2        3
-                These three subgraphs are the connected components of H.
-
-
-                                                            257</code></pre>
+                                                              257</code></pre>
      	</div>
     
      </div>

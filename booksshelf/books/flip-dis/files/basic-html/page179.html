@@ -152,53 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises         Section 3.4 − Permutations and Combinations
+    <pre style="white-space:pre-line"><code>Example
+
+             A computer system considers a string of decimal digits a valid codeword if it contains an even number of
+
+             0 digits. For instance, 1230407869 is valid, whereas 1230407869 is not valid. Let a  be the number of
+                                                                                             0
+             valid n-digit codewords. Find a recurrence relation for  a .
+                                                                   n
+             Solution
+
+                Note that  a =  because there are 10 one-digit strings, and only one, namely the string 0, is not valid.
+                               9
+                           1
+                A recurrence relation can be derived for this sequence by considering how a valid n-digit string can be
+                obtained from strings of n – 1 digits. There are two ways to form a valid string with n digits from a
+                string with one fewer digit.
+
+                1.  A valid string with n digits can be obtained by appending a valid string of n – 1 digits with a digit
+                    other than 0. This appending can be done in 9 ways. Hence, a valid string with n digits can be
+
+                    formed in this manner in 9a     ways.
+                                               n− 1
+                2.  A valid string with n digits can be obtained by appending a 0 to a string of length n – 1 that is not
+                    valid. The number of ways that this can be done equals the number of invalid (n – 1)-digit strings.
+
+                    Because there are 10 n− 1  strings of length n – 1, and  a   are valid, there are 10 n− 1 − a   valid
+                                                                        n− 1                            n− 1
+                    n –digit strings obtained by appending an invalid string of length n – 1 with a 0.
+                    Because all valid strings of length n are produced in one of these two ways, it follows that there
+                    are
+
+                           a =  9a     +  ( 10 n− 1  −  a  )
+                             n     n−  1           n−  1
+
+                               =  8a   + 10 n− 1
+                                   n− 1
 
 
-             1.   Decide whether the situation involves permutations or combinations
-                    a)  A batting order for 9 players for a baseball game
-                    b)  An arrangement of 8 people for a picture
-                    c)  A committee of 7 delegates chosen from a class of 30 students to bring a petition to the
-                       administration
-                    d)  A selection of a chairman and a secretary from a committee of 14 people
-                    e)  A sample of 5 items taken from 71 items on an assembly line
-                    f)  A blend of 3 spices taken from 7 spices on a spice rack
-                    g)  From the 7 male and 10 female sales representatives for an insurance company, team of 8 will
-                       be selected to attend a national conference on insurance fraud.
-                    h)  Marbles are being drawn without replacement from a bag containing 15 marbles.
-                    i)  The new university president named 3 new officers a vice-president of finance, a vice-
-                       president of academic affairs, and a vice-president of student affairs.
-                    j)  A student checked out 4 novels from the library to read over the holiday.
-                    k)  A father ordered an ice cream cone (chocolate, vanilla, or strawberry) for each of his 4
-                       children.
+                      Valid strings of length n.
 
-                                                                                    }
-             2.   How many different permutations are the of the set {a, b, c, d, e, f, g ?
-                                                             }
-             3.   How many permutations of {a, b, c, d, e, f, g end with a?
 
-             4.   Find the number of 5-permutations of a set with nine elements
-             5.   In how many different orders can five runners finish a race if no ties are allowed?
 
-             6.   A coin flipped eight times where each flip comes up either heads or tails. How many possible
-                  outcomes
-                    a)  Are there in total?
-                    b)  Contain exactly three heads?
-                    c)  Contain at least three heads?
-                    d)  Contain the same number of heads and tails?
 
-             7.   A coin flipped 10 times where each flip comes up either heads or tails. How many possible
-                  outcomes
-                    a)  Are there in total?
-                    b)  Contain exactly two heads?
-                    c)  Contain at least three heads?
-                    d)  Contain the same number of heads and tails?
 
-             8.   How many bit strings of length 12 contain
-                    a)  Exactly three 1s?
-                    b)  At most three 1s?
-                    c)  At least three 1s?
-                    d)  An equal number of 0s and 1s?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                               179</code></pre>
      	</div>

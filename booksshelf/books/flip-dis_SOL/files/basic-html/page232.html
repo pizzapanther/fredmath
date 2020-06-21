@@ -152,30 +152,38 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a) v ev e v ev e v ev e v             b) vv vv v                   c) vvv vv vv
-               1 2 23 34 45 2 2 1 1 0                2345 2                       4 2345 2 4
-           d) vv v vv vv                         e) v v vv vvv                f) v vvv
-                215 2 3 4 2                          05 234 2 1                   5 4 21
+    <pre style="white-space:pre-line"><code>Exercise
+
+          Use the adjacency list to represent the given graph, then represent with an adjacency matrix
+
+
+
+
+
+
+
+
+
+
+
 
           Solution
 
-             a)  It is not a trail since it has a repeated edge e . It is not a path, repeated vertex v , it is not a
-                                                           2                                  1
-                 circuit, since it ends at a vertex other than the one at which it beganv
-                                                                                   1
-             b)  It is a closed walk, starts and ends at the same vertex  v . It is a trail since no repeated edge. It is a
-                                                                      2
-                 circuit.
-                                                         {
-             c)  It is not a trail since it has repeated edges  v 2 ,  v 4 } .
+                                   Terminal                  1111
+                Initial Vertex                                        
+                                    Vertices                 000 1    
 
-                 It is a circuit, but not a simple circuit.
-             d)  It is a path and it is circuit but not a simple circuit since it has a repeated vertex v
-                                                                                               2
-             e)  It is a trail since no repeated edge.
-                 It is not a circuit, since it ends at a vertex other than the one at which it began.
+                     a             a, b , c, d                 11 00  
+                     b                 d                     0 111    
+                      c               a, b
 
-             f)  It is a path, it is not a circuit, since it ends at a vertex other than the one at which it began.
+                     d               b, c, d
+
+
+
+          Exercise
+
+          Use the adjacency list to represent the given graph, then represent with an adjacency matrix
 
 
 
@@ -189,32 +197,18 @@ function MM_swapImage() { //v3.0
 
 
 
+          Solution
 
 
+               Initial Vertex  Terminal Vertices            01 01 0
+                                                            1 0 111      
+                     a                b, d                    0 11 00  
 
+                     b              a, c, d, e              1 000 1      
+                      c               b, c                    0 01 01     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                     d                a, e                               
+                      e               c , e
 
 
 

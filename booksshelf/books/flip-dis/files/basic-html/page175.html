@@ -152,61 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-             How many ways are there to select a first-prize winner, a second prize winner, and a third-prize winner
-             from 100 different people who have entered a contest?
-
-             Solution
-
-                 P (100,3 ) 100 99 98=  ⋅  ⋅
-
-                          = 970,200  ways
+    <pre style="white-space:pre-line"><code>Section 3.5 − Applications of Recurrence Relations
 
 
-             Example
 
-             Suppose that there are eight runners in a race. The winner receives a gold medal, the second-place finisher
-             receives a silver medal, and the third-place finisher receives a bronze medal. How many different ways
-             are there to award these medals, if all possible outcomes of the race can occur and there are no ties?
+             Modeling with Recurrence Relations
 
-             Solution
 
-                                   =
-                There are:  (8, 3P  ) 8 7 6⋅⋅
+             Definition
+             A recurrence relation for the sequence {an} is an equation that expresses an in terms of one or more of the
 
-                                   = 336  ways
+                                                           ,
+                                                       ,
+             previous terms of the sequence, namely,  a  a    , a   , for all integers n with  n ≥  n , where n  is a
+                                                     0   1        n− 1                           0          0
+             nonnegative integer
 
 
              Example
 
-             Suppose that a saleswoman has to visit eight different cities. She must begin her trip in a specified city,
-             but she can visit the other seven cities in any order she wishes. How many possible orders can the
-             saleswoman use when visiting these cities?
+             A young pair of rabbits (one of each gender) is placed on an island. A pair of rabbits does not breed until
+             they are 2 months old. After they are 2 months old, each pair of rabbits produces another pair each month.
+             Find a recurrence relation for the number of pairs of rabbits on the island after n months, assuming that
+             rabbits never die.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Modeling the Population Growth of Rabbits on an Island
 
              Solution
-
-                The first city is chosen, and the rest are ordered arbitrarily. Hence the orders are:
-
-                         7! 5040=
-
-                If she wants to find the tour with the shortest path that visits all the cities, she must consider 5040
-                paths!
-
-
-             Example
-
-             How many permutations of the letters ABCDEFGH contain the string ABC ?
-
-             Solution
-
-                We solve this problem by counting the permutations of six objects, ABC, D, E, F, G, and H.
-                          6! 720=
-
-
-
-
-
+                Let  f  be the number of pairs of rabbits after n months.
+                      n
+                      There are is  f = 1 pairs of rabbits on the island at the end of the first month.
+                                     1
+                      We also have  f =  1 because the pair does not breed during the first month.
+                                       2
+                      To find the number of pairs on the island after n months, add the number on the island after the
+                       previous month,  f    , and the  number of newborn pairs, which equals  f  , because each
+                                         n− 1                                                  n− 2
+                       newborn pair comes from a pair at least two months old.
+                                           { }
+                Consequently the sequence  f  n  satisfies the recurrence relation  f =  f n −  1  +  f n −  2   for  n ≥  3 with
+                                                                                 n
+                the initial conditions   f = 1 and   f = 1.
+                                       1           2
                                                               175</code></pre>
      	</div>
     

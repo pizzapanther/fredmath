@@ -152,60 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.2 − Recursive Definitions and Structural Induction
-
-
-
-
-             Recursive Algorithms
+    <pre style="white-space:pre-line"><code>Well-Formed Formulae in Propositional Logic
 
              Definition
 
-             A recursive or inductive definition of a function consists of two steps.
+             The set of well-formed formulae in propositional logic involving T, F, propositional variables, and
+             operators from the set {¬, ∧, ∨, →, ↔}.
 
-              1.  BASIS STEP: Specify the value of the function at zero.
-              2.  RECURSIVE STEP: Give a rule for finding its value at an integer from its values at smaller
-                  integers.
+             Basis step:  T, F, and s, where s is a propositional variable, are well-formed formulae.
 
+             Recursive step:  If E and F are well formed formulae, then   (¬ E),  (E ∧ F), (E ∨ F), (E → F), (E ↔ F),
+                             are well-formed formulae.
 
-             Example
+             Examples
 
-             Suppose f  is defined by:
-
-                     f  ( ) 0 =  3
-                      ( +
-                     fn    ) 1 =  2 fn
-                                  ( ) 3+
-             Find   ( ) 1 ,f  f  ( ) 2 ,  f  ( ) 3 ,  f  ( ) 4
-
-             Solution
-
-                                3
-                 f  ( ) 1 =  2 f  ( ) 0 +
-                              3
-                      =  2 ( ) 3 +
-                      = 9
+                ((p ∨q) → (q ∧ F)) is a well-formed formula.
+                    pq ∧  is not a well formed formula.
 
 
-                                3
-                 f  ( ) 2 =  2 f  ( ) 1 +
-                      =  2 ( ) 9 + 3
 
-                      =  21
+             Rooted Trees
+
+             Definition
+
+             The set of rooted trees, where a rooted tree consists of a set of vertices containing a distinguished vertex
+             called the root, and edges connecting these vertices, can be defined recursively by these steps:
+
+             Basis step:  A single vertex r is a rooted tree.
+                                                                                            r r
+                                                ,
+                                            ,
+             Recursive step:  Suppose that T T     , T   are disjoint rooted trees with roots  ,  ,  , r ,
+                                           1   2       n                                     1  2       n
+                         respectively. Then the graph formed by starting with a root r, which is not in any of the
+                                        ,
+                                            ,
+                         rooted trees T T      , T , and adding an edge from r to each of the vertices
+                                      1   2        n
+                          r r  ,  , r , is also a rooted tree.
+                           ,
+                          1   2      n
 
 
-                 f  ( ) 3 =  2 f  ( ) 2 + 3
-
-                         ( ) 3+
-                      =  2 21
-                      =  45
 
 
-                 f  ( ) 4 =  2 f  ( ) 3 + 3
 
-                      =  2 45
-                         ( ) 3+
-                      = 93
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

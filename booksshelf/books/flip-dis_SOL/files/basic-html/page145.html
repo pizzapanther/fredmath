@@ -152,64 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 3.3 − The Basics of Counting
+    <pre style="white-space:pre-line"><code>1 01−= −
+                     f  ( ) 2 =  f  ( ) 1 −=  1
+                                   , ,
+                    The sequence: 1 0 −  1,  −  2,  −  3,  ⇒   f n  −
+                                                              ( ) 1 n=
+                    By induction:
+                                          10 1
+                                   f
+                    The basis step:  ( ) 0 = −=
+                    If      f  ( ) 1k = −
+                                      k
+                                                      1 1
+                                                   k
+                    Then     ( f k +  ) 1 =  f  ( ) 1 1k −=− −=− (k +  ) 1
+                d)   f  ( ) 2 =  f  ( ) 1 −= −=
+                                  1 31 2
+                                  1 21 1
+                     f  ( ) 3 =  f  ( ) 2 −= −=
+                                             3
+                    Given:  ( ) 0f  =  2,  f  ( ) 1 =
+                                                                  −
+                    Then the sequence: 2, 3, 2, 1, 0, … ⇒   f  ( ) n =  4 n
+                                                            f
+                    By induction:  Basis step:  ( ) 0f  =  2  and  ( ) 1 = −=
+                                                                  41 3
+                    If      f  ( ) k =  4 k
+                                    −
+                                                   k
+                                                      14
+                    Then     ( f k +  ) 1 =  f  ( ) 14k −= − −= − (k +  ) 1
+                                                          2
+                                    2
+                e)   f  ( ) 2 =  2 f  ( ) 0 =      f  ( ) 1 =
+                                     ( ) =
+                     f  ( ) 3 =  2 f  ( ) 1 =  22  4  f  ( ) 4 =  2 f  ( ) 2 =  2 ( ) 2 =
+                                                                          4
+                                      ( ) 8
+                                                                          8
+                     f  ( ) 5 =  2 f  ( ) 3 =  24 =  f  ( ) 6 = 2 f  ( ) 4 =  2 ( ) 4 =
+                    Then the sequence: 1, 2, 2, 4, 4, 8, 8, … ⇒   f  ( ) 2n =  (n+  ) 12/
+                                                          )
+                                                                                     )
+                                                        +
+                                                                                   +
+                                              f
+                    By induction:  Basis step:  ( ) 0 =  2 (0 12 /  = 1 and  f  ( ) 1 =  2 (1 12 /  =  2  and
+                    If      f  ( ) 2k =  (k+  ) 12/
+                    Then
+                                                                                               11
+                                                                                                ) ) 2 /
+                                                                          +
+                                                 11
+                      ( f k +  ) 1 =  2  ( f k −  ) 1 =  22 ⋅  (k− +  ) 2/  =  22 ⋅  k/ 2  =  2 (k/  ) 2 1  =  2 (k+  ) 2 2/  =  2  ( ( k+ +
+                                     ( ) =
+                f)  f  ( ) 3 =  2 f  ( ) 0 =  21  2  f  ( ) 4 =  2 f  ( ) 1 =  20 =  f  ( ) 5 =  2 f  ( ) 2 =  2 ( ) 2 =
+                                                                                                            4
+                                                                    ( ) 0
+                                                                                                    8
+                                                                  ( ) 0=
+                     f  ( ) 6 =  2 f  ( ) 3 =  2 ( ) 2 =    f  ( ) 7 =  2 f  ( ) 4 =  20  f  ( ) 8 =  2 f  ( ) 5 =  2 ( ) 4 =
+                                           4
+                    This is valid, since the values n = 0, 1, 2 are given. The sequence: 1, 0, 2, 2, 0, 4, 4, 0, 8, …
+                       We conjecture the formula                     Prove
+                                                                           /
+                       f  ( ) n =  2 n  3 /    when  n ≡  ( 0 mod  ) 3     f  ( ) 0 = 2 03  = 1
+                       f  ( ) 0n =  when  n ≡  ( 1 mod  ) 3       f  ( ) 1 =
+                                                                        0
+                                                                                     1
+                                                                                        2
+                       f  ( ) 2n =  (n+  ) 13/   when  n ≡  ( 2 mod  ) 3    f  ( ) 2 =  2 (21 3/+  )  = 2 =
+                    Assume the inductive hypothesis that the formula is valid for smaller inputs. Then
 
-
-
-
-             Exercise
-             There are 18 mathematics majors and 325 computer science majors at a college
-              a)  In how many ways can two representatives be picked so that one is a mathematics major and the other
-                  is a computer science major?
-              b)   In how many ways can one representative be picked who either a mathematics major or a computer
-                  science major?
-
-             Solution
-
-                a)  18 325 =⋅  550 ways
-                               8
-                       +
-                b)  18 325 =  3 43 ways
-
-
-
-             Exercise
-
-             An office building contains 27 floors and has 37 offices on each floor. How many offices are in the
-             building?
-             Solution
-
-                                                          9  offices
-                Using the product rule: there are  27 37 =⋅  99
-
-
-             Exercise
-             A multiple-choice test contains 10 questions. There are four possible answers for each question
-              a)  In how many ways can a student answer the questions on the test if the student answers every
-                  question?
-              b)   In how many ways can a student answer the questions on the test if the student can leave answers
-                  blank?
-
-             Solution
-                                 10
-
-                                       ,
-                                            ,
-                a)  444⋅⋅   4 =  4  = 1 048 576 ways
-                b)  There are 5 ways to answer each question 0 give any if the 4 answers or give no answer at all
-
-                           ,
-                    5 10  =  9 765, 625   ways
-
-
-             Exercise
-
-             A particular brand of shirt comes in 12 colors, has a male version and a female version, and comes in three
-             sizes for each sex. How many different types of the shirts are made?
-
-             Solution
-
-
+                    For  n ≡  ( 0 mod  ) 3  we have  ( ) 2f n =  f  ( ) 22n =  ⋅  (n−  ) 33/  =  22 n  3 /  2 ⋅  − 1  =  2 n  3 /   as desired
+                                                                              ⋅
+                                               f
+                                                                   ⋅=
+                    For  n ≡  ( 1 mod  ) 3  we have  ( ) n =  2  ( f n −  ) 3 =  20 0  as desired
                                                                145</code></pre>
      	</div>
     

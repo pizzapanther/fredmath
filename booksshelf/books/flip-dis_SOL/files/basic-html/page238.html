@@ -152,14 +152,16 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-          Imagine that the drawing below is a map showing 4 cities and the distances in kilometers between them.
-          Suppose that a salesman must travel to each city exactly once, starting and ending in city A. Which route
-          from city to city will minimize the total distance that must be traveled?
+    <pre style="white-space:pre-line"><code>SOLUTION                    Section 4.8 −  Connectivity
 
 
 
+          Exercise
+
+          Does each of these lists of vertices form a path in the following graph? Which paths are simple? Which
+          are circuits? Which are the lengths of those that are paths?
+                                                  a          b
+                                                                        c
 
 
 
@@ -167,60 +169,45 @@ function MM_swapImage() { //v3.0
 
 
 
+                                                d           e
+
+                 a) a, e, b, c, b     b) a, e, a, d, b, c, a       c) e, b, a, d, b, e   d) c, b , d, a, e, c
           Solution
 
-                   Route           Total Distance (Km)
+             a)  This is a path of length 4, but it is not a circuit, since it ends at a vertex other than the one at which
+                 it began. It is not a simple, since it uses an edge more than once.
 
-                  ABCDA         30 + 30 + 25 + 40 = 125
-                  ABDCA         30 + 35 + 25 + 50 = 140
+             b)  This is not a path, since there is no edge from c to a.
 
-                  ACBDA         50 + 30 + 35 + 40 = 155
-                  ACDBA         50 + 25 + 35 + 30 = 140
-                  ADBCA         40 + 35 + 30 + 50 = 155
-                  ADCBA         40 + 25 + 30 + 30 = 125
+             c)  This is not a path, since there is no edge from b to a.
 
-             Thus either route ABCDA or ADCBA fives the minimum total distance of 125 km.
+             d)  This is a path of length 5, which is a circuit. It is simple, since no edges are repeated.
 
 
+          Exercise
+
+          Does each of these lists of vertices form a path in the following graph? Which paths are simple? Which
+          are circuits? Which are the lengths of those that are paths?
+                                                   a         b
+                                                                        c
+                                                      V
+                                                         V
+                                                                 V
+                                                 V  V        V    V
 
 
+                                                 d     V    e
 
+                 a) a, b, e, c, b     b) a, d, a, d, a          c) a, d, b, e, a   d) a, b , e, c, b, d, a
+          Solution
 
+             a)  This is a path of length 4, but it is not a circuit, since it ends at a vertex other than the one at which
+                 it began. It is simple, since no edges are repeated.
 
+             b)  This is a path of length 4, which is a circuit. It is not simple, since it uses an edge more than once.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             c)  This is not a path, since there is no edge from d to b.
+             d)  This is not a path, since there is no edge from b to d.
 
 
 
@@ -236,9 +223,9 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page237.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page233.html">233</a>&nbsp;&nbsp;&nbsp;<a href="page234.html">234</a>&nbsp;&nbsp;&nbsp;<a href="page235.html">235</a>&nbsp;&nbsp;&nbsp;<a href="page236.html">236</a>&nbsp;&nbsp;&nbsp;<a href="page237.html">237</a>&nbsp;&nbsp;&nbsp;<a href="page238.html">238</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page233.html">233</a>&nbsp;&nbsp;&nbsp;<a href="page234.html">234</a>&nbsp;&nbsp;&nbsp;<a href="page235.html">235</a>&nbsp;&nbsp;&nbsp;<a href="page236.html">236</a>&nbsp;&nbsp;&nbsp;<a href="page237.html">237</a>&nbsp;&nbsp;&nbsp;<a href="page238.html">238</a>&nbsp;&nbsp;&nbsp;<a href="page239.html">239</a>&nbsp;&nbsp;&nbsp;<a href="page240.html">240</a>&nbsp;&nbsp;&nbsp;<a href="page241.html">241</a>&nbsp;&nbsp;&nbsp;<a href="page242.html">242</a>&nbsp;&nbsp;&nbsp;<a href="page243.html">243</a>
              </td>
-             <td width="35%"><a href=""><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+             <td width="35%"><a href="page239.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>
          </table>
        </div>
@@ -251,7 +238,7 @@ function MM_swapImage() { //v3.0
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><a href=""><img src="images/next_big.png" width="90" height="80" /></a></p>
+  <p><a href="page239.html"><img src="images/next_big.png" width="90" height="80" /></a></p>
 </div>
 
 

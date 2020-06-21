@@ -152,47 +152,51 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>) 1 2
-             We need to prove that   P    is true, that is    f  =  α  (k+−  =  α  k  1 −   is also true.
-                                     k+ 1                 k+ 1
+    <pre style="white-space:pre-line"><code>Theorem
 
-                           2
-                                                       2
-                  α k  1 −  = α ⋅α k−  3             α=       1+  5     2  =  3 +  5  =  2 1+ +  5  = 1+  1+  5  = 1+α
-                                                             2         2         2            2
-                       = (α +  ) 1 ⋅α k− 3
+                                                ( ) 1
+          If T is a full binary tree, then  ( ) ≤  nT  2 hT +  −  1
 
-                       = α k−  2  +α k−  3
-
-
-             By the inductive hypothesis, we have
-
-                      f &gt;α   k−  2  f  k− 1  &gt;α k−  3
-                       k
-
-             Therefore,  f    =  f +  f
-                          k+  1  k    k−  1
-
-                              &gt; α k−  2  +α k−  3
-
-                              = α k  1 −
-
-
-             Hence,  P     is true.
-                      k+ 1
-             This completes the proof.
-
-
-
-
-
-
-
-
-
-
-
-
+          Proof
+             Use structural induction.
+             Basis step:  The result holds for a full binary tree consisting only of a root, n(T) = 1 and h(T) = 0.
+                        Hence, n(T) = 1  ≤ 2 0+1  – 1   = 1.
+                                       ( )
+                                                                    ( )
+                                                                              ( ) 1
+                                                ( ) 1+
+                                                                                2
+             Recursive step:  Assume  n T 1  ≤  2 hT 1  −  1 and also  n T 2  ≤  2 hT +  −  1whenever T  and T  are
+                                                                                                          2
+                                                                                                   1
+                             full binary trees.
+                 n ( ) 1T =  +  n T +  ( ) ( )                     (by recursive formula of n(T))
+                                   n T
+                                       2
+                               1
+                               ( ) 1+
+                                               ( ) 1+
+                                                        
+                                         
+                       ≤+   2 hT 1  − 1 +   2 hT 2   − 1          (by inductive hypothesis)
+                        1
+                                                        
+                                         
+                           
+                                                     
+                                   ( ) 1 hT+ 
+                         2 max 2
+                       ≤ ⋅       hT 1   ,2  ( ) 1 +  2      − 1
+                                                 
+                                                                         (
+                                          ( )) 1
+                                    1
+                                                                           x
+                       =  22 ⋅  max (hT +  ( ) 1, hT 2  +  −  1     ( max 2 ,2 y )  =  2 max ( ,xy ) )
+                             ( )
+                       =  22 ⋅  ht  −  1                           (by recursive definition of h(T))
+                           ( ) 1 +
+                       =  2 ht  − 1
 
 
 

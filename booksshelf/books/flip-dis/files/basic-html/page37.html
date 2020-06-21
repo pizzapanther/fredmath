@@ -152,70 +152,59 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Using direct proof, we assume that n is odd, is a true statement. By the definition of an odd integer, it
-                                                                                      2
-                follows that  n =  2k + 1, where k is some integer. We need to show that  n  is odd.
+    <pre style="white-space:pre-line"><code>Proof by Contraposition
 
-                     2
-                    n =  (2k +  ) 1  2           Square both sides
+             In logic, proof by contrapositive is a form of proof that establishes the truth or validity of a proposition by
+             demonstrating the truth or validity of the converse of its negated parts.
+                                                                                          p
+                                                                    q
+             To prove by contraposition, consider an implication  p → , prove that  q¬ → ¬ ,
+                    •  If the antecedent  q¬  is false, then the contrapositive is always true.
+                    •  Show that if  q¬  is true, then  p¬  is true
 
-                        =  4k +  2  4k +  1
-                           (
-                        =  22k +  2  2k +  )  1    2k +  2  2k =  K
+             To perform an indirect proof, do a direct proof on the contrapositive.
 
-                        =  2K + 1
-                                                                         2
-                By the definition of an odd integer, we can conclude that  n  is also an odd integer.
+
+             Example
+
+             Prove that if n is an integer and 3n + 2 is odd, then n is odd.
+
+             Solution
+
+                The first step in a proof by contraposition is to assume that the conclusion of the conditional statement
+                “3n + 2 is odd, then n is odd” is false. Assume that n is even, then by the definition of an even integer,
+                 n =  2k for some integer k.
+
+                                            2
+                    3n +=    ( ) 2      6k +=    ( 23k +  ) 1
+                         2 3 2k +=
+                This show 3n +  is even, because it is a multiple of 2, therefore not odd. This is the negation of the
+                               2
+                theorem of the conditional statement implies that the hypothesis is false; the original conditional
+                statement is true.
+                Our proof by contraposition succeeded; we have proved the theorem “If 3n + 2 is odd, then n is odd.”
 
 
 
              Example
 
-             Give a direct proof that if m and n are both perfect squares, then nm is also a perfect square.
-             (An integer a is a perfect square if there is an integer b such that  ab=  2 .)
+             Prove that if  n = ab  where a and b are positive integers, then  a ≤  n  or b ≤  n .
 
              Solution
 
-                Using direct proof of this theorem, we assume that the hypothesis of this conditional statement is true,
-                namely, we assume that m and n are both perfect squares.
-                By the definition of a perfect square:
-                                                                                   2
-                    ∃∋         2                 There is an integer s such that  m =  s
-                     s   m s=
-                     t   n t
-                    ∃∋     =  2
-                The goal is to show that nm is also a perfect square.
-                                                        2
-                           22
-                                                     st
-                    mn =  s t = ( )( ) ( )( ) ( )
-                                           st st =
-                                 ss tt =
-                By the definition of a perfect square, it follows that nm is also a perfect square.
+                By using proof by contraposition, let assume that the conclusion of the conditional statement “if
+                 n =  ab  where a and b are positive integers, then  a ≤  n  or b ≤  n ” is false.
+                ( a ≤  n ∨  ) ( b ≤  n  is false.
+                                   )
 
+                Using the meaning of disjunction together with De Morgan’s law, that implies that both  a ≤  n  and
 
+                b ≤   n  are false ⇒  a &gt;  n  and b &gt;   n
+                Then       ab &gt;   n n =  n ⇒     ab ≠  n, which contradicts the statement n =  ab .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                This is the negation of the theorem of the conditional statement implies that the hypothesis is false; the
+                original conditional statement is true. Our proof by contraposition succeeded; we have proved the
+                theorem “If  n =  ab  where a and b are positive integers, then  a ≤  n  or b ≤  n .”
 
 
 

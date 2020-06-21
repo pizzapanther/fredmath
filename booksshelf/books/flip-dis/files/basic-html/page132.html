@@ -152,69 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.6 – Applications of Congurences
+    <pre style="white-space:pre-line"><code>Examples of Proofs by Mathematical induction
+
+          Mathematical induction can be expressed as the rule of inference
+
+                                                                              ( )
+                                                      ( ) →
+                                        ( P ( ) 1 ∧∀  ( k Pk  Pk   1 ))) → ∀ nPn
+                                                              ( +
+          where the domain is the set of positive integers.
+          In a proof by mathematical induction, we don’t assume that P(k) is true for all positive integers! We show
+          that if we assume that P(k) is true, then P(k + 1) must also  be true.
+          Proofs by mathematical induction do not always start at the integer 1. In such a case, the basis step begins
+          at a starting point b where b is an integer.
 
 
+          Validity of Mathematical Induction
+
+          Mathematical induction is valid because of the well ordering property, which states that every nonempty
+          subset of the set of positive integers has a least element. Here is the proof:
+             Suppose that P(1) holds and P(k) → P(k + 1) is true for all positive integers k.
+             Assume there is at least one positive integer n for which P(n) is false. Then the set S of positive
+               integers for which P(n) is false is nonempty.
+             By the well-ordering property, S has a least element, say m.
+             We know that m cannot be 1 since P(1) holds.
+             Since m is positive and greater than 1, m − 1 must be a positive integer. Since m − 1 &lt; m, it is not in
+               S, so P(m − 1) must be true.
+             But then, since the conditional P(k) → P(k + 1)  for every positive integer k holds, P(m) must also
+               be true. This contradicts P(m) being false.
+             Hence, P(n) must be true for every positive integer n
 
 
+          Example
+                                                                 ( nn +  ) 1
+          Show that if n is a positive integer, then 12++ +  n =
+                                                                   2
+          Solution
+                                              ( 1 1 1+  )
+             Basis Step: P(1) is true since 1 =      = 1.
+                                                2
+                                                                                              ( kk +  ) 1
+             Inductive Step: Assume true for P(k). The inductive hypothesis is 12++  + k =
+                                                                                               2
+                                                                (k +  1 ) (k +     ) 1 +  1    (k +  1 )(k +  ) 2
+                                          ++
+                 Under this assumption,   12     + k + (k +  ) 1 =                =
+                                                                         2                 2
+                                                 ( kk +  ) 1
+                        1+  2 +   k + +  (k +  ) 1 =   +  (k +  ) 1
+                                                   2
+                                                  ( kk +  ) 1 +  ( 2 k +  ) 1
+                                              =
+                                                        2
+                                                (k +  1 )(k +  ) 2
+                                              =                  √
 
-           Hashing Functions
-
-           Definition
-
-           A hashing function h assigns memory location h(k) to the record that has k as its key.
-           A common hashing function is  h(k) = k mod m, where m is the number of memory locations. Because
-           this hashing function is onto, all memory locations are possible.
-
-
-           Example
-
-           Find the memory locations assigned by the hashing function h(k) = k mod 111 to the records of customers
-           with Social Security numbers 064212848, 037149212, and 107405723.
-
-           Solution
-
-               This hashing function  assigns the records of customers with social security numbers as keys to
-               memory locations in the following manner:
-                  h(064212848) = 064212848 mod 111 = 14                     064212848 111*    578494 + 14
-                                                                                       =
-                  h (037149212) = 037149212 mod 111 = 65                    037149212 111*=   334677 +  65
-
-                                                                                       =
-                  h (107405723) = 107405723 mod 111 = 14                    107405723 111*    967619 + 14
-               But since location 14 is already occupied, the record is assigned to the next available position, which
-               is 15.
+                                                      2
 
 
-
-           The hashing function is not one-to-one as there are many more possible keys than memory locations.
-           When more than one record is assigned to the same location, we say a collision occurs.  Here a collision
-           has been resolved by assigning the record to the first free location. For collision resolution, we can use a
-           linear probing function:
-                                    hk     ) (hk  i  =  ( ) ) mod  m ,  where i from 0 to m – 1.
-                                      ( , i
-                                                    ,
-           There are many other methods of handling with collisions. You may cover these in a later CS course.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            132</code></pre>
+                                                           132</code></pre>
      	</div>
     
      </div>

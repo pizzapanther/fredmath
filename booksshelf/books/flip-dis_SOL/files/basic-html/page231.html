@@ -152,62 +152,16 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>SOLUTION  Section 4.7 − Representing Graphs and Graph
 
-             Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to the
-             graph below.
+                                                   Isomorphism
 
-
-
-
-
-
-
-
-
-
-
-
-              a) v ev e v e v e v            b) ve ve v e v e ve v               c) v
-                  0 1 1 10 5 9 2 2 1             4 7 2 95 10 1 32 95                 2
-              d) v vv vvv                    e) vv vv vvv v                      f) e ee e
-                  5 234 45                       2345 2 432                         5 8 10 3
-
-             Solution
-
-                a)  It is trail since no repeated edge.
-                    It is not a path, repeated vertex v
-                                                   1
-                    It is not a circuit, since it ends at a vertex other than the one at which it beganv
-                                                                                                0
-
-                b)  It is a walk; it is not a trail since it has a repeated edge  e .
-                                                                          9
-                    It is not a circuit, since it ends at a vertex other than the one at which it began v .
-                                                                                                4
-                c)  It is a closed walk, starts and ends at the same vertex  v .
-                                                                         2
-                    It is a trail since no repeated edge.
-                    It is not a path or a circuit, since no edge.
-
-
-                d)  It is a path and it is circuit but not a simple circuit since it has a repeated vertex v
-                                                                                                  4
-                e)  It is a closed walk, starts and ends at the same vertex  v .
-                                                                         2
-                                                                         {
-                                                            {
-                    It is not a trail since it has repeated edges  v 2 , v 3 }   &   v v 4 } .
-                                                                             ,
-                                                                            3
-                f)  It is a path, it is not a circuit, since it ends at a vertex other than the one at which it began.
 
 
 
              Exercise
 
-             Determine whether of the following walks are trails, paths, circuits, or simple circuits or just walk to the
-             graph below.
+             Use the adjacency list to represent the given graph, then represent with an adjacency matrix
 
 
 
@@ -218,6 +172,51 @@ function MM_swapImage() { //v3.0
 
 
 
+
+
+             Solution
+
+
+                                 Adjacent                    0 111
+                   Vertex                                              
+                                 Vertices                    1 0 01    
+                      a            b, c                        1 0 01  
+
+                      b            a, d                      111 0     
+                      c            a, d
+
+                      d           a, b, c
+
+
+             Exercise
+
+             Use the adjacency list to represent the given graph, then represent with an adjacency matrix
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Solution
+
+                                Adjacent                     01 01 0
+                    Vertex                                                
+                                Vertices                     1 00 11      
+
+                      a           b, d                         000 11   
+                      b          a, d, e                     111 00       
+                      c           d, e                         0 11 00     
+
+                      d          a, b, c
+
+                      e           b, c
 
 
                                                               231</code></pre>

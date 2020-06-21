@@ -152,70 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>a =   a    +  a
+                    n    n −  1  n −  2
+                  a =   3a
+                    n     n− 1
+                  a =   a    +  a   +  a
+                    n    n −  1  n −  2  n −  3
 
-             A computer system considers a string of decimal digits a valid code-word if it contains an even number of
-             0 digits. For instance, 1230407869 is valid, whereas 1230407869 is not valid. Let  a  be the number of
-                                                                                             0
-             valid n-digit code-words. Find a recurrence relation for  a .
-                                                                    n
+
+
+             Theorem
+
+               
+             If  a ( ) p      is a particular solution of the nonhomogeneous linear recurrence relation with constant
+               
+                 n  
+             coefficients
+
+                    a =  ca      +  c a    +   +  c a   +  F ( ) n
+                     n    1 n−  1   2 n−  2       k nk −
+                                                                    
+                                              
+             then every solution is of the form  a ( ) p  + a ( ) k     , where   a ( ) k      is a solution of the associated
+                                              
+                                                                    
+                                                n     n             n 
+             homogeneous recurrence relation
+                      a =  ca  +  c a    +   +  c a
+                                                    −
+                    n    1 n −  1  2 n −  2     k nk
+
+
+             Example
+
+                                                                                                       3
+             Find all solutions of the recurrence relation a = 3a  + 2n .  What is the solution with a = ?
+                                                        n      n− 1                                 1
              Solution
 
-                Note that  a =  because there are 10 one-digit strings, and only one, namely the string 0, is not valid.
-                               9
-                           1
-                A recurrence relation can be derived for this sequence by considering how a valid n-digit string can be
+                The associated linear homogeneous equation is a =   3a    .
+                                                                n     n− 1
+                                          n
+                Its solutions are a ( ) k  = α 3 , where α  is a constant.
+                                  n
+                Because F(n)= 2n is a polynomial in n of degree one.
+                Let the linear function  p = cn d  be such a solution
+                                               +
+                                        n
+                Then a =   3a     +  2n  becomes   cn + d = 3(c(n− 1) + d)+ 2n.
+                       n      n− 1
+                    ⇒ (2 + 2c)n + (2d − 3c)  = 0.
+                It follows that cn + d is  a solution if and only if 2 + 2c  = 0 and 2d − 3c  = 0.
+                Therefore, cn + d is  a solution if and only if c = − 1 and d = − 3/2.
 
-                obtained from strings of n – 1 digits. There are two ways to form a valid string with n digits from a
-                string with one fewer digit.
+                Consequently,   a ( ) p  = −−  3   is a particular solution.
+                                         n
+                                 n          2
+                                                                                       n
+                                                                             n
+                By Theorem, all solutions are of the form a = a ( ) p  + a ( ) k  = −−  3  + α 3 , where α  is a constant.
+                                                          n     n      n         2
+                a =   3, let n = 1.  Then 3 = − −  3  +  3α  →  3α  =  3+  5  ⇒  α  = 11  .
+                                             1
+                  1                             2                     2         6
 
-
-                1.  A valid string with n digits can be obtained by appending a valid string of n – 1 digits with a digit
-                    other than 0. This appending can be done in 9 ways. Hence, a valid string with n digits can be
-                    formed in this manner in 9a     ways.
-                                               n− 1
-
-                2.  A valid string with n digits can be obtained by appending a 0 to a string of length n – 1 that is not
-                    valid. The number of ways that this can be done equals the number of invalid (n – 1)-digit strings.
-
-                    Because there are 10 n− 1  strings of length n – 1, and  a   are valid, there are 10 n− 1  − a   valid
-                                                                        n− 1                            n− 1
-                    n –digit strings obtained by appending an invalid string of length n – 1 with a 0.
-
-                    Because all valid strings of length n are produced in one of these two ways, it follows that there
-                    are
-
-                           a =  9a     +  ( 10 n− 1 −  a  )
-                             n     n−  1           n−  1
-
-                               = 8a    + 10 n− 1
-                                   n− 1
-
-                      Valid strings of length n.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                Hence, the solution is a = −−   3 11 n
+                                             n
+                                                       3 .
+                                                  +
+                                       n        2    6
 
                                                               187</code></pre>
      	</div>

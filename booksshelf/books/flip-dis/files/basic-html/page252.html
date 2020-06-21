@@ -152,10 +152,12 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>11.
+    <pre style="white-space:pre-line"><code>Connected and Disconnected Graphs
 
 
+          Example
 
+          Which of the following graphs are connected?
 
 
 
@@ -166,6 +168,11 @@ function MM_swapImage() { //v3.0
 
 
 
+                            (a)                             (b)                          (c)
+          Solution
+             The graph represented in (a) is connected, whereas those of (b) and (c) are not.
+             To understand why (c) is not connected, two edges may cross at a point that is not a vertex.
+             Thus the graph in (c) can be drawn as follows:
 
 
 
@@ -173,7 +180,6 @@ function MM_swapImage() { //v3.0
 
 
 
-             12.
 
 
 
@@ -181,60 +187,40 @@ function MM_swapImage() { //v3.0
 
 
 
+          Theorem
 
+          There is a simple path between every pair distinct vertices of a connected undirected graph.
 
+          Proof
 
+                                                                                           )
+             Let u and v be two distinct vertices of the connected undirected graph G =  ( ,V E . Because G is
+                                                                                                 u
+                                                                        ,
+                                                                            ,
+                                                                                                             v
+             connected, there is at least one path between u and v.  Let  x  x  , x  where  x =  and  x = ,
+                                                                       0   1       n         0           n
+             be the vertex sequence of a path of least length. This path of least length is simple. To see this,
+                                                                               j
+             suppose it is not simple. Then  x =  x  for some i and j with 0 i≤ &lt; . This means that there is a path
+                                            i    j
+             from u to v of shorter length with vertex sequence  x  x   ,  ,  , x   x  ,    , x  obtained by deleting
+                                                               0   1       i− 1  j      n
+                                                              ,
+             the edges corresponding to the vertex sequence  x   , x
+                                                             i       j− 1
 
 
+          Definition
 
+          A graph H is a connected component of a graph G if, and only if,
+           •  H is subgraph of G;
+           •  H is connected; and
+           •  No connected subgraph of G has H as a subgraph and contains vertices or edges that are not in H.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            252</code></pre>
+                                                           252</code></pre>
      	</div>
     
      </div>

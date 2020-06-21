@@ -152,63 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Base Conversion
 
 
-           What are the quotient and remainder when −11 is divided by 3?
-           Solution
-
-               −  11 3=  ( ) 4−  +  1
-
-               Hence, the quotient when −11  is divided by 3 is −4 = −11  div 3,
-               and the remainder is 1 = −11  mod 3.
-
-
-
-           Modular Arithmetic
-
-           Definition
-
-           If a and b are integers and m is positive integer, then a is congruent to b modulo m if m divides a − b. We
-                                         )
-           use the notation  a ≡ b  (mod  m  to indicate that a is congruent to b modulo m. We say that
-                         )
-           a ≡ b  (mod  m  is a congruence and that m is its modulus (plural moduli). If a and b are not congruent
-           modulo m, we write  a ≡ (modb    m )
+             The algorithm for constructing the base b expansion of an integer n, divide n by b to obtain a quotient and
+             remainder, that is,
+                    n bq +    a  ,     0 a ≤   b
+                      =
+                                        ≤
+                          0    0            0
+                    q =  bq +  a  ,     0 a ≤   b
+                                         ≤
+                     0      1   1           1
 
 
-           Theorem
-                                                                                    )
-           Let a and b be integers, and let m be a positive integer. Then  a ≡  b  (mod  m  if and only if
-           a mod   m  =   b mod  m
+             Example
 
 
-           Example
+             Find the octal expansion of (12345 )
+                                               10
+             Solution
+                       =
+                12345 8 1543+ ⋅  1
+                1543 8 192 + ⋅  7
+                     =
+                    =
+                192 8 24 + ⋅  0
+                       ⋅+
+                   =
+                 24 8 3 0
+                  =
+                     ⋅+
+                3 80 3
+                                    )
+                (12345 )   = (30071
+                        10           8
 
-           Determine whether 17 is congruent to 5 modulo 6 and whether 24 and 14 are congruent modulo 6.
 
-           Solution
-                                                                       )
-               Because 6 divides 17 − 5 = 12, we see that 17  ≡ 5  (mod 6 .
-                                                                   (
-               24 − 14 = 10 is not divisible by 6, we see that  24 ≡14 mod 6 )
+             Example
+
+             Find the hexadecimal expansion of (177130 )
+                                                        10
+             Solution
+
+                                             1
+                            ⋅
+                177130 16 11070 +    10      ( 0 =  ) A
+                        =
+                11070 16 691    +  14    (14 =  E )
+                       =
+                           ⋅
+                691 16 4 ⋅  3 3
+                            +
+                    =
+                 43 16 2 11        (11 =  B )
+                   =
+                        ⋅+
+                  =
+                 2 16 0 2
+                       ⋅+
+                (177130  )  = (2 3B EA )
+                         10            16
 
 
-           Theorem
-           Let m be a positive integer. The integers a and b are congruent modulo m if and only if there is an integer
-           k such that  a b km= +  .
+             Example
 
-           Proof
+             Find the bianry expansion of (241 )
+                                              10
+             Solution
 
-                                                                                       )
-                               )
-                                                                                  ( |
-               If  a ≡ b  (mod  m  that implies by the definition of congruence to  m ab . Which is that there is an
-                                                                                    −
-                                                     b km .
-               integer k such that  a b−=  km ⇒   a =+
+                 241 2 120 + ⋅  1
+                    =
+                120 =  2 60 + ⋅  0
+                60 =  2 30 + ⋅  0
+                30 =  2 15+ ⋅  0
 
-                                                            107</code></pre>
+                                                              107</code></pre>
      	</div>
     
      </div>

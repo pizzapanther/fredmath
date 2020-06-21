@@ -154,66 +154,63 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-             If your college offers 400 courses, 25 of which are in mathematics, and your counselor arranges your
-             schedule of 4 courses by random selection, how many schedules are possible that do not include a math
-             course? Assume that the order in which courses are scheduled matters.
-
-             Solution
-                           )
-                                     4)
-                                            9
-                                        =
-                  ( P nonmath =  P (375,   1. 46 10 10
-                                                ×
-
-
-             Exercise
-             A baseball team has 19 players. How many 9-player batting orders are possible?
+             A coin flipped 10 times where each flip comes up either heads or tails. How many possible outcomes
+              a)  Are there in total?
+              b)  Contain exactly two heads?
+              c)  Contain at most three tails?
+              d)  Contain the same number of heads and tails?
 
              Solution
 
+                                                               10
+                a)  Each flip can be either heads or tails: There are 2 = 10 24 possible coutcomes
 
-                 P (19,9)    3.352 10  =  ×  10
+                b)  C     =  45  outcomes
+                      10,2
+                c)  At most three tails means: 3, 2, 1, 0 tails.
 
+                    C       C     + +  C  +  C   = 176  outcomes
+                      10,3   10,2    10,1   10,0
+                d)  To have an equal number of heads and tails means 5 heads and 5 tails.
+                    Therefore; C     =  252  outcomes
 
-             Exercise
-
-             A chapter of union Local 715 has 35 members. In how many different ways can the chapter select a
-             president, a vice-president, a treasurer, and a secretary?
-
-             Solution
-
-                 P (35,4) = 1,256,640
+                                10,5
 
 
              Exercise
 
-             An economics club has 31 members.
+             How many bit strings of length 12 contain?
 
-              a)  If a committee of 4 is to be selected, in how many ways can the selection be made?
-              b)  In how many ways can a committee of at least 1 and at most 3 be selected?
+              a)  Exactly three 1s?
+              b)  At most three 1s?
+              c)  At least three 1s?
+              d)  An equal number of 0s and 1s?
 
              Solution
 
-                a)  C     =  31,465
-                      31,4
-
-                b)   P (at least  1 and at most  3 be selected ) C=  31,1  +  C 31,2  +  C 31,3
-
-                                                            =  31 465 4495
-                                                                      +
-                                                                +
-                                                            =  4991
+                a)  We need to choose the 3 positions that contains the 1’s
+                    C      = 220  ways
 
 
+                      12, 3
+                b)  At most three 1’s means to contains 3, 2, 1, 0 −1’s:
+                    C       C     + +  C  +  C   = 299  strings
+                      12,3   12,2    12,1   12,0
 
 
+                c)  At least three 1’s means to contains 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 −1’s:
+                                                                                                         s
+                    C     +  C   +  C   +  C  +C      +  C   +  C   +  C    +  C   +  C     =  4017  strin g
+                      12,3   12,4   12,5   12,6  12,7    12,8   12,9   12,10   12,11  12,12
+                    OR
 
-
-
-
-
-
+                                                                     0
+                    2 12  −  C  −  C   −  C    =  4096 66 −  1 −    417  stri ngs
+                                                             2 1 =
+                                                      −
+                           12,2    12,1   12,0
+                d)  To have an equal number of 0’s and 1’s means 6 1’s.
+                    Therefore;  (12, 6C  )  = 924  strings
 
 
 

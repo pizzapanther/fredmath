@@ -154,62 +154,72 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-                                                                    ( nn +  ) 1
-                                                     ++
-             Show that if n is a positive integer, then 12  + n =
-                                                                      2
-             Solution
-                                       ( 11 1+  )
-                (1)  For n = 1 ⇒ 1=
-                                        2
-                                  1 1=     √
-
-                          Hence  P  is true.
-                                  1
-                (2)  Assume that  P  is true.
-                                    k
-                                                                          ( kk +  ) 1
-                      Thus, the induction hypothesis is: 12 3+ ++ +  k =
-                                                                            2
-
-                                                            ?  (k +  1 ) ( ( k +  1 +  ) ) 1
-                                    + ++
-                      For k + 1:    1 2 3     + k + (k +  ) 1    =
-                                                                       2
-
-                      12 3+  +  +  +   k +  (k +  1 ) (12 3=  +  +  +  +   k ) (k+  +  ) 1
-
-                                                  ( kk +  ) 1
-                                              =          +  (k +  ) 1                Induction hypothesis
-                                                    2
-                                                  ( kk +  ) 1 +  ( 2 k +  ) 1
-                                              =
-                                                        2
-                                                (k +  1 )(k +  ) 2
-                                              =                                      Factor out k + 1
-                                                      2
-                                                   (k +  1 ) ( ( k +  1 ) ) 1+
-                                                 =                       √           Change form of k + 2
-                                                           2
-
-                      Hence  P     is also true.
-                              k  1 +
-                ∴ By the mathematical induction, the proof is completed
+                                   n
+                              n
+             Show that every  2 × 2  checkerboard with one square removed can be tiled using right triominoes.
+             A right triomino is an L-shaped tile which covers three squares at a time.
 
 
-             Example
 
-             Conjecture and prove correct a formula for the sum of the first n positive odd integers. Then prove your
-             conjecture.
 
              Solution
+                                                      n
+                                                           n
+                Let P(n) be the proposition that every  2 × 2  checkerboard with one square removed can be tiled
+                using right triominoes. Use mathematical induction to prove that P(n) is true for all positive integers
+                n.
 
-                The sums of the first n positive odd integers for n = 1, 2, 3, 4, 5 are
-                    1 = 1,
-                    1 + 3 = 4,
-                    1 + 3 + 5 = 9,
-                    1 + 3 + 5 + 7 = 16,
-                    1 + 3 + 5 + 7 + 9 = 25.
+                Basis Step:  P(1) is true, because each of the four 2 ×2 checkerboards with one square removed can be
+                tiled using one right triomino.
+
+
+
+
+
+
+
+                                                                     k
+                                                                         k
+                Inductive Step:  Assume that  P(k) is true for every   2 × 2 checkerboard, for some positive integer
+                k. with one square removed can be tiled using right triominoes.
+                    Consider a 2 k+1  ×2 k+1  checkerboard with one square removed. Split this checkerboard into four
+                                              k
+                    checkerboards of size 2  ×2 ,by dividing it in half in both directions.
+                                          k
+
+
+
+
+
+
+
+
+
+
+                                                               k
+                                                           k
+                    Remove a square from one of the four  2 × 2 checkerboards. By the inductive hypothesis, this
+                    board can be tiled.  Also by the inductive hypothesis, the other three boards can be tiled with the
+                    square from the corner of the center of the original board removed. We can then cover the three
+                    adjacent squares with a triominoe.
+
+                    Hence, the entire 2 k  1 +  × 2 k  1 +   checkerboard with one square removed can be tiled using right
+                    triominoes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

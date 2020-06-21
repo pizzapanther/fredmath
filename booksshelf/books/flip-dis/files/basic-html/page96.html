@@ -152,84 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>n
-           8.   Let  a =  2 +⋅    n           0, 1, 2, 
+    <pre style="white-space:pre-line"><code>Bubble sort running time
 
-                               5 3     for  n =
-                      n
-                                  ,
-                                          ,
-                  a)  Find  a  , a  a  , a and a
-                             0   1   2   3       4
-                  b)  Show that  a =  5a − 6a ,  a =  5a −  6a , and  a =  5a −  6a
-                                  2     1     0   3      2    1        4     3     2
-                                                                              2
-                  c)  Show that  a =  5a    − 6a     for all integers n with  n ≥
-                                  n     n−  1   n−  2
+          Outer for loop does n – 1 iterations
+          Inner for loop does:
 
-                                { }
-           9.   Is the sequence  a n   a solution of the recurrence relation  a = 8a n−  1  − 16a n−  2   if
-                                                                          n
-                  a)  a =  0?
-                        n
-                  b)  a =  1?
-                        n
-                             n
-                  c)  a =   2?
-                        n
-                             n
-                  d)  a =   4?
-                        n
-                              n
-                  e)  a =  n 4?
-                        n
-                                      n
-                  f)  a =  24 ⋅  n  +  3 4 ?
-                                    n
-                        n
-                           ( ) 4
-                  g)  a = −     n  ?
-                        n
-                              4?
-                  h)  a =   n 2 n
-                        n
+                  n – 1 iterations the first time
+                  n – 2 iterations the second time
 
-                                { }
-           10.  Is the sequence  a n   a solution of the recurrence relation  a =  n  a n−  1  +  2a n−  2  +  2n −  9  if
-                                2
-                  i)  a = −+
-                             n
-                        n
-                             ( ) 1
-                  j)  a =  5 −   n  −+  2
-                                    n
-                        n
-                                      n
-                                         n
                                              2
-                             ( ) 1
-                  k)  a =  3 −   n  + 2 −+
-                        n
-                            72 −+
-                  l)  a =⋅     n   n  2
-                        n
-
-           11.  A person deposits $1,000.00 in an account that yields 9% interest compounded annually.
-                  a)  Set up a recurrence relation for the amount in the account at the end of n years.
-                  b)  Find an explicit formula for the amount in the account at the end of n years.
-                  c)  How much money will the account contain after 100 years?
-
-           12.  Suppose that the number of bacteria in a colony triples every hour.
-                  a)  Set up a recurrence relation for the number of bacteria after n hours have elapsed.
-                  b)  If 100 bacteria are used to begin new colony, how many bacteria will be in the colony in 10
-                      hours?
-
-           13.  A factory makes custom sports cars at an increasing rate. In the first month only one car is made, in
-                the second month two cars are made, and so on, with n cars made in the nth month.
+                                     21
+          Total: (n − 1 ) (n+  −  ) 2 + + +=  n − n
+                                              2
+                                          2
+          The bubble sort will take about  n  time.
 
 
 
-                                                             96</code></pre>
+          Insertion sort
+
+          The insertion sort is another simple sorting algorithm, but inefficient. It starts with a list with one
+          element, and inserts new elements into their proper place in the sorted part of the list
+
+
+          Algorithm 5 − Insertion sort
+                                      (
+             procedure insertion_sort  a a  2 ,  , a n )
+                                         ,
+                                        1
+                     for j := 2 to n                     take successive elements in the list
+                 begin
+                    i := 1                            find where that element should be
+                    while   a &gt;  a                    in the sorted portion of the list
+                             j    i
+                            i := i +1
+                     m  : a                           move all elements in the sorted portion of the list
+                        =
+                           i
+                    for k := 0 to j-i-1               that are greater than the current element up by one
+                            a     : a
+                                  =
+                               −
+                              jk      jk  1
+                                       −−
+                     a  : m                           put the current element into it’s proper place
+                        =
+                      i
+                     {
+                                                }
+                 end  a  a  2  ,  , a  are sorted               in the sorted portion of the list
+                         ,
+                        1
+                                    n
+                                            2
+          The insertion sort will take about  n  time.
+
+
+          Comparison of Running Times
+
+          Searches
+              •  Linear: n steps
+              •  Binary:  log n   steps
+                              2
+              •  Binary search is about as fast as you can get
+
+
+
+                                                            96</code></pre>
      	</div>
     
      </div>

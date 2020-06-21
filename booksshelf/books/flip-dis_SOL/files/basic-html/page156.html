@@ -152,59 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution          Section 3.4 − Permutations and Combinations
+    <pre style="white-space:pre-line"><code>Exercise
 
+        How many positive integers less than 1000
 
-
-
-        Exercise
-
-        Decide whether the situation involves permutations or combinations
-          a)  A batting order for 9 players for a baseball game
-          b)  An arrangement of 8 people for a picture
-          c)  A committee of 7 delegates chosen from a class of 30 students to bring a petition to the administration
-          d)  A selection of a chairman and a secretary from a committee of 14 people
-          e)  A sample of 5 items taken from 71 items on an assembly line
-          f)  A blend of 3 spices taken from 7 spices on a spice rack
-          g)  From the 7 male and 10 female sales representatives for an insurance company, team of 8 will be
-              selected to attend a national conference on insurance fraud.
-          h)  Marbles are being drawn without replacement from a bag containing 15 marbles.
-          i)  The new university president named 3 new officers a vice-president of finance, a vice-president of
-              academic affairs, and a vice-president of student affairs.
-          j)  A student checked out 4 novels from the library to read over the holiday.
-          k)  A father ordered an ice cream cone (chocolate, vanilla, or strawberry) for each of his 4 children.
-
+          a)  Are divisible by 7?
+          b)  Are divisible by 7 but not by 11?
+          c)  Are divisible by both 7 and 11?
+          d)  Are divisible by either 7 or 11?
+          e)  Are divisible by exactly one of 7 and 11?
+          f)  Are divisible by neither 7 nor 11?
+          g)  Have distinct digits?
+          h)  Have distinct digits and are even?
         Solution
 
-            a)  Permutation
-            b)  Permutation
+                                                                                           th
+                       th
+            a)  Every 7  number is divisible by 7. Therefore,   999  ≈ 142  such numbers. The  k  multiple of 7 does
+                                                              7
+               not occur until the number 7k has been reached.
 
-            c)  Combination
+                        th
+            b)  Every 11  number is divisible by 11. Therefore,   999  ≈ 90  numbers.
+                                                               11
+               Since 77 is the first number that is divisible by 7 and 11, and there are  999  ≈ 12  numbers divisible
+                                                                                    77
+               by 77.
+                                     3
+                          4
+               There are 12 12 =−  1 0   numbers divisible by 7 but not by 11.
+            c)  There are 12 numbers divisible by both 7 and 11 (from part b)
 
-            d)  Permutation
-            e)  Combination
+                                  −
+                             +
+            d)  There are 142 90 12 =   2 20   divisible by either 7 or 11
+                                                                     0
+            e)  The number of numbers divisible of them:  202 − 12 = 2 8        (subtract (d) from (c))
+            f)  Subtract part (d) from the total number of positive integers less than 1000.
+                    −
+                999 220 =   779
+            g)  If we assume that numbers are written without leading 0’s, then we can break down this part in
+               three cases: one-digit numbers, two-digit numbers and three-digit numbers.
+               There are 9 one-digit numbers, and each of them has distinct digits.
+               There are 90 two-digit numbers (10 – 99), and all but 9 of them have distinct digits, so there are 81
+               two-digit numbers with distinct digits. Or the first digit 1 through 9 (9 choices), using the product
+               rule: 9 9 81⋅ =   choices in all.
+               For three-digit numbers there are 9 9 8 648⋅⋅ =   distinct digits
+               Therefore 9 81 648 7+  +  =  38   total distinct digits.
+            h)  If we use to count the odd numbers with distinct digits and subtract from part (g), we can get the
+               numbers distinct digits and are even.
+               There are 5 odd one-digit numbers.
+               For two-digit numbers; first the ones digits (5 choices), then the tens digit (8 choices) – neither the
+               ones digit value nor 0 is available, therefore there are 40 such two-digit numbers (half of 81).
+               For three-digit numbers, first the ones digits (5 choices), the hundreds digit (8 choices), then the
 
-            f)  Combination
-            g)  Combination
-
-            h)  Combination
-
-            i)  Permutation
-            j)  Combination
-
-            k)  Neither
-
-
-        Exercise
-
-                                                                          }
-        How many different permutations are the of the set {a, b, c, d, e, f, g ?
-        Solution
-
-            P (7, 7 )  = 5 040
-
-
-
+               tens digit (8 choices). There are 5 8 8 320⋅⋅ =   distinct digits
 
                                                           156</code></pre>
      	</div>

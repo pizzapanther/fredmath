@@ -152,78 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>h)  The characteristic polynomial is r +  2  6r +  9 0 ⇒  r =  −  3, −  3
-                                                              =
-                                                   −
-                    The general solution:  a = α  ( ) 3  n  +  α  n −  ( ) 3  n
-                                           n    1          2
-                                              0 −
-                                   −
-                           3 α  =  ( ) 3  0  +  α  ( )( ) 3  0  3 α →  =
-                                1          2                     1           ⇒     α  3, α =  =  −  2
-                                    1
-                                           1 −
-                         3 α − =  ( ) 3 + α −  ( )( ) 3  1  →  3 = − 3 α −  3 α + −  1      2
-                              1          2                        1       2
-                                                                ( ) 3
-                                                                           −
-                    Therefore, the solution is   a  =  3⋅−  n  − 2n −  n  =  (32n −  )( ) 3  n
-                                                     ( ) 3
-                                               n
-                i)  The characteristic polynomial is r 2  +  4r −=      r = − 5, 1
-                                                            5 0 ⇒
-                                                              n
-                    The general solution:  a = α  ( ) 5−  n  α  1 = α+  ( ) 5−  n  +  α
-                                           n    1          2       1          2
-                         2 α =  ( ) 5  0  α +  →  2 α =  α +
-                                −
-                              1          2            1    2    ⇒    α   −  1, α =  =  3
-                               −
-                        8 α =  ( ) 5 +  1  α  →  8 =  5α −  α +      1         2
-                             1         2               1    2
-                    Therefore, the solution is  a  = − −  n  + 3
-                                                    ( ) 5
-                                              n
+    <pre style="white-space:pre-line"><code>Solution          Section 3.5 − Applications of Recurrence Relations
 
-
-             Exercise
-
-             How many different messages can be transmitted in n microseconds using three different signals if one
-             signal requires 1 microsecond for transmittal, the other two signals require 2 microseconds each for
-             transmittal, and a signal in a message is followed immediately by the next signal?
-
-             Solution
-
-                The model is the recurrence relation   a =  a  +  a   +  a    =  a   +  2a    with  a =  a = 1
-                                                      n    n −  1  n −  2  n −  2  n −  1  n −  2   0    1
-                                                 2
-                                                         =
-                                                    r
-                The characteristic polynomial is r −−   20
-                So, the roots are −1, and 2
-                                                              n
-                The general solution:     a =  α  ( ) 1  n  +  α  2
-                                                   −
-                                           n    1          2
-                Plugging in initial conditions gives
-                    1 α =  ( ) 1−  0  α +  2 0  →  1 α =  α +
-                         1          2              1    2
-                    1 α  =  ( ) 1 +  1  α −  2 1  →  1=  −  α  2 α +     ⇒    α  1 , α =  =  2
-                         1         2                1     2          1  3     2   3
-                                                                             2
-                Therefore, the solution is in n microseconds   a =  1 ( ) 1  n  +  2 n   messages can be transmitted.
-                                                                    −
-                                                             n   3         3
 
 
 
              Exercise
-             In how many ways can a  2 n×  rectangular checkerboard be tiled using 12×  and  22×  pieces?
+             a)  Find a recurrence relation for the number of permutation of a set with n elements
+             b)  Use the recurrence relation to find the number of permutations of a set with n elements using iteration.
 
              Solution
 
+                a)  A permutation of a set with n elements of a choice of a first element, followed by a permutation of a
+                    set of  n − 1  elements. Therefore  P =  nP  with P =    1
+                                                     n     n− 1          0
+                b)  P =  nP
+                     n      n− 1
+                        =  ( nn −  ) 1 P n− 2
+
+                        =  ( nn −  21 P
+                                     ⋅⋅
+                                ) 1
+                                         0
+                        =  ! n
 
 
+             Exercise
+             A vending machine dispensing books of stamps accepts only one-dollar coins, $1 bills, and $5 bills.
+              a)  Find a recurrence relation for the number of ways to deposit n dollars in the vending machine, where
+                  the order in which the coins and bills are deposited matter.
+              b)  What are the initial conditions?
+              c)  How many ways are there to deposit $10 for a book of stamps?
+
+             Solution
+
+                a)  Let  a  be the number of ways to deposit n dollars in the vending machine. We must express  a in
+                         n                                                                                     n
+                    terms of earlier terms in the sequence. If we want to deposit n dollars, we may start with a dollar
+                    coin and then deposit n – 1 dollars. This gives us  a   ways to deposit n dollars.
+                                                                     n− 1
+                    We can start with a dollar bill and then deposit n – 1 dollars. This gives us  a   more ways to
+                                                                                             n− 1
+                    deposit n dollars.
+                    Finally, we can deposit a five-dollar bill and follow that with n – 5 dollars; there are  a  ways to
+                                                                                                       n− 5
+                    do this, Therefore the recurrence relation is  a =  2a  +  a   for n ≥  5
+                                                                n     n −  1  n −  5
+                                                                                                            2
+                b)  We need initial conditions for all n from 0 to 4. Clearly,  a = 1 (deposit nothing) and  a =
+                                                                            0                           1
+                    (deposit either the dollar coin or the dollar bill)
+                                                            4
+                                         3
+                           2
+                    a =  2 =  4; a =   2 =  8 and     a =  2 =  16
+                     2              3                  4
+                c)  a =  2a +  a =   2 16
+                                      ( ) 1 33+=
+                     5      4    0
+                    a =  2a +  a =  2 33
+                                      ( ) 2 68+=
+                     6      5    1
+                                      ( ) 4 140+=
+                    a =  2a +  a =   2 68
+                     7      6    2
                                                                175</code></pre>
      	</div>
     

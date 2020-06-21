@@ -152,22 +152,17 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.6 − Graphs: Definitions and Basic Properties
+    <pre style="white-space:pre-line"><code>e   and e  are parallel.
+                  2       3
+                 v   and v  are adjacent to themselves.
+                  5       6
+                 v  is an isolated vertex.
+                   4
 
 
+          Example
 
-
-             Definition
-
-                          V E
-             A graph G = ( ,   )   consists of V, a nonempty set of vertices (or nodes) and E, a set of edges. Each
-             edge has either one or two vertices (plural of vertex) associated with it, called its endpoints. An edge is
-             said to connect its endpoints.
-             Visualize the graphs by using points to represent vertices and line segments, possibly curved, to
-             represent edges, where the endpoints of a line segment representing an edge are the points representing
-             the edge-endpoints.
-
-
+          Consider the two drawing shown below.
 
 
 
@@ -181,14 +176,9 @@ function MM_swapImage() { //v3.0
 
 
 
-             To model a computer network, we need graphs that have more than one edge connecting the same pair
-             of vertices. Graphs that may have multiple edges connecting the same vertices are called multigraphs.
+          Label vertices and edges in such a way that both drawings represent the same graph
 
-             Sometimes a communications link connects a data center with itself, a feedback loop for diagnostic
-             purposes. Such edges are called loops.
-             Graphs that may include loops, and possibly multiple edges connecting the same pair of vertices or a
-             vertex to itself, are sometimes called pseudographs.
-             Sometimes we have a one-way communication link like
+          Solution
 
 
 
@@ -205,20 +195,38 @@ function MM_swapImage() { //v3.0
 
 
 
-             Basic Terminology
-
-             Definition
-
-             Two vertices u and v in an undirected graph G are called adjacent (or neighbors) in G if u and v are
-             endpoints of an edge e of G. Such an edge e is called incident with the vertices u and v and e is said to
-             connect u and v.
 
 
+                                         Edge      Endpoints
+
+                                           e        { v v   }
+                                                       ,
+                                            1         1   2
+                                          e         { v  ,  v  }
+                                            2         2   3
+                                          e         { v v  }
+                                                        ,
+                                            3         3   4
+                                          e         { v  ,  v  }
+                                            4         4   5
+                                                        ,
+                                          e         { v v   }
+                                            5         5   1
 
 
 
 
-                                                            230</code></pre>
+
+
+
+
+
+
+
+
+
+
+                                                           230</code></pre>
      	</div>
     
      </div>

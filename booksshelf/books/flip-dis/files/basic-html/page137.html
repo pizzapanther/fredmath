@@ -152,63 +152,87 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Lecture Three
+    <pre style="white-space:pre-line"><code>Example
+
+
+                                                      3
+             Use mathematical induction to prove that  n −  is divisible by 3, for every positive integer n.
+                                                          n
+             Solution
+
+                                                3
+                Let P(n) be the proposition that  n −  is divisible by 3.
+
+                                                    n
+                                            3
+                Basis Step:    For n = 1 ⇒ 1 −=  which is divisible by 3  ⇒  P  is true.
+                                                10
+                                                                                 1
+                                                       3
+                                                           k
+                Inductive Step. Assume that  P  holds  k −  is divisible by 3
+                                              k
+                      We need to prove that   P   is true, that is  (k +  ) 1  3  −  (k +  ) 1  is divisible by 3
+                                              k+ 1
+                              3            3     2
+                                                         1 k
+                        (k +  ) 1 − (k +  ) 1 = k + 3k + 3k +− − 1
+                                           3
+                                                    2
+                                        =  k −+   3k +  3k
+                                               k
+                                                             )
+                                        =  ( k −  3  k +  ) (  2  k
+                                                    3 k +
+                                               )
+                                          3
+                                        ( k −  k  is divisible by 3, by the inductive hypothesis,
+                                         (
+                                                 )
+                                           2
+                                        3 k +  k  is divisible by 3, since it is an integer multiplied by 3.
+                      Thus,  P    is true.
+                             k+ 1
+                                                          3
+                By mathematical induction, the statement  n −  is divisible by 3 is true, for every positive integer n.
+                                                              n
 
 
 
+             Example
 
 
-             Section 3.1 − Mathematical Induction
+             Use mathematical induction to prove that 7 n +  2  + 8 2n +  1  is divisible by 57, for every nonnegative integer
+             n.
+             Solution
 
+                                                 1
+                                             2
+                Basis Step:    For n = 0 ⇒ 7 +  8 =  49 8 57  which is divisible by 57  ⇒  P  is true.
+                                                           =
+                                                        +
+                                                                                              0
+                Inductive Step: Assume that  P  holds  7 k+  2  + 8 2k+  1  is divisible by 57
+                                              k
+                                                                               ) 11
+                                                                  12
+                    We need to prove that   P    is true, that is  7 k++  +  8  ( 2 k++  =  7 k+ 3  +  8 2k+ 3  is also divisible
+                                            k+ 1
+                    by 57
+                                         ⋅
+                        7 k+  3  +  8 2k+  3  =  77 k+  2  +  8 ⋅  2  8 2k+  1
 
-
-
-             Introduction
-
-
-             Suppose we have an infinite ladder:
-                1.  We can reach the first rung of the ladder.
-
-                2.  If we can reach a particular rung of the ladder,
-                    then we can reach the next rung.
-
-             From (1), we can reach the first rung.
-             Then by applying (2), we can reach the second rung.
-             Applying (2) again, the third rung. And so on.
-
-             We can apply (2) any number of times to reach any
-             particular rung, no matter how high up.
-
-             This example motivates proof by mathematical induction.
-
-
-
-
-
-
-
-             Mathematical Induction
-
-             Principle of Mathematical Induction
-             To prove that P(n) is true for all positive integers n, we complete these steps:
-
-                  Basis Step: Show that P(1) is true.
-                  Inductive Step: Show that P(k) → P(k + 1)  is true for all positive integers k.
-
-             To complete the inductive step, assuming the inductive hypothesis that P(k) holds for an arbitrary integer
-             k, show that must P(k + 1) be true.
-
-
-             Steps in Applying the Principle of Mathematical Induction
-
-                1)  Show that  P  is true.
-                               1
-
-                2)  Assume that  P  is true, and then prove that  P   is true.
-                                  k                             k  1 +
-
-
-
+                                     =  7 7 k+  2  +  64 8 2k+  1
+                                                    ⋅
+                                         ⋅
+                                     = 7 7 k+  2  +⋅  2k+  1 + 578 2k+  1
+                                                              ⋅
+                                         ⋅
+                                                 78
+                                          (
+                                     =  7 7 k+  2  +  8 2k+  1 ) +  57 8 2k+  1
+                                                              ⋅
+                                         ⋅
                                                               137</code></pre>
      	</div>
     

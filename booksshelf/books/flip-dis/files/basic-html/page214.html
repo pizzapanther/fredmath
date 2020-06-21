@@ -152,63 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.4 – Equivalence Relations
+    <pre style="white-space:pre-line"><code>Example
+
+          Let n be a positive integer and S a set of strings. Suppose that  R  is the relation on S such that  s Rt  if
+                                                                       n                                 n
+          and only if s = t, or both s and t have at least n characters and the first n characters of s and t are the same.
+          That is, a string of fewer than n characters is related only to itself; a string s with at least n characters is
+          related to a string t if and only if t has at least n characters and t begins with the n characters at the start of
+          s. For example, let n = 3 and let S be the set of all bit strings. Then  s R t  either when s = t or both s and t
+                                                                              3
+          are bit strings of length 3 or more that begin with the same three bits. For instant, 01 R  01 and
+                                                                                             3
+          00111 R  00101 but  01R 010  and 01011 R    01110
+                  3                3                 3
+          Show that every set S of strings and every positive integer n,  R  is an equivalence relation on S.
+                                                                      n
+          Solution
+             The relation  R  is reflexive because s = s, so that  s R s whenever s is a string in S.
+                           n                                     n
+             If  s Rt , then either s = t or s and t are both at least n characters long that begin with same n
+                   n
+             characters. This means that t R s . Therefore,  R is symmetric.
+                                           n                n
+             Suppose that  s Rt  and  t Ru . Then either s = t or s and t are both at least n characters long s and t
+                              n         n
+             begin with same n characters, and either t = u or t and u are both at least n characters long t and u
+             begin with same n characters. From this, we can deduce that either s = u or s and u are both at least n
+             characters long s and u begin with same n characters.
+             Because s, t and u are all at least n characters long s and u begin with same n characters as t does.
+             Therefore,  R is transitive.
+                          n
+             It follows that  R  is an equivalence relation.
+                             n
+
+
+          Example
+
+          Let R be the relation on the set of real numbers such that  x R y  if and only if x and y are real numbers that
+          differ by less than 1, that is  x −  y &lt;  1. Show that R is not an equivalence relation.
+          Solution
+
+
+             Let  x =  2.5 ,  y =  1.8, and  z = 1.1, so that
+                                                                &lt;
+                                                       −
+              x −  y =  2.5 1.8 =  .7 1 and  y −  z =  1.8 1.1 =  .7 1
+                          −
+                                   &lt;
+                                                                R
+                             −
+             But  x −  z =  2.5 1.1 =  1 .4 1. That is  2.5 1.8 R  , 1.8   1.1, but  2.5 R 1.1
+                                        &gt;
 
 
 
 
-             Definition
-             A relation on a set A is called an equivalence relation if it is reflexive, symmetric, and transitive.
-
-
-             Definition
-
-                                                                                                              b
-             Two elements a and b that related by an equivalence relation are called equivalent. The notation  a 
-             is often used to denotes that a and b are equivalent elements with respect to a particular equivalence
-             relation.
-
-
-             Example
-
-
-             Let R be the relation on the set of integers such that aRb if and only if a = b or a = −b. It follows that R
-             is an equivalence relation.
-
-
-             Example
-
-             Let R be the relation on the set of real numbers such that aRb if and only if a −b is an integer.
-             Is R an equivalence relation?
-             Solution
-
-                Because a – a = 0 is an integer for all real numbers a, aRa for all real numbers a. Hence, R is
-                reflexive
-                Suppose that aRb, then a – b is an integer, so b – a and b – c are integers.
-
-                Therefore, a – c = (a – b) + (b – c) is also an integer. Hence, aRc.
-
-                Thus, R is transitive. Consequently, R is an equivalence relation.
-
-
-             Example
-
-             Let m be an integer with m &gt; 1.
-              Show that the relation  R =  ( { ,a  b ) |   a ≡  b  (mod  m  } )  is an equivalence relation on the set of integers.
-
-             Solution
-
-                a ≡  b  (mod  m )  iff m divides a – b.
-
-                Since 0 =  0 m⋅   then a – a = 0 is divisible by m. Hence,  a ≡  a  (mod  m ), so congruence modulo m
-                is reflexive.
-                Suppose that  a ≡ b  (mod  m ) , then a – b is divisible by m, so a – b = km, where k is an integer.
-
-                It follows that   – b  a =   ( km−  ) , so b ≡  a  (mod  m ) . Hence, congruence modulo m is symmetric.
 
 
 
-                                                            214</code></pre>
+
+                                                           214</code></pre>
      	</div>
     
      </div>

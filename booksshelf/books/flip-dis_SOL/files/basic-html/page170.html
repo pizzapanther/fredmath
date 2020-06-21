@@ -152,65 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>+++
-                   =  20 8 3 16
-                   =  47
+    <pre style="white-space:pre-line"><code>d)  Subtracting the total number of strings from the number of strings with no vowels and the number
 
-               Therefore, there are 47 bits of length 7 containing three consecutive 0’s.
+               of strings with one vowel. Answer:  26 −  6  21 −  6  6 521  =⋅  ⋅  5  1 0 , 0 626,6 25 ways
+
 
 
         Exercise
-        a)  Find a recurrence relation for the number of bit strings of length n that do not contain three consecutive
-            0s.
-        b)  What are the initial conditions?
-        c)  How many bit strings of length seven do not contain three consecutive 0s?
+        Suppose that a department contains 10 men and 15 women. How many ways are there to form a committee
+        with six members if it must have
+          a)  The same number of men and women?
+          b)  More women than men?
 
         Solution
 
-            a)  Let  a  be the number of bit strings of length n do not contain three consecutive 0’s. In order to
-                     n
-               construct a bit string of length n of this type we could start with 1 and follow with a string of length
-               n – 1 not containing three consecutive 0’s, or we could start with 01 and follow with a string of
-               length n – 2 not containing three consecutive 0’s, or we could start with a 001 and follow with a
-               string of length n – 3 not containing three consecutive 0’s.
-               These 3 cases are mutually exclusive and exhaust the possibilities for how the string might start
-               since it cannot start 000.
-               We can write down the recurrence relation, valid for all  n ≥  3: a =  a  +  a  +  a
-                                                                               n    n −  1  n −  2  n −  3
+            a)  C    ⋅ C     =  54,600 ways
+                 10,3   15,3
 
-            b)  There are no bit strings of length 0, 1, or 2 containing 3 consecutive 0’s, so the initial conditions are
-                a =  1; a =  2 and     a =  4
-                 0        1             2
+            b)  There are C     ways  to choose the committee to be composed only of women
+                           15,6
+                C    ⋅ C    ways  if there are to be five women and one man, and C    ⋅ C    ways  if there are
+                 15,5   10,1                                                      15,4  10,2
+               to be four women and two men.
+               Therefore, C     +  C    ⋅  C  +  C    ⋅  C   = 96,460 ways
+                            15,6    15,5  10,1   15,4   10,2
 
-            c)  a =  a +  a +  a
-                 3    2    1    0
-                   =  4 21
-                       ++
-                   = 7
 
-                a =  a +  a +  a
-                 4    3    2    1
-                   =  7 42
-                       ++
-                   = 13
-                a =  a +  a +  a
-                 5    4    3    2
-                        ++
-                   = 13 7 4
-                   =  24
-                a =  a +  a +  a
-                 6    5    4    3
-                   =  24 13 7
-                            +
-                        +
-                   =  44
-                a =  a +  a +  a
-                 7    6    5    4
-                        +
-                   =  44 24 13
-                             +
-                   =  81
-               Therefore, there are 81 bits of length 7 that do not contain three consecutive 0’s.
+        Exercise
+
+        How many bit strings contain exactly eight 0s and 10 1s if every 0 must be immediately followed by a 1?
+
+        Solution
+
+
+              0  1   0  1    0  1   0  1    0  1   0  1    0  1   0  1   1  1
+
+            There are 8 blocks consisting of the string 01
+            C      =  45 ways
+              10,2
+
+
+        Exercise
+
+        How many bit strings contain exactly five 0s and 14 1s if every 0 must be immediately followed by two 1s?
+
+        Solution
+
+            Glue 2 1’s to the right of each 0, giving a collection of 9 tokens: five 001’s and four 1’s.
+            C     = 126 ways
+              9,4
+
+
+
+
+
+
+
+
+
+
+
                                                           170</code></pre>
      	</div>
     

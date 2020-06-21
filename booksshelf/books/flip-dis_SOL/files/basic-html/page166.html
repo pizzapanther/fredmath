@@ -154,66 +154,68 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-        In a club with 9 male and 11 female members, how many 5-member committees can be chosen that have
-
-          a)  All men?
-          b)  All women?
-          c)  3 men and 2 women?
+        A group contains n men and n women. How many ways are there to arrange these people in a row if the
+        men and women alternate?
 
         Solution
-                       =
-            a)  C (9,5)  126
-            b)  C (11,5)  462
-                        =
-                                  84 55  46
-                      ⋅
-            c)  C (9,3) C (11,2) =  ( )( )  =      , 20
+
+                                                                                                   )
+            Consider the order in which the men appear relative to each other. There are n men  ( , nn =  ! n
+                                                                                             P
+            arrangements is allowed.
+                                                                                                         )
+            Consider the order in which the women appear relative to each other. There are n women  ( ,P nn =  ! n
+            arrangements is allowed.
+            Men and women must alternate, and there are the same number of men and women; therefore there are
+            exactly 2 possibilities: either the row with a man ends with a woman or it starts with a woman ends
+            with a man.
+
+            By the product rule there are  ! !  2 =  2 ( ) ! n  2    ways
+                                        n  n
 
 
         Exercise
-        In a club with 9 male and 11 female members, how many 5-member committees can be selected that have
-
-          a)  At least 4 women?
-          b)  No more than 2 men?
+        In how many ways can a set of two positive integers less than 100 be chosen?
 
         Solution
-                                                  3,432
-                                        ⋅
-                               +
-                       ⋅
-            a)  C (11,4) C (9,1) C (11,5) C (9,0) =
-            b)  C (9,0) C (11,5) C (9,1) C (11,4) C (9,2) C  1 ( 1,3) = 9,   372
-                                       ⋅
-                                                +
-                               +
-                       ⋅
-                                                         ⋅
 
-
-        Exercise
-        In a game of musical chairs, 12 children will sit in 11 chairs arranged in a row (one will be left out). In how
-        many ways can this happen, if we count rearrangements of the children in the chairs as different outcomes?
-
-        Solution
-            P (12,11) =  479,001,600   different         outcomes
-
+            C      =  4851  ways
+              99, 2
 
 
         Exercise
 
-        A group of 3 students is to be selected from a group of 14 students to take part in a class in cell biology.
-          a)  In how many ways can this be done?
-          b)  In how many ways can the group who will not take part be chosen?
+        In how many ways can a set of five letters be selected from the English alphabet?
 
         Solution
 
-                  14
-            a)        =  364  ways
-                  3  
 
-                  14
-            b)        =  364  ways
-                  11 
+            C      =  65,780  ways
+
+              26, 5
+
+
+        Exercise
+
+        How many subsets with an odd number of elements does a set with 10 elements have?
+
+        Solution
+
+
+            C    +  C   +  C   +C     +  C    = 512  subsets
+              10,1  10,3    10,5  10,7   10,9
+
+
+
+
+
+
+
+
+
+
+
+
                                                           166</code></pre>
      	</div>
     

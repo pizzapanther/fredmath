@@ -152,68 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 1.2 – Propositional Equivalences
+    <pre style="white-space:pre-line"><code>Example
 
+                                            q
+             Show that  ( pq¬  ∨  )  and  p¬ ∧¬  are logically equivalent.
+             Solution
 
+                                               )
+                   p     q    pq        ( ∨ pq     ¬p     ¬q     ¬ ∧¬q
+                                                                  p
+                                ∨   ¬
+                   T     T      T         F         F      F        F
+                   T     F      T         F         F      T        F
+                   F     T      T         F         T      F        F
+                   F     F      F         T         T      T        T
 
-
-             Introduction
-
-             An important type of step used in a mathematical argument is the replacement of a statement with another
-             statement with the same truth value.
-
-
-             Definition
-
-             A compound proposition that is always true, no matter what the truth values of the proposition variables
-             that occur in it, is called a tautology. A compound proposition that is always false is called contradiction.
-             A compound proposition that is neither a tautology nor a contradiction is called a contingency.
+                The truth table shows that  ( pq¬  ∨  ) ↔ ¬ ∧¬  is a tautology and these compound propositions are
+                                                        p
+                                                             q
+                logically equivalent.
 
 
              Example
 
-                   p     ¬p      p ∨¬p        p ∧¬p
+             Show that  p →  and  pq¬∨  are logically equivalent.
+                            q
+             Solution
 
-                   T      F         T           F
+                   p    q    ¬p     ¬∨          p  → q
+                                      pq
+                  T     T     F        T          T
+                  T     F     F        F          F
+                  F     T     T        T          T
 
-                   F      T         T           F
-
-                      p
-                 p ∨¬  is always true, it is tautology
-                      p
-                 p ∧¬  is always false, it is contradiction.
-
-
-
-             Logical Equivalences
-
-             Definition
-
-                                                                                 q
-             Compound propositions p and q are called logically equivalent if  p ↔  is a tautology. The notation
-             p q≡  denotes that p and q are logically equivalent.
+                  F     F     T        T          T
+                The truth table shows that  p →  and  pq¬∨  are logically equivalent.
+                                               q
 
 
-                                                      De Morgan’s Laws
+             Example
+             Show that  p ∨  (qr∧  )  and ( pq∨  ) ( pr∧  ∨  ) are logically equivalent. This is the distributive law of
 
-                                                      ¬ ( pq∧  ) ≡ ¬ ∨¬
-                                                                   p
-                                                                        q
-                                                                   p
-                                                                        q
-                                                      ¬ ( pq∨  ) ≡ ¬ ∧¬
+             disjunction over conjunction.
+             Solution
 
 
-
-
-
-
-
-
-
-
-
-
+                                                           )
+                                                                            ∨
+                                          ∧
+                                                                   ∨
+                    p      q      r     qr         ∨ p  ( ∧ qr    pq       pr       ( ∨  pq ) ( ∨  ∧ p  ) r
+                   T       T      T       T           T            T        T               T
+                   T       T      F       F           T            T        T               T
+                   T       F      T       F           T            T        T               T
+                   T       F      F       F           T            T        T               T
+                   F       T      T       T           T            T        T               T
+                   F       T      F       F           F            T        F              F
+                   F       F      T       F           F            F        T              F
+                   F       F      F       F           F            F        F              F
+                  The truth table Show that  p ∨  (qr∧  )  and ( pq∨  ) ( pr∧  ∨  ) are logically equivalent.
 
                                                               11</code></pre>
      	</div>

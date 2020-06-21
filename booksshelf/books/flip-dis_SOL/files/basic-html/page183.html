@@ -152,62 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>×
+                Let t  be the number of ways like to tile a  2 n×  board with 12  and  22×  pieces. To obtain the
+                     n
+                recurrence relation, imagine what tiles are placed at the left-hand end of the board. We can place a 22×
 
-             Determine whether the relation R on the set of all people is reflexive, symmetric, antisymmetric, and/or
+                tile there, leaving a  2×  (n −  ) 2 board to be tiled, which of course can be done in t n− 2  ways.
+                We can place a 12×  tile at the edge, oriented vertically, leaving  2×  (n −  ) 1  board to be tiled, which of
 
-             transitive, where ( , a b ) R∈  if and only if
-              a)  a is taller than b.
-              b)  a and b were born on the same day
-              c)  a has the same first name as b.
-              d)  a and b have a common grandparent.
+                course can be done in t   ways.
+                                       n− 1
+                Finally, we can place two 12×  tiles horizontally, one above the other, leaving a   2×  (n −  ) 2  board to be
 
-             Solution
+                tiled, which of course can be done in t  ways. These 3 possibilities are disjoint.
+                                                     n− 2
+                Therefore, our recurrence relation is t = t  +  2t
+                                                     n   n −  1  n −  2
+                                                                                                         ×
+                The initial conditions are t =  t = 1, since there is only one way to tile as  20×  board and 21 board.
+                                          0   1
+                This recurrence relation has characteristic roots  −1 and 2.
 
-                a)  I am not taller than myself, therefore being taller is not reflexive
-                    It is not symmetric, since I am taller than my kid but my kid is not
-                    It is antisymmetric since we never have a taller than b and b taller than a even if a = b
-                    It is transitive since if a taller than b and b taller than c that implies that A taller then c
-                b)  The relation is reflexive since a is born on the same day
-                    It is symmetric, since a and b were born on the same day
-                    It is not antisymmetric since a and b were born on the same day but a  ≠ b
-                    It is transitive since if a and b were born on the same day and b and c were born on the same day
-                    that implies that a and c were born on the same day
-
-                c)  The relation is reflexive since a has the same first name as a
-                    It is symmetric, since a has the same first name as b than b has the same first name as a
-
-                    It is not antisymmetric since a has the same first name as b but a  ≠ b
-                    It is transitive since if a has the same first name as b and c has the same first name as c that
-                    implies that a has the same first name as c
-
-                d)  The relation is reflexive since a and a have a common grandparent
-                    It is symmetric, since a and b have a common grandparent than b and a have a common
-                    grandparent
-                    It is not antisymmetric since a and b have a common grandparent but a  ≠ b
-                    It is transitive since if a and b have a common grandparent and b and c have a common
-                    grandparent that implies that a and c have a common grandparent
+                                                              n
+                                                   −
+                So, the general solution is t =  α  ( ) 1  n  +  α  2
+                                           n    1          2
+                Plugging in initial conditions gives
+                     1 α =  ( ) 1  0  α +  2 0  →  1 α =  α +
+                            −
+                          1         2               1    2    ⇒    α   1 , α =  =  2
+                    1 α  =  ( ) 1 +  1  α −  2 1  →  1=  −  α  2α +  1  3    2   3
+                         1         2                1     2
+                                                        2
+                                                            n
+                Therefore, the solution is  a =  1 ( ) 1  n  +⋅ 2
+                                                 −
+                                           n   3        3
+                                               ( ) 1  n  2 n+ 1
+                                                −
+                                             =        +
+                                                  3      3
 
 
              Exercise
 
-             Determine whether the relation R on the set of all real numbers is reflexive, symmetric, antisymmetric,
-                                         )
-             and/or transitive, where ( ,x y ∈ R  if and only if
-                    ) a  x y+= 0       ) b  x = ±       ) c     x y  is a rational number    ) d  x =  2y
-                                               y
-                                                            −
-                    ) e     xy ≥ 0      ) f     xy =  0   ) g     x = 1                    ) h     x = 1 or y = 1
+             Find the solution to a =  2a   +  a   −  2a      for n ≥  3, a =  3, a =  6 and a =  0
+                                  n     n −  1  n −  2  n −  3             0      1           2
              Solution
 
-                a)  The relation is not reflexive since 11 0+ ≠
-                                                               0
-                                                                             y
-                                                0
-                    It is symmetric, since  x y+=  then  yx+=  because  x +=     yx
-                                                                                  +
-                    It is not antisymmetric since (1, −1) ∈ R and (−1, 1) ∈ R but 1≠− 1
-                                                              183</code></pre>
+                 a −  2a    −  a   +  2a    =  0
+                  n     n −  1  n −  2  n −  3
+                                                 3
+                                                       2
+                                                          r
+                The characteristic polynomial is r − 2r −+   20
+                                                               =
+                                                          (
+                                 2
+                                r
+                That implies to:  (r −  2 ) (r−  −  2 ) (r=  −  ) 2 r −  2  1 =  )  0
+                So, the roots are 1, −1, and 2
+                The general solution:
+                                               n
+                    a =  α  1 +  n  α  ( ) 1−  n  +  α  2
+                     n     1      2         3
+                                              n
+                         α =  α +  ( ) 1  n  α +  2
+                                   −
+                           1    2          3
+                Plugging in initial conditions gives
+
+                    3 α =   α +  ( ) 1−  0  α +  2 0  →  3 α =  α +  α +
+                         1    2          3               1    2    3
+                                                               183</code></pre>
      	</div>
     
      </div>

@@ -154,62 +154,75 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-             Let R be the relation on the set of all students containing the ordered pair (a, b) if a and b are in at least
+             Let R be the relation represented by the matrix
 
-             one common class and a ≠ b. When is (a, b) in
-                                                       *
-                                       3
+                         01 0
+                                
+                 M   =    0 01
+                   R           
+                           11 0  
+
                         2
-                  a ) R          b ) R           c ) R
+                                              4
+                                   3
+             Find:   a)  R     b)  R     c)  R
              Solution
+                a)  M     =  M  2  =  M    M
+                       R 2      R      R     R
+                            01 0     01 0
+                                              
+                       2
+                     R =      0 01         0 01
+                                              
+                              11 0        11 0  
+                            0 01
+                                    
+                         =     11 0
+                                    
+                                   
+                            01 1   
 
-                a)  The pair ( ,a b ) R∈  2  if there is a person c other than a or b who is in a class with a and a class
+                b)  M     =  M 3  =  M    M 2
+                       R 3      R     R       R
 
-                    with b. ( ,a a ) R∈  2  as long a is taking a class that has at least one other person in it, that person
+                            01 0     0 01
+                                              
+                       3
+                     R =      00 1         11 0
+                                              
+                              11 0        0 11  
+                            11 0
+                                    
+                         =     01 1
+                                    
+                            111    
+                                   
 
-                    serves as the “c”.
+                c)  M     =  M ( ) 4  =  M   M ( ) 3
+                       R 4        R     R         R
 
-                b)  The pair ( , a b ) R∈  3  if there are persons c different from a and d different from b and c such that
-                    c is in a class with a, c is in class with d, and d is in class with b.
-
-                                                                              ,
-                c)  The pair ( ,a b ) R∈  *  if there is a sequence of persons c 0 , c c 2 ,  , c , with  n ≥ 1  such that
-                                                                             1
-                                                                                          n
-                                 b
-                    c =   , a c = , and for each i from 1 to n, c  ≠  c  and c   is at least one class with  c
-                     0       n                                 i− 1  i       i− 1                         i
+                           0 1 0   11 0
+                                              
+                       4
+                     R =   0 0 1     01 1
+                                     
+                          
+                                              
+                           1 1 0   111
+                                              
+                                     
+                          
+                            0 11
+                                   
+                         =     1 11
+                                   
+                            1 11  
+                                  
 
 
              Exercise
-
-                                                               *
-             Suppose that the relation R is reflexive. Show that  R  is reflexive.
+             Draw the directed graph that represents the relation {(a, a), (a, b), (b, c), (c, b), (c, d), (d, a), (d, b)}
              Solution
-
-                Since  R ⊆  R *, clearly if ∆⊆  R , then  ∆⊆  R *
-
-
-             Exercise
-                                                                 *
-             Suppose that the relation R is symmetric. Show that  R  is symmetric.
-
-             Solution
-
-                Suppose ( ,a b ) R∈  *, then there is a path from a to b in R. Given such a path, if R is symmetric, then
-                the reverse of every edge in the path is also in R; therefore there is a path from b to a in R.
-                This means that ( ,b a ) R∈  *whenever (a, b) is.
-
-
-
-             Exercise
-                                                                    2
-             Suppose that the relation R is irreflexive. Is the relation  R  necessarily irreflexive.
-             Solution
-
-                                           2
-                It is certainly possibly for  R  to contain some pairs (a, a).
-                For example: R = {(1, 2), (2, 1)}
 
 
                                                               203</code></pre>

@@ -152,51 +152,41 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
+    <pre style="white-space:pre-line"><code>Division Rule
 
-                                                   ( ) 1
-             If T is a full binary tree, then  ( ) ≤  nT  2 hT +  −  1
 
-             Proof
-                Use structural induction.
+             Definition
+             There are n/d ways to do a task if it can be done using a procedure that can be carried out in n ways, and
+             for every way w, exactly d of the n ways correspond to way w.
+               Restated in terms of sets: If the finite set A is the union of n pairwise disjoint subsets each with d
+                elements, then n = |A|/d.
+               In terms of functions: If f is a function from A to B, where both are finite sets, and for every value y ∈
+                B there are exactly d values x ∈ A such that f(x) = y, then   |B| = |A|/d.
 
-                Basis step:  The result holds for a full binary tree consisting only of a root, n(T) = 1 and h(T) = 0.
-                           Hence, n(T) = 1  ≤ 2 0+1  – 1   = 1.
 
-                                                                       ( )
-                                          ( )
-                                                                                 ( ) 1
-                                                   ( ) 1+
-                                                                                   2
-                Recursive step:  Assume  n T 1  ≤  2 hT 1  −  1 and also  n T 2  ≤  2 hT +  −  1
-                                whenever T  and T  are full binary trees.
-                                            1      2
-                    n ( ) 1T =  +  n T +  ( ) ( )                     (by recursive formula of n(T))
-                                      n T
-                                          2
-                                  1
-                                            
-                                  ( ) 1 +
-                                                  ( ) 1 +
-                                                           
-                           1
-                         ≤+     2 hT 1  − 1 +  2 hT 2  − 1          (by inductive hypothesis)
-                                                           
-                                            
-                                                        
-                                      ( ) 1 hT+ 
-                         ≤ ⋅        hT 1   ,2  ( ) 1+  2      − 1
-                           2 max 2
-                                                    
-                                                                           (
-                                                  +
-                               max (hT       ( )) 1                           x  y     max ( , xy )
-                                     ( ) 1, hT+
-                         =  22 ⋅       1       2    −  1              ( max 2 ,2  )  =  2      )
-                                ( )
-                         =  22⋅  ht  −  1                             (by recursive definition of h(T))
-                              ( ) 1+
-                         =  2 ht   − 1
+
+             Example
+
+             How many ways are there to seat four people around a circular table, where two seatings are considered
+             the same when each person has the same left and right neighbor?
+
+             Solution
+                Number the seats around the table from 1 to 4 proceeding clockwise.
+                There are four ways to select the person for seat 1, 3 for seat 2, 2, for seat 3, and one way for seat 4.
+                Thus there are 4! = 24 ways to order the four people.
+                But since two seatings are the same when each person has the same left and right neighbor, for every
+                choice for seat 1, we get the same seating.
+                Therefore, by the division rule, there are 24/4 = 6 different seating arrangements.
+
+
+
+
+
+
+
+
+
+
 
 
 

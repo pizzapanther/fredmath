@@ -152,44 +152,42 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-             Find all connected components of the following graph G.
-
-
+    <pre style="white-space:pre-line"><code>Vertices  v  & v  both have degree 3, which is odd. Hence by the contrapositive form, this graph does
+                       1    3
+             not have an Euler circuit.
 
 
+          Definition
+
+          Let G be a graph, and let v and w be two distinct vertices of G. An Euler trail from v to w is a sequence of
+          adjacent edges and vertices that starts at v, ends at w, passes through every vertex of G at least once, and
+          traverses every edge of G exactly once.
+
+
+          Example
+
+          Many puzzles ask you to draw a picture in a continuous motion without lifting a pencil so that no part of
+          the picture is retraced. We can solve such puzzles using Euler circuits and paths. For example, can
+          Mohammed’s scimitars, shown in Figure below, be drawn in this way, where the drawing begins and ends
+          at the same point?
 
 
 
 
 
 
-             Solution
-                G has three connected components:  H  H    , and H  with vertex sets V  V  and V  and edges
-                                                      ,
-                                                                                            ,
-                                                                                        ,
-                                                     1    2        3                   1   2        3
-                 E  , E  , and E , where
-                  1   2        3
-                           V =  { v v  , v  }           E =  { e  , e  }
-                                   ,
-                            1     1   2   3               1    1   2
-                                 v
-                           V =  { }                     E = ∅
-                             2     4                      2
-                                                                 ,
-                                    ,
-                           V =  { v v   , v  , v  }     E =  { e e   , e  }
-                             3    5   6   7   8           3     3  4   5
 
 
-             Example
 
 
-             Find the cut vertices and cut edges in the graph G .
-
+          Solution
+             Let denote G for the graph. G has an Euler circuit, because all its vertices have even degree.
+             1.  Form the circuit: a, b, d, c, b, e, i, f, e, a. We obtain the subgraph H by deleting the edges in this
+                 circuit and all vertices that become isolated when these edges are removed.
+             2.  Form: d, g, h, j, i, h, k, g, f, d in H. After forming this circuit we have used all edges in G. Splicing
+                 this new circuit into the first circuit at the appropriate place produces the Euler circuit a, b, d, g, h,
+                 j, i, h, k, g, f, d, c, b, e, i, f, e, a. This circuit gives a way to draw the scimitars without lifting the
+                 pencil or retracting part of the picture.
 
 
 
@@ -202,25 +200,23 @@ function MM_swapImage() { //v3.0
 
 
 
-                                      G
-             Solution
-
-                The cut vertices of G are b, c, and e.
-                The removal of one of these vertices (and its adjacent edges) disconnects the graph. The cut edges
-                are {a, b} and {c, e}.
-
-                Removing either one of these edges disconnects G.
-
-
-             Definition
-
-             A directed graph is weakly connected of there is a path between every two vertices in the underlying
-             undirected graph.
 
 
 
 
-                                                            258</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           258</code></pre>
      	</div>
     
      </div>

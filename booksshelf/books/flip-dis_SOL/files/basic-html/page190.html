@@ -152,80 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>=  R
-                              5
-             g)  R ⊕   R =  ( R   R  ) ( R   R  )
-                                      
-                   1    3     1    3      3     1
-                                                                                       }
-                          =  { ( ,a b ∈  )  R 2  | a b and a b } { ( ,a b ∈  )  R 2  | a b and a b
-                                                     ≥
-                                                                          &lt;
-                                                                                    ≤
-                                           &gt;
-                          =  R  R                   (From part a)
-                              1    3
-                          =  R
-                              6
-             h)  R ⊕   R =  ( R   R  ) ( R   R   )
-                                       
-                   2     4     2    4       4    2
-                            {         2                 } {          2                 }
-                                                                                    &lt;
-                                           ≥ R
-                          =  ( ,a b ∈  )  | a b and a b     ( ,a b ∈   )  | a b and a b
-                                                     &gt;
-                                                                          ≤ R
-                          =  R  R                   (From part a)
-                              1    3
-                          =  R
-                              6
-             i)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
-                   1   1            1               1
-                                              c
-                                      c   a
-                        a &gt; b and b &gt;⇒ &gt;  (clearly) that means( ,ac    ) R∈  1  (Transitive).
-                 Therefore,  R  R =  R
-                             1    1    1
+    <pre style="white-space:pre-line"><code>Exercise
 
-             j)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
-                   1   2             2               1
-                       a ≥ b and b &gt;⇒ &gt;  (clearly) that means( ,ac   ) R∈  1  . Therefore,  R  R =  R
-                                            c
-                                    c   a
-                                                                                             2
-                                                                                         1
-                                                                                                   1
-                                                      }
-             k)  R   R =   ( {  , a  ) b ∈  R  and  ( , b c ∈  ) R
-                   1   3             3              1
-                                                             2
-                       a &lt;  b and b &gt;  c . Therefore,  R  R = R
-                                                   1   3
-             l)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
-                   1   4             4               1
-                     a ≤  b and b &gt;  c . Clearly this can always be done simply by choosing b to be large enough.
-                                           2
-                    Therefore,  R   R = R
-                                 1   4
-             m)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
-                   1   5             5               1
-                     a = b and b &gt;  iff a &gt; c. Therefore,  R  R =  R
-                                  c
-                                                         1    5    1
-                                                      }
-             n)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R
-                   1   6             6               1
-                     a ≠  b and b &gt;  c . Clearly this can always be done simply by choosing b to be large enough.
-                                           2
-                    Therefore,  R   R = R
-                                 1   6
-             o)  R   R =   ( {  , a  ) b ∈  R  and  ( ,b c ∈  )  R  }
-                   2   3             3               2
-                     a &lt;  b and b ≥  c . Clearly this can always be done simply by choosing b to be large enough.
-                                           2
-                    Therefore,  R  R = R
-                                 2    3
+          For each of these relations on the set {1, 2, 3, 4}, decide whether it is reflexive, symmetric, antisymmetric
+          and transitive
+           a)  {(2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4)}
+           b)  {(1, 1), (1, 2), (2, 1), (2, 2), (3, 3), (4, 4)}
+           c)  {(2, 4), (4, 2)}
+           d)  {(1, 2), (2, 3), (3, 4)}
+           e)  {(1, 1), (2, 2), (3, 3), (4, 4)}
+           f)  {(1, 3), (1, 4), (2, 3), (2, 4), (3, 1), (3, 4)}
+
+          Solution
+
+             a)  This relation is not reflexive, since (1, 1) is not included
+                 It is not symmetric, since (2, 4) is included but not (4, 2)
+                 It is not antisymmetric, since it includes (2, 3) and (3, 2) but 2 ≠ 3
+                 (2, 3 ) &  (3, 4 )  →  (2, 4)   &  (3,2 ) &  (2,4 )  →  (3,4)    It is transitive.
+                 (2, 3 ) &  (3, 2 )  →  (2, 2)   (3, 2 ) &  (2, 3 )  →  (3, 3)
+
+             b)  This relation is reflexive, since (1, 1), (2, 2), (3, 3), and (4, 4)} are included
+                 It is symmetric, since (2, 1) and (1, 2) are included
+                 It is not antisymmetric, since it includes (2, 1) and (1, 2) but 2 ≠ 1
+                      )
+                 (2, 1 &      (1, 2   )  →  (2, 2)  It is transitive.
+
+                  (1, 2 ) &  (2, 1 )  →  (1, 1)
+
+             c)  This relation is not reflexive, since (1, 1) is not included
+                 It is symmetric, since (2, 4) and (4, 2) are included
+                 It is not antisymmetric, since it includes (2, 4) and (4, 2) but 2 ≠ 4
+                 It is not transitive, since it includes (2, 4) and (4, 2) but not (2, 2)
+             d)  This relation is not reflexive, since (1, 1) is not included
+                 It is not symmetric, since (1, 2) is included but not (2, 1)
+                 It is antisymmetric, since no cases of (a, b) and (b, a) both being in the relation
+                 It is not transitive, since it includes (1, 2) and (2, 3) but not (1, 3)
+
+             e)  This relation is reflexive, since (1, 1), (2, 2), (3, 3), and (4, 4)} are included and it is symmetric
+                 It is antisymmetric, since no cases of (a, b) and (b, a) both being in the relation
+                 It is transitive, since the only time the hypothesis ( ,a  b ) R∈∧ ( ,b c ) R∈  is met is when  abc≡ ≡
+
+             f)  This relation is not reflexive, since (1, 1) is not included
+                 It is not symmetric, since (1, 4) is included but not (4, 1)
+                 It is not antisymmetric, since it includes (1, 3) and (3, 1)
+                 It is not transitive, since it includes (2, 3) and (3, 1) but not (2, 1)
+
+
+
+
+
+
+
+
 
 
                                                            190</code></pre>

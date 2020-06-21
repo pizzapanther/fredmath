@@ -152,64 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises  Section 2.3 – Divisibility and Modular Arithmetics
+    <pre style="white-space:pre-line"><code>Algorithms for Integer Operations
+
+             Addition Algorithm
+
+             To add a and b, first add their rightmost bits. This gives
+
+                              2 s
+                 a + b =  c ⋅+
+                  0    0    0      0
+                                  2 s
+                 a + b + c =  c ⋅+
+                  1   1    0   1      1
+
+
+             Example
+
+
+             Add  a = (1110 )   and   b = (1011 )
+                            2                   2
+             Solution
+                 a + b = += ⋅ +                         ⇒    c =  0,  s =  1
+                          01 0 21
+                  0    0                                      0       0
+                                      =⋅
+                                           +
+                 a + b + c =  1 1 0 12 0                ⇒    c =  1,  s =  0
+                                ++
+                  1   1    0                                  1      1
+                               1 0 1 12 0
+                 a + b +  c = + += ⋅ +                  ⇒    c =  1,  s =  0
+                  2    2   1                                  2       2
+                 a + b +  c =  111 1 2 1                ⇒    c =  1,  s =  1
+                                           +
+                                      =⋅
+                                ++
+                  3   3    2                                  3      3
+                Therefore,  s =  ab =  (11001 )
+                                +
+                                             2
+                (carry ) c    1 11
+                                 11 1 0
+
+                              +  10 1 1
+                         s    1  10 01
+
+
+             Example
+
+             How many additions of bits are required to use Algorithm 2 to add two integers with n bits (or less) in
+             their binary representations?
+             Solution
+
+                Two integers are added by successively adding pairs of bits. Adding each pair of bits and the carry
+                requires two additions of bits. Thus, the total number of additions of bits used is less than twice the
+                number of bits in the expansion. Hence, the number of additions of bits used by Algorithm 2 to add
+                two n-bit integers is O(n).
 
 
 
 
-           1.   Does 17 divide each of these numbers?
-                   a ) 68 b ) 84 c ) 35 d ) 1001
-           2.   Prove that if a is an integer other than 0, then
-
-                                              0
-                   a )1   divides a b ) a divides
-           3.   Show that if  |ab and  |b a, where a and b are integers, then a = b or a = −b.
-                                                                        0
-                                                              0
-                                                                                        |
-           4.   Show that if a, b, and c are integers, where  a ≠  and c ≠ , such that  ac bc , then  |ab
-           5.   What are the quotient and remainder when
-                  a)  19 is divided by 7?
-                  b)  −111 is divided by 11?
-                  c)  789 is divided by 23?
-                  d)  1001 is divided by 13?
-                  e)  0 is divided by 19?
-                  f)  3 is divided by 5?
-                  g)  −1 is divided by 3?
-                  h)  4 is divided by 1?
-
-           6.   What time does a 12-hour clock read
-                  a)  80 hours after it reads 11:00?
-                  b)  40 hours before it reads 12:00?
-                  c)  100 hours after it reads 6:00?
-
-           7.   What time does a 24-hour clock read
-                  a)  100 hours after it reads 2:00?
-                  b)  45 hours before it reads 12:00?
-                  c)  168 hours after it reads 19:00?
-
-                                                           )
-                                                                               )
-           8.   Suppose a and b are integers,  a ≡  ( 4 mod13 ,  and b ≡  ( 9 mod13 . Find the integer c with 0 c≤ ≤ 12
-                such that
-
-                                    )
-                  a)  c ≡ 9a (mod13
-                                     )
-                  b)  c ≡ 11b (mod13
-                                      )
-                          ab
-                  c)  c ≡+     (mod13
-                                         )
-                  d)  c ≡  2a +  3b (mod13
-                                         )
-                  e)  c ≡  a +  2  b 2 (mod13
-                                         )
-                  f)  c ≡  a −  3  b 3 (mod13
 
 
 
-                                                            109</code></pre>
+
+
+
+
+
+                                                              109</code></pre>
      	</div>
     
      </div>

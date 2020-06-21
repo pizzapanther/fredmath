@@ -154,41 +154,40 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-          Find a recurrence relation for C , the number of ways to parenthesize the product of  n + 1 numbers,
-                                        n
-          x ⋅  x ⋅  x   x ⋅  , to specify the order of multiplication. For example,C = , since all the possible ways
-                                                                                   5
-           0   1   2     n                                                     3
-          to parenthesize 4 numbers are
-                  ( (  x ⋅  0  x 1 ) )  x ⋅  3     ( x ⋅  0  ( x ⋅  1  x 2 ))  x ⋅  3     ( x ⋅  0  x ⋅  1 ) ( x ⋅  2  x 3 )
-                            x ⋅
-                             2
 
-                                x ⋅
-                 x ⋅  ( (  x ⋅  x  ) )        x ⋅  ( x ⋅  ( x ⋅  x  ))
-                  0     1   2    3             0    1    2   3
+                                                                           n
+          Find all solutions of the recurrence relation a =  5a  −  6a  +  7 .
+                                                     n      n−  1   n−  2
           Solution
-             Note that however parentheses are inserted in  x ⋅  x ⋅  x   x ⋅  , one  “∙” operator remains  outside all
-                                                           0   1   2     n
-             parentheses. This final operator appears between two of the n + 1 numbers, say  x  and  x  . Since
-                                                                                            k       k+ 1
-             there are C  ways  to insert parentheses in the product  x ⋅  x ⋅  x   x ⋅  and C   ways  to insert
-                                                                                           −−
-                        k                                           0   1   2     k       nk   1
-             parentheses in the product  x    x ⋅  ⋅   x ⋅  , we have
-                                         k+  1  k+  2    n
 
-                 C =   C C     +  CC      +   +  C  C +  C    C
-                   n    0 n−  1    1 n−  2       n−  21     n−  1 0
-                          1
-                       n−
-                       ∑
-                     =     CC   nk   1
-                                 −−
-                             k
-                       k= 0
-             The initial conditions are C =  C = 1.
-                                        0    1
+             The linear nonhomogeneous equation is a =    5a    − 6a     .
+                                                      n     n −  1   n −  2
+                               ( ) k     n         n
+             Its solutions are a  =  α  3 ⋅  +  α  2 ⋅  , where α  and α are constants
+                               n      1        2              1       2
+                                  ( ) p     n
+             The trial solution is a  =  C  7 ⋅
+                                  n
+                 C  7 ⋅  n  =  5C ⋅  7 n −  1 −  6C ⋅  7 n −  2  +  7 n
+
+                 C  7 ⋅  n  =  7 n− 2  (35C −  6C +  49 )
+
+                 C  7 ⋅  2  =  29C +  49
+                 49C −  29C =  49
+                 20C =  49
+
+                 C =  49
+                     20
+             Hence,  a ( ) p  =  49  7 ⋅  n
+                      n     20
+             Hence, the solution is a =  α  3 ⋅  n  +  α  2 ⋅  n  +  49  7 ⋅  n  .
+                                    n     1        2       20
+
+
+
+
+
+
 
 
 

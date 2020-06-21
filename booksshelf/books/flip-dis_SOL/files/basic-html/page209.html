@@ -152,60 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>This relation is an equivalence relation.
-                    The equivalence classes are {a, d} and {b, c}
+    <pre style="white-space:pre-line"><code>0   0  1  0  0   0   0  1  0  0 
+                                                          
+                              0  0  0  1  0     0  0  0  1  0 
+                a)  M     =  1   0  0  0  1  1   0  0  0  1
+                       R 2                                
+                              0  0  1  0  0     0  0  1  0  0 
+                                                          
+                              1  1  0  1  0     1  1  0  1  0 
 
-                c)  The relation is reflexive since there is a loop at each vertex.
-                    It is symmetric since every edge has 2 vertices and pointing in the both direction.
-                    It is not transitive (a, b) and (b, c) but not (a, c).
-
-
-             Exercise
-
-             Which of these collections of subsets are partitions of {1, 2, 3, 4, 5, 6}
-
-                a)  {1, 2}, {2, 3, 4}, {4, 5, 6}
-                b)  {1}, {2, 3, 6}, { 4}, {5}
-                c)  {2, 4, 6}, {1, 3, 5}
-                d)  {1, 4, 5}, {2, 6}
-
-             Solution
-
-                a)  This is not a partition, since the sets are not pairwise disjoint. 2 and 4 appear in 2 of the sets.
-
-                b)  This is a partition
-                c)  This is a partition
-
-                d)  This is not a partition, since element 3 is missing from the sets
+                              1 000 1
+                              00 1 00       
+                                            
+                          =   1111 0
+                                            
+                              1 000 1       
+                                            
+                              00 11 0       
 
 
-             Exercise
+                             1   0  0  0  1   0   0  1  0  0 
+                                                          
+                              0  0  1  0  0     0  0  0  1  0 
+                b)  M     =  1   1  1  1  0  1   0  0  0  1
+                       R 3                                
+                              1  0  0  0  1     0  0  1  0  0 
+                                                          
+                              0  0  1  1  0     1  1  0  1  0 
 
-             Which of these collections of subsets are partitions of {−3, −2, −1, 0, 1, 2, 3}
-
-                a)  {−3, −1, 1, 3}, {−2, 0, 2}
-                b)  {−3, −2, −1, 0}, {0, 1, 2, 3}
-                c)  {−3, 3}, {−2, 2}, {−1, 1}, {0}
-                d)  {−3, −2, 2, 3}, {−1, 1}
-
-             Solution
-
-                a)  This a partition, since it satisfies the definition
-                b)  This is not a partition, since the subsets are not disjoint
-
-                c)  This a partition, since it satisfies the definition
-                d)  This is not a partition, since the union of the subsets leaves out 0
-
-
-
+                              1 111 0
+                              1 000 1      
+                                           
+                          =   1 0 111
+                                           
+                              1 111 0      
+                              1 01 01      
+                                           
 
 
+                             1 1  1   1  0  0  0  1  0  0 
+                                                         
+                             1 0  0   0  1  0  0  0  1  0 
+                c)  M     =   1 0  1  1  1 1  0  0   0  1
+                       R 4                               
+                             1 1  1   1  0  0  0  1  0  0 
+                                                         
+                             1 0  1   0  1  1  1  0  1  0 
+
+                              1 0 11 1
+                              111 1 0     
+                                          
+                          =   111 11
+                                          
+                              1 0 11 1    
+                                          
+                              111 11      
 
 
-
-
-
-
+                             1 0 1 1 1    0  0   1  0  0 
+                                                         
+                             111 1 0       0  0  0  1  0 
+                d)  M     =  111 11       1  0   0  0  1
+                       R 5                               
+                             1 0 1 1 1     0  0  1  0  0 
+                                                         
+                             111 11        1  1  0  1  0 
 
 
 

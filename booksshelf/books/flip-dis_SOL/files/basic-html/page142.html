@@ -152,63 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>For  n = 1:  f =  f  is true since both values are 1
-                        1    2
-            Let assume that  f +  f +   +  f   =  f
-                             1    3        2n− 1   2n
-            We need to prove that  f +  f +   +  f   +  f    =  f
-                                   1    3        2n−  1  2n+  1   ( 2 n+  ) 1
+    <pre style="white-space:pre-line"><code>=  1 −  2  21
+                             ( ) 2−
+                     = − 3
 
-                f +  f +    +  f   +  f    =  f  +  f
-                 1    3        2n−  1  2n+  1  2n    2n+  1
-                                             =  f           (by the definition of the Fibonacci numbers)
-                                                2n+ 2
+                f  ( ) 3 =  f  ( ) 2  2  −  2 f  ( ) 2 −  2
+
+                     =  ( ) 3−  2  −  2 ( ) 3−  −  2
+
+                     = 13
+
+
+                f  ( ) 4 =  f  ( ) 3  2  −  2 f  ( ) 3 −  2
+
+                     =  ( ) −  13  2  2 13
+                                ( ) 2−
+                     = 141
+
+                f  ( ) 5 =  f  ( ) 4  2  −  2 f  ( ) 4 −  2
+
+
+                     =  (141 ) −  2  ( 2 141 ) 2−
+                     = 19,597
+
 
 
         Exercise
 
-        Give a recursive definition of
-              a)  The set of odd positive integers
-              b)  The set of positive integers powers of 3
-              c)  The set of polynomial with integer coefficients
-              d)  The set of even integers
-              e)  The set of positive integers congruent to 2 modulo 3.
-              f)  The set of positive integers  not divisible by 5
-
+        Find  ( ) 2f  , ( ) 3f  ,  ( ) 4  and  ( ) 5f   if  ( ) n  is defined recursively by  ( ) 0f  =  f  ( ) 1 = 1 and for n  = 1, 2,
+                           f
+                                              f
+                                                                        ( ) ( f n −
+             a)  f n + (  ) 1 =  f  ( ) n −  ( f n −  ) 1    b)  f n + (  ) 1 =  f n  ) 1
+                                            3
+                                                                        ( ) / f n −
+             c)  f n + (  ) 1 =  f  ( ) n  2  +  ( f n −  ) 1    d)  f n + (  ) 1 =  f n  (  ) 1
         Solution
-            a)  Off integers are obtained from other odd integers by adding 2.
-               Thus, we can define this set S as follows 1 S∈ ; and if  n S, then    n∈  +∈
-                                                                                    2 S .
-            b)  Powers of 3 are obtained from other powers of 3 by multiplying by 3.
-               Thus, we can define this set S as follows 3 S∈ ; and if  nS, then   ∈  3nS∈  .
 
-            c)  There are several ways to do this. One that is suggested by Horner’s method is as follows. We
-                                                                                                 px
-               assume that the variable for these polynomials is the letter x. All integers are in S; if  ( ) S∈  and n
-                                   xp
-                                           n
-               is any integer, then  ( ) x +  is in S.
-               Another method constructs the polynomials term by term. Its base case is to let 0 be in S; and its
-               inductive step is to say that if  ( ) S∈ , c is an integer, and n is a nonnegative integer, then
-                                             px
-                         n
-                p ( ) x + cx  is in S.
+            a)  f  ( ) 2 =  f  ( ) 1 −  f  ( ) 0
+                       1 1
+                     = −
+                     = 0
 
-            d)  Off integers are obtained from other even integers by adding 2.
-                                                                                    2 S   and   n+
-               Thus, we can define this set S as follows  2 S∈ ; and if  n S, then    n∈  −∈       2 S∈ .
-            e)  The smallest positive integer congruent to 2 modulo 3 is 2, so 2 S∈ . All the others can be obtained
-               by adding multiples of 3, so the inductive step is that  n S, then    n∈  +∈
-                                                                                   3 S
-            f)  The positive integers no divisible by 5 are the ones congruent to 1, 2, 3, or 4 modulo 5.
-                                                                                ∈
-               Thus, we can define this set S as follows 1 S,∈  2∈  S,  3 ∈  S,  and  4 S ; and if
-                                5 S
-                 ∈
-                n S, then    n+∈
+                f  ( ) 3 =  f  ( ) 2 −  f  ( ) 1
 
+                     = 01
+                         −
+                     = − 1
 
+                f  ( ) 4 =  f  ( ) 3 −  f  ( ) 2
 
+                     = −−
+                        10
+                     = − 1
+
+                f  ( ) 5 =  f  ( ) 4 −  f  ( ) 3
+
+                     = − 1− ( ) 1−
+                     = 0
 
 
 

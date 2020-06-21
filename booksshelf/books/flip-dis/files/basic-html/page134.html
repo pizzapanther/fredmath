@@ -152,51 +152,49 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Check Digits:  UPCs
+    <pre style="white-space:pre-line"><code>Example
 
-           A common method of detecting errors in strings of digits is to add an extra digit at the end, which is
-           evaluated using a function. If the final digit is not correct, then the string is assumed not to be correct.
+          Use mathematical induction to prove this formula for the sum of a finite number of terms of a geometric
 
+          progression with initial term a and common ratio r:
+                                n                                  n+ 1
+                               ∑  ar =  j  a +  ar +  ar +  2  +  ar =  n  ar  r − 1 −  a  when   r ≠  1
 
-           Example
+                               j= 0
+          for all nonnegative integers n.
+          Solution
 
-           Retail products are identified by their Universal Product Codes (UPCs). Usually these have 12 decimal
-           digits, the last one being the check digit. The check digit is determined by the congruence:
+                                           +
+             Basis Step:  For n = 0 ⇒   ar 0 1 −  a  =  ar −  a  =  ( ar −  ) 1  =  a ; hence  P  is true.
+                                          r −  1    r − 1     r −  1             0
 
-                       3x +  x +  3x +  x +  3x +  x +  3x +  x +  3x +  x  +  3x  +  x  ≡  0  (mod  10 )
-                         1    2     3    4    5    6     7    8     9    10     11   12
+             Inductive Step:  a +  ar +  ar +  2  +  ar =  k  ar k+ 1  − a   is true for every positive integer k.
+                                                         r − 1
 
-             a)  Suppose that the first 11 digits of the UPC are 79357343104. What is the check digit?
-             b)  Is 041331021641 a valid UPC?
-           Solution
+                        a +  ar +  ar +  2  +  ar +  k  ar k+ 1  =  ar k+ 2  − a  ?
+                                                            r − 1
+                 a +  ar +  ar +  2  ar + +  k  ar k+ 1  =  ar k+ 1  −  a  +  ar k+ 1
+                                                     r − 1
 
-                    ⋅
-               a)  3 7 9 3 35 3 7 33 4 33 1 0 3 4 x+ +⋅ + +⋅ + +⋅ + +⋅ + +⋅ +  ≡ 0  (mod  10 )
-                                                                     12
-                   98 x+   ≡  0  (mod  10 )
-                        12
-                   x   ≡  0  (mod  10 ).   So, the check digit is 2.
-                    12
+                                                          a
+                                                  ar k+  1  −+ ar k+  1 (r −  ) 1
+                                                =           r − 1
+                                                              ar
+                                                          a
+                                                =  ar k+  1  −+ r − k+  1  2  − ar k+  1
+                                                   a
+                                                =  −+  ar 1 k+ 2
+                                                     r −
 
-                                                             3 41 0+ ≡
-               b)  3 ⋅ 04 3+ +⋅ 1 3 3+ +⋅ 3 1 3+ +⋅ 02 3+ +⋅ 1 6+ +⋅    (mod  10 )
-                   44 ≡≡ (mod       10 )
-                       4
-                   Hence, 041331021641  is not a valid UPC.
+                                                =  ar k+ 2 1 −  a        √
+                                                     r −
+                   Hence  P     is true.
+                           k+ 1
+             By mathematical induction, the statement
+               n                                  n+ 1
+              ∑  ar =  j  a +  ar +  ar +  2  +  ar =  n  ar r − 1 − a , when r ≠  1 is true
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+              j= 0
 
 
 
@@ -220,9 +218,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-                                                            134</code></pre>
+                                                           134</code></pre>
      	</div>
     
      </div>

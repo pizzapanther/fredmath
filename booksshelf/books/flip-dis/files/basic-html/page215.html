@@ -152,67 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Suppose that  a ≡ b  (mod  m )  and b ≡ c  (mod  m ) , then m divides both a – b and b – c. so
+    <pre style="white-space:pre-line"><code>Equivalence Classes
 
-                a b     km and b c =   lm, where k and l are integers.
-                                 −
-                  −=
-                 It follows that  a c =  (a b +   −  )  km lm =   (k +  ) l m, so  a ≡  c  (mod  m ).
-                                            ) (b c =
-                                                           +
-                                 −
-                                         −
-                Hence, congruence modulo m is transitive.
-                The congruence modulo m is an equivalence relation.
+             Definition
 
+             Let R be an equivalent relation on a set A. The set of all elements that are related to an element a of A is
 
-             Example
-
-             Let n be a positive integer and S a set of strings. Suppose that  R  is the relation on S such that  s Rt
-                                                                          n                                 n
-             if and only if s = t, or both s and t have at least n characters and the first n characters of s and t are the
-             same.
-             That is, a string of fewer than n characters is related only to itself; a string s with at least n characters is
-             related to a string t if and only if t has at least n characters and t begins with the n characters at the start
-             of s.
-             For example, let n = 3 and let S be the set of all bit strings.
-             Then  s R t  either when s = t or both s and t are bit strings of length 3 or more that begin with the
-                      3
-             same three bits. For instant,  01 R  01 and  00111 R  00101 but  01 R 010  and  01011 R  01110
-                                            3                3               3                 3
-             Show that every set S of strings and every positive integer n,  R  is an equivalence relation on S.
-                                                                         n
-             Solution
-
-                The relation  R  is reflexive because s = s, so that  s R s  whenever s is a string in S.
-                              n                                     n
-                If  s Rt , then either s = t or s and t are both at least n characters long that begin with same n
-                      n
-                characters. This means that t R s . Therefore,  R is symmetric.
-                                              n                n
-                Suppose that  s Rt  and t Ru . Then either s = t or s and t are both at least n characters long s and
-                                 n         n
-                t begin with same n characters, and either t = u or t and u are both at least n characters long t and u
-                begin with same n characters. From this, we can deduce that either s = u or s and u are both at least
-                n characters long s and u begin with same n characters.
-
-                Because s, t and u are all at least n characters long s and u begin with same n characters as t does.
-                Therefore,  R is transitive.
-                             n
-                It follows that  R  is an equivalence relation.
-                                n
+             called the equivalence class of a. The equivalence class of a with respect to R is denoted by [ ] a  . When
+                                                                                                         R
+             only one relation is under consideration, we can delete the subscript R and write [a] for this equivalence
+             class.
+                                   )
+                    [ ] a  = {  ( | s a s ∈ R }
+                                 ,
+                       R
+                    b∈ [ ] a  , then b called a representative of this equivalence class.
+                          R
 
 
              Example
 
-             Let R be the relation on the set of real numbers such that  x R y  if and only if x and y are real numbers
+             Let R be the relation on the set of integers such that aRb if and only if a = b or a = −b. What is the
+             equivalence class for this relation?
 
-             that differ by less than 1, that is  x −  y &lt;  1. Show that R is not an equivalence relation.
+             Solution
+                Because an integer is equivalent to itself and its negative in this equivalence relation, it follows that
+
+                [ ] { a a= −  ,  } . This set contains two distinct integers unless  a = .
+                 a
+                                                                              0
+                                             5
+                              7
+                                                                     0
+                For instance, [ ] { 7, 7 = −  } , [ ] { 5, 5 = −  } , and [ ] { }
+                                                               0 =
+
+
+             Example
+             What is the equivalence class of 0 and 1 for congruence modulo 4?
+
              Solution
 
-                Let  x =  2.5,  y = 1.8, and  z = 1.1, so that
+                The equivalence class of 0 contains all integers a such that  a  ≡ 0 (mod  ) 4 . The integers in this class
+                are those divisible by 4, Hence, the equivalence class of 0 for this relation is
+                    [0] = {…, −8, −4, 0, 4, 8, …}
 
-                                                            215</code></pre>
+                The equivalence class of 1 contains all integers a such that  a  ≡  ( 1 mod  4 ) . The integers in this class
+                are those that have a remainder of 1when divided by 4, Hence, the equivalence class of 1 for this
+                relation is
+                    [1] = {…, −7, −3, 1, 5, 9, …}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              215</code></pre>
      	</div>
     
      </div>

@@ -152,56 +152,17 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Definition
 
-          Give a recursive definition of the factorial function n!
+          The set of extended binary trees can be defined recursively by these steps:
 
-          Solution
-
-              f  ( ) 0 = 1
-
-                ( fn +  1 ) (n=  +  ) 1 ⋅  fn
-                                  ( )
-             These 2 equations define n!
-
-
-          Example
-                                        n
-          Give a recursive definition of  a , where a is a nonzero real number and n is a nonnegative integer.
-          Solution
-
-               0
-              a = 1
-              a n+ 1  =  aa⋅  n    for n = 0, 1, 2, 3, ….
-
-                                       n
-             These 2 equations define  a  for all nonnegative integers n.
-
-
-          Example                         n
-
-                                       ∑
-          Give a recursive definition of:    a
-                                              k
-                                        k= 0
-          Solution
-                                               0
-                                             ∑
-             The first part of the definition is   a =  a
-                                                         0
-                                                   k
-                                              k= 0
-
-
-                                   1
-                                             n
-                                          
-                                n+
-                                ∑∑                   
-                                          
-             The second part is      a =       a k   + a n+ 1
-                                      k
-                                k= 0          k= 0    
+          Basis step:  The empty set is an extended binary tree.
+          Recursive step:  If  T  and T  are disjoint extended binary trees, there is an extended binary tree, denoted
+                              1       2
+                   by TT⋅   , consisting of a root r together with edges connecting the root to each of the roots of
+                       1   2
+                   the left subtree T  and the right subtree T  when these trees are nonempty.
+                                   1                       2
 
 
 
@@ -217,6 +178,52 @@ function MM_swapImage() { //v3.0
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                 Extended Binary Trees
+
+
+          Definition
+
+          The set of full binary trees can be defined recursively by these steps:
+          Basis step:  There is a full binary tree consisting only of a single vertex r.
+
+          Recursive step:  If  T  and T  are disjoint full binary trees, there is a full binary tree, denoted by TT⋅  ,
+                              1       2                                                                  1  2
+                   consisting of a root r together with edges connecting the root to each of the roots of the left
+                   subtree T  and the right subtree T .
+                            1                      2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    Full Binary Trees
 
 
                                                            152</code></pre>

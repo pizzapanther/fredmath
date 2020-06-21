@@ -152,49 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Climbing an Infinite Ladder Example:
-
-           BASIS STEP: By (1), we can reach rung 1.
-           INDUCTIVE STEP: Assume the inductive hypothesis that we can reach rung k. Then by (2), we can
-                               reach rung k + 1.
-               Hence, P(k) → P(k + 1) is true for all positive integers k. We can reach every rung on the ladder.
+    <pre style="white-space:pre-line"><code>( 7 k+  2  + 8 2k+  1 )  is divisible by 57, by the inductive hypothesis,
 
 
-          Examples of Proofs by Mathematical induction
+                                     57 8 2k+ 1  is divisible by 57, since it is an integer multiplied by 57.
+                                        ⋅
+                   Thus,  P    is true.
+                          k+ 1
 
-          Mathematical induction can be expressed as the rule of inference
+             By mathematical induction, the statement 7 n+  2  + 8 2n+  1  is divisible by 57 is true, for every positive
 
-                                                              ( +
-                                                      ( ) →
-                                        ( P ( ) 1 ∧∀  ( k Pk  Pk   1 ))) → ∀ nPn
-                                                                              ( )
-          where the domain is the set of positive integers.
-          In a proof by mathematical induction, we don’t assume that P(k) is true for all positive integers! We show
-          that if we assume that P(k) is true, then P(k + 1) must also  be true.
-
-          Proofs by mathematical induction do not always start at the integer 1. In such a case, the basis step begins
-          at a starting point b where b is an integer.
+             integer n.
 
 
-          Validity of Mathematical Induction
 
-          Mathematical induction is valid because of the well ordering property, which states that every nonempty
-          subset of the set of positive integers has a least element. Here is the proof:
+          Number of Subsets of a Finite Set
 
-             Suppose that P(1) holds and P(k) → P(k + 1) is true for all positive integers k.
+          Inductive Hypothesis
+                                                                             k
+          For an arbitrary nonnegative integer k, every set with k elements has 2  subsets.
 
-             Assume there is at least one positive integer n for which P(n) is false. Then the set S of positive
-               integers for which P(n) is false is nonempty.
-             By the well-ordering property, S has a least element, say m.
 
-             We know that m cannot be 1 since P(1) holds.
+          Let T be a set with k + 1 elements. Then T =  S  { } a , where a ∈ T and S = T − {a}.  Hence |T| = k.
 
-             Since m is positive and greater than 1, m − 1 must be a positive integer. Since m − 1 &lt; m, it is not in
-               S, so P(m − 1) must be true.
+          For each subset X of S, there are exactly two subsets of T, i.e., X and   X  { } a .
 
-             But then, since the conditional P(k) → P(k + 1)  for every positive integer k holds, P(m) must also
-               be true. This contradicts P(m) being false.
-             Hence, P(n) must be true for every positive integer n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             k
+          By the inductive hypothesis S  has 2 subsets. Since there are two subsets of T for each subset of S, the
+
+          number of subsets of T  is 22 ⋅  k  =  2 k  1 +
+
+
+
+
+
+
+
 
 
 

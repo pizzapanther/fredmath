@@ -152,64 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>33.  In a club with 9 male and 11 female members, how many 5-member committees can be selected that
-               have
-                 a)  At least 4 women?
-                 b)  No more than 2 men?
-
-          34.  In a game of musical chairs, 12 children will sit in 11 chairs arranged in a row (one will be left out).
-               In how many ways can this happen, if we count rearrangements of the children in the chairs as
-               different outcomes?
-
-          35.  A group of 3 students is to be selected from a group of 14 students to take part in a class in cell
-               biology.
-                 a)  In how many ways can this be done?
-                 b)  In how many ways can the group who will not take part be chosen?
-
-          36.  Marbles are being drawn without replacement from a bag containing 16 marbles.
-
-                 a)  How many samples of 2 marbles can be drawn?
-                 b)  How many samples of 2 marbles can be drawn?
-                 c)  If the bag contains 3 yellow, 4 white, and 9 blue marbles, how many samples of 2 marbles can
-                    be drawn in which both marbles are blue?
-
-          37.  A bag contains 5 black, 1 red, and 3 yellow jelly beans; you take 3 at random. How many samples
-               are possible in which the jelly beans are
-
-                 a)  All black?
-                 b)  All red?
-                 c)  All yellow?
-                 d)  2 black and 1 red?
-                 e)  2 black and 1 yellow?
-                 f)  2 yellow and 1 black?
-                 g)  2 red and 1 yellow?
+    <pre style="white-space:pre-line"><code>Section 3.6 − Solving Linear Recurrence Relations
 
 
 
+          Definition
 
 
+          A linear homogeneous recurrence relation of degree k with constant coefficients is a recurrence relation
+          of the form
+                        a   =  c  a    +  c  a   +   +  c  a
+                          n    1  n−1     2  n−2         k  n− k
+          Where  c  , c    c   ,   are real numbers, and   c  ≠  0
+                        ,
+                  1   2      k                         k
+
+            It is linear because the right-hand side is a sum of the previous terms of the sequence each multiplied
+             by a function of n.
+
+            It is homogeneous because no terms occur that are not multiples of the  a  s. Each coefficient is a
+                                                                                    j
+             constant.
+             The degree is k  because   a  is expressed in terms of the previous k terms of the sequence.
+                                         n
 
 
+          Solving Linear Homogeneous Recurrence Relations
+
+                                                                       n
+          The basic approach is to look for solutions of the form   a  =  r , where r is a constant.
+                                                                 n
+                           n
+          Note that  a  =  r  is a solution to the recurrence relation a  =  c  a  + c  a  +  + c  a       if
+                     n                                              n    1  n−1    2  n−2         k   n− k
+                       n
+          and only if   r =  c  r n−1  +  c  r n−2  + +  c  r n− k  .
+                            1         2              k
+          Algebraic manipulation yields the characteristic equation:
+
+                          r k  − c  r k − 1 − c  r k − 2  − − c  r n −k  =  0
+                               1         2              k − 1
+                                         n
+          The sequence {an} with  a  =  r  is a solution if and only if r is a solution to the characteristic equation.
+                                   n
+          The solutions to the characteristic equation are called the characteristic roots of the recurrence relation.
+          The roots are used to give an explicit formula for all the solutions of the recurrence relation.
 
 
+          Theorem
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          Let  c  and c  be real numbers. Suppose that r 2  − c  r  − c  =  0 has two distinct roots  r  and r . Then
+               1       2                                     1     2                            1      2
+                                                                                   a
+          the sequence {an} is a solution to the recurrence relation a n  = c 1 n − 1  + c 2 n − 2   if and only if for n = 0,
+                                                                         a
+          1, 2, … , where α  and α  are constants.
+                           1        2
+                                    n
+                           n
+                 a   = α  r +  α  r
+                   n     1  1    2  2
+                                                                    n
+                                                           n
+          This shows that the sequence { } with  a n  = α 1 r + α 2  r  is a solution of the recurrence relation.
+                                       a
+                                         n
+                                                           1
+                                                                    2
+          Example
                                                            182</code></pre>
      	</div>
     
