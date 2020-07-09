@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 75 - Lecture 1</title>
+        <title>Page 75 - Linear Algebra Lecture 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 75 - Lecture 1</div>
+        <div id="content-top1">Page 75 - Linear Algebra Lecture 1</div>
         <div id="content-top2">P. 75</div>
      </div>
      <div id="content-middle">
@@ -169,14 +169,14 @@ function MM_swapImage() { //v3.0
                   0 0 −  1 1    0    20
                                         
                   0 0   0   1 −  1   10  
-                                           R −  R
+                                          R −   R
                   0 0   0   1 −  1   10     5    4
 
-
-                  1 0   0   0 −  1 −  10   →   x −  1  x =  5  −  10  ⇒  x =  1  x −  5  10
-                  0 1   0   0   1    30     →   x +  x =  30    ⇒    x =  30 x
+                                             →   x −  x =  −  10  ⇒   x =  1  x −  5  10
+                  1 0   0   0 −  1 −  10        1    5
+                                            →   x +  x =  30    ⇒    x =  30 x
                                                                               −
-                                                 2    5              2         5
+                  0 1   0   0   1    30          2    5              2         5
                   0 0 −  1 1    0    20     →−    x +  x =  20    ⇒  x =  x − 10
                                          
                                                   3    4             3    5
@@ -184,22 +184,23 @@ function MM_swapImage() { //v3.0
                                                  4    5              4    5
                   0 0   0   0   0    0  
 
-                Solution:   ( x −  5  10, 30 x−  5 , x −  5  10, 10 x+  5 , x 5 )
 
-
+                                         −
+                Solution:   ( x −  5  10, 30 x 5 , x −  5  10, 10 x 5 , x 5 )
+                                                            +
 
                  nd
                 2  Method
-                    1   0   0   0 −  1    1   0   0   0     0   0        1
-                                                                    0 −
-                    1   1   0   0   0          11     0          11     0
-                    0 0 −    11     0 = 1  0 −  0  0   1  − 1 0 −  0  0  1
-                    00      0   1 −  1    1   1   1 −  0  0  1  1   1 −  0  0
+                    1   0   0   0 −  1    1   0   0   0     0   0   0 −  1
+                    1   1   0   0   0     0 −  11     0     0 −  11     0
+                    0 0 −    11     0 = 1  0  0   1 −  1  − 1 0  0  1 −  1
 
+                    00      0   1 −  1    1   1   0   0     1   1   0   0
                     01      1   0   0
 
                                           −  11    0     −  11   0
-                                       = 10    1 −  1 10−    1 −
+                                       = 10    1 −  1 10     1 −
+                                                     −
                                                                   1
                                            1   0   0     1   0   0
                                        = −+
@@ -207,14 +208,14 @@ function MM_swapImage() { //v3.0
                                        = 0
                 Infinite solution:
 
-                1→    x =  x −  10
-                       1    5
-                2 →    x =  20 x−   =  30 x−
+                1→    x =  1  x −  5  10
+                2 →    x =  20 −  x =  30 −  x
                         2         1         5
                 4 →    x =  x +  10
                         4    5
-                3 →    x =  x −   0 2 =  x −  10
+                3 →    x =  x −  2 0 =  x −  10
                         3    4         5
+
 
 
 
