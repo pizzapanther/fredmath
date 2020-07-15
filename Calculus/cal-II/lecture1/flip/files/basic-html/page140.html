@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 140 - Lecture 1</title>
+        <title>Page 140 - Cal-ii_lecture-1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 140 - Lecture 1</div>
+        <div id="content-top1">Page 140 - Cal-ii_lecture-1</div>
         <div id="content-top2">P. 140</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,89 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( ))
-                      (
-                                            1
-                 sech cosh − 1 1 x  =  cosh cosh − 1 1  =  1  =  x
-                                         (
-                                                ( ))
-                                                       1
-                                                 x     x
+    <pre style="white-space:pre-line"><code>Circular Functions:          cosh u −  2  sinh u =  2  1
 
 
-                Identities                Derivatives                              Integral
+                    Identities                     Derivatives                          Integral
 
-                                              )
-                                                                                      ( )
-                                  d
-           sech −  1 x =  cosh −  1 1     dx ( sinh − 1 u =  u′     ∫  du    =  sinh − 1 u  +  , C  a &gt;  0
-                             x                     1 u 2             a +  u 2          a
-                                                                      2
-                                                    +
-                                              )
-                                                                                      ( )
-                                  d
-            csch −  1 x = sinh −  1 1     dx ( cosh − 1 u =  u′     ∫  du    =  cosh − 1 u  +  , C  u &gt;  a &gt;  0
-                                                    2
-                             x                     u −  1            u −  a 2           a
-                                                                      2
-                                              )
-                                                                                      ( )
-                                                                                                  2
-                                                                                                       2
-            coth −  1 x =  tanh −  1 1     d  ( tanh − 1 u =  u′     a − ∫  du  =  1  tanh − 1 u  +  , C  u &lt;  a
-                             x    dx             1 u−  2            2   u 2   a         a
-                                                                                      ( )
-                                  d  (    − 1  )   u′                 du      1     − 1 u         2    2
-                                  dx  coth  u =  1 u 2             a − ∫  2  u 2  =  a  coth  a  +  , C  u &gt;  a
-                                                  −
-
-                                  d  (    − 1  )      u′               du              − 1 u
-
-                                  dx  sech  u = −     1 u ∫                   =  −  1  sech  ( )  +  , C  0 &lt;  u &lt;  a
-                                                                       2
-                                                   u   −  2        u  a − u 2    a         a
-                                              )
-                                  d  ( csch − 1 u = −  u′              du         1     − 1 u
-                                  dx                   1 u ∫                  =  −  csch     +  C , u ≠  0, a &gt;  0
-                                                           2
-                                                   u    +          u  a + u 2     a        a
-                                                                       2
+                                            d
+                                                                                                 +
+                                                     ) u′
+            cosh u −  2  sinh u =  2  1    dx (sinhu =    coshu              ∫ sinhu du =  coshu C
 
 
-                                                                       du    =  ln u +   ∫      u ±  2  a 2     +  C
-                                                                      2
-                                                                     u ±  a 2                   
+                                                     ) u′
+                                                                                                 +
+                           x
+            sinh2x =  2sinh cosh x          d  (coshu =   sinhu              ∫ coshu du =  sinhu C
+                                           dx
+                                            d
+                                                              2
+                                                                                    2
+                                    2
+                           2
+                                                     ) u′
+                                                                                                  +
+            cosh 2x =  cosh x + sinh x     dx  (tanhu =   sech u             ∫ sech u du =  tanhu C
+                 2
+                                                                2
+                                                     )
+                                                                                                   +
+            cosh x =  cosh 2x + 1           d  (cothu = − u′ csch u          ∫ csch u du = 2  −  cothu C
+                           2               dx
+                2
+                                                     )
+                                                                u
+                                                                                    u
+                                                                                                        +
+            sinh x =  cosh2x − 1            d  (sechu = − u′ sech  tanhu     ∫ sech   tanhu du =  −  sechu C
+                          2                dx
+                                            d
+                                                     )
+                             2
+                 2
+                                                                u
+                                                                                                        +
+                                                                                    u
+                       −
+            tanh x =  1 sech x             dx  (cschu = − u′ csch  cothu     ∫ csch cothu du =  −  cschu C
+                             2
+                 2
+            coth x = 1 csch x
+                       +
 
-                                                                   a − ∫  du  =  1  ln  a u+  + C
-                                                                    2   u 2   2a    au
-                                                                                     −
+
+        Example
+          a)   d     tanh 1 t 2     =  sech 2  1 t ⋅  2 d     1 t 2   
+                                          +
+                                                      +
+                         +
+              dt                             dt        
+                               =    t    sech 2  1 t+  2
+                                   1 t+  2
+                          )
+                                                  )
+                                          x
+                                 −
+          b)   d 2  (sech3x =  d  ( 3 sech3 tanh3x
+              dx 2           dx
+                                          2
+                                                      3
+                           = 9 sech3 tanh 3x −  9 sech 3
+                                    x
+                                                        x
+                                      (    2          2  )
+                           = 9 sech3 x  tanh 3x − sech 3x
+
+          c)  ∫  coth5xdx = ∫  cosh5x dx                          d (sinh5x ) 5cosh5xdx=
+                              sinh5x
 
 
-                                                                 ∫     du      =  −  1  ln  a +  a ±  2  u 2  +  C
-                                                                   ua ±    u 2     a         u
-                                                                       2
+                           =  1 ∫    d (sinh5x )
+                             5     sinh5x
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           140</code></pre>
+                                                          140</code></pre>
      	</div>
     
      </div>

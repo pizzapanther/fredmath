@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 123 - Lecture 1</title>
+        <title>Page 123 - Cal-ii_lecture-1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 123 - Lecture 1</div>
+        <div id="content-top1">Page 123 - Cal-ii_lecture-1</div>
         <div id="content-top2">P. 123</div>
      </div>
      <div id="content-middle">
@@ -152,57 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Financial Model
+    <pre style="white-space:pre-line"><code>x
+             The Derivative and Integral of e
 
-             The balance in the account increases exponentially at a rate that can be determined from the advertised
-             annual percentage yield (or APY) of the account.
+             The natural exponential function is differentiable because it is the inverse of a differentiable function whose
+             derivative is never zero.
+                      ( )
+                        x
+                    ln e   =  x          Inverse relationship
+                         ( )
+                     d  ln e x  = 1      Differentiate both sides.
+                    dx
+                     1 d  ( )  = 1        d  lnu =  1 du
+                            x
+                           e
+                                                    ⋅
+                    e x dx                dx      u dx
+                     d  e =  e
+                             x
+                        x
+                    dx
 
 
-             Effective Rate
+             Theorem
 
-             The effective rate corresponding to a started rate of interest r compounded m times per year is
+             For real numbers x,
 
-                                                                r
-                                                       r =  e  ( 1+  m ) m  −  1
-
-             APY is also referred to as effective rate or true interest rate.
+                                                 ( )
+                                   ( ) 
+                             d   e ux  = u′ ( ) x e ux  and  ∫ e x dx e + C
+                                                                       x
+                                                                    =
+                            dx        
 
 
              Example
-
-             The APY of a savings account is the percentage increase in the balance over the course of a year. Suppose
-             you deposit $500 in a savings account that has an APY of 6.18% per year. Assume that the interest rate
-             remains constant and that no additional deposits or withdrawals are made. How long will it take the
-             balance to reach $2500?
-
+                           ∫ 1 e  x
+             Evaluate          e x  dx
+                               +
              Solution
 
-                In one year the balance:  ( ) (1 .0618y  1 =  +  ) y =  0  1.0618y
-                                                                       0
-
-                k =  1  ln     y ( ) 1   
-                    T        y 0   
-
-                  =  ln1.0618
-                  ≈  0.05997
-
-
-                 yt    500e 0.05997t
-                  ( ) =
-
-                T =  1 ln     y    
-                     k       y   0 
+                 ∫  1 e x  dx = ∫  1 e x  d ( 1 e x )
+                      x
+                    e
+                                  1
+                                          +
+                                 +
+                    +
+                               (
+                           =  ln 1 e x ) +  C
+                                  +
 
 
-                  =     1    ln ( 2500 )
-                    0.05997     500
+             Definition
 
-                  ≈  26.8  yrs
-
-
-
-
-
+                                                       u
+             If a &gt; 0 and u is a differentiable of x, then  a  is a differentiable function of x and
+                                                       )
+                        u
+                     d  a =  a u ln a  du  &  d ( log  u =  1  ⋅  1 du
+                    dx             dx       dx     a      u  ln a dx
+                    ∫  a du =  lna  + C
+                                u
+                        u
+                               a
 
 
 
@@ -212,10 +225,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-                                                              123</code></pre>
+                                                               123</code></pre>
      	</div>
     
      </div>
