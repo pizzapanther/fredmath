@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 56 - Soln Lecture 2</title>
+        <title>Page 56 - Linear Algebra Lecture-2 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 56 - Soln Lecture 2</div>
+        <div id="content-top1">Page 56 - Linear Algebra Lecture-2 Solution</div>
         <div id="content-top2">P. 56</div>
      </div>
      <div id="content-middle">
@@ -155,22 +155,25 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>Exercise
 
                                       1     2   1     2
-          Establish the identity:  uv =   u v+   −   u v−
+                                                        −
+                                            +
+          Establish the identity:  uv =   u v    −   u v
 
                                         4           4
           Solution
                                             
              Let u ( u 1 , u 2 , , u n )  and v =  ( v 1 , v 2 , , v n )
-                                                         …
                             …
+                                                         …
               
-              uv     =  uv +  u v +   +   u v
+              uv    uv +    u v +      +   u v
+                  = 
                      11      2 2          nn
               
               uv =   ( u + +  1  v 1 ,  u +  2  v 2 ,  ,  u +  n  v n )
-
                   2           2            2                 2
-              uv+     =  ( u +  1  v 1 ) ( u +  2  v 2 )  +  +  ( u +  n  v n )
+                +
+              uv      =  ( u +  1  v 1 ) ( u +  2  v 2 )  +  +  ( u +  n  v n )
                                   +
                       =  u +  2  v +  2  2u v +  u +  2  v +  2  2u v +  +  u +  2  v +  2  2u v
                          1   1      11    2    2      2 2         2    n     nn
@@ -179,21 +182,22 @@ function MM_swapImage() { //v3.0
 
 
                   2           2            2                2
-              uv−     =  ( u −  1  v 1 ) ( u −  2  v 2 )  +  +  ( u −  n  v n )
+              uv      =  ( u −  1  v 1 ) ( u −  2  v 2 )  +  +  ( u −  n  v n )
+                −
                                   +
                       =  u +  2  v −  2  2u v +  u +  2  v −  2  2u v +  +  u +  2  v −  2  2u v
                          1   1      11    2    2     2 2          2    n     nn
 
                   2       2    2    2           2    2                  2   2
-              u v+    −  uv−    =  u +  v +  2u v +  u +  v +  2u v +    +  u +  v +  2u v
+              u v     − +  uv   = −  u +  v +  2u v +  u +  v +  2u v +  +  u +  v +  2u v
                                    1   1     11     2    2     2 2          2   n      nn
 
                                     −  ( u +  1 2  v −  1 2  2u v + 11  u +  2  v −  2  2u v + 2 2  +  u +  2  v −  2  2u v  )
                                                                                             nn
                                                               2
                                                          2
-                                                                                      n
                                                                                  2
+                                                                                      n
                                 =  u +  2  v +  2  2u v + 11  u +  2  v +  2  2u v + 2 2  +  u +  2  v +  2  2u v
                                                                                        nn
                                    1   1            2    2                  2    n
@@ -202,29 +206,39 @@ function MM_swapImage() { //v3.0
                                 =  4uv +  4u v +      +  4u v
                                     11      2 2           nn
 
-
-              1 (  u v+     2  −  uv−    2 ) =  uv +  u v +    u v+
+                           
+                  
+              1 (  u v  2  −  uv  2 ) =  uv +  u v +    u v
+                   +
+                             −
+                                                       +
               4                       11     2 2          nn
-
                              1     2   1     2
-             Therefore; uv =      u v+  −   u v−    is true.
+             Therefore; uv =      u v    −   u v  is true.
+                          
+                                               −
+                                    +
                                4           4
-
-              nd
              2  method:
-                     1  u v+     2  −  1  uv−    2  =  1  (u v+       ) (uv−    )
+              nd
+                                   
+                         
+                     1  u v  2  −  1  uv  2  =  1  (u v+       ) (uv−    )
+                         +
+                                     −
                                                                      )(uv−
                                                                   −
                                                      )(u v+
                      4           4           4                              
                                           =  1  uu +     2uv vv+    −  (uu −   2uv vv+    )
                                             4                                
-                                          =  1 [uu +    2uv vv uu+     +  2uv vv−    ]
-                                                             −
+                                                                      
+                                                       
+                                          =  1 [uu +    2uv vv uu + −  2uv vv ]
+                                                                       −
+                                                        +
                                             4
-
-
-                                                            56</code></pre>
+                                                           306</code></pre>
      	</div>
     
      </div>

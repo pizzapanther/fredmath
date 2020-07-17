@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 37 - Soln Lecture 2</title>
+        <title>Page 37 - Linear Algebra Lecture-2 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 37 - Soln Lecture 2</div>
+        <div id="content-top1">Page 37 - Linear Algebra Lecture-2 Solution</div>
         <div id="content-top2">P. 37</div>
      </div>
      <div id="content-middle">
@@ -152,55 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>        ) (              ) ( (                                   ))
-                u    (v +   w =  u  , u  ,   , u     v  , v  ,   , v  ) ( w  , w    ,  , w
+    <pre style="white-space:pre-line"><code>                         ) ( (                                   ))
+                                     ,
+                u    (v +  w =  ) ( u 1 , u     , u n     v 1 , v 2 ,    , v n ) ( w 1 , w     , w n
                                                                   +
+                                                                            ,
                                                
-                               1   2        n      1   2       n      1    2       n
-                                               
+                  
+                                   2
+                                                                           2
                            =  ( u 1 , u 2 ,   , u n ) (  1  w 1 , v +  2  w 2 ,   , v +  n  w n )
                                                  v +
+                                               
                            =  u v + (  w  ) +  u  ( v +  w  ) +  +  u  ( v +  w  )
                               1   1    1    2   2     2          n   n    n
-                           =  u v + 1 1  uw + 1 1  u v + 2 2  u w + 2 2   u v + nn  u w
+                           =  u v +  uw +  u v +   u w +      u v +    u w
                                                               +
-                                                                         n n
+                              1 1    1 1    2 2     2 2          nn      n n
+                                                                              +
                            = ( u v + u v +  2 2  ++ u v  ) ( uw + u w +  2 2   u w  )
                                                          +
-                                                                              +
+                                                                                 n n
+                                                   nn
                                                              1 1
                                1 1
-                                                   nn
-                                                                                 n n
+                                                 v
+                                                                                       w
+                           = ( u 1 , u 2 , , u n ) (  1 , v 2 , , v n ) ( u 1 , u 2 , , u n ) (  1 , w 2 , , w n )
                                                                  +
-                                                 v
-                                                                                       w
-                           = ( u 1 , u 2 , , u  n ) (  1 , v 2 , , v  n ) ( u 1 , u 2 , , u  n ) (  1 , w 2 , , w  n )
+                                               
+                                                                            
+                                                         
+                                                                                                
+                                                                                    
+                                      
                                   
-                           =  u   v +  uw   √
-                                       
+                           =  u     v +   uw
+                                          √
 
 
              Exercise
                                                    
-             Prove Minkowski theorem:  u +  v ≤  u +  v
+             Prove Minkowski theorem:  u v+    ≤  u +  v
              Solution
-
                       2            
                  u +  v  =  (u +  v ) (u +  ) v
 
-                                     
-                         =  uu     +  2uv +      v   v
+                            
+                                   
+                         =  uu   2uv v   
+                               +
+                                       +
+                                            v
+                                           
+                                    
+                            
+
                              2             2
                          ≤  u  +  2 u    v +  v
                                   2
                          = ( u +  v  )
-
-
                         2           2
                    u +  v  ≤  ( u +  v  )
                             
-                 u +  v ≤  u +  v     √
+                   +
+                 u v ≤    u +  v      √
 
 
 
@@ -224,14 +240,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-                                                              37</code></pre>
+                                                              287</code></pre>
      	</div>
     
      </div>
