@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 53 - SOL- Lecture 1</title>
+        <title>Page 53 - Linear Algebra lecture 1 - Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 53 - SOL- Lecture 1</div>
+        <div id="content-top1">Page 53 - Linear Algebra lecture 1 - Solution</div>
         <div id="content-top2">P. 53</div>
      </div>
      <div id="content-middle">
@@ -152,31 +152,35 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The number  aa       will be “1” if there is an edge from node i to k and an edge from k to j.
+    <pre style="white-space:pre-line"><code>The number aa        will be “1” if there is an edge from node i to k and an edge from k to j.
                               ik kj
-                This is a 2-step path. The number  aa    will be “0” if either of those edge (from node i to k and
+
+                This is a 2-step path. The number aa     will be “0” if either of those edge (from node i to k and
                                                    ik kj
                 from k to j) is missing.
-                The sum of  aa      is the number of 2-step paths leaving i and entering j.
+                The sum of aa       is the number of 2-step paths leaving i and entering j.
                              ik kj
                 Matrix multiplication is right for this count.
                                                  3
                 The 3-step paths are counted by  A ; we look at paths to node 2:
                             3
-                     1   1    3   2    counts the paths     ...  1 to  1 to  1 to  2, 1   to  2 to  1 to    2
+
+                     1   1    3   2    counts the paths     ...  1 to  1 to  1 to  2, 1 to  2 to  1 to    2
                             =                                                                
                       1  0     2  1    with three steps     ...  2 to  1 to  1 to  2                           
+
                       k
                 The  A  contain Fibonacci numbers 0, 1, 1, 2, 3, 5, 8, 13, ….
                                                                    ( )
                 Fibonacci’s rule  F    =  F   +  F  show up in ( ) AA k  =  A k+ 1
                                   k+  2   k  1 +  k
 
-                            1   1   F k  1 +  F k   F k+  2  F k  1 +  
+                            1   1   F k  1 +  F k   F k+  2  F k  1 +    k  1 +
+                                                                 =  A
                                                     =
-                                                                 =  A k  1 +
                                   
-                             1  0    F k  F k  1 −    F k  1 +   F k  
+                             1  0   F k    F k  1 −    F k  1 +   F k  
+                                   
                 There are 13 six-step paths from node one to node 1.
 
 
@@ -187,17 +191,15 @@ function MM_swapImage() { //v3.0
                 a)  AB                    c)  ABD                  e)  ABC                  g)  ( AB C+  )
 
                 b)  BA                    d)  DBA                  f)  ABCD
-             Solution
 
+             Solution
                                                     1   1  1              1  
-                     1   1   1   1   1               1  1  1                      1  
                                                                             1
-                                                                            
-                                       
+                     1   1   1   1   1             1  1  1                          1  
+                                                                                    
                                                                                           1
-                 A =     1  1  1  1  1       B =  1   1  1        C =   1      D =   
+                 A =   1  1  1   1   1        B =  1   1  1        C =   1      D =  
                                        
-                                                                                          
                       1  1   1   1   1                                              
                                                                                           1
                                                                             1
@@ -207,9 +209,9 @@ function MM_swapImage() { //v3.0
                                                      1  1  1              
                                              )
                                           ×
-                a)  AB   ( : 35 )(5 3 =  ) (33
                                  ×
                            ×
+                a)  AB   ( : 35 )(5 3 =  ) (33
                                          1   1   1
                                         
                                        
