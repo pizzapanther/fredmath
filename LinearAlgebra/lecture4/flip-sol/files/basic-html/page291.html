@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 291 - Soln Lecture 4</title>
+        <title>Page 291 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 291 - Soln Lecture 4</div>
+        <div id="content-top1">Page 291 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 291</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,108 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1   2   2    1  2  − 2
-                                                
-               AA = T      2  −  21         2 −  2 −  1
-                                                
-                        −  2 −  12     2  1  2  
-                                             
-                        9 00
-                                
-                    =     09 0
-                                
-                               
-                        0 09   
-               ( )      =  (column i of  A column j of  A
-                 T
-                                                        )
-                                        )(
+    <pre style="white-space:pre-line"><code>Solution
+
+               ( )    T  =  A T ( ) T  =  A A, then  A A is symmetric, therefore there is an eigenvector
+                  T
+                                T
+                                        T
+                                                   T
                 A A
-                      ij
-
-
-           Exercise
-
-                                                                              ab
-           Assuming that b ≠ , find a matrix that orthogonally diagonalizes      
-                              0
-                                                                              ba 
-           Solution
-                             a λ      b
-                               −
-               det ( A λ  ) I =
-                     −
-                               b     a λ
-                                      −
+                              A
+                         
+                                    T
+               v , v , …  , v  for  A A.
+                1
+                    2
+                            n
+                                                 
+               Let  Av =    1  λ  1   v 1  and  Av =    2  λ  2 v
+                                                  2
+                                                                            
+                                T
+                                                                                  T
+               Av 1   v = v 1   A v                                  Ax    y =  x   A y
+                                                                        
+                    
+                                                                               
+                             
+                                   2
+                      2
+                             
+                                                                       T
+                                                                                                   )
+               Av   1   v = v   1   Av                             A =   A   (Since A is a symmetric
+                                 2
+                      2
+                              
+               λ    v     v =      v     λ    v
+                1  1   2   1    2   2  
+                       
+                                    
+                      
+               λ  ( v    v  )  =  λ  ( v    v  )
+                1   1   2      2   1   2
+                          
+               ( λ −λ 2 )( v 1   v     2 )  =  0                   Since  λ ≠λ
+                 1
+                                                                            1
+                                                                                  2
+                               
+                          
+               Therefore;  v    v =  0
+                             
+                           1
+                                2
+                                               
+               Then the vectors   Av , Av , … , Av  are orthogonal
+                                   1
                                         2
-                           =  (a λ−  ) −  2  b
-                           =  (a λ  −− ba λ  )( −+  ) b
-                                                  =
-                             (a b λ =  −−  )(a b λ  + −  ) 0
-               Therefore; the eigenvalues are: λ  a b and λ =  −   =  a b+
-                                               1                 2
-
-                               0
-               Assume that b ≠ .
-               For  λ=  a b−  , then ( A −  (a b IV−  ) )  =  0
-                    1                              1
-                       bb    x   1  0 
-                                =    →   bx =  1  −  by
-                                                        1
-                                      0
-                       bb      y   1   
-                                                   − 1
-                      The eigenvectors are:  V =    
-                                             1     1  
-
-
-               For  λ=  ab+  , then ( A −  (a b IV+  ) )  =  0
-                     2                              2
-                       − b  b    x   2  0 
-                                   =    →   bx =  2  by
-                                                           2
-                                         0
-                        b    b  −     y   2   
-                                                  1  
-                      The eigenvectors are:  V =  
-                                             2    
-                                                  1
-               Applying the Gram Schmidt process.
+                                                  n
+                             T   
+               Av       =  ( Av  ) Av
+                     Av
+                  1    2      i      j
+                            T   
+                              T
+                        = v A Av
+                           i      j
+                                  
+                              (
+                                T
+                             
+                        = v     A Av  )
+                           i         j
+                                 
+                        = v i     λ (  j  v  j )
+                                   
+                        = λ  (   v   v  )  =  0
+                                 
+                            j   i    j
 
 
-
-
-                                                            291</code></pre>
+           Example
+           Construct a 3 by 3 matrix A with no zero entries whose columns are mutually perpendicular. Compute
+             T
+            AA . Why is it a diagonal matrix?
+           Solution
+                                         ab    c 
+                                                 
+               Consider the matrix  A =      d  e  f  to be columns mutual perpendicular
+                                                 
+                                         g  h  i  
+                                                
+                                 1  2   2                 1  2  − 2                  2  2   − 1
+                                                                                       
+                                                                      
+                                                                                                   
+               Let assume  A =      2  −  21     then  A =  T      2 −  2 −  1    or   A = − 1  2  2
+                                                                      
+                                                                                       
+                                                                                                   
+                                     12                   2  1   2                            
+                                 −  2 −                                              2  − 1  2  
+                                                            249</code></pre>
      	</div>
     
      </div>

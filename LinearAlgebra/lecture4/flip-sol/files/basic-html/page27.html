@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 27 - Soln Lecture 4</title>
+        <title>Page 27 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 27 - Soln Lecture 4</div>
+        <div id="content-top1">Page 27 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 27</div>
      </div>
      <div id="content-middle">
@@ -153,21 +153,20 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>                                 
-                                          ( )
                       T
-                Since  (uv =  ) T u + ( ) T v  and  ( ) rTu =  ( ) u , then function T is a linear transformation.
-                           +
+                Since  (uv+   ) T=  ( ) Tu +  ( ) v  and  ( ) rTu =  ( ) u , then function T is a linear transformation.
                                                    T r
-                Domain:  :  T    2  →   4
+                Domain:  :    T  2  →   4
+
                   (
-                T x 1 ,  x 2 ) ( x +  1  4x 2 , 0,  x −  1  3x 2 ,  x 1 )
+                T x 1 ,  x 2 ) ( x +  1  4x 2  , 0,  x −  1  3x 2 ,  x 1 )
                            =
                                x + 4x 
-                               1  0  2  
-
-                           =           
-                               x − 3x 2 
+                               1    2  
+                                 0    
+                           =          
                                 1
+                               x − 3x 2 
                                  x    
                                   1   
                           x      x
@@ -186,9 +185,9 @@ function MM_swapImage() { //v3.0
              linear, find the A such T =  f
                                         A
                   (
-                T x 1 , x 2  , x 3 ) ( x −  1  5x +  2  4x    x −  2  6x 3 )
                                                 ,
                                =
+                T x 1 , x 2 , x 3 ) ( x −  1  5x +  2  4x    x −  2  6x 3 )
                                                3
              Solution
                                              
@@ -196,31 +195,31 @@ function MM_swapImage() { //v3.0
                 Let u = ( u 1 , u 2 , u 3 )  and v = ( v 1 , , v 3 )
                                                        2
                    
-                           Tu +
                 T  (uv+  ) (   1   v 1 ,  u +  2  v 2 ,  u +  3  v 3 )
                           =
-                                                               ,
-                         =  ( (  u +  1  v 1 ) (  2  v 2 ) (  3  v 3 ) ( u +  2  v 2 ) (  3  v 3 ))
-                                     −
-                                                                             6 u +
+                           Tu +
+                          =  ( (  u +  1  v 1 ) (  2  v 2 ) (  3  v 3 ) ( u +  2  v 2 ) (  3  v 3 ))
                                        5 u +
-                                                    4 u +
+                                                                             6 u +
                                                                            −
                                                   +
-                         =  ( u +  1  v −  1  5u −  2  5v +  2  4u +  3  4v  u +  2  v −  2  6u −  3  6v 3 )
+                                                    4 u +
+                                                               ,
+                                     −
                                                            ,
+                          =  ( u +  1  v −  1  5u −  2  5v +  2  4u +  3  4v  u +  2  v −  2  6u −  3  6v 3 )
                                                          3
-                         =  ( (  u −  1  5u +  2  4u 3 ) ( v −  1  5v +  2  4v 3 ) ( u −  2  6u 3 ) ( v −  2  6v 3 ))
+                          =  ( (  u −  1  5u +  2  4u 3 ) ( v −  1  5v +  2  4v 3 ) ( u −  2  6u 3 ) ( v −  2  6v 3 ))
+                                             +
                                                                             +
                                                                ,
-                                             +
-                         =  ( u −  1  5u +  2  4u 3 ,  u −  2  6u 3 ) ( v −  1  5v +  2  4v  v −  2  6v 3 )
+                          =  ( u −  1  5u +  2  4u 3 ,  u −  2  6u 3 ) ( v −  1  5v +  2  4v  v −  2  6v 3 )
                                                        +
                                                                         ,
                                                                       3
-                                     
                               
-                         = T ( ) Tu +  ( ) v
+                                     
+                          = T  ( ) Tu +  ( ) v
                     
                 T r          ( (  1 , u 2  , u 3 ))
                   ( ) T ruu =
@@ -228,7 +227,7 @@ function MM_swapImage() { //v3.0
                        = T ru 1 , ru 2 , ru 3 )
                        =  ( ru −  1  5ru +  2  4ru   ru − ,  2  6ru 3 )
                                           3
-                                                              27</code></pre>
+                                                              699</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 290 - Soln Lecture 4</title>
+        <title>Page 290 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 290 - Soln Lecture 4</div>
+        <div id="content-top1">Page 290 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 290</div>
      </div>
      <div id="content-middle">
@@ -152,91 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution
-
-               ( )   T  =  A T ( ) T  =  A A, then  A A is symmetric, therefore there is an eigenvector
-                                                   T
-                                T
-                 T
-                                        T
-                A A
-                              A
-                         
-                                    T
-               v , v , …  , v  for  A A.
-                    2
-                1
-                            n
-                            
-               Let  Av =    1  λ  1 v 1  and  Av =    2  λ  2   v
-                                                  2
-                                                                            
-                                                                                  T
-               Av 1   v =  2  v 1   A v  T  2                      Ax    y =  x     A y
-                             
-                                                                       T
-                                                                                                   )
-               Av   1   v = v   1   Av                             A =   A   (Since A is a symmetric
-                      2
-                                 2
-               λ    v    v =      v     λ     v
-                1  1   2   1    2   2  
-                       
-               λ  ( v    v  )  =  λ  ( v    v  )
-                1   1   2      2   1   2
-               ( λ −λ   )(   v 1   v     2 )  = 0                 Since λ ≠λ
-                      2
-                 1
-                                                                        1     2
-               Therefore;  v    v =  2  0
-                           1
-                                               
-               Then the vectors   Av , Av , … , Av  are orthogonal
-                                        2
-                                                  n
-                                   1
-                             T   
-               Av       =  ( Av  ) Av
-                     Av
-                  1    2      i      j
-                            T   
-                              T
-                        =  v A Av
-                           i      j
-                                  
-                        =  v  (  T   )
-                               A Av
-                           i         j
-                                 
-                        =  v i     λ (  j  v  j )
-                                   
-                        = λ  (   v   v  )  =  0
-                                 
-                            j   i    j
+    <pre style="white-space:pre-line"><code>
+                                                                               
+                                                                                            
+                                                                      
+                                                     
+                                                                 
+                                               
+                          T
+                  q)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =
+                                                                                                  0
+                                                                                                
+                  r)  An  nn×  symmetric matrix has n distinct real eigenvalues.
+                                                      
+                                         n
+                                                         T
+                  s)  For nonzero v  in  , the matrix vv  is called a projection matrix.
+                  t)  Every symmetric matrix is orthogonally diagonalizable
+                                             T
+                                 T
+                  u)  If  B =  PDP , where  P =  P − 1  and D is a diagonal matrix, then B is a symmetric matrix.
+                  v)  An orthogonal matrix is orthogonally diagonalizable.
+                  w)  The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the
+                      corresponding eigenvalue.
 
 
-           Example
-           Construct a 3 by 3 matrix A with no zero entries whose columns are mutually perpendicular. Compute
-             T
-            AA . Why is it a diagonal matrix?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Exercise
+
+                                      1 b
+           Find a symmetric matrix          that has a negative eigenvalue.
+                                      b  1 
+             a)  How do you know it must have a negative pivot?
+
+             b)  How do you know it can’t have two negative eigenvalues?
+
            Solution
-                                         ab   c 
-                                                 
-               Consider the matrix  A =      d  e  f  to be columns mutual perpendicular
-                                                 
-                                                
-                                         g  h  i  
-                                 1  2   2                 1  2  − 2                  2  2   − 1
-                                                                      
-                                                                                       
-                                                                                                   
-               Let assume  A =      2  −  21     then  A =  T      2 −  2 −  1    or   A = − 1  2  2
-                                                                      
-                                                                                                   
-                                                                                       
-                                                                                              
-                                 −  2 −  12               2  1   2                   2  − 1  2  
-                                                            290</code></pre>
+
+               a)  The eigenvalues of that matrix are 1 b± / so take any b &lt;− 1 b &gt; 1. In this case, the determinant is
+
+                  1 b &lt;  2  0.
+                    −
+               b)  The signs of the pivots coincide with the signs of the eigenvalues. Alternatively, the product of the
+                  pivots is the determinant, which is negative in this case. So, one of the two pivots must be
+                  negative.
+
+               c)  The product of the eigenvalues equals the determinant, which is negative in this case. So, precisely
+                  one numbers cannot have a negative product.
+
+
+
+           Exercise
+
+                                                  T
+           Prove that A is any mn×  matrix, then  A A has an orthonormal set of n eigenvectors
+                                                            248</code></pre>
      	</div>
     
      </div>

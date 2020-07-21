@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 209 - Soln Lecture 4</title>
+        <title>Page 209 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 209 - Soln Lecture 4</div>
+        <div id="content-top1">Page 209 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 209</div>
      </div>
      <div id="content-middle">
@@ -152,8 +152,8 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  m 11  m 12  m 13   m 14  
-                                              
+    <pre style="white-space:pre-line"><code>  m    m      m      m   
+                       11     12     13    14  
                        m 21  m 22  m 23  m 24  
                  M =                          
                        m 31  m 32  m 33  m 34  
@@ -161,17 +161,16 @@ function MM_swapImage() { //v3.0
                        41     42     43    44 
 
 
-                        m    m      m      m                    0 m 11  m 12   0
-                                             24
-                                22
-                        0 21   0     0 23   0                     0 m  m      0   
-                 JM =                             and  MK =      21     22   0 
-                        m 41  m 42  m 43   m 44                 0 m 31  m 32    
-                                                                              0   
-                        0      0     0      0                   0 m 41  m 42    
+                        m 21  m 22  m 23   m 24                 0 m 11  m 12   0
+                                                                  0 m  m      0   
 
-                If JM = MK then  m   21  =  m 22  =  m 24  =  m 41  =  m 42  =  m 44  =  0
+                 JM =     0   0      0     0      and  MK =      21     22    
+                        m 41  m 42  m 43   m 44                 0 m 31  m 32   0 
+                                                                               
+                        0      0      0     0                   0 m 41  m 42   0   
 
+                If JM = MK then m       =  m   =  m   =  m  =  m   =  m   =  0
+                                     21    22     24     41     42     44
 
                 Which in particular means that the second row is either a multiple of the fourth row, or the fourth row
                 is all 0’s. In either of these cases M is not invertible.
@@ -185,20 +184,21 @@ function MM_swapImage() { //v3.0
 
              If x is in the nullspace of A show that  M − 1 x  is in the nullspace of  M  − 1 AM .
 
-             The nullspaces of A and  M − 1 AM  have the same (vectors) (basis) (dimension)
+             The nullspaces of A and  M  − 1 AM  have the same (vectors) (basis) (dimension)
 
              Solution
+                                                (
                                                                          (
-                                               (
                                                                                    )
-                 x∈  N ()A ⇒  Ax =  0 ⇒  M −  1 AM M −  1 x =  )  0 ⇒  M −  1 x∈  N M −  1 AM
-                      (   −  1  )      −  1
-                 x∈  N M    AM ⇒    M    AMx =  0 ⇒  AMx =  0 ⇒  Mx∈  N  ( ) A
+                 x∈  N () ⇒  A  Ax =  0 ⇒  M −  1 AM M −  1 x =  )  0 ⇒  M −  1 x∈  N M −  1 AM
+                      (
+                 x∈  N M  −  1 AM ⇒  )  M −  1 AMx =  0 ⇒  AMx =  0 ⇒  Mx∈  N  ( ) A
                                                  (  − 1    )
-                So, any vector in  N ( )A  resp .  N M  AM   is a linear combination of those in
+                So, any vector in  ( )N A  resp .  N M  AM   is a linear combination of those in
                    (  − 1    )
-                 N M     AM     resp .   ( )N A , hence is contained in it. That is, the two vector spaces consist of the
-
+                 N M     AM     resp .   ( ) , hence is contained in it. That is, the two vector spaces consist of the
+                                        A
+                                     N
                 same vectors.
 
 
@@ -218,7 +218,7 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              209</code></pre>
+                                                              881</code></pre>
      	</div>
     
      </div>

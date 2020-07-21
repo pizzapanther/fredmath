@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 23 - Soln Lecture 4</title>
+        <title>Page 23 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 23 - Soln Lecture 4</div>
+        <div id="content-top1">Page 23 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 23</div>
      </div>
      <div id="content-middle">
@@ -153,8 +153,9 @@ function MM_swapImage() { //v3.0
 
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>      
-                         = T ( ) Tu +  ( ) v
-                    
+                             ( ) T v+
+                          = T u     ( )
+                     
                   ( ) (
                 T ru =   T rx 1 , ry 1 , rz 1 )
 
@@ -164,9 +165,9 @@ function MM_swapImage() { //v3.0
                              
                        = rT ( ) u
                                                           
-                                                   T ru
                       T
-                Since  (uv+   ) T=  ( ) Tu +  ( ) v  and  ( ) rT u=  ( ) , then function T is a linear transformation.
+                                                   T r
+                Since  (uv+   ) T=  ( ) Tu +  ( ) v  and  ( ) rTu =  ( ) u , then function T is a linear transformation.
                 Domain:  :   T    3  →   2
 
                 T  ( x, y, z ) (2x y,  x y z=  +  −+  )
@@ -174,9 +175,9 @@ function MM_swapImage() { //v3.0
                           =          
                                −+
                               x yz   
-                     x
                                      z
                          y
+                      x
                       2   1  0
                  A =          
                        1 − 11 
@@ -187,36 +188,38 @@ function MM_swapImage() { //v3.0
              Determine if the given function T is a linear transformation. Also, give the domain and range of T; if T is
              linear, find the A such T =  f .
                                         A
-                  (x, y, z ) (z=  −  x, z −  ) y
                  T
+                  (x, y, z ) (z=  −  x, z −  ) y
              Solution
                                            
-                Let u = ( x 1 , , y 1  z 1 )  and v = ( x 2 , y 2 , z 2 )
-
+                             y
+                Let u = ( x 1 , , z 1 )  and v = ( x 2 , y 2 , z 2 )
+                              1
                    
-                          =
+                T  (uv+  ) (       x  , y +  y  , z +  z  )
                            T x +
-                T  (uv+  ) (   1   x 2 , y +  1  y 2 , z +  1  z 2 )
-                         =  ( z +  1  z −  2  ( x +  1  x 2 ) , z +  1  z −  2  ( y +  1  y 2 ))
+                          =
+                               1    2   1    2   1    2
+                          =  ( z +  1  z −  2  ( x +  1  x 2 ) , z +  1  z −  2  ( y +  1  y 2 ))
 
 
-                         =  ( z +  1  z −  2  x −  1  x 2 ,  z +  1  z −  2  y −  1  y 2 )
+                          =  ( z +  1  z −  2  x −  1  x 2 ,  z +  1  z −  2  y −  1  y 2 )
 
-                         =  ( z −  1  x 1 ,  z −  1  y 1 ) ( z −  2  x 2 ,  z −  2  y 2 )
+                          =  ( z −  1  x 1 ,  z −  1  y 1 ) ( z −  2  x 2 ,  z −  2  y 2 )
                                               +
                              (
-                                           Tx
+                                  y
                                          +
-                         = Tx  1 , , y 1  z 1 ) (  2 , y 2 , z 2 )
+                                           Tx
+                          = Tx 1 , , z 1 ) (   2 , y 2 , z 2 )
+                                   1
                                     
-                         = T ( ) Tu +  ( ) v
-                    
+                          = T  ( ) Tu +  ( ) v
+                     
                   ( ) (
                 T ru =   T rx 1 , ry 1 , rz 1 )
 
-
-
-                                                              23</code></pre>
+                                                              695</code></pre>
      	</div>
     
      </div>

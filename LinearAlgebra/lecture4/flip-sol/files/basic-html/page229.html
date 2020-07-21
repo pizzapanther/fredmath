@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 229 - Soln Lecture 4</title>
+        <title>Page 229 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 229 - Soln Lecture 4</div>
+        <div id="content-top1">Page 229 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 229</div>
      </div>
      <div id="content-middle">
@@ -152,23 +152,25 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>ab c
-                det C     bc a
+    <pre style="white-space:pre-line"><code>ab     c
+                det C     bc     a
                     ( ) =
-                          c ab
+                          c   ab
 
                                            2
-                        =  3abc a−  2  −  b −  2  c
-                Since det ( ) detA =  ( ) detB =  ( ), then the matrices A, B, and C are similars.
+                        =  3abc a −  2  b −  2  c
+                               −
+                Since  det ( ) detA =  ( ) detB =  ( ), then the matrices A, B, and C are similars.
                                              C
 
-                          b λ−     c      a
+                            −
+                          b λ      c      a
                  A λ  −  I =  c  a λ  −   b
-                            a      b    c λ−
-
+                            a      b    c λ
+                                          −
                         =  (b λ  )(a λ −  )(c λ −  −  ) 2abc a+  2 (a λ −  −  ) b−  2 (b λ  −  ) c−  2  (c λ  −  )
 
-                        =  abc −  bcλ  acλ −  cλ +  2  abλ −  bλ +  2  aλ +  2  λ −  3  +  2abc a + −  3  a λ  2  −  b +  3  b λ  2  −  c +  3  c λ  2
+                        =  abc −  bc −  λ  ac +  λ  c λ  2  ab +  λ −  b λ  2  a λ +  2  λ −  3  +  2abc a + −  3  a λ  2  −  b +  3  b λ  2  −  c +  3  c λ  2
 
                         =  −  λ  3  (c +  b +  ) a λ +  2  +  ( a +  2  b +  2  c 2  bc −  ac −  ab λ −  )  −  a −  3  b −  3  c +  3  3abc
 
@@ -183,22 +185,22 @@ function MM_swapImage() { //v3.0
                         b c a      c a b 
                         ab bc ac     ab bc ac      a +  2  b +  2  c 2 
                                              +
-                                         +
                                +
                           +
+                                         +
                                                                
                                                                 
-                    =    a +  2  b +  2  c 2  ab bc ac  ab bc ac
                                          +
                                                        +
-                                             +
                                                            +
+                    =    a +  2  b +  2  c 2  ab bc ac  ab bc ac
+                                             +
                                                                
                         ab bc ac    a +  2  b +  2  c 2  ab bc ac  
-                          +
-                                                       +
                                                            +
+                                                       +
                                +
+                          +
                                                                
                         ab c     c ab 
                                            
@@ -207,26 +209,32 @@ function MM_swapImage() { //v3.0
                         c a b      b c a 
                                         
                         ab bc ac    a +  2  b +  2  c 2  ab bc ac  
-                                                           +
                           +
-                                                       +
+                                                           +
                                +
+                                                       +
                                                                
-                    =    ab bc ac+  +  ab bc ac+  +  a +  2  b +  2  c 2 
+                    =    ab bc ac    ab bc ac      a +  2  b +  2  c 2 
+                                             +
+                          +
+                               +
+                                         +
                                                                
                         a +  2  b +  2  c 2  ab bc ac  ab bc ac  
-                                         +
-                                                       +
                                              +
+                                         +
                                                            +
+                                                       +
                                                                
-                Since   BC = CB , then
-                a +  2  b +  2  c =  2  ab bc ac+  +
-                a +  2  b +  2  c −  2  (ab bc ac =+  ) 0
+                Since   BC = CB, then
+                 a +  2  b +  2  c =  2  ab bc ac
+                                  +
+                                      +
+                 a +  2  b +  2  c −  2  (ab bc ac =+  ) 0
                                   +
                 det ( A λ  −  ) I =  −  λ  3  +  (c +  b  ) a λ +  2  +  ( a +  2  b +  2  c −  2  bc −  ac −  ab λ  )  −  a −  3  b −  3  c +  3  3abc
                              =  −  λ  3  (c +  b +  ) a λ +  2  −  a −  3  b −  3  c +  3  3abc
-                                                              229</code></pre>
+                                                              901</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 297 - Soln Lecture 4</title>
+        <title>Page 297 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 297 - Soln Lecture 4</div>
+        <div id="content-top1">Page 297 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 297</div>
      </div>
      <div id="content-middle">
@@ -152,86 +152,92 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>           
-                                −
-                       =  y T B y y T B y
-                       =  0
+    <pre style="white-space:pre-line"><code>
+                    2
+                            T
+                         uu
+                   B =  ( )   2
+                         
+                                
+                            T
+                                  T
+                               uu
+                         uu
+                      = ( )( )
+                          ( )
+                                            
+                            T
+                                                 T
+                                  T
+                      = uu uu                  uu =   1
+                         
+                           T
+                      =     u u
+                      =  B       √
+                               2
+                  Therefore,  B  is symmetric.
+                         
+                          T
+               c)  Since uu =  1, then
+                          T ) 
+                   Bu = (    u u  u
+                          (
+                            )
+                            T
+                   Bu = uu     u
+                        
+                      = u ( ) 1
+                        
+                      = u
                               
-                  Therefore,  z  is orthogonal to  ˆ y
-
-                                                                                                 
-                                                                  ( )  has the form  Bu  (for some u )
-               b)  Since W be the column space of B, then W =  Col B
-                                           
-                   ( yy−  ˆ ) ( u  B  ) B yy=  ( −  ) ˆ   u
-                                              
-                                 = (By − By ) ˆ   u
-
-                                               
-                                                                2
-                                 = (By − BBy                 B =  B
-                                             )     u
-                                             
-                                 = (By − By )      u
-                                 = 0
-                                                                                             
-                                             ⊥
-                  Therefore, ( yy−  ) ˆ  is in W , and the decomposition  y =  ˆ y +  ( yy−  ) ˆ  expresses  y  as the sum of a
-                                               ⊥
-                  vector in W and a vector in W .
-                  By the orthogonal Decomposition, this decomposition is unique, and so  ˆ y  must be orthogonal
-                                
-                  projection of  y  onto the column space of B (W)
+                  Therefore, u  is an eigenvector of B with the corresponding eigenvalue 1.
 
 
+           Exercise
 
 
+                                                         2
+           Let B be an  nn symmetric matrix such that  B =   B . Any such matrix is called a projection matrix (or
+                         ×
+                                                            n                   
+                                                                                   y
+                                                                                       ˆ y
+           an orthogonal projection matrix). Given any  y ∈ , let  ˆ y =  By  and  z = − .
+                           
+             a)  Show that  z  is orthogonal to  ˆ y .
+                                                           
+                                                                                                         ⊥
+             b)  Let W be the column space of B. Show that  y  is the sum of a vector in W and a vector in W . Why
+                                                                     
+                 does this prove that  By  is the orthogonal projection of  y  onto the column space of B?
+           Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            297</code></pre>
+                                               T
+               Since B is symmetric, then  B =  B
+                                2
+               Given too, that  B =  B  which is symmetric.
+                     
+               ˆ y =   By
+                                  
+                      ˆ =
+               a)  z   y  ( yy−  ) ˆ   By
+                                       
+                                        By
+                       =  y     ( ) ˆ   By −   y  ( )
+                           
+                           T            T    
+                                      By
+                       =  y      By −  ( ) ( )     By  ( )
+                                         
+                                 −
+                                      B
+                       =  y T     Byy TT    By
+                             
+                                         
+                                                    2
+                                 −
+                       =  y   T     Byy T B     By    B =  B
+                                                            255</code></pre>
      	</div>
     
      </div>
@@ -241,9 +247,9 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page296.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>&nbsp;&nbsp;&nbsp;<a href="page298.html">298</a>
              </td>
-             <td width="35%"><a href=""><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+             <td width="35%"><a href="page298.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>
          </table>
        </div>
@@ -256,7 +262,7 @@ function MM_swapImage() { //v3.0
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p><a href=""><img src="images/next_big.png" width="90" height="80" /></a></p>
+  <p><a href="page298.html"><img src="images/next_big.png" width="90" height="80" /></a></p>
 </div>
 
 

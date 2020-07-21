@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 287 - Soln Lecture 4</title>
+        <title>Page 287 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 287 - Soln Lecture 4</div>
+        <div id="content-top1">Page 287 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 287</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-               B is a projection since  B =  B , it is symmetric and thus diagonalizable, and it is Markov since the
-               columns add to 1. It is not invertible since the columns are visibly linearly dependent, it is not
-               orthogonal since the columns are far from orthonormal, and it’s clearly not a permutation.
-               All the factorizations are possible for it:  LU and QR are always possible.  PDP − 1   is possible since it
+    <pre style="white-space:pre-line"><code>Exercise
 
-                                          T
-               is diagonalizable, and QDQ is possible since it is symmetric.
+                                                                               
+                           x
+                        =
+           Suppose  Ax λ  and  Ay =    0y  and λ ≠ 0. Then y is in the nullspace and  x  is in the column space. They
+           are perpendicular because _______. (why are these subspaces orthogonal?) If the second eigenvalue is a
+           nonzero number  β, apply this argument to  A β−  I . The eigenvalue moves to zero and the eigenvectors
+           stay the same – so they are perpendicular.
 
+           Solution
+
+                                  T
+               Suppose that  A =  A  and  Ax λ=  x ,  Ay =  0y , and λ ≠ 0. Then x is in the column space of A, and y is
+                                                       ( )                    ( )
+                                                         T
+                                                                                T
+               in the left nullspace of A since  ()NA =  N A  . But C(A) and  NA    are orthogonal complements,
+               so x and y are perpendicular.
+
+
+               If  Ay =  β y with  β  λ ≠   then ( A β −  ) Ix =  (λ  β −  ) x  and ( A β−  ) Iy =  0. Since λ  β −  ≠  0  it follows
+               that x is in the column space A- βI  and y is in the nullspace of A- βI, and
+
+               ( A β  −  ) I  T  A −  T  I β =  T  =  A β  −  I , Therefore we can replace A with  A β−  I  in the argument of
+
+               previous paragraph and it follows that x and y are perpendicular.
 
 
            Exercise
 
-           True or false. Give a reason or a counterexample.
-
-             a)  A matrix with real eigenvalues and eigenvectors is symmetric.
-             b)  A matrix with real eigenvalues and orthogonal eigenvectors is symmetric.
-             c)  The inverse of a symmetric matrix is symmetric
-             d)  The eigenvector matrix S of a symmetric matrix is symmetric.
-             e)  A complex symmetric matrix has real eigenvalues.
-                                         A i
-             f)  If A is symmetric, then e  is symmetric.
-                                         A i
-             g)  If A is Hermitian, then e  is Hermitian.
-             h)  An  nn×  matrix that is orthogonally diagonalizable must be symmetric.
-                                                                              
-                                                                                      
-                                                           
-                                                                
-                                                                         
-                                                
-                                         
-                     T
-             i)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =  0
-
-             j)  An  nn×  symmetric matrix has n distinct real eigenvalues.
-                                                 
-                                                    T
-                                    n
-             k)  For nonzero v  in   , the matrix vv  is called a projection matrix.
-             l)  Every symmetric matrix is orthogonally diagonalizable
-                            T
-                                       T
-             m)  If  B =  PDP , where  P =  P − 1  and D is a diagonal matrix, then B is a symmetric matrix.
-             n)  An orthogonal matrix is orthogonally diagonalizable.
-             o)  The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the corresponding
-                eigenvalue.
+           Which of these classes of matrices do A and B belong to: Invertible, orthogonal, projection, permutation,
+           diagonalizable, Markov?
+                                                   0 0 1              111
+                                                                               
+                                             A =      0 1 0     B =  1   3   111
+                                                                               
+                                                   1 0 0              111   
+                                                                            
+                                                                                       T
+           Which of these factorizations are possible for A and B: LU, QR,  ADP − 1 , QDQ ?
            Solution
 
-                                     12
-                a)  False. Let  A =     
-                                     10 
+               Matrix A is invertible, orthogonal, a permutation matrix, diagonalizable, and Markov! (Everything but
+               a projection).
+                                  2
+                                                               T
+                                                T
+               Matrix A satisfies  A =  ,  A =  A , and also  AA = , This means it is invertible, symmetric, and
+                                                                   I
+                                      I
+               orthogonal. Since it is symmetric, it is diagonalizable (with real eigenvalues!). It is a permutation
+               matrix by just looking at it. It is Markov since the columns add to 1. It is not a projection since
+                 2
+                     I
+               A = ≠    A.
+               All of the factorization are possible for it: LU and QR are always possible.  PDP − 1   is possible since it
+                                          T
+               is diagonalizable, and QDQ is possible since it is symmetric.
 
-                             (
-                                                              2
-                    Then det A λ −   ) I =  1 λ−  2  λ =  2  λ − −=  0
-                                          1    − λ
-                    So, A has eigenvalues λ  1  −  1 λ =  2  =  2
-
-                                                            2
-                                                − 1      
-                    The eigenvectors are: V =      V =      so both the eigenvalues and eigenvectors are real
-                                           1     1    2  
-                                                            1
-                    but A is not symmetric.
+               Matrix B is a projection, diagonalizable, and Markov. It is not invertible, not orthogonal, and not a
+               permutation.
 
 
 
-
-                                                            287</code></pre>
+                                                            245</code></pre>
      	</div>
     
      </div>

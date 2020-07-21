@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 48 - Soln Lecture 3</title>
+        <title>Page 48 - Linear Algebra Solution Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 48 - Soln Lecture 3</div>
+        <div id="content-top1">Page 48 - Linear Algebra Solution Lecture 3</div>
         <div id="content-top2">P. 48</div>
      </div>
      <div id="content-middle">
@@ -152,9 +152,9 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                          
-              w =  v −  ( v   u u −  )  ( v   u  ) u
-               3    3     3   1   1     3   2    2
+    <pre style="white-space:pre-line"><code>                          
+              w =  v −  3  ( v   3  u u −  1 )  1  ( v   3  u 2 ) u 2
+               3
                  = ( 2, 1, 1,  1−  −  ) 0 0− −
 
                  =  ( 2, 1, 1,  1  −  −  )
@@ -162,10 +162,9 @@ function MM_swapImage() { //v3.0
                    w
               u =    3
                     
-               3    w 3
-                        ( 2, 1, 1,  1 )
-                         −
-                                   −
+               3    w
+                     3
+                        ( 2, 1, 1,  1−  −  )
                  =
                      ( ) 2  2  +  1 +  2  1 +  2  ( ) 1  2
                       −
@@ -184,14 +183,15 @@ function MM_swapImage() { //v3.0
                                                                                           m
            Use the Gram-Schmidt process to find an orthonormal basis for the subspaces of   .
                                                 
-               u =  (1, 0, 0), u =   (3, 7,  2), u−  =  (0, 4, 1)
+                                           −
+               u =  (1, 0, 0), u =   (3, 7,  2), u =   (0, 4, 1)
                  1               2                 3
           Solution
                    
                   u
-              v =  u  1
-               1
-                    1
+              v =   1
+               1   u  1
+
                      (1, 0, 0 )
                  =
                      1 +  2  0 +  2  0 2
@@ -199,16 +199,11 @@ function MM_swapImage() { //v3.0
                  = (1, 0, 0
 
                            
-              w =  u −  ( u     vv  )
+                               vv
+              w =  u −  ( u    )
                2     2     2   1  1
-                                           ) (1, 0, 0 
-                                        −
-                          −
-                                
-                 =  (3, 7,  2 −  ) (3, 7,  2        ) (1, 0, 0 )
+                 =  (3, 7,  2−  ) (3, 7,  2−      −  ) (1, 0, 0        ) (1, 0, 0 )
                                                       
-                                
-
                  =  (3,7, 2−  ) 3−  (1,0,0 )
 
                  = (0, 7,  2  −  )
@@ -218,13 +213,15 @@ function MM_swapImage() { //v3.0
               v =    2
                2    w
                      2
+
                  =   1  (0, 7,  2−  )
                      53
+
                         7       2  
                  =   0,    , −     
                         53      53 
 
-                                                            48</code></pre>
+                                                           572</code></pre>
      	</div>
     
      </div>

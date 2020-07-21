@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 28 - Soln Lecture 4</title>
+        <title>Page 28 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 28 - Soln Lecture 4</div>
+        <div id="content-top1">Page 28 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 28</div>
      </div>
      <div id="content-middle">
@@ -152,19 +152,19 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>=  ru −  (  1  5u +  2  4u   u − ,  2  6u 3 )
+    <pre style="white-space:pre-line"><code>=  ru − (  1  5u +  2  4u   u − ,  2  6u 3 )
                                      3
                           
                     =  rT  ( ) u
-                                                       
-             Since  (uv+   ) T u=  ( ) T v+  ( )  and  ( ) rTu =  ( ) u , then function T is a linear transformation.
+                                                       
                                                 T r
                    T
+             Since  (uv+   ) T=  ( ) Tu +  ( ) v  and  ( ) rTu =  ( ) u , then function T is a linear transformation.
              Domain:  :  T    3  →   2
                (
                                               ,
-             T x 1 , x 2 , x 3 ) ( x −  1  5x +  2  4x    x −  2  6x 3 )
                             =
+             T x 1 , x 2 , x 3 ) ( x −  1  5x +  2  4x    x −  2  6x 3 )
                                             3
                                 x −   5x +  4x 
                              =    1   2     3  
@@ -183,46 +183,48 @@ function MM_swapImage() { //v3.0
           linear, find the A such T =  f
                                      A
                (
-                                 =
              T x 1 ,  x 2 ,  x 3 ,  x 4 ) ( x +  1  2x 2 , 0, 2 x +  2  x 4 ,  x −  2  x 4 )
+                                 =
 
           Solution
                                               
-             Let u = ( u 1 , u 2 , u 3 , u 4 )  and v = ( v 1 , v 2 , , v 3  v 4 )
-
+                                                            v
+             Let u = ( u 1 , u 2  , u 3 , u 4 )  and v = ( v 1 , v 2 , , v 4 )
+                                                             3
                  
-             T  (uv =  +  ) (   v  ,  u +  v  ,  u +  v  ,  u +  v  )
                         T u +
-                            1    1    2   2    3    3    4    4
+             T  (uv+  ) (   1   v 1 ,  u +  2  v 2 ,  u +  3  v 3 ,  u +  4  v 4 )
+                       =
                        =  ( (  u +  1  v 1 ) (  2  v 2 ) , 0, 2 ( u +  2  v 2 ) (  4  v 4 ) ( u +  2  v 2 ) ( u +  4  v 4 ))
                                                                              ,
-                                                                −
-                                    2 u +
-                                  +
                                                                                          −
+                                  +
                                                                   3 u +
-                       =  ( u +  1  v +  1  2u +  2  2v 2  , 0, 2 u +  2  2v −  2  3u −  4  3v 4 ,  u +  2  v −  2  u −  4  v 4 )
+                                    2 u +
+                                                                −
+                       =  ( u +  1  v +  1  2u +  2  2v 2 , 0, 2 u +  2  2v −  2  3u −  4  3v 4 ,  u +  2  v −  2  u −  4  v 4 )
                        =  ( (  u +  1  2u 2 ) ( v +  1  2v 2 ) , 0,  ( 2 u −  2  3u 4 ) ( 2v −  2  3v 4 ) ( u −  2  u 4 ) ( v −  2  v 4 ))
                                                                                             +
-                                    +
-                                                                  +
                                                                                 ,
-                       =  ( u +  1  2u 2  , 0, 2 u −  2  3u 4 ,  u −  2  u 4 ) ( v +  1  2v 2 , 0, 2 v −  2  3v 4 ,  v −  2  v 4 )
+                                                                  +
+                                    +
+                       =  ( u +  1  2u 2 , 0, 2 u −  2  3u 4 ,  u −  2  u 4 ) ( v +  1  2v 2 , 0, 2 v −  2  3v 4 ,  v −  2  v 4 )
                                                              +
-                           
                                    
+                           
                        = T  ( ) Tu +  ( ) v
                   
-             T ru =       ( (  1 , u 2 , , u 3  u 4 ))
-               ( ) T ru
+                                   u
+             T r          ( (  1 , u 2 , , u 4 ))
+               ( ) T ruu =
+                                     3
                         (
                     = T ru 1 , ru 2 , ru 3 , ru 4 )
-
-                    =  ( ru +  1  2ru 2 , 0, 2      ru −  2  3ru 4 ,  ru −  2  ru 4 )
-
+                    =  ( ru +  1  2ru 2 , 0, 2ru −          2  3ru 4 ,  ru −  2  ru 4 )
 
 
-                                                            28</code></pre>
+
+                                                           700</code></pre>
      	</div>
     
      </div>

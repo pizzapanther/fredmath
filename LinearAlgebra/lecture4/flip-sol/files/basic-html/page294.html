@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 294 - Soln Lecture 4</title>
+        <title>Page 294 - Linear Algebra Solution Lecture 4</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 294 - Soln Lecture 4</div>
+        <div id="content-top1">Page 294 - Linear Algebra Solution Lecture 4</div>
         <div id="content-top2">P. 294</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-           Suppose A and B are both orthogonally diagonalizable and  AB =  BA . Explain why AB is also
-           orthogonally diagonalizable
-           Solution
+    <pre style="white-space:pre-line"><code>(  T   ) T   T            T
+               Since,  B AB     =  B AB , then  B AB  is symmetric.
 
 
-               Since A and B are both orthogonally diagonalizable, and A and B are symmetric, then
-                                      T
-                   A =  A T  & B =  B
-               If  AB =  BA , then
+               ( )    T  =  B T ( ) T
+                                T
+                  T
+                              B
+                BB
+                           T
+                        =  B B      √
+                           T
+               Therefore,  B B  is symmetric.
 
+               ( ) ( )         T  B
+                      T
+                                  T
+                            T
+                   T
+                           B
+                        =
+                BB
                              T
-                    T
-               ( AB ) =  (BA )
-                          TT
-                      =  AB             A and B are symmetric
-                        =  AB     √
+                        =  BB       √
+                             T
+               Therefore,  BB is symmetric.
 
-               Therefore, AB is also orthogonally diagonalizable
+
+           Exercise
+                                                                                         n
+                                                                         ( )  for all  ,x y ∈
+           Show that if A is an nn×  symmetric matrix, then ( Ax )   y =  x      Ay
+           Solution
+                                                    T
+               A is a symmetric, that implies to  A =  A
+
+                            T 
+               ( Ax )   y =  ( Ax )    y
+                                
+                           TT    
+                        =  xA     y
+                           T   
+                        =  xA   y 
+                               
+                             ( )
+                            
+                        =  x    Ay      √
 
 
            Exercise
 
-           Let  A =  PDP − 1 , where P is orthogonal and D is diagonal, let λ  be an eigenvalue of A of multiplicity k.
-
-           Then λ  appears k times on the diagonal of D. Explain why the dimension of the eigenspace for λ  is k.
-
-           Solution
-               The columns of P are linearly independent eigenvectors by the diagonalization theorem
-               corresponding to the eigenvalues λ  of A.
-
-               Since D is a diagonal with the eigenvalues λ . when the eigenvalues λ  is of multiplicity k, then λ
-               appears k times on the diagonal of D.
-
-               So, P has exactly k columns of eigenvectors corresponding to the eigenvalues λ .
-               Therefore, the k columns form a basis for the eigenspace.
-
-
-           Exercise
-
-
-           Suppose  A =  PUP − 1 , where P is orthogonal and U is an upper triangular. Show that if A is symmetric,
-           then U is symmetric and hence is actually a diagonal matrix.
+           Suppose A is invertible and orthogonally diagonalizable. Explain why  A − 1  is also orthogonally
+           diagonalizable.
 
            Solution
+                                                   1
+                                                  −
+                                                        I
+               Since A is invertible, then  AA −  1  =  A A =
+               And A is orthogonally diagonalizable, then  A =  PDP − 1
 
-               Given:  A =  PUP − 1
-                                           T
-               If A is symmetric, then  A =  A
-               A =  PUP − 1
+               ( ) A  − 1  = ( PDP − 1 ) − 1
 
-                              U
-               P −  1 A P =  P −  1 PP − 1 P
-               U =  P − 1 AP
-                                                            294</code></pre>
+                                 1 −
+                        −
+                         1
+                                −
+               A −  1  = ( ) − 1 DP  1          D − 1  =  D   (is a diagonal matrix)
+                      P
+                        =  PDP − 1      √
+               Therefore,  A − 1  is also orthogonally diagonalizable.
+
+                                                            252</code></pre>
      	</div>
     
      </div>
@@ -217,7 +234,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page293.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page289.html">289</a>&nbsp;&nbsp;&nbsp;<a href="page290.html">290</a>&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page289.html">289</a>&nbsp;&nbsp;&nbsp;<a href="page290.html">290</a>&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>&nbsp;&nbsp;&nbsp;<a href="page298.html">298</a>
              </td>
              <td width="35%"><a href="page295.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>
