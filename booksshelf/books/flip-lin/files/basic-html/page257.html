@@ -152,66 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Four Subspaces for A
+    <pre style="white-space:pre-line"><code>Four Fundamental Subspaces
 
-             The subspace dimensions for A are the same as for R.
-
-             These matrices are connected by an invertible matrix E.  EA =  R and  A =  E − 1 R
-
-
-             1.  A has the same row space as R. Same dimension r and same basis
-                  Every row of A is a combination of the rows of R. Also every row of R is a combination of the rows
-                  of A.
-
-             2.  The column space of A has dimension r. The number of independent columns equals the number of
-                independent rows.
-
-             3.  A has the same nullspace as R. Dimension n – r and same basis.
-                                                                                              n
-                    (dimension of column space) + (dimension of nullspace) = dimension of  R
+                                       ( )                   n
+                                         T
+                1.  The row space is CA     , a subspace of   .
+                                                               m
+                2.  The column space is  ( ) A , a subspace of   .
+                                         C
+                                                           n
+                3.  The nullspace is  NA , a subspace of  .
+                                       ()
+                                           ( )                   m
+                                             T
+                4.  The left nullspace is  NA   , a subspace of   .
 
 
-                                                      T
-             4.  The left nullspace A (the nullspace of A ) has dimension m – r.
+             The Four Subspaces for R
+
+             Consider the matrix 3 by 5:
+
+                             1 35 09         m = 3     pivot  rows  1 and  2
+                             000 18     n =       5
+                                           
+                                          
+                               00  000     r =  2  pivot  columns  1 and  4
 
 
-             Fundamental Theorem of Linear Algebra, (Part 1)
+             1.  Rows 1 and 2 are a basis. The row space contains combination of all 3 rows.
 
-             The column space and row space both have dimension r.
+                  The row space of   has dimension 2 (= rank).
+                  The dimension of the row space is r. The nonzero rows of R form a basis.
 
-             The nullspaces have dimensions n – r and m – r.
+             2.  The column space of R has dimension r = 2.
+
+                  The pivot columns 1 and 4 form a basis. They are independent because they start with the r by r
+                  identity matrix.
+                  There are 3 special solutions:
+
+                               C =  3C 1       The  special  solution  is  (   − 3, 1, 0, 0, 0 )
+                                2
+                               C =  5C 1       The  special  solution  is  (   − 5, 0, 1, 0, 0 )
+                                3
+                                                                                −
+                           C =   9C +  8C     The  special  solution  is  (   −  9, 0, 0,  8, 1 )
+                             5     1      2
+                  The dimension of the column space is r. The pivot columns form a basis.
+
+             3.  The nullspace has dimension n – r = 5 – 2 = 3 (free variables). Here  x 2 , , x are free (no pivots in
+                                                                                       x
+                                                                                        3
+                                                                                            5
+                                                                         
+                                                                            0
+                those columns). They yield the three special solutions to  Rx = . Set a free variable to 1, and solve for
+                 x   and  x .
+                  1      4
+                                 −  3        −   5    −  9
+                                  1         0         0  
+                                                       
+                           s =    0   s =    1   s =    0 
+                            2         3         5      
+                                  0         0         − 8 
+                                    0          0          1    
 
 
 
 
-             Example
-
-                                   ]
-             Consider  A = [12 3
-
-                A has m = 1, n = 3, and rank: r = 1.
-                                           3
-                The row space is a line in   .
-                The nullspace is the plane  Ax =  x +  1  2x +  2  3x =  3  0 . This plane has dimension 2 (which is 3 – 1).
-
-
-                                                                                         1
-                                                           1
-                The columns of this is 1 by 3 matrix are in   . The column space is all of  .
-                The left nullspace contains only the zero vector.
-                                      T
-                                                    0
-                The only solution to  A y =  0     is y = , the only combination of the row that gives the zero row.
-                         ( )
-                                                                                 m
-                Thus,  N A T    is , the zero space with dimension 0 (m – r). In    the dimensions (1 + 0) = 1.
-
-
-
-
-
-
-                                                              29</code></pre>
+                                                              257</code></pre>
      	</div>
     
      </div>

@@ -152,76 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises              Section 2.7 – Coordinates, Basis and Dimension
+    <pre style="white-space:pre-line"><code>Example
+
+             Find a basis for and the dimension of the solution space of the homogeneous system
+
+                                              x +  3x −  2x        +  2x      =  0
+                                               1     2     3           5
+                                             2x +  6x −  5x −  2x +  4x −  3x =  0
+                                               1     2     3     4      5     6
+                                                                 5x −  10x         15x =  0
+                                                                        +
+                                                           3      4          6
+                                                           +
+                                             2x +  6x         8x +  4x +  18x =  0
+                                                1     2         4     5      6
+             Solution
+
+                  1 3 −  2    0   2   0   0
+                  2 6 −  5   −  2  4 −  30      R −  2R
+                                                      2  1
+                  0 0   5   − 10 0 15 0
+                                            
+                  2 6   0     8   4 18 0        R −  2R 1
+                                                    4
+                  1 3 −  2    0   2   0   0
+                         1    2        30       − R
+                  0 0 −      −    0 −                 2
+                  0 0   5   − 10 0 15 0
+                                            
+                  0 0   4    8    0 18 0    
+                  1 3 −  2   0    2   0   0     R + 2R 2
+                                                   1
+                  00    1     2   0   3   0 
+                                           
+                  0 0   5   − 10 0 15 0         R −  5R
+                                                 3     2
+                  0 0   4    8    0 18 0        R −  4R 2
+                                                   4
+
+                  1 3 0     4    260
+                  0 01      2    0 30    
+                                                   1
+                  000 −     20 0 00           − 20  R 3
+                                         
+                  000       0    0 60          1  R
+                                                 6  4
+
+                  1 3 0 4 260              R −  4R 3
+                                              1
+                  0 01 2 0 30              R −
+                                                 2  2R 3
+                  0001 0 00
+                                       
+                  000 0 01 0           
 
 
-                                  
-                                                     n
-             1.   Suppose v  , , v    is a basis for     and the n by n matrix A is invertible. Show that
-                            1       n
-                            
-                                                    n
-                  Av  , , Av…    is also a basis for   .
-                     1         n
-
-                                            1  0    a 
-                                            2  − 1 b 
-             2.   Consider the matrix  A =           
-                                            1  1    c 
-                                                     
-                                            − 2  1  d 
-
-                                        a
-                                      
-                                      
-                                       b
-                    a)  Which vectors    will make the columns of A linearly dependent?
-                                      
-                                        c
-                                      
-                                       d
-                                      
-                                        a
-                                                                                 x            
-                                                                                 y            
-                                       b
-                                                                                                 
-                    b)  Which vectors    will make the columns of A a basis for       : y +  w =  0 ?
-                                                                                                 
-                                                                                            
-                                        c
-                                                                                    z
-                                                                                
-                                       d
-                                                                                    w
-                                                                                             
-                             a
-                                  1 
-                                 − 2 
-                             b
-                    c)  For    =    , compute a basis for the four subspaces.
-                                  5 
-                             c
-                                   
-                             d
-                                  2  
-
-                                                      3
-             3.   Find a basis for  x −  2y +  3z =  0 in   .
-                  Find a basis for the intersection of that plane with xy plane. Then find a basis for all vectors
-                  perpendicular to the plane.
+                  1 3 00 260               R −  6R 4
+                                              1
+                  0 01 0 0 30              R −
+                                                 2  3R 4
+                  000 1 0 00
+                                       
+                  0000 01 0            
 
 
-             4.   U comes from A by subtracting row 1 from row 3:
-
-                                 1 32                 1 3 2
-                                                               
-                           A =      01 1     and U =      0 1 1
-                                                               
-                                   1 32               0 0 0  
-
-                    Find the bases for the two column spaces. Find the bases for the two row spaces. Find bases for
-                    the two nullspaces.
 
 
 

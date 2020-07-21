@@ -152,20 +152,15 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Matrices for General Linear Transformations
+    <pre style="white-space:pre-line"><code>Example − Kernel and Range of a Rotation
 
-             Suppose that V is an n-dimensional vector space, W is an m-dimensional vector space, and that
-               :
-             TV →    W  is a linear transformation. Suppose further that B is a basis for V, that  B′ is a basis for W, and
-                                                                                         
-                                                                    
-                                                                            
-             that for each x in V, the coordinate matrices for x and  ( ) x  are [ ] x   and  T x    , respectively
-                                                                 T
-                                                                                     
-                                                                                       ( )
-                                                                                     
-                                                                              B             B′
+
+             Let  : T   2  →   2  be the linear operator that rotates each vector in the xy−plane through the angle θ.
+                                                                                                        , it follows
+             Since every vector in the xy−plane can be obtained by rotating some vector through the angle θ
+                           2
+             that  ( ) =  .
+                 RT
 
 
 
@@ -177,60 +172,52 @@ function MM_swapImage() { //v3.0
 
 
 
-
-             By using matrix multiplication, we can execute the linear transformation and the following indirect
-             procedure:
-                                                  
-              1.  Compute the coordinate vector [ ] x
-                                                    B
-                                                              
-              2.  Multiply [ ] x   on the left by A to produce  T x  
-                                                              ( )
-                                                           
-                                                           
-                              B                                    B′
-                                 
-                                                                  
-              3.  Reconstruct  ( ) x  from its coordinate vector  T x  
-                              T
-                                                              
-                                                                 ( )
-                                                              
-                                                                      B′
+                                                           
+             Moreover, the only vector that rotates into 0   is 0 , so ker ( ) { } 0T =
 
 
 
+             Theorem
+
+             If  :TV → W  is a linear transformation, then:
+                1.  The kernel of T is a subspace of V
+
+                2.  The range of T is a subspace of W
+
+
+             Theorem
+
+             If  :TV → W  is a linear transformation from an n-dimensional vector space V to a vector space W, then
+
+                                                   rank T            ( ) n=
+                                                        ( ) nullity T+
 
 
 
+             Example
+
+             Project every 3-dimensional vector down onto horizontal plane z = 1.
+                                                         
+                        
+                                   )
+                             xy
+             The vector v =  ( , , z  is transformed to  ( ) ( ,  , 1T v =  xy  ) . This transformation is not linear, it doesn’t
+                                            
+                                0
+             even transform v =   into  ( ) 0T v = .
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                         
-             A [ ] x  =    T   ( ) x   
-                  B           B′
+                Multiply every 3-dimensional vector by a 3 by 3 matrix A. This is definitely a linear
+                transformation
+                                                                              
+                                                                                            
+                           T (vw+      ) =  ( A vw+      )     which does equal   Av +    Aw T  ( ) T wv +    ( )
+                                                                                =
 
 
 
 
-
-
-
-                                                              41</code></pre>
+                                                              269</code></pre>
      	</div>
     
      </div>

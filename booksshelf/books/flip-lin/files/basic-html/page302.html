@@ -152,84 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> 1
-                 ⇒    V = 
-                       1  
-                            0
-                                       )
+    <pre style="white-space:pre-line"><code>k
+        Matrix Powers  A
+
+          2
+         A =  PDP  −  1 PDP −  1
+                 2 −
+            =  PD P  1
+
+
+          k
+         A =  ( PDP −  1 ) ( PDP −  1 )
+                       
+                 k −
+            =  PD P  1
+
+                                     k
+                                                                             k
+        The eigenvector matrix for  A  is still S, and the eigenvalue matrix is  A . The eigenvectors don’t change,
+                                                                                  
+                                                                                k
+                                            th
+        and the eigenvalues are taken to the k  power. When A is diagonalized,  A u  is easy.
+                                                                                   0
+        Here are steps (taken from Fibonacci):
+            1.  Find the eigenvalues of A and look for n independent eigenvectors.
+                                                      
+            2.  Write u as a combination  c v +    +  c v of the eigenvectors.
+                                           11
+                       0
+                                                      nn
+                                                   k
+                                                ( )
+            3.  Multiply each eigenvector v i  by λ i  . Then
+                               
+                       u =   A u
+                        k     k  0
+                           =  c 1 ( ) k   v +  1  +  c n ( ) k   v
+                                λ
+                                                  λ
+                                 1
+                                                    n
+                                                         n
+
+
+        Example
+
+        Compute  A  k  where    A =     11  
+                                     0 2 
+        Solution
+
+                            −
+                          1 λ      1
+            det ( A λ−  ) I =
                                   −
-             For λ =   2 ⇒     ( A λ  IV =    0
-                   2                 2    2
-                                 0
-                           x
-                  −  11        →    x =  y
-                              =
-                          
-                                 0
-                           y
-                   0  0    
-                            1
-                 ⇒    V =   
-                       2    
-                            1
-             The eigenvector matrix is given by:
-                    11
-              P =     
-                    01 
+                            0    2 λ
+                          (1 λ=  −  )(2 λ  −  ) 0
+                                       =
+            The eigenvalues are:     λ    = 1, 2
 
+                                       1,2
+                                     )
+            For λ =  1 ⇒     ( A λ−  I V =  0
+                 1                1    1
 
-              P − 1  =      1 − 1  
-                      0  1  
-
-
-                    1 0         k    1 k  0  
-              D =        ⇒    D =          
-                    0 2                0  2 k   
-
-
-
-                      k −
-               k
-              A =  PD P    1
-                      11     1  0     1 − 1
-                   =                 
-                      01       0 2 k       0  1  
-
-                     12 k     1 − 1
-                 =              
-                        k     0  1  
-                     0 2  
-
-                         k
-                     12 −  1 
-                 =          
-                         k 
-                     0  2   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           274</code></pre>
+                              0
+                        x
+                 01         →    y =  0
+                           =
+                       
+                        y
+                              0
+                 01    
+                          1
+                ⇒   V =  
+                     1   
+                          0
+                                                          302</code></pre>
      	</div>
     
      </div>

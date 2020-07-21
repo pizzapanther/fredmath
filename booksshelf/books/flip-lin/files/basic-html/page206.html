@@ -152,79 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-
-                   10               0 2
-             U =        and V =           are orthogonal, since
-                   11               0 0 
-
-                                     10 +
-                                   +
-                                           10
-                     =
-                         ( ) 0 2+
-                UV     10      ( ) ( ) ( )
-                       = 0
-
-
-             Definition
-
-             If W is a subspace of an inner product space V, then the set of all vectors are orthogonal to every vector
-                                                                                          ⊥
-             in W is called the orthogonal complement of W and is denoted by the symbol W
-
-
-             Theorem
-             If W is a subspace of an inner product space V, then:
-
-                      ⊥
-                a)  W  is a subspace of V.
-                b)  W   W ⊥  = { } 0
-
+    <pre style="white-space:pre-line"><code>Theorem − Cauchy-Schwarz Inequality
+                     
+             If v  and  w are vectors in a real inner product space V, then
+                                                                  
+                                                         ,
+                                                       uv ≤     u   v
 
              Proof
-                                                                    
-                                                                       
-                                                                                               
-                            ⊥
-              a)  Let set W  contains at least the zero vector, since  0, w =  0 for every vector  w   in W. We need
+                              
+                         
+                If either u  or v  is equal to zero, then both sides equal to zero
+                    Inequality holds.
+                                           
+                                    0
+                Suppose that  ,u v ≠  and if  w  any vector
+                      
+                 w =  w w ≥  0
+                           
+                Let  wu tv , then:
+                      = −
+                     
+                0 ≤  ww
+                  =  (utv−      )(utv−      )
+                                         2  
+                  =  u     u −  ( t u     v ) t −  (v     u ) t+  (vv       )
 
-                                 ⊥
-                  to show that W  is closed under addition and scalar multiplication.
-                                      
-                                                                                             
-                               
-                                                                           
-                                                                                                
-                                                        ⊥
-                  Suppose that u  and v  are vectors in W , so every vector  w  in W we have  u , w = 0 and
-                     
-                           0
-                   v , w =
-                                              
-                            uv+  ,  w =   , u  w +  , v  w
-                                      =  00+
-                                      =  0              Closed under addition
-                                        
-                            k wu ,  =  k u , w
-                                   = k ( ) 0
-                                   = 0                  Closed under scalar multiplication
-                                                
-                                                            ⊥
-                    Which proves that u + w and  ku  are in W
+                                   2                      u  
+                                                                   v
+                  =  u     u −  2   ( tu   v  ) t+  (vv      )    Let t = 
+                                                                vv
+                                                                    
+                                                
+                                              
+                              
+                          ( )           ( )   2  
+                                             u
+                             u
+                                                v 
+                                 v 
+                                             
+                  =  uu      −  2   (  u     v ) +  vv  (vv       )
+                             vv
+                                  
+                                                 
+                                  2         2
+                            (u      v )  (u     v )
+                  =  uu   2       +  
+                         −
+                              vv        vv
+                                  
+                                             
+                               2
+                              
+                         (u   v )
+                  =  uu      
+                         −
+                             vv
+                              
 
-                                                                                              
-                      
-                                                              
-                                                      ⊥
-                                                                                                      0
-                                                                                               ,
-                b)  If v  is any vector in both W and W , then v  is orthogonal to itself; that is,  vv = . It
-                                                                              
-                                                                               0
-                    follows from the positivity axiom for inner products that v =
+                                   2
+                    (uu       )(vv       ) (u−    v   )    
+                  =                                   Since vv &gt;  0
 
+                             vv
+                                  
+                                   2
+                  ≤  (uu      )(vv      ) (u−    v  )
+                     2     
+                (u   v  ) ≤  (uu       )(vv      )
+                            
+                   ,
+                  uv ≤     u   v
+
+             The following two alternative forms of the Cauchy-Schwarz inequality are useful to know:
+                                                       2      
+                                                                      ,
+                                                     , uv  ≤   , uu v v
+
+                                                          2      2   2
+                                                      u , v  ≤  u    v
 
                                                             206</code></pre>
      	</div>

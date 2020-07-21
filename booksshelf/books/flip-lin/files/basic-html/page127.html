@@ -152,76 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Null Spaces
 
-                                                       x
-                                           1 − 23       0  
-                                                            0
-             Consider the linear system     2 −  46     
-                                                       y =
-                                                     
-                                                            
-                                                       z
-                                                            0  
-                                           3   − 69    
-                                                     
-             Solution
-                 z =  , t  y =  , s  x =  2s − 3t
-                                0
-                ⇒  x − 2y +  3z =
-                                                                        
-                This is the equation of a plane through the origin that has n  = (1, −2, 3) as a normal.
+             Definition
+                                                                                              n
+                                                             0
+             The nullspace of A consists of all solutins to  Ax = . These solution vectors  x are in  . The Nullspace
+             containing all solutions is denoted by  ( )  or   NS ( ) A .
+                                                 N A
+                {     n  | Ax =     }                 ( )
+                               0  is the nullspace of A,  NS A
+                  x ∈
+
+                                                        ( )
+                  (Can also be called Kernel of A: Ker A )
+
+
+
+             Theorem
+                                               n
+                         ( )
+             Suppose  NS A  is a subspace of   for  A mn
+                                                         ×
+                                                    
+                  Let  x  and  y  are in the nullspace ( ,x y ∈  NS (  ) ) A  then
+                                          
+                           A ( x +  ) y =  Ax +  Ay
+                                      
+                                    =  00
+                                        +
+                                      
+                                    =  0
+                                        
+                                A
+                  Let  x ∈ NS () then cx ∈  NS ()
+                                                 A
+                                       
+                               ( ) cAx=
+                           ∴  A cx
+                                       
+                                    =  0 c
+                                      0
+                                    =  
+
+             Since we can add and multiply without leaving the Nullspace, it is a subspace.
 
 
              Example
-                                                         x
-                                            1  − 2  3      0  
-                                                         y =
-                                                               0
-             Consider the linear system     −  3  7  −  8     
-                                                        
-                                                               
-                                                         z
-                                             4  1  2      
-                                                               0  
-                                                        
+
+             The equation  x +  2y +  3z =  0 comes from the 1 by 3 matrix  A = [1  2  ] 3 . This equation produces a
+
+                                                                 3
+             plane through the origin. The plane is a subspace of   .  It is the Nullspace of A.
              Solution
-                                    0
-                 x =  0,  y =  0, z =
-                                      
-                                     { }
-                The solution space is  0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                The solution to  x +  2y +  3z =  6 also form a plane, but not a subspace.
 
 
 

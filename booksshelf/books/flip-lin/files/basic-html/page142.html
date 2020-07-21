@@ -152,72 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-                                                                          
-          Let S be a linearly independent subset of a vector space V, and let v  be a vector in V that is not in S. Then
-               
-                                                     
-          S  { } v  is linearly dependent if and only if v ∈ span ( ) S
+    <pre style="white-space:pre-line"><code>Linear independence of Functions
 
 
-          Proof
-                                                                                   
-                                                                  ,
-          If  S  { } v  is linearly dependent, then there are vectors u u 2 ,  , u  in  S  { } v such that
-                                                                             n
-                                                                1
-                                   
-                                                                   ,
-          au +   a u +      +   a u =  0  for some nonzero scalars  a a  ,  , a .
-           11     2 2          nn                                 1   2       n
-                                                                                                       
-                                                        '
-          Because S is linearly independent, one of the us  say u , equal  v . Thus  av +  a u +   +   a u =  0,
-                                                       i        1                  1     22           nn
-          and so
-                                    
-              av =  −  ( a u +   +   a u  )
-               1       22           nn
-                   − 1               
-              v =  −  a  ( au +    +   a u  )
-                    1    22           nn
-                   (  −  1  )       (  −  1  )  
-               =  −  aa  2  u −  2  −   aa n  u
-                                               n
-                     1
-                                        1
-                                                                            
-          Since v  is linear combination of  u  ,  ,  u , which are in S, we have v ∈ span ( ) S .
-                                            2       n
-                         
-          Conversely, let v ∈ span ( ) S .
-                                            
-                                    ,
-                                                                       ,
-                                                                   ,
-          Then there exist vectors v v 2 ,  , v  in S and scalars b b    , b  such that
-                                                                  1
-                                   1
-                                                                      2
-                                               m
-                                                                              m
-                                 
-          v =  bv +  b v +     +   b v . Hence,
-               11    2 2          mm
-                                             
-              bv +  b v +     + b v   + ( ) 1 v−  =  0
-               11    2 2          mm
-                                                         
-          Since v ≠  v  for i = 1, 2,  ,  m, the coefficient of v  in this linear combination is nonzero, and so the set
-                     i
-          { v v   2 ,  , v   m , v  is linearly dependent.
-                            }
-                           
-           
-             ,
-            1
-                         
-          Therefore  S  { } v  is linearly dependent.
+          Definition
+
+          If f  =  f  ( ), x  f  =  f  ( ), , x    f  =  f  ( ) x  are functions that are n − 1 times differentiable on the
+             1    1      2    2           n    n
+          interval (−∞, ∞), the determinant
+                                                f  ( ) x    f  ( ) x        f  ( ) x
+                                                1            2               n
+                                               f  ′  ( ) x  f  ′  ( ) x    f  ′  ( ) x
+                                     Wx         1            2               n
+                                       ( ) =
+                                                                            
+                                              f  (n−  1) ( ) x  f  (n−  1) ( ) x    f  (n−  1) ( ) x
+                                              1            2                n
+
+          is called the Wronskian of  f  , ,  , f
+                                         f
+                                      1   2       n
+
+
+                  if   W =  0 ⇒   Linearly  Dependent
+                 
+                  if W ≠  0 ⇒    Linearly Independent
+
+
+          Example
+
+          Use the Wronskian to show that f  =  , x  f  = sin x  are linearly independence
+                                          1        2
+
+          Solution
+             The Wronskian is
+
+                          x  sin x
+                 Wx
+                    ( ) =
+                         1 cos x
+                        =  x cos x − sin x ≠
+                                         0
+
+             This function is not identically zero. Thus, the functions are linearly independent.
+
+
+
+
+
+
+
+
+
 
 
 

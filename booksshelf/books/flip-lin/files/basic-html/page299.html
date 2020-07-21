@@ -154,75 +154,86 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Theorem
 
-             If an n x n matrix A has n distinct eigenvalues, then the following are equivalent:
+                                                                   
+             Independent x from different λ  - Eigenvectors  x   , , x  that correspond to distinct (all different)
+                                                               
+                                                            1       n
+             eigenvalues are linearly independent. An n by n matrix that has n different eigenvalues (no repeated λ’s)
+             must be diagonalizable.
 
-                a)  A is diagonalizable
 
-                b)  A has n linearly independent eigenvectors.
+             Proof
+                                  
+                Suppose  cx +   c x =   0 (1)
+                          11     2 2
 
+                ( cx    c x   )     λ   1    =  0
+                    
+                  11
+                         2 2 
+                                 2    λ
+                                  
+                    c λ  x +  c λ  x =  0   (2)
+                     1 11      2 2 2
+                Multiply (1)  by λ , that implies to
+                                  2
+                                  
+                    c λ  x +  c λ  x =  0   (3)
+                     1 21      2 2 2
 
-
-
-             Example
-
-                                            .8 .3
-             Given the Markov matrix  A =       
-                                            .2 .7 
-             Solution
-
-                          .8−λ     .3
-                      I
-                 A−λ =
-                            .2   .7 −λ
-                         = (.8−λ )(.7 −λ ) .06−
-                            2
-                         = λ − 1.5λ+  .56 .06
-                                         −
-                            2
-                         = λ − 1.5λ+  .5 0
-                                        =
-                The eigenvalues are: λ=   1, λ =   .5
-                                               2
-                                      1
-
-                For  λ=  1, we have:  A λ−  (  IV =  )  0
-                      1                    1    1
-                                  x
-                                        0
-                     −   .2  .3       →    −  .2x +  .3y =  0
-                                     =
-                                 
-                                        0
-                                  y
-                      .2   − .3    
-                    ⇒   2  x =  3y
-
-                    Therefore, the eigenvector V =  3
-                                                   
-                                               1   
-                                                    2
-                For  λ =  .5, we have:  A λ−  (  2 IV =  )  2  0
+                (2) (3)
+                    −
+                                                  
+                c λ  x +  c λ  x −  ( c λ  x +  c λ  x  )  =  0
+                 1 1 1     2 22       1 2 1     2 22
+                c λ  x +   c λ    x −  c λ  x −   c λ  x =   0
+                 1 1 1     2 22      1 2 1     2 22
+                c λ  x −   c λ    x =  0
+                 1 11      1 2 1
+                   (
+                c λ − λ     )    0
+                             x =
+                 1   1    2   1
+                       
+                Since  x ≠  and λ’s are different λ − λ ≠ , we forced c =     0
+                                                            0
+                           0
+                        i                          1    2                  1
+                                                                             
+                Similarly; Multiply (1)  by λ , that implies to   c λ  x +  c λ  x =  0  (4)
+                                             1                  1 11      2 1 2
+                (2) (4)
+                    −
+                               
+                                                   
+                                         
+                     
+                c λ  1 11  c λ  2 2 2  c λ  1 11  c λ  2 1 2  0
+                                         x −
+                                                   x =
+                     x +
+                               x −
+                              
+                c 2 ( λ − λ 1 ) x =  0    ⇒   c =  0
+                               2
                       2
+                                           2
+                                
+             Therefore,  x 1   and   x  must be independent.
+                                  2
 
-                                     0
-                               x
-                     .3  .3         →    .3x +  .3y =  0
-                                  =
-                              
-                               y
-                                     0
-                     .2  .2    
-                    ⇒   x =  −  y
 
-                    Therefore, the eigenvector V =        − 1   1   
-                                               2
-                The eigenvector matrix is given by:
+             Theorem
+                          
+                If  v 1 , , v…  n   are eigenvectors of A corresponding to distinct eigenvalues  λ 1 , , …λ , then
+                                                                                                  n
+                     
+                              
+                  
+                { v 1 , v 2 , , v k }  is linearly independent set.
+                          
 
-                      3  1 
-                 P =       
-                      2 − 1 
-
-                                                              271</code></pre>
+                                                               299</code></pre>
      	</div>
     
      </div>

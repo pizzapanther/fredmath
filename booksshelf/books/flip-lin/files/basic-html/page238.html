@@ -152,61 +152,21 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  40 1                                482
-                                          45 1                                467 
-                  40 45 50 55 60                m    40 45 50 55 60       
-                                          50 1      =                    452
-                  1   1   1    1    1           b      1  1  1  1  1        
-                                          55 1                                432 
-                                                                                
-                                          60 1                                421 
+    <pre style="white-space:pre-line"><code>Theorem
 
-                                 m
-                 12,750 250       111,970
-                                    =
-                                          
-                                 b
-                  250      5       2,255  
-
-                      −
-                       1
-                 X =  AB
-                 m     1    5     − 250  111,970
-                   =                            
-                  b
-                     1250 −  250 12,750    2,255  
-                            
-                          3.12 −
-                      =       
-                          607  
-
-                Or
-                     111,970 250
-                      2,255     5
-                m =
-                      12,750 250
-                       250      5
-
-
-                   =  − 3,900
-                      1,250
-
-                   = − 78
-                       25
-
-                    12,750 111,970
-                      250     2,255
-                b =
-                          1,250
-                     758,750
-                   =
-                      1,250
-                   = 607
-
-
-
-                Thus,  y =  −  78 x +  607    or  y =  −  3.12x +  607
-                            25
+                                                                               
+          If A is an mn×  matrix, the equation  Ax =  y  has a solution if and only if  y  is in the column space of A.
+                           
+                  
+                       
+                 y −  Ax e
+                        =
+                                                                                                 m
+          Ax   is a vector that is in the column space of A. For this A the column space is a plane is  
+                                                                     
+          y    is a vector, not in the column space of A (otherwise  Ax =  y  has an exact solution)
+                                                               
+          e    is the error vector, the difference between  y  and  Ax
 
 
 
@@ -222,7 +182,57 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            238</code></pre>
+                                                   
+          The length  e  is a minimum exactly when e ⊥  CS ( ) A
+
+
+
+          Best Approximation Theorem
+
+                                                                                   
+               ( )
+          If CS A  is a finite dimensional subspace of an inner product space, and if  y  is a vector in V, then
+                     
+                                                             ( )
+          proj       y  is the best approximation to y from CS A  is the sense that
+                 ( )
+               CS A
+                                      
+                                              ( )
+                   y −  proj     y &lt;    y −  CS A
+                             ( )
+                           CS A
+                                                                      
+                                   ( )
+          For every vector  w  in CS A  that is different from  proj   y
+                                                                    ( )
+                                                                 CS A
+
+
+          Theorem
+
+                                      
+          For every linear system  Ax =  y , the associated normal system
+                                    
+                             
+                          T
+                                  T
+                         A Ax =  A y
+                                                                        
+          Is consistent, and all solutions are least squares solutions of  Ax =  y
+                                                            T
+          If the columns of A are linearly independent, then  A A is invertible so has a unique solution  x .
+          This solution is often expressed theoretically as
+
+                                                       
+                           T
+                                             T
+                                   T
+                                                     T
+                          A A
+                        ( )    −  1 A Ax = ( )   −  1 A y
+                                           A A
+                                                           238</code></pre>
      	</div>
     
      </div>

@@ -152,91 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                      v
-                q =     3
-                  3    v 3
-                          ( 0,  −  1 ,  1 )
-
-                    =           2   2
-                            ( ) ( )
-                         2
-                        0 +−   1  2  +  1  2
-                                      2
-                               2
-                      ( 0,  −  11 )
-                              ,
-                    =       22
-                            2
-                            2
-                            1    1  
-                    =    0, −  ,    
-                             2    2 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            217</code></pre>
+    <pre style="white-space:pre-line"><code>The Gram-Schmidt Process
+                                    
+                                
+                                                                         
+                                            
+             To convert a basis  { u 1 , u 2 , , u r }  into an orthogonal basis  { v 1 , v   2 , , v   r } , perform the following
+             computations:
+                            
+              Step 1:  v =  u
+                         1    1
+
+                                      
+                                 u 2 ,  v 1  
+              Step 2:  v =   u −           v
+                         2    2        2   1
+                                    v
+                                     1
+
+                                                 
+                                 u  , v      u  , v   
+              Step 3:  v =   u −    3   1  v −    3   2  v
+                         3    3       2    1       2    2
+                                    v             v
+                                     1             2
+
+                                                              
+                                 u 4 , v 1    u 4 , v 2    u 4 ,  v 3  
+              Step 4:  v =   u −           v −           v −           v
+                         4    4        2   1        2   2        2   3
+                                    v             v             v
+                                     1             2              3
+
+                                                                      
+                                                                          
+                                                                              
+                                                                        ,
+             To convert the orthogonal basis into an orthonormal basis  { qq 2 , q 3 } , normalize the orthogonal basis
+                                                                       1
+                              
+                             v
+             vectors.      q =   i
+                         i    v
+                               i
+
+
+             Example
+
+             Assume that the vector space    has the Euclidean inner product. Apply the Gram-Schmidt process to
+             transform the basis vectors
+                                          
+                                                                        
+                                                         
+                                                                                    )
+                                          u =  (1, 1, 1 ) u = (0, 1, 1 ) u = (0, 0, 1
+                                           1              2              3
+                                      
+                                              
+                                          
+             Into the orthogonal basis  { v 1 , v 2 , v 3 } , and then normalize the orthogonal basis vectors to obtain an
+                                        
+                                    
+                                
+                                  ,
+             orthonormal basis  { qq 2 , q 3 }
+                                 1
+             Solution
+                    
+                v =  u
+                  1   1
+                            )
+                   = (1, 1, 1
+                               
+                          u  ,  v  
+                v =   u −    2   1  v
+                  2    2       2    1
+                             v
+                              1
+                                                              217</code></pre>
      	</div>
     
      </div>

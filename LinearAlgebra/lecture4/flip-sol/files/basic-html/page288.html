@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 288 - Linear Algebra Solution Lecture 4</title>
+        <title>Page 288 - Linear Algebra Lecture 4 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 288 - Linear Algebra Solution Lecture 4</div>
+        <div id="content-top1">Page 288 - Linear Algebra Lecture 4 Solution</div>
         <div id="content-top2">P. 288</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,91 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-               B is a projection since  B =  B , it is symmetric and thus diagonalizable, and it is Markov since the
-               columns add to 1. It is not invertible since the columns are visibly linearly dependent, it is not
-               orthogonal since the columns are far from orthonormal, and it’s clearly not a permutation.
-               All the factorizations are possible for it:  LU and QR are always possible.  PDP − 1   is possible since it
+    <pre style="white-space:pre-line"><code>           
+               b)  True. If the matrix A has orthogonal eigenvectors  x 1 , x 2 , , x  with eigenvalues
+                                                                            
+                                                                                 n
+                                                        
+                                                      x                         
+                   λ  ,  λ  , ,  λ  , we can define  s =  i   for all i; then  As =  λ s  for all i and the  s  are
+                           
+                                                        
+                    1   2       n                  i   x                    i    ii                  i
+                                                         i
+                                                                                    th
+                                                                                                      
+                                                                  SS
+                  orthonormal. Then we can diagonalize A as:  A = Λ   − 1  where the i  column of S is  s , and Λ is
+                                                                                                      i
+                                                                T
+                  the diagonal matrix, so  S T  =  S − 1  and  A =  SS .
+                                                             Λ
+                           T
+                    T
+                         S
+                                   S
+                   A =  ( )  T  Λ T T
+                                T
+                          =  SS
+                             Λ
+                          =    A
+                    So, A is symmetric.
+               c)  True. If A is symmetric then it can be diagonalized by an orthogonal matrix Q,  A QDQ=  − 1 , and
+                                   1 −
+                                 −
+                                               1 T
+                                              −
+                  then  A −  1  =  QD Q  1  =  QD Q . Since  D − 1 is still a diagonal matrix, it follows:
+                   ( )  T  = QD Q
+                      1
+                     −
+                                 1 T
+                                −
+                    A
+                             =  A − 1
 
-                                          T
-               is diagonalizable, and QDQ is possible since it is symmetric.
-
-
-
-           Exercise
-
-           True or false. Give a reason or a counterexample.
-
-             a)  A matrix with real eigenvalues and eigenvectors is symmetric.
-             b)  A matrix with real eigenvalues and orthogonal eigenvectors is symmetric.
-             c)  The inverse of a symmetric matrix is symmetric
-             d)  The eigenvector matrix S of a symmetric matrix is symmetric.
-             e)  A complex symmetric matrix has real eigenvalues.
-                                         A i
-             f)  If A is symmetric, then e  is symmetric.
-                                         A i
-             g)  If A is Hermitian, then e  is Hermitian.
-             h)  An  nn×  matrix that is orthogonally diagonalizable must be symmetric.
-                                                                         
-                                                                              
-                                                                                      
-                                                                
-                                                
-                                                           
-                                          
-                     T
-                                                                                             0
-             i)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =
-                                                                                        
-
-             j)  An  nn×  symmetric matrix has n distinct real eigenvalues.
-                                                 
-                                    n
-                                                    T
-             k)  For nonzero v  in  , the matrix vv  is called a projection matrix.
-             l)  Every symmetric matrix is orthogonally diagonalizable
-                            T
-                                       T
-             m)  If  B =  PDP , where  P =  P − 1  and D is a diagonal matrix, then B is a symmetric matrix.
-             n)  An orthogonal matrix is orthogonally diagonalizable.
-             o)  The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the corresponding
-                 eigenvalue.
-           Solution
-                                     12
-                 a)  False. Let  A =    
-                                     10 
-
-                                          −
-                             (
-                    Then det A λ −   ) I =  1 λ  2   λ =  2  λ − −= 0
-                                                              2
-                                          1    − λ
-                    So, A has eigenvalues λ  1  −  1 λ =  2  =  2
-                                                            2
-                                                − 1      
-                    The eigenvectors are: V =        V =        so both the eigenvalues and eigenvectors are real
-                                           1      1    2  
-                                                            1
-                                                           
-                                                  
-                    but A is not symmetric.
+                                                  12
+               d)  False. The eigenvalues of  A =       are: λ  0 λ =  = 5  and the eigenvectors are:
+                                                  2 4       1        2
+                                     1
+                         2        
+                  V =       V =     .
+                    1   − 1   2   
+                                     2
+                                                                      2  1
+                  We can diagonalize A with eigenvector matrix  S =          which is not symmetric.
+                                                                      − 12 
 
 
+               e)  False. For example, A = (i), the 1 by 1 matrix. The eigenvalue is i, it is not a real number.
 
-                                                            246</code></pre>
+                         ( )
+                                    iA
+                                            iA
+               f)  True.  e iA  T  =  e ( ) T  = e
+                         ( )  H     ( ) H     −  iA H  −  iA                              iA
+                                     iA
+                           iA
+               g)  False.  e     =  e      =  e     =  e  . It is typically not the same as  e .
+                                                                                               i
+                  Taking A = (1), the 1 by 1 matrix, would be an enough example because  e iA  =  e  which is not a
+                  real number.
+
+               h)  An  nn×  matrix that is orthogonally diagonalizable must be symmetric.
+                                                                                        
+                                                                                
+                                                                           
+                                                             
+                                                  
+                                                                  
+                                           
+                      T
+                                                                                               0
+                                                                                          
+               i)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =
+
+               j)  An  nn×  symmetric matrix has n distinct real eigenvalues.
+                                                            961</code></pre>
      	</div>
     
      </div>

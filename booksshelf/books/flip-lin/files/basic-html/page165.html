@@ -152,78 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                   2
-                                                                                               )
-                The column space  ()CB  is all of  . Every b is attainable. The vector b =  (3, 4  is summation of
-                column 1 and 2.
+    <pre style="white-space:pre-line"><code>The Column Space of A
+                                                                                  
+                                                                                     b
+             The most important subspaces are tied directly to a matrix A, to solve  Ax = .
 
 
-                               x  
-                                      5
-                  1   2   3   1    
-                              x   2  = 
-                                      4
-                 0   0    4      
-                               x 
-                               3 
+             Definition
 
-                 x +   1  2x +  2  3x =  3  5
-                             4
-                     4x =
-                          3
+             The column space consists of all linear combinations of the columns. The combination are all possible
+             vectors  Ax . They fill the column space  ()CA  .
 
-                    x +   1  2x =  2  2
-                ⇒  
-                      x =  1
-                         3
-                    x =  0             x =  2
-                   
-                                       
-                      1
-                                         1
-                ⇒            or    ⇒  
-                     x = 1                 x =  0
-                      2
-                                         2
-                                                  )
-                 x =  (0, 1, 1 )  also  x =  (2, 0, 1
-                                                                          
-                This matrix has the same column as I and any b is allowed.  x  has an extra component (more
-                solutions).
+                                                                                            0
+                       1   0                                                             
+                                                                                            3
+                            
+                  A =      4  3                                                          
+                            
+                                                                                            3
+                                                                                           
+                        2   3  
+                         1     0                                                      b     1
+                         
+                                
+                 b =  x 1    x 2                                                           
+                         4 +
+                                 3
+                                                                                                4
+                                                                                               
+                                 3 
+                         2  
+                                                                                            2
+                                                                                               
+                                                                               0
+                                                                              
+                                                                              0
+                                                                              
+                                                                               0
+                                                                              
 
+                          
+             To solve  Ax =  b is to express b as a combination of the columns.
 
-             Pivot Columns
+                                                                                  
+             The column space CS  ()  is a plane that containing the two columns.  Ax = b is solvable when b in on
+                                   A
 
-             The pivot columns of R have 1’s in the pivots and 0’s everywhere else.
-
-                                        1   3    0   2    − 1
-                                                             
-                    Pivot columns:  A =      0  0  1  4  − 3
-                                                             
-                                         1   3  1   6    − 4  
-
-                                   1   3   0    2    − 1
-                                                        
-                    Yields to:  R =      0  0  1  4  − 3
-                                                        
-                                    0   0  0   0    0   
+             that plane.
 
 
-                  The pivot columns are not combinations of earlier columns. The free columns are combinations
-                  of columns which are the special solutions!
+             Theorem
+                          
+             The system  Ax =  b is solvable if and only if b is in the column space of A.
 
 
 
+             Example
 
+                  
+                      b
+             Let  Ax =  be the linear system
+                     −   13  2       x 1        1 
+                                            
+                      1  2 −  3     x   =    −  9
+                                   2      
+                        2  1  2−      x   3        3−  
 
+             Show that b is in the column space of A by expressing it as a linear combination of the column vectors of
+             A.
 
-
-
-
-
-
-
+             Solution
 
                                                               165</code></pre>
      	</div>

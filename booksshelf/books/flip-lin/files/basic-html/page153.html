@@ -152,73 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Dimension
+    <pre style="white-space:pre-line"><code>Example
 
-                                     
-             If v  , , v   and  w  , , w   are both bases for the same vector space, then m = n.
-                1       m        1       n
+                                                                                    1 20 3
+                                                                                              
+             Find bases for the column and row spaces of a rank two matrices:   R =      0 01 4
+                                                                                              
+                                                                                      0000  
+             Solution
+
+                                                                                                                3
+                Columns 1 and 3 are the pivot columns. They are a basis for the column space. It is a subspace of  .
+
+                Column 2 and 4 are a basis for the same column space.
 
 
-             Note
 
-             V may have many different bases, but they all must have the same number of elements.
+             Coordinates Relative to a Basis
+
+
+             Theorem − Uniqueness of Basis Representation
+
+                        
+                    
+                                                                                    
+             If  S = { v 1 , v 2 , , v…    n }  is a basis for a vector space V, then every vector v in V can be expressed in the
+                                           
+             form v =  c v +  c v + …+     c v  in exactly one way.
+                                            nn
+                               2 2
+                       11
 
 
              Proof
-
-                Let S and W be bases of V can be written as a linear combination of vectors in S.
-                                    
-                            w =  1  as +   +  a 1mm
-                                                 s
-                                  11 1
-                                                
-                           w =   a   s +    +  a  s
-                             2    21 1         2mm
-                                        
-                                                
-                           w =  n  as + 11  +  a nm m
-                                                  s
-                                  n
-                                                     
-                But since V is a basis, cw + 11    +  c w =  0   ⇔    c =  i  0  (to be linearly independent, otherwise to
-                                                    nn
-                                                            0
-                be linearly dependent with at least 1 of t c ≠ )
-                                                        i
-                   (
-                c a s +       +  a  s  ) +  c  ( a  s +  +  a  s  ) +  +  c  ( a s +  +  a  s  )  =  0
-                 1   111         1mm        2   211         2mm            n   n 11        nmm
-
-                ( ca    +  c a  +   +  c a  1 ) s +  1  +  ( ca  +  c a  +  +  c a  ) s m  =  0
-                                                                               nnm
-                                                                 2 2m
-                                                        1 1m
-                           2 21
-                  1 11
-                                       nn
-                     ca    +  c a  +    +  c a  =  0
-                      1 11    2 21         nn 1
-                ⇔
-                    ca    +  c a    +   +  c a  =  0
-                                           n nm
-                     11m
-                             2 2m
-                ∴  Ss  linear independent.
-                      '
-                     i
-             Now all bases of V have some number of elements, we can define the dimension (is # of vectors in a
-             basis)
-
-
-
-
-
-
-
-
-
-
-
+                                          
+                Suppose that some vector v can be written as
+                                         
+                                                       
+                           
+                                 
+                           v = c v +  c v + …+      c v
+                                                     nn
+                                        2 2
+                                11
+                                                    
+                Also       v =  k v +  k v + …+     k v
+                                        2 2
+                                11
+                                                     nn
+                Subtracting the second from the first equation
+                                        
+                                                                             
+                                                        
+                                       )
+                           0 = ( c − k v +    ( c − k 2 ) v + …+   ( c −  k n ) v
+                                                                     n
+                                                         2
+                                                                              n
+                                                2
+                                         1
+                                     1
+                                 1
+                Since the right side of this equation is a linear combination of vectors in S, the linear independence of
+                S implies that
+                                  c −  1  k =  1  0, c −  2  k =  2  0,  , c −  n  k =  n  0
+                That implies      c =  k  , c =  k  , , c =     k
+                                                      
+                                   1    1     2    2        n     n
+                                              
+                Thus, the two expressions for v are the same.
 
 
 

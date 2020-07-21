@@ -152,105 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 3.1 – Inner Products
+    <pre style="white-space:pre-line"><code>Lecture Three
 
 
-                                                                                              
-                                                                2
-                                                                                   )
-             1.   Let  uv  be the Euclidean inner product on   , and let  u = (1, 1   , v = (3, 2    ) ,  w = (0, −  ) 1 , and
-                        ,
-                  k =  3 . Compute the following.
-                                                                                          
-                                                       
-                         
-                                                             
-                    a)  uv                        c)  uv+  , w                     e)  ( ,d  uv )
-                          ,
-                                                                                        
-                    b)  k  wv ,                   d)  v                            f)  u − kv
 
-                                                                           
-                       
-                                                                                      
-                                                                                                  
-                                                                2
-                                                                                   )
-                        ,
-             2.   Let  uv  be the Euclidean inner product on   , and let  u = (1, 1  , v = (3, 2   ) ,  w = (0, −  ) 1
-                          3
-                  and  k = . Compute the following for the weighted Euclidean inner product
-                   
-                   uv =    2uv +   3  u v  .
-                     ,
-                                      2 2
-                             11
-                                                                                     
-                          ,
-                    a)  uv                        c)  uv+  , w                     e)  ( ,d  uv )
-                                                                                        
-                    b)  k  wv ,                   d)  v                            f)  u − kv
 
-                                                                           
-                                                                                         
-                       
-                                                                                                    
-                                                                2
-             3.   Let  uv  be the Euclidean inner product on   , and let  u =  (3,  −  ) 2 , v = (4, 5   ) ,  w  =  ( 1, 6−  )
-                        ,
-                             4
-                  , and  k = − . Verify the following.
-                                                                       
-                                                                                 
-                        
-                         ,
-                                                                        ,
-                                                                                  ,
-                                  , v u
-                   a)   uv =                                  d)  k kuv =     uv
-                                                                       
-                   b)  uv    ,  w =  , u  w +  , v  w           e)  0,  v =   v , 0 =
-                          +
-                                                                                     0
-                                          
-                   c)  uv + ,  w =   , uv +   , u  w
-                                                                                                
-                                                                2
-             4.   Let  uv  be the Euclidean inner product on   , and let  u =  (3,  −  ) 2 , v = (4, 5    ) ,  w  =  ( 1, 6−  )
-                        ,
-                             4
-                  , and  k = − . Verify the following for the weighted Euclidean inner product
-                   
-                     ,
-                   uv =    4uv +   5  u v
-                             11       2 2
-                                                                           
-                         ,
-                                                                                  ,
-                                                                        ,
-                   a)   uv =      , v u                          d)  k kuv =     uv
-                                                                       
-                   b)  uv+   ,  w =  , u  w +  , v  w            e)  0,  v =  v , 0 =
-                                                                                      0
-                                          
-                   c)  uv + ,  w =   , uv +   , u  w
 
-                                       
-                                                                                                   2
-                             ,
-             5.   Let u = ( u u 2 )   and v = ( v v 2 )  . Show that the following are inner product on    by
-                                               ,
-                            1
-                                              1
-                                                                
-                                                                 ,
-                  verifying that the inner product axioms hold.   uv = 3 uv +  5u v
-                                                                         11      2 2
+             Section 3.1 – Inner Products
 
-             6.   Show that the following identity holds for the vectors in any inner product space
-                         2      2        2     2
-                     u v+   +  uv−    =  2 u  +  2 v
 
+             Definition
+                                                                                                
+                                                                                                 ,
+             An inner product on a real vector space V is a function that associates a real number  uv  with each
+                                                                                                 
+                                                                                                           
+             pair of vectors in V in such a way that the following axioms are satisfies for all vectors  , uv , and  w  in V
+             and all scalars k.
+                             
+                      ,
+                1.   uv =      , v u                       Symmetry axiom
+                                       
+                2.  uv+   ,  w =   , u  w +  , v  w        Additivity axiom
+                              
+                                  ,
+                3.  k k uv                                 Homogeneity axiom
+                       , uv =
+                                             
+                4.  vv ≥  and  vv =  iff v =               Positivity axiom
+                                     ,
+                                           0
+                            0
+                      ,
+                                                    0
+             A real vector space with an inner product is called a real inner product space.
+                                                    
+                                               uu =  ,   u     v =  uv +  u v +    u v
+                                                              11    2 2       nn
+             This is called the Euclidean inner product (or the standard inner product)
+
+
+             Definition
+
+                                                                                                      
+             If V is a real inner product space, then the norm (or length) of a vector v   in V is denoted by  v  and is
+             defined by
+                                                                 
+                                                          v =    v , v
+                                                                   
+             And the distance between two vectors is denoted by  ( ,d  uv )  and is defined by
+
+                                                                 
+                                                 u
+                                                           −
+                                                                             −
+                                              d ( , v =  )  uv =    uv   , uv
+                                                                      −
+             A vector of norm 1 is called a unit vector.
+
+
+             Theorem
+
+             If u and v are vectors in a real inner product space V, and if k is a scalar, then:
+                                         
+              a)  v ≥  with equality iff v =
+                                             0
+                       0
+                           
+              b)  kv =   k v
+                                 
+                     
+              c)  (  uv  ) = d  (v u,  )
+                       ,
+                  d
+                                                
+                     
+                                                    
+              d)  (  uv   ) 0≥    with equality iff  uv=
+                  d
+                       ,
                                                               201</code></pre>
      	</div>
     

@@ -152,86 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  − 21
-                          1  2 
-                    Q =        
-                             5
+    <pre style="white-space:pre-line"><code>Theorem
 
 
-                            T
-                    Q − 1  =  Q =  1      − 21  
-                                  5   1  2 
+             Orthogonal Eigenvectors:  Eigenvectors of a real symmetric matrix (when they correspond to different λ′s)
+             are always perpendicular.
 
-
-                 A QDQ=   T
-
-                  =  1    1        −  21 −  5 0 −  21
-                                     
-                                                      
-                                              
-                      5   5     1  2   0  5   1  2 
-                  =  1  10  5  − 2 1
-                      
-                              
-                                       
-                    5 − 5 10    1  2 
-                      
-                      2  1 − 21
-                  =              
-                     − 12   1  2 
-                      − 34
-                  =            √
-                      4  3 
-
-
-               Every symmetric matrix A has a complete set of orthogonal eigenvectors:
-                                               T
+             Proof
+                                                     T
+                             =
+                Suppose  Ax λ    x  ,  Ay λ  y  and  A =  A .
                                         =
-                    A =  PDP − 1  ⇒   A QDQ
+                                1          2
+                The dot products of the first equation with y and the second with x:
+                    ( )   T   y = ( Ax ) y
+                        
+                                  
+                                    T 
+                        x
+                     λ
+                      1
+                                  TT  
+                              =  x Ay
+                                  T  
+                              =  x Ay
+                                     
+                                 T
+                              =  x λ  y
+                                    2
+                       T      T  
+                     x λ ⇒  1 y =  x λ  2  y
+                                                
+                                                 T
+                Since λ    λ ≠  , this proves that  x y = .
+                                                      0
+                        1    2
+                                    (
+                                                                                  (
+                                                                               
+                The eigenvector  x    for  λ 1 )  is perpendicular to the eigenvector  y   for  λ 2 )
 
 
+             Example
+
+                                                                              − 34
+             Find the λ′s and v′s for this symmetric matrix with trace zero: A =   
+                                                                              4  3 
+             Solution
+
+                                3 λ
+                               −−        4
+                       −
+                det ( A λ  ) I =
+                                 4     3 λ−
+                              ( 3 λ = −−  )(3 λ  −  ) 16−
+
+                                    2
+                            = − 9 λ −   16
+                                 +
+                                2
+                            = λ −  25 =    0
+                The eigenvalues are: λ    −  5 λ =  =    5
+                                      1         2
+                The eigenvectors are:
+                                  (
+                For λ =  −  5   ⇒     A λ I v = )   0
+                                     −
+                      1                 1   1
+                                    0
+                     2 4   x   1    →  2x +  1  4y =  1  0
+                              = 
+                                    0
+                     48      y   1   
+                    ⇒    x = −  2y
+                          1      1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              295</code></pre>
+                                                               323</code></pre>
      	</div>
     
      </div>

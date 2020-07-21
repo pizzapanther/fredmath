@@ -154,64 +154,28 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-                                                                     ( ))
-                                                                T
-          Let  :TP →   P  be the linear transformation defined by  ( px =  xpx
-                                                                              ( )
-                  1     2
-          Find the matrix for T with respect to the standard bases
-                                               
+          Suppose A is an invertible matrix. The kernel of T is the zero vector; the range W equals the domain V.
+
+          Another linear transformation is multiplication by  A − 1 .
+                                                                                        
                                                                              
-                                                   
-                                                                        
-                                                                        v
-                                          B = { u 1 , u 2 }  and  B′ = { v   1 , , v 3 }
-                                                                         2
-                                                     2
-          Where u =   1, u =    ; x  v = 1, v =  , x  v =  x
-                  1        2        1       2        3
-          Solution
-                 
-               ( )
-             T u  1  = T  ( ) 1
-                     =    x
-                 
-               ( )
-             T u  2  = T  ( ) x
-                     =  x ( ) x
+                                                                          T
+          This is the inverse transformation T − 1 , which brings every vector  ( ) v  back to v :
+                                                                                
+                         
+                                                                           
+                 T − 1 (T v                                          − 1 ( Av ) v=
+                        ( )) v=   matches the matrix multiplication  A
 
-                     =  x 2
 
-                            0 
-                  
-                ( )
-                T u    =  
-                            1
-                  1   B′  
-                            0 
-                           
-                            0 
-                  
-                ( )
-                T u    =  
-                            0
-                  2   B′  
-                            1 
-                           
-             The matrix for T with respect to B and  B′ is
-                                        
-                             
-                                       ( )
-                           ( )
-             [ ]      =        T u      T u      
-              T
-                  , BB′      1   B′     2   B′  
-                          00
-                              
-                      =      10
-                              
-                          01 
-                             
+          Are all linear transformation produced by matrices?
+                                                                             n
+                                                                                         m
+          Each m by n matrix does produce a linear transformation from  V =   to W =  . When a linear T is
+          described as a “rotation” or “projection” or “...” is there always a matrix hiding behind T?
+
+          The answer is yes. This is an approach to linear algebra that doesn’t start with matrices. The next section
+          shows that we still end up with matrices.
 
 
 
@@ -234,7 +198,41 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            42</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           270</code></pre>
      	</div>
     
      </div>

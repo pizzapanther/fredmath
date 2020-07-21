@@ -152,67 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Jordan Form
+    <pre style="white-space:pre-line"><code> 1−λ      1   x    
+                                            0
+                         2         1   =  
+                       1    −λ    y     0    →    x −λ    y =  0
+                               2   1             1    21
+                    x = λ   y
+                     1     21
 
+                             λ 
+                    ⇒   v =    2  
+                         2       
+                               1  
 
-             For every A, we want to choose M so that  M  − 1 AM  is as nearly diagonal as possible. When A has a full
+             The eigenvector matrix is given by:
 
-             set of n eigenvectors, they go into the columns of M. Then M = P. The matrix  P − 1 AP is diagonal.
+                      λ   λ  
+                 S =     1  2    
+                      1   1  
 
-             If A has s independent eigenvectors, it is similar to a matrix J that has s Jordan blocks on its diagonal.
-             There is a matrix M such that
+                                                                
+                                                                  1
+             The combination of these eigenvectors that give u =   :
+                                                             0
+                                                                  0
+                                                                 
+                                    
+                     1      1    λ     λ   
+                                      1
+                                              2
+                                                 
+                      =  λ −λ          −   
+                                         
+                                               
+                     0
+                          1    2    1     1  
+                               
+                           v − v
+                         =  1    2
+                           λ −λ  2
+                            1
+                                 ( )
+                     λ
+                   ( )  100   v − λ  100   v
+             u 100  =  1     1     2      2
+                            λ −λ
+                             1    2
+                                        ( )
+             F    =     1      ( ) 100  −λ  100 
+                               λ
+              100   λ − λ  2      1     2       
+                      1
+                                      5   100     5   100 
+                  =       1          1+    −   1+      
+                    1 +  5  − 1 +  5   2         2      
+                      2       2                            
 
-                                                             J   1      
-
-                                                 M − 1 AM =               =  J
-                                                                     J  
-                                                                       s 
-
-             Each block in J has one eigenvalue λ , one eigenvector, and 1’s above the diagonal:
-                                                 i
-
-                                                          λ   1        0 
-                                                           i             
-                                                    J =                
-                                                      i               1  
-                                                                         
-                                                                     λ   i 
-
-             A is similar to B if they share the same Jordan form J – not otherwise.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  ≈  2.54 10 20
+                         ×
 
 
 
@@ -225,7 +222,18 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              279</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+                                                               307</code></pre>
      	</div>
     
      </div>

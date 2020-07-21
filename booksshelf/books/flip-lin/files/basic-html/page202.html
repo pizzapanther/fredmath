@@ -152,94 +152,92 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>7.   Show that the following identity holds for the vectors in any inner product space
+    <pre style="white-space:pre-line"><code>n
+          Although the Euclidean inner product is the most important inner product on   , there are various
+          applications in which is desirable to modify it by weighing each term differently. More precisely, if
+                                                                                     
+                                                                                            ,
+             ,
+          w w    ,  , w  are positive real numbers, which we will call weighs, and if u = ( u u  ,  , u  )  and
+           1    2       n                                                                  1   2       n
+                         n
+          are vectors in   , then it can be shown that the formula
+                                         
+                                        uv = ,   w u v +   w u v +     +   w u v
+                                                 1 11      2 2 2            n nn
+                                       n
+          Defines an inner product on   that we call the weighted Euclidean inner product with weights
+          w  , w  ,   , w
+            1   2        n
 
-                           1      2       2
-                      ,
-                     uv =     (  u v+  −  u v−   )
-                             4
 
+
+          Example
+                                                          2
+                     ,
+                                       ,
+          Let u = ( u u 2 )  and v = ( v v 2 )  be vectors in   , verify that the weighted Euclidean inner product
+                    1
+                                     1
+           
+           uv =   3uv +    2  u v  satisfies the four inner product axioms.
+            ,
+                     11       2 2
+          Solution
+                          
+                           ,
+             Axiom 1:    uv =    3uv +   2  u v
+                                            2 2
+                                   11
+                               =  3vu +  2   v u
+                                            2 2
+                                   11
+                                   
+                                   ,
+                               =  vu
+                               
+                           +
+             Axiom 2:    uv   ,  w =  3 u +  (  1  v 1 ) w +  1  2 ( u +  2  v 2 ) w 2
+                                   =  3 u w + (  vw  ) (          v w  )
+                                                       2  u w +
+                                                     +
+                                        11      11         2 2     2 2
+                                                                  2 2
+                                   =  3u w +  11  3vw +  11  2  u w +  2 2  2v w
+                                                       +
+                                                                     2 2
+                                   =  ( 3u w +  11  2  u w  ) ( 3vw +  11  2v w  )
+                                                  2 2
                                          
-                                 
-             8.   Prove that    kv =  k    v
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            202</code></pre>
+                                                  
+                                   =    , u  w +    , v  w
+
+                           
+                            ,
+                                    ku
+                                                 ku
+             Axiom 3:    kuv =    3 ( )  v +  2 ( )   v 2
+                                          1
+                                      1
+                                                   2
+                                 =  k ( 3uv +  2  u v  )
+                                                2 2
+                                       11
+                                     
+                                 =  k  uv
+                                      ,
+
+                         
+             Axiom 4:    vv =    3vv +   2   v v
+                           ,
+                                   11       2 2
+                               =  3v +  2  2 v ≥  2  0
+                                   1      2   
+                        v =  v =  0 iff   v =  0
+                              2
+                         1
+
+                                                           202</code></pre>
      	</div>
     
      </div>

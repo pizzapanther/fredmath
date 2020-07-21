@@ -152,85 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( )
-                                                                                         =
-                                                                                            ,
-                                                                        T e    = T (10 0 ,  ) (10 0 ,  )
-                                                                                    ,
-               Reflection about                                             1                         1   0  0
-                                                                          ( )
-                                                                                                               
-               the xy-plane                                             T e 2  = T  (0 10,,  ) (0 10,=  −  ,  )        0 − 10
-                                                                                                               
-               T  (x,y,z ) (x, y,z=  −  )                                                              0   0  1  
-                                                                          ( )
-                                                                        T e 3  = T (0 01, ,  ) (0 01, ,=  )
-
-                                                                          ( )
-                                                                        T e    =  T (10 0, ,  ) ( 10 0, ,  )
-                                                                                         = −
-               Reflection about                                             1                         −   10 0
-                                                                          ( )
-                                                                                                               
-               the yz-plane                                             T e    = T  (01 0,,  ) (01 0,,  )        0  10
-                                                                                         =
-                                                                                                               
-               T  (x,y,z ) ( x,y,z= −  )                                    2                            0  01  
-                                                                          ( )
-                                                                        T e 3  = T (0 01, ,  ) (0 01, ,=  )
-
-
-               Orthogonal
-                                                                          ( )
-                                                                                   1 0,
-                                                                                          10,
-                                                                                        =
-               projection                                               Te  1  = T ( ) ( )               10
-               on the x-axis                                                                             00 
-                                                                          ( )
-                                                                        Te     = T ( ) (0 0, =  ,  )        
-                                                                                    01
-               T  (x,y ) ( 0x,=  )                                          2
-
-
-               Orthogonal
-                                                                          ( )
-                                                                                   1 0 =
-               projection                                               Te  1  = T ( ) (0 0,  ,  )       00
-               on the y-axis                                                                             01 
-                                                                          ( )
-                                                                        Te     = T ( ) ( )                  
-                                                                                           01,
-                                                                                    01, =
-               T  (x,y ) (0,y=  )                                           2
+    <pre style="white-space:pre-line"><code>Lecture Four
 
 
 
 
-               Orthogonal
-               projection                                               T (1 0 0,,  ) (1 0 0,,=  )      1 00
-                                                                                                               
-               on the xy-Plane                                          T (01 0,,  ) (01 0,,=  )         01 0
-                                                                                                               
-                                                                        T (00 1,,  ) (000,,=  )          000   
-               T  (x,y,z ) (x,y,=  ) 0
+                                                                                           m
+                                                                                 n
+             Section 4.1 – Matrix Transformations from   to 
 
 
+             Definition
+
+             If V and W are vector spaces, and if f  is a function with domain V and codomain W, then we say that f is a
+             transformation from V to W or that f maps V to W, which we denote by writing
+                                                             : fV → W
+
+             In the special case where V = W, the transformation is also called an operator on V.
 
 
+             Matrix Transformation
 
+                    w =a     x +  a  x +    +  a  x
+                     1    11  1    12 2        1nn
+                   w =a      x +  a  x +     +  a  x
+                     2    21  1    22 2         2nn
 
+                                                 
+                    
+                                           
+                                  
+                           
+                  w =a       x +  a   x +    +  a  x
+                    m     m 1  1   m 22         mn n
 
+             Which we can write in matrix formation
+                                              w      a    a          a    x 
+                                               1      11    12        1n    1  
+                                              w 2    a 21  a        a     x 2  
+                                                  =         22        2n    
+                                              w 3                         x 3 
+                                              w      a    a         a     x  
+                                               4      m 1  m2         mn   4 
+                                                 
+                                                                                 
+                                                                            
+                                             
+                                                      
+                                                                 
+                                                              =
+                                                            w Ax
+             Although we could view this as a linear system, we will view it instead as a transformation that maps the
+                                                                                   
+                                  n
+                                                                   m
+             column vector  x  in   into the column vector  w  in     by multiplying  x  on the left by A. We call this
+                                                                             m
+                                                                      n
+             a matrix transformation or function or mapping T from   to     (or matrix operator if m = n) and
+             we denote it by
+                                                      T A :   n  →   m
+               n
+               is called the domain of T
+               m
+               is called the codomain of T
+                                                                      
+                        n
+                                                m
+                                     T
+             For  x  in  , the vector  ( ) x  in    is called the image of  x  (under the action of T)
+                                    
+                                 T
+             The set of all images  ( ) x  is called the range of T.
 
-
-
-
-
-
-
-
-
-                                                              19</code></pre>
+                                                              247</code></pre>
      	</div>
     
      </div>

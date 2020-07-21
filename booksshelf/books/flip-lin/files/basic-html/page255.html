@@ -152,72 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Four Fundamental Subspaces
+    <pre style="white-space:pre-line"><code>Orthogonal Projections on Lines through the Origin
 
-                                       ( )                   n
-                                         T
-                1.  The row space is CA     , a subspace of   .
-                                                               m
-                2.  The column space is  ( ) A , a subspace of   .
-                                         C
-                                                           n
-                3.  The nullspace is  NA , a subspace of  .
-                                       ()
-                                           ( )                   m
-                                             T
-                4.  The left nullspace is  NA   , a subspace of   .
+                               2
+                  ( )
+                                        ( )
+                Te     =     cos θ      Te  =   sin cos   θ  2  θ  
+                           1  sin cos   θ  θ    2      sin θ    
 
-
-             The Four Subspaces for R
-
-             Consider the matrix 3 by 5:
-
-                             1 35 09         m = 3     pivot  rows  1 and  2
-                             000 18     n =       5
-                                           
-                                          
-                               00  000     r = 2   pivot  columns  1 and  4
+                        cos θ  2  sin cos θ  
+                                     θ
+                 P =                       
+                  0                   2    
+                          θ
+                        sin cos θ  sin θ   
 
 
-             1.  Rows 1 and 2 are a basis. The row space contains combination of all 3 rows.
+             Example
+                                                        
+             Find the orthogonal projection of the vector  x  = (1, 5) on the line through the origin that makes an angle
 
-                  The row space of   has dimension 2 (= rank).
-                  The dimension of the row space is r. The nonzero rows of R form a basis.
+                   ( 30°  with the x-axis
+             of  π   =   )
+                6
+             Solution
 
-             2.  The column space of R has dimension r = 2.
+                        cos θ  2  sin cosθ  
+                                     θ
+                 P =                       
+                  0                   2    
+                          θ
+                        sin cosθ   sin θ   
+                                                   π
+                         cos 2 π  ( )  sin ( ) ( )   
+                                            π
+                                              cos
+                    =         6           6      6   
+                           π
+                                   π
+                              cos
+                        sin ( ) ( )      sin 2 π  ( )  
+                           6      6            6     
+                             2             
+                            3     ( )  1   3     
+                    =      2     2    2    
+                                       2   
+                                      1
+                        ( )   1   2     2 3       ( )      
+                                      2
+                        3    3 
+                        4    4  
+                    =          
+                          3  1   
+                        4    4 
 
-                  The pivot columns 1 and 4 form a basis. They are independent because they start with the r by r
-                  identity matrix.
-                  There are 3 special solutions:
-
-                              C =   3C 1       The  special  solution  is  (   − 3, 1, 0, 0, 0 )
-                                2
-                               C =  5C 1       The  special  solution  is  (   − 5, 0, 1, 0, 0 )
-                                3
-                           C =   9C +  8C    The  special  solution  is  (   −  9, 0, 0,  8, 1 )
-                                                                                −
-                             5     1      2
-                  The dimension of the column space is r. The pivot columns form a basis.
-
-             3.  The nullspace has dimension n – r = 5 – 2 = 3 (free variables). Here  x  , , x are free (no pivots in
-                                                                                       x
-                                                                                   2   3   5
-                                                                            0
-                those columns). They yield the three special solutions to  Rx = . Set a free variable to 1, and solve for
-                 x   and  x .
-                  1      4
-                                 −  3        −   5    −  9
-                                  1         0         0  
-                                                       
-                           s =    0   s =    1   s =    0 
-                            2         3         5      
-                                  0         0         − 8 
-                                    0          0          1    
+                         3    3 
+                        4    4    1 
+                 P x =            
+                  0                5
+                           3  1     
+                         4    4 
+                        3 53  +
+                         4    
+                    =         
+                          35   +  
+                         4    
+                        2 91  .
+                    ≈     
+                        .
+                        1 68 
 
 
 
-
-                                                              27</code></pre>
+                                                              255</code></pre>
      	</div>
     
      </div>

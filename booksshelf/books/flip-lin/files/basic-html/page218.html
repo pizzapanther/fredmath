@@ -152,88 +152,101 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Gram-Schmidt Process (Orthonormal)
-
-                                                                                           
-                                                          n
-             Suppose v  , , v    linearly independent in   , construct n orthonormal u  , , u   that span the
-                       1       n                                                       1        n
-                                                     
-                                                             
-                                
-                                                    {
-                              {
-             same space:  span  u 1 , , u    k }  = span  v 1 , , v k }
-                                                         
-
-                                                              
-             Step 1: Since v  are linearly independent (≠ 0), so  v 1  ≠  0 (to create a normal vector)
-                            i
-                                
-                              v                                                                
-                                                                                                  { }
-                                                                                       { }
-                      Let u =  v 1  = q , then  u 1  = 1 since u is orthonormal and span  u 1  =   span v 1
-                                
-                           1
-                                      1
-                                                             1
-                              1         
-                      w =  v   ⇒  v =   w u
-                       1    1      1     1   1
-
-                                      
-                                     qq
-             Step 2:  w =  v − ( v   1 )  1
-                            2
-                                 2
-                      2
-                                     
-                               v 2   u     1       
-                       w =  2  v −  2  v  1  v 1  ( w ⊥  2  u 1 )
-                                                         
-                      v =   w u +    ( v    u u  )   w =    w u
-                       2      2  2     2    1  1        2     2   2
-                            
-                           w
-                      q =    2
-                       2    w 2
+    <pre style="white-space:pre-line"><code>++
+                          )
+                                               )
+                 = (0,1,1   −  0 11     (1,1,1
+                             1 +  2  1 +  2  1 2
+                                      )
+                          )
+                 = (0,1,1 −  2 (1,1,1
 
 
-                                               
-             Step 3:   w =  v −  ( v    q  ) q −  ( v    q  ) q
-                       3    3    3   1   1     3   2   2
-                             
-                           w 3
-                      q =    
-                       3    w
+                             3
+                   (
+                 = −  2 ,  11  )
+                           ,
+                          33
+                      3
+                             
+              v =  u −  proj  u
+               3    3       v 2  3
+                                        
+                        u 3 , v 1    u 3 , v 2  
+                 =  u −          v −           v
+                    3        2   1       2    2
+                          v             v
+                           1             2
+                                                        00     1
+                                                         ++
+                                 ++
+                 =  (0, 0,1   −     )  0 01  (1,1,1 −      )   3      ( −  2  ,   11 )
+                                                                              ,
+                                                      2
+                                                             2
+                                                                  1
+                                                    2
+                             1 +  2  1 +  2  1 2   ( ) ( ) ( )      2   3   3 3
+                                                           1
+                                                               +
+                                                        +
+                                                                  3
+                                                    3
+                                                           3
+                                         1
+                 =  (0, 0,1    −  )  1 (1,1,1   −  )  3 ( −  2  ,   11 )
+                                                   ,
+                              3          2   3   33
+                                         3
+                 =  (0, 0,1   −  )  1 (1,1,1 −  )  1 ( −  2  ,   11 )
+
+
+                                                   ,
                               3
-                                                                                                
-
-                                                                                               v 1
-                                                                                                
-                                                                                          q =   v 1
-                                                                                           1
-                                                                                                
-                                                                                          w 2
-                      w =  v −  ( v 2   qq  1 )  1                                       q =   w
-                                                                                                
-                                                                                           2
+                                         2
+                                                 33
+                                             3
+                 = ( 0, −  1  ,  1 )
                              2
-                       2
-                                                                                                 2
-                                                                                       w 3
-                      w =  v −  ( v      qq −  )  ( v     q  ) q                        q =   
-                       3    3     3   1   1       2    2                                   3    w 3
-                                                                                                
-                                                                                    w n
-                      w =  v −  ( v   qq − )  ( v   q  ) q −   −   ( v   q  ) q      q =    
-                       n    n     n    1  1     n    2   2           n   n−  1  n−  1      n    w n
+                         2
+                    
+                   v
+              q =    1
+               1    v 1
+                   (1, 1, 1)
 
-
-
-
-                                                            218</code></pre>
+                 =
+                       3
+                 =     1  ,  1  ,  1    
+                     3    3     3 
+                    
+                   v
+              q  =   2
+               2    v  2
+                       ( −  2 ,  11 )
+                               ,
+                 =        3   33
+                     ( ) ( ) ( )      2
+                               2
+                        2
+                                    1
+                             1
+                      2
+                                 +
+                          +
+                      3
+                             3
+                                    3
+                   ( − 2 1 1  )
+                        ,
+                           ,
+                 =    3 3 3
+                         6
+                         3
+                      2    1     1  
+                 =   −  ,     ,    
+                       6    6     6 
+                                                           218</code></pre>
      	</div>
     
      </div>

@@ -152,79 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>QR−Decomposition
+    <pre style="white-space:pre-line"><code>Example
+
+             Use the Gram-Schmidt process to find an orthonormal basis for the subspaces of
+                                                      
+                                                                      )
+                    v =  (1, 1, 0, 0 ) v = (0, 1, 1, 0 ) v = (1, 0, 1, 1
+                     1                 2                 3
+             Solution
+                                                                     
+                           (1, 1, 0, 0 )                           v
+             Step 1: q =                                       q =    1
+                     1
+                                                                1
+                                2
+                            2
+                                    00
+                           1 + 1 ++                                  v 1
+                          (1, 1, 0, 0 )
+                        =
+                               2
+                                         
+                        =      1  ,   1  , 0, 0
+                                         
+                            2    2      
+                                    
+                                      qq
+             Step 2:  w =  v − ( v    )
+                      2    2     2    1  1
+                                                      1    1             1  1     
+                         = (0, 1, 1, 0 ) (0, 1, 1, 0−  )          ,   , 0, 0     ,   , 0, 0
+                                                                                        
+                                                        2  2           2    2       
+                                                           
+                                    )
+                         = (0, 1, 1, 0 −  1      1  ,   1  , 0, 0
+                                                           
+                                         2   2     2      
+                                                    )
+                                            1
+                                    )
+                         = (0, 1, 1, 0 − ( 1 ,  , 0, 0
+                                            2
+                                        2
+                          (  1   1      )
+                         = −  2 ,  , 1, 0
+                                 2
+                                 2      2
+                                1
+                                      1
+                                    +
+                              −
+                     w   =   ( ) ( )      +  1
+                       2        2     2
+                          =  3   2
+                             2   2
+                           =  6
+                             2
+                           
+                         w 2
+                    q =
+                           
+                     2    w 2
+                          ( − 11     )
+                             ,  , 1, 0
+                        =   22
+                                6
+                               2
+                                           )
+                                    1
+                        =  2  ( −  1 ,  , 1, 0
+                           6    2   2
+                         
+                        = −  1  ,  1  ,  2  , 0   
+                         
+                             6     6    6    
 
 
-             Problem
-
-             If A is an  mn×  matrix with linearly independent column vectors, and if Q is the matrix that results by
-             applying the Gram-Schmidt process to the column vectors of A, what relationship, if any, exists
-             between A and Q?
-
-                                                                                      
-                                                                           
-                                                                             ,
-             To solve this problem, suppose that the column vectors of A are u u   2 , , u  and the orthonormal
-                                                                            1
-                                                                                        n
-                                               
-             column vectors of Q are  q  , q  , , q .
-                                      1   2       n
-                                                         
-                    u =   u  , qq +    u  , q  q +     +  u  , q  q
-                     1     1   1   1    1   2    2        1    n   n
-                                                          
-                    u =   u  , qq +     u  , q  q +     +  u  , q  q
-                     2      2   1  1     2   2    2         2   n   n
-                                                                                 
-                                                          
-                    u =   u  , q q +    u  , q  q +     +  u  , q  q
-                     n      n   1   1    n    2   2         n   n   n
-
-                                     
-                                                                
-                                  
-                                 u  , q    u   , q       u    , q  
-                                 1   1      2   1           n   1  
-                                                                
-                                                
-                                   0       u   , q      u   , q  
-                           R =              2   2           n   2 
-                                                                   
-                                                               
-                                                                
-                                   0          0           u   ,  q  
-                                                          n   n   
-             The equation  A QR=   is a factorization of A into the product of a matrix Q with orthonormal column
-
-             vectors and an invertible upper triangular matrix R. We call it the QR-decomposition of A.
-
-
-             Theorem
-
-             If A is an  mn×  matrix with linearly independent column vectors, then A can be factored as
-
-                                                           A QR=
-
-             Where Q is an  mn×  matrix with orthonormal column vectors, and R is an  nn×  invertible upper
-             triangular matrix.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            221</code></pre>
+                                                              221</code></pre>
      	</div>
     
      </div>

@@ -154,75 +154,72 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-                                                                    
-                                                                                                           3
-                                                            )
-                                            )
-                                                                                  )
-             Determine whether v =   (1, 1, 2 , v =  (1, 0, 1 , and v =   (2, 1, 3  span the vector space  
-                                 1               2                     3
+             Inside the vector space M of all 2 by 2 matrices, given two subspaces:
+
+                                                 a   b
+                U   all upper triangular matrices     
+                                                  0  d 
+
+                                          a   0
+                D   all diagonal matrices      
+                                           0  d 
              Solution
-                                                               3
-                Let b = ( b 1 , , b 3 )  be the arbitrary vector in     can be expressed as a linear combination
-                             b
-                              2
-                                                                        
-                                                      b =  k v +  k v +  k v
-                                                           1 1    2 2    3 3
-                ( b 1 , b 2 , b 3 )  =  k 1 (1, 1, 2 ) k+  2  (1, 0, 1 ) k+  3  (2, 1, 3
-                                                                   )
-                ( b 1 , b 2 , b 3 ) ( k +  1  k +  2  2k 3 ,  k +  1  k 3 ,  2k +  1  k +  2  3k 3 )
-                             =
 
+                                           a   b    a   b     2a  2b
+                If we add 2 matrices in U:         +       =             is in U.
+                                            0  d     0  d     0   2d 
 
-                         k +  k +  2k =  b
-                         1    2     3    1
-                       
-                    →    k            k+  =  b
-                         1         3    2
-                        2k +  1  k +  2  3k =  3  b 3
-                       
-                      11 2
+                                           a   0    a   0     2a  0 
+                If we add 2 matrices in D:         +       =             is in D.
+                                            0  d     0  d     0   2d 
 
-                 A =  1 01
-                      21 3
-                    =  0
-
-                                                                                 3
-                Since the determinant is zero, the v  , , andv   v do not span space  
-                                                  1   2        3
+                In this case D is also a subspace of U!. The zero matrix is in these subspaces, when a, b, and d all
+                equal zero.
 
 
 
-             Solution Spaces of Homogeneous (Null Space) Systems
+             Span
+
+             Definition
+
+             The subspace of a vector space V that is formed from all possible linear combinations of the vectors in a
+             nonempty set S is called the span of S, and we say that the vectors in S span that subspace. If
+
+             S = { w 1 , w 2 , , w r } , then we denoted the span of S by
+                           
+                                                  {
+                                             span w 1 , w 2 , , w r }  or  span ( ) S
+                                                            
+
 
              Theorem
-                                                                                                   n
-                                                                  0
-             The solution set of a homogeneous linear system  Ax =  in n unknowns is a subspace of  
-
-
-             Proof
-
-                Let W be the solution set for the system. The set W is not empty because it contains at least the trivial
-                             
-                         
-                solution  x = .
-                             0
-                                                  n
-                To show that W is a subspace of   , we must show that it is closed under addition and scalar
-                multiplication.
-                                                                                 
-                Let x  and  x  be vectors in W and these vectors are solution of  Ax =  .
-                                                                                    0
-
-                     1
-                             2
-                                                                       
-                                                       
-                                                      Ax =    0 and  Ax =    0
-                                                        1               2
-                Therefore,
+                        
+                    
+             Let  v 1 , , v  be vectors in vector space V and S be their span. Then,
+                          n
+             a)  S is a subspace of V.
+                                                                          
+                  Proof:   , uv S∀  ∈  , u =  av +  +  a v  and v =  bv +  +  b v
+                                          11          nn            11         nn
+                                         )
+                                                          
+                             v
+                         u +=    ( a + bv +     + ( a + b n ) v n    ∈ S
+                                           1
+                                   1
+                                       1
+                                                     n
+                                             
+                          ku =  ka v +    +  ka v    ∈ S
+                                 11           nn
+                                                                                            
+             b)  S is the smallest subspace of V that contains  v 1 , , v . i.e. any other subspace  w  containing
+                                                               
+                                                                    k
+                       
+                v 1 , , v  also contains S.
+                    
+                         n
                                                               123</code></pre>
      	</div>
     

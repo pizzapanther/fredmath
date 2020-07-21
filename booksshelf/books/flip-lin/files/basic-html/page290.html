@@ -152,83 +152,87 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
-
-                                                                      0  1
-          Find the eigenvalues and the eigenvectors of the matrix  A =    
-                                                                      − 10 
-          Solution
+    <pre style="white-space:pre-line"><code>Summary
 
 
-                            −λ    1
-              det ( A − λ  ) I =
-                            − 1 −λ
-                             2
-                         = λ+   1 0=
+        To solve the eigenvalue problem for an n by n matrix:
 
-                     2
-                 ⇒ λ = −  1
+          1.  Compute the determinant of  A − λ . With  λ subtracted along the diagonal, this determinant starts
+                                               I
+                    n
+                            n
+              with λ  or  −λ . It is a polynomial in  λ of degree n.
+                                                             (
+                                                                    ) 0 . The n roots are the n eigenvalues of A.
+          2.  Find the roots of this polynomial, by solving det A − λ I =
+              They make  A − λ  singular.
+                               I
+                                                      
+                                                      0
+          3.  For each eigenvalue λ, solve ( A − λ  ) Ix =  to find an eigenvector x.
 
-             The eigenvalues are: λ    =     i ±
-                                   1,2
 
-             The matrix A is a 90° rotation which has no real eigenvalues or eigenvectors.
-                                                         
-                          
-             No vector  Ax   stays in the same direction as  x  (except the zero vector which is useless).
-             If we add the eigenvalues together the result is zero which is the trace of A.
+        Imaginary Eigenvalues
 
-              λ=   i :   ( A λ−  IV =  )  0
-               1              1    1
 
-                                   0
-                             x
-                   i −  1             − ix +  y =  0
-                                =
-                                   →    
-                                   0
-                             y
-                  −  1  i −          
-                 ⇒   x =  −  iy
+        Example
+                                                                    −   2 −  1
+        Find the eigenvalues and the eigenvectors of the matrix  A =      
+                                                                    5   2  
+        Solution
 
-             Therefore, the eigenvector V =  1  
-                                         1   
-                                              i
-                                             
-              λ =   i − :   ( A λ−  2 IV =  )  2  0
-               2
+                          − 2 − λ   − 1
+            det ( A − λ  ) I =
+                             5     2 − λ
 
-                            x
-                                  0
-                   i   1        →   ix +  y =  0
-                               =
-                           
-                            y
-                                  0
-                  − 1  i    
-              ⇒   y =  x  i −
+                        =  ( 2− − λ )(2 − λ ) 5+
+                           2
+                              1 0
+                        = λ+ =
 
-             Therefore, the eigenvector V =        1   i −    
-                                         2
+                    2
+                ⇒ λ = −  1
+
+            The eigenvalues are: λ 1,2  =    i ±
 
 
 
+            For λ= :  A λ−  i  (  IV =  )  0
+                 1             1   1
+                                                           )
+                                                     − −
+                                           0
+                    − 2 i −  − 1    x   1    →  ( 2 i x −  y =  0
+                                                                  1
+                                                             1
+                                      = 
+                                           0
+                      5     2 i  −     y   1   
+                   ⇒   (2 +  i ) x =  1  −  y
+                                     1
 
+                   Therefore, the eigenvector V =      − 1   
+                                              1     2 i 
+                                                     +
+                λ=    i − : A λ−  (  2 IV =  )  2  0
+                 1
+                                                           )
+                                                      − +
+                                            0
+                      2 i
+                    − +      − 1    x   2    →  ( 2 i x −   y =  0
+                                                              2
+                                                                   2
+                                      = 
+                                            0
+                      5     2 i  +     y   2   
+                   ⇒     ( 2 i x− +  )  2  =  y
+                                      2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           262</code></pre>
+                                                     −
+                   Therefore, the eigenvector V =        2 i − 1     
+                                               2
+                                                          290</code></pre>
      	</div>
     
      </div>

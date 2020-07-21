@@ -152,82 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>)
-             For λ =   5 ⇒     ( A − λ 2 IV = 0:
-                   2
-                                          2
-                                 x
-                    −
-                                       0
-                  15       2    
-                                    =
-                                 
-                            −
-                                       0
-                                 y
-                   2     45      
-                                       0
-                                 x
-                      − 4   2    
-                                    =
-                                 
-                                 y
-                                       0
-                       2   −  1       →   2x −  y =  0
-                 2x =  y
-                                                  1
-                 Therefore, the eigenvector V =  
-                                                
-                                            2   
-                                                  2
+    <pre style="white-space:pre-line"><code>Eigenvectors
 
+                                                                                      
+        To find the eigenvector  x , for each eigenvalue λ solve ( A − λ  ) I x = 0 or  Ax = λ
+                                                                                        x
 
-          Power of a Matrix
-          Theorem
-                                                                      
-                                                                                                              k
-          If k is a positive integer, λ is an eigenvalue of a matrix A, and  x   is a corresponding eigenvector, then λ
-                                     
-                              k
-          is an eigenvalue of  A  and  x  is a corresponding eigenvector.
-
-
-          Example
-
-                                               00 −   2
-                                                        
-                                   7
-          Find the eigenvalues of  A  for  A =     12  1
-                                                        
-                                                       
-                                               1 0  3  
-          Solution
-                              −  λ  0    −  2 
-              det ( A λ  −  ) I =      1  2 λ  −  1    
-                                             
-                              1    0    3 λ−  
-
-                         =  λ  3  5λ −  2  8λ +  −  4 =  0
-
-             The eigenvalues of A: λ    1 and  λ =  =  2
-                                    1             2
-                                  7
-             The eigenvalues of  A  are:
-
-                   7
-                                       7
-              λ   1 =  1   and  λ =  =  2 = 1 28
-               1                  2
+                                                                    x 
+        From the eigenvalues, the eigenvectors, in the form V      =  i    , of the system can be determined by
+                                                              i     y 
+                                                                    i 
+        letting:
+                       ( A λ−  1 IV =  )  1  0    and A λ−  (  2 IV =  )  2  0
 
 
 
-          Theorem
-                                               0
-          A square matrix A is invertible iff λ =  is not an eigenvalue of A.
+
+        Example
+
+                                                                    12
+        Find the eigenvalues and the eigenvectors of the matrix  A =    
+                                                                    2 4 
+        Solution
+                               1− λ   2 
+            det ( A − λ  ) I =  det      
+                               2    4 − λ 
+                        =  (1− λ )(4 − λ ) 4−
 
 
+                           2
+                        = λ −  5λ+ 4 4
+                                     −
+                           2
+                        = λ −λ
+                               5
+                        =  ( λ λ−  ) 5 = 0
 
-                                                           260</code></pre>
+
+            The eigenvalues of A are: λ=   0 λ =
+                                                    5
+                                       1        2
+            For λ= , we have:
+                     0
+                 1
+                ( A λ 1 IV =  )  1  0
+                   −
+
+                                x
+                  −
+                                      0
+                 10      2    
+                                   =
+                               
+                                      0
+                          −
+                                y
+                  2     40     
+                                0
+                          x
+                 1   2             x +   2y =  0
+                             =
+                               →    
+                                0
+                          y
+                 2   4            
+                x = − 2y
+
+               If y = −1 ⇒ x = 2
+                                                 2 
+               Therefore, the eigenvector V =    
+                                           1     − 1 
+                     −  2y     −  2         − 2     2 
+               Or         =  y        ⇒    V =             
+                                                    or
+                                          1
+                       y      1             1       − 1 
+                                                          288</code></pre>
      	</div>
     
      </div>

@@ -152,76 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1   0
-                That step is  E  =           in the forward direction such that:
-                              21     − 3  1 
-
-                              1   0 2    1
-                    E   A =               
-                      21     − 3  1  6   8 
-
-                              2  1
-                          =         = U
-                              0  5 
-
-                The return step from U to A is  L =  E − 1
-                                                    21
-                         1   0
-                    L =       
-                          3  1 
-                Back from U to A:
+    <pre style="white-space:pre-line"><code>Section 4.3 – LU-Decompositions
 
 
-                       1
-                      −
-                    E U =    1   0 2   1
-                                    
-                                            
-                      21     3   1  0   5 
-                              2  1
-                          =       
-                              6  8 
-                          =     A
 
-                Therefore;  A =  LU
+             The goal is to describe Gaussian elimination in the most useful way by looking at them closely, which are
+             factorizations of a matrix.
+
+                The factors are triangular matrices.
+                The factorization that comes from elimination is  A LU=  .
+
+
+
+             The Method of LU−Decomposition
+                                                      
+             Step 1: Rewrite the system  Ax =  as  LUx =
+                                            b
+                                                         b
+                                                       
+                                                         y
+             Step 2: Define a new n× 1 matrix  y  by Ux =
+                                                                                  
+             Step 3: Use  Ux =  to rewrite  LUx =  as  Ly =  and solve this system for  y .
+                                                  b
+                               y
+                                                            b
+                                                       
+                                          y
+             Step 4: Substitute  y  in  Ux =  and solve for  x .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
              Example
 
-             What matrix L and U puts A into triangular form  A =  LU  where
+                                       2  1
+             Given 2 by 2 matrix  A =      
+                                       6  8 
 
-                                 2  1    0
-                                           
-                           A =     1  2  1
-                                           
-                                 0  1    2 
-                                          
+             Find L and U and verify  A LU=
+
              Solution
+                To make row 2 column 1 is zero then we need to subtract 3 times row 2 from row 2
 
-                  2  1    0
-                  1  2    1           1
-                            
-                                R −  2  R 1  :l 21
-                                    2
-                  0  1    2 
-                           
-                  2  1    0
-                      3     
-                  0       1 
-                     2         2
-                  0  1    2 R −   3  R 2  :l 32
-                             
-                               3
+                      2  1
+                          
+                      6  8   R −  3R 1
+                                2
+                    l   = − 3
+                     21
 
 
-
-
-
-
-
-
-                                                              249</code></pre>
+                                                               277</code></pre>
      	</div>
     
      </div>

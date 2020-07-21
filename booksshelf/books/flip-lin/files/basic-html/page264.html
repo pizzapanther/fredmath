@@ -154,21 +154,63 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-                
-                                                2
-             If x  is a fixed nonzero vector in   , then the transformation
-                 0                                            
-                                                               x x
-                                                        T ( ) x = +  0
-                                                                                       
-             It has a geometric effect of translating each point  x   in a direction parallel to  x  through a distance
-                                                                                          0
-                 
-             of  x   .
-                  0
-                                                                
-             This cannot be a linear transformation since  ( ) 0T  =  x
-                                                                 0
+          Determine if the given function T is a linear transformation. Also give the domain and range of T; if T is
+                                          T
+          linear, find the A such T =  f .     (x, y, z ) (z x, z=  −  −  ) y
+                                     A
+          Solution
+                                         
+             Let u = ( x 1 , , z 1 )  and v = ( x 2 , y 2 , z 2 )
+                          y
+                           1
+                 
+                        T x +
+                       =
+             T  (uv+  ) (   1   x 2 ,  y +  1  y 2  ,  z +  1  z 2 )
+                       =  ( z +  1  z −  2  ( x +  1  x 2 ) ,  z +  1  z −  2  ( y +  1  y 2 ))
+
+                       =  ( z +  1  z −  2  x −  1  x 2 ,   z +  1  z −  2  y −  1  y 2 )
+
+                                           +
+                       =  ( z −  1  x 1 ,  z −  1  y 1 ) ( z −  2  x 2 ,  z −  2  y 2 )
+                          (
+                                        Tx
+                       = Tx   , , z  ) (     , y  , z  )
+                               y
+                                      +
+                             1  1    1    2   2   2
+                       = T  ( ) Tu +  ( ) v
+                  
+               ( ) (
+             T ru =   T rx 1 , ry 1 , rz 1 )
+                    =  ( rz −  1  rx 1 ,  rz −  1  ry 1 )
+
+
+                    =  rz −  (  1  x 1 ,  z −  1  y 1 )
+                          
+                    =  rT  ( ) u
+
+                                                       
+             Since  (uv+   ) T=  ( ) Tu +  ( ) v  and  ( ) rTu =  ( ) v
+                                                T r
+                   T
+             Then function T is a linear transformation.
+
+             Domain:  :   T    3  →   2
+
+             T  ( x, y, z ) ( z x, z=  −  −  ) y
+
+                             xz 
+                            −+
+                        =        
+                               +
+                            − yz 
+                    x
+                                       z
+                         y
+                   −   1  0  1
+              A =           
+                    0  − 11 
 
 
 
@@ -183,57 +225,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-          Theorem
-
-                                                                                         
-          Let  :TV →  W  be the linear transformation, where V is finite dimensional. If  S = { v  , v   , , v    }  is a
-                                                                                         1   2        n
-          basis for V, then the image of any vector v  in V can be expressed as
-                                                                           
-                                                                             ( )
-                                                              ( )
-                                                    v
-                                        T  ( ) cTv =  1  ( ) +  c T v 2  +  +  c T v n
-                                                     1
-                                                           2
-                                                                          n
-                                                                    
-                   ,
-          Where cc     , ,c  are the coefficients required to express v  as a linear combination of the vectors in S.
-                  1  2      n
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            36</code></pre>
+                                                           264</code></pre>
      	</div>
     
      </div>

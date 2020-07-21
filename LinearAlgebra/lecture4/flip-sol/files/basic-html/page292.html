@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 292 - Linear Algebra Solution Lecture 4</title>
+        <title>Page 292 - Linear Algebra Lecture 4 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 292 - Linear Algebra Solution Lecture 4</div>
+        <div id="content-top1">Page 292 - Linear Algebra Lecture 4 Solution</div>
         <div id="content-top2">P. 292</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1   2   2    1  2  − 2
-                                                
-               AA = T      2  −  21         2 −  2 −  1
-                                                
-                        −  2 −  12     2  1  2  
-                                             
-                        9 00
-                                
-                    =     09 0
-                                
-                        0 09   
-                               
-               ( )      =  (column i of  A column j of  A
-                 T
-                                         )(
-                                                        )
-                A A
-                      ij
+    <pre style="white-space:pre-line"><code>) (1, 1
+                             −
+
+                         )
+                                              )
+                   = (1, 1 −  ( 1, 1    ) (1, 1
+                                  2
+                         )
+                   = (1, 1
+                      
+                    w 2
+               u =    
+                2    w
+                       2
+                     (1, 1 )
+                   =
+                       2
+
+                      1 
+                       2  
+                   =        
+                        1    
+                       2 
+
+                     −  1   1 
+                       2    2  
+               P =            
+                       1   1    
+                      2     2 
 
 
            Exercise
 
-                                                                              ab
-           Assuming that b ≠ , find a matrix that orthogonally diagonalizes      
-                              0
-                                                                              ba 
+                                                                                                            T
+                                                                                                T
+                                                                                        T
+           Suppose A is a symmetric  nn×  matrix and B is any  nm×   matrix. Show that  B AB ,  B B , and  BB
+           are symmetric matrices.
            Solution
-                             a λ−      b
-               det ( A λ−  ) I =
-                               b     a λ−
-                                        2
-                           =  (a λ−  ) −  2  b
-                           =  (a λ  −− ba λ  )( −+  ) b
-
-                             (a b λ =  −−  )(a b λ  + −  ) 0=
-
-                                                                      +
-               Therefore; the eigenvalues are: λ  a b and λ =  −   =  a b
-                                               1                 2
-                               0
-               Assume that b ≠ .
-               For λ=   a b , then ( A −  (a b IV−  ) )  =  0
-                          −
-                    1                              1
-                                      0
-                       bb    x   1  
-                                =    →   bx =  1  −  by
-                                                        1
-                                      0
-                       bb      y   1   
-                                                   − 1
-                      The eigenvectors are:  V =    
-                                             1     1  
-               For λ=   ab  , then ( A −  (a b IV+  ) )  =  0
-                          +
-                     2                              2
-                                         0
-                       − b  b    x   2  
-                                   =    →   bx =  2  by
-                                                           2
-                                         0
-                        b    b  −     y   2   
-                                                  1  
-                      The eigenvectors are:  V =  
-                                             2    
-                                                  1
-               Applying the Gram Schmidt process.
+                                                    T
+               A is a symmetric, that implies to  A =  A
+               ( BAB  ) T  =  BA  ( )  T
+                  T
+                             TT
+                                     T
+                                   B
+                           T
+                        =  B AB       √
+                      (  T   ) T   T            T
+               Since,  B AB     =  B AB , then  B AB  is symmetric.
 
 
+               ( )    T  =  B T ( ) T
+                                T
+                  T
+                BB
+                              B
+                           T
+                        =  B B      √
+                           T
+               Therefore,  B B  is symmetric.
 
-
-                                                            250</code></pre>
+               ( ) ( )         T  B
+                      T
+                                  T
+                   T
+                            T
+                BB
+                           B
+                        =
+                             T
+                        =  BB       √
+                             T
+               Therefore,  BB is symmetric.
+                                                            965</code></pre>
      	</div>
     
      </div>

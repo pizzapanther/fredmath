@@ -152,72 +152,89 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example − Kernel and Range of a Rotation
-
-             Let  : T   2  →   2  be the linear operator that rotates each vector in the xy−plane through the angle θ.
-             Since every vector in the xy−plane can be obtained by rotating some vector through the angle θ, it follows
-                           2
-                 RT
-             that  ( ) =  .
-
-
-
-
-
-
+    <pre style="white-space:pre-line"><code>Example
+                                    
+                                                           3
+             Consider the basis  S = { v 1 , v   2 , , v    n }  for ∞ , where
+                                                
+                                                              )
+                    v =  (1, 1, 1 ) v = (1, 1, 0 ) v =  (1, 0, 0
+                     1              2              3
+             Let  :   T  3  →   2  be the linear transformation for which
+                                                         
+                    T ( ) (1, 0 , Tv 1  =  )  ( ) (2,  1 , Tv 2  =  −  )  ( ) (4, 3v 3  =  )
 
 
-
-
-
-                                                           
-             Moreover, the only vector that rotates into 0   is 0 , so  ker ( ) { } 0T =
-
-
-
-             Theorem
-
-             If  :TV → W  is a linear transformation, then:
-                1.  The kernel of T is a subspace of V
-
-                2.  The range of T is a subspace of W
-
-
-             Theorem
-
-             If  :TV → W  is a linear transformation from an n-dimensional vector space V to a vector space W, then
-
-                                                        ( ) nullity T+
-                                                   rank T            ( ) n=
-
-
-
-             Example
-
-
-             Project every 3-dimensional vector down onto horizontal plane z = 1.
+                                  
+                                      
+                                 (
+                                          
+                                      x
+             Find a formula for T x 1 , , x 3 ) , and then use that formula to compute  (2,  3, 5T  −  )
+                                       2
+             Solution
+                      
+                          
+                 (   x 1 , x 2 , x 3 ) =  c 1  (1, 1, 1 +  ) c 2  (1, 1, 0 +  ) c 3  (1, 0, 0
+                                                                   )
+                      c   +  c +  c =  x
+                      1   2    3    1
+                    
+                     c +  1  c 2          =  x
+                                     2
+                    
+                     c 1                 =  x 3
+                    
+                     c =  x − x
+                      3    1   2
+                    
+                     c =  x −  x
+                                 3
+                            2
+                       2
+                    
+                       c =  x 3
+                    
+                         1
+                          
+                 (   x 1 , x 2 , x 3 ) =  x 3  (1, 1, 1 +  ) ( x −  2  x 3  )(1, 1, 0 +  ) ( x −  1  x 2 )(1, 0, 0
+                      
+                                                                                 )
+                                                             
+                              =  x v +  ( x −  x  ) v +  ( x −  x  ) v
+                                 3 1     2    3   2     1   2   3
+                                       
+                                                                           
+                  (
+                                      ( ) (
                                                          
+                            
                         
-                                                                     )
-                                   )
-             The vector v = ( , , xy z  is transformed to  ( ) ( ,  , 1 . This transformation is not linear, it doesn’t
-                                                              xy
-                                                      T v =
-                                            
-                                0
-             even transform v =   into  ( ) 0T v = .
+                    
+                                                      T v
+                 T x 1 , , x 3 )  =  xT v 1  +  x −  2  x 3 ) ( ) ( x −  1  x 2 ) ( )
+                       x
+                                                                        T v
+                                                             +
+                                                          2
+                                   3
+                                                                            3
+                         2
+                                                                               )
+                                 =  x  (1, 0 +  ) ( x −  x  )(2,  1−  ) ( x −  x  )(4, 3
+                                                               +
+                                    3           2   3              1    2
+                                 =  ( 4x −  1  2x −  2  x 3 ,  3x −  1  4x +  2  x 3 )
+                 T  (2, 3,5−  ) (4 2=  ( ) 2−  ( ) 3−  −  5,  3 ( ) 2 −  4 ( ) 3−  +  ) 5
+                                    )
+                           =  (9, 23
 
 
-                Multiply every 3-dimensional vector by a 3 by 3 matrix A. This is definitely a linear
-                transformation
-                                                                                            
-                           T (vw+      ) =  ( A vw+      )     which does equal   Av +    Aw T=    ( ) T wv +    ( )
 
 
 
 
-
-                                                              39</code></pre>
+                                                              267</code></pre>
      	</div>
     
      </div>

@@ -152,78 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>P − 1  = − 1   −   1 −  1  
-                      5   − 2  3  
-                     1  1 
-                 =     5  5   
-                     2  −   3
-                     5   5 
+    <pre style="white-space:pre-line"><code>Theorem
 
+        If an n x n matrix A has n distinct eigenvalues, then the following are equivalent:
 
-                 P          D          P − 1
+            a)  A is diagonalizable
 
-
-                3  1   1   0       1  1   5   3  1        1  1    5  
-                                               2
-                               5
-                                                    5
-                        1          =                
-                2 − 1       0  2         2  −  3      2 −   1      2  −   3 
-                                                          5 
-                                                    5
-                                                2 
-                                    5 
-                               5
-                                            8  3 
-                                        =      10 10   
-                                            2  7  
-                                            10 10 
-                                            .8 .3
-                                        =       
-                                            .2 .7
-                                                 
-                                                  A
+            b)  A has n linearly independent eigenvectors.
 
 
 
-          Eigenvalues of AB and A + B
+        Example
 
-          An eigenvalue of A times an eigenvalue of B usually does not give an eigenvalue of AB.
+                                        .8 .3
+        Given the Markov matrix  A =        
+                                        .2 .7 
+        Solution
 
-
-                        λ λ ≠     λ
-                          A B       AB
-
-          Commuting matrices share eigenvectors: Suppose A and B can be diagonalized. They share the
-          eigenvector matrix P if and only if AB = BA.
-
-
-
-
-
-
-
-
-
-
-
-
-
+                      .8−λ     .3
+                  I
+             A−λ =
+                       .2    .7 −λ
+                                    ) .06
+                    = (.8−λ )(.7 −λ −
+                        2
+                    = λ −  1.5λ+ .56 .06
+                                     −
+                        2
+                    = λ −  1.5λ+ .5 0
+                                    =
+            The eigenvalues are: λ=   1, λ =   .5
+                                  1        2
 
 
+            For λ=   1, we have:  A λ−  (  1 IV =  )  1  0
+                 1
+                             x
+                                   0
+                 −   .2  .3       →    −  .2x +  .3y =  0
+                                =
+                             
+                                   0
+                             y
+                  .2  − .3    
+                ⇒  2  x =  3y
+
+                                                3
+               Therefore, the eigenvector V =   
+                                           1   
+                                                2
+            For λ =   .5, we have:  A λ−  (  IV =  )  0
+                  2                     2    2
+
+                                0
+                           x
+                 .3  .3        →     .3x +  .3y =  0
+                             =
+                          
+                           y
+                                0
+                 .2  .2    
+                ⇒   x =  −  y
+
+               Therefore, the eigenvector V =        − 1   1   
+                                           2
+            The eigenvector matrix is given by:
 
 
+                  3  1 
+            P =       
+                  2 − 1 
 
 
-
-
-
-
-
-
-
-
-                                                           272</code></pre>
+                                                          300</code></pre>
      	</div>
     
      </div>

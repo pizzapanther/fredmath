@@ -152,58 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example − the Zero Transformations
-                                                                                                   
-                                                                                       0
-                                                                                Tv
-             Let V and W be any vector spaces. The mapping  :TV →  W  such that  ( ) =  for every v  in V is a
-             linear transformation called the zero transformation. To see that T is linear, observe that:
-                                                                
-                    T  (uv+  ) 0, T=  ( ) 0, Tu =  ( ) 0, and Tv =  ( ) 0ku =
-                                                                  
-             Therefore;    T  (uv =  ) T  ( ) Tu +  ( ) and T kv  ( ) kTu =  ( ) u
-                                +
+    <pre style="white-space:pre-line"><code>Section 4.2 – General Linear Transformations
+
+
+
+
+             Definition
+                                                                          
+                                                 T
+             A transformation T assigns an output  ( ) v  to each input vector v . The transformation is linear if it
+                                                  
+             meets these requirements for all v  and  w :
+                                   
+                         ( ) cTv =
+                      T c         ( )         v
+                    
+                                       
+                              ) T
+                      T (v + w =  ( ) Twv +  ( )
+                                                               
+                                                       
+                                                                        
+                                                                      ( )
+             We can combine both into one:    T cv +  (    dw ) =  cT v +  ( ) dT w
+
+
+             Theorem
+             If  :TV → W  is a linear transformation, then:
+
+               1.  ( ) 0T  =  0
+
+                                                   
+               2.  T (uv−  ) T=  ( ) Tu −  ( ) v  for all u  and v  in V.
 
 
              Example
-                                                                              
-                                              )
-             Choose a fixed vector  a = (1, 3, 4 , and let  ( )Tv  be the dot product av :
 
-             Solution
-                    
-                Let v = ( v 1 , , v 2  v 3 )
-                       
-                            
-                T  ( ) v = av
-                      = (1, 3, 4 ) (  1 , v 2 , v 3 )
-                                    v
-                        v=  1  +  3v +  2  4v
-                                     3
-
-                                                                                       3
-                This is linear. The inputs v come from three−dimensional space, so V =  . The output just numbers,
-                                            1
-                so the output space is W =  . We are multiplying by the row matrix A = [1, 3, 4].
-                               
-                         
-                Then  ()T v =  Av
+                                                                                                  
+                                                                                          T x
+             If V is a vector space and k is any scalar, then the mapping  :  W given by ( ) kx=     is a linear
+                                                                      TV →
 
 
-             Example
-                                         
-             Show that the length  ( ) v =  v  is not linear.
-                                 T
-             Solution
-
-                      ?     
-                 v +  w =  v +  w
-                                                                                                 
-                There are not equal because the sides of a triangle satisfy an inequality  v +  w ≤  v +  w
-                    ?  
-                 cv = c v
-                                                 
-                Not - because the length  v−  ≠−  v
+                                                            
+             operator on V, for if c is any scalar and if  u  and v  are any vectors in V, then
+                                
+                    T cu      ( )
+                      ( ) k cu=
+                                 
+                               ( )
+                           =  cku 
+                           =  cT ( ) u
+                    T  (uv+   ) k=  (uv+   )
+                                 
+                                      
+                              = ku +  kv
+                                          
+                                   
+                              = T  ( ) Tu +  ( ) v
+                    If  0 &lt; k &lt; 1, then T is called contraction of V with factor k, and if k &gt; 1, then T is called dilation
+                    of V with factor k
 
 
 
@@ -216,10 +224,9 @@ function MM_swapImage() { //v3.0
 
 
 
+                                    Dilation of V                            Contraction of V
 
-
-
-                                                              35</code></pre>
+                                                              263</code></pre>
      	</div>
     
      </div>

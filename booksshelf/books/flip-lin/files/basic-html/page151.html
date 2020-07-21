@@ -152,82 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Basis
 
-                                                                                    1 20 3
-                                                                                              
-             Find bases for the column and row spaces of a rank two matrices:   R =      0 01 4
-                                                                                              
-                                                                                      0000  
+
+             Definition
+                                                 
+                                                         
+                                             
+             If V is any vector space and  S = { v 1 , v 2 , , v n }  is a finite set of vectors in V, then S is called a basis
+                                                     
+             for V if the following two conditions hold:
+                1.  S is linearly independent.
+
+                2.  S spans V.
+
+
+
+             Example
+
+                                  10                                    2
+             The columns of  I =        produce the “standard basis” for   .
+                                  01 
+             Solution
+                                       1
+                                                       0
+                                                                                       2
+                                   ˆ
+                The basis vectors: i =    and   ˆ j =    are independent. They span   .
+                                                      
+                                      
+                                       0
+                                                       1
+                                                    
+
+
+             Example
+                                                                         n
+             The columns of any invertible n by n matrix give a basis for  .
+                                      10 0
+                        12                          12
+                   A =        A =   11 0    A =      
+                        25          11 1            2 4 
+                     Basis                     Not  basis
+                                    Basis
+
+
+             Example
+
+                                                             ˆ
+             The standard unit vectors  ˆ e =  (1, 0, 0,   , 0 ), e = (0, 1, 0,   , 0 ),   ,  ˆ e =  (0, 0,   , 0, 1 )
+                                       1                      2                           n
+                              n
+             form a basis in  .
              Solution
 
-                                                                                                                3
-                Columns 1 and 3 are the pivot columns. They are a basis for the column space. It is a subspace of   .
-
-                Column 2 and 4 are a basis for the same column space.
-
-
-
-             Coordinates Relative to a Basis
-
-
-             Theorem − Uniqueness of Basis Representation
-
-                        
-                                                                                    
-             If  S = { v   1 , v 2 , , v…    n }  is a basis for a vector space V, then every vector v in V can be expressed in the
-                                           
-             form v =  c v +  c v + …+     c v  in exactly one way.
-                                            nn
-                       11
-                               2 2
-
-
-             Proof
-                                          
-                Suppose that some vector v can be written as
-                           
-                                                       
-                                         
-                                 
-                           v =  c v +  c v + …+     c v
-                                                     nn
-                                        2 2
-                                11
-                                                    
-                Also       v = k v +   k v + …+     k v
-                                                     nn
-                                11
-                                        2 2
-                Subtracting the second from the first equation
-                                                                             
-                                        
-                                       )
-                                                        
-                           0 = ( c − k v +   ( c − k 2 ) v + …+    ( c −  k n ) v
-                                                         2
-                                     1
-                                                                     n
-                                                                              n
-                                 1
-                                         1
-                                                2
-                Since the right side of this equation is a linear combination of vectors in S, the linear independence of
-                S implies that
-                                  c −  k =  0, c −   k =  0,  , c −   k =  0
-                                   1    1        2    2            n    n
-                That implies      c =  k  , c =  k  , , c =    k
-                                   1    1     2    2        n    n
-                                              
-                Thus, the two expressions for v are the same.
-
-
-
-
-
-
-
-
+                1.  k e + ˆ  k  ˆ e +  +  k  ˆ e =  0 →  ( k  , k  ,   , k  ) (0, 0,   =  , 0 ) it follows that
+                     11     2 2         nn              1   2       n
+                    k =  k =    =  k = 0. That implies they are linearly independent.
+                     1    2         n
+                                                                                 
+                                                           n
+                                                                                                          ˆ e
+                2.  Every vector v = ( v 1 , v 2 , , v n )  in    can be expressed as v =  v 11  v 2 2  +  v nn
+                                                                                              ˆ e +
+                                                                                       ˆ e +
+                                              
+                                                                                                    n
+                    which is linear combination of   ˆ e  , ˆ e  , , ˆ e . Thus, the standard vector span  
+                                                           
+                                                    1   2       n
+                                             n
+                                                                                  n
+                Thus, they form a basis for    that we call the standard basis for    .
 
                                                               151</code></pre>
      	</div>

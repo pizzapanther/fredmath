@@ -152,63 +152,41 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 3.4 – Orthogonal Matrices
+    <pre style="white-space:pre-line"><code>Theorem
+
+          The following are equivalent for  nn×  matrix A.
+
+           a)  A is orthogonal.
+                                                                n
+           b)  The row vectors of A form an orthonormal set in  R  with the Euclidean inner product.
+                                                                    n
+           c)  The column vectors of A form an orthonormal set in  R  with the Euclidean inner product.
 
 
+          Theorem
 
-             (1 – 2)  Show that the matrix is orthogonal
-
-                       4   0    − 3                               1   2    2
-                       5         5                                3   3    3
-                       9   4     12                               2    2   1 
-             1.  A =    −  25  5  −  25                 2.  A =    3  − 3  3 
-                                                                            
-                       12  3    16                                2  −  1  2 −
-                       25  5    25                                3    3   3
+           a)  The inverse of an orthogonal matrix is orthogonal
+           b)  A product of orthogonal matrices is orthogonal
+           c)  If A is orthogonal, then det A =        ( )    1
+                                         ( ) 1 or det A = −
 
 
-             (3 – 12)   Determine if the matrix is orthogonal. For those that is orthogonal find the inverse.
-
-                     10                                 1                       1  1    1    1 
-             3.                                   01                            2  2    2    2 
-                     01                                  2                                      
-                                            8.      10    0                       1  − 5  1    1  
-                    1   −  1                            1                 11.    2  6   6    6  
-                    2      2                      00                            1  1    1     5 
-              4.                                         2                      2  6    6   −  6 
-                    1     1                                                       1  1     5   1 
-                    2      2                       1     1     1                2  6   − 6      
-                                                    −                                          6 
-                    cosθ   sinθ                    2      6     3 
-              5.                                          2    1               1   0    0   0
-                    sinθ −  cosθ          9.      0    −  6     3               0   1  − 1  0  
-
-                   cosθ   sinθ                    1      1     1                   3    2    
-              6.                                                          12.     1          
-                    sinθ  − cosθ                    2    6     3              0  3    0   1 
+          Theorem
+          If A is an nn matrix, then the following are equivalent
+                     ×
+           a)  A is orthogonal.
+                                     n
+           b)  Ax =    x  for all x in  R .
+                                             n
+           c)  Ax     Ay =  x      y  for all  x  and  y  in  R .
 
 
-                    1  1   − 1                    1    1      1                   0  1  1  0   
-                              
-              7.       1  3  4                      3  3      3                 3    2      
-                              
-                       5   2              10.     0    1      1 
-                    7 −                                 2      2  
-                                                                    
-                                                    2  −  1    −  1  
-                                                      6   6      6   
-
-
-             13.  Find a last column so that the resulting matrix is orthogonal
-                          1      1     
-                           3     6    
-                                       
-                                        
-                           1     1   
-                           3     6     
-                                       
-                           1     2    −
-                            3   6       
+                                                                                         
+                      
+              
+          Let u  and u  be the unit vectors along the x- and y-axes and unit vectors u′  and u′  along the x′- and
+               1       2                                                            1      2
+          y′-axes.
 
 
 
@@ -220,7 +198,26 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                            232</code></pre>
+
+
+                                                                  )
+          The new coordinates ( , xy′ ′  )  and the old coordinates ( , xy  of a point P will be related by
+
+                x′   − 1  x 
+                  =  P  
+                           y
+                y′
+                       
+                     cos θ  − sin   θ
+               P =              
+                     sin θ  cos θ  
+
+                      T
+              P − 1  =  P =    cos θ   sin   θ  
+                            sinθ −  cosθ  
+
+
+                                                           232</code></pre>
      	</div>
     
      </div>

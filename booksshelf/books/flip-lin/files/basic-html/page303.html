@@ -152,69 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Similar Matrices
-
-             Definition
-
-             If A and B are square matrices, then we say that B is similar to A if there exists an invertible matrix P
-             such that  B =  P −  1 AP or  A =  PBP −  1
-
-
-
-                                                                                                                
-                                                                              
-                 Similar matrices B and  M  − 1 AM  have the same eigenvalues. If  x  is an eigenvector of A then  M − 1 x
-                is an eigenvector of  B =  M  − 1 AM .
-
-             Proof
-
-
-                  Since  B =  M −  1 AM ⇒  A =  MBM −  1
-                                 
-                  Suppose  Ax λ=  x :
-                                         
-                           MBM   − 1   x =  λ x
-                                  
-                                            
-                           BM  −  1 x = λ M −  1 x
-
-                  The eigenvalue of B is the same λ. The eigenvector is now  M  − 1 x
+    <pre style="white-space:pre-line"><code>)
+                For λ =   2 ⇒     ( A λ  IV =    0
+                                     −
+                      2                 2    2
+                                    0
+                              x
+                     −  11        →    x =  y
+                                 =
+                             
+                                    0
+                              y
+                      0  0    
+                               1
+                    ⇒   V =    
+                          2    
+                               1
+                The eigenvector matrix is given by:
+                      11
+                 P =     
+                      01 
 
 
-             Example
+                 P − 1  =     1 − 1  
+                         0  1  
 
-                                     .5 .5                   1 −      10
-                The projection  A =         is similar to  D =  P AP =    
-                                     .5 .5                            00 
-
-
-                               10                                    11
-                Choose  M =          ; the similar matrix  M  − 1 AM      is    
-                               12                                    00 
+                       1 0         k    1 k  0  
+                 D =        ⇒    D =          
+                       0 2                0  2 k   
 
 
-                                    0 − 1                       1          .5  − .5
-                Also choose  M =           ; the similar matrix  M −  AM      is    
-                                    1  0                                   − .5  .5  
+                  k
+                         k −
+                 A =  PD P   1
+                        11     1  0     1 − 1
+                      =                 
+                        01       0 2 k       0  1  
+
+                        12 k     1 − 1
+                    =              
+                           k     0  1  
+                        0 2  
+
+                            k
+                        12 −  1 
+                    =          
+                            k 
+                        0  2   
 
 
-                These matrices  M − 1 AM  all have the same eigenvalues 1 and 0.
-                Every 2 by 2 matrix with those eigenvalues is similar to A.
-
-                The eigenvectors change with M.
 
 
-             Example
 
 
-                       01                                cd   d 2 
-                                                                                  0
-                 A =        is similar to every matrix  B =         except  B = .
-                       00                                  −  c 2  −  cd   
-                These matrices B all have zero determinant (like A). T
 
 
-                                                              275</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                               303</code></pre>
      	</div>
     
      </div>

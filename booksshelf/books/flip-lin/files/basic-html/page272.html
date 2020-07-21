@@ -152,102 +152,90 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises   Section 4.2 – General Linear Transformations
+    <pre style="white-space:pre-line"><code>Example
 
-
-
-
-                             10
-          1.   The matrix          gives a shearing transformation  ( , )T xy = ( , 3x  x +  ) y .
-                             31 
-                 What happens to (1, 0) and (2, 0) on the x-axis.
-                 What happens to the points on the vertical lines x = 0 and x = a?.
-
-                                                                
-          2.   A nonlinear transformation T is invertible if every b   in the output space comes from exactly one x
-                                         
-                                    
-               in the input space.  ( ) bx =  always has exactly one solution. Which of these transformation (on
-                                 T
-                                                         1
-               real numbers  x   is invertible and what is T −  ? None are linear, not even T . When you solve
-                                                                                       3
-                      
-               T  ( ) bx = , you are inverting T:
-                                                                            1
-                 T 1  ( ) x =  x 2  T 2  ( ) x =  x 3  T 3  ( ) x =  x +  9 T 4  ( ) x =  e x  T 5  ( ) x =  x  for nonzero  ' x s
-
-
-                                                           
-                                                      S
-          3.   If S and T are linear transformations, is  (T v
-                                                          ( ))  linear or quadratic?
-                                                             
-                                           v
-               a)  If  ( ) v =  and  ( ) v = , then  (T v           2
-                             v
-                                   T
-                                                       ( )) v=  or v ?
-                                                   S
-                     S
-                                                                               
-                                                                      
-                                    
-                           
-                                             
-                                                                   T v
-                                                                           T v
-                                 Sw
-                                          Sw
-                               =
-                                                                          +
-                                        +
-                                                                  =
-               b)  Sw +  (    1  w 2 ) ( ) ( )   and T v + (   1  v   2 ) ( ) ( )  combine into
-                                                                       1
-                                     1
-                                                                                2
-                                              2
-                                  
-                        S T v +  ( (    1  v 2 )) =  S (_____ =  )  ____ ______
-                                                           +
-
-          4.   Find the range and kernel (like the column space and nullspace) of T:
-                                                                     (
-                         (
-                                  =
-                    a)  Tv 1 , v 2 ) ( v 2 , v 1 )             c)  Tv  1 , v 2 ) (0, 0=  )
-                                                                     (
-                         (
-                    b)  T v 1 , , v 2  v 3 ) ( v 1 , v 2 )     d)  T v 1 , v 2 ) ( v 1 , v 1 )
-                                       =
-                                                                              =
-
-                                                   12
-             5.   M is any 2 by 2 matrix and  A =       . The transformation T is defined by  (T M =  AM . What
-                                                                                                )
-                                                   34 
-                  rules of matrix multiplication show that T is linear?
-
-                                                               
+                                                                     ( ))
+          Let  :TP →   P  be the linear transformation defined by  ( px =  xpx
+                                                                T
+                                                                              ( )
+                  1     2
+          Find the matrix for T with respect to the standard bases
+                                                                    
+                                               
+                                                   
                                                                              
-                                                        T
-             6.   Which of these transformations satisfy  (v +    w ) T=  ( ) Twv +    ( )  and which satisfy
-                              
-                    ( ) cTv =
-                  T c         ( ) v ?
-                                 v                                  
-                                                                     ( )
-                      a)  ( ) v =                             c)  T v =  ( v  , 2v  , 3v  )
-                         T
-                                  v                                         1     2     3
-                                                                                              
-                                                                   T
-                      b)  ( ) v =  v +  v +  v                 d)  ( ) v = largest component of v .
-                         T
-                                  1   2    3
+                                                                        
+                                                                        v
+                                          B = { u 1 , u 2 }  and  B′ = { v 1 , , v 3 }
+                                                                         2
+                                                
+                                                          2
+          Where u =   1, u =    ; x  v = 1, v =  , x  v =  x
+                  1        2        1       2        3
+          Solution
+                 
+               ( )
+             T u  1  = T  ( ) 1
+                     =    x
+                 
+               ( )
+             T u  2  = T  ( ) x
+                     =  x ( ) x
 
-                                                            44</code></pre>
+                     =  x 2
+
+                            0 
+                  
+                ( )
+                T u    =  
+                            1
+                  1   B′  
+                            0 
+                           
+                            0 
+                  
+                ( )
+                T u    =  
+                            0
+                  2   B′  
+                            1 
+                           
+             The matrix for T with respect to B and  B′ is
+                                        
+                             
+                           ( )
+                                       ( )
+             [ ]      =        T u      T u      
+              T
+                  , BB′      1   B′     2   B′  
+                          00
+                              
+                      =      10
+                              
+                          01 
+                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           272</code></pre>
      	</div>
     
      </div>

@@ -152,69 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                     
-                     x′     cosθ   sinθ   x
-                     
-                       =                
-                     y′
-                                           y
-                           sinθ −  cosθ   
-                         x′  x cosθ =  y sinθ +
-                    →  
-                        y′  −  x sinθ=  y cosθ +
+    <pre style="white-space:pre-line"><code>Section 3.4 – Orthogonal Matrices
 
 
 
+             Definition
 
+             A square matrix A is said to be orthogonal if its transpose is the same as its inverse, that is, if
 
+                                                                   T
+                                                           A − 1  =  A
+             or, equivalently, if
 
+                                                                 T
+                                                           T
+                                                        AA =   A A =
+                                                                      I
 
+             Example
 
-
-
-
-
-
-
-
-
-              These are sometimes called the rotation equations.
+                              3   2   6 
+                              7   7   7 
+                            
+             The matrix  A = − 6   3   2  
+                                       7 
+                            
+                                   7
+                               7
+                                         
+                              2   6  −  3 
+                              7   7    7 
+             Solution
+                          3  −  6  2     3  2  6 
+                          7  7    7     7  7   7 
+                  T
+                                             3
+                 A A =      2  3  6   7       − 6  7  2  
+                                                  7 
+                         7
+                                         7
+                              7
+                                                 
+                          6  2   −  3     2  6  −  3 
+                          7  7     7     7  7  7 
+                          1 00
+                                 
+                      =      01 0
+                                 
+                                
+                          0 01  
 
 
              Example
 
-
-                           x′     cosθ   sinθ   x
-             Use the form     =                to find the new coordinates of the point  (2, 1Q  )  if the
-                           y′
-                                                 y
-                                 sinθ −  cosθ   
-             coordinate axes of a rectangular coordinate system are rotated through an angle of θ =  π .
-                                                                                                4
+                              cos θ  − sin   θ
+             The matrix  A =             
+                              sin θ  cos θ  
              Solution
 
-                                      
-                                        x
-                  x′    cos  π   4  sin  π  4 
-                                      
-                    =      π         
-                  y′
-                                        y
-                         − sin  4  cos π  4    
-                         1     1 
-                          2     2    2  
-                     =               
-                                     1
-                       −  1    1    
-                          2     2 
-                         3 
-                          2  
-                     =      
-                          1  −
-                          2 
-                                                         3     1  
-                The new coordinates of Q are ( ,xy′ ′  ) =      , −  
-                                                         2      2 
+
+                  T
+                 A A =    cos θ   sin   θ      cos θ   sin   θ −  
+                          sin θ −  cos θ      sin θ  cos θ  
+                          10
+                      =      
+                          01 
 
 
 
@@ -224,11 +226,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-                                                            231</code></pre>
+                                                              231</code></pre>
      	</div>
     
      </div>

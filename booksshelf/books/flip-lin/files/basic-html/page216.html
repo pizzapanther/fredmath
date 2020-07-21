@@ -152,100 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>)
-                                                  )
-                    = (0,1,1   −  0 11++   (1,1,1
-                                1 +  2  1 +  2  1 2
-                                        )
-                             )
-                    =  (0,1,1   −  2 (1,1,1
-                                3
-                      (
-                    = −  2  ,  11 )
-                              ,
-                            33
-                         3
-                                
-                v =  u −  proj  u
-                  3    3       v   3
-                                2
-                                          
-                           u 3 , v 1    u 3 , v 2  
-                    =  u −          v −          v
-                       3       2    1       2    2
-                             v             v
-                              1             2
-                                                           00    1
-                                                            ++
-                                    ++
-                                                                                 ,
-                    =  (0, 0,1   −     )  0 01  (1,1,1 −      )   3      ( −  2 ,   11 )
-                                                                2
-                                                         2
-                                1 +  2  1 +  2  1 2  ( ) ( ) ( )       2   3   3   3
-                                                              1
-                                                       2
-                                                                    1
-                                                                  +
-                                                           +
-                                                       3
-                                                              3
-                                                                    3
-                                            1
-                    =  (0, 0,1    −  )  1 (1,1,1   −  )  3 ( −  2 ,  11 )
-                                                      ,
-                                3
-                                                    33
-                                                3
-                                            2
-                                            3
-                    =  (0, 0,1    −  )  1 (1,1,1   −  )  1 ( −  2 ,   11 )
-                                                     ,
-                                3
-                                            2
-                                                    33
-                                                3
-                    = ( 0, −  1 ,  1 )
-                            2
-                                2
-                       
-                      v
-                q =     1
-                  1    v 1
-                      (1, 1, 1)
+    <pre style="white-space:pre-line"><code>Section 3.3 – Gram-Schmidt Process
 
-                    =
-                          3
-                    =      1  ,  1  ,  1    
-                        3    3     3 
-                       
-                      v
-                q   =   2
-                  2    v  2
-                          ( − 2 ,  11 )
-                                  ,
-                    =        3   33
-                        ( ) ( ) ( )      2
-                           2
-                                  2
-                                      1
-                                1
-                         2
-                                    +
-                             +
-                                3
-                         3
-                                       3
-                      ( − 2 1 1  )
-                          ,
-                              ,
-                    =    3 3 3
-                            6
-                            3
-                         2    1     1  
-                    =   −  ,     ,    
-                          6    6     6 
-                                                            216</code></pre>
+
+
+          Definition
+
+          A set of two or more vectors in a real inner product space is said to be orthogonal if all pairs of distinct
+          vectors in the set are orthogonal. An orthogonal set in which each vector has norm 1 is said to be
+          orthonormal.
+
+
+
+          Theorem
+
+                                                                                              
+                     
+                         
+          1.  If  S = { v 1 , v 2 ,  , v   n }  is an orthogonal basis for an inner product space V, and if u is any vector in
+             V, then
+                                                                       
+                                           , u v      , u v            u ,  v n  
+                                      u =      1  v +  1   2  v +  2  +         v
+                                                                                   n
+                                                        
+                                            
+                                           v   2        v  2               v   2
+                                             1           2                  n
+                     
+                                                                                                
+                         
+          2.  If  S = { v 1 , v 2 ,  , v   n }  is an orthonormal basis for an inner product space V, and if u  is any vector
+             in V, then
+                                                                       
+                                       u =   , u v v +   , u v  v +    +   u , v  v
+                                               1   1       2   2             n   n
+
+          Proof
+                            
+                                     
+                                                                      
+          1.  Since  S = { v   1 , v 2  ,  , v n }  is a basis for V, every vector u  in V can be expressed in the form
+                                                                        
+                                               u =    c v +    c v +    +   c v
+                                                    1 1   2 2          nn
+                                 
+                                    v
+                                  , u
+             Let show that  c =      i    for  i = 1, 2,  , n
+                            i       2
+                                  v
+                                   i
+                                              
+               u ,  v  =  c v +  c v +   +   c v  ,    v
+                   i     1 1    2 2         nn      i
+                                                          
+                             ,
+                     =  c vv      +  c  v  , v  +    +   c  v  , v
+                        1  1   i     2   2   i         n    n   i
+                                                                                                      th
+             Since S is an orthogonal set, all of the inner products in the last equality are zero except the i , so we
+             have
+                                    
+                           , u v  =  c v  , v
+                             i     i  i   i
+                                        2
+                                 =  c v
+                                    i  i
+
+
+
+
+                                                           216</code></pre>
      	</div>
     
      </div>

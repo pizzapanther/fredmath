@@ -154,56 +154,54 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Example
 
-          Suppose A is an invertible matrix. The kernel of T is the zero vector; the range W equals the domain V.
-
-          Another linear transformation is multiplication by  A − 1 .
-                                                                                        
-                                                                             
-                                                                          T
-          This is the inverse transformation T − 1 , which brings every vector  ( ) v  back to v :
-                                                                                
-                         
-                                                                           
-                 T − 1 (T v  =                                       − 1 ( Av ) v=
-                        ( )) v   matches the matrix multiplication  A
-
-
-          Are all linear transformation produced by matrices?
-                                                                             n
-                                                                                         m
-          Each m by n matrix does produce a linear transformation from  V =   to W =  . When a linear T is
-          described as a “rotation” or “projection” or “...” is there always a matrix hiding behind T?
-
-          The answer is yes. This is an approach to linear algebra that doesn’t start with matrices. The next section
-          shows that we still end up with matrices.
+          T is the transformation that rotates every vector by 30°, the domain is the xy-plane (where the input
+                                                                          
+                 
+          vector v   is). The range is also the xy-plane (where the rotated  ( ) v  is). Is the rotation linear?
+                                                                       T
+          Solution                                                                        
+                                                                                                 
+                                                                                       T
+             Yes it is. We can rotate two vectors and add the results. The sum of rotation  ( ) Twv +  ( )  is the same
+                                 
+                            T
+             as the rotation  (v + w ) of the sum.
+             The whole plane is turning together, in this linear transformation.
 
 
 
+          Definition
+                                                                                           
+          If  :     W  is a linear transformation, then the set of vectors in V that T maps into 0   is called kernel
+            TV →
+          of T and is denoted by ker(T). The set of all vectors in W that are images under T of at least one vector in
+
+          V is called the range of T and is denoted by R(T).
+
+
+          Note:
+           Transformations have a language of their own. Where there is no matrix, we can’t talk about a column
+                                                                                                 
+           space. But the idea can be rescued and used. The column space consisted of all ouputs  Av .
+
+                                                             
+                                                              0
+           The nullspace consisted of all inputs for which Av − . Translate those into “range” and “kernel”
+                                                    
+                                                 T
+                   Range of T = set of all outputs  ( ) v : corresponds to column space
+                                                               
+                   Kernel of T = set of all outputs for which  ( ) 0T v = : corresponds to nullspace
 
 
 
+          Example
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          Project every 3-dimensional vector down onto the xy plane.
+                                                         
+          The range is that plane, which contains every  ( ) v .
+                                                      T
+          The kernel is the z axis (which projects down to zero). This projection is linear.
 
 
 
@@ -222,18 +220,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                                                            40</code></pre>
+                                                           268</code></pre>
      	</div>
     
      </div>

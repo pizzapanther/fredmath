@@ -152,77 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  − 11
-             P =       
-                   1  1 
+    <pre style="white-space:pre-line"><code>Section 4.5 – Diagonalization
 
 
-             P − 1  = − 1     1  − 1  
-                     2   −  1 −  1 
+                                                                                                        
+             When  x  is an eigenvector, multiplication by A is just multiplication by a single number:  Ax = λ .
+                                                                                                         x
+             The matrix A turns into a diagonal matrix A when we use the eigenvectors property.
 
-                     − 1  1 
-                 =     2  2   
-                     1   1  
-                     2   2 
 
-                 − 1  1  1  1             0  0 
-                  2   2  2  2   −  11   =       −  11
-                  1   1  1  1    1  1     1  1     1  1 
-                                          2  2     
-                  2   2  2  2 
+             Diagonalization
+                                                                                       
+             Suppose the n by n matrix A has n linearly independent eigenvectors  x  , , x  . Put them into the column
+                                                                                 1       n
+             of an eigenvector matrix P. Then  P − 1 AP  is the eigenvalue matrix A:
 
-                                              0 0
-                                           =     
-                                              0  1 
-
-                  − 1  1 
-                  2   2    .5 .5  − 1 1        0 0
-                  1   1     .5 .5   1  1   =   0 1 
-                                                   
-                  2   2 
-                   P − 1       A         P      =     D
+                                                                   λ   1       
+                                                P − 1 AP = Λ=  D =             
+                                                                           λ   
+                                                                             n 
 
 
 
-             Definition
+             Example
 
-             A square matrix A is called diagonalizable if there is an invertible matrix P such that  P − 1 AP  is diagonal;
-             the matrix P is said to diagonalize A.
+                                        .5 .5
 
+             The projection matrix  A =        has  λ  =  0   and   1
+                                        .5 .5      1,2
+             Solution
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                For λ    0 ⇒     ( A λ =  −  IV =  )  0
+                      1                1    1
+                      1  1                 1    1
+                                   0
+                      2  2    x        →  2  x +  2  y =  0
+                                =
+                        1  1       
+                             y
+                                   0
+                              
+                      2  2 
+                    x = − y
+                                      − 1
+                    Therefore, V =    
+                                1     1  
 
 
+                For λ    1 ⇒     ( A λ =  −  IV = )  0
+                      2                2    2
+                      − 1  1                   1     1
+                                      0
+                      2   2    x   =        →−  2  x +  2  y =  0
+                        1  −   1      
+                                      0
+                                y
+                                    
+                               
+                      2    2 
+                    x =  y
+                                     1
+                    Therefore, V =   
+                                2    
+                                     1
+
+                                                   )
+             The eigenvectors are: ( 1, 1−  ) &  (1, 1  that are the value of P.
 
 
 
 
-
-
-
-
-
-
-
-                                                              269</code></pre>
+                                                               297</code></pre>
      	</div>
     
      </div>

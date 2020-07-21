@@ -152,61 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.9 – Rank and the Fundamental Matrix Spaces
+    <pre style="white-space:pre-line"><code>The subspace requirements:  x +  and cx  (and then all linear combinationscx dy+    ) must stay in the
+                                          y
+          subspace.
+
+                                                   3
+          23.  Which of the following subsets of  are actually subspaces?
+                                         (
+                 a)  The plane of vectors  b 1 , b 2 , b 3 )  with b =  b
+                                                            1
+                                                                 2
+                 b)  The plane of vectors with b = 1.
+                                               1
+                                               0
+                 c)  The vectors with bb b = .
+                                      12 3
+                                                                           )
+                                                          )
+                 d)  All linear combinations of v =  (1, 4, 0  and  w = (2, 2, 2 .
+                 e)  All vectors that satisfies b +  b +  b =  0
+                                             1    2    3
+                 f)  All vectors with b ≤  b ≤  b .
+                                      1    2    3
+                                                                                                        
+                                                                                                       
+          24.  We are given three different vectors b 1 , b 2 , b . Construct a matrix so that the equations  Ax = b 1
+                                                            3
+                                               
+               and  Ax = b 2    are solvable, but Ax = b is not solvable.
+
+                                                   3
+                 a)  How can you decide if this possible?
+                 b)  How could you construct A?
+
+                                  (
+          25.  For which vectors   b 1 , b 2 , b 3 )  do these systems have a solution?
+
+
+                     1   1   1      x 1         b 1      1   1   1      x 1          b 1   
+                    
+                a)  0     1   1 x       2   b  =  2       c)       0  0  1 x       2    b  =  2 
+                    
+                      0   0  1        x   3           b   3         0   0  1        x   3           b   3     
 
 
 
-
-          The Reduced Row Echelon Form (rref) is a matrix (R) with each pivot column has only one nonzero
-          entry (the pivots which is always 1).
-
-                              1   3   0   2    − 1
-                                                   
-                        R =      0  0  1  4   − 3
-                                                   
-                               0   0  0  0     0   
-
-                  R rref=  ( )  A
+                     1   1   1      x 1         b 1    
+                    
+                b)  0    1    1       x   2  b  =  2  
+                    
+                      0   0  0        x   3           b   3     
 
 
+                                                           1  − 3  2    2    1 
+                                                           0   3   6    0   − 3 
+                                                                               
+          26.  Find a basis for the null space of A.       A =    2  −  3 −  2  4  4 
+                                                                               
+                                                           3  − 6  0    6    5  
+                                                             −  2  9  2  −  4 −  5   
 
-          Rank of a Matrix
-
-          The rank of a matrix A (m by n) is the number of nonzero rows in the row-reduced echelon form of A (it
-          is the number of pivot). The common dimension of the row space and column space of a matrix A is
-          called the rank of A and is denoted by
-
-                                                           rank ()A =     r
-
-
-
-
-          Note:
-             The rank of a matrix is well defined due to the uniqueness of the row-reduced echelon form. No
-             matter what sequence of elementary row operations is performed to put the given matrix in row-
-             reduced echelon form; there will always be the same number of nonzero rows.
-
-
-          Theorem
-
-          The row space and column space of a matrix A have the same dimension
-
-
-
-          The objective is to connect rank and dimension.
-
-             •  The rank of a matrix is the number of pivots.
-             •  The dimension of a subspace is the number of vectors in a basis.
-
-
-             A has full row rank if every row has a pivot:  r =  m. No zero in R.
-                                                                       n
-             A has full column rank if every column has a pivot:  r = . No free variables.
-
-
-
-
-
+                                   n
+          27.  Is it true that is m =  then the row space of A equals the column space.
+                                                            T
+          28.  If the row space equals the column space the  A =  A
+                   T
+                         A
+          29.  If  A = − , then the row space of A equals the column space.
+          30.  Does the matrices A and  A−   share the same 4 subspaces?
 
 
                                                            178</code></pre>

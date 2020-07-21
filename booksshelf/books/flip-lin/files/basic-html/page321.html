@@ -152,78 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>(
-                                                 (
-                                                                             2
-                                                    −
-                                                                                      −
-                           (ac −+  )  (a c+  ) −  2  4 ac b 2 )  +  (a c +  +  )  (a c ) − 4 ac b 2 )
-                                                                         +
-                λ    λ +  =
-                  1    2                                  2
-                            ( 2 ac+  )
-                         =
-                              2
-                         = +
-                           ac
-                                              )
-                V    V =  b λ  (  a +  ) (  −  c
-                                     b λ −
-                  1   2       1          2
-                                      ac
-                          b λ =  (  1  λ +  2  −−  )
-                        =  ( ba c a c+− −  )
-                        =    0
+    <pre style="white-space:pre-line"><code>Example
 
-                Therefore, these eigenvectors are perpendicular.
+                                                      a b
+             Consider a 2 by 2 symmetric matrix  A =     
+                                                      bc 
+             Solution
+                The eigenvalues are:
+                               a λ−     b
+                det ( A λ−  ) I =
+                                 b    c λ−
 
-
-
-             Theorem
-
-             Orthogonal Eigenvectors:  Eigenvectors of a real symmetric matrix (when they correspond to different
-             λ′s) are always perpendicular.
-
-
-             Proof
-                                                     T
-                             =
-                Suppose  Ax λ    x  ,  Ay λ=  2  y  and  A =  A .
-                                1
-                The dot products of the first equation with y and the second with x:
-
-                    ( )   T   y = ( Ax   ) y
-                                    T 
-                        
-                        x
-                     λ
-                      1
-                                  TT  
-                              =  x Ay
-                                  T  
-                              =  x Ay
-                                  T  
-                              =  x λ  y
+                             (a λ =  −  )(c λ  −  ) b−  2
+                                                  2
+                           =  λ  2  (a c λ −  +  ) +  ac b =    0
+                                               −
+                                          (
+                     (ac ±  )  (ac   ) −  2  4 ac b 2 )
+                       +
+                                              −
+                                  +
+                                                                         (
+                λ =                                        ∴  (a c+  ) −  2  4 ac b 2 ) &gt;  0
+                                                                             −
                                     2
-                       T      T  
-                     x λ ⇒  y =  x λ  y
-                         1        2
-                                                
-                                                 T
-                                                      0
-                Since λ    λ ≠  , this proves that  x y = .
-                        1    2
-                                    (
-                                                                                  (
-                                                                               
-                The eigenvector  x    for  λ 1 )  is perpendicular to the eigenvector  y   for  λ 2 )
 
+                The eigenvectors are:
+                             (
+                For λ     ⇒     A λ IV =  )  0
+                                −
+                      1            1   1
+                     a λ−     b    x    0 
+                         1          1    =  
+                      b     c λ−   y    0
+                                1   1   
+                        ( a λ  ) x +  by =  0  ( ) 1
+                           − 
+                            1   1    1
+                    →       (      )
+                                −
+                        bx +   1  c λ 1  y =  1  0
+                                         )
+                    ( )  1 ⇒     by = ( λ − a x 1
+                               1
+                                     1
+                                   b  
+                           V =            
+                            1     λ − a 
+                                  1   
 
+                              (
+                For λ     ⇒     A λ  IV =  )  0
+                                 −
+                      2             2   2
+                     a λ       b     x   0 
+                       −
+                         2           2    =
+                       b    c λ    y    
+                               −
+                                             0
+                                 2   2   
+                        (  −   )          0
+                         a λ 2  x +  2  by =  2
+                    →  
+                                −
+                        bx +  2  ( c λ 2 ) y =  2  0  ( ) 2
+                       
+                                          )
+                    ( )  2  ⇒     bx = ( λ − c y
+                                2     2      2
+                                   λ − c
+                           V =   2    2      
+                                   b   
 
-
-
-
-                                                              293</code></pre>
+                                                               321</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 295 - Linear Algebra Solution Lecture 4</title>
+        <title>Page 295 - Linear Algebra Lecture 4 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 295 - Linear Algebra Solution Lecture 4</div>
+        <div id="content-top1">Page 295 - Linear Algebra Lecture 4 Solution</div>
         <div id="content-top2">P. 295</div>
      </div>
      <div id="content-middle">
@@ -154,60 +154,87 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>Exercise
 
-           Suppose A and B are both orthogonally diagonalizable and  AB =  BA . Explain why AB is also
-           orthogonally diagonalizable
+                                                    
+                                                       T
+                                      n
+           Let u  be a unit vector in   , and let B u=   u .
+                            n                                                                   
+             a)  Given  x ∈ , compute  Bx  and show that  Bx  is the orthogonal projection of  x  onto u .
+                                                        2
+             b)  Show that B is a symmetric matrix and  B =  B .
+                           
+             c)  Show that u  is an eigenvector of B. What is the corresponding eigenvalue?
            Solution
+                              n
+               a)  Given  x ∈
+                         T ) 
+                   Bx = (    uu  x
 
-
-               Since A and B are both orthogonally diagonalizable, and A and B are symmetric, then
-                                      T
-                   A =  A T  & B =  B
-               If  AB =  BA , then
-
-                             T
+                          ( )
+                           T  
+                      =     uu  x
+                        ( )              T  
+                         
+                             
+                          T
+                      =  u  x   u       u  x : scalar
+                          
+                              )
+                      =  (x   uu
+                                                                                                  
+                                                    n
+                  Given that  u  is a unit vector in   , then  Bx  is the orthogonal projection of  x  onto u .
                     T
-               ( AB ) = (BA )
-                          TT
-                      =  AB             A and B are symmetric
-                        =  AB     √
-
-               Therefore, AB is also orthogonally diagonalizable
-
-
-           Exercise
-
-           Let  A =  PDP − 1 , where P is orthogonal and D is diagonal, let λ  be an eigenvalue of A of multiplicity k.
-
-           Then λ  appears k times on the diagonal of D. Explain why the dimension of the eigenspace for λ  is k.
-
-           Solution
-               The columns of P are linearly independent eigenvectors by the diagonalization theorem
-               corresponding to the eigenvalues  λ  of A.
-
-               Since D is a diagonal with the eigenvalues  λ . when the eigenvalues λ  is of multiplicity k, then λ
-               appears k times on the diagonal of D.
-
-               So, P has exactly k columns of eigenvectors corresponding to the eigenvalues  λ .
-               Therefore, the k columns form a basis for the eigenspace.
+                             u u
+               b)  B =  (   T ) T
+                         
+                                
+                          T
+                                 T
+                         u
+                      = ( )  T   u
+                         
+                           T
+                      =     u u
+                      =  B       √
+                  Therefore, B is symmetric.
 
 
-           Exercise
-
-
-           Suppose  A =  PUP − 1 , where P is orthogonal and U is an upper triangular. Show that if A is symmetric,
-           then U is symmetric and hence is actually a diagonal matrix.
-
-           Solution
-
-               Given:  A =  PUP − 1
-                                           T
-               If A is symmetric, then  A =  A
-               A =  PUP − 1
-
-                              U
-               P −  1 A P =  P −  1 PP − 1 P
-               U =  P − 1 AP
-                                                            253</code></pre>
+                         
+                            T
+                    2
+                         uu
+                   B =  ( )   2
+                                
+                         
+                                  T
+                            T
+                      = ( )( )
+                         uu
+                               uu
+                          ( )
+                                            
+                                  T
+                            T
+                                                 T
+                      = uu uu                  uu =   1
+                         
+                           T
+                      =     u u
+                      =  B       √
+                               2
+                  Therefore,  B  is symmetric.
+                         
+                          T
+               c)  Since uu =  1, then
+                          T  
+                   Bu = (    u u  ) u
+                          (
+                                )
+                        
+                            T
+                   Bu = uu     u
+                                                            968</code></pre>
      	</div>
     
      </div>
@@ -217,7 +244,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page294.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page290.html">290</a>&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>&nbsp;&nbsp;&nbsp;<a href="page298.html">298</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page290.html">290</a>&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>
              </td>
              <td width="35%"><a href="page296.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

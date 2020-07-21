@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 249 - Linear Algebra Solution Lecture 4</title>
+        <title>Page 249 - Linear Algebra Lecture 4 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 249 - Linear Algebra Solution Lecture 4</div>
+        <div id="content-top1">Page 249 - Linear Algebra Lecture 4 Solution</div>
         <div id="content-top2">P. 249</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1           37 
-                          8    00       8  
-                          0    10       0  
-                Let  P =     0  01     0    
+    <pre style="white-space:pre-line"><code>  1          37     1           37 
+                       8    00      8      8  00       8  
+                       0    10      0      0  10       0  
+                 T
+              PP =                                        
+                       0    01      0      0  01       0  
+                                                          
+                         37  00    1         37  00  1   
+                       8            8     8            8 
+                       1 00
+                              
+                   =     01 0
+                              
+                             
+                       0 01  
+                   =  I    √
+                      3
 
-                                           
-                          37            1 
-                               00          
-                          8             8 
-
-                          1          37     1           37 
-                          8   00       8      8  00      8   
-                          0   10       0      0  10      0   
-                   T
-                 PP =       0  01     0          0  01  0    
-                                                             
-                          37           1     37          1 
-                              00                 00          
-                          8            8     8           8 
-                          1 00
-                                 
-                      =      01 0
-                                 
-                          0 01  
-                                
-                      =  I    √
-                         3
-                Therefore, the given matrix is orthogonal.
+             Therefore, the given matrix is orthogonal.
 
 
-             Exercise
+          Exercise
+
+          Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP    A =      31  
+                                                                                          13 
+          Solution
+                            3 − λ   1
+              det ( A − λ  ) I =
+                              1    3 − λ
+
+                                  2
+                         =  (3 − λ ) − 1
+                         =   2  −λ  6 + λ  8 =    0
+
+             The eigenvalues are: λ  =  2 and    λ =      4
+                                   1              2
 
 
-             Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP    A =      31  
-                                                                                             13 
-             Solution
-                               3 − λ   1
-                det ( A − λ  ) I =
-                                1     3 − λ
+             For  λ= , we have: A λ−  (   I v =  )   0
+                       2
+                   1                     1   1
+                               0
+                                            y
+                         x
+                  11         →    x +=   0
+                            =
+                        
+                               0
+                         y
+                  11    
+                 ⇒    x =  −    y
 
-                                     2
-                            = (3 − λ ) − 1
-                            =  2  −λ  6 + λ  8 =    0
-
-                The eigenvalues are: λ  =  2 and    λ =      4
-                                      1              2
-
-                          2
-                For λ= , we have: A λ−  (    I v =  )   0
-                      1                     1   1
+                                                   − 1
+                 Therefore, the eigenvector v =
+                                            1       1    
+                                   (
+                                      −
+                       4
+             For  λ= , we have: A λ        I v =  )    0
+                   2                     2    2
                                   0
                             x
-                                               y
-                     11         →    x +=   0
+                                             x
+                  − 1  1         → −+     y = 0
                                =
-                           
-                                  0
+                            
                             y
-                     11    
-                    ⇒    x =  −    y
+                                  0
+                   1  − 1    
+                 ⇒    x =    y
 
-                                                      − 1
-                    Therefore, the eigenvector v =    
-                                               1     1  
-                                                              921</code></pre>
+                                                           922</code></pre>
      	</div>
     
      </div>

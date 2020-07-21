@@ -152,79 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>5.   Decide the dependence or independence of
+    <pre style="white-space:pre-line"><code>Theorem
 
-                 a)  The vectors (1, 3, 2), (2, 1, 3), and (3, 2, 1).
-                                          )
-                                    −
-                 b)  The vectors (1,  3, 2 , (2, 1,  3−  ) , and ( 3, 2, 1−  ) .
-
-                                                                                4
-          6.   Find two independent vectors on the plane  x +  2y − 3zt−=  in   . Then find three independent
-                                                                         0
-               vectors. Why not four? This plane is the nullspace of what matrix?
-
-                                                                                               3
-          7.   Determine whether the vectors are linearly dependent or linearly independent in  
-                  a)  (4, −1, 2), (−4, 10, 2)               c)  (−3, 0, 4), (5, −1, 2), (1, 1, 3)
-
-                  b)  (8, −1, 3), (4, 0, 1)                 d)  (−2, 0, 1), (3, 2, 5), (6, −1, 1), (7, 0, −2)
+                                                                          
+          Let S be a linearly independent subset of a vector space V, and let v  be a vector in V that is not in S. Then
+               
+                                                     
+          S  { } v  is linearly dependent if and only if v ∈ span ( ) S
 
 
-                                                                                               4
-          8.   Determine whether the vectors are linearly dependent or linearly independent in  
-                 a)  ( {  3, 8, 7,     −  3 ,        −  1 ,    −  1, 2, 6 ,    ) (1, 4, 0, 3         )}
-                                  ) (1, 5, 3,
-                                                 ) (2,
-                                                          )}
-                 b)  ( { 0, 0, 2, 2 ,         ) (1, 1, 0, 1
-                                ) (3, 3, 0, 0 ,
-                                                       −
+          Proof
+                                                                                   
+                                                                  ,
+          If  S  { } v  is linearly dependent, then there are vectors u u 2 ,  , u  in  S  { } v such that
+                                                                             n
+                                                                1
+                                   
+                                                                   ,
+          au +   a u +      +   a u =  0 for some nonzero scalars  a a  ,  , a .
+           11     2 2          nn                                 1   2       n
+                                                                                                       
+          Because S is linearly independent, one of the us  say u , equal v . Thus  av +  a u +    +   a u =  0,
+                                                        '
+                                                       i        1                  1     22           nn
+          and so
+                                    
+              av =  −  ( a u +   +   a u  )
+               1       22           nn
+                   − 1               
+              v =  −  a  ( au +    +   a u  )
+                    1    22           nn
+                   (  −  1  )       (  −  1  )  
+               =  −  aa  2  u −  2  −   aa n  u
+                                               n
+                                        1
+                     1
+                                                                            
+          Since  v  is linear combination of  u  ,  ,  u , which are in S, we have  v ∈ span ( ) S .
+                                            2       n
+                         
+          Conversely, let v ∈ span ( ) S .
+                                            
+                                        ,
+                                    ,
+                                                                       ,
+                                                                   ,
+          Then there exist vectors v v     , v  in S and scalars b b     , b  such that
+                                      2
+                                   1
+                                                                      2
+                                                                              m
+                                                                  1
+                                               m
+                                 
+          v =  bv +  b v +     +   b v . Hence,
+               11    2 2          mm
+                                             
+              bv +  b v +     + b v   + ( ) 1 v−  =  0
+               11    2 2          mm
+                                                         
+          Since  v ≠ v  for i = 1, 2,  ,  m, the coefficient of v  in this linear combination is nonzero, and so the set
+                     i
+          { v v 2 ,  , v   m , v  is linearly dependent.
+                            }
+                            
+           
+               
+             ,
+            1
+                         
+          Therefore  S  { } v  is linearly dependent.
 
-                      (
 
-                 c)  { 0, 3,     −  3,  −  6 , )(  −  2, 0, 0, −  6), 0,(     −  4,  −  2,  −  2 , 0,)(     −  8, 4,    −  4) }
-                                  ) (0, 2, 3, 1 ,
-                 d)  ( { 3, 0, −  3, 6 ,       ) (0, −  2, −  2, 0 ,           )}
-                                                                 ) ( 2, 1, 2, 1−
-                                                                               )}
-                                  ) (2, 2, −
-                                                  ) (2, 3, 2, −
-                 e)  ( { 1, 3, −  4, 2 ,      4, 0 ,            4 , −  ) ( 1, 0, 1, 0
-                 f)  ( { 1, 3,    −  4, 2 ,   ) (2, 2,      −  4, 0 ,   ) (1,     −  3, 2,   −  4 ,         )}
-                                                                   ) ( 1, 0, 1, 0  −
-                                  ) (0, 1, 0,
-                                                 ) (0, 1, 0,
-                                                               ) (0, 0, 0, 1
-                 g)  ( { 1, 0, 0,    −  1 ,       −  1 ,       −  1 ,       )}
 
-                                                                                                  )
-          9.   a ) Show that the three vectors v =    (1, 2, 3, 4 ) v =    (0, 1, 0,  1−  ) v =    (1, 3, 3, 3  form a
-                                              1                 2                   3
-                                          4
-               linearly   dependent set in   .
-               b) Express each vector in part (a) as a linear combination of the other two.
 
-                                                                                                  3
 
-          10.  For which real values of λ do the following vectors form a linearly dependent set in 
-                                                           
-                   v =  (  , λ  1 , −  1 )  v =  ( −  1 , , λ −  1 )  v =  ( −  1 , −  1 , λ −  )
-                    1         2     2    2      2       2     3     2     2
 
-                                     
-                                 
-          11.  Show that if  S = { v 1 , v 2 , , v    n }    is a linearly independent set of vectors, then so is every
-               nonempty subset of S.
 
-                                     
-                                 
-          12.  Show that if  S = { v 1 , v 2 , , v    r }    is a linearly dependent set of vectors in a vector space V, and if
-                                                                                       
-                                                                  {
-               v    ,  , v  are vectors in V that are not in S, then  v  , v  , , v  , v  , , v  }  is also linearly
-                 r+ 1      n                                        1   2       r   r+ 1      n
-               dependent.
+
+
 
 
 

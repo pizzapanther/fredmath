@@ -152,87 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> 1−λ      1   x     0 
-                      2         1   = 
-                    1     −λ    y        →    x −λ   y =  0
-                                         0
-                             2   1               1    21
-                         y
-                 x = λ  21
-                  1
-                          λ 
-                 ⇒   v =    2  
-                          
-                      2
-                               
-                            1  
-          The eigenvector matrix is given by:
-                   λ   λ  
-              S =     1  2    
-                   1    1  
+    <pre style="white-space:pre-line"><code>Fibonacci Numbers
 
-                                                               1
-                                                             
-          The combination of these eigenvectors that give u =   :
-                                                          0
-                                                               0
-                                                              
-                                 
-                  1      1    λ     λ   
-                                   1
-                                           2
-                                              
-                   =  λ −λ          −   
-                                      
-                                             
-                  0
-                       1    2    1     1  
-                            
-                        v −  v
-                      =  1    2
-                        λ −λ  2
-                         1
-                              ( )
-                  λ
-                ( )  100   v − λ  100   v
-          u 100  =  1     1     2      2
-                         λ −λ
-                           1    2
-                                     ( )
-          F 100  =   1        ( ) 100  −λ 2  100   
-                            λ
-                             1
-                  λ − λ
-                   1    2                   
-                                   5   100     5   100 
-               =       1           1+    −   1+     
-                 1+  5  − 1+  5   2           2      
-                    2      2                            
-               ≈  2.54 10×  20
+
+        Every new Fibonacci number is the sum of the two previous F’s.
+               The sequence  0, 1, 1, 2, 3, 5, 8, 13, … . comes from  F   =  F    +  F
+                                                                     k+  2    k  1 +  k
+
+
+        Problem
+
+        Find the Fibonacci number  F
+                                    100
+        We can apply the rule one step at a time, or just use Linear algebra.
+        Let consider the matrix equation: u    =  Au . Fibonacci rule gave us a two-step rule for scalars.
+                                          k  1 +    k
+
+                   F k+ 1       F k+  2  =  F k  1 +  +  F k          11  
+        Let u =            , the rule              becomes u  k+ 1  =       u .
+              k
+                                                                                k
+                    F k             F k  1 +  =  F k  1 +               10 
+
+                                       11                                  F 101  
+        Every step multiplies by  A =      , after 100 steps we reach u 100  =    
+                                       10                                     F 100   
 
 
 
+                                                         3
+                                             2
+                     1        1                                F 101  
+                u =    , u =     , u =    , u =     ,     u    =       
+                 0         1        2         3             100       F 100   
+                                                         2
+                                  1
+                      0
+                                             1
+                  1−λ    1
+              I
+         A−λ =
+                    1    −λ
+                 = −λ (1− λ ) 1−
+                    2
+                 = λ −λ −  1
+                                       2
+        The characteristic equation is λ − λ − =  and the solutions are
+                                              10
+                λ=   1+  2  5  ≈ 1.618 and  λ =  1−  2  5  ≈ − .618
+                                            2
+                 1
+                                  )
+                                   
+            For λ    ⇒   ( A λ−  I v = 0
+                 1             1    1
+                 1−λ     1   x    
+                                       0
+                    1         1   = 
+                  1     −λ    y    0    →    x −λ    y =  0
+                          1   1             1    1 1
+                x = λ  y
+                 1    1 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           278</code></pre>
+                        λ 
+                ⇒  v =    1 
+                    1      
+                          1  
+                                    
+                                  )
+            For λ    ⇒    ( A λ  I v =   0
+                             −
+                  2             2    2
+                                                          306</code></pre>
      	</div>
     
      </div>

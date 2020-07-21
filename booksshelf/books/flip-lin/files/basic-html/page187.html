@@ -152,81 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Combining Bases from Subspaces
+    <pre style="white-space:pre-line"><code>For an m x n matrix of rank r:
 
-                                                         n
-                                                                        n
-                Any n linearly independent vectors in   must span  . They are basis. Any n vectors that span
-                    n
-                    must be independent. They are a basis.
-                                                                                
-                                                                            
-                                                                    n
-                                                                               b
-                If the n columns of A are independent, they span   , So  Ax =  is solvable,
-                                                                           
-                                                                       
-                                          n
-                If the n columns span   , they are independent. So  Ax =  has only one solution.
-                                                                          b
+
+                                  Fundamental Space         Subspace of         Dimension
+
+                                                                   n
+                                 Nullspace                                        n – r
+                                                                   m
+                                 Column Space                                       r
+                                                                   n
+                                 Row space                                          r
+                                                                   m
+                                 Left nullspace                                   m – r
 
 
 
+             Example
+             Find a basis for each of the four subspaces associated with matrix A:
 
+                          1 2 4
+                    A =          
+                          2 48   
+             Solution
 
+                  1 2 4
+                         
+                  2 48     R −  2R 1
+                               2
+                  1 2 4     x = − 2x −  4x 3  ←   Row   space
+                               1
+                                       2
+                         
+                  00 0   
+                                           1
+                                          
+                                          
+                1.  Basis for row space:    2
+                                          
+                                          
+                                           4
+                                          
+                                                   1
+                                                  
+                2.  Basis of the column spaces:    
+                                                   2
+                                                  
+                Rank(A) = 1
+                Dimension of A = 1
 
+                The pivots variables are:  x
+                                          1
+                The free variables are:  x  ,  x
+                                        2   3
 
+                    Set  x  = 1 x   =  0
+                         2        3
+                       The special solution:  s =  ( 2, 1, 0−  )
+                                             1
+                    Set  x  =  0 x   = 1
+                         2        3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               When the orthogonal complement of a subspace S is defined to be the subspace whose vectors pairs to
-                                                                                                                ⊥
-                zero with the vectors in S. The larger the S is, the more restriction  S ⊥   has, and hence the smaller  S
-                is.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                       The special solution:  s =  ( 4, 0, 1−  )
+                                             2
 
 
 

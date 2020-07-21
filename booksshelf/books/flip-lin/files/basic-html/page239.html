@@ -152,90 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>( )    − 1  T  
+                                  T
+                           x =  A A      A y
 
-                                             x −    x =  4
-                                            1     2
-                                          
-              Given the system equation:      3x +  1  2x =  2  1
-                                          
-                                           −  2x +  1  4x =  2  3
-                                          
-                                                                        
-                                                                    
-             a)  Find the least-squares solution of the linear system  Ax =  y
-                                                  
-             b)  Find the orthogonal projection of   y  on the column space of A
-             c)  Find the error vector and the error
-             Solution
+             Proof
 
-                                                   4
-                          1  − 1       m        
-                                                   1
-                a)  A =   3   2             
-                                              y =
-                                    x =
-                                        
-                        
-                                 
-                                                  
-                                         b
-                         − 2  4               
-                                                   3
-                                                
-                                
-                         
-                              T
+                                                                       
+             Let the vector  x  is a least squares solution to  Ax =  y ⇔  ( y −  Ax ) ⊥  CS ( ) A
+                                                                    
+                    ( y −  Ax ) ⋅  = z  0        z   CS  ( ) &A    z  =  Aw
+                                                    n
+                                                   i
+                                               
+                                                        n
+                    ( y −  Ax ) Aw⋅  =  0        w   
+                                                   in
+                    A T  ( y −    Ax ) w⋅    =  0
+
+                    A T  ( y −    Ax ) =  0
+
+                    A y −  T    A A =  T  x  0
+                       
                       T
-                    A Ax =   A y
-                                                                4
-                                   1  − 1                    
-                      1  3 −  2            m     1  3 −  2  
-                                                                1
-                                   3  2       =         
-                      −  12  4              b     −  12  4    
-                                                                3
-                                  − 2  4                     
-                               m
-                     14  − 3     1 
-                                  =
-                                   
-                               b
-                     − 3 21     10 
-                     m    1   21  3   1                        − 1
-                       =                                 X =  AB
-                     b
-                         285 3    14 10   
-                               
-                                       
-                            51 
-                         =     285   
-                            143 
-                            285 
-                            17 
-                         =     95   
-                            143 
-                            285 
-                    Thus  y =  17  x +  143  or  y =  0.1789x +  0.5018
-                             95     285
-                                                 
-                b)  The orthogonal projection of  y  on the column space of A
-
-                           1  − 1   17  
-                                   95  
-                    Ax =    3  2    143   
-                             − 2  4          285   
+                             T
+                    A y =  A Ax
 
 
+             Theorem
+
+             If A is an mn×  matrix, then the following are equivalent
+
+              a)  A has linearly independent column vectors.
+                    T
+              b)  A A is invertible.
 
 
+             Example
 
 
+             Find the equation of the line that best fits the given points in the least-squares sense.
+                    (40, 482), (45, 467), (50, 452), (55, 432), (60, 421)
+
+             Solution
+                Let  y =  mx b be the equation of the line that best fits the given points. Then
+                           +
+                  40 1         482
+                  45 1         467 
+                               
+                          m
+                  50 1      =  452
+                        b       
+                  55 1         432 
+                                 
+                  60 1         421 
+                             40 1                   482
+                                                      
+                             45 1                 467 
+                                           m
+                Where  A  =  50 1   x  =    y    =  452
+                                           b
+                                                    
+                             55 1                   432 
+                                                      
+                             60 1                   421 
 
 
-
-
-                                                            239</code></pre>
+                                                              239</code></pre>
      	</div>
     
      </div>

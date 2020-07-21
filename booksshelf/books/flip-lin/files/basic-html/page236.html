@@ -152,23 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-
-                                                                                  
-             If A is an  mn×  matrix, the equation  Ax =  y  has a solution if and only if  y  is in the column space of
-             A.
-                           
-                             e
-                    y −  Ax =
-                                                                                                    m
-             Ax   is a vector that is in the column space of A. For this A the column space is a plane is  
-                                                                        
-             y    is a vector, not in the column space of A (otherwise  Ax =  y  has an exact solution)
-                                                                  
-             e    is the error vector, the difference between  y  and  Ax
+    <pre style="white-space:pre-line"><code>Section 3.5 – Least Squares Analysis
 
 
 
+          The use to best fit data, we will use results about orthogonal projections in inner product spaces to obtain
+          a technique for fitting a line or other polynomial.
+
+
+          Fitting a Curve to Data
+
+          The common problem is to obtain a mathematical relationship between 2 variables x and y by fitting a
+          curve to points in the xy-plane.
+          Some possibility of fitting the data
+
+                           y                                 y                                y
+                         3                                 5                                 3
+                         2                                                                   2
+                                                           4
+                         1                                                                   1
+                                         x                 3                                                x
+             −4  −3  −2  −1  1  2  3  4                    2                     −4  −3  −2  −1  1  2  3  4
+                        −1                                                                  −1
+                                                           1
+                        −2                                                                  −2
+                                                                           x
+                        −3                     −4  −3  −2  −1  1  2  3  4                   −3
+
+                      y =  ax b                      y =  ax +  2  bx c             y =  ax +  3  bx +  2  cx d
+                            +
+                                                                 +
+                                                                                                      +
+
+
+          Least Squares Fit of a Straight Line
+                                               
+          Recall that a system of equations  Ax =  y  is called inconsistent if it does not have a solution. Suppose we
+                                                                                   (
+                                                                     (
+          want to fit a straight line  y =  mx b to the determined points  x 1 , y 1 ) , ,  x n , y n )
+                                         +
+                                                                               
+          If the data points were collinear, the line would pass through all n points and the unknown coefficients m
+          and b would satisfy the equations
+
+                  y =  mx +  b         x  1         y 
+                   1     1             1            1  
+                 y =   mx +  b         x  1 m        y  
+                                              
+                                            
+                   2      2      ⇒     2       =    2 
+                                               b
+                       
+                                                     
+                 y =   mx +  b           x n  1         y n   
+                   n
+                          n
+                                                       
+                                               
+                                                        A             =      y
+                                               x
+          The problem is to find m and b that minimize the errors is some sense.
 
 
 
@@ -176,59 +220,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-                                                      
-             The length  e  is a minimum exactly when e ⊥  CS ( ) A
-
-
-
-             Best Approximation Theorem
-
-                                                                                      
-                  ( )
-             If CS A  is a finite dimensional subspace of an inner product space, and if  y  is a vector in V, then
-                        
-                                                                ( )
-             proj       y  is the best approximation to y from CS A  is the sense that
-                    ( )
-                 CS A
-                                         
-                     y −  proj      y &lt;   y −  CS ( ) A
-                                ( )
-                              CS A
-                                                                         
-                                      ( )
-             For every vector  w  in CS A  that is different from  proj   y
-                                                                      ( )
-                                                                    CS A
-
-
-             Theorem
-
-                                         
-             For every linear system  Ax =  y , the associated normal system
-                                       
-                                
-                                     T
-                             T
-                           A Ax =   A y
-                                                                           
-             Is consistent, and all solutions are least squares solutions of  Ax =  y
-                                                               T
-             If the columns of A are linearly independent, then  A A is invertible so has a unique solution  x .
-             This solution is often expressed theoretically as
-
-                           ( )    −  1  T    ( )    −  1  T  
-                              T
-                                               T
-                            A A      A Ax =   A A     A y
-
-                                                            236</code></pre>
+                                                           236</code></pre>
      	</div>
     
      </div>

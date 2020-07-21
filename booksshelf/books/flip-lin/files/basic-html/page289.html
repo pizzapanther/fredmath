@@ -152,78 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Summary
+    <pre style="white-space:pre-line"><code>)
+                For λ =   5 ⇒     ( A − λ  IV =  0:
+                      2                 2    2
 
-             To solve the eigenvalue problem for an n by n matrix:
+                                    x
+                                          0
+                      −
+                     15      2    
+                                       =
+                                    
+                                          0
+                                    y
+                              −
+                      2     45      
+                                          0
+                                    x
+                         − 4  2    
+                                       =
+                                   
+                                          0
+                                    y
+                          2   −  1       →   2x −  y =  0
+                    2x =  y
+
+                                                    1 
+                    Therefore, the eigenvector V = 
+                                               2
+                                                    2
+                                                   
 
 
-                                                   I
-              1.  Compute the determinant of  A − λ . With  λ subtracted along the diagonal, this determinant starts
-                         n
-                                n
-                  with λ  or  −λ . It is a polynomial in  λ of degree n.
-                                                                 (
-              2.  Find the roots of this polynomial, by solving det A − λ I ) 0= . The n roots are the n eigenvalues of
-                                      I
-                  A. They make  A − λ  singular.
-                                                          
-                                                           0
-              3.  For each eigenvalue λ, solve ( A − λ  ) Ix =  to find an eigenvector x.
+             Power of a Matrix
+             Theorem
+                                                                         
+                                                                                                                 k
+             If k is a positive integer, λ is an eigenvalue of a matrix A, and  x   is a corresponding eigenvector, then λ
+                                        
+                                 k
+             is an eigenvalue of  A  and  x  is a corresponding eigenvector.
 
-
-
-             Imaginary Eigenvalues
 
              Example
-                                                                        −   2 −  1
-             Find the eigenvalues and the eigenvectors of the matrix  A =     
-                                                                         5  2  
+
+                                                  00 −   2
+                                                          
+                                      7
+             Find the eigenvalues of  A  for  A =      12  1
+                                                          
+                                                  1 0  3  
+                                                         
              Solution
-                               − 2 − λ  − 1
-                det ( A − λ  ) I =
-                                 5     2 − λ
-                            = ( 2− − λ )(2 − λ ) 5+
-                               2
-                            = λ+   1 0=
+                                −  λ  0     −  2 
+                det ( A λ  −  ) I =      1  2 λ  −  1    
+                                1     0         
+                                             −
+                                           3 λ  
+                            =  λ  3  5 λ −  2  8 − 4 =  0
+                                          λ +
+                The eigenvalues of A: λ    1 and   λ =  =  2
+                                       1             2
+                                     7
+                The eigenvalues of  A  are:
 
-                        2
-                    ⇒ λ = −  1
-
-                The eigenvalues are: λ 1,2  =    i ±
-
-
-                For  λ= :  A λ−  i  (  IV =  )  0
-                      1            1    1
-
-                                                0
-                         − 2 i −  − 1    x   1    →  ( 2 i x− −  )  1  −  y = 0
-                                                                      1
-                                          =  
-                                                0
-                          5      2 i  −     y   1   
-                        ⇒  (2 +  i ) x =  1  −  y
-                                         1
-
-                       Therefore, the eigenvector V =   − 1 
-                                                   1      2 i+    
-
-                    λ=    i − : A λ−  (  2 IV =  )  2  0
-                     1
-
-                                                0
-                         − 2 i+   − 1    x   2    →  ( 2 i x− +  )  2  −  y = 0
-                                                                       2
-                                           =  
-                                                0
-                          5      2 i  +     y   2   
-                        ⇒     ( 2 i x− +  )  2  =  y
-                                          2
-
-                       Therefore, the eigenvector V =      − 1   
-                                                   2     2 i−  
+                                          7
+                      7
+                λ    1 =  1   and  λ =  =  2 =  2 1 8
+                  1                  2
 
 
-                                                              261</code></pre>
+
+             Theorem
+
+             A square matrix A is invertible iff λ =  is not an eigenvalue of A.
+                                                  0
+
+
+
+                                                               289</code></pre>
      	</div>
     
      </div>

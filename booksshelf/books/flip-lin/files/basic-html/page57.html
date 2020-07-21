@@ -168,8 +168,8 @@ function MM_swapImage() { //v3.0
              For a square matrix  A =        a ij       , the minor  M . Of an element a  is the determinant of the matrix
                                                          ij
                                                                             ij
-                                    th
                                                   th
+                                    th
              formed by deleting the i  row and the j  column of A.
 
              Example
@@ -183,7 +183,8 @@ function MM_swapImage() { //v3.0
              Solution
 
                         3   1   − 4
-                 M 32  =  2  5   6
+                 M    =  2  5    6
+                   32
                         1   4    8
 
                         3 −  4
@@ -197,10 +198,10 @@ function MM_swapImage() { //v3.0
 
              The determinant is the dot product of any row i of A with its cofactors:
 
-
-                    Cofactor Formula:  C =   ( ) 1−  ij+  M
-                                         ij              ij
-
+                                                   +
+                                             ( ) 1
+                    Cofactor Formula:  C = −      ij  M  ij
+                                         ij
 
                                         A  =  aC    +  a C    +  a C
                                              11 11     12 12      13 13

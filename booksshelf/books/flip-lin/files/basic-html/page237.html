@@ -152,75 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                          T
-                                  T
-                           x = ( )    − 1  A y
-                                A A
+    <pre style="white-space:pre-line"><code>Least Square Problem
 
-             Proof
-                                                                       
-             Let the vector  x  is a least squares solution to  Ax =  y ⇔  ( y −  Ax ) ⊥  CS ( ) A
-                                                                    
-                    ( y −  Ax ) ⋅  = z  0        z   in CS ( ) &A  z  =  Aw
-                                               
-                                                     
-                    ( y −  Ax ⋅  ) Aw =  0       w in   n
-                    A T  ( y −    Ax ) w⋅    =  0
-
-
-                    A T  ( y −    Ax ) =  0
-
-                    A y −  T    A A =  T  x  0
-                       
-                      T
-                             T
-                    A y =  A Ax
-
-
-             Theorem
-
-             If A is an  mn×  matrix, then the following are equivalent
-
-              a)  A has linearly independent column vectors.
-                    T
-              b)  A A is invertible.
+                                                                                                         
+             Given a linear system  Ax =  y  of m equations in n unknowns, find a vector  x  that minimizes  y −  Ax
+                                                                               
+                                                            m
+             with respect to the Euclidean inner product on   . We call such as  x  a least squares solution of the
+                                                                              
+                             
+                                  
+                                                                                    
+             system, we call  y −  Ax  the least squares error vectors, and we call  y −  Ax  the least squares error.
+                                   e 
+                                   e 1  
+                             x
+                           A =       2    
+                                     
+                                   e  
+                                   m 
+                                                                                      
+                                                                                                          2
+             The term “least square solution” results from the fact the minimizing  y −  Ax =  e +  2  e +  2  +  e
+                                                                                            1    2        m
 
 
              Example
 
-             Find the equation of the line that best fits the given points in the least-squares sense.
-                    (40, 482), (45, 467), (50, 452), (55, 432), (60, 421)
-
+             Find the sums of squares of the errors of (2, 4), (4, 8), (6, 6)
              Solution
-                Let  y =  mx b+  be the equation of the line that best fits the given points. Then
+
+                 4 =  2m b ⇒      4 2mb       e 1
+                                        −=
+                                   −
+                        +
+                                   −
+                        +
+                8 =  4m b ⇒      84mb = −     e
+                                               2
+                        +
+                 6 =  6m b ⇒     66mb = −     e
+                                   −
+                                               3
+                                                                              2
+                e +  2  e +  2  +   e 2  =  (4 2mb−  −  ) +  2  (84mb−  −  ) +  2  (66mb−  −  )
+                 1    2         m
+                                                                                                             2
+                The least squares problem for this example to find the values m and b for which e +  2  e +  2  +  e is a
+                                                                                               1   2         m
+                minimum.
 
 
-                  40 1         482
-                  45 1         467 
-                               
-                          m
-                  50 1      =  452
-                        b       
-                  55 1         432 
-                  60 1         421 
-                                 
 
-                             40 1                   482
-                             45 1                   467 
-                                                    
-                                           m
-                Where  A  =  50 1   x  =    y    =  452
-                                           b
-                                                    
-                             55 1                   432 
-                             60 1                   421 
-                                                      
 
-                                                     T
-                                                             T
-                Using the normal equation formula:  A Ax =  A y
-                                                            237</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              237</code></pre>
      	</div>
     
      </div>

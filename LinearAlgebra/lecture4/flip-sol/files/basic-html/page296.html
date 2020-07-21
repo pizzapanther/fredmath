@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 296 - Linear Algebra Solution Lecture 4</title>
+        <title>Page 296 - Linear Algebra Lecture 4 Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 296 - Linear Algebra Solution Lecture 4</div>
+        <div id="content-top1">Page 296 - Linear Algebra Lecture 4 Solution</div>
         <div id="content-top2">P. 296</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Since P is orthogonal, then
-                              T
-               U =  P − 1 AP =  P AP
-
-                       T
-               U T  = ( P AP ) T
-
-                       TT
-                               T
-                    =  PA   ( )  T             A is symmetric
-                             P
-                       T
-                    =  P AP
-               That implies that U is symmetric
-               Since U is an upper triangular and symmetric, then the entries above and below the main diagonal
-               must be equal to zeros.
-
-               Therefore, U is a diagonal matrix.
+    <pre style="white-space:pre-line"><code>
+                      = u ( ) 1
+                        
+                      = u
+                              
+                  Therefore, u  is an eigenvector of B with the corresponding eigenvalue 1.
 
 
            Exercise
 
-                                     n              
-                                                       T
-           Let u  be a unit vector in   , and let B u=   u .
-                            n                                                                   
-             a)  Given  x ∈ , compute  Bx  and show that  Bx  is the orthogonal projection of  x  onto u .
-                                                        2
-             b)  Show that B is a symmetric matrix and  B =  B .
+                                                         2
+           Let B be an  nn×  symmetric matrix such that  B =  B . Any such matrix is called a projection matrix (or
+                                                            n                   
+                                                                                   y
+                                                                                       ˆ y
+           an orthogonal projection matrix). Given any  y ∈ , let  ˆ y =  By  and  z = − .
                            
-             c)  Show that u  is an eigenvector of B. What is the corresponding eigenvalue?
+             a)  Show that  z  is orthogonal to  ˆ y .
+                                                           
+                                                                                                         ⊥
+             b)  Let W be the column space of B. Show that  y  is the sum of a vector in W and a vector in W . Why
+                                                                     
+                does this prove that  By  is the orthogonal projection of  y  onto the column space of B?
+
            Solution
 
-                         
-                               n
-               a)  Given  x ∈
-                       (  T ) 
-                   Bx =     uu  x
-                          ( )
-                             
-                      =     uu T  x
-                        ( )               T  
-                             
-                         
-                          T
-                      =  u  x   u       u  x : scalar
-                          
-                              )
-                      =  (x   uu
-                                                                                                  
-                                                    n
-                  Given that  u  is a unit vector in  , then  Bx  is the orthogonal projection of  x  onto u .
-                    T
-                             u u
-               b)  B =  (   T ) T
-                                
-                         
-                                 T
-                          T
-                      = ( )  T   u
-                         u
-                          T
-                      =     u u
-                      =  B       √
-                  Therefore, B is symmetric.
+                                               T
+               Since B is symmetric, then  B =  B
+                                2
+               Given too, that  B =  B  which is symmetric.
+                     
+               ˆ y =   By
+                                  
+                      ˆ =
+               a)  z   y  ( yy   −  ) ˆ  By
+                                       
+                                        By
+                       =  y     ( ) ˆ   By −   y  ( )
+                           
+                                        T    
+                              ( ) ( )
+                       =  y T      By −  By     By
+                                             ( )
+                                            
+                             
+                                         
+                       =  y T     Byy TT    By
+                                 −
+                             
+                                      B
+                                         
+                                        
+                                                        2
+                                 −
+                       =  y T     Byy T B   By         B =  B
+                             
+                                        
+                           T      T  
+                       =  y  B y y−  B y
+                       =  0
+                              
+                  Therefore,  z  is orthogonal to  ˆ y
+                                                                                                 
+                                                                  ( )  has the form  Bu  (for some u )
+               b)  Since W be the column space of B, then W =  Col B
+                                           
+                   ( yy−  ˆ   ) ( u ) B yy=  ( −  ) ˆ   u
+                             B
+                                              
+                                 = (By − By ) ˆ   u
+
+                                                             2
+                                 = (By − BBy                 B =  B
+                                             )     u
+                                             
+                                 = (By − By )       u
+                                 = 0
 
 
-
-
-                                                            254</code></pre>
+                                                            969</code></pre>
      	</div>
     
      </div>
@@ -231,7 +241,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page295.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>&nbsp;&nbsp;&nbsp;<a href="page298.html">298</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page291.html">291</a>&nbsp;&nbsp;&nbsp;<a href="page292.html">292</a>&nbsp;&nbsp;&nbsp;<a href="page293.html">293</a>&nbsp;&nbsp;&nbsp;<a href="page294.html">294</a>&nbsp;&nbsp;&nbsp;<a href="page295.html">295</a>&nbsp;&nbsp;&nbsp;<a href="page296.html">296</a>&nbsp;&nbsp;&nbsp;<a href="page297.html">297</a>
              </td>
              <td width="35%"><a href="page297.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

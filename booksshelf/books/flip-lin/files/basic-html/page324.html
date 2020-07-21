@@ -152,72 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Complex Eigenvalues of Real Matrices
+    <pre style="white-space:pre-line"><code>   − 2
+                ⇒    v =    
+                     1     1  
 
-          For real matrices, complex λ′s and x′s come in “conjugate pairs”
+                             (
+            For λ =  5   ⇒     A λ  I v =  )    0
+                                −
+                  2                2    2
+                                   0
+                 − 8  4    x   2  
+                             =                    0
+                                   0
+                  4   2  −     y   2     →  4x −  2  2y =  2
+                ⇒      2x =  y
+                       2    2
 
-
-                 if    Ax λ x  then Ax =  λ x
-                       =
-
-
-          Example
-
-                           cosθ  − sinθ  
-          Given       A =              
-                           sinθ  cosθ  
-          Solution
-             The eigenvalues of A:
-
-                            cosθ   λ −    sinθ −
-              det ( A λ−  ) I =
-                              sinθ     cosθ   λ −
-                                                 +
-                         =  (cosθ  λ −  )(cosθ  λ −  ) sin θ 2
-                         =  cos θ 2  2 cosλ −  θ  λ +  2  +  sin θ 2
-                           λ =  2  2 cosλ −  θ  +  1 0=
-
-
-
-              λ =  2cosθ  4cos θ ±  2  −  4
+                          1
+                        
+                ⇒    v = 
+                     2
                           2
-
-                  2cosθ    4 cos θ ±  (  2  1 −  )
-                =                                           cos θ  2  sin θ +  2  = 1 →  cos θ  2  −=  sin θ −  2
-                                                                                        1
-                            2
-
-                =  2cosθ  2 −  sin θ ±  2
-                          2
-                  cosθ =  i sin  θ ±
-
-             The eigenvalues are conjugate to each other.
-
-                                                 
-                                               )
-             For λ    cosθ =  i sinθ +  :   ( A−λ  I v =  0
-                   1                         1   1
-                  cosθ   (cosθ −  i sinθ +  )     sinθ −          x   1  
-                                                                         0
-                                                                    =  
-                                                                         0
-                          sinθ           cosθ   (cosθ −  i sinθ +  )       y   1   
-                                                                  θ
-                                            0
-                   i sinθ −  −  sinθ     x   1    i sin x =  θ →  1  sin y 1
-                                      = 
-                                            0
-                   sinθ    i sinθ       y   1   
-                 ⇒    x =  iy
-                       1    1
-                 The eigenvectors:
-
-                       1 
-                 v =     
-                  1     i −  
+                         
+               
+            v 1   v =  2  ( 2)(1) (1)(2)
+                            +
+                      −
+                       22
+                   = −+
+                   =  0
+            Thus, the eigenvectors are perpendicular.
 
 
-                                                           296</code></pre>
+            The unit vector of the eigenvectors by dividing by their length  2 +  2  1 =  2  5
+                                     
+            The eigenvectors v 1   and   v are the columns of Q.
+                                       2
+
+                      − 21
+                      1  2 
+                Q =       
+                        5
+
+
+                        T
+                Q − 1  = Q =  1      − 21  
+                              5   1  2 
+
+                     T
+              =
+            A QDQ
+              =  1    1        −  21 −  5 0 −  21 
+                                         
+                                 
+                  5   5     1  2   0  5   1  2 
+              =  1   10  5  − 2 1 
+                          
+                5 − 5 10    1  2 
+                  
+                  2  1 − 21
+              =              
+                 − 12   1  2 
+                  − 34
+              =            √
+                  4  3 
+
+
+          Every symmetric matrix A has a complete set of orthogonal eigenvectors:
+                                           T
+                A =  PDP − 1  ⇒   A QDQ
+                                    =
+
+
+                                                          324</code></pre>
      	</div>
     
      </div>

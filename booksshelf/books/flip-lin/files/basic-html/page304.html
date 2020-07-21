@@ -152,86 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>hey all have rank one (like A). Their trace is cd – cd = 0.
+    <pre style="white-space:pre-line"><code>Similar Matrices
 
-             Their eigenvalues are 0 and 0 (like A).
-                            ab                               − 1
-             Choose  M =          with ad −  cd =  1 and  B =  M  AM
-                            c d 
+        Definition
 
+        If A and B are square matrices, then we say that B is similar to A if there exists an invertible matrix P such
 
-          Connections between similar matrices A and B:
+        that  B =  P −  1 AP or  A =  PBP −  1
 
 
-                        Not Changed                 Changed
+                                                                          
+                                                                                                            
+            Similar matrices B and  M − 1 AM  have the same eigenvalues. If  x  is an eigenvector of A then  M − 1 x  is
+            an eigenvector of  B =  M − 1 AM .
 
-                  Eigenvalues                 Eigenvectors
-                  Trace and determinant       Nullspace
-                  Rank                        Column space
+        Proof
 
-                  Number of independent       Row space
-                         eigenvectors         Left nullspace
-
-                  Jordan form                 Singular values
-
-
-          Example
-
-           Jordan matrix J has triple eigenvalues 5, 5, 5. Its only eigenvectors are multiples of (1, 0, 0). Algebraic
-           multiplicity 3, geometric multiplicity 1:
-
-                         51 0                      01 0
-                                                            
-                 If  J =      0 51     then J −  5I =      0 01  has rank 2.
-                                                            
-                           005                     000  
+              Since  B =  M −  1 AM ⇒  A =  MBM  −  1
+                             
+              Suppose  Ax λ=  x :
+                                     
+                               
+                       MBM   − 1 x =  λ x
+                             
+                                       
+                       BM  −  1 x =  λ M −  1 x
+              The eigenvalue of B is the same λ. The eigenvector is now  M − 1 x
 
 
-           Every similar matrix  B =  M − 1 JM  has the same triple eigenvalues 5, 5, 5. Also B – 5I must have the
-           same rank 2. Its nullspace has dimension 3 − 2 = 1. So each similar matrix B also has only one
-           independent eigenvector.
+        Example
 
-                                  T
-           The transpose matrix  J  has the same eigenvalues 5, 5, 5, and  J T  − 5I  has the same rank 2. Jordan’s
-                             T
-           theory says that  J  is similar to J.  The matrix that produces the similarity happens to be the reserve
-           identity M:
+                                 .5 .5                   1 −     10
+            The projection  A =         is similar to  D =  P AP =    
+                                 .5 .5                           00 
 
-                                                                     
-                                                           
-                                                                      
-                                       500        00 1 5 1 0 00 1
-                                                            
-                                                           
-                                                                                
-                                                            
-                                                                     
-                                                                      
-                                              
-                   T
-                 J =   M − 1 JM  is      1 5 0 =      01 0 0 51 01 0
-                                                                      
-                                                                     
-                                                            
-                                                           
-                                              
-                                                                                
-                                                                     
-                                                                      
-                                         0 1 5        1 00 005 1 00      
-                                                            
-                                                           
-                                                                     
-                                                           
-                                                            
-                                                                      
-                                                                            (
-                                                     )
-                                            (
-                                                                                            T
-           There is one line of eigenvectors  x 1 , 0, 0  for J and another line  0, 0, x 3 )  for  J .
 
-                                                           276</code></pre>
+                           10                       − 1          11
+            Choose  M =         ; the similar matrix  M  AM          
+                                                              s
+                                                              i
+                           12                                    00 
+                                0 − 1                                  .5  − .5
+            Also choose  M =          ; the similar matrix  M − 1 AM          
+                                                                    s
+                                                                    i
+                                1  0                                   − .5  .5  
+
+            These matrices  M − 1 AM  all have the same eigenvalues 1 and 0.
+            Every 2 by 2 matrix with those eigenvalues is similar to A.
+
+            The eigenvectors change with M.
+
+
+        Example
+
+
+                  01                                 cd   d 2 
+                                                                              0
+            A =         is similar to every matrix  B =         except  B = .
+                  00                                   −  c 2  −  cd   
+
+            These matrices B all have zero determinant (like A). T
+            hey all have rank one (like A). Their trace is cd – cd = 0.
+                                                          304</code></pre>
      	</div>
     
      </div>

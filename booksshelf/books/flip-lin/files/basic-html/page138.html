@@ -152,67 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solve the system equations:  k =  −  1  , t  k =  −  1  , t  k =  t
-                                          1     2     2     2     3
-             This shows that the system has nontrivial solutions and hence that the vectors are linearly dependent.
+    <pre style="white-space:pre-line"><code>Theorem
+
+          A set S with two or more vectors  S = { v   1 , , v   k }   is
+                                                   
+           a)  Linearly dependent iff at least one of the vectors in S is expressible as a linear combination of the
+               other vectors in S. There are numbers c 1 , , c  k   at least one of which is nonzero, such that
+                                   
+               c v +  c v +     +  c v =  0
+                11     2 2         k k
+
+           b)  Linearly independent iff no vector in S is expressible as a linear combination of the other vectors in
+               S.
 
 
-                 2nd method to determine the linearly is to compute the determinant of the coefficient matrix
 
-                                                              1  5    3
-                                                                        
-                                                            
-                                                        A = − 2   6    2
-                                                            
-                                                                        
-                                                              3   11   
-                                                                 −     
-                  A =  0 Which has nontrivial solutions and the vectors are linearly dependent.
 
+
+
+
+
+
+
+
+
+
+
+                                                                                            
+                     Independent vectors v  , v  , v                 Dependent vectors  w  , w  , w
+                                          1   2    3                                     1    2   3
+                                                                                                 
+                                                                     The combination  w −    1  w +    2  w
+                                                                                                   3
+                                                                     is (0, 0, 0)
 
 
           Example
 
-                                                                                         4
-          Determine whether the vectors are linearly dependent or linearly independent in  
-                                                                      
-                               v =  (1, 2, 2,  1 ) v =  (4, 9, 9,  4 ) v =   (5, 8, 9,  5 )
-                                                                  −
-                                                                                      −
-                                             −
-                                1                   2                    3
-          Solution
-                                 
-              k v +  k v +  k v =   0
-               11     2 2    3 3
-              k 1 (1, 2, 2,  1−  ) k+  2  (4, 9, 9,  4−  ) k+  3  (5, 8, 9,  5−  ) (0, 0, 0, 0=  )
+          a)  The vectors (1, 0) and (0, 1) are independent.
 
-             Which yields the homogeneous linear system
 
-                       k +   4k +  5k =  0
-                       1     2     3
-                      2k +  9k +  8k =  0
-                    
-                 →     1     2     3
-                      2k 1 +9 k +  2  9k =  3  0
-                                       0
-                      −  k −  1  4 k −  2  5k =  3
+          b)  The vectors (1, 1) and (1, 0.0001) are independent.
 
-                1  4    5   0
-                                 R −  2R
-                2  9    8   0          2  1
-                2  9    9   0    R −  2R
-                                  3     1
-                −  1 −  4 −  50   R + R
-                                     4    1
+          c)  The vectors (1, 1) and (2, 2) are dependent.
 
-                1 4  5   0    R −  4R 2
-                                  1
-                01 −  20   
-                           
-                0 1 − 10       R −  R
-                                3    2
-                00   0   0 
+
+          d)  The vectors (1, 1) and (0, 0) are dependent.
+
+
+          Theorem
+                                      
+          a)  A finite set that contains 0  is linearly dependent.
+                                                                                               
+          b)  A set with exactly one vector is linearly independent if and only if that vector is not 0.
+
+          c)  A set with exactly two vectors is linearly independent iff neither vector is a scalar multiple of the
+             other.
 
 
 
