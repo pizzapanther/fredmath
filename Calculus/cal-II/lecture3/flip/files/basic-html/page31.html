@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 31 - Lecture 3</title>
+        <title>Page 31 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 31 - Lecture 3</div>
+        <div id="content-top1">Page 31 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 31</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Integral Test
+    <pre style="white-space:pre-line"><code>=  2
 
 
-           Theorem
+               Thus, the partial sums are bounded from above by 2 and the series converges.
 
-               { }
-                                                                         ( ) , where  f  is a continuous, positive,
-           Let  a n   be a sequence of positive terms. Suppose that  a n  =  fn
-                                                                                       ∞
-                                                                                      ∑
-           decreasing function of x for all  x ≥  N  (N a positive integer). Then the series   a n  and the integral
-                                                                                       =
-                                                                                      nN
-              ∞
-           ∫ N    f  () x dx both converge or both diverge.
+                    ∞
+                   ∑     1 2  =  π 2
+                               6
+                   nN   n
+                    −
+                          ≈ 1.64493
 
 
 
 
+           p-series
 
 
 
+           Example
+                                    ∞
+                                  ∑     1     1    1     1         1
+           Show that the p-series        p  =  p  +  p  +  p  +  +  p  +  
 
+                                    n= 1  n  1     2    3         n
 
+           (p a real constant) converges if p &gt; 1, and diverges if p ≤ 1.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-           Example                               ∞
-
-                                               ∑      1
-           Does the following series converge?        2
-                                                  n= 1  n
            Solution
+                  ∞                −+  1   b
+                    x ∫  1  dx =  lim    x  1
+                                      p
 
-                 ∞
-               ∑     1 2  =  1+  1  +  1  +  16  +  +  1 2  +  
-                                     1
-                                 9
-                             4
-                n= 1  n                       n
+                 1   p      b→∞   − p +   1
+                                           p
+                                        
+                                                  
+                           =   1   lim b  −+  1  − 1
+                             1−  p  b→∞           
+                                                 
+                           =   1   lim    1  − 1            p &gt; 1
+                             1 p  b→∞     b p− 1    
+                              −
+
+                           =   1  (01−  )
+                             1 p
+                              −
+                           =   1
+                             p − 1
+
+               The series converges when p &gt; 1.
 
 
-               S =   1  +  1  +  1  +  1  +  +   1
-                 n   1 2  2 2  3 2  4 2       n 2
+               if p ≤ 1
 
-                   =  f (1) +  f  (2) +  f  (3) +  +  f  ( )n
-                          n
-                    1
-                   &lt;+          x ∫  1 2  dx
-                         1
+                     ∞
+                       x ∫  1 p   dx =  1− 1 p     lim b 1 p  − 1
+                                            (
+                                                      )
+                                               −
+                    1                  b→∞
+                              = ∞
 
-                                1
-                    1
-                   &lt;+   lim   ( )    b
-                               −
-                       b→∞       x   1
-                        (  1  )
-                   =  1−  ∞  −  1
+                  The series diverges.
 
-                                                              301</code></pre>
+
+                                                              287</code></pre>
      	</div>
     
      </div>

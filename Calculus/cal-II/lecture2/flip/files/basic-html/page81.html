@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 81 - Lecture 2</title>
+        <title>Page 81 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 81 - Lecture 2</div>
+        <div id="content-top1">Page 81 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 81</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,55 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Euler’s Method
+    <pre style="white-space:pre-line"><code>A first-order linear differential equation is one that can be written in the standard form
+
+                                                      dy  +  P ( ) x ⋅=  Qx
+                                                                       ( )
+                                                                 y
+                                                      dx
+           Where P and Q are continuous functions of x
 
 
-             Euler's method named after Leonhard Euler is an example of a fixed-step solver.
-             Euler's method is a first-order numerical procedure for solving ordinary differential equations (ODEs)
-             with a given initial value. It is the most basic kind of explicit method for numerical integration of ordinary
-             differential equations.
+           Solving Linear Equations
+
+                                  dy
+                                                  ( )
+           We solve the equation     +  P ( ) x ⋅=  Qx
+                                             y
+                                  dx
+
+           Separable Equation
+
+           Solution of the homogenous equation
+
+               dy  +  P ( ) x y =  0
+               dx
+
+               dy  = − P ( ) x y
+               dx
+
+               ∫ ∫        P ( ) x dx           Integrate both sides
+                  dy
+                     = −
+                  y
+
+
+                            x
+                                +
+               ln y =  −  ∫ P ( )dx C          Convert to exponential form
+                       −  ∫ P ( ) x dx C+
+                 ( ) =
+               yx     e
+
+                       − ∫ P ( ) x dx  C
+                    =  e         e
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    y′ =  f  (, )xy   yx  ) =  y
-                                    (
-                                      0     0
-                    The setting size:  h =  ba−  &gt;  0 ;       k = 1, 2, 3, …
-                                          k
-                                               a
-                             Then,        x =
-                                           0
-                                          x =  x + =   ah+
-                                                    h
-                                           1    0
-                                          x =  x    +  h =  a kh+
-                                           k    k  1 −
-                             Last point   x =  a kh =  b
-                                                 +
-                                           k
-                    By the definition of the derivative:
-                                      (
-                                               yx
-                                             −
-                             ( )
-                                                   k
-                             ′
-                            yx  k  ≈  yx k+ 1 ) ( )
-                                            h
-                                                   (
-                             ( )
-                            y x k  ≈  y k  1 +  h −  y k  =  fx k , y k ) : slope
-                             ′
-                                                (
-                                                          )
-                    The tangent line at the point  x 0 ,(yx 0 )  is:
-                                        (
-                        y    =  y +  . hf x  , y  )
-                         k  1 +  k        k   k
-                        y k  1 +  =  y +∆ x step .f ( x k  , y k )    y k  1 +  =  y +  f ( x k  , y k ) dx
-                                 k
-                                                                        k
-                    This method is known as Euler's Method with step size h.
+                         − ∫ P ()dx
+                              x
+               yx      . Ae
+                () =
 
 
 
@@ -228,7 +210,22 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              237</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              229</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 50 - Lecture 2</title>
+        <title>Page 50 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 50 - Lecture 2</div>
+        <div id="content-top1">Page 50 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 50</div>
      </div>
      <div id="content-middle">
@@ -152,41 +152,10 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.5 – Numerical Integration
+    <pre style="white-space:pre-line"><code>Trapezoid Approximations
 
-
-
-          Absolute and Relative Error
-
-          Definition
-
-          Suppose c is a computed numerical solution to a problem having an exact solution x.
-          There are two common measures of the error in c as an approximation to x:
-
-                                                                              −
-                                                                             c x
-                        absolute error  =  c x−      &      relative error  =       (if  x ≠  ) 0
-                                                                              x
-
-          Example
-
-          The ancient Greeks used   22   to approximate the value of π. Determine the absolute and relative error in
-                                   7
-          this approximation to π.
-
-          Solution
-
-              absolute error =   22  − π
-                               7
-                            ≈  0.00126
-
-
-                              22  − π
-              relative error =   7
-                                π
-                           ≈  .000402
-
-                           ≈ .04%
+        The Trapezoid Rule for the value of a definite integral is based on approximating the region between a curve
+        and the x-axis with trapezoids instead of rectangles.
 
 
 
@@ -210,20 +179,67 @@ function MM_swapImage() { //v3.0
 
 
 
+                                               −
+                                         ∆
+        The length of each subinterval is  x =  ba   is called the step size or mesh size.
+                                                n
+                                      y  +  y 
+        The area of a trapezoid:  x   ∆⋅  i− 1  i  
+                                        2     
+                                              
+        The area is the approximation by adding the areas of all trapezoids:
+
+                              )
+                                 x
+                                                                          x
+                                                 x 
+                T =  1 ( y +  y ∆+  1 ( y +  y  ) ∆+   +  1 ( y  +  y   ) ∆+  1 ( y   +  y  ) ∆ x
+                    2   0    1      2   1    2           2   n−  2  n−  1     2   n−  1  n
+                  =  1  ∆  x y + (  y +  y +  y +  +   y  +  y  +  y  +  y  )
+                     2     0    1    1    2        n −  2  n −  1  n −  1  n
+                         (
+                  =  1 ∆  xy +  2y +  2y +    +  2y   +  2y   +  y  )
+                     2     0      1     2          n −  2  n −  1  n
 
 
+        The Trapezoid Rule
 
+        If  f  is continuous on [a, b] and if a regular partition of [a, b] is determined by the numbers
 
-
-
-
-
-
-
-
-
-
-                                                           206</code></pre>
+                             b
+                   ,
+         a =  x  , x  , x = , then
+              0  1       n
+            ∫  b  f  ( ) x dx ≈  ba   2n   −  fx 0  +  2 fx 1  +  2 fx 2  +  +  2 fx n− 1 ) ( ) 
+                                   ( )
+                                                                      (
+                                                       ( )
+                                             ( )
+                                                                               fx
+                                                                             +
+                                                                                   n 
+                         a        n− 1                  
+                                                    ( )
+                                         ( )
+                            ( )
+                                 +
+                                                           ∆
+                ( ) n =  T      1  fx 0 ∑  fx k  +  1  fx n      x
+                        2
+                                                2
+                                                        
+                                  k  1 =                
+                                                                                         b
+                x =   , a     x =  a +∆  , x    x =  a + 2 x  ,     x  =  a + (n −  ) 1 ∆  , x    x =
+                                                     ,
+                                                  ∆
+                 0         1             2                    n− 1                   n
+                              −
+               Where  x =   ba    and   x =   , a     x =  a k x
+                       ∆
+                                                         +∆
+                              n         0          k
+                                                           198</code></pre>
      	</div>
     
      </div>

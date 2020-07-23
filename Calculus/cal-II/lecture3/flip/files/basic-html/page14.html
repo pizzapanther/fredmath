@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 14 - Lecture 3</title>
+        <title>Page 14 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 14 - Lecture 3</div>
+        <div id="content-top1">Page 14 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 14</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>In this case, we also write
-                                                                    ∞
-                                           a +  a +     +  a +   =  ∑  a =  L
-                                             1    2        n             n
-                                                                    n= 1
-        If the sequence of partial sums of the series does not converge, we say that the series diverges.
+    <pre style="white-space:pre-line"><code>Proof
+
+                               th
+            By definition, the n  partial sum S  of a geometric sequence is:
+                                              n
+
+                      +
+               S   =  a ar +  ar +  2  +  ar n−  2  +  ar n−  1
+                n
+            −    S r  n  =  ar +  ar +  2  ar +  3  +  ar n− 1  +  ar n
+
+                                      −
+                         S −  n  rS n  =  a ar n
+
+
+            (1 rS−  )  n  =  a ( 1 r−  n )
+
+                     −
+            S   =  a 1 r n
+              n     1 r
+                      −
 
 
 
-        Geometric Series
-
-        Geometric series are series of the form
-                                                                         ∞
-                                        a +  ar +  ar +  2  +  ar n−  1  +  =  ∑ ar n−  1
-                                                                        n= 1
-        In which a and r are fixed real numbers, and  a ≠ .
-                                                        0
-                                                  n
-        The series can also be written as  ∑ ∞  0 ar
-                                            n=
+        Definition
 
 
+            If  r &lt; 1, the geometric series  a +  ar +  ar +  2  +  ar n− 1  +    converges to   a
+                                                                                     −
+                                                                                    1 r
+                                                   ∞
+                                                  ∑   ar n− 1  =  1 r  ,  r &lt; 1
+                                                                a
+                                                                −
+                                                  n= 1
+            If  r ≥ 1, the series diverges.
 
 
-        Definition of Geometric Sequence
-                                                                                                                0
-                                                                             0
-        A sequence  a  ,  a  ,  a  ,  ,  a  ,      is a geometric sequence if  a ≠  and if there is a real number   r ≠
-                                  
-                     1    2   3        n                                 1
-        such that for every positive integer k.
-                                                       a     =  ar
-                                                        k+ 1    k
-                         a
-        The number  r =   k+ 1   is called the common ratio of the sequence.
-                          a
-                           k
-                              th
-        The formula for the n  Term of a Geometric Sequence:
+                                          Diverges      Converges      Diverges
+                                           r ≤− 1       −&lt;      1        r ≥ 1
+                                                         1 r &lt;
+
+          The sequence may converge to a single value, which is the limit of the sequence.
+          The sequence terms may increase in magnitude without bound (either with one sign or with mixed signs),
+            in which case the sequence diverges.
 
 
-                                                       a =  a r n− 1
-                                                        n    1
+          The sequence terms may remain bounded but settle into an oscillating pattern in which the terms
+            approach two or more values, then the sequence diverges.
 
-
-        Theorem: Formula for  S
-                                    n
-
-        The nth partial sum  S  of a geometric sequence with first term  a  and common ratio  r ≠ 1 is
-                             n
-                                                                       1
-                                                       S =  a 1 r−  n
-                                                        n     1 r−
-
-
-
+          The terms of a sequence may remain bounded, but wander chaotic forever without pattern, then the
+            sequence diverges in this case.
 
 
 
@@ -219,7 +215,13 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                           284</code></pre>
+
+
+
+
+
+
+                                                           270</code></pre>
      	</div>
     
      </div>

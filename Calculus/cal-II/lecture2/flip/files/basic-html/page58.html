@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 58 - Lecture 2</title>
+        <title>Page 58 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 58 - Lecture 2</div>
+        <div id="content-top1">Page 58 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 58</div>
      </div>
      <div id="content-middle">
@@ -152,52 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>16
-
-             b)  From the figure the values accompanied by 7 trapezoids whose area approximates  ∫   s′ ( ) t  dt
+    <pre style="white-space:pre-line"><code>Section 2.6 – Improper Integrals
 
 
-                 Area of the first trapezoid:                                                     0
 
-                     T    1  (s′ =  ( ) 0 +  s′  ( )) 3⋅  3
-                      1   2
+        Definition
 
-                        =  1 (0.51 5.19 3+  ) ⋅
-                           2
-                        = 8.55
+        Integrals with infinite limits of integration are improper integrals.
 
+                                           )
+                f
+         1.  If  ( ) x  is continuous on [ ,a ∞ , then
 
-                     T    1  (s′ =  ( ) 3 +  s′  ( )) 2 ⋅  5
-                      2   2
-
-                        =  1 (5.19 4.39 2 ⋅  )
-                                  +
-                           2
-                        = 9.58
-
-                     T    1 (s′ =  ( ) 5 +  s′  ( )) 2⋅  7
-                      3   2
-
-                        =  1 (4.39 2.21 2+  ) ⋅
-                           2
-                        = 6.6
+                  ∫  a ∞  f  ( ) x dx = b→∞∫  lim  a b  f  ( ) x dx
 
 
-                     T    1  (s′ =  ( ) 7 +  s′  ( )) 1⋅  8
-                      4   2
 
-                        =  1 (2.21 5.24+  )
-                           2
-                        = 3.725
 
-                     T    1 (s′ =  ( ) 8 +  s′  ( )) 4⋅  12
-                      5   2
 
-                        =  1 (5.24 0.63 4+  ) ⋅
-                           2
-                        = 11.74
 
-                                                           214</code></pre>
+                f
+         2.  If  ( ) x  is continuous on (−∞ , b ], then
+                  b
+               ∫  −∞  f  ( ) x dx = a→−∞∫  lim  a b  f  ( ) x dx
+
+
+
+
+
+
+
+                f
+         3.  If  ( ) x  is continuous on (−∞ , ∞ ), then
+                  ∞
+                                c
+               ∫  −∞  f  ( ) x dx = ∫  −∞  f  ( ) x dx + ∫  c ∞  f  ( ) x dx
+
+
+
+
+        In each case, if the limit is finite we say that the improper integral converges and that the limit is the value of
+        the improper integral. If the limit fails to exist, the improper integral diverges.
+
+
+        Example
+
+        Is the area under the curve  y =  ln x   from x = 1 to x = ∞ finite? If so, what is its value?
+                                       x 2
+        Solution
+                                                                                  dx
+            ∫  1 b  ln x  dx =  −  1  ln x  b  −  ∫  1 b ( )( ) dx    u =  ln x  dv =  x 1 2
+                                               1
+                                           1
+                                         −
+                                 1
+                                               x
+                                           x
+                  2
+                           x
+                 x
+                                                                       1
+                           ( 1        )    b  1                  du =  x  dx  v = −  x
+                       =  −  b  ln b −  ln1 +  ∫ 1  x 2  dx
+                                  
+                       = − 1 lnb + − 1  b
+                           b          x     1
+                                   1
+                                      1
+                       =  −  1 lnb −  ( )
+                                     −
+                           b       b
+                       =  −  1 lnb −  1  +  1
+                           b      b
+                                                           206</code></pre>
      	</div>
     
      </div>

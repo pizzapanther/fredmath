@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 72 - Lecture 3</title>
+        <title>Page 72 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 72 - Lecture 3</div>
+        <div id="content-top1">Page 72 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 72</div>
      </div>
      <div id="content-middle">
@@ -152,53 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example                                  ∞
-
-                                               ∑      x n
-        Determine the radius of convergence of         ! n
-
-                                                n= 0
-        Solution
-                               1                               Or  R =  lim   1   ( ⋅  n +  ) 1 !
-                            (n +  ) 1!                                 n→∞     ! n
-                 L =  lim
-                     n→∞       1                                               (n +  ) 1!
-                               n !                                    =  lim
-                                                                        n→∞        ! n
-                    =  lim      ! n                                      =  lim  (   n +  ) 1
-                      n→∞   (n +  ) 1!                                  n→∞
-
-                    =  lim    1                                       =     ∞
-                      n→∞   n + 1
-                    =  0
-
-                Thus  R  = ∞
-
-            This series converges (absolutely) for all x.
+    <pre style="white-space:pre-line"><code>Theorem − The Series Multiplication Theorem for Power Series
 
 
-        Example
-                                                 ∞
-                                               ∑        n
-        Determine the radius of convergence of       nx
-                                                      !
-                                                n= 0
-        Solution
+                                           ∞
+                    ∞
+                  ∑        n              ∑        n
+           Ax
+        If  ( ) =      a x  and  ( ) =         b x  converge absolutely for  x &lt;  R , and
+                                  Bx
+                         n
+                                                n
+                   n= 0                   n= 0                                     n
+                           c =  a b +   ab      +  a b    +   +  a  b +  a b =  0 ∑  a b
+                            n     0 n    1 n−  1   2 n−  2       n −  11   n            k nk
+                                                                                           −
+                                                                                  k= 0
+               ∞
+              ∑        n
+                                                 Ax B
+        Then       c x  converges absolutely to  ( ) ( ) x  for  x &lt;  R :
+                    n
+               n= 0
 
-                       (n +  ) 1!
-            L =  lim
-                n→∞       n !
-               =  lim  (   n +  ) 1
-                 n→∞
-               =     ∞
-
-            Thus  R =  0
-
-
-            This series converges only at its centre of convergence, x = 0.
+                                            ∞          ∞           ∞
+                                          ∑    a x n     b x n   =  ∑  c x
+                                                      ∑
+                                                                              n
+                                                      ⋅
+                                                n          n           n
+                                            n= 0       n= 0       n= 0
 
 
 
+        Finding the coefficients c
+                                 n
+            ∞        ∞             
+          ∑    x n     ( ) 1  n x n+ 1    = ( 1 x  x +  2  )    x −  x 2  +  x 3  −    
+                    ∑
+                            −
+                    ⋅
+                                            ++
+                              n + 1                      2    3     
+            n= 0     n= 0          
+                                              x 2  x 3        2   x 3  x 4        3   x 4  x 5    
+                                        =    x −  +   −      x −     +    −      x −     +    −     +  
+                                                             +
+                                                                                   +
+                                                                                           2
+                                                                                                 3
+                                                2
+                                                     3
+                                                                     2
+                                                                           3
+                                                              
+                                                                                                       
+                                                 by 1                 by x                  by x 2
+                                        =  x +  x 2  +  5x 3  −  x 4  
+                                              2     6     6
+
+
+        Theorem
+                                                            ∞
+            ∞
+           ∑       n                                       ∑              n
+        If     ax  converges absolutely for  x &lt;   R , then     a n  ( f x
+                                                                      ( ))  converges absolutely for any
+                 n
+           n= 0                                            n= 0
+                                   f
+        continuous function  f  on  ( ) x &lt;  R
 
 
 
@@ -210,9 +233,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-                                                           342</code></pre>
+                                                           328</code></pre>
      	</div>
     
      </div>

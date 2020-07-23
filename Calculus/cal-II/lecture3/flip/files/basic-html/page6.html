@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 6 - Lecture 3</title>
+        <title>Page 6 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 6 - Lecture 3</div>
+        <div id="content-top1">Page 6 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 6</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Using L’Hôpital’s Rule
 
 
-        Show that    n + 1  → 1
-                      n
-
-        Solution
-
-
-                                             f
-            We know that   n + 1  → 1. Taking  ( ) x =  x  and L = 1 that gives   n + 1  →  11=
-                            n                                                   n
+        Theorem
+                                                               { }
+                      f
+        Suppose that  ( ) x  is a function for all  x ≥  n  and that  a   is a sequence of real numbers such that
+                                                    0            n
+         a  =  fn           n . Then
+                ( )  for  n ≥
+          n                  0
+                                             lim f  ( ) x =  L ⇒  lim a =   L
+                                            x→∞                  n→∞    n
 
 
         Example
 
-                          { }
+
+        Show that  lim  ln n  =  0
+                   n→∞    n
+        Solution
+
+
+            The function  ln x   is defined for all  x ≥ 1 and agrees with the given sequence at positive integers.
+                           x
+            Therefore;
+
+             lim  ln n  =  lim  ln x
+            n→∞    n    x→∞    x
+
+                               1
+                       =  lim  x
+                         x→∞   1
+                       =  0
+
+
+
+        Example
+
+                                                    n +
+                                                       1
+        Does the sequence whose nth term is   a =  ( )   n  converge? If so, find  lim a
+                                               n    n − 1                       n→∞    n
+        Solution
+
+                                                     ∞
+            The limit leads to the indeterminate form 1 .
+                              1
+                           n +
+                ln a =  n l  ( ) n
+                   n       n − 1
+                                1
+                             n +
+                      =  n ln ( )                  ∞.0 form
+                                1
+                             n −
+                           n+
+                              1
+                        ln ( )
+                      =    n− 1                    0.0 form
                            1
-            The sequence   n   converges to 0.
-                                        x
-                                f
-            By taking  a =  1  ,  ( ) x =  2 , and L = 0.
-                        n   n
-                                  1
-            We see that  2 1/n  =  f  ( )  →  fL  2 =  0  1.
-                                          ( ) =
-                                  n
-                          { }
-                            1/n
-            The sequence  2       converges to 1.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           276</code></pre>
+                           n
+                                                                 1 (n+
+                                  n+
+                                    1
+                               ln ( )                          n−−  2 1)
+                                                          )
+             lim ln a =   lim     n− 1              ( ln  n+ 1 ′  =  (n−  ) 1  =  − 2
+            n→∞      n   n→∞      1                    n−  1     n+ 1     (n+  1)(n−  1)
+                                  n                              n− 1
+                                                           262</code></pre>
      	</div>
     
      </div>

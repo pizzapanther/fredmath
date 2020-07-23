@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 52 - Lecture 2</title>
+        <title>Page 52 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 52 - Lecture 2</div>
+        <div id="content-top1">Page 52 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 52</div>
      </div>
      <div id="content-middle">
@@ -152,19 +152,13 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( )
-                                   ( )
-                                                            ( )
-                 4 =
-              M ( ) ( )       x   fm  2  ∆+   fm  3  ∆+   fm  4  ∆ x
-                      fm ∆+
-                                                      x
-                                          x
-                          1
-                      (    2       2      2       2 )
-                                                        )
-                    =  2.25 +  2.75 +  3.25 +  3.75  (0.5
-                    = 18.625
+    <pre style="white-space:pre-line"><code>Simpson’s Rule: Approximations Using Parabolas
+
+
+                                                                                  −
+                                                                             x
+        We partition the interval [a, b] into n subintervals of equal length  h = ∆ =  b a  : n even number
+                                                                                  n
 
 
 
@@ -185,53 +179,53 @@ function MM_swapImage() { //v3.0
 
 
 
+                                                               +
+        The parabola has an equation of the form:  y =  Ax +  2  Bx C
+        So the area under it from x = −h to x = h is
 
+                    ∫  h (  2         )
+              A =        Ax +   Bx C dx
+                                   +
+                p     − h
 
+                  =  A  x +  3  B  x +  2  Cx  h
+                     3      2          − h
 
-                        4
-                      ∫   x  dx
-                           2
-              Exact =  2
+                  =  A h +  3  B  h +  2  Ch −  (  A ( ) h−  3  +  B  ( ) h−  2  +  C ( ) h−  )
+                     3      2            3         2
 
+                  =  A h +  3  B  h +  2  Ch +  A h −  3  B h +  2  Ch
+                     3      2           3      2
                          3
-                    =  1  x   4
-                      3     2
+                  =  2  Ah + 2Ch
+                     3
+                           2
+                  =  h ( 2Ah + 6C )
+                     3
+                                                      (
+                                                                                (
+                                                                                  ,
+        Since the curve passes through the three points  −  , h y 0 ) ( 0, y 1 ) , and   h y 2 )
+                                                              ,
+                               +
+                                                             +
+                y =  Ah −  2  Bh C   y =  C   y =  Ah +  2  Bh C
+                 0                    1        2
+                       C =  y  ,  Ah −  2  Bh =  y −  y
+                            1                  0    1
+                                 Ah +  2  Bh =  y −  y
+                                              2    1
+                                 2Ah =  2  y −  0  2y +  1  y 2
 
-                    =  56
-                       3
+                     2
+         A =   h ( 2Ah + 6C )
+          p    3
 
-
-              absolute error =   18.625 −  56
-                                        3
-                            ≈  0.0417
-
-
-                             18.625 −  56
-              relative error =         3
-                                  56
-                                   3
-                            ≈  .00223 =  .223%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           208</code></pre>
+             =  h ( y −  2y +  y +  6y  )
+               3   0     1    2      1
+             =  h ( y +  4y +  y  )
+               3   0     1    2
+                                                           200</code></pre>
      	</div>
     
      </div>

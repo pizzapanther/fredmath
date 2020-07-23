@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 69 - Lecture 3</title>
+        <title>Page 69 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 69 - Lecture 3</div>
+        <div id="content-top1">Page 69 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 69</div>
      </div>
      <div id="content-middle">
@@ -152,61 +152,59 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example                                              ∞
+    <pre style="white-space:pre-line"><code>Radius of Convergence of a Power Series
 
-                                                               ∑    x n         x 2   x 3
-           For what values of x do the power series converges?        ! n  = 1 x++  2!  +  3!  +
+           Corollary to Theorem
 
-                                                               n= 0
-           Solution
-
-                u n+ 1   x n+ 1   ! n
-                 u    =  (n +  ) 1! ⋅  n
-                  n              x
-
-                          x
-                      =      →  0   ( ) x∀
-                        n + 1
-               The series converges absolutely for all x.
+                                         ∑             n
+           The convergence of the series      c n  ( xa−  )  is described by one of the following three cases:
 
 
 
+                                                                                −
+             1.  There is a positive number R such the series diverges for x with  xa &gt;  R  but converges absolutely for
+                 x with  xa−  &lt;  R . The series may or may not converge at either of the endpoints  x =  a R  and
+                                                                                                    −
+                     a
+                 x = +  R .
+                                                                  )
+             2.  The series converges absolutely for every x (R = ∞ .
+             3.  The series converges at x = a and diverges elsewhere (R = 0)
 
 
 
-
-           Example
-                                                                ∞
-                                                               ∑       n              2      3
-           For what values of x do the power series converges?       ! nx = ++    2!x +  3!x +
-                                                                           1 x
-                                                               n= 0
-           Solution
-
-                u n+ 1  (n +  ) 1!x n+ 1
-                 u    =        n
-                  n          ! nx
-                      =  (n +  ) 1 x →∞
-
-
-               The series diverges absolutely for all x except x = 0.
+           R is called the radius of convergence of the power series, and the interval of radius R centered at x = a is
+           called the interval of convergence.
 
 
 
+           Definition
+
+                                   a                                                          n
+                                                                                          −
+           Suppose that  L =  lim    n+ 1    exists or is ∞. Then the power series  ∑ c  ( xa )  has radius of
+                            n→∞      a n                                             n
+
+           convergence  R =  1  . (If L = 0, then R = ∞; if L = ∞, then R = 0) and R =  lim  a n
+                             L                                                    n→∞    a n+ 1
 
 
-
-           Theorem             ∞
-                              ∑        n                  2      3
-                                                                                            0
-                                                                                         c
-           If the power series     a x = n  a +  0  ax a x+  1  2  +  a x + 3   converges at  x = ≠ , then it converges
-                              n= 0
-           absolutely for all x with  x &lt;  c . If the series diverges at  x =  d , then it diverges for all x with  x &gt;  d .
+           How to Test a Power Series for Convergence
 
 
+             1.  Use the Ratio Test (or Root Test) to find the interval where the series converges. Ordinarily, this is an
+                 open interval
+                                                    −
+                                                  xa &lt;    R   or a R &lt; &lt;+        R
+                                                                    −
+                                                                          x
+                                                                              a
+             2.  If the interval of absolute convergence is finite, test for convergence or divergence at each endpoint.
+                 Use the Comparison Test, the Integral Test, or the Alternating Series Test.
 
-
+             3.  If the interval of absolute convergence is a R−  &lt;  x &lt;+  R , the series diverges for  xa−  &gt;  R  (it does
+                                                                    a
+                 not even converge conditionally) because the nth term does not approach zero for those values of x.
 
 
 
@@ -216,7 +214,12 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              339</code></pre>
+
+
+
+
+
+                                                              325</code></pre>
      	</div>
     
      </div>

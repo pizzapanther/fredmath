@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 51 - Lecture 2</title>
+        <title>Page 51 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 51 - Lecture 2</div>
+        <div id="content-top1">Page 51 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 51</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,91 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Midpoint Rule
-
-             Definition
+    <pre style="white-space:pre-line"><code>Error Estimate for the Trapezoidal Rule
 
 
-                                                         ]
-             Suppose  f  is defined and integrable on [ ,a b . The midpoint Rule Approximation to  ∫ a b  f  ( ) x dx   using
-                                                  ]
-             n equally spaced subintervals on [ ,a b  is
-                                          ( )
-                       ( ) ( )
-                                                           ( )
-                                                 x
-                    M n =    fm ∆+       fm    ∆+      +  fm    ∆ x
-                                     x
-                                 1           2                n
-                              n     x    +
-                          =      f    ∑    k  1 −  2  x   k      ∆ x
-                             k  1 =           
+           If M is a positive real number such that  f ′′ ( ) x ≤  M  for all x in [a, b], then the error involved in using the
+
+                                               Mb      ) a  3
+                                                 ( −
+           Trapezoidal Rule is not greater than
+                                                 12n 2
 
 
-                           −
-                    ∆
-             Where  x =  ba   ,
-                           n
-                                        k x
-                                     a
-                    x =    , a      x = +∆
-                     0          k
-                          x    +  x
-                                                       
-                    m =    k  1 −  k   is the midpoint of  x  ,  x    , for  k = 1, 2,  ,  n .
-                      k       2                          k  1 −  k 
+           Example
 
 
-             Example
+                                                             2
+           Use the Trapezoid Rule with n = 4 to estimate  ∫  2 x dx . Compare the estimate with the exact value.
 
+           Solution                                       1
 
-                               2
-             Approximate  ∫  4 x dx   using the Midpoint Rule with n =  subinterval
-                                                                     4
+                      −
+                ∆ x =  ba  =  21 −  =  1
+                       n     4    4
+                   x =  1
+                    0
+                    x =  1+  1  =  5
+                    1      4   4
 
-             Solution       2
-                                             −
-                                        x
-                With  a =  2,  b =  4 →∆ =  4 2  =  0.5
-                                             4
-                The grid points are:
-
-                    x =  2
-                     0
-                           +
-                     x =  2 0.5 =  2.5
-                      1
-                           +
-                     x =  2 2 .5     3
-                               ( ) =
-                      2
-                    x =  2 +  ( 3 0.5 =  )  3.5
-                     3
-                    x =  2 +  ( 4 0.5 =  )  4
-                     4
+                             1
+                   x =  12  ( )  =  6
                          +
-                m =   2.5 2   =  2.25
-                  1      2
-                        +
-                m =   3 2.5   = 2.75
-                  2      2
-                        +
-                m =   2 3.5   =  3.25
-                  3      2
-                          +
-                m =   3.5 4   = 3.75
-                  4      2
+                    2        4    4
+                             1
+                         +
+                   x =  13  ( )  =  7
+                    3        4    4
+                   x =  2
+                    4
+                        (
+               T =  1 ∆  xy +  2y +  2y +    +  2y  +  y  )
+                   2      0     1      2         n− 1   n
+                                   2
+                                           2
+                                5
+                                         6
+                                                 7
+                  =  11     1 +  2  2 ( ) ( ) ( ) 2  +  2   2 
+                                               2
+                                      2
+                                             +
+                      ⋅
+                                    +
+                    2 4        4        4       4        
+                                             49
+                                    36
+                            25
+                                          2
+                                        +
+                       +
+                                                  4
+                                                 +
+                  =  1 ( 12 ( ) ( ) ( ) )
+                                  2
+                                +
+                    8       16      16      16
+                  =  75
+                    32
+                  ≈  2.34375
+               ∫ 1 2 x dx =  1  x 3  1 2
+                    2
+                          3
+                                    )
+                                   3
+                               3
+                         =  1 ( 2 − 1
+                           3
+                              ≈
+                         =  7    2.3333
+                           3
+               The difference:  2.34375 2.3333 0.01042−  ≈
+                                              −
+                                                                      44
+               The percentage error:     2.34375 2.33333  ≈  0.004466 . 6 %
+                                           2.33333
 
-
-                                                              207</code></pre>
+                                                              199</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 62 - Lecture 2</title>
+        <title>Page 62 - Calculus II- Lecture 2</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 62 - Lecture 2</div>
+        <div id="content-top1">Page 62 - Calculus II- Lecture 2</div>
         <div id="content-top2">P. 62</div>
      </div>
      <div id="content-middle">
@@ -152,30 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.6 – Improper Integrals
+    <pre style="white-space:pre-line"><code>Example                          1
+
+
+                                            1
+        Investigate the convergence of  ∫  1 x  dx
+                                           −
+        Solution                        0
+
+
+            ∫  1 1 x dx =  b→ 1 ∫  −  b 1 x  dx
+                 1
+                                     1
+                          lim
+                 −
+                                     −
+                                 0
+              0
+                                           b
+                                      −
+                        =  lim − ln 1 x 
+                                
+                                          
+                          b→ 1 −           0
+                                      −
+                        =  lim − ln 1 b +  0
+                                             
+                               
+                          b→ 1 −
+                        = ∞
+
+              The limit is infinite, so the integral diverges.
+
+
+        Example
+
+        Evaluate     ∫  3 ( x − dx ) 1  2/3
+
+
+        Solution       0
+
+            The integrand has a vertical asymptote at x = 1 and is continuous on [0, 1) and (1, 3].
+               ( x − ∫  dx ) 1 ∫  2/3  =  ( x −  ) 1  − 2/3  d ( x −  ) 1 =  ( 3 x −  ) 1  1/3
 
 
 
-          Definition
 
-          Integrals with infinite limits of integration are improper integrals.
-
-                                             )
-                 f
-          1.  If  ( ) x  is continuous on [ ,a ∞ , then
-
-
-                   ∫  a ∞  f  ( ) x  dx =    b→∞∫  lim  a b  f  ( ) x  dx
+            ∫  0 3 ( x −  dx ) 1 ∫  2/3  =  0 1 ( x −  dx ) 1 ∫  2/3  +  1 3 ( x −  dx ) 1  2/3
 
 
 
 
 
+                                         1 −              3
+                           =        ( 3 x −  ) 1  1/3       0  +        ( 3 x −  ) 1 1/3       1 +
 
-          2.  If  ( ) x  is continuous on (−∞ , b ], then
-                 f
-                   b
-                 ∫  −∞  f  ( ) x  dx = a→−∞∫  lim  a b  f  ( ) x  dx
+                                               )
+                           =  ( 30 1+  ) 3+  ( 3  2 −  0
+
+                                 3
+                           = 3 3 2
+                              +
+
+                                                                              b c
 
 
 
@@ -183,47 +222,14 @@ function MM_swapImage() { //v3.0
 
 
 
-                 f
-          3.  If  ( ) x  is continuous on (−∞ , ∞ ), then
-
-                 ∫  ∞  f  ( ) x dx = ∫  c  f  ( ) x dx + ∫  ∞  f  ( ) x dx
 
 
-                  −∞
-                                                c
-                                 −∞
 
 
-          In each case, if the limit is finite we say that the improper integral converges and that the limit is the value
-          of the improper integral. If the limit fails to exist, the improper integral diverges.
 
 
-          Example
 
-          Is the area under the curve  y =  ln x   from x = 1 to x = ∞ finite? If so, what is its value?
-                                         x 2
-          Solution
-
-                b                    b     b                        u =  ln x  dv =  dx
-                   x ∫
-                                                   1
-                                               1
-                                             −
-                     ln x dx =  −  1  ln x   1 ∫  −  ( )( )  dx                     x 2
-                    2
-                                               x
-                             x
-                                                   x
-               1                          1                        du =  1  dx  v = −  1
-                                                                        x
-                                                                                     x
-                             ( 1        )    b   1
-                         =  −  b  lnb −  ln1 +    x ∫  2   dx
-                                             1
-                                    (
-                         = −  1 lnb +−  1  b
-                             b         x  1
-                                                           218</code></pre>
+                                                           210</code></pre>
      	</div>
     
      </div>

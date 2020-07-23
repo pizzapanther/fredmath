@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 73 - Lecture 3</title>
+        <title>Page 73 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 73 - Lecture 3</div>
+        <div id="content-top1">Page 73 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 73</div>
      </div>
      <div id="content-middle">
@@ -152,90 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem − The Series Multiplication Theorem for Power Series
-
-                                              ∞
-                       ∞
-                     ∑        n             ∑        n
-              Ax
-           If  ( ) =      a x  and  ( ) =        b x  converge absolutely for  x &lt;  R , and
-                                     Bx
-                            n
-                                                   n
-                      n= 0                   n= 0                                     n
-                              c =  a b +   ab      +  a b    +   +  a  b +  a b =  0 ∑  a b
-                               n     0 n    1 n−  1   2 n−  2       n−  11    n            k nk−
-                                                                                     k= 0
-                  ∞
-                 ∑       n
-           Then       c x  converges absolutely to  ( ) ( ) x  for  x &lt;  R :
-                                                    Ax B
-                       n
-                 n= 0
-                                               ∞          ∞           ∞
-                                                         ∑
-                                             ∑    a x n     b x n   =  ∑  c x
-                                                                                 n
-                                                         ⋅
-                                                                     
-                                                   n          n            n
-                                               n= 0       n= 0       n= 0
+    <pre style="white-space:pre-line"><code>Theorem − The term-by-Term Differentiation Theorem
 
 
-
-           Finding the coefficients c
-                                    n
-               ∞        ∞             
-                       ∑
-             ∑    x n     ( ) 1  n x n+ 1   = ( 1 x  x +  2  )    x −  x 2  +  x 3  −    
-                               −
-                                               ++
-                       ⋅
-                                         
-                                 n + 1                       2    3     
-               n= 0     n= 0          
-                                                 x 2  x 3        2   x 3  x 4        3   x 4  x 5    
-                                           =   x −  +    −      x −     +    −      x −     +    −    +  
-                                                                +
-                                                                                      +
-                                                  2
-                                                                                                   3
-                                                                              3
-                                                        3
-                                                                        2
-                                                                                              2
-                                                                          
-                                                    by 1                 by x                 by x 2
-                                           =  x +  x 2  +  5x 3  −  x 4 
-                                                 2     6     6
-
-
-           Theorem
-                                                               ∞
                ∞
-              ∑       n                                       ∑              n
-                                                                        ( ))  converges absolutely for any
-           If     ax  converges absolutely for  x &lt;   R , then     a n  ( f x
-                    n
-              n= 0                                            n= 0
-                                      f
-           continuous function  f  on  ( ) x &lt;  R
+              ∑             n
+           If      c n  (xa−  )  has a radius of convergence R &gt; 0, it defines a function.
+
+              n= 0                         ∞
+
+                                          ∑              n
+                                                                                        a
+                                   f  ( ) x =  c n  ( x a )  on the interval a −  R &lt;  x &lt;+  R
+                                                     −
+                                          n= 0
+           This function  f  has derivatives of all order inside the interval, and we obtain the derivatives by
+           differentiating the original series term by term:
+
+                                                           ∞
+                                                          ∑               n− 1
+                                                  f ′ ( ) x =  nc n  ( x a )
+                                                                      −
+                                                           n= 1
+                                                        ∞
+                                                      ∑                      n− 2
+                                              f ′′ ( ) x =   ( nn −  ) 1 c n  ( x a )
+                                                                         −
+                                                       n= 2
+
+                                                                                                    a
+           And so on. Each of these derived series converges at every point of the interval a R−  &lt;  x &lt;+  R
 
 
+           Example
+
+                              f ′
+                                         f ′′
+           Find the series for  ( ) x  and  ( ) x  if
+                   f  ( ) x =  1  =  1 x+  +  x +  2  x +  3  x +  4  +   x +  n  
+                          1 x−
+                            ∞
+                          ∑     n
+                        =      x  , −&lt;    x &lt; 1
+                                      1
+                           n= 0
+           Solution
 
 
+                f ′ ( ) x =  1  =  12x +  3x +  2  4x +  3  +  nx n− 1  +  
+                                   +
+                       (1 x  ) 2
+                          −
+                         ∞
+                       ∑        n− 1
+                     =           nx
 
+                        n= 1
 
+                f ′′ ( ) x =  2  =  2 6x +  12x +  2  20x +  3  +  ( nn −  ) 1 x n− 1  +  
+                                   +
+                        (1 x ) 3
+                          −
+                        ∞
+                      ∑              n− 2
+                    =       nn     ) 1  x                     − 1 &lt;  x &lt; 1
+                             ( −
+                       n= 2
 
-
-
-
-
-
-
-
-
-                                                              343</code></pre>
+                                                              329</code></pre>
      	</div>
     
      </div>

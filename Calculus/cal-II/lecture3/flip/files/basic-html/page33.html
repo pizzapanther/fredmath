@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 33 - Lecture 3</title>
+        <title>Page 33 - Calculus II- Lecture 3</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 33 - Lecture 3</div>
+        <div id="content-top1">Page 33 - Calculus II- Lecture 3</div>
         <div id="content-top2">P. 33</div>
      </div>
      <div id="content-middle">
@@ -152,48 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Bounds for the Remainder in the Integral Test
 
-                                                ∞
-                                              ∑       1
-           Does the following series converge       n +  1
-                                                     2
-                                                 n= 1
+                    { }
+                                                                     ( ) , where  f  is a continuous positive
+           Suppose  a n   is a sequence of positive terms with  a k  =  fk
+           decreasing function of x for all x ≥ n, and that  ∑ a  converges to S. Then the remainder  R =  S −  s
+                                                                                                             n
+                                                                                                    n
+                                                             n
+           satisfies the inequalities
+                                              ∫  ∞  f  ( ) x dx ≤  R ≤  n  ∫  ∞  f  ( ) x dx
+
+
+
+                                                n+ 1                   n
+
+           Example
+                                         ∑     1
+           Estimate the sum of the series     n 2  with n = 10
+
+
            Solution
+                  ∞                    b
+                    x ∫  1 2  dx =  lim  ( − 1
+                                    x
+                 n         b→∞          n
 
-                                                                    b
-                                                                  )
-                               →
-                f  ( ) x =  1 1 ∫     ∞   1    dx =  lim   (arctan x
-                       x +  2        1  x +  2  1  b→∞              1
-                                                 =  lim  (arctan b − arctan1 )
-                                                   b→∞
+                          =  −  lim  ( 1  −  1 )
+                             b→∞    b   n
 
-                                                 =  π  −  π
-                                                    2   4
-
-                                                 =  π
-                                                    4
+                          =  1
+                            n
 
 
-               The series converges, but we do not know the value of its sum
+               s   =  1+  1  +  1  +  +  1  ≈  1.5497677
+                10      4   9       100
+
+               s   +  1  ≤  S ≤  s  +  1
+                10   11       10   10
+
+               1.5497677 +  1  ≤  S ≤  1.5497677 +  1
+                           11                   10
+               1.64067679 ≤  S ≤  1.6497677
 
 
+               If we approximate the sum S by the midpoint of this interval, then
 
+                                                        ∞
+                                                       ∑     1 2   ≈ 1.6452 2
+                                                                        2
 
+                                                        n= 1  n
 
-
-
-
-
-
-
-
-
-
-
-
-
+               The error in this approximation is less than half the length of the interval, so the error is less than 0.005.
 
 
 
@@ -205,34 +217,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              303</code></pre>
+                                                              289</code></pre>
      	</div>
     
      </div>
