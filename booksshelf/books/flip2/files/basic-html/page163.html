@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 163 - Calculus II</title>
+        <title>Page 163 - Calculus II- Lecture</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 163 - Calculus II</div>
+        <div id="content-top1">Page 163 - Calculus II- Lecture</div>
         <div id="content-top2">P. 163</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 2.1 – Integration by Parts
+    <pre style="white-space:pre-line"><code>Example
+
+                          ∫  x 3                                                                         ∫ sin x
+           Evaluate            sin x dx
+
+                                                                                               3
+           Solution                                                                   +       x          − cos x
+                                                                                                2
+                                                                                                          sin x
+               ∫  x 3 sin xdx  −  =  x 3  cos x +  3x 2 sin x +  6 cos x − x  6sin x C    −   3x         − cos x
+                                                                    +
+                                                                                      +
+                                                                                              6x
+                                                                                      −       6          sin x
+
+           Example
+
+           Evaluate       ∫ e x  cos x dx
 
 
+           Solution
 
-             (1 − 92)   Evaluate the integrals
+                ∫  e x  cos x  dx =  e x  sin x e x  cos x −  ∫  e x  cos  dx    +  e    ∫ cos x dx
 
-                   ∫   ln  x dx                     ∫      dx
-                                                                                              2 x
-              1.      x                       16.      xe 2x                    31.   ∫ ( x +  ) 1 e  dx
+                                       +
+                                                            x
+                                                                                  x
+                                                                                      sin x
+                 ∫
+                                                                                  x
+                          x
+                2 e  x  cos  dx =  e x  (sin x +  cos  ) x                  -  e      − cos x
+                                                                                         cos x dx
+                                                                                  x
+                                                                                      −
+                ∫ e x  cos   x dx =  1 x  (sin x +  cos  ) x +  C           +  e       ∫
+                                 e
+                                2
+
+                       u =  e x     dv =  cos x xd
+               Let:
+                           x
+                     du =  e dx  v = ∫ cos xdx = sin x
+
+                                                                                   x
+                                                                                 e
+                                                                              u =
+               ∫  e x  c s xdx =  e x sin x − ∫  e x sin dx          Let:    du =  e dx  v = ∫ dv =  sin x xd  cos x
+                                              x
+                     o
+                                                                                  x
+                                                                                             sin xdx = −
+               ∫  e x cos xdx =  e x sin x − ∫  e x  sin xdx
 
 
-                                                        3 x
-              2.   ∫  ln x 2  dx              17.   ∫  x e dx                   32.   ∫ 2xe 3x  dx
+                                                                   
+                                                               x
+                             e x  sin x −      e − =  x  cos x −  ∫ ( cos x−  ) e dx
+                                                                   
+                                                                  
+                           =  e x  sin x e x  cos x −  ∫ e x  cos xdx
+                                     +
+               ∫  e x cos xdx +  ∫  e x cos xdx =  e x  sin x e x cos x −  ∫  e x  cos xdx +  ∫  e x cos xdx
+                                                  +
 
-                   ∫                          18.      e ∫  x  dx               33.   ∫  x  sin x dx
-              3.      ln(3 ) x dx                      2x                                2
-
-
-                   ∫  x ln x                  19.      (  xe  ) 2  dx           34.   ∫ θ cosπθ dθ
-                                                         2 ∫
-              4.        1   dx                           3 x 2
-                                                             1
-                                                        x +
-                             2
-              5.   ∫  x (ln x ) dx            20.   ∫  x e  3x dx               35.   ∫ 4 sec 2x  2  x dx
-                                                        2 −
-
+                ∫
+                                      +
+               2 e  x cos xdx =  e x sin x e x  cos x C
+                                                +
+                                                   1
+               ∫ e x cos x x =  1 x sin x +  1 x cos xC
+                                e
+                                           e
+                                                   +
+                         d
+                                         2
                               2
-              6.   ∫  x 2 (ln x ) dx          21.   ∫ ( x −  2  2x +  1 e 2x dx    36.   ∫ x 3 sin x dx
-                                                                  )
 
-                   ∫     x   dx               22.   ∫  x e  3 dx
-                                                                                          3
-              7.      (ln x ) 3                                                 37.   ∫ ( x −  2x ) sin 2x dx
-                                                        5 x
-
-                            3
-              8.   ∫  x 2  ln x  dx           23.   ∫  xe − 4x dx               38.   ∫  x 2  sin 2x dx
-
-                   ∫  ln x +                  24.   ∫     xe 2x   dx                  ∫  x  sin (1 x  dx−
-              9.        (    x 2 ) dx                                           39.      2          )
-
-
-                   ∫  x ln ( x +  ) 1 dx                                        40.   ∫  x sin cosx  x dx
-              10.                                       (2x +  ) 1  2
-
-                                              25.        e ∫  5x   dx
-                                                         2x
-                   ∫     x                    26.         e x ∫  1/x   dx
-              11.     (ln x ) 2  dx                                             41.   ∫ x cos x dx
-
-
-
-              12.   ∫  x 5 ln 3x dx           27.   ∫  x e 2   dx               42.   ∫ x csc cotx  x dx
-                                                        2 4x
-                   ∫  x  ln x dx                        3 − 3x
-              13.      5                                                        43.   ∫  x 2  cos x dx
-
-
-                   ∫  ln ( x +  ) 1  dx                 4 x
-              14.                             28.   ∫  x e     dx               44.   ∫  x 3 cos 2x dx
-
-
-                       x ∫    10                                                            x
-              15.      ln x   dx              29.   ∫  x e   dx                 45.   ∫  cos x  dx
-
-                                                        34x
-                                              30.   ∫   x e   dx
-
-
-                                                              163</code></pre>
+                                                              151</code></pre>
      	</div>
     
      </div>

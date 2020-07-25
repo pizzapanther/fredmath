@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 10 - Calculus II</title>
+        <title>Page 10 - Calculus II- Lecture</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 10 - Calculus II</div>
+        <div id="content-top1">Page 10 - Calculus II- Lecture</div>
         <div id="content-top2">P. 10</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>Net Change and Future Value
 
-          A book publisher estimates that the marginal cost of a particular title (in dollars/book) is given by
+        Theorem
 
-                          ′
-                        Cx         −
-                           ( ) 12 0.0002x=
-                                                                                                     st
-                     x
-          Where  0 ≤≤   50,000 is the number of books printed. What is the cost of producing the 12,001  through
-          the 15,000 book?
-          Solution                       15,000
+                                                                                                        a
+        Suppose a quantity Q changes over time at a known rate Q′ . Then the net change in Q between t =  and
+            b
+         t = is
+                ∫ a b Q′ ( ) t dt =  Q ( ) b −  Q ( ) a =  net change in Q over  [ ,a  b
+                                                                      ]
 
 
-              C (15,000 −  ) C (12,000 =  )  ∫ 12,000  C′ ( ) x  dx
 
-
-                                       ∫ 15,000              )
-                                                   −
-                                     =  12,000  (12 0.0002x  dx
-
-
-                                                    2
-                                     = 12x − 0.0001x   15,000
-                                                       12,000
-
-                                     =  180 10×  3  −  225 10×  2  −  144 10×  3  +  144 10×  2
-                                     = $27,900
+                ∫ 0 t Q′ ( ) t dt =  Q ( ) t − Q ( ) 0
 
 
 
 
 
+        Given the initial value  ( ) 0Q  , the future value Q at future times t ≥  is
+                                                                          0
+
+                       Q ( ) t =  Q ( ) 0 + ∫ t Q′ ( ) t dt
+                              
+                                        0
+                       future  initial  
+                       value   value   net change
+                                       over  [0, ]  t
+
+
+           Velocity−Displacement Problems                  General Problems
+
+                  st
+         Position  ( )                                    Quantity  ( )  (such as volume or population size)
+                                                                   Qt
+                                                                         Qt ′
+                   st ′
+         Velocity:  ( ) =  v ( ) t                        Rate of change  ( )
+
+         Displacement:  ( ) b −  s  s ( ) a =  ∫ a b v ( ) t dt    Net change:   ( ) b −  Q  Q ( ) a =  ∫ a b Q′ ( ) t dt
 
 
 
 
+                                       ∫ 0 v ( ) x dx     Future value of Q:   ( ) t = Q ( ) 0 + ∫ 0  Q′ ( ) x dx
+         Future position:  ( ) ts  s     t                                                    t
+                              =
+                                                                             Q
+                                 ( ) 0 +
 
 
+        Example
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                                                                 0
+        A culture of cells in a lab has a population of 100 cells when nutrients are added at time t = . Suppose the
+        population  ( ) t  increases at a rate given by
+                    N
+                N′ ( ) 90e − 0.1t  cells  / hr
+                   t =
+        Find  ( ) t  for t ≥
+                          0
+              N
+        Solution
 
 
 

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 301 - Calculus II</title>
+        <title>Page 301 - Calculus II- Lecture</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 301 - Calculus II</div>
+        <div id="content-top1">Page 301 - Calculus II- Lecture</div>
         <div id="content-top2">P. 301</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Integral Test
+    <pre style="white-space:pre-line"><code>Bounds for the Remainder in the Integral Test
 
-
-           Theorem
-
-               { }
-                                                                         ( ) , where  f  is a continuous, positive,
-           Let  a n   be a sequence of positive terms. Suppose that  a n  =  fn
-                                                                                       ∞
-                                                                                      ∑
-           decreasing function of x for all  x ≥  N  (N a positive integer). Then the series   a n  and the integral
-                                                                                       =
-                                                                                      nN
-              ∞
-           ∫ N    f  () x dx both converge or both diverge.
+                    { }
+                                                                     ( ) , where  f  is a continuous positive
+           Suppose  a n   is a sequence of positive terms with  a k  =  fk
+           decreasing function of x for all x ≥ n, and that  ∑ a  converges to S. Then the remainder  R =  S −  s
+                                                                                                             n
+                                                                                                    n
+                                                             n
+           satisfies the inequalities
+                                              ∫  ∞  f  ( ) x dx ≤  R ≤  n  ∫  ∞  f  ( ) x dx
 
 
 
+                                                n+ 1                   n
+
+           Example
+                                         ∑     1
+           Estimate the sum of the series     n 2  with n = 10
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           Example                               ∞
-
-                                               ∑      1
-           Does the following series converge?        2
-                                                  n= 1  n
            Solution
+                  ∞                    b
+                    x ∫  1 2  dx =  lim  ( − 1
+                                    x
+                 n         b→∞          n
 
-                 ∞
-               ∑     1 2  =  1+  1  +  1  +  16  +  +  1 2  +  
-                                     1
-                                 9
-                             4
-                n= 1  n                       n
+                          =  −  lim  ( 1  −  1 )
+                             b→∞    b   n
+
+                          =  1
+                            n
 
 
-               S =   1  +  1  +  1  +  1  +  +   1
-                 n   1 2  2 2  3 2  4 2       n 2
+               s   =  1+  1  +  1  +  +  1  ≈  1.5497677
+                10      4   9       100
 
-                   =  f (1) +  f  (2) +  f  (3) +  +  f  ( )n
-                          n
-                    1
-                   &lt;+          x ∫  1 2  dx
-                         1
+               s   +  1  ≤  S ≤  s  +  1
+                10   11       10   10
 
-                                1
-                    1
-                   &lt;+   lim   ( )    b
-                               −
-                       b→∞       x   1
-                        (  1  )
-                   =  1−  ∞  −  1
+               1.5497677 +  1  ≤  S ≤  1.5497677 +  1
+                           11                   10
+               1.64067679 ≤  S ≤  1.6497677
 
-                                                              301</code></pre>
+
+               If we approximate the sum S by the midpoint of this interval, then
+
+                                                        ∞
+                                                       ∑     1 2   ≈ 1.6452 2
+                                                                        2
+
+                                                        n= 1  n
+
+               The error in this approximation is less than half the length of the interval, so the error is less than 0.005.
+
+
+
+
+
+
+
+
+
+
+
+                                                              289</code></pre>
      	</div>
     
      </div>

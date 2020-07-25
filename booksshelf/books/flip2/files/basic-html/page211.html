@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 211 - Calculus II</title>
+        <title>Page 211 - Calculus II- Lecture</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 211 - Calculus II</div>
+        <div id="content-top1">Page 211 - Calculus II- Lecture</div>
         <div id="content-top2">P. 211</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,90 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Simpson’s Rule: Approximations Using Parabolas
+    <pre style="white-space:pre-line"><code>Error Estimate for the Trapezoidal Rule
 
 
-                                                                                       −
-                                                                                 x
-             We partition the interval [a, b] into n subintervals of equal length  h = ∆ =  b a  : n even number
-                                                                                       n
+           If M is a positive real number such that  f ′′ ( ) x ≤  M  for all x in [a, b], then the error involved in using the
+
+                                               Mb      ) a  3
+                                                 ( −
+           Trapezoidal Rule is not greater than
+                                                 12n 2
 
 
+           Example
 
 
+                                                             2
+           Use the Trapezoid Rule with n = 4 to estimate  ∫  2 x dx . Compare the estimate with the exact value.
 
+           Solution                                       1
 
+                      −
+                ∆ x =  ba  =  21 −  =  1
+                       n     4    4
+                   x =  1
+                    0
+                    x =  1+  1  =  5
+                    1      4   4
 
+                             1
+                   x =  12  ( )  =  6
+                         +
+                    2        4    4
+                             1
+                         +
+                   x =  13  ( )  =  7
+                    3        4    4
+                   x =  2
+                    4
+                        (
+               T =  1 ∆  xy +  2y +  2y +    +  2y  +  y  )
+                   2      0     1      2         n− 1   n
+                                           2
+                                   2
+                                5
+                                                 7
+                                         6
+                  =  11     1 +  2  2 ( ) ( ) ( ) 2  +  2   2 
+                                             +
+                                               2
+                      ⋅
+                                      2
+                                    +
+                    2 4        4        4       4        
+                                    36
+                                             49
+                            25
+                                          2
+                                  2
+                       +
+                                        +
+                                                 +
+                  =  1 ( 12 ( ) ( ) ( ) )
+                                                  4
+                                +
+                    8       16      16      16
+                  =  75
+                    32
+                  ≈  2.34375
+               ∫ 1 2 x dx =  1  x 3  1 2
+                    2
+                          3
+                                    )
+                                   3
+                               3
+                         =  1 ( 2 − 1
+                           3
+                         =  7    2.3333 ≈
+                           3
+               The difference:  2.34375 2.3333 0.01042−  ≈
+                                              −
+                                                                      44
+               The percentage error:     2.34375 2.33333  ≈  0.004466 . 6 %
+                                           2.33333
 
-
-
-
-
-
-
-
-
-
-
-
-
-             The parabola has an equation of the form:  y =  Ax +  2  Bx C+
-
-             So the area under it from x = −h to x = h is
-
-                        ∫  h  (  2         )
-                  A =          Ax +  Bx C  dx+
-                    p     − h
-
-
-                       =  A x +  3  B  x +  2  Cx  h
-                                         
-                         3      2         − h
-                       =  A h +  3  B  h +  2  Ch −  ( A ( ) h−  3  +  B ( ) h−  2  +  C ( ) h−  )
-                         3      2            3         2
-
-                       =  A h +  3  B h +  2  Ch +  A h −  3  B  h +  2  Ch
-                         3      2           3      2
-                             3
-                       =  2  Ah +  2Ch
-                         3
-                                2
-                       =  h ( 2Ah +  6C )
-                         3
-                                                          (
-                                                                                    (
-             Since the curve passes through the three points  −  , h y 0 ) ( 0, y 1 ) , and   h y 2 )
-                                                                   ,
-                                                                                       ,
-                    y =   Ah −  2  Bh C+  y =  C  y =   Ah +  2  Bh C+
-                      0                   1         2
-                           C =  y  ,  Ah −  2  Bh =  y −  y
-                                 1                 0    1
-                                     Ah +  2  Bh =  y −  y
-                                                  2    1
-                                     2Ah =  2  y −  0  2y +  1  y 2
-
-                          2
-             A =   h ( 2Ah +  6C )
-               p   3
-
-                 =  h (  y −  2y +  y +  6y  )
-                    3   0     1    2     1
-                 =  h (  y +  4y +  y  )
-                    3   0     1    2
-                                                              211</code></pre>
+                                                              199</code></pre>
      	</div>
     
      </div>
