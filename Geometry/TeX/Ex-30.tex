@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes, calc}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [ultra thick ] (0, 0) -- ( 4, 4) -- (-1.25, 4) -- (0, 0)  ;
+\draw [ line width=2pt] (-.85, 2.8) -- (0, 3.98) -- (1.645, 1.75) -- (-.85, 2.8) ;
+\draw (-1.25, 4) --  (1.645, 1.75)  ;
+\draw (0, 0) -- (0, 4) ;
+\draw  (-.85, 2.8) -- (4, 4) ;
+
+
+\draw (0, 4.3) node { \Large  $\textbf {\textit A} $};	
+\draw  (-1.2, 2.75) node { \Large  $\textbf {\textit B} $};
+\draw (2, 1.55) node { \Large  $\textbf {\textit C} $};
+
+\draw [blue] (0, -.3) node { \Large  $\textbf {\textit D} $};
+\draw [blue]  (4, 4.3) node { \Large  $\textbf {\textit E} $};
+\draw [blue]  (-1.25, 4.3) node { \Large  $\textbf {\textit F} $};
+
+\end{tikzpicture} 
+\end{document}

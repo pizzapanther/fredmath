@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes, calc}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick ] (-2, 0) -- (2, 0) -- (0, 4) -- (-2, 0) ;
+\draw [very thick, blue]  (2, 0) -- (3, 0);
+
+\draw [very thick,  red!80!black]  (2, 0) -- (2.2, -.4) -- (3, 0) -- (-1, 2) ;
+
+\draw [thick, green!60!black] (-2, 0) -- (1.2, 1.6) ;
+\draw [thick, green!60!black, dashed] (2,2) -- (1.2, 1.6) ;
+
+\draw [very thick,  green!60!black ] (3, 0) -- (.5, 5) ;
+\draw [very thick,  green!60!black, dashed ] (.5, 5) -- (0, 4) ;
+
+
+	\draw (3.5, -.1) node { \large  $\textbf {\textit M} $};
+	\draw (-.25, 4.1) node { \large  $\textbf {\textit A} $};
+	\draw (-2.3, 0) node { \large  $\textbf {\textit B} $};	
+	\draw (1.8, -.25) node { \large  $\textbf {\textit C} $};
+	\draw (.5, 5.22) node { \large  $\textbf {\textit E} $};
+	\draw (2.3, 2.1) node { \large  $\textbf {\textit D} $};
+	\draw (2.2, -.72) node { \large  $\textbf {\textit Q} $};
+	\draw (1.35, 2) node { \large  $\textbf {\textit H} $};	
+	\draw (-1.25, 2.1) node { \large  $\textbf {\textit P} $};
+
+\end{tikzpicture} 
+\end{document}

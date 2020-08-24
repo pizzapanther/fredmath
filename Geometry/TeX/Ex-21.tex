@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes, calc}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick, green!60!black ] (0, 2) -- (.5, 0) ;
+\draw [very thick, green!60!black ] (3, 0) -- (2.5, 2) ;
+\draw [thick] (-2, 0) -- (5, 2) ;
+
+\draw [ultra thick ] (-2, 0) -- ( 3, 0) -- (5, 2) -- (0, 2) -- (-2, 0)  ;
+
+
+	\draw (0, 2.25) node { \large  $\textbf {\textit A} $};
+	\draw (-2.25, 0) node { \large  $\textbf {\textit B} $};	
+	\draw (3.1, -.25) node { \large  $\textbf {\textit C} $};
+	\draw (5.2, 2.2) node { \large  $\textbf {\textit D} $};	
+	\draw (0, .8) node { \large  $\textbf {\textit E} $};	
+	\draw (2.9, 1.15) node { \large  $\textbf {\textit F} $};	
+	\draw (.5, -.25) node { \large  $\textbf {\textit M} $};	
+	\draw (2.5, 2.25) node { \large  $\textbf {\textit N} $};	
+
+\end{tikzpicture} 
+\end{document}

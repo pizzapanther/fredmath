@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes, calc}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{comment}
+\end{comment}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [very thick, green!60!black]  ( $ (5, {sqrt(3)} )$)  -- (2, 0) -- ( $ (1, {sqrt(3)} )$  );
+\draw [very thick ] (0, 0) -- (4, 0) -- ( $ (5, {sqrt(3)} )$ ) -- ( $ (1, {sqrt(3)} )$  ) --  (0, 0 ) ;
+
+
+
+
+	\draw (2, -.3) node { \large  $\textbf {\textit M} $};
+	\draw (.8, 2.) node { \large  $\textbf {\textit A} $};
+	\draw (5.2, 2) node { \large  $\textbf {\textit B} $};	
+	\draw (4.2, -.25) node { \large  $\textbf {\textit C} $};
+	\draw (-.25, -.2) node { \large  $\textbf {\textit D} $};
+
+
+\end{tikzpicture} 
+\end{document}

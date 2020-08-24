@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,shapes, calc}
+\usepackage{verbatim}
+\usepackage{pst-circ}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5pt}
+
+\begin{document}
+\begin{tikzpicture}
+
+\draw [ very thick, red!60!black, dashed ] (2.95, 1.75) -- (2, 0) ;
+\draw [very thick, red!60!black, dashed ]  (.2, .8)  -- (2, 0) ;
+\draw [thick, red] (.2, .8)  -- (2.95, 1.75) ;
+
+\fill [gray!80, rotate = -12] (0, .625) rectangle (.2, .825) ;
+\fill [gray!80, rotate = -12] (0, 2.15) rectangle (.2, 2.35) ;
+
+\fill [gray!80, rotate = 28] (3.2, -.05) rectangle (3.4, .15) ;
+\fill [gray!80, rotate = 28] (3.175, .8) rectangle (3.3754, 1) ;
+
+\draw [ thick, green!60!black] (4, 0) --  (.2, .8) ;
+\draw [ thick, green!60!black] (0, 0) --  (2.95, 1.75) ;
+
+\draw [ thick, green!60!black, dashed] (2.6, 2.3) --  (.2, .85) ;
+\draw [ thick, green!60!black, dashed] (.45, 2.3) --  (2.95, 1.75) ;
+\draw [ line width=2pt, blue] (.45, 2.325) --  (2.6, 2.325) ;
+
+\draw [ultra thick ] (0, 0) -- ( 4, 0) -- (1, 5) -- (0, 0)  ;
+
+\draw (-.25,-.3) node { \Large  $\textbf {\textit A} $};	
+\draw  (4, -.35) node { \Large  $\textbf {\textit B} $};
+\draw (1, 5.3) node { \Large  $\textbf {\textit C} $};
+
+\draw (3.3, 1.8) node { \large  $\textbf {\textit N} $};
+\draw (-.06, .9) node { \large  $\textbf {\textit P} $};
+\draw (2, -.35) node { \large  $\textbf {\textit O} $};
+\draw (2.95, 2.4) node { \large  $\textbf {\textit H} $};
+\draw (.2, 2.4) node {  \large $\textbf {\textit G} $};	
+	
+
+\end{tikzpicture} 
+\end{document}
