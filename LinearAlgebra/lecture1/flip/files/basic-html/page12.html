@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 12 - Linear Algebra lecture 1</title>
+        <title>Page 12 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 12 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 12 - Linear Algebra 1</div>
         <div id="content-top2">P. 12</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>−
-               2x +   4y −  2z =  2              2x +  4y −  2z =  2  ⇒   x =  1 2y +  z =  − 1
-              
-                          z
-                                                             z
-                                                                                 4 z =
-                      y +=   4   Subtract eqn .2         y +=   4    ⇒       y =−      2
-                          y +  5z =  12  from eqn .3                   4z =  8  ⇒
-                                                                                z =  2
-             The solution is ( 1, 2, 2  −  )
-
-
-          Definition
-
-          A square matrix is nonsingular if it is the matrix of coefficient of a homogeneous system, with a unique
-          solution. It is singular otherwise, that is, if it is the matrix of coefficients of a homogeneous system, with
-          infinitely many solutions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            12</code></pre>
+    <pre style="white-space:pre-line"><code>12 | 1.2 – Gaussian Elimination
+
+
+
+                1 3 − 2 0 20 0
+                00   1   2 0 3 1     
+                                       R −  3R 3
+                                          2
+                00   0   0 01       1
+                                    3
+                00   0   0 0 0 0     
+                                     
+
+                1 3 − 2 0 20 0
+                0 0  1   200 0       
+                                     
+                00   0   0 01       1
+                                    3
+                  00  0  0 0 0 0      
+
+                 
+                  x +  1  3x 2  +  4x +  4  2x 5  =  0
+              →           x +  3  2x 4       =  0
+                 
+                 
+                                                       +  x =  1
+                                          6   3
+
+
+             The general solution of the system:
+                 ( −  3x −  2  4x −  4  2x 5 , x 2 , −  2x 4 , x 4 , x 5 ,  1 )
+                                                               3
+
+
+          1.2−7     Example
+
+
+          Use Gauss-Jordan elimination to solve the homogeneous linear system
+               2x +  8y −  z +  w =  0
+                           −
+              4x +  16y −  3z w =  −  10
+              − 2x + 4y −+  3w = − 6
+                         z
+               −  6x +  2y +  5z +  w =  3
+
+          Solution
+
+                2  8   − 1  1    0 
+                4  16 −  3 −  1 −  10   R − 2R
+                                           2  1
+                2  4   −  1  3   −  6 −  R +  R
+                                         3    1
+                − 6  2  5   1    3     R +  3R 1
+                                          4
+
+               2   8  − 1  1     0 
+                0 12 −  2  4    −  6  
+                                   
+               0   0  −  1 −  3 −  10
+                                          13
+                0 26  2    4     3    R −  6  R 2
+                                         4</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 81 - Linear Algebra lecture 1</title>
+        <title>Page 81 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 81 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 81 - Linear Algebra 1</div>
         <div id="content-top2">P. 81</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,139 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>,
-             4.   Determine the currents  I  I  , and  I  for the electrical network shown below
-                                          1   2        3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             5.   Determine the currents  I  I  , and  I  for the electrical network shown below
-                                           ,
-                                          1   2        3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                           ,
-             6.   Determine the currents  I  I  , I  , I  , I  , and  I  for the electrical network shown below
-                                          1   2   3   4   5        6
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              81</code></pre>
+    <pre style="white-space:pre-line"><code>1.7 – Cramer’s Rule  | 81
+
+                                                            30
+                                                                                            z
+                       x −   2y =  5              x + 2y −=                      x −  2y −=  2
+             16.                           32.                                  
+                                                       =
+                                                                                        y
+                                                                                                4
+                                                                                            z
+                    −  10x +  2y =  4             12 8y +  4x             43.   2x − +=
+                                                                                   −+  y + =   4
+                                                                                            z
+                                                                                     x
+                    12x +   15y =  −  27          7x −   2y =  3                
+             17.                           33.   
+                    30x −  15y =  −  15            3x +  y =  5                  x + +=    3
+                                                                                       y
+                                                                                           z
+                                                                                  
+                                                                                              1
+                                                                                     y
+                     4x −   4y =  −  12            3x + 2y − =  4         44.    −+   2z =
+                                                             z
+             18.                                                                
+                                                                                      x
+                                                              z
+                    4x +  4y =  −  20      34.    3x −  2y +=  5                  −+  z =  0
+                                                   4x − 5y − = − 1
+                                                             z
+                     x +   y =  7                                                 3x +   y +  3z =  14
+             19.                                                                 
+                                                            z
+                                                        y
+                    x −  y =  3                    x + + =    2           45.   7x +  5y +  8z =  37
+                                                                                  
+                                                  
+                                                         y z
+                                                                5
+                     2x +   y =  3         35.   2x + − =                         x +  3y +  2z =  9
+              20.                                
+                                                           z
+                                                       y
+                                                                                             z
+                      x −  y =  3                 x − + = −   2                 4x − 2y +=   7
+                                                                                 
+                                                                                       y
+                                                                                           z
+                                                            z
+                                                        y
+                     12x +   3y =  15             2x + +=     9          46.    x + += −     2
+              21.                                                                         z  3
+                                                            z
+                                                     x
+                      2x −  3y =  13       36.   −−    y + =  1                 4x +  2y +=
+                                                   3x − +=    9
+                                                        y
+                                                            z
+                                                                                           z
+                      x −  2y =  5                                                 2y −=    7
+              22.                                                               
+                                                                                            z
+                                                             z
+                                                          y
+                     5x −  y =  −  2                  3 −= −    1        47.     x +  2y +=  17
+                                                                                 
+                                                  
+                                                             z
+                     3x +   2y =  2        37.     x +  5y −= − 4               2x −  3y +  2z =  −  1
+              23.                                 −  3x +  6y +  2z =  11
+                                                                                              z
+                     2x +  2y =  3                                               2x −  2y += −  4
+                                                                                 
+                     4x −   5y =  17               x +  3y +  4z =  14   48.    6x +  4y −  3z =  −  24
+              24.                                                                 x −  2y +  2z =  1
+                      2x +  3y =  3        38.   2x −  3y +  2z =  10          
+                                                    3x − +=     9
+                                                             z
+                                                          y
+                                                                                             z
+                      x −   3y =  4                                              9x + 3y +=   4
+              25.                                                               
+                                                                                                 2
+                                                                                              z
+                                                              z
+                     3x −  4y =  12                x + 4y −=   20        49.   16x + 4y +=
+                                                                                 
+                                                  
+                                                                                              z
+                                                               z
+                      2x −   9y =  5       39.     3x + 2y +=    8              25x + 5y +=   2
+              26.                                 2x −  3y +  2z =  −  16
+                                                                                        y
+                     3x −  3y =  11                                              2x −+   2z = − 8
+                                                                                  
+                     3x −   4y =  4                −   2x +  6y +  7z =  3  50.    x +  2y −  3z =  9
+              27.                                                                 3x −−  4z =  3
+                                                                                         y
+                      x +  y =  6          40.    −  4x +  5y +  3z =  7        
+                                                   −  6x +  3y +  5z =  −  4
+                     3x = 7y + 1                                                  x      −  3z =  −  5
+              28.                                                                
+                                                                                         y
+                                                             z
+                                                          y
+                     2x = 3y − 1                   2x − +=     1          51.    2x −+   2z = 16
+                                                                                  
+                                                  
+                      2x =  3y + 2         41.   3x −  3y +  4z =  5             7x −  3y −  5z =  19
+              29.                                 4x −  2y +  3z =  4
+                             −
+                                                                                            z
+                     5x =  51 4y                                                  x +  2y −=  5
+                                                                                  
+                                                                                                0
+                                                                                        y
+                     y =  −  4x +  2              3x −   4y +  4z =  7    52.   2x −+    3z =
+             30.                                                                     2 +=    1
+                                                                                             z
+                                                                                         y
+                                                        y
+                    2x =  3y − 1           42.     x −−   2z =  2               
+                                                   2x −  3y +  6z =  5
+                                                                                            z
+                                                                                         y
+                           −
+                    3x =  23y                                                     x + +=     6
+             31.                                                                 
+                           −
+                    2y =  32x                                              53.   3x +  4y −  7z =  1
+                                                                                                5
+                                                                                         y
+                                                                                    2x −+  3z =</code></pre>
      	</div>
     
      </div>
@@ -243,7 +294,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page80.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page76.html">76</a>&nbsp;&nbsp;&nbsp;<a href="page77.html">77</a>&nbsp;&nbsp;&nbsp;<a href="page78.html">78</a>&nbsp;&nbsp;&nbsp;<a href="page79.html">79</a>&nbsp;&nbsp;&nbsp;<a href="page80.html">80</a>&nbsp;&nbsp;&nbsp;<a href="page81.html">81</a>&nbsp;&nbsp;&nbsp;<a href="page82.html">82</a>&nbsp;&nbsp;&nbsp;<a href="page83.html">83</a>&nbsp;&nbsp;&nbsp;<a href="page84.html">84</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page76.html">76</a>&nbsp;&nbsp;&nbsp;<a href="page77.html">77</a>&nbsp;&nbsp;&nbsp;<a href="page78.html">78</a>&nbsp;&nbsp;&nbsp;<a href="page79.html">79</a>&nbsp;&nbsp;&nbsp;<a href="page80.html">80</a>&nbsp;&nbsp;&nbsp;<a href="page81.html">81</a>&nbsp;&nbsp;&nbsp;<a href="page82.html">82</a>&nbsp;&nbsp;&nbsp;<a href="page83.html">83</a>&nbsp;&nbsp;&nbsp;<a href="page84.html">84</a>&nbsp;&nbsp;&nbsp;<a href="page85.html">85</a>&nbsp;&nbsp;&nbsp;<a href="page86.html">86</a>
              </td>
              <td width="35%"><a href="page82.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

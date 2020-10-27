@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 38 - Linear Algebra lecture 1</title>
+        <title>Page 38 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 38 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 38 - Linear Algebra 1</div>
         <div id="content-top2">P. 38</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 1.4 – Inverse Matrices - Finding  A                 − 1
+    <pre style="white-space:pre-line"><code>38 | 1.4 – Inverse Matrices
+
+
+          1.4−2     The Inverse of a Product  AB
+
+
+          1.4−3     Theorem
+          If an nn×  matrix has an inverse, that inverse is unique.
+
+          Proof
+
+                                                                                I
+             Suppose that A has an inverse  A − 1  and B is a matrix such that  BA =
+                 B =  BI
+                        (
+                    =  B AA − 1 )
+
+                          )
+                    =  (BA A − 1
+
+                    =  IA − 1
+                    =  A − 1
+
+                 Therefore, the inverse is unique
+
+
+          1.4−4     Theorem
+                                                                                            −
+                                                                                              1 −
+          If A and B are invertible then so is  AB  The inverse of a product  AB is   ( AB ) − 1  =  B A  1
+                                               .
+
+          Proof
+                   (
+                  )
+                             =
+                               A
+              ( ABB  −  1 −  A  1 ) ( BB − 1 ) A − 1
+                              = ( ) A − 1
+                                 AI
+                              =  AA − 1
+
+                              =  I
 
 
 
-          1.   Apply Gauss-Jordan method to find the inverse of this triangular “Pascal matrix”
+          Reverse Order
 
-                                                          1   0   0    0
-                                                           1  1   0    0 
-                        Triangular Pascal matrix     A =                
-                                                          1   2   1    0
-                                                                        
-                                                           1  3   3    1 
-
-
-          2.   If A is invertible and  AB =  AC , prove that  B =  C
-
-                      1   1
-          3.   If  A =       , find two matrices  B ≠  C  such that  AB =  AC
-                        1  1 
-
-          4.   If A has row 1 + row 2  = row 3, show that A is not invertible
-
-                 a)  Explain why  Ax =  (1,0,0    ) can’t have a solution.
-                                      (
-                 b)  Which right sides  b b  b  3 )  might allow a solution to Ax b=
-                                              ,
-                                         ,
-                                        1
-                                            2
-                 c)  What happens to row 3 in elimination?
-
-          5.   True or false (with a counterexample if false and a reason if true):
-
-                 a)  A 4 by 4 matrix with a row of zeros is not invertible.
-                 b)  A matrix with 1’s down the main diagonal is invertible.
-                 c)  If A is invertible then  A − 1  is invertible.
-                                            2
-                 d)  If A is invertible then  A  is invertible.
-
-          6.   Do there exist 2 by 2 matrices A and B with real entries such that  AB BA−  =  I , where I is the
-               identity matrix?
-
-                                     2
-          7.   If B is the inverse of  A , show that  AB  is the inverse of A.
-
-          8.   Find and check the inverses (assuming they exist) of these block matrices.
-
-                   I   0     A   0     0   I 
-                                            
-                   C  I      C  D       I  D 
-
-          9.   For which three numbers c is this matrix not invertible, and why not?
-
-                              2   c   c
-                                        
-                         A =      c  c  c
-                                        
-                               8   7  c  
-
-
-                                                            38</code></pre>
+                                    1 −
+                                1 −
+                               −
+                 ( ABC  ) − 1  =  C B A  1
+                                      1 −
+                                          1 −
+                                 −
+                                  1 −
+                 ( ABCD  ) − 1  =  D C B A    1</code></pre>
      	</div>
     
      </div>

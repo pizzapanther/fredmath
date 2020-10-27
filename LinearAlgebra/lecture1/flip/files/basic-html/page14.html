@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 14 - Linear Algebra lecture 1</title>
+        <title>Page 14 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 14 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 14 - Linear Algebra 1</div>
         <div id="content-top2">P. 14</div>
      </div>
      <div id="content-middle">
@@ -152,137 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>(7 − 14)   Use the Gauss-Jordan method to solve the system
+    <pre style="white-space:pre-line"><code>14 | 1.2 – Gaussian Elimination
 
-                      y
-                 x −+   5z = − 6                   x +   2y −  3z =  −  15         x +  x +  2x =  8
-                                                   
-                                                                                   
+
+          1.2−10      Breakdown Elimination
+
+
+          Permanent failure with no solution
+                  x −  2y =  1  Subtract  3 times    x −  2y =  1
+                 3x −  6y =  11 eqn.  1 frome nq.  2        0y =  8
+
+          The last equation 0y = ; therefore, there is no solution.
+                                8
+          This system has no second pivot, since no zero allowed as a pivot.
+
+
+          Permanent failure with infinitely many solutions
+                  x −  2y =  1  Subtract  3 times  x −  2y =  1
+                                           q
+                 3x −  6y =  3 eqn.  1 from  e n.  2  0y =  0
+
+                               0
+          Every y satisfies  0y = . There is only one equation  x −  2y =  1.
+          There are unique infinitely many solutions.
+
+
+          Three Equations in Three Unknowns
+
+          To understand Gaussian elimination, you have to go beyond 2 by 2 systems.
+
+                                           2x +   4y −  2z =  2
+                                         
+          Consider the system equations:    4x +  9y −  3z =  8
+                                         
+                                          −  2x −  3y +  7z =  10
+
+                2x +   4y −  2z =  2  subtract  2 times  eqn .1  2x +  4y −  2z =  2
+              
+                                               q
+                                                                       z
+                4x + 9y − 3z = 8        from e n .2                    y +=  4
+               −  2x −  3y +  7z =  10                    −  2x −  3y +  7z =  10
+              
+                2x +   4y −  2z =  2  Add   eqn .1  2x +  4y −  2z =  2
+              
+                                                           z
                            z
-          7.     3x +  3y −= 10             10.   2x −  3y +  4z =  18             −  x −  1  2x + 2  3x = 3  1
-                
-                              5                           y  z   1          13.      1     2     3
-                  x +  3y +  2z =                   − 3x + +=                    
-                                                                                    3x −  1  7x +  2  4x =  3  10
-                                                                                   
-                       y
-                 2x −+   4z = − 3                   x +  2y +  3z =  10
-                                                   
-                                                                                               z
-          8.     x −  2y −  10z =  −  6     11.   4x +  5y +  6z =  11             x +  2y +=  8
-                
-                                                                                   
-                                                                                                    1
-                                                                                       x
-                               7                                12          14.    −+  3y − 2z =
-                    x
-                  3        4z+  =                  7x +  8y +  9z =               3x +  4y −  7z =  10
-                                                                                   
-                  4x +   3y −  5z =  −  29         2x +   y +  2z =  4
-                                                  
-          9.      3x − 7y −= −  19          12.   2x +  2      =  y  5
-                            z
-                                                  
-                                                         y
-                 2x +  5y +  2z =  −  10           2x −+  6z =  2
-
-          (15 − 49)  Use augmented elimination to solve linear system
-                                                                                               z
-                  2x −   5y +  3z =  1            −   2x +  6y +  7z =  3          2x − 2y += −  4
-          15.                                                                    
-                 x −  2y −  2z =  8        22.     −  4x +  5y +  3z =  7    29.    6x +  4y −  3z =  −  24
-                                                  −  6x +  3y +  5z =  −  4         x −  2y +  2z =  1
+                      y +=   4                         y +=   4
+                             10   and eqn . 3                12
+               −  2x −  3y +  7z =                        y +  5z =
+                2x +   4y −  2z =  2             2x +  4y −  2z =  2
+              
+                                                             z
                           z
-                      y
-                  x + + =    2                                                   
-                
-                       y z
-                              5
-          16.    2x + − =                         2x − +=    1                     9x + 3y +=  4
-                                                            z
-                                                                                               z
-                                                        y
-                 x − + = −   2                                                   
-                         z
-                      y
-                                                                                                   2
-                                                                                               z
-                                           23.    3x −  3y +  4z =  5      30.    16x +  4y +=
-                                                  4x −  2y +  3z =  4              25x + 5y +=   2
-                                                                                               z
-                       y
-                          z
-                 2x + +=     9                                                   
-                
-                   x
-                          z
-                                                                                         y
-          17.    −−   y + =  1                   3x −   4y +  4z =  7             2x −+   2z = − 8
-                                                                                 
-                      y
-                          z
-                                                       y
-                 3x − +=     9             24.     x −− 2z =  2            31.     x +  2y −  3z =  9
-                                                  2x −  3y +  6z =  5               3x −−  4z =  3
-                                                                                          y
-                            z
-                        y
-                      3 −= −   1                                                 
-          18.     x +  5y −= −  4                x −  2y −=  2                     x      −  3z =  −  5
-                            z
-                                                           z
-                
-                                11                                               
-                                                              4
-                                                           z
-                                                       y
-                                                                                          y
-                 −  3x +  6y +  2z =       25.    2x − +=                  32.     2x −+  2z = 16
-                                                  −+  y + =  4                     7x −  3y −  5z =  19
-                                                    x
-                                                           z
-                  x +  3y +  4z =  14                                            
-                
-                                                         z
-                                                                                              z
-                                                      y
-          19.    2x −  3y +  2z =  10            x + +=    3                       x + 2y −=  5
-                                                                                 
-                        y
-                            z
-                                                                                                  0
-                                                            1
-                                                    y
-                                                                                         y
-                  3x − +=     9            26.     −+  2z =                33.    2x −+   3z =
-                                                   −+  z =  0                          2 +=    1
-                                                                                          y
-                                                                                              z
-                                                     x
-                            z
-                   x +  4y −=  20                                                
-          20.     3x +  2y +=   8                 3x +   y +  3z =  14             x +  y +=  6
-                             z
-                                                                                             z
-                
-                                                                                 
-                 2x −  3y +  2z =  −  16   27.    7x +  5y +  8z =  37     34.    3x +  4y −  7z =  1
-                                                   x +  3y +  2z =  9               2x −+  3z =  5
-                                                                                          y
-                          z
-                    2y −=    7                                                   
-          21.     x +  2y +=  17                 4x − 2y +=  7                    3x +   2y +  3z =  3
+                      y +=   4   Subtract eqn .2         y +=   4
+              
+                          y +  5z =  12  from eqn .3                  4z =  8
                            z
-                                                            z
-                
-                                1                                                
-                                                          z
-                 2x −  3y +  2z =  −       28.     x +  y += − 2           35.    4x −  5y +  7z =  1
-                                                  4x +  2y +=  3                   2x +  3y −  2z =  6
-                                                            z
-                                                                                  
-
-                                                            14</code></pre>
+               x = 1−  2y += − 1
+              
+                       −
+                 y =  4 z =  2
+                        2
+                    z =
+             The solution is ( 1, 2, 2  −  )</code></pre>
      	</div>
     
      </div>

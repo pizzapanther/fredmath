@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 43 - Linear Algebra lecture 1</title>
+        <title>Page 43 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 43 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 43 - Linear Algebra 1</div>
         <div id="content-top2">P. 43</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 1.5 – Transpose, Diagonal, Triangular, and Symmetric
-
-                               Matrices
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices  | 43
 
 
-
-             Transpose
-
-             Definition
-
-             The transpose of a matrix A is defined as the matrix that is obtained by interchanging the corresponding
-                                                                         T
-             rows and columns in A. Then the transpose of A, denoted by  A  or  A′.
-                              T
-             The columns of  A are the rows of A.
-
-                When A is an m by n matrix, the transpose is n by m:
-
-                                                               a   d 
-                                 a   b   c                        
-                                                         T
-                           A =                then    A =    b   e
-                                                                     
-                                 d  e    f  
-                                                               c   f   
-                                                                                     T
-             The matrix flips over the main diagonal. The entry in row i, column j of   A  comes from row j, column i
-             of the original A.
-                                     T
-                                  ( )     =  A
-                                    A
-                                              ji
-                                        ij
+                       1 00    2   − 2 31
+                                                
+                 EA =    01 0    1  0  2 4
+                                                
+                                
+                        301 −  6   2   1 5 
+                                
+                        2 − 2  3   1
+                                     
+                    =      1  0  2  4
+                                     
+                        0   − 4 10 8  
+                    This result can be obtained from A by adding 3 times row 1 to row 3.
 
 
-             Properties of Transpose
+             1.4−14  Uniqueness of Echelon Form
+
+             Two matrices A and B are row-equivalent if and only if they have the same reduced echelon form.
 
 
-                    ( )
-                a)  A  T  T  =  A
+             Proof
 
-                                      T
-                b)  ( AB+  ) =  T  A +  T  B
-                                      T
-                       −
-                c)  ( A B  ) =  T  A −  T  B
-                        T
-                               T
-                     kA
-                d)  ( ) =   kA
-                         T
-                               TT
-                e)  ( AB ) =  B A
+             If A and B have the same reduced echelon form E, then A is row-equivalent to E and E is row-equivalent
+             to B.
+             It follows that A is row-equivalent to B.
+             Now Suppose A and B are row-equivalent.
+             Let  E  be a reduced echelon form of A and  E  be a reduced echelon form of B. Then  E  and  E  are
+                  1                                      2                                        1        2
+             row equivalent.
+             Suppose  E =  IF 1  and   E =  IF .
+                                               2
+                                        2
+                       1
+             Since  E  and  E  are row equivalent,  E =  CE for some matrix C. This means  I =  CI  and  F = CF .
+                    1
+                                                           1
+                                                    2
+                                                                                                         2
+                             2
+                                                                                                               1
+             But then C =  I  and  F =   F .
+                                     2
+                                          1
 
-             The transpose of a product of any number of matrices is the product of the transposes in the reverse
-             order.
 
+             1.4−15  Example
+             Show that the two matrices are row equivalent
+                          1 − 1 0               3 01
+                    A =             and   B =         
+                          2  1  1               0 31  
+             Solution
 
-             Theorem
-
-                                              T
-             If A is an invertible matrix, then  A  is also invertible and
-                                                       ( ) ( )         T
-                                                             1
-                                                            −
-                                                                    −
-                                                          T
-                                                                     1
-                                                                  A
-                                                         A
-                                                               =
-
-                                                              43</code></pre>
+                       1 − 10    R +  R 2
+                                    1
+                 A =          
+                       2  1  1   R −  2R 1
+                                    2
+                      3 01
+                  =         
+                      0 31  
+                  =     B</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 10 - Linear Algebra lecture 1</title>
+        <title>Page 10 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 10 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 10 - Linear Algebra 1</div>
         <div id="content-top2">P. 10</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>10 | 1.2 – Gaussian Elimination
 
-          Use Gauss-Jordan elimination to solve the homogeneous linear system
 
-               2x +  8y −  z +  w =  0
-              4x +  16y −  3z w =  −  10
-                           −
-              − 2x + 4y −+  3w = − 6
-                         z
-               −  6x +  2y +  5z +  w =  3
+          The operations are the elementary reduction operations, or row operations, or Gaussian operations. They
+          are swapping, multiplying by a scalar or rescaling, and pivoting.
+
+
+          Reduced Row Echelon Form
+
+                                                         1 *** *
+                                   1 * **                           
+                 1 **                                0 1 * **     
+                        
+                 0 1*             0 1 **              0 0 1 **
+                                 0 0 1*                           
+                   0 01                            000 1 *      
+                                   000 1                 0000 1      
+
+
+
+          1.2−5  Example
+
+          Use the Gaussian elimination method to solve the system
+
+                 3x +    y +  2z =  31
+                   x +    y +  2z =  19
+                  x +  3y +  2z =  25
+
           Solution
 
-
-                2  8   − 1  1    0 
-                4  16 −  3 −  1 −  10   R − 2R
-                                           2  1
-                2  4   −  1  3   −  6 −  R +  R 1
-                                           3
-                                    
-                − 6  2  5   1    3    R +   3R 1
-                                          4
-
-               2   8  − 1  1     0 
-                0 12 −  2  4    −  6  
-                                   
-               0   0  −  1 −  3 −  10
-                                          13
-                0 26  2    4     3    R −  6  R 2
-                                         4
-               2   8  − 1  1    0 
-                0  0  −  1 −  3 −  10 
-                                            Interchange  R  and R
-                0 12 −  2  4    −  6                      2       3
-                                   
-                0 26  2    4    3  
+                1 1 2 19                     3   1    2    31       1    2   2    25
+                                3R                          57                     19
+                3 1 2 31    R −    1         −  3 −  3 −  6 −        −  1 −  1 −  2 −
+                          
+                              2
+                  1 3 2 25    R −  R 1     0   −  2 −  4 −  26    0    2   0     6
+                               3
+               1   1   2 19 
+                                1 R         0    1    2     13
+                        4 26
+                0 − 2 −−       − 2  2
+                0   2  0  6   
 
 
+                1 1 219                     0   2    0    6
+                         
+                0 1 2 13                     0 −  2 −  4 −  26
+                          
+                  0 2 06     R −  2R 2    0   0   −  4 −  20
+                              3
 
-               2   8  − 1   1     0 
-                0 12 −  2   4    −  6  
-                                    
-               0   0  −  1  −  3  −  10
-                                    
-               0   0  19  −  14  16   R +   19 R
-                      3      3          4   3   3
+                1 1  2    19 
+                              
+                0 1  2    13                                 5
+                                            0    0    1
+                  0 0 −  4 −  20    − 1 R
+                                   4  3
 
-                                                                             z
-                                                   z
-               2   8  − 1   1     0     2x + 8y −+   w =  0 →   2x = − 8y + −  w =  6  ⇒     x =  3
-                0 12 −  2   4     −  6    12y −  2z +  4w =  −  6                                 1
-                                                                                6
-                                                          →   12y =  2z −  4w −= − 6 ⇒      y = −
-               0   0  − 1  − 3   − 10       −− 3w = − 10                                          2
-                                             z
-                                                          →        z =  10 3w−  =  4
-               0   0  0   −  71  −  142   −  71 w =  −  142
-                             3     3        3        3    →            w =  2
-                       (     1      )
-
-             Solution:  3,  −  2 ,4,2
-
-
-
-
-
-
-
-
-                                                            10</code></pre>
+                                     y
+                1 1 2 19       x ++   2z = 19  (3)
+                           
+                0 1 2 13   ⇒  y +     2z =  13     (2)
+                          
+                  001  5          z =  5     (1)
+                 (2) ⇒  y = 13 − 2z</code></pre>
      	</div>
     
      </div>

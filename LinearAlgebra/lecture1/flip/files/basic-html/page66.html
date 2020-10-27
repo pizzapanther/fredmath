@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 66 - Linear Algebra lecture 1</title>
+        <title>Page 66 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 66 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 66 - Linear Algebra 1</div>
         <div id="content-top2">P. 66</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 1.7 – Cramer’s Rule
+    <pre style="white-space:pre-line"><code>66 | 1.6 – Determinants and Properties
+
+
+          1.6−5         Determinant by Cofactors
+
+
+                       a   a     a   
+                       11   12    13  
+          A  = [a  ]   =  a  a   a   
+                ij     21   22    23 
+
+                       a   31  a 32  a 33   
+
+
+          1.6−6  Minor
+
+
+          For a square matrix  A =        a ij       , the minor  M . Of an element a  is the determinant of the matrix
+                                                      ij
+                                                                         ij
+                                                th
+                                 th
+          formed by deleting the i  row and the j  column of A.
+
+
+          1.6−7     Example
+
+
+                    31 −  4
+                            
+          Let  A =      25  6  Find  M 32
+                            
+                      14  8   
+
+          Solution
+
+                      3  1   − 4
+
+              M 32  =  2  5   6
+                      1  4    8
+
+                     3 −  4
+                   =
+                     2    6
+                   =  26
 
 
 
+          1.6−8     Theorem
 
-          Cramer’s Rule
+          The determinant is the dot product of any row i of A with its cofactors:
 
-          Theorem
-                                                                                ( )
-                                                                                      0
-          If  AX =  B  is a system of a linear equations in n unknowns such that det A ≠ , then the system has a
-          unique solution. This solution is
-                         ( )
-                      det B
-                 x =   det ( ) A 1
-                  1
+                                                 +
+                                            ( )
+                 Cofactor Formula:  C = −      1  ij M
+                                        ij              ij
+                                     A  =  aC    +  a C     +  a C
+                                           11 11    12 12      13 13
 
-                         ( )
-                       det B
-                 x =        2
-                   2   det ( ) A
-
-                          
-
-                          ( )
-                       det B
-                 x =    det ( ) A n
-                   n
-
-
-                        a    a         a           x        b   
-                         a 11  12        1n         x 1       b 1  
-          Where    A =      21                 X =      2      B =      2    
-                                                              
-                         a             a            x         b  
-                          1 n            nn         n         n 
-
-
-                     b    a        a
-                      1    12        1n
-             ( )
-          det B 1  =  b  2
-
-                     b    a         a
-                      n    n 2       nn
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            66</code></pre>
+                                              a     a         a     a         a     a
+                                        =  a 11 a 22  a 23  −  a 12 a 21  a 23  +  a 13 a 21  a 22
+                                               32    33        31    33        31    32</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 63 - Linear Algebra lecture 1</title>
+        <title>Page 63 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 63 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 63 - Linear Algebra 1</div>
         <div id="content-top2">P. 63</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  a b             d   e 
-             49.  Show that the matrices  A =       and   B =       
-                                               0 c              0  f  
+    <pre style="white-space:pre-line"><code>1.6 – Determinants and Properties  | 63
 
+             Section 1.6 – Determinants and Properties
+
+
+
+
+             1.6−1     Definition
+
+             The determinant is a number that contains information about matrix. It is used to find formulas for inverse
+                                            −
+                                             1
+             matrices, pivots, and solutions Ab .
+                                              ab               − 1     1      d  − b
+                                        A =         has inverse  A  =               
+                                              c d                   ad − bc − c   a  
+                                                                              
+
+                                            ab 
+             Determinant of the matrix  A =        is written det( ) orA  A  and is define as
+                                            c d  
+
+                                                       a b    = ad − bc
+                                                       c d
+
+
+             The determinant is zero when the matrix has no inverse.
+
+
+             1.6−2     Properties of the Determinants
+
+             By using these property rules, we can compute the determinant of any square matrix.
+
+             1.  Determinant of the n by n identity matrix is 1.
+
+                                     1
+                    10      1 and        1
+                     01   =                   = 1
+                                            1
+
+
+             2.  Determinant changes sign when 2 rows are exchanged.
+
+                     ab   =  ad −  bc  c d  =  bc ad =  −  (ad −  bc ) ⇒  ab  =  −  c d
                                                  −
-                                            b   ac
-                    commute if and only if            =  0
-                                            ed −   f
+                     c d              ab                               c d       ab
 
-                                             tr ( ) A  1
-                                              ( )
-             50.  Show that      det ( ) A =  1             for every  22×  matrix A.
-                                          2 tr A 2   tr ( ) A
+             3.  Determinant is a linear function of each row separately.
 
-             51.  What is the maximum number of zeros that a  44×  matrix can have without a zero determinant?
-                  Explain your reasoning.
+                                                     ta tb     a   b
+                    Multiply row 1 by any number t:         =  t
+                                                     c   d     c   d
 
-                                                         )
-                               ( )
-                                                    (
-                                       ( )
-                                                                                                    )
-             52.  Evaluate  det A , det E , and det AE . Then verify that det ( ) detA ⋅  ( ) detE =  ( AE
-                         4   1  3            1      
-                                   
-                    A =      0 −  2 0,  E =      3    
-                                   
-                          3   1  5              1  
-
-                               sin α  2  sin β  2  sin γ  2 
-                                                    
-             53.  Show that  cos α    2  cos β  2  cos γ  2     is not invertible for any values of α, β, γ
-                                                    
-                               1        1       1   
-                                                    
-
-                                                         ab 
-                                                                      ( )
-             54.  The determinant of a  22×  matrix  A =        is det A =  ad − bc .
-                                                         c  d  
-                  Assuming no rows swaps are required, perform elimination on A and show explicitly that  ad − bc  is
-                  the product of the pivots.
-
-                                                                          2
-                                                 ( ) 17. What is det 3A
-             55.  If A is a 77×  matrix and let det A =               ( )    ?
-
-             56.  Explain without computations why the following determinant is equal to zero
-                     a 1  a 2  a 3  a 4  a 5
-
-                     b   b     b    b    b
-                      1    2    3    4    5
-                     c 1  c 2  0    0     0
-
-                    d 1  d 2   0    0     0
-                     e   e     0    0     0
-                      1    2
+                                                   a a′+   b b′ +  a b     a′  b′
+                    Add row 1 of A to row 1 of A ′:              =       +
+                                                     c       d     c d      c  d
 
 
+                           For 2 by 2 determinants, if you expand to a rectangle, the determinants equal areas.
 
-
-
-
-                                                              63</code></pre>
+                           For n-dimensional, the determinants equal volumes.</code></pre>
      	</div>
     
      </div>

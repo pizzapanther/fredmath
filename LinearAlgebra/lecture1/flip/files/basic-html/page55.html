@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 55 - Linear Algebra lecture 1</title>
+        <title>Page 55 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 55 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 55 - Linear Algebra 1</div>
         <div id="content-top2">P. 55</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>0
-             4.  If 2 rows of A are equal, thendetA= .
-                     a b  =  ab ab =  0
-                               −
-                     a b
+    <pre style="white-space:pre-line"><code>1.5 – Transpose, Diagonal, Triangular, and Symmetric Matrices  | 55
 
 
-             5.  Subtracting a multiple of one row from another row leaves detA unchanged.
-
-                       a      b      ab
-                    c ta d −    ta  =  c  d
-                      −
-
-                                                         0
-             6.  A matrix with a row of zeros has detA= .
-                     a b  =  0 and    00   =  0
-
-                     00               bc
-
-             7.  If A is triangular then detA aa         a   = product of diagonal entries.
-                                            =
-                                               11 22      nn
-                                        a               0
-                                         11
-                     ab    =  ad             a 22          =  a a     a
-                     0 d         and                          11 22     nn
-
-                                         0             a
-                                                        nn
-
-                                             0
-             8.  If A is singular then detA= .
-             9.  If A is invertible then detA  ≠ 0.
+                       3 −   2 −  2
+                                  
+                 AB =      0  0  2
+                                  
+                        0   0  5   
 
 
-             10. The determinant of AB detA is times detB :  AB =    A B
+                        35 −  1
+                                
+                 BA =      00 − 5
+                                
+                          00  5   
 
+             The goal is to describe Gaussian elimination in the most useful way by looking at them closely, which are
+             factorizations of a matrix.
 
-                                                                                 ( )
-                                                                       ( )
-                                 T
-             11. The transpose  A has the same determinant as A:  det A =    det A T
+                The factors are triangular matrices.
 
-
-                                               B
-                                      A
-                  det A B+  (  ) ≠  det( ) det( )
-                                         +
+                The factorization that comes from elimination is  A LU=  .
 
 
 
+             Symmetric Matrices
 
 
+             1.5−8     Definition
+                                                         T
+             A square matrix A is said to be symmetric if  A =  A. That means a square matrix must satisfies
+             a =   a  ji
+              ij
+
+             Example
 
 
+                        1   − 4    T
+                   A =           =  A
+                        − 4  1  
+
+                        6   5   1 
+                                      T
+                   A =    5  0  7 =   A
+                                   
+                        1  7     1 
+                                −  
+
+                  The inverse of a symmetric matrix is also symmetric.
 
 
+             Example
+
+                         1   2
+             Given  A =         , show that the inverse is symmetric too?
+                          2  5 
+             Solution
 
 
-
-
-
-
-
-
-
-
-
-                                                              55</code></pre>
+                 A − 1  =      5  − 2  
+                         − 2  1  </code></pre>
      	</div>
     
      </div>

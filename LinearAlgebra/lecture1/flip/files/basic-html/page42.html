@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 42 - Linear Algebra lecture 1</title>
+        <title>Page 42 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 42 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 42 - Linear Algebra 1</div>
         <div id="content-top2">P. 42</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                        
-          70.  Let  Ax =  be any consistent system of linear equations, and let  x  be a fixed solution. Show that
-                        b
-                                                                               1
-                                                                                    
-               every solution to the system can be written in the form  x =  x +  x  where  x  is a solution to
-                                                                         1
-                                                                              0
-                                                                                         0
-                 
-                Ax = 0. Show also that every matrix of this form is a solution.
-
-                                                                      2
-                                                        2
-                                                             2
-          71.  If A and B are  nn×  matrices satisfying  A =  B = ( AB ) =  I . Prove that  AB =  BA .
-                                                                           n
-                         01 0
-                                 
-                                                 3
-          72.  Let  A =     0 01  . Verify that  A = 5I , then find  A − 1  in term of A.
-                                 
-                                
-                         500    
-
-                                                                                               (
-          73.  Consider  ( ,B AI ) (BAB=  ,  ) , thus if B is the inverse of A, then (BA , B )  becomes  IA − 1 ) . On the
-                                                                                                 ,
-               other hand B is a product of elementary matrices since it is invertible. This indicates that the inverse
-                                                                                          (
-                                                                                  )
-               of A can be obtained by applying elementary row operations to ( , AI  to get  IA − 1 ) .
-                                                                                            ,
-               Find the inverses of
-
-                          1 00                                  0 10 0 
-                                 
-                a)  A =      0 10                                 0 01 0   
-                                 
-                          a b  1                      b)  B =    0 00 1 
-                                                                          
-                                                                  a b c d   
-
-
-                                  ,
-                           ,
-                              ,
-                        ,
-          74.  Let  ,A  B  C  X  Y  Z  ∈ M  ( ), A and C are invertible. Find
-                                             
-                                          n
-                            − 1                                         − 1
-                      AB                                   I   X  Y 
-                a)                                                  
-                      0  C                            b)     0  I  Z  
-                                                                0  0  I    
-
-          75.  Suppose that A, B, and A – B are invertible  nn×  matrices. Show that
-                 ( AB−  ) − 1  =  A −  1 +  A −  1 ( B −  1 −  A −  1 ) − 1  A −  1
-
-
-          76.  Suppose P is invertible and  A =  PBP − 1 . Solve for B in terms of A.
-
-          77.  Suppose ( A BC−  )  =  0, where A and B are  mn×  matrices and C is invertible. Show that  A B=   .
+    <pre style="white-space:pre-line"><code>42 | 1.4 – Inverse Matrices
 
 
 
+                   01 0
+             c)       1 00     →  Interchange the first and second rows
+                     0 01  
 
 
+                   1  00
+             d)  −      31 0     →  Add  − 3 times R  to R
+                                                          2
+                                                    1
+                   0  01
+                            
+                 
 
 
+          1.4−12  Theorem
 
 
+          Let e be an elementary operation and let E be the corresponding elementary matrix  E =  e ( ) I . Then for
+          every  mn×  matrix A
+
+                                                        e ( ) A =  EA
+          That is, an elementary row operation can be performed on A by multiplying A on the left by the
+          corresponding elementary matrix.
 
 
+          1.4−13  Example mm×
 
 
-
-
-
-                                                            42</code></pre>
+                       2  − 2 31               200              1 00              1 00
+                                                                           
+                                                                                               
+                                                         
+                                     
+          Let    A =      1  0  2 4     M =      01 0     P =      0 01     E =      01 0
+                                                                           
+                                     
+                                                                                               
+                                                         
+                         6  2  15−             0 01           01 0            301  
+                     200     2   − 2 31
+                                             
+              MA =    01 0    1  0   2 4
+                                             
+                              
+                      0 01 − 6  2    1 5 
+                              
+                      4  − 46 2
+                                   
+                  =      1  0  2 4
+                                   
+                        6  2  15−  
+                 This result can be obtained from A by multiplying the first row by 2.
+                    1 00    2   − 2 31
+                                             
+              PA =   0 01     1  0   2 4
+                                             
+                   
+                             
+                    01 0 −   6   2   1 5
+                   
+                                             
+                             
+                     2  − 2 31
+                   
+                                  
+                 = − 6    2   15
+                   
+                                  
+                       1  0  2 4  
+                 This result can be obtained from A by interchanging rows 2 and 3.</code></pre>
      	</div>
     
      </div>

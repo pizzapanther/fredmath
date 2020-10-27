@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 11 - Linear Algebra lecture 1</title>
+        <title>Page 11 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 11 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 11 - Linear Algebra 1</div>
         <div id="content-top2">P. 11</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem:  Free Variable Theorem for Homogeneous Systems
+    <pre style="white-space:pre-line"><code>1.2 – Gaussian Elimination  | 11
 
-             If a homogeneous linear system has n unknowns, and if the reduced row echelon form of its augmented
-             matrix has r nonzero rows, then the system has n − r free variables.
+                            = 13 − 2(5)
 
+                            = 3
+                    (3) ⇒  x = 19 − y − 2z
+                             = 19 − 3 − 10
 
+                             =  6
 
-             Theorem
-
-             A homogeneous linear system with more unknowns than equations has infinitely many unknowns.
-
-             Breakdown Elimination
-
-             Permanent failure with no solution
-
-                     x −  2y =  1  Subtract  3 times    x −  2y =  1
-
-                    3x −  6y =  11 eqn.  1 frome nq.  2        0y =  8
-                                   8
-             The last equation  0y = ; therefore, there is no solution.
-             This system has no second pivot, since no zero allowed as a pivot.
-
-
-             Permanent failure with infinitely many solutions
-
-                     x −  2y =  1  Subtract  3 times  x −  2y =  1
-                    3x −  6y =  3 eqn.  1 from  e n.  2  0y =  0
-                                             q
-
-                                  0
-             Every y satisfies  0y = . There is only one equation  x −  2y =  1.
-             There are unique infinitely many solutions.
-
-
-             Three Equations in Three Unknowns
-
-             To understand Gaussian elimination, you have to go beyond 2 by 2 systems.
-
-                                              2x +   4y −  2z =  2
-                                           
-             Consider the system equations:    4x +  9y −  3z =  8
-                                                           10
-                                            −  2x −  3y +  7z =
-
-                   2x +   4y −  2z =  2  subtract  2 times  eqn .1  2x +  4y −  2z =  2
-                
-                                                  q
-                                                                          z
-                  4x + 9y − 3z =  8        from e n .2                   y +=  4
-                
-                 −  2x −  3y +  7z =  10                     −  2x −  3y +  7z =  10
-                   2x +   4y −  2z =  2  Add   eqn .1  2x +  4y −  2z =  2
-                
-                              z
-                                                              z
-                         y +=   4                         y +=   4
-                
-                 −  2x −  3y +  7z =  10  and eqn . 3             y +  5z =  12
+             Solution: (6,3,5    )
 
 
 
 
-                                                              11</code></pre>
+             1.2−6     Example
+
+             Use Gauss-Jordan elimination to solve the homogeneous linear system
+                     x +  1  3x −  2  2x 3  +  2x 5    =  0
+
+                    2x +  6x −  5x −  2x +   4x −  3x =  −  1
+                      1      2     3     4     5     6
+                                                 +
+                                         5x +  10x          15x =  5
+                                   3      4           6
+                     2x +  1  6x 2           8x +  4  4x +  5  18x =  6  6
+                                    +
+             Solution
+
+                   13 −  2   0   2   0    0 
+                   26 −  5 −  2 4 −   3 −  1   R − 2R     Adding   ( ) times the st− 2    1 row to the
+                                                                                              2nd
+                                                  2   1
+                   0 0  5   10   0 15     5 
+                                           
+                                                                                    s
+                                                                    ( ) 2 times
+                                                                                     t
+                                                                                           to
+                  2 6   0    8   4 18     6    R − 2R 1   Adding   −          the  1  row    the  4th
+                                                  4
+                   1 3 − 2   0   2   0    0 
+                   00 −  1 −  2 0 −   3 −  1   − R
+                                                 2
+                   0 0  5   10   0 15     5 
+                                           
+                   0 0  4    8   0 18     6  
+
+                   1 3 − 2   0   2  0   0
+                   00   1    2   0   3  1 
+                                          
+                   0 0  5   10 0 15 5       R −  5R 2
+                                               3
+                                          
+                   0 0  4    8   0 18 6     R −  4R 2
+                                               4
+                   1 3 − 20 2 00
+                   0 0  1   2 0 31      
+                                        
+                   0 0  0   0 000
+                                          1
+                   0 0  0   0 0 6 2       6 R 4  then interchanging row 3 and row 4</code></pre>
      	</div>
     
      </div>

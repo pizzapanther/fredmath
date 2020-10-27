@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 41 - Linear Algebra lecture 1</title>
+        <title>Page 41 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 41 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 41 - Linear Algebra 1</div>
         <div id="content-top2">P. 41</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>58.  Determine if the given matrix has an inverse, and find the inverse if it exists. Check your answer by
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices  | 41
 
-                  multiplying  AA  − 1  =  I
-                                ⋅
-                                                    1 01
-                           2  3 
-                                                           
-                                                  
-                     a)                     b)  0 11
-                           −  3 −  5                    
-                                                      2 35  
+             Notation
 
 
-                                            cosθ   sinθ      cos ( ) θ   sin −  ( ) θ −  
-             59.  Show that the inverse of                 is                  
-                                            sinθ −  cosθ      sin ( ) cosθ −  ( ) θ −  −  
+                Matrix A is symmetric across its main diagonal. So is  A − 1
 
-             60.  If the product C =  AB  is invertible (and A & B are square matrices), find a formula for  A − 1  that
+                Matrix A is tridiagonal (only three nonzero diagonals). But  A − 1  is a full matrix with no zeros.
 
-                  involves C − 1   and B.
-                  Hence, it is not possible to multiply a non-invertible matrix by another matric and obtain an invertible matrix
-                  as a result.
+                  (another reason we don’t compute  A − 1 )
 
-             61.  Prove that if A is an  mn×  matrix, there is an invertible matrix C such that CA  is in reduced row-
-                  echelon form.
 
-             62.  Prove that 2 mn×  matrices A and B are row equivalent if and only if there exists a nonsingular
-                  matrix P such that  B =  PA
+             1.4−7     Singular versus Invertible
 
-             63.  Let A and B be 2  mn×  matrices. Suppose A is row equivalent to B. Prove that A is nonsingular if
-                  and only if B is nonsingular.
+             A − 1  exists when A has a full set of n pivots. (Row exchanges allowed)
 
-             64.  Show that if A and B are two  n n  invertible matrices then A is row equivalent to B.
-                                                ×
+                •  With n pivots, elimination solves all the equations  Ax =  b . The columns  x  go into  A − 1 . Then
+                                                                        i   i                 i
+                    AA − 1  =  I  is at least a right-inverse.
 
-             65.  Prove that a square matrix A is nonsingular if and only if A is a product of elementary matrices.
+                •  Elimination is really a sequence of multiplications.
 
-             66.  Show that if  A   B  (that is, if they are row equivalent), then  EA =  B  for some matrix E which is a
-                  product of elementary matrices.
 
-             67.  Show that if  EA =  B  for some matrix E which is a product of elementary matrices, then  AC   BC
-                  for every  n n  matrix C.
-                             ×
+             1.4−8     Conclusion
 
-                        
-                           0
-             68.  Let  Ax =  be a homogeneous system of n linear equations in n unknowns that has only the trivial
-                                                                                   
-                                                                                 k
-                  solution. Show that of k is any positive integer, then the system  Ax =  also has only trivial
-                                                                                      0
-                  solution.
+                If A doesn’t have n pivots, elimination will lead to a zero row.
 
-                        
-                           0
-             69.  Let  Ax =  be a homogeneous system of n linear equations in n unknowns, and let Q be an
-                                                                                                    
-                                                     
-                                                                                                   )
-                                                                                                        0
-                                                         0
-                  invertible  n n×  matrix. Show that  Ax =  has just trivial solution if and only if (QA x =  has just
-                  trivial solution.
+                Elimination steps are taken by an invertible M. So a row of MA is zero.
 
-                                                              41</code></pre>
+                          I
+                If  AB =  then  MAB =   M . The zero row of MA, times B, gives a zero row of M.
+                The invertible matrix M can’t have a zero row! A must have n pivots if  AB = .
+                                                                                             I
+
+
+             1.4−9     Elementary Matrices
+
+             1.4−10  Definition
+
+
+             Let e be an elementary row operation. Then the  nn×  elementary matrix E associated with e is the matrix
+             obtained by applying e to the nn×  identity matrix. Thus
+                                                             E =  eI
+
+
+             1.4−11  Example
+
+                     1   0 
+                a)          →    Multiply R of  I  by  − 3
+                      0 − 3                 2
+
+                      1 0   0   0
+                      01    0   0 
+                b)                 →    Multiply the third row by  − 5
+                      0 0 − 50
+                                 
+                      00    0   1 </code></pre>
      	</div>
     
      </div>

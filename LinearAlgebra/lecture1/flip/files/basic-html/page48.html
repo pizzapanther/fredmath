@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 48 - Linear Algebra lecture 1</title>
+        <title>Page 48 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 48 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 48 - Linear Algebra 1</div>
         <div id="content-top2">P. 48</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>T
-              Multiplying M by  M  gives a symmetric matrix.
-
-          Proof
-                                  T
-                                                                         T
-                           )
-             The entry ( ,i j  of  MM , it is the dot product of row i of  M  (column i of M) with column j of M.
-                                                                                  T
-                      )
-             The ( ,i j  entry is the same dot product, column j with column i. so  MM  is symmetric.
-                                                                                            T
-                              T
-                                                         T
-             The matrix  M .M  is also symmetric and  MM  is a different matrix from  M  .M .
+    <pre style="white-space:pre-line"><code>48 | 1.4 – Inverse Matrices
 
 
-                                                                   T
-                                                           T
-              If A is an invertible symmetric matrix, then  AA and  A A are also invertible.
-              Matrix A is symmetric across its main diagonal. So is  A − 1
+          57.  Prove that if A is an invertible matrix and B is row equivalent to A, then B is also invertible.
 
-              Matrix A is tridiagonal (only three nonzero diagonals). But  A − 1  is a full matrix with no zeros.
+          58.  Determine if the given matrix has an inverse and find the inverse if it exists. Check your answer by
 
-             (another reason we don’t compute  A − 1 )
-
-
-          Example
-
-                                         1  
-                                                                    T
-                                                     T
-          Given  M = [1     ] 2  and  M T  =    . Find  MM  and  M .M
-                                         2
-                                         
-          Solution
-                       1  
-                T
-              MM =      [1    ] 2
-                       2
-                       
-                        1   2
-                     =       
-                         2  4 
+               multiplying  AA⋅  − 1  =  I
+                                                 1 01
+                        2  3 
+                                               
+                                                        
+                  a)                     b)  0 11
+                        −  3 −  5                    
+                                                   2 35  
 
 
-                              1  
-              MM  T  = [1   ] 2   
-                              2
-                              
-                     = [ ] 5
+                                         cosθ   sinθ      cos ( ) θ   sin −  ( ) θ −  
+          59.  Show that the inverse of                 is                  
+                                         sinθ −  cosθ      sin ( ) cosθ −  ( ) θ −  −  
 
 
+          60.  If the product C =  AB  is invertible (and A & B are square matrices), find a formula for  A − 1  that
+               involves  C − 1   and B.
 
+               Hence, it is not possible to multiply a non-invertible matrix by another matric and obtain an invertible matrix
+               as a result.
 
+          61.  Prove that if A is an mn×  matrix, there is an invertible matrix C such that CA  is in reduced row-
+               echelon form.
 
+          62.  Prove that 2 mn×  matrices A and B are row equivalent if and only if there exists a nonsingular
 
+               matrix P such that  B =  PA
 
+          63.  Let A and B be 2 mn matrices. Suppose A is row equivalent to B. Prove that A is nonsingular if
+                                  ×
+               and only if B is nonsingular.
 
+          64.  Show that if A and B are two n n×  invertible matrices then A is row equivalent to B.
 
+          65.  Prove that a square matrix A is nonsingular if and only if A is a product of elementary matrices.
 
+          66.  Show that if  A   B  (that is, if they are row equivalent), then  EA =  B  for some matrix E which is a
+               product of elementary matrices.
 
+          67.  Show that if  EA =  B  for some matrix E which is a product of elementary matrices, then  AC   BC
+               for every n n×  matrix C.
 
-
-
-
-
-
-
-
-
-
-                                                            48</code></pre>
+                     
+          68.  Let  Ax =  be a homogeneous system of n linear equations in n unknowns that has only the trivial
+                         0
+                                                                                
+                                                                              k
+               solution. Show that of k is any positive integer, then the system  Ax =  also has only trivial
+                                                                                   0
+               solution.</code></pre>
      	</div>
     
      </div>

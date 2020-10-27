@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 34 - Linear Algebra lecture 1</title>
+        <title>Page 34 - Linear Algebra 1</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 34 - Linear Algebra lecture 1</div>
+        <div id="content-top1">Page 34 - Linear Algebra 1</div>
         <div id="content-top2">P. 34</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Finding  A    − 1   using Gauss-Jordan Elimination
-
-                               
-                   AI      →   I A  1 −
-                                    
+    <pre style="white-space:pre-line"><code>34 | 1.2 – Gaussian Elimination
 
 
-                           1   0   1 
+          (20 – 23)  Find the product of the 2 matrices by rows or by columns:
+
+                 2   34                                             3 
+                       
+          20.                                        1   2    4  
+                                                                      1
+                 5   12                          22.                
+                        
+                                                          2  0    1 
+                                                                      1 
+                                                                     
+                 3   6   2 
+          21.                                         1   2    4 2
+                 6   12  − 1                  23.    − 2  3    1  
+                                                                        2
+                                                                      
+                                                        
+                                                        − 4   1    2 3
+                                                                      
+                                                        
+
+                           4   1   3          −  3 −   2 −  3
                                       
-          Find  A − 1  if A =      2 −  2 −  1
+                                                            
+                                               
+          24.  Given  A =      3 −  1 −  2    B = − 1  0  0
+                                                            
+                                               
                                       
-                            3   0  0   
+                            0   0  4           8  −  2 −  4  
+               Find  A B+  , 2, and      −  B
+                              A
 
-           1   0   1   1 00                       2   −  2  −  1  0  1  0      3   0   0   0   0 1
-            2 −  2 −  1 0 1 0    R −  2R
-                                  2      1       −  2  0   −  2  −  2  0  0   −  30   −  3 −  30  0
-            3   0  0  0 01     R −  3R          0   −  2  −  3  −  2 1  0    0   0  −  3 −  30 1
-                                    3      1
-
-           1   0   1   1    0 0
-            0 −  2 −  3 −  2 1 0   −  1  R
-                                    2  2
-            0   0  −  3 −  30 1  
-
-            10   1    1    0    0
-                  3              
-            0 1   2   1   − 1   0
-                                  
-                             2
-                                    1
-            00 −  3 −  3   0    1   − 3 R 3
-                                   R −  R                                     0   1   3    1   −  1  0
-            1 0 11       0    0     1    3       1   0   1   1   0  0                 2          2
-            01   3  1 −  1    0    R −    3 R    0   0  −  1 −  10  1         0   0    3    3   0    1
-                 2       2          2  2   3                        3                −  2  −  2      2
-                               1                                    1                       1    1   1
-              0 0 11    0   − 3                1   0   0   0   0  3         0   1   0   −  2  −  2  2
-
-
-            1 00     0     0    1                           0    0     1 
-                                3                                      3 
-            01 0 −    1   −  1  1                  A − 1  =    −  1  −  1  1  
-                      2    2    2                           2     2    2  
-                                 1                                     1 
-              0 01  1     0   − 3                           1  0   − 3  
-
-
-
-             Matrix A is symmetric across its main diagonal. So is  A − 1
-
-             Matrix A is tridiagonal (only three nonzero diagonals). But  A − 1  is a full matrix with no zeros.
-
-               (another reason we don’t compute  A − 1 )
-
-
-
-
-
-
-
-
-
-                                                            34</code></pre>
+          (25 – 38)  Find  AB  and  BA , if possible
+                      1  3        −   27                                             3 − 4
+          25.    A =         B =                                   32 −   3             
+                      − 25         0  2                33.   A =                 B =    0  1
+                                                                                               
+                                                                       01    0        1   0 
+                      2 −  3       −  2  4                                                
+          26.    A =         B =         
+                      1  4         2  − 3                          5  3            4  − 2
+                                                                                                
+                                                                                       
+                      3 −   2     −   1 −  1           34.   A =    10            B = − 2  0
+                                                                                                
+                                                                                       
+          27.    A =         B =                                   −               9   1 
+                      4  1         0  4                                                    
+                      3 − 1        4  1                            3  0
+          28.    A =         B =                                                    4 − 1
+                      2  3         2 − 3               35.   A = −  12           B =    0  2  
+                                                                     
+                                                                            
+                                                                         1  1             
+                      − 3  2        0  2
+          29.    A =          B =        
+                      2  −  2       −  2 4                           2 − 1  3         3  0  0   
+                      2 − 1                              36.   A =    0  2  −  1   B =    1 −  1  0
+                                                                                                    
+          30.    A =      0  3      B =      1 − 23              0  1  2          2 −  1 −  2   
+                      1 − 2        2  0  1 
+                                                                     −  1  2  0         2 −  1  0 
+                                                                                                      
+                      − 13                               37.   A =      2  −  1  1      B =      1  5  −  1
+                                                                                                      
+          31.    A =      2  1     B =      1 − 2 3              −  2  2  −  1         0 −  1  3    
+                                   0  1  2 
+                      − 32                                           1 −  2  0         −  31  0 
+                                                                                                     
+                      2   4         3        2           38.   A =    2  0  1    B =   1  4 − 1
+          32.    A =      0  −  1     B =      0 −               2 −  2 −  1         0  0  2    
+                      − 3  2        − 26   2                                                  
+                            </code></pre>
      	</div>
     
      </div>
