@@ -1,1 +1,0 @@
-﻿var ols=[{caption:"sec-4.1",page:"1",url:"",level:"1",children:[]},{caption:"sec-4.2",page:"17",url:"",level:"1",children:[]},{caption:"sec-4.3",page:"31",url:"",level:"1",children:[]},{caption:"sec-4.4",page:"39",url:"",level:"1",children:[]},{caption:"sec-4.5",page:"51",url:"",level:"1",children:[]},{caption:"sec-4.6",page:"69",url:"",level:"1",children:[]}];
