@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 160 - Linear Algebra Solution</title>
+        <title>Page 160 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 160 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 160 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 160</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,100 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>λ−  60      0
-                  0    λ    − 1 =  ( λ λ− 6 )(λ−  ) 4 +  ( 4 λ−  ) 6
-                  0    4 λ−   4
-                                    (  2          )
-                                 = λ λ −  10λ+  24 +  4λ−  24
+    <pre style="white-space:pre-line"><code>152 | 1.4 – Inverse Matrices
 
-                                           2
-                                 = λ − 10λ +  24λ+   4λ− 24
-                                    3
-                                    3
-                                           2
-                                 = λ − 10λ +  28λ−  24
-                 3
-                        2
-                 λ − 10λ + 28λ − 24 0
-                                    =
-               λ      =  2, 2, 6
-                 1,2,3
+           Exercise
 
-
-          Exercise
-
-          Prove that if a square matrix A has a column of zeros, then det(A) = 0
-
-          Solution
-
-               Consider a 3 by 3 matrix with a zero column, however to find the determinant we can interchange
-               any column of that matrix; therefore:
-
-                                             0  a   a   
-                                               12     13  
-                                  = [a  ] =  0  A  a  a  
-                                      ij        22   23  
-
-                                             0   a 32  a 33   
-               By definition, the determinant of A using the cofactor:
+                 
+           Let  Ax =  be a homogeneous system of n linear equations in n unknowns that has only the trivial
+                     0
+                                                                            
+                                                                           k
+           solution. Show that of k is any positive integer, then the system  Ax =  also has only trivial solution.
+                                                                               0
+           Solution
+               Since A is a square matrix, thus A has only the trivial solution. That implies that A is invertible.
+                                              
+                     k
+                                            k
+                                                 0
+               But  A  is also invertible so  Ax =  has only trivial solution.
 
 
-                                 a     a          a     a         a     a
-                         A =  a 11 a 22  a 23  −  a 12 a 21  a 23  +  a 13 a 21  a 22
-                                   32    33        31    33        31    32
+           Exercise
+                 
+                     0
+           Let  Ax =  be a homogeneous system of n linear equations in n unknowns, and let Q be an invertible
+                                                                                    
+                                     
+                                                                                   )
+                                                                                       0
+                                        0
+           n n  matrix. Show that  Ax =  has just trivial solution if and only if (QA x =  has just trivial
+             ×
+           solution.
+           Solution
+                                               
+                                                  0
+               A is a square (n n×  )  matrix. If  Ax =  has just a trivial solution, then A is invertible. Since Q is an
+               invertible n n×  matrix, then QA is also invertible.
+                          
+                         )
+                              0
+               Thus, (QA x =  has trivial solution.
+                                         
+                                        )
+                                             0
+               On the other hand, if (QA x =  has trivial solution, then QA is also invertible.
+               Since Q is invertible, then Q − 1  is also invertible.
+                                                                                             
+                                                   
+                           −
+                            1
+                                                                                                 0
+                                                       0
+                       =
+               Thus,  A Q QA  is invertible, i.e  Ax =  has just trivial solution, equivalent  Ax =  has just
+                                                
+                                               )
+                                                    0
+               trivial solution if and only if (QA x =  has just trivial solution.
 
-                                a     a         0 a           0 a
-                            =  0  a 22  a 23  −  a 12 0 a 23  +  a 13 0 a 22
-                                 32    33            33            32
 
-                            = 0
-
-
-          Exercise
-
-          With 2 by 2 blocks in 4 by 4 matrices, you cannot always use block determinants:
-
-                         A   B                 A  B
-                               =  A D    but         ≠  A D −  C B
-                         0   D                C   D
-
-           a)  Why is the first statement true? Somehow B doesn’t enter.
-
-
-
-                                                           160</code></pre>
+           Exercise
+                                                                         
+                    b
+           Let  Ax =  be any consistent system of linear equations, and let  x  be a fixed solution. Show that every
+                                                                           1
+                                                                                              
+                                                                                                      0
+           solution to the system can be written in the form  x =  x +  x  where  x  is a solution to   Ax = . Show
+                                                               1    0          0
+           also that every matrix of this form is a solution.
+           Solution
+                                                        
+                                             0
+               Since  x  is a solution to  Ax = , we have  Ax = .
+                                                               0
+                      0                                    0
+                                    
+                         
+                             0
+                                        b
+               Adding  Ax =  to  Ax = , then
+                          0
+                    
+                   Ax +  Ax =  b +  0
+                           0
+                   Ax +  (     x 0 )  =  b
+               As adding an equation to the original equation does not affect the solution.
+                                                                     
+                        
+                                                                                  
+                                                                              
+               If we let  x  be a fixed solution, then every solution to  Ax =  is  x =  x +    x .
+                                                                         b
+                         1                                                         1    0</code></pre>
      	</div>
     
      </div>

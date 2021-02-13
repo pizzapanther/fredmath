@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 857 - Linear Algebra Solution</title>
+        <title>Page 857 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 857 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 857 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 857</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 841
 
-             Determine if the matrices are diagonalizable. If so, find a matrix P that diagonalizes A and determine
+               Exercise
+               Use the Gram-Schmidt process to find an orthogonal basis and an orthonormal basis for the subspaces
+                  m
+                 .                                   
+                     u =  (1, 0, 0), u =  (3, 7,  2), u =    (0, 4, 1)
+                                                 −
+                      1               2                  3
+               Solution
+                       
+                   v =  u =  (1, 0, 0 )
+                    1    1
+                                                                 
+                        (1, 0, 0 )                             v 1
+                   q =                                     q =
+                    1     10 0                              1    v
+                                                                 
+                               +
+                           +
+                                                                  1
+                                )
+                       = (1, 0, 0
+                                  
+                             u 2 , v 1  
+                   v =  u −            v
+                     2    2        2   1
+                                v
+                                 1
+                       =  (3, 7,  2−  ) (3, 7,  2−      −  ) (1, 0, 0         ) (1, 0, 0 )
+                                                            
+                       =  (3,7, 2−  ) 3−  (1,0,0 )
 
-             P − 1 AP
-                          20 −   2
-                                   
-                    A =     13  2
-                                   
-                          00    3  
-                                  
-             Solution
-                               2 − λ    0     − 2
+                       = (0, 7,  2−  )
+                                                                        
+                         1                                            v
+                   q =       (0, 7,  2−  )                        q =    2
+                     2    53                                        2   v  2
 
-                det ( A − λ  ) I =  1  3 − λ  2
-                                 0      0    3 − λ
+                              7       2  
+                       =   0,    , −     
+                              53      53 
+                       
+                                               )
+                   u   v =  (0, 4, 1   ) (1, 0, 0
+                     3   1
+                           =    0
+                       
+                   u   v =  (0, 4, 1   ) (0, 7,  2−  )
+                     3   2
+                           =  26
+                                              
+                            u 3 , v 1    u 3 , v 2  
+                   v =  u −            v −           v `
+                     3    3       2    1       2    2
+                                v             v
+                                 1             2
+                                        26
+                       = (0, 4, 1 ) 0−− ( ) (0, 7,  2−  )
+                                        53
+                       =  (0, 4, 1 −  )  ( 0,  182 ,  −  52 )
+                                        53     53
 
-                                            2
-                              (2 λ =  −  )(3 λ  −  ) = 0
-
-                The eigenvalues are: λ  1  =  2 , λ  2,3  =  3
-
-
-                For λ    2 ⇒     ( A λ =  −  IV =  )  0
-                      1                1    1
-
-                                         0
-                             2
-                     00 −         x   1    
-                     1 1    2     y   =     x +  y +  2z =  0     ( ) 1
-                                         0     →
-                                1              1    1    1
-                     00            
-                                         0
-                            1     z   1      →   z =  1  0
-                    ( ) 1 →  x =  −  y
-                             1     1
-
-                                                     − 1
-                    Therefore, the eigenvector: V =   1  
-                                                1     
-                                                     0  
-                                                      
-
-                For λ    =  3 ⇒    ( A −  3IV =  )  0
-                      2,3                   2
-                                          0
-                     −  10 −  2     x   2    
-                      1  0   2     y   =     x +  2z =   0
-                                          0     →
-                                  2              2     2
-                                     
-                                          0
-                      0  0   0    z   
-                                   2 
-                    x = −  2z
-                     2       2
-                    ∀  y ∈  
-                        2
-
-                                                                       0
-                                                     − 2           
-                                                                       1
-                    Therefore, the eigenvector: V =   0      and   V =  
-                                                2               3  
-                                                      1            
-                                                                       0
-                                                                   
-
-
-                                                              857</code></pre>
+                                ,
+                       = ( 0,  30 105 )
+                                  53
+                             53</code></pre>
      	</div>
     
      </div>

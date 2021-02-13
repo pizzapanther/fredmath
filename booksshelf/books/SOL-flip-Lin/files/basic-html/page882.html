@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 882 - Linear Algebra Solution</title>
+        <title>Page 882 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 882 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 882 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 882</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  m 11  m 12  m 13   m 14  
-                                           
-                    m 21  m 22  m 23   m 24  
-              M =                          
-                    m 31  m 32  m 33   m 34  
-                      m  m     m      m     
-                     41    42     43    44 
+    <pre style="white-space:pre-line"><code>866 | 3. 3 − S OL U T I ON
+                                                                   
+
+                  1                                             v 2
+                            )
+              q =  3 (2, 2, 1                               q =   v
+                                                                   
+               2
+                                                              2
+                   ( 2 21    )                                      2
+                         ,
+                      ,
+                 =  3 33
+                                                                                
+                  1                                                           v 3
+                                 )
+                              −
+                         −
+              q  =   (2, 1,  2                                            q =   
+               3   3                                                       3    v 3
+                   ( 2    1    2 )
+                 =  3 , −  3 , −  3
+             The orthogonal basis:      ( { 1,  2, 2 ,  2, 2, 1 ,  2,  1,  2−  ) (  ) (  −  −  )}
 
 
-                      m   m      m      m                    0 m 11  m 12   0
-                      21    22     23     24                   0 m  m      0   
-              JM =      0  0      0     0      and  MK =      21     22    
-
-                      m 41  m 42  m 43  m 44                 0 m 31  m 32   0 
-                                                                           0   
-                      0     0      0     0                   0 m 41  m 42    
-
-             If JM = MK then m    21  =  m 22  =  m 24  =  m 41  =  m 42  =  m 44  =  0
-
-
-             Which in particular means that the second row is either a multiple of the fourth row, or the fourth row
-             is all 0’s. In either of these cases M is not invertible.
-
-             Suppose that J were similar to K. Then there would be some invertible matrix M such that  MK =  JM
-             . But we just showed that in this case M is never invertible (contradiction). Thus, J is not similar to K.
+             The orthogonal basis:
+                  ( {  1 , −  22 ) ( 22 1  ) ( 2 , −  1 , −  2 )}
+                          ,
+                               ,
+                                            ,
+                                    ,
+                                        ,
+                                                          3
+                                                     3
+                         3
+                                               3
+                   3
+                                      3 3
+                            3
+                                  3
 
 
           Exercise
-
-
-          If x is in the nullspace of A show that  M − 1 x  is in the nullspace of  M − 1 AM .
-
-          The nullspaces of A and  M − 1 AM  have the same (vectors) (basis) (dimension)
+          Use the Gram-Schmidt process to find an orthogonal basis and an orthonormal basis for the subspaces
+            m
+           .
+                          ) (1, 1, 1 ,
+                  ( { 1, 0, 0 ,    ) (1, 1,  1−  )}
           Solution
-                                             (
-                                                                      (
-                                                                                )
-              x∈  N () ⇒  A  Ax =  0 ⇒  M −  1 AM M −  1 x =  )  0 ⇒  M −  1 x∈  N M −  1 AM
-                   (   −  1  )      −  1
-              x∈  N M    AM ⇒    M    AMx =  0 ⇒  AMx =  0 ⇒  Mx∈   N ( ) A
-                                              (  − 1    )
-             So, any vector in  N ( ) resp .  N M   AM   is a linear combination of those in
-                                  A
-                (  − 1    )
-              N M     AM     resp .   ( ) , hence is contained in it. That is, the two vector spaces consist of the
-                                     A
-                                   N
-             same vectors.
+                                                
+             Let  u =   (1, 0, 0 ) u =  (1, 1, 1 ) u = (1, 1,  1−  )
+                                                   3
+                                    2
+                    1
+                  
 
+              v =  u =  (1,0,0 )
+               1   1
+                            
+                      u 2 ,  v 1  
+              v = u −           v
+               2    2       2   1
+                          v
+                           1
+                          )
+                 = (1, 1, 1   −  (1, 1, 1    ) (1, 0, 0     1       ) (1, 0, 0     )
+                 = (1, 1, 1    ) (1, 0, 0   −  )
 
+                 = (0,1,1      )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                           882</code></pre>
+                  
+               u  ,  v     (1, 1,   − 1       )
+                3   1  v =          ) (1, 0, 0     (1, 0, 0    )
+                  2    1            1
+                v
+                 1
+                         =  (1, 0, 0    )</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 401 - Linear Algebra Solution</title>
+        <title>Page 401 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 401 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 401 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 401</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>t  =  −  a →  k +  k =  0
-                                    2    3
-                      
-                   If  t =    −  b →  k +  k =  0
-                                    1    3
-                       t =  −  c →  k +  1  k =  2  0
-                      
-                                      +
-                   t =  0 →    k  sin a k  sinbk    sinc =  0
-                                               +
-                                1        2         3
-                   t =  π  →   k  cosa k    cosbk     cosc =  0
-                                       +
-                                                 +
-                       2        1         2         3
-                                                           )
-                     =
-                   t π    →−     ( k 1 sina k 2  sinbk 3 sinc =
-                                                               0
-                                                  +
-                                         +
+    <pre style="white-space:pre-line"><code>2.1 – Vectors in 2-Space, 3-Space, and n-Space | 389
+
+
+                                        ⋅
+                                           ,1 2x
+                                    =  ( 1 x    ⋅  ( ))
+                                                  1
+                                          1
+                                         ,2x
+                                    = ( x    1 )
+                                        1
+                                      
+                                    = u     √
+
+                   ∴ The set is a vector space.
 
 
                Exercise
-               Show that if  α  , α  , … , α   are linearly independent and α  , α  , … , α  , β   are linearly
-                              1    2       n                               1    2       n
-               dependent, then  β  can be uniquely expressed as a linear combination of α  , α  , … , α
-                                                                                       1    2        n
+                                         
+                                +
+                                    =
+                                         u
+               Prove that     u v v +
                Solution
+                       
+                   Let u = ( u 1 , u 2 , , u n )
+                                    
+                       
+                               v
+                       v = ( v 1 , ,  , v n )
+                                 2
+                     
+                   u v =+  ( u 1 , u 2 , , u n ) ( v 1 ,  , , v n )
+                                                  v
+                                            +
+                                                       
+                                    
+                                                    2
+                         =  ( u +  1  v 1 , u +  2  v 2 , , u +  n  v n )
+                         =  ( v +  1  u 1 , v +  2  u 2 , , v +   n  u n )
 
-                   Since, α  , α  , … , α   are linearly independent, then
-                           1    2        n
-                   a α     a α +  +     a α …+  =  0  when all  a = .
-                                                                0
-                     11     2 2          nn                  i
-                   Let assume that:
-                                                 β =
-                   a α     a α +  +     a α …+  b
-                     11     2 2          nn
-                                                 β −
-                   a α     a α +  +     a α …+  b =  0
-                     11     2 2          nn
-                         0
-                   If b = , then  a α   a α +  +      a α …+  = 0  and  β  doesn’t exist.
-                                  11      2 2          nn
-                         0
-                   If b ≠ , and α  , α  , … , α  , β   are linearly dependent, then
-                                  1   2        n
-                         a       a             a
-                     β     1  α =  2  α +  +   …+  n  α
-                          b   1   b   2         b   n
-                       =  c α   c α +  +     c α …+
-                          11     2 2          nn
+                               v
+                                           +
+                                   
+                         = ( v 1 ,  , , v n ) ( u 1 , u 2 , , u n )
+                                                      
+                                2
+                              
+                            +
+                         = v u       √
 
-                      a             a
-                   If   1  =  c  ⇒   1  −  c =  0
-                      b     1        b    1
-                     a            a                  a      
-                       b 1  −  c α  1     1    b 2  −  c   2   α +   2  +   …+     b n  − c   n   α  n  = 0
-                                                            
-                         a
-                   Then   i  − c =  0  (1 i≤ ≤  ) n  since α  , α  , … , α   are linearly independent and contradict that
-                          b    i                        1   2        n
-                   α  , α  , … , α  , β   are linearly dependent.
-                     1   2        n
-                   Therefore,  β  can be uniquely expressed as a linear combination of α  , α  , … , α  in the form
-                                                                                      1   2        n
-                   β   c α =   c α +  +     c α …+
-                        11      2 2          nn
 
-                                                               401</code></pre>
+               Exercise
+                                 
+               Prove that       ( k u v+  ) ku kv=     +  
+
+               Solution
+                       
+                   Let u = ( u 1 , u 2 , , u n )
+                                    
+                       
+                               v
+                       v = ( v 1 , ,  , v n )
+                                 2
+                       
+                     ( ku v+  ) k u=  ( (  1 , u 2 , , u n ) ( v 1 , v 2 , , v n ))
+                                                            
+                                          
+                                                  +
+                            =  k u +  (  1  v 1 , u +  2  v 2 , , u +  n  v n )
+                                 ( (                                    ))
+                            =  k u +  1  v 1 ) (  2  v 2 ) ,   ,  k u +  (  n  v n
+                                          ,  k u +
+                            =  ( ku +  1  kv 1 ,  ku +  2  kv 2 ,   ,  ku +  n  kv n )</code></pre>
      	</div>
     
      </div>

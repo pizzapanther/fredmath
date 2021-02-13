@@ -152,69 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Similar Matrices
-
-        Definition
-
-        If A and B are square matrices, then we say that B is similar to A if there exists an invertible matrix P such
-
-        that  B =  P −  1 AP or  A =  PBP −  1
+    <pre style="white-space:pre-line"><code>286 | 3. 3  –  Gram-Schmidt Process
 
 
-                                                                          
-                                                                                                            
-            Similar matrices B and  M − 1 AM  have the same eigenvalues. If  x  is an eigenvector of A then  M − 1 x  is
-            an eigenvector of  B =  M − 1 AM .
+          64.   f  ( ) x =  5,  f  ( ) x =  x −  2  6 ,  f  ( ) (3x =  −  ) x  2
+                                          x
+                 1           2                 3
+          65.   f  ( ) 1,   f  ( ) x =  sin xπ =  ,  f  ( ) x = cos xπ
+                   x
+                 1           2                3
+          66.  f  ( ) 1,x =  f  ( ) sin ,x =  x  f  ( ) sin2x =  x
+                 1           2              3
 
-        Proof
+          67.  f  ( ) 6,x =  f  ( ) 3sinx =  2  , x  f  ( ) 2cosx =  2  x
+                 1           2                 3
 
-              Since  B =  M −  1 AM ⇒  A =  MBM  −  1
-                             
-              Suppose  Ax λ=  x :
-                                     
-                               
-                       MBM   − 1 x =  λ x
-                             
-                                       
-                       BM  −  1 x =  λ M −  1 x
-              The eigenvalue of B is the same λ. The eigenvector is now  M − 1 x
+          68.  f  ( ) cos2 ,x =  x  f  ( ) sinx =  2  , x  f  ( ) cosx =  2  x
+                 1                2                3
 
+          69.   f  ( ) x = sin x ,  f  ( ) x = sin 2 x ,  f  ( ) x = sin3 x
+                           π
+                                                               π
+                                             π
+                 1                2                 3
+          70.  f  ( ) cosx =  π  , x  f  ( ) cos2x =  π  , x  f  ( ) cos3x =  π  x
+                 1                2                  3
 
-        Example
+          71.  For    [ ] x , define the inner product over    as
+                     3
 
-                                 .5 .5                   1 −     10
-            The projection  A =         is similar to  D =  P AP =    
-                                 .5 .5                           00 
-
-
-                           10                       − 1          11
-            Choose  M =         ; the similar matrix  M  AM          
-                                                              s
-                                                              i
-                           12                                    00 
-                                0 − 1                                  .5  − .5
-            Also choose  M =          ; the similar matrix  M − 1 AM          
-                                                                    s
-                                                                    i
-                                1  0                                   − .5  .5  
-
-            These matrices  M − 1 AM  all have the same eigenvalues 1 and 0.
-            Every 2 by 2 matrix with those eigenvalues is similar to A.
-
-            The eigenvectors change with M.
+                                        ∫ − 1  f  ( ) ( )  x g x dx
+                                           1
+                                  , g =
+                                 f
 
 
-        Example
+               a)  If  ( ) 1f x =  is a unit vector in    [ ] x ?
+                                                  3
+                                                                                2
+               b)  Find an orthonormal basis for the subspace spanned by   x and x .
+               c)  Complete the basis in part (b) to an orthonormal basis for    [ ] x  with respect to the inner
+                                                                            3
+                   product.
+               d)  Is              1
+
+                              ]
+                                      ( ) ( )  dx
+                        [ , f g = ∫ 0  f x g x
 
 
-                  01                                 cd   d 2 
-                                                                              0
-            A =         is similar to every matrix  B =         except  B = .
-                  00                                   −  c 2  −  cd   
+                   Also, an inner product for   3  [ ] x
+                                              
+               e)  Find a pair of vectors v  and  w  such that
+                                           
+                         v , w =  0 but   [ , wv  ] 0≠
 
-            These matrices B all have zero determinant (like A). T
-            hey all have rank one (like A). Their trace is cd – cd = 0.
-                                                          304</code></pre>
+
+               f)  Is the basis found in part (c) are orthonormal basis for    [ ] x  with respect to the inner
+                                                                         3
+                   product in part (d)?</code></pre>
      	</div>
     
      </div>

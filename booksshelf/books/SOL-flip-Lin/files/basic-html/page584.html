@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 584 - Linear Algebra Solution</title>
+        <title>Page 584 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 584 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 584 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 584</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,93 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   
-                      u 2 ,  v 1  
-              v = u −           v
-               2    2       2   1
-                          v
-                           1
-                              (1, 2, 0    ) (4,  −  3,  ) 0
+    <pre style="white-space:pre-line"><code>572 | 2. 6 − S OL U T I ON
+
+                 {
+                               
+             Let  v   a , v   b , , v r }  be a nonempty subset of S.
+                           
+                                                                                  (
+             If this set is linearly dependent, then there would be a nonzero solution  k a , k b , , k r )   to
+                                                                                            
+                                   
+              k v +  kv +      +k v =    0 . This can be expanded to a nonzero solution of
+               a a     bb          r  r
+                       
+                
+              kv +  11  k v +  2 2   +k n  v =    n  0  by taking all other coefficients as 0. This contradicts the linear
+             independence of S, so the subset must be linearly independent.
 
 
-                 =  (1, 2, 0    ) −                (4,  −  3,  ) 0
-
-                                       25
-                              2
-                 =  (1, 2, 0    ) +  25 (4,  −  3,  ) 0
-                   ( 33  44    )
-                 =  25 ,  25 , 0
-
-                  
-               u  ,  v                     − 3,  ) 0
-                3   1  v =  (0, 0, 4             (4, − 3,  ) 0
-                                    ) (4,
-                  2    1            25
-                v
-                 1
-                         =  (0, 0, 0    )
-
-                  
-               u  ,  v  
-                                                                        )
-                                                           
-                3   2  v =   225   (0, 0, 4  ( 33 ,  44 , 0 ) ( 33 ,  44 , 0
-                   2   2   3,025        )      25  25       25  25
-                v
-                 2
-                          = (0, 0, 0    )
-                                        
-                       u 3 , v 1    u 3 , v 2  
-              v =  u −           v −           v
-               3    3       2    1       2    2
-                          v             v
-                           1             2
-                 =  (0, 0, 4    ) (0, 0, 0  −  ) (0, 0, 0  −  )
-
-                 = (0, 0, 4    )
-                    
-                   v
-              q =    1
-               1    v  1
+          Exercise
 
 
-                 =    1    (4, − 3,  ) 0
-                     16 9
-                       +
-                   ( 4    3   )
-                 =  5 , −  5 ,0
+          Show that if  S = { v   1 , v   2 , , v    r }    is a linearly dependent set of vectors in a vector space V, and if
+                                                            {
+                                                                                 
+                                                                                   
+          v    ,  , v  are vectors in V that are not in S, then  v  , v  , , v  , v  , , v  }  is also linearly
+                                                                     
+           r+ 1      n                                        1   2       r   r+ 1      n
+          dependent.
+          Solution
+                                                                     (
+             If S is linearly dependent, then there is a nonzero solution  k 1 , k 2 , , k  r )  to
+                                 
+              kv +  k v +     +k v =   0.
+               11     2 2         rr
+                   (
+                                              )
+             Thus  k 1 , k 2 ,    , k r ,0, 0,    , 0  is a nonzero solution to
+                                                       
+              kv +  11  k v +  2 2    +k v r  +k r+  1 r+  v  1    +k n  v =  n  0
+                                  r
+                        {
+                         
+                                 
+             So, the set  v 1 , v   2 , ,  v   r  , v   r+ 1 , , v   n }   is linearly dependent.
+                                                
 
-                    
-                   v
-              q =    2
-               2    v 2
-                                       )
-                 =    25   ( 33 ,  44 , 0
-                     3,025  25   25
-                      (
-                                  )
-                   25 33 44
-                          ,
-                 =  55 25 25   ,0
-                   ( 3 4    )
-                      ,
-                 =  55   ,0
+
+          Exercise
+
+                                                                                              {
+                                                                               {
+                    {
+                                                                                                   
+                                                                                               
+                                                         
+                                                                                    
+          Show that  v   1 , v   2 }  is linearly independent and v does not lie in span  v   1 , v 2 } , then  v 1 , , v   3 }  is
+                                                                                                   v
+                                                                                                    2
+                                                          3
 
 
-
-
-
-                                                           584</code></pre>
+          a linearly independent.
+          Solution
+                {
+                     
+                                                                                                    
+                                                                                             
+                                                                                      
+             If  v   1 , , v   3 }  are linearly dependent, there exist a nonzero solution to  kv +  11  k v +  2 2  k v =  3 3  0
+                    v
+                      2
+                                 
+                                        
+             with  k ≠  (since  v and v  are linearly independent).
+                        0
+                    3            1       2
+                                            k 1    k 2                         
+              k v =  −  kv −  k v    ⇒   v =  −    v −     v  which contradicts that v is not in span
+               3 3      11     2 2        3     k 3  1  k 3  2                        3
+             { v   1 , v 2 } . Thus  v   1 , , v   3 }  is a linearly independent.
+                             {
+                  
+                                  
+                                  v
+                                   2</code></pre>
      	</div>
     
      </div>

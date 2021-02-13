@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 119 - Linear Algebra Solution</title>
+        <title>Page 119 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 119 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 119 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 119</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                         )
-                                              0
-                On the other hand, if (QA x =  has trivial solution, then QA is also invertible.
-                Since Q is invertible, then Q − 1  is also invertible.
-                                                     
-                                                                                              
-                                                        0
-                Thus,  A Q QA=  − 1    is invertible, i.e  Ax =  has just trivial solution, equivalent  Ax =  has just
-                                                                                                  0
-                                                  
-                                                )
-                                                     0
-                trivial solution if and only if (QA x =  has just trivial solution.
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices | 111
 
+             Solution             Section 1.4 – Inverse Matrices − Finding  A                  − 1
 
-             Exercise
-                                                                          
-                      b
-             Let  Ax =  be any consistent system of linear equations, and let  x  be a fixed solution. Show that every
-                                                                            1
-                                                                                               
-                                                                                                       0
-             solution to the system can be written in the form  x =  x +  x  where  x  is a solution to   Ax = . Show
-                                                                 1    0         0
-             also that every matrix of this form is a solution.
-             Solution
-                                                         
-                                              0
-                Since  x  is a solution to  Ax = , we have  Ax = .
-                                                                0
-                        0                                    0
-                                      
-                          
-                               0
-                                         b
-                Adding  Ax =  to  Ax = , then
-                           0
-                      
-                    Ax +  Ax =  b +  0
-                            0
-                    Ax +  (    x   0 ) =  b
-                As adding an equation to the original equation does not affect the solution.
-                                                                                        
-                                                                       
-                                                                               
-                         
-                If we let  x  be a fixed solution, then every solution to  Ax =  is  x =    x +  x .
-                                                                          b
-                          1                                                         1    0
-                Besides,
-                 A x +  (      x 0 )  =  Ax +    Ax
-                                     0
-                           =  b + 0
-                           = b
-                                                                           
-                                                                                 b
-                So, every matrix (vector) in the form  x +  x  is a solution to  Ax =
-                                                      1   0
 
 
              Exercise
 
-                                                                   2
-                                                          2
-                                                     2
-             If A and B are  nn×  matrices satisfying  A =  B =  ( AB ) =  I . Prove that  AB =  BA .
-                                                                        n
+             Apply Gauss-Jordan method to find the inverse of this triangular “Pascal matrix”
+
+                                                             1   0   0    0
+                                                              1  1   0    0 
+                           Triangular Pascal matrix     A =                
+                                                             1   2   1    0
+                                                                           
+                                                              1  3   3    1 
              Solution
-                                      2
-                              2
-                        2
-                Since  A =  B =  ( AB ) =  I , then A, B, AB are nonsingular.
-                                           n
-                 A =  2  I →  A =  A − 1
-                 B =  2  I →  B =  B − 1
-
-                ( AB ) =  2  I →  AB =  ( AB ) − 1
 
 
+                 1   0   0    0    1   0    0    0
+                   1  1  0    0    0   1    0    0   R −  R
+                                                    2    1
+                 1   2   1    0    0   0    1    0 R −  R
+                                                   
+                                                    3    1
+                                                   
+                   1  3  3    1    0   0    0    1 R −  R 1
+                                                      4
+                  1   0   0   0     1    0   0    0
+                   0  1   0   0    − 1   1   0    0 
+                                                   
+                  0   2   1   0    − 1   0   1    0  R −  2R 2
+                                                       3
+                                                   
+                                                    
+                   0  3   3   1    − 1   0   0    1 R −   3R 2
+                                                       4
+                  1   0   0   0     1    0     0   0
+                   0  1   0   0    − 1   1     0   0 
+                                                     
+                  0   0   1   0     1    − 2   1   0
+                                                     
+                                                      
+                   0  0   3   1     2    − 3   0   1 R −   3R 3
+                                                        4
+                  1   0   0   0     1    0     0     0
+                   0  1   0   0    − 1   1     0     0 
+                                                      
+                  0   0   1   0     1    − 2   1     0
+                                                      
+                   0  0   0   1    −  1  3     −  3  1 
 
-                                                             119</code></pre>
+                         1   0     0     0
+                         − 1  1    0     0 
+                 A − 1  =                 
+                         1   − 2   1     0
+                                          
+                         −  1  3   −  3  1 
+
+                      The inverse matrix  A − 1  looks like A, except odd-numbered diagonals are multiplied by -1.</code></pre>
      	</div>
     
      </div>

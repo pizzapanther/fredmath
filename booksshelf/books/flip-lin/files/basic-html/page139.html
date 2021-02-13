@@ -152,75 +152,87 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-
-                                        n
-             Let S be a set k vectors in  , then if k &gt; n, S is linearly dependent.
-
-
-             Example
-                                       2
-             v  , v  , v  are 3 vectors in     ⇒  Linearly dependent.
-              1   2   3
+    <pre style="white-space:pre-line"><code>n
+                                                                  2.2 – Norm, Dot product, and distance in  R  | 121
+                           
+                        0 0
+                   j)  k =
+                                
+                   k)  ( ) 1 v−  =  v −
 
 
-             Example
+               Proof (b):
+                                        
+                                     
+                                          )
+                   (uv ++      ) w =  u +     (v w
+                                      +
+                       
+                   Let u = ( u 1 , u 2 , , u  n )
+                       
+                       v = ( v 1 , ,  , v n )
+                               v
+                                 2
+                       
+                       w = ( w 1 , w 2 , , w  n )
 
-                                                                            
-                                                                                          )
-             Determine whether the vectors v =  (1,  2, 3−  ) v =  (5, 6,  1−  ) v =  (3, 2, 1  are linearly dependent
-                                            1                2                 3
-                                        3
-             or linearly independent in 
-             Solution
-                                
-                 k v +  11  k v +  2 2  k v =  3 3  0
+                              ( (
+                   (uv+  ) w+  =  u 1 , u 2 , , u n ) ( v 1 , v 2  , , v n )) ( w 1 , w 2  , , w n  )
+                                          
+                                                             
+                                                   +
+                                                                      +
+                                                                                  
+                                                    
+                                                                            
+                               =  ( u +  1  v 1 , u +  2  v 2 , , u +  n  v n ) ( w 1 , w 2 , , w n )
+                                                                 +
+                                                                  
+                               =  ( (  u +  1  v +  1 )  w 1 ,  u + (  2  v 2 ) +  w 2 , ,  u + (  n  v n ) +  w n )
+                                 (     (       )      (         )          (        ))
+                               =  u +  1  v +  1  w 1  , u +  2  v +  2  w 2  , , u +  n  v +  n  w n
 
-                 k 1 (1,  2, 3−  ) k+  2  (5, 6,  1−  ) k+  3 (3, 2, 1 ) (0, 0, 0=  )
+                                                                      +
+                                                  +
+                                          
+                                                                                 
+                               =  ( u 1 , u 2 , , u n ) ( (  v 1 , v 2 , , v n ) ( w 1 , w 2 , , w n ))
+                                                              
+                                       
+                                           )
+                               = u + (v w
+                                       +
 
 
-                      k +  5k +  3k =  0
-                       1     2     3
-                   
-                                        0
-                → −   2k +  6k +  2k =
-                   
-                       1     2     3
-                     3k −  1  k +  2  k =  3  0
-                   
-                      1  5    30
-                      − 2  6  20            2R
-                                   
-                                      R +    1
-                                         2
-                        3  − 11 0    R −  3R
-                                          3    1
-                     1   5    3   0
-                                    
-                      0  16   8   0
-                                   
-                      0   −  16 −  8 0    R + R 2
-                                           3
-                     1   5  3 0
-                                  
-                      0 16 8 0        1  R
-                                    16  2
-                      0   0  0 0  
+               2.1−16         Vector Space Axioms
+                            
+                           +
+                   1.    uv   in V.
+                                 
+                   2.    u v+=  v u
+                                  +
+                                          
+                   3.    (uv+  ) w u+  =  +  (v +  w )
+                                                                  
+                                                 0 u   for every vector u ∈
+                   4.    ∃∈   V   ∋  0 u =   u + =                         V
+                           0
+                                       +
+                                           
+                   5.    u +  ( u−  ) ( u=  ) u+ −  =  0
+                           
+                   6.       cu   in V
+                                       
+                   7.     ( c u v+  ) cu +=  cv
+                                         
+                   8.    ( +  cd )u = cu +  d u
 
-                      15   3 0      R − 5R
-                           1         1     2
-                      01   2   0
-                                 
-                                
-                        0 0 0 0  
-                      10   1   0    k +  1  k =  0
-                           2         1   2  3
-                      01   1   0    k +  1  k =  0
-                           2         2   2  3
-                      0 000     
-                                 
-
-                                                              139</code></pre>
+                                     
+                          cd
+                   9.    ( )u =  c (d  u )
+                              
+                               u
+                   10.  1 u⋅ =</code></pre>
      	</div>
     
      </div>

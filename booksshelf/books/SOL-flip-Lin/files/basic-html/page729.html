@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 729 - Linear Algebra Solution</title>
+        <title>Page 729 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 729 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 729 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 729</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  2  −  4 −  2  3    1   0   0 0 0    2 −  4 −  2   3 
-                  6  −  9 −  5  8     3  1   0 0 0     0  3    1   −  1 
-                                                                      
-                  2  −  7 −  3  9    1   1   1 00     0   0    0    5 
-                                    =
-                                                                      
-                  4  −  2 −  2 −  1    2  2  110       0  0    0    0  
-                                                                      
-                 −  6  3   3    4    −  3 −  3 2 0 1   0  0    0    0  
-                                A               =                  L                          U
+    <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces | 717
+
+               Exercise
+
+               Construct a matrix whose column space contains (1, 1, 0) and (0, 1, 1) and whose Nullspace contains
+               (1, 0, 1) and (0, 0, 1).
+
+               Solution
+
+                   It is impossible. Matrix A must be 3 by 3.
+
+                   Since the nullspace is supposed to contain two independent vectors, A can have at most 32 1−=
+                   pivots.
+                   Since the column space supposes to contain two independent vectors. A must has at least 2 pivots.
+                   These conditions can’t both be met.
 
 
-             Exercise
+               Exercise
 
-             Let A be a lower triangular  nn  matrix with nonzero entries on the diagonal. Show that A is invertible
-                                         ×
-             and  A − 1  is lower triangular.
-             Solution
+                                                                                                              )
+               Construct a matrix whose column space contains (1, 1, 1) and whose Nullspace contains (1, 1, 1, 1 .
+               Solution
 
-                Since A is a lower triangular  nn×  matrix with nonzero entries on the diagonal, then the determinant
-                is equal to the products of the main diagonal entries.
+                   The matrix needs to be 3 by 4 matrix.
 
-                Therefore,  A − 1  exists and A is invertible.
-
-                To find  A − 1
-                          rref
-                      ]
-                [ A I →            I  A − 1     
-
-                   a    0         0   1   0      0
-                   11                                
-                   *   a 22          0   1         
-                                                     
-                                             
-                   a   a        a     0   0      1 
-                   n 1  n  2       nn                
-
-                To pivot the augmented matrix above and the upper triangular for A and I are zeros. The results from
-                the pivot will not change the zero values in the upper triangular, since we are trying to get one in the
-                main diagonal and zero elsewhere.
-
-                  1   0    0   b      0         0 
-                                 11                 
-                   0  1        *    b 22         
-                                                    
-                                             
-                   0  0    1 b       b        b   
-                                 n 1   n  2       nn 
-
-                Therefore,  A − 1  is lower triangular
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              729</code></pre>
+                                         0
+                                   1    
+                     1 ab     c      
+                                   1
+                                         0
+                     1 d  e   f       
+                                      =
+                                  1    
+                                         0
+                     1 g  h     
+                                 
+                              i    
+                                   1
+                                         0
+                                     
+                      + ++
+                    1 abc =      0
+                   
+                      + ++
+                    1 de      f =  0
+                   
+                    1 g hi+ + + =  0
+                       ++
+                    abc = −    1
+                   
+                    de++   f = − 1
+                               1
+                       +
+                     g hi + = −
+                           =
+                    if  b c =  0   a = − 1
+                   
+                                         1
+                    if  d =  f = 0 e = −
+                    if      h  0        1
+                        g = =      i = −
+                     1 − 1  0   0 
+                     1  0    1    
+                           −    0
+                                   
+                                  
+                     1  0   0   − 1 </code></pre>
      	</div>
     
      </div>

@@ -152,80 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1
-                                                                            −
-             Section 1.4 – Inverse Matrices - Finding  A
-
-
-             Definition
-
-             The matrix A is invertible if there exists a matrix  A − 1  such that:
-
-                                      1
-                                    −
-                                         =
-                                   A A AA      −  1  =  I
-             where  A − 1  read    "  inverse " and A has to be a square matrix.
-                              as
-                                  A
-
-                    Not all matrices have inverses.
-
-             1.  The inverse exists iff elimination produces n pivots (row exchanges allow).
-
-             2.  The matrix A cannot have two different inverses.
-
-                                                                                 −
-                                                                                  1
-             3.  If A is invertible, the one and only one solution to  Ax =  B  is  x =  AB
-                           AX =   B
-                              )
-                                                                      -1
-                    A −  1 ( AX =  A −  1 B      Multiply both side by A
-                    (  −  1  )     −  1
-                     A   AX =    A   B           Associate property
-
-                                    1
-                                   −
-                           IX =  AB              Multiplicative inverse property
-                                   1
-                                  −
-                           X =  AB               Identity property
-
-             4.  Suppose there is a nonzero vector x such that  Ax = . Then A cannot have an inverse
-                                                                  0
-
-             5.  A 2 by 2 matrix is invertible iff  ad bc−    is not zero.
-
-                           a b            − 1      1      d  − b
-                    A =            ⇒   A     =                           Only for 2 by 2 matrices
-                           c  d                ad −  bc − c    a  
-                                                          
-
-                    If  ad bc−  = 0 is the determinant, then  A − 1 doesn’t exist
+    <pre style="white-space:pre-line"><code>1.2 – Gaussian Elimination  | 13
 
 
 
+                     2   8   − 1  1    0 
+                     4  16 −  3 −  1 −  10   R − 2R
+                                                 2  1
+                     2   4   −  1  3  −  6 −  R +  R 1
+                                                3
+                                          
+                     − 6  2  5    1    3    R +  3R 1
+                                                4
 
+                    2   8   − 1  1    0 
+                     0 12 −  2   4    −  6  
+                                         
+                    0   0   −  1 −  3 −  10
+                                                13
+                     0 26   2    4    3    R −   6  R 2
+                                              4
+                    2   8   − 1  1    0 
+                     0  0   −  1 −  3 −  10 
+                                                 Interchange  R  and R
+                     0 12 −  2   4    −  6                      2       3
+                                         
+                     0 26   2    4    3  
 
+                    2   8  − 1   1      0 
+                     0 12 −  2   4     −  6  
+                                          
+                    0   0  −  1  −  3  −  10
+                                          
+                    0   0  19   −  14  16   R +  19  R
+                            3     3           4   3  3
 
+                                                           z
+                    2   8  − 1   1      0      2x + 8y −+   w =  0
+                     0 12 −  2   4      −  6    12y −  2z +  4w =  −  6
+                                           
+                    0   0  − 1   − 3   − 10          −− 3w = − 10
+                                                     z
+                                  71    142        71      142
+                     0   0  0  −  3  −  3       −  3  w =  −  3
 
+                                             1
+                                 z
+                     2x = − 8y +−   w      ()
+                   
+                                             2
+                     12y =  2 −  z  4w −  6  ( )
+                   
+                            −
+                     z = 10 3w  =  4
+                          w =  2
+                   
+                    ( ) 2 →  12y = 8 8 6 ⇒       y = −  1
+                                    −−
+                                                      2
+                   
+                    (1) →   2x =  4 4 2     ⇒     x =  3
+                                    +−
+                   
+                                          )
+                             (
+                   Solution:  3,  −  1 ,4,2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              31</code></pre>
+                                   2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 140 - Linear Algebra Solution</title>
+        <title>Page 140 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 140 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 140 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 140</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( ) ( )        − 1
-                     T
-                  −
-                           T
-                   1
-                       =
-                A
-                          A
-                       =  A − 1
-               ⇒   A − 1  is symmetric.
+    <pre style="white-space:pre-line"><code>132 | 1.4 – Inverse Matrices
+
+                    5     3  1  0  0                 0   31   31    7 2   0   1
+                                                           2
+                                                                 2
+                 1 −  2  −  2  2                         31    31   31    31
+                            2  1        R −  31 R    0 −  2  −  2  −  9  −  18  0
+                 0  1    1  9  9   0     3    2  2   0   0     0       1    − 31  1
+                 0  31  31  7                                      18    18
+                   2    2  2  0   1
+                                     
+                                     
+                    5     3  1   0    0 
+                 1 −  2  −  2  2       
+                            2    1     
+                 0  1    1  9    9    0 
+                0   0    0  1     31   
+                                        
+                          18   − 18  1
+                                        
+               ∴ The inverse matrix doesn’t exist
 
 
            Exercise
-
-                           T
-                                 TT
-           Prove that ( AB ) =  B A
+                                                  1  10
+                                                
+                                                           
+           Find the inverse, if exists, of   A = − 13 4
+                                                
+                                                           
+                                                  0  4 3  
+                                                          
            Solution
+                 1  1 01 00                          1   1 01 00
+                 −  13 4 0 1 0       R +   R         − 13 4 0 1 0
+                                       2    1
+                                                     0   4 41 1 0
+                 0  4 300 1        
 
-
-               Let  A =      a ik       and  B =        b kj     
-
-               Then the ij-entry of AB is:
-
-                   ab    +  a b   +    +  a b
-                    i 11j   i 2 2 j       im mj
-                                                 T
-               The reverse order, ji-entry of ( AB )
-
-                                                T
-                                                                                        T
-               Column j of B becomes row j of  B , and row i of A becomes column i of  A .
-                                     TT
-               Thus, the ij-entry of  B A  is:
-                   (                )(                  ) T
-                    b 1j , b 2 j ,   , b mj  a  1 i  , a  2 i  ,    , a im  =  b a +  1  ba  2  +  +  ba
-                                                                                    mjim
-                                                             1ji
-                                                                      2 ji
-                         T
-                               TT
-               Thus ( AB ) =  B A
-
-
-           Exercise
-                                                                                                    ( )
-                                                                 ( )
-                                                                                        ( )
-                                              ( )
-                                           T
-           For the given matrix, compute  A ,  A T  − 1 ,  A − 1 , and  A − 1  T  , then compare  A T  − 1 and  A − 1  T
-                         1 00
-                                
-                   A =      21 0
-                                
-                           3 21  
-           Solution
-                       1 2 3
-                              
-                 T
-               A =       01 2
-                              
-                         001  
-                 1 2 31 0 0         R −  2R 2
-                                       1
-                 01 20 1 0
-                                   
-                                  
-                   001 0 0 1    
-
-
-
-                                                            140</code></pre>
+                 1 1 01 00
+                                    1
+                 0 4 4 1 1 0         4  R
+                                   
+                                         2
+                                  
+                 0 4 300 1        
+                 11 0     1   0  0   R −   R         0   4   3    0    0   1    1   1   0    1     0   0
+                          1   1        1    2                                                 1     1
+                                    
+                 01 1            0                    0 −  4 −  4 −  1 −  1 0    0 −  1 −  1 −  4  −  4  0
+                         4   4        R −  4R      0   0   −  1 −  1 −  11
+                 0 4 30       01      3      2                                  1   0   −  1  3   −  1  0
+                                                                                               4      4
+                 10 −  1   3   −  1  0 
+                           4     4    
+                           1    1     
+                 01    1   4    4    0
+                                       
+                                        − R
+                 00 −  1 −  1   −  1  1    3
+                                      
+                 10 −  1   3  −  1   0                          3     1                     1     1
+                           4    4        R +  R      10 −    1  4   −  4  0     01     1    4     4   0
+                           1   1          1    3
+                 01    1   4    4    0    R −  R     00     1   1    1   − 1   00 −     1   −  1  −  1  1
+                                            2
+                                                  3
+                                                                7    3                       3     3
+                 00    1   1   1    − 1              10     0   4    4   − 1    01     0   −  4  −  4  1
+                                       </code></pre>
      	</div>
     
      </div>

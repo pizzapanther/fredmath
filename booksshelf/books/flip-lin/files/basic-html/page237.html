@@ -152,88 +152,50 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Least Square Problem
+    <pre style="white-space:pre-line"><code>2.8 – Row and Column Spaces   | 219
 
-                                                                                                         
-             Given a linear system  Ax =  y  of m equations in n unknowns, find a vector  x  that minimizes  y −  Ax
-                                                                               
-                                                            m
-             with respect to the Euclidean inner product on   . We call such as  x  a least squares solution of the
-                                                                              
-                             
-                                  
-                                                                                    
-             system, we call  y −  Ax  the least squares error vectors, and we call  y −  Ax  the least squares error.
-                                   e 
-                                   e 1  
-                             x
-                           A =       2    
-                                     
-                                   e  
-                                   m 
-                                                                                      
-                                                                                                          2
-             The term “least square solution” results from the fact the minimizing  y −  Ax =  e +  2  e +  2  +  e
-                                                                                            1    2        m
+               2.8−7        Complete Solution to          AX =  B
 
 
-             Example
+                                                                             
+               To solve  Ax b= , we need to put into an augmented form where b  is not zero.
 
-             Find the sums of squares of the errors of (2, 4), (4, 8), (6, 6)
-             Solution
-
-                 4 =  2m b ⇒      4 2mb       e 1
-                                        −=
-                                   −
-                        +
-                                   −
-                        +
-                8 =  4m b ⇒      84mb = −     e
-                                               2
-                        +
-                 6 =  6m b ⇒     66mb = −     e
-                                   −
-                                               3
-                                                                              2
-                e +  2  e +  2  +   e 2  =  (4 2mb−  −  ) +  2  (84mb−  −  ) +  2  (66mb−  −  )
-                 1    2         m
-                                                                                                             2
-                The least squares problem for this example to find the values m and b for which e +  2  e +  2  +  e is a
-                                                                                               1   2         m
-                minimum.
-
-
-
-
-
-
-
-
+                            1   3   0    2                               1  
+                                                                            6
+                                                                     =
+                       A =      0  0  1  4                     B b =    
+                                                                            
+                                                                            7  
+                             1   3  1   6                               
+                           
+                          =
+                       Ax b
+                                          x   1 
+                        1   3   0    2   x    1 
+                        0   0   1    4    2   =  
+                                                 6
+                                           x    
+                                                 7 
+                                       
+                        1   3  1    6   3     
+                                            x 4   
+                                 x   
+                                 1 
+                                  x 2 
+                            x
+                       X = =      
+                                 x 3 
+                                  
+                                   x 4   
 
 
+               The augmented matrix is just [A      ] B
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              237</code></pre>
+                        1   3   0    2   1
+                         0  0   1    4    6 =  [R     ] d
+                                            
+                                           
+                         0   0  0   0    0  </code></pre>
      	</div>
     
      </div>

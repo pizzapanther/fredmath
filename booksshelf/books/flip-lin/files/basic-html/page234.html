@@ -152,73 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 3.4 – Orthogonal Matrices
+    <pre style="white-space:pre-line"><code>216 | 2.8 – Row and Column Spaces
+
+          2.8−3       The Column Space of A
+
+                                                                               
+          The most important subspaces are tied directly to a matrix A, to solve  Ax b= .
+
+
+          2.8−4       Definition
+
+
+          The column space consists of all linear combinations of the columns. The combination are all possible
+          vectors  Ax . They fill the column space  ()CA  .
+
+                                                                                  0
+                    1   0                                                      
+                                                                                  3
+                          
+               A =      4  3                                                   
+                          
+                                                                                  3
+                                                                                 
+                     2   3  
+                                                                                b     1
+
+                                                                                      4
+                      1      0                                                   
+                                                                                     
+                      
+                              
+                      4 +
+                               3
+                                                                                     
+              b =  x 1    x 2                                                     2
+                               3 
+                      2  
+                                                                 0
+                                                                    
+                                                                    0
+                                                                    
+                                                                     0
+                                                                    
+
+                        
+          To solve  Ax = b is to express b as a combination of the columns.
+
+                                                                               
+                                A
+          The column space CS  ()  is a plane that containing the two columns.  Ax b=    is solvable when b in on
+          that plane.
+
+
+          2.8−5       Theorem
+                       
+          The system  Ax b=    is solvable if and only if b is in the column space of A.
 
 
 
-          (1 – 2)  Show that the matrix is orthogonal
+          Example 2.8-1
 
-                    4   0    − 3                                1   2    2
-                    5         5                                 3   3    3
-                    9   4     12                                2    2   1 
-          1.  A =    −  25  5  −  25                  2.  A =    3  − 3  3 
-                                                                           
-                    12  3    16                                 2   −  1  2 −
-                    25  5    25                                 3    3   3
+                                               −   13  2     x 1     1 
+                                                                
+          Let  Ax b=  be the linear system:     1  2 −  3     x   2  =    −  9
+                                                                      
+                                                  2  1  2−      x          3−  
+                                                             3 
 
+          Show that b is in the column space of A by expressing it as a linear combination of the column vectors
+          of A.
 
-          (3 – 12)   Determine if the matrix is orthogonal. For those that is orthogonal find the inverse.
-
-                  10                                  1                       1   1    1    1 
-          3.                                    01     2                       2  2    2    2 
-                  01                                                                          
-                                          8.      10    0                        1  − 5  1    1  
-                 1   −  1                             1                  11.    2  6   6    6  
-                 2       2                      00                             1  1    1     5 
-           4.                                          2                       2  6    6   − 6 
-                 1     1                                                         1  1     5   1 
-                 2      2                        1     1     1                        −       
-                                                  −                              2  6     6   6 
-                 cosθ   sinθ                     2      6     3 
-           5.                                           2    1               1   0    0    0
-                 sinθ −  cosθ           9.      0    −  6     3                0   1  − 1  0  
-
-                 cos θ   sin θ                  1      1     1                    3    2    
-           6.                                                3         12.     1          
-                 sin θ  − cos θ                 2       6                      0  3   0    1 
-
-                 1  1   − 1                       1  1     1                   0  1  1  0   
-                           
-           7.       1  3  4                     3     3      3                   3   2       
-                           
-                                        10.     0    1      1 
-                 7 − 5  2                             2      2  
-                                                                  
-                                                  2  −  1    −  1  
-                                                    6   6      6   
-
-          13.  Find a last column so that the resulting matrix is orthogonal
-
-                       1      1     
-                        3     6    
-                                    
-                                     
-                        1     1   
-                        3     6     
-                                    
-                        1     2    −
-                         3   6       
-
-
-
-
-
-
-
-
-
-
-                                                           234</code></pre>
+          Solution</code></pre>
      	</div>
     
      </div>

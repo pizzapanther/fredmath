@@ -152,74 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1 0   0   0 −  1 −  10
-                  0 1   0   0   1    30  
-                                        
-                  0 0 −  1 1    0    20
-                                         
-                                        
-                  0 0   0   1 −  1   10  
-                                           R +  R
-                  0 0   1   0 −  1 −  10    5    3
-
-                  1 0   0   0 −  1 −  10
-                  0 1   0   0   1    30  
-                                        
-                  0 0 −  1 1    0    20
-                                         
-                                        
-                  0 0   0   1 −  1   10  
-                  0 0   0        1   10    R −  R
-                            1 −             5    4
-
-                                             →   x −  x =  −  10  ⇒   x =  1  x −  5  10
-                  1 0   0   0 −  1 −  10        1    5
-                                                                              −
-                  0 1   0   0   1    30     →   x +  x =  30    ⇒    x =  30 x
-                                                 2    5              2         5
-                  0 0 −  1 1    0    20     →−    x +  x =  20    ⇒  x =  x −  10
-                                         
-                                                  3    4             3    5
-                  0 0   0   1 −  1   10      →   x −  x =  10   ⇒   x =  x +  10
-                                                 4    5              4    5
-                  0 0   0   0   0    0  
+    <pre style="white-space:pre-line"><code>1.5 – Transpose, Diagonal, Triangular, and Symmetric Matrices  | 57
 
 
-                Solution:   ( x −  5  10, 30 x−  5 , x −  5  10, 10 x+  5 , x 5 )
+                          3 −   2 −  2
+                                     
+                    AB =      0  0  2
+                                     
+                           0   0  5   
+
+                           35 −  1
+                                   
+                   BA =      00 − 5
+                                   
+                             00  5   
+
+
+               The goal is to describe Gaussian elimination in the most useful way by looking at them closely, which
+               are factorizations of a matrix.
+
+                   The factors are triangular matrices.
+                   The factorization that comes from elimination is  A LU=  .
 
 
 
-                2  Method
-                 nd
-                    1   0   0   0 −  1    1   0   0   0     0   0   0 −  1
-                    1   1   0   0   0     0 −  11     0     0 −  11     0
-                     0 0 −   11     0 = 1 0   0   1 −  1  − 1 0  0  1 −  1
-
-                     00     0   1 −  1    1   1   0   0     1   1   0   0
-                     01     1   0   0
-
-                                          −  11    0     −  11   0
-                                       = 10    1 −  1 10     1 −
-                                                                  1
-                                                     −
-                                           1   0   0     1   0   0
-                                       = −+
-                                          11
-                                       = 0
-                Infinite solution:
-
-                1→     x =  x −  10
-                       1    5
-                 2 →   x =  20 −  x =  30 −  x
-                        2         1         5
-                 4 →   x =  x +  10
-                        4    5
-                3 →    x =  3  x −  4  2 0 =  x −  5  10
+               1.5−8        Definition − Symmetric Matrices
 
 
 
+                                                            T
+               A square matrix A is said to be symmetric if  A =  A. That means a square matrix must satisfies
+                a =   a
+                 ij     ji
+                                                                     T
+               A square matrix A is said to be skew symmetric when  A = −
+                                                                           A
 
-                                                              75</code></pre>
+
+               Example 1.5-2
+
+                           1   − 4    T
+                     A =            =  A
+                           − 4  1  
+
+                          6   5    1 
+                                      
+                                           T
+                     A =      5  0  7 =  A
+                                      
+                           1  7     1 
+                                   −  
+                     The inverse of a symmetric matrix is also symmetric.
+
+
+               Example 1.5-3
+
+                           1   2
+               Given  A =         , show that the inverse is symmetric too?
+                            2  5 
+               Solution
+
+
+                    A − 1  =      5  − 2  
+                            − 2  1  </code></pre>
      	</div>
     
      </div>

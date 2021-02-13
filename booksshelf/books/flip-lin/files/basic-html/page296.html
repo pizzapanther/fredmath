@@ -152,84 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-        73.  Let A be the matrix of the linear transformation T on  
+    <pre style="white-space:pre-line"><code>278 | 3. 3  –  Gram-Schmidt Process
 
-                       T: reflects points across some line through the origin.
-              Without writing A, find an eigenvalue of A and describe the eigenspace.
-
-                                                                   2
-        74.  Let A be the matrix of the linear transformation T on  
-
-                       T: reflects points about some line through the origin.
-              Without writing A, find an eigenvalue of A and describe the eigenspace.
-                                                                                 
-                                                                                          
-                                                                             
-                           
-        75.  Show that if v  is an eigenvector of the matrix product  AB  and  Bv ≠ , then  Bv  is an eigenvector of
-                                                                                 0
-              BA
-
-        76.  Explain and demonstrate that the eigenspace of a matrix A corresponding to some eigenvalue λ  is a
-              subspace.
-
-                                                                                     2
-                                                               2
-        77.  If λ  is an eigenvalue of the matrix A, prove that λ  is an eigenvalue of  A .
+          3.3−5       QR−Decomposition
 
 
+          3.3−6       Problem
 
 
+          If A is an mn×  matrix with linearly independent column vectors, and if Q is the matrix that results by
+          applying the Gram-Schmidt process to the column vectors of A, what relationship, if any, exists
+          between A and Q?
 
+                                                                                    
+                                                                            
+                                                                        
+                                                                          ,
+          To solve this problem, suppose that the column vectors of A are u u 2 , , u  and the orthonormal
+                                                                         1
+                                                                                     n
+                                            
+          column vectors of Q are  q  , q  , , q .
+                                   1   2       n
+                                                      
+                 u =   u  , qq +    u  , q  q +     +  u  , q  q
+                  1     1   1   1    1   2    2         1   n   n
+                                                       
+                 u =   u  , qq +     u  , q  q +     +  u  , q  q
+                   2     2   1   1    2    2   2         2   n   n
+                                                                              
+                                                       
+                 u =   u  , q q +    u  , q  q +     +  u  , q  q
+                   n     n   1   1    n    2   2         n   n    n
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                             
+                                  
+                              u   , q  u   , q       u    , q  
+                               1  1      2   1           n   1  
+                                             
+                                                             
+                                0       u   , q      u   , q  
+                         R =             2   2           n   2 
+                                                            
+                                                                
+                                                             
+                                0          0           u   ,  q  
+                                                       n   n   
+          The equation  A QR=   is a factorization of A into the product of a matrix Q with orthonormal column
+          vectors and an invertible upper triangular matrix R. We call it the QR-decomposition of A.
 
 
 
+          3.3−7       Theorem
 
 
+          If A is an mn×  matrix with linearly independent column vectors, then A can be factored as
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          296</code></pre>
+                                                        A QR
+                                                          =
+          Where Q is an mn×  matrix with orthonormal column vectors, and R is an nn×  invertible upper
+          triangular matrix.</code></pre>
      	</div>
     
      </div>

@@ -152,66 +152,49 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Four Subspaces for A
+    <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces   | 241
 
-             The subspace dimensions for A are the same as for R.
-
-             These matrices are connected by an invertible matrix E.  EA =  R and  A =  E − 1 R
+               2.9−11         Theorem − Equivalent Statements
 
 
-             1.  A has the same row space as R. Same dimension r and same basis
-                  Every row of A is a combination of the rows of R. Also every row of R is a combination of the rows
-                  of A.
+               If A is an nn×  matrix, then the following statements are equivalent.
 
-             2.  The column space of A has dimension r. The number of independent columns equals the number of
-                independent rows.
+                 a)  A is invertible
+                         
+                          0
+                 b)  Ax =  has only the trivial solution
+                 c)  The reduced row echelon form of A is  I
+                                                           n
+                 d)  A is expressible as a product of elementary matrices
+                                                               
+                 e)  Ax b=    is consistent for every n× 1 matrix  b
+                                                                         
+                 f)  Ax b=    has exactly one solution for every n× 1 matrix b
 
-             3.  A has the same nullspace as R. Dimension n – r and same basis.
-                                                                                              n
-                    (dimension of column space) + (dimension of nullspace) = dimension of  R
+                 g)  det ( ) 0A ≠
 
-
-                                                      T
-             4.  The left nullspace A (the nullspace of A ) has dimension m – r.
-
-
-             Fundamental Theorem of Linear Algebra, (Part 1)
-
-             The column space and row space both have dimension r.
-
-             The nullspaces have dimensions n – r and m – r.
+                 h)  The column vectors of A are linearly independent
+                 i)  The row vectors of A are linearly independent
 
 
+                 j)  The column vectors of A span  n
 
+                                                 n
+                 k)  The row vectors of A span 
 
-             Example
+                                                               n
+                 l)  The column vectors of A form a basis for 
 
-                                   ]
-             Consider  A = [12 3
+                                                            n
+                 m)  The row vectors of A form a basis for 
 
-                A has m = 1, n = 3, and rank: r = 1.
-                                           3
-                The row space is a line in  .
-                The nullspace is the plane  Ax =  x +  1  2x +  2  3x =  3  0 . This plane has dimension 2 (which is 3 – 1).
+                 n)  A has a rank n.
+                 o)  A has nullity 0.
 
+                                                                          n
+                 p)  The orthogonal complement of the null space of A is  
 
-                                                                                         1
-                                                           1
-                The columns of this is 1 by 3 matrix are in  . The column space is all of .
-                The left nullspace contains only the zero vector.
-                                      T
-                                                    0
-                The only solution to  A y =  0     y = , the only combination of the row that gives the zero row.
-                                              is
-                         ( )
-                                                                                 m
-                               is
-                Thus,  N A T    , the zero space with dimension 0 (m – r). In    the dimensions (1 + 0) = 1.
-
-
-
-
-                                                              259</code></pre>
+                 q)  The orthogonal complement of the row space of A is { } 0</code></pre>
      	</div>
     
      </div>

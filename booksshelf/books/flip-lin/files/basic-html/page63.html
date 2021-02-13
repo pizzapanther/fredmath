@@ -152,70 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  a b             d   e 
-             49.  Show that the matrices  A =       and   B =       
-                                               0 c              0  f  
-
-                                                 −
-                                            b   ac
-                    commute if and only if            =  0
-                                            ed −   f
-
-                                             tr ( ) A  1
-                                              ( )
-             50.  Show that      det ( ) A =  1             for every  22×  matrix A.
-                                          2 tr A 2   tr ( ) A
-
-             51.  What is the maximum number of zeros that a  44×  matrix can have without a zero determinant?
-                  Explain your reasoning.
-
-                                                         )
-                               ( )
-                                                    (
-                                       ( )
-                                                                                                    )
-             52.  Evaluate  det A , det E , and det AE . Then verify that det ( ) detA ⋅  ( ) detE =  ( AE
-                         4   1  3            1      
-                                   
-                    A =      0 −  2 0,  E =      3    
-                                   
-                          3   1  5              1  
-
-                               sin α  2  sin β  2  sin γ  2 
-                                                    
-             53.  Show that  cos α    2  cos β  2  cos γ  2     is not invertible for any values of α, β, γ
-                                                    
-                               1        1       1   
-                                                    
-
-                                                         ab 
-                                                                      ( )
-             54.  The determinant of a  22×  matrix  A =        is det A =  ad − bc .
-                                                         c  d  
-                  Assuming no rows swaps are required, perform elimination on A and show explicitly that  ad − bc  is
-                  the product of the pivots.
-
-                                                                          2
-                                                 ( ) 17. What is det 3A
-             55.  If A is a 77×  matrix and let det A =               ( )    ?
-
-             56.  Explain without computations why the following determinant is equal to zero
-                     a 1  a 2  a 3  a 4  a 5
-
-                     b   b     b    b    b
-                      1    2    3    4    5
-                     c 1  c 2  0    0     0
-
-                    d 1  d 2   0    0     0
-                     e   e     0    0     0
-                      1    2
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices  | 45
 
 
+                           2  − 2 31
+                                        
+                         
+                       = − 6   2   15
+                                        
+                         
+                             1  0  2 4  
+                       This result can be obtained from A by interchanging rows 2 and 3.
+
+                          1 00    2   − 2 31
+                                                   
+                   EA =   01 0      1  0   2 4
+                         
+                                   
+                                                   
+                          301 −    6   2   1 5
+                         
+                                                   
+                                   
+                           2 − 2  3   1
+                                        
+                       =     1  0  2  4
+                                        
+                           0   − 4 10 8  
+                       This result can be obtained from A by adding 3 times row 1 to row 3.
 
 
+               1.4−13  Uniqueness of Echelon Form
 
 
-                                                              63</code></pre>
+               Two matrices A and B are row-equivalent if and only if they have the same reduced echelon form.
+
+
+               Proof
+               If A and B have the same reduced echelon form E, then A is row-equivalent to E and E is row-
+               equivalent to B.
+               It follows that A is row-equivalent to B.
+               Now Suppose A and B are row-equivalent.
+               Let  E  be a reduced echelon form of A and  E  be a reduced echelon form of B. Then  E  and  E
+                     1                                      2                                        1        2
+               are row equivalent.
+               Suppose  E =   IF   and    E =  IF .
+                          1     1          2      2
+               Since  E  and  E  are row equivalent,  E =  CE for some matrix C. This means  I =  CI  and
+                       1        2                      2      1
+                F =  CF . But then C =  I  and    F =  F .
+                                                   2
+                        1
+                 2
+                                                        1
+
+
+               Example 1.4-2
+
+               Show that the two matrices are row equivalent
+
+                             1 − 1 0               3 01
+                       A =             and   B =         
+                             2  1  1               0 31  
+               Solution</code></pre>
      	</div>
     
      </div>

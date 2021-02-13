@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 899 - Linear Algebra Solution</title>
+        <title>Page 899 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 899 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 899 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 899</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 883
 
-             Construct a nonzero  22×  matrix that is invertible but not diagonalizable.
+                     
+                    u  ,  v     (1,  −  3, 2    ) ( 3, 1, 2−            )
+                      4   1  v =                        ( 3, 1, 2−      )
+                        2    1            14
+                      v
+                       1
 
-             Solution
+                               =  −  1 ( 3, 1, 2  −  )
+                                   7
+                               =  ( 3 , −  1 , −  2 )
+                                             7
+                                  7
+                                        7
+                        
+                    u  ,  v      (1,  − 3, 2    ) (1, 1, 1 )
 
-                For a  22× invertible matrix A, the eigenvalues must be nonzero and determinant of A is not equal to
-                zero.
-                                  a b
-                Let assume  A =      
-                                  0 c 
+                                             
+                      4   2  v =                      (1, 1, 1
+                                                             )
 
-                det ( ) A =  ac  ≠  0
-
-                Matrix A is invertible
-                Since the matrix A is an upper triangular then the eigenvalues are the main diagonal entries
-                λ    a   & λ =  =  c
-                  1           2
-
-                For the matrix A to be not diagonalizable when the eigenvectors are linearly dependents or in
-                one−dimensional.
-                If we have a repeated eigenvalue that it will result in one−dimensional, that it will result that a c= .
-
-                      ab 
-                 A =      
-                      0 a 
-                λ    =  a
-                  1,2
-
-                For λ =  a ⇒     ( A aI )V =  0
-                                    −
-                      1                    1
-                     0 b   x   1  0   →  by =  0
-                                                1
-                              =  
-                                    0
-                     00      y   1   
-                    ⇒    y =  0
-                          1
-                                                              1
+                        2    2            3
+                      v
+                       2
+                               =  (0, 0, 0    )
+                        
+                    u  ,  v  
+                      4   3  v =  441  (1, −  3,  ) 2  (  1  ,  5  , −  4   ) ( −  1  ,  5  , −  4 )
+                                                      −
+                        2    3    42               21 21       21     21 21    21
+                      v
+                       3
+                                                   5
+                                        24
+                                                          4
                                                1
-                                                           
-                    The eigenvectors are: V =     & V =    
-                                          1            2   
-                                                              0
-                                               0
-                Therefore, the matrix A to be not diagonalizable since the eigenvectors are linearly dependent in
-                one−dimensional
-                             12
-                Example:        
-                             01 
-
-
-             Exercise
-
-
-             Construct a nonzero  22×  matrix that is diagonalizable but not invertible.
-             Solution
-
-                Any   22×  matrix with 2 distinct eigenvalues is diagonalizable.
-
-
-                                                              899</code></pre>
+                                      −
+                                                 ,
+                               =  441 ( )(  −  21 21  , −  21 )
+                                        21
+                                  42
+                                  4
+                               = ( 7  , −  20 16 )
+                                           ,
+                                             7
+                                        7
+                                                        
+                            u  , v      u  , v       u  ,  v  
+                   v =  u −    4   1  v −   4   2  v −    4   3  v
+                     4    4       2   1       2   2       2    3
+                               v            v             v
+                                1             2            3
+                                                                          ,
+                       =  (1,  −  3,  ) 2    −  ( 3 ,  −  1 ,  −  2 ) −  (0, 0, 0    ) −  ( 4 ,  −  20 16 )
+                                      7
+                                                 7
+                                                                        7
+                                                                  7
+                                            7
+                                                                             7
+                       = (0, 0, 0    )
+                         
+                        v
+                   q =    1
+                     1   v 
+                          1
+                       =  1  ( 3, 1, 2  −  )
+                          14
+                            3      1     2  
+                       =  −    ,      ,     
+                            14     14    14 
+                        v 
+                   q =     2
+                     2   v 
+                           2
+                                   )
+                       =  1  (1, 1, 1
+                           3
+                           1   1     1  
+                       =     ,    ,    
+                           3    3    3 </code></pre>
      	</div>
     
      </div>

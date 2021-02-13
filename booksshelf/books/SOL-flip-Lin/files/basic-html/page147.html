@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 147 - Linear Algebra Solution</title>
+        <title>Page 147 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 147 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 147 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 147</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices | 139
 
-             Use row operations to show the 3 by 3 “Vandermonde determinant” is
+                                          R −  11R
+                  1 0 11     − 5  2   0    1       3
+                  0 1 −  6   3    −  10   R +   6R
+                                            2     3
+                  00    1   −  2  0   1 
+                              5       5 
 
-                                                  1 aa  2 
-                                                          
-                                                
-                                                                                 )
-                                             det 1 b b   2   =  (b ac ac b
-                                                                 −
-                                                                           )( −
-                                                                    )( −
-                                                          
-                                                  1 c  c 2 
-                                                          
-             Solution
-                        1 aa 2          1 aa 2 
-                                               
-                                        
-                      
-                  det 1 bb    2   = det 1 bb   2   R −  R
-                                                  2   1
-                        1 c  c 2        1 c  c 2   R −  R
-                                                  3   1
-                                         1   a      a 2  
-                                                         
-                                                                          −
-                                   =det 0 ba b−    2  −  a 2          factor  (     b a )
-                                                         
-                                         0 ca c −  2  a 2 
-                                             −
-                                                         
-                                                1   a      a 2  
-                                                                
-                                   =  (ba )det 0    1     b a 
-                                       −
-                                                             +
-                                                          2    2   R − (ca   )R
-                                                                            −
-                                                    − 
-                                                0 c ac −     a     2          2
+                  1 00 −     3   2   −  11
+                             5         5 
+                            3         6  
+                  01 0      5    − 1  5  
+                                         
+                  0 01 −     2   0    1  
+                             5        5 
 
-                                                             )( +
-                                                        (c −  ac   a ) (b−  +  ac  a ) (c=  −  ac  a b −  −  ) a
-                                                                                           )( +
-                                                                            )( −
-                                                  1 a     a 2       
-                                   =  (ba )det 0 1         b a        Multiply the main diagonal by (b - a)
-                                                            +
-                                       −
-                                              
-                                                00   (c ac b      ) 
-                                                            )( −
-                                                         −
-                                                                    
+                         −  3  2  −  11
+                         5          5 
 
-                                   =  (b ac ac b−  )( −  )( −  )
+                 A − 1  =      3  − 1  6    
+                                    5
+                         5
+                                      
+                         −  2  0   1  
+                         5         5 
 
 
              Exercise
-             The inverse of a 2 by 2 matrix seems to have determinant = 1:
 
-
-                           det A − 1  =  det  1      d  − b    =  ad − bc  = 1
-                                        ad −  bc − c   a    ad −  bc
-                                                
-
-             What is wrong with this calculation? What is the correct det A − 1
-
+                                                1 01
+                                                       
+             Find the inverse, if exists of  A =     01 1
+                                                       
+                                                11 0  
+                                                      
              Solution
 
+                   1 0 11 00
+                                    
+                   01 1 01 0
+                                   
+                     11 000 1      R −  R 1
+                                         3
+                   1 0  1    1   00
+                                      
+                   01   1    0  1 0
+                                     
+                     01 −  1 −  1 01    R −  3  R 2
 
-                  The det    1        d  − b     (ad – bc) it is part of the determinant and it is not the solution.
-                          ad − bc − c   a  
-                                  
-
-                                                              147</code></pre>
+                   10   1    1   0   0
+                                        
+                   0 1  1    0   1   0
+                                       
+                     0 0 −  2 −  1 −  1 1    − 1  R
+                                             2  3
+                                        R −  R
+                   1 01 1     0    0     1    3
+                                      
+                   0 11 0     1    0     R −  R
+                                         2    3
+                   0 01    1  1   − 1 
+                           2  2     2</code></pre>
      	</div>
     
      </div>

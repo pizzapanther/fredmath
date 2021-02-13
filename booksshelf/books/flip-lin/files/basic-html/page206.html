@@ -152,88 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem − Cauchy-Schwarz Inequality
-                     
-             If v  and  w are vectors in a real inner product space V, then
-                                                                  
-                                                         ,
-                                                       uv ≤     u   v
+    <pre style="white-space:pre-line"><code>188 | 2.6 – Linear Independence
 
-             Proof
-                              
-                         
-                If either u  or v  is equal to zero, then both sides equal to zero
-                    Inequality holds.
-                                           
-                                    0
-                Suppose that  ,u v ≠  and if  w  any vector
-                      
-                 w =  w w ≥  0
-                           
-                Let  wu tv , then:
-                      = −
-                     
-                0 ≤  ww
-                  =  (utv−      )(utv−      )
-                                         2  
-                  =  u     u −  ( t u     v ) t −  (v     u ) t+  (vv       )
+          2.6−6       Linear independence of Functions
 
-                                   2                      u  
-                                                                   v
-                  =  u     u −  2   ( tu   v  ) t+  (vv      )    Let t = 
-                                                                vv
-                                                                    
-                                                
-                                              
-                              
-                          ( )           ( )   2  
-                                             u
-                             u
-                                                v 
-                                 v 
-                                             
-                  =  uu      −  2   (  u     v ) +  vv  (vv       )
-                             vv
-                                  
-                                                 
-                                  2         2
-                            (u      v )  (u     v )
-                  =  uu   2       +  
-                         −
-                              vv        vv
-                                  
-                                             
-                               2
-                              
-                         (u   v )
-                  =  uu      
-                         −
-                             vv
-                              
 
-                                   2
-                    (uu       )(vv       ) (u−    v   )    
-                  =                                   Since vv &gt;  0
+          2.6−7       Definition
 
-                             vv
-                                  
-                                   2
-                  ≤  (uu      )(vv      ) (u−    v  )
-                     2     
-                (u   v  ) ≤  (uu       )(vv      )
-                            
-                   ,
-                  uv ≤     u   v
 
-             The following two alternative forms of the Cauchy-Schwarz inequality are useful to know:
-                                                       2      
-                                                                      ,
-                                                     , uv  ≤   , uu v v
+                   ( ), f
+          If f 1  =  f x  2  =  f 2 ( ), , f n  =  f n  ( ) x  are functions that are n − 1 times differentiable on the
+                                 x
+                                     
+                  1
+          interval (−∞, ∞), the determinant
+                                              f  ( ) x    f  ( ) x        f  ( ) x
+                                               1           2                n
 
-                                                          2      2   2
-                                                      u , v  ≤  u    v
+                                              f  ′  ( ) x  f  ′  ( ) x    f  ′  ( ) x
+                                      ( ) =
+                                   Wx          1           2                n
+                                                                          
+                                            f  (n−  1) ( ) x  f  (n−  1) ( ) x    f  (n−  1) ( ) x
+                                             1           2                n
 
-                                                            206</code></pre>
+
+          is called the Wronskian of  f  , ,   , f
+                                         f
+                                      1   2       n
+                  if   W =  0 ⇒   Linearly  Dependent
+                 
+                  if W ≠  0 ⇒    Linearly Independent
+
+
+          Example 2.6-3
+
+          Use the Wronskian to show that f  =  , x  f  =  sin x  are linearly independence
+                                          1        2
+          Solution
+
+             The Wronskian is
+
+                          x  sin x
+                 Wx
+                    ( ) =
+                         1 cos x
+                                         0
+                        =  x cos x − sin x ≠
+
+             This function is not identically zero. Thus, the functions are linearly independent.
+
+
+          Example 2.6-4
+
+
+          Use the Wronskian to show that f  = 1, f  = e x ,  f  =  e 2x   are linearly independence
+                                          1       2         3
+
+          Solution
+             The Wronskian is</code></pre>
      	</div>
     
      </div>

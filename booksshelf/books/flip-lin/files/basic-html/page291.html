@@ -152,83 +152,100 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>3. 3 –  Gram-Schmidt Process | 273
 
-                                                                         0  1
-             Find the eigenvalues and the eigenvectors of the matrix  A =    
-                                                                         − 10 
-             Solution
+                                  
+                            u  ,  v  
+                   v =  u −     2   1  v
+                     2    2       2   1
+                                v
+                                 1
+                                      ++
+                                )
+                                                     )
+                       = (0,1,1   −  0 11     (1,1,1
+                                   1 +  2  1 +  2  1 2
+                                )
+                                           )
+                       = (0,1,1 −  2 (1,1,1
 
-                               −λ   1
-                det ( A − λ  ) I =
-                               − 1 −λ
+
+                                   3
+                         (
+                       = −  2 ,  11 )
+                                 ,
+                            3
+                               33
+                                   
+                   v =  u −  proj  u
+                     3    3      v 2  3
+                                             
+                              u 3 , v 1    u 3 , v 2  
+                       =  u −          v −          v
+                          3       2    1       2    2
+                                v            v
+                                 1             2
+                                                              00    1
+                                                               ++
+                                       ++
+                       =  (0, 0,1   −     )  0 01  (1,1,1 −      )  3      ( −  2 ,  11 )
+                                                                                   ,
+                                                            2
+                                                                   2
+                                   1 +  2  1 +  2  1 2  ( ) ( ) ( )       2   3   3 3
+                                                          2
+                                                                       1
+                                                                1
+                                                              +
+                                                                     +
+                                                          3
+                                                                       3
+                                                                3
+                                               1
+                       =  (0, 0,1    −  )  1 (1,1,1   −  )  3 ( −  2 ,  11 )
+                                                        ,
+                                   3           2   3   33
+                                               3
+                       =  (0, 0,1    −  )  1 (1,1,1   −  )  1 ( −  2 ,  11 )
+                                                        ,
+                                   3
+                                                       33
+                                                   3
+                                               2
+                       = ( 0, −  1 ,  1 )
+                                   2
                                2
-                                   1 0
-                            = λ+ =
+                          
+                        v
+                   q =     1
+                     1   v 1
+                         (1, 1, 1)
 
-                        2
-                    ⇒ λ = −  1
-                The eigenvalues are: λ 1,2  =    i ±
-
-
-                The matrix A is a 90° rotation which has no real eigenvalues or eigenvectors.
-                            
-                                                            
-                No vector  Ax   stays in the same direction as  x  (except the zero vector which is useless).
-                If we add the eigenvalues together the result is zero which is the trace of A.
-
-                              −
-                λ=    i :   ( A λ IV =  )  0
-                  1              1    1
-                                      0
-                                x
-                      i −  1             − ix +  y = 0
-                                   =
-                                     →    
-                                      0
-                                y
-                     −  1  i −          
-                    ⇒   x =  −  iy
-
-                                                1  
-                Therefore, the eigenvector V =  
-                                            1   
-                                                i
-                λ =    i − :   ( A λ 2 IV =  )  2  0
-                              −
-                  2
-                                     0
-                               x
-                      i   1        →   ix +  y =  0
-                                  =
-                              
-                                     0
-                               y
-                     − 1  i    
-                ⇒   y =   x  i −
-
-                Therefore, the eigenvector V =    1 
-                                            2       i −    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                               291</code></pre>
+                       =
+                             3
+                           1   1     1  
+                       =     ,    ,    
+                           3    3     3 
+                          
+                         v
+                   q   =   2
+                     2    
+                          v
+                           2
+                             ( −  2 ,  11 )
+                                     ,
+                       =        3  33
+                           ( ) ( ) ( )      2
+                              2
+                                     2
+                                   1
+                            2
+                                         1
+                                +
+                                       +
+                                   3
+                            3
+                                         3</code></pre>
      	</div>
     
      </div>

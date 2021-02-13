@@ -152,77 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-                        
-             If u v  and  w  are vectors in a real inner product space V, and if k is any scalar, then
-                 ,
-                                   
-                    a)  uv+   ≤  u +  v
-                                                               (Triangle inequality for vectors)
-                                             
-                    b)  ( ,d uv ) d u≤  ( , w ) dw v+  ( ,  )    (Triangle inequality for distances)
+    <pre style="white-space:pre-line"><code>2.6 – Linear Independence   | 189
 
 
+                                1 e  x   e 2x
+
+                          ( ) =
+                        Wx      0 e  x  2e 2x
+                                0 e  x  4e 2x
+
+                                            2x x
+                              = e x 4e 2x  − 2ee
+                              =  2e 3x  ≠  0
+                   Thus, the functions are linearly independent.
 
 
-             Proof (a)
-                     2     
-                 uv      =  uv  , uv
-                   +
-                                    +
-                             +
+               2.6−8        Theorem
 
-                                          
-                         =   , uu +  2 uv +  ,  , v v
-                                          
-                         ≤   , uu +  2 uv +  ,  , v v
-                                          
-                         ≤    , uu +  2 u      v +    , v v
-                                   
-                         =  u  2  +  2 u    v +  v  2
-                                  ) 2
-                         = ( u +  v
-                     2          2
-                 uv      ≤  ( u +  v  )
-                   +
-                            
-                   +
-                 uv ≤     u +  v
+                                                                               
+               Let S be a linearly independent subset of a vector space V, and let v  be a vector in V that is not in S.
+               Then   
+                                                           
+                S  { } v  is linearly dependent if and only if v ∈ span ( ) S
 
 
-             Definition
-                                                                                  
-             Two vectors u  and v  in an inner product space are called orthogonal if  u v =
-                                                                                           0
-                                                                                        ,
-
-
-             Example
-                                      
-                                 )
-             The vectors u =  (1, 1   and v =  (1,  −  ) 1  are orthogonal with respect to the Euclidean inner product on
-               2
-              , since
-                 
-                uv     11    1 −
-                        ( ) ( ) 1+
-                     =
-                      =  0
-
-             They are not orthogonal with the respect to the weighted Euclidean inner product
-              
-              uv =   3uv +    2  u v , since
-               ,
-                        11      2 2
-                  
-                 uv =  ,  31       2 1
-                                    ( )( ) 1−
-                          ( )( ) 1 +
-                       = 1≠  0
-
-
-
-                                                            207</code></pre>
+               Proof
+                                                                                         
+                                                                        ,
+               If  S  { } v  is linearly dependent, then there are vectors u u 2 ,  , u  in  S  { } v such that
+                                                                      1
+                                                                                   n
+                                        
+                au +   a u +      +   a u =  0 for some nonzero scalars  a a  ,  , a .
+                                                                         ,
+                 11     2 2          nn                                1    2       n
+                                                                             
+               Because S is linearly independent, one of the us  say u , equal  v . Thus
+                                                              '
+                                                                      1
+                                                             i
+                                        
+                av +  a u +      +   a u =  0,  and so
+                 1     22           nn
+                                          
+                   av =  −  ( a u +    +   a u  )
+                     1       22           nn
+                         − 1               
+                   v =  −  a 1  ( au + 22  +   a u  )
+                                            nn
+                         (  −  1  )       (  −  1  )  
+                     =  −  aa 2  u −  2  −   aa n  u
+                                                     n
+                                             1
+                           1
+                                                                                   
+               Since  v  is linear combination of  u  ,  ,  u , which are in S, we have  v ∈ span ( ) S .
+                                                  2        n
+                               
+               Conversely, let v ∈ span ( ) S .
+                                                 
+                                                                         ,
+               Then there exist vectors v v 2 ,  , v  in S and scalars b b      , b  such that
+                                          ,
+                                                                             ,
+                                                                        1
+                                                                            2
+                                                     m
+                                                                                    m
+                                        1
+                                       
+                v =  bv +  b v +     +   b v . Hence,
+                    11     2 2          mm
+                                                   
+                   bv +   b v +     + b v +   ( ) 1 v−  = 0
+                    11     2 2          mm</code></pre>
      	</div>
     
      </div>

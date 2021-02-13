@@ -152,89 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>2.8 – Row and Column Spaces   | 223
 
-                                             x −    x =  4
-                                            1     2
-                                          
-              Given the system equation:      3x +  1  2x =  2  1
-                                          
-                                           −  2x +  1  4x =  2  3
-                                          
-                                                                    
-                                                                       y
-             a)  Find the least-squares solution of the linear system  Ax =  
-                                                  
-             b)  Find the orthogonal projection of   y  on the column space of A
-             c)  Find the error vector and the error
-             Solution
+               Example 2.8-4
 
-                                                   4
-                          1  − 1             
-                                         m
-                                                   1
-                                    x =
-                a)  A =   3   2          y = 
-                                                  
-                        
-                                 
-                                         b
-                          2   4               
-                                                   3
-                         −                      
-                                
-                         
-                      T
-                              T
-                    A Ax =   A y
-                                                                4
-                                   1  − 1                    
-                      1  3 −  2            m     1  3 −  2  
-                                                                1
-                                   3  2       =         
-                      −  12  4              b      −  12  4    
-                                                                3
-                                  − 2  4                     
-                               m
-                     14  − 3     1 
-                                  =
-                                   
-                               b
-                     − 3 21     10 
-                     m    1   21  3   1                        − 1
-                       =                                 X =  AB
-                      b
-                               
-                                       
-                         285 3    14 10   
-                            51 
-                         =     285   
-                            143 
-                            285 
-                            17 
-                         =     95   
-                            143 
-                            285 
-                    Thus  y =  17  x +  143  or  y =  0.1789x +  0.5018
-                             95     285
-                                                 
-                b)  The orthogonal projection of  y  on the column space of A
+               a)  Find a subset of the vectors:
+                                                                    
 
-                           1  − 1   17  
-                                   95  
-                    Ax =    3  2       
-                           2   4      143  
-                           −         285 
+                           v =  (1,  −  2, 0,    ) 3    v =  (2,  −  5,  −  3,   ) 6 , v =  (0, 1, 3, 0    ),
+                            1                   2                      3
+                                                 
+                           v =  (2,  −  1, 4,  −     ) 7 , v =  (5,  −  8, 1,    ) 2
+                            4                      5
+                     That forms a basis for the space spanned by these vectors
+
+               b)  Express each vector not in the basis as a linear combination of the basis vectors
+
+               Solution
+
+                   a)  Construct the vectors as its column vectors
+
+                             1  2   0   2    5 
+                             −  2 −  51 −  1 −  8   R +  2R
+                                                           2  1
+                             0  − 33    4    1 
+                                               
+                             3  6   0 −  7   2     R −  3R 1
+                                                       4
+                            1   2  0   2     5      R +  2R 2
+                                                        1
+                             0 − 11    3     2  
+                                                
+                            0   − 33   4     1      R −  3R
+                                                      3     2
+                             0  0  0 −  13 −  13 
+
+                                                      1 R
+                            5   0  10   0    5      5  1
+                             0 −  5  5  0   −  5    1
+                                                         −  5 R 2
+                            0   0  0   −  5 −  5     1
+                                                   − 5 R 3
+                             0  0  0    0    0  
 
 
+                             1 0   2   01
+                             01 −   1 01    
+                                            
+                             00    0   11
+                                            
+                             00    0   00   
+                            ↑↑ ↑ ↑         ↑
+                                        
+                             w  w w  w  w
+                             1   2   3  4    5
 
-
-
-
-
-
-
-                                                              241</code></pre>
+                       The leading 1’s occurs in columns 1, 2, and 4.
+                                                                                               
+                       { w w  2 , w 4 }  is a basis for the column space, and consequently  { v   1 , v   2 , v 4 }
+                                 
+                             
+                        
+                           ,
+                         1
+                                                            
+                                                         )
+                   b)  w 1  =  (1, 0, 0, 0 )  w = (0, 1, 0, 0 ,  w =  (2, − 1, 0,  ) 0
+                                                               3
+                                           2
+                                          
+                                       )
+                                                          )
+                       w   = (0, 0, 1, 0 ,  w = (1, 1, 1, 0
+                         4                  5</code></pre>
      	</div>
     
      </div>

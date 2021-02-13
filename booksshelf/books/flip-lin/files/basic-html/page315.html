@@ -152,75 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.6 – Orthogonal Diagonalization
+    <pre style="white-space:pre-line"><code>3. 5 –  Least Squares Analysis | 297
+
+               3.5−4        Theorem
+
+                                                                                     
+               If A is an mn×  matrix, the equation  Ax =  y  has a solution if and only if  y  is in the column space of
+               A.
+                       
+                                
+                             
+                       y −  Ax =
+                                e
+                                                                                                       m
+                Ax   is a vector that is in the column space of A. For this A the column space is a plane is  
+                
+                                                                         
+                y    is a vector, not in the column space of A (otherwise  Ax =  
+                                                                             y  has an exact solution)
+                                                                     
+                e    is the error vector, the difference between  y  and  Ax
 
 
 
-             Definition
-
-             A square matrix A is called orthogonally diagonalizable if there is an orthogonal matrix P such that
-                             )
-                    (
-                         T
-             P − 1 AP =  P AP  is diagonal; the matrix P is said to orthogonally diagonalize A.
-                                                             T
-                                                           P AP =   D
-
-             We say that A is orthogonally diagonalizable and that P orthogonally diagonalizes A.
-
-
-             Theorem
-
-             If A is an n x n matrix, then the following are equivalent.
-
-              a)  A is orthogonally diagonalizable
-
-              b)  A has an orthonormal set of n eigenvectors.
-              c)  A is symmetric.
-
-
-             Theorem
-
-             If A is symmetric matrix, then:
-
-              a)  The eigenvalues of A are all real numbers.
-              b)  Eigenvectors from different eigenspaces are orthogonal.
 
 
 
-             Example
 
-             Find an orthogonal matrix P that diagonalizes
 
-                                        4 2 2
-                                                
-                                   A =     2 4 2
-                                                
-                                        2 2 4  
-                                               
-             Solution
 
-                                4 − λ  2      2 
-                det ( A − λ  ) I =     2  4 − λ  2    
-                                2      2          
-                                             4 − λ 
-                                      3
-                                           +
-                             =  (4 − λ ) + 8 8 −  ( 44 − λ ) 44−  ( − λ ) 44−  ( − λ )
-                                             2
-                                                  3
-                                                        −
-                                  −
-                             =  64 48λ + 12λ − λ +   16 12  (4 − λ )
-                                                             +
-                                                        −
-                                  −
-                             =  64 48 +  λ  12 λ  2  −  λ  3  +  16 48 12 λ
-                                  3
-                                         2
-                                               λ
-                             = −λ +  12λ −  36 +  32 =  0
-                                                               315</code></pre>
+
+
+
+
+                                                         
+               The length  e  is a minimum exactly when e ⊥   CS ( ) A
+
+
+
+               3.5−5        Best Approximation Theorem
+
+                                                                                         
+                     ( )
+               If CS A  is a finite dimensional subspace of an inner product space, and if  y  is a vector in V, then
+                           
+                                                                   ( )
+                proj       y  is the best approximation to y from CS A  is the sense that
+                       ( )
+                    CS A
+                                           
+                        y −  proj      y &lt;   y −  CS ( ) A
+                                CS ( ) A
+
+                                                                            
+                                         ( )
+               For every vector  w  in CS A  that is different from  proj    y
+                                                                         ( )
+                                                                       CS A
+
+
+               3.5−6        Theorem
+
+
+                                            
+               For every linear system  Ax =  y , the associated normal system
+                                          
+                                   
+                                        T
+                                T
+                              A Ax =   A y
+                                                                              
+               Is consistent, and all solutions are least squares solutions of  Ax =  y
+                                                                  T
+               If the columns of A are linearly independent, then  A A is invertible so has a unique solution  x .
+               This solution is often expressed theoretically as</code></pre>
      	</div>
     
      </div>

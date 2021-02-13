@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 684 - Linear Algebra Solution</title>
+        <title>Page 684 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 684 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 684 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 684</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>672 | 2. 8 − S OL U T I ON
 
-                                     
-                                 
-                                         
+                                                           
+                                                                    c
+                 •  For v = ( b 1 , b 2 , b 3 )  with b =  b and w = ( c 1 , , c 3 )  with c = c  the sum
+                                                     2
+                                                                                   1
+                                                                                        2
+                                                                     2
+                                                1
+
+                        
+                     v +  w =  ( b +  1  c 1 , b +  2  c 2 , b +  3  c 3 )  is in the same set as b +    1  c =  1  b +  2  c 2
+                                                                    
+                 •  For an element v = ( b 1 , b 2 , b 3 )   with b =  b , cv = (  b c  1 , cb 2 , cb 3 )   and cb =  cb , thus
+                                                                                                      2
+                                                                2
+                                                                                                1
+                                                           1
+
+                    it is in the same set.
+                                                                              
+                                                                   )
+                                                                                v
+             b)  This is not a subspace. For example, for v = (1, 0, 0 and cv = − = ( 1, 0, 0−  )  is not in the
+
+                 set.
+                                                        
                                                                           
-                                                                                          
-                                                            
-                                                  3
-                                                                                                      )
-                                     v
-          Consider the basis  S = { v 1 , , v 3 } for  R , where v =  (1, 1, 1 ) v = (1, 1, 0 ) v =  (1, 0, 0  and let
-                                      2
-                                                                                           3
-                                                                            2
-                                                             1
-          T  :    3  →   3  be the linear transformation for which
-                                                            
-                 T ( ) (2,  1, 4 , Tv 1  =  −  )  ( ) (3, 0, 1 , Tv 2  =  )  ( ) ( 1, 5, 1v 3  =  −  )
-                                   
-                               
-                                       
-                              (
-          Find a formula for T x 1 , , x 3 ) , and then use that formula to compute  (2, 4,  1T  −  )
-                                   x
-                                    2
-          Solution
-                                           
-             Assume:  u =   c v +  c v +   c v
-                             1 1     2 2     3 3
-                   
-                       
-               
-              ( x 1 , x 2 , x 3 )  =  c 1  (1, 1, 1 +  )  c 2  (1, 1, 0 +  )  c 3  (1, 0, 0
-                                                                 )
-                           =  ( c +  1   c +  2   , c +  1   c 2 , c 1 )
-                                         c
-                                          3
-                  c   +  c +  c =  x
-                   1    2    3    1
-                 
-                  c +  1   c 2          =  x
-                                   2
-                 
-                  c 1                  =  x 3
-                 
-                  c =  x −  x
-                   3    1   2
-                 
-                  c =  x − x
-                    2
-                         2
-                              3
-                 
-                  c =  x 3
-                 
-                    1
-               (
-                                                      
-                                                                        
-                    
+                                                                   )
+                                                                                    )
+             c)  This is not a subspace. For example, for v = (1, 1, 0 and  w = (1, 0, 1  are in the set, but their
+                         
+                                    )
+                 sum v +  w =  (2, 1, 1  is not in the set.
+
+             d)  This is subspace, by definition of linear combination.
+                                                                 
+                 •  For 2 vectors v =  α  1 v β  +  1 w and v = α  2 v β  +  2 w  the sum
+                                   1
+                                                        2
+                                                    
+                        v +  v =  α  v β  +  w α  +  v β  +  w
+                         1    2     1     1     2      2
+                                             
+                                  ( α =  α +  ) ( β   β +  ) w
+                                                           
+                                             v +
+                                     1    2       1     2
+                    is still the linear combination of v and w.
+                                                                                                   
+                                                            α
+                 •  For an element v =  α  1 v β  +  1 w , cv =  c v + c β  1 w is still the linear combination of v
+                                                        1
+                                     1
+                                                              1
                          
-                                   ( ) (
-                 
+                    and  w , thus it is the same set.
+
+                                                                          )
+             e)  This is subspace, these are the vectors orthogonal to (1, 1, 1
+                         
+                 •  For v = ( b 1 , b 2 , b 3 )  with b +  1  b +  2  b =  3  0
+                          
+                                  c
+                     and w = ( c  , , c  )  with c +  c +  c =  0
+                               1   2    3         1   2    3
+                    The sum v +    w =    ( b +  1  c 1 ,  b +  2  c 2 ,  b +  3  c 3 )   is in the same set as
+                     b +  c +  b +  c +  b +  c =  0
+                      1   1    2    2    3    3
                                     
-             T x  1 , , x 3 ) =  xT v 1  +  x −  2  x 3 ) ( ) ( x −  1  x 2 ) ( )
-                                                   T v
-                    x
-                                                                     T v
-                                                         +
-                      2
-                                3
-                                                                         3
-                                                       2
-                             =  x  (2,  1, 4−  ) ( x −  x  )(3, 0, 1 +  ) ( x −  x  )( 1, 5, 1−  )
-                                             +
-                                3               2    3              1    2
-                             =  ( 2x +  3  3x −  2  3x −  3  x +  1  x 2 ,  −  x +  3  5x −  1  5x 2 , 4x +  3  x −  2  x +  3  x −  1  x 2 )
-                             =  ( −  x +  1  4x −  2  x 3 ,  5x −  1  5x −  2  x 3 ,  x +  1  3x 3 )
-             T  (2, 4,  1−  ) ( 2 16 1,  10 20 1,  2 3= −+  +  −  +  −  )
-                          =  (15,  9,  1  −  −  )
-
-
-
-
-
-                                                           684</code></pre>
+                                                                             
+                 •  For an element v = ( b 1 , b 2 , b 3 )   with b +    1  b +  2  b =  3  0 , cv = (  b c  1 , cb 2 , cb 3 )   and
+                     cb +  cb +  cb =  0, thus it is in the same set.
+                       1     2     3
+                                                                          
+                                                                   )
+             f)  This is not a subspace. For example, for v = (1, 2, 3 and  v−=  ( 1,  2, 3−  −  −  )  is not in the set.</code></pre>
      	</div>
     
      </div>

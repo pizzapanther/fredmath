@@ -152,75 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Complex Eigenvalues of Real Matrices
-
-
-             For real matrices, complex λ′s and x′s come in “conjugate pairs”
-
-                    if    Ax λ=  x  then Ax = λ x
-
-
-             Example
-
-                         cos θ  − sin   θ
-             Given  A =              
-                         sin θ  cos θ  
-             Solution
-
-                The eigenvalues of A:
-
-                               cos −  θ  λ  sin θ −
-                det ( A λ−  ) I =
-                                 sin θ    cos −  λ
-                                             θ
-                            =  (cosθ  λ −  )(cosθ  λ −  ) sin θ+  2
-
-                            =  cos θ  2  2 cosθ  λ +  2  +  sin θ 2
-                                        λ −
-                              λ =  2  2 cos +  λ −  θ  1 0
-                                              =
-
-                λ =  2cos ±  θ  4cos θ  2  −  4
-                             2
-                     2cos ±  θ  4 cos θ  (  2  1 −  )
-                   =                                           cos θ  2  sin θ +  2  = 1 → cos θ  2  −=  sin θ −  2
-                                                                                          1
-                              2
-                   =  2cos ±  θ  2 −  sin θ  2
-                             2
-                     cos ±  i sin
-                        θ =
-                                θ
-                The eigenvalues are conjugate to each other.
-
-                                                   
-                                                  )
-                                    θ
-                             θ =
-                For λ    cos +  i sin :   ( A−λ  I v =  0
-                      1                         1   1
-                                                                            0
-                     cosθ   (cosθ −  i sinθ +  )     sinθ −          x   1  
-                                                                       = 
-                                                                            0
-                             sinθ           cosθ   (cosθ −  i sinθ +  )       y   1   
-                                                                     θ
-                                               0
-                      i sinθ −  −  sinθ     x   1    i sin x =  θ →  1  sin y 1
-                                         = 
-                                               0
-                      sinθ    i sinθ       y   1   
-                    ⇒    x =  1  iy 1
-
-                    The eigenvectors:
-
-                          1 
-                    v =    
-                     1     i −  
+    <pre style="white-space:pre-line"><code>Lecture Four
 
 
 
-                                                               325</code></pre>
+
+
+
+                                                                                             n
+                                                                                                       m
+               Section 4.1 – Matrix Transformations from   to 
+
+
+               4.1−1        Definition
+
+
+               If V and W are vector spaces, and if f  is a function with domain V and codomain W, then we say that f
+               is a transformation from V to W or that f maps V to W, which we denote by writing.
+
+                                                              : fV → W
+
+               In the special case where V = W, the transformation is also called an operator on V.
+
+
+               4.1−2        Matrix Transformation
+
+
+                       w =a     x +  a  x +    +  a  x
+                        1    11  1   12 2         1nn
+                      w =a      x +  a  x +    +  a  x
+                        2    21  1    22 2         2nn
+
+                       
+                                     
+                                              
+                                                    
+                              
+                     w =a       x +  a  x +     +  a  x
+                       m     m 1  1   m 22         mn n
+
+               Which we can write in matrix formation:
+                                                w   1    a 11  a 12    a 1n    x   1 
+                                                                               
+                                                w 2     a 21  a 22    a 2n      x 2 
+                                                    =                          
+                                                                            
+                                                w      a   a         a        x  
+                                                4        m 1  m2       mn     4  
+                                                                   
+                                                                =
+                                                             w Ax
+               Although we could view this as a linear system, we will view it instead as a transformation that maps
+                                                                                         
+                                                                         m
+                                         n
+               the column vector  x  in   into the column vector  w  in     by multiplying  x  on the left by A. We
+                                                                                 n
+                                                                                        m
+               call this a matrix transformation or function or mapping T from   to     (or matrix operator if m
+               = n) and we denote it by
+                                                       T A  :   n  →   m
+
+                  n
+                  is called the domain of T.
+                  m
+                  is called the codomain of T.</code></pre>
      	</div>
     
      </div>

@@ -152,74 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>The Inverse of a Product  AB
-
-          Theorem
-
-                 ×
-          If an  nn  matrix has an inverse, that inverse is unique.
-
-          Proof
-             Suppose that A has an inverse  A − 1  and B is a matrix such that  BA =
-                                                                                I
-                 B =  BI
-                        (
-                    =  B AA − 1 )
-
-                          )
-                    =  (BA A − 1
-
-                    =  IA − 1
-                    =  A − 1
-                 Therefore, the inverse is unique
+    <pre style="white-space:pre-line"><code>14 | 1.2 – Gaussian Elimination
 
 
-          Theorem
-
-                                                                                            −
-                                                                                              1 −
-          If A and B are invertible then so is  AB  The inverse of a product  AB is   ( AB ) − 1  =  B A  1
-                                               .
-
-          Proof
-                   (
-                  )
-                             =
-                               A
-              ( ABB  −  1 −  A  1 ) ( BB − 1 ) A − 1
-                              = ( ) A − 1
-                                 AI
-                              =  AA − 1
-
-                              =  I
+          1.2−5  Theorem:  Free Variable Theorem for Homogeneous Systems
 
 
-          Reverse Order
-
-
-                                1 −
-                                    1 −
-                               −
-                 ( ABC  ) − 1  =  C B A  1
-                                      1 −
-                                          1 −
-                                 −
-                                  1 −
-                 ( ABCD  ) − 1  =  D C B A    1
+          If a homogeneous linear system has n unknowns, and if the reduced row echelon form of its
+          augmented matrix has r nonzero rows, then the system has n − r free variables.
 
 
 
+          1.2−6  Theorem
 
 
+          A homogeneous linear system with more unknowns than equations has infinitely many unknowns.
+          1.2−7  Breakdown Elimination
 
 
+          Permanent failure with no solution
+
+                  x −  2y =  1  Subtract  3 times    x −  2y =  1
+
+                 3x −  6y =  11 eqn.  1 frome n q.  2        0y =  8
+                                8
+          The last equation 0y = ; therefore, there is no solution.
+          This system has no second pivot, since no zero allowed as a pivot.
 
 
+          Permanent failure with infinitely many solutions
+
+                  x −  2y =  1  Subtract  3 times  x −  2y =  1
+                 3x −  6y =  3 eqn.  1 from  e n.q   2  0y =  0
 
 
+                               0
+          Every y satisfies  0y = . There is only one equation  x −  2y =  1.
+          There are unique infinitely many solutions.
 
 
-                                                            32</code></pre>
+          Three Equations in Three Unknowns
+
+          To understand Gaussian elimination, you have to go beyond 2 by 2 systems.
+
+                                           2x +   4y −  2z =  2
+                                         
+          Consider the system equations:    4x +  9y −  3z =  8
+                                                        10
+                                          −  2x −  3y +  7z =
+
+                2x +   4y −  2z =  2  subtract  2 times  eqn .1  2x +  4y −  2z =  2
+              
+                                               q
+                                                                       z
+                4x + 9y − 3z = 8        from e n .2                    y +=  4
+              
+               −  2x −  3y +  7z =  10                    −  2x −  3y +  7z =  10
+                2x +   4y −  2z =  2  Add   eqn .1  2x +  4y −  2z =  2
+              
+                           z
+                                                           z
+                      y +=   4                         y +=   4
+               −  2x −  3y +  7z =  10  and eqn . 3             y +  5z =  12
+              </code></pre>
      	</div>
     
      </div>

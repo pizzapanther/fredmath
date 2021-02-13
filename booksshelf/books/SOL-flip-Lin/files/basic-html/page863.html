@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 863 - Linear Algebra Solution</title>
+        <title>Page 863 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 863 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 863 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 863</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,102 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> x =  y =  0
-                    
-                    
-                         z
-                       ∀∈
-                                                     0
-                                                    
-                                                     0
-                    Therefore, the eigenvector: V =  
-                                                1   
-                                                    
-                                                     1
-                                                    
-                Since the eigenvalue (λ =  ) 2   has only one−dimensional eigenspace.
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 847
+                                  
 
-                Therefore, the given matrix A is not diagonalizable over real numbers.
+                             u 2 , v 1  
+                   v =  u −            v
+                     2    2        2   1
+                                v
+                                 1
 
+                           −
+                       =  (1, 1, 0, 0) −  1   (1, 1, 0, 0)       (0, 2, 1, 0   ) (0, 2, 1, 0 )
+                                           − 
+                                                                 
+                                      5
+                       =  (1, 1, 0, 0) +  2 (0, 2, 1, 0 )
+                           −
+                                      5
 
-             Exercise
+                                          42
+                       =  (1, 1, 0, 0) +  ( 0,  ,  , 0 )
+                           −
+                                          55
+                                ,  , 0
+                       = ( 1,  −  1 2  )
+                              55
+                                                                        
+                            1      (     12      )                    v 2
+                                            ,  , 0
+                   q =                1,  −  55                   q =   
+                     2
+                                                                    2
+                          1+  1  +  4                                   v 2
+                             25 25
+                                   ,  , 0
+                       =   5  ( 1,− 12    )
+                           30     55
+                           5      1      2     
+                       =      ,−     ,      , 0
+                                                
+                           30     30     30    
 
-             Determine if the matrices are diagonalizable. If so, find a matrix P that diagonalizes A and determine
+                                                      )
+                   u   v =  (1, 2, 0,  1   −  ) (0, 2, 1, 0
+                     3   1
+                           =  4
+                                                  12
+                                                   ,  , 0
+                   u   3  v =  2  (1, 2, 0,  1   −  )  ( 1,  −  55  )
+                                2
+                           = 1−
+                                5
+                            =  3
+                             5
 
-             P − 1 AP
-                         2 −   2 −  2
-                                    
-                    A =      3 −  3 −  2
-                                    
-                          2 −  2 −  2 
-                                   
-             Solution
-                               2 −λ    − 2     − 2
-                det ( A−λ  ) I =  3  − 3−λ     − 2
-
-                                2      − 2    − 2 −λ
-                              (     2 )
-                                                                 +
-                                                                          −
-                               4 λ =  −  (3 λ  +  ) 8 12 12 4λ+  +  −  −  8 4 −  λ −  12 6
-                                                                             λ
-                                 +
-                            =  12 4 −  λ  3 λ  2  λ −  3  6 −  λ −  12
-                              −  λ =  3  3 λ −  2  2
-                                           λ −
-                                             )
-                            = − λλ + (  2  3λ +  2 = 0
-
-
-                The eigenvalues are: λ  1  =  −  , 2  2  =  − λ  1 λ =  3  0
-
-
-
-                For λ    −  2 ⇒    ( A λ =  −  I V = )  0
-                      1                 1    1
-
-
-                     4 −   2 −  2     x   1    0 
-                              2     y   
-                                          0
-                     3 −  1 −     1  =  
-                                     
-                                          0
-                     2 − 2   0    z   
-                                   1 
-                            4 −   2 −  2
-                                       
-                             3 −  1 −  2        3R
-                                         4R −     1
-                                              2
-                                      
-                             2 − 2  0     2R −  R
-                                               3   1
-                                                              863</code></pre>
+                                            
+                            u  , v      u  , v  
+                   v =  u −     3  1  v −    3  2  v `
+                     3    3       2   1       2   2
+                                v            v
+                                 1            2
+                                                                     3
+                                         4
+                                                                               ,  , 0
+                       =  (1, 2, 0,  1−  ) −  ( ) (0, 2, 1, 0 −  )  1  ( )( 1,  −  12  )
+                                                                  45
+                                                             1
+                                         5               1+  25  +  25       5 5
+                                    (   8 4     ) ( )( )(        12      )
+                                                    3 25
+                   =  (1, 2, 0,  1−  ) −  0,  ,  , 0 −  5 30  1,  −  5 5
+                                                                   ,  , 0
+                                        55
+                                            8
+                                                4
+                                                                  1
+                       =  (1, 2, 0,  1−  ) −  ( 0,  ,  , 0 −  ) ( 1  ,  −  1  ,  , 0 )
+                                            5  5        2    10   5
+                              1
+                                      −
+                                 −
+                       = ( 1 ,  , 1, 1   )
+                              2
+                          2
+                                                                                       
+                                                                      )
+                                      1                1  1                          v 3
+                   q   =                              (  ,  , 1, 1               q =   
+                                                                   −
+                                                               −
+                           ( ) ( )     + ( ) 1−  2  + ( ) 1−  2                         3
+                     3        2      2                  2  2                      3    v
+                                   1
+                            1
+                                +
+                                   2
+                            2</code></pre>
      	</div>
     
      </div>

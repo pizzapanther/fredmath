@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 211 - Linear Algebra Solution</title>
+        <title>Page 211 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 211 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 211 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 211</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.6 – The Properties of Determinants | 203
 
-                                                          3x +   2y +  3z =  3
-                                                         
-             Use Cramer's rule to solve the system        4x −  5y +  7z =  1
-                                                         
-                                                                       6
-                                                          2x +  3y −  2z =
-             Solution
-
-                     3   2    3 3    2
-
-                 D =  4  − 5  7 4 −
-                                      5
-                     2   3   − 2 2   3
-                   = 77
-
-                       3   2   3 3     2
-                 D =   1  − 5  7 1    − 5
-                  x
-                       6   3   − 2 6   3
-                     = 154
-
-                       3  3   3 33
-                 D =   4 1    7 41
-                   y
-                       2  6  − 2 26
-                     =    0
-
-                       3   2  3 3    2
-                 D =   4  − 51 4 −    5
-
-                  z
-                       2   3  6 2    3
-                     = − 7 7
+                               ( ) det B−
+                           det A       ( ) 0 −−       =
+                                                ( ) 1   1
+                                           =
+                                             1  − 1
+                           det ( AB =  ) det        = − 1
+                                 −
+                                            − 1  0  
+                                                         B
+                           ⇒     det ( AB−  ) ≠  det ( ) detA −  ( )
 
 
-                 x  = 154 = 2             x =  D x
-                     77                        D
-                    2 =
+               Exercise
 
-                                              D
-                 y =  0                   y =   y
-                                               D
+               Use row operations to show the 3 by 3 “Vandermonde determinant” is
 
+                                                    1 aa  2 
+                                                           
+                                                                                   )
+                                                  
+                                                                            )( −
+                                               det 1 b b   2   =  (b ac ac b
+                                                                  −
+                                                                     )( −
+                                                           
+                                                    1 c  c 2 
+                                                           
+               Solution
+                          1 aa  2         1 aa  2 
+                                                  
+                        
+                                          
+                     det 1 bb    2   =  det 1 bb  2   R − R
+                                                    2    1
+                          1 c  c 2        1 c  c 2   R −  R
+                                                    3    1
+                                            1  a       a 2  
+                                                            
+                                          
+                                     =det 0 ba b −     2  a 2          factor  (     b a )
+                                                                             −
+                                                −
+                                                            
+                                            0 ca c −  2  a 2 
+                                                −
+                                                            
+                                                   1  a       a 2  
+                                                                   
+                                          −
+                                     =  (ba  )det 0   1      b a 
+                                                                +
+                                                             2    2   R − (ca   )R
+                                                                              −
+                                                       − 
+                                                   0 c ac −     a     2          2
 
-                 z = −  77                z =  D z
-                      77                      D
-                  = − 1
+                                                           (c −  ac   a ) (b−  +  ac  a ) (c=  −  ac  a b −  −  ) a
+                                                                )( +
+                                                                               )( −
+                                                                                              )( +
+                                                     1 a     a 2      
+                                          −
+                                     =  (ba  )det 0 1        b a        Multiply the main diagonal by (b - a)
+                                                               +
+                                                 
+                                                   00   (c ac b      ) 
+                                                            −
+                                                               )( −
+                                                                      
 
-                                      )
-                                   −
-                ∴ Solution: (2, 0,  1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              211</code></pre>
+                                     =  (b ac ac b−  )( −  )( −  )</code></pre>
      	</div>
     
      </div>

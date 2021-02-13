@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 127 - Linear Algebra Solution</title>
+        <title>Page 127 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 127 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 127 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 127</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices | 119
 
-             Find L and U for the symmetric matrix
+                  1   1      1     1     0    0 
+                      2      2     2           
+                  0   3       3    1     1    0 
+                      2     − 2    2           
+                                                 R +  R
+                  0  −  3    3    −  1   0    1  3    2
+                       2     2      2          
 
+                  1  1     1     1    0   0 
+                      2    2     2          
+                  0   3     3    1    1   0
+                                             
+                      2   − 2    2          
+                                            
+                  0  0     0     0    1   1 
+                                            
 
-                                        a   a   a    a
-                                         a  b   b    b 
-                                   A =                
-                                        a   b   c    c
-                                                      
-                                         a  b   c    d 
-
-              Find four conditions on a, b, c, d to get  A =  LU with four pivots
-
-             Solution
-
-                      a   a   a    a
-                       a  b   b    b 
-                 A =                
-                      a   b   c    c
-                                    
-                       a  b   c    d 
-
-                      1   0   0    0  a    a       a       a 
-                      1  1    0    0   0  ba     ba      ba   
-                                                     −
-                                             −
-                                                             −
-                   =                                          
-                      1   1   1    0  0    0     c b     c b
-                                                     −
-                                                             −
-                                                              
-                                                              −
-                      1  1    1   1   0    0       0     dc   
-
-
-             Exercise
-             Determine whether the given matrix is invertible
-
-                                            
-                                     − 10 0 
-                                     0  20 
-                                            
-                                     0  0  1 
-                                           3
-             Solution
-
-                  The matrix is a diagonal matrix with nonzero entries on the diagonal, so it is invertible.
-
-                              − 1
-                                  −   1 0 0
-                    − 10 0                
-                    0  20      =    0  1  0
-                                             
-                                      2   
-                    0  0   1       0  03  
-                           3 
+                 B − 1  doesn’t exist, and if we add the columns in B, the result is zero.
 
 
              Exercise
 
-             Find  A 2 , A −  2 , and A −  k   by inspection   A =    1   0   
-                                                          0 − 2 
+             Find  A − 1  using the Gauss-Jordan method, which has a remarkable inverse.
+
+                                        1   −  1  1    −  1
+                                         0  1    − 1   1  
+                                   A =                   
+                                        0   0     1    − 1
+                                                         
+                                         0  0     0    1  
+
              Solution
 
+                  1   −  1  1    −  1  1   0    0   0 R +   R 2
+                                                       
+                                                         1
+                  0   1     1    1     0   1    0   0 
+                           −                          
+                  0   0     1    − 1   0   0    1   0
+                                                      
+                  0   0     0    1     0   0    0   1 
 
-                                                             127</code></pre>
+                  1   0   0     0    1    1    0   0
+                                                      
+                  0  1     1    1    0    1    0   0 R +   R
+                          −                            2    3
+                  0  0    1     − 1  0    0    1   0
+                                                     
+                  0  0    0     1    0    0    0   1 
+
+                  1   0   0    0    1    1   0    0
+                  0  1    0    0    0    1   1    0 
+                                                   
+                  0  0    1   − 1   0    0   1    0 R +   R
+                                                    
+                                                     3     4
+                  0  0    0    1    0    0   0    1 
+
+                  1  0    0   0    1    1   0    0
+                  0  1    0   0    0    1   1    0 
+                                                  
+                  0  0    1   0    0    0   1    1
+                                                  
+                  0  0    0   1    0    0   0    1 </code></pre>
      	</div>
     
      </div>

@@ -152,65 +152,138 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Singular versus Invertible
+    <pre style="white-space:pre-line"><code>1.2 – Gaussian Elimination  | 17
 
 
-             A − 1  exists when A has a full set of n pivots. (Row exchanges allowed)
+               (7 − 14)   Use the Gauss-Jordan method to solve the system:
 
-                •  With n pivots, elimination solves all the equations  Ax =  b . The columns  x  go into  A − 1 . Then
-                                                                        i   i                i
-                    AA − 1  =  I  is at least a right-inverse.
+                           y
+                        x −+  5z = − 6                  x +   2y −  3z =  −  15        x +  x +  2x =  8
+                                                        
+                                                                                       
+                7.     3x + 3y −=  10            10.   2x −  3y +  4z =  18            −  x −  1  2x + 2  3x = 3  1
+                                 z
+                      
+                                    5                                1          13.     1     2     3
+                                                                y
+                                                                    z
+                        x +  3y +  2z =                  − 3x + +=                   
+                                                                                        3x −  1  7x +  2  4x =  3  10
+                                                                                       
+                             y
+                        2x −+  4z = − 3                  x +  2y +  3z =  10
+                                                                                                   z
+                                                        
+                8.     x −  2y −  10z =  −  6    11.   4x +  5y +  6z =  11            x +  2y +=  8
+                      
+                                                                                       
+                                                                                                       1
+                                                                                          x
+                                                                                14.    −+  3y − 2z =
+                         x
+                               +
+                        3        4z =  7                7x +  8y +  9z =  12          3x +  4y −  7z =  10
+                                                                                       
+                       4x +   3y −  5z =  −  29         2x +   y +  2z =  4
+                                                       
+                                  z
+                9.      3x − 7y −= −  19         12.   2x +  2      =  y  5
+                                                       
+                                                              y
+                       2x +  5y +  2z =  −  10          2x −+  6z =  2
 
-                •  Elimination is really a sequence of multiplications.
-
-
-             Conclusion
-
-                If A doesn’t have n pivots, elimination will lead to a zero row.
-
-                Elimination steps are taken by an invertible M. So a row of MA is zero.
-                If  AB =  then  MAB =   M . The zero row of MA, times B, gives a zero row of M.
-                          I
-                The invertible matrix M can’t have a zero row! A must have n pivots if  AB = .
-                                                                                             I
-
-
-             Elementary Matrices
-
-             Definition
-
-             Let e be an elementary row operation. Then the  nn×  elementary matrix E associated with e is the matrix
-             obtained by applying e to thenn×  identity matrix. Thus
-
-                                                             E =  eI
-
-             Example
-
-                     1   0 
-                a)          →    Multiply R of  I  by  − 3
-                      0 − 3                 2
-
-                      1 0   0   0
-                      01    0   0 
-                b)                 →    Multiply the third row by  − 5
-                      0 0 − 50
-                                 
-                      00    0   1 
-
-                      01 0
-                c)       1 00     →  Interchange the first and second rows
-                        0 01  
-
-
-                      1  00
-                d)  −      31 0     →  Add  − 3 times R  to R
-                                                             2
-                                                       1
-                       0  01 
-
-
-
-                                                              35</code></pre>
+               (15 − 51)  Use augmented elimination to solve linear system:
+                       2x −   5y +  3z =  1           −   2x +  6y +  7z =  3         2x − 2y += −  4
+                                                                                                   z
+                15.                                                                 
+                        x −  2y −  2z =  8     22.     −  4x +  5y +  3z =  7    29.    6x +  4y −  3z =  −  24
+                                                      −  6x +  3y +  5z =  −  4         x −  2y +  2z =  1
+                                z
+                            y
+                        x + + =    2                                                
+                      
+                                    5
+                             y z
+                                                                z
+                                                                                                  z
+                                                            y
+                16.   2x + − =                        2x − +=    1                    9x + 3y +=  4
+                       x − + = −   2                                                
+                               z
+                           y
+                                                                                                  z
+                                                                                                      2
+                                               23.    3x −  3y +  4z =  5     30.    16x +  4y +=
+                                                      4x −  2y +  3z =  4             25x + 5y +=   2
+                                                                                                  z
+                                z
+                            y
+                       2x + +=    9                                                 
+                      
+                         x
+                                z
+                                                                                             y
+                17.   −−    y + = 1                  3x −   4y +  4z =  7            2x −+   2z = − 8
+                           y   z  9            24.                            31.   
+                                                           y
+                       3x − +=                        x −−  2z =  2                   x +  2y −  3z =  9
+                                                      2x −  3y +  6z =  5              3x −−   4z =  3
+                                                                                             y
+                              y
+                                 z
+                           3 −= −    1                                              
+                18.     x + 5y −= −  4               x −  2y −=  2                    x      −  3z =  −  5
+                                 z
+                                                               z
+                      
+                                                                                    
+                                                               z
+                                                           y
+                                                                                             y
+                                                                  4
+                       −  3x +  6y +  2z =  11  25.    2x − +=                32.    2x −+    2z = 16
+                                                      −+  y + =  4                    7x −  3y −  5z =  19
+                                                               z
+                                                        x
+                        x +  3y +  4z =  14                                         
+                      
+                19.    2x −  3y +  2z =  10          x +  y += 3                      x +  2y −=  5
+                                                                                                 z
+                                                              z
+                        3x − +=     9          26.     −+ 2z =                33.    2x −+   3z =
+                                                                 1
+                                                                                             y
+                                                        y
+                                                                                                     0
+                              y
+                                 z
+                                                                                    
+                                                       −+  z =  0                         2 +=    1
+                                                         x
+                                                                                             y
+                                                                                                 z
+                                  z
+                        x +  4y −=  20                                              
+                20.     3x + 2y +=   8                3x +  y +  3z =  14             x +  y +=  6
+                                   z
+                                                                                                 z
+                      
+                                               27.                 37         34.                  1
+                       2x −  3y +  2z =  −  16       7x +  5y +  8z =                3x +  4y −  7z =
+                                                       x +  3y +  2z =  9             2x −+   3z =  5
+                                                                                             y
+                                z
+                          2y −=   7                                                 
+                21.     x +  2y +=  17               4x − 2y +=  7                    3x +   2y +  3z =  3
+                                                                z
+                                 z
+                      
+                                      1        28.     x +  y += − 2          35.    4x −  5y +  7z =  1
+                                                              z
+                       2x −  3y +  2z =  −                                          
+                                                                                     
+                                                                z
+                                                      4x +  2y +=  3                  2x +  3y −  2z =  6</code></pre>
      	</div>
     
      </div>

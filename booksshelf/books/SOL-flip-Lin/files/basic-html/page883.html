@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 883 - Linear Algebra Solution</title>
+        <title>Page 883 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 883 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 883 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 883</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 867
 
-                         T
-             Prove that  A  is always similar to A (λ′s are the same):
-                                                                          T
-              a)  For one Jordan block  J , find  M  so that  M − 1 JM =  J .
-                                         i        i           i   i  i    i
-                                                                                        T
-              b)  For any J with blocks  J , build  M   from blocks so that  M  − 1 JM =  J .
-                                         i          0                        0    0
-                                                                    T
-                                                    T
-              c)  For any  A =  MJM − 1 : Show that  A   is similar to  J  and so to J and so to A.
-             Solution
-                a)  For one Jordan block  J , then
-                                          i
-                                     1 λ   1  0       0                1   λ                
-                                  1        λ  1   0                 1      1 λ              
-                                                                                            
-                                             λ                            0  1 λ          
-                                                                               =
-                                                                                            
-                                                    1                                   
-                                                                                            
-                       1                              λ   1                 0  0   0      λ  
-                                         T
-                      So, J is similar to  J
+                     
+                         
+                    u  ,  v  
+                      3   2  v =   1  (1,1,    − 1           ) (0,1,1
+                                                                )
+                                             ) (0,1,1 
 
-                                                           T
-                b)  For any J with block  J , that satisfies  J =  M − 1 JM
-                                          i                i     i   i  i
-                                                                              '
-                      Let  M  be the block-diagonal matrix consisting of the  Ms  along the diagonal. Then
-                            0                                                 i
-                                    M − 1                 
-                                    1                      J 1               M 1                
-                                            − 1                J                  M             
-                      M − 1 JM =        M  2                    2                2           
-                                                                                                     
-                                                                               
-                        0     0                                                              
-                                                       − 1              J                   M   
-                                                     M                    n                    n 
-                                                       n 
-                                     M − 1 J M                               
-                                     1   1  1                                
-                                                M − 1 J M                    
-                                 =               2   2   2                    
-                                                                            
-                                                                     1       
-                                                                  M −  JM 
-                                                                    n   n   n  
-                                     J T             
-                                     1               
-                                          T          
-                                 =      J 2           
-                                                    
-                                                   T  
-                                                  J 
-                                                   n 
-                                 =  J T
+                        2    2   1                    
+                      v
+                       2
+                                          )
+                                =  ( 0 0,1,1
+                                = (0, 0, 0    )
+                                              
+                            u 3 , v 1    u 3 , v 2  
+                   v =  u −            v −           v
+                     3    3       2    1       2    2
+                                v             v
+                                 1             2
+                       =  (1, 1,    −  1 ) (1, 0, 0  −  ) (0, 0, 0  −  )
+
+                       =  (0, 1,   −  ) 1
+
+                         
+                        v
+                   q =    1
+                     1   v
+                          1
+                       = 1 (1, 0, 0    )
+                         1
+
+                       = (1,0,0    )
+                          
+                        v
+                   q =     2
+                     2   v
+                           2
+                                    )
+                       =  1  (0,1,1
+                           2
+
+                             1     1  
+                       =   0,   ,    
+                              2    2 
+                          
+                        v
+                   q =    3
+                     3   v  3
 
 
+                       =  1  (0, 1,   −  ) 1
+                           2
 
-                                                              883</code></pre>
+                             1       1  
+                       =   0,   , −    
+                              2      2 
+
+                                                               ) (
+                                                     ) (
+                   The orthogonal basis:     ( { 1, 0, 0 ,  0, 1, 1 ,  0, 1,  1−  )}
+                   The orthogonal basis:
+
+                                      1     1        1      1    
+                        (1, 0, 0 ,     )      0,   ,     ,     0,   ,  −    
+                                       2    2         2      2  </code></pre>
      	</div>
     
      </div>

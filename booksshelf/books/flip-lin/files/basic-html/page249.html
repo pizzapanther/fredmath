@@ -152,82 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>( )
-                                                                        T e    =  T (10 0, ,  ) (10 0, ,=  )
-               Reflection about                                             1                         1   0  0
-                                                                          ( )
-                                                                                                               
-               the xy-plane                                             T e 2  = T  (0 10,,  ) (0 10,=  −  ,  )        0 − 10
-                                                                                                               
-               T  (x,y,z ) (x, y,z=  −  )                                                              0   0  1  
-                                                                          ( )
-                                                                        T e 3  = T (0 01, ,  ) (0 01, ,=  )
-
-
-
-                                                                          ( )
-                                                                        T e    = T (10 0, ,  ) ( 10 0, ,= −  )
-               Reflection about                                             1                         −   10 0
-                                                                          ( )
-               the yz-plane                                             T e    = T (01 0,,  ) (01 0,,=  )        0  10
-                                                                                                               
-                                                                                                               
-               T  (x,y,z ) ( x,y,z= −  )                                    2                            0  01  
-                                                                          ( )
-                                                                        T e 3  = T (0 01, ,  ) (0 01, ,=  )
-
-
-
-               Orthogonal
-                                                                          ( )
-                                                                                          10
-                                                                                   1 0 =
-                                                                                           ,
-                                                                                    ,
-               projection                                               Te  1  = T ( ) ( )               10
-               on the x-axis                                                                             00 
-                                                                          ( )
-                                                                                    01
-                                                                        Te     = T ( ) (0 0, =  ,  )        
-               T  (x,y ) ( 0x,=  )                                          2
-
-               Orthogonal                                                 ( )
-                                                                                   1 0 =
-               projection                                               Te  1  = T  ( ) (0 0,  ,  )      00
-               on the y-axis                                                                             01 
-                                                                          ( )
-                                                                                     ,
-                                                                                    01 =
-                                                                                           01
-                                                                                            ,
-                                                                        Te     = T ( ) ( )                  
-               T  (x,y ) (0,y=  )                                           2
-
-
-               Orthogonal
-               projection                                               T (1 0 0,,  ) (1 0 0,,=  )      1 00
-                                                                                                               
-               on the xy-Plane                                          T (01 0,,  ) (01 0,,=  )         01 0
-                                                                                                               
-                                                                        T (00 1,,  ) (000,,=  )          000   
-               T  (x,y,z ) (x,y,=  ) 0
+    <pre style="white-space:pre-line"><code>Section 2.9 – Rank and the Fundamental Matrix Spaces
 
 
 
 
 
+               The Reduced Row Echelon Form (rref) is a matrix (R) with each pivot column has only one nonzero
+               entry (the pivots which is always 1).
+
+                                   1   3    0   2    − 1
+                                                         
+                              R =      0  0  1  4   − 3
+                                                         
+                                    0   0  0   0     0   
+
+                                  A
+                        R rref  ( )
+                          =
+
+
+               2.9−1        Rank of a Matrix
+
+
+               The rank of a matrix A (m by n) is the number of nonzero rows in the row-reduced echelon form of A
+               (it is the number of pivot). The common dimension of the row space and column space of a matrix A is
+               called the rank of A and is denoted by
+
+                                                                     A
+                                                               rank () r
+                                                                        =
+
+               Note:
+
+                   The rank of a matrix is well defined due to the uniqueness of the row-reduced echelon form. No
+                   matter what sequence of elementary row operations is performed to put the given matrix in row-
+                   reduced echelon form; there will always be the same number of nonzero rows.
+
+
+               2.9−2        Theorem
+
+               The row space and column space of a matrix A have the same dimension
 
 
 
+               The objective is to connect rank and dimension.
+
+                   •  The rank of a matrix is the number of pivots.
+
+                   •  The dimension of a subspace is the number of vectors in a basis.
 
 
+                   A has full row rank if every row has a pivot: r m=  . No zero in R.
 
-
-
-
-
-
-                                                              249</code></pre>
+                   A has full column rank if every column has a pivot: r =  n . No free variables.</code></pre>
      	</div>
     
      </div>

@@ -152,79 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  − 11
-         P =      
-               1  1 
+    <pre style="white-space:pre-line"><code>280 | 3. 3  –  Gram-Schmidt Process
+
+          3.3−8       Calculus:  Applying the Gram-Schmidt Process
 
 
-         P − 1  = − 1      1  − 1  
-                 2   −  1 −  1 
-
-                 −  1  1 
-             =      2  2   
-                 1   1 
-                 2   2 
-
-
-             −  1  1  1  1            0  0 
-              2   2   2  2   −  11          −  11
-              1   1  1  1    1  1   =    1  1     1  1 
-                                     2  2     
-              2   2   2  2 
-                                          0 0
-                                      =      
-                                          0  1 
-
-              −  1  1 
-              2   2    .5 .5  − 1 1       0 0
-              1   1    .5 .5   1  1   =       
-                                                     
-                                          0 1
-              2   2 
-               P − 1       A         P      =     D
-
-
-        Definition
-
-        A square matrix A is called diagonalizable if there is an invertible matrix P such that  P − 1 AP   is diagonal;
-
-        the matrix P is said to diagonalize A.
+          We can apply the Gram-Schmidt orthogonalization procedure to generate some polynomials that are
+          orthonormal on the interval  x ∈ [ 1, 1−  ]  with inner product
 
 
 
+                                                             ( ) ( ) xdx
+                                                 , p  q = ∫ 1  p xq
+
+                                                         − 1
+
+          Example 3.3-4
+
+          Apply the Gram-Schmidt orthonormalization process to the basis  B = { 1, , x x 2 }  in   using the inner
+                                                                                            2
+          product.
+
+          Solution
+                 {      2 }
+              B =  1, , x x
+
+                              
+                     
+                                       
+                                             2
+             Let     u = 1, u =     , x  u =  x
+                      1        2        3
+                  
+              v =  u = 1
+               1    1
+                        1
+               v  , v  = ∫  dx
+                1  1      − 1
+
+                           1
+                       =  x
+                            − 1
+
+                       =  2
 
 
+                         1
+               u  , v  = ∫   x dx
+                2   1      − 1
 
+                            2
+                       =  1  x    1
+                         2     − 1
+                       =  0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          298</code></pre>
+                            
+                       u  ,  v  
+              v =  u −    2   1  v
+               2    2        2   1
+                          v
+                           1
+                 =  x −  0 ( ) 1
+                       2
+                 =     x</code></pre>
      	</div>
     
      </div>

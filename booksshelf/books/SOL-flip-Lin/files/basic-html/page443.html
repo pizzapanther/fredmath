@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 443 - Linear Algebra Solution</title>
+        <title>Page 443 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 443 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 443 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 443</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>b)  By substituting  x +  4x with new variable z, then the column space consists of the vectors
-                                         1
-                                               2
-                           x +  4x                0
-                           1     2       1     
-                                                   
-                           2x +  9x   =  z   2 +    x 2 
-                                                    1
-                                         
-                                             
-                           1     2             
-                                                    0
-                           x −  4x  −   − 1    
-                           1      2 
-                                                                0
-                                                          1   
-                                                            
-                                                        
-                                                               
-                        They are linear combinations of  2 ,  1
-                                                        
-                                                               
-                                                            
-                                                             
-                                                                0
-                                                          − 1   
+    <pre style="white-space:pre-line"><code>2.3 – Orthogonality | 431
+
+                                          ac
+                            ( ) 1 →  d = −+
+                           
+                                       1    1
+                            ( ) 3 →  b =  3 a +  3 c
+                           
+                          { ( ) 2  2a + 1 a +  1 c c ac =  0
+                                              ++ −
+                                           3
+                                      3
+                          { ( ) 2  10 a +  1 c =  0
+                                 3
+                                       3
+                              c = − 10a
+
+                               d = − 11a
+                              
+                                b = − 3a
+                                 )
+                       ( , ,,a  b c  d =  a ( ,1    3, −−  10, −  11 )
+
+                        ( { 1, 0,    −  1, 1 ,      −  1 ,    −  3, 1, 0 ,    −  3,  −  10,  −  11 )}
+
+                                                                ) (1,
+                                                  ) (1,
+                                   ) (2, 1, 1,
+
+                                                                       0
+
+                                                            +
+                                                                 −
+                       (1, 0,   −  1, 1 ) (1,       −  3,  −  10,  −  11 =  ) 1 10 11 =
+                                                             −−
+                       (2, 1, 1,    − 1 ) (1,       − 3,  − 10,  − 11 ) =  2 3 10 11 =  0
+                                                                    +
+                       (1,  − 3, 1, 0 ) (1,    − 3, − 10, − 11 ) 1 9 10= +−  =  0
 
 
                Exercise
-                                                   ]
-               Show that the matrices A and [   A AB  (with extra columns) have the same column space. But find a
-                                    ( )                                                                      n
-                                       2
-                                                       C
-                                                                                                   C
-               square matrix with CA      smaller than  ( ) A . Important point: An n by n matrix has  ( ) A = 
-               exactly when A is an ______ matrix.
+                                                                           
+               Find a unit vector that is orthogonal to both  u  = (1, 0, 1) and v  = (0, 1, 1)
                Solution
-                   Each column of AB is a combination of the columns of A (the combining coefficients are the
-                                                                                                         ]
-                   entries in the corresponding column of B). So, any combination of the columns of [   A AB  is a
-                                                                             ]
-                   combination of the columns of A alone. Thus, A and [   A AB  have the same column space.
-                                                                            ( )
-                             01          2    01    01     0 0
-                   Let  A =       ; then  A =            =      , so CA 2  =  Z .
-                             00               00     00     00 
-                                             1
-                                            
-                   CA                         .
-                     ( )  is the line through
-                                             0
-                                            
-                                                   n
-                                          C
-                   Any n by n matrix has  ( ) A = R exactly when A is an invertible matrix, because  Ax b=  is
+                                                                                         
+                   Let  w = ( w 1 , w 2  , w 3 )  be the unit vector that is orthogonal to both u  and v .
 
-                   solvable for any given b when A is invertible.
-
-
-               Exercise
-
-               The column of AB are combinations of the columns of A. This means: The column space of AB is
-               contained in (possibly equal to) to the column space of A. Give an example where the column spaces A
-
-               and AB are not equal.
-               Solution
-
-                   The column space of AB is contained in (possibly equal to) to the column space of A.
-                   B =  0  and  A ≠  is a case when  AB =  has a smaller column space than A.
-                                  0
-                                                         0
-
-
-
-
-
-
-                                                               443</code></pre>
+                           ( ) ( ) ( )
+                      
+                       w =
+                   u     1 w 1  +  0 w 2  +  1 w 3
+                         =  w + w =  0
+                            1    3
+                     w = −  w
+                       3      1
+                            ( ) ( ) ( )
+                      
+                       w =
+                   v     0 w 1  +  1 w 2  +  1 w 3
+                         =  w + w =  0
+                            2     3
+                     w = −  w
+                       3      2
+                   w =   w = −  w
+                     1    2      3
+                                                           
+                   The orthogonal vector to both u  and  v  is  w = (1, 1,  1−  ) , therefore the unit vector is
+                     
+                    w  =         1        (1, 1,  1
+                                                  )
+                                                −
+                     
+                    w      1 + 1 +−     2
+                            2
+                                2
+                                   ( ) 1</code></pre>
      	</div>
     
      </div>

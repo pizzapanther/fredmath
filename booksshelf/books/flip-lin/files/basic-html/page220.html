@@ -152,89 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Gram-Schmidt Process (Orthonormal)
+    <pre style="white-space:pre-line"><code>202 | 2.7 – Coordinates, Basis and Dimension
 
-                                                                                        
-                                                       n
-          Suppose v  , , v  linearly independent in  , construct n orthonormal u     , , u  that span the
-                                                                                       
-                       
-                    1       n                                                   1        n
-                                                 {
-                            {
-          same space:  span  u 1 , , u  k }  = span  v 1 , , v k }
-                                                      
-
-                                                           
-          Step 1: Since v  are linearly independent (≠ 0), so  v  ≠  0 (to create a normal vector)
-                         i                                  1
-                            v                                                               
-                                                                                               { }
-                                                                                    { }
-                   Let u =    1  =  q , then  u  = 1 since u is orthonormal and span  u  =  span v
-                        1    v 1   1         1            1                           1           1
-                                     
-                   w =  v   ⇒   v =  w u
-                    1    1       1     1  1
-
-                                   
-                                    )
-          Step 2:  w =  v − ( v    qq
-                                 
-                   2     2     2   1   1
-                                   
-                            v 2    u     1      
-                    w =  v −         v       ( w ⊥  u  )
-                     2     2     v 1   1         2    1
-                                                      
-                                          )
-                   v =  2  w u +  2  2  ( v 2   u u 1  w =  2  w u
-                                      
-                                                           2
-                                                               2
-                                         1
-                         
-                        w
-                   q =    2
-                    2
-                         w
-                          2
+                                   c +  2c +  3c =  5
+                                    1     2     3
+                                 
+                 Which gives:     2c +  1  9c +  2  3c =  3  −  1
+                                 
+                                   c 1      +  4c =  3  9
+                                 
+                 Solving this system, we obtain c =  1  1, c =  2  −  1, c =  3  2.
+                            
+                 Therefore ( ) v  = (1,  1, 2−  )
+                             S     
+             b)  v =  ( ) 1 v−  1  +  3v +  2  2v
+                                       3
+                                                          )
+                   =  ( )(1, 2, 1−  1  ) 3 2, 9, 0+  (  )  2+  (3, 3, 4
+                               )
+                   =  (11, 31, 7
 
 
-                                            
-          Step 3:   w =  v −  ( v    q   ) q −  ( v    q   ) q
-                    3    3   3    1  1     3   2   2
-                        w 3
-                   q =   w
-                          
-                     3
-                           3                                                                   
+          2.7−7       Dimension
 
-                                                                                              v 1
-                                                                                         q =   v
-                                                                                               
-                                                                                           1
-                                                                                                1
-                                                                                               
-                                                                                         w 2
-                                     )
-                   w =   v − ( v    qq                                                   q =   
-                                  
-                     2    2     2   1   1                                                 2    w
-                                                                                                 2
-                                                                                               
-                                                                                      w 3
-                   w =  v −  ( v      qq −  )  ( v   q  ) q                             q =   
-                                             
-                    3    3     3   1   1        2   2                                     3    w 3
-                                                                                               
-                                                                                   w n
-                   w =  v −  ( v   qq − )  ( v   q  ) q −   −   ( v   q  ) q         q =   
-                    n     n    n    1   1    n    2   2           n    n −  1  n −  1     n    w n
+
+          The number of vectors is a basis defined the dimension number.
+          Dimension is the number columns minus the pivots column(s), as  we defined the number(s) of free
+          variable(s).
+                    
+                             
+                                      
+          If v  , , v   and  w  , , w  are both bases for the same vector space, then m = n.
+                                 
+             1        m       1        n
+
+          Note
+
+          V may have many different bases, but they all must have the same number of elements.
 
 
 
-                                                           220</code></pre>
+
+          Proof
+             Let S and W be bases of V can be written as a linear combination of vectors in S.
+                                 
+                                              s
+                         w =  1  as +    +  a 1mm
+                               11 1
+                                             
+                                               s
+                                  s +
+                        w =  2  a 21 1   +  a 2mm
+                                     
+                                             
+                                               s
+                         w =  n  as +    +  a nm m
+                                n
+                                11
+                                                  
+             But since V is a basis, cw + 11    +  c w =  0   ⇔    c =  i  0  (to be linearly independent, otherwise
+                                                 nn
+                                                           0
+             to be linearly dependent with at least 1 of tc ≠ )
+                                                        i
+                (
+                                               s +
+                                                                                            s
+                                                            s
+                                 s
+              c a s +      +  a 1mm ) +  c 2 ( a 211  +  a 2mm ) +  +  c n ( a s + 11  +  a nmm )  =  0
+               1
+                  111
+                                                                            n
+              ( ca   +  c a  +    +  c a  1 ) s +  1  +  ( ca  +  c a  +  +  c a  ) s m  =  0
+                                                                            nnm
+                        2 21
+               1 11
+                                                      1 1m
+                                                              2 2m
+                                     nn</code></pre>
      	</div>
     
      </div>

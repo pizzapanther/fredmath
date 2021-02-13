@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 704 - Linear Algebra Solution</title>
+        <title>Page 704 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 704 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 704 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 704</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution             Section 4.3 – LU−Decompositions
+    <pre style="white-space:pre-line"><code>692 | 2. 9 − S OL U T I ON
+
+               1    1     2   2
+                0  c − 1  0   0 
+                                
+                0   0    0   0  
 
 
+             a)  If c  = 1, then
 
-          Exercise
+                  1   1    2   2
+                                 
+                   0  0    0   0 
+                                 
+                   0  0    0   0 
+
+                 This has only one pivot (first column) and 3 free variables  x  , , x .
+                                                                              x
+                                                                           2   3   4
+                                         1 −  2 −  2 −
+                                         1  0    0  
+                 The nullspace matrix:             
+                                         0  1    0 
+                                                   
+                                         0  0    1  
+
+             b)  If c  ≠ 1, then
+
+                  1    1     2    2
+                   0  c − 1  0    0        1  R
+                                     
+                                        c− 1  2
+                   0   0     0    0 
+                                    
+
+                   1  1    2   2
+                   0  1    0   0          R
+                                     R −   1
+                                        2
+                   0  0    0   0 
+                                 
+                  1   0    2   2
+                   0  1    0   0 
+                                 
+                   0  0    0   0 
+                                 
+                                      (
+                 There are two pivots  C 1 , C 2 )  and 2 free variables  x 3 , x
+                                                                         4
+
+                                        −   2 −  2
+                                         0  0  
+                 The nullspace matrix:        
+                                         1  0 
+                                              
+                                         0  1  
 
 
-          What matrix E puts A into triangular form  EA U=  ? Multiply by  E − 1  =  L  to factor A into  LU :
+                    −
+                    1 c    2 
+              A =             
+                    0    2 c−  
 
-                   2   1   0
-                             
-              A =      0  4  2
-                             
-                    6   3  5  
-          Solution
-
-                    2  1   0
-              A =      0  4  2   
-                    6  3   5 
-                             
-                   2  1    0
-                             
-                   0  4    2
-                            
-                   6  3    5    R −  3R
-                                  3     1   :l 31
-                   2  1    0
-                   0  4    2 = U
-                             
-                            
-                   0  0    5 
-                            
-
-                        1   0   0 2    1   0
-              E   A =    0  1   0  0   4   2 
-               31                            
-                                             
-                       − 3  0   1  6   3   5 
-                        2  1   0
-                                  
-                    =      0  4  2 = U
-                                  
-                          0  0  5   
-
-                    1   0   0
-                               
-              E =     0  1  0
-                               
-                    3   0   1 
-                    −         
-
-                         1   0   0
-              L =  E − 1   =    0  1  0   
-                                   
-                          3  0   1 
-              A LU
-                =
-                   1   0    0 2   1    0
-                                           
-                =    0  1  0  0  4    2
-                                           
-                              
-                   3   0    1  0  0    5 
-                                        
-
-                                                           704</code></pre>
+             a)  If c = 1</code></pre>
      	</div>
     
      </div>

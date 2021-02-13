@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 737 - Linear Algebra Solution</title>
+        <title>Page 737 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 737 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 737 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 737</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1    0
-                        A =     1              Lower Triangular
-                         2       R  1 −  
-                                 1    
-
-                    For across  R :
-                                2
-                       The current is:  i =  i
-                                        3   2
-                       The drop voltage: v =  v −  R i
-                                           3    3    22
-
-                         v       v − R i 
-                          3    =   2  22  
-                          i   3         i 2    
-
-                                 1 − R    v    2  
-                             =       2       
-                                 0  1      i   2   
-
-                               1 − R 
-                        A =        2           Upper Triangular
-                         1    0   1  
-                                     
-                    The transfer matrix of the ladder network A:
-
-                    A =  AA
-                          12
-
-                           1 − R     1  0
-                       =       2     1    
-                           0  1      −  1
-                                        R 1     
-                            R         
-                           1+  R 2  −  R   2
-                       =      1       
-                            1         
-                           −  R    1  
-                             1        
+    <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces | 725
 
 
-                     v       12   
-                b)    2    =     −   12  +  6  
-                      i   2       R 1    
+                     1  1
+                     0  2     R
+                           
+                               1
+                             2  2
+                     0  3 
+                          
+                     1  1
+                          
+                     0  1
+                         
+                     0  3 
+                             R − 3R 2
+                                3
+                     1  1
+                           
+                     0  1
+                          
+                     0  0 
+                          
+                         A
+                   rank () =  2
+                                     −    1   1
+                                0
+                                                 
+                     T
+                    AA =    1       1        0  2
+                                                 
+                            1  2    2         
+                                          − 1  2 
+                             2   − 1
+                         =         
+                             − 1  9  
 
-                       v =  12
-                        2
-                     i =  −  12  +  6
-                      2    R
-                            1
-                     v       v − R i 
-                      3      =     2  22    
-                      i   3     i 2  
+                     2   − 1
+                            
+                     − 1  9    2R +  R 1
+                                   2
+                     2  − 1
+                           
+                     0  17 
+                        ( )
+                           T
+                   rank A A =    2
 
-                                    12      
-                           12 R   −  −  +  6   
-                     9        2     R      
-                      =             1     
-                     4
-                             −  12  +  6  
-                                R 1          
+                            1   1       0   −
+                      T
+                    AA =    0   2     1    1  2  2 1   
+                            − 1  2            
+                             2  2   1
+                         =     2  4  4   
 
-                                                              737</code></pre>
+                               1  4  5   
+
+                     2  2    1
+                     2  4    4         R
+                                   R −   1
+                                      2
+                              
+                     1  4    5    2R −  R
+                                       3   1
+                     2  2    1
+                     0  2    3
+                               
+                              
+                              
+                     0  6    9    R −  3R 2
+                                     3</code></pre>
      	</div>
     
      </div>

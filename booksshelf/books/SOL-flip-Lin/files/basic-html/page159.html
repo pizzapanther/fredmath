@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 159 - Linear Algebra Solution</title>
+        <title>Page 159 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 159 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 159 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 159</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,53 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices | 151
 
-                            1    1   0    0   0
-                            − 1  1   1    0   0
-             Evaluate       0   − 1  1    1   0
-                            0    0   − 1  1   1
-
-                            0    0   0   − 1 1
-             Solution
-
-                 1    1    0   0   0    1    1   0   0     1  1    0   0
-                 − 1  1    1   0   0     1   1   1   0   − 0  1    1   0
-                 0   − 1   1   1   0 =  − 0  1   1   1  −  0   1   1   1
-                 0    0   − 1  1   1    0   −  0  11      0   −  0  11
-                 0    0    0   − 1 1             −                −
-
-                                        1    1   0   − 1  1   0        1   1   0       0   1   0
-                                     = − 1   1   1 −  0   1   1 −−      1  1   1 − ( ) 0−  1   1
-                                                                 ( ) 1 −
-                                        0   −  11    0   −  11         0   −  11       0 −  11
-
-                                     = 323 0
-                                            ++
-                                        +
-                                     =  0
+                                                                (
+                Conversely, suppose that  A =  EE    E , then  EE       E  ) − 1  A =  I
+                                               12       k         12        k         n
+                That is, A is nonsingular.
 
 
              Exercise
 
-                                                               λ− 1  − 2 
-             Find all the values of λ for which det(A) = 0:  A =         
-                                                               1    λ−  4 
+             Show that if  A   B  (that is, if they are row equivalent), then  EA =  B  for some matrix E which is a
+             product of elementary matrices.
              Solution
 
-                   λ− 1   − 2  =  (λ− 1 )(λ−  ) 4 +  2
-                    1    λ−  4
-                                   2
-                                = λ −  5λ+ +
-                                           42
-                                = λ −  5λ+ =            Solve for λ .
-                                   2
-                                           6 0
-                    λ  =  −  1, 6
-                    1,2
+                If  A   B , there is some sequence of elementary row operations which, when performed on A,
+                produce B.
+                Further, multiplying on the left by the corresponding elementary matrix is the same as performing
+                that row operation. So we have
+                 A   EA
+                      1
+                    E EA
+                      21
+                    E E      E EA
+                      k  k  1 −  21
+                  =     B
+                Thus, if  E =  E  E , then we have  EA =  B
+                              k     1
 
 
              Exercise
 
-                                                                  λ− 60     0 
-             Find all the values of λ for which det(A) = 0:   A =      0  λ  −  1    
-                                                                    0  4 λ−  4  
+             Show that if  EA =  B  for some matrix E which is a product of elementary matrices, then  AC   BC  for
+             every  n n×  matrix C.
+
              Solution
+                Let  E =  E E     E , where each  E  is an elementary matrix.
+                          k  k  1 −  1               i
+                 AC   E AC
+                        1
+                       E E AC
+                         21
+                       E E      E E AC
+                         k  k  1 −  21
+                     =  EAC                      since  EA =  B
+                     =  BC
 
-
-
-
-
-
-                                                              159</code></pre>
+                Therefore;   AC   BC</code></pre>
      	</div>
     
      </div>

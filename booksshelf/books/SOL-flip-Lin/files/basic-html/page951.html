@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 951 - Linear Algebra Solution</title>
+        <title>Page 951 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 951 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 951 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 951</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 935
 
 
-             Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP
+                             = −  20
+                                  5
 
-                          − 7 24  0    0 
-                          24  7   0    0  
-                    A =                  
-                          0   0   − 7 27
-                                         
-                          0   0   24   7  
-             Solution
+                         
+                      u  , q    =  ( 5, 1, 5, −      ) 7        1  ,  3  ,  3  , −  1  
+                                −
+                      2   2                          25  25  25       2 5   
+                             =  10
+                                 5
 
-                               − 7 − λ  24       0      0
-                                 24    7 − λ     0      0
-                det ( A − λ  ) I =
-                                 0       0    − 7 − λ   24
+                                             3      1        1      3  
+                    u  , q  =  (1, 1,    −  2,  ) 8            ,   ,  −  ,   
+                      3   1                    25 25         2 5 25 
 
-                                 0       0      24     7 − λ
-
-                                             
-                            = ( 7− − λ )(7 − λ ) ( 7− − λ )(7 − λ   ) 24−  2        −  24 2     ( 7− − λ )(7 − λ ) 24−  2      
-                                             
-                                                 )
-                                                        (
-                                      )(
-                              (
-                                          2
-                                2
-                                                          2
-                            = λ−    49 λ−    625 −  576 λ−    625 )
-                                        )(
-                              (
-                                2
-                                           2
-                                                 −
-                            = λ−    625 λ−     49 576  )
-                                2
-                            = ( λ − 625 ) 2  =    0
-                The eigenvalues are: λ    =  25 and   λ    = − 25
-                                      1,2               3,4
-                For  λ   =  25 , we have:
-                      1,2
-
-                                                      0
-                      − 32  24    0     0      x   1    
-                       24  − 18   0     0     x    
-                                                      0
-                                              2    = 
-                       0    0    − 32   24    x    
-                                                      0
-                                              3    
-                                                      0
-                       0    0     24   − 18     x   4   
-                             − 32  24    0     0 
-                                                     4R +  3R
-                             24  − 18    0     0             2  1
-                             0     0   − 32   24 
-                                                 
-                             0     0    24   − 18    4R +  3R 3
-                                                          4
-                             − 32 24   0     0     − 1  R 1
-                                                      8
-                             0    0    0     0  
-                                               
-                             0    0   − 32 2 4    − 1 R
-                                                    8  3
-                             0    0    0     0  
+                             =  15
+                                 5
 
 
+                                             1       3     3        1   
+                    u  , q   =  (1, 1, −  2,  ) 8   ,     ,      , −
+
+                      3   2                      25  25    25       2 5   
+                             = −  5
+                                  5
+
+                                                                        
+                    u  , q   =  (1, 1, −  2,  ) 8     −  3  ,  1  ,  1  ,  3
+                      3   3                      25   25     25     25   
+
+                             =  10
+                                 5
+
+                         10    20    15                                                           
+                             −                                               u  , q    u  , q     u  , q  
+                         5      5      5                                     1   1      2   1      3   1  
+                                                                                              
+                                                                                                         
+                   R =    0   10    −  5                               R =     0      u   , q   u   , q  
+                                5       5                                               2   2      3   2 
+                                                                                                       
+                           0  0     10                                       0        0       u 3 ,  q 3   
+                                       5 
 
 
-                                                              951</code></pre>
+                   The QR−decomposition of the matrix is
+
+                                       3       1     −   3 
+                                       25    2 5       2 5     10    20    15  
+                      3  − 5  1      1       3        1       5  −  5     5  
+                                                                             
+                      1  1    1    =   25  2 5      2 5      0    10    −  5 
+                                                                                  
+                      1  5    −  2 −      1  3       1           5       5
+                    
+                     3    − 7  8        25  2 5     2 5         0  0    10    
+                    
+                                       3        1       3                  5   
+                                            −               
+                                       25     25      2 5 
+                              A          =                Q                            R</code></pre>
      	</div>
     
      </div>

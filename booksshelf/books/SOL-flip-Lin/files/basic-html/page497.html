@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 497 - Linear Algebra Solution</title>
+        <title>Page 497 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 497 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 497 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 497</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  2  2   1
+    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Space | 485
 
-                         =     2  4  4   
 
-                               1  4  5   
-                     2  2    1
-                     2  4    4         R
-                                   R −   1
-                                      2
-                     1  4    5 
-                                  2R −  R
-                                       3   1
-                     2  2    1
-                     0  2    3
-                               
-                              
-                              
-                     0  6    9    R −  3R 2
-                                     3
-                     2  2    1
-                     0  2    3 
-                              
-                              
-                     0  0    0 
-                            ( )
-                              T
-                       rank A A =    2
+               Solution                Section 2.5 – Subspaces, Span and Null Space
 
-                                                   ( )
-                                     ( )
-                                       T
-                   ∴  rank () =  rank A A =   rank AA  T   for any matrix, A.
-                           A
 
 
                Exercise
 
-               Explain why these are all false:
-                                                                              
-                 a)  The complete solution is any linear combination of  x p  and x .
-                                                                                 n
-                                   
-                 b)  A system  Ax b=  has at most one particular solution.
-                                  
-                 c)  The solution  x  with all free variables zero is the shortest solution (minimum length  x ). Find
-                                   p
-                     a 2 by 2 counterexample.
-                                                         
-                 d)  If A is invertible there is no solution  x  in the null space.
-                                                          n
+               Suppose S and T are two subspaces of a vector space V.
 
+                 a)  The sum  ST+  contains all sums  st+  of a vector s in S and a vector t in T. Show that  ST+
+                     satisfies the requirements (addition and scalar multiplication) for a vector space.
+                                            m
+                                                                                +
+                 b)  If S and T are lines in   , what is the difference between  ST  and  S  ? That union
+                                                                                            T
+                     contains all vectors from S and T or both. Explain this statement: The span of  S   is  ST+ .
+                                                                                                    T
                Solution
-                                         
-                   a)  The coefficient of  x  must be one.
-                                          p
-                                                                                                     
-                                ()  is the nullspace of A and  x  is one particular solution, then  x
-                   b)  If  x ∈  NA                                                                 and x  is also
-                           n                                   p                                 p       n
-                       a particular solution.
-                                                                               
-                                                                            
-                   c)  If A is a 2 by 2 matrix of rank 1, then the solution to  Ax b=  form a line parallel to the line that
-                       the nullspace. The line  x +  y =  1 gives such an example.
-                                   11       1    
-                              A =       b =     x  = ( 1  1 )
-                                               1
-                                   11            p    2   2
+                   a)  Let  ,  ss′ be vectors in S, Let  , tt′  be vectors in T, and let c be a scalar. Then
+
+                                              =
+                                                       +
+                              (st+  ) (s′ +  t′ +  ) (s s′+  ) (t t′ +  ) and
+                               ( c s t+  ) cs ct=  +
+
+                       Thus  ST+  is closed under addition and scalar multiplication, it satisfies the two requirements
+                       for a vector space.
+
+                   b)  If S and T are distinct lines, then S and T is a plane, whereas  S  T is not even closed under
+
+                       addition. The span of  S  T is the set of all combinations of vectors in this union. In particular,
+
+                       it contains all sums  st+  of a vector s in S and a vector t in T, and these sums form  ST+ .
+                       ST contains both S and T; so, it contains  S  .  ST+  is a vector space.
+                         +
+                                                                     T
 
 
-                                                               497</code></pre>
+                                                                                                               T
+                   c)  So, it contains all combinations of vectors in itself; in particular, it contains the span of  S  .
+                                            T
+                       Thus, the span of  S   is  ST+ .
+
+
+               Exercise
+
+                                                                   3
+               Determine which of the following are subspaces of   ?
+                 a)  All vectors of the form (a, 0, 0)
+                 b)  All vectors of the form (a, 1, 1)
+                 c)  All vectors of the form (a, b, c), where b = a + c
+                 d)  All vectors of the form (a, b, c), where b = a + c + 1
+
+                 e)  All vectors of the form (a, b, 0)
+               Solution
+
+                       (
+                                                         00
+                                        00 =
+                   a)  a , ,    ) ( a , ,   ) ( a +  1  a , ,   )
+                            00 +
+                         1
+                                                      2
+                                     2
+                            00
+                        ( k a, ,   ) (ka, , =  00 )
+                                             3
+                       This is a subspace of  </code></pre>
      	</div>
     
      </div>

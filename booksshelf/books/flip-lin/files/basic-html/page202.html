@@ -152,92 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>n
-          Although the Euclidean inner product is the most important inner product on   , there are various
-          applications in which is desirable to modify it by weighing each term differently. More precisely, if
-                                                                                     
-                                                                                            ,
-             ,
-          w w    ,  , w  are positive real numbers, which we will call weighs, and if u = ( u u  ,  , u  )  and
-           1    2       n                                                                  1   2       n
-                         n
-          are vectors in   , then it can be shown that the formula
-                                         
-                                        uv = ,   w u v +   w u v +     +   w u v
-                                                 1 11      2 2 2            n nn
-                                       n
-          Defines an inner product on   that we call the weighted Euclidean inner product with weights
-          w  , w  ,   , w
-            1   2        n
+    <pre style="white-space:pre-line"><code>184 | 2.6 – Linear Independence
+
+          2.6−3       Theorem
+
+
+                                               
+          A set S with two or more vectors  S = { v 1 , , v    k }   is
+
+           a)  Linearly dependent iff at least one of the vectors in S is expressible as a linear combination of the
+               other vectors in S. There are numbers c 1 , , c  at least one of which is nonzero, such that
+                                                        
+                                                             k
+                                   
+               c v +  c v +     +  c v =  0
+                11
+                       2 2
+                                   k k
+
+           b)  Linearly independent iff no vector in S is expressible as a linear combination of the other vectors
+               in S.
 
 
 
-          Example
-                                                          2
-                     ,
-                                       ,
-          Let u = ( u u 2 )  and v = ( v v 2 )  be vectors in   , verify that the weighted Euclidean inner product
-                    1
-                                     1
-           
-           uv =   3uv +    2  u v  satisfies the four inner product axioms.
-            ,
-                     11       2 2
-          Solution
-                          
-                           ,
-             Axiom 1:    uv =    3uv +   2  u v
-                                            2 2
-                                   11
-                               =  3vu +  2   v u
-                                            2 2
-                                   11
-                                   
-                                   ,
-                               =  vu
-                               
-                           +
-             Axiom 2:    uv   ,  w =  3 u +  (  1  v 1 ) w +  1  2 ( u +  2  v 2 ) w 2
-                                   =  3 u w + (  vw  ) (          v w  )
-                                                       2  u w +
-                                                     +
-                                        11      11         2 2     2 2
-                                                                  2 2
-                                   =  3u w +  11  3vw +  11  2  u w +  2 2  2v w
-                                                       +
-                                                                     2 2
-                                   =  ( 3u w +  11  2  u w  ) ( 3vw +  11  2v w  )
-                                                  2 2
-                                         
-                                                  
-                                   =    , u  w +    , v  w
 
-                           
-                            ,
-                                    ku
-                                                 ku
-             Axiom 3:    kuv =    3 ( )  v +  2 ( )   v 2
-                                          1
-                                      1
-                                                   2
-                                 =  k ( 3uv +  2  u v  )
-                                                2 2
-                                       11
-                                     
-                                 =  k  uv
-                                      ,
 
-                         
-             Axiom 4:    vv =    3vv +   2   v v
-                           ,
-                                   11       2 2
-                               =  3v +  2  2 v ≥  2  0
-                                   1      2   
-                        v =  v =  0 iff   v =  0
-                              2
-                         1
 
-                                                           202</code></pre>
+
+
+
+
+
+
+
+
+                                               
+                     Independent vectors v  , v  , v               Dependent vectors
+                                          1   2   3                        
+                                                                    w 1 , w 2 , w
+                                                                              3
+                                                                   The combination
+                                                                               
+                                                                    w −    w +    w  is (0, 0, 0)
+                                                                     1    2     3
+
+
+
+          Examples
+
+          a)  The vectors (1, 0) and (0, 1) are independent.
+
+          b)  The vectors (1, 1) and (1, 0.0001) are independent.
+
+
+          c)  The vectors (1, 1) and (2, 2) are dependent.
+
+          d)  The vectors (1, 1) and (0, 0) are dependent.
+
+
+
+          2.6−4   Theorem
+
+
+                                      
+          a)  A finite set that contains 0  is linearly dependent.
+                                                                                              
+          b)  A set with exactly one vector is linearly independent if and only if that vector is not 0.
+
+          c)  A set with exactly two vectors is linearly independent iff neither vector is a scalar multiple of the
+             other.</code></pre>
      	</div>
     
      </div>

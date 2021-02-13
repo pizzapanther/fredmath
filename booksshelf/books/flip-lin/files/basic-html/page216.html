@@ -152,78 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.3 – Gram-Schmidt Process
+    <pre style="white-space:pre-line"><code>198 | 2.7 – Coordinates, Basis and Dimension
 
+          In linear algebra coordinate systems are commonly specified using vectors rather than coordinate
 
-
-          Definition
-
-          A set of two or more vectors in a real inner product space is said to be orthogonal if all pairs of distinct
-          vectors in the set are orthogonal. An orthogonal set in which each vector has norm 1 is said to be
-          orthonormal.
-
-
-
-          Theorem
-
-                                                                                              
-                     
-                         
-          1.  If  S = { v 1 , v 2 ,  , v   n }  is an orthogonal basis for an inner product space V, and if u is any vector in
-             V, then
-                                                                       
-                                           , u v      , u v            u ,  v n  
-                                      u =      1  v +  1   2  v +  2  +         v
-                                                                                   n
-                                                        
-                                            
-                                           v   2        v  2               v   2
-                                             1           2                  n
-                     
-                                                                                                
-                         
-          2.  If  S = { v 1 , v 2 ,  , v   n }  is an orthonormal basis for an inner product space V, and if u  is any vector
-             in V, then
-                                                                       
-                                       u =   , u v v +   , u v  v +    +   u , v  v
-                                               1   1       2   2             n   n
-
-          Proof
-                            
-                                     
-                                                                      
-          1.  Since  S = { v   1 , v 2  ,  , v n }  is a basis for V, every vector u  in V can be expressed in the form
-                                                                        
-                                               u =    c v +    c v +    +   c v
-                                                    1 1   2 2          nn
-                                 
-                                    v
-                                  , u
-             Let show that  c =      i    for  i = 1, 2,  , n
-                            i       2
-                                  v
-                                   i
-                                              
-               u ,  v  =  c v +  c v +   +   c v  ,    v
-                   i     1 1    2 2         nn      i
-                                                          
-                             ,
-                     =  c vv      +  c  v  , v  +    +   c  v  , v
-                        1  1   i     2   2   i         n    n   i
-                                                                                                      th
-             Since S is an orthogonal set, all of the inner products in the last equality are zero except the i , so we
-             have
-                                    
-                           , u v  =  c v  , v
-                             i     i  i   i
-                                        2
-                                 =  c v
-                                    i  i
+          axes.
 
 
 
 
-                                                           216</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+          2.7−2       Basis
+
+
+          A linearly independent set is a basis for its span.
+
+          2.7−3       Definition
+
+                                                      
+                                                  
+          If V is any vector space and  S = { v   1 , v   2 , , v n }  is a finite set of vectors in V, then S is called a basis
+
+          for V if the following two conditions hold:
+             1.  S is linearly independent.
+
+             2.  S spans V.
+
+
+          Example 2.7-1
+
+                               10                                   2
+          The columns of  I =        produce the “standard basis” for   .
+                               01 
+          Solution
+
+                                    1
+                                                    0
+                                                                                    2
+                                ˆ
+             The basis vectors: i =    and   ˆ j =   are independent. They span   .
+                                                   
+                                   
+                                                    1
+                                    0
+                                                 
+
+
+          Example 2.7-2
+                                                                      n
+          The columns of any invertible n by n matrix give a basis for  .
+                                      10 0
+                     12                               12
+                A =           A =   11 0        A =      
+                     25             11 1              2 4 
+                   Basis                           Not  basis
+                                     Basis</code></pre>
      	</div>
     
      </div>

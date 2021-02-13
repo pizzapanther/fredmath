@@ -152,78 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises            Section 4.3 – LU-Decompositions
+    <pre style="white-space:pre-line"><code>3. 2 –  Angle and Orthogonality in Inner Product Spaces  | 263
+
+               3.2−7        Theorem
 
 
+               If W is a subspace of a finite-dimensional inner product space V, then the orthogonal complement of
 
-             1.   What matrix E puts A into triangular form  EA U=  ? Multiply by  E − 1  =  L  to factor A into  LU :
-
-                                               2   1   0
-                                                         
-                                          A =      0  4  2
-                                                         
-                                                6   3  5  
-                              
-                                                           
-                                        
-                          
-                                                       
-                                                                     
-             2.   Solve  Lc = b  to find c . Then solve Uxc  to find  x . What was A?
-                                                         =
-                                1   0   0         1   1   1       4   
-                                                                         
-                           L =      1  1  0     U =      0  1  1     b =      5
-                                                                         
-                                 1   1  1        0   0  1       6     
-
-             3.   Find L and U for the symmetric matrix
-
-                                        a   a   a    a
-                                         a  b   b    b 
-                                   A =                
-                                        a   b   c    c
-                                                      
-                                         a  b   c    d 
-
-                    Find four conditions on a, b, c, d to get  A =  LU with four pivots
+                W ⊥   is W; that is
+                                                           ( )   ⊥  = W
+                                                              ⊥
+                                                            W
 
 
-             4.   For which c is  A =  LU  impossible – with three pivots?
+               Example 3.2-4
 
-                                        1   2   0
-                                                  
-                                   A =     3  c  1
-                                                  
-                                        0  1    1 
-                                                 
+                                          6
+               Let W be the subspace of    spanned by the vectors
+                                                    
+                       w =  1  (1, 3, −  2, 0, 2,  ) 0 ,  w =  2  (2, 6, −  5, −  2, 4, −  ) 3
+                                                    
+                       w =  (0, 0, 5, 10, 0, 15 ,            )  w = (2, 6, 0, 8, 4, 18               )
 
-             (5 – 14)   Find an LU−decomposition of the coefficient matrix, and then use to solve the system
+                         3                             4
+               Find a basis for the orthogonal complement of W.
 
-                    2  8   x   1    −   2                     −  3 12  −   6    x      −  33
-             5.                =                                             1      
-                    −  1 −  1 x 2       −  2            8.      1  −  2  2     x   2  =    7  
-                             
-                            
-                                                                       0  1  1       x          1  −  
-                   −  5 −   10  x   1    −   10                              3 
-             6.                  =    
-                    6   5        x 2       19                3   −   7 −  2      x 1        −  7
-                                                                                            
-                                                             9.        −  3  5  1       x   =      5
-                                                                                            
-                    2   −   2 −  2      x 1       −  4         6  − 4  0       2      2   
-                                            
-             7.       0  −  2  2       x   2  =      −  2                  x   3    
-                                            
-                      − 1  5  2         x   3          6       2  − 6 4      x 1        2 
-                                                                                           
-                                                             10.       −  4  8  0       x   2  =      −  4
-                                                                                           
-                                                                       0  − 46        x   3          6   
+               Solution
 
+                   The Space W is the same as the row space of the matrix
 
-                                                               281</code></pre>
+                         13 −   2   0   2   0 
+                         26 −   5 −  2 4 −   3    R  − 2R
+                    A =                            2     1
+                         0 0   5   10   0 15 
+                                              
+                         2 6   0    8   4 18      R −  2R 1
+                                                     4
+
+                     1 3 −  2   0   2   0     R − 2R 2
+                                                 1
+                                         3 
+                     00 −   1 −  2 0 −    
+                     0 0   5   10   0 15      R +  5R
+                                               3     2
+                     0 0   4    8   0 18      R +  4R
+                                                 4     2
+
+                     1 3   0    4   2   6 
+                     00 −   1 −  2 0 −  3     − R
+                                                    2
+                     00    0    0   0   0 
+                                              1
+                     00    0    0   0   6      R
+                                                6  3
+
+                     1 3 0 4 2 6          R −  6R 3
+                                             1
+                     0 01 2 0 3       
+                                              R − 3R 3
+                                             2
+                     000 0 01
+                                      
+                     000 0 0 0        </code></pre>
      	</div>
     
      </div>

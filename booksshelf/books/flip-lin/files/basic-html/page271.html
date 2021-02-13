@@ -152,84 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Matrices for General Linear Transformations
-
-             Suppose that V is an n-dimensional vector space, W is an m-dimensional vector space, and that
-             TV →    W  is a linear transformation. Suppose further that B is a basis for V, that  B′ is a basis for W, and
-               :
-                                                                    
-                                                                            
-             that for each x in V, the coordinate matrices for x and  ( ) x  are [ ] x   and  ( ) x  T       , respectively
-                                                                 T
-                                                                                     
-                                                                              B             B′
+    <pre style="white-space:pre-line"><code>Lecture Three
 
 
 
 
 
 
+               Section 3.1 – Inner Products
 
 
 
+               3.1−1        Definition
+
+                                                                                                   
+                                                                                                    ,
+               An inner product on a real vector space V is a function that associates a real number  uv  with each
+                                                                                                            
+               pair of vectors in V in such a way that the following axioms are satisfies for all vectors  , uv , and  w  in
+               V and all scalars k.
+                               
+                         ,
+                   1.   uv =     , v u                        Symmetry axiom
+                                          
+                   2.  uv    ,  w =   , u  w +  , v  w        Additivity axiom
+                          +
+                                 
+                          , uv
+                   3.  k k uv=      ,                         Homogeneity axiom
+                                                
+                                              0
+                                                       0
+                                        ,
+                         ,
+                               0
+                   4.  vv ≥  and  vv =  iff v =               Positivity axiom
+
+               A real vector space with an inner product is called a real inner product space.
+                                                   
+                                             u , v = uv
+                                                          
+                                                    =  uv +  u v +   u v
+                                                       11     2 2      nn
+
+               This is called the Euclidean inner product (or the standard inner product)
 
 
+               3.1−2        Definition
 
+                                                                                                         
+               If V is a real inner product space, then the norm (or length) of a vector v   in V is denoted by  v  and is
 
+               defined by
+                                                            
+                                                                   
+                                                           v =    v , v
+                                                                      
+               And the distance between two vectors is denoted by  ( ,d  uv )  and is defined by
+                                                       
+                                               uv
+                                             d ( ,  ) =  u v
+                                                         −
 
-
-             By using matrix multiplication, we can execute the linear transformation and the following indirect
-             procedure:
-                                                  
-               1.  Compute the coordinate vector [ ] x
-                                                    B
-                                                               
-               2.  Multiply [ ] x   on the left by A to produce  ( ) x  T   
-                                                            
-                               B                                   B′
-                                  
-               3.  Reconstruct  ( ) x  from its coordinate vector  ( ) x    T     
-                              T
-                                                                      B′
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                         
-             A [ ] x  =    T   ( ) x   
-                  B           B′
-
-
-
-
-
-
-                                                              271</code></pre>
+                                                          
+                                                     =   uv   ,  uv
+                                                                  −
+                                                           −
+               A vector of norm 1 is called a unit vector.</code></pre>
      	</div>
     
      </div>

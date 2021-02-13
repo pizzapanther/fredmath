@@ -152,82 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Left Nullspace
+    <pre style="white-space:pre-line"><code>168 | 2.5 – Subspaces, Span and Null Spaces
 
-                                                                                        T
-                     T
-          A matrix  A  has m columns and has r ranks, so the number of free columns of  A  must be mr− .
-                                                          ( )
-                                                   dim NA   T  =  m r
-                                                                   −
-
-                                                                   T                    T            
-                                                                                                 0
-          The left nullspace is the collection of vectors  y  for which  A y = . Equivalently,  yA = , where y
-                                                                         0
-                                                                     
-                                                                       T
-          and 0  are row vectors. We can call “left nullspace” because  y  is on the left of matrix A in that
-          equation.
-          To find a basis for the left nullspace we reduce an augmented type of A.
-
-                                           A mn  I mn   ×    →    R mn  E mn   ×  
-                                                                    × 
-                                             × 
-          Where matrix E can be found from  EA =  R .
-
-          If matrix A is a square matrix, then  E =  A − 1 .
+          2.5−12        Definition:  Null Spaces
 
 
-          The Four Fundamental Subspaces
+                                                                                           n
+                                                          0
+          The nullspace of A consists of all solutins to  Ax = . These solution vectors  x are in  . The
+          Nullspace containing all solutions is denoted by  ( )  orN A    NS ( ) A .
 
-                                    ( )                    n
-                                       T
-             1.  The row space is CA      , a subspace of   .
-                                                             m
-             2.  The column space is  ( ) , a subspace of   .
-                                      CA
-                                                         n
-                                   NA
-             3.  The null space is  ( ), a subspace of   .
-                                        ( )                   m
-                                           T
-             4.  The left null space is  NA   , a subspace of  .
+             {     n  | Ax =     }                  ( )
+               x ∈
+                            0  is the nullspace of A,  NS A
+
+                                                      ( )
+               (Can also be called Kernel of A: Ker A )
 
 
 
+          2.5−13        Theorem
 
 
 
+                                             n
+                      ( )
+          Suppose  NS A  is a subspace of   for  A mn
+                                                      ×
+                                                  
+               Let  x  and  y  are in the nullspace ( ,x y ∈  NS (  ) ) A  then
+                                       
+                             +
+                          ( A x y =  )  Ax Ay
+                                       +
+                                   
+                                 =  00
+                                     +
+                                   0
+                                 =  
+                                     
+                                              A
+                             A
+               Let  x ∈ NS () then  cx ∈  NS ()
+                                    
+                        ∴  A cx
+                            ( ) cAx=
+                                    
+                                 =  0 c
+                                 =  
+                                   0
+
+          Since we can add and multiply without leaving the Nullspace, it is a subspace.
 
 
+          Example 2.5-5
 
+          The equation  x +  2y +  3z =  0 comes from the 1 by 3 matrix  A = [1  2  ] 3 . This equation produces a
+                                                              3
+          plane through the origin. The plane is a subspace of   .  It is the Nullspace of A.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            Two pairs of orthogonal subspaces.
-
-                                                           186</code></pre>
+          Solution
+             The solution to  x +  2y +  3z =  6 also form a plane, but not a subspace.</code></pre>
      	</div>
     
      </div>

@@ -152,75 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  a  0             4           a 4           0  
-          40.  Let  B =       , show that  B =                        
-                                                       2
-                         1 b                     a +  3  a b ab +  2  b 3  b 4   
-                                                          +
-
-                                                     a n         0  
-
-                         a  0             n      n− 1             
-          41.  Let  B =       , show that  B =                 n 
-                                                         1 kk
-                         1 b                      a n−−  b    b  ∑
-                                                   k= 0             
-
-                                                     +
-                         7   4               n     16n    4n 
-                                                                         1
-          42.  Let  A =          . Prove that  A =               if  n ≥
-                                                             −
-                         −  9 −  5                 −  9n  16n 
-                         2a − a 2                   (n +  ) 1 a n  −  na n+ 1 
-                                                n
-                                                                                        1
-          43.  Let  A =           . Prove that  A =                           if  n ≥
-                                                                      )
-                           1  0                     na n− 1  (1 n a n   
-                                                                   −
-          44.  The following system of recurrence relations holds for all  n ≥
-                                                                           0
-                          x n+ 1  = 7x +  4y n
-                        
-                                    n
-                        
-                          y n+ 1  =  −  9x −  n  5y n
-               Solve the system for  x  and  y  in terms of  x  and  y
-                                     n       n              0       0
-
-                        ab               2
-          45.  If  A =       , prove that  A −  (a d A+  ) +  (ad bc I−  )  =  0
-                                                                     ×
-                        c  d                                      22
-
-                        4 −   3            2
-          46.  If  A =        , use the fact  A =  4A − 3I  and mathematical induction, to prove that
-                        1  0  
-                                          −
-                         A =  n  3 −  n  1 A +  33 n  I  if  n ≥  1
-                                2         2
-
-          47.  A sequence of numbers  x x    ,    , x  ,      satisfies the recurrence relation  x  = ax + bx
-                                         ,
-                                        1   2       n                                      n +  1  n     n −  1
-               for  n ≥ , where a and b are constants. Prove that
-                      1
-                          x         x  
-                          n+ 1   =  A  n  
-                            x n         x n− 1  
+    <pre style="white-space:pre-line"><code>12 | 1.2 – Gaussian Elimination
 
 
-                             a b                     x   n+ 1          x   1
-               Where  A =          and hence express       in terms of      .
-                             10                        x n             x 0   
-                     4
-                                  3
-               If  a =   and b = − , use the previous question to find a formula for  x  in terms  x   and  x
-                                                                                   n           1        0
+
+                1 3 − 2   0   2   0  0
+                00   1    2   0   3  1 
+                                       
+                0 0  5   10 0 15 5       R −  5R 2
+                                            3
+                                       
+                0 0  4    8   0 18 6     R −  4R 2
+                                            4
+
+                1 3 − 20 2 00
+                0 0  1   2 0 31      
+                                     
+                0 0  0   0 000
+                                       1
+                0 0  0   0 0 6 2       6  R 4  then interchanging row 3 and row 4
 
 
-                                                            30</code></pre>
+                1 3 − 2 0 20 0
+                00   1   2 0 3 1     
+                                       R −  3R 3
+                                          2
+                00   0   0 01       1
+                                    3
+                00   0   0 0 0 0     
+                                     
+                1 3 − 2 0 20 0
+                0 0  1   200 0       
+                                     
+                00   0   0 01       1
+                                    3
+                  00  0  0 0 0 0      
+
+
+                 
+                  x +  1  3x 2  +  4x +  4  2x 5  =  0
+              →           x +  3  2x 4       =  0
+                 
+                 
+                                                       +  x =  1
+                                          6   3
+
+             The general solution of the system:
+                 ( −  3x −  2  4x −  4  2x 5 , x 2 , −  2x 4 , x 4 , x 5 ,  1 )
+                                                               3
+
+
+          Example 1.2-3
+
+          Use Gauss-Jordan elimination to solve the homogeneous linear system
+
+               2x +  8y −  z +  w =  0
+                           −
+              4x +  16y −  3z w =  −  10
+              − 2x + 4y −+  3w = − 6
+                         z
+               −  6x +  2y +  5z +  w =  3
+
+          Solution</code></pre>
      	</div>
     
      </div>

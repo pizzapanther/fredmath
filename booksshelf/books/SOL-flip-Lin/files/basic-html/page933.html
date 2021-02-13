@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 933 - Linear Algebra Solution</title>
+        <title>Page 933 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 933 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 933 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 933</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 917
+
+                         1      2       1       2                                   
+                         5  +  2       −    −  4                       u  , q    u  , q  
+                   R =          5        5      5                R =    1   1      2   1  
+                                                                                          
+                                                                                               
+                                                                           0       u  , q  
+                             0          −  2    −  4 −    1                         2   2   
+                                          5        5   
+                         5   −  9 
+                         5      5  
+                     =            
+                           0  2    
+                               5 
 
 
-             Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP
+                                     −  1  −  2     5  −  9 
+                         1  1   =     −  5  5      ⋅     5  5    
+                         2  − 4         2  −  1          0  2    
+                                      5       5          5 
+                           A        =          Q                R
 
-                          0  10 10 
-                    A =     10  5  0    
-                                    
-                          10  0  − 5 
-             Solution
-                               −λ   10      10
-                det ( A−λ  ) I =  10  5−λ    0
 
-                               10    0    − 5−λ
-                                 (       2 )
-                                                                    )
-                            = −λ − 25+ λ    − 100 (5−λ ) 100−  ( 5− −λ
-                                     3
-                                                         +
-                                             +
-                            = 25λ − λ −  500 100λ +  500 100λ
-                                 3
-                            = −λ +  225λ
-                                           )
-                                 (
-                                   2
-                            = −λ λ −   225 =     0
-                The eigenvalues are:  λ  =  −  15 λ  =  0 λ  =  15
-                                      1           2       3
+               Exercise
 
-                For λ= −   15, we have: A λ−  (  I v =  )    0
-                      1                       1   1
+                                                      1  − 3
+               Find the QR−decomposition of                
+                                                      − 2  4  
+               Solution
+                                                            
+                                                                        )
+                                                                   −
+                                                      −
+                   The column vectors of are: u =  1  (1,  2 ) u =  2  ( 3, 4
+                       
 
-                                   x
-                                         0
-                     15 10 10   
-                     10 20    0     
-                                         0
-                                   y =
-                                   
-                     10  0   10    
-                                         0
-                                   z
-                                   
-                             15 10 10
-                             10 20              2R
-                                     0    3R −     1
-                                        
-                                              2
-                            10  0   10 
-                                         3R −   2R
-                                              3     1
-                             15  10   10    4R −  R 2
-                                                 1
-                                           
-                             0  40    − 20
-                                          
-                                          
-                             0  − 20  10    2R +   R 2
-                                                 3
-                             60  0   60 
-                             0  40 −  20
-                                          
-                                         
-                             0   0    0  
-                                         
-                                           0
-                                     x
-                     60  0    60          →    60x +  60z =  0  ( ) 1
-                      0        20                          0
-                                     y =
-                                           0     →
-                         40 −                    40y −  20z =  ( ) 2
-                      0  0     0     
-                                           0
-                                     z
-                                    
-                    ( ) 1  ⇒  x =  −  z
-                                                              933</code></pre>
+                   v =  u   =  (1, −  ) 2
+                    1    1
+                                                          
+                        (1,  −  ) 2                     v
+                   q =                              q =    1
+                     1       5                       1    v
+                                                           1
+                           1     2  
+                       =     ,  −   
+                           5      5 
+                                 
+                            u 2 ,  v 1  
+                   v =  u −           v
+                     2    2       2   1
+                               v
+                                1
+                                  ( 3, 4−  ) (1,  2−        )
+                       =  ( 3, 4−  ) −              (1,  2−  )
+                                          5
+
+                       =  ( 3, 4−  ) +  11 (1,  2−  )
+                                   5
+                         (  4    2 )
+                       =  −  5 , −  5
+
+                                                          
+                                 4     2                v
+                   q =     5   ( −  ,  −  )         q =    2
+                     2    16 4    5     5            2    v
+                            +
+                                                           2</code></pre>
      	</div>
     
      </div>

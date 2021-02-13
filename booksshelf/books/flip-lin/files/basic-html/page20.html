@@ -152,73 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
-
-          If  A  , A  , , A  are matrices of the same size, and if  c  , c  , , c  are scalars, then expression of the
-                     
-                                                                        
-              1   2       n                                      1   2       n
-          form
-                                                c A +  c A +     +  c A
-                                                 11     2 2          nn
-
-          Is called a linear combination of  A  , A  , , A   with coefficients c  , c  , , c .
-                                                                                   
-                                            1   2       n                   1   2       n
+    <pre style="white-space:pre-line"><code>2 | 1.1 – Introduction to System of Linear Equations & Matrices
 
 
-          Matrix Multiplication
+          The augmented matrix form can be written as:
 
-          Product of Two Matrices
-
-                                                                                        th
-                                                                                                   th
-          Let A be an m x n matrix and let B be an n x k matrix. To find the element in the i  row and j  column of
-                                                                                                             th
-                                                             th
-          the product matrix AB, multiply each element in the i  row of A by the corresponding element in the j
-          column of B, and then add these products. The product matrix AB is an m x k matrix.
+                          3 1 2 31
+                                   
+                          1 1 2 19
+                                    
+                            1 3 2 25  
 
 
-                                      Matrix A                     Matrix B
-                                        m x n                        n x k
+          The matrix equation can be written in the Form  AX =  B
 
-                                                 Inner must be equal
-
-                                            Outer: Order of AB is m x k
-
-
-               To multiply AB or dot product, if A has n columns, B must have n rows.
-
-
-               Squares matrices can be multiplied if and only if (iff) they have the same size.
+          Where
+                       11 2
+                              
+                 A =      31 2  is called the coefficient matrix of the system.
+                              
+                         13 2  
 
 
-               The entry in row i and column j of AB is  ( row i of A ) (col j of B
-                                                                                  )
-                                                                      .
-                              ∑
-                   The result:     ab
-                                    ik kj
+                       x 
+                       y  is called the variables matrix of the system.
+                 X =  
+                      
+                       z 
+                      
+                       31
+                         
+                 B =      29   is called the constant matrix of the system.
+                         
+                         25  
 
+                 0
+                
+                
+                 0
+          If  B =  , then the system equations are called homogeneous equations.
+                 
+                
+                 0
+                
 
-                                             *   *  b 1 j  *  *  *
-                     *   *                                                *             
-                     a  a           a         b 2 j             ** (AB   )    ***     
-                     1 i  2 i           5 i                     =           ij          
-                     *                                                   *             
-                                                                                       
-                       *                                               *               
-                                                  b             
-                                                   5 j          
-                                    4  by   5                     5  by   6                          4  by   6
+          The matrix A above has 3 rows and 3 columns.
+          Therefore, the order of the matrix A is (3 x 3)
 
 
 
-
-
-
-                                                            20</code></pre>
+                              a   a 12   a         a 1n  
+                              11          13            
+                              a 21  a 22  a 23     a 2n  
+                            
+                   
+              A  =  a ij        =  a 31  a 32  a 33    a 3n    
+                            
+                   
+                   
+                                                     
+                              a   a      a         a   
+                              m 1  m 2    m 3        mn 
+          The order of the matrix A is (m x n)</code></pre>
      	</div>
     
      </div>

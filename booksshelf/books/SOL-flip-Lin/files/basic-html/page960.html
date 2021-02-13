@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 960 - Linear Algebra Solution</title>
+        <title>Page 960 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 960 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 960 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 960</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-               B is a projection since  B =  B , it is symmetric and thus diagonalizable, and it is Markov since the
-               columns add to 1. It is not invertible since the columns are visibly linearly dependent, it is not
-               orthogonal since the columns are far from orthonormal, and it’s clearly not a permutation.
-               All the factorizations are possible for it:  LU and QR are always possible.  PDP − 1   is possible since it
+    <pre style="white-space:pre-line"><code>944 | 3. 3 − S OL U T I ON
 
-                                          T
-               is diagonalizable, and QDQ is possible since it is symmetric.
+          Exercise
 
 
+                                                                          ]
+                                                                     −
+          Apply the Gram-Schmidt orthonormalization process in C   0 [ 1, 1  spanned by the functions, using
+          the inner product     f  ( ) x =  e x ,  f  ( ) x =
+                                                      x
+                                 1             2
+          Solution
+                        x    
+             Let   u =  e  , u =
+                                   x
+                    1          2
+                       x
+              v =  u =  e
+               1    1
 
-           Exercise
-
-           True or false. Give a reason or a counterexample.
-
-             a)  A matrix with real eigenvalues and eigenvectors is symmetric.
-             b)  A matrix with real eigenvalues and orthogonal eigenvectors is symmetric.
-             c)  The inverse of a symmetric matrix is symmetric
-             d)  The eigenvector matrix S of a symmetric matrix is symmetric.
-             e)  A complex symmetric matrix has real eigenvalues.
-                                         A i
-             f)  If A is symmetric, then e  is symmetric.
-                                         A i
-             g)  If A is Hermitian, then e  is Hermitian.
-             h)  An  nn×  matrix that is orthogonally diagonalizable must be symmetric.
-                                                            
-                                                
-                                                                                       
-                                                                               
-                                                                          
-                                                                 
-                                          
-                     T
-                                                                                             0
-                                                                                        
-             i)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =
-
-             j)  An  nn×  symmetric matrix has n distinct real eigenvalues.
-                                                 
-                                    n
-                                                    T
-             k)  For nonzero v  in   , the matrix vv  is called a projection matrix.
-             l)  Every symmetric matrix is orthogonally diagonalizable
-                                       T
-                            T
-             m)  If  B =  PDP , where  P =  P − 1  and D is a diagonal matrix, then B is a symmetric matrix.
-             n)  An orthogonal matrix is orthogonally diagonalizable.
-             o)  The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the corresponding
-                eigenvalue.
-           Solution
-                                   12
-               a)  False. Let  A =    
-                                   10 
-                                          −
-                             (
-                                                              2
-                    Then det A λ −   ) I =  1 λ  2   λ =  2  λ − −=  0
-                                          1    − λ
-                    So, A has eigenvalues λ    −  1 λ =  =  2
-                                           1         2
-                                                          2
-                                              − 1      
-                  The eigenvectors are: V =       V =     so both the eigenvalues and eigenvectors are real but
-                                         1     1    2  
-                                                          1
-                  A is not symmetric.
+                        1  2x
+               v  , v  = ∫  e   dx
+                1  1      − 1
 
 
 
+                       =  1 x    1
+                          e
+                         2     − 1
+                             −
+                       =  1 ( ee  1 −  )
+                         2
 
-                                                            960</code></pre>
+
+                         1    x
+               u  , v  = ∫       x e   dx
+                2   1      − 1
+
+
+
+                       = e x (x −  ) 1  1
+                                   − 1
+
+                       = ( ) 0 e + 2e
+                          e
+                       =  2
+                                                                          
+                        2   ( )( )                                  u  ,  v  
+                                    x
+              v =  x −        2ee                           v =  u −    2   1  v
+               2      ee    1 −                               2    2    v   2  1
+                        −
+                                                                         1
+                 =  x −  4e 2   e x
+                        2
+                       e − 1
+
+                                       x       4e 2   x  
+             The orthogonal basis is  e  ,   x −     e   
+                                     
+                                                2
+                                              e −  1    
+                           1                2
+                                4e 2    
+               v  , v  =        x −     e x  ∫     dx
+                                    2
+                2   2            e −  1
+                           − 1
+                           1          2             2   2   
+                       =       x −  2  e − ∫  8e  xe +  x      4e    e 2x     dx
+                                     2
+                                                   2
+                          − 1         1         e −  1      </code></pre>
      	</div>
     
      </div>

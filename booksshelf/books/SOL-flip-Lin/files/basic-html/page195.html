@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 195 - Linear Algebra Solution</title>
+        <title>Page 195 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 195 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 195 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 195</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.5 – Transpose, Diagonal, Triangular, and Symmetric Matrices | 187
 
-                                                                    z
-                                                                y
-                                                              3 −= −    1
-             Use Cramer's rule to solve the system          x + 5y −= − 4
-                                                                    z
-                                                         
-                                                                         11
-                                                          −  3x +  6y +  2z =
-             Solution
-                      0   3  − 1 0   3
-                 D =  1   5  − 1 1   5
+               Exercise
 
-                     − 36    2 −  36
-                   = − −      −
-                     9 6 15 6
-                   = − 18
+               Prove that each statement is true when A and B are square matrices of order n and c is a scalar.
 
-                       −    13  −  1 − 13
-                 D =   −  4  5  −  1   − 45
-                  x
-                       11  6   2 11 6
-                     = − 10 33 24 55 6 24
-                               +
-                           −
-                                    +
-                                            +
-                                        −
-                     = 54
-                       0    1−  −  1 0  − 1
-                 D =   1   −  4  −  1 1   − 4
-                   y
-                       − 3 11   2 −  3 11
-                     = −−     +   +
-                        3 11 12 2
-                     = 0
+                       a)  Tr A B+ (  ) Tr A=  ( ) Tr B+  ( )
 
-                       0    3  − 1 0   3
+                       b)  Tr c     c  Tr ( ) A
+                             ( ) A =
+               Solution
 
-                 D =   1   5  − 4 1    5
-                  z
-                       − 3 6  11 −  36
-                     = 36 6 15 33
-                             −
-                          −
-                                 −
-                     = − 18
-                 x = − 3           x =  D x
-                                       D
-
-                                       D
-                   y =  0          y =   y
-                                        D
-
-                                      D
-                  z = 1            z =  z
-                                       D
-
-                ∴ Solution: ( 3, 0, 1  −  )
+                   Let  A =        a ij       & B =        b ij     
 
 
 
+                   a)  AB+   =        a ij       +        b ij     
 
 
+                            =        a +  b ij     
+                                 ij
+                                      (          )
+                       Tr ( A B+  ) Tr a=      ij  +  b ij   
 
+                                     n
+                                   ∑
+                                 =           a kk  + b kk   
 
+                                    k n 1 =         n
 
+                                   ∑             ∑
+                                 =           a kk     +      b kk   
 
+                                    k  1 =        k  1 =
+                                              ( )
+                                 = Tr ( ) A + Tr B
 
+                                  Tr
+                       Therefore,   ( A B+  ) Tr A=  ( ) Tr B+  ( )
+                   b)  Let c be any scalar
 
-                                                              195</code></pre>
+                                  n
+                                ∑           
+                       Tr ( ) Ac  =    c  a kk 
+                                       
+                                 k  1 = n
+
+                                  ∑          
+                               =  c      a kk 
+                                         
+                                   k  1 =
+                               =  c  Tr ( ) A
+
+                       Therefore,   ( ) Ac  =  c  Tr ( ) A
+                                  Tr</code></pre>
      	</div>
     
      </div>

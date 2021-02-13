@@ -152,82 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Their eigenvalues are 0 and 0 (like A).
+    <pre style="white-space:pre-line"><code>Section 3.4 – Orthogonal Matrices
 
 
-                               ab                               − 1
-                Choose  M =          with ad −  cd =  1 and  B =  M  AM
-                               c d  
+
+               3.4−1        Definition
 
 
-             Connections between similar matrices A and B:
+               A square matrix A is said to be orthogonal if its transpose is the same as its inverse, that is, if
+                                                                    T
+                                                             A − 1  =  A
 
-                     Not Changed                 Changed
+               or, equivalently, if
+                                                                  T
+                                                            T
+                                                          AA =   A A =
+                                                                        I
 
-                     Eigenvalues                 Eigenvectors
-                     Trace and determinant       Nullspace
+               Example 3.4-1
 
-                     Rank                        Column space
+                                 3   2   6 
+                                 7   7   7 
+                               
+                                  6
+               The matrix  A = −  7   3   7   2  
+                               
+                                      7
+                                           
+                                 2   6  −  3 
+                                 7   7    7 
+               Solution
+                            3  − 6   2     3  2   6 
+                            7   7    7     7  7   7 
+                     T
+                            2
+                    A A =     7  3  6   7       − 6  3  2  
+                                                     7 
+                                7
+                                            7
+                                                7
+                                                    
+                            6  2    −  3      2  6  −  3 
+                            7  7      7     7  7  7 
+                             1 00
+                                    
+                         =     01 0
+                                    
+                             0 01  
+                                   
 
-                     Number of independent       Row space
-                            eigenvectors         Left nullspace
-                     Jordan form                 Singular values
+
+               Example 3.4-2
+
+                                 cos θ  − sin   θ
+               The matrix  A =              
+                                 sinθ  cosθ  
+               Solution
 
 
-             Example
-
-              Jordan matrix J has triple eigenvalues 5, 5, 5. Its only eigenvectors are multiples of (1, 0, 0). Algebraic
-              multiplicity 3, geometric multiplicity 1:
-
-                            51 0                      01 0
-                                                               
-                    If  J =      0 51     then J −  5I =      0 01  has rank 2.
-                                                               
-                              005                     000  
-
-
-              Every similar matrix  B =  M − 1 JM  has the same triple eigenvalues 5, 5, 5. Also B – 5I must have the
-              same rank 2. Its nullspace has dimension 3 − 2 = 1. So each similar matrix B also has only one
-              independent eigenvector.
-
-                                     T
-              The transpose matrix  J  has the same eigenvalues 5, 5, 5, and  J T  − 5I  has the same rank 2. Jordan’s
-                                T
-              theory says that  J  is similar to J.  The matrix that produces the similarity happens to be the reserve
-              identity M:
-
-                                                                        
-                                                               
-                                                              
-                                          500        00 1 5 1 0 00 1 
-                                                                         
-                                                              
-                                                                        
-                                                               
-                                                 
-                                                                                  
-                      T
-                    J =   M − 1 JM  is      1 5 0 =      01 0 0 51 01 0
-                                                                         
-                                                                        
-                                                                                  
-                                                              
-                                                 
-                                                               
-                                            0 1 5        1 00 005 1 00     
-                                                               
-                                                              
-                                                                        
-                                                                        
-                                                              
-                                                               
-                                                                               (
-                                                        )
-                                               (
-                                                                                               T
-              There is one line of eigenvectors  x 1 , 0, 0  for J and another line  0, 0, x 3 )  for  J .
-
-                                                               305</code></pre>
+                     T
+                    A A =    cos θ   sin   θ      cos θ   sin   θ −  
+                             sin θ −  cos θ      sin θ  cos θ  
+                             10
+                         =      
+                             01 </code></pre>
      	</div>
     
      </div>

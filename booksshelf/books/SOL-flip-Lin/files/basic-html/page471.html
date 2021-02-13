@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 471 - Linear Algebra Solution</title>
+        <title>Page 471 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 471 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 471 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 471</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,100 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>2.3 – Orthogonality | 459
 
-                                                                              I   F 
-               Suppose R is m by n matrix of rank r, with pivot columns first:      
-                                                                               0  0 
-                 a)  What are the shapes of those 4 blocks?
-                 b)  Find the right-inverse B with RB = I if r = m.
+                             
+                        ≤
+                    uv     u    v
+                   2  xy  ≤   (  x +  ) y
 
-                 c)  Find the right-inverse C with CR = I if r = n.
-                                                               T
-                 d)  What is the reduced row echelon form of  R  (with shapes)?
-                                                               T
-                 e)  What is the reduced row echelon form of  R R  (with shapes)?
-                                                                                  T
-                                 T
-                     Prove that  R R  has the same nullspace as R. Then show that  A A always has the same
-                     nullspace as A (a value fact).
-                 f)  Suppose you allow elementary column operations on A as well as elementary row operations
-                     (which get to R). What is the “row-and-column reduced form” for an m by n matrix of rank r?
+                     xy ≤   1 ( +  x  ) y    √
+                            2
+
+
+               Exercise
+
+                                                    n                          
+                                                                                  −
+                                                                         +
+               Show that u  and v  are orthogonal in    if and only if  u v =  uv
                Solution
-
-                                                          −
-                                        × 
-                        I   F        rr           r ×  (n r )  
-                   a)            :                           
-                                           ×
-                                                             −
-                                                    −
-                                       −
-                                                        ×
-                         0  0      (mr ) r    (mr   ) (n r   ) 
-                   b)  R = [I   F ]
-                       RB =  I ⇒  [I  F ]B =  I
-
-                                 [I   F ]     M     =  I
-                                           N  
-
-                                 IM +  FN =  I
-                                     M =  I
-                                 ⇒        →
-                                    
-                                                       −
-                                                : ×
-                                     N =  0  Fr    (n r  )
-                             I      
-                                ×
-                       B =    rr    
-                               0 (nr r−  )×    
+                          2             
+                    uv       =  (uv+  ) (uv+       )
+                      +
+                                        
+                                
+                            =  uu uv v         u v    v
+                                
+                                   +
+                                          +
+                                       
+                                              
+                                                    
+                                                 +
 
 
+                                  2           2
+                            =   u   +  2  vu  v
+                                            +
+                          2            
+                    u v      =  (u v−  ) (uv−       )
+                      −
+                                        
+                                
+                            =  uu uv v         u v    v
+                                              
+                                   −
+                                          −
+                                                 +
+                                       
+                                
+                                                    
 
-                   c)  R = [I     ] 0
 
-                       CR =  I ⇒  C [I    ] 0 =  I
+                                  2           2
+                            =   u   −  2  vu   v
+                                          
+                                            +
+                       2            2      2            2
+                     u   +  2 vu +      v    ?   u  −  2 vu +      v
+                               
+                                                       
+                               
+                   2 vu        ? − 2 vu
+                                                                
+                   For  2 vu  to be equal to  2 vu−       , if and only if vu =  0
 
-                       C =    I    0        
-                              × 
-                             rr      r ×  (m r   −  )  
 
-                               I rr        0 (m r r   
-                                  ×
-                                                  ×
-                                               −
-                                                  )
-                        T
-                   d)  R =                            
-                                                                        R
-                               F         0               R −  F r×−  ) 1
-                                                            2
-                                                                   (nr
-                                 (nr
-                                                ×−
-                                             −
-                               r×−  )     (m r )(nr )  
-                                                               471</code></pre>
+                                                     
+                       
+                   For vu =  0 if and only if u  and v  are orthogonal.
+
+
+
+               Exercise
+                                                                               
+                                                              n
+               Show that u v+  and uv−  are orthogonal in    if and only if  u =  v
+               Solution
+                                                                     
+                   For u v+  and uv−  to be orthogonal, if and only if (u v+  )(u v−  ) =  0
+                                        
+                                                      −
+                                                   
+                                                          
+                   (u v+  )(u v−  ) uu uv v=     −      +    u v   v
+                                       2      2
+                                  =   u  −    v
+                       2      2
+                     u   −    v  =  0
+                       2      2
+                     u   =    v
+                         
+                    u =  v
+                                                                                   
+                                                                  n
+                   Therefore, u v+  and uv−  are orthogonal in   if and only if  u =  v</code></pre>
      	</div>
     
      </div>

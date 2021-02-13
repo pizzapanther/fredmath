@@ -152,75 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>For an m x n matrix of rank r:
+    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Spaces   | 169
+
+               Example 2.5-6
+
+               Find the null space of
+                                                                                 y
+                           12               12
+                a)  A =            b)  B =                                 3
+                           0 3              36 
+               Solution                                                        2
 
 
-                                  Fundamental Space         Subspace of         Dimension
+                        12   x   1    0   x +  1  x =  2  0              1
+                   a)            =    →
+                                      0
+                        0 3      x 2       3x = 0                                              x
+                                                2
+                                                                    −2    −1          1     2     3
+                        ⇒ x =  x =  0
+                           1    2                                             −1
+                                    
+                       So  NS ( ) { } 0A =                                    −2
 
-                                                                   n
-                                 Nullspace                                        n – r
-                                                                   m
-                                 Column Space                                       r
-                                                                   n
-                                 Row space                                          r
-                                                                   m
-                                 Left nullspace                                   m – r
 
+                         120
+                   b)          
+                         36 0    R −  3R 1                                       y
+                                     2
+                                                                                  3
+                         1 20
+                               
+                         000                                                    2
 
+                        ⇒  x = − 2x                                               1
+                            1      2
+                                     s
+                       If we let  x = , then                                                           x
+                                 2                                −3   −2    −1         1    2     3
+                         x                                                     −1
+                                      ( )
+                         1     is in  NS B  if and only if
+                           x 2                                               −2
 
-             Example
-             Find a basis for each of the four subspaces associated with matrix A:
-
-                          1 2 4
-                    A =          
-                          2 48   
-             Solution
-
-                  1 2 4
-                         
-                  2 48     R −  2R 1
-                               2
-                  1 2 4     x = − 2x −  4x 3  ←   Row   space
-                               1
-                                       2
-                         
-                  00 0   
-                                           1
-                                          
-                                          
-                1.  Basis for row space:    2
-                                          
-                                          
-                                           4
-                                          
-                                                   1
-                                                  
-                2.  Basis of the column spaces:    
-                                                   2
-                                                  
-                Rank(A) = 1
-                Dimension of A = 1
-
-                The pivots variables are:  x
-                                          1
-                The free variables are:  x  ,  x
-                                        2   3
-
-                    Set  x  = 1 x   =  0
-                         2        3
-                       The special solution:  s =  ( 2, 1, 0−  )
-                                             1
-                    Set  x  =  0 x   = 1
-                         2        3
-
-                       The special solution:  s =  ( 4, 0, 1−  )
-                                             2
+                        x      −   2
+                         1    =  s   
+                           x 2       1  
 
 
 
-
-
-                                                              187</code></pre>
+               Example 2.5-7
+                                              1   2
+               Describe the nullspace of  A =      
+                                               3  6 
+               Solution
+                                                                    0
+                   Apply the elimination to the linear equations  Ax = :
+                         x +   2x =  0             x +   2x =  0
+                         1     2      →        1    2    
+                                                          =
+                           3x +  1  6x =  2  0  R − 3R 1        0 0    
+                                           2
+                                                           )
+                   There is only one equation  x +  (  1  2x =  2  0 , this line is the Nullspace  ( ) .
+                                                                                      NA</code></pre>
      	</div>
     
      </div>

@@ -152,88 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Theorem
-
-                                                                   
-             Independent x from different λ  - Eigenvectors  x   , , x  that correspond to distinct (all different)
-                                                               
-                                                            1       n
-             eigenvalues are linearly independent. An n by n matrix that has n different eigenvalues (no repeated λ’s)
-             must be diagonalizable.
+    <pre style="white-space:pre-line"><code>3. 3 –  Gram-Schmidt Process | 281
 
 
-             Proof
-                                  
-                Suppose  cx +   c x =   0 (1)
-                          11     2 2
-
-                ( cx    c x   )     λ   1    =  0
-                    
-                  11
-                         2 2 
-                                 2    λ
-                                  
-                    c λ  x +  c λ  x =  0   (2)
-                     1 11      2 2 2
-                Multiply (1)  by λ , that implies to
-                                  2
-                                  
-                    c λ  x +  c λ  x =  0   (3)
-                     1 21      2 2 2
-
-                (2) (3)
-                    −
-                                                  
-                c λ  x +  c λ  x −  ( c λ  x +  c λ  x  )  =  0
-                 1 1 1     2 22       1 2 1     2 22
-                c λ  x +   c λ    x −  c λ  x −   c λ  x =   0
-                 1 1 1     2 22      1 2 1     2 22
-                c λ  x −   c λ    x =  0
-                 1 11      1 2 1
-                   (
-                c λ − λ     )    0
-                             x =
-                 1   1    2   1
-                       
-                Since  x ≠  and λ’s are different λ − λ ≠ , we forced c =     0
-                                                            0
-                           0
-                        i                          1    2                  1
-                                                                             
-                Similarly; Multiply (1)  by λ , that implies to   c λ  x +  c λ  x =  0  (4)
-                                             1                  1 11      2 1 2
-                (2) (4)
-                    −
-                               
-                                                   
-                                         
-                     
-                c λ  1 11  c λ  2 2 2  c λ  1 11  c λ  2 1 2  0
-                                         x −
-                                                   x =
-                     x +
-                               x −
-                              
-                c 2 ( λ − λ 1 ) x =  0    ⇒   c =  0
-                               2
-                      2
-                                           2
-                                
-             Therefore,  x 1   and   x  must be independent.
-                                  2
+                               1
+                    v  , v   = ∫   x 2  dx
+                      2   2     − 1
 
 
-             Theorem
-                          
-                If  v 1 , , v…  n   are eigenvectors of A corresponding to distinct eigenvalues  λ 1 , , …λ , then
-                                                                                                  n
-                     
-                              
-                  
-                { v 1 , v 2 , , v k }  is linearly independent set.
-                          
+                                 3
+                            =  1 x   1
+                              3     − 1
 
-                                                               299</code></pre>
+                            =  2
+                               3
+
+                              1
+                                   2
+                    u  , v  = ∫   x  dx
+                      3  1      − 1
+
+                                 3
+                            =  1 x   1
+                              3     − 1
+
+                            =  2
+                               3
+
+
+                               1
+                                    3
+                    u  , v   = ∫   x  dx
+                      3   2     − 1
+                                  4
+                            =  1  x    1
+                               4     − 1
+
+                            =  0
+                                              
+                            u 3 , v 1    u 3 , v 2  
+                   v =  u −            v −           v
+                     3    3       2    1       2    2
+                                v 1           v 2
+
+
+                       =  x −  2  3 ( )( ) 0x  −  12
+                              2          23
+                          2
+                       =  x −  1
+                              3
+
+                              1         2
+                                     2
+                    v  , v  = ∫   ( x −  1 )   dx
+                      3   3     − 1     3
+
+                              ∫ − 1  x −  3  x +  9
+                                1 (  4  2  2   1 )  dx
+                            =
+
+                                               )
+                            =  ( 1  x −  5  2  x +  3  1  x   1 − 1
+                                      9
+                               5
+                                            9
+                            =  1  −  2  +  1  +  1  −  2  +  1
+                              5   9   9   5   9   9
+                            =  8
+                               45</code></pre>
      	</div>
     
      </div>

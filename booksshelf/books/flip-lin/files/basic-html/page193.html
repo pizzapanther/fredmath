@@ -152,69 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>13.  Every m by n matrix of rank r reduces to (m by r) times (r by n):
-
-                                                                                      T
-                           A = (pivot columns of A) (first r rows of R)  (COL ROW=  )(  )
-                                              1   1   2    4
-                                                             
-                  Write the 3 by 4 matrix  A =      1  2  2  5  as the product of the 3 by 2 from the pivot columns
-                                                             
-                                                            
-                                               1  3   2    6 
-                  and the 2 by 4 matrix from R.
-
-                                                                                 I   F 
-             14.  Suppose R is m by n matrix of rank r, with pivot columns first:     
-                                                                                  0  0 
-                    a)  What are the shapes of those 4 blocks?
-                    b)  Find the right-inverse B with RB = I if r = m.
-
-                    c)  Find the right-inverse C with CR = I if r = n.
-                                                                 T
-                    d)  What is the reduced row echelon form of  R  (with shapes)?
-                                                                 T
-                    e)  What is the reduced row echelon form of  R R  (with shapes)?
-                                                                                     T
-                                    T
-                       Prove that  R R  has the same nullspace as R. Then show that  A A always has the same
-                       nullspace as A (a value fact).
-                    f)  Suppose you allow elementary column operations on A as well as elementary row operations
-                       (which get to R). What is the “row-and-column reduced form” for an m by n matrix of rank r?
-
-             15.  True or False (check addition or give a counterexample)
-                                                     (
-                                                                  )
-                                                            T
-                    a)  The symmetric matrices in M  with  A =  A  from a subspace.
-                                                                         )
-                                                          (
-                                                                  T
-                    b)  The skew-symmetric matrices in M  with   A = − A  from a subspace.
-                                                        (      T     )
-                    c)  The un-symmetric matrices in M  with  A ≠   A  from a subspace.
-
-                    d)  Invertible matrices
-                    e)  Singular matrices
-
-                            1  2     − 2   3     0 
-                            2  4     − 3   7     0  
-             16.  Let  A =                         
-                            3  6     −  5  10   −  2
-                                                   
-                            5  10    − 9  16     0  
-
-                    a)  Reduce A to row-reduced echelon form.
-                    b)  What is the rank of A?
-                    c)  What are the pivots?
-                    d)  What are the free variables?
-                    e)  Find the special solutions. What is the nullspace  ()NA ?
-                                                                                          A
-                    f)  Exhibit an r x r submatrix of A which is invertible, where  r =  rank () .  (An r x r submatrix
-                       of A is obtained by keeping r rows and r columns of A)
+    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Spaces   | 175
 
 
-                                                              193</code></pre>
+               36.  V =   3 , S =  ( { 1, , s t )  ,   s t are  real  numbers }  where V is a vector space and S is subset of V
+                     a)  Is S closed under addition?
+                     b)  Is S closed under scalar multiplication?
+                     c)  Is S a subspace of V?
+
+
+               37.  V =   3 , S =  ( { , , xy z )   ,   ,  xy z ≥  } 0  where V is a vector space and S is subset of V
+                     a)  Is S closed under addition?
+                     b)  Is S closed under scalar multiplication?
+                     c)  Is S a subspace of V?
+
+
+                                                 x
+                                                     y
+               38.  V =   3 , S =  ( { , , xy z )  z = ++  } 1  where V is a vector space and S is subset of V
+                     a)  Is S closed under addition?
+                     b)  Is S closed under scalar multiplication?
+                     c)  Is S a subspace of V?
+
+                                                                           }
+               39.  Let  S =  ( {  a 1 , a 2 , a 3 ) ∈  3 : a =  2  3a and a =  3  a −  1  2 , Determine:
+                                                         1
+
+                       a)  Is S closed under addition?
+                       b)  Is S closed under scalar multiplication?
+                                              3
+                       c)  Is S a subspace of  ?
+
+
+               40.  Let  S =  ( {  a 1 , a 2 , a 3 ) ∈  3  : a =  1  3a and a =  3  −  a 2 } , Determine:
+                                                         2
+                       a)  Is S closed under addition?
+                       b)  Is S closed under scalar multiplication?
+                                              3
+                       c)  Is S a subspace of  ?
+
+                                                             }
+               41.  Let  S =  ( {  a 1 , a 2 , a 3 ) ∈  3  : a =  1  a +  3  2 , Determine:
+
+
+                       a)  Is S closed under addition?
+                       b)  Is S closed under scalar multiplication?
+                                              3
+                       c)  Is S a subspace of  ?
+
+                                                                    }
+               42.  Let  S =  ( {  a 1 , a 2 , a 3 ) ∈   3  :  2a −  1  7a +  2  a =  3  0 , Determine:
+
+                       a)  Is S closed under addition?
+                       b)  Is S closed under scalar multiplication?
+                                              3
+                       c)  Is S a subspace of  ?</code></pre>
      	</div>
     
      </div>

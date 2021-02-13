@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 541 - Linear Algebra Solution</title>
+        <title>Page 541 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 541 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 541 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 541</div>
      </div>
      <div id="content-middle">
@@ -152,96 +152,108 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Space | 529
 
-                                                     ( )
-                                     n
-             Let S be a subspace of   . Explain what  S ⊥  ⊥  = S  means and why it is true.
-             Solution
-                ( )   ⊥  is the orthogonal complement of ,  S , which is itself the orthogonal complement of S, so
-                   ⊥
-                                                           ⊥
-                  S
-                ( )   ⊥  = S  means that S is the orthogonal of its orthogonal complement.
-                   ⊥
-                  S
-                                                      ( )   ⊥                      ( )  ⊥
-                                                                                     ⊥
-                                                         ⊥
-                We need to show that S is contained in  S     and, conversely, that  S     is contained in S to be
-                true.
-                                   ⊥           ⊥                                  ⊥
-                  i.  Suppose  v ∈ S  and  w∈ S . Then  v w =  by definition of  S .
-                                                            ,
-                                                                  0
-                                                     ( )  ⊥                                   n
-                                                        ⊥
-                      Thus, S is certainly contained is  S   (which consists of all vectors in   which are
-                                     ⊥
-                      orthogonal to  S ).
-
-                                  ( )
-                                    ⊥  ⊥                                        ⊥
-                  ii.  Suppose  v ∈ S     (means v is orthogonal to all vectors in  S ); then we need to show that
-                      
-                      v ∈ S .
-                                                                          {
-                                 {
-                                      
-                                                                                
-                                                                                        
-                                               
-                                                                            
-                                   
-                                                                                                            ⊥
-                                                                                  ,
-                                                                              ,
-                      Let assume  u u   2 ,  , u p }  be a basis for S and let  w w   , w q }  be a basis for  S . If
-                                     ,
-                                                                             1
-                                                                                 2
+                       
+                   a)  u v+  =  ( a , a , a 3 ) ( b , b , b 3 )
+                                           +
+                                               1
+                                                   2
+                                    2
+                                 1
+                                                                 )
+                            =  ( a ,  3a , a −  1  2 +  ) ( b ,  3b , b −  1  2
+                                                        1
+                                     1
+                                1
+                                                   1
+                                                                )
+                                                       2 b −
+                            = ( a + b ,  3a +  3b , a − +  1   2
+                                               1
+                                1
+                                     1
+                                          1
+                                                   1
+                                       ) (
+                                                   ) (
+                                                                 4
+                            =  ( (  a +  1  b ,  3  a +  1  b ,  a +  1  b −  1 ) )
+                                      1
+                                                  1
+                       Let c =  a + b
+                                 1
+                            1
+                                     1
+                       
+                                               )
+                                    3 ,  c −
+                         +
+                       u v =  ( c 1 ,   c 1  1  4
+                       c =  c − 4   ≠   c − 2
+                        3    1         1
+                       S is not closed under addition.
+                        
+                              (
+                   b)  ku =  k a , a , a 3 )
+                                    2
+                                1
+                              (
+                                             )
+                           =  k a ,  3a , a −  2
+                                         1
+                                1
+                                     1
+                                                )
+                           = ( ka ,  3ka , ka − 2k
+                                      1
+                                          1
+                                1
+                       Let c =  ka
+                            1     1
+                        
+                                             )
+                       ku = ( c 1 ,  3 ,cc −  2k
                                    1
-                                 {               }
-                                     ,
-                      v ∉ S , then  u u 2 ,  , u p  , v  is linearly independent set. Since each vector ifs that set is
-                                    1
-                                                     {
-                                                                  
-                                                                                       
-                                                      
-                                           ⊥
-                                                        ,
-                      orthogonal to all of  S , the set  u  u  2 ,   , u p , , v w  w     1 ,   2 ,  , w q }  is linearly independent.
-                                                       1
-                                            1
-                                                                                 +
-                      Since there are  pq+ +  vectors in this set, this means that  pq +≤          pq ≤ −    1.
-                                                                                                    +
-                                                                                                          n
-                                                                                       1 n ⇔
-                                                                          
-                                                                 th
-                                                                           T
-                      On the other hand, If A is the matrix whose i  row is u , then the row space of A is S and the
-                                                                           i
-                                        ⊥
-                      nullspace of A is  S .
-                                                                                                          ⊥
-                                                                                                  ( )
-                      Since S is p-dimensional, the rank of A is p, meaning that the dimension of nul A = S  is
-                      q = −  p . Therefore,
-                          n
-                                          pq+=    p + (n −  ) p =
-                                                               n
-                                                                                             ( )
-                                                                                         
-                                                           n
-                                                              1
-                      Which contradict the fact that  pq+ ≤− . From this, we see that, if v ∈ S ⊥  ⊥ , it must be the
-                               
-                      case that  v ∈ S .
+                                       1
+                       c =  c − 2k   ≠   c − 2
+                        3    1          1
+                       S is not closed scalar multiplication.
+                   c)  Since S is not closed under addition and closed scalar multiplication, then S is not a subspace of
+                         3
+                        .
 
-                                                              541</code></pre>
+
+               Exercise
+               Let  =  S  ( {  a 1 , a 2 , a 3 ) ∈  3  : a =  1  3a and a =  3  −  a 2 } , Determine:
+                                                    2
+                 a)  Is S closed under addition?
+                 b)  Is S closed under scalar multiplication?
+                                         3
+                 c)  Is S a subspace of   ?
+               Solution
+                                                   
+                   a)  Let u = ( a , a , a 3 )  and v = ( b , b , b 3 )
+                                     2
+                                 1
+                                                         1
+                                                             2
+                        
+                         +
+                                           +
+                       u v =  ( a , a , a 3 ) ( b , b , b 3 )
+                                1
+                                                   2
+                                               1
+                                    2
+                                                           −
+                                         −
+                                               +
+                            =  ( 3a , a ,  a 2 ) ( 3b , b ,  b 2 )
+                                      2
+                                                    2
+                                                        2
+                                  2</code></pre>
      	</div>
     
      </div>

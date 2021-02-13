@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 739 - Linear Algebra Solution</title>
+        <title>Page 739 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 739 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 739 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 739</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution             Section 4.4 –Eigenvalues & Eigenvectors
+    <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces | 727
+
+               Exercise
+                                                                           
+               Write down all known relation between r and m and n if  Ax =  b has
+
+                                          
+                 a)  No solution for some b .           
+
+                 b)  Infinitely many solutions for every b .                 
+                                                   
+                 c)  Exactly one solution for some b , no solution for another b .
+                                                   
+                 d)  Exactly one solution for every b .
+               Solution
+
+                   a)  The system has less than full row rank: r &lt;  m .
+
+                                                                                      r
+                   b)  The system has full row rank and less than full column rank: m = &lt; .
+                                                                                         n
+                                                                                     r
+                   c)  The system has full column rank and less than full row rank: n = &lt;  m.
+                   d)  The system has full row and column rank (it is invertible): m = = .
+                                                                                       n
+                                                                                    r
 
 
+               Exercise
+               Find a basis for its row space, find a basis for its column space, and determine its rank
 
-             Exercise
+                          0 2 − 3   4   1 2     1   7
+                          00    3   −  2 0 4 −   53                    3  2   − 1
+                                                                       6  3    5  
+                   a )   00     0   0   06 −     2 2            b)               
+                                                                       3 −  1 −  6−
+                          00    0   0   00      2   1                  0  − 1  7  
+                            00  0  0   00      0   0                           
 
-             Find the eigenvalues and eigenvectors of  , A A 2 , A − 1 ,  and   A +  4I :
+               Solution
 
-                                 2  −  1        2     5  −  4
-                           A =           and   A =          
-                                 −  1  2              −  4  5  
+                   a)  Row Space: every row
 
-                                                                                2
-             Check the trace  λ +λ  and the determinant  λλ  for A and also  A .
-                              1    2                       12
-             Solution
+                                         1    − 3  2     1 
+                                            3        − 5 
+                                                     4
+                                         0
+                                                      
+                       Column Space:  0  ,  0   ,  6   ,    2−
+                                             
+                                                      
+                                                     0
+                                         0
+                                            0        2  
+                                            0          0    
+                                                     0
+                                         0
+                                         
+                                                      
+                       Rank = 4
 
-                For A:
-                               2 − λ   − 1
-                det ( A − λ  ) I =
-                                − 1   2 − λ
-                                       2
-                               =  (2 − λ ) − 1
-                                  2
-                               = λ −  4λ+  3 0=
-
-                The eigenvalues of A are  λ=  1 and    λ =   3.
-                                          1              2
-                The trace of a square matrix A is the sum of the elements on the main diagonal: 2 + 2 agrees with 1+
-
-                3. The det(A) = 3 agrees with the product λλ .
-                                                          12
-                The eigenvectors for A are:
-
-
-                λ=   1:    ( A λ−  1 IV =  )  1  0
-                  1
-                                          0
-                                    x
-                       −
-                     21      −  1    
-                                       =
-                                   
-                                          0
-                                    y
-                               −
-                      −  1  21     
-                                      0
-                                x
-                      1   −  1         x −   y =  0
-                                   =
-                                   →  
-                                      0
-                                y
-                     − 1   1          
-                    ⇒   x =  y
-
-                                                1  
-                Therefore, the eigenvector V =  
-                                            1   
-                                                1
-                λ =   3 :   ( A λ−  2 IV =  )  2  0
-                  2
-                                               x
-                                      0
-                                x
-                     − 1  − 1          −−  y =  0
-                                   =
-                                   →  
-                                      0
-                                y
-                     −  1  −  1       
-                    ⇒   x =  −  y
-
-                Therefore, the eigenvector V =      1   
-                                            2     − 1 
-
-                                                              739</code></pre>
+                         3  2    − 1
+                         6  3    5    R − 2R
+                   b)                      2  1
+                         3 −  1 −  6 −  R +  R
+                                        3   1
+                         0  − 1  7  </code></pre>
      	</div>
     
      </div>

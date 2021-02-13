@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 184 - Linear Algebra Solution</title>
+        <title>Page 184 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 184 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 184 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 184</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2   1                      3   1                        23
-              D =        = − 3          D =         = − 6           D =        =  3
-                                         x
-                                                                      y
-                  1 −  1                     3 −  1                       13
-                                           D
-              x =  6  =  2             x =   x
-                  3                         D
-                                           D
-                   3
-              y = − = − 1              y =   y
-                   3                        D
-             ∴ Solution:  (2,  1  −  )
-
-
+    <pre style="white-space:pre-line"><code>176 | 1.5 – SOLUTION
 
           Exercise
 
-                                                       2x +   10y =  −  14
-          Use Cramer's rule to solve the system        
-                                                        7x −  2y =  −  16
+          Let A be an  nn×  symmetric matrix
+                           2
+           a)  Show that  A  is symmetric
+           b)  Show that  2A −  2  3AI  is symmetric
+                                   +
+
+           c)  Show that  1 ( A +  A T )  is symmetric
+                          2
           Solution
 
-                  2 10                       − 14 10                      2 − 14
-              D =        = − 74         D =            = 188        D =           =  66
-                                                                      y
-                                         x
-                  7 −  2                     −  16 −  2                   7 − 16
-                                           D
-              x =  −  188  =  −  94       x =  x
-                    74     37               D
-                                           D
-              y =  −  66  =  −  33       y =  y
-                   74     37                D
-                            (  94     33 )
-             ∴ Solution:     −  37 , −  37
+                                                             T
+                                                                   TT
+             a)  The property of the transpose states that ( AB ) =  B A
+                                            T
+                 Since A is symmetric then A =  A
+                 ( )  T  = ( AA ) T
+                    2
+                  A
+
+                            TT
+                        =  AA
+                               2
+                             T
+                        = ( )
+                           A
+                                      A is symmetric
+                            2
+                        =  A
+                     2
+                 ∴  A  is symmetric
+
+                 (   2         ) T   ( )  T       T      T
+                                        2
+             b)  2A −    3AI      =  2 A    −  3 ( ) A  +  ( ) I
+                            +
+                                       ( )   2     T      T
+                                          T
+                                    =  2 A    −  3A +  ( ) I       A and I are symmetric
+
+                                                +
+                                    =  2A −  2  3AI
+                   ∴  2A −  2  3AI  is Symmetric
+                               +
 
 
+             c)  Then we need to prove that   1 ( A +  A T ) ( ( 1  A +  A T )) T
+                                                       =
+                                            2             2
 
-          Exercise
+                  1 ( (  A +  A T )) T  =  1 ( A +  A T ) T
+                  2               2
 
+                                      T
+                                =  1     A + ( )   A T  T 
+                                  2             
+                                            )
+                                      T
+                                =  1 ( A +  A
+                                  2
+                                =  1 ( A +  A T )
+                                  2
 
-                                                        4x −   3y =  24
-          Use Cramer's rule to solve the system        
-                                                       −  3x +  9y =  −  1
-          Solution
-
-                   4   − 3                   24 −  3                      4   24
-              D =         =  27         D =          =  213         D =           =  68
-                                                                      y
-                                         x
-                  − 3   9                    − 1   9                      −  3 −  1
-
-              x =  213 =  71           x =  D x
-                  27    9                  D
-                                           D
-              y =  68                  y =   y
-                  27                        D
-
-                            ( 71  68 )
-             ∴ Solution:      9  ,  27
-
-
-
-
-                                                           184</code></pre>
+                 ∴    1 ( A +  A T )  is symmetric
+                      2</code></pre>
      	</div>
     
      </div>

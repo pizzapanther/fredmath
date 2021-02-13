@@ -152,76 +152,52 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Rotation Operators
+    <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces   | 233
+
+               Example 2.9-3
+
+               When all rows are multiplying of one pivot row, the rank is  r = 1:
+
+                        1   3   4      0   3     5   
+                                    ,         ,      ,  [ ] 6
+                         2  6   8       0  5      2 
+               Solution
+
+                    1   3    4
+                              
+                     2  6    8   R −  2R 1
+                                    2
+                    1   3    4
+                              
+                     0  0   0 
+
+                    0   3
+                                  5R
+                     0  5   3R −    1
+                                2
+                    0   3   1  R
+                               3  2
+                     0  0 
+
+                    0   1
+                         
+                     0  0 
 
 
+                    5            1 R            1 
+                                 5  1      →     
+                                                  0
+                    2
+                       5R −  2R 1              
+                            2
 
+                   The row-reduced echelon form  R =  rref  ():
+                                                           A
+                        1   3   4      0   1     1   
+                                    ,         ,      ,  [ ] 1
+                         0  0   0       0  0      0 
 
-
-
-               Rotation through an                                   w 1   x cosθ =  y sinθ −    cosθ  − sinθ  
-               angle θ                                               w     x sinθ =  y cosθ +         sinθ  cosθ    
-                                                                       2
-
-
-
-
-
-
-
-
-               Counterclockwise                                      w =  x                         1   0  0  
-               rotation about the                                    w 1   y cosθ=  z sinθ −       0 cosθ  − sinθ  
-               positive x-axis                                         2                                       
-               through an angle θ                                    w 3   y sinθ =  z cosθ +    0 sinθ  cosθ  
-
-
-
-
-
-
-               Counterclockwise                                       w =  x cos +  z sin θ    cosθ   0 sinθ  
-                                                                               θ
-                                                                       1
-               rotation about the                                    w =   y                                  
-               positive y-axis                                         2                         0   1    0    
-               through an angle θ                                    w =  3  x sin +  θ −  z cos θ    − sinθ  0 cosθ  
-
-
-
-
-
-
-
-
-               Counterclockwise                                      w =   x cos −  y sin θ    cosθ  − sinθ  0
-                                                                               θ
-               rotation about the                                    w 1   x sinθ =  y cosθ +                 
-                                                                                                               
-               positive z-axis                                         2                         sin θ  cos θ  0
-                                                                                                               
-               through an angle θ                                    w =   z                           0  0  1 
-                                                                       3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              251</code></pre>
+                   These matrices have only one pivot.</code></pre>
      	</div>
     
      </div>

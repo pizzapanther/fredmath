@@ -152,72 +152,18 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Identity Matrix
-
-                                                          1 00
-                                                                 
-             The identity matrix is given by the form:  I =      01 0    ⇒  Ix =  x
-                                                                 
-                                                            0 01  
+    <pre style="white-space:pre-line"><code>1.1 – Introduction to System of Linear Equations & Matrices  | 5
 
 
-
-             Properties of Matrix
-
-             Addition and Scalar Multiplication
-
-                   +
-                 AB =    B +  A                  Commutative Property of Addition
-                 A +  (B C+  ) (A B=  +  ) C+     Associative Property of Addition
+               1.1−4  Three Equations in 3 Unknowns
 
 
-                          l
-                           A
-                 k
-                  l
-                      =
-                ()A k    ( )                     Associative Property of Scalar Multiplication
-                     +
-                              +
-                  ( k A B =  )  kA kB            Distributive Property
-                  ( k A B =  )  kA kB            Distributive Property
-                     −
-                              −
-                              +
-                   +
-                      ) =
-                (k l A kA lA                     Distributive Property
-                         =
-                      )
-                              −
-                (k l A kA lA                     Distributive Property
-                   −
-                 A +=       A =  A               Additive Identity Property
-                    0 0 +
-                               )
-                            −
-                          =
-                 A +  ( A ) ( A +  A = 0         Additive Inverse Property
-                     −
-                                   ( )
-                            ( ) =
-                      )
-                  ( k AB =  kA B  A kB
+               Given the system equations
+                        x +  2y +  3z =  6
+                       2x +  5y +  2z =  4
 
-             Multiplication
-                 AB ≠  BA                        Commutative “law” is usually broken
-                      ) (AB
-                  ( A BC =    )C                 Associative Property of Multiplication (Parentheses not needed)
-                  ( A B C =  )  AB +  AC         Distributive Property
-                     +
-                               +
-                   +
-                (B C A =  )  BA CA               Distributive Property
-                     −
-                  ( A B C =  )  AB −  AC         Distributive Property
-                (B C A =  )  BA CA               Distributive Property
-                               −
-                   −
+                        6x − 3y +=   2
+                                 z
 
 
 
@@ -230,7 +176,70 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                              23</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               This system can be written as linear combination:
+                          1      2   3    6  
+                          2 +
+                                               4
+                                         2 =
+                       x    y   5 +     z     
+                          
+                                
+                                         
+                                               
+                          6  
+                                         1  
+                                               2  
+                              − 3       
+                                
+                        6  
+               Let b =   
+                        4
+                       
+                        2  
+                        
+               We want to multiply the three column vectors by  , , xy z  to
+               produce b.
+
+               The combination of the three vectors that produces vector b is 2 times the third vector.
+                       2 (3, 2, 1) =  (6, 4, 2) b
+                                            =
+                                                                                  2
+               Therefore, the coefficients that we need are  x = 0,  y =  0, and z = .
+                         1      2    3    6 
+                       0    0   5 +    2    
+                                               4
+                         2 +
+                                         2 =
+                               
+                                   
+                                              
+                         
+                                         
+                                         1  
+                         6  
+                                               2 
+                             − 3        
+                               
+                                   </code></pre>
      	</div>
     
      </div>

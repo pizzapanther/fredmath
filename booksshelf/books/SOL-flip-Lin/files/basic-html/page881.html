@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 881 - Linear Algebra Solution</title>
+        <title>Page 881 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 881 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 881 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 881</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1   0   0   0
-                              − 1  1  0   0 
-                          =                 
-                              0  − 2  1   0
-                                            
-                              −  1  3  −  31 
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 865
 
+               Exercise
 
-                          =  P − 1
-                              L
-                Check:
-                  Changing signs in rows 1 and 3 of  P , and columns 1 and 3, produces the four negative entries in
-                                                     L
+               Use the Gram-Schmidt process to find an orthogonal basis and an orthonormal basis for the subspaces
+                  m
+                 .
+                        ( { 1,  2, 2 ,  2, 2, 1 ,  2,  1,  2−  ) (  ) (  −  −  )}
 
-                  P − 1 . Multiply row i by ( ) 1−  i  and column j by ( ) 1−  j , which gives the alternating diagonals.
-                    L
-                                      ( , 1  has columns with alternating signs and equals its own inverse!
-                  Then  P D =  pascal n    )
-                         L
-                    ( PD PD =       PD PD
-                                 )
-                          )(
-                                         −
-                                          1
-                             L
-                      L
-                                            L
-                                     L
-                                  =  PP  − 1
-                                      L  L
-                                  =  I
-                  P  has only one line of eigenvectors  x = ( 0, 0, 0, x 4 )  with λ = 1. The rank of  P −  is certainly
-                                                                                                     I
-                    L
-                                                                                                 L
-                  3. So its Jordan form J has only one block (also with λ = 1):
-                                                                      11 00
-                                                                      01 1 0   
-                  P  and  P − 1  are somehow similar to Jordan’s  J =          
-                    L       L                                         00 11
-                                                                               
-                                                                      000 1    
+               Solution
+                                                         
+                   Let  u =   (1,  2, 2−  ) u =  (2, 2, 1 ) u =  (2,  1,  2−  −  )
+                          1                 2               3
+                       
+                   v =  u =  (1, − 2,  ) 2
+                    1    1
+                                 
+                            u  ,  v  
+                   v =  u −    2   1  v
+                     2    2       2   1
+                               v
+                                1
 
+                       =  (2, 2, 1    −  )  (2, 2, 1     ) (1,    9    − 2,  ) 2    (1,  −  2,  ) 2
 
-             Exercise
+                       =  (2, 2, 1   −  )  0 (1,  −  2,  ) 2
+                                   9
 
-             These Jordan matrices have eigenvalues 0, 0, 0, 0. They have two eigenvectors (one from each block). But
-             the block sizes don’t match and they are not similar:
+                       = (2, 2, 1      )
 
-                                               01 0 0                   01 0 0
-                                               0000                       0 01 0  
-                                          J =               and    K =            
-                                               000 1                    0000
-                                                                                 
-                                               0000                     0000     
+                        
+                    u  ,  v     (2, −  1, −  2      2,   ) 2
+                      3   1  v =             ) (1, −      (1, − 2,  ) 2
 
-             For any matrix M compare JM with MK. If they are equal show that M is not invertible. Then
+                        2   1               9
+                      v
+                       1
+                               =  0 (1, − 2,  ) 2
+                                 9
 
-             M − 1 JM =  K  is Impossible; J is not similar to K.
+                               =  (0, 0, 0    )
+                        
+                    u  ,  v  
+                      3   2  v =  1  (2,  −   1,  −  2      ) (2, 2, 1
+                                                                     )
 
-             Solution
-                         ( )
-                Let  M =  m ij  , then
+                                                 ) (2, 2, 1   
+                        2    2   9                        
+                      v
+                       2
+                                = (0, 0, 0    )
+                                              
+                            u 3 , v 1    u 3 , v 2  
+                   v =  u −            v −           v
+                     3    3       2    1       2    2
+                                v             v
+                                 1             2
+                       =  (2,  −  1,  −  2 ) (0, 0, 0  −  ) (0, 0, 0  −  )
 
-
-
-                                                              881</code></pre>
+                       = (2, −  1, −  ) 2
+                                                                 
+                       1                                       v 1
+                   q =    (1,  2, 2−  )                    q =
+                    1   3                                   1    v 1
+                                                                 
+                         ( 1   22    )
+                                 ,
+                       =  3 , −  33</code></pre>
      	</div>
     
      </div>

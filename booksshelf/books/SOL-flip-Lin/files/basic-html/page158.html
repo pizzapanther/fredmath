@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 158 - Linear Algebra Solution</title>
+        <title>Page 158 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 158 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 158 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 158</div>
      </div>
      <div id="content-middle">
@@ -152,61 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>150 | 1.4 – Inverse Matrices
 
-                       0   x    x
+               Suppose that  B =  PA, for some nonsingular matrix P. By the theorem, P is row equivalent to  I .
+                                                                                                          k
+               That is,  I =  E  E EP.
+                        k     n    21
 
-          Evaluate     x   x 2  5
-
-                       x   7   − 5
-          Solution
-
-              0   x    x   0   x
-
-              x   x 2  5  x   x 2
-              x   7   − 5 x    7
-
-                          =  5x +  2  7x −  2  x +  4  5x 2
-
-                                2
-                          = 17x −  x 4
+               Thus,  B =  E −  1 −  E  1  E −  1 A and this implies that A is row equivalent to B.
+                           1   2     n
 
 
-          Exercise
-                         2    x  1
-          Evaluate       − 31 0
+           Exercise
 
-                         2   14
-          Solution
+           Let A and B be 2 mn matrices. Suppose A is row equivalent to B. Prove that A is nonsingular if and
+                              ×
+           only if B is nonsingular.
+           Solution
 
-               2   x  1   2   x
-              − 31 0    −  31
-               2   14     2   1
-
-                          8 3 2 12x
-                        = −− +
-                        = 12x + 3
+               Suppose that A is row equivalent to B. Then, there exists a nonsingular matrix P such that  B =  PA.
+               If A is nonsingular then B is nonsingular.
+                                                        −
+                                                         1
+               Conversely, if B is nonsingular then  A =  PB  is nonsingular.
 
 
-          Exercise
+           Exercise
 
-                         1   x   − 2
-          Evaluate       3   1    1
-                         0 − 2    2
+           Show that if A and B are two n n×  invertible matrices then A is row equivalent to B.
 
-          Solution
-              1   x   − 2 1    x
+           Solution
 
-              3   1    1    3  1
-              0 −  2   2   0 −  2
-                            +
-                                 +−
-                        =  2 12 2 6x
-                        =  −  6x +  16
+               Since A is invertible, then A is a row equivalent to  I . That is, there exist elementary matrices
+                                                                 n
+               E  , E  , , E  such that  I =  E E       EA.
+                        
+                 1   2       k            n     k  k  1 −  1
+                                                                
+               Similarly, there exist elementary matrices  F  , F  , , F  such that  I =  FF   F B.
+                                                         1   2       k            n     ii− 1    1
+               Hence,  A =  E −  1 −  E  1  E −  1 I
+                            1   2      k  n
+                                                       )
+                        =  E 1 −  1 −  E 2 1   E −  k 1 ( FF  1   F B
+                                           ii−
+                                                    1
+                          (  −  1 −  1  −  1           )
+                        =  E 1  E 2    E k  F F  1   F B
+                                           ii−
+                                                    1
+               That is, A row equivalent to B.
 
 
+           Exercise
 
-                                                           158</code></pre>
+           Prove that a square matrix A is nonsingular if and only if A is a product of elementary matrices.
+
+           Solution
+               Suppose that A is nonsingular. Then A is row equivalent to  I . That is, there exist elementary
+                                                                         n
+
+               matrices  E  , E  , , E  such that  I =  E E      E A →      A =  E −  1 −  E  1   E −  1 I .
+                                 
+                         1    2       k            n     k  k  1 −  1             1   2      k  n
+               But each  E − 1  is an elementary matrix.
+                          i</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 893 - Linear Algebra Solution</title>
+        <title>Page 893 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 893 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 893 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 893</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1    1
-
-                 −  1 −  1  = 0
-
-                Since the determinant is 0, the inverse doesn’t exist.
-                Therefore, the matrix is not diagonalizable
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 877
 
 
-             Exercise
-                                                                                     Λ
-             Determine if the given matrix is diagonalizable. If, so, find matrices S and  ( )  such that the given
-                                                                                        D
-             matrix equals  SSΛ  − 1
+                       = (3, 2, 5     ) +  1 ( 2, 0,  −  ) 1
+                                    5
+                                    (  2     1 )
+                       = (3, 2, 5     ) +  −  5 , 0,   5
 
-                           3 3                                        1  0   1 
-                  a)                                                           
-                           4 2                                b)      0  2   0
-                                                                                  
-                                                                          10 −  1−  
-             Solution
-
-                    3 λ      3
-                      −
-                a)                 (3 λ=  −  )(2 λ  −  ) 12−
-                             −
-                      4    2 λ
-                                  = λ  2  5λ −  − 6 =  0
-
-                    The eigenvalues   λ   −  1,  λ =  =  6
-                                      1        2
-
-
-                    For λ =  −  1 ⇒  ( A IV+  )  1  =  0
-
-                         43    x   1  0   →  4x +  1  3y =  1  0
-                                  = 
-                                       0
-                         43      y   1   
-                        ⇒   4 x =  −  3y
-                              1       1
-
-                                                     − 3
-                    Therefore, the eigenvector: V =   
-                                                1    4  
-
-                    For λ =  6 ⇒    ( A −  6IV =  )  2  0
-
-
-                         −  3  3    x   2  0   − →  3x +  2  3y =  2  0
-                                     =  
-                                          0
-                          4   4  −     y   2   
-                        ⇒    x =  y
-                             2     2
-                                                        1  
-                      Therefore, the eigenvector: V =   
-                                                   2    
-                                                        1
-
-                          − 31
-                    S =       
-                          4  1 
+                         ( 13    26 )
+                       =  5  , 2,    5
 
 
 
+                                5         ( 13    26 )                       v  2
+                   q =                       5  , 2,   5                 q =    
+                     2
+                                                                           2
+                          13 +  2  10 +  2  26 2                               v 2
+                                          )
+                       =   1     (13, 10, 26
+                           945
+                                            )
+                       =    1     (13, 10, 26
+                            3 105
 
-                                                              893</code></pre>
+                           13         10        26   
+                       =        , −        ,         
+                           3 105    3 105    3 105 
+                        
+                    u  ,  v      (6, 1, 1       ) ( 2, 0, 1 )
+                                             −
+                                    −
+
+                      3   1  v =                     ( 2, 0, 1
+                                                              )
+
+                                                       −
+                        2   1             5
+                      v
+                       1
+                                              )
+
+                               = − 11 ( 2, 0, 1
+                                      −
+                                   5
+                                 ( 22      11 )
+                               =   5  , 0,   −  5
+                        
+                    u  ,  v  
+                      3   2  v =  25  ( (6, 1    ) 1      ( 13 , 2,  26 ))( 13 , 2,  26 )
+                                            ,
+                                          −
+
+
+                        2    2   945              5      5     5      5
+                      v
+                       2
+                                                  )(
+
+                                =  5  ( 78  −  2 +  26 13 , 2,  26 )
+                                  189 5         5    5      5
+                                      (
+
+                                =  94 13 , 2,  26 )
+                                  189 5        5
+                                    =      1,222 ,   − 188 ,   2,444   
+                                     945     189    945   
+                                              
+                            u 3 , v 1    u 3 , v 2  
+                   v =  u −            v −           v
+                     3    3       2    1       2    2
+                                v             v
+                                 1             2
+                       =  (6, 1 1   −−  ,  )  ( 22 , 0,  −    11 )   −      1,222 ,   −  188 ,    2,444   945    
+                                     5
+                                               5
+                                                      945
+                                                               189
+                         ( 8      16     1,222    188   2,444 
+                       =  5 ,  −  1,   5  )   −    945  ,   −  189 ,    945    
+                         ( 290     377   580 )
+                       =  945 ,   − 189  ,    945</code></pre>
      	</div>
     
      </div>

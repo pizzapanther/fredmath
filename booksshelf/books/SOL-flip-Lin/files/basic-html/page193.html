@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 193 - Linear Algebra Solution</title>
+        <title>Page 193 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 193 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 193 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 193</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                                                z
-                                                       3x +  2y − =  4
-             Use Cramer's rule to solve the system      3x −  2y += 5
-                                                                z
-                                                     
-                                                              z    1
-                                                      4x − 5y − = −
-             Solution
-                     3   2   − 1                        4   2   − 1
-
-                 D =  3  − 2  1 =  42            D =    5  − 2  1 =  63
-                                                   x
-                     4   −  5  −  1                    −  1 −  5  −  1
-
-                       3   4   − 1                     3   2   4
-                 D =   3   5   1 = 39            D =   3  − 2  5 =  99
-                   y                               z
-                       4  −  1 −  1                    4  −  5  −  1
+    <pre style="white-space:pre-line"><code>1.5 – Transpose, Diagonal, Triangular, and Symmetric Matrices | 185
 
 
-                 x  =  63  =  3           x =  D x
-                     42   2                    D
-                                              D
-                  y  =  39  =  13         y =   y
-                      42   14                  D
+                   ⇒   A − 1  is symmetric.
 
 
-                 z  =  99  =  33          z =  D z
-                     42    14                 D
+               Exercise
 
-                                   13
-                                        33
-                    Solution:  ( 3  ,  14  ,  14 )
-                               2
+                               T
+                                     TT
+               Prove that ( AB ) =  B A
+               Solution
+
+                   Let  A =      a ik       and  B =        b kj     
 
 
-             Exercise
+                   Then the ij-entry of AB is:
+                       ab     +  a b   +   +  a b
+                        i 11j    i 2 2 j      im mj
 
-                                                                  z
-                                                               y
-                                                           x + + =   2
-                                                         
-                                                                       5
-                                                               y z
-             Use Cramer's rule to solve the system        2x + − =
-                                                         
-                                                          x − + = −   2
-                                                                  z
-                                                              y
-                                                         
-             Solution
-                     1   1   1                          2   1    1
-                                   6
-                 D =  2  1   − 1 = −             D =    5   1   − 1 = − 6
-                                                   x
-                     1   − 1  1                        −  2  −  1  1
-                       1   2   1                       1   1   2
-                                                                   6
-                 D =   2   5   − 1 = − 12        D =   2   1   5 =
-                   y                               z
-                       1  − 2  1                       1   − 2  2
-                                              D
-                 x = 1                    x =   x
-                                               D
-                                              D
-                   y =  2                 y =   y
-                                               D
+                                                     T
+                   The reverse order, ji-entry of ( AB )
+                                                     T
+                                                                                             T
+                   Column j of B becomes row j of  B , and row i of A becomes column i of  A .
+                                         TT
+                   Thus, the ij-entry of  B A  is:
+                        ( (                                  )) T
+                         b 1j , b 2 j ,  , b mj )( a  1 i  , a  2 i  ,   , a im  =  b a +  1  ba  2  +  +  ba
+                                                                    1ji
+                                                                            2 ji
+                                                                                          mjim
+                              T
+                                   TT
+                   Thus ( AB ) =  B A
+
+
+               Exercise
+
+                                             T
+               Prove that ( AB+  ) =  T  A +  T  B
+               Solution
+
+                   For adding matrices, the matrices must have the size (mn×  )
+
+
+                   Let  A =        a ij         and  B =        b ij     
 
 
 
-                                                              193</code></pre>
+                                                 +
+                   Let C =        c ij        such that C =  AB
+
+                   Then the ij-entry of ( AB+  ) is:
+
+                   C =  AB
+                          +
+                      =        a ij       +        b ij     
+
+
+                      =        a + b ij     
+                          ij</code></pre>
      	</div>
     
      </div>

@@ -152,84 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>)
-                For λ =   5 ⇒     ( A − λ  IV =  0:
-                      2                 2    2
-
-                                    x
-                                          0
-                      −
-                     15      2    
-                                       =
-                                    
-                                          0
-                                    y
-                              −
-                      2     45      
-                                          0
-                                    x
-                         − 4  2    
-                                       =
-                                   
-                                          0
-                                    y
-                          2   −  1       →   2x −  y =  0
-                    2x =  y
-
-                                                    1 
-                    Therefore, the eigenvector V = 
-                                               2
-                                                    2
-                                                   
-
-
-             Power of a Matrix
-             Theorem
-                                                                         
-                                                                                                                 k
-             If k is a positive integer, λ is an eigenvalue of a matrix A, and  x   is a corresponding eigenvector, then λ
-                                        
-                                 k
-             is an eigenvalue of  A  and  x  is a corresponding eigenvector.
-
-
-             Example
-
-                                                  00 −   2
-                                                          
-                                      7
-             Find the eigenvalues of  A  for  A =      12  1
-                                                          
-                                                  1 0  3  
-                                                         
-             Solution
-                                −  λ  0     −  2 
-                det ( A λ  −  ) I =      1  2 λ  −  1    
-                                1     0         
-                                             −
-                                           3 λ  
-                            =  λ  3  5 λ −  2  8 − 4 =  0
-                                          λ +
-                The eigenvalues of A: λ    1 and   λ =  =  2
-                                       1             2
-                                     7
-                The eigenvalues of  A  are:
-
-                                          7
-                      7
-                λ    1 =  1   and  λ =  =  2 =  2 1 8
-                  1                  2
+    <pre style="white-space:pre-line"><code>Section 3.3 – Gram-Schmidt Process
 
 
 
-             Theorem
-
-             A square matrix A is invertible iff λ =  is not an eigenvalue of A.
-                                                  0
+               3.3−1        Definition
 
 
+               A set of two or more vectors in a real inner product space is said to be orthogonal if all pairs of distinct
+               vectors in the set are orthogonal. An orthogonal set in which each vector has norm 1 is said to be
+               orthonormal.
 
-                                                               289</code></pre>
+
+               3.3−2        Theorem
+
+
+                              
+                                                                                                    
+                                       
+                           
+               1.  If  S = { v 1 , v 2 ,  , v n }  is an orthogonal basis for an inner product space V, and if u is any vector
+                   in V, then
+                                                                           
+                                                , u v      , u v           u ,  v n  
+                                          u =      1  v +  1   2  v +  2   +         v
+                                                
+                                                                                       n
+                                                                               
+                                                            
+                                                v  2        v  2               v   2
+                                                 1           2                  n
+                                       
+                              
+                           
+                                                                                                     
+               2.  If  S = { v 1 , v 2 ,  , v n }  is an orthonormal basis for an inner product space V, and if u  is any
+                   vector in V, then
+                                                                           
+                                           u =   , u v v +   , u v  v +    +   u , v  v
+                                                    1  1        2   2             n  n
+
+               Proof
+                                           
+                                                                            
+                                  
+               1.  Since  S = { v   1 , v 2 ,  , v n }  is a basis for V, every vector u  in V can be expressed in the form
+                                                                             
+                                                   u =    c v +    c v +    +   c v
+                                                        1 1    2 2         nn
+                                       
+                                        , u   v
+                   Let show that  c =      i    for  i = 1, 2,  , n
+                                  i       2
+                                       v
+                                         i
+                                                   
+                    u ,  v  =  c v +  c v +    +   c v  ,    v
+                        i      1 1    2 2         nn     i
+                                                               
+                                  ,
+                           =  c vv     +  c  v  , v  +    +   c  v  , v
+                             1   1   i    2   2   i          n   n   i
+                                                                                                            th
+                   Since S is an orthogonal set, all of the inner products in the last equality are zero except the i , so
+                   we have
+                                          
+                                 , u v  =  c v  , v
+                                   i     i  i   i
+                                              2
+                                      =  c v
+                                         i   i</code></pre>
      	</div>
     
      </div>

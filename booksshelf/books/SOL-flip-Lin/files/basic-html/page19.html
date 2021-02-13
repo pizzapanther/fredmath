@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 19 - Linear Algebra Solution</title>
+        <title>Page 19 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 19 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 19 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 19</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1.2 – Gaussian Elimination  | 11
 
-                                                                         x +  x +  2x =  8
-                                                                          1   2      3
-             Use the Gauss-Jordan method to solve the system             −  x −  2x +  3x =  1
-                                                                       
-                                                                          1     2     3
-                                                                        3x −  1  7x +  2  4x =  3  10
-                                                                       
+               Exercise
 
-             Solution
+               For which numbers a does the elimination break down (1) permanently (2) temporarily
 
-                   1  1   2   8                       −  1 −  2  31         3    − 7  4    10
-                   −  1 −  2 3  1   R +  R              1   1   28           −  3  −  3  −  6  −  24
-                                 
-                                    2    1
-                     3  − 7 4 10    R −  3R          0   − 15   9         0   −  10  −  2  −  14
-                                     3     1
+                              ax +  3y =  −  3
 
-                  1   1    2    8 
-                   0  −  1  5   9    −  R
-                                       2
-                   0   −  10 −  2 −  14  
+                               4x +  6y =  6
 
 
-                  1   1    2    8     R −  R 2        1   1   2   8         0  −  10  −  2  −  14
-                                         1
-                   0  1   −  5  −  9                               9                         90
-                                    
-                                                      0  − 15               0   10   −  50  −
-                   0   −  10 −  2 −  14    R +  3  10R 2  1  0  7 17      0   0    −  52  −  104
+               Solve for x and y after fixing the second breakdown by a row change.
+               Solution
 
-                   1 0   7    17 
-                   01   −  5   −  9  
-                                  
-                     0 0 −  52 −  104    −  1  R
-                                        52  3
+                                                 x
+                                        a   3     − 3
+                   The matrix form is:              
+                                                    =
+                                                 y
+                                        4   6     6  
+                         0
+                   If a = , the elimination brakes down temporarily.
+                                  x
+                         4  6       6 
+                                  =   
+                                  y
+                               
+                         0  3       − 3 
+                   The system is in upper triangular form and entry row 2 column 2 is not equal to zero, therefore the
+                   system has a solution.
+                   If a ≠ ,
+                         0
 
-                   1 0  7   17   R −  7R 3            1  0   7    17        0  1  −  5  −  9
-                                    1
-                                      5R                           14                  10
-                   0 1 −  5 −  9   R +  2  3           0  0   −  7  −        0  0   5
-                                
-                     00  1  2                       1  0   0     3        0  1   0    1
+                                 x
+                        a   3     − 3
+                                    =
+                                               4
+                                 y
+                        4   6     6      R −   a  R 1
+                                                 2
+                         a    3         − 3 
+                                     x
+                               12    =       
+                                   
+                         0  6 −        6   12  +
+                                     y
+                                a           a 
+                       6 −  12  =  0
+                           a
+                       12  =  6
+                        a
+                       a = 12
+                           6
+                         =  2
 
-                   1 00 3
-                   01 0 1
-                             
-                            
-                     0 01 2  
+                         2
+                   If a = ,
+                                   x
+                          2   3     − 3
+                                      
+                                      =
+                                   y
+                          0   0     12 
+                         The system will fail and has no solution.
 
-
-                                    )
-                ∴ Solution: (3,  1,  2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              19</code></pre>
+                         2
+                   If a ≠ ;
+                           a    3         − 3 
+                                       x
+                                     
+                                 12    =       
+                           0  6 −        6   12   +
+                                       y
+                                  a           a 
+                        The system has a unique solution.</code></pre>
      	</div>
     
      </div>

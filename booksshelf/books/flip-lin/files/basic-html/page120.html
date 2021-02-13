@@ -152,92 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>      
-          10.  Compute the scalar triple product u    (v × w )
-                                                  
-                                                     
-                                                                     )
-                                  )
-                                                  )
-                 a)  u =  ( 2, 0, 6 , v =  (1,  3, 1 , w =  ( 5,  1, 1
-                                                                −
-                         −
+    <pre style="white-space:pre-line"><code>102 | 1.8 – Applications
+
+
+
+                              1  − 2  2 
+                 [5 0 13 −  ]     1  1  3 =      [18 −  23 −  42 ]
+                                1  −  1 −  4  
+
+
+                               1  − 2  2 
+                 [15 14 4 −  ]     1  1  3 =      [5 −  20 56 ]
+                                 1  −  1 −  4  
+
+
+                              1  − 2  2 
+                                                          ]
+                 [1 25 0 −  ]     1  1  3 =      [ 24 23 77
                                              −
-                                                           −
-                                                     
-                                                                    )
-                 b)  u =  ( 1, 2, 4 , v =  )  (3, 4,  2 , w =  )  ( 1, 2, 5
-                                                            −
-                                                −
-                         −
-                                                  
-                                )
-                                                               )
-                                                )
-                                            b
-                         a
-                 c)  u = ( , 0, 0 , v = (0,  , 0 , w =  (0, 0, c
-                                                      
-                                                                 ˆ
-                 d)  u =  3i −  ˆ  2 j −  ˆ  5, k ˆ  vi + =  ˆ  4 j −  ˆ  4 , k ˆ  w =  3 j +  ˆ  2k
-                                                  
-                 e)  u =  (3, −  1,  ) 6  v =  (2, 4, 3 )  w =  (5, −  1,  ) 2
+                                1  −  1 −  4  
 
-          11.  Use the cross product to find the sine of the angle between the vectors
-                                            )
-               u =    (2, 3,  6 , v−  )    =  (2, 3, 6
-                                     
-          12.  Simplify (u v+    ) (u v×  −  )
-                                               2      2   2      2
-          13.  Prove Lagrange’s identity:  u v×   =  u    v  −  (u   v )
-                                                                  
-                                                                              J
-          14.  Polar coordinates satisfy  x =  r cosθ  and  y =  sinθ  . Polar area    dr dθ includes J:
-                                                   x ∂  x ∂   
-                                             J =   r ∂  y ∂  θ ∂   y ∂       =      cosθ  r r −  sinθ    
-                                                   r ∂   θ ∂        sinθ  cosθ  
-                 The two columns are orthogonal. Their lengths are ______. Thus J = ______.
-                                                             
-                                                         
-          15.  Prove that  u v+    =  u +  v  if and only if u  and v  are parallel vectors.
+                 The sequence of coded row matrices is
 
 
-          16.  State the following statements as True or False
-                                                                  
-                                                                                                           
-                                                            
-                                                                                                     
-               a)  The cross product of two nonzero vectors u  and v  is a nonzero vector if and only if u  and v
-                   are not parallel.
-               b)  A normal vector to a plane can be obtained by taking the cross product of two nonzero and
-                   noncollinear vectors lying in the plane.
-                                               
-                                                         
-               c)  The scalar triple product of u , v , and  w  determines a vector whose length is equal to the
-                                                               
-                                                                        
-                   volume of the parallelepiped determined by u , v , and  w .
-                                                            
-                             
-                      
-               d)  If  u  and v  are vectors in 3-space, then  u v  is equal to the area of the parallelogram
-                                                            ×
-                                      
-                   determine by u  and v .
-                                                3                                
-               e)  For all vectors u , v , and  w  in  R , the vectors (u v×  ) w×   and u ×  (v ×  w ) are the same.
-                                               3                                           
-                                                                                     × =
-               f)  If u , v , and  w  are vectors in  R , where u  is nonzero and u v×  uw , then v =  w
+
+                 [13   −  26    −  21 ] [33         −  53    −  12 ] [18        −  23   −  42 ] [5        −  20 56 ] [ 24 23 77   −            ]
+                 The cryptogram:
 
 
 
 
 
+                         13   −  26    −  21 33    −  53    −  12 18   −  23   −  42 5   −      20 56   −  24 23 77
+
+             c)  To decode a message given the matrix A.
+                       1   − 2   2
+                  A =  −  1  1   3 =  1
+                       1   −  1 −  4
+
+
+                         −  1 −   10 −  8
+                                      
+                 A − 1  =      −  1  −  6  −  5
+                                      
+                            0  −  1  −  1  
+
+                 With the cryptogram:
 
 
 
-                                                           120</code></pre>
+                 [13   −  26    −  21 ] [33         −  53    −  12 ] [18        −  23   −  42 ] [5        −  20 56 ] [ 24 23 77   −            ]
+
+
+                                 −  1 −   10 −  8
+                                                           ]
+                 [13 −  26 21  ] −      1  −  6  −  5 =      [13 5 5
+                                    0  −  1  −  1  
+
+                                 −  1 −   10 −  8
+                                                            ]
+                 [33 −  53 −   ] 1 −      1  −  6  −  5 =      [20 0 13
+                                    0  −  1  −  1  </code></pre>
      	</div>
     
      </div>

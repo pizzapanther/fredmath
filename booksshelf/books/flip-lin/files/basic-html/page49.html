@@ -152,93 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Symmetric in LDU
-
-                                                                 T
-             When elimination is applied to a symmetric matrix,  A =  A is an advantage.
-
-                     1   2    1   01     2
-                            =            
-                      2  7     2  10     3 
-                                       
-                                     
-                               1   01      01      2
-                                             
-                                     
-                            =                   
-                                     
-                                             
-                               2   1 0     30      1 
-                                 L       D       U
-
-                                                                                       T
-                          T
-                  If  A =  A  can be factored into LDU with no row exchanges, then U =  L . The symmetric
-                                                                T
-                  factorization of a symmetric matrix is  A =  LDL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              49</code></pre>
+    <pre style="white-space:pre-line"><code>1.3 – The Algebra of Matrices  | 31
+
+
+               12.  The very last words say that the 5 by 5 centered difference matrix is not invertible, Write down
+                     the 5 equations Cx b= . Find a combination of left sides that gives zero. What combination of
+                                    ,
+                            ,
+                               ,
+                     b  , b b  b b must be zero?
+                      1   2   3   4   5
+
+                                                                  2
+               13.  A direct graph starts with n nodes. There are  n possible edges, each edge leaves one of the n
+                     nodes and enters one of the n nodes (possibly itself). The n by n adjacency matrix has  a = 1
+                                                                                                          ij
+                                                                                  0
+                     when edge leaves node i and enter node j; if no edge then a = . Here are directed graphs and
+                                                                              ij
+                     their adjacency matrices:
+
+
+                                       node 1 to node 2
+                                                                                            2
+                      node 1 to node 1  1              2                     1
+
+
+
+                                        node 2 to node 1                                    3
+
+                                                                                 1   1   1
+                                          1   1                                          
+                                      A =                                        1  0   0 
+                                           1  0                                  1   0  0  
+
+                                        2
+                       The i, j entry of  A is  aa  +   +  a a .
+                                              i 11j        in nj
+                        Why does that sum count the two-step paths from i to any node to j?
+
+                                         k
+                       The i,  j entry of  A  counts k-steps paths:
+                                  2
+                           1   1     2   1   counts the paths     1 to  2 to  1,1 to  1 to  1  1 to  1 to    2
+                                  =                                                              
+                             1  0     1  1    with two edges         2 to  1 to  1     2 to  1 to  2 
+
+                                                                                         3
+                                                                                                    k
+                       List all 3-step paths between each pair of nodes and compare with  A . When  A  has no zeros,
+                       that number k is the diameter of the graph – the number of edges needed to connect the most
+                       pair of nodes. What is the diameter of the second graph?
+
+               14.  A is 3 by 5, B is 5 by 3, C is 5 by 1, and D is 3 by 1. All entries are 1. Which of these matrix
+                     operations are allowed, and what are the results?
+                       a) AB             b)  BA            c)  ABD           d)  DBA
+                       e)  ABC           f)  ABCD          g) A(B + C)
+
+
+               15.  What rows or columns or matrices do you multiply to find.
+                       a)  The third column of AB?
+                       b)  The second column of AB?
+                       c)  The first row of AB?
+                       d)  The second row of AB?</code></pre>
      	</div>
     
      </div>

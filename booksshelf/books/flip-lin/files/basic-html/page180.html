@@ -152,58 +152,39 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.9 – Rank and the Fundamental Matrix Spaces
+    <pre style="white-space:pre-line"><code>162 | 2.5 – Subspaces, Span and Null Spaces
+
+          2.5−3       Example
+
+
+                                     )
+          Keep only the vectors ( , xy  whose components are positive or zero (first quadrant “quarter-plane”).
+                          )
+          The vector (2, 3  is included but ( 2, 3−  −  )  is not.  So, rule (2) is violated when we try k = − 1. The
+          quarter-plane is not a subspace.
+
+
+          2.5−4       Example
+
+
+          Include the vectors whose components are both negative. Now we have two quarter-planes. Rule (ii)
+                                                                                   )
+          satisfies when we multiply by any c. But rule (i) fails.  The sum of v =  (2, 3 and w =  ( 3, −  2 ) is
+                                                                                             −
+          ( 1, 1−  ) which is outside the quarter-plane. Two quarter-planes don’t make a subspace.
+
+
+          2.5−5       Example
 
 
 
-
-          The Reduced Row Echelon Form (rref) is a matrix (R) with each pivot column has only one nonzero
-          entry (the pivots which is always 1).
-
-                              1   3   0   2    − 1
-                                                   
-                         R =      0  0  1  4  − 3
-                                                   
-                               0   0  0  0     0   
-
-                  R rref A=  ( )
-
-
-
-          Rank of a Matrix
-
-          The rank of a matrix A (m by n) is the number of nonzero rows in the row-reduced echelon form of A (it
-          is the number of pivot). The common dimension of the row space and column space of a matrix A is
-          called the rank of A and is denoted by
-
-
-                                                           rank () r
-                                                                   =
-                                                                A
-
-
-          Note:
-             The rank of a matrix is well defined due to the uniqueness of the row-reduced echelon form. No
-             matter what sequence of elementary row operations is performed to put the given matrix in row-
-             reduced echelon form; there will always be the same number of nonzero rows.
-
-
-          Theorem
-
-          The row space and column space of a matrix A have the same dimension
-
-
-
-          The objective is to connect rank and dimension.
-
-             •  The rank of a matrix is the number of pivots.
-             •  The dimension of a subspace is the number of vectors in a basis.
-
-
-             A has full row rank if every row has a pivot: r =  m. No zero in R.
-
-                                                                       n
-             A has full column rank if every column has a pivot:  r = . No free variables.
+                        C
+          The Subspace  (−∞   , ∞ )
+          There is a theorem in calculus which states that a sum of continuous functions is continuous and than a
+          constant times a continuous frunction is continuous. In vector word, the set of continuous functions on
+          (−∞ , ∞ ) is a subspace of  (−∞ , ∞ ) . We dente this subspace by  (−∞ , ∞ )
+                                                                         C
+                                   F
 
 
 
@@ -211,7 +192,30 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                           180</code></pre>
+                                                      P
+                                                       n
+                                             C ∞  (−∞ ∞ )
+                                                    ,
+                                        C m ( −∞ , ∞ )
+
+                                   C 1 ( −∞ , ∞ )
+                               C ( −∞ , ∞ )
+                           F ( −∞ , ∞ )
+
+
+
+          2.5−6       Theorem
+
+
+          If W  , W  , , W  are subspaces of a vector space V, then intersection of these subspaces is also a
+                      
+              1    2        n
+          subspace of V.
+                                     
+                                            
+                                                                                          
+                                                                                    
+            A subspace containing v  and  w  must contain all linear combination cv +  dw.</code></pre>
      	</div>
     
      </div>

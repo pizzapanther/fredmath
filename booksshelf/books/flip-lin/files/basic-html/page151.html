@@ -152,80 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Basis
+    <pre style="white-space:pre-line"><code>n
+                                                                  2.2 – Norm, Dot product, and distance in  R  | 133
+                                                    
+                  
+                                                
+                                                     
+               If u  and U are unit vectors, then uU =  cosθ
+               Certainly,
+                          
+                         
+                       uU ≤    1
+
+                          ≤
+                       − 1 cosθ ≤ 1
+                          ≤
+                       − 1 dot product ≤  1
 
 
-             Definition
-                                                 
-                                                         
-                                             
-             If V is any vector space and  S = { v 1 , v 2 , , v n }  is a finite set of vectors in V, then S is called a basis
-                                                     
-             for V if the following two conditions hold:
-                1.  S is linearly independent.
 
-                2.  S spans V.
+               2.2−13         Schwarz Inequality
+
+                                                       
+               If v  and w are any vectors  ⇒   vw ≤       v  . w
 
 
 
-             Example
 
-                                  10                                    2
-             The columns of  I =        produce the “standard basis” for   .
-                                  01 
-             Solution
-                                       1
-                                                       0
-                                                                                       2
-                                   ˆ
-                The basis vectors: i =    and   ˆ j =    are independent. They span   .
-                                                      
-                                      
-                                       0
-                                                       1
-                                                    
+               Proof
+                                                                                         2    2
+                                                      ba
+                                       ab
+               The dot product of  v =  ( , ) and  w =  ( , )  is  2ab  and both lengths are  a +  b .
+                                                                  2
+               Then, the Schwarz inequality says that:  2ab ≤  a +  2  b
+                       a +  2  b −  2  2ab =  (a b−  ) ≥  2  0
 
+                       a +  2  b −  2  2ab ≥  0
 
-             Example
-                                                                         n
-             The columns of any invertible n by n matrix give a basis for  .
-                                      10 0
-                        12                          12
-                   A =        A =   11 0    A =      
-                        25          11 1            2 4 
-                     Basis                     Not  basis
-                                    Basis
+                       a +  2  b ≥  2  2ab
+
+                   This proves the Schwarz inequality:
+                               2
+                   2ab ≤  a +  2  b
+                                 
+                          
+                   ⇒    vw ≤      v  . w
 
 
-             Example
+               2.2−14         Theorem − Parallelogram Equation for Vectors
 
-                                                             ˆ
-             The standard unit vectors  ˆ e =  (1, 0, 0,   , 0 ), e = (0, 1, 0,   , 0 ),   ,  ˆ e =  (0, 0,   , 0, 1 )
-                                       1                      2                           n
-                              n
-             form a basis in  .
-             Solution
 
-                1.  k e + ˆ  k  ˆ e +  +  k  ˆ e =  0 →  ( k  , k  ,   , k  ) (0, 0,   =  , 0 ) it follows that
-                     11     2 2         nn              1   2       n
-                    k =  k =    =  k = 0. That implies they are linearly independent.
-                     1    2         n
-                                                                                 
-                                                           n
-                                                                                                          ˆ e
-                2.  Every vector v = ( v 1 , v 2 , , v n )  in    can be expressed as v =  v 11  v 2 2  +  v nn
-                                                                                              ˆ e +
-                                                                                       ˆ e +
-                                              
-                                                                                                    n
-                    which is linear combination of   ˆ e  , ˆ e  , , ˆ e . Thus, the standard vector span  
-                                                           
-                                                    1   2       n
-                                             n
-                                                                                  n
-                Thus, they form a basis for    that we call the standard basis for    .
+                                         n
+               If u  and v  are vectors in  , then
+                                                      2       2   (    2    2 )
+                                                 u +  v  +  u −  v  =  2 u  +  v
 
-                                                              151</code></pre>
+
+
+               Proof
+
+                         2       2                        
+                    u +  v  +  u −  v  =  (u +  v ) (u⋅  +  v ) (u+  −  v ) (u⋅  −  ) v
+                                                                     
+                                                                        ⋅
+                                     = uu u v v u v v uu u v v u v v
+                                                                                    ⋅
+                                                                              ⋅+
+                                                                           −
+                                                  +
+                                         ⋅+
+                                               ⋅
+                                                     ⋅+
+                                                                  ⋅−
+                                                              +
+                                                            ⋅</code></pre>
      	</div>
     
      </div>

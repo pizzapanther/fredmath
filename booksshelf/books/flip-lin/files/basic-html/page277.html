@@ -152,74 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.3 – LU-Decompositions
+    <pre style="white-space:pre-line"><code>Section 3.2 – Angle and Orthogonality in Inner Product
+
+
+                                     Spaces
 
 
 
-             The goal is to describe Gaussian elimination in the most useful way by looking at them closely, which are
-             factorizations of a matrix.
+               3.2−1        Cosine Formula
 
-                The factors are triangular matrices.
-                The factorization that comes from elimination is  A LU=  .
+                        
+               If u  and v  are nonzero vectors that implies
+                                
+                                    
+                         cosθ =   uv 
+                               u    v
+                                   
+                                   u
+                                     , v 
+                                 
+                       θ =  cos − 1     
+                                   uv   
 
-
-
-             The Method of LU−Decomposition
-                                                      
-             Step 1: Rewrite the system  Ax =  as  LUx =
-                                            b
-                                                         b
-                                                       
-                                                         y
-             Step 2: Define a new n× 1 matrix  y  by Ux =
-                                                                                  
-             Step 3: Use  Ux =  to rewrite  LUx =  as  Ly =  and solve this system for  y .
-                                                  b
-                               y
-                                                            b
-                                                       
-                                          y
-             Step 4: Substitute  y  in  Ux =  and solve for  x .
+                             
+                                 
+                       − 1≤   uv   ≤ 1
+                            u    v
 
 
+               Example 3.2-1
 
+                     4
+               Let    have the Euclidean inner product. Find the cosine angle θ   between the vectors
+                                      
+                
+                                      v
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             Example
-
-                                       2  1
-             Given 2 by 2 matrix  A =      
-                                       6  8 
-
-             Find L and U and verify  A LU=
-
-             Solution
-                To make row 2 column 1 is zero then we need to subtract 3 times row 2 from row 2
-
-                      2  1
-                          
-                      6  8   R −  3R 1
+                u =  (4, 3, 1, −  ) 2  and  = ( 2, 1, 2, 3−  ) .
+               Solution
+                                           2
                                 2
-                    l   = − 3
-                     21
-
-
-                                                               277</code></pre>
+                                    2
+                           2
+                    u =   4 +  3 + 1 +−
+                                        ( ) 2
+                       =  30
+                    
+                                  +
+                    v =   41 4 9
+                            ++
+                       =  18
+                       =  3 2
+                    
+                      ,
+                                     ( ) ( ) 2+
+                    uv =    4 ( ) 2−  +  3 1  1  −  2 ( ) 3
+                         = − 9
+                                                             
+                                                                 
+                   cosθ = −     9                   cosθ =   uv 
+                             3 30 2                         u    v
+                         = −  3
+                              60
+                         = −   3
+                             2 15</code></pre>
      	</div>
     
      </div>

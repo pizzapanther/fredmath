@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 619 - Linear Algebra Solution</title>
+        <title>Page 619 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 619 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 619 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 619</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>               
-                         u  , v       u  , v   
-                v =  u −     3   1  v −    3   2  v
-                  3    3       2    1       2    2
-                             v             v
-                              1             2
-                    = sin3π    x
+    <pre style="white-space:pre-line"><code>2.6 – Linear Independence | 607
 
-                                           π
-                The orthogonal basis is {sin x ,  sin 2 x  ,  sin3π  } x
-                                                     π
-                            1
-                                   2
-                 v  , v   = ∫   sin 3π x  dx
-                   3   3     − 1
+                         sin (t +  ) a  sin (tb+  )  sin (t c+  )
 
+                   W =   cos (t +  ) a  cos (tb+  )  cos (t c+  )
+                        −  sin (t +  ) a  −  sin (tb+  ) −  sin (t c+  )
 
-                          =  1 ∫ 1  (1 cos6 xπ−  )  dx
-                            2  − 1
+                      =  −  sin (t +  a )cos (t +  b )sin (t +  c ) sin−  (t +  a )cos (t +  c )sin (t +  b ) sin−  (t +  b )cos (t +  a )sin (t +  ) c
+
+                        +  sin ( +  t  a )cos (t +  b )sin (t +  c ) sin+  (t +  a )cos (t +  c )sin (t +  b ) sin+  (t +  b )cos (t +  a )sin (t +  ) c
+
+                      =  0
+
+                   ∴ The set is linearly dependent on  [0, 1C  ]
 
 
-                          =  1 ( x −  1  sin 6 x π )  1
-                            2     6π           − 1
-
-                          = 1
-                      
-                     v
-                 q =   1
-                  1   v
-                       1
-                    =  sinπ    x
-                       
-                      v
-                 q =    2
-                  2    v
-                        2
-                    =  sin 2π    x
-                       
-                      v
-                 q =    3
-                  3    v
-                        3
-                    = sin3 x
-                          π
-
-                                                       π
-                The orthonormal basis is  {sin xπ  ,  sin 2 x  ,  sin3 π  } x
+                   k  sin (t +  ) a +  k  sin (t +  ) b +  k  sin (t +  c =  ) 0
+                    1              2             3
+                       t  =  −  a →  k +  k =  0
+                                    2    3
+                      
+                   If  t =    −  b →  k +  1  k =  3  0
+                      
+                       t =  −  c →  k +  1  k =  2  0
+                      
+                                      +
+                                                +
+                   t =  0 →    k  sina k   sinbk    sinc =  0
+                                1        2         3
+                                       +
+                                                 +
+                   t =  π  →   k  cosa k    cosbk     cosc =  0
+                       2        1         2         3
+                                                           )
+                                                               0
+                   t π    →−     ( k 1 sina k 2  sinbk 3 sinc =
+                                         +
+                                                  +
+                     =
 
 
-             Exercise
-
-                                                                             ]
-             Apply the Gram-Schmidt orthonormalization process in C   0 [ 1, 1  spanned by the functions, using the
-                                                                        −
-             inner product     f  ( ) cosx =  π  , x  f  ( ) cos2x =  π  , x  f  ( ) cos3x =  π  x
-                                1                 2                 3
-             Solution
-                                                            
-                                                                            π
-                Let   u =  f =  cos x , u =   f =  cos2 x  , u =   f =  cos3 x
-                                                        π
-                                   π
-                       1    1             2    2               3    3
-                    
-                             π
-                v =  u =  cos x
-                  1   1
-
-
-                                                              619</code></pre>
+               Exercise
+               Show that if  α  , α  , … , α   are linearly independent and α  , α  , … , α  , β   are linearly
+                              1    2       n                               1    2       n
+               dependent, then  β  can be uniquely expressed as a linear combination of α  , α  , … , α
+                                                                                       1    2        n
+               Solution
+                   Since, α  , α  , … , α   are linearly independent, then
+                           1    2        n
+                                                                0
+                   a α     a α +  +     a α …+  =  0  when all  a = .
+                     11     2 2          nn                  i
+                   Let assume that:
+                   a α     a α +  +     a α …+  b
+                                                 β =
+                     11     2 2          nn
+                   a α     a α +  +     a α …+  b =  0
+                                                 β −
+                     11     2 2          nn
+                         0
+                   If b = , then  a α   a α +  +     a α …+  =  0  and  β  doesn’t exist.
+                                  11      2 2          nn
+                   If b ≠ , and α  , α  , … , α  , β   are linearly dependent, then
+                         0
+                                  1   2        n
+                          a      a             a
+                     β     1  α =  2  α +  +   …+  n  α
+                          b   1   b   2         b   n
+                       = c α    c α +  +     c α …+
+                          11     2 2          nn</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 869 - Linear Algebra Solution</title>
+        <title>Page 869 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 869 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 869 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 869</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>0
-                                 x
-                     0 0 −  2         →   2z =  0
-                     0 0    0     
-                                       0
-                                 y =
-                                 
-                                 
-                                 z
-                                       0
-                     00     0     
-                    ⇒   z =  0
-
-                                                 0
-                                      0
-                           1                
-                                                 0
-                           0
-                                      1
-                ⇒    V =     V =      V =   
-                          
-                                                
-                                     
-                                 2
-                      1
-                                            3
-                                            
-                           0
-                                      0
-                                                 0
-                                            
-                The eigenvector matrix is:
-                      1 00
-                              
-                 P =     01 0
-                              
-                      000    
-                             
-                Since the one eigenvector has no−dimensional eigenspace.
-                Therefore, the given matrix A is not diagonalizable
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 853
 
 
-             Exercise
-             Determine if the matrices are diagonalizable. If so, find a matrix P that diagonalizes A and determine
-             P − 1 AP
-                          19  −  9  −  6
-                                      
-                    A =      25 −  11 −  9
-                                      
-                          17  −  9  −  4 
-                                     
-             Solution
+                       =  (1, 2, 1 −  )  4 (1, 1, 1 −  )  1 ( 1, 1, 0−  )
+                                   3          2
+                                        4
+                                                      1
+                                )
+                       = (1, 2, 1 − ( 4 , ,  4 ) (  1 , , 0 )
+                                              −−
+                                    3   3  3       2  2
+                            , ,  −
+                       = ( 11      1 )
+                          66       3
+                                                                        
+                              1        11       1 )                   v 3
+                   q   =               (  , ,  −                  q =   
+                     3     1  +  1  +  1  66     3                  3   v
+                           36   36   9                                   3
+                            (
+                       =  6 11         1 )
+                               , ,  −
+                           6  66       3
+                                          
+                       =   1  ,  1  , −  2  
+                           6    6       6  
+                                          
 
-                                19 −λ   − 9      − 6 
-                det ( A−λ  ) I =     25  − 11−λ  − 9    
-                                17        9           
-                                        −      − 4 −λ 
-                                                                                                          )
-                            = (19 −λ )( 11−  −λ )( 4− −λ ) 1,377 1,350 102+  +  −  (11+ λ ) 81−  (19 −λ ) 225 4−  ( + λ
-                              (            2 )
-                                                                                            −
-                                                                                 +
-                                   +
-                            =  209 8λ − λ    (4 + λ ) 2,727 1,122 102+  −  −  λ − 1,539 81λ − 900 225λ
-                                                  3
-                                             2
-                            = 836 241λ +   4λ −λ −   834 246λ
-                                                         −
-                                  +
-                                 3
-                            = λ +   4λ −  2  5λ + =  0
-                                               2
-                              −
-                    1 −  1   4   −  5  2
-                            −  1  3  −  2
-                       −  1  3   −  2  0        λ→−  2  3 − 20
-                                                           =
-                                                      λ +
-                The eigenvalues are: λ    = 1, 1 λ =   2
-                                      1,2          3
+                                            {                     ( 11       1 )}
+                   The orthogonal basis:     (1, 1, 1 ,         )  66        3
+                                                    ) ( 1, 1, 0 , −
+                                                                     ,  ,  −
+                                                                                                   
+                   The orthonormal basis:      1  ,   1  ,   1    ,   −    1  ,   1  , 0 ,      1  ,   1  ,  −  2    
+                                                  3  3  3       2     2          6  6      6    
+                                                                                                      
 
-                                                              869</code></pre>
+
+               Exercise
+
+               Use the Gram-Schmidt process to find an orthogonal basis and an orthonormal basis for the subspaces
+                  m
+                 .
+                                                 )}
+                             ) (0, 1, 1 ,
+                      ( { 1, 1, 1 ,   ) (0, 0, 1
+               Solution
+                                                     
+                                                                   )
+                   Let  u =   (1, 1, 1 ) u = (0, 1, 1 ) u = (0, 0, 1
+                                         2
+                                                        3
+                          1
+                       
+                   v =  u =  (1, 1, 1 )
+                    1    1
+                                                                 
+                        (1, 1, 1 )                             v 1
+                   q =                                     q =
+                                                                 
+                    1     111                               1    v
+                           ++
+                                                                  1
+                         (1, 1, 1 )
+                       =
+                             3
+                           1   1     1  
+                       =    ,     ,    
+                           3    3    3 </code></pre>
      	</div>
     
      </div>

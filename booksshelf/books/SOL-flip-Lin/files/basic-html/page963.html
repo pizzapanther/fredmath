@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 963 - Linear Algebra Solution</title>
+        <title>Page 963 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 963 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 963 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 963</div>
      </div>
      <div id="content-middle">
@@ -152,86 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-               λ  ( v    v     )  =  λ  (   v    v     )
-                1   1   2      2   1   2
-               ( λ −λ   )(   v 1   v     2 )  = 0                 Since λ ≠λ
-                      2
-                 1
-                                                                        1     2
-               Therefore;  v    v =  2  0
-                           1
-                                               
-               Then the vectors   Av , Av , … , Av  are orthogonal
-                                                  n
-                                        2
-                                   1
-                             T   
-               Av       =  ( Av  ) Av
-                     Av
-                  1    2      i      j
-                            T   
-                              T
-                        =  v A Av
-                           i      j
-                                  
-                        =  v  (  T   )
-                               A Av
-                           i         j
-                                 
-                        =  v  (  j  v  j )
-                               λ
-                           i
-                                   
-                        = λ  (   v   v  )  =  0
-                                 
-                            j   i    j
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 947
+                                1
+
+                              ∫ − 1     5
+                                    8
+                            =     ( x −  3 x 6 )  dx
+
+                                  9
+                                      3
+                            = ( 1 x −  35  x 7 )  1 − 1
+                               9
+                                ( 1  3 )
+                            =  2  9  −  35
 
 
-           Example
+                            =  16
+                               315
 
-           Construct a 3 by 3 matrix A with no zero entries whose columns are mutually perpendicular. Compute
-             T
-            AA . Why is it a diagonal matrix?
-           Solution
-                                         ab   c 
+                                              
+                            u  , v       u  , v   
+                   v =  u −     3   1  v −    3   2  v
+                     3    3       2    1       2    2
+                                v             v
+                                 1             2
+                                  ( )(
+                                                   2
+                                                      3
+                       =  x −  5  16 175  x −  3 3 x −  ) ( ) x
+                              315   8        5     7 2
+                         x −=  5  70 ( x −  3 3 x −  )  3 x
+                              63      5     7
+
+                         x −=  5  70  x +  3 14  x −  3  x
+                              63      21    7
+
+
+                       =  x −  5  70  x +  3  5    x
+                              63      21
+                                          {     3 3        5 70    3   5   }
+                   The orthogonal basis is     ,   x − x  5  x  ,   x −  63  x +  21    x
+
+
+
+                              1       70      5    2
+                    v  , v  =  ∫  ( x −  5  x +  3  x )   dx
+                      3   3     − 1     63      21
+
+
+                                    1
+                            =  ∫ − 1 1 3,969 ( 63x −  5  70x +  3  15x ) 2  dx
+
+
+                              3,969∫  1 ( 3,969x 10        8         6         4          6  225x 2 )
+                                 1
+                            =                      −  8,820x +  1,890x −  2,100x +  4,900x +          dx
+                                      − 1
+
+                            =    1      3,969 x 11  −  980x +  9  970x −  7  420x +  5  75x 3        1
+                              3,969   11                                        − 1
+
+                                                                  
+                                                  +
+                                                       −
+                            =    2     3,969  −  980 970 420 75
+                                                             +
+                                                                  
+                              3,969   11                         
+                                                 
+                            =    2      3,969  − 355
                                                  
-               Consider the matrix  A =     d  e  f  to be columns mutual perpendicular
-                                                 
-                                                
-                                         g  h  i  
-                                 1  2   2                 1  2  − 2                  2  2   − 1
-                                                                      
-                                                                                       
-                                                                                                   
-               Let assume  A =      2  −  21     then  A =  T      2 −  2 −  1    or   A = − 1  2  2
-                                                                      
-                                                                                                   
-                                                                                       
-                                                                                              
-                                 −  2 −  12               2  1   2                   2  − 1  2  
-                        1   2   2  1   2  − 2
-                                                
-               AA = T      2  −  21         2 −  2 −  1
-                                                
-                        −  2 −  12     2  1  2  
-                                             
-                        9 00
-                                
-                    =     09 0
-                                
-                        0 09   
-                               
-               ( )      =  (column i of  A column j of  A
-                 T
-                                                        )
-                                         )(
-                A A
-                      ij
-
-
-
-                                                            963</code></pre>
+                              3,969   11        
+                                     64
+                            =    2  ( )
+                              3,969 11
+                            =   128
+                               43,659</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 105 - Linear Algebra Solution</title>
+        <title>Page 105 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 105 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 105 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 105</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                                   1   1   − 3
-                                                               
-             Find the inverse, if exists, of   A =      2  − 4  1
-                                                               
-                                                   5   7    1  
-                                                   −          
-             Solution
-
-                  1   1   − 31 0 0
-                  2  −  4  1   01 0      R −  2R
-                                           2     1
-                                       
-                  − 5  7   1   0 01      R +  5R
-                                             3     1
-
-                  1   1  − 3   1    00
-                                            1
-                  0 −  6  7    −  21 0    −    6  R
-                                                  2
-                                        
-                  0 12   − 14  5    0 1 
-                  1  1   − 3  1    0    0   R −  R
-                                              1    2
-                  0   1   −   7  1  −  1  0
-                                          
-                          6   3    6        R − 12R
-                  0 12 −  14 5     0    1   3       2
-
-                  10    − 3  1    0   0
-                         7              
-                  01 −       1   −  1  0
-                        6   3     6      
-                  00     0              
-
-                ∴ Inverse does not exist
+    <pre style="white-space:pre-line"><code>1.3 – Matrices and Matrix operations | 97
 
 
-             Exercise
-                                                   12 −   1
-                                                            
-             Find the inverse, if exists, of   A =      35  3
-                                                            
-                                                   2 4   3  
-                                                           
-             Solution
+                            ∑∑          (       )
+                           =         a ij  bc
+                                           jk kl
 
-                  1 2 −  11 0 0
-                  35    3   0 10       R −  3R
-                                        3     1
-                                    
-                  2 4   3   0 01      R −   2R
-                                          3     1
-                  1  2   − 1  1   00
-                               31 0    R
-                                        
-                  0 −  1  6  −           −  2
-                  0  0   5     2 01    
-                             −         
-                  12 −   1   1    0   0  R −  2R 2
-                                            1
-                                        
-                  0 1 −  6   3   −  10
-                                       
-                                       
-                  00    5   − 2   0   1 
-                                                             105</code></pre>
+
+                        )
+                   ( AB C =  FC
+                                  
+                                       
+                           =     f ik    kl 
+                                    c
+                            ∑
+                           =     fc
+                                  ik kl
+                            ∑ ∑       (        
+                                 
+                           =         ab     )      c kl
+                                         ij jk
+                            ∑∑       (       )
+                           =          ab      c
+                                               kl
+                                        ij jk
+                                  jk kl ∑∑
+                   ∑∑       a ij ( b c  )  =        ( ab   ) c kl
+                                                      ij jk
+
+                   Thus,  ( A BC ) ( AB C=  )
+
+
+               Exercise
+
+               Prove       A (B C−  ) =  AB −  AC
+
+               Solution
+
+
+                   Let  A =        a ij       , B =        b jk       & C =        c  jk     
+
+
+                   Let  D =  BC
+                              −
+                          =        b jk  − c  jk     
+
+
+                          =        d ij     
+
+                   Let  E =  AB
+
+                          = ∑   ab
+                                  ij jk
+
+                   Let  F =  AC
+                            ∑
+                          =     ac
+                                  ij jk
+
+
+                    AB −  AC =  E −  F
+                              ∑     ij jk ∑
+                            =      ab      −     a c
+                                                   ij jk</code></pre>
      	</div>
     
      </div>

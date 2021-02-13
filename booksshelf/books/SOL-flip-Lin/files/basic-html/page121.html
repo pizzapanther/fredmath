@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 121 - Linear Algebra Solution</title>
+        <title>Page 121 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 121 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 121 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 121</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                                                                            (
-             Consider  ( ,B AI ) (BAB=  ,  ) , thus if B is the inverse of A, then (BA , B )  becomes  IA − 1 ) . On the
-                                                                                               ,
-             other hand B is a product of elementary matrices since it is invertible. This indicates that the inverse of A
-                                                                                  (
-                                                                          )
-             can be obtained by applying elementary row operations to ( , AI  to get  IA − 1 ) .
-                                                                                     ,
-             Find the inverses of
+    <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices | 113
 
-                             1 00                                  0 10 0 
-                                    
-                   a)  A =     0 10                                  0 01 0   
-                                    
-                                                         b)  B =   0 00 1 
-                             a b  1                                          
-                                                                     a b c d   
+             Exercise
+
+             If A has row 1 + row 2  = row 3, show that A is not invertible
+
+              a)  Explain why  Ax = (1,0,0    ) can’t have a solution.
+                                    (
+              b)  Which right sides  b b  b   3 )  might allow a solution to Ax b=
+                                       ,
+                                           ,
+                                          2
+                                      1
+              c)  What happens to row 3 in elimination?
              Solution
 
-                      1 00
-                              
-                a)       0 1 0                 E 31  = − a
-                              
-                             
-                      a b  1   R −  aR 1
+                a)  Let  A 1 , A 2 , A be the row vectors of A and x is a solution to  Ax =  (1,0,0    ).
                                   3
-                      1 00
-                             
-                      0 1 0                     E    = − b
-                                                 32
-                     0 b   1   R − bR
-                                3     2
-
-                      1 00
-                             
-                      01 0 =
-                                 I
-                            
-                      0 01  
-                            
-                            1   0   0
-                                       
-                    A − 1   =   0  1  0
-                                       
-                                    1 
-                            −  a −  b  
-
-                b)  First, we have move row 4 to row 1, for the calculation
-
-
-                      a b  cd      1  R
-                      0 10 0       a  1
-                                                   E   =  1
-                      0 01 0                        11   a
-                                
-                      0 00 1    
-                      1  b  c   d   R −  b  R
-                        a   a   a    1   a  2
-                      0  1  0   0                          b
-                                                   E 12  = −
-                                                             a
-                      0  0  1   0 
-                                  
-                      0  0  0   1  
+                            .
+                                                   0
+                    Then  Ax =  1, A  .x = 0, .x = .
+                                            A
+                           1        2         3
+                    Since      A +  A =   A
+                                1     2    3
+                    Means      Ax     A  .x =  A  .x
+                                  . +
+                                1      2      3
+                                      0
+                                +
+                    Implies    10 =  a contradiction
+                b)  If  Ax = ( b 1 , b  b 3 )
+                                   ,
+                                 2
+                    A  .x =  b  ,  A  .x = b  ,  A  .x = b
+                      1     1    2      2     3     3
+                    Since      A +  1  A =  2  A
+                                           3
+                    Ax     A  .x =  A  .x
+                       . +
+                      1     2      3
+                    ⇒  b +  b =  b
+                        1    2    3
+                c)  In the elimination matrix, the third row will be zero.
 
 
+             Exercise
 
+             True or false (with a counterexample if false and a reason if true):
 
+              a)  A 4 by 4 matrix with a row of zeros is not invertible.
+              b)  A matrix with 1’s down the main diagonal is invertible.
+              c)  If A is invertible then  A − 1  is invertible.
+                                         2
+              d)  If A is invertible then  A  is invertible.
 
+             Solution
 
-
-                                                             121</code></pre>
+                a)  True, because it can have at most 3 pivots.
+                                             1   0   0
+                                                       
+                b)  False, if the matrix:  A =     0  1  1  and only has 2 pivots, thus is not invertible.
+                                                       
+                                             0  1    1 
+                                                      </code></pre>
      	</div>
     
      </div>

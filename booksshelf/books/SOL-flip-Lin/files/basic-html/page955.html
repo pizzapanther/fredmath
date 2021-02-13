@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 955 - Linear Algebra Solution</title>
+        <title>Page 955 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 955 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 955 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 955</div>
      </div>
      <div id="content-middle">
@@ -152,91 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>)
-                         λ =  2 ( λ  2  6λ−  +  8
+    <pre style="white-space:pre-line"><code>3.3 – Gram-Schmidt Process | 939
 
-                                         ) 0
-                         λ =  2 (λ  2 )(λ −  −  4 =
+               Exercise
 
-               Therefore, the matrix has eigenvalues
 
-                                     ,
-                                         ,
-                                       ,
-                          λ       =  0 024
-                            ,
-                           1 2 3 4
-                              ,,
-                                         
-               For  λ   =  0 , then ( A−  ) 0 v =  0
-                    12                    1
-                     ,
-                                         0
-                    31 0 0         x   1      →  3x +  1  x =  2  0
-                    1 30 0     x        →    x +  3x =  0
-                                         0
-                                 2    =       1     2
-                    0000         x    
-                                         0
-                                 3    
-                                         0
-                    0000        x   4   
-                   ⇒  x =  x =  0
-                       1    2
-                                                         0
-                                              0
-                                                      
-                                              0
-                                                         0
-                                                    
-                                                        
-                                             
-                  The eigenvectors are: v =     ,  v =
-                                         1        2   
-                                                         0
-                                              1
-                                                        
-                                              0
-                                                       1 
-                        2
-               For  λ=  , then ( A−  2Iv =  )    0
-                    3                     3
-                                            0
-                    11    0    0      x   1       x +   3  y =  3  0
-                    11    0    0     x          x +  y =  0
-                                            0
-                                    2    =   →    3   3
-                                                     
-                    00 −   2   0    x            2z =   0
-                                            0
-                                    3                3
-                                            0
-                    00    0   − 2     x   4       2w = 0
-                                                      
-                                                           3
-                         x = − y
-                       
-                   ⇒      3     3
-                         z =  w =  0
-                         3
-                              3
-                                                             −  1 
-                                               − 1          2  
-                                               1           1  
-                  The eigenvectors are: V =        or V =     
-                                         3     0     3      2 
-                                                           0  
-                                               0               
-                                                             0  
-               For  λ=  , then ( A −  4IV =  )  0
-                        4
-                     4                    4
+                                                                                ]
+               Apply the Gram-Schmidt orthonormalization process in C    0 [ 1, 1  spanned by the functions, using
+                                                                           −
+                                                                     2
+               the inner product      f 1 ( ) 13x =  +  x 2 ,  f 2  ( ) x =  x −  x
+               Solution
+                                  2             2
+                               +
+                   Let   u =  13x    , u =   x −  x
+                          1              2
+                                2
+                   v =  u = +
+                             13x
+                    1    1
+                              1         2
+                    v  , v  = ∫   ( 13 x 2 )  dx
+                                    +
+                     1   1     − 1
+
+
+                            =  2 ∫ 0 1 ( 16 x +  2  9x 4 )  dx
+                                      +
 
 
 
+                            =  2 x +  (  2x +  3  9  x 5 )  1 0
+                                          5
+                                (
+                            =  21 2++  9 )
+                                       5
+
+                            =  48
+                               5
 
 
-                                                            955</code></pre>
+                               1       2       2
+                    u  , v   =  ∫  ( 13x  )( x x   )  dx
+                                              −
+                                     +
+                      2   1     − 1
+
+
+                            =  ∫ − 1 1   x − (  x +  2  3x −  3  3x 4 )  dx
+
+
+                                                     5
+                            =  1  x −  2  1  x +  3  3  x −  4  3 x   1
+                              2      3      4     5     − 1
+                                          3
+                                                  1
+                                  1
+                            =  1  − +  3  −− ( 1  ++  3  +  3 )
+                              2   3   4   5   2   3   4   5
+                            = − 28
+                                15
+                                                                                
+                            2   5    28        2                          u  ,  v  
+                                     −
+                          −
+                                            +
+                   v =   x x −      ( )(   13x    )               v =  u −    2   1  v
+                     2           48   15                           2    2       2    1
+                                                                              v
+                                                                               1
+                                          2
+                       =  x −  x +  2  7  +  7  x
+                                 36   12</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 830 - Linear Algebra Solution</title>
+        <title>Page 830 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 830 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 830 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 830</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,88 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>814 | 3. 2 − S OL U T I ON
 
+              ( )  ⊥  is the orthogonal complement of ,  S , which is itself the orthogonal complement of S, so
+                ⊥
+                                                        ⊥
+               S
+              ( )  ⊥  = S  means that S is the orthogonal of its orthogonal complement.
+                ⊥
+               S
+                                                   ( )   ⊥                      ( )  ⊥
+                                                      ⊥
+                                                                                   ⊥
+             We need to show that S is contained in  S      and, conversely, that  S    is contained in S to be
+             true.
+                                ⊥           ⊥                                  ⊥
+                                                         ,
+                                                               0
+                i.  Suppose  v ∈ S  and  w∈ S . Then  v w =  by definition of  S .
+                                                  ( )
+                                                                                           n
+                   Thus, S is certainly contained is  S ⊥  ⊥  (which consists of all vectors in   which are
+                                  ⊥
+                   orthogonal to  S ).
 
-                    2 2 2
-                            
-          For  A =      2 2 2 , find one eigenvalue, and two linearly independent eigenvectors, without calculation.
-                            
-                    2 2 2  
-                           
-          Justify your answer.
-          Solution
-
-             Since the matrix A has the row then matrix A in not invertible (Columns are linearly dependent).
-             Therefore, the eigenvalue is zero of the matrix.
-                     0
-             For λ = , then the eigenvector is given by ( A λ−  ) IV =  0
-                       0
-             Since λ = , that implies to  AV =
-                                               0
-             Since matrix A is nonzero matrix that it will imply to  2x +  2y +  2z =  0 all rows are the same.
-
-                                         +
-             Which it will result to:  x +  yz =  0
-             The two linearly independent eigenvectors:
-
-                        1         0 
-                                      
-                 V =    1    V =   1
-                  1         2      
-                        − 2       − 1 
-                                   
-
-
-          Exercise
-
-          Consider an  nn× matrix A with the property that the row sums all equal the same number s. Show that s
-          is an eigenvalue of A.
-
-          Solution
-             Let consider a  22×  matrix with all ones as entries
-
-                    12
-              A =     
-                    12 
-                  +=
-              s = 1 2 3
-
-                   −
-                 1 λ      2     (1 λ=  −  )(2 λ  −  ) 2
-                                             −
-                   1    2 λ
-                          −
-                                      λ −
-                              = λ  2  3 =
-                                          0
-                                                =
-
-                 One of the eigenvalues is: λ =  3 s
-                       ab 
-             Let  A =      
-                       c  d 
-                      +
-                    ab s
-                         =
-             With  
-                      +
-                    c d =  s
-                                                           830</code></pre>
+                               ( )
+                                 ⊥  ⊥                                        ⊥
+               ii.  Suppose  v ∈ S     (means v is orthogonal to all vectors in  S ); then we need to show that
+                   
+                   v ∈ S .
+                              {             }                       {             }                 ⊥
+                                  ,
+                                                                           ,
+                                                                               ,
+                   Let assume  u u   2 ,  , u p   be a basis for S and let  w w   , w q   be a basis for  S .
+                                 1
+                                                                              2
+                                                                          1
+                                                    }
+                                 {
+                                               
+                                     ,
+                   If v ∉ S , then  u u 2 ,  , u p , v  is linearly independent set. Since each vector ifs that set
+                                   1
+                                                    {
+                                                                                      
+                                                      
+                                                         
+                                                                      
+                                                                  
+                                          ⊥
+                                                        ,
+                   is orthogonal to all of  S , the set  u  u 2 ,   , u p , ,  1 , w     2 ,  , w q }  is linearly
+                                                                      v w
+                                                      1
+                   independent.
+                   Since there are  pq+ +  vectors in this set, this means that  pq +≤          pq ≤ −    1.
+                                         1
+                                                                                                       n
+                                                                              +
+                                                                                    1 n ⇔
+                                                                                                 +
+                                                                       
+                                                              th
+                                                                        T
+                   On the other hand, If A is the matrix whose i  row is u , then the row space of A is S and
+                                                                        i
+                                         ⊥
+                   the nullspace of A is  S .
+                                                                                                       ⊥
+                                                                                               ( )
+                   Since S is p-dimensional, the rank of A is p, meaning that the dimension of nul A = S  is
+                   q = −   p . Therefore,
+                       n
+                                                            n
+                                       pq+=    p + (n −  ) p =
+                                                                                          ( )
+                                                                                            ⊥  ⊥
+                                                           1
+                                                        n
+                   Which contradict the fact that  pq+ ≤− . From this, we see that, if v ∈ S     , it must be
+                                
+                   the case that  v ∈ S .</code></pre>
      	</div>
     
      </div>

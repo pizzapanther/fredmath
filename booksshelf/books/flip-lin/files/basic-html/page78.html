@@ -152,69 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1  − 2  2 
-                 [15 14 4 −  ]     1  1  3 =      [5 −  20 56 ]
-                                 1  −  1 −  4  
-
-
-                              1  − 2  2 
-                 [1 25 0 −  ]     1  1  3 =      [ 24 23 77−  ]
-                                1  −  1 −  4  
-
-                 The sequence of coded row matrices is
-
-                        [13   −  26    −  21 ] [33         −  53    −  12 ] [18        −  23   −  42 ] [5        −  20 56 ] [ 24 23 77   −            ]
-                 The cryptogram:
+    <pre style="white-space:pre-line"><code>60 | 1.5 – Transpose, Diagonal, Triangular, and Symmetric Matrices
 
 
 
+           Exercises           Section 1.5 – Transpose, Diagonal, Triangular, and
+
+                                              Symmetric Matrices
 
 
-                         13   −  26    −  21 33    −  53    −  12 18   −  23   −  42 5   −      20 56   −  24 23 77
-
-             c)  To decode a message given the matrix A.
-                       1   − 2   2
-                  A =  −  1  1   3 =  1
-                       1   −  1 −  4
+          1.   Consider the matrices
 
 
-                         −  1 −   10 −  8
-                                      
-                 A − 1  =      −  1  −  6  −  5
-                                      
-                            0  −  1  −  1  
+                      1 −   2         −   7 −  3         4 
+                 A =             B =              v =    
+                       3  5            6   4            − 1 
+               Find:
+
+                                                                                              
+                                               
+                                                                     TT
+                                                                                            T T
+                                                 T
+                       T
+                  a)  A                  e)  ( Av )             h)  AB                 k)  B v
+                                                                     TT
+                       T
+                                                                                                T
+                                                
+                  b)  B                  f)  A v                i)  B A                l)  (2A )
+                                              T T
+                                                                      
+                       T
+                             T
+                                                                        T
+                  c)  A +  B             g)  ( AB )             j)  (Bv )              m)  2A
+                                                 T
+                                                                                              T
+                             T
+                  d)  ( AB+  )
+
+                        
+                                                      
+                                                                   
+                                     
+          2.   Solve  Lc =  to find   c . Then solve Ux =  to find   x . What was A?
+                           b
+                                                         c
 
 
-                 With the cryptogram:
-                        [13   −  26    −  21 ] [33         −  53    −  12 ] [18        −  23   −  42 ] [5        −  20 56 ] [ 24 23 77   −            ]
+                             1   0   0         1   1   1         4   
+                                                                      
+                         L =      1  1  0     U =      0  1  1     b =      5
+                                                                      
+                              1   1  1        0   0  1       6     
+
+          3.   Find L and U for the symmetric matrix
+                                     a   a   a    a
+                                      a  b   b    b 
+                                A =                 
+                                     a   b   c    c
+                                                    
+                                      a  b   c    d 
+                 Find four conditions on a, b, c, d to get  A =  LU with four pivots
 
 
-
-                                 −  1 −   10 −  8
-                                                           ]
-                 [13 −  26 21  ] −      1  −  6  −  5 =      [13 5 5
-                                    0  −  1  −  1  
-
-                                 −  1 −   10 −  8
-                                                            ]
-                 [33 −  53 −   ] 1 −      1  −  6  −  5 =      [20 0 13
-                                    0  −  1  −  1  
-
-                                  −  1 −   10 −  8
-                                                            ]
-                 [18 −  23 −  42 ] −      1  −  6  −  5 =      [5 0 13
-                                     0  −  1  −  1  
-
-                                −  1 −   10 −  8
-                                                           ]
-                 [5 −  20 56  ] −      1  −  6  −  5 =      [15 14 4
-                                   0  −  1  −  1  
-
-
-
-
-
-                                                            78</code></pre>
+          4.   Determine whether the given matrix is invertible
+                                         
+                                  − 10 0 
+                                  0  20 
+                                         
+                                  0  0  1 
+                                        3</code></pre>
      	</div>
     
      </div>

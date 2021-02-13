@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 122 - Linear Algebra Solution</title>
+        <title>Page 122 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 122 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 122 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 122</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  10   c   d   R −  c  R
-                          a   a     1  a  3
-                    01    0   0                          c
-                                                 E 13  = −
-                                                           a
-                     00   1   0 
-                                
-                     00   0   1  
+    <pre style="white-space:pre-line"><code>114 | 1.4 – Inverse Matrices
 
-                     1 00    d    R −  d  R
-                             a     1   a  4
-                    01 0     0                           d
-                                                 E 14  = −  a
-                    0 01     0 
-                               
-                     000     1  
+               c)  True, If A is invertible then necessarily A − 1  is invertible.
 
-                     1 00
-                            
-                     01 0 =
-                               I
-                           
-                     0 01  
-                           
-                         1  −  b  −  c  −  d 
-                         a   a    a     a 
-                                          
-                   E =   0  1    0     0  
-                         0  0    1     0 
-                                          
-                         0  0    0     1  
-                  Since we move Row 4 to Row 1, we must move Column 1 to Column 4 to get the inverse matrix.
-
-
-                           −  b  −  c  −  d  1 
-                           a     a    a   a 
-                   B − 1  =     1  0  0  0   
-                           0    1     0   0 
-                                            
-                           0    0     1   0 
+                          2
+               d)  True,  Ax =   where x is nonzero matrix.
+                               0
+                                           )
+                              A x =
+                          A −  12   ( A −  1 A Ax =  IAx =  Ax =  0
+                                                                                             2
+                  Since A is invertible, this can only be true if x was zero to begin with. Thus  A  must also be
+                  invertible.
 
 
            Exercise
 
-                           ,
-                       ,
-                              ,
-                    ,
-           Let  ,A  B  C  X  Y  Z  ∈ M  ( ) , A and C are invertible. Find
-                                         
-                                      n
-                             − 1                                         − 1
-                       AB                                   I   X  Y 
-                 a)                                                  
-                       0 C                             b)     0  I  Z  
-                                                                 0  0  I    
+           Do there exist 2 by 2 matrices A and B with real entries such that  AB −  BA =  I , where I is the identity
+           matrix?
+
            Solution
-                     AB    I  0  A − 1 R
-               a)                      1
-                     0 C   0 I  
 
-                       1
-                     −
-                     A A A  −  1 B  A −  1 I  0 
-                                            
-                     0      C       0     I  
+                         a  b             e   f 
+               Let  A =          and           
+                         c  d             g   h 
 
-                                                            122</code></pre>
+                      a   b   e  f 
+               AB =               
+                      c   d   g  h 
+                        +
+                      ae bg    af +  bh
+                   =                  
+                        +
+                      ce dg    cf +  dh 
+                      e   f  a   b 
+               BA =               
+                      g   h  c   d  
+                         +
+                      ae cf    be df   +
+                   =                  
+                         +
+                                   +
+                      ag ch    bg dh  
+                                                    +
+                                                               +
+                              +
+                           ae bg     af +  bh ae cf      be df 
+                   −
+                                              −
+               AB BA =                                          
+                              +
+                           ce dg     cf +  dh  ag +  ch  bg +  dh 
+                                   −
+                               bg cf          af +  bh be df   −  −
+                        =                                     
+                              +
+                                       −
+                            ce dg −  ag ch        cf −  bg    
+                            1  0
+                        =       
+                            0  1 
+                        −
+                    bg cf =  1
+                af +   bh be df =  0
+                        −
+                            −
+               
+                        −
+                            −
+                ce +  dg ag ch =  0
+                    cf −  bg =  1
+               </code></pre>
      	</div>
     
      </div>

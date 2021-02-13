@@ -152,86 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercises              Section 2.7 – Coordinates, Basis and Dimension
-
-
-                                  
-                                                     n
-             1.   Suppose v 1 , , v  is a basis for    and the n by n matrix A is invertible. Show that
-                               
-                                    n
-                            
-                                                    n
-                   Av 1 , , Av  is also a basis for   .
-                        …
-                               n
-
-                                            1   0   a 
-                                            2  − 1 b 
-             2.   Consider the matrix  A =           
-                                            1   1   c 
-                                                     
-                                            − 2  1  d 
-
-                                        a
-                                      
-                                      
-                                        b
-                    a)  Which vectors     will make the columns of A linearly dependent?
-                                      
-                                        c
-                                      
-                                       d
-                                      
-                                        a
-                                                                                 x            
-                                                                                 y            
-                                        b
-                                                                                                 
-                    b)  Which vectors     will make the columns of A a basis for       : y +  w =  0 ?
-                                                                                                 
-                                                                                            
-                                        c
-                                                                                    z
-                                                                                            
-                                       d
-                                                                                    w
-                                                                                            
-                             a
-                                  1 
-                                 − 2 
-                             b
-                    c)  For    =    , compute a basis for the four subspaces.
-                                  5 
-                             c
-                                   
-                             d
-                                  2  
-
-                                                      3
-             3.   Find a basis for  x −  2y +  3z =  0 in   .
-                  Find a basis for the intersection of that plane with xy plane. Then find a basis for all vectors
-                  perpendicular to the plane.
-
-             4.   U comes from A by subtracting row 1 from row 3:
-
-                                 1 32                 1 3 2
-                                                               
-                           A =      01 1     and U =      0 1 1
-                                                               
-                                   1 32               0 0 0  
-
-                    Find the bases for the two column spaces. Find the bases for the two row spaces. Find bases for
-                    the two nullspaces.
+    <pre style="white-space:pre-line"><code>Section 2.3 – Orthogonality
 
 
 
 
+                                                                                         3
+                                                                                 2
+               The orthogonality and length are basic concepts in geometry and,    and   , they both defined using
+               the dot product.
 
 
+               2.3−1        Definition
+
+                                                n
+               Two nonzero vectors u  and v  in    are said to be orthogonal (or perpendicular) if their dot product
+                       
+                           
+                             0
+               is zero uv = .
+                                                         n
+                                                                                             n
+               We will also agree that he zero vector in    is orthogonal   to every vector in  . A nonempty set of
+                         n
+               vectors     is called an orthogonal   set if all pairs of distinct vectors in the set are orthogonal. An
+               orthogonal set of unit vectors is called an orthonormal set.
 
 
-                                                              159</code></pre>
+               2.3−2        Example
+
+
+               The floor of your room (extended to infinity) is a subspace V. The line where two walls meet is a
+               subspace W (one-dimensional). Those subspaces are orthogonal. Every vector up the meeting line is
+               perpendicular to every vector on the floor. The origin (0, 0, 0) is in the corner.
+
+
+               Example 2.3-1
+
+                                                                                 4
+               Show that u   = (−2, 3, 1, 4) and v   = (1, 2, 0, −1) are orthogonal in 
+
+               Solution
+                    
+                   uv
+                           = (−2)(1) + (3)(2) + (1)(0) +(4)( −1)
+                         = −2 + 6 + 0 −4
+
+                          = 0
+
+                                                    4
+                   These vectors are orthogonal in 
+
+
+               Standard Unit Vectors
+
+                                   ˆ
+                         ˆ
+                   ˆˆ    ik ˆ   ˆ j   k = 0
+                             =
+                       =
+                     
+                                 
+                   ij
+                           
+
+               Proof
+                                            )
+                   ˆˆ    (1, 0, 0 ) (0, 1, 0        =    0
+                       =
+                                  
+                     
+                   ij</code></pre>
      	</div>
     
      </div>

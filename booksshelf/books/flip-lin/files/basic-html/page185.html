@@ -152,84 +152,55 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Definition
+    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Spaces   | 167
 
-                                   n
-             If W is a subspace of   that are orthogonal to every vector in W is called orthogonal complement of W
-
-                                                                                  ( )
-                                            ⊥
-             and is denoted nu the symbol W .   ()NA  ⊥  is exactly the row space  CA T
+               2.5−10         Solution Spaces of Homogeneous (Null Space) Systems
 
 
+               2.5−11         Theorem
 
-             Fundamental Theorem of Linear Algebra
-                                                                        (
-             The nullspace is the orthogonal complement of the row space  in   n ) .
-                                                                                (
-             The left nullspace is the orthogonal complement of the column space  in   m ) .
-
-
+                                                                    
+                                                                                                       n
+                                                                     0
+               The solution set of a homogeneous linear system  Ax =  in n unknowns is a subspace of 
 
 
-                                   n
-             If W is a subspace of  
-                                         n
-                W   ⊥   is a subspace of  `
+               Proof
 
-                The only vector common to W and W     ⊥   is 0.
-
-                                                   ⊥
-                The orthogonal complement of W  is W.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                   Let W be the solution set for the system. The set W is not empty because it contains at least the
+                                      
+                                  
+                                      0
+                   trivial solution  x = .
+                                                     n
+                   To show that W is a subspace of  , we must show that it is closed under addition and scalar
+                   multiplication.
+                                                                                    
+                                                                                       0
+                   Let   x  and  x  be vectors in W and these vectors are solution of  Ax =  .
+                        1       2                                            
+                                                         
+                                                                         
+                                                       Ax =  0 and     Ax =   0
+                                                          1               2
+                   Therefore,
+                                         
+                    A x + (   1    x 2 ) =  Ax +    1  Ax
+                                          2
+                                 
+                               =  00
+                                   +
+                                 
+                               = 0
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              185</code></pre>
+                   So, W is closed under addition.
+                         ( )
+                                   
+                       A kx   1  =  kAx =  k 0 0
+                                           =
+                                    1
+                   So, W is closed under scalar multiplication.</code></pre>
      	</div>
     
      </div>

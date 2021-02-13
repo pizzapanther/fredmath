@@ -152,84 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Example
+    <pre style="white-space:pre-line"><code>2.7 – Coordinates, Basis and Dimension   | 203
 
-             Use the Gram-Schmidt process to find an orthonormal basis for the subspaces of
-                                                      
-                                                                      )
-                    v =  (1, 1, 0, 0 ) v = (0, 1, 1, 0 ) v = (1, 0, 1, 1
-                     1                 2                 3
-             Solution
-                                                                     
-                           (1, 1, 0, 0 )                           v
-             Step 1: q =                                       q =    1
-                     1
-                                                                1
-                                2
-                            2
-                                    00
-                           1 + 1 ++                                  v 1
-                          (1, 1, 0, 0 )
-                        =
-                               2
-                                         
-                        =      1  ,   1  , 0, 0
-                                         
-                            2    2      
-                                    
-                                      qq
-             Step 2:  w =  v − ( v    )
-                      2    2     2    1  1
-                                                      1    1             1  1     
-                         = (0, 1, 1, 0 ) (0, 1, 1, 0−  )          ,   , 0, 0     ,   , 0, 0
-                                                                                        
-                                                        2  2           2    2       
-                                                           
-                                    )
-                         = (0, 1, 1, 0 −  1      1  ,   1  , 0, 0
-                                                           
-                                         2   2     2      
-                                                    )
-                                            1
-                                    )
-                         = (0, 1, 1, 0 − ( 1 ,  , 0, 0
-                                            2
-                                        2
-                          (  1   1      )
-                         = −  2 ,  , 1, 0
-                                 2
-                                 2      2
-                                1
-                                      1
-                                    +
-                              −
-                     w   =   ( ) ( )      +  1
-                       2        2     2
-                          =  3   2
-                             2   2
-                           =  6
-                             2
-                           
-                         w 2
-                    q =
-                           
-                     2    w 2
-                          ( − 11     )
-                             ,  , 1, 0
-                        =   22
-                                6
-                               2
-                                           )
-                                    1
-                        =  2  ( −  1 ,  , 1, 0
-                           6    2   2
-                         
-                        = −  1  ,  1  ,  2  , 0   
-                         
-                             6     6    6    
+                           ca    +  c a   +   +  c a  =  0
+                            1 11    2 21         nn  1
+                       ⇔
+                          ca     +  c a   +   +  c a   =  0
+                           11m      2 2m         n nm
+
+                         '
+                   ∴  Ss  linear independent.
+                        i
+               Now all bases of V have some number of elements, we can define the dimension (is # of vectors in a
+               basis).
 
 
-                                                              221</code></pre>
+               2.7−8        Definition
+
+
+               The dimension of a finite-dimensional vector space V is denoted by dim(V) and is defined to be the
+               number of vectors in a basis for V. in addition, the zero-vector space is defined to have dimension zero.
+
+
+                           ( )
+                   1.  dim V  = # elements in basis. If V is finite.
+                              
+                   2.  If V = { } 0 , then dim ( ) 0=V  , even though there is no basis.
+
+                           ( )
+                   3.  dim V  may be infinite.
+
+
+                         ( )
+                   dim    n  =  n         The standard basis has n vectors.
+
+
+                         ( )
+                   dim P   n  =  n + 1     The standard basis has n + 1 vectors.
+
+                         (
+                   dim M    mn )  =  mn    The standard basis has mn vectors.
+
+
+
+               2.7−9        Bases for Matrix Spaces and Function Spaces
+
+
+               Independence, basis, and dimension are not all restricted to column vectors.
+                                                                 2
+                 •  The dimension of the whole n by n space is  n
+
+                                                                                    2
+                                                                                 1
+                 •  The dimension of the subspace of upper triangular matrices is  n +  1  n
+                                                                                 2      2
+                 •  The dimension of the subspace of diagonal matrices is  n
+                                                                               2
+                                                                            1
+                 •  The dimension of the subspace of symmetric matrices is  n +    1 n
+                                                                            2      2</code></pre>
      	</div>
     
      </div>

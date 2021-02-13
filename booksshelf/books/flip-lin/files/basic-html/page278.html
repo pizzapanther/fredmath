@@ -152,76 +152,98 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1   0
-            That step is  E  =           in the forward direction such that:
-                          21    − 3  1 
+    <pre style="white-space:pre-line"><code>260 | 3. 2  –  Angle and Orthogonality in Inner Product Spaces
 
-                          1   0 2    1
-                E   A =               
-                  21     − 3  1  6   8 
+          3.2−2       Theorem − Cauchy-Schwarz Inequality
 
-                          2  1
-                      =         = U
-                          0  5 
-
-            The return step from U to A is  L =  E − 1
-                                                21
-                     1   0
-                L =       
-                      3  1 
-            Back from U to A:
+                  
+          If v  and w are vectors in a real inner product space V, then
+                                                               
+                                                      ,
+                                                    uv ≤     u    v
 
 
-                  −
-                   1
-                E U =    1   0 2  1 
-                               
-                  21     3   1  0  5 
-                          2  1
-                      =       
-                          6  8 
-                      =     A
+          Proof
 
-            Therefore;  A =  LU
+                          
+             If either u  or v  is equal to zero, then both sides equal to zero
+                 Inequality holds.
+                                           
+                            
+                                 0
+             Suppose that  ,u v ≠  and if  w  any vector
+                    
+              w =  w w ≥  0
+                        
+                    = −
+             Let  wu tv , then:
+                  
+               ≤
+              0 ww
+               =  (utv−      )(utv−      )
 
+                                      2  
+               =  u     u −  ( t u   v ) t−  (v   u ) t+  (vv      )
+                            
+                                     
+                                                              
+                                2                      u
+                                                                v 
+               =  u     u −  2   ( tu     v ) t +  (vv       )    Let t = 
+                                                             vv
+                                                                 
+                                           
+                                             
+                           
+                       ( )           ( )    2  
+                                          u
+                          u
+                                              v 
+                              v 
+                                          
+               =  uu      −  2   (  u     v ) +  vv  (vv       )
+                          vv
+                               
+                                               
+                               2         2
+                          (u      v )  (u     v )
+               =  uu   2       +   
+                      −
+                           vv        vv
+                                
+                                          
+                            2
+                           
+                      (u   v )
+                      − 
+               = 
+                 uu
+                          vv
+                           
 
+                                2
+                             
+                 (uu       )(vv −    v )                  
+                             ) (u 
+               =                                   Since vv &gt;  0
 
-        Example
+                          vv
+                               
+                                2
+               ≤  (uu       )(vv −       ) (u     v )
+                  2     
+              (u     v ) ≤  (uu       )(vv       )
+                         
+                 ,
+               uv ≤     u   v
 
-        What matrix L and U puts A into triangular form  A =  LU  where
+          The following two alternative forms of the Cauchy-Schwarz inequality are useful to know:
+                                                    2      
+                                                                   ,
+                                                   , uv  ≤  , uu v v
 
-                             2  1   0
-                                       
-                       A =      1  2  1
-                                       
-                             0  1   2 
-                                      
-        Solution
-
-              2  1    0
-              1  2               1
-                      1         R −  2  R 1  :l 21
-                        
-                               2
-              0  1    2 
-                       
-              2  1    0
-                       
-              0  3    1 
-                  2
-                           2
-              0  1    2 R −   3  R 2  :l 32
-                        
-                           3
-                        
-              2  1    0 
-                 3      
-              0  2    1 =  U
-                         
-                        
-              0  0    4  
-                      3 
-                                                          278</code></pre>
+                                                       2       2   2
+                                                   u , v  ≤  u    v</code></pre>
      	</div>
     
      </div>

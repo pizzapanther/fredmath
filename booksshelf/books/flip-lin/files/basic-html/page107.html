@@ -152,91 +152,53 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Projections
-
-             Theorem   Projection onto a line
-                                      n                    
-             If u  and a  are vectors in  , and if a  ≠ 0, then u  can be expressed in exactly one way in the form
-                                                              
-                                                                                
-                                                       
-                 
-             
-                               
-             u we , where  w  is a scalar multiple of a  and e  is orthogonal to a .
-               =
-                   +
+    <pre style="white-space:pre-line"><code>Section 1.7 – Cramer’s Rule
 
 
 
 
 
+               1.7−1        Theorem − Cramer’s Rule
 
 
 
+                                                                                      ( ) 0
+               If  AX =  B  is a system of a linear equations in n unknowns such that det A ≠ , then the system has
+               a unique solution. This solution is
+
+                               ( )
+                            det B
+                       x =   det ( ) A 1
+                        1
+
+                               ( )
+                            det B
+                       x =   det ( ) A 2
+                        2
+
+                               
+
+                               ( )
+                            det B
+                       x =   det ( ) A n
+                        n
 
 
 
+                              a    a        a            x        b   
+                               a 11  12        1n         x 1       b 1  
+               Where     A =      21                X =      2     B =      2   
+                                                                    
+                               a             a            x         b  
+                               1 n             nn         n         n 
 
+                           b 1  a 12     a 1n
 
+                   ( )
+                det B 1  =  b  2
 
-                                                                                                         
-             The vector  w is called the orthogonal projection of u on a  or sometimes component of u  along a .
-                        
-                                                                            
-                                                           
-             The vector e  is called the vector component of u  orthogonal to a  (error vector and should be
-                             
-             perpendicular to a )
-                                      
-                                          
-                                            
-                                                                                 
-                                  
-                                                
-                                                                                         
-                                          
-                            proj  u =  ua  a =  p         (vector component of u  along a )
-                                       
-                                a
-                                       a  2
-                                             
-                                          ua                                                 
-                                                 
-                           u −  proj a u =  u −     2  a  (vector component of u  orthogonal to a )
-                                              a
-
-
-                                     
-             The length is  proj u =  u  cosθ
-                               
-                               a
-                                         u   
-                                          a
-                                  
-                           proj  u =   a
-                                         
-                                a
-
-                                            
-                                         ua                                 
-                                                
-                Special case: If u =  then      = 1. The projection of a  onto a  is itself.
-                                    a
-                                            a  2
-                                                                                       
-                                                                                            0
-                Special case: If u  is perpendicular to a  then ua =  0. The projection is  p = .
-
-
-
-
-
-
-
-
-
-                                                              107</code></pre>
+                          b    a          a
+                            n    n 2       nn</code></pre>
      	</div>
     
      </div>

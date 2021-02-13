@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 462 - Linear Algebra Solution</title>
+        <title>Page 462 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 462 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 462 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 462</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,96 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>450 | 2. 3 − S OL U T I ON
 
-          Find the row reduced form R and the rank r of A (those depend on c).
-          Which are the pivot columns of A? Which variables are free? What are the special solutions and the
-          nullspace matrix N (always depending on c)?
+          Exercise
 
-                              1   2   1
-
-                         A =      3  6  3     and  A =    c   c  c  c 
-                               4   8  c                   
+                                      1     2   1     2
+                                   
+          Establish the identity:  uv =      u v  −   u v
+                                                        −
+                                            +
+                                        4           4
           Solution
+                                            
+             Let u ( u 1 , u 2 , , u n )  and v =  ( v 1 , v 2 , , v n )
+                            …
+                                                         …
+              
+              uv    uv +    u v +      +   u v
+                  = 
+                      11     2 2          nn
+              
+              uv =   ( u + +  1  v 1 ,  u +  2  v 2 ,  ,  u +  n  v n )
+                  2            2           2                 2
+                +
+              uv      =  ( u +  1  v 1 ) ( u +  2  v 2 )  +  +  ( u +  n  v n )
+                                  +
+                      =  u +  2  v +  2  2u v +  u +  2  v +  2  2u v +  +  u +  2  v +  2  2u v
+                         1   1      11    2    2      2 2         2    n     nn
+              
+              uv =   ( u − −  1  v 1 , u −  2  v 2 , ,u −   n  v n )
 
-                               1   2   0
-                                         
-             a)  c ≠  4   R =      0  0  1 ,
-                                         
-                               0  0    0 
-                                        
-                       A
-                 rank () = , the pivot columns are 1 and 3, the second variable  x  is free.
-                            2
+
+                  2           2            2                2
+              uv      =  ( u −  1  v 1 ) ( u −  2  v 2 )  +  +  ( u −  n  v n )
+                −
+                                  +
+                      =  u +  2  v −  2  2u v +  u +  2  v −  2  2u v +  +  u +  2  v −  2  2u v
+                         1   1      11    2    2      2 2         2    n     nn
+
+                  2       2
+              u v     −  uv     =  u +  2  v +  2  2u v +  u +  2  v +  2  2u v +  +  u +  2  v +  2  2u v
+                          −
+                +
+                                   1   1     11     2    2     2 2          2   n      nn
+                                    −  ( u +  1 2  v −  1 2  2u v + 11  u +  2  v −  2  2u v + 2 2  +  u +  2  v −  2  2u v  )
+                                                                                            nn
+                                                              2
+                                                         2
                                                                                  2
-                                                                  − 2
-                                                                    
-                 The special solution:  x = 1which yields to N =   1
-                                       2                           
-                                                                  0  
-                                                                   
-                               1   2   1
-                                         
-                 c =  4  R =      0  0  0 ,
-                                         
-                                        
-                               0  0    0 
-                 rank () 1, the pivot column is column 1, the second and third variables  x  ,x  are free.
-                          =
-                       A
-                                                                                          2   3
-                                                     −  2  −  1
-                                                             
-                 The special solution goes into  N =     1  0
-                                                             
-                                                     0    1  
-                                                            
-                               1   1
-             b)  c ≠  0  R =          ,
-                               0  0 
+                                                                                      n
+                                =  u +  2  v +  2  2u v + 11  u +  2  v +  2  2u v + 2 2  +  u +  2  v +  2  2u v
+                                                                                       nn
+                                   1   1            2    2                  2    n
+                                     −  u −  2  v +  2  2u v −  u −  2  v +  2  2u v −  −  u −  2  v +  2  2u v
+                                        1    1     11     2   2      2 2         2    n      nn
+                                =  4uv +  4u v +      +  4u v
+                                    11      2 2           nn
 
-                          =
-                       A
-                 rank () 1, the pivot column is the first column, the second variable  x  is free.
-                                                                                      2
-                                                                  − 1
-                 The special solution:  x = 1which yields to N =      1    
-                                       2
-                               0  0
-                 c =  0  R =        
-                               0  0 
-                       A
-                 rank () = , the matrix has no pivot column, and both variables are free.
-                           0
-                                              1   0
-                 The special solution is:  N =     
-                                              0  1 
-
-
-
-
-
-
-
-
-                                                          462</code></pre>
+                           
+                  
+              1 (  u v  2  −  uv  2 )  =  uv +  u v +    u v
+                             −
+                   +
+                                                       +
+              4                       11     2 2          nn
+                             1     2   1     2
+             Therefore; uv =      u v    −   u v  is true.
+                                               −
+                                    +
+                          
+                               4           4
+              nd
+             2  method:
+                         
+                                   
+                     1  u v  2  −  1  uv  2  =  1  (u v+       ) (uv−    )
+                                                                  −
+                                     −
+                         +
+                                                     )(u v+
+                                                                     )(uv−
+                     4           4           4                              
+                                                                       
+                                                       
+                                          =  1  uu +     2uv vv −  (uu −   2uv vv )
+                                                                         +
+                                                        +
+                                            4                                
+                                          =  1 [uu +    2uv vv uu+      +  2uv vv−    ]
+                                                             −
+                                            4</code></pre>
      	</div>
     
      </div>

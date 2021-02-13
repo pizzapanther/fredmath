@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 924 - Linear Algebra Solution</title>
+        <title>Page 924 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 924 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 924 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 924</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>908 | 3. 3 − S OL U T I ON
 
 
-          Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP    A =     6  2 3   
-                                                                                                   
-                                                                                          2 3   7  
+                       3      1         1       1  
+                 =    −   ,       ,   −    ,       
+                     23      23       23      2 3 
+
+
+             The orthogonal basis:
+
+                       (3, 0,  3, 6 ,   ( 1 , 2,  17 4 ) (  18 ,  −  50 ,    26 ,   22   ) ,
+                                   )
+                                                ,
+                                                     ,   −
+                             −
+                                      6      6   3       83     83   83   83 
+                                                                               
+                               −  (  3 ,   ,   −  1  1 ,    1 )                
+                            2    2     2   2                                   
+             The orthonormal basis:
+
+                       1         1     2       1      12      17      8                             
+
+                          , 0,  −   ,      ,       ,      ,       ,         ,                       
+                        6         6    6      498     498     498     498                           
+                                                                                                       
+                         −    9  ,  −  25   ,    13  ,    11     ,     −    3  ,    1  ,   −  1  ,    1    
+                            2   249  2 249  2 249     2 249         2 3  2 3      2 3     2 3       
+
+
+
+          Exercise
+
+          Use the Gram-Schmidt process to find an orthogonal basis and an orthonormal basis for the subspaces
+            m
+           .
+                                                                  )}
+               ( { 3, 4, 0, 0 ,  1, 1, 0, 0 ,  2, 1, 0,  1 , −  ) (  ) (  −  ) (0, 1, 1, 0
+
           Solution
+                                                                           
+                                                                                            )
+             Let  u =  1  (3, 4, 0, 0 ) u =  2  ( 1, 1, 0, 0−  ) u =  3  (2, 1, 0,  1−  ) u =  4  (0, 1, 1, 0
+                  
+              v = u =  (3, 4, 0, 0    )
 
-                            6 − λ  2 3
-              det ( A − λ  ) I =
-                            2 3    7 − λ
-                                            ) 12
-                              = (6 − λ )(7 − λ −
-                                 2
-                              = λ−  13λ +  30 =  0
-             The eigenvalues are:  λ  = 3 and   λ   = 10
-                                   1              2
+               1   1
+                            
+                      u 2 ,  v 1  
+              v =  u −          v
+               2    2       2   1
+                          v
+                           1
 
-             For  λ=  3, we have: A λ−  (  I v =  )    0
-                   1                    1    1
+                                   −
+                                  ( 1, 1, 0, 0            )
+                                             ) (3, 4, 0, 0
+                 =  ( 1, 1, 0, 0      ) −                   (3, 4, 0, 0      )
+                    −
+                                              25
+                                  1
+                 =  ( 1, 1,0,0    −  ) −  25 (3, 4,0,0      )
+                                   )
+                           21
+                 = ( − 28 ,  25 ,0,0
 
-                   3    2 3    x    →    3x +  2    3 y =  0
-                                      0
-                                   =
-                                 
-                                y
-                                      0
-                   2 3   4      
-                                y
-                 ⇒    3x =  −  2    3
-
-                                                   2 3  −
-                 Therefore, the eigenvector v =          
-                                            1      3
-                                                      
-                                    (
-             For  λ=   10 , we have: A λ    Iv =  )   0
-                                       −
-                   2                      2    2
-                   4    2 3  −   x    →  −  4x +  2    3 y =  0
-                                      0
-                                   =
-                                 
-                                      0
-                                y
-                   2 3   − 3   
-                             
-                 ⇒    2x =     3
-                              y
-
-                                                   3 
-                 Therefore, the eigenvector v =        
-                                            2     2  
-                    
-                  v
-              u =    1
-               1   v 1
-                        2   
-                       −  3 , 1 
-                 =          
-                       2    2  2
-                       −    +  1
-                        3 
-
-                               
-                 =   3     −  2  , 1
-                               
-                     7    3   
-                   
-                 = −   2  ,  3   
-                   
-                       7    7 
+                      25
+                  
+               u  ,  v    (2, 1, 0,    −  ) (3, 4, 0, 0 )
 
 
-                                                           924</code></pre>
+                3   1  v =            1              (3, 4, 0, 0
+                                                                 )
+
+                  2    1               25
+                v
+                 1
+                         =  10  (3, 4, 0, 0      )
+                           25</code></pre>
      	</div>
     
      </div>

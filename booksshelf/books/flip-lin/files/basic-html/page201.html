@@ -152,86 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Lecture Three
+    <pre style="white-space:pre-line"><code>Section 2.6 – Linear Independence
 
 
 
 
 
-             Section 3.1 – Inner Products
+               There are n columns in an m by n matrix, and each column has m components. But the true dimension
+               of the column space is not necessarily m or n. The dimension is measured by counting independent
+               columns.
+
+                     Independent vectors       (not too many)
+
+                     Spanning a space          (not too few)
 
 
-             Definition
-                                                                                                
-                                                                                                 ,
-             An inner product on a real vector space V is a function that associates a real number  uv  with each
-                                                                                                 
-                                                                                                           
-             pair of vectors in V in such a way that the following axioms are satisfies for all vectors  , uv , and  w  in V
-             and all scalars k.
-                             
-                      ,
-                1.   uv =      , v u                       Symmetry axiom
-                                       
-                2.  uv+   ,  w =   , u  w +  , v  w        Additivity axiom
-                              
-                                  ,
-                3.  k k uv                                 Homogeneity axiom
-                       , uv =
-                                             
-                4.  vv ≥  and  vv =  iff v =               Positivity axiom
-                                     ,
-                                           0
-                            0
-                      ,
-                                                    0
-             A real vector space with an inner product is called a real inner product space.
-                                                    
-                                               uu =  ,   u     v =  uv +  u v +    u v
-                                                              11    2 2       nn
-             This is called the Euclidean inner product (or the standard inner product)
+
+               2.6−1        Linear Independence (LI)
+                                                                                               
+                                                                                                 0
+                                                                                        0
+               The columns of A are linearly independent when the only solution to  Ax =  is  x = . No other
+               combination  Ax of the columns gives the zero vector.
 
 
-             Definition
 
-                                                                                                      
-             If V is a real inner product space, then the norm (or length) of a vector v   in V is denoted by  v  and is
-             defined by
-                                                                 
-                                                          v =    v , v
-                                                                   
-             And the distance between two vectors is denoted by  ( ,d  uv )  and is defined by
-
-                                                                 
-                                                 u
-                                                           −
-                                                                             −
-                                              d ( , v =  )  uv =    uv   , uv
-                                                                      −
-             A vector of norm 1 is called a unit vector.
+               2.6−2        Definitions
 
 
-             Theorem
+                 A set of two or more vectors is linearly dependent if one vector in the set is a linear combination of
+                   the others. A set of one vector is linearly dependent if that one vector is the zero vector.
+                                                               
+                                             0 =  0v +  0v +   +  0v
+                                                  1      2         k
 
-             If u and v are vectors in a real inner product space V, and if k is a scalar, then:
-                                         
-              a)  v ≥  with equality iff v =
-                                             0
-                       0
-                           
-              b)  kv =   k v
-                                 
-                     
-              c)  (  uv  ) = d  (v u,  )
-                       ,
-                  d
-                                                
-                     
-                                                    
-              d)  (  uv   ) 0≥    with equality iff  uv=
-                  d
-                       ,
-                                                              201</code></pre>
+                                                  
+                 The sequence of vectors v   , v  , v  is linearly independent if the only combination that gives the
+                                          1   2    3
+                   zero vector is 0v +  1  0v +  2  +  0v . Thus, linear independence means that:
+                                                    k
+                                     x v +   x v +   +  x v =   0  only happens when all x’s are zero.
+                                      11      2 2         k k
+
+                 A (nonempty) set of vectors is linearly independent if it is not linearly dependent.
+
+                                          
+                 If three vectors  w 1 , w 2 , w  are in the same plane, they are dependent.
+                                             3
+
+                 The empty set is linearly independent, for linearly dependent sets must be nonempty.
+
+                                                                                           
+                 A set consisting of a single nonzero vector is linearly independent. For if { } v  is linearly
+                                       
+                                        0
+                   dependent, then  av =  for some nonzero scalar a. Thus,
+                                  −  1      −  1  
+                                       a
+                              v =  a  ( ) av =   0 0
+                                                  =</code></pre>
      	</div>
     
      </div>

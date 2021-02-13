@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 706 - Linear Algebra Solution</title>
+        <title>Page 706 - Linear Algebra  Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 706 - Linear Algebra Solution</div>
+        <div id="content-top1">Page 706 - Linear Algebra  Solution</div>
         <div id="content-top2">P. 706</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-          Find L and U for the symmetric matrix
-
-
-                      a   a    a    a
-                       a  b    b    b 
-                 A =                 
-                      a   b    c    c
-                                     
-                       a  b    c    d 
-
-           Find four conditions on a, b, c, d to get  A =  LU with four pivots
-
-          Solution
-
-                   a   a   a    a
-                    a  b   b    b 
-              A =                 
-                   a   b   c    c
-                                  
-                    a  b   c    d 
-
-                   1   0   0    0 a     a       a       a 
-                   1  1    0    0  0  ba      ba      ba   
-                                           −
-                                                           −
-                                                   −
-                =                                          
-                                                           −
-                   1   1   1    0 0     0     cb      cb
-                                                   −
-                                                           
-                   1  1    1    1  0    0       0     d − c 
-
+    <pre style="white-space:pre-line"><code>694 | 2. 9 − S OL U T I ON
 
           Exercise
 
-          For which c is  A =  LU  impossible – with three pivots?
-
-                      1   2    0
-                 A =      3  c  1   
-                                
-                       0  1    1 
+                                                                                                       −
+          If A has a rank r, then it has an r by r sub-matrix S that is invertible. Remove mr−  rows and  nr
+          columns to find an invertible sub-matrix S inside each A (you could keep the pivot rows and pivot
+          columns of A).
+                                                                       0  1   0
+                             1   2    3         1  2    3                   
+                         A =               A =               A =    0  0  0
+                                                                                 
+                              1  2    4         2  4    6                   
+                                                                       0  0   1 
           Solution
 
-                1  2   0
-                  c     
-                         
-                3      1       R − 3R 1
-                               2
-                        
-                0  1   1 
-               1    2     0
-                  c − 6     
-                                                60 ⇒
-                                             c
-                0         1               → − ≠        c ≠  6
-                             
-                            
-                0   1     1   R −  R 1
-                                  3
-                1   2     0
-                             
-                0  c − 6  1      1
-                               c− 6  R 1
-                            
-                0   1     1 
+             If a matrix A has rank r, then the
+             (dimension of the column space) = (dimension of the row space) = r
+             For the invertible sub-matrix S, we need to find r linearly independent rows and r linearly
+             independent columns.
 
+             For matrix A:
 
+                   12 3
+                         
+                   12 4      R −  R 1
+                                2
+                   1 23       R − 3R 2
+                                 1
+                          
+                   0 01   
+                   1 20
+                          
+                   0 01   
+                          rd
+                   st
+                                                                      st
+                                                                             nd
+             The 1  and 3  columns are linearly independent, and the 1  and 2  rows are also linearly
+             independent.
+             Rank (A) = 2.
+                                           13          2 3          12
+             The sub matrices are:  S  =       S   =         S  =      
+                                    A      14    A     2 4    A     12 
 
-                                                           706</code></pre>
+             For matrix B:
+
+                   1 23
+                          
+                   2 46       R −  2R 1
+                                  2
+                   1 23
+                          
+                   000    
+             Rank (B) = 1.
+
+             The submatrix is:  S  = ( ) 1
+                                 A
+             For matrix C:</code></pre>
      	</div>
     
      </div>
