@@ -152,61 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>386 | 4.6 – Orthogonal Diagonalization
+    <pre style="white-space:pre-line"><code>388 | 4.6 – Orthogonal Diagonalization
 
-                                b   
-                        V =            
-                          1    λ − a 
-                               1    
 
-                           (
-             For λ      ⇒     A λ  IV =  )  0
-                              −
-                   2             2    2
-                  a λ−  2   b    x     0 
-                                     2
-                                     = 
-                    b     c λ    y     0
-                            −
-                              2   2   
-                     ( a λ  ) x +  by =  0
-                        −
-                 →        2   2    2
-                    
-                     bx +  2  ( c λ 2 ) y =  2  0  ( ) 2
-                             −
-                    
-                                       )
-                 ( )  2  ⇒     bx = ( λ − c y 2
-                             2
-                                   2
-                                λ − c 
-                        V =   2    2      
-                                b   
-                                                 (
-                                                                                   (
-                                                                              2
+                                          2
+                                               3
+                               −
+                          = 64 48λ +  12λ − λ +   16 12  (4 − λ )
                                                      −
-                           (ac −+  )  (a c+  ) −  2  4 ac b 2 )  +  (a c+  ) +  (a c+  ) −  4 ac b 2 )
-                                                                                      −
-                 λ    λ +  =
-                  1    2                                   2
-                             ( 2 ac+  )
-                         =
-                               2
-                             +
-                         =  ac
-                                               )
-                 V 1   V =   2  b λ  (  1  a +  ) (  2  −  c
-                                      b λ −
+                                                          +
+                                                     −
+                               −
+                          =  64 48λ  +  12λ  2  −  λ  3  +  16 48 12λ
+                                      2
+                               3
+                          = −λ +  12λ −   36 +λ  32 = 0
+                                                        8
+             The eigenvalues are:  λ 1,2  =  2 and  λ =
 
-                          b λ =  (  1  λ +  2  −−  )
-                                       ac
-                        =   ( ba c a c+− −  )
+                                                    3
+             For  λ    =  2 , we have: A λ−  (  IV =  )  0
+                   1,2                     1   1
+                  2 2 2       x   1    0   →  2x +  1  2y +  1  2z =  1  0
+                  2 2 2     y   = 
+                                    0
+                            1    
+                               
+                                    0
+                   2 2 2     z   1   
+                 ⇒     x +  y +  z =  0
+                       1    1   1
 
-                        =     0
+                 If   z =  0 ⇒  x =  −  y
+                    1            1     1
+                                                  − 1
+                 Therefore, the eigenvector V =     1    
+                                            1
+                                                   
+                                                  0  
 
-             Therefore, these eigenvectors are perpendicular.</code></pre>
+                 If   y =  0 ⇒  x =    z −
+                     1           1     1
+
+                                                  1 − 
+                 Therefore, the eigenvector V =      0    
+                                            2
+                                                   
+                                                  1  
+
+
+                       8
+             For λ= , we have: A λ−  (     IV =  )  0
+                   3                     3    3
+
+                  − 4  2    2      x 3      0      −  4x +  3  2y +  3  2z =  3  0
+                   2    4   2     y                            0
+                                         0
+                      −          3  =    →      2x −  3  4y +  3  2z =  3
+                                            
+                                         0
+                   2   2   − 4    z    3         2x +  3  2y −  3  4z =  3  0
+                                                  
+                          − 4  2   2 
+                                      
+                          2  − 4   2           R
+                                        2R +   1
+                                             2
+                                     
+                          2   2   − 4   2R +  R
+                                             3   1
+                          − 4  2   2    3R +  R 2
+                                            1
+                          0    6   6
+                                      
+                             −       
+                          0   6     6 
+                                  −      R +  R 2
+                                            3</code></pre>
      	</div>
     
      </div>

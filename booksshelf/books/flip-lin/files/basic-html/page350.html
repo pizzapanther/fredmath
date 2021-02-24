@@ -152,68 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>332 | 4.2 – General Linear Transformations
+    <pre style="white-space:pre-line"><code>334 | 4.2 – General Linear Transformations
 
 
-             Example 4.2-10
-                                                                        ( ))
-                                                                   T
-                 TP →
-             Let  :      P  be the linear transformation defined by  ( px =   xpx
-                                                                                 ( )
-                     1     2
-             Find the matrix for T with respect to the standard bases
-                                                                             
-                                               
-                                                   
-                                                                        
-                                                                    
-                                                                        v
-                                          B = { u 1 , u 2 }  and  B′ = { v 1 , , v 3 }
-                                                                         2
-                                                   
-                                                              2
-             Where u =   1, u =    ; x  v = 1, v =  , x  v =  x
-                     1        2        1       2        3
-             Solution
-                  ( )
-                T u  1  = T ( ) 1
-                        =    x
-                  ( )
-                   
-                T u  2  = T  ( ) x
-                        =  x ( ) x
-                        =  x 2
-
-
-                               0 
-                   ( )
-                     
-                   T u    =  
-                               1
-                     1   B′  
-                               0 
-                              
                                0 
                     
                    ( )
                    T u    =  
                                0
-                     2   B′  
+                     2      
+                         B′
                                1 
                               
                 The matrix for T with respect to B and  B′ is
                                                
-                              ( )
                                           ( )
+                              ( )
                 [ ] T    =      T u      T u    
                      , BB′     1   B′     2   B′  
                             00
                                 
                          =     10
                                 
-                            01 
-                               </code></pre>
+                               
+                            01 
+
+
+             Example 4.2-11
+
+                                                                        ( ))
+                                                                   T
+                                                                                 ( ) describe in the
+             Let  :TP →  P  be the linear transformation defined by  ( px =   xpx
+                     1     2
+             following figure to perform the computation.
+                                            T (a bx+  ) =  ( x a bx+  ) ax bx=  +  2
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      x
+             B = {1, x } and   B′ = { 1, , x 2 }
+
+             Solution
+                                                  
+                                                         +
+                Step 1: The coordinates matrix for  x =  ax b  relative to the basis  B = { } is
+                                                                                     1, x
+                                a 
+                        [ ] x  =  
+                                b
+                           B   
+                                  
+                Step 2: Multiply [ ] x   by the matrix [ ] T   found in previous example, we obtain.
+                                    B                    , B B′
+                                         00
+                                               a 
+                                
+                        [ ]    [ ] x  =    10   
+                        T
+                                               b
+                            , BB′  B          
+                                           01  
+                                        0 
+                                     =  
+                                        a
+                                       
+                                        b 
+                                       </code></pre>
      	</div>
     
      </div>

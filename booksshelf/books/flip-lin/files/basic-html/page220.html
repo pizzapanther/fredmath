@@ -154,83 +154,67 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>202 | 2.7 – Coordinates, Basis and Dimension
 
-                                   c +  2c +  3c =  5
-                                    1     2     3
-                                 
-                 Which gives:     2c +  1  9c +  2  3c =  3  −  1
-                                 
-                                   c 1      +  4c =  3  9
-                                 
-                 Solving this system, we obtain c =  1  1, c =  2  −  1, c =  3  2.
-                            
-                 Therefore ( ) v  = (1,  1, 2−  )
-                             S     
-             b)  v =  ( ) 1 v−  1  +  3v +  2  2v
-                                       3
-                                                          )
-                   =  ( )(1, 2, 1−  1  ) 3 2, 9, 0+  (  )  2+  (3, 3, 4
-                               )
-                   =  (11, 31, 7
 
+          Function Spaces
 
-          2.7−7       Dimension
+          The equations:
 
-
-          The number of vectors is a basis defined the dimension number.
-          Dimension is the number columns minus the pivots column(s), as  we defined the number(s) of free
-          variable(s).
-                    
-                             
-                                      
-          If v  , , v   and  w  , , w  are both bases for the same vector space, then m = n.
-                                 
-             1        m       1        n
-
-          Note
-
-          V may have many different bases, but they all must have the same number of elements.
+              y′′ =  0      is solved by any linear function  y =  cx +
+                                                                     d
+              y′′ = −       is solved by any combination     y = c sin xd cos x
+                                                                      +
+                    y
+                                                                   x
+              y′′ =  y      is solved by any combination     y =  ce + de − x
 
 
 
+          Example 2.7-7
 
-          Proof
-             Let S and W be bases of V can be written as a linear combination of vectors in S.
-                                 
-                                              s
-                         w =  1  as +    +  a 1mm
-                               11 1
-                                             
-                                               s
-                                  s +
-                        w =  2  a 21 1   +  a 2mm
-                                     
-                                             
-                                               s
-                         w =  n  as +    +  a nm m
-                                n
-                                11
-                                                  
-             But since V is a basis, cw + 11    +  c w =  0   ⇔    c =  i  0  (to be linearly independent, otherwise
-                                                 nn
-                                                           0
-             to be linearly dependent with at least 1 of tc ≠ )
-                                                        i
-                (
-                                               s +
-                                                                                            s
-                                                            s
-                                 s
-              c a s +      +  a 1mm ) +  c 2 ( a 211  +  a 2mm ) +  +  c n ( a s + 11  +  a nmm )  =  0
-               1
-                  111
-                                                                            n
-              ( ca   +  c a  +    +  c a  1 ) s +  1  +  ( ca  +  c a  +  +  c a  ) s m  =  0
-                                                                            nnm
-                        2 21
-               1 11
-                                                      1 1m
-                                                              2 2m
-                                     nn</code></pre>
+          Find a basis for and the dimension of the solution space of the homogeneous system
+
+                   x +  3x −  2x        +  2x      =  0
+                    1     2     3           5
+                 2x +  6x −  5x −  2x +   4x −  3x =  0
+                    1     2     3     4     5     6
+                                     5x −  10x         15x =  0
+                                             +
+                                3      4          6
+                                +
+                  2x +  6x         8x +  4x +  18x =  0
+                    1     2         4      5      6
+          Solution
+
+                1 3 − 2    0   2    0   0
+                      5    2        30       R −  2R
+                2 6 −     −    4 −                 2  1
+                0 0  5   − 10 0 15 0
+                                         
+                2 6  0     8   4 18 0        R −  2R 1
+                                                 4
+                1 3 − 2    0   2   0   0
+                                             − R
+                0 0 −  1  −  2  0 −  30            2
+                0 0  5   − 10 0 15 0
+                                         
+                0 0  4     8   0 18 0    
+
+                1 3 − 2    0   2   0   0     R + 2R 2
+                                                1
+                00   1     2   0   3   0 
+                                        
+                0 0  5   − 10 0 15 0         R − 5R
+                                              3     2
+                0 0  4     8   0 18 0        R −  4R 2
+                                                4
+
+                1 3 0    4    260
+                0 01     2    0 30    
+                                                1
+                000 −    20 0 00           − 20  R 3
+                                      
+                000      0    0 60          1  R
+                                              6  4</code></pre>
      	</div>
     
      </div>

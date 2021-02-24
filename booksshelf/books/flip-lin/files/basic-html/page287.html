@@ -152,82 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 2 –  Angle and Orthogonality in Inner Product Spaces  | 269
-
-                                                                                              4
-
-               42.  Consider vectors u =  ( 2, 0, 1, 3    −  ) v =  (1, 1, 1, 1     ) w =  (3,  −  1, 5,  ) 2    in 
-                                                                                     
-                          ,
-                    a)  u v              d)  u              g)  Cosine α  between u and v
-                                                                                  
-                                                                                         
-                                                         h)  Cosine β  between u and w
-                    b)  u w              e)  v                                          
-                          ,
-                                                         i)  Cosine θ  between v and w
-                                                                         
-                                                                 
-                    c)  v w              f)   w             j)  (uv+  )   w
-                          ,
-
-               43.  Consider polynomial  ( ) 3f t =  t −  5; g ( ) t =  t 2  in  ( ) t
-                      a)    , f g         b)   f            c)  g            d)  Cosine between  f  and  g
+    <pre style="white-space:pre-line"><code>Section 3.3 – Gram-Schmidt Process
 
 
-               44.  Consider polynomial  ( ) t =  t +  2;  g t = ( ) 3t −  2;  h ( ) t =  t −  2  2t −  3 in  ( ) t
-                                          f
+                 3.3−1       Definition
 
-                      a)    , f g          d)   f             g)  Cosine α  between  f  and  g
-                      b)    , f h          e)  g              h)  Cosine       between  f  and  h
-                                                              i)  Cosine       between  g and  h
-                      c)  g h              f)   h
-                            ,
 
-                                          f
-               45.  Consider polynomial  ( ) x =  x −  2  2x +  3;  g ( ) x =  2x +  3;  h ( ) x =  x −  2 in  ( ) x
+                 A set of two or more vectors in a real inner product space is said to be orthogonal if all pairs of
+                 distinct vectors in the set are orthogonal. An orthogonal set in which each vector has norm 1 is said to
+                 be orthonormal.
 
-                      a)    , f g          d)   f             g)  Cosine α  between  f  and  g
 
-                      b)    , f h          e)  g              h)  Cosine       between  f  and  h
-                                                              i)  Cosine       between  g and  h
-                            ,
-                      c)  g h              f)   h
 
-                                
-                                ,
-               46.  Suppose  u v = +         2 i  in a complex inner product space V. Find:
-                                      3
-                                                                                                      
-                      a)  (2 4−   i ) , u v    b)  u , 4      3  ) i v    c)  ( 3 6 ui−  ) , 5 2 i v−  (  )     d)  u , v
-                                                      ( +
+                 3.3−2       Theorem
 
-                                
-                                      2
-                                ,
-               47.  Suppose  u v = −         3 i  in a complex inner product space V. Find:
-                                                                                                      
-                                                      ( −
-                      a)  (2 2+   i ) , u v    b)  u , 3     4  ) i v    c)  ( +  1 3 i ) , 5 2u  ( −  ) i v    d)  u , v
 
+                            
+                                
                                                                                                      
-                                                                                    i
-                                                                                 +
-                                                                                        −
-               48.  Find the Fourier coefficient c and the projection cv  of u =     ( 3 4 , 2 3  ) i  along v =  (5 i+  , 2i )
-                         2
-                     in 
-                                                                    
-                                                                                      
-                                                                                                             
-                                                                                                                
-               49.  Suppose v =   (1,3,5, 7      ). Find the projection of  v  onto W or find  w W∈   that minimizes  v −  w
-                                                   4
-                     , where W is the subspace of   spanned by:
-                       a)  u =    1  (1, 1, 1, 1     ) and  u =    2  (1,  −  3, 4,  −     ) 2
-                                                 
-                       b)  v = (1, 1, 1, 1     ) and v =  (1, 2, 3, 2       )
-                            1                      2</code></pre>
+                 1.  If  S = { v 1 , v 2 ,  , v   n }  is an orthogonal basis for an inner product space V, and if u is any
+                    vector in V, then
+                                                                            
+                                                , u v      , u v            u ,  v n  
+                                           u =      1  v +  1   2  v +  2  +         v
+                                                                                       n
+                                                v   2       v   2             v   2
+                                                  1           2                  n
+                            
+                                
+                                                                                                       
+                 2.  If  S = { v 1 , v 2 ,  , v   n }  is an orthonormal basis for an inner product space V, and if u  is any
+                    vector in V, then
+                                                                            
+                                            u =   , u v v +   , u v  v +    +   u , v  v
+                                                     1  1       2   2             n   n
+
+                 Proof
+                                            
+                                    
+                                                                             
+                 1.  Since  S = { v   1 , v 2  ,  , v n }  is a basis for V, every vector u  in V can be expressed in the form
+                                                                              
+                                                    u =    c v +    c v +    +   c v
+                                                         1 1   2 2          nn
+                                         
+                                          , u
+                                            v
+                    Let show that  c =      i    for  i = 1, 2,  , n
+                                    i      2
+                                         v
+                                          i
+                                                     
+                      u ,  v  =  c v +  c v +    +   c v  ,    v
+                          i     1 1    2 2         nn      i
+                                                                 
+                            =  c vv      +  c  v  , v  +    +   c  v  , v
+                                    ,
+                               1  1   i     2   2   i          n   n   i
+                                                                                                             th
+                    Since S is an orthogonal set, all of the inner products in the last equality are zero except the i , so
+                    we have
+                                            
+                                  , u v  =  c v  , v
+                                     i    i   i  i
+                                               2
+                                        =  c v
+                                           i  i</code></pre>
      	</div>
     
      </div>

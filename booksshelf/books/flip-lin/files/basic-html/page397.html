@@ -152,65 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.6 – Orthogonal Diagonalization
+    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 381
 
 
+                              30 −   2                                  − 2  0  0   0 
+                                      
+                  40.  A =      03  0                                     0  −  25 −  5   
+                                      
+                                                            43.  A =    0   0   3   0 
+                              00   3                                                  
+                             19   −   9  −  6                           0   0   0   3  
+                                                                       5 −  30
+                  41.  A =    25 −  11 −  9                                        9 
+                                          
+                                                                        0  3  1 −  2 
+                              17  −  9  −  4                44.  A =                
+                                                                          0  0  2   0 
+                              − 2  0  0 0                               0  0  0   2  
+                              0  − 200                                              
+                  42.  A =                                              30 0 0
+                              0  0   30
+                                                                        0 200     
+                              0  0   1 3                    45.  A =              
+                                                                          0 0 20
+                                                                                    
+                                                                          1 0 0 3   
 
 
-               4.6−1        Definition
+                 46.  The 4 by 4 triangular Pascal matrix  P and its inverse (alternating diagonals) are
+                                                          L
+
+                                                10 0 0                    1  0    0   0
+                                                11 0 0                    − 1  1  0   0 
+                                                                     −
+                                        P =       12 1 0    and  P L 1  =      1  2  1  0 −  
+                                          L
+                                                                                       
+                                                13 3 1                    −  1  3  −  3 1 
+
+                        Check that  P  and  P − 1  have the same eigenvalues. Find a diagonal matrix D with
+                                     L       L
+                                                            1
+                                                           −
+                        alternating signs that gives  P −  1 =  D PD , so  P  is similar to  P − 1 . Show that  PD  with
+                                                    L          L        L               L                L
+                        columns of alternating signs is its own inverse.
+
+                        Since  P  and  P − 1  are similar they have the same Jordan form J. Find J  by checking the
+                                L       L
+                        number of independent eigenvectors of  P  with λ = 1.
+                                                                L
+
+                 47.  These Jordan matrices have eigenvalues 0, 0, 0, 0. They have two eigenvectors (one from each
+                      block). But the block sizes don’t match, and they are not similar:
 
 
-               A square matrix A is called orthogonally diagonalizable if there is an orthogonal matrix P such that
-                       (
-                                )
-                           T
-                P − 1 AP =  P AP  is diagonal; the matrix P is said to orthogonally diagonalize A.
-                                                             T
-                                                            P AP =   D
+                                                  01 0 0                  01 0 0
+                                                  0000                      0 01 0  
+                                            J =                and   K =            
+                                                  000 1                   0000
+                                                                              0000   
+                                                  0000                              
 
-               We say that A is orthogonally diagonalizable and that P orthogonally diagonalizes A.
-
-
-
-               4.6−2        Theorem
-
-
-               If A is an n x n matrix, then the following are equivalent.
-
-                 a)  A is orthogonally diagonalizable
-                 b)  A has an orthonormal set of n eigenvectors.
-                 c)  A is symmetric.
-
-
-               4.6−3        Theorem
-
-
-               If A is symmetric matrix, then:
-
-                 a)  The eigenvalues of A are all real numbers.
-                 b)  Eigenvectors from different eigenspaces are orthogonal.
-
-
-
-               Example 4.6-1
-
-               Find an orthogonal matrix P that diagonalizes
-
-                                           4 2 2
-                                                   
-                                      A =      2 4 2
-                                                   
-                                           2 2 4  
-                                                  
-               Solution
-
-                                   4 − λ  2      2 
-                   det ( A − λ  ) I =      2  4 − λ  2    
-                                   2      2          
-                                                4 − λ 
-                                        3
-                                = (4 − λ ) + 8 8 −  ( 44 − λ ) 44−  ( − λ ) 44−  ( − λ )
-                                             +</code></pre>
+                      For any matrix M compare JM with MK. If they are equal show that M is not invertible. Then
+                       M − 1 JM =  K  is Impossible; J is not similar to K.</code></pre>
      	</div>
     
      </div>

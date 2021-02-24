@@ -152,71 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 365
-
-                                                 8   3 
-                                             =     10 10   
-                                                 2   7  
-                                                 10 10 
-
-                                                 .8 .3
-                                              =      .2 .7   
-
-                                                        A
+    <pre style="white-space:pre-line"><code>Section 4.5 – Diagonalization
 
 
+                                                                                                            
+                                                                                                              x
+                 When  x  is an eigenvector, multiplication by A is just multiplication by a single number:  Ax = λ .
+                 The matrix A turns into a diagonal matrix A when we use the eigenvectors property.
 
-               4.5−6        Eigenvalues of AB and A + B
+                 4.5−1       Diagonalization
+
+                                                                                           
+                 Suppose the n by n matrix A has n linearly independent eigenvectors  x  , , x . Put them into the
+                                                                                        
+                                                                                     1       n
+                 column of an eigenvector matrix P. Then  P − 1 AP  is the eigenvalue matrix A:
+
+                                                                     λ   1      
+
+                                                  P − 1 AP = Λ=  D =            
+                                                                             λ  
+                                                                              n 
 
 
-               An eigenvalue of A times an eigenvalue of B usually does not give an eigenvalue of AB.
+
+                 Example 4.5-1
+
+                                             .5 .5
+
+                 The projection matrix  A =         has  λ  1,2  =     0 and   1
+                                             .5 .5 
+                 Solution
 
 
-                              λ λ ≠     λ AB
-                                A B
+                    For λ     0 ⇒    ( A λ =  −  IV =  )  0
+                          1                1    1
+                          1  1                 1     1
+                          2  2     x  =  0       →   2 x +  2  y =  0
+                            1  1        
+                                 y
+                                       0
+                                      
+                                 
+                          2  2 
+                         x = − y
+                                          − 1
+                        Therefore, V =     
+                                    1     1  
 
-               Commuting matrices share eigenvectors: Suppose A and B can be diagonalized. They share the
-               eigenvector matrix P if and only if AB = BA.
+                    For λ     1 ⇒     ( A λ =  −  IV = )  0
+                          2                 2    2
 
-
-                                                    k
-               4.5−7        Matrix Powers  A
-
-                 2
-                A =  PDP  −  1 PDP −  1
-                         2 −
-                   =  PD P   1
-
-                 k
-                A =  ( PDP −  1 ) ( PDP −  1 )
-                              
-
-                         k −
-                   =  PD P   1
-                                                                                     k
-                                            k
-               The eigenvector matrix for  A  is still S, and the eigenvalue matrix is  A . The eigenvectors don’t
-                                                                                                 
-                                                           th
-                                                                                                k
-               change, and the eigenvalues are taken to the k  power. When A is diagonalized,  A u  is easy.
-                                                                                                  0
-               Here are steps (taken from Fibonacci):
-                   1.  Find the eigenvalues of A and look for n independent eigenvectors.
-                                                             
-                   2.  Write u as a combination  c v +     +  c v of the eigenvectors.
-                               0                  11          nn
-                                                           k
-                                                       ( )
-                   3.  Multiply each eigenvector v i  by λ i  . Then
-                                      
-                              u =   A u
-                                k    k  0
-
-                                       λ
-                                  =  c  ( ) k   v +  +  c  ( ) k   v
-                                                         λ
-                                     1  1    1        n    n    n</code></pre>
+                          − 1  1                    1    1
+                                          0
+                          2   2     x   =       →− 2  x +  2  y = 0
+                            1  −   1      
+                                    y
+                                          0
+                                         
+                                    
+                          2    2 
+                         x =  y
+                                         1
+                        Therefore, V =   
+                                    2    
+                                         1</code></pre>
      	</div>
     
      </div>

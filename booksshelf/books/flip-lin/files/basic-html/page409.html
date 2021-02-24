@@ -152,58 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 391
-
-               4.6−7        Theorem − Equivalent Statements
+    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 393
 
 
-               If A is an nn×  matrix, then the following statements are equivalent.
+
+                            3     12 
+                        =     5   6   +     5   6 
+
+                              5  −    5   
+                           3
+                          
+                        = 
+                           0
+                          
 
 
-                 a)  A is invertible.
-                          
-                 b)  Ax =  has only the trivial solution
-                          0
-                 c)  The reduced row echelon form of A is  I
-                                                           n
-                 d)  A is expressible as a product of elementary matrices.
-                                                             
-                 e)  Ax b  is consistent for every n× 1 matrix b
-                        =
-                                                                         
-                 f)  Ax b=  has exactly one solution for every n× 1 matrix b
-
-                 g)  det ( ) 0A ≠
-
-                 h)  The column vectors of A are linearly independent.
-                 i)  The row vectors of A are linearly independent.
 
 
-                 j)  The column vectors of A span  n
 
-                 k)  The row vectors of A span  n
 
-                 l)  The column vectors of A form a basis for  n
 
-                 m)  The row vectors of A form a basis for  n
 
-                 n)  A has a rank n.
-                 o)  A has nullity 0.
 
-                                                                          n
-                 p)  The orthogonal complement of the null space of A is  
 
-                 q)  The orthogonal complement of the row space of A is { } 0
 
-                                          n
-                 r)  The range of T  is 
-                                   A
-                 s)  T  is one-to-one.
-                       A
-                         0
-                 t)  λ =  is not an eigenvalue of A.
-                       T
-                 u)  A A is invertible.</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Example 4.6-3
+                                                          a b
+                 Consider a 2 by 2 symmetric matrix  A =      
+                                                          bc  
+                 Solution
+
+                    The eigenvalues are:
+                                     −
+                                   a λ      b
+                           −
+                     det ( A λ  ) I =
+                                     b    c λ
+                                            −
+                                 (a λ =  −  )(c λ  −  ) b−  2
+                                                      2
+                                =  λ  2  (a c λ −  +  ) +  ac b =    0
+                                                    −
+                                          2    (      2 )
+                         (ac+  ) ±  (ac+  ) −  4 ac b
+                                                   −
+                                                                             (
+                     λ =                                        ∴  (a +  ) c  2  −  4 ac b 2 )  &gt;  0
+                                                                                 −
+                                        2
+
+                    The eigenvectors are:
+                                  (
+                    For λ     ⇒     A λ IV =  )  0
+                                     −
+                          1            1    1
+                         a λ       b    x    0 
+                           −
+                             1          1    =  
+                           b     c λ−    y   0
+                                     1   1   </code></pre>
      	</div>
     
      </div>

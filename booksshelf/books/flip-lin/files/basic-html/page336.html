@@ -152,14 +152,25 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>318 | 4.1 – Matrix Transformations
+    <pre style="white-space:pre-line"><code>320 | 4.1 – Matrix Transformations
 
-                Rx =  0 has the complete solution:  x =  x s +  x s +  x s
-                                                      2 2    33      5 5
+
+                               −  3       −   5    −  9
+                                1        0         0  
+                                                    
+                        s =       0     s =      1     s =      0   
+                          2
+                                     3
+                                                 5
+                                0        0         − 8 
+                                  0          0          1    
+                Rx =  0 has the complete solution:  x =  x s +  2 2  x s +  33  x s
+                                                                     5 5
                The nullspace has dimension n – r. The special solutions form a basis.
 
                                 T
           4.  The nullspace of  R  has dimension m – r = 3 – 2 = 1
+
                                          1 00
                                          30 0       y 1        y = 0
                                                            0
@@ -174,18 +185,19 @@ function MM_swapImage() { //v3.0
                                                           
                                                            0
                                          01 0     y         y   anything
-                                                                 
-                                                    3           3
+                                                    3          3
                                          98 0   
                                   T
                The nullspace of  R  contains all vectors  y = ( 0, 0, y 3 )  and it is the line of the basis vector
                        )
                (0, 0, 1 .
-               The left nullspace has dimension m – r. The solutions are  y = ( 0,   , y r+ 1 ,   , y m )
+               The left nullspace has dimension m – r. The solutions are  y = ( 0,  , y r+ 1 ,  , y m )
+
 
 
                   n
               In   the row space and nullspace have dimensions r and n – r (adding to n)
+
                   m
               In    the column space and left nullspace have dimensions r and m – r (total m)</code></pre>
      	</div>

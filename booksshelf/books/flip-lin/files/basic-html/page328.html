@@ -152,48 +152,47 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>310 | 4.1 – Matrix Transformations
+    <pre style="white-space:pre-line"><code>312 | 4.1 – Matrix Transformations
+
 
           4.1−4    Orthogonal Projection
 
 
 
            Orthogonal
-                                                                     ( )
-                                                                                      ,
-                                                                                     10
-                                                                               ,
-                                                                              1 0 =
-           projection                                              Te  1  = T ( ) ( )               10
-           on the x-axis                                                                            00 
-                                                                     ( )
-                                                                   Te     = T  ( ) (0 0, =  ,  )       
-                                                                              01
-           T (x,y ) ( 0x,=  )                                          2
+                                                                    ( )
+                                                                             1 0 ,
+                                                                                    10 ,
+                                                                                 =
+           projection                                             Te  1  = T ( ) ( )               10
+           on the x-axis                                                                           00 
+                                                                    ( )
+                                                                  Te     =  T  ( ) (0 0, =  ,  )      
+                                                                             01
+           T (x,y ) ( 0x,=  )                                         2
+
 
 
            Orthogonal
-                                                                     ( )
-                                                                              1 0 =
-           projection                                              Te  1  =  T  ( ) (0 0,  ,  )      00
-           on the y-axis                                                                            01 
-                                                                     ( )
-                                                                   Te     =  T  ( ) ( )                
-                                                                                      ,
-                                                                                ,
-                                                                                     01
-                                                                              01 =
-           T (x,y ) (0,y=  )                                           2
+                                                                    ( )
+                                                                             1 0 =
+           projection                                             Te  1  = T  ( ) (0 0,  ,  )      00
+           on the y-axis                                                                             01   
+                                                                    ( )
+                                                                             01 ,
+           T (x,y ) (0,y=  )                                      Te  2  =  T  ( ) ( ) ,=  01
+
+
 
 
 
 
            Orthogonal
-           projection                                                    T  (1 0 0,,  ) (1 0 0,,=  )      1 00
-                                                                                                         
-           on the xy-Plane                                               T  (01 0,,  ) (01 0,,=  )        01 0
-                                                                                                         
-                                                                         T  (00 1,,  ) (000,,=  )        000   
+           projection                                                   T (1 0 0,,  ) (1 0 0,,=  )      1 00
+                                                                                                       
+           on the xy-Plane                                              T (01 0,,  ) (01 0,,=  )        01 0
+                                                                                                       
+                                                                        T (00 1,,  ) (000,,=  )        000   
            T (x,y,z ) (x,y,=  ) 0
 
 
@@ -203,11 +202,11 @@ function MM_swapImage() { //v3.0
 
 
            Orthogonal
-           projection                                                    T  (1 0 0,,  ) (1 0 0,,=  )      1 00
-                                                                                                         
-           on the xz-Plane                                               T  (0 1 0,,  ) (000, ,=  )        000
-                                                                                                         
-                                                                         T  (0 01,,  ) (0 01,,=  )        0 01   
+           projection                                                   T (1 0 0,,  ) (1 0 0,,=  )      1 00
+                                                                                                       
+           on the xz-Plane                                              T (0 1 0,,  ) (000, ,=  )        000
+                                                                                                       
+                                                                        T (0 01,,  ) (0 01,,=  )        0 01   
            T (x,y,z ) ( 0x, ,z=  )
 
 
@@ -217,12 +216,12 @@ function MM_swapImage() { //v3.0
 
 
            Orthogonal
-           projection                                                    T  (1 00,,  ) (000,,=  )      000
-                                                                                                         
-           on the yz-Plane                                               T                          01 0
-                                                                                                         
-                                                                           (01 0,,  ) (01 0,,=  )        0 01   
-           T (x,y,z ) (0,y,z=  )                                         T  (0 01,,  ) (0 01,,=  )</code></pre>
+           projection                                                   T (1 00,,  ) (000,,=  )      000
+                                                                                                       
+           on the yz-Plane                                              T                         01 0
+                                                                                                       
+                                                                         (01 0,,  ) (01 0,,=  )        0 01   
+           T (x,y,z ) (0,y,z=  )                                        T (0 01,,  ) (0 01,,=  )</code></pre>
      	</div>
     
      </div>

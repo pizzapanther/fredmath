@@ -155,74 +155,79 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2.6 – Linear Independence   | 187
 
 
-                     1 4   5   0    R −  4R 2
-                                        1
-                            20   
-                     01 −        
-                     0 1 −  10       R −  R
-                                      3    2
-                     00    0   0 
 
-                     1 0 13 0       R −  13R 3
-                                       1
-                            2 0  
-                     01 −                 R +  2R 3
-                                        2
-                     00    1   0
-                                 
-                     0 0   0   0 
+                                 1 e  x   e 2x
 
-                     1 000         →    k =  1  0
-                     01 0 0        →    k =  0
-                                        2
-                     0 01 0        →    k =  0
-                                        3
-                     0000      
+                         Wx       0 e x   2e 2x
+                            ( ) =
+                                  0 e x   4e 2x
 
-                                                                     0
-                   Solve the system equations: k =  0, k =  0, k =  has a trivial solution.
-                                                1        2        3
-                                          
-                   The vectors v  , v  ,  and v  are linearly independent.
-                                1   2        3
+                                             2x x
+                                = e x 4e 2x  − 2ee
+                                = 2e 3x  ≠  0
+                    Thus, the functions are linearly independent.
 
 
+                 2.6−8       Theorem
+
+                                                                                 
+                 Let S be a linearly independent subset of a vector space V, and let v  be a vector in V that is not in S.
+                 Then
+                       
+                                                            
+                 S  { } v  is linearly dependent if and only if v ∈ span ( ) S
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                       linearly independent              linearly dependent             linearly independent
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                       linearly independent              linearly dependent             linearly independent</code></pre>
+                 Proof
+                                                                                           
+                 If  S  { } v  is linearly dependent, then there are vectors u u 2 ,  , u  in  S  { } v such that
+                                                                         ,
+                                                                        1
+                                                                                    n
+                                          
+                 au +   a u +      +   a u =  0 for some nonzero scalars  a a  ,  , a .
+                                                                          ,
+                  11     2 2          nn                                 1   2       n
+                                                                              
+                 Because S is linearly independent, one of the us  say u , equal  v . Thus
+                                                               '
+                                                              i
+                                                                       1
+                                         
+                 av +  a u +      +   a u =  0,  and so
+                  1     22            nn
+                                           
+                     av =  −  ( a u +    +   a u  )
+                      1        22           nn
+                          − 1                
+                     v =  −  a  ( au +    +   a u  )
+                           1    22           nn
+                          (  −  1  )        (  −  1  ) 
+                      =  −  aa  2  u −  2  −   aa n  u
+                                                      n
+                                               1
+                            1
+                                                                                    
+                 Since  v  is linear combination of  u  ,  ,  u , which are in S, we have  v ∈ span ( ) S .
+                                                    2       n
+                                 
+                 Conversely, let v ∈ span ( ) S .
+                                                   
+                                           ,
+                                                                           ,
+                 Then there exist vectors v v 2 ,  , v  in S and scalars b b     , b  such that
+                                                                               ,
+                                                                         1
+                                                                             2
+                                          1
+                                                      m
+                                                                                      m
+                                        
+                 v =  bv +  b v +     +   b v . Hence,
+                      11     2 2         mm
+                                                     
+                     bv +  b v +     +  b v +  ( ) 1 v−  = 0
+                      11     2 2         mm</code></pre>
      	</div>
     
      </div>

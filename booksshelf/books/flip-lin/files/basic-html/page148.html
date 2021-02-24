@@ -155,74 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>n
           130 | 2.2 – Norm, Dot product, and distance in  R
 
-          2.2−7       Definition
+          2.2−11        Theorem
+
+                       
+                      =
+             a)  uv v      u
+             b)  u       (v w+     ) uv u=         w
+                                
+                                  + 
+                                 
+             c)  u      (v w−  ) uv u=     −      w
+                                 
+             d)  (uv+  )   w =    u     w+   v   w
+                                 
+             e)  (uv   −  )   w =  u     w−   v   w
+                               
+                     
+             f)  ( k u   v ) ( )   ku=  v 
+                                 
+             g)  ( k u    ) u=       kv
+                               ( )
+                       v
+                                           
+             h)  v     v ≥  0 and v     v =  0 iff v =  0
+                        
+             i)  0     v =   v   00
+                            =
 
 
-                                                                         n
-                                               v
-          If u = ( u 1 , u 2 , , u  n )   and v = ( v 1 , ,  , v n )  are points in  , then we denote the distance
-                                                2
-                                   
-          between u and v by    ( , du v )  and define it to be
-                                      
-                        du      )  u v
-                          ( , v =
-                                     −
-                                             2
-                                 =  ( u −  1  v 1 ) ( u −  2  v 2 ) 2  +  +  ( u −  n  v n ) 2
-                                              +
+          2.2−12        Right Angles
 
-
-
-          2.2−8       Dot Product
-
-
-                                           2      3                                    
-          If u  and v  are nonzero vectors in   or  , and if θ  is the angle between u  and v , then the dot
-                                                                                    
-                                                                    
-                                                              
-          product (also called the Euclidean inner product) of u  and v  is denoted by uv   and is denoted as
-
-                                                          
-                                                      =
-                                                 uv      u   v  cosθ
-
-                                                                  
-                                                     
-          We identify  v    cosθ  as the component of  v  parallel to u , and the length of the orthogonal
-                                          
-          projection of v  in the direction of u , with appropriate sign.
+                                                                               
+          The dot product is vw =  0  when v  is perpendicular (or Orthogonal) to w
 
 
 
+          Proof
+                                   2     2       2
+          Perpendicular vectors:  v  +  w  =  v −  w
+
+                                    
+             Let v = ( v 1 , v 2 )  & w = ( w 1 , w 2 )
 
 
-
-
-
-
-
-
-
-
-
-          2.2−9       Cosine Formula
-                   
-          If u  and v  are nonzero vectors that implies
-                           
-                             
-                   cosθ =   uv 
-
-                          u     . v
-
-
-          Example 2.2-5
-                                                             
-                                                       )
-          Find the dot product of the vectors u = (0, 0, 1    and v = (0, 2, 2    ), and have an angle of 45°.
-
-          Solution</code></pre>
+                 2           2            2
+            v −  w  =  ( v −  1  w 1 ) ( v −  2  w 2 )
+                                 +
+                                                       2
+                    =  v −  2  2vw +  w +  2  v −  2  2v w +  w
+                       1     11     1    2     2 2     2
+                                           (
+                    =  v +  2  w +  2  v +  2  w −  2  2 vw +  v w  )     vw +  v  w =  0 dot  pro ct
+                                                                                                 du
+                       1    1    2    2      11      2 2                11     2 2
+                                      2
+                    =  v +  2  w +  2  v +  2  w
+                       1    1    2    2
+                                      2
+                    =  v +  2  v +  2  w +  2  w
+                       1    2    1    2
+                         2    2
+                    =  v  +  w</code></pre>
      	</div>
     
      </div>

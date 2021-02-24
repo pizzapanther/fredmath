@@ -155,57 +155,57 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1.4 – Inverse Matrices  | 43
 
 
-               Notation
+
+                 Notation
 
 
-                   Matrix A is symmetric across its main diagonal. So is  A − 1
+                     Matrix A is symmetric across its main diagonal. So is  A − 1
 
-                   Matrix A is tridiagonal (only three nonzero diagonals). But  A − 1  is a full matrix with no zeros.
-
-                     (another reason we don’t compute  A − 1 )
-
-
-               1.4−7        Singular versus Invertible
+                     Matrix A is tridiagonal (only three nonzero diagonals). But  A − 1  is a full matrix with no zeros.
+                      (another reason we don’t compute  A − 1 )
 
 
-
-                A − 1  exists when A has a full set of n pivots. (Row exchanges allowed)
-
-                   •  With n pivots, elimination solves all the equations  Ax = b . The columns  x  go into  A − 1 .
-                                                                           i   i                i
-                       Then  AA − 1  =  I  is at least a right-inverse.
-
-                   •  Elimination is really a sequence of multiplications.
+                 1.4−7       Singular versus Invertible
 
 
-               1.4−8        Conclusion
+
+                 A − 1  exists when A has a full set of n pivots. (Row exchanges allowed)
+
+                    •  With n pivots, elimination solves all the equations  Ax = b . The columns  x  go into  A − 1 .
+                                                                            i    i                i
+                        Then  AA − 1  =  I  is at least a right-inverse.
+
+                    •  Elimination is really a sequence of multiplications.
 
 
-                   If A doesn’t have n pivots, elimination will lead to a zero row.
-
-                   Elimination steps are taken by an invertible M. So a row of MA is zero.
-                   If  AB =  then  MAB =   M . The zero row of MA, times B, gives a zero row of M.
-                             I
-                   The invertible matrix M can’t have a zero row! A must have n pivots if  AB = .
-                                                                                                I
+                 1.4−8       Conclusion
 
 
-               1.4−9        Elementary Matrices
+                     If A doesn’t have n pivots, elimination will lead to a zero row.
+                     Elimination steps are taken by an invertible M. So a row of MA is zero.
+
+                               I
+                     If  AB =  then  MAB =  M . The zero row of MA, times B, gives a zero row of M.
+                     The invertible matrix M can’t have a zero row! A must have n pivots if  AB = .
+                                                                                                 I
 
 
-               1.4−10  Definition
+                 1.4−9       Elementary Matrices
+
+                 1.4−10  Definition
 
 
-               Let e be an elementary row operation. Then the  nn×  elementary matrix E associated with e is the
-               matrix obtained by applying e to the nn×  identity matrix. Thus
 
-                                                              E =  eI
+                 Let e be an elementary row operation. Then the  nn×  elementary matrix E associated with e is the
+                 matrix obtained by applying e to the nn×  identity matrix. Thus
 
-               Example 1.4-1
+                                                               E =  eI
 
-                        1   0 
-                   a)          →    Multiply R of  I  by  − 3
-                         0 − 3                2</code></pre>
+                 Example 1.4-1
+
+                         1   0 
+                    a)           →   Multiply R of  I  by  − 3
+                          0 − 3                 2</code></pre>
      	</div>
     
      </div>

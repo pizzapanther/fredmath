@@ -152,61 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.7 – Coordinates, Basis and Dimension   | 213
-
-                                                  
-                                                                             3
-               58.   u =  (1, 2, 1 ) v =  (3, −  1,  ) 2  w =  (0, −  5, −  ) 2    for  
-                                                    
-                                                                           3
-                                                                 )
-               59.   u =  (2, 1, 2 ) v =  (1, −  2, −  ) 3  w =  (5, 0, 1    for  
-                                                                                             4
-                                                                                        )
-               60.  v =   (1, 0, 0, 0    ) v = (1, 1, 0, 0    ) v =  (1, 1, 1, 0 ) v =  (1, 1, 1, 1    for  
+    <pre style="white-space:pre-line"><code>Section 2.8 – Row and Column Spaces
 
 
 
 
-                      1                 2                 3                4
-                                                                                             4
-                                                                                         )
+                 2.8−1       Definition
+
+
+                 For an mn×  matrix
+
+                                                        a    a 12  a     …    a 1n  
+                                                        11           13           
+                                                        a 21  a 22  a 23  …   a 2n  
+                                                      
+                                               A    =    a    a     a     …    a     
+                                                      
+                                                        31    32     33        3n  
+                                                                               
+                                                        a   a      a     …    a   
+                                                        m 1   m 2    m 3       mn 
+                 The vectors
+                                                    
+                                                   v =    a   a        a   
+                                                    1     11   12        1n 
+                                                   
+                                                   v =    a   a         a   
+                                                    2     21    22        2n 
+                                                                    
+                                                    
+                                                   
+                                                   v   =    a  a         a    
+                                                    m      m 1  m 2        mn 
+
+
+                      n
+                 In   that are formed from the rows of A are called the row vectors of A, and the vectors
+
+                                                  a           a 12             a 1n  
+                                                  11                              
+                                                  a          a               a  
+                                            v =    21    v =    22    ,   v =    2n  
+                                             1            2                 3      
+                                                                                 
+                                                  a           a                a  
+                                                  m 1         m 2              mn 
+
+                      m
+                 In    that are formed from the rows of A are called the column vectors of A.
 
 
 
+                 2.8−2       Definition
 
-               61.  v =   (1, 1, 0, 0    ) v =  (0, 1, 1, 0 ) v = (0, 0, 1, 1 ) v =  (1, 0, 0, 1     for  
-                      1                 2                 3                4
-                            +
-               62.  p =   1 x  , p =   2 x       for  P
-                                         −
-                       1           2                  1
-                                                              2
-               63.  p = ++       x 2 ,  p =  x + 2x 2 ,  p =  3x   for  P
-                          1 x
-                       1                2               2              2
-                                                              2
-                          1 x
-               64.  p = ++       x 2 ,  p =  x + 2x 2 ,  p =  3x   for  P
-                       1                2               2              2
-                                                                         2
-                                               +
-               65.  p =   23x +    x 2 ,  p =  4 3x −  2x 2 ,  p =  9x −  4x   for  P
-                            −
-                       1                  2                   2                   2
 
-                                                                 +
-               66.  Let    be the set of all real numbers and let   be the set of all positive real numbers. Show that
-                       +
-                       is a vector space over   under the addition
-                                              ,  ∈
-                              α ⊕  β = αβ   αβ       +
-                     And the scalar multiplication
-                              a  α   α =  a  α ∈ + ,  a∈
-                                                                +
-                     Find the dimension of the vector space. Is   also a vector space if the scalar multiplication is
-                     instead defined as
-                              a ⊗  α =  a α  α ∈  + ,  a ∈     ?</code></pre>
+                                                            n
+                 If A is mn×  matrix, then the subspace of    spanned by the row vectors of A is called the row
+                                                         ( )
+                                                                                  m
+                 space of A and is denoted by  RS ( ) oA   r RA , and the subspace    spanned by the row vectors of
+                                                                                ( )
+                 A is called the column space of A and is denoted by CS ( ) oA   r C A .  The solution space of the
+                                                                                   n
+                                                        0
+                 homogeneous system of equations  Ax = , which is a subspace of  , is called the null space of A.</code></pre>
      	</div>
     
      </div>

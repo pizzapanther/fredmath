@@ -154,77 +154,70 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>232 | 2.9 – Rank and the Fundamental Matrix Spaces
 
-          Example 2.9-1
 
-                               1   − 1   2    1 
-                                                 
-          Find the rank of  A =      0  1  1  − 2
-                                                 
-                                1   − 3  0   5   
-          Solution
-
-               1   − 1  2    1 
-                                
-                0  1    1    − 2
-                               
-                1   − 3  0  5     R −  R 1
-                                      3
-
-               1   − 1   2     1     R + R 2
-                                        1
-                0  1     1    − 2
-                                  
-                                 
-                0   −  2  −  2  4     R +  2R 2
-                                       3
-                   1   0   3    − 1
-                                   
-              R =      0  1  1  − 2
-                                   
-                    0   0  0   0   
-
-                                                                 A
-             The matrix R has 2 nonzero rows, therefore the  rank () =
-                                                                      2
+          2.9−3       Dimension Theorem for Matrices
 
 
-          Example 2.9-2
 
-                                               
-          The columns of A are dependent.  Ax =  has a nonzero solution.
-                                                0
-                                
-                       1 03 −    3
-                                    
-                 Ax =   215       1
-                                    
-                                 
-                      
-                       1 03    1 
-                      
-                                    
-                                 
-                     1     0     3     0 
-                                 
-                                    
-                 −  3 2 +          11 +          1 5 =  
-                                         0
-                                       
-                                    
-                                 
-                              3    0 
-                            0
-                     1
-                                  
-                 The rank of A is only r = 2.
-                 Independent columns would give full column rank r = n = 3.
+          If A is a matrix with n columns, then      rank ( ) A +  nullity ( ) A =  n
 
 
-              The columns of A are independent exactly when the rank is r = n. There are n pivots and no free
-                                 
-                             
-                                 0
-             variables. Only  x =  is the nullspace.</code></pre>
+
+          2.9−4       Theorem
+
+
+                     ×
+          If A is an mn  matrix, then
+                                                                                     
+                                                                                      0
+           •  rank(A) = the number of leading variables in the general solution of  Ax =
+                                                                                 
+                                                                                  0
+           •  nullity(A) = the number of parameters in the general solution of  Ax =
+
+
+          2.9−5       Theorem
+
+
+
+                                                   T
+                                      ( ) rank A
+          If A is any matrix, then rank A =     ( )
+
+
+                   0
+              Ax =  has nr−  free variables and special solutions: n columns minus r pivot columns. The
+             null matrix N has nr−  columns (the special solutions).
+                                                    
+              The particular solution solves:  Ax   =  b
+                                               p
+
+                                          n
+                                        n by   identity  matrix  I 
+              Full column rank   R =                        =  
+                                                               0
+                                        −
+                                      m n rows of zeros     
+
+
+          The reduced row echelon form looks like:
+
+                      I   F    r  pivot rows
+                 R =        
+                       0  0   m -r  zero rows
+
+                                     −
+          The pivot variables in the nr  special columns come by changing F to  –F:
+                                             − F   r  pivot variables
+                 Nullspace matrix:     N =     
+                                             I    n- r  free variables
+
+
+             Every matrix A with full column rank (r = n) has all these properties:
+
+                 1.  All columns of A are pivot columns
+
+                 2.  There are no free variables or special solutions.</code></pre>
      	</div>
     
      </div>

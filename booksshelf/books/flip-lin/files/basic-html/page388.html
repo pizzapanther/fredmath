@@ -152,89 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>370 | 4.5 – Diagonalization
+    <pre style="white-space:pre-line"><code>372 | 4.5 – Diagonalization
 
-                                            2
-                                                    =
-             The characteristic equation is λ − λ − 10 and the solutions are:
 
-                 λ=   1+  2  5  ≈ 1.618 and  λ =  1−  2  5  ≈ − .618
-                                              2
-                   1
-                                    
-                                   )
-                              −
-             For λ    ⇒    ( A λ  I v =  0
-                   1             1   1
-                  1−λ 1    1   x    0 
-                                  1
-                                  = 
-                    1    −λ     y       →    x −λ   y =  0
-                                        0
-                            1   1               1    1 1
-                 x = λ   y
-                  1    1 1
+                                                     k
+                                                 ( )
+             3.  Multiply each eigenvector v i  by λ i  . Then
+                                
+                        u =   A u
+                          k    k  0
 
-                         λ 
-                 ⇒   v =   1 
-                      1      
-                           1  
-                                     
-                                    )
-             For λ     ⇒   ( A λ−  I v =  0
-                   2             2    2
-                  1−λ      1   x     0 
-                      2         1   = 
-                    1     −λ    y    0    →    x −λ    y =  0
-                             2   1            1    21
+                            =  c  ( ) k   v +  +  c  ( ) k   v
+                                                   λ
+                                 λ
+                               1   1    1       n    n    n
 
+
+          Example 4.5-3
+
+
+          Compute  A k   where   A =     11  
+                                       0 2 
+          Solution
+
+                           1 λ      1
+                             −
+              det ( A λ−  ) I =
+                             0    2 λ
+                                    −
+                           (1 λ=  −  )(2 λ  −  ) 0
+                                         =
+
+             The eigenvalues are:      λ   = 1, 2
+
+                                        1,2
+                                      )
+                                 −
+             For λ =  1 ⇒     ( A λ  I V =  0
+                   1                1    1
+                         x
+                               0
+                  01          →    y = 0
+                            =
+                         
+                               0
                          y
-                 x = λ  21
-                  1
-                          λ 
-                 ⇒   v =    2  
-                      2
-                               
-                          
-                            1  
+                  01     
+                           1
+                 ⇒    V = 
+                       1  
+                            0
+                                       )
+             For λ =   2 ⇒     ( A λ  IV =    0
+                                  −
+                   2                 2    2
+                                 0
+                           x
+                  −  11        →    x =  y
+                              =
+                          
+                           y
+                                 0
+                   0  0    
+                            1
+                 ⇒    V =   
+                       2    
+                            1
              The eigenvector matrix is given by:
+                   11
+              P =     
+                   01 
 
-                       λ  λ   
-                 S =   1    2  
-                              
-                       1   1  
-                                                                   1
-                                                                 
-             The combination of these eigenvectors that give u =    :
-                                                              0   
-                                                                   0
-                                 
-                  1      1    λ     λ   
-                                           2
-                                   1
-                                              
-                   =                −   
-                                      
-                                            
-                  0
-                     λ −λ   2    1     1  
-                         1
-                            
-                        v −  v
-                      =  1    2
-                        λ −λ
-                         1    2
-                                 ( )
-                      λ
-                    ( ) 100   v − λ  100   v
-              u 100  =  1     1     2      2
-                             λ −λ
-                              1    2
-                                        ( )
-                                λ
-              F    =     1      ( ) 100  −λ  100 
-               100   λ − λ  2      1     2       
-                       1</code></pre>
+
+              P − 1  =     1 − 1  
+                      0  1  </code></pre>
      	</div>
     
      </div>

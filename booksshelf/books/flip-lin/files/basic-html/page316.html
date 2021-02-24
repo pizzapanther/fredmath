@@ -152,44 +152,48 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>298 | 3. 5  –  Least Squares Analysis
+    <pre style="white-space:pre-line"><code>300 | 3. 5  –  Least Squares Analysis
 
-                        ( )    −  1  T    ( )    −  1  T  
+
+                                                       
+                                                     T
                                              T
                            T
-                          A A     A Ax =   A A      A y
+                                   T
+                                           A A
+                        ( )    −  1 A Ax = ( )   −  1 A y
+                          A A
                                          
-                               T
                                        T
+                               T
                          x = ( )   − 1 A y
                              A A
 
           Proof
-                                                                    
-          Let the vector  x  is a least squares solution to  Ax =  y ⇔  ( y −  Ax ) ⊥  CS ( ) A
+                                                                    
+          Let the vector  x  is a least-squares solution to  Ax =  y ⇔  ( y −  Ax ) ⊥  CS ( ) A
                                                                  
-                                                 n
                                                 i z
+                                                 n
                  ( y −  Ax ) ⋅  = z  0           CS   ( ) &A    z  =  Aw
                                             
                  ( y −  Ax ) Aw⋅  =  0        w in   n
                                                   
                  A T  ( y −    Ax ) w⋅    =  0
 
-                              =
-                 A T  ( y −    Ax ) 0
+                 A T  ( y −    Ax ) 0=
+
                  A y −  T    A A =  T  x  0
                      
-                          T
                    T
+                          T
                  A y =  A Ax
 
 
           3.5−6       Theorem
 
 
-                     ×
-          If A is an mn  matrix, then the following are equivalent
+          If A is an mn×  matrix, then the following are equivalent
            a)  A has linearly independent column vectors.
                  T
            b)  A A is invertible.
@@ -211,8 +215,8 @@ function MM_swapImage() { //v3.0
                 50 1     =  452
                      b       
                 55 1        432 
-                              
-                60 1        421 </code></pre>
+                60 1        421 
+                              </code></pre>
      	</div>
     
      </div>

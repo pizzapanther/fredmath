@@ -152,72 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 395
-
-                       l)  Every symmetric matrix is orthogonally diagonalizable.
-
-                                     T
-                                                 T
-                       m)  If  B =  PDP , where  P =  P − 1  and D is a diagonal matrix, then B is a symmetric matrix.
-                       n)  An orthogonal matrix is orthogonally diagonalizable.
-
-                       o)  The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the
-                          corresponding eigenvalue.
+    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 397
 
 
-                                               1 b
-               44.  Find a symmetric matrix           that has a negative eigenvalue.
-                                               b  1 
-                       a)  How do you know it must have a negative pivot?
 
-                       b)  How do you know it cannot have two negative eigenvalues?
-
-                                                            T
-               45.  Prove that A is any mn×  matrix, then  A A has an orthonormal set of n eigenvectors.
-
-               46.  Construct a 3 by 3 matrix A with no zero entries whose columns are mutually perpendicular.
-
-                                T
-                     Compute  AA . Why is it a diagonal matrix?
+                   Every symmetric matrix A has a complete set of orthogonal eigenvectors:
+                                                   T
+                         A =  PDP − 1  ⇒   A QDQ
+                                             =
 
 
-                                       0
-               47.  Assuming that b ≠ , find a matrix that orthogonally diagonalizes       ab  
-                                                                                        ba 
-                                                                                                  T
-                                                                                                          T
-               48.  Suppose A is a symmetric nn×  matrix and B is any nm×     matrix. Show that  B AB ,  B B , and
-                        T
-                     BB  are symmetric matrices.
-
-                                                                                             
-               49.  Show that if A is an nn×  symmetric matrix, then ( )   Ax   y =  x    Ay            n
-                                                                                   ( )  for all  ,x y ∈ .
-                                                                                  
-
-               50.  Suppose A is invertible and orthogonally diagonalizable. Explain why  A − 1  is also orthogonally
-                     diagonalizable.
-               51.  Suppose A and B are both orthogonally diagonalizable and  AB =  BA . Explain why AB is also
-                     orthogonally diagonalizable.
-
-               52.  Let  A =  PDP − 1 , where P is orthogonal and D is diagonal, let λ  be an eigenvalue of A of
-                     multiplicity k. Then λ  appears k times on the diagonal of D. Explain why the dimension of the
-                     eigenspace for λ  is k.
+                 4.6−6       Complex Eigenvalues of Real Matrices
 
 
-               53.  Suppose  A =  PUP  − 1 , where P is an orthogonal and U is an upper triangular. Show that if A is
-                     symmetric, then U is symmetric and hence is actually a diagonal matrix.
+                 For real matrices, complex λ′s and x′s come in “conjugate pairs”
 
-                                               n             
-               54.  Let u  be a unit vector in  , and let  B uu=  T  .                                     
-                                                                                                     
-                                                                    
-                                                  
-                                
-                                     n
-                     a)  Given  x ∈ , compute  Bx  and show that  Bx  is the orthogonal projection of  x  onto u .
-                                                                2
-                     b)  Show that B is a symmetric matrix and  B =  B .</code></pre>
+                        if    Ax = λ x  then  Ax = λ x
+
+
+                 Example 4.6-5
+
+
+                              cosθ  − sinθ  
+                 Given  A =              
+                              sinθ  cosθ  
+
+                 Solution
+
+                    The eigenvalues of A:
+                                   cos −  θ  λ   sin θ −
+                     det ( A λ−  ) I =
+                                                 θ
+                                     sin θ    cos −  λ
+                                 =  (cosθ  λ −  )(cosθ  λ −  ) sin θ+  2
+
+                                 =  cos θ 2  2 cos +  θ  λ  2  +  sin θ 2
+                                            λ −
+
+                                  λ =  2  2 cos +  λ −  θ  1 0
+                                                   =
+
+                     λ =  2cosθ   4cos θ ±  2  −  4
+                                  2
+
+                          2cosθ   4 cos θ ±  (  2  1 −  )
+                        =                                           cos θ  2  sin θ +  2  = 1 → cos θ  2  −=  sin θ −  2
+                                                                                               1
+                                   2
+
+                        =  2cos ±  θ  2 −  sin θ  2
+                                 2
+                      =  cos ±  i sin
+                             θ
+                                    θ
+                    The eigenvalues are conjugate to each other.
+
+                                                        
+                                                       )
+                    For λ     cosθ =  i sinθ +  :   ( A−λ  I v =  0
+                          1                         1    1
+                          cosθ  (cosθ −  i sinθ +  )     sinθ −          x   1  0 
+                                                                             = 
+                                                                                0
+                                 sinθ           cosθ   (cosθ −  i sinθ +  )     y   1   </code></pre>
      	</div>
     
      </div>

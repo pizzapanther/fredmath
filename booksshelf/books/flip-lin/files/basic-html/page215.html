@@ -152,66 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.7 – Coordinates, Basis and Dimension
+    <pre style="white-space:pre-line"><code>2.7 – Coordinates, Basis and Dimension   | 197
 
 
+                 Example 2.7-3
+
+                                                                 ˆ
+                 The standard unit vectors  ˆ e = (1, 0, 0,   , 0 ), e = (0, 1, 0,   , 0 ),   ,  ˆ e =  (0, 0,   , 0, 1 )
+                                                                  2
+                                           1
+                                                                                               n
+                                  n
+                 form a basis in  .
+                 Solution
+
+                    1.  k e + ˆ  k  ˆ e +  +  k  ˆ e =  0 →  ( k  , k  ,   , k  ) (0, 0,   =  , 0 ) it follows that
+                         11     2 2         nn              1   2        n
+                        k =  k =    =  k =  0. That implies they are linearly independent.
+                         1     2        n
+                                                                                     
+                                                                n
+                                                                                                   ˆ e +
+                    2.  Every vector v = ( v 1 , v 2 , , v n )  in    can be expressed as v =  v 11  v 2 2  +  v nn
+                                                  
+                                                                                                              ˆ e
+                                                                                            ˆ e +
+                                                                                                        n
+                        which is linear combination of   ˆ e  , ˆ e  , , ˆ e . Thus, the standard vector span 
+                                                               
+                                                        1   2        n
+                                                                                       n
+                                                 n
+                    Thus, they form a basis for    that we call the standard basis for    .
 
 
-               2.7−1        Coordinate Systems in Linear Algebra
+                 Example 2.7-4
+                                                                           
+                                                  )
+                                                                   )
+                                                                                                             3
+                                                                                          )
+                 Show that the vectors v = (1, 2, 1 , v =  (2, 9, 0 , and v =     (3, 3, 4  form a basis in  
+                                        1              2                      3
+                 Solution
+                        We need to show that the vectors are linearly independent.
+                    1.                     
+                        k v +  11  k v +  2 2  k v =  3 3  0
 
+                        k  (1, 2, 1 ) k+  (2, 9, 0 ) k+  (3, 3, 4 ) (0, 0, 0=  )
+                         1            2             3
 
-                                                                                                    n
-               The important of coordinate system that it will let us map the point and/or vector into  . In addition,
-               it will helps view the point coordinate location.
-               There are different types of graph to provide the coordinate for the plane.
+                        Which yields the homogeneous linear system
 
-                   1-  Perpendicular axes or rectangular coordinates and a unit of measurement for each axis. To
-                       graph a point, is to graph a rectangle from the origin with given coordinate.
-                   2-  Tilted axes or nonrectangular coordinates. To graph a point, by plotting a parallelogram.
+                                     k +  2k +  3k =  0
+                                      1     2    3
+                                  
+                                →    2k +  9k +  3k =  0
+                                      1     2     3
+                                     k 1      +  4k =  3  0
+                                  
 
-               In analytic geometry, we use rectangular coordinate systems to create a point either in 2-space or 3-
-               space
+                            1 2 3
+                                         1
+                            2 9 3 = − ≠         0
+                            104
 
-
-
-
-
-
-
-
-                                               ( , b
-                              b              Pa     )
-
-
-
-                                            a       x
-
-
-
-
-
-
-                     Coordinates of P in a rectangular coordinate   Coordinates of P in a rectangular coordinate
-                                  system in 2-space                            system in 3-space
-
-
-
-
-                                          y
-
-
-                                                ( , b
-                                  b           Pa      )
-
-
-
-
-                                         a        x
-
-
-
-                         Coordinates of P in a nonrectangular         Coordinates of P in a nonrectangular
-                             coordinate system in 2-space                 coordinate system in 3-space</code></pre>
+                                                   0
+                            k =  0, k =   0, k =  has a trivial solution.
+                             1        2        3
+                                                   
+                            The vectors v  , v  ,  and v  are linearly independent.
+                                         1   2        3
+                                                                            
+                    2.  Every vector can be expressed as  k v +  k v +  k v =  b  which is linear combination. Thus,
+                                                          11     2 2    3 3
+                                                  3
+                        the standard vector span  </code></pre>
      	</div>
     
      </div>

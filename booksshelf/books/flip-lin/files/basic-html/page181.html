@@ -154,72 +154,73 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Spaces   | 163
 
-               Example 2.5-1
 
-               Inside the vector space M of all 2 by 2 matrices, given two subspaces:
+                 Example 2.5-3
+                                                                                               
+                                                               )
+                                                                                                          )
+                 Determine whether v =  1  ( 2,  4 , v−  −  )  2  =  (1, 2  determine if either u =  (2, 4   ) or  w  =  (3, 3  span
+                                                                                        
+                                                                                                
+                                   2
+                 the vector space   , then graph and explain of span what happened with u  and  w .
+                 Solution
+                                   
+                    For v  , , andv   u
+                          1   2
+                         −   21 2
+                                           1
+                          − 4 2 4     2  R 2
 
-                                                    a   b
-                   U   all upper triangular matrices     
-                                                     0  d 
+                         −   21 2
+                                         R −
+                         − 21 2       2   R 1
 
-                                             a   0
-                   D   all diagonal matrices      
-                                              0  d 
-               Solution
+                         −   21 2    − 2c + c =  2
+                                               2
+                                           1
+                                  
+                          0  00   
+                        −  2c +  c =  2
+                            1    2
+                              
+                                                          
+                                                                  
+                        Then u  is a linear combination of v 1  and   v  such that
+                                                                   2
+                                             
+                                c = 0 u =   2 v
+                                 1             2
+                                c =  0 u =  − v
+                                 2          1  
+                                c = 1 u =  v +  4v
+                                 1          1     2
+                               And so on.
 
-                                              a   b    a   b     2a  2b
-                   If we add 2 matrices in U:         +       =            is in U.
-                                               0  d     0  d     0   2d 
+                                    
+                    For v  , , and    w
+                             v
+                          1   2
+                         −   213
+                                  
+                          − 4 23     R −  2R 1
+                                         2
+                         −   21  3 
+                                   
+                          0  0 −  3   0 ≠ − 3
 
-                                              a   0    a   0     2a  0 
-                   If we add 2 matrices in D:         +       =            is in D.
-                                               0  d     0  d     0   2d 
-
-                   In this case D is also a subspace of U!. The zero matrix is in these subspaces, when a, b, and d all
-                   equal zero.
-
-
-
-               2.5−7        Definition:  Span
-
-
-               The subspace of a vector space V that is formed from all possible linear combinations of the vectors in
-               a nonempty set S is called the span of S, and we say that the vectors in S span that subspace. If
-                S = { w 1 , w 2 , , w r } , then we denoted the span of S by
-                             
-                                                   {
-                                                             
-                                               span w 1 , w 2 , , w r }  or span ( ) S
-
-
-               2.5−8        Theorem
-
-                          
-               Let  v  , , v  be vectors in vector space V and S be their span. Then,
-                       
-                    1       n
-               a)  S is a subspace of V.
-                                                                            
-                     Proof:   , uv∀  ∈  S , u =  av +  +  a v  and v =  bv +  +  b v
-                                             11         nn            11          nn
-                                            )
-                                                             
-                            u v+=   ( a + bv +     + ( a + b n ) v n    ∈ S
-                                              1
-                                                        n
-                                          1
-                                      1
-                                                
-                            ku =  ka v +    +  ka v    ∈ S
-                                    11           nn
-                                                                                               
-               b)  S is the smallest subspace of V that contains  v 1 , , v . i.e. any other subspace  w  containing
-                                                                  
-                                                                       k
-                          
-                   v 1 , , v  also contains S.
-                       
-                            n</code></pre>
+                                                                 2
+                        Therefore,  w  does not span v   and   v  in  
+                                                     1       2
+                                                                                     
+                                                                                               2
+                    From the figure (next page), we can determine that u  span v 1  and   v  in    on a line ( ) l
+                                                                                        2
+                                                            
+                    which is a linear combination of v 1  and   v .
+                                                              2
+                               
+                    However,  w  is on that line ( ) l .</code></pre>
      	</div>
     
      </div>

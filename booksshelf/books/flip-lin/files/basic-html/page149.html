@@ -154,70 +154,79 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>n
                                                                   2.2 – Norm, Dot product, and distance in  R  | 131
-
+                                                     
                     
-                    u = 1
+                                                  
+                 If u  and U are unit vectors, then uU = cosθ
+                                                      
+                 Certainly,
+                            
+                             
+                         uU ≤   1
 
-                             2    2
-                            +
-                    v =   02 +    2
-                       =  8
-                       =  2 2
-
-                            
-                   uv     u    v  cosθ
-                        =
-                          1 2 2 cos45°
-                        = ( )(    )
-                        = ( 22 )  1
-                                  2
-                        =  2
+                        − 1 cosθ ≤  1
+                           ≤
+                           ≤
+                        − 1 dot product ≤  1
 
 
-               2.2−10         Component Form of the Dot Product
+
+                 2.2−13        Schwarz Inequality
+
+                                                         
+                                                    
+                 If v  and w are any vectors  ⇒   vw ≤      v  . w
 
 
-                                                                    
-               The dot product or inner product of v = ( v 1 , v 2 )  and  w = ( w 1 , w 2 )  is the number
-                                                        
-                                                       v           + v w
-                                                           w vw=
-                                                               11     2 2
+                 Proof
+
+                                                                                           2   2
+                 The dot product of  v = ( , ) and  w =  ( , )  is  2ab  and both lengths are  a +  b .
+                                                        ba
+                                        ab
+                                                                    2
+                 Then, the Schwarz inequality says that:  2ab ≤  a +  2  b
+                        a +  2  b −  2  2ab =  (a b−  ) ≥  2  0
+
+                        a +  2  b −  2  2ab ≥  0
+
+                        a +  2  b ≥  2  2ab
+
+                    This proves the Schwarz inequality:
+                                 2
+                     2ab ≤  a +  2  b
+                                   
+                           
+                     ⇒   vw ≤      v  . w
 
 
-               Example 2.2-6
-                                                     
-                                                          ( 1, 2)
-               Find the dot product of v =  (4, 2) and  w = −
-               Solution
-                    
-                   vw     4.( 1) 2(2)
-                     
-                             −+
-                        =
-                         =  0
-
-                   For dot products, zero means that the 2 vectors are perpendicular (= 90°).
+                 2.2−14        Theorem − Parallelogram Equation for Vectors
 
 
-               Example 2.2-7
+                                          n
+                 If u  and v  are vectors in  , then
+                                                      2       2   (    2    2 )
+                                                 u +  v  +  u −  v  =  2 u  +  v
 
-                                                                                   2
-               Put a weight of 4 at the point  x = − 1 and weight of 2 at the point  x = . The x-axis will balance on the
-                                0
-               center point  x = .
-               Solution
 
-                                                       0
-                   The weight balance is  4( 1)−+  2(2) =  (dot product).
 
-               In 3-dimensionals the dot product:
-                              ( v 1 , , v 3 ) (  1 , w 2 , w 3 )  =  vw +  11  v w +  2 2  v w
-                                   v
-                                              w
-                                           
-                                    2
-                                                                             3 3</code></pre>
+                 Proof
+
+                          2       2                        
+                     u +  v  +  u −  v  =  (u +  v ) (u⋅  +  v ) (u+  −  v ) (u⋅  −  ) v
+                                                                      
+                                                                         ⋅
+                                                                   ⋅−
+                                                                                      ⋅
+                                                                               ⋅+
+                                                                            −
+                                                   +
+                                          ⋅+
+                                                 ⋅
+                                                       ⋅+
+                                       = uu u v v u v v uu u v v u v v
+                                                                +
+                                                             ⋅</code></pre>
      	</div>
     
      </div>

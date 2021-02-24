@@ -156,54 +156,51 @@ function MM_swapImage() { //v3.0
 
 
 
+                 The goal is to describe Gaussian elimination in the most useful way by looking at them closely,
+                 which are factorizations of a matrix.
 
-               The goal is to describe Gaussian elimination in the most useful way by looking at them closely, which
-               are factorizations of a matrix.
+                    The factors are triangular matrices.
 
-                   The factors are triangular matrices.
-
-                   The factorization that comes from elimination is  A LU=  .
-
-
-               4.3−1        Definition
+                    The factorization that comes from elimination is  A LU=   .
 
 
-               A factorization of a square matrix A as  A LU=  , where L is the lower triangular and U is the upper
-               triangular is called LU-decomposition (or LU-factorization) of the matrix A.
+                 4.3−1       Definition
 
 
-               4.3−2        Theorem
+                 A factorization of a square matrix A as  A LU=  , where L is the lower triangular and U is the upper
+                 triangular is called LU-decomposition (or LU-factorization) of the matrix A.
 
 
-               If a is a square matrix that can be reduced to a row echelon form U by using Gaussian elimination
-                                                                     =
-               without row interchanges, then A can be factored as  A LU , where L is a lower triangular matrix.
+                 4.3−2       Theorem
 
 
-               4.3−3        The Method of LU−Decomposition
+                 If a is a square matrix that can be reduced to a row echelon form U by using Gaussian elimination
+                 without row interchanges, then A can be factored as  A LU=  , where L is a lower triangular matrix.
 
 
-                                                         
-                                               b
-               Step 1: Rewrite the system  Ax =  as  LUx =
-                                                           b
-                                                          
-                                                            y
-               Step 2: Define a new n×  1 matrix  y  by Ux =
-                                                     
-                                                 
-                                                               
-                                                           
-                              
-                                 
-                                                                                           
-               Step 3: Use  Ux =  to rewrite  LUx =  as  Ly =  and solve this system for  y .
-                                                    b
-                                                               b
-                                 y
-                                                          
-               Step 4: Substitute  y  in  Ux =  and solve for  x .
-                                             y</code></pre>
+                 4.3−3       The Method of LU−Decomposition
+
+
+                                                          
+                                                             b
+                                                 b
+                 Step 1: Rewrite the system  Ax =  as  LUx =
+                                                   
+                                                          
+                                                              
+                 Step 2: Define a new n× 1 matrix  y  by Ux =
+                                                             y
+                                                                                      
+                                                      b
+                                   y
+                 Step 3: Use  Ux =  to rewrite  LUx =  as  Ly =  and solve this system for  y .
+                                                                b
+                                                              
+                                              
+                                          
+                                   
+                 Step 4: Substitute  y  in  Ux =  and solve for  x .
+                                              y</code></pre>
      	</div>
     
      </div>

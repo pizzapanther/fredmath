@@ -152,81 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>394 | 4.6 – Orthogonal Diagonalization
+    <pre style="white-space:pre-line"><code>396 | 4.6 – Orthogonal Diagonalization
 
-          40.  Find the eigenvalues of A and B and check the Orthogonality of their first two eigenvectors.
 
-               Graph these eigenvectors to see the discrete sines and cosines:
-                                                      1  − 1  0   0 
-                               2  − 1  0            −  1  2  −  1  0  
-                         A =      −  1  2  −  1     B =       1  
-                                 0  − 1  2        0  −  1  2  −  
-                                                      0  0   − 1  1  
-                                                                                                  
-                                                                                                  =
-                                                                                                     x
-               The −1, 2, −1 pattern in both matrices is a “second derivative. Then  Ax λ=  x  and  Bx λ  are
-                     2 
-                               2
-                            
-               like   dx  = λ x  dx  =  λ x . This has eigenvectors  x = sinkt  and  x =  coskt  that are the bases for
-                    dt 2      dt 2
-               Fourier series. The matrices lead to “discrete sines” and “discrete cosines” that are the bases for
-               the discrete Fourier Transform. This DFT is absolutely central to all areas of digital signal
-               processing.
+                 ⇒    x = −  2y
+                       1       1
 
-                          
-                                                                                       
-                                            
-                                        
-          41.  Suppose  Ax λ=    x  and  Ay =  0y  and λ ≠ 0. Then y is in the nullspace and  x  is in the column
-               space. They are perpendicular because _______. (why are these subspaces orthogonal?) If the
-               second eigenvalue is a nonzero number  β, apply this argument to  A β . The eigenvalue moves
-                                                                                     I
-                                                                                 −
-               to zero and the eigenvectors stay the same – so they are perpendicular.
+                             − 2
+                 ⇒    v =      1    
+                      1
 
-          42.  Which of these classes of matrices do A and B belong to: Invertible, orthogonal, projection,
-               permutation, diagonalizable, Markov?
+                              (
+             For λ =  2  5   ⇒     A λ 2 I v =  )  2  0
+                                 −
 
-                                                0 0 1              111
-                                                                            
-                                          A =      0 1 0     B =  1   3   111
-                                                                            
-                                                1 0 0              111   
-                                                                         
-                                                                                           T
-               Which of these factorizations are possible for A and B: LU, QR,  ADP − 1 , QDQ ?
+                  − 8  4    x   2  0 
+                              =          4x −  2y =  0
+                                    0
+                   4   2  −     y   2     →  2  2
 
-          43.  True or false. Give a reason or a counterexample.
+                 ⇒      2x =  y
+                         2    2
 
-                 a)  A matrix with real eigenvalues and eigenvectors is symmetric.
-                 b)  A matrix with real eigenvalues and orthogonal eigenvectors is symmetric.
-                 c)  The inverse of a symmetric matrix is symmetric.
-                 d)  The eigenvector matrix S of a symmetric matrix is symmetric.
-                 e)  A complex symmetric matrix has real eigenvalues.
-                                             A i
-                 f)  If A is symmetric, then e  is symmetric.
-                                             A i
-                 g)  If A is Hermitian, then e  is Hermitian.
-                 h)  An  nn×  matrix that is orthogonally diagonalizable must be symmetric.
+                           1 
+                 ⇒    v = 
+                       2
+                            2
+                          
+                 
+              v 1   v =  2  ( 2)(1) (1)(2)
+                              +
+                        −
+                        22
+                     = −+
+                     =  0
+             Thus, the eigenvectors are perpendicular.
 
-                                                                                          
-                                                                                  
-                                                                             
-                                                               
-                                                    
-                                                                    
-                                             
+
+             The unit vector of the eigenvectors by dividing by their length  2 +  2  1 =  2  5
+                                       
+             The eigenvectors v    and   v are the columns of Q.
+                                1        2
+
+                        − 21
+                        1  2 
+                 Q =        
+                          5
+
                          T
-                                                                                                 0
-                                                                                            
-                 i)  If  A =  A and if vectors u  and v  satisfy  Au =  3u   and  Av =  4v , then uv =
+                 Q − 1  =  Q
 
-                 j)  An  nn×  symmetric matrix has n distinct real eigenvalues.
-                                       n            
-                                                        T
-                 k)  For nonzero v  in  , the matrix vv  is called a projection matrix.</code></pre>
+                     =  1      − 21  
+                        5   1  2 
+
+                       T
+              A QDQ
+                =
+               =  1    1        −  21 −  5 0 −  21 
+                                  
+                                           
+                   5   5     1  2   0  5   1  2 
+               =  1  10  5  − 2 1
+                                    
+                   
+                           
+                 5 −  5 10   1   2 
+                   
+                   2  1 − 21
+               =              
+                  − 12   1   2 
+                   − 34
+               =             √
+                   4  3 </code></pre>
      	</div>
     
      </div>

@@ -152,51 +152,7 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.2 – General Linear Transformations | 331
-
-               4.2−10  Matrices for General Linear Transformations
-
-
-               Suppose that V is an n-dimensional vector space, W is an m-dimensional vector space, and that
-                TV      W  is a linear transformation. Suppose further that B is a basis for V, that  B′ is a basis for
-                  : →
-                                                                              
-                                                                                      
-               W, and that for each x in V, the coordinate matrices for x and  ( ) x  are [ ] x   and  ( ) x  T       ,
-                                                                           T
-                                                                                               
-                                                                                        B              B′
-               respectively
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               By using matrix multiplication, we can execute the linear transformation and the following indirect
-               procedure:
-                                                    
-                 1.  Compute the coordinate vector [ ] x
-                                                       B
-                                                                 
-                 2.  Multiply [ ] x   on the left by A to produce  ( ) x  T   
-                                                              
-                                 B                                    B′
-                                    
-                                 T
-                 3.  Reconstruct  ( ) x  from its coordinate vector  ( ) x    T     
-                                                                         B′
+    <pre style="white-space:pre-line"><code>4.2 – General Linear Transformations | 333
 
 
 
@@ -226,9 +182,52 @@ function MM_swapImage() { //v3.0
 
 
 
-                            
-                A [ ] x  =    T   ( ) x   
-                     B           B′</code></pre>
+
+
+                              
+                 A [ ] x  =    T   ( ) x   
+                      B           B′
+
+
+                 Example 4.2-10
+
+                                                                            ( ))
+                                                                       T
+                                                                                     ( )
+                 Let  :TP →   P  be the linear transformation defined by  ( px =   xpx
+                         1     2
+                 Find the matrix for T with respect to the standard bases
+                                                      
+                                                                        
+                                                  
+                                                                                
+                                                                            
+                                                                            v
+                                             B = { u 1 , u 2 }  and  B′ = { v 1 , , v 3 }
+                                                                             2
+                                                             2
+                 Where u =   1, u =    ; x  v = 1, v =   , x  v =  x
+                         1        2        1        2        3
+                 Solution
+                        
+                       ( )
+                     T u 1  =  T  ( ) 1
+                            =    x
+                       ( )
+                     T u  2  = T ( ) x
+
+                            =  x ( ) x
+
+                            =  x 2
+
+                                   0 
+                         
+                        ( )
+                       T u    =  
+                                   1
+                         1   B′  
+                                   0 
+                                  </code></pre>
      	</div>
     
      </div>

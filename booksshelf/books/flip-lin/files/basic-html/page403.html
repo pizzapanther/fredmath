@@ -152,87 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 385
-
-                          3
-                         
-                       = 
-                          0
-                         
+    <pre style="white-space:pre-line"><code>Section 4.6 – Orthogonal Diagonalization
 
 
 
+                 4.6−1       Definition
 
 
 
+                 A square matrix A is called orthogonally diagonalizable if there is an orthogonal matrix P such that
+                                  )
+                        (
+                             T
+                 P − 1 AP =  P AP  is diagonal; the matrix P is said to orthogonally diagonalize A.
+                                                              T
+                                                             P AP =  D
+
+                 We say that A is orthogonally diagonalizable and that P orthogonally diagonalizes A.
 
 
 
+                 4.6−2       Theorem
+
+
+                 If A is an n x n matrix, then the following are equivalent.
+
+                   a)  A is orthogonally diagonalizable
+                   b)  A has an orthonormal set of n eigenvectors.
+                   c)  A is symmetric.
+
+
+                 4.6−3       Theorem
+
+
+                 If A is symmetric matrix, then:
+
+                   a)  The eigenvalues of A are all real numbers.
+                   b)  Eigenvectors from different eigenspaces are orthogonal.
 
 
 
+                 Example 4.6-1
 
+                 Find an orthogonal matrix P that diagonalizes
 
+                                             4 2 2
+                                                    
+                                       A =      2 4 2
+                                                    
+                                             2 2 4 
+                                                   
+                 Solution
 
-
-
-
-
-
-
-
-
-
-
-               Example 4.6-3
-
-                                                         a b
-               Consider a 2 by 2 symmetric matrix  A =      
-                                                         bc 
-               Solution
-
-                   The eigenvalues are:
-                                  a λ     b
-                                   −
-                          −
-                   det ( A λ  ) I =
-                                          −
-                                   b     c λ
-                                (a λ =  −  )(c λ  −  ) b−  2
-                                                     2
-                              =  λ  2  (a c λ −  +  ) +  ac b =    0
-                                                  −
-                                             (
-                                     +
-                       (ac ±  )   (ac   ) −  2  4 ac b 2 )
-                                                 −
-                          +
-                                                                            (
-                   λ =                                        ∴  (a +  ) c  2  −  4 ac b 2 ) &gt;  0
-                                                                                −
-                                      2
-
-                   The eigenvectors are:
-                                (
-                   For λ     ⇒     A λ IV =  )  0
-                                   −
-                        1             1   1
-                        a λ      b    x     0 
-                          −
-                            1          1    = 
-                         b     c λ    y     0
-                                  −
-                                   1   1   
-                           ( a λ ) x +  by =  0  ( ) 1
-                             −
-                       →       1   1  )  1
-                          
-                                (
-                                   −
-                           bx +   1  c λ 1  y =  1  0
-                                            )
-                       ( )  1 ⇒     by = ( λ − a x
-                                  1    1      1</code></pre>
+                                     4 − λ  2      2 
+                     det ( A − λ  ) I =     2  4 − λ  2    
+                                                      
+                                     2      2    4 − λ 
+                                          3
+                                 = (4 − λ ) + 8 8 −  ( 44 − λ ) 44−  ( − λ ) 44−  ( − λ )
+                                               +</code></pre>
      	</div>
     
      </div>

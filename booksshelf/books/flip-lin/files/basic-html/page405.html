@@ -152,81 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 387
-
-               4.6−5        Theorem
+    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 389
 
 
-               Orthogonal Eigenvectors:  Eigenvectors of a real symmetric matrix (when they correspond to
-               different λ′s) are always perpendicular.
 
-               Proof
-                                                        T
-                               =
-                   Suppose  Ax λ    x  ,  Ay λ  y  and  A =  A .
-                                           =
-                                  1           2
-                   The dot products of the first equation with y and the second with x:
-                       ( )  T   y = ( Ax ) y
-                                     
-                                       T 
-                           
-                          x
-                        λ
-                         1
-                                        
-                                    TT
-                                 =  x Ay
-                                       
-                                    T
-                                 =    x Ay
-                                     T  
-                                 =  x λ 2 y
-                          T      T  
-                        x λ ⇒  y =  x λ  y
-                            1        2
-                                                  
-                                                   T
-                                                         0
-                   Since λ    λ ≠  , this proves that  x y = .
-                          1     2
-                                      (
-                                                                                     (
-                                                                                 
-                   The eigenvector  x    for  λ 1 )  is perpendicular to the eigenvector  y   for  λ 2 )
-
-
-               Example 4.6-4
-                                                                                 − 34
-               Find the λ′s and v′s for this symmetric matrix with trace zero: A =   
-                                                                                 4  3 
-               Solution
-
-                                  −−        4
-                                   3 λ
-                   det ( A λ−  ) I =
-                                    4     3 λ
-                                            −
-                                 ( 3 λ = −−  )(3 λ  −  ) 16−
-                                       2
-                               = − 9 λ −  16
-                                    +
-                                   2
-                                         =
-                               =  λ − 25 0
-
-                   The eigenvalues are: λ  1  −  5 λ =  2  =    5
-
-                   The eigenvectors are:
-                                     (
-                                             )
-                   For λ =  −  5   ⇒     A λ I v =   0
-                                        −
-                        1                  1   1
-                        2 4   x   1  0   →  2x +  1  4y =  1  0
-                                 =  
-                                       0
-                        48      y   1   </code></pre>
+                                                  −  1  R
+                                  − 12  0  12     12  1
+                                  0    6          1  R
+                                      −    6     − 6  2
+                                              
+                                  0   0    0  
+                                             
+                                  10 −  1
+                                         
+                                          
+                                  01 −  1
+                                  00   0  
+                                         
+                         10 −    1     x 3      0   →  x −  3  z =  3  0
+                                 1     y   
+                                             0   →
+                         0 1 −       3  =         y −  3  z =  3  0
+                                        
+                                             0
+                         00     0    z    3     
+                        ⇒    x =  y =  z
+                              3    3    3
+                                                         1  
+                                                         1
+                        Therefore, the eigenvector V =   
+                                                         
+                                                    3
+                                                         
+                                                         1
+                                                         
+                           ( 1, 1, 0−  )                 v 
+                     u =                             u =    1
+                      1
+                                                      1
+                                  1 +
+                           ( ) 1−  2 2 +  0                v 1
+                          ( 1, 1, 0−  )
+                        =
+                               2
+                          
+                                         
+                        = −   1  ,   1  , 0
+                          
+                                         
+                              2    2    
+                                      
+                     w =  v −  ( v   1 )  1
+                                      uu
+                       2
+                                  2
+                            2
+                                                     1    1           1  1    
+                        = −        ) ( 1, 0, 1 )     −    ,   , 0       −  ,   , 0 
+                          ( 1, 0, 1 −−
+                                      
+                                                      2    2         2    2     
+                        =  ( 1, 0, 1−  ) −  1     −  1  ,   1  , 0   
+                                       2     2    2    
+                                       )
+                        =  ( −  1 ,  −  1 , 1
+                             2     2
+                          (  1 ,   1 , 1 )                  
+                          −   −                          w
+                     u =     2 11 2                  u =     2
+                      2
+                                                       2
+                               ++
+                             44   1                        w 2
+                          ( −  1 , −  1 , 1 )
+                        =    2   2
+                                6
+                                4</code></pre>
      	</div>
     
      </div>

@@ -152,65 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.6 – Linear Independence
+    <pre style="white-space:pre-line"><code>2.6 – Linear Independence   | 183
 
 
+                 2.6−5       Theorem
 
 
-
-               There are n columns in an m by n matrix, and each column has m components. But the true dimension
-               of the column space is not necessarily m or n. The dimension is measured by counting independent
-               columns.
-
-                     Independent vectors       (not too many)
-
-                     Spanning a space          (not too few)
+                                            n
+                 Let S be a set k vectors in  , then if k &gt; n, S is linearly dependent.
 
 
-
-               2.6−1        Linear Independence (LI)
-                                                                                               
-                                                                                                 0
-                                                                                        0
-               The columns of A are linearly independent when the only solution to  Ax =  is  x = . No other
-               combination  Ax of the columns gives the zero vector.
+                 Example
+                                           2
+                 v  , v  , v  are 3 vectors in     ⇒  Linearly dependent.
+                  1   2    3
 
 
+                 Example 2.6-1
+                                                                                
+                                                                                              )
+                 Determine whether the vectors v =  (1,  2, 3−  ) v =  (5, 6,  1−  ) v =  (3, 2, 1  are linearly
+                                                1                 2                3
+                                                       3
+                 dependent or linearly independent in  
+                 Solution
+                                    
+                     k v +  k v +  k v =   0
+                      11     2 2     3 3
 
-               2.6−2        Definitions
+                     k  (1,  2, 3−  ) k+  (5, 6,  1−  ) k+  (3, 2, 1 ) (0, 0, 0=  )
+                      1              2               3
 
+                          k +  5k +  3k =  0
+                           1     2     3
+                        
+                                            0
+                     → −  2k +  6k +  2k =
+                        
+                                  2
+                                        3
+                            1
+                        
+                          3k −  1  k +  2  k =  3  0
+                        
+                          1   5   30
+                          − 2  6  20            2R
+                                        
+                                          R +     1
+                                              2
+                            3  − 11 0    R − 3R
+                                              3     1
+                         1   5    3   0
+                                         
+                          0  16   8   0
+                                        
+                          0   −  16 −  8 0    R + R 2
+                                               3
+                         1   5  3 0
+                          0 16 8 0        1  R
+                                      
+                                        16  2
+                          0   0  0 0  
 
-                 A set of two or more vectors is linearly dependent if one vector in the set is a linear combination of
-                   the others. A set of one vector is linearly dependent if that one vector is the zero vector.
-                                                               
-                                             0 =  0v +  0v +   +  0v
-                                                  1      2         k
-
-                                                  
-                 The sequence of vectors v   , v  , v  is linearly independent if the only combination that gives the
-                                          1   2    3
-                   zero vector is 0v +  1  0v +  2  +  0v . Thus, linear independence means that:
-                                                    k
-                                     x v +   x v +   +  x v =   0  only happens when all x’s are zero.
-                                      11      2 2         k k
-
-                 A (nonempty) set of vectors is linearly independent if it is not linearly dependent.
-
-                                          
-                 If three vectors  w 1 , w 2 , w  are in the same plane, they are dependent.
-                                             3
-
-                 The empty set is linearly independent, for linearly dependent sets must be nonempty.
-
-                                                                                           
-                 A set consisting of a single nonzero vector is linearly independent. For if { } v  is linearly
-                                       
-                                        0
-                   dependent, then  av =  for some nonzero scalar a. Thus,
-                                  −  1      −  1  
-                                       a
-                              v =  a  ( ) av =   0 0
-                                                  =</code></pre>
+                          15 3 0        R −  5R
+                               1         1     2
+                                     
+                          01    2  0
+                                    
+                            0 0 0 0  </code></pre>
      	</div>
     
      </div>

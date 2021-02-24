@@ -152,78 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>366 | 4.5 – Diagonalization
-
-          Example 4.5-3
+    <pre style="white-space:pre-line"><code>368 | 4.5 – Diagonalization
 
 
-
-          Compute  A k   where   A =     11  
-                                       0 2 
-          Solution
-
-                           1 λ      1
-                             −
-              det ( A λ  ) I =
-                    −
-                                    −
-                             0    2 λ
-                           (1 λ=  −  )(2 λ  −  ) 0=
-
-             The eigenvalues are:      λ   = 1, 2
-
-                                        1,2
-                                      )
-             For λ =  1 ⇒     ( A λ  I V =  0
-                                 −
-                   1                1    1
-                               0
-                         x
-                  01          →    y = 0
-                            =
-                         
-                         y
-                               0
-                  01     
-                           1
-                 ⇒    V = 
-                       1  
-                            0
-                                       )
-             For λ =   2 ⇒     ( A λ−  IV =   0
-                   2                 2    2
-                                 0
-                           x
-                  −  11        →    x =  y
-                              =
-                          
-                                 0
-                           y
-                   0  0    
-                            1
-                 ⇒    V =   
-                       2    
-                            1
-             The eigenvector matrix is given by:
-                   11
-              P =     
-                   01 
+                                                )
+          The eigenvectors are: ( 1, 1−  ) &  (1, 1  that are the value of P.
+                − 11
+          P =       
+                1  1 
 
 
-              P − 1  =     1 − 1  
-                      0  1  
+          P − 1  = − 1     1  − 1  
+                  2   −  1 −  1 
+                  − 1  1 
 
-                    1 0         k    1 k  0  
-              D =        ⇒    D =          
-                    0 2                0  2 k   
+               =      2  2   
+                  1   1 
+                  2   2 
 
 
-                      k −
-               k
-              A =  PD P   1
-                      11     1  0     1 − 1
-                   =                  
-                      01       0 2 k       0  1  </code></pre>
+               − 1  1  1  1            0  0 
+                2  2  2  2   −  11           −  11
+                1  1  1  1     1  1   =    1  1     1  1 
+                                       2  2     
+                2  2  2  2 
+
+                                            0 0
+                                        =      
+                                            0  1 
+
+                − 1  1 
+                2  2    .5 .5  − 1 1   =    0 0
+                1  1    .5 .5   1   1           
+                                                       
+                                            0 1
+                2  2 
+                P − 1       A         P      =     D
+
+
+
+          4.5−2       Definition
+
+
+
+          A square matrix A is called diagonalizable if there is an invertible matrix P such that  P − 1 AP  is
+          diagonal; the matrix P is said to diagonalize A.
+
+
+          4.5−3       Theorem
+
+                                                               
+          Independent x from different λ  - Eigenvectors  x 1 , , x  that correspond to distinct (all different)
+                                                            
+                                                                 n
+          eigenvalues are linearly independent. An n by n matrix that has n different eigenvalues (no repeated
+          λ’s) must be diagonalizable.
+
+
+          Proof
+                               
+             Suppose  cx +   c x =   0 (1)
+                       11     2 2</code></pre>
      	</div>
     
      </div>

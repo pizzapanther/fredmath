@@ -152,30 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>422 | AP P E ND I X − C
+    <pre style="white-space:pre-line"><code>426 | AP P E ND I X − B
 
-                                                   T
-          Symmetric matrix A: The transpose is  A =    A, and  a =  a  ji  .  A − 1  is also symmetric. All matrices
-                                                                ij
-                              T
-                                       T
-                 of the form  RR ,  LDL  and QQΛ   T   are symmetric. Symmetric matrices have real
-                 eigenvalues in  Λ and orthonormal eigenvectors in Q.
 
-                                                                                          )
-          Trace of A: = sum of diagonal entries = sum of eigenvalues of A. Tr AB =    (BA .
-                                                                                 ) Tr
-                                                                             (
-                                                                     T
-                                                       T
-                              T
-                                            T
-          Transpose matrix A  : Entries  A =    A .  A  is n by m,  AA is square, symmetric, positive semi-
-                                            ij    ji
-                                                                           T
-                                                             TT
-                                                                         A
-                 definite. The transposes of AB and  A − 1  are  B A    and  ( ) − 1</code></pre>
+
+          Matrix Factorization
+
+
+
+                     lower  triangular  L     upper  triangular  U  
+          A  = LU  =                                       
+                     
+                                                                
+                       s  ' 1  on  the  diagonal     pivots  on  the  diagonal 
+                       lower  triangular  L    pivot  matrix    upper  triangular  U  
+          A  = LDU   =                                               
+                                                                              
+                       
+                         s  ' 1  on  the  diagonal     D  i  s  diagonal     s  ' 1  on  the  diagonal  
+          PA =  LU      (Permutation matrix P to avoid zeros in the pivot positions).
+
+          EA =  R       (m by m invertible E) (any A) = rref(A)
+
+
+          A = CC  T   = (lower triangular matrix C) (transpose is upper triangular)
+
+
+          A =  QR       = (orthonormal columns in Q) (upper triangular R)
+
+
+          A =  SΛ S  1 -    = (eigenvectors in S) (eigenvalues in  Λ) (left eigenvectors in  S − 1 ).
+
+
+                     T
+          A  =  QΛ Q   = (orthogonal matrix Q) (real eigenvalue matrix Λ) (Q T   is  Q − 1 )
+
+                                                                                  1
+                                                                                −
+                                                                              M
+          A =  MJM    1 -   = (generalized eigenvectors in M) (Jordan blocks in J) ( )
+          A  = U ∑V  T   =  orthogonal   ×  singularn m   value mat rix    orthogonal   
+                                                                      
+                                        
+                                        
+                          
+                            U  is  m × m     δ 1 , ,δ r    on   its  diagonal       V  is  n × n  
+                     +
+                              orthogonal
+          A +  =V ∑ U    T  =              × mn    pseudoinve rse  of    ∑    orthogonal   
+                                                                         
+                                            
+                                            
+                              
+                                                                         
+                                 n × n       / 1 δ 1 ,  / 1 , δ r    on  diagonal     m × m  
+          A =  QH       = (orthogonal matrix Q) (symmetric positive definite matrix H)
+          A = UΛ  U   1 -   = (unitary U) (eigenvalue matrix  Λ) (U − 1 which U  H  =  U T  ).
+          A = UT  U  1 -    = (unitary U) (triangular T with λ ‘s on diagonal) (U  −1  = U  H  ).
+
+
+                 I   D      F            even − odd  
+          F    =             n/  2                   = one step of the FFT.
+            n      I  − D      F n/  2      permutatio n 
+                                                       </code></pre>
      	</div>
     
      </div>

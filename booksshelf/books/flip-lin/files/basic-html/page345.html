@@ -152,91 +152,91 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.2 – General Linear Transformations | 327
+    <pre style="white-space:pre-line"><code>4.2 – General Linear Transformations | 329
 
 
-               Example 4.2-6
-                                                   
-                                           
-                                                             3
-               Consider the basis  S = { v   1 , v 2 , , v n }  for ∞ , where:
-                                               
-                                                   
-                                                                 )
-                       v =  (1, 1, 1 ) v =  (1, 1, 0 ) v = (1, 0, 0
-                        1              2              3
-               Let  : T   3  →   2  be the linear transformation for which,
-                                                            
-                                                                         )
-                                                              v
-                       T ( ) (1, 0 , Tv 1  =  )  ( ) (2,  1 , Tv 2  =  −  )  ( ) (4, 3
-                                                                  =
+                 Example 4.2-6
+                                            
+                                        
+                                                     
                                                                3
-                                    (
-                                     
-                                             
-                                         
-                                         x
-               Find a formula for T x 1 , , x 3 ) , and then use that formula to compute  (2,  3, 5T  −  )
-                                          2
-               Solution
-                             
-                        
-                     
-                   ( x 1 , x 2 , x 3 )  =  c 1  (1, 1, 1 +  ) c 2  (1, 1, 0 +  ) c 3  (1, 0, 0
-                                                                      )
-                        c   +  c +  c =  x
-                         1   2    3   1
-                       
-                        c +  1  c 2          =  x
-                                       2
-                       
-                        c 1                 =  x 3
-                       
-                        c =  x −  x
-                         3   1    2
-                       
-                        c =  x − x
-                                   3
-                               2
-                         2
-                       
-                          c =  x 3
-                       
-                            1
-                        
-                     
-                   ( x 1 , x 2 , x 3 )  =  x 3  (1, 1, 1 +  ) ( x −  2  x 3 )(1, 1, 0 +  ) ( x −  1  x 2 )(1, 0, 0
-                             
-                                                                                   )
-                                                                  
-                                 =  x v +    ( x −  x  ) v +    ( x −  x  ) v
-                                    3 1     2    3   2    1    2   3
-                                                           
-                                                                             
+                 Consider the basis  S = { v 1 , v 2 , , v n }  for ∞ , where:
+                                                
+                                                    
+                                                                  )
+                        v =  (1, 1, 1 ) v = (1, 1, 0 ) v = (1, 0, 0
+                         1              2              3
+                 Let  :   T  3  →   2  be the linear transformation for which,
+                                                             
+                        T ( ) (1, 0 , Tv 1  =  )  ( ) (2,  1 , Tv 2  =  −  )  ( ) (4, 3v 3  =  )
+
                                           
-                              
+                                      
+                                               
+                                     (
+                                                                                                    )
+                 Find a formula for T x 1 , , x 3 ) , and then use that formula to compute  (2,  3, 5
+                                          x
+                                                                                        T
+                                                                                              −
+                                            2
+                 Solution
                       
+                     ( x 1 , x 2 , x 3 )  =  c 1  (1, 1, 1 ) c+  2  (1, 1, 0 ) c+  3  (1, 0, 0
+                              
                           
-                                         ( ) (
-                     (
-                                                                          T v
-                          x
-                   T x 1 , , x  3 )  =  xT v 1  +  x −  2  x 3 ) ( ) ( x −  1  x 2 ) ( )
-                                                        T v
-                                                               +
-                                                                              3
-                                      3
-                                                             2
+                                                                       )
+                          c   +  c +  c =  x
+                          1   2    3    1
+                        
+                         c +  1  c 2          =  x
+                                         2
+                        
+                         c 1                 =  x 3
+                        
+                         c =  x −  x
+                          3    1    2
+                        
+                         c =  x −  x
+                                     3
+                                2
                            2
-                                                                                  )
-                                    =  x  (1, 0 +  ) ( x −  x  )(2,  1−  ) ( x −  x  )(4, 3
-                                                                  +
-                                       3          2    3              1   2
-                                    =  ( 4x −  1  2x −  2  x 3 ,  3x −  1  4x +  2  x 3 )
-                   T (2, 3,5−  ) (4 2=  ( ) 2−  ( ) 3−  −  5,  3 ( ) 2 −  4 ( ) 3−  +  ) 5
-                                      )
-                              = (9, 23</code></pre>
+                        
+                           c =  x 3
+                        
+                             1
+                          
+                      
+                              
+                     ( x 1 , x 2 , x 3 )  =  x 3  (1, 1, 1 +  ) ( x −  2  x 3 )(1, 1, 0 +  ) ( x −  1  x 2 )(1, 0, 0
+                                                                                     )
+                                                                 
+                                  =  x v +  ( x −  x  ) v +  ( x −  x  ) v
+                                     3 1     2    3   2     1   2   3
+                                                             
+                                                                               
+                                
+                            
+                        
+                       (
+                                          ( ) (
+                                                          T v
+                                                                            T v
+                     T x 1 , , x 3 ) =  xT v   1  +  x −  2  x 3 ) ( ) ( x −  1  x 2 ) ( )
+                            x
+                                                                 +
+                                       3
+                                                                                3
+                             2
+                                                              2
+                                                                                   )
+                                     =  x  (1, 0 +  ) ( x −  x  )(2,  1−  ) ( x −  x  )(4, 3
+                                                                   +
+                                        3           2    3             1    2
+                                     =  ( 4x −  1  2x −  2  x 3 ,  3x −  1  4x +  2  x 3 )
+                     T  (2, 3,5−  ) (4 2=  ( ) 2−  ( ) 3−  −  5,  3 ( ) 2 −  4 ( ) 3−  +  ) 5
+                                        )
+                                = (9, 23</code></pre>
      	</div>
     
      </div>

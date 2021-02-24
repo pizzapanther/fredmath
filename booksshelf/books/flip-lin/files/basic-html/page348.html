@@ -152,15 +152,16 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>330 | 4.2 – General Linear Transformations
+    <pre style="white-space:pre-line"><code>332 | 4.2 – General Linear Transformations
 
 
              Example 4.2-9
 
                 Suppose A is an invertible matrix. The kernel of T is the zero vector; the range W equals the
+
                 domain V. Another linear transformation is multiplication by  A − 1 .
-                                                                                   
                                                                                                
+                                                                                   
                 This is the inverse transformation T − 1 , which brings every vector  ( ) v  back to v :
                                                                                 T
                             
@@ -172,11 +173,56 @@ function MM_swapImage() { //v3.0
              Are all linear transformations produced by matrices?
                                                                                 n
                                                                                             m
-             Each m by n matrix does produce a linear transformation from  V =   to W =  . When a linear
-             T is described as a “rotation” or “projection” or “...” is there always a matrix hiding behind T?
+             Each m by n matrix does produce a linear transformation from  V =   to W =  . When a
+             linear T is described as a “rotation” or “projection” or “...” is there always a matrix hiding behind
+             T?
 
              The answer is yes. This is an approach to linear algebra that does not start with matrices.
-             The next section shows that we still end up with matrices.</code></pre>
+             The next section shows that we still end up with matrices.
+
+
+             4.2−10  Matrices for General Linear Transformations
+
+
+             Suppose that V is an n-dimensional vector space, W is an m-dimensional vector space, and that
+             TV      W  is a linear transformation. Suppose further that B is a basis for V, that  B′ is a basis for
+               : →
+                                                                           
+                                                                                   
+                                                                        T
+             W, and that for each x in V, the coordinate matrices for x and  ( ) x  are [ ] x   and  ( ) x  T       ,
+                                                                                            
+                                                                                     B              B′
+             respectively
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             By using matrix multiplication, we can execute the linear transformation and the following
+             indirect procedure:
+                                                  
+              1.  Compute the coordinate vector [ ] x
+                                                    B
+                                                               
+              2.  Multiply [ ] x   on the left by A to produce  ( ) x  T   
+                                                            
+                               B                                   B′
+                                 
+                              T
+              3.  Reconstruct  ( ) x  from its coordinate vector  ( ) x  T       B′
+                                                              </code></pre>
      	</div>
     
      </div>

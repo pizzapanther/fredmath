@@ -154,50 +154,71 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>2.9 – Rank and the Fundamental Matrix Spaces   | 233
 
-               Example 2.9-3
 
-               When all rows are multiplying of one pivot row, the rank is  r = 1:
-
-                        1   3   4      0   3     5   
-                                    ,         ,      ,  [ ] 6
-                         2  6   8       0  5      2 
-               Solution
-
-                    1   3    4
-                              
-                     2  6    8   R −  2R 1
-                                    2
-                    1   3    4
-                              
-                     0  0   0 
-
-                    0   3
-                                  5R
-                     0  5   3R −    1
-                                2
-                    0   3   1  R
-                               3  2
-                     0  0 
-
-                    0   1
-                         
-                     0  0 
+                                                                                
+                        3.  The nullspace NS(A) contains only the zero vector  x =
+                                                                                 0
+                                   
+                        4.  If  Ax b=  has a solution (might not) then it has only one solution.
 
 
-                    5            1 R            1 
-                                 5  1      →     
-                                                  0
-                    2
-                       5R −  2R 1              
-                            2
+                 Example 2.9-4
 
-                   The row-reduced echelon form  R =  rref  ():
-                                                           A
-                        1   3   4      0   1     1   
-                                    ,         ,      ,  [ ] 1
-                         0  0   0       0  0      0 
+                                                                                    
+                 Suppose A is a square invertible matrix, m n r . What are  x  and  x ?
+                                                          = =
+                                                                              p
+                                                                                      n
+                 Solution
+                                                                          
+                                                                         1
+                                                                        −
+                    The particular solution is the one and only solution  Ab .
+                    There are no special solutions or free variables.  R =  has no zero rows.
+                                                                       I
+                                                           
+                                                            0
+                    The only vector in the null space is  x = .
+                                                        n
+                    The complete solution is
+                                
+                         x =  x +  x
+                                   n
+                              p
+                                    
+                                
+                               1
+                              −
+                          =  Ab +   0
+                                
+                          =  A − 1    b
 
-                   These matrices have only one pivot.</code></pre>
+
+                 Example 2.9-5
+
+                           NA
+                 Compute  ( )  for  A  :    2  →   3  given by  A =  (x +  y ,  , 2x −  x  ) y
+
+                 Solution
+                             NA
+                    To find  ( ) , we must solve the equation  ( , Ax y ) (0, 0, 0=  )
+
+                                    0
+                          x +  y      x +  y =  0 ⇒  y = 0
+                           x                x =  0
+                                    0 ⇒
+                                 =
+                                
+                              y  
+                                    0
+                         2x −      
+                    Thus   NS ( ) { } 0A =  , the set that consists solely of the zero vector.
+
+                                
+                            
+                                0
+                        If  Ax =  has more unknowns than equations (more columns than rows) then it has nonzero
+                        solutions. There must be free columns, without pivots.</code></pre>
      	</div>
     
      </div>

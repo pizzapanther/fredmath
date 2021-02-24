@@ -154,75 +154,71 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>216 | 2.8 – Row and Column Spaces
 
-          2.8−3       The Column Space of A
+                                                                                           
+                                                                                        
+                                                        )
+                                                  c
+                                                                                         =
+             (1, 2) and (2, 4) and all other vectors ( , 2c  along that line. The equation  Ax b is only
 
-                                                                               
-          The most important subspaces are tied directly to a matrix A, to solve  Ax b= .
-
-
-          2.8−4       Definition
-
-
-          The column space consists of all linear combinations of the columns. The combination are all possible
-          vectors  Ax . They fill the column space  ()CA  .
-
-                                                                                  0
-                    1   0                                                      
-                                                                                  3
-                          
-               A =      4  3                                                   
-                          
-                                                                                  3
-                                                                                 
-                     2   3  
-                                                                                b     1
-
-                                                                                      4
-                      1      0                                                   
-                                                                                     
-                      
-                              
-                      4 +
-                               3
-                                                                                     
-              b =  x 1    x 2                                                     2
-                               3 
-                      2  
-                                                                 0
-                                                                    
-                                                                    0
-                                                                    
-                                                                     0
-                                                                    
-
-                        
-          To solve  Ax = b is to express b as a combination of the columns.
-
-                                                                               
-                                A
-          The column space CS  ()  is a plane that containing the two columns.  Ax b=    is solvable when b in on
-          that plane.
+                            
+             solvable when b is on the line.
+                                                                                    
+                                                2
+                                                                                            )
+             The column space  ()CB  is all of  . Every b is attainable. The vector b =  (3, 4  is summation
+             of column 1 and 2.
+                             x  
+                                    5
+               1   2   3   1    
+                            x   2  =  
+                                    4
+               0  0    4      
+                             x 
+                             3 
+               x +   1  2x +  2  3x =  3  5
+              
+                  4x =   4
+                       3
+                  x +   1  2x =  2  2
+              ⇒  
+                      3
+                    x = 1
+                  x =  0            x =  2
+                                    
+                 
+              ⇒    1      or    ⇒    1
+                   x = 1                x = 0
+                   2
+                                      2
+                                               )
+              x = (0, 1, 1 )  also  x = (2, 0, 1
+                                                                       
+             This matrix has the same column as I and any b is allowed.  x  has an extra component (more
+             solutions).
 
 
-          2.8−5       Theorem
-                       
-          The system  Ax b=    is solvable if and only if b is in the column space of A.
+          2.8−6       Pivot Columns
 
 
 
-          Example 2.8-1
+          The pivot columns of R have 1’s in the pivots and 0’s everywhere else.
 
-                                               −   13  2     x 1     1 
-                                                                
-          Let  Ax b=  be the linear system:     1  2 −  3     x   2  =    −  9
-                                                                      
-                                                  2  1  2−      x          3−  
-                                                             3 
+                                     1   3    0   2    − 1
+                                                           
+                 Pivot columns:  A =      0  0  1  4  − 3
+                                                           
+                                      1   3  1   6    − 4  
 
-          Show that b is in the column space of A by expressing it as a linear combination of the column vectors
-          of A.
+                                1   3    0   2    − 1
+                                                      
+                 Yields to:  R =      0  0  1  4  − 3
+                                                      
+                                 0   0  0   0     0   
 
-          Solution</code></pre>
+
+               The pivot columns are not combinations of earlier columns. The free columns are
+               combinations of columns which are the special solutions!</code></pre>
      	</div>
     
      </div>

@@ -155,60 +155,61 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1.6 – Determinants and Properties  | 73
 
 
-               1.6−6        Co-factor Method
+
+                 1.6−6       Co-factor Method
 
 
-               The knowledge of Minors and Cofactors is compulsory in the computation of adjoint of a matrix and
-               hence in its inverse as well as in the computation of determinant of a square matrix. This technique of
-               computing determinant is known as Cofactor Expansion. This method can be used for any (nn×    ) and
+                 The knowledge of Minors and Cofactors is compulsory in the computation of adjoint of a matrix and
+                 hence in its inverse as well as in the computation of determinant of a square matrix. This technique of
+                 computing determinant is known as Cofactor Expansion. This method can be used for any (nn×   )
 
-               most important this method in programing.
+                 and most important this method in programing.
 
-                                a 11  a 12   a 13      a     a          a     a         a     a
+                                 a     a      a
+                                  11    12     13       a     a          a     a         a     a
+                                 a 21  a 22  a 23  =  a 11  a 22  a 23  −  a 12  a 21  a 23  +  a 13  a 21  a 22
 
-                                a 21  a 22   a 23  =  a 11  a 22  a 23  −  a 12  a 21  a 23  +  a 13  a 21  a 22
-
-                                a     a      a           32    33        31    33         31   32
-                                  31    32    33
-
-
-               1.6−6a  Minor
-
-               For a square matrix  A =        a ij       , the minor  M . Of an element a  is the determinant of the matrix
-                                                                               ij
-                                                            ij
-                                                     th
-                                       th
-               formed by deleting the i  row and the j  column of A.
-                                    a   a     a   
-                                    11   12    13  
-                       A = [a  ]   =  a  a    a   
-                             ij     21   22    23 
-
-                                    a   31  a 32  a 33   
+                                 a 31  a 32  a 33        32     33        31    33        31    32
 
 
-               Example 4
+                 1.6−6a  Minor
 
-                             31 −  4
-                                     
-               Let     A =      25  6
-                                     
-                               14  8   
-               Find  M
-                       32
+                 For a square matrix  A =        a ij       , the minor  M . Of an element a  is the determinant of the matrix
+                                                                                ij
+                                                             ij
+                                                       th
+                                        th
+                 formed by deleting the i  row and the j  column of A.
+                                      a  a     a   
+                                      11   12   13  
+                         A = [a  ]   =  a  a   a   
+                               ij     21   22    23 
+                                      a   31  a 32  a 33   
 
-               Solution
 
-                           3   1   − 4
-                   M  32  =  2  5   6
-                           1   4    8
 
-                           3 −  4
-                         =
-                           2   6
+                 Example 4
 
-                         =  26</code></pre>
+
+                              31 −   4
+                                       
+                 Let     A =      25  6
+                                       
+                                14  8   
+                 Find  M
+                         32
+
+                 Solution
+
+                             3   1  − 4
+                     M 32  =  2  5   6
+                             1   4   8
+
+                             3 −  4
+                          =
+                             2   6
+
+                          =  26</code></pre>
      	</div>
     
      </div>

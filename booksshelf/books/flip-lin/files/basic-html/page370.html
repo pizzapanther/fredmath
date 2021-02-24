@@ -152,75 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>352 | 4.4 – Eigenvalues and Eigenvectors
-
-          4.4−8       Theorem
-
-                                               0
-          A square matrix A is invertible iff λ =  is not an eigenvalue of A.
+    <pre style="white-space:pre-line"><code>354 | 4.4 – Eigenvalues and Eigenvectors
 
 
-          4.4−9       Summary
+          4.4−6       Eigenvectors
+
+                                                                                       
+                                                                                          x
+          To find the eigenvector  x , for each eigenvalue λ solve ( A − λ  ) I x =  0 or  Ax = λ
+
+                                                                    x 
+          From the eigenvalues, the eigenvectors, in the form V    =  i    , of the system can be determined
+                                                              i     y 
+                                                                    i 
+          by letting:
+                        ( A λ−  1 IV =  )  1  0    and A λ−  (  2 IV =  )  2  0
 
 
-          To solve the eigenvalue problem for an n by n matrix:
-
-                                                I
-           1.  Compute the determinant of  A − λ . With  λ subtracted along the diagonal, this determinant
-                           n
-                                   n
-               starts with λ  or  −λ . It is a polynomial in  λ of degree n.
-                                                              (
-                                                                     ) 0 . The n roots are the n eigenvalues
-           2.  Find the roots of this polynomial, by solving det A − λ I =
-               of A. They make  A − λ  singular.
-                                     I
-                                                       
-                                                        0
-           3.  For each eigenvalue λ, solve ( A − λ  ) Ix =  to find an eigenvector x.
 
 
-          4.4−10  Imaginary Eigenvalues
+          Example 4.4-4
 
-
-          Example 4.4-6
-                                                                     −   2 −  1
-          Find the eigenvalues and the eigenvectors of the matrix  A =      
-                                                                      5   2  
+                                                                      12
+          Find the eigenvalues and the eigenvectors of the matrix  A =   
+                                                                      2 4 
           Solution
 
-                            − 2 − λ   − 1
-              det ( A − λ  ) I =
-                              5     2 − λ
+                                 1− λ  2 
+              det ( A − λ  ) I = det       
+                                 2    4 − λ 
 
-                         =  ( 2− − λ )(2 − λ ) 5+
+                         =  (1− λ )(4 − λ ) 4−
+
                              2
-                                 =
-                         = λ+   1 0
+                         = λ −  5λ+  4 4
+                                      −
+                             2
+                         = λ −λ
+                                5
+                         =   ( λ λ−  ) 5 = 0
 
-                     2
-                 ⇒ λ = −  1
 
-             The eigenvalues are: λ    =     i ±
-                                   1,2
+                                                     5
+             The eigenvalues of A are: λ=   0 λ =
+                                                 2
+                                        1
+             For λ= , we have:
+                       0
+                   1
+                 ( A λ 1 IV =  )  1  0
+                    −
 
-             For λ= :  A λ−  i  (  IV =  )  0
-                   1            1    1
-                                                             )
-                                                       − −
-                      − 2 i −  − 1    x   1  0   →  ( 2 i x −  y =  0
-                                       =                 1   1
-                                             0
-                       5      2 i  −     y   1   
-                     ⇒  (2 +  i ) x =  1  −  y
-                                      1
+                                 x
+                                       0
+                    −
+                  10       2    
+                                    =
+                                 
+                                 y
+                                       0
+                            −
+                   2     40      
+                                 0
+                           x
+                  1   2              x +   2y =  0
+                              =
+                                 →    
+                                 0
+                           y
+                  2   4            
+                 x = − 2y
 
-                                                     − 1 
-                    Therefore, the eigenvector V =      
-                                                1    2 i +  
-
-                 λ=    i − : A λ−  (  IV =  )  0
-                   1            2    2</code></pre>
+                 If y = −1 ⇒ x = 2
+                                                  2 
+                 Therefore, the eigenvector V =    
+                                            1     − 1 </code></pre>
      	</div>
     
      </div>

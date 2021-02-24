@@ -157,62 +157,62 @@ function MM_swapImage() { //v3.0
 
 
 
+                 4.2−1       Definition
 
-               4.2−1        Definition
-
-                                                                             
-                                                    T
-               A transformation T assigns an output  ( ) v  to each input vector v . The transformation is linear if
-                                                       
-               it meets these requirements for all v  and  w :
-                                      
-                                      v
-                         T c        ( )
-                            ( ) cTv =
-                       
-                                          
-                         T  (v +  w ) T=  ( ) Twv +  ( )
-                                                                           
-                                                         
-               We can combine both into one:    T cv +  (    dw ) =  cT  ( ) dT wv +    ( )
-
-
-               4.2−2        Theorem
+                                                                               
+                 A transformation T assigns an output  ( ) v  to each input vector v . The transformation is linear if
+                                                     T
+                                                        
+                 it meets these requirements for all v  and  w :
+                                       
+                                        v
+                          T c         ( )
+                             ( ) cTv =
+                        
+                                           
+                          T  (v + w ) T=  ( ) Twv +  ( )
+                                                                   
+                                                           
+                                                                            
+                 We can combine both into one:    T cv +  (    dw ) =  cT v +  ( ) dT  ( )   w
 
 
-                  TV →
-               If  :      W  is a linear transformation, then:
-                 1.  ( ) 0T  =  0
-                                                      
-                 2.  T  (uv−  ) T=  ( ) Tu −  ( ) v  for all u  and v  in V.
+                 4.2−2       Theorem
+
+
+                 If  :     W  is a linear transformation, then:
+                   TV →
+                   1.  ( ) 0T  =  0
+                                                        
+                   2.  T  (uv−  ) T u=  ( ) T v−  ( )  for all u  and v  in V.
 
 
 
-               Example 4.2-1
-                                                                                                        
-                                                                                                T x
-                   If V is a vector space and k is any scalar, then the mapping  :TV → W given by ( ) kx=   is a
+                 Example 4.2-1
+
+                                                                                                          
+                    If V is a vector space and k is any scalar, then the mapping  :TV → W given by ( ) kx =  x  is
+                                                                                                  T
 
 
-                                                                        
-                   linear operator on V, for if c is any scalar and if  u  and v  are any vectors in V, then
-                                  
-                       T cu      ( )
-                         ( ) k cu=
-                                    
-                                 ( )
-                              = cku 
-                              = cT  ( ) u
-                                   
-                       T  (uv+  ) k=  (uv+  )
-                                    
-                                         
-                                 =  ku + kv
+                                                                           
+                    a linear operator on V, for if c is any scalar and if  u  and v  are any vectors in V, then
+                                    
+                          ( ) k cu =
+                        T c       ( ) u
+                                     
+                                   ( )
+                                = cku 
+                                = cT ( ) u
+                        T  (uv+   ) k=  (uv+   )
+                                          
                                       
-                                             
-                                 = T ( ) Tu +  ( ) v
-                   If  0 &lt; k &lt; 1, then T is called contraction of V with factor k, and if k &gt; 1, then T is called dilation
-                   of V with factor k.
+                                  =  ku + kv
+                                       
+                                              
+                                  = T  ( ) Tu +  ( ) v
+                    If  0 &lt; k &lt; 1, then T is called contraction of V with factor k, and if k &gt; 1, then T is called
+                    dilation of V with factor k.
 
 
 
@@ -223,8 +223,7 @@ function MM_swapImage() { //v3.0
 
 
 
-
-                                     Dilation of V                         Contraction of V</code></pre>
+                                      Dilation of V                         Contraction of V</code></pre>
      	</div>
     
      </div>

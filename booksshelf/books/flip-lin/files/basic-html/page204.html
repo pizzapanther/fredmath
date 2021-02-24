@@ -154,68 +154,60 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>186 | 2.6 – Linear Independence
 
-                   10   1   0    k +  1 k =  0
-                        2         1   2  3
-                   01   1   0    k +  1 k =  0
-                        2         2   2  3
-                   0 000     
-                              
-             Solve the system equations:  k =  −  1  , t  k =  −  1  , t  k =  t
-                                          1    2      2    2      3
 
-             This shows that the system has nontrivial solutions and hence that the vectors are linearly
-             dependent.
-
-                 2nd method to determine the linearly is to compute the determinant of the coefficient matrix
+          2.6−6       Linear independence of Functions
 
 
-                                                            1   5   3
-                                                          
-                                                                       
-                                                      A = −  2   6   2
-                                                          
-                                                                       
-                                                            3   − 11  
-                                                                      
-                  A =  0 Which has nontrivial solution, and the vectors are linearly dependent.
+          2.6−7       Definition
 
 
+          If f  =  f x     =  f  ( ), , f  =  f  ( ) x  are functions that are n − 1 times differentiable on the
+                   ( ), f
+                                 x
+             1    1      2    2           n    n
+          interval (−∞, ∞), the determinant
+                                              f  ( ) x    f  ( ) x       f  ( ) x
+                                              1            2               n
+                                             f  ′  ( ) x  f  ′  ( ) x    f  ′  ( ) x
+                                  Wx          1           2                n
+                                     ( ) =
+                                                                          
+                                           f  (n−  1)  ( ) x  f  (n−  1) ( ) x    f  (n−  1)  ( ) x
+                                            1            2               n
 
-          Example 2.6-2
+          is called the Wronskian of  f  , ,   , f
+                                         f
+                                      1   2       n
+                  if   W =  0 ⇒   Linearly  Dependent
+                 
+                  if W ≠  0 ⇒    Linearly Independent
 
-                                                                                         4
-          Determine whether the vectors are linearly dependent or linearly independent in  
-                                                                     
-                              v =  (1, 2, 2,  1−  ) v =  (4, 9, 9,  4−  ) v =  (5, 8, 9,  5−  )
-                               1                   2                    3
+
+          Example 2.6-3
+
+          Use the Wronskian to show that f  =  , x  f  =  sin x  are linearly independence
+                                          1        2
           Solution
-                                 
-              k v +  k v +  k v =   0
-               11     2 2    3 3
 
-              k 1 (1, 2, 2,  1 +  ) k 2  (4, 9, 9,  4 +  ) k 3 (5, 8, 9,  5 =  ) (0, 0, 0, 0 )
-                          −
-                                            −
-                                                               −
-             Which yields the homogeneous linear system
-                       k +   4k +  5k =  0
-                       1     2     3
-                     2k +  1  9k +  2  8k =  3  0
-                    
-                 →  
-                       k
-                      2 +9 k +  2  9k =  3  0
-                        1
-                     −  k −  4 k −  5k =  0
-                       1    2     3
+             The Wronskian is
 
-                1  4    5   0
-                2  9    8   0    R −  2R
-                                      2  1
-                2  9    9   0    R −  2R
-                                  3     1
-                −  1 −  4 −  50   R +  R 1
-                                     4</code></pre>
+                          x  sin x
+                 Wx
+                    ( ) =
+                         1 cos x
+                                         0
+                        =  x cos x − sin x ≠
+
+             This function is not identically zero. Thus, the functions are linearly independent.
+
+
+          Example 2.6-4
+
+          Use the Wronskian to show that f  = 1, f  = e x ,  f  =  e 2x   are linearly independence
+                                          1       2         3
+          Solution
+
+             The Wronskian is</code></pre>
      	</div>
     
      </div>

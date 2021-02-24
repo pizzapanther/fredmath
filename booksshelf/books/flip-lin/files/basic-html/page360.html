@@ -152,7 +152,26 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>342 | 4.3 – LU-Decompositions
+    <pre style="white-space:pre-line"><code>344 | 4.3 – LU-Decompositions
+
+
+
+              (
+                                                            1 −
+                                                        1 −
+                                                         E
+                                                                              i
+                                                             E
+            E  32 31 21  ) AU       becomes     A = ( E −  21 31 32 1 ) U  which s  A =  LU
+                   E E
+                             =
+                        The inverses go in opposite order.
+
+            ( A LU=  )  This is elimination without row exchanges. The upper triangular U has the pivots on
+             its diagonal. The lower triangular L has all 1’s on its diagonal.
+             The multipliers  l  are below the diagonal of L.
+                              ij
+
 
           4.3−4       One Square System = Two Triangular Systems
 
@@ -166,20 +185,19 @@ function MM_swapImage() { //v3.0
 
           Example 4.3-3
 
-                                     =
-          Forward elimination on  Ax b  ends at Ux c=
+          Forward elimination on  Ax b=  ends at Ux c=
+
                   x +  2y =  5           x +  2y =  5
                                 becomes
                  4x +  9y =  21             y =  1
 
           Solution
-
                                    (
              The multiplier was 4.  R −  4R 1 )
                                      2
-                                               
+                                                
+                                            
              The lower triangular system:  Lc =  b
-
                   1   0        5 
                          [ ] c =    
                    4  1        21 
@@ -198,21 +216,7 @@ function MM_swapImage() { //v3.0
                      3 
                  x =  
                       1
-                     
-
-
-
-          To solve 1000 equations on a PC
-
-                                                                          3
-                                                  3
-                                                                       1
-                                               1
-             Elimination on A requires about  n  multiplications and  n  subtractions.
-                                               3                        3
-                                                             2
-                                      2
-             Each right−side needs  n  multiplications and  n  subtractions.</code></pre>
+                     </code></pre>
      	</div>
     
      </div>

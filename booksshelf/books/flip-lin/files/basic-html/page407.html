@@ -152,74 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 389
-
-                 Every symmetric matrix A has a complete set of orthogonal eigenvectors:
-
-                                                  T
-                       A =  PDP − 1  ⇒   A QDQ
-                                           =
+    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 391
 
 
-               4.6−6        Complex Eigenvalues of Real Matrices
+                 4.6−4       Spectral Decomposition
 
 
-               For real matrices, complex λ′s and x′s come in “conjugate pairs”
-
-                       if    Ax =  λ x  then  Ax = λ x
-
-
-               Example 4.6-5
+                 The spectral decomposition of A is:
+                                                        T       T            T
+                                               A = λ  uu +λ     u u +    +λ   u u
+                                                    11   1     2 2  2         nn   n
 
 
-                            cos θ  − sin   θ
-               Given  A =               
-                            sin θ  cos θ  
+                 Example 4.6-2
 
-               Solution
 
-                   The eigenvalues of A:
+                                  1  2 
+                 The matrix  A =       
+                                  2 − 2 
+                 Solution
 
-                                  cos −  θ  λ  sin θ −
-                   det ( A λ−  ) I =
-                                    sin θ    cos −  λ
-                                                θ
-                               =  (cosθ  λ −  )(cosθ  λ −  ) sin θ 2
-                                                       +
-                               =  cos θ 2  2 cos +  θ  λ  2  +  sin θ 2
-                                           λ −
-                                 λ =  2  2 cosθ  +  1 0
+                                   1−λ      2
+                     det ( A−λ  ) I =
+                                    2    − 2 −λ
 
-                                       λ −
-                                                 =
-                   λ =  2cos ±  θ  4cos θ  2  −  4
-                                2
+                                 =  (1−λ )( 2− −λ ) 4−
 
-                        2cos ±  θ  4 cos θ  (  2  1 −  )
-                      =                                           cos θ  2  sin θ +  2  = 1 → cos θ  2  −=  sin θ −  2
-                                                                                             1
-                                 2
-                      =  2cos ±  θ  2 −  sin θ  2
-                                2
-                           θ
-                                   θ
-                     =  cos ±  i sin
-                   The eigenvalues are conjugate to each other.
+                                 = λ  2  +λ −  6 =    0
 
-                                                      
-                                                     )
-                   For λ    cosθ =  i sinθ +  :   ( A−λ  I v = 0
-                        1                          1   1
-                        cosθ   (cosθ −  i sinθ +  )     sinθ −          x   1  0 
-                                                                            = 
-                                                                               0
-                               sinθ            cosθ  (cosθ −  i sinθ +  )     y   1   
+                    The eigenvalues are:  λ  =  −  3 and  λ  =    2
+                                           1               2
 
-                                                                        θ
-                         i sinθ −  −  sinθ     x   1  0   i sin x =  θ →  1  sin y 1
-                                              =  
-                                                 0
-                         sin θ   i sin θ     y   1   </code></pre>
+                                        −
+                    For λ= −   3:    ( A λ 1 I v =  )  1  0
+                          1
+                          4   2   x   1  0 
+                                    =       →  2x =  −  y
+                                         0
+                         2   1      y   1     1      1
+                                                          1 
+                        Therefore, the eigenvector v =     − 2   
+                                                   1
+
+
+                              2
+                                      −
+                    For λ= :       ( A λ 2 I v =  )   2  0
+                          2
+                         − 1   2    x   2  0   →  x =  1  2y 1
+                                       = 
+                                            0
+                          2     4  −     y   2   
+                                                         2
+                                                      
+                        Therefore, the eigenvector v = 
+                                                    2
+                                                         1
+                                                       
+                                                                                 2
+                                                              1             
+                    The corresponding eigenvectors are: v =       and v =     
+                                                                                 1
+                                                         1    − 2         2   
+                           
+                          v
+                     u =   v  1
+                      1
+                           1
+                             (1, 2−  )
+                        =
+                             2
+                            1 +−   2
+                               ( ) 2</code></pre>
      	</div>
     
      </div>

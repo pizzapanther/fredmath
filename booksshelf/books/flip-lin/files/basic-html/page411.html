@@ -152,79 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 393
+    <pre style="white-space:pre-line"><code>4.6 – Orthogonal Diagonalization | 395
 
-               (16 − 39)  Find a matrix P that orthogonally diagonalizes A, and determine  P − 1 AP
 
-                           31                                         1  − 1  0 
-                16.  A =                                                        
-                           13                             30.  A =    −  1  2  −  1
-                                                                                   
-                           6    2 3                                     0  − 1  1    
-                17.  A =            
-                                                                      01 1
-                           2 3   7                                          
-                                                            31.  A =   1 01
-                           − 2 2                                            
-                18.  A =                                                11 0   
-                           2  1 
-                                                                        0  10 10 
-                           11
-                                                                                   
-               19.  A =                                   32.  A =    10  5   0
-                           11                                           10  0  − 5   
-                           2    2                                               
-               20.  A =                                               0 30
-                                  
-                           2    1                                           
-                                                            33.  A =    30 4
-                                                                               
-                           11                                         0 40  
-               21.  A =                                                     
-                           0 2 
-                                                                        2   2   − 2
-                                                                                   
-                           1  1                           34.  A =    2  − 1  4
-               22.  A =      2  2                                     −  2  4  −  1   
-                           1  1                                                 
-                           2  2 
-                                                                        −  2  0  −  36
-                           2  6                                                    
-               23.  A =                                   35.  A =    0   − 3   0  
-                           6 − 7                                        −  36  0  −  23   
+                 4.6−5       Theorem
 
-                           2  − 1
-               24.  A =                                               11 0
-                                                                               
-                           − 1  5                         36.  A =      11 0
-                                                                               
-                           5  − 2                                     000   
-               25.  A =                                                     
-                           − 2  5  
-                                                                        2  −  1 −  1
-                                                                                   
-                           6    12i   −                   37.  A =    −  1  2  −  1
-               26.  A =                                                         
-                            +
-                           12i    2                                     −  1 −  1  2    
-                           1   1 i   −
-               27.  A =                                               − 7 24   0   0 
-                            +
-                           1 i  0                                     24  7    0   0  
-                                                            38.  A =                   
-                           1 0 4                                      0   0   − 7 24
-                                  
-               28.  A =      01 3                                       0  0  24  7    
-                                  
-                           4 31  
-                                                                      31 0 0
-                                                                                  
-                           6  − 4   1                     39.  A =    1 30 0    
-                                       
-               29.  A =      −  4  6  −  1                              0000  
-                                       
-                           1    1 11                                  0000      
-                              −       </code></pre>
+
+                 Orthogonal Eigenvectors:  Eigenvectors of a real symmetric matrix (when they correspond to
+                 different λ′s) are always perpendicular.
+
+                 Proof
+                                                         T
+                                 =
+                    Suppose  Ax λ    x  ,  Ay λ 2  y  and  A =  A .
+                                            =
+                                    1
+                    The dot products of the first equation with y and the second with x:
+                        ( )   T   y =  ( Ax ) y
+                            
+                                        T 
+                                      
+                         λ
+                            x
+                          1
+                                         
+                                     TT
+                                  =  x Ay
+                                      T  
+                                  =  x Ay
+                                     T
+                                  =    x λ    y
+                                        2
+                           T      T  
+                          x λ ⇒  y =  x λ  y
+                             1        2
+                                                    
+                                                     T
+                    Since λ     λ ≠  , this proves that  x y = .
+                                                          0
+                            1    2
+                                                                                      (
+                                        (
+                                                                                   
+                    The eigenvector  x    for  λ )  is perpendicular to the eigenvector  y   for  λ 2 )
+                                              1
+
+
+                 Example 4.6-4
+                                                                                  − 34
+                 Find the λ′s and v′s for this symmetric matrix with trace zero: A =    
+                                                                                  4  3 
+                 Solution
+
+                                   −−        4
+                                     3 λ
+                     det ( A λ−  ) I =
+                                             −
+                                      4     3 λ
+                                  ( 3 λ = −−  )(3 λ  −  ) 16−
+
+                                 = − +   2  16
+                                    9 λ −
+                                    2
+                                 =  λ − 25 0
+
+                                          =
+                    The eigenvalues are: λ  1  −  5 λ =  2  =    5
+                    The eigenvectors are:
+
+                                              )
+                                       (
+                    For λ =   −  5   ⇒     A λ−  I v =   0
+                          1                 1    1
+                         2 4    x   1  0   →  2x +  1  4y =  1  0
+                                   = 
+                                        0
+                         48      y   1   </code></pre>
      	</div>
     
      </div>

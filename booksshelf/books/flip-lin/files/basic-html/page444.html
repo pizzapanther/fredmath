@@ -152,54 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>424 | AP P E ND I X − D
-
-           Nonsingular – Singular
+    <pre style="white-space:pre-line"><code>428 | AP P E ND I X − C
 
 
-
+          Glossary
 
 
 
-                                          A is n by n
-          Nonsingular                                       Singular
+          Adjacency matrix of a graph: Square matrix with a =     1 when there is an edge from node i to
+                                                              ij
+                                                                         T
+                                          node j; otherwise a =  0, A =  A  for an undirected graph.
+                                                             ij
+                                            
+                                              +
+          Affine Transformation:  ()T v =  Avv  linear transformation plus shift.
+                                                 0
+          Back substitution: Upper triangular systems are solved in reverse order  x    x .
+                                                                                    to
+                                                                                  n     1
+                                                                                          
+          Basis for V: Independent vectors v  , , v  whose linear combinations give every v  in V. A vector
+                                               
+                                            1       n
+                        space has many bases.
+
+          Block matrix: A matrix can be partitioned into matrix blocks, by cuts between rows and/or between
+                 columns, Block multiplication of AB is allowed if the block shapes permit (the columns of A
+
+                 and rows of B must be matching blocks).
+
+          Cayley-Hamilton Theorem:  ( ) detp λ     ( A λ =  −  ) I =  zero  matrix .
+
+                                                             
+          Change of basis matrix M: The old basis vectors v  are combinations    ∑  mw  of the new basis
+                                                              i                       ij i
+                                      vectors.
+                                       The coordinates of c v +      +   c v =  d w +    +   d w  are
+                                                           11           nn      1 1           n n
+                                      related by d =  Mc .
+
+                                      (For n = 2 set v =  m w +   m   w  , v =   m w +    m    w .)
+                                                     1     11 1     21 2     2     12 1     22 2
+
+          Characteristic equation:  det A λ   I =  ) 0 . The n roots are the eigenvalues of A.
+                                        ( −
+                                                     )(
+          Cholesky factorization:  A CC=   T  = ( LD LD     ) T   for positive eigenvalues of A.
 
 
+          Circulant matric C: Constant diagonals wrap around as in cyclic shift S. Every Circulant is
+                                    +
+                                c I cS + 1    +  c n −  1 n −  1 . Cx = convolution c*x. Eigenvectors in F.
+                                                    S
+                                 0
 
-          A is invertible                                   A is not invertible
+                                                                                     +
+          Cofactor C : Remove row i and column j; multiply the determinant by ( ) 1−  ij
+                     ij
+          Column picture of Ax = b: The vector b becomes a combination of the columns of A. The system
+                                      is solvable only when b is in the column space C(A).
 
+          Column space  ()CA : consists of all linear combinations of the columns. The combinations are all
 
-          The columns are independent                       The columns are dependent
-
-          The rows are independent                          The rows are dependent
-
-
-          The determinant is not zero                       The determinant is zero
-
-                                  x
-          Ax  =  0 has one solution  =                       Ax  =  0 has infinitely many solutions
-                                      0
-          Ax = b  has one solution  x =  A − 1 b             Ax = b  has no solution or infinitely many
-
-          A has n (nonzero) pivots                          A has r &lt; n pivots
-
-
-          A has full rank r = n                             A has rank r &lt; n
-
-          The reduced row echelon form is R = I             R has at least one zero row
-
-
-          The column space is all of                        The column space has dimension r &lt; n
-
-          The row space is all of                           The row space has dimension r &lt; n
-
-
-          All eigenvalues are nonzero                       Zero is an eigenvalue of A.
-
-          Is symmetric positive definite                    is only semidefinite
-
-
-          A has n (positive) singular values                A has r &lt; n  singular values</code></pre>
+                            possible vectors  Ax .</code></pre>
      	</div>
     
      </div>

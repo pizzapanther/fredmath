@@ -152,85 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.5 – Subspaces, Span and Null Spaces   | 181
-
-               77.  Let V =   ( { ,0,x  y ) :   x & y are arbitrary  } . Define addition and scalar multiplication as follows:
+    <pre style="white-space:pre-line"><code>Section 2.6 – Linear Independence
 
 
-                               (   x  , 0,  y  ) ( x  , 0,  y  ) ( x +  x  ,  y +  y  )
-                                           +
-                                                        =
-                                1      1      2     2      1    2   1    2
-                                           ) ( ,cx   cy
-                                 c ( , 0,x    y =    )
-                              
-                     Is V a vector space?
 
-                                                                                         )
-               78.  Construct a matrix whose column space contains (1, 1, 0    ) and (0,1,1   , whose nullspace
-                                                  )
-                                     )
-                     contains (1, 0, 1    and (0, 0, 1   .
 
-                                                                                                A
-                                          NC
-                                                                     NA
-                                                                                N B
-               79.  How is the nullspace  ( )  related to the spaces  ( )  and  ( ) , is C =      ?
-                                                                                                B
-                                                                                                
 
-               80.  True or False (check addition or give a counterexample)
-                       a)  If V is a vector space and W is a subset of V that is a vector space, then W is s subspace of
-                          V.
+                 There are n columns in an m by n matrix, and each column has m components. But the true
+                 dimension of the column space is not necessarily m or n. The dimension is measured by counting
+                 independent columns.
 
-                       b)  The empty set is a subspace of every vector space.
+                      Independent vectors       (not too many)
 
-                       c)  If V is a vector space other than the zero-vector space, then V contains a subspace W such
-                          that W ≠  V .
+                      Spanning a space          (not too few)
 
-                       d)  The intersection of any two subsets of V is a subspace of V.
-                                                                                           }
-                                                                              )
-                                                    3
-                                                                                                          2
-                       e)  Let W be the xy-plane in ; that is, W =  ( {  a 1 , a 2 , 0 :  a 1 , a ∈ . Then W = 
-                                                                                      2
-                              
-                           
-                              0
-               81.  Let  Ax =  be a homogeneous system of n linear equations in n unknowns that has only the
-                                                                                               
-                                                                                            
-                                                                                           k
-                     trivial solution. Show that of k is any positive integer, then the system  Ax =  also has only
-                                                                                               0
-                     trivial solution.
-                              
-                           
-                              0
-               82.  Let  Ax =  be a homogeneous system of n linear equations in n unknowns and let Q be an
-                                                              
-                                                                                                             
-                                                          
-                                                                                                          
-                                                                                                        )
-                     invertible nn×  matrix. Show that of  Ax =  has just trivial solution if and only if (QA x =  has
-                                                                                                             0
-                                                              0
-                     just trivial solution.
-                              
-                           
-                                                                                 
-               83.  Let  Ax b=  be a consistent system of linear equations and let  x  be a fixed solution. Show that
-                                                                                 1
-                                                                                           
-                     every solution to the system can be written in the form  x =  x +  x   where  x   is a solution to
-                                                                                    0
-                                                                               1
-                                                                                              0
-                          
-                     Ax = 0 . Show also that every matrix of this form is a solution.</code></pre>
+
+                 2.6−1       Linear Independence (LI)
+
+                                                                                                 
+                                                                                                  0
+                                                                                          0
+                 The columns of A are linearly independent when the only solution to  Ax =  is  x = . No other
+                 combination  Ax of the columns gives the zero vector.
+
+
+
+                 2.6−2       Definitions
+
+
+                   A set of two or more vectors is linearly dependent if one vector in the set is a linear combination
+                    of the others. A set of one vector is linearly dependent if that one vector is the zero vector.
+                                                                
+                                              0 =  0v +  0v +   +  0v
+                                                    1     2          k
+                                                   
+                   The sequence of vectors v  , v  , v  is linearly independent if the only combination that gives
+                                              1  2  3 
+                    the zero vector is 0v +  0v +   +  0v . Thus, linear independence means that:
+                                        1    2         k   
+                                       x v +  x v +     +  x v =  0  only happens when all x’s are zero.
+                                        11     2 2         k k
+
+                   A (nonempty) set of vectors is linearly independent if it is not linearly dependent.
+
+                                           
+                   If three vectors  w  , w  , w  are in the same plane, they are dependent.
+                                     1    2    3
+
+                   The empty set is linearly independent, for linearly dependent sets must be nonempty.
+
+                                                                                             
+                   A set consisting of a single nonzero vector is linearly independent. For if { } v  is linearly
+                                         
+                                          0
+                    dependent, then  av =  for some nonzero scalar a. Thus,
+                                    −  1      −  1  
+                                        a
+                                v =  a  ( ) av =  0 0=</code></pre>
      	</div>
     
      </div>

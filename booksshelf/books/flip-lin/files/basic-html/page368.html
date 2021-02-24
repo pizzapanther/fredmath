@@ -152,77 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>350 | 4.4 – Eigenvalues and Eigenvectors
-
-          4.4−6       Eigenvectors
-                                                                                       
-                                                                                          x
-          To find the eigenvector  x , for each eigenvalue λ solve ( A − λ  ) I x =  0 or  Ax = λ
-
-                                                                   x 
-          From the eigenvalues, the eigenvectors, in the form V i   =  i    , of the system can be determined by
-                                                                     y   i 
-          letting:
-                        ( A λ 1 IV =  )  1  0    and A λ−  (  2 IV =  )  2  0
-                           −
+    <pre style="white-space:pre-line"><code>352 | 4.4 – Eigenvalues and Eigenvectors
 
 
+          4.4−2       The equation for the eigenvalues
+
+                                          
+          Let’s rewrite the equation  xλ =  Ax .
+                   
+              Ax λ =  x  0                    λ :  are the eigenvalues and not a vector.
+                 −
+                    
+                 −
+              Ax λ  Ix =  0
+                       
+              ( A λ−  ) Ix =  0
+                                                   
+                           I
+          The matrix  A−λ  times the eigenvectors  x  is the zero vector.
+                                                         I
+          The eigenvectors make up the nullspace of  A−λ .
 
 
-          Example 4.4-4
+          4.4−3       Definition
 
-                                                                      12
-          Find the eigenvalues and the eigenvectors of the matrix  A =   
-                                                                      2 4 
+
+                                                                 I
+          The number λ  is an eigenvalue of A if and only if  A−λ  is singular:
+
+                                                  det ( A−λ  I =
+                                                              ) 0
+
+          This equation det A λ−  (  I ) 0=   is called characteristic equation of A; the scalars satisfying this
+
+                                                                               (
+                                                                                      ) I
+          equation are the eigenvalues of A. when expanding the determinant det A − λ  is a polynomial in λ
+          of degree n, called the characteristic polynomial of A.
+
+
+          Example 4.4-2
+
+
+                                                  3  2
+          Find the eigenvalues of the matrix  A =    
+                                                  − 10 
           Solution
-                                 1− λ  2 
-              det ( A − λ  ) I = det       
-                                 2    4 − λ 
+                                 3  2       10    
+              det ( A − λ I ) det=      − λ      
+                                   − 10     0 1   
+                            3 − λ  2
+                         =
+                             − 1   −λ
 
-                         =  (1− λ )(4 − λ ) 4−
+                         =  (3− λ )( ) 2−λ +
 
                              2
-                         = λ −  5λ+  4 4
-                                      −
-                             2
-                         = λ −λ
-                                5
-                         =   ( λ λ−  ) 5 = 0
+                         = λ −  3λ+
+                                     2
+             The characteristic equation of A is:
 
-                                                     5
-             The eigenvalues of A are: λ=   0 λ =
-                                        1
-                                                 2
-                       0
-             For λ= , we have:
-                   1
-                 ( A λ−  1 IV =  )  1  0
-
-
-                    −
-                                       0
-                                 x
-                  10       2    
-                                    =
-                                 
-                                 y
-                                       0
-                            −
-                   2     40      
-                                 0
-                           x
-                  1   2              x +   2y =  0
-                              =
-                                 →    
-                           y
-                                 0
-                  2   4            
-                 x = − 2y
-
-                 If y = −1 ⇒ x = 2
-                                                  2 
-                 Therefore, the eigenvector V =     − 1   
-                                            1</code></pre>
+                   2
+                 λ −  3λ +  2 =
+                              0
+             The eigenvalues of A are λ=   1,  λ =  2
+                                        1       2</code></pre>
      	</div>
     
      </div>

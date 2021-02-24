@@ -152,72 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 367
-
-                           12 k     1 − 1
-                       =              
-                              k     0  1  
-                           0 2  
-
-                               k
-                           12 −  1 
-                       =          
-                               k 
-                           0  2   
+    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 369
 
 
-               4.5−8        Similar Matrices
 
-               4.5−9        Definition
-
-
-               If A and B are square matrices, then we say that B is similar to A if there exists an invertible matrix P
-
-               such that  B =  P −  1 AP or  A =  PBP −  1
-
-
-                                                                                 
-                   Similar matrices B and  M − 1 AM  have the same eigenvalues. If  x  is an eigenvector of A then
+                     ( cx   c x   )     λ   1    =  0
                         
-                   M  − 1 x  is an eigenvector of  B =  M  − 1 AM .
+                               
+                       11
+                              2 2 
+                                     2    λ
+                                      
+                        c λ  x +  c λ  x =  0   (2)
+                         1 11      2 2 2
+                    Multiply (1)  by λ , that implies to
+                                      2
+                                       
+                        c λ   x +  c λ  x =  0  (3)
+                         1 21      2 2 2
+                     (2) (3)
+                        −
+                                                      
+                                    x −
+                     c λ  1 1 1  c λ  2 22  ( c λ  1 2 1  c λ  2 22 )  =  0
+                                               x +
+                          x +
+                                                         x
+                     c λ    x +  c λ  x −   c λ  x −   c λ    x =  0
+                      1 1 1    2 22      1 2 1     2 22
+                     c λ    x −  c λ  x =   0
+                      1 11     1 2 1
+                       (
+                     c λ − λ    )    0
+                                 x =
+                      1   1    2  1
+                           
+                    Since  x ≠  and λ’s are different λ − λ ≠ , we forced c =      0
+                               0
+                                                                 0
+                            i                           1    2                 1
+                                                                                 
+                    Similarly, multiply (1)  by λ , that implies to   c λ  x +  c λ  x =  0  (4)
+                                                1                    1 11     2 1 2
+                     (2) (4)
+                        −
+                     c λ    x +  c λ    x −  c λ  x −    c λ  x =    0
+                      1 11     2 2 2      1 1 1    2 1 2
+                                  
+                     c  ( λ − λ  ) x =  0    ⇒   c =  0
+                      2   2    1   2            2
+                                    
+                 Therefore,  x    and   x  must be independent.
+                             1        2
 
-               Proof
 
-                     Since  B =  M −  1 AM ⇒  A =  MBM −  1
-                                    
-                                     x
-                                 =
-                     Suppose  Ax λ :
-                                       
-                                            
-                              MBM   − 1 x =  λ x
-                                     
-                                              
-                              BM  −  1 x = λ M −  1 x
-                     The eigenvalue of B is the same λ. The eigenvector is now  M − 1 x
+                 4.5−4       Theorem
+
+                           
+                 If  v 1 , , v  are eigenvectors of A corresponding to distinct eigenvalues  λ 1 , , …λ , then
+                        …
+                                                                                                   n
+                             n
+                 { v   1 , v   2 , , v   k }  is linearly independent set.
+                          
 
 
-               Example 4.5-4
+                 4.5−5       Theorem
 
-                                        .5 .5                            10
-                                                                  1 −
-                   The projection  A =         is similar to  D =  P AP =    
-                                        .5 .5                            00 
 
-                                  10                       − 1          11
-                   Choose  M =         ; the similar matrix  M  AM          
-                                                                     s
-                                                                     i
-                                  12                                    00 
-                                       0 − 1                      − 1         .5  − .5
-                                                                           i
-                                                                            s
-                   Also choose  M =           ; the similar matrix  M  AM            
-                                       1  0                                   − .5  .5  
-                   These matrices  M − 1 AM  all have the same eigenvalues 1 and 0.
+                 If an n x n matrix A has n distinct eigenvalues, then the following are equivalent:
 
-                   Every 2 by 2 matrix with those eigenvalues is similar to A.
-                   The eigenvectors change with M.</code></pre>
+                    a)  A is diagonalizable
+
+                    b)  A has n linearly independent eigenvectors.</code></pre>
      	</div>
     
      </div>

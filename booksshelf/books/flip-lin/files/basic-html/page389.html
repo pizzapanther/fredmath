@@ -152,45 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 371
-
-                                      1     100   1     100 
-                     =       1           5  +    −   5  +    
-                       1 +  5  − 1 +  5   2         2      
-                         2       2                            
-
-                     ≈ 2.54 10 20
-                            ×
+    <pre style="white-space:pre-line"><code>4.5 – Diagonalization | 373
 
 
-               4.5−11         The Jordan Form
+
+                           1 0         k     1 k  0  
+                     D =        ⇒    D =          
+                           0 2                 0  2 k   
 
 
-               For every A, we want to choose M so that  M − 1 AM  is as nearly diagonal as possible. When A has a
+                              k −
+                      k
+                     A =  PD P    1
+                             11     1  0     1 − 1
+                          =                  
+                             01       0 2 k       0  1  
 
-               full set of n eigenvectors, they go into the columns of M. Then M = P. The matrix  P − 1 AP is diagonal.
-
-               If A has s independent eigenvectors, it is similar to a matrix J that has s Jordan blocks on its diagonal.
-
-               There is a matrix M such that
-
-                                                               J   1      
-                                                  M  − 1 AM =               =  J
-                                                                       J  
-                                                                        s 
-
-               Each block in J has one eigenvalue λ , one eigenvector, and 1’s above the diagonal:
-                                                    i
-
-                                                            λ   1       0 
-                                                             i            
-                                                      J =               
-                                                       i               1  
-                                                                          
-                                                                       λ   i 
+                            12 k     1 − 1
+                        =              
+                               k     0  1  
+                            0 2  
+                                k
+                            12 −  1 
+                        =           
+                                 k 
+                            0  2    
 
 
-               A is similar to B if they share the same Jordan form J – not otherwise.</code></pre>
+                 4.5−8       Similar Matrices
+
+
+                 4.5−9       Definition
+
+
+                 If A and B are square matrices, then we say that B is similar to A if there exists an invertible matrix P
+                 such that  B =  P −  1 AP or  A =  PBP −  1
+
+
+                                                                                   
+                     Similar matrices B and  M − 1 AM  have the same eigenvalues. If  x  is an eigenvector of A then
+
+                          x  is an eigenvector of  B =
+                     M − 1                         M  − 1 AM .
+
+                 Proof
+
+                      Since  B =  M  −  1 AM ⇒  A =  MBM −  1
+                                     
+                      Suppose  Ax λ=  x :
+                                        
+                                MBM   − 1 x =  λ   x
+                                                
+                                      
+                                BM  −  1 x = λ M −  1 x
+
+                      The eigenvalue of B is the same λ. The eigenvector is now  M  − 1 x</code></pre>
      	</div>
     
      </div>

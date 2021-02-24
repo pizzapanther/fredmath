@@ -156,69 +156,70 @@ function MM_swapImage() { //v3.0
 
 
 
-               The use to best fit data, we will use results about orthogonal projections in inner product spaces to
-               obtain a technique for fitting a line or other polynomial. The outcome will let us predict the next desire
-               value that we are looking for.
-               From the shape of the scatter output data will be the best fit to determine the function that you need to
-               use to reduce margin error.
+                 The use to best fit data, we will use results about orthogonal projections in inner product spaces to
+                 obtain a technique for fitting a line or other polynomial. The outcome will let us predict the next
+                 desire value that we are looking for.
+
+                 From the shape of the scatter output data will be the best fit to determine the function that you need to
+                 use to reduce margin error.
 
 
-               3.5−1        Fitting a Curve to Data
+                 3.5−1       Fitting a Curve to Data
 
 
-               The common problem is to obtain a mathematical relationship between 2 variables x and y by fitting a
-               curve to points in the xy-plane.
-               Some possibility of fitting the data
+                 The common problem is to obtain a mathematical relationship between 2 variables x and y by fitting
+                 a curve to points in the xy-plane.
+                 Some possibility of fitting the data
 
+                                  y                                y                               y
+                                3                                5                                3
+                                2                                                                 2
+                                                                 4
+                                1                                                                 1
+                                                x                3                                               x
+                    −4  −3  −2  −1  1  2  3   4                                       −4  −3  −2  −1  1  2  3  4
+                                                                 2
+                                −1                                                               −1
+                                                                 1
+                                −2                                                               −2
+                                                                                 x
+                                −3                   −4  −3  −2  −1  1  2  3  4                  −3
 
-                                 y                                y                                y
-                               3                                5                                3
-
-                               2                                                                 2
-                                                                4
-                               1                                                                 1
-                                              x                 3                                                x
-                   −4  −3  −2  −1  1  2  3  4                                        −4  −3  −2  −1  1  2  3  4
-                                                                2
-                              −1                                                                −1
-                                                                1
-                              −2                                                                −2
-                                                                                x
-                              −3                    −4  −3  −2  −1  1  2  3  4                  −3
-
-                           y =  ax b                      y =  ax +  2  bx c            y =  ax +  3  bx +  2  cx d
-                                  +
+                             y =  ax b                    y =  ax +  2  bx c            y =  ax +  3  bx +  2  cx d
+                                   +
+                                                                       +
                                                                                                           +
-                                                                      +
 
 
-               3.5−2        Least Squares Fit of a Straight Line
+                 3.5−2       Least Squares Fit of a Straight Line
 
+                                                      
+                 Recall that a system of equations  Ax =  y  is called inconsistent if it does not have a solution. Suppose
+                                                                                              (
+                                                                                (
+                                                                                          
+                 we want to fit a straight line  y =  mx +  to the determined points  x 1 , y 1 ) , ,  x n , y n )
+                                                      b
+                 If the data points were collinear, the line would pass through all n points and the unknown
+                 coefficients m and b would satisfy the equations
 
-                                                     
-               Recall that a system of equations  Ax =  y  is called inconsistent if it does not have a solution. Suppose
-                                                                              (
-                                                    b
-               we want to fit a straight line  y =  mx +  to the determined points  x 1 , y 1 ) , ,  x  (  n , y n )
-               If the data points were collinear, the line would pass through all n points and the unknown coefficients
-               m and b would satisfy the equations
-
-                        y =  mx +  b         x  1         y 
-                         1     1             1            1  
-                       y =  mx +   b         x  1 m        y  
-                                                   
-                                                  
-                        2      2       ⇒     2       =    2  
-                                                     b
-                                                          
-                             
-                       y =  mx +   b         x  1         y  
-                                                            n 
-                        n      n             n            
-                                                     
-                                                              A             =      y
-                                                     x
-               The problem is to find m and b that minimize the errors is some sense.</code></pre>
+                         y =  mx +  b          x  1        y 
+                          1      1             1           1  
+                         y =  mx +   b  ⇒      x 2  1 m  =    y 2 
+                                                    
+                                                     
+                                 2
+                          2
+                                                      b
+                                                                    
+                               
+                                                     
+                         y =  mx +   b         x  1        y  
+                          n      n             n           n   
+                                                      
+                                                      x
+                                                               A             =      y
+                 The problem is to find m and b that minimize the errors is some sense.</code></pre>
      	</div>
     
      </div>

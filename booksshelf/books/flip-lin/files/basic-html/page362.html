@@ -152,83 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>344 | 4.3 – LU-Decompositions
+    <pre style="white-space:pre-line"><code>346 | 4.3 – LU-Decompositions
 
-                 2  − 6 4      x 1        2              −   1  0  1  0    x   1        5 
-                                       
-          10.       −  4  8  0       x   2  =      −  4        2  3  −  26       x 2        −  1   
-                                       
-                   0  − 46             6       13.     0  − 1  2   0    x    =    3 
-                               x   3                                            3     
-                                                                  0  0    1   5         x 4         7  
-                 2  − 4 2      x 1      6 
-                                     0
-          11.    −  4  5  2     x   2  =                    1   −   2 −  2 −  3   x   1      1 
-                                    
-                           
-               
-                 6  − 91     x                             3  −  9  0    9  −    x 2    
-                                     6 
-                                                                                            6
-               
-                           
-                               3                       14.                         =  
-                                                                − 1  2    4    7    x 3   0 
-                                                                                            3
-                                                                
-                                                                                           
-                 1 − 12      x 1        0                −  3 −  6 26  2          x 4       
-                                      
-          12.       1 −  31       x   2  =      −  5
-                                      
-                 3   7  5      x          7   
-                             3 
 
-          (15 – 32)  Find an LU factorization matrix:
-                  2   5                                         − 5  0  4 
-           15.                                                            
-                  −  3 −  4                             23.     10  2  − 5
-                                                                             
-                  6  4                                            10 10 16   
-           16.        
-                  12 5                                          3  7  2 
-                                                                           
-                  12                                    24.       6 19  4
-                                                                           
-           17.                                                          
-                  34                                            9  9  14 
 
-                  56                                            2  3   2
-           18.                                                          
-                  78                                    25.       4  13 9
-                                                                           
-                                                                           
-                  −   5 −  10                                   − 6  5  4 
-           19.           
-                  6    5                                          −  3 12 −  6  
+          Exercises            Section 4.3 – LU-Decompositions
 
-                  1   4  5                              26.     1  − 2  2
-                                                                             
-                            
-           20.       4 18 26                                      0  1  1    
-                            
-                  3 16 30  
-                                                                1 2   4   17
-                                                                        12   3  
-                  1   2  3                              27.     3 6 −        
-                            
-           21.       2  8  12                                     2 3  − 3  2   
-                            
-                  3 12 27                                       02   − 2   6  
-                           
 
-                  3  1    2                                       1  3 5  −  8 5 −  4 3  
-                             
-           22.       −  90 −  4                         28.     −  1 −         
-                             
-                  9  9 14                                       4  2   −  5 −  7
-                                                                               
-                                                                  −  2 −  4  7  5  </code></pre>
+
+          1.   What matrix E puts A into triangular form  EA U=  ? Multiply by  E − 1  =  L  to factor A into  LU :
+
+                                            2   1   0
+                                                       
+                                       A =      0  4  2
+                                                       
+                                             6   3  5  
+                           
+                                                        
+                                                                  
+                       
+                                     
+                                                     
+          2.   Solve  Lc =  b  to find c . Then solve Uxc=  to find  x . What was A?
+                             1   0   0         1   1   1        4   
+                                                                      
+                         L =      1  1  0     U =      0  1  1     b =      5
+                                                                      
+                              1   1  1        0   0  1        6     
+
+          3.   Find L and U for the symmetric matrix:
+
+                                     a   a   a    a
+                                      a  b   b    b 
+                                A =                 
+                                     a   b   c    c
+                                                    
+                                      a  b   c    d 
+
+                 Find four conditions on a, b, c, d to get  A LU=    with four pivots.
+
+          4.   For which c is  A LU=   impossible – with three pivots?
+
+                                     1   2   0
+                                               
+                                A =      3  c  1
+                                               
+                                      0  1   1 
+                                              
+
+          (5 – 14)   Find an LU−decomposition of the coefficient matrix, and then use to solve the system.
+
+                 2   8   x   1    −   2                    −  3 12   −   6    x      −  33
+          5.                 =                                            1  
+                 −  1 −  1 x 2       −  2            8.        1  −  2  2       x   2  =      7    
+                          
+                         
+                                                                    0  1  1       x          1  −  
+                −  5 −   10  x   1    −   10                              3 
+          6.                  =    
+                 6   5        x 2       19                3   −   7 −  2      x 1       −  7
+                                                                                         
+                                                          9.        −  3  5  1       x   =      5
+                                                                                         
+                 2   −   2 −  2      x 1        −  4        6  − 4  0       x   2        2   
+                                         
+          7.       0  −  2  2       x   2  =      −  2                  3 
+                                         
+                   − 1  5  2         x   3          6   </code></pre>
      	</div>
     
      </div>
