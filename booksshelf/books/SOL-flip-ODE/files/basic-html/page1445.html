@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1445 - ODE Solution</title>
+        <title>Page 1445 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1445 - ODE Solution</div>
+        <div id="content-top1">Page 1445 - DE Solution</div>
         <div id="content-top2">P. 1445</div>
      </div>
      <div id="content-middle">
@@ -152,89 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                                       1 3 5   2n  5   n
-                                                                                        1
-                                                        n  3 a                             a
-                                                                2n 1       2n      n       1
-                                                                                   1 ! 3
-                                                                       2n   5 !!      1  n
-                                                                                     a
-                                                                         2n    1 ! 3 n  1
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1431
 
-                                                                  
-                                                             5
-                                                         1
+
+                             s 3      A B C =    0
+                                            +
+                                         +
+                            
+                             s   2  −  2A B −  3C +  D =  −  1
+                                       −
+                            
+                             s 1   AB +   2C −  3D =  1
+                                     +
+                              0
+                                         −
+                             s    −  2A B +  2D =  −  1
+                            A =  1 , B =  −  3 , C =  1  , D =  −  3
+                                2        5      10        10
+
+                     £  −  1 {Y s  =  −  1     11  −  3 1  +  1  s  −  3  1     
+                             ( )} £
+                                           2 s −  1 5 s −  2 10  s +  2  1  10  s +  2  1
+
+
+                             e −
+                     y ( ) t =  1 t  3 e 2t  +  1  cost −  3  sin  t
+                            2     5      10       10
+
+
+                 Exercise
+
+                 Solve using the Laplace transform:     y′ − ′  4y = e  t −  ;  y (0) =  − 1,  y′ (0) =
+                                                                                        0
+                 Solution
+                     £  ( y′′ −  4  ) y £ ( )
+                                         t −
+                                 =
+                                       e
+                                                     1
+                      2
+                                                                                    =
+                                          −
+                         ( ) sy
+                     s Ys   −   (0) −  y′ (0) 4 ( ) =  Ys  s + 1    y (0) =  −  1 y′ (0) 0
+                            )
+                     ( s − 4 Ys + =    s + 1
+                       2
+                                         1
+                              ()
+                                   s
+                     Ys           1       −    2 s
+                      () =
+                            (s +  ) 1 s −  (  2  4 )  s − 4
+                                   1       =  A   +  B   +  C
+                            (s +  ) 1 s −  (  2  4 )  s +  1  s −  2  s +  2
+                                1 =  As −  2  4A +  Bs +  2  3Bs +  2B +  Cs −  2  Cs −  2C
+                                                2
+                                1=  ( A B Cs+  +  )  +  (3B Cs−  ) +  2B −  4A −  2C
+
+                                          +
+                                   A +  BC =  0
+                                 
+                                        −
+                                    3BC =    0
+                                  −  4A +  2B −  2C =  1
+                                 
+                                 A =  −  1  B =  1  C =  1
+                                      3      12       4
+
+                              s   =  D   +  E
                              2
-                                                    3
-                                                            x 
-            y   x   a   1  2  x   1  x 4     a      x   1  x  360  2n   5 !!      1  n    
-                     0    3      27        1     6                   2n    1 ! 3 n   
-                                                                n 3                
-                              2
-                                                    3
-                                                             5
-                                                                         7
-                    a   1  2  x   1  x 4    a      x   1  x   1  x   1  x     
-                     0     3     27        1    6      360      45,360        
-
-
-        Exercise
-        Find a power series solution.  5y  2xy  10y 
-                                                       0
-        Solution
-                    
-                          n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n  1          n  0
-                                          
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
-
-            5y   2xy  10y 
-                              0
-                                                                
-                                                                         n
-                                     n
-                                                           n
-            5    n  2 n    1 a n   2 x  2x  n    1 a n  1 x  10  a x   0
-                                                                       n
-             n 0                          n 0                  n 0
-                                                               
-                                                                          n
-                                     n
-                   5 n   2 n    1 a n  2    2 n    1 a n  1 x n 1    10a x 
-                                    x 
-                                                                              0
-                                                                        n
-            n 0                         n 0                   n 0
-                                                      
-                                                 n 
-                  5 n   2 n    1 a n 2  2na x    10a x 
-                                     n
-                                                   n
-                                                                 n
-                                    x 
-                                                                     0
-                                                               n
-            n   0                       n 1          n   0
-                                                                    
-                2                        2              n       0            n
-                                            n
-            10a          5 n   2 n    1 a n  x   2na x  10a   10a x 
-                                                                                   0
-                                                                             n
-                                                        n
-                    n 1                        n 1                  n 1
-                                                          1416</code></pre>
+                            s − 4   s −  2  s +  2
+                                       s =  (D Es+  ) +  2D −  2E</code></pre>
      	</div>
     
      </div>

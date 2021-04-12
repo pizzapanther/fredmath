@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1170 - ODE Solution</title>
+        <title>Page 1170 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1170 - ODE Solution</div>
+        <div id="content-top1">Page 1170 - DE Solution</div>
         <div id="content-top2">P. 1170</div>
      </div>
      <div id="content-middle">
@@ -152,102 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                For     8       A      I V   0
-                      1                1    1
-                      5   2     4      0       5x   2y  4z   0            2
-                                      x
-                                               x  4y              V     
-                                      y 
-                                             0
-                      2    8     2                       z   0          1     1 
-                                                                             
-                      4    2     5    z    0     4x   2y  5z   0          2 
-                                            
-                For       1       A       I V   0
-                      2                  2    2
-                     4   2    4     0        2x   y   2z   0            1 
-                                   x
-                                                                            
-                                   y 
-                                         0
-                     2   1    2             2x   y   2z   0      V  2     2
-                                                                                    
-                                                                            
-                                         0
-                                   z
-                     4   2    4             4x  2y   4z   0             0  
-                                       1 
-                               V     0  
-                                 3      
-                                        
-                                        1 
-                           2           1            1 
-                                                          
-                           
-                                           
-                                                      
-                            1 e
-                 x   t   C 1    8t   C 2    2 e  t     C 3   0 e  t 
-                                           
-                                                          
-                                                     
-                            2
-                                       0            1 
+    <pre style="white-space:pre-line"><code>1160 | S O LU TI O N
 
 
-             Exercise
-                                                          x    t   x   x   x
-                                                          1       1    2    3
-                                                        
-             Find the general solution of the system     x 2    t   2x   x   x
-                                                                         2
-                                                                              3
-                                                                    1
-                                                        
-                                                         x 3    t   8x   5x  3x 3
-                                                        
-                                                                     1
-                                                                           2
-             Solution
-                            
-                          1       1       1                         1   1    1 
-                                                                                 
-                 A     I  2    1       1                 A       2  1    1
-                                                                                 
-                                         3 
-                             8    5                                  8   5   3   
-                                    2 
-                             
-                                  
-                                          
-                                                2 3 3  
-                           1 2        3               6 2
-                                  2
-                             3
-                                4   4   0
-                Thus, the eigenvalues are:    1,      2,  and    
-                                                                        2
-                                           1         2              3
-                                           
-                For       1      A       I V   0
-                      1                 1    1
-                      2    1     1      0        2x   y    0
-                                      x
-                                                                 z
-                                               
-                                      y 
-                                                                 z
-                                            0
-                      2    2     1             2x  2y    0
-                                              8x  5y  2z 
-                                      z
-                                            0
-                      8    5     2                             0
-                               2x   y   1        2  1               1 1             2    1
-                    z   1                               2             3              4
-                               2x   2y   1        2   2        x   1   2         y    2  1
-                                                              1149</code></pre>
+             b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Exercise
+
+          A mass of 32 pounds is attached to a spring and stretched it 2 feet and then comes to rest in the
+          equilibrium position. The surrounding medium offers a damping force that is numerically equal to 8
+          times the instantaneous velocity
+
+           a)  Find the equation of motion if the mass is driven by an external force equal to  ( ) 8sin4f t =  t .
+           b)  Graph the transient, steady-state, and the equation of motion solutions on the same coordinate
+               axes.
+
+          Solution
+             Given:    m =  32  = 1 u     c = 8
+                                    g
+                                  sl
+                           32
+                      k (2 ft ) 32=  →  k =  16      kx =  mg
+
+             a)  x′′ +  8x′ +  16x =  8sin4t  ; x ( ) 0 =  0, x′ ( ) 0 =  0       mx′′ +  cx′ +  kx =  f  ( ) t
+
+                              =
+                 λ  2  8 +  λ +  16 0 →  λ  =  −  4
+                                         1,2
+                                )
+                 x =  ( C +  C  te − 4t       (Transient solution)
+                   h     1    2
+
+                 x   =  A cos4t +  B sin 4t
+                   p
+                                       B
+                     x′ =  −  4 sin 4t +  A  4 cos4t
+                      p
+                                          B
+                     x′′ =  −  16 cos4t −  A  16 sin 4t
+                      p
+                 −  16 cos4t −  A  16 sin4t −  B  32 sin4t +  A  32 cos4t + 16A cos4t +  16 sin4t =  B  8sin4t
+                                                        B
+                         cos4t   32B =  0             1
+                                           →    A =  −  ,  B =  0
+                         sin 4t  −  32 =  A  8        4
+
+                 x   = − 1 cos4 t             (Steady-state solution)
+                   p    4
+
+                                  )
+                 x t =  ( ) ( C +  C te − 4t  −  1 cos4t
+                          1    2          4</code></pre>
      	</div>
     
      </div>

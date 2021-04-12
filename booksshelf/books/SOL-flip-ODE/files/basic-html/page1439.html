@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1439 - ODE Solution</title>
+        <title>Page 1439 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1439 - ODE Solution</div>
+        <div id="content-top1">Page 1439 - DE Solution</div>
         <div id="content-top2">P. 1439</div>
      </div>
      <div id="content-middle">
@@ -152,92 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                    
-                     3 
-                                                                           0 
-                                                                     n
-                                                                                            n
-                                                 n
-                                                x 
-            2a   6a x       n   2 n    1 a  2   n    1 a  x   2a x    2a    x   0
-               2                            n                   n 1                  n 1
-                          n 2                       n 2                       n 2
-                                   
-                              
-                                                                                  n
-            2a    6a   2a 0         n  2 n    1 a    n    1 a    2a    x  0
-                               x 
-               2      3                              n 2          n 1    n 1
-                                  n 2
-                                         
-                                            2
-            2a    6a   2a   x   0        a   0
-                                         
-               2      3     0             a    1
-                                           3    3 a 0
-                                         
-                                                             a
-            n  2 n    1 a   n    1 a   0   a     n 1
-                           n 2         n 1         n 2    n   2
-                       a
-             a         n
-              n 3    n  3
-                            a                                    a                             a    0
-                             0                                    1                              2
-
-             a     1  a                       n  1     a   1  a                  n   2    a   a 2  
-               3    3  0                                   4    4  1                             5     5    0
-                              a                                  a                                    a
-             n  3     a    3    1   a      n   4   a     4    1  a           n   5    a    5  
-
-                        6     6    2 3   2  0             7      7   7 4   1                   8     8    0
-                              a                                   a
-             n   6     a    6     1  a    n   7     a     7     1     a    n  8     a    0
-                        9      9     3! 3    3  0          10     10     10 7 4 1    1         11
-                                                                           
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1425
 
 
-                                                               
-                     
-                      1  n                                    1  n                        
-              a                                 a                                     a 3n 2  0
-               3n       n                         3n 1  1 4 7    3n    1
-                                                          
-                    n ! 3
-                              n                      n
-                     0     1   3n   1            1       3n 1
-                           
-                                                    
-            y   x   a      n  x     a    1 4 7      3n    1  x
-                      n  0  n ! 3       n  0
-                                                                        7
-                                                                4
-                                     6
-                                             9
-                             3
-                                                    
-                                                      a
-            y   x   a   1  1 x   1  x   1  x     x   1  x   1  x   1  x 10    
-                     0    3      18     162            1     4      28      280
+                 Exercise
+
+                                                                                            1
+                 Solve using the Laplace transform:     y′  2y′′ −  +  y =  6t −  2 ; y ( ) 1 − =  3, y′ − =
+                                                                                          ( ) 7
+                 Solution
+                    Let:  ( ) = wt  ( y t −  ) 1  ↔  y ( ) wt =  (t +  ) 1
+
+
+                     w′′ −  2w′ +  w =  ( 6 t −  ) 1 −=  8
+                                             2 6t −
+                     £  {w′′ −  2w′ +  w =  } £  {6t −  } 8
+
+
+                     s W s − 2  ( ) sw ( ) 0 −  w′ ( ) 0 −  2sW s +  ( ) 2w ( ) 0 +  W ( ) s =  6  −  8
+                                                                         s 2  s
+
+                         y −  ( ) 1 =  w ( ) 0 =  3,  y′  ( ) 1 =  w′ −  ( ) 0 =  7
+                                )
+                     ( s −  2  2s +  1 W ( ) s =  68s  +  3s +  1
+                                           −
+                                           s 2
+
+                     W  ( ) s =  3s +  3  s −  2  8s + 6  =  A  +  B  +  C  +  D
+                                s 2 (s −  ) 1  2  s  s 2  s − 1  (s −  ) 1  2
+
+                                               (
+                                                                                             2
+                          3s +  3  s −  2  8s +  6 =  As s −  2  2s +  1 +  ) (  2  2s +  1 +  )  Cs 2 (s −  ) 1 +  Ds
+                                                              B s −
+                               s 3      AC =    3       C = − 1
+                                           +
+                              
+                               s   2  −  2A BC +  D =  1  D =  2
+                                            −
+                                        +
+                              
+                               s   1   A −  2B =  −  8   A =  4
+                              
+                               s   0    B =  6
+
+                     £   −  1 {W s  =    −  1       4  +  6  −  1  +  2      
+                              ( )} £
+                                              s  s 2  s − 1  (s −  ) 1   2  
+
+                     w ( ) 4 6t e=  t  +  −  t  +  2te t
 
 
 
+                     y ( ) t =  w (t +  ) 1 =  4 +  ( 6 t +  ) 1 −  e t +  1 +  ( 2 t +  ) 1 e t +  1
+
+                          =  6t +  10 2te t +  1  +  e t +  1
+                                   +
 
 
+                 Exercise
 
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          1410</code></pre>
+                                                                             t
+                 Solve using the Laplace transform:     y′ − ′  2y′ +  y =  cost −  sin  ; y ( ) 0 = 1, y′ ( ) 30 =
+                 Solution
+                     £  {y′′ −  2y′ +  } y £  {cost −  sin  } t
+                                     =</code></pre>
      	</div>
     
      </div>

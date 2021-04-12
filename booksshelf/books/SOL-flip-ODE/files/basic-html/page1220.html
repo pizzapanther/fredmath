@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1220 - ODE Solution</title>
+        <title>Page 1220 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1220 - ODE Solution</div>
+        <div id="content-top1">Page 1220 - DE Solution</div>
         <div id="content-top2">P. 1220</div>
      </div>
      <div id="content-middle">
@@ -152,133 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  t   1 2t    2 e   1 t   1 
-                                        t
-                                           2    4 
-                                      t     t    
-                            t        2e      
-                                 1 2te 
-                                    t   1    1   
-                               1 2te 
-                           t          t      
-                                        2    4   
-                           1       3 
-                         2      4    2     2
-                       
-                                    
-                                 
-                                         2 e 
-                        1 t    1     t      t
-                                                 2 te
-                                           
-                          1          3       
-                                                 2
-                                         0
-                                        
-                                                 
-                         2      4 
-                                                                1       3 
-                            1        1         1        2      4    2     2
-                            
-                                       
-                                                   
-                                                                      
-                                                                         
-                                                            
-                                                                              2 e 
-                            1 e 
-                                       1 e
-                                                    0 e
-                                                                                      2 te
-                 X    t  C 1    t  C 2    2t   C 3    2t    1 t   1     t     t
-                                                                                      
-                                                                             
-                                                                         
-                                                                           
-                            1
-                                                    1
-                                       0
-                                                                              0
-                                                                                      2
-                                                         1          3       
-                                                              2      4 
-                                                         3 
-                                1      1      1   4    2    1 
-                                                             
-                                         1 
-                                1 
-                                                               2 
-                    X    0   C 1    C 2    C 3    0   1       1
-                                                                        
-                                                               
-                                                               0
-                                                  1
-                                         0
-                                1
-                                                       3        1 
-                                                        4 
-                                    3
-                                         2 1
-                     C  C    C   4   
-                       1
-                                 3
-                            2
-                    
-                                  1 2 1
-                       C   C   
-                               2
-                          1
-                    
-                         C   C   3   1
-                          1    3   4
-                                      1                                  1                       1
-                     C  C    C    4             1  1  1              4  1  1            1    4  1
-                            2
-                       1
-                                 3
-                        C   1  C   2  0          1  1  0   1     0  1  0   2      1  0   0 
-                    
-                                                                                                         2
-                                                    1  0  1        1    7                2       7
-                        C   C   7                                         0  1             1       1
-                         1    3   4                                     4                        4
-                        C   2, C     2, C     1
-                         1         2         3     4
-                                     2   1      1      3 
-                           
-                         2 2           4        2      4    2
-                              
-                                                            
-                                                  
-                                                               
-                                t
-                           
-                                                                    2 te
-                 X    t   2 2 e    2    e 2t    1 t   1     t
-                                                                    
-                        
-                              
-                                   
-                                                               
-                                                            
-                                                  
-                                                                  
-                                                                    2
-                          2          1          1          3    
-                                       4          2      4 
-                 x    t   4e   9  e 2t    3    1 t   2te t
-                            t
-                  1           4       4  2
-                             t    2t            t
-                
-                                         
-                  x 2    t   4e   2e   1 t   2te
-                
-                            t
-                 x    t   2e   1 e 2t    3    1 t  2te t
-                   3         4       4   2
+    <pre style="white-space:pre-line"><code>1210 | S O LU TI O N
 
-                                                              1199</code></pre>
+
+              q′′ +  50q′ +  5000q =  50
+
+                 5000A =  50
+                   A  =  0.01
+
+
+              q ( ) t =  e − 25t ( C 1  cos25 7t +  C 2  sin25 7t +  )  .01
+
+
+                     q ( ) 0 =  C + 0.01= 0
+                             1
+                                    1
+                     C =  1  −  0.01=  −  100
+
+
+                                                                                                        )
+                 q′ ( ) t =  e − 25t ( −  25C 1 cos25 7t −  25C 2  sin25 7t −  25 7C 1  sin25 7t +  25 7C 2  cos25 7t
+
+                     q′ ( ) 0 =  −  25C +  25 7C =  0
+                                 1          2
+
+                     C  = −    1
+                       2    100 7
+
+
+              q ( ) t =  −  1  e − 25t (  7 cos25 7t + sin25 7t +  )  1
+                      100 7                                    100
+
+
+              i ( ) t =  q′ ( ) t
+                                                                                                     )
+                  =  −  1    e − 25t ( −  25 7 cos25 7t −  25sin 25 7t − 4,375sin 25 7t +  4,375cos25 7t
+                      100 7
+                                                                       )
+                                                                      t
+                  =  −  1    e − 25t ( 4,350 7 cos25 7t −  4,400sin25 7
+                      100 7
+
+
+          Exercise
+
+          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L = 1 h ,
+
+          R  =  2 Ω , C = 0.25 f , and  ( ) 50cos  VE t =  t  .
+          Solution
+
+              q′′ +  2q′ +  1  q =  50cost           Lq′′ +  Rq′ +  1  q =  E ( ) t
+                        0.25                                    C
+
+              q′′ +  2q′ +  4q =  0
+                                               1 i
+                             =
+                        λ +
+                 λ  2  2 +  4 0 →      λ    = −±    3
+                                        1,2
+              q =  e  t −  ( C  cos 3t +  C  sin 3t )
+               h         1            2
+
+              q =  A cost +  B sint
+               p
+                              +
+                 q′ =  −  A sint B cost
+                   p</code></pre>
      	</div>
     
      </div>

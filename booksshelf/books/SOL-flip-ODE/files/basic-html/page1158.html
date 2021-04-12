@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1158 - ODE Solution</title>
+        <title>Page 1158 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1158 - ODE Solution</div>
+        <div id="content-top1">Page 1158 - DE Solution</div>
         <div id="content-top2">P. 1158</div>
      </div>
      <div id="content-middle">
@@ -152,92 +152,44 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  3    3      0                          1
-                                x
-                                                    y
-                                       x          V     
-                                                              1
-                                y
-                                      0
-                       1    1                              1  
-                                          
-                For      4      A      I V   0
-                      2                2    2
-                      1    3                                  3
-                                x
-                                      0
-                                   
-                                        x   3y       V     
-                                                              2
-                                      0
-                                y
-                       1    3                               1  
-                            1         3
-                Y    C     e 2t    C     e 4t
-                  h    1    1      2    1  
-                           e 2t    3e 4t 
-                   t            
-                         2t      4t 
-                         e     e    
-                              e 4t  3e 4t 
-                  1    1             
-                       2e 6t        e 2t    e 2t   
-                           e   2t  3e   2t 
-                       1              
-                       2     4t     4t 
-                             e    e  
-
-                         1 2e   t   
-                            
-                 F   t          
-                          t       
-                         e    5t   7 
-                                  e  2t  3e  2t   1 2e  t   
-                                                     
-                  1     t   1                      
-                     t
-                        F
-                               2    4t     4t   t      
-                                  e      e    e   5t   7 
-                                   e  2t   2e  3t   3e  3t   15te  2t   21e  2t           e  4t
-                               1                                       
-                               2     4t     5t    5t     4t     4t                           1  4t
-                                                                                                      e
-                                                                                             8
-                                    e   2e     e      5te   7e               +    5t         4
-                                   e   3t     22 e   2t                            5        1  4t
-                                                                                                      e
-                                          15t 
-                               1                                                                16
-                               2      5t    5t     4t  
-                                   e             8 e   
-                            e 2t    3e 4t     e   3t     22 e   2t 
-                                                   15t 
-                Y     1                    e                   dt              X        t      1    dt
-                                                                                                     t
-                                                                                                       F t
-                  p   2   2t     4t          5t           4t                     p
-                          e     e                5t    8 e  
-                                           1   3t   15      15     2t 
-                             e 2t    3e 4t      3 e    2  t  11  4  e                          2t
-                       1                                                                         e
-                       2   2t     4t      1   5t    5       5     4t
-                           e     e          5 e    4 t   2   16  e       +    15t   22   1  2t
-                                                                                                        e
-                                                                                                      2
-                             e 2t    3e 4t        1   e  3t    15 t   29  e   2t       1  2t
-                                                                                                       e
-                       1                    3     2     4                             15       4
-                       2   2t     4t      1   5t    5   27     4t
-                           e     e        e        t      e   
-                                           5          4    16      
+    <pre style="white-space:pre-line"><code>1148 | S O LU TI O N
 
 
 
+                         x ( ) 0 =  − +  3  C =  1  0
+                                 8
+                        C =   3
+                          1   8
 
 
+                   x′ ( ) =  t  3 (cost +  sint ) 2e−  −  2t ( C  costC  sint +  )  e −  2t ( −  C  sintC  cost )
+                                                                                   +
+                                                        +
+                          8                       1         2                1        2
+                         x′ () 0 =  3  −  2C +  C =  − 3
+                                8     1    2
+                                         3
+                                   3
+                               3
+                        C = −− +      2 ( )
+                          2        8     8
+                             = − 21
+                                 8
+                                        (
+                                       t
+              xt    3 (sint −  cost +  ) e − 2 3 cost −  21 sint )
+               ( ) =
+                    8                    8        8
+              x () t =  3 (sint −  cost ) +  1 − 2t (3cost −  21sint )
+                                      e
+                    8               8
 
-                                                              1137</code></pre>
+             The steady-state solution is the particular solution:     x p  ( ) t =  3 (sint − cost )
+                                                                            8
+
+
+               The transient response is:   x h  ( ) t =  1 (3cos − 21sin  ) te − 2t  t
+                                                   8</code></pre>
      	</div>
     
      </div>

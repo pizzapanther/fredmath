@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1162 - ODE Solution</title>
+        <title>Page 1162 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1162 - ODE Solution</div>
+        <div id="content-top1">Page 1162 - DE Solution</div>
         <div id="content-top2">P. 1162</div>
      </div>
      <div id="content-middle">
@@ -152,90 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  e   2t  cos2t  1   e  2t  sin 2t     sin 2t e 2t 
-                                                                   
-                  1     t            2                      
-                     t
-                        F
-                                                                    
-                                 e   2t  sin 2t  1   e  2t  cos2t       2cos2t e 2t   
-                                            2           
-                                 2cos2 sin 2t   t
-                                              
-                                  2        2   
-                                 cos 2t  sin 2t 
-                                 sin 4t 
-                                    
-                                 cos4t 
-
-                        e 2t  cos2t   e 2t  sin2t     sin4t 
-                Y                                      dt                     X        t      1    dt
-                                                                                                     t
-                                                                                                       F t
-                  p      2t          2t          cos4t                              p
-                        2e  sin2t  2e  cos2t 
-                        e 2t  cos2t   e 2t sin 2t        1  cos4t 
-                                                     4    
-                         2t          2t         1
-                        2e  sin 2t  2e  cos2t       4 sin 4t   
-
-                          1 cos2 cos4t   t  1  sin 2 sin 4t 
-                                              t
-                          4          4               e 2t
-                        1 sin 2 cos4t   t  1 cos2 sin 4t   t
-                        2              2           
-
-                                                               1  cos2 cos4t   1       
-                                                                                   t
-                            cos2t           sin 2t      4      t        4 sin 2 sin 4t 
-                                                                                            2t
-                Y t              e 2t   C        e 2t                               e
-                    C
-                         1  2sin 2t      2   2cos2t          1 sin 2 cos4t   1 cos2 sin 4t   
-                                                             2     t        2     t      
-                                                                          
-                 x   t   C  cos2t C  sin 2t   1 cos2 cos4t   t  1 sin 2 sin 4t e 2t
-                                  
-                                                                    t
-                          1          2        4              4
-                
-                                                                             
-                 y   t   2C  sin 2t   2C  cos2t   1 sin 2 cos4t   1 cos2 sin 4t e 2t
-                                                       t
-                                                                       t
-                           1           2        2              2
+    <pre style="white-space:pre-line"><code>1152 | S O LU TI O N
 
 
-             Exercise
-                                                      x   t          2y e t
-                                                                    
-                                                     
-             Find the general solution of the system    
-                                                       y   t    3y  e t
-                                                               x
-                                                     
-             Solution
-                               2                     0  2
-                 A    I                        A        
-                   
-                             1 3                      1 3 
-                                 
+          Exercise
+
+          Find the general solution:   x′′ +  ω  2 x =  F  sin tω  ;  x ( ) 0 =  0, x′ ( ) 0 =  0  ( ω  ω ≠  )
+                                             0     0                                      0
+          Solution
+
+              λ  2  ω +  2  =  0 →  λ  ±  ω =  i
+                    0            1,2      0
+              x =  C  cosω  t + C  sinω  t
+               h    1      0     2     0
+
+              x  =  A cos tω+  B sin tω
+               P
+                 x′ = − Aω sin tω+  Bω cos tω
+                   P
+                 x′′′ = − Aω 2 cos tω−  Bω 2 sin t
+                                             ω
+                   P
+          ( − Aω 2 cos tω−  Bω 2 sin t + ω 2 0  ( cosA  t ω+  B sin  ) t ω =  F 0 sin t
+                                    )
+                                 ω
+                                                                     ω
+                         ( ω − ω 2 ) A =  F
+                            2
+                           0             0              F
+                        
+                                            →    A =     0    ,  B =  0
+                                                        2
+                             2
+                         ( ω − ω 2 ) B =  0          ω− ω   2
+                           0                          0
+                      F
+              x  =      0   cos t ω
+                     2
+               P   ω − ω  2
+                     0
+                                                F
+              x t =  ( ) C 1  cosω  0 t +  C 2  sinω  0 t +  2  0  2  sin t ω
+                                             ω
+                                               0  ω −
+                         x ( ) 0 =  0 →  C =  0
+                                         1
+
+                                                           F ω
+                 x′ ( ) t =  −  ω  01  sinω  0 t ω  +  0 2  cosω  0 t +  2  0  2  cos t ω
+                                            C
+                             C
+                                                        ω
+                                                          0   ω −
+                                          F ω
+                         x′ ( ) 0 =  C + ( ω  2  0 ω −  2 ) ω  =  0
+                                  2
                                         0
-                             2  3     2 
-                The eigenvalues:      1, 2
-
-                                   1,2
-                                         
-                For     1      A      I V   0
-                      1               1    1
-                               x
-                      1  2      0                            2
-                                      x   2y         V     
-                                                               1
-                                     0
-                               y
-                      1  2                                    1 
-                                                              1141</code></pre>
+                                    F ω          0
+                        C = −         0
+                          2     ( ω  2  ω −  2 ) ω  0
+                                  0
+                           F ω                  F
+              x ( ) t =     0       sinω −  t +  0    sin t ω
+                      ( ω  2  ω −  2 ) ω  0  0  ω  2  ω −  2
+                                               0
+                         0
+                          F
+                   =        0      ( ω  sin t ω −  sin ω  t )
+                                          ω
+                     ω  ( ω  2  ω −  2 )  0           0
+                       0   0</code></pre>
      	</div>
     
      </div>

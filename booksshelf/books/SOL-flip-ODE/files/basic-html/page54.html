@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 54 - ODE Solution</title>
+        <title>Page 54 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 54 - ODE Solution</div>
+        <div id="content-top1">Page 54 - DE Solution</div>
         <div id="content-top2">P. 54</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,91 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  sin y dy    1   1 cos2x dx
-                                        
-                                
-                          2
-                                    
-             cos y   1  x   1 sin2x  C
-                       2     2
-
-                                 
-            cos y   1  x   1 sin2x C
-                    2    4
+    <pre style="white-space:pre-line"><code>48 | S O LU TI O N
 
 
-        Exercise
+                   du =  2xdx
+
+              ∫  0 ∞    1 x 6   dx = ∫  0 ∞    1 u 3
+                                      3 du
+                     6x
+                     +
+                                      +
+                    3   =  A   +  Bu C
+                                     +
+                 1 u+  3  1 u+   1 uu−+  2
 
 
-        Find the general solution of the differential equation   sin3xdx   2 cos 3xdy   y  3  0
-
-        Solution
-                              3
-            sin3xdx     2 cos 3xdy
-                         y
-              cos 3x   sin3x  dx     2ydy
-                  3
-
-
-
-                                   
-             1   cos  3 3x d cos3x     2ydy
-              3
-                                2
-                        
-              1 cos  2 3x C   y
-              6
-              2
-                        2
-            y    1 sec 3x C
-                            
-
-                   6
+                                       +
+                                                 +
+                       −
+                 3 =  A Au +  Au +  2  Bu Bu +  2  C Cu
+                      u 2    A B =   0
+                                +
+                     
+                       1
+                      u   − A B C+  +  =  0
+                       0
+                                +
+                      u      AC =    3
+                     
+                          1   10                     01 0
+                     ∆= −  11 1 =             ∆  A  =  01 1 =  3
+                                     3
+                          1   01                     301
 
 
-        Exercise
-                                                                y    2    y    x    3    x
-        Find the general solution of the differential equation   e  1 e   dx   e   1 e    dy   0
+                 A  =  3  = 1
+                     3
+                 B =  −  A =  −  1
+                       −
+                 C =  3 A =  2
 
-        Solution
-                   
-                                      
-             e  1 e   y dx    e  1 e   x dy
-                    2
-                                       3
-              y
-                                  x
-               e x   dx      e y   dy
-             e   x  1  3   e   y  1  2
+              ∫  0 ∞    1 x 6   dx = ∫  0 ∞  1 u   du + ∫  0 ∞  1 uu 2   du
+                                                     −+
+                                                      u
+                                     1
+                     6x
+                                                          2
+                                     +
+                                                    −+
+                     +
+                                                                13
+                                      1
+                                                           2u −+
+                              =  ∫  0 ∞  1 u   d  (u +  ) 1 −  1 ∫  0 ∞  1 uu 2   du
+                                                    2
+                                      +
+                                                            −+
+                              =  ln (u +  ) 1   0 ∫  ∞  −  1  ∞  2u − 1 2   du −  3 ∫  ∞  1 2   du
+                                               2
+                                                                     2
+                                                       −+
+                                                  0  1 uu               0  ( u −  1 )  +  3
+                                                                                2
+                                                                                      4
 
-               e  1    x  1      e  1  2 d e  1
-                                          y 
-                                                         
-                                 
-                                                  
-                      
-                       3
-                                           1
-                                                     y
-                 x
-                        d e 
-              1   1      C    1
-              2  e  1  2    e   1
-                                 y
-                  x
-
-
-
-
-                                                           50</code></pre>
+                  (  2   )  ∞   1   ∞      1      (        2 )  3   ∞       1        (    1 )
+              =  ln x + 1   0 ∫  −  2         2  d  1 u u     −  2 ∫         2      du −  2
+                                                    −+
+                                        −+
+                                    0  1 uu                        0  ( u −  1 )  +  3
+                                                                                 4
+                                                                           2
+                                  (
+                                         )
+                                    2
+                                                        2
+                              =  ln x + 1 −  1  ln 1 uu −    3 2 3  tan     (   u −  1 )  2 3          ∞
+                                                  −+
+                                                                           2
+                                                             2
+                                            2
+                                                                                    0
+                                  (  2   )  1        2    4            2x − 1   ∞
+                                                                         2
+                              =  ln x +  1 −  2  ln 1 x +  x −  3 tan     3      0
+                                                  −</code></pre>
      	</div>
     
      </div>

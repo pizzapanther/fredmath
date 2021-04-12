@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 233 - ODE Solution</title>
+        <title>Page 233 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 233 - ODE Solution</div>
+        <div id="content-top1">Page 233 - DE Solution</div>
         <div id="content-top2">P. 233</div>
      </div>
      <div id="content-middle">
@@ -152,102 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1
-                        y   0   0      1   C   0
-                                      4   6
-                             C    5
-                                    12
-
-                                                   5 
-                           2
-                 y   t   1 t   1 t   1  e 2t    1 e 4t   12 e  2t
-                        2
-                                            6
-                                    4
-                               2
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 227
 
 
-             Exercise
-                                                                       
-                                                                                       0
-             Find the solution of the initial value problem   y  3y    2t e 4t  ;  y   0 
-             Solution
-                    3dt   3t
-                e         e
-                  e   3t  2t e 4t   d   t   2te   3t  d   t   e t  d   t               e  3t
-                           
 
-                                        2    2    3t  t
-                                       3 t   9  e   e                        +      2t      1  3t
-                                                                                                   e
-                                                                                                 3
-                                                    
-                                               t
-                                                                                                 e
-                 y   t   1       2 t   2  e  3t   e   C                    2      1  3t
-                       e  3t   3    9                                                         9
-                        2 t   2   e 4t   Ce 3t
-                          3   9
+                 Solution             Section 1.4 – Linear Equations
 
 
-                        y   0   0    2   1 C   0
-                                        9
-                             C   11
-                                   9
+                 Exercise
+
+                                                       t
+                 Find the general solution of   y′ −  y =  3e
+
+                 Solution
+                               ∫ − dt
+                         y =  e     =  e  t −
+                          h
+
+                        ∫  3e e dt = ∫  3dt = 3t
+                             t −
+                                t
 
 
-                 y   t   2 t   2   e 4t   11 e 3t
-                         3    9        9
+                      ( ) =
+                     yt      1  (3t C+  )
+                            e  t −
+                     y ( ) 3tet =  t  + Ce t
 
 
-             Exercise
+                 Exercise
 
 
-                                                                  
-                                                                                        0
-             Find the solution of the initial value problem   y   y t   3  sin3 ; t  y   0 
-             Solution
+                 Find the general solution of   y′ +  y =  sint
 
-                   dt
-                         t
-                e      e
-                     
-                               
-                  e t   sin3t   dt   t e  d   t   e t  sin3 dt              +    e      sin3t
-                       3
-                    t
-                                        3 t
-                                                         t
+                 Solution
 
-                                                                                               1
-                                                                                         t
-                                                                                             
-                                                                                                 cos3t
-                                                        
-                                     
-                      e t  sin3 dt e  1 cos3t   1 sin3t   1   e t sin3 dt        e      3 sin3t
-                                    t
+                        ∫ dt
+                       e    = e t
+                                                                                                      t
+                        ∫  e t sint dt =  e t  sint − ∫  e t  cost dt               u =  sint   dv = e dt
 
-                                                                     t
-                             t
-                                 
 
-                                                                                         t
-                                                                                               1
-                                                 9
-                                        3
-                                                           9
-                                                                                               9
-                          e t sin3 dt   1 t  sin3t  3cos3t                 +     e
-                                                                                         t
-                        1
-                     1
-                                   t
+                                                                                  du =  cost dt   v =  e t
+                                                                                                       t
+                                            −
+                                   =  e t sint e t cost −  ∫ e t sint  dt            u =  cost   dv =  e dt
+                                                                                  du =  −  sint dt  v =  e t
+                          ∫
+                                              −
+                        2 e  t  sint  dt =  e t  sint e t  cost
 
-                                           e
-                                          9
-                        9
-                                                               229</code></pre>
+                        ∫ e t sint dt =  1 t  (sint − cost )
+                                        e
+                                      2
+
+                     yt     1 ( 1 t  (sint −  cost ) C+  )
+                      ( ) =
+                                 e
+                            e t  2
+
+                                                 t −
+                          =  1 sin t −  1 cost +  Ce
+                            2        2</code></pre>
      	</div>
     
      </div>

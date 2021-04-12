@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1004 - ODE Solution</title>
+        <title>Page 1004 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1004 - ODE Solution</div>
+        <div id="content-top1">Page 1004 - DE Solution</div>
         <div id="content-top2">P. 1004</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Solve using the Laplace transform:     y   3y   e 2t ,  y (0 )     1
-             Solution
-
-                    y  L  3y    L  
-                                   2t
-                                 e
-                     3L      y   L   
-                    y  L
-                                       2t
-                                      e
-                             
-                                Y
-                 sY ( ) s   y (0) 3 ( ) s   1
-                                       s  2
-                s    3 Y s    1
-                        ( ) 1
-                                 s  2
-                s    3 Y s   1   1
-                        ( )
-                              s  2
-                Y ( ) s     1         1
-                       s   2 s    3  s  3
-
-                                 1          A     B
-                           s   2 s    3  s   2  s   3
-                                     
-                                 
-                           1   A B s  3A  2B
-                                            A    B   0   1        1
-                                                       A   5  B    5
-                                           3A   2B   1
-
-                Y ( ) s   1 1    1 1    1
-                       5 s   2  5 s  3  s  3
-
-                                 1
-                                                 1
-                 y ( ) t   1       L  6 L     
-                       5       s  2   5        s  3
-
-                       1 e 2t    6  3t
-                                e
-                       5      5
+    <pre style="white-space:pre-line"><code>994 | S O LU TI O N
 
 
-             Exercise
+          Exercise
 
-                                                                      
-             Solve using the Laplace transform:     y  4y  cos , t  y (0) 0
-             Solution
-                    y  L  4   y   L cost 
+          Find the general solution that satisfy the given initial conditions
 
-                                                                
-                             
-                 sY ( ) s   y (0) 4 ( ) s   s             y (0) 0
-                                Y
-                                        2
-                                       s  1
-                s    4 Y ( )   s  s
-                               2
-                              s  1
-                Y ( )        s
-                   s
-                       s    4 s     2  1 
-
-                                                       
-                                  s          A    Bs C
-                                                     2
-                           s    4 s     2  1   s   4  s  1
+                                                           2
+                                    x
+                          y′′ + 4y =  2;  y ( ) 0 = 1,  y′ ( ) 0 =
+          Solution
+             The characteristic equation: λ      2  4  0 →  λ +=  1,2  = ± 2 i
 
 
-                                                               983</code></pre>
+              y =  C  cos2xC+    sin 2   x
+               h    1           2
+              y  =  Ax +
+                        B
+               P
+                 y′ =  A
+                   P
+                 y′′ = 0
+                   P
+              y′′ +  4y =  2x
+
+              4Ax +  B =  2x
+
+                  4A =  2          1
+                          →    A =   ,  B =  0
+                   B =  0          2
+
+              y  =  1    x
+               P    2
+
+               ( ) C=
+                              +
+              yx      1  cos2x C  2  sin 2x +  1  x
+                                           2
+                     y ( ) 0  = C = 1
+                             1
+               ′
+                ( ) =
+              yx     −  2C 1  sin2x +  2C 2  cos2x +  1
+                                                2
+                     y′ ( ) 0 =  2C +  2  1  =  2
+                                   2
+                     C  =  3
+                       2   4
+
+              y ( ) x =  cos2x +  3 sin 2x +  1    x
+                             4         2
+
+
+
+          Exercise
+
+          Find the solution of the given initial value problem
+                                                                0
+                         y′  4y′ −  + ′  4y =  e x  ;  y ( ) 0 =  2,  y′ ( ) 0 =
+          Solution
+
+                                                 λ −
+             The characteristic equation: λ      2  4 +=  0 →    λ  1,2  =  2
+                                                    4
+                             )
+              y =  ( C + C x e 2x
+               h     1     2</code></pre>
      	</div>
     
      </div>

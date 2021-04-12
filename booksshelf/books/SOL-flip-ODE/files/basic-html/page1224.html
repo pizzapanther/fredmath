@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1224 - ODE Solution</title>
+        <title>Page 1224 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1224 - ODE Solution</div>
+        <div id="content-top1">Page 1224 - DE Solution</div>
         <div id="content-top2">P. 1224</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                For     i      A      I V   0
-                      1               1    1
-                      i   1      0                         1   
-                                x
-                                                   y
-                                      ix            V     
-                                                              1
-                                      0
-                                y
-                       1  i                                i 
-                 1    it  1  
-                                  
-                  e     cost i sin   t
-                  i
-                          i
-                        
-                               
-                           cost i sint 
-                                     
-                                
-                             sint i cost 
-                           cost    sint 
-                                 i   
-                           sint    cost 
-                           cost        sint 
-                 X     C         C     
-                   h    1   sint   2   cost 
-                 x 1     a   2  0      a   2  0    3
-                                                           
-                 x 2       a          a  3     X  p      
-                                                          0
-                           3 0
-                       1
-                                        1
-                             cost      sint   
-                                                  3
-                                               
-                 X    t  C        C                  x     1,  x         2
-                         1   sint   2   cost             1           2
-                                                  0
-                                                  3
-                                 1       0        1
-                    X      C       C             
-                                               
-                        
-                              1   0    2    1      
-                                                        2
-                                                  0
-                            3 1
-                      C          C   2
-                       1              1
-                    
-                       C   2     C    2
-                    
-                                       2
-                          2
-                  x         cost     sint   
-                                                  3
-                                               
-                  1      t   2     2     
-                  x          sint     cost     0
-                  2                        
-                 x    t   2cost   2sint  3
-                
-                  1
-                  x 2    t   2sint   2cost
-                
-                 x   t   x    t   2cost  2sint  3
-                        1
+    <pre style="white-space:pre-line"><code>1214 | S O LU TI O N
 
 
-             Exercise
-                                                          x    x   y   x   3   5,  x   3   2
-                                                                          
-             Find the general solution of the system                     
-                                                         y   x   y     y   3  1,  y   3   1
-             Solution
-                             
-                 A   2 I   1  2       1
-                   
-                                       
-                              1       1  2
-                             4
-                              0
+
+              Lq′′ +  1  q =  E  sin tω  ; q ( ) 0 =  q  i ( ) 0 =  i    Lq′′ +  Rq′ +  1  q =  E ( ) t
+                    C       0                   0          0                  C
+                 λ  2  1  =  0 →    λ +  =  ±  1     i
+                       LC            1,2      LC
 
 
-                                                              1203</code></pre>
+                  t
+              q  ( ) C=  cos  1  t + C  sin  1  t
+               h       1      LC      2      LC
+
+              q    A cos t Bω =  sin tω +
+               p
+                 q′    −  ω=  A sin tω  ω +  B cos tω
+                   p
+
+                 q′′   −  ω=  2 A cos t ω  ω −  2 B sin t ω
+                   p
+
+              Lq′′ +  1  q =  E  sin tω
+                    C       0
+                  cos tω   −  Lω 2 A +  1  A =  0       A =  0
+                                    C          →          EC
+                 
+                                                             0
+                  sin t ω  ( − Lω +  2  1 ) B =  E  B =         2
+                                                          −
+                                   C        0           1 LCω
+                         EC
+              q  ( ) t =  0     sin t
+                                   ω
+               p      1 LCω   2
+                        −
+                                                    EC
+                             1
+              q ( ) t =  C 1  cos  LC  t +  C 2  sin  1  t +  1 LCω−  0  2  sin tω
+                                           LC
+                 q ( ) 0 = C =  q
+                               0
+                          1
+                                                                ECω
+              q′ ( ) t =  −  1  C  sin  1  t +  1  C  cos  1  t +  0    cos tω
+                        LC   1      LC      LC   2      LC     1 LCω   2
+                                                                −
+                                     ECω
+                 q′ ( ) 0 =  1  C +    0      =  i
+                           LC   2  1 LCω    2   0
+                                     −
+
+                                 E Cω    LC
+                 C =     LC  i −   0
+                   2         0    1 LCω−  2
+
+
+                                                ECω 
+                                                                        0
+              q ( ) t =  q 0  cos  1  t +  LC i −        0  1 LCω  −  0  2  sin  1  t +   1 LCω   − EC  2  sin t ω
+                             LC
+                                                              LC
+                                        
+                       q                     EC  ω                  EC  ω 
+              i ( ) t = −  0  sin  1  t +  i −   0     cos  1  t +  0      cos t  ω
+                       LC       LC        0  1 LC ω  2   LC     1 LC  ω   2
+                                             −
+                                                                    −</code></pre>
      	</div>
     
      </div>

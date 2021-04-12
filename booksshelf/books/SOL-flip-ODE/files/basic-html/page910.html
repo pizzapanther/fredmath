@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 910 - ODE Solution</title>
+        <title>Page 910 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 910 - ODE Solution</div>
+        <div id="content-top1">Page 910 - DE Solution</div>
         <div id="content-top2">P. 910</div>
      </div>
      <div id="content-middle">
@@ -152,61 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                         t
-                                 
-             Given x       x  x (0) 1
-              a)  Use a computer and Runge-Kutta method to calculate three separate approximate solutions on the
-                               
-                  interval 0, 1 , one with step size h   0.2, a second with step size  h   0.1, a second with step size
-                  h   0.05 .
-              b)  Use the appropriate analytic to compute the exact solution
-              c)  Plot the exact solution and approximate solutions as discrete points.
-
-             Solution
-
-                a)
-                        Runge-Kutta 2th Order
-
-                       t           Approx.           Exact            Difference
-                     --------------------------------------------------------
-                     0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                     0.20   |   1.01961161   |   1.01980390   |   0.00019229
-                     0.40   |   1.07636229   |   1.07703296   |   0.00067067
-                     0.60   |   1.16495094   |   1.16619038   |   0.00123944
-                     0.80   |   1.27887002   |   1.28062485   |   0.00175483
-                     1.00   |   1.41205020   |   1.41421356   |   0.00216336
+    <pre style="white-space:pre-line"><code>900 | S O LU TI O N
 
 
-                        Runge-Kutta 4th Order
+                       A
+                    −=   1
+                    −=   0
+                      B
+                   
+                  
+                      −
+                   2AC =   0
+                    2D = 1
+                  
+                 A =  −  1,  B =  0,  C =  −  2,  D =  1
+                                              2
 
-                       t           Approx.           Exact            Difference
-                     --------------------------------------------------------
-                     0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                     0.20   |   1.01980437   |   1.01980390   |   -0.00000046
-                     0.40   |   1.07703431   |   1.07703296   |   -0.00000135
-                     0.60   |   1.16619234   |   1.16619038   |   -0.00000196
-                     0.80   |   1.28062701   |   1.28062485   |   -0.00000216
-                     1.00   |   1.41421570   |   1.41421356   |   -0.00000214
-
-                        Runge-Kutta 2th Order
-                       t           Approx.           Exact            Difference
-                     --------------------------------------------------------
-                     0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                     0.10   |   1.00497519   |   1.00498756   |   0.00001238
-                     0.20   |   1.01975618   |   1.01980390   |   0.00004772
-                     0.30   |   1.04392938   |   1.04403065   |   0.00010127
-                     0.40   |   1.07686631   |   1.07703296   |   0.00016665
-                     0.50   |   1.11779652   |   1.11803399   |   0.00023747
-                     0.60   |   1.16588199   |   1.16619038   |   0.00030839
-                     0.70   |   1.22027989   |   1.22065556   |   0.00037567
-                     0.80   |   1.28018776   |   1.28062485   |   0.00043708
-                     0.90   |   1.34487075   |   1.34536240   |   0.00049165
-                     1.00   |   1.41367433   |   1.41421356   |   0.00053923
+                      2
+              y  = − x − 2 +  1  xe x
+               p             2
+                                       )
+              y ( ) Cx =  1 e − x  +  ( C +  2  1  x e x  x −−  2  2
+                                    2
 
 
-                                                               897</code></pre>
+          Exercise
+
+
+          Find the general solution for the given DE:   y′′ +  y′ =  10x +  4  2
+          Solution
+
+
+             The characteristic equation: λ      2  λ +  =  0
+                  λ    =  0, − 1
+                   1,2
+
+
+              y =  C +  C e − x
+               h    1     2
+
+              y  =  Ax +  5  Bx +  4  Cx +  3  Dx +  2  Ex
+               P
+                 y′ =  5Ax +  4  4Bx +  3  3Cx +  2  2Dx +  E
+                   P
+
+                 y′′ =  20Ax +  3  12Bx +  2  6Cx +  2D
+                   P
+
+              y′′ +  y′ =  10x +  4  2
+
+              20Ax +  3  12Bx +  2  6Cx +  2D +  5Ax +  4  4Bx +  3  3Cx +  2  2Dx +  E =  10x +  4  2
+
+                    x 4    5A = 10
+
+                    x 3  20A +  4B =  0
+                    x 2  12B +  3C =  0
+
+                    x 1  6C +  2D =  0
+
+                    x 0   1D +  E =  2
+
+                    A =  2,  B =  −  10,  C =  40,  D =  −  120,  E =  242
+
+
+                                                   x
+              y  =  2x −  5  10x +  4  10x −  3  120x +  2  242
+               P</code></pre>
      	</div>
     
      </div>

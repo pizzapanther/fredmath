@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 788 - ODE Solution</title>
+        <title>Page 788 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 788 - ODE Solution</div>
+        <div id="content-top1">Page 788 - DE Solution</div>
         <div id="content-top2">P. 788</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3
-               x 
-            y   C e  2x    C xe 2x    1  x   1  x 2  e 2x
-                     1       2         6     2
-
-
-        Exercise
-
-        Find the general solution to the given differential equation.   y  4y  5y  10
-
-        Solution
-                                           
-              2
-               4                     4 2i     
-                      5 0  
-                                                    2 i
-                                   1,2     2
-                                         
-            y   e  2x  C  cos x C  sin x
-                                
-              h          1         2
-                           2x                        2x
-                        e    cos x                 e    sin x
-            W 
-                  2e  2x  cos x e  2x sin x  2e  2x sin x e  2x  cos x
-                              
-                                                        
-                                            2
-                                                                           2
-                                                                 
-                                  
-                            x
-                 2e  4x  cos sin x e  4x cos x  2e  4x cos sin x e  4x sin x
-                                                           x
-                 e  4x    0
-                                                                        2
-                v    x      10e  2x  sin x dx        v    x       y g ( ) x  dx
-                 1             e  4x                       1           W
-                              2x                                                                     sin x
-                        
-                      
-                         10 e
-                                  sin   x dx
-                                                                                        +    e 2x     cos x
-                               2x               2x         2x     2x                        2x     sin x
-                               e  sin  dx   cos xe    2sin xe    4 e  sin  dx            2e 2x
-                                                                         x
-                                     x
-                               2x         1                2x                          +    4e
-                               e  sin   x dx   5  cos x   2sin   x e
-                                              
-                              1
-                                
-                         10
-                             cos x   2sin   x e 2x
-                              5
-                        2cos x   4sin   x e 2x
-                                                                                                    cos x
-
-                                                                      1
-                v    x   10e  2x cos x dx             v    x    y g   x  dx
-                 2            e  4x                        2          W              +     e 2x    sin x
-                            2x                                                           2e 2x     cos x
-                      
-                        10 e    cos xdx                                               +    4e 2x
-
-                                2x               2x         2x      2x
-                                e   cos   x dx   sin xe    2cos xe    4 e  cos   x dx
-
-                               2x          1                2x
-                               e   cos  dx   x  5 sin x   2cos   x e
-
-
-                          sin x   10  1  2cos   x e 2x
-                            5
+    <pre style="white-space:pre-line"><code>778 | S O LU TI O N
 
 
 
-                                                          776</code></pre>
+             The characteristic equation: λ      2  4 λ −  4 = (λ +  −  ) 2  2  =  0
+
+              λ   = 2
+               1,2
+               ( ) (
+                               )
+              y x =   C +  C x e 2x
+                       1
+                            2
+                 y ( ) 1 = 1
+
+                 ( C +  1  C 2 ) e =  2  1
+
+                 C +  C =   e − 2
+                   1    2
+                                       )
+              y x =  ′ ( ) ( C +  2C +  2C x e 2x
+                        2     1      2
+
+                 y′ ( ) 1 = 1
+
+                 ( 2C +  1  3C 2 ) e =  2  1
+
+
+                 2C +  3C =   e − 2
+                    1     2
+
+                       C +  C =  e − 2
+                        1    2
+                     
+                      2C +  1  3C =  2  e − 2
+                     
+                               11              e − 2  1
+                          ∆=        = 1 ∆=            =  2e − 2
+                               23         1    e − 2  3
+
+
+                        C =   2e −  2  C = − e −  2
+                                       2
+                          1
+                                  )
+              y ( ) x = ( 2e −  2  − e −  2 x e −  x
+
+                                  x
+                         x
+                   =  2e −− 2  −  xe −− 2
+
+
+          Exercise
+
+          Find the solution of the given initial value problem   y′′ +  4y′ +  4y =  0,  y ( ) 0 =  , 1  y′ ( ) 0 =
+                                                                                                   3
+          Solution
+
+
+             The characteristic equation: λ      2  4 λ +  4 = (λ +  +  ) 2  2  =  0
+
+              λ   = − 2
+               1,2
+               ( ) (
+                               )
+              y x =   C +  C x e − 2x
+                            2
+                       1</code></pre>
      	</div>
     
      </div>

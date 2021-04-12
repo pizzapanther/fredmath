@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 992 - ODE Solution</title>
+        <title>Page 992 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 992 - ODE Solution</div>
+        <div id="content-top1">Page 992 - DE Solution</div>
         <div id="content-top2">P. 992</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1   0   1             2   0  1               1   2    1
-                       0   1   2  8      10  1   2   24      0  10   2   64
-                                          A                      B
-                          1 1   5             0   1  5                 1  0  5
+    <pre style="white-space:pre-line"><code>982 | S O LU TI O N
 
-                                         1
-                    A  3, B   8, C  
 
-                                                
+              y  ( ) sint t =
+               p
+
+                               )
+              y ( ) t =  ( C +  1  C te  t −  +  sint
+                            2
+                     y ( ) 0  = C = 3
+                             1
+                  (               )  t −
+              y′ =  C 2  −  C −  1  C te  +  cost
+                               2
+                     y′ ( ) 0 =  C −  2  C +  1  1 =  0
+
+                     C   =  2
+                       2
+
+               ( ) (3 2t e
+              y t =    +   )  t −  +  sint
+
+
+          Exercise
+
+          Find the general solution that satisfy the given initial conditions
+                                                      y′
+                                                 =
+
+
+                         y′′  2y′ −  +  y =  t 3 ;     y (0) 1 ,   (0) =  0
+          Solution
+             The homogeneous eq.: y′′ −  2y′ +  y =  0
+
                                      2
-                 f    t  L        2s  10s    
-                                 2
-                               s  2s   5  s    1 
-                                                
-                                  3 s    1  4   2        
-                                                           1
-                       L          2           2      s   
-                                s    1   4  s    1   4  1   
+             The characteristic eq.: λ − 2λ+ 1 0   ⇒     λ 1,2  = 1
+                                               =
 
+                             )
+              y =  ( C + C t e t
+               h     1     2
+              y  =  at +  3  bt +  2  ct +  d
+               p
+                 y′ =  3at +  2  2bt c+
+                   p
+                 y′′ =  6at +  2b
+                   p
 
-
-                                          L         s   a          e  at cos t    L                  e  at  sin t 
-                                                                                      
-                                                   s    a  2      2        s a    2      2  
-                          t
-                                     t
-                                    e
-                                            
-                         e
-                        3 cos2t   4 sin 2t e  t 
-
-
-             Exercise
-             Find the inverse Laplace Transform of    ( ) s   s   2  26s   47
-                                                    F
-                                                           s  1 s   2 s    5
-             Solution
-
-                    s   2  26s   47    A    B    C
-                 s  1 s   2 s    5  s  1  s   2  s  5
-
-
-                                      2
-                                                                          2
-                     2
-                                                         2
-                                                    
-                                                                     
-                    s   26s  47   As  7As  10A Bs     4Bs  5B Cs     Cs  2C
-                     s 2     A B C     1
-                                    
-                                
-                    
-                    
-                                   
-                      s   7A  4B C     26
-                      0
-                     s    10A   5B   2C   47
-                         1   1    1                1    1    1               1    1    1
-                       7   4    1   54       26  4    1   216       7   26  1   54
-                                              A                         B
-                        10    5   2              47   5   2             10   47   2
-                    A   4, B   1, C   6
-
-                 f    t  L        s   2  26s   47    
-                               s  1 s  2 s    5  
-
-                               
-                                              6
-                                       1
-                       L     s  4 1   s   2    s   5 
-                           t
-                        4e  e   2t   6e   5t
-
-
-
-                                                               971</code></pre>
+                                                        +
+                 y′′ −  2y′ +  y =  6at +  2b −  6at −  2  4bt −  2c at +  3  bt +  2  ct +  d
+                                                                        +
+                             =  at +  3  (b −  6a )t +  2  (6a −  4b +  ) c t +  2b −  2c d
+                              a = 1
+                              6a =  0    ⇒     b =  6
+                           b − 
+                                 +=
+                         6a −  4bc    0 ⇒     c = 18
+                         2b −  2cd =  0 ⇒     d =  24
+                                 +
+                        
+             The particular solution is:  y  =  t +  3  6t +  2  18t +  24
+                                         p
+             The general solution:  y =  ( C +  1  C t e + )  t  t +  3  6t +  2  18t +  24
+                                              2</code></pre>
      	</div>
     
      </div>

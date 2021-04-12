@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 40 - ODE Solution</title>
+        <title>Page 40 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 40 - ODE Solution</div>
+        <div id="content-top1">Page 40 - DE Solution</div>
         <div id="content-top2">P. 40</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>            t            t 
-            y   y   2t          2t  
-                                          2 Ce
-                         2 Ce
-                          t    2t    t 
-                                   2 Ce
-                    2 Ce
-
-                    2t
-                         
+    <pre style="white-space:pre-line"><code>34 | S O LU TI O N
 
 
-        Exercise
+          Exercise
 
-        Use the given general solution to find a solution of the differential equation having the given initial
-        condition.   y   4y   cos ,     ( ) t   4  cost   1  sint Ce  4t ,       (0)  
-                                                          
-                                    y
-                                t
-                                                                      y
-                                                                              1
-                                          17       17
-        Solution
-                                      
-            y ( ) 0   4  cos( ) 0   1  sin(0) Ce  4( ) 0
-                   17         17
-             1  4   C
-                 17
-            C   1  4
-                     17
-                  21
-                 17
-
-            y   t   4  cost   1  sint   21  4t
-                                        e
-                   17       17       17
+          Evaluate the integral    ∫ e − 3x  sin5x dx
 
 
-        Exercise
+          Solution
 
 
-        Use the given general solution to find a solution of the differential equation having the given initial
-                                                                    1
-        condition.  ty   t    1 y   2te  t   ,  y ( ) t   e  t    t   C  ,  y   1 
-                                                        t
-                                                                    e
-        Solution
+                               ∫ sin 5x
 
-            y   1   1    e  1
-                   e
-                y   1   e  1  1  C 
-                              1
-                   1    1
-                               
-                           
-                e     e  1 C
-                 
-                    
-                1 1 C
-            Hence, C = 0
-            The solution is:    t   te  t 
-                            y
-            This function is defined and differentiable on the whole real line. Hence, the interval of existence is the
-            whole real line.
+                 +     e − 3x    − 1 cos5x
+                                  5
+                                   1
+                 −  −  3e − 3x    −  25 sin5x
+                                   1
+                 +    9e − 3x    −  25 ∫  sin5x
+
+
+              ∫  e −  3x sin5x dx =  −  1 −  5 e  3x  cos5x −  25 e −  3x  sin5x −  25 ∫  e −  3x  sin5x dx
+                                                 3
+                                                                 9
+
+
+              ( 1+  25 ) ∫ e −  3x  sin5x dx =  −  25 (5cos5x +  3sin5x )e −  3x
+                  9
+                                          1
+
+
+
+              34 ∫ e −  3x sin5x dx =  −  1  (5cos5x +  3sin5x )e −  3x
+              25                     25
+
+
+              ∫ e − 3x  sin5x dx =  −  34 (5cos5x +  3sin5x )e − 3x  +  C
+                                   1
 
 
 
 
+          Exercise
+                                   ∫   (ln x ) dx
+          Evaluate the integrals      x      2
 
 
+          Solution
 
-                                                           36</code></pre>
+                 u =  ln x →   x =  e u                                              ∫ e 2u du
+                                                   u
+                 du =  1  dx ⇒    xdu =     dx →  dx =  e du
+                       x                                                +     u 2     1 e 2u
+                                                                                      2
+              ∫  x (ln x ) dx = ∫  e u e du                             −     2u      1 e 2u
+                       2
+                                    2 u
+                                  u
+                                                                                      4
+                               ∫ u e                                    −     0
+                                                                                      8
+                                  22u   du                              +     2       1 e 2u
+                             =
+                                  2 2u
+                             =  1  u e  −  1  ue 2u  +  1 e 2u  +  C
+                               2         2         4</code></pre>
      	</div>
     
      </div>

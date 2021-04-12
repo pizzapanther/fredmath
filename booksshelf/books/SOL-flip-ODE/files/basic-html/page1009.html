@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1009 - ODE Solution</title>
+        <title>Page 1009 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1009 - ODE Solution</div>
+        <div id="content-top1">Page 1009 - DE Solution</div>
         <div id="content-top2">P. 1009</div>
      </div>
      <div id="content-middle">
@@ -152,100 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3
-                                                 
-                                 
-                                                   2
-                              
-                       2   B C s     A B C s      A
-                                          
-                                              
-                                   
-                                B C    0
-                              
-                                 
-                                     
-                               A B C     0       A   2 B  1 C   1
-                                    A   2
-                              
-                            1         D     E
-                       (s  1)(s  1)  s  1  s  1
-
-                               D    E   0
-                                              D   1  E   1
-                                  
-                               D E    1          2        2
-            Y ( ) s    2    1    1    1 1    1 1
-                     s 2  s  1  s  1  2 s  1  2 s  1
-                    2 2    1 1    1 1
-                         2 s 
-                                  2 s 
-                    s         1        1
-                                 1
-                                           1
-                                                           1
-                                                 1
-            y ( ) t  2L        1      L       L     
-                            2
-                          s    2        s  1  2        s  1
-                          e 
-                                e
-              ( y  ) t    2t   1 t  1  t
-                        2     2
+    <pre style="white-space:pre-line"><code>2. 4 − I nh om oge ne ous   E qns . :  U nd e r de r t m i n e d  C oe f .    | 999
 
 
-        Exercise
-                                                   
-                                                                               0
-        Solve using the Laplace transform:     y   y t   2 ;  y   2   3,  y   2 
-        Solution
+                         y  =  at b
+                                 +
+                          p
+                            y′ =  a
+                              p
 
-            Let:    t    y t    2    y   t   w t    2
-                 w
-            L  y    y  L t    2
+                            y′′ = 0
+                              p
+                     y′′ +  4y′ +  4y =  4a +  4at +  4b =  4at +  4a +  4b
 
-               w  L  w    L   t
+                              4a =  −  1  ⇒   a =  −  1
+                                                   4
+                            
+                             4a +  4b =  4 ⇒   b =  1
+                                                   4
 
-                                                                          
-             2
-                                                                      
-                                                                                                       0
-            s W  ( ) s   sw   0  w   0  W ( ) s   1     y   2   w 2 2   w   0  3,  y    2   w    0 
-                                             s
-             s  1 W s   1   3s
-                   
-              2
-                      ( )
-                           s
-                      
-                                     B
-                                            C
-            W   s   1 3s 2    A    s     s 
-                     
-                       2
-                    s s   1   s      1      1
-                                         2
-                         2
-                                                    2
-                               2
-                                                
-                                     
-                     
-                   1 3s     As   A Bs     Bs Cs     Cs
-                        s 2  A C   3 C   2
-                               
-                       
-                       
-                               
-                        s 1  B C   0 B   2
-                         0
-                        s    A    1
-                       
-            L     W s             s   2 1    s   2 1 
-                        L
-                                    1
-                                    s
-                                                          988</code></pre>
+                    The particular solution is:  y  =  −  1 t +  1
+                                                p     4   4
+                                                            )
+                    The general solution is:  ( ) ( C +  C t e − 2t  −  1 t +  1
+                                            y t =
+                                                     1    2         4    4
+                                                 )
+                                y ( ) ( C +  1  C 2 0 e − 2 ( ) 0  −  1 0 +  1  =  − 1
+                                  0 =
+                                                           4
+                                                                4
+                                 1 C +
+                                −=        1
+                                      1   4
+                                C = −  5
+                                 1     4
+                                                 )
+                     y′ ( ) t =  C e −  2t  −  2 C +  (  1  C t e −  2t  −  1
+                                                         4
+                              2
+                                               2
+                               y′ ( ) 0 =  C −  2C −  1  =  0
+                                        2     1   4
+                               C =  −  10  +  1
+                                2      4   4
+
+                               C = −  9
+                                2     4
+                                                            )
+                    The general solution is:  ( ) ( C +  C t e − 2t  −  1 t +  1
+                                            y t =
+                                                     1    2         4    4
+
+
+                 Exercise
+
+                 Find the general solution that satisfy the given initial conditions
+
+                                y′′  4y′ −  − 5y =  4e − 2t ;    (0) = 0,     (0) = − 1
+                                                                  y′
+                                                       y
+                 Solution
+                                             2
+                                                       =
+                    The characteristic eq.: λ −  4λ− 5 0
+
+                        λ    =  5, 1
+                                  −
+                          1,2
+                     y =  Ce  5t  + C e  t −
+                      h     1       2</code></pre>
      	</div>
     
      </div>

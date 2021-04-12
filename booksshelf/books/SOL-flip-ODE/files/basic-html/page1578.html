@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1578 - ODE Solution</title>
+        <title>Page 1578 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1578 - ODE Solution</div>
+        <div id="content-top1">Page 1578 - DE Solution</div>
         <div id="content-top2">P. 1578</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4
-                                                       6
-                                  2
-            y  ( ) x   a x 0     1  1  x   1  x   1  x     
-              1       0      10      440      44,880        
-                   r   1     b         1      b         1     b
-                       3        n      n   1     n  2  n 3n    1  n  2
-                                              3n
-                                           3
-                n   2   b    1  b                      n   3   b    1  b   0
-                           2    14  0                                 3    30  1
-
-                n   4   b    1  b    1  b             n   5   b   0
-                           4    72  2   72 8  0                       5
-                n   6   b    1  b       1   b        n   7   b   0
-                           6    114  4     82,992  0                  7
+    <pre style="white-space:pre-line"><code>1564 | S O LU TI O N
 
 
-                                             4
-                                                         6
-                                    2
-            y  ( ) x  b x 1/3    1  1  x   1  x   1  x     
-              2       0        14     728      82,992         
-                                                                           2
-                                                   6
-                                                                                                 6
-                              2
-                                                                                    4
-                                       4
-                      
-                                                                                                      
-                                                         
-            y ( ) x   a   1  1  x   1  x   1  x      b  x 1/3  1  1  x   1  x   1  x    
-                    0    10      440      44,880            0       14      728      82, 92        
-                                                                                           9
+          Exercise
+
+          Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and I
+          represent the current across the inductor.
+
+                 Show that:    V′   −  V  −  1        I′ =  =  V
+                                      RC    C             L
+          Solution
+
+             Using Kirchhoff’s current law:  I +  I +  I =  0
+                                             1    2   3
+
+             In the RC loop:     V −  V =  0
+                                   1   2
+             In the LC loop:     V −  V =  0
+                                   2    3
+             V =   RI  ,   CV′    I  ,  LI′ =  = V
+               2     2        1   1       3    3
+
+             Since the circuit elements are in parallel, therefore V = V = V = V
+                                                                1    2    3
+              LI′ = V
+                3    1
+                  V
+              I′ =  1
+               3   L
 
 
-        Exercise
-                                                2
-        Find the Frobenius series solutions of  3x y   xy   y   0
-        Solution
-            1 3x y  1  xy   1  y  0
-                2
-            3         3      3
-             2
-            x y   1 xy   1  y  0
-                   3      3
-            y   1  y   1  y   0
-                 3x     3x 2
-
-            That implies to    x     1   and    x   1  .
-                                            q
-                            p
-                                    3x              3x 2
-              p   lim xp   x    lim x  1     1
-              0   x   0         x   0  3x   3
-                       2
-            q    lim x q   x   lim x 2 1     1
-             0   x   0         x   0  3x 2  3
-
-                                                                                    1
-                                                         2
-            The indicial equation is:   r r    1   1 r   1    r   4  r   1    0    r  1,
-                                               3    3        3    3                 3
-            The two possible Frobenius series solutions are then of the forms
-                           
-                                                         
-                y    x   x   a x n  and  y    x   x 1/3   b x n
-                 1             n             2                n
-                          n   0                        n   0
-
-
-
-
-
-                                                          1548</code></pre>
+              CV′ =  I
+                1    1
+                  =  I −  −  I         V =  RI
+                       2   3            2     2
+                      V
+                  =  −  2  −  I        V =  V
+                      R     3           2    1
+                      V
+                  =  −  1  −  I
+                      R     3
+                    V     I
+             V′ =  −  1  −  3
+               1    CR    C
+                                          I
+             Since V =  V     and    I =
+                     1                3
+                I′ = V
+                   L
+              
+               V′ = −  V  −  I
+                    CR    C</code></pre>
      	</div>
     
      </div>

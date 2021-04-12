@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 894 - ODE Solution</title>
+        <title>Page 894 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 894 - ODE Solution</div>
+        <div id="content-top1">Page 894 - DE Solution</div>
         <div id="content-top2">P. 894</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution             Section 2.7  Euler's & Runge-Kutta Methods
+    <pre style="white-space:pre-line"><code>884 | S O LU TI O N
 
 
 
-             Exercise
+              y () t =  Ae − 3t
 
-             Calculate the first five iterations of Euler's method with step  h   0.1 of
+              y′ = − 3Ae − 3t
 
-                   y   ty  y (0) 1
-                               
-             Solution
+              y′′ =  9Ae − 3t
 
-                              t            y
-                             0.1      1.00000000
-                             0.2      1.01000000
-                             0.3      1.03020000
-                             0.4      1.06110600
-                             0.5      1.10355024
-                 dy   ty
-                 dt
-                   y      tdt
-                   dy
+              y′′ +  3y′ +  2y =  4e − 3t
+                        (
+              9Ae −  3t  +  33Ae −  3t ) +  2Ae −  3t  =  4e −  3t
+                         −
 
+              2Ae −  3t  =  4e −  3t
+              2A =
+                   4
+              A = 2
 
-                ln y   1 t   2  C
-                       2
-                            
-                 y ( ) t   e t 2 /2 C
-                                   C
-                            y (0)   e  1       C  0
-                 y ( ) t   e t 2 /2
+                                      ()
+             The particular solution:  y t =  2e − 3t
 
 
+          Exercise
 
-             Exercise
+          Find the particular solution for  y′′ +  6y′ +  8y =  −  3e  t −
 
-             Calculate the first five iterations of Euler's method with step  h   0.1 of
+          Solution
 
-                  z    2z   z (0) 1
-                                   
-                       x
-             Solution
+                t
+              y () =  Ae  t −
+                           t −
+                 y′ = − Ae
 
-                              x            z
-                             0.0      1.00000000
-                             0.1      0.80000000
-                             0.2      0. 65000000
-                             0.3      0.54000000
-                             0.4      0.46200000
-                             0.5      0.40960000
+                 y′′ =  Ae  t −
+
+              y′′ +  6y′ +  8y =  −  3e  t −
 
 
+              Ae  t −  −  6Ae  t −  +  8Ae  t −  =  −  3e  t −
 
+              A −  6A +  8A =  −  3
+
+              3A = −
+                    3
+              A = − 1
+
+
+                                                 y
+             Therefore, the particular solution is: () t = − e  t −
 
 
 
+          Exercise
 
+          Find the particular solution for  y′′ +  2y′ +  5y =  12e  t −
 
-                                                               881</code></pre>
+          Solution
+
+              y () =  Ae  t −
+                t
+                           t −
+                 y′ = − Ae</code></pre>
      	</div>
     
      </div>

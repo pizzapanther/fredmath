@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1319 - ODE Solution</title>
+        <title>Page 1319 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1319 - ODE Solution</div>
+        <div id="content-top1">Page 1319 - DE Solution</div>
         <div id="content-top2">P. 1319</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1305
 
-        Find a system of differential equations and determine the charge on the capacitor and the currents in the
-        given network with initial values:    0I    I    0   I    0 
-                                                                  0
-                                          1        2       3
-         R   20  , L  1 H , C   1   F , V  5  V , q   0   2 C
-                                   160
-        Solution
 
-              RI   LI   
-               1     2   V      1
-                   1
-                        
-              RI   1  q V     2
-                   C
-                  1  q  0    3
-               LI 
-                2   C
-              20I   I    5
-                 1    2
-            
-             20I   1  160q   5
-            
-              I   2   160q   0
-            
-                                  
-            I   I   I    I   q
-             1    2    3    3
-            I   I   q
-             1    2
+                 Exercise
 
-             20I   20q  160q  5      I    1   q  8q
-            
-                 2
-               160q I                  2    4
-                     2   0
-                    1         
-            160q   4   q  8q 
-                                  0
-                 
-            160q q  8q 
-                             0
-            q  8q  160q 
-                             0
-                 2
-                              
-                   8  160 0             
-                                               4 12i
-                                         1,2
-                                              
-            q   t   e  4t  C 1 cos12t   C 2  sin12t
-                   q   0   2   C   2
-                                    1
-                                                                              
-                q   e  4t   4C 1 cos12t  4C 2  sin12t  12C 1 sin12t  12C 2  cos12t
 
-                   q   0   I    0   0    4C  12C  0    C   2
+                                                                                       ( )
+                 Use Definition of Laplace transform to find the Laplace transform of   ft =  cos2t
+                 Solution
+                            ∫ ∞        )  − st
+                     F ( ) =  0  (cos2t e   dt
+                        s
 
-                            3                  1      2            2   3
-                                           
-                                          t
-            q   t   e  4t  2cos12t   2 sin12
-                                   3
-                                                                  
-            I    t   e  4t   8cos12t   8 sin12t   24sin12t  8cos12t     I   q
-             3                       3                                            3
-                        e
-                      80  4t  sin12t
-                      3
-                                                    
-            I    t   1   q  8q         I   q
-             2      4                          3
-                                                          1298</code></pre>
+
+
+                                                  t
+                                             ∫ cos 2  dt
+                               +    e − st     1 sin 2t
+                                             2
+                                              1
+                               −  −  se − st     − 4 cos2t
+
+                                    2 −
+                               +   se   st
+
+                     ∫  cos2t e −  st dt =  1 −  2 e  st  sin 2t −  4 e  st  cos2t −  s 4 2 ∫  e −  st  cos2t dt
+                                                    s −
+
+
+
+                        ( 4 s+  2 ) ∫ cos2 e −  st dt =  ( 2sin 2ts cos2t )e −  st
+                                       t
+                                                         −
+
+                        ∫  cos2  e −  st dt =  2sin 2t −  s 4 cos2t −  e  st
+                               t
+                                                2
+                                               s +
+
+
+                       () =
+                     Fs     2sin 2t −  s cos2t − st    ∞
+                                            e
+                                  2
+                                 s + 4            0
+
+                          =    s
+                             2
+                            s +  4
+
+
+
+                 Exercise
+
+                 Use Definition of Laplace transform to find the Laplace transform of   f  ( ) cosbt =  t
+
+                 Solution                                                   ∫ cosbt  dt
+
+                            ∫ ∞        )  − st
+                     F ( ) =  0  (cosbt e   dt                +     e − st    1 sinbt
+                        s
+                                                                            b
+                                                                      − st  −  1  cosbt
+                                                               −  − se         2
+                                                                              b
+                                                                    2 −
+                                                              +    se   st</code></pre>
      	</div>
     
      </div>

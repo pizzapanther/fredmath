@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 106 - ODE Solution</title>
+        <title>Page 106 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 106 - ODE Solution</div>
+        <div id="content-top1">Page 106 - DE Solution</div>
         <div id="content-top2">P. 106</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>y   0   0   0   a 2  ln cosh 0 
-                                                  C
-                                      g               3
-                           0   a 2  ln   1   C     C   0
-                               g          3        3
-
-                         
-            y   t   a 2  ln cosh  g   t 
-                         
-                    g         a  
+    <pre style="white-space:pre-line"><code>100 | S O LU TI O N
 
 
-        Exercise
+          Exercise
 
-        A body of mass m, with initial velocity v , falls vertically. If the initial position is denoted  s . Determine
-                                                0                                                 0
-        the velocity and position of the body at t seconds.
-        Assume the body acted upon by gravity alone and the air resistance proportional to the square of the
-        velocity.
+                                                                             −
+                                                                 −
+          Find the exact solution of the initial value problem.   1 y dx −  2  1 x dy =  2  0,  y ( ) 0 =  3
+                                                                                                  2
+          Solution
+              ∫   1 x−  dx  2  = ∫  1 y−  dy  2                 a −  x 2  =  sin − 1 x
+                                                                  2 ∫
+                                                                  dx
+                                                                               a
 
-        Solution
-                                                                                                         2 2
-            The resistance force R, according the given, is proportional to the square of the velocity.  R     . r v
-            F   mg   F
-                       r
-                            2 2
-            m dv    mg   mr v
-               dt
-                      2 2
-            dv    g   r v
-             dt
-              g  dv  2     dt
-                   
-                   rv
+                     +
+              sin −  1 xC =  sin −  1 y
 
-            1        dv         dt                         2   dx    1  ln  a   x  or  1  tanh  1 x
-            g               2                              a   x 2  2a    a   x      a       a
-                 1     r  v   
-                      g   
+                   y ( ) 0 =  3
+                           2
 
-            1   g  tanh  1     r  v      t   C
-            g r              g      1
+                   sin −  1 0 C+  =  sin −  1 3
+                                       2
+                   C =  π
+                        3
 
-                 1   r  
-            tanh        v      r gt   C
-                                    2
-                     g   
-             r  v   tanh r gt     C  
-              g                    2
-
-                     g
-            v   t   tanh r gt     C  
-                    r                 2
-                                                 
-                                          g                           1   rv   0
-                   v   0   v   v       tanh C        C   tanh        
-                            0       0    r         2        2              g    
+              sin −  1  y = sin −  1 x +  π
+                                3
+                    (
+              y =  sin sin  1 −  x +  π )
+                               3
+                                        (
+                    (
+               = sin sin  1 −  x ) cos π  3  + cos sin  1 −  x ) sin π  3
 
 
+                        α   sin − 1 x →  sin α =  =  x
+
+                                                2
+                        cosα    1 sin α =  −  2  =  1 −  x
+
+                               −
+              y ( ) x =  x  +  3  1 x 2
+                     2    2
 
 
+          Exercise
 
-
-                                                          102</code></pre>
+                                                                              +
+                                                                         +
+                                                                +
+          Find the exact solution of the initial value problem.   ( 1 x 4 ) dy x ( 14y 2 )  x d =  0, y ( ) 1 =  0
+          Solution
+                1+ ∫  ( ) y  2  dy = − ∫  1+ ( ) 2  dx
+                                      x
+                    1
+                                       2
+                    2
+                                      x
+                1+ ∫  ( ) y  2  dy = − 1 ∫  1+ ( ) 2  d x 2     ∫  a +  x 2  =  1  tan − 1 x
+                                               ( )
+                                        1
+                    1
+                                                                 dx
+                                2
+                                                                        a
+                                                                               a
+                                                                2
+                    2
+                                         2
+                                        x
+              1 tan −  1 2y =  −  1  tan −  12  C
+                                   x +
+              2             2
+              tan −  1 2y +  tan −  12  C
+                              x =
+                                    1</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 890 - ODE Solution</title>
+        <title>Page 890 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 890 - ODE Solution</div>
+        <div id="content-top1">Page 890 - DE Solution</div>
         <div id="content-top2">P. 890</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                                       3
-                                                          3
-                               3
-                                            3
-                q t     10t  250 cos20t  500 sin20t   250 cos10t  125 sin10t
-                    e
-                                                                            
-                                                                   3
-                                                                                3
-                                                                                           6
-                                            3
-                                3
-                                                        6
-                 I   t   e  10t    25 cos20t   50 sin20t   25 sin20t   25 cos20t   25 sin10t   25 cos10t
-                                                     
-                                             9
-                                 6
-                                                                     6
-                                                         3
-                        e  10t    25 cos20t   50 sin20t   25 sin10t   25 cos10t
-
-
-             Exercise
-             Consider the given circuit. Assuming that the voltage source changes from 10 to 25 V at time t  ,
-                                                                                                          0
-             v   10 15u t              u
-                    
-                            V   , where    t  is a unit step function.
-              s
+    <pre style="white-space:pre-line"><code>880 | S O LU TI O N
 
 
 
+                     C  =  5
+                       2   2
+
+              q ( ) t =  e − 20t ( 5cos40t +  5 sin40  t )
+                                     2
 
 
+                 A =   25 +  25
+                            4
+
+                   =  55
+                       2
 
 
+                 φ =  tan − 1 2               φ =  tan − 1 a
+                                                       b
+                   ≈ 1.1071
 
 
-             Find the expressions that describe the voltage drop across the resistor across the capacitor and the current in
-             the loop for t 
-                            0
-             Solution
-                                                                                
-                                                          
-                                               
-                Given:  R   100  , C   200 F   ,  v s     10, v   25 i      0
-                                                        0
-                                                                              0
-                                                                    s
-                                           
-                                 v   v   
-                                          0
-                                                   
-                         i    0   s  s       25 10    0.15
-                          s            R          100
-                Applying Kirkoff Voltage law:  v     v    v   0
-                                                  R    C     s
-                v    v    v
-                  R    C     s
-                 Ri   1  q v
-                         
-                     C      s
-                 R  di    1  dq    dv s        i   dq
-                   dt  C dt     dt                  dt
+                         e
+              q ( ) t =  55 − 20t  sin (40t + 1.1071 )
+                      2
 
-                 R  di    1  i   dv s
-                   dt  C     dt
-                 di    1  i   1  dv s      1          1          1   50
-                                                      
-                 dt  RC      R dt           RC   100  200 10  6   .02
-                                                           
+                    )
+                            e
+              q (0.01 =  55 − 20t  sin (40 ( ) 1.1071.01 +  )
+                         2
+                      ≈  4.5676 C
 
-                 di    50i   0
-                 dt
-                      50dt    50t
-                    e         e
+                         e
+                                                  0
+              q ( ) t =  55 − 20t  sin (40t + 1.1071 ) =
+                      2
+              40t +  1.1071 π=
+              t ≈  0.0509  se c
 
 
+          Exercise
 
-                                                               877</code></pre>
+          Find the charge  ( ) t  on the capacitor in an LRC−series circuit when  L =  0.25 h,  R  =  20 Ω ,
+                          q
+                                                 i
+          C =  1   f ,  ( ) t = ,  ( ) 0q  =  4 C , and  ( ) 0 =  0 A. Is the charge on the capacitor ever equal to zero.
+                             0
+
+                      E
+              300
+          Solution
+              1 q′′ +  20q′ +  300q =  0               Lq′′ +  Rq′ +  1  q =  E ( ) t
+              4                                                  C
+              q′′ +  80q′ +  1,200q =  0
+
+                 λ  2  80 +  λ +  1200 =  0
+
+                               ±
+                     λ   =  −  40 20
+                      1,2
+                         =  −  60, −  20
+
+              q ( ) Ct =  1 e −  60t  +  C e −  20t
+                                2
+                     q ( ) 0 =  C +  1  C =  2  4</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 976 - ODE Solution</title>
+        <title>Page 976 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 976 - ODE Solution</div>
+        <div id="content-top1">Page 976 - DE Solution</div>
         <div id="content-top2">P. 976</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>f    t  L        4    4    1    
-                              s   s 5  s  8 
-
-                              4
-                        4   1 t  e 8t
-                           6
-
-
-             Exercise
-
-             Find the inverse Laplace Transform of      F ( ) s   1
-                                                               4s  1
-             Solution
-                                     
-                 f    t  L        1  1    
-                                4  s   1  
-                                    4 
-
-                          e
-                        1  t /2
-                        4
-
-
-             Exercise
-
-             Find the inverse Laplace Transform of      F ( ) s   1
-                                                               5s   2
-             Solution
-                                    
-                        1
-                 f    t  L        1    
-                        5         s   2 
-                                    5 
-
-                             t
-                         e
-                        1  2 /5
-                        5
-
-
-             Exercise
-             Find the inverse Laplace Transform of      F ( ) s   s  1
-                                                                2
-                                                               s   2
-             Solution
-
-                 f    t          s   L  1    
-                                2
-                                        2
-                              s  2   s   2
-                                         t
-                        cos 2t   1 sin 2
-                                 2
-
-
-             Exercise
-
-             Find the inverse Laplace Transform of      F ( )   2s  6
-                                                           s
-                                                                2
-                                                               s   9
-             Solution
+    <pre style="white-space:pre-line"><code>966 | S O LU TI O N
 
 
 
+                 y′′ =  12Ax +  2  6Bx +  2C
+                   p
+                 y′′ =  24Ax +  6B
+                   p
+              y′′′ +  8y′′ =  −  6x +  2  9x +  2
 
-                                                               955</code></pre>
+              24Ax +  6B +  96Ax +  2  48Bx +  16C =  −  6x +  2  9x +  2
+
+                                            A = −  1
+                    96A =  −  6          →        16
+                 
+                 
+                                         1
+                                                     21
+                                                           7
+                  24 +  A  48B =  9  →  B =  96 ( 9 +  3 ) =  108  =  32
+                                                2
+                 
+                   6 +  B  16C =  2  →  C =  1 ( 2 −  21 )  =  11
+                                          16     16    256
+                 
+                                                        11
+                                        1
+                                                            2
+                                                7
+               ( ) C + =
+                               +
+              yx      1   C x e   − 8x  −  16  x +  4  32  x +  3  256  x
+                            2
+
+
+          Exercise
+          Find the general solution:   y ( ) 4  +  y′′ =  3x +  2  4sin x −  2cos x
+          Solution
+             The characteristic equation: λ      4  2 λ +  2  =  0
+                                                             i
+                                          λ    = 0,   λ  = ± 2
+                                            1,2       3,4
+
+                             +
+              y =  C +  C xC      cos xC    sin x
+                                       +
+               h    1     2     3         4
+              y  =  Ax +  4  Bx +  3  Cx +  2  Ex cos x +  Fx sin x
+               p
+                 y′ =  4Ax +  3  3Bx +  2  2Cx +  E cos x Ex−  sin x +  F sin x +  Fx cos x
+                   p
+
+                     =  4Ax +  3  3Bx +  2  2Cx +  (E +  Fx )cos x +  (F −  Ex )sin x
+
+
+                 y′′ =  12Ax +  2  6Bx +  2C +  F cos x −  (E +  Fx )sin x E−  sin x +  (F −  Ex )cos x
+                   p
+                     =  12Ax +  2  6Bx +  2C +  (2F −  Ex )cos x −  (2E +  Fx )sin x
+
+
+                 y′′′ =  24Ax +  6B E cos x −  (2F −  Ex )sin x F−  sin x −  (2E +  Fx )cos x
+                                  −
+                   p
+                     =  24Ax +  6B −  (3E +  Fx )cos x −  (3F −  Ex )sin x
+
+
+                 y ( ) 4  =  24A F  cos x +  (3E +  Fx )sin x +  E sin x −  (3F −  Ex )cos x
+                            −
+                       =  24A −  (4F −  Ex )cos x +  (4E +  Fx )sin x
+
+
+              y ( ) 4  +  y′′ =  3x +  2  4sin x −  2cos x</code></pre>
      	</div>
     
      </div>

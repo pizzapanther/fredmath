@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1088 - ODE Solution</title>
+        <title>Page 1088 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1088 - ODE Solution</div>
+        <div id="content-top1">Page 1088 - DE Solution</div>
         <div id="content-top2">P. 1088</div>
      </div>
      <div id="content-middle">
@@ -152,98 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>w
-                                                          
-                                                  
-                    2c  sinh  2c  sinh    0  1 cosh
-                      1           1          EI
-                         w                              w
-                                                              
-                    c     0  1 cosh  csch   c      0  1 cosh csch
-                               
-                     1   4EI                      2     2EI
-                            w                     w
-                                               
-                                  
-                                                                                         x
-                    y   x   0  1 cos cosh x    0  1 cosh   csch  sin cosh x  cos sinh   x
-                                       x
-                                                                            x
-                           4EI                    8EI
-                                w
-                                      0  1 cosh   csch  sin cosh x   cos sinh   x
-                                                          x
-                                                                       x
-                                4EI
-                                 
-                          4
-                                 
-                b)  L        d y   4y  L      t    
-                                 
-                         dx 4              2
-                                                                         w
-                                       2
-                              3
-                     4
-                                                                            e
-                    s Y   s  s y   0  s y   0   sy   0   y   0   4Y    s   0   s /2
-                                                                         EI
-                            w                   c     2    c
-                    Y    s   0  4  e   s /2    1 2s    2  4
-                                 4
-                                                                4
-                                                    4
-                           4EI  s   4          2  s   4   4  s   4
-
-                                     
-                                                             
-                            w
-                                                                    sinh x 
-                                           cosh x 
-                                                                                 u
-                    y   x   0  sin x             cos x            x    
-                           4EI          2            2            2          2         2
-                                c               c
-                                       1  sin sinh x   x  2  sin cosh x  cos sinh   x
-                                                       x
-                                                                    x
-                                 2               4
-                            w            c                         w   cosh 
-                    y       0  cosh    2  sinh    0   c    0     2
-                            4EI      2    4                   2     EI  sinh
-                         w   sinh 
-                    c     0     2
-                     1   EI  sinh
-                                                             
-                            w                                                    
-                                                                    sinh x 
-                                           cosh x 
-                                                                                 u
-                    y   x   0  sin x               cos x              x   
-                           4EI          2            2            2          2         2
-                                 w   sinh               w   cosh 
-                                                                                     x
-                                      0   2  sin sinh x   x  0  2  sin coshx  x   cos sinh   x
-                                2EI  sinh              4 I  sinh 
-                                                         E
+    <pre style="white-space:pre-line"><code>1078 | S O LU TI O N
 
 
-             Exercise
-             Suppose two identical pendulums are coupled by means of a spring with constant k. when the displacement
-                   
-             angles    t  and     t  are small, the system of linear differential equations describing the motion is
-                     1          2
 
-                               g       k         
-                              l      m     2
-                            1
-                                            1
-                                   1
-                          
-                              g    k      
-                            2   l  2   m   1    2
 
-                                                              1067</code></pre>
+
+                                              ∫ sin x  dx
+                                   +   e 2x     − cos x
+
+                                   −  2e 2x     − sin x
+                                   +   4e 2x
+
+
+
+                               ∫     sin x dx =  −       +           −  ∫
+                                 e 2 x          cos xe 2x  2sin xe 2x  4 e 2x  sin x dx
+
+                               ∫     sin x dx =  5 (−  cos x +  2sin  ) x e
+                                 e 2x         1                   2x
+
+
+                               1
+                          −
+                        =  ( 10 ) ( cos x +  2sin  ) x e 2x
+                                  −
+                               5
+                        =  (2cos x − 4sin  ) x  e 2x
+
+
+
+                                                                        1
+                 v  ( ) x = ∫    10e − 2x  cos x  dx        v  ( ) x = ∫  yg ( ) x  dx
+                   2             e − 4x                       2          W
+                            ∫     cos
+                               2x       xdx
+                         10 e
+                        =
+
+                                                ∫ cos x  dx
+
+                                     +   e 2x      sin x
+                                     −  2e 2x     − cos x
+
+                                     +   4e 2x
+
+                                                                       ∫
+                                ∫  e 2 x cos x dx =  sin xe 2x  +  2cos xe 2x  −  4 e 2x cos x dx
+
+
+                               ∫               5               ) x e
+                                 e 2x cos x dx =  1 ( sin x +  2cos  2x
+
+
+                              1
+                          10
+                        =  ( ) (sin x +  2cos  ) x e 2x
+                              5
+                        =  (2sin x +  4cos  ) x  e 2x
+
+
+
+              y =  vy +   v y
+               p    11     2 2
+                                             )
+                                                                               )
+              y   =  (2cos x −  4sin  ) x e 2x (cos x e −  2x  +  (2sin x +  4cos  ) x e 2x (sin x e −  2x
+               p</code></pre>
      	</div>
     
      </div>

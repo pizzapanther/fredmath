@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 442 - ODE Solution</title>
+        <title>Page 442 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 442 - ODE Solution</div>
+        <div id="content-top1">Page 442 - DE Solution</div>
         <div id="content-top2">P. 442</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                      3
-        Show that  ( )y t  and  ( )y t   t  are both solutions of the initial value problem  y  3y 2/3 , where  (0) 0y  
-                         0
-        . Explain why this fact doesn't contradict Theorem
-        Solution
-
-                   
-             f ( , ) 3y 2/3
-                 y
-               t
-             f    2y  1/3   which is not continuous at  y 
-                                                       0
+    <pre style="white-space:pre-line"><code>436 | S O LU TI O N
 
 
-        Exercise
-
-        Use a numerical solver to sketch the solution of the given initial value problem
-
-                                                dy    t    ,        (2)   y  0
-                                                 dt   y  1
-
-          a)  Where does your solver experience difficulty? why? Use the image of your solution to estimate the
-              interval of existence.
-          b)  Find an explicit solution; then use your formula to determine the interval of existence. How does it
-              compare with the approximation found in part (a).
-
-        Solution
-            a)   y    1 dy   tdt
-
-                   y    1 dy     tdt
+                 r = 10    gal/min
+                     3
 
 
+             c)  y′ +  1 (10 ry+  ) =  4r
+                      2
+                       2∫ (10 r+  )dt  1 (10 r+  )t
+                       1
+                        e         =  e 2
+                     ∫ 4  re 1 (10 r +  )t   dt =  8r  e (10 r+  ) /2t
+                            2
+                                         10 r
+                                            +
 
-                             2
-                   2
-                1  y   y   1 t  C
-                2          2
-                           2
-                 2
-                y   2y  t  C
-                                     2
-                          2
-                       (0)  2(0)   2  C
-                         
-                            
-                       0 4 C
-                       C     4
+                             +
+                                ) /2 
+                                                          
+                                                  ) /2
+                                               +
+                 y ( ) t =  e −  (10 r t    8r  e (10 r t  + C
+                                                          
+                                        +
+                                      10 r               
+                                         ) /2
+                                       +
+                      =  8r   +  Ce −  (10 r t
+                        10 + r
+                                 0
+                          y ( ) 0 =
+                          0 =   8r  +  C
+                              10 r+
+                          C = −   8r
+                                10 + r
+                          8r
+                                  8r
+                 y ( ) t = 10 r  − 10 r  e −  (10 r+  ) /2t
+                           +
+                                   +
+                                        +
+                                          ) /2 
+                      =  8r     1 e −  (10 r t  
+                                −
+                        10 r   +             
+                   (   10 )  80    1        −  ( 10+  10 ) t /2 
+                                                   3
+                 y r =  3  =  3  10 +  10   3      1 e   −    
+                              (
+                                      t
+                           =  21 e−  − 5 /3 )
 
-                 2
-                           2
-                y   2y  t  4
 
-                 2
-                          2
-                        
-                                
-                y   2y t    4 0
+                                      t
+                 2 −  ( 2 1% =  )  2 1 e−  (  − 5 /3 )
+                         (
+                                t
+                           −
+                 1.98 =  2 1 e − 5 /3 )
+                        t
+                 1 e − 5 /3  =  .99
+                  −
+                     t
+                 e − 5 /3  = .01
+                 −  5 t =  ln .01
+                          ( )
+                   3
+                 t = − 3 ln .01
+                          ( )
+                      5
 
-                       Solve for y:
-                                   2
-                            2   4t  12
-                       y 
-                                  2
-                                   2
-                              
-                            2 2 t    3
-                         
-                                 2
-                                  2
-                           1  t  3
-
-                                                          438</code></pre>
+                   ≈  0.69077 min</code></pre>
      	</div>
     
      </div>

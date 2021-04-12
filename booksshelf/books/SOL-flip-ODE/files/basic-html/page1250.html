@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1250 - ODE Solution</title>
+        <title>Page 1250 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1250 - ODE Solution</div>
+        <div id="content-top1">Page 1250 - DE Solution</div>
         <div id="content-top2">P. 1250</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                         1  6
-             For the given system  y         y
-                                         3  8 
-
-              a)  Sketch a rough approximation of the given system. Use arrows to indicate the direction of motion on
-                  all solutions. Determine the behavior of the equilibrium point and the stability.
-                                                                          T
-              b)  Find the solution of the initial-value problem    0, 1y  0    
-
-             Solution
-                                1       6
-                                 
-                       
-                a)  A    I
-                                  3    8 
-                                         
-
-                               1 
-                                             18
-                                   8   
-
-                                             2
-                               8    8    18
-                                 7  10    0
-                                2
-
-                    Thus, the eigenvalues are:    2 and        5
-                                               1              2
-                    For    2       A  2I V   0
-                         1                    1
-                                   x
-                          3  6     0           3x   6y   0
-                                                             3x   6y      x   2y
-                                         0
-                                   y
-                          3  6                 3x   6y   0
-                                                 2
-                       The eigenvector is: V    
-                                            1    1 
-
-                            y  ( )   e 2t     2
-                               t
-                                         
-                             1          1 
-                    For    5       A  5I V   0
-                         2                    2
-                          6  6      0          6x  6y  0
-                                   x
-                                                                                     x
-                                                              6x   6y     y
-                                         0
-                                   y
-                          3  3                 3x  3y   0
-                                                 1   
-                       The eigenvector is: V     
-                                            2     1 
-                            y  ( )   e 5t    1  
-                               t
-                                         
-                             2          1 
-                                                                                            1  
-                    Therefore, the final solution can be written as:   y (t )   C e 2t  2    C e 5t   
-                                                                                
-                                                                           1         2    
-                                                                                            1
-                                                                                1
-                    Unstable at the center (source)
+    <pre style="white-space:pre-line"><code>1240 | S O LU TI O N
 
 
+          z′ +  2z =  x
+                  ∫ 2 dx
+                            x
+                 e       = e
+                 ∫     xe x dx =  ( x −  ) 1 e
+                                    x
 
 
+                                      )
+              z ( ) x =  1  ( ( x −  ) 1 e +  x  C
+                     e x
+                   =  x −+  C
+                        1
+                            e x
+
+                              1 C =
+                       z (0) = −+     1
+                       C  =  2
+
+              z ( ) x =  x −+  2
+                        1
+                           e x
 
 
+          Exercise
 
 
+          Calculate the first five iterations of Euler's method with step  h = 0.1 of: z′ =          5 z  z (0) 0
+                                                                                                =
+                                                                                      −
+          Solution
 
+              x =  0; z =   0
+               0        0
+             The first step:
 
-
-
-                                                              1229</code></pre>
+                               −
+                                        +
+                 z =  z +  h ( 5 z  )  =  0 0.1 (5 0−  ) =  0.5
+                  1    0          0
+                                +
+                           h
+                 x =  x + =    0 0.1 =  0.1
+                  1    0
+             The second step:
+                               −
+                                                 −
+                 z =  z +  h ( 5 z  )  =  0.5 0.1 (5 0.5 =  ) 0.95
+                                          +
+                  2    1          1
+                 x =   x + =   0.1 0.1 =  02
+                                  +
+                                          .
+                           h
+                   2    1
+                           Euler Method
+                           t            Approx.             Exact             Difference
+                         ----------------------------------------------------------------
+                         0.00   |   0.00000000   |   0.00000000   |   0.00000000
+                         0.10   |   0.50000000   |   0.47581291   |   -0.02418709
+                         0.20   |   0.95000000   |   0.90634623   |   -0.04365377
+                         0.30   |   1.35500000   |   1.29590890   |   -0.05909110
+                         0.40   |   1.71950000   |   1.64839977   |   -0.07110023
+                         0.50   |   2.04755000   |   1.96734670   |   -0.08020330</code></pre>
      	</div>
     
      </div>

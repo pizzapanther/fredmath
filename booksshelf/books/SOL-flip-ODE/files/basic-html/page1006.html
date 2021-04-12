@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1006 - ODE Solution</title>
+        <title>Page 1006 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1006 - ODE Solution</div>
+        <div id="content-top1">Page 1006 - DE Solution</div>
         <div id="content-top2">P. 1006</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                             
-                                Y
-                 sY ( ) s   y (0) 4 ( ) s   2!  3         y (0) 1
-                                       s    2
-                (s  4) ( ) 1      2
-                       Y s 
-                                s    2  3
-                       Y s 
-                (s  4) ( ) 1      2
-                                 s    2  3
+    <pre style="white-space:pre-line"><code>996 | S O LU TI O N
 
 
-                Y ( ) s   1        2
-                       s  4  (s   4) s    2  3
+                      x 3      8A = 1
+                     
+                      x   2  −  12A +  8B =  0
+                     
+                       x  6A −  8B +  8C =  0
+                       0
+                      x    2B −  4C +  8D =  0
 
-                           2          A     B      C         D
-                    (s  4) s    2  3  s   4  s   2  s    2  2  s    2  3
-                            3   2                2         
-                                                                     
-                    2   A s  6s   12s  8A   B s   4s   4 (s  4) C (s  4)(s   2)   D (s   4)
-
-                                                    3
-                                  2
-                          3
-                                                                         2
-                                                           2
-                    2   As  6As   12As  8A Bs      4Bs   4Bs  4Bs   16Bs  16B
-                                                
-                            2
-                          Cs   2Cs  8C   Ds  4D
-                        
-                              
-                                            
-                                              2
-                                3
-                                        
-                    2   A B s    6A C s     12A  12B  2C   D s  8A  16B  8C  4D
-                           
-
-                                   A   B   0
-                                                         A   1   B    1
-                                      
-                                  6A C    0                108        108
-                                                        
-                             12A  12B   2C   D  0   C    1   D   1
-                             8A  16B  8C  4D   2          18         3
-                            
-                Y ( ) s   1    1  1     1   1     1    1      1   1
-                       s  4  108 s   4 108 s  2 18         2   3       3
-                                                       s    2   s    2
-                                                                                  
-                L    Y s              109 1    1  1    1   1       1  1      
-                            L
-                                      108 s   4  108 s   2  18  s    2  2  3 s    2  3  
-                                                                                   
-                                     
-                                                        2 
-                 y ( ) t  109 e 4t    1  e  2t    1  te  2t    1 t e  2t
-                       108      108        18        6
+                     A  =  1 ,  B =  3  ,  C =  3  ,  D = 0
+                         8      16        32
 
 
-             Exercise
+              y  =  1  x +  3  3  x +  2  3    x
+               P   8      16      32
 
-                                                                       0
-             Solve using the Laplace transform:     y   9y   e  t   ,  y (0 ) 
-             Solution
+                                                                3
+                                                        3
+                                   +
+              yx =  ( ) e 2x ( C 1  cos2x C 2  sin 2x +  )  1  x +  3  16  x +  2  32 x
+                                                 8
+                     y ( ) 0  = C =  2
+                             1
+                                                                                         3
+              y′ ( ) x =  e 2x ( 2C 1 cos2x +  2C 2  sin 2x −  2C 1 sin 2x +  2C 2  cos2x +  )  3  x +  2  3  x +  32
+                                                                                   8
+                                                                             8
+                                          3
+                     y′ ( ) 0 =  2C +  1  2C +  2  32  =  4
 
-                                    t 
-                    y  L  9   y   L                     Y ( ) s  L  ( ) s
-                                                                          y
-                                  e
-                     9y  L    y  L  L  
-                                        t 
-                                      e
-                             
-                                Y
-                                  s
-                 sY ( )   y (0) 9 ( )   1
-                    s
-                                       s  1
-                                                               985</code></pre>
+                     C = −   3
+                       2    64
+
+                                    3
+                                                      3
+                                                          2
+                                                              3
+              y ( ) x =  e 2x ( 2cos2x −  64 sin 2x +  )  1  x +  3  16  x +  32    x
+                                               8
+
+
+          Exercise
+                                                    2
+                                                                         π
+                                                             π
+                                                       t
+          Find the general solution    y′′ +  4y =  sin 2 ; x ( )  = 0 x′ ( )  = 0
+                                                             8
+                                                                         8
+          Solution
+                                   2
+                                                            i
+                                       4
+             Characteristic Eqn.: λ+ =    0 ⇒ λ        = ± 2
+                                                    1,2
+                           t
+              y =  C  cos2 +  C  sin 2t
+               h    1          2
+              y′′ +  4y =  1  −  1 cos4t
+                        2   2
+                     +
+              y  =  AB   cos4t +  D sin 4t
+               p
+                                    D
+                 y′ =  −  4 sin 4t +  B  4 cos4t
+                   p
+                 y′′ =  −  16 cos4t −  B  16 sin 4t
+                                      D
+                   p
+              −  16 cos4t −  B  16 sin4t +  D  4A +  4 cos4t +  B  4 sin4t =  D  1  −  1  cos4t
+                                                                  2   2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 484 - ODE Solution</title>
+        <title>Page 484 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 484 - ODE Solution</div>
+        <div id="content-top1">Page 484 - DE Solution</div>
         <div id="content-top2">P. 484</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        Use the Wronskian to show that are linearly independence  y    x   e x ,  y    x   e 2x ,  y    x  e 3x
-                                                                   1             2              3
-        Solution
-
-                 e x  e 2x    e 3x
-
-            W   e x  2e 2x  3e 3x
-
-                 e x  4e 2x  9e 3x
-
-
-                18e 6x   3e 6x   4e 6x    2e 6x   12e 6x   9e 6x
-                 2e 6x     0
-
-              y  , y  , and y  are linearly independent.
-                1   2       3
-
-
-        Exercise
-
-        Use the Wronskian to show that are linearly independence
-                                                    2
-                                                                     2
-                                  2
-                                                                                      2
-                                                             x 
-                                            x 
-                       y    x   cos x ,  y    sin x ,  y    sec x ,  y    x   tan x
-                        1                 2                3                4
-        Solution
-                                                      2
-                                          2
-            Since cos x   2  sin x   2  1 & sec x   1 tan x
-                                                 
-                                                   2
-                             2
-                  2
-                                        2
-            c cos x   c sin x   c sec x   c tan x 
-                                                        0
-             1          2          3          4
-            Let: c   c  0 c     1 c 
-                                            1
-                  1   2        3        4
-                                        2
-                               2
-               2
-                       2
-            cos x  sin x  sec x   tan x 
-                                             0
-            The set of functions are linearly dependent.
-
-
-        Exercise
-                                                                                                  
-                                           ( )
-        Determine whether the functions  y t  and  y  ( ) t  are linearly dependent on the interval 0, 1
-                                          1         2
-                                  t
-                       y    t   cos sin , t  y    t   sin 2t
-                        1                   2
-        Solution
-               t
-                        t
-            y  ( )   cy  ( )
-             1        2
-            cos sint   t  c sin2t   c   1
-                                         2
-            The given functions are linearly dependent.
+    <pre style="white-space:pre-line"><code>478 | S O LU TI O N
 
 
 
+              M  ( , x y =  )  y −  2xe −  x  6x 2  N ( , x y    ) =  x
+                       ∂  M  = 1               ∂  N  = 1
+                         y ∂                     y ∂
+                 ⇒    ∂  M  =  ∂  N
+                       y ∂   x ∂
+                  ∫ (       x   6x 2 )  dx
+              ψ=     y − 2xe −
 
-                                                          472</code></pre>
+
+                =  xy −  (2x −  ) 2 e −  x  2x +  3  h ( ) y
+
+
+                        ′
+              ψ   =  x hy      x
+                         ( ) =
+                     +
+                y
+                                     ( ) C=
+                 →  h′ ( ) 0y =  ⇒  hy
+              xy −  2xe +  x  2e −  x  2x =  3  C
+
+
+
+          Exercise
+
+                                                              )
+                                               
+          Find the general solution       1−  3  +  x dy +  ( y −  3  +  1 dx =  0
+                                               
+                                         y             x
+          Solution
+                                             ) 1
+              M  ( , x y =  )  y −  3  +  1  N ( , x y = −  3  +  x
+                            x                       y
+                    ∂  M  = 1                ∂  N  = 1
+                      y ∂                     y ∂
+                 ⇒    ∂  M  =  ∂  N
+                       y ∂   x ∂
+
+                  ∫ (    3   )
+              ψ=     y −  x  + 1  dx
+
+
+                               x h
+                =  xy − 3ln x ++    ( ) y
+
+              ψ   =  x hy =+  ′ ( ) 1−  3  +  x
+                y                 y
+
+               ′
+              hy =       3
+                ( ) 1−
+                         y
+              h ( ) y =  y − 3ln y
+
+              xy − 3ln x ++ −    3ln y =  C
+                              y
+                          x
+                      y
+                  x
+              xy ++ −    3ln xy = C</code></pre>
      	</div>
     
      </div>

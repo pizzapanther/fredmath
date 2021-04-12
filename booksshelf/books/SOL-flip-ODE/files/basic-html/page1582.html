@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1582 - ODE Solution</title>
+        <title>Page 1582 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1582 - ODE Solution</div>
+        <div id="content-top1">Page 1582 - DE Solution</div>
         <div id="content-top2">P. 1582</div>
      </div>
      <div id="content-middle">
@@ -152,112 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>p    lim xp   x   lim x  7     7
-              0   x  0        x  0  6x   6
-                                                    
-                       2
-                                                                  2
-                                               2
-            q    lim x q   x    lim x 2 1   x  2    lim  1  x   1     1
-             0   x  0           x  0   6x 2            x 0  6     3      3
-                                                         2
-            The indicial equation is:   r r    1   7  r   1    r   1 r  1    0
-                                               6    3        6    3
-                                       
-               2
-                  r
-            6 r    2  0      r     1 7  r   1 ,    2
-                                      12       2     3
-            The two possible Frobenius series solutions are then of the forms
-                                                              
-                              
-                y    x   x 1/2   a x n  and  y    x   x  2/3   b x n
-                 1                n             2                 n
-                             n  0                           n  0
-                 
-                       n r
-                         
-            y      a x
-                      n
-                n 0
-                  
-                              n r  1
-                                 
-                          
-                       
-            y      n r a x
-                             n
-                 n 0
-                  
-                                        n r  2
-                                           
-                            
-            y     n r n r       1 a x
-                        
-                                       n
-                 n 0
-                                  
-               2
-                             2
-            6x y  7xy   x   2 y 
-                                       0
-                                                                                          
-                                                             
-                       
-                           
-                                                          
-            6x 2   n r n r        1 a x n r   2    7x  n r a x n r   1     x 2  a x n r    2  a x n r     0
-                                      n
-                                                                                                  n
-                                                                                  n
-                                                                n
-                n 0                                n 0                     n 0           n 0
-                                                                                 
-                  6 n r n r       1 a x n r      7 n r a x    n  n r    a x n r 2    2a x n r    0
-                                                                                             
-                                                              
-                                                                            
-                                       
-                                    n
-                                                                        n
-                                                                                          n
-            n 0                            n 0                   n 0            n 0
-                                                            
-                                                  
-                                                                       
-                                                       
-                     6 n r n r    1    7 n r       2 a x n r     a n 2 x n r    0
-                     
-                         
-                                                   n
-            n 0                                            n 2
-                        
-             6r    2 a       r  1 6r    7    2 a         n r 6n  6r    1    2 a x n r         a n 2 x n r    0
-                                                  1 
-                                                                                                        
-               2
-                                                              
-                   r
-                                                                                 
-                                                                                    n
-                          0
-                                                      n 2                                  n 2
-                                           
-                        
-             6r    2 a     6r  13r  5 a           n r  6n  6r  1  2 a    n    a n 2      x n r    0
-                                                                                            
-                                 2
-               2
-                   r
-                          0
-                                             1
-                                                 n 2
-                               2                       1     2
-            For   n   0    6r      2 a   0     r   2 ,     3    
-                                   r
-                                          0
+    <pre style="white-space:pre-line"><code>1568 | S O LU TI O N
 
-                                                          1552</code></pre>
+
+                         1
+                x′     −  25  0      x 
+                1    =             1  
+                x  ′    1    1     x 
+                2       25  −  25      2 
+
+
+
+          Exercise
+
+          Two masses on a frictionless tabletop are connected with a spring having spring constant  k . The
+                                                                                                 2
+          first mass is connected to a vertical support with a spring having spring constant  k .  The second
+                                                                                         1
+          mass is shaken harmonically via a force equaling F =  A cos t ω . Let  ()xt  and  ()y t  measure the
+
+          displacements of the masses  m and m , respectively, from their equilibrium positions as a function
+                                       1       2
+          of time. If both masses start from rest at their equilibrium positions at time t = .
+                                                                                     0
+
+
+
+
+
+
+
+
+          Set up an initial value problem that models the position of the masses over time (do not solve).
+          Write the model in matrix-vector form. Is the system homogeneous or inhomogeneous?
+
+          Solution
+
+             By Newton’s Law; the first mass:
+
+                 mx′′ =  −  k x k  ( y −  ) x
+                              +
+                   1       1     2
+                        k      k
+                 x′′ =  −  1  x +  2  ( y −  ) x
+                        m 1   m 1
+
+             The second mass:
+                 my′′ =  −  k  ( y −  ) x +  A cos tω
+                   2        2
+                        k
+                 y′′ =  −  2  ( y −  ) x +  A  cos tω
+                        m 2          m 2
+
+             Let assume:  x =   , x  x =  , x′  x =  , y  x =  y′
+                           1        2         3        4
+                   x′ =  x
+                   1     2
+                          k 1    k 2 (       )
+                   x′ =  2  −  m  x +  1  m  x −  3  x 1
+                           1       1
+                 
+                   x′ =  x 4
+                    3
+                 
+                  x′ =  −  k 2  ( x −  x  ) +  A  cos t ω
+                   4     m 2  3    1    m 2
+                 </code></pre>
      	</div>
     
      </div>

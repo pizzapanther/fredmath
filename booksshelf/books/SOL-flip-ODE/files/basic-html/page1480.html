@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1480 - ODE Solution</title>
+        <title>Page 1480 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1480 - ODE Solution</div>
+        <div id="content-top1">Page 1480 - DE Solution</div>
         <div id="content-top2">P. 1480</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,89 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                                                                                   
-                                                                                       
-             Find the series solution to the initial value problem  y   xy   y   0 ;  y (0) 1  y (0) 0
-
-             Solution
-                         
-                               n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n  1          n  0
-                                               
-                                                                      n
-                 y   x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                      n
-                         n  2                 n  0
-                 y   xy   y   0
-
-                                                         
-                   (n  2)(n  1)a n 2 x   x  na x n 1    a x  0
-                                                                  n
-                                       n
-                                                               n
-                                                  n
-                n 0                        n 1          n 0
-                                                      
-                   (n  2)(n  1)a n 2 x   na x      a x    0
-                                       n
-                                                               n
-                                                   n
-                                                            n
-                                                 n
-                n 0                       n 0        n 0
-                 
-                                                     n
-                      (n   2)(n  1)a   na   a n      x   0
-                                  n 2     n
-                n 0
-                (n  2)(n  1)a    n    1 a   0
-                              n 2          n
-                (n  2)(n  1)a     n    1 a
-                              n 2            n
-
-                a        1  a
-                  n 2  n   2 n
-
-                                         
-                       Given:  a    y (0) 1                   a   y (0) 
-                                                                           0
-                                 0                              1
-                        a   1 a   1                          a   1 a   0
-                         2   2  0   2                            3   3  1
-                        a   1  a      1                      a    1 a   0
-                         4   4  2   2 2 2                        5   5  3
-                                      
-
-                        a   1 a     1
-                         6   6  4   2  3!
-                                     3
+    <pre style="white-space:pre-line"><code>1466 | S O LU TI O N
 
 
+
+                     Xs             120
+                       ( ) =
+                             ( )(   2  4 s + )(  2  9 )
+                              2
+                             s +
+                                 1 s +
+                   2
+                  s + 3     0         s + 3
+                                       2
+                                       2
+                   − 2     120  = 120 s + 9
+                           2
+                          s +  9
+                                    ( )
+                                      2
+                                 120 s + 3
+                     Ys
+                      ( ) =
+                            ( )(    2  4 s + )( )
+                                          2
+                              2
+                             s +
+                                1 s +
+                                             9
+                                                              +
+                                                      +
+                                              +
+                ( ) =
+              Xs             120         =  AsB  +  CsD  +  EsF
+                     ( )(    2  4 s + )(  2  9 )  s +  2  1  s +  2  4  s +  2  9
+                       2
+                          1 s +
+                      s +
+                             (  2   )(  2  )          (  2   )(  2  )          (  2  )(  2   )
+                     ( As +  B ) s +  4  s +  9 +  (Cs +  D ) s +  1 s +  9 +  (Es +  F ) s +  1 s +  4 =  120
+                             (  4    2     )          (  4     2   )           (  4   2    )
+                     ( As +  B ) s +  13s +  36 +  (Cs +  D ) s +  10s +  9 +  (Es +  F ) s +  5s +  4 =  120
+                         s 5    A C +   E =  0
+                                   +
+                        
+                         s 4    B +  D +  F =  0
+                        
+                         s 3  13A +  10C +  5E =  0
+                        
+                          2                   0
+                         s   13B +  10D +  5F =
+                          s   36A +  9C +  4E =  0
+                        
+                             36B +  9D +  4F =  120
+
+
+                               A C +   E =  0
+                                  +
+                                                      +
+                          ⇒   13A +  10C +  5E =  0  →   A C +  E =  0
+                            
+                            
+                             36A +  9C +  4E =  0
+                               B +  D +  F =  0
+                        ⇒   13B +  10D +  5F =  0  →  B =  ; 5 D =  −  ; 8 F =  3
+                           
+                           
+                            36B +  9D +  4F = 120
+                             ( )
                                2
-                                             6
-                                     4
-                   y   1x    1  x   1  x   1  x 
-                            2     8      48
-
-
-
-
-
-                                                              1451</code></pre>
+                         120 s + 3
+                                                             +
+                                                     +
+                                             +
+               ( ) =
+             Ys                          =  AsB  +  CsD  +  EsF
+                     ( )(    2  4 s + )( )  s 2  1 +  s +  2  4  s +  2  9
+                       2
+                                   2
+                                      9
+                         1 s +
+                      s +
+                         (  2   )(  2   )          (  2  )(  2   )          (  2  )(  2   )      2
+                 ( As +  B ) s +  4  s +  9 +  (Cs +  D ) s +  1 s +  9 +  (Es +  F ) s +  1 s +  4 = 120s + 360</code></pre>
      	</div>
     
      </div>

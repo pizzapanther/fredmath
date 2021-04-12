@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1458 - ODE Solution</title>
+        <title>Page 1458 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1458 - ODE Solution</div>
+        <div id="content-top1">Page 1458 - DE Solution</div>
         <div id="content-top2">P. 1458</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>n    1  2
-                a                    a
-                  n 2    n   1 n    2  n
+    <pre style="white-space:pre-line"><code>1444 | S O LU TI O N
 
 
-                        a                                                    a
-                         0                                                    1
-                  n   0    a   1  a                            n   1       a   3  0
-                            2     2  0
-                  n   2    a    1  a   1  a                   n  3     a    2 a   0
-                             4    12  2   4!  0                               5     5  3
+          Exercise
 
-                  n   4   a    3 2  a   3 2  a               n   5      a   7  0
-
-                             6    5 6   4   6!  0
-                  n   6   a    5 2  a  1 3   2  5   2  a
-
-                             8    7 8   6     8!    0
+          Solve using the Laplace transform:    y′  6y′′ +  +  9y =  0, y ( ) 0 = − 1, y′ ( ) 60 =
 
 
+          Solution
+                  £  {y′′ +  6y′ +  9y } 0=
 
 
-                          
-                  a        1  n 1 1 3   2  5   2  2n    3  2  a  n    3
-                    2n                   !          0
-                                         2n
-                                 2       4      6 1 3   2  5   2  8  
-                 y   x   a    1  1  x   1  x   9  x   x        a x
-                         0     2      24      6!        8!               1
-                                                                   
-                                                              2      
-                                          4
-                                  2
-                                      1
-                                         x 
-                                                   
-                        a 0     1  1 x  24    1  n  2n    3 !! x 2n       a x
-                                                                           1
-                                                            2n
-                              2                            !        
-                                             n 3                     
+               2
+              s Ys       ( ) 0 −  y′ ( ) 0 +  6Y ( ) 6ys −  ( ) 0 +  9Ys     y ( ) 0 =  −  1 y′ ( ) 0 =  6
+                                                         ( ) 0=
+                  ( ) sy−
+                         )
+              ( s +  2  6s +  9 Ys  −  s
+                            ( ) =
+             Ys      −    s    =  A   +    B
+               ( ) =
+                      (s +  ) 3  2  s + 3  (s +  ) 3  2
+
+                       s   A = − 1
+                     
+                     
+                      s    0  3A +  B =  0 B =  3
+
+              £  −  1 {Ys      −  1        − 1  +  3      
+                      ( )} £=
+                                      s + 3  (s +  ) 3  2    
 
 
-             Exercise
-                                              2 
-                                            
-                                                                 0
-             Find a power series solution.   1 x  y  6xy  4y 
-             Solution
-                         
-                              n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n  1          n  0
-                                               
-                                                                      n
-                 y   x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                      n
-                         n   2                n   0
-                 1 x 2   y   6xy  4y 
-                   
-                                        0
-                                                                                     
-                    n  2 n    1 a n 2 x   x 2    n n    1 a x n   2   6x  na x n   1  4  a x   0
-                                                                                               n
-                                        n
-                                                                             n
-                                                            n
-                                                                                            n
-                 n 0                         n 2                     n 1            n 0
-                                                              1429</code></pre>
+              y ( ) t =  −  e −  3t  +  3te −  3t
+
+
+
+          Exercise
+                                                                  t
+                                                                 e
+                                                                                          7
+          Solve using the Laplace transform:    y′′ +  6y′ +  5y = 12  ,  y ( ) 0 = − 1,  y′ ( ) 0 =
+          Solution
+              £  {y′′ +  6y′ +  5y =  } £ { }
+                                        t
+                                     12e
+
+              s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 +  6Y s −  ( ) 6y ( ) 0 +  5Ys  12     y ( ) 0 =  −  1 y′ ( ) 0 =  7
+                                                         ( ) =
+                                                               s − 1
+              ( s + 6s + 5 Ys    s − 1 −+  1
+                         )
+                                  12
+                2
+                            ( ) =
+                                        s
+             Ys          s −  2  +  2s +  11  =  A  +  B  +  C
+               ( ) =
+                     (s +  1 )(s +  5 )(s −  ) 1  s +  1  s +  5  s −  1
+                      s 2  A B C =     −  1
+                              +
+                                  +
+                     
+                     
+                       s     4A +  6C =  2
+                       0
+                       s  −  5A −  B +  5C =  11
+                           1    1   1              −  1  1  1              1   −  1 1
+                       ∆  =  4  0   6 =  −  48  ∆  =  2  0  6 =  48  ∆  =  4    2   6 =  48
+                                               A                      B
+                           −  5  −  1 5            11   −  1 5             −  5 11  5</code></pre>
      	</div>
     
      </div>

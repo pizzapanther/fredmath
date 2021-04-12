@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1483 - ODE Solution</title>
+        <title>Page 1483 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1483 - ODE Solution</div>
+        <div id="content-top1">Page 1483 - DE Solution</div>
         <div id="content-top2">P. 1483</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,87 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1469
 
-        Find the series solution to the initial value problem   x    1 y   xy   y   0;  y   0     2,  y   0   6
 
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n  1          n  0
-                                          
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
+                 Exercise
 
-             x    1 y   xy   y   0
+                     −
+                 A  4 lb  weight stretches a spring 2 feet. The weight is released from rest 18 inches above the
+                 equilibrium position, and the resulting motion takes place in a medium offering a damping force
+                                      7
+                 numerically equal to   times the instantaneous velocity. Use the Laplace transform to find the
+                                      8
+                                    x
+                 equation of motion  ( ) t .
 
-                                                                  
-                                                                           n
-                                          n
-                                                               n
-                                                              x 
-             x    1  n  2 n    1 a n  2 x   x  n    1 a n  1  a x   0
-                                                                        n
-                   n 0                        n 0                n 0
-                                                                                        
-               n   2 n    1 a n 2 x n   1    n  2 n    1 a n 2  n    1 a n 1 x n   1   a x  0
-                                                                                                  n
-                                                                n
-                                                               x 
-                                                                                               n
-            n 0                         n 0                       n 0                  n 0
-                                             
-                 n n    1 a n  1  na x         a   n   2 n    1 a n  2      x   0
-                                          n
-                              n
-                                                                             n
-                             x 
-                                        n
-                                                    n
-            n 1                  n 1        n 0
-                                                     
-                                                  2 
-                      n n    1 a n  1    na n  x   n  a   0  2a    a  n   2 n    1 a n  2  x   0
-                                                                                    n
-                                                                                  
-                                    
-                                                         
-                                                            n
-            n 1                                      n 1
-                        
-                    2 
-                                                                            n
-            a   2a          n n    1 a   n    1 a  n  2 n    1 a    x   0
-             0                       n  1        n                 n  2 
-                        n 1
-               Given:     0     2   a  ,  y   0    a
-                                               6
-                      y
-                                   0                1
-               a   2a   0      a    1  a     1
-                0     2             2   2  0
-                 n n    1 a   n    1 a  n   2 n    1 a    0
-                        n  1       n                 n  2
-                 a        n  a          n  1    a
-                    n  2  n  2 n  1  n   2 n    1  n
-                                                                                1
-               a   1 a   0a    1                       a   1 a    1  a      1     1
-                3   3  2     1    3                         4   2  3   12  2    6   12    12
-               a   3 a   1  a     3    1     1      a   2 a    1  a    1    1     1
-                5   5  4   10  3    60   30    60           6   3  5   10  4    90   120     360
+                 Solution
 
-                   
-                          2
-                                     1
-                                        4
-                                 3
-                       
-            y   x   2 x   1 x  12  x     a x
-                              3
-                                                  1
-                                                          1454</code></pre>
+                     m =  4  =  1    (w =  mg )
+                         32   8
+                     k =  4  =  2  ( xk =  mg )
+                         2
+
+                     c =  7
+                         8
+
+                     1 x′′ +  7  x′ +  2x =  0       mx′′ +  cx′ +  kx =  f  ( ) t
+                     8     8
+
+                                                                    0
+                     x′  7x′ + ′  +  6 1 x =  0; x ( ) 0 = −  18  =  −  3 ,  x′ ( ) 0 =
+                                                  12    2
+                         £  {x′′ +  7x′ +  16x } 0=
+
+
+                      2
+                         ( ) sx−
+                                                  ( ) 7 0x−
+                     s Xs        ( ) 0 −  x′ ( ) 0 +  7sXs  ( ) 16Xs+  ( ) 0=
+                     ( s +  2  7s +  16 Xs  −  3 s −  21
+                                 )
+                                     ( ) =
+                                            2
+                                                 2
+                     Xs       3     s + 7
+                       ( ) = −
+                                ( s +  7 )  +  15
+                              2        2
+                                           4
+                                     2
+                                                (
+                                              As +  7 )
+                                s + 7     =         2    +       B
+                            ( s +  7 ) 2  +  15  ( s +  7 ) 2  +  15  ( s +  7 ) 2  +  15
+                                                                      4
+                                                                2
+                                                       4
+                                                2
+                                       4
+                                 2
+                                  s    A =  1
+                                  0  7                7
+                                
+                                 s   2  A +  B =  7 B =  2
+                                
+                                                                                                
+                                          −  1  s +  7                    −  1        15        
+                     {Xs      −  3 £          2  2      2     −  37  2  £        2  2      2    
+                        ( )} =
+                                                                22
+                                2
+                                                                      15
+                                         (     s +  7 )  +      15   2          (   s +  7 )  +      15   2      
+                                                                                     2
+                                             2
+                                                                                            
+                                                       t
+                                 t
+                     x ( ) t =  − 3 e 7 /2 cos  15  t −  7 15  e 7 /2 sin  15  t
+                                                 10
+                             2
+                                         2
+                                                               2</code></pre>
      	</div>
     
      </div>

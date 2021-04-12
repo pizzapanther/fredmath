@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1344 - ODE Solution</title>
+        <title>Page 1344 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1344 - ODE Solution</div>
+        <div id="content-top1">Page 1344 - DE Solution</div>
         <div id="content-top2">P. 1344</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   3  1               3  1 
-                 x         x     A         
-                       1    3             1    3 
-
-                              
-                             3     1
-                 A    I
-                   
-                                      
-                             1       3 
-                                   2
-                           3 
-                                 1
-                                      
-                             2  4     8 0
-                The eigenvalues are:      2,       4
-                                      1          2
-                The natural frequencies:      2   and       2
-                                          1                2
-                For     2       A  2I V 
-                                                0
-                      1                     1
-                          1  1     0
-                                  a
-                                                     b
-                                          a 
-                                  b
-                                        0
-                          1   1     
-                                             
-                                 1                                     1   
-                           V        x t    a  cost  2  b  sint  2   
-                             1    1     1       1           1          
-                                                                         1
-                For     4       A  4I V 
-                                                 0
-                      2                      2
-                         1 1     0
-                               a
-                                                    b
-                                       a  
-                               b
-                                     0
-                         1 1     
-                                   1                                   1 
-                                              t 
-                                                            
-                           V          x     a  cos2t b   s i 2t   
-                                                                  n
-                             2      1    2        2         2         1 
-                 x    t   a  cost  2  b  sint  2   a  cos2t b  sin 2t
-                                                          
-                  1       1           1           2         2
-                
-                                                          
-                 x 2    t   a 1  cost  2   b 1 sint  2   a 2  cos2t b 2  sin 2t
-                
-                In the degenerate natural mode with frequency      2  the 2 masses move in the same direction with
-                                                               1
-                                                                  2
-                equal amplitudes of oscillation. At frequency    they oscillate in opposite directions with equal
-                                                              2
-                amplitudes.
+    <pre style="white-space:pre-line"><code>1330 | S O LU TI O N
 
 
-             Exercise
-             Consider the mass-and-spring system shown below and with the given masses and spring constants values.
+                                                   2
+                                                =  s − a 2
+                                                   2
+                                                  s +  a 2
+                 ∫ 0 ∞  t  cos at  − st dt = ( s +  a a 2 2 ) 2
+                                           2
+                                          s −
+                           ( ) e
+                                          2
 
-             Find the 2 natural frequencies of the system and describe its natural modes of oscillation.
-                    m   1, m   2; k    2, k   k   4
-                      1      2        1       2    3                 k 1             k               k
-             Solution                                                        m 1      2       m 2      3
-                 m x    k  k   x   k x
-                  1 1       1    2  1    2 2
-                                                                       x              x
-                 m x   k x   k  k 3  x 2                         1              2
-                
-                           2 1
-                                   2
-                    2 2
-                                                              1323</code></pre>
+
+
+              £ {sin at     cos at        ∫  0 ∞  sin at  −  st dt −  a ∫  0 ∞  t cos at  −  st dt
+                                                                         ( ) e
+                                                  ( ) e
+                                ( )}( ) s =
+                    ( ) at−
+                                                         2
+                                         =    a    − a  s −  a 2
+                                            2
+                                           s + a 2    ( s + a 2 ) 2
+                                                        2
+
+
+                                         =  as +  2  a −  3  as +  2  a 3
+                                               ( s +  a 2 ) 2
+                                                 2
+
+
+                                         =    2a 3
+                                           ( s +  a 2 ) 2
+                                             2
+
+
+
+              £ {sin at −   cos at            2a 3          √
+                    ( ) at
+                                ( )}( ) s =
+                                           ( s +  a 2 ) 2
+                                             2
+
+
+          Exercise
+
+          Use Definition of Laplace transform to show the Laplace transform of
+                                               (
+                                                  2
+                 £ {cos at +  ( ) at sin at   ss +   3a 2 )
+                                   ( )}( ) s =
+                                               ( s +  a 2 ) 2
+                                                 2
+
+
+          Solution
+
+
+              £ {cos at +  ( ) at sin at  ∫ 0 ∞ (cos at +  ( ) at sin at  − st dt
+                                                               ( ))e
+                                ( )}( ) s =
+
+
+
+                                                  ( ) e
+                                                                         ( ) e
+                                         = ∫  ∞  cos at  −  st dt + a ∫  ∞  t sin at  −  st dt
+                                            0                     0</code></pre>
      	</div>
     
      </div>

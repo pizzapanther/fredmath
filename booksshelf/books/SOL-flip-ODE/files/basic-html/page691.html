@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 691 - ODE Solution</title>
+        <title>Page 691 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 691 - ODE Solution</div>
+        <div id="content-top1">Page 691 - DE Solution</div>
         <div id="content-top2">P. 691</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Find the general solution    y   25y   20sin5x
-
-             Solution
-                                             2
-                                                    
-                The characteristic equation:    25 0            5i
-                                                               1,2
-                               
-                 y   C  cos5x C    sin5x
-                  h    1           2
-                The particular equation:   y    A cos5x   B sin5x
-                                          p
-                                                            B
-                                                 A
-                                         y   5 sin5x  5 cos5x
-                                          p
-                                                               B
-                                                  A
-                                         y   25 cos5x  25 sin5x
-                                           p
-                 25 cos x  25 sin x  25 cos x  25 sin x   20sin5x
-                               B
-                    A
-                                                      B
-                                          A
-                 0   20sin5x
-                The particular equation:   y    Ax cos5x   Bx sin5x
-                                          p
-                        y   A cos5x  5Ax sin5x   B sin5x  5Bx cos5x    A  5Bx cos5x  B  5Ax sin5x
-                         p
-                                                            A
-                               B
-                        y  5 cos5x     5 A  5Bx sin5x  5 sin5x    5 B  5Ax cos5x
-                         p
-                                                         A
-                            10 cos5x   25Ax  cos5x  10 sin5x  25Bx  sin5x
-                               B
-                10 cos5x    25Ax cos5x  10 sin5x   25Bx sin5x  25Ax cos5x   25Bx cos5x  20sin5x
-                                            A
-                   B
-                10 cos5x   B  10 sin5x   A  20sin5x
-                          10B   0    B   0
-                        
-                          10A   20    A   2
-                                 
-                                               x
-                 y   x   C  cos5x C  sin5x   2 cos5x
-                         1          2
+    <pre style="white-space:pre-line"><code>1. 10 − A u to n o mo u s  E q u a ti o n s  & S ta b i lit y  | 685
 
 
-             Exercise
+                    b)  Solve  ( ) t  subject to  ( ) 0A  =  0. Sketch the graph of  ( ) t  and verify your prediction in part
+                               A
+                                                                            A
+                        (a).
 
-                                                         2
-             Find the general solution:   1  y   y   y   x  2x
-                                          4
-             Solution
+                 Solution
 
-                                                 2
-                The characteristic equation:     1     1   1   1  2    0    1,2    2
-                                                            2
-                                             4
-                                
-                 y    C   C x e  2x
-                  h     1    2
-                         2
-                                
-                 y    Ax   Bx C
-                  P
-                    y   2Ax   B
-                      P
-                    y   2A
-                      P
+                    a)   dA  =  k  (M −  ) A − kA =  0
+                         dt    1            2
 
-                 1  y   y   y   x  2x
-                                2
-                 4
+                        kM −   k A k A =    0
+                                    −
+                         1      1      2
+                              kM
+                         A =   1     ; the equilibrium solution
+                             k +  k
+                              1    2
+                                      k M
+                         lim A ( ) t =  1
+                        t→∞         k +  k 2
+                                     1
+                        Since  k &gt; , the material will never be completely memorized and the larger k is, the less
+                                    0
+                                2                                                                    2
+                        the amount of material will be memorized over time.
 
+                    b)   dA  =  kM −  ( k +  k  ) A
+                         dt    1       1    2
+                         dA  +  ( k +  k  ) A kM
+                                         =
+                         dt     1    2      1
+                              ∫ ( k + k 2 ) dt  ( k + k  ) t
+                                 1
+                               e          = e  1   2
+                            ∫    1            dt =  k +  k 2
+                              Mk e  ( k +  1  k 2 ) t  Mk 1  e ( k +  1  k 2 ) t
+                                                   1
 
+                                 −  ( k +  k  ) t   Mk  ( k +  k  ) t  
+                         A ( ) t =  e  1  2      1  e  1  2  + C   
+                                                 k
+                                             k +  2              
+                                             1
+                                                    )
+                                 Mk         −  ( k +  k t
+                             =      1  + Ce    1   2
+                               k +  k
+                                1    2
+                                   A ( ) 0 =
+                                          0
 
-                                                               679</code></pre>
+                                         Mk
+                                   0 =      1  + C
+                                       k +  k
+                                        1    2
+                                           Mk
+                                   C = −      1
+                                         k +  k
+                                          1    2
+                                                           )
+                                 Mk        Mk     −  ( k +  k t
+                         A ( ) t =  1   −     1  e    1  2
+                                k +  k    k +  k
+                                 1   2     1   2</code></pre>
      	</div>
     
      </div>

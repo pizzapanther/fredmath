@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1136 - ODE Solution</title>
+        <title>Page 1136 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1136 - ODE Solution</div>
+        <div id="content-top1">Page 1136 - DE Solution</div>
         <div id="content-top2">P. 1136</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>0     1     0
-                                          1
-                    V
-                det( )    2   1    1    0
-                          1     1     1
-
-                The solutions are independent for all t and form a fundamental set of solutions.
-
-
-             Exercise
-                                                          x    t   x   2x
-                                                        
-             Find the general solution of the system      1       1     2
-                                                         x 2    t   4x   1  3x 2
-                                                        
-             Solution
-
-                      1 2
-                 A       
-                      4 3 
-
-                            
-                          1        2
-                   
-                 A    I
-                                    
-                            4      3 
-                                      
-                             2  4     5 0
-                Thus, the eigenvalues are:     1  and         5
-                                           1             2
-                                          
-                For       1      A       I V   0
-                      1                 1    1
-                     2   2                                   1 
-                                    0
-                              x
-                                 
-                                       x   y       V     
-                                                             1
-                     4   4    y    0                         1 
-                                             1 
-                    The solution is:  x t       e  t 
-                                      ( )
-                                     1        1 
-                                          
-                For      5      A      I V  0
-                      2                2    2
-                                      0
-                                 x
-                      4   2                                    1
-                                   
-                                         2   x   y      V    
-                                                                2
-                                      0
-                                 y
-                      4    2                                   2 
-                                             1  5t
-                    The solution is:  x  ( ) t       e
-                                     2       2 
-                               1   t     1  5t
-                   x ( ) t   C     e   C    e
-                           1    1     2   
-                                            2
-
-
-             Exercise
-                                                         x    t   2x  2x
-                                                        
-             Find the general solution of the system      1       1     2
-                                                          x 2    t   x   1  3x 2
-                                                        
-             Solution
+    <pre style="white-space:pre-line"><code>1126 | S O LU TI O N
 
 
 
-                                                              1115</code></pre>
+             The roots are: λ   = 1, 2
+                             1,2
+
+
+              y  ( ) C t + C t 2
+                  t =
+               h       1     2
+                                      2
+              y  ( ) t =  t  &  y  ( ) t =  t
+               1              2
+
+                   tt  2
+             W =
+                  12t
+
+                =  t 2    ≠  0
+
+
+              1    t y′′ − 2  2ty′ +  2 y t 3 sint
+                                    =
+                
+               2
+              t 
+                             =
+              y′′ −  2  y′ +  2  y t sint
+                  t     t 2
+                     0    t 2
+             W =
+               1   t sint  2t
+
+
+                 =  t −  3 sin   t
+                    t    0
+             W =
+               2    1 t sint
+
+                 = t 2 sin   t
+
+                                                                    W ∫
+               u  ( ) t =     t −  3 t ∫  sint   dt         u =      W 1
+                 1            2                              1
+
+                                tt
+                           t
+                      = − ∫   sin  d
+
+
+                                          ∫  sin  dtt
+
+                             +      t −     − cost
+                             −     − 1      − sint
+
+                      =  t cost − sin   t
+
+
+                                                                     W ∫
+               u   ( ) t =    t 2 t ∫  sint   dt            u =      W 2
+                 2           2                                2
+                        ∫
+                           sin  dtt
+                      =
+
+                            t
+                      = − cos</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 490 - ODE Solution</title>
+        <title>Page 490 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 490 - ODE Solution</div>
+        <div id="content-top1">Page 490 - DE Solution</div>
         <div id="content-top2">P. 490</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-            y   t   C  cost    y    1    0 1
-                                                    
-                     2               2
-            y   t  C  sin   t
-                     2
+    <pre style="white-space:pre-line"><code>484 | S O LU TI O N
 
 
-        Exercise
+          Exercise
 
-        Find a particular solution satisfying the given initial conditions
+                                      
+          Find the general solution     ye xy  −  1     dx +    xe xy  +  x    dy =   0
+                                      
+                                             y            y 2   
+          Solution
 
-                                                         
-                                                                    
-                                    t
-                                           t 
-            y   y  0 ;    y    t   cos ,  y    sin ; t  y     1,  y     1
-                          1              2               2          2
-        Solution
-                  cost   sint
-            W 
-                  sint  cost
+                      M =  ye xy  −  1            N =  xe xy  +  x
+                                  y                           y 2
 
-                            2
-                 cos t   2  sin t
-                1    0
+                                                     xy
+                         xy
+                                                                   1
+                                                             xy
+                                                          xye
+                                                    e
+                        e
+                 M    =       xye xy  1       N =+ +
+                            + +
+                    y                 y 2       x                 y 2
+              ⇒   M =  N
+                    y
+                         x
+              ψ=        ye xy  −  1    ∫     dx
+                            y
+               =  e xy  −  x  +  h ( ) y
+                        y
 
-              y  and y  are linearly independent.
-                1      2
-
-            y   t   C y    t   C y    t
-                    1 1       2 2
-                                               
-            y t     C  cost   C  sint    y    1     C   1
-                    1         2                2              2
-                                                
-            y   t   C  sint  C  cost    y     1   C     1
-                      1         2               2             1
-
-            y   t    cos   t  sint
-
-
-        Exercise
-
-
-        Find a particular solution satisfying the given initial conditions
-            y  4y  4y  0 ;    y    t  e 2t ,  y      t  te 2t ;  y   0   2,   y   0 
-                                                                             0
-                                 1            2
-        Solution
+                                 ′
+              ψ   =  xe xy  +  x  +  hy  xe xy  +  x
+                                  ( ) =
+                y           2                    2
+                           y                   y
+                 h′ ( ) 0y =  ⇒  h ( ) y =  C
 
 
-                  e 2t     te 2t
-            W 
-                 2e 2t  1 2t e    2t
+              e xy  −  x  =  C
+                    y
 
-                             4t
-                1 2t   2t e
 
-                 e 4t      0
+          Exercise
 
-              y  and y  are linearly independent.
-                1      2
+                                                x
+          Find the general solution  (tan x −  sin sin  ) y dx +  (cos cosx  ) y dy =  0
+          Solution
+              M  ( ,x y ) tan x=  −  sin sin y N ( ,x y ) cos cosx=  y
+                                  x
+                 ∂ M  = − sin cos y
+                            x
+                   y ∂                   ∂  M  ∂  N
+                                     ⇒       =
+                  ∂ N  =  − sin cos y     y ∂   x ∂
+                            x
+                   x ∂
+                  ∫
+                               x
+              ψ=    (tan x − sin sin  ) y  dx
 
-            y   t   C y    t   C y    t
-                    1 1       2 2
+               =  ln sec x +  cos sin y h ( ) y
+                               x
+                                     +
+              ψ   =  cos cos y +  h′ ( ) y =  cos cos y
+                       x
+                                           x
+                y
+                       h′ ( ) 0y =  ⇒  h ( ) y =  C
 
-                                                          478</code></pre>
+
+              ln sec x +  cos sin y =  x  C</code></pre>
      	</div>
     
      </div>

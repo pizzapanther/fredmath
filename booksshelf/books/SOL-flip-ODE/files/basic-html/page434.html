@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 434 - ODE Solution</title>
+        <title>Page 434 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 434 - ODE Solution</div>
+        <div id="content-top1">Page 434 - DE Solution</div>
         <div id="content-top2">P. 434</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,53 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a)  Let assume that over the time interval of length t , 0 t t    , the switch S is at position P and the
-                                                             1         1
-              capacitor is being charges. When the switch is moved to position Q at time t  the capacitor
-                                                                                       1
-              discharges, sending an impulse to the heart over the time interval of length t : t   t t  t . Thus
-                                                                                                
-                                                                                       2   1      1    2
-              over the initial charging/discharging interval  0 t t    t the voltage to the heart is actually
-                                                                 1   2
-              modeled by the piecewise-defined differential equation
-                                                   
-                                                       
-                                       0,        0 t t  1
-                                    
-                              dE    
-                                        1
-                               dt      RC  , E  t  t t  t 2
-                                                     
-                                    
-                                                1
-                                                       1
-              By moving S between P and Q, the charging and discharging over time intervals of lengths t  and t
-                                                                                                       1      2
-              is repeated indefinitely. Suppose t   4 s , t   2 s .  E  12 V , and    0E   0,    4  12,
-                                                                                            E
-                                               1        2         0
-              E   6  ,    12E  10   ,    0E  12  , and  so on.
-                     0
-               Solve for    t  for 0 t    24
-                         E
-                                                                                                 
-          b)  Suppose for the sake of illustration that  R C    1. Graph the solution in part (a) for 0 t   24
-        Solution
-            a)   dE     1  E     dE     1  dt
-                dt     RC           E      RC
-
-                   E       RC   dt
-                  dE        1
+    <pre style="white-space:pre-line"><code>428 | S O LU TI O N
 
 
-                ln E    1  t C
-                             
-                        RC
-                          1  t A       1  t
-                             
-                E   t   e  RC  1    Ae  RC
-               For 0 t    4, 6 t   10, and 12 t   16
-                                               
-                               
-                      E   t   0
+              Rate out =  4×   x
+                            100 2t
+                                +
+                       =  2x      g  / min
+                         50 t+
+              dx  =  3 −  2x
+                         +
+              dt      50 t
+              dx  +  2   x =  3
+              dt   50 t +
+                     50 t + ∫  2dt
 
-               For    4E    E   E  10    12  16
+                    e     =  e 2ln (50 t+  )
+                                   2
+                          = (50 t+  )
 
-                            1  t                1  t
-                       Ae  RC    12    A  12e RC
+                 ∫   ( 3 50 t+  ) dt =  (50 t+  )
+                            2            3
+
+                                           )
+              x ( ) t =  1   ( (50 t+  ) +  3  C
+                    (50 t +  ) 2
+
+                           ++
+                       = 50 tC    (50 t+  ) − 2
+                          x ( ) 0 = 10
 
 
-                E   4      A   12e 4/RC
-
-                E       A   12e 10/RC
-                  10
-                E       A   12e 16/RC
-                  16
+                             =
+                          10 50 +    C
+                                    2500
+                        C  = − 10 5
 
 
 
+              x ( ) 50t =  t +−  10 5
+                            (50 t+  ) 2
 
 
 
+               ( x t =  30 ) 50 30=  +  −  10 5
+                                  (50 30+  ) 2
 
-
-
-
-
-
-
-
-                                                          430</code></pre>
+                       =  64.375  lb</code></pre>
      	</div>
     
      </div>

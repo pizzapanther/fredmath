@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1507 - ODE Solution</title>
+        <title>Page 1507 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1507 - ODE Solution</div>
+        <div id="content-top1">Page 1507 - DE Solution</div>
         <div id="content-top2">P. 1507</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,90 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution             Section 4.3 – Legendre’s Equation
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1493
 
 
+                                   E
+                            qt      0 1   ( 1 e −  t λ  −  λ te −  t λ  )    ω  2  λ =  2  =  1
+                             ( ) =
+                                            −
+                                    L  λ 2                                     LC
+                                 =  EC ( 1 e −  t λ  −  λ te −  t λ  )
+                                         −
+                                    0
+                          dq    1         − kt
+                    b)  R     +   q =  E e
+                           dt   C      0
+                                                         1
+                                           1
+                                                                           0
+                                              () =
+                        R (sQs −  () q (0) ) +  C Qs  E 0 sk        q ( ) 0 =
+                                                        +
+                        ( Rs +  C ) Q () =  s  E 0 sk+
+                                              1
+                               1
+                        ( RCs + 1 ) Qs   E 0 sk
+                                              1
+                                    () =
+                            C
+                                              +
+                          () =
+                        Qs     E  C         1        =  EC  (  A  +    B    )
+                                          )(
+                                                              +
+                                 0  (s k RCs +     ) 1   0   s k    RCs + 1
+                                       +
+                                          +
+                                               +
+                                RCAs +  A Bs kB =    1
+                                       s 1  (RC A B+ )  =  0
+                                                              ( 1 kRC ) A =  1
+                                                                − →
+                                                +
+                                       s 0    A kB =  1
+                                       A =    1        B = −  RC
+                                            −
+                                           1 kRC          1 kRC
+                                                           −
+                        Qs     E C  (   1     1   −    1     RC    )
+                          () =
+                                 0   1 kRC s−  +  k  1 kRC RCs−  +  1
+                                 EC                    
+                              =    0      1  −    1    
+                                1 kRC s +      k  s +  1   
+                                 −
+                                                   RC 
+                        When  k ≠   1
+                                   RC
 
-             Exercise
+                                             EC
+                                        }
+                                              0
+                                £  { () =  1 kRC   £        s  1 k  −  1  1  +    
+                                   Qs
+                                             −
+                                                             s +  RC   
+                                        EC
+                                q ( ) t =  0  ( e −  kt  −  e  t −  /RC )
+                                      1 kRC
+                                        −
+                        When  k =   1    ⇒  Qs     E C          1
+                                             () =
+                                   RC               0   ( s +  RC ) (RCs +  ) 1
+                                                             1
+                                                                                                     
+                                                 =  E RC 2     1      =  E RC 2    A    +     B      
+                                                    0               2    0       RCs + 1           2  
+                                                           (RCs +  ) 1                    ( CRs +  ) 1  
+                                                 +
+                                       RCAs +  A B =  1
+                                               )
+                                                    0
+                                       s 1  (RC A = →    A =  0
 
-
-             Establish the recursion formula using the following two steps
-             a)  Differentiate both sides of equation
-                                              
-                                                        n
-                    g  , t  x     1         P n    x t  with respect to t to show that
-                                
-                                      
-                               1 2xt t   2
-                                             n 0
-                                                       
-                                      n
-                       
-                                            
-                                                  
-                      x t    P n    x t   1 2xt t 2    nP n    x t n 1
-                           n  0                       n  1
-                                          n
-             b)  Equate the coefficients of t  in this equation to show that
-                                                           x 
-                    P    x   xP    x  and   n    1 P    2n    1 xP    x   nP    x  for  n  1
-                     1         0                       n  1              n        n  1
-             Solution
-                                              
-                                   2   1/2          n
-                a)  Let:  1 2xt t             P n    x t
-
-                                             n 0
-
-                                                                          1/2               
-                                                               
-                                                                     
-                    Differentiate both sides with respect to t:  1 2xt t 2           P    x t n   
-                                                              
-                                                                                      n      
-                                                                                    n 0       
-                                                      
-                                  
-                                              
-                                               3/2
-                     1  2x    2t  1 2xt t    2     nP    x t n 1
-                      2                                     n
-                                                     n 1
-                                                            
-                          
-                                       
-                                        1/2
-                             
-                                                
-                                                     
-                                  
-                     x t    1 2xt t 2     1 2xt t 2    nP n    x t n 1  Multiply both sides by: 1 2xt   t 2
-                                                                                                      
-                                                           n 1
-                                                      
-                                      n
-                     x t     P n    x t   1 2xt t 2    nP n    x t n 1
-                                                 
-                                            
-                           n   0                      n   1
-                                                         
-                                      n
-                                                      n
-                b)   x t    P n    x t   xP n    x t   P n    x t n 1
-                           n 0           n 0            n 0
-                                                               
-                                                              n n   1
-                                                          
-                                                     n               n
-                                             xP n    x t   P n 1   x t
-                                          n   0          n   1
-
-
-
-
-                                                              1477</code></pre>
+                                       s 0   A B =  1 →  B = 1
+                                              +</code></pre>
      	</div>
     
      </div>

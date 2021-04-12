@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1342 - ODE Solution</title>
+        <title>Page 1342 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1342 - ODE Solution</div>
+        <div id="content-top1">Page 1342 - DE Solution</div>
         <div id="content-top2">P. 1342</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   2  2               2  2 
-                 x         x     A          
-                       2    2             2    2 
-
-                             2      2
-                              
-                   
-                 A    I                                          k               k
-                                      
-                             2       2                            1               2              k 3
-                                                                           m 1              m 2
-                                   2
-                           2 
-                                      4
-                                
-                             2  4     0                          x              x
-                                                                       1              2
-                The eigenvalues are:     0,      4
-                                      1        2
-                The natural frequencies:     0 and              4   2
-                                          1              2
-                For    0       A  0I V 
-                                              0
-                      1                    1
-                               a
-                      2  2      0
-                                                  b
-                                      a 
-                                     0
-                               b
-                      2   2     
-                                         
-                              1                      1   
-                       V         x t   a   b t   
-                         1          1        1   1   
-                              1
-                                                       1
-                For     4       A  4I V 
-                                                 0
-                      2                      2
-                     2 2      0
-                             a
-                                                 b
-                                    a  
-                                   0
-                            b
-                     2 2      
-                               1                                    1 
-                                           t 
-                                                         
-                       V          x     a  cos2t b   s n     
-                                                              i 2t
-                         2      1    2        2          2         1 
-                 x    t   a   b t  a  cos2t b  sin2t
-                                            
-                
-                  1       1   1     2         2
-                                  
-                                            
-                 x 2    t   a   b t a 2  cos2t b 2  sin2t
-                
-                           1
-                               1
-                                                                   0
-                In the degenerate natural mode with frequency    the 2 masses move by translation without
-                                                               1
-                oscillating. At frequency    they oscillate in opposite directions with equal amplitudes.
-                                              2
-                                           2
+    <pre style="white-space:pre-line"><code>1328 | S O LU TI O N
 
 
-             Exercise
-             Consider the mass-and-spring system shown below and with the given masses and spring constants values.
-             Find the 2 natural frequencies of the system and describe its natural modes of oscillation.
-                   m    m   1; k   1, k   2, k  1
-                     1    2        1      2       3
-             Solution
-                 m x    k  k   x   k x        x   3x 
-                                                     
-                  1 1       1    2  1    2 2          1      1  2x 2
-                                                   
-                 m x   k x   k  k   x          x   2  2x   1  3x 2
-                   2 2    2 1     2    3   2
-                        3  2               3  2 
-                 x         x     A         
-                       2    3             2    3 
+              £ {cos ( tω  φ +  )}( ) s =  s cos ( ) φ  ω −  sin ( ) φ    √
+                                         2
+                                        s + ω 2
 
-                                                              1321</code></pre>
+
+          Exercise
+
+          Use Definition of Laplace transform to show the Laplace transform of
+
+                 £ {sin at −  ( ) at cos at       2a 3
+                                   ( )}( ) s =
+                                              ( s +  a 2 ) 2
+                                                2
+
+          Solution
+
+
+              £ {sin at −  ( ) at cos at  ∫ 0 ∞ (sin at −  ( ) at cos at  − st dt
+                                                               ( ))e
+                                ( )}( ) s =
+
+
+
+                                                  ( ) e
+                                                                         ( ) e
+                                         = ∫  ∞  sin at  −  st dt −  a ∫  ∞  t cos at  −  st dt
+                                            0                     0
+                                                        ∫ sin at  dt
+
+                                 +        e − st        −  1 cosat
+                                                          a
+                                 −       −    se − st     −  1  sin at
+                                                          a 2
+                                 +       s e  st
+                                          2 −
+
+                       ∞                                          ∞     2   ∞
+                         sin at e −  st dt =   ∫    −  1  cosat −  s 2  sin ate −  st    0 ∫  −  s 2  sin at e −  st dt
+                                                             
+                                           a
+                       0                            a                  a    0
+
+
+                       a ∫     0  sin at e  dt =  a
+                      2
+                     s +  a 2   ∞       − st    1
+                         2
+
+                     ∫ 0 ∞ sinat e − st dt =  s +  a 2
+                                           a
+                                         2
+
+
+
+
+
+                                                                  ∫ cosat  dt
+
+
+                                 +               te − st           1 sinat
+                                                                   a</code></pre>
      	</div>
     
      </div>

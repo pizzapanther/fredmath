@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1323 - ODE Solution</title>
+        <title>Page 1323 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1323 - ODE Solution</div>
+        <div id="content-top1">Page 1323 - DE Solution</div>
         <div id="content-top2">P. 1323</div>
      </div>
      <div id="content-middle">
@@ -152,95 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1309
 
-        Find a system of differential equations and solve for the currents in the given network with initial values:
 
-         I    0   I    0   I    0     R  10   , R  5   , L   20 H , C   1   F , V  10 V
-                                 0
-          1       2       3                   1            2                         30
-        Solution
+                       ∫  sint e  ( −+  ) 1 t dt =  (−  cost −  (s +  ) 1 sint e −+  ) 1 t  −  (s +  ) 1  2 ∫  sint e −+  ) 1 t dt
+                                 s
+                                                                (s
+                                                                                         (s
+                                                             )
+                       ( (s +  ) 1  2  +  1 ) ∫ sint e −+  ) 1 t dt =  (−  cost −  (s +  ) 1 sint e −+  ) 1 t
+                                            (s
+                                                                             (s
+                                                                         )
 
-             R I   LI   
-              1 1     2   V                1
-                           1
-                                
-             R I   R I     q V       2
-                      2 3
-               1 1
-                           C
-              R I   1  q   LI  0    3
-                              
-               2 3   C       2
-             10I   20I     10
-                1      2
-            
-             10I  5I   30q  10
-                      3
-                 1
-            
-                             
-             5I  30q   20I   0
-            
-                             2
-                3
-              I   2I     1
-              1     2
-            
-                             2
-             2I   I   6q 
-                1
-                    3
-            
-                         
-             I   6q   4I  0
-            
-               3
-                         2
-                                  
-            I   I   I    I   q      I   I   q
-             1    2    3    3             1    2
-             2I  3q   6q             I   2    3 q   
-               2             2            2            3q
-                                              3   2
-                         
-              q  6q   4I  0    4
-            
-                         2
-                                            
-                                             
-              4      q  6q  4  2    3 q    3q 
-                                                0
-                                    2
-                                3
-            6q  13q  6q 
-                             0
-                                                  
-                  2
-                              
-                6   13  6 0               13 5        3 ,    2
-                                         1,2    12      1,2    2     3
-                                    t
-                         t
-            q   t   C e   3 /2    C e   2 /3
-                    1           2
-                   2I    0  3q   0  6q   0   2   q   0   1
-                      2                                     3
-                   q   0   1    C   C   1
-                          3         1    2   3
-                                              t
-                                t
-                q   t   3 C e   3 /2    2 C e   2 /3
-                         2  1         3  2
-                   q   0   I    0   0        3 C   2 C   0        9C   4C 
-                                                                               0
-                            3                2  1   3  2             1      2
-                 3C    1  3C   2  1   3  3              1  3            3 1
-                                              15            4             9
-                                                                        2
-                                                        1
-                  9C   1  4C   2  0   9  4              0  4            9  0
-                                                          1302</code></pre>
+
+                     ∫ 0 ∞ sin   t e −+  ) 1 t dt = −  cost +  (s +  (s +  ) 1  2  +  ) 1 sint  e −+  ) 1 t
+                                (s
+                                                               (s
+                                                         1
+
+                              cost +  (s +  ) 1 sint  −+  ) 1 t  ∞
+                                                 (s
+                     Fs                        e
+                       () = −
+                                 (s +  ) 1  2  +  1     0
+                          =      1 2
+                            (s +  ) 1  +  1
+
+
+                 Exercise
+
+
+                                                                                      f
+                 Use Definition of Laplace transform to find the Laplace transform of    ( ) t = e − 2t  cos3t
+                 Solution
+
+
+                                         t
+                     F ( ) s = ∫ 0 ∞ e −  2t  cos3  e −  st dt
+
+
+                                         (s
+                          = ∫ 0 ∞ cos3  et  −+  ) 2 t dt
+
+
+
+
+                                                       t
+                                                 ∫ cos3  dt
+
+                                    (s
+                                  e −+   ) 2 t      1 sin3t
+                                                  3
+                                                   1
+                                        (s
+                              −  (s +  ) 2 e −+  ) 2 t    −  cos3t
+                                                   9
+                                        (s
+                              (s +  ) 2  2 −+  ) 2 t
+                                      e
+
+                       ∫  cos3 e −+   ) 2 t dt =  ( 1 sin3t −  1 (s +  ) 2 cos3 et )  −+  ) 2 t  −  1 (s +  ) 2  2 ∫  cos3 e −+  ) 2 t dt
+                                                                       (s
+                                                                                                    (s
+                                 (s
+                                                                                                t
+                             t
+                                                                               9
+                                                      9
+                                             3
+                       ( (s +  ) 2  2  +  9 ) ∫ sint e −+  ) 2 t dt =  ( 3sin3t −  (s +  ) 2 cos3 e −+  ) 2 t
+                                             (s
+                                                                                (s
+                                                                             ) t</code></pre>
      	</div>
     
      </div>

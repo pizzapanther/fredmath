@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 854 - ODE Solution</title>
+        <title>Page 854 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 854 - ODE Solution</div>
+        <div id="content-top1">Page 854 - DE Solution</div>
         <div id="content-top2">P. 854</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             A 128-lb  weight is attached to a spring having a spring constant of 64 lb/ft .  The weight is started in
-             motion initially by displacing it 6 in above the equilibrium position with no initial velocity and with an
-             applied external force    8sin 4F t   t . Assume no air resistance.
-
-              a)  Find the equation motion of the mass.
-              b)  Plot the motion.
-              c)  Determine the motion of the solution.
-             Solution
-
-                a)  m   128    4
-                         32
-                    4y   64y   8sin4t
-
-                    y   16y   2sin 4 ; t  y   0     6    1 ,  y   0 
-                                                                    0
-                                                 12     2
-                          2  16   0        4i
-                                           1,2
-                    y   C  cos4t   C  sin 4t
-                      h    1          2
-
-                    y     At cos4t   Bt sin 4t
-                      p
-                      y   A cos4t   4At sin 4t   B sin 4t  4Bt cos4t
-                        p
-                                              4At 
-                           A  4Bt cos4t        B sin 4t
-                      y   4 cos4t   4 sin 4t  4A  16Bt sin 4t   16At    4B cos4t
-                             B
-                                        A
-                        p
-                            16At 
-                                   8B cos4t  8A  16Bt sin 4t
-                    y   16y   2sin4t
-
-                         cos4t  t    16A  16A  0
-                        
-                                0
-                               t       8B   0      B   0
-                         sin 4t  t   16B  16B   0
-                        
-                                0                          1
-                               t         8A   2    A     4
-                        
-
-                    y       1 t cos4t
-                      p     4
-
-                    y t      cos4t  C  sin 4t   1 t cos4t
-                        C
-                            1          2        4
-                            y   0     1    C     1
-                                    2         1    2
-
-                                                             
-                        y   4C  sin 4t   4C  cos4t   1 cos4t t sin 4t
-                                1           2         4
-                            y   0   0   C   1
-                                             2  16
+    <pre style="white-space:pre-line"><code>844 | S O LU TI O N
 
 
 
-                                                               841</code></pre>
+                 λ  2  6 +  λ +  25 0
+                              =
+                            i
+                 λ    = 34
+                         ±
+                  1,2
+              x ( ) t =  e 3t  ( cos4t +  B sin 4t )
+                         A
+                       x ( ) 0  =  A =  0
+
+                                                                   3t
+                 xt ′ ( ) (3 cos4t +  A  3 sin 4t −  B  4 sin 4t +  A  4 cos4t )e
+                      =
+                                                          B
+                     x′ ( ) 3A=  0  +  4B =  − 8
+                     B  = − 2
+
+
+              x ( ) t = − 2e 3t  sin 4t
+                            (
+                  =  2 e 3t  cos 4t −  3π )     (Overdamped motion)
+                                  2
+
+
+             Without damping  (c =     ) 0
+
+              2x′′ +  50x =  0                mx′′ +  kx =  0
+
+                 2λ +  2  50 0
+                          =
+                 λ    = ± 5   i
+                  1,2
+
+                                    ( )
+              ut    A cos 5t +   sin 5t
+                         ( ) B
+               ( ) =
+                   u ( ) 0  =  A =  0
+                                        ( )
+                                   B
+              ut ′ ( ) =  −  5 sin t +  A  ( ) 5 cos 5t
+                   u′ ( ) 0 = 5B = − 8
+
+                   B  = − 8
+                         5
+
+
+                          ( )
+               ( ) = −
+              ut      8 sin 5t
+                      5
+                         (
+                  =  8 cos 5t −  3π )
+                    5          2</code></pre>
      	</div>
     
      </div>

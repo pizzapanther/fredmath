@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 642 - ODE Solution</title>
+        <title>Page 642 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 642 - ODE Solution</div>
+        <div id="content-top1">Page 642 - DE Solution</div>
         <div id="content-top2">P. 642</div>
      </div>
      <div id="content-middle">
@@ -152,95 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                     3
-                            2
-                                    x
-            y     Ax   Bx  Cx e    D
-              p
-                                                       
-                                            2
-                                                          x
-                               2
-                         3
-                                                    
-                y   Ax   Bx   Cx  3Ax   2Bx C e
-                 p
-                                                                    
-                                                                      x
-                         3
-                               2
-                                       2
-                y   Ax  Bx   6Ax   Cx  4Bx   6Ax   2C   2B e
-                 P
-                      2 x
-            y   y   x e  5
-                                                                            
-             Ax   Bx   6Ax   Cx  4Bx   6Ax  2C  2B   Ax  Bx   Cx e    D   x e   5
-                                                                      2
-                3
-                              2
-                      2
-                                                                               x
-                                                                                        2 x
-                                                                3
-                        D     5
-                 x 2    6A   1     A   1
-                                        6
-                                         1
-                 x   4B   6A   0 B  
-                                         4
-                 x 0  2C   2B  0  C   1
-                                        4
-                                     
-                              2
-                                       x
-                      3
-            y     1  x   1  Bx   1  x e  5
-              p    6     4        4
-                                                       
-                                x
-                                                2
-                                        3
-                                                         x
-                C e
-            y x        x    C e   1  x   1  Bx   1  x e  5
-                     1        2      6     4        4
+    <pre style="white-space:pre-line"><code>636 | S O LU TI O N
 
 
-        Exercise
-        Find the general solution for the given DE:   y   y   3
-        Solution
-                                          2
-            The characteristic equation:          0       0, 1
-                                                            1,2
-                           x
-            y   C   C e
-              h    1    2
-            y     Ax
-              P
-                y   A
-                 P
-                y   0
-                 P
-            y   y   3   A   3
-            y     3x
-              P
+                    dQ        1
+                 Q CV     = −  RC  dt
+                    −
+                 ∫  Q CV    = − ∫  RC  dt
+                      dQ
+                                   1
+                      −
 
-                             x
-            y   Cx    C e  3x
-                     1    2
+                 ln Q CV =    −  t  +  A
+                      −
+                                C R
+                                  +
+                 Q CV =    e −  / t CR A
+                   −
+                 Q ( ) t =  De −  / t CR  +  CV
 
+                              0
+                       Q ( ) 0 =
+
+                       0 =  De − 0  + CV
+                       D = − CV
 
 
+                 Q =  −  CVe −  / t CR  +  CV
+                   ( ) =
+                              −
+                 Qt     CV  ( 1 e −  / t CR )
+                                     (
+                        ( )
+             b)  lim Q t =   CV  lim 1 e   −  / t CR )
+                                        −
+                 t→∞             t→∞
+                                      )
+                           =  CV (10                         lim e −  / t CR  =  lim  1  →  1  =  0
+                                   −
+                                                            t→∞           t→∞  e  / t CR  ∞
+                           = CV
+
+                               dQ    Q
+                                              ( )
+             c)  In this case,  R  +   =  0 , Q t  =  CV
+                                dt   C          1
+                 dQ  = −  Q
+                  dt     CR
+
+                 ∫  dQ  = − CR ∫  dt
+                            1
+                    Q
 
 
+                 ln Q = −  t  +  A
+                          C R
+                 The solution is Q =  Ee −  / t CR
 
+                       ( )
+                 So, Q t 1  =  Ee − 1 / t CR  =  CV
 
+                      E = CVe t 1 /CR
 
+                                  e
+                 Q ( ) t =  CVe 1 / t CR −  / t CR
 
-
-                                                          630</code></pre>
+                              1
+                       = CVe (t t −  )/CR
+                              (
+                               t t
+                             −−    ) /CR
+                       = CVe     1         for t ≥  t
+                                                    1</code></pre>
      	</div>
     
      </div>

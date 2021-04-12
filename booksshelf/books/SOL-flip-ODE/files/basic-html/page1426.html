@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1426 - ODE Solution</title>
+        <title>Page 1426 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1426 - ODE Solution</div>
+        <div id="content-top1">Page 1426 - DE Solution</div>
         <div id="content-top2">P. 1426</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a                           a                          a
-                   a     0    1  a           a     1    1  a           a     2    0
-                     3   2 3   6  0            4   3 4   12  1            5   4 5 
-                         a                           a                          a
-                   a     3    1  a           a     3    1  a           a     5    0
-                     6   5 6   180  0          7   6 7   504  1           8   7 8 
+    <pre style="white-space:pre-line"><code>1412 | S O LU TI O N
 
 
-                      x   1  1  x   1  x   
-                                  3
-                                           6
-                  y 1         6     180         a 0
-                
-                                   4
-                                            7
-                 y    x   x   1  x   1  x    a
-                  2           12      504          1
+                           t
+                      t
+              w ( ) t = −+ 2e +  2e  t −
+              y ( ) t =  w (t −  ) 2 =  −  (t −  2 +  ) 2e t − 2  +  2e − (t −  ) 2
 
 
-             Exercise
-
-             Find a power series solution.   y   xy   0
-
-             Solution
-                         
-                              n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n  1          n  0
-                                               
-                                                                      n
-                 y   x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                      n
-                         n   2                n   0
-                 y   xy   0
-                                             
-                    n  2 n    1 a n 2 x   x   a x   0
-                                                     n
-                                        n
-                                                  n
-                 n  0                       n  0
-                                            
-                    n   2 n    1 a n 2   x   a x n 1    0
-                                        n
-                                                 n
-                 n   0                     n   0
-                                            
-                    n   2 n    1 a n  2   x   a n  1 x   0
-                                                      n
-                                        n
-                 n 0                       n 1
-                                                  
-                   2                       2   n          n
-                2a        n   2 n    1 a n   x   a n   1 x   0
-                       n   1                     n   1
-                        
-                   2                                 n
-                2a          n   2 n    1 a n   2    a n   1  x   0
-
-                       n 1
+                   =  2 t−+ 2e t − 2  +  2e  t −+ 2
 
 
+          Exercise
+
+                                                                          0
+          Solve using the Laplace transform:     y′′ +  y =   ; t  y π  ( ) =  y π  ′ ( ) =
+          Solution
+
+             Let:  ( ) = wt  ( y t π  +  ) ↔  y ( ) t =  w (t π  −  )
+
+                                    =
+                    =
+              y′′ +  y t →    w′′ +  w t π
+                                        +
+                { £  w′′ +  w =  } £  {t π }
+                                +
+                                         () =
+              s Ws − 2  () sw ( ) 0 −  w′ ( ) 0 +  Ws  1  +  π
+                                              s 2   s
+                     y π  ( ) =  w (π π  −  ) =  w ( ) 0 =  0,  y π  ′  ( ) =  w′  ( ) 0 =  0
+
+              ( s +  2  1 Ws =  )  ()  1 π s
+                              +
+                              s 2
+
+             W  (s ) =  1 π+  s  =  A  +  B  +  Cs +  D
+                                             2
+                          2
+                     s 2 ( s + 1 )  s  s 2  s + 1
+                                                           2
+                     1 π =  s  As +  3  As +  Bs +  2  B Cs +  3  Ds
+                      +
+                                                +
+                         s 3  A C =  0 C = −     π
+                                +
+                        
+                         s   2  B +  D =  0  D = − 1
+                        
+                          s   1  A =    π
+                          0
+                         s    B = 1
 
 
-                                                              1397</code></pre>
+              £  −  1 { () £   −  1     π  +  1  −  π  s  −  1    
+                    Ws
+                         } =
+                                    s  s 2  s +  2  1  s +  2  1
+              w ( ) t = π  t π + −  cost − sint
+
+
+              y ( ) t =  w (t π  ) π  (t π = −  −  ) π +  cos −  (t π −  ) sin−  (t π  −  )
+
+                                         t
+                                                                 π −
+                    t π =  −  (cos cost  π  −  sin sin π  ) (cos sint  π  cos sin  ) t
+                                                −
+                  =  t π+  cost +  sint</code></pre>
      	</div>
     
      </div>

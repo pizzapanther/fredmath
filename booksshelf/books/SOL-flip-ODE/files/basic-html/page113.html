@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 113 - ODE Solution</title>
+        <title>Page 113 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 113 - ODE Solution</div>
+        <div id="content-top1">Page 113 - DE Solution</div>
         <div id="content-top2">P. 113</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             A ball is projected vertically upward with initial velocity v from ground level. Ignore air resistance.
-                                                                     0
-              a)  What is the maximum height acquired by the ball?
-              b)  How long does it take the ball to reach its maximum height? How long does it take the ball to return
-                  to the ground? Are these times identical?
-              c)  What is the speed of the ball when it impacts with the ground on its return?
-
-             Solution
-
-                                          2
-                The position: ( ) t   1  gt   v t
-                              x
-                                      2       0
-                a)  The maximum height when the velocity is zero
-                     v   x   gt  v   0
-                                   0
-                       v
-                    t   0
-                        g
-
-                                              v   2   v
-                    Maximum height     1  g  0      v  0
-                                         2   g      0 g
-                                                
-
-                                           v 2  v 2
-                                       1  0    0
-                                         2 g     g
-
-                                       v 2
-                                        0
-                                       2g
-                                                                      v
-                b)  The ball will take to reach the maximum height t   0  and the same to return to the ground, both
-                                                                      g
-                                   v
-                    are equal to t   0
-                                    g
-
-                 c)  When the ball hits the ground the time is equal to zero.
-
-                      v   g   0   v
-                                   0
-                          v
-                           0
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 107
 
 
-             Exercise
-             An object having mass 70 kg falls from rest under the influence of gravity. The terminal velocity of the
-             object is  20 m s  / . Assume that the air resistance is proportional to the velocity.
-              a)  Find the velocity and distance traveled at the end of 2 seconds.
-              b)  How long does it take the object to reach 80% of its terminal velocity?
+                 Exercise
 
-             Solution
-                                                mg
-                a)  The terminal velocity:  v   
-                                                 r
+                                                                       dy         2
+                 Find the exact solution of the initial value problem   x  −  y =  2x y ; y ( ) 1 = 1
+                                                                       dx
+                 Solution
+
+                       dy     2
+                     x    =  2x y +
+                                   y
+                       dx
+                       dy   (  2    )
+                     x    =  2x + 1 y
+                       dx
+                     ∫∫        ( 2x +  1 ) dx
+                       dy
+                          =
+                                     x
+                        y
+                     ln y =  x +  2  ln x +  lnC
 
 
-                                                               109</code></pre>
+                      ( ) e
+                     yx =    x +  2  ln x+  lnC
+                          =  Cxe x 2
+
+                                  y ( ) 1 = 1
+                                 1 Ce=
+
+                                 C =  e − 1
+
+
+                      ( ) =
+                     yx     xe x 2  1 −
+
+
+                 Exercise
+
+                                                                      dy      2     22
+                 Find the exact solution of the initial value problem    =  2xy + 3x y  ; y ( ) 1 = − 1
+                                                                      dx
+                 Solution
+                     dy  = ( 2x +  3x 2 )  y
+                                      2
+                     dx
+                        y ∫∫   ( 2x + 3x 2 ) dx
+                        dy
+                           =
+                         2
+
+                     −  1  =  x +  2  x +  3  C
+                       y
+
+                     yx          − 1
+                      ( ) =
+                            x +  2  x +  3  C
+
+                                y ( ) 1 = − 1
+                                C  = 1
+
+
+                     y ( ) x =    1 −
+                            x +  2  x +  3  1</code></pre>
      	</div>
     
      </div>

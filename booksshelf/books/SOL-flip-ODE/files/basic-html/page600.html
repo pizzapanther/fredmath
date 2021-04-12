@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 600 - ODE Solution</title>
+        <title>Page 600 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 600 - ODE Solution</div>
+        <div id="content-top1">Page 600 - DE Solution</div>
         <div id="content-top2">P. 600</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-        If it is underdamped, write the position function in the form    t   x  C e  pt  cos     t     .
-                                                                          1           1     1
+    <pre style="white-space:pre-line"><code>594 | S O LU TI O N
 
-        Also find the undamped position function    t   u  C  cos     t       that would result if the mass on the
-                                                         0       0     0
-        spring were set in motion with the same initial position and velocity, but with the dashpot disconnected (so
-         c  0). Then, construct a figure that illustrates the effect of damping by comparing the graphs of    t  and
-                                                                                                      x
-                                                                8
-        u   t        m   2, c  12, k   50; x    0, v  
-                                                  0
-                                                           0
-        Solution
-            With damping motion
 
-            2x  12x  50x               mx   cx   kx   0
-                              0
-                 2
-                             
-                                             3 4i
-                   6   25 0           
-                                        1,2
-            x   t   e 3t   cos4t   A  B sin 4t 
-                     x   0   A   0
+          Exercise
 
-                                                                  3t
-                     
-                                    B
-                                              A
-                                                        B
-                x t    3 cos4t   3 sin 4t  4 sin 4t   4 cos4t e
-                         A
-                      x   0   3A  4B    8     B   2
-            x   t     2e 3t  sin 4t
+          The time rate of change of an alligator population P in a swamp is proportional to the square of P.
+          The swamp contained a dozen alligators in 1988, two dozen in 1998.
 
-                   2 e 3t cos 4t     3      (Overdamped motion)
+           a)  When will there be four dozen alligators in the swamp?
+           b)  What happens thereafter?
+
+          Solution
+                                 10
+             Given:  P =  12, P  ( ) =  24
+                      0
+                         2
+             a)   dP  =  kP
+                  dt
+                    P ∫∫       k dt
+                    dP
+                       =
+                     2
+
+                 −  1  =  kt C
+                          +
+                   P
+                 P ( ) t = −  1
+                            +
+                          kt C
+                       P ( ) 0 = 12
+
+
+                       −  1  =  12
+                        C
+                       C  = −  1
+                            12
+
+
+                 P ( ) t = −  1
+                          kt −  1
+                              12
+
+                 P ( ) t =  12
+                        1 12kt
+                          −
+                       P ( ) =  24
+                         10
+                         12    =  24
+                       1 120k
+                        −
+                      1 120k =   1
+                        −
                                  2
-
-            Without damping  c       0
-            2x   50x   0                 mx   kx   0
-
-                2  2  50  0          5i
-                                    1,2
-
-                          Bt 
-            u   t   A cos 5  sin 5t
-                                    
-                 u   0   A   0
-
-                         A
-                                5 cos 5t
-                u   t   5 sin  t   B   
-                      u   0   5B   8    B   8
-                                                5
+                       k  =  1
+                           240
 
 
-                          
-            u   t     8 sin 5t
-                    5
-                   8 cos 5t     3 
-                   5          2
+                 P ( ) t =  12
+                        1−  1  t
+                            20
+                       =  240
+                         20 t
+                            −
 
-
-
-
-
-
-
-
-
-                                                          588</code></pre>
+                 48 =  240
+                         −
+                      20 t</code></pre>
      	</div>
     
      </div>

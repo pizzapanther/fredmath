@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 263 - ODE Solution</title>
+        <title>Page 263 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 263 - ODE Solution</div>
+        <div id="content-top1">Page 263 - DE Solution</div>
         <div id="content-top2">P. 263</div>
      </div>
      <div id="content-middle">
@@ -152,105 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 257
 
-             A 1500 gallon tank initially contains 600 gallon of water with 5 lbs. of salt dissolved in it. Water enters the
-                                                                                                     1
-             tank at a rate of 9 gal/hr. and the water entering the tank at a rate has a salt concentration of  1 cost  
-                                                                                                     5
-             lbs./gal. If a well mixed solution leaves the tank at a rate of  6 gal/hr., how much salt is in the tank when it
-             overflows?
 
-             Solution
+                           ∫ ( 1+  1  ) dx
 
-                                5
-                Given:    y   0 
-                               gal    gal 
-                                               
-                                           t
-                V   t   600   9  hr    6  hr   hr
-                            
-                        600 3t
-                 dy    Rate in    Rate out
-                 dt
+                         e      x+ 1  = e x+  ln (x+  ) 1
+                                      =  ( x +  ) 1  e x
 
-                 dy    1           lb   gal       y     lb     gal 
-                                  t
-                           
-                       1 cos         9                      6   
-                                                       
-                 dt    5          gal    hr     600 3t  gal     hr  
+                        ∫  ( x +  ) 1 e x     2xe − 1 x   dx =  ∫  2x dx
 
-                                
-                          
-                      9 1 cost    2y                                                           cost
-                                       
-                      5            200 t
-                                                                               4
-                                                                                          2
-                                                                                        
-                                                                           
-                 dy    2    y   9 1 cost                          +    4 10    400t t        sint
-                                           
-                                    
-                          
-                                                                              
-                 dt   200 t      5                                       400 2t                 cost
-                        2  dt    2ln 200 t         2             +    400                    sint
-                                                   
-                    e  200 t    e           200 t 
-                                                                                   
-                                          2
-                                                            2
-                                                                                         4
-                    9  1 cost 200 t   dt   9  200 t  d 200 t   9  cos 4 10      400t t 2  dt
-                                                                       
-                                                         
-                                                                                                 
-                                                                                     
-                                                                                  t
-                                                                    
-                                      
-                          
-                    5                           5                         5
-                                                                         2
-                                                          3
-                                                                                                         
-                                                3 200 t     9   200 t   sint  400 2 cost    t   400sint
-                                                5             5                                          
-                                                                                            
-                                                                                                 
-                                                            2
-                                             3
-                                                                             t
-                                         
-                                                        
-                                                                        
-                 y   t   1   2 5   3   200 t    9  200 t  sint  400 2 cost   400sint  C
-                                                                                                 
-                            
-                       200 t                  5                                               
-                                 
-                              
-                        3 200 t   9 sint  18 cost    720sint       C
-                                                   
-                        5           5        5 200 t    200 t   2  200 t   2
-                                                             
-                                                                          
-                                     5 120 
-                        y   0  5         18 1      C
-                                               5 200   200 2
-                           C   4,600,720
-                 y   120t     3 t   9 sint  18 cos t    720sint    4,600,720
-                                                 
-                             5    5       5 200 t     200 t   2  200 t   2
-                           
-                V   t   600 3t  1500    t   300 hrs
+                                     x +
+                                                 2
+                                              =  x
+                                        )
+                                   2
+                     yx     e − x ( x + C
+                      ( ) =
+                            x + 1
 
-                                               
-                 y 300  120 180      9 sin 300   18 cos300    720sin300    4,600,720
-                                      5            5   500       500 2        500 2
-                                                               259</code></pre>
+
+                 Exercise
+
+                                                                      2
+                 Solve the differential equation:  (x +  ) 1 y′ −  xy =  x x
+                                                                   +
+                 Solution
+
+                     y′ −  x  y =  ( x x+  ) 1
+                         x + 1     x+ 1
+
+
+                     y′ −  x  y =  x
+                         x + 1
+                                               )
+                            ( )  dx      ( x ∫  1  − 1 dx
+                             x ∫
+                              x
+                             −
+                        e     +  1  = e    +  1
+                                   = e ln x+ 1 x−
+                                             e
+                                   = e ln (x+  ) 1 − x
+                                   = ( x +  ) 1  e − x
+
+                                             ∫ e − x dx
+
+                                     2
+                                +   x +       − e − x
+                                         x
+                                −   2x + 1      − x
+                                               e
+                                +     2       − e − x
+
+                        ∫   ( x x +  ) 1 e −  x  dx = − x − − 2x −−  )  −  x
+                                            (
+                                               2
+                                                           12 e
+                                                   x
+
+                                          =  ( −  x −  2  3x −  3 ) e − x
+
+                                                        )
+                                               )
+                     yx      e x  −  ( (  x +  2  3x +  3 e − x  +  C
+                      ( ) =
+                            x + 1</code></pre>
      	</div>
     
      </div>

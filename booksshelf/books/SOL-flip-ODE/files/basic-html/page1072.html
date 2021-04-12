@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1072 - ODE Solution</title>
+        <title>Page 1072 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1072 - ODE Solution</div>
+        <div id="content-top1">Page 1072 - DE Solution</div>
         <div id="content-top2">P. 1072</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-                                 2
-                           s   As  9A Bs     0.5Bs Cs    0.5C
-                                        
-                                                      
-                           s    A B s   0.5B C s    9A  0.5C
-                                       2
-                                                     
-                                     
-                                  
-                                                 
-
-                                        
-                                     A B    0
-                                                           2        2        36
-                                          
-                                    0.5B C   1      A   37  B   37  C   37
-                                   9A   0.5C 
-                                               0
-                                                          
-                         
-                Q ( ) s   5   2  1    2  s     36  1   
-                           37  s   1  37  s   2  9  37  s   2  9  
-                                 2                        
-                                                 5 36         
-                                                     
-                        1 
-                        37   10  1 1   10  2 s        2 3  
-                               s   2   s   9     3   s   9   
-                                                                            
-                Q ( ) t   1    10L        1      10L      s    60L      3   
-                       37            s   1           s    2  9      s   2  9 
-                                        2                                       
-                                                        
-                       1   10e  t   /2   10cos3t  60sin3
-                                                       t
-                       37
+    <pre style="white-space:pre-line"><code>1062 | S O LU TI O N
 
 
-             Exercise
 
-             An inductor L   1 H   and a resistor R   0.1    are joined in series with an electronic force (emf)
+                           ∫
+                                x dx
+                        = −
 
-                                                          0
-             E   E ( ) t  and no charge on the capacitor at t  . Find the ensuing charge current in the current at time t
-             for the given E t  ( ) 10 2t
-                                   
-
-             Solution
+                        = − 1  x 2
+                           2
 
 
-                 L  I d    RI   E ( ) t
-                  dt
-                 dI    0.1I   10 2t
-                               
-                 dt
-                L  I   0.1I   L 10 2t 
-                                     
+                                                                        1
+                 v  ( ) x =  e −  e ∫  x −  e  x  dx        v  ( ) x = ∫  yg ( ) x  dx
+                   2           − 2x                           2          W
+                          ∫
+                            dx
+                        =
 
-                            
-                                 I
-                 sI ( ) s   I (0) 0.1 ( ) s  10    2        I (0)   0
-                                        s   s 2
-                s   0.1  ( )I s   10s  2
-                                 s 2
+                        =     x
 
-                 I ( )   10s  2
-                   s
-                       s 2 s  0.1 
+                        2 −
+                                2 −
+              y  =  −  1  xe  x  +  xe  x            y   = uy +  u y
+               p     2                                 p    11    2 2
+                       2 −
+                  =  1  xe  x
+                    2
+             The general solution:
 
-                          10s   2    A    B    C
+                 y ( ) x =  ( C +  1  C x +  2  1 x 2 ) e − x
+                                     2
 
-                        s 2 s   0.1   s  s 2  s  0.1
-                       10s     As (s  0.1)   ( B s  0.1) Cs 2
-                                                       
-                             2
 
-                                                              1051</code></pre>
+          Exercise
+
+          Find the general solution    y′′ −  2y′ −  8y =  3e − 2x
+
+
+          Solution
+                                     2
+             Characteristic Eqn.:  λ −  2λ−  80
+                                              =
+             The roots are:   λ    =  −  2, 4
+                               1,2
+
+             The homogeneous Eqn.:  y =     Ce  − 2x  + C e 4x
+                                        h     1        2
+
+                    e − 2x   e 4x
+             W =
+                   − 2e − 2x  4e 4x
+                =  4e 2x  +  2e 2x
+
+                =  6 e 2x  ≠  0
+
+
+                                                                    ()
+                                                                  2
+                 v  ( ) x = −  6e ∫  3e 2x  dx       v  ( ) x = − ∫  y gx  dx
+                  1             2x                    1            W
+
+
+                        = − 1 ∫ dx
+                           2
+
+                        = − 1    x
+                           2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1343 - ODE Solution</title>
+        <title>Page 1343 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1343 - ODE Solution</div>
+        <div id="content-top1">Page 1343 - DE Solution</div>
         <div id="content-top2">P. 1343</div>
      </div>
      <div id="content-middle">
@@ -152,92 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  3      2
-                         
-             A    I
-               
-                                  
-                         2       3                            k 1             k 2             k 3
-                              2
-                       3 
-                                  4
-                                                                  m 1              m 2
-                                  
-                        2  4     5 0
-                                                                  x              x
-            The eigenvalues are:      1,       5             1               2
-                                  1         2
-            The natural frequencies:    1 and        5
-                                      1             2
-                                 
-            For    1       A I V 
-                                          0
-                 1                    1
-                              a
-                     2  2      0
-                                                 b
-                                      a 
-                                    0
-                              b
-                     2   2     
-                             1                              1   
-                                         
-                      V         x t    a  cost b  sint   
-                                                    
-                        1     1    1        1        1       1 
-            For     5       A  5I V 
-                                            0
-                  2                     2
-                    2 2       0
-                            a
-                                                b
-                                   a  
-                                  0
-                            b
-                    2 2       
-                              1                                       1 
-                                          t 
-                                                          
-                      V          x     a  cost  5 b   sint  5   
-                        2     1     2        2            2          1 
-             x    t   a  cost b  sint   a  cost  5 b  sint  5
-                                                  
-                            
-              1      1        1        2            2
-            
-                             
-                                                  
-             x 2    t   a 1 cost b 1 sint   a 2  cost  5 b 2  sint  5
-            
-            In the degenerate natural mode with frequency   1 the 2 masses move in the same direction with
-                                                           1
-            equal amplitudes of oscillation. At frequency    5  they oscillate in opposite directions with equal
-                                                          2
-            amplitudes.
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1329
 
 
-        Exercise
-        Consider the mass-and-spring system shown below and with the given masses and spring constants values.
-        Find the 2 natural frequencies of the system and describe its natural modes of oscillation.
+                                           (1 ste−  )  − st      −  1
+                                −                                  a 2  cosat
+                                                 2   − st
+                                                   )
+                                 +       ( −  2s +  s te
 
-                m   m    1; k   2, k   1, k 
-                                                  2
-                 1     2       1       2      3
-        Solution
+                           ∞                                              ∞          ∞
+                                                           −
+                                                                                                 2
+                                                                                                        ( ) e
+                                 ( ) e
+                             t cos at  −  st dt =   ∫    1 sin at +  1 st  cosat e −  st     −  a ∫  1 2  ( −  2s +  s t ) cos at  −  st dt
+                                                                    
+                                                            2
+                                                a
+                          0                               a                0         0
+                                                      2s
+                                                                                           ( ) e
+                                                                 ( ) e
+                                             =  −  a ∫  1 2  +  a 2  0 ∞  cos at  −  st dt −  a ∫  s 2  0 ∞  t  cos at  −  st dt
+                                                                                2
+                           a ∫  2  0  t  cos at    dt =  −  a ∫  2  +  a 2  0  cos at  dt
+                          2
+                         s + a 2   ∞           −  st     1    2s    ∞          −  st
+                                                                         ( ) e
+                                          ( ) e
+                        ( s + a 2 ) ∫  ∞  t  cos at  −  st dt = −+  ∫  ∞  cos at  −  st dt
+                          2
+                                                          1 2s
+                                           ( ) e
+                                                                        ( ) e
+                                    0                            0
+                                                       ∫ cosat  dt
 
-             m x    k   k   x  k x                   k 1             k               k
-              1 1       1   2   1    2 2                                      2                3
-                                                                     m 1              m 2
-             m x  k x    k   k   x
-              2 2     2 1     2    3   2
+                                 +       e − st          1  sinat
+                                                         a
+                                        −    se − st     −  1  cosat
+                                −                        a 2
+                                 +       2 − st
+                                           e
+                                        s
+                                  ∞                                           ∞     2    ∞
+                                        ( ) e
+                                                                                                  at
+                                     cos at   −  st dt =   ∫    1  sin at −  s 2  cosat e −  st     −  a ∫  s 2  cos ( ) e −  st dt
+                                                                         
+                                                      a
+                                 0                              a              0         0
+                                  a ∫    0   cos at      dt =  a 2
+                                 2
+                                s +  a 2  ∞           − st    s
+                                                ( ) e
+                                    2
+                                ∫ 0 ∞  cos at  − st dt =  s + a 2
+                                                         s
+                                        ( ) e
+                                                      2
 
-                  x   3x   x                               x 1            x 2
-                 
-                  1     1    2
-                   x   2  x   1  3x 2
 
-
-                                                          1322</code></pre>
+                        ( s +  2  a 2 ) ∫ 0 ∞  t  cos at  − st dt = − 1 2s      s +  a 
+                                                                         
+                                                                    s
+                                           ( ) e
+                                                           +
+                                                                         
+                                                                       2
+                                                                  2
+                                                       =   s − −  2  a +  2  2s 2
+                                                              2
+                                                             s +  a 2</code></pre>
      	</div>
     
      </div>

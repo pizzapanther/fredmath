@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1222 - ODE Solution</title>
+        <title>Page 1222 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1222 - ODE Solution</div>
+        <div id="content-top1">Page 1222 - DE Solution</div>
         <div id="content-top2">P. 1222</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1        1     0  
-                         2         2        
-
-                          e
-                  1       1  2t  1  2t  0    
-                                  e
-                         2      2           
-                         0        0     e  3t  
-                                            
-                         e t 
-                            
-                 F   t    e 2t 
-                            
-                         te 3t  
-                            
-                                 1        1     0      t 
-                                 2         2            e  
-                                  e
-                                          e
-                     t
-                  1     t      1  2t  1  2t  0          e 2t   
-                        F
-                                2      2                3t 
-                                 0        0     e  3t      te  
-                                                    
-                                 1 t  1  e 2t 
-                                  e 
-                                 2    2    
-                                 1  t     
-                                 e     1  
-                                 2      2  
-                                    t      
-                                           
-                      1 t   1 e 2t  dt    1 t  1 e 2t
-                                          e 
-                         e 
-                        2
-                                               4
-                                         2
-                              2
-                      1   2 e  t    1  dt   1   2 e  t    1 t
-                                               2
-                               2
-                     tdt   1 t
-                              2
-                           2
+    <pre style="white-space:pre-line"><code>1212 | S O LU TI O N
 
 
-                                          e 
-                          1 e 2t  0      1 t  1 e 2t 
-                                          2  4    
-                                           e
-                 X       1  e 2t  0       1  t    1 t           X       t      1    dtt  F t
-                                                    
-                   p                   2       2                      p
-                         0   0   e 3t     1  2   
-                                          2 t     
-                          1 t  1 e 2t    1 t  1 te 2t 
-                           e 
-                                         e 
-                         2     4      2      2    
-                                        e 
-                           e 
-                          1 t  1 e 2t    1 t  1 te 2t    
-                         2    4       2     2     
-                                     2 3t
-                                 1 t e            
-                                 2                
-                           t
-                          e   1 e 2t    1 te 2t 
-                             4      2     
-                           1 te 2t    1 e 2t    
-                          2       4       
-                                 2 3t
-                             1 t e        
-                             2            
-                                                              1201</code></pre>
+                   −   2A +  3B =  0
+                 
+                  −  12A −  8B =  1
+                          −  2  3             0   3               −  2  0
+                     ∆  =         =  52  ∆  =        =  −  3 ∆  =        =  −  2
+                         −  12  −  8      A   1   −  8       B   −  12  1
+
+                 A =  −  1  B =  −  3
+                       26         52
+
+
+             The steady-state charge is:  q  ( ) t =  −  1  cos60t −  3  sin60t
+                                          p        26          52
+
+             The steady-state current is:  i  ( ) t =  1  sin60t −  3  cos60t
+                                          p      26         52
+
+
+          Exercise
+          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L =  1   h ,
+                                                                                                  2
+          R  =  20 Ω , C =  0.001 f , and  ( ) 100sin60E t =  t +  200cos40 V  t  .
+
+          Solution
+
+              1 q′′ +  20q′ +  1  q =  100sin60t +  200cos40t       Lq′′ +  Rq′ +  1  q =  E ( ) t
+              2           0.001                                               C
+              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
+
+                                                          i
+                                                      ±
+                 λ  2  40 +  λ +  2000 0 →  λ   =  −  20 40
+                                  =
+                                             1,2
+                  t
+              q  ( ) e=  − 20t ( C  cos40t + C  sin 40t )
+               h              1           2
+              q =  A cos60t +  B sin60t C cos40t +  D sin40t
+                                       +
+               p
+                                                                 D
+                 q′ =  −  60 sin60t +  A  60 cos60t −  B  40 sin40t +  C  40 cos40t
+                   p
+                 q′′ =  −  3600 cos60t −  A  3600 sin60t −  B  1600 cos40t −  C  1600 sin40t
+                                                                           D
+                   p
+              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
+
+
+                  cos60t    −  3600A +  2400B +  2000A =  0
+                 
+                  sin60t  −  3600B −  2400A +  2000B =  0 2 0
+
+                   −   2A +  3B =  0
+                 
+                  −  12A −  8B =  1
+
+                         −  2  3             0   3             −  2  0
+                     ∆  =        =  52  ∆  =       =  −  3  ∆  =      =  −  2
+                         −  12  −  8     A   1  −  8       B   −  12  1
+
+                 A =  −  1  B =  −  3
+                       26         52</code></pre>
      	</div>
     
      </div>

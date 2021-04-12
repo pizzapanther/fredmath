@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1503 - ODE Solution</title>
+        <title>Page 1503 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1503 - ODE Solution</div>
+        <div id="content-top1">Page 1503 - DE Solution</div>
         <div id="content-top2">P. 1503</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,97 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                               n
-               2                              n                 n             x    1
-            2a        n   1 n    2 a n  2   x    1    a n  1 x    1    e   e  ! n
-
-                   n  1                           n 1                     n  1
-                                                                           n
-               2                                     n             x    1
-            2a         n  1 n    2 a n  2   a n  1  x    1    e   e  ! n
-
-                   n  1                                          n  1
-
-            2a    e      a    e
-               2            2   2
-            n  1 n    2 a    a    e
-                           n   2  n   1  ! n
-            a             e               1      a
-              n  2  n  1 n    2  n !  n  1 n    2  n  1
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1489
 
 
-                                   a                                               a
-                                     0                                              1
-                            e
-              n  1     a    1  a                          n   2    a   e    1  a
-                        3   6   6  0                                    4   24 12    1
+                                   + 
+                                 AB =   0
+                                  1     1    →  A =  RC   B =  −  RC
+                                  RC  A =
+                                
+                                       −  1           −  1        
+                                           1
+                       Q () =  E   RC£   { } − RC£           1      
+                         t
+                              R           s               s +  1      
+                                                             RC   
+                           =  E ( RC − RCe −  / t RC )
+                             R
 
-              n   4     a   e    1  a   11e    1  a   n   5    a    e     1  a    e    1  a
-                          6   720   30  3     720   180   0             7   5040    42  4   1260   504  0
-
-
-                                      a   e
-                                       2   2
-              n   3     a   e    1  a   e    e     e
-                         5   120  20  2   120   40    60
-              n   6     a   e      1  a    e     e     13e
-                                                                 2
-                         8   40,320  56  5   40,320   3360   40,3 0
+                           =  EC ( 1 e−  −  / t RC )
 
 
-            y   x   a  x    1 a   e x    1  2    e    1  a   x    1  3     e    1  a   x    1  4    e  x    1  5  
-                     0          1   2           6   6  0            24 12    1           60
-                                                       3
-                                                                       3
-                    a   x    1 a   e x    1  2    e x    1   1 a 0  x    1   e  x    1  4
-                                1
-                     0
-                                    2          6            6              24
-                                     1  a  x    1  4    e  x    1  5  
-                             12  1           60
-                      1      2  1       3   1        4   1       5     
-            y   x  e  2  x    1    6  x    1    24  x    1    60  x    1  
+
+                 Exercise
 
 
-                                          
-                         a   1  1  x    1  3      x    1   1  x    1  4    
-                                            a
-                      0     6                1          12
+                 Solve the general initial value problem modeling the LR circuit   L  dI  +  RI =  , E  I ( ) 0 =  I
+                                                                                 dt                    0
+                    Where E is a constant source of emf
+                 Solution
+                                   )
+                       £ ( dI  +  R I £  ( )
+                                          E
+                                    =
+                                           L
+                           dt
+                                L
+                                       () =
+                       sIs −  () I (0) +  R  Is  E  1       I (0) =  I
+                                    L        Ls                    0
+                       ( s +  R ) Is  E  1  +  I 0
+                               () =
+                                     Ls
+                           L
+                        () =
+                       Is    E     1     +  I     1
+                                 (
+                             L  ss +  R )   0  s +  R
+                                                 L
+                                      L
+                                                        As +  R  A Bs
+                                                                 +
+                                   1     =  A  +  B  =       L
+                                ss +  (  R )  s  s +  R   ss +  (  R )
+                                                   L
+                                                                L
+                                      L
+                                 AB =    0
+                                   + 
+                                                     L         L
+                                  R        →    A =      B =  −
+                                  L  A = 1          R         R
+                                
+                                    −  1          −  1             −  1     
+                               
+                                         1
+                       It    EL   £     { } −  L £        1        +  I £      1    
+                        () =
+                               
+                             LR          s    R         s +  R       0    s +  R  
+                               
+                                                         L                L 
+                               (
+                                           t
+                                                       t
+                                           /
+                                                        /
+                           =  EL   −  L −  R e  RL )  +  Ie −  RL
+                                                  0
+                             LR
 
-
-        Exercise
-
-        Find the series solution near the given value
-
-                                              r
-
-                y   xy  2x    1 y  0 ;  nea  x    1  y   1    2,  y   1      2
-        Solution
-                            
-            t   x  1    x t  1
-                                                          1474</code></pre>
+                                                   t
+                                       t
+                                        /
+                                                    /
+                           =  E  −  E −  e  RL  +  Ie −  RL
+                             R    R           0
+                                                       t
+                                         t
+                                          /
+                                                        /
+                           =  1 ( E −  Ee −  RL  +  RI e −  RL )
+                             R                    0</code></pre>
      	</div>
     
      </div>

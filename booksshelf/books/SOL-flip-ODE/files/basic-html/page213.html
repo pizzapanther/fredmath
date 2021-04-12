@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 213 - ODE Solution</title>
+        <title>Page 213 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 213 - ODE Solution</div>
+        <div id="content-top1">Page 213 - DE Solution</div>
         <div id="content-top2">P. 213</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   1 x  dx    x   1 x 2
-                    e             e   2
-                                                 
-                               
-                     1 x e     2 /2   dx   e    2 /2 
-                                                  x x
-                                x x
-                           
-                        
-
-                         x 1 x 2      x  1 x 2   
-                                                 
-                 y   x   e  2     e  2   C
-                                                
-                                                
-                               x 1 x 2
-                           
-                        1 Ce    2
-                                           1 C 
-                        y   0   0   0         C  1
-
-                              x  1 x 2
-                          
-                 y   x   1 e  2
+    <pre style="white-space:pre-line"><code>1. 3  –  Models of Motions | 207
 
 
-             Exercise
 
-                                                               x
-                                                                      2
-             Solve the initial value problem:   xy  3y   x 4 cos ,  y   0 
-             Solution
+                     x ( ) 0.98t =  t +  0.098e  t −  −  0.0 8 1  0 00
+                                                 9 =
+                     0.98t +  0.098e  t −  −  1000.098 =  0
 
-                 y   3  y   x 3 cos x
-                     x
-
-                       x   3 dx    3ln x    3
-                    e         e        x
-
-                       3 3 cos x dx     cos x dx 
-                      x   x                       sin x
-
-                                    
-                                
-                 y   x   x 3 sin x C
-                              2
-                            y     0    0   C
-                 y   x   x 3 sin x
+                     t = 1020  sec
 
 
-             Exercise
+                 Exercise
 
-                                                            2 x
-             Solve the initial value problem:   y   2xy  3x e  2 ,  y   0 
-                                                                          5
-             Solution
-                                2
-                             2 x
-                 y   2xy   3x e
+                 An object of mass 500 kg is released from rest 1000 m above the ground and allowed to fall under the
+                                                                                             2
+                 influence of gravity. Assume the gravitational force constant, with  g =  9.8  m/s , and the force due to
+                 air resistance is proportional to the velocity of the object with proportionality constant
 
-                       2xdx    x 2
-                    e          e
-                      3x e e  x 2  dx     3x  dx   2  3
-                            2
-                        2 x
-                                                   x
-                                   
-                 y   x   e x 2  x   3  C
+                 κ = 50 N-sec/m . Determine when the object will hit the ground.
+                 Solution
+
+                    Given:   m =  500, g =  9.8, κ =  50, v  ( ) 0 = 0, x ( ) 0 =
+                                                                             0
+                    By Newton’s second law: m   dv  =  mg κ−  v
+                                                dt
+
+                     500 dv  =  4,900 50v−
+                         dt
+                     dv  =  9.8 0.1v
+                             −
+                     dt
+
+                            dv
+                     −  ∫  0.1v − 9.8  =  ∫  dt
 
 
-                                                               209</code></pre>
+                                       t
+                     10ln 0.1v − 9.8 = −+ C
+                                            1
+                     0.1v −  9.8 =  C e − 0.1t
+                                  2
+                     vt        2  − 0.1t  + 98
+                      ( ) 10C e=
+                                      0
+                                v ( ) 0 =
+                               10C +   98 0
+                                          =
+                                    2
+                                C  = − 9.8
+                                 2
+                              (
+                     vt    98 1 e  − 0.1t )
+                                −
+                      ( ) =
+
+                              ∫   −
+                     x          ( 1 e − 0.1t ) dt
+                      ( ) 98t =
+                          = 98t +  980e − 0.1t  + C
+                                               3
+                                      0
+                                x ( ) 0 =
+                                C  = − 980
+                                 3</code></pre>
      	</div>
     
      </div>

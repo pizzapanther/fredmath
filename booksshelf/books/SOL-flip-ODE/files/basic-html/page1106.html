@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1106 - ODE Solution</title>
+        <title>Page 1106 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1106 - ODE Solution</div>
+        <div id="content-top1">Page 1106 - DE Solution</div>
         <div id="content-top2">P. 1106</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-                           1    1    t   2  2t   1     t  4t  1 
-                                                    
-                            1  1        4t          t   2  6t   5   
-
-                           t   2   2t  1   t  4t  1 
-                                          2
-                                      
-                                               
-                           2           2        
-                           t    6t  1   t  6t  5 
-                           2t    2
-                             
-                           4  
-
-                          2     2
-                           t     
-                          0
-                                4  
-                         X 
-                           p
-
-                            1         1
-                    W                        2 2 
-                                                    0
-                          1  2    1  2
-
-                ∴  X  and  X  form a fundamental set for  X    AX   on  ,  
-                    1        2
+    <pre style="white-space:pre-line"><code>1096 | S O LU TI O N
 
 
-             Exercise
+
+          Exercise
+
+          Find the general solution by to variation of parameters with the give n initial conditions.
+
+                             t
+                      y
+                 y′′ + = sec ; y   ( ) 0 = 1, y′ ( ) 20 =
+          Solution
+               2
+              λ + =                =     i ±
+                  10 ⇒ λ
+                               1,2
+              y =  C  cost +  C  sint
+               h    1         2
+
+                    cost   sint
+              W =
+                   − sint  cost
+                             2
+                     2
+                =  cos t + sin t
+                = 1 ≠  0
 
 
-                   4   2            2e t         e 2t 
-             x           x ; x       , x       
-                     3   1   1      3e t    2     e 2t 
-                                                   
-                                                        
-              a)  Verify that the given vectors are solutions of the given system.
-              b)  Use the Wronskian to show that they are linearly independent.
-              c)  Write the general solution of the system.
-             Solution
+                                                                           ()
+                                     tt
+                                                                         2
+                 v  ( ) t = − ∫ sint sec  d                 v  ( ) x = − ∫  y gx  dx
+                  1           1                               1           W
+                                tt
+                        = − ∫ tan  d
 
-                           2e t      2e t                4  2     2e t     2e t 
-                                                                                          
-                a)  x                            x  x                     x   √
-                     1      3e t      3e t        1         3   1         3e t       3e t   1
-                                   
-                               
-                                                                              
-                         
-                                                                                    
-                                         
-                            e 2t      2e 2t              4   2     e 2t     2e 2t 
-                                                                                            
-                    x                            x  x                     x   √
-                     2       e 2t      2e 2t      2       3   1      e   2t       2e 2t   2
-                                          
-                          
-                               
-                                                                               
-                                                                                      
-                                    
-                          2e t   e 2t   3t
-                b)  W                 e    0
-                          3e t  e   2t
-                    The solutions  x and x  are linearly independent.
-                                   1      2
-                                                                           t
-                                               2e t       e 2t     2C e  C e 2t 
-                c)    t x  C x  C x  C          C             1    2     
-                            1 1     2 2     1    t    2   2t          t      2t 
-                                                3e       e         3C e   1  C e    2  
+                        =  ln cos   t
 
 
-                                                              1085</code></pre>
+
+                                                                        1
+                 v  ( ) t = ∫ cost sec  dtt                 v  ( ) x = ∫  yg ( ) x  dx
+                   2         1                                2          W
+
+                        = ∫ dt
+
+                            t =
+
+
+              y   = ln cos cost t sin                        y =  vy +   v y
+                                      t
+                         t
+                                +
+               p                                              p    11     2 2
+              y ( ) t =  C 1 cost +  C 2  sint +  ln cos cost t+  t  sint
+                     y ( ) 0  = C = 1
+                             1
+                 y′ =  −  C 1 sint +  C 2  cost −  sint −  ln cos sint +  sint t cost
+                                                      t
+                                                                  +
+                     y′ ( ) 0 = C =  2
+                              2
+
+                                        t
+                                                     t
+              y ( ) t =  cost +  2sint +  ln cos cost t sin
+                                               +</code></pre>
      	</div>
     
      </div>

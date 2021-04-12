@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1327 - ODE Solution</title>
+        <title>Page 1327 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1327 - ODE Solution</div>
+        <div id="content-top1">Page 1327 - DE Solution</div>
         <div id="content-top2">P. 1327</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>    sint    cost    
-                            i      e  t 
-                      cost     sint  
-
-                      sint         cost 
-                                               t 
-            I   C         e  t     C     e
-             h     1   cost       2  sint  
-                                         
-             I      C  sint   C  cost e  t 
-                 t  
-              2         1         2
-            
-                                        
-                  t  
-              I     C  cost   C  sint e  t 
-              3        1         2
-                         t 
-            I    t   I    I    t
-             1        2       3
-                                                        
-                    C 1  sint  C 2  cost  C 1  cost  C 2  sint e  t 
-                                               cost e
-                       C  C 2  sint   C  C 2    t 
-                                       1
-                       1
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1313
 
 
-        Exercise
+                            ∫ cos   t e −  st dt =  sint s−  cost −  1  e  st
 
-        On a smooth horizontal surface  m   2 g  is attached to a fixed wall by a spring with spring constant
-                                               k
-                                         1
-         k   4 N/ . Another mass  m   1 g  is attached to the first object by a spring with spring constant
-                 m
+                                                2
+                                               s +
 
-                                          k
-          1                          2
-         k   2 N/ . The object are aligned horizontally so that the springs are their natural lengths. If both objects
-                  m
-          2
-        are displaced 3 m to the right of their equilibrium positions and then released, what are the equations of
-        motion for the two objects?
-
-
-
-
-
+                     ( s +  2  1 ) ∫ t cost e −  st dt =  (t sint +  (1 st )cost e −  st  +  2s (sint s 1 cost ) e −  st
+                                                                                −
+                                                                )
+                                                       −
+                                                                               2
+                                                                              s +
+                     ∫ t cost e −  st dt =  s + 1 (t sint +  (1 st )cost e −  st  +  2s (sint s ) cost ) e −  st
+                                                                               −
+                                                               )
+                                        1
+                                                      −
+                                                                          (
+                                                                                  2
+                                       2
+                                                                            2
+                                                                           s +
+                                                                                1
+                                                                 
+                              t sint +  (1 st )cost  2s (sint s cost )   st  ∞
+                                      −
+                                                          −
+                     Fs                         +                   e   −
+                       () = 
+                                   s +  2  1         (  2  ) 2          0
+                                                      s + 1      
+                                                                 
+                         =    1   +   2s 2
+                             2
+                                      2
+                           s +  1   ( s + 1 ) 2
+                                 12s
+                         =   s −  2  −+  2
+                             ( s + 1 ) 2
+                               2
+                              2
+                         =   s − 1 2
+                           ( s + 1 )
+                             2
 
 
 
+                 Exercise
 
-        Solution
+                                                                                      f
+                 Use Definition of Laplace transform to find the Laplace transform of    ( ) t =  2t 4
+                 Solution
 
-            Applying Hooke’s law:
-                       F     k x
-                        1     1
-                       F   k   y    x
-                        2     2
-                       F    k   y    x
-                        3      2
-            Applying Newton’s second law:
 
-             m x   k x k   y   x    1
-                          
-            
-              1       1     2
-             m y   k  2  y    x            2
-            
-                2
-             m x    k   k   x k y
-                                 
-            
-              1        1    2      2
-                         
-             m y    2  k x k y
-                            2
-                      2
-                                                          1306</code></pre>
+                                   4 −
+                                  t
+                      F () = ∫  ∞ 2  e  st dt                                            ∫ e − st dt
+                         s
+                                                                                  4
+                                                                                             e
+                                0  t 4  4t 3  12t 2  24t  24    − st  ∞   +    t       − 1 − st
+                                                                                           s
+                          =  2 −    −   −      −     −      e
+                                s    s 2   s 3    s 4  s   5    0         −      3      1  e − st
+                                  24                                           4t       s 2
+                          =  20 +    
+                              
+                                  s   5                                   +  12t       − s 1 − st
+                                                                                             e
+                                                                                   2
+                                                                                            3
+                          =  48                                                           1   − st
+                             s 5                                            −    24t       4  e
+                                                                                          s
+                                                                                             e
+                                                                            +    24      −  1 − st
+                                                                                            5
+                                                                                           s</code></pre>
      	</div>
     
      </div>

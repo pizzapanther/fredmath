@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1529 - ODE Solution</title>
+        <title>Page 1529 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1529 - ODE Solution</div>
+        <div id="content-top1">Page 1529 - DE Solution</div>
         <div id="content-top2">P. 1529</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1515
 
-             Determine all the singular points of the given differential equation and classify each singular point as
-             regular or irregular
-                         2
-                                                                   0
-                    x 4  x  1  x    1  2  y   4x 3 x    1 y   x    1 y 
-             Solution
 
-                         4x 3  x    1           x 
-                 y                   y           1        y   0
-                                                 2
-                          2
-                     x 4  x  1   x    1  2  x 4  x  1  x    1  2
-                 P ( ) x      4         & Q   ( ) x       x  1
-                         
+                                                   (
+                                                  ) ( ) I−
+                    a)  V s =  ( )  R Is +  ( ) ( R +  sL Is  ( )) ( ) 1s
+                          i       1         2               2
+                        ( R +  2  sL I 2  ( ) s −  I s +  ( ))  sC  I 2  ( ) s =  0  ( ) 2
+                                 )(
+                                                   1
+                                        s
+                        V  ( ) s =  1   I  ( ) ( ) 3
+                          0      s C  2
+
+                         ( ) 3 →  I =  2  s CV
+                                            0
+                                                       1
+                        ( ) 2  →  ( R +  2  sL I −  )(  I 2 )  =  sC  I
                                                           2
-                           2
-                        x x   1  x    1         x 4  x  1  x    1  2
-                                                           
-                For  ( ) x       4              x  0, 1,  i
+                        ( R +  2  sL I −  )(  I 2 )  =  V
+                                              0
 
-                    P
-                           x x     2  1   x    1
-                    p    lim xP   x   lim      4          4
-                      0   x  0        x  0   x   2  1   x    1
+                         I −  I =   1    V
+                             2   R +  sL  0
+                                   2
+                                1         
+                         I =     R +  sL  +  sC V
+                                           
+                                           
+                                             0
+                              2           
+                              1 R C s +  LC s 2 
+                               +
+                          =      2              V
+                                     Ls +  R    0
+                                        2     
+                                           1 R C s +  LC s 2 
+                                           +
+                        ( ) 1   →  V =  i  R 1      2   Ls +  R      V +  0  ( R +  2  sL )  R +  1  sL V
+                                                                                     0
+                                                    2                       2
 
-
-                                      x 
-                    p    lim   x  1 P    lim      4        2
-                                                   
-                      0   x  1             x  1  x x  1 
-                                                     2
-                                
-                    p    lim  x i    x   lim     4           2     2 i  1    i  1
-                                    P
-                      0   x  i             x  i   x x   1 x i   i    1  i   1i  1
-                                  
-                    p     lim  x i    x   lim       4         2     2 i  1    i   1
-                                      P
-                      0   x i              x i    x x  1 x i   i    1  i   1i  1
-                For  ( ) x        x  1            x   0, 1,  i
-                                                              
-                    Q
-                            x 4  x   2  1  x    1  2
-                               2
-                    q    lim x Q   x   lim       x  1          is not analytic
-                     0   x  0          x  0  x 2  x   2  1  x    1  2
-
-                                    2
-                                        
-                    q    lim   x    1 Q x   lim    x  1    1
-                     0   x  1               x  0  x 4  x  1 
-                                                        2
-                                      
-                                      2
-                                 2
-                    q    lim   x  1 Q    x   lim    x    1 x     2  1      0
-                     0   x  i                 x i   x 2  x    1  2
-                                                   
-                The Regular singular point:  x   0,  i , and Irregular singular point:  x    0
+                               R +  RR C s +  RLC s 2    
+                        V =    1    12         1      + 1    V
+                          i              Ls + R            0
+                                            2            
 
 
+                         V i  R +  1  RR C s +  RLC s +  2  Ls +  R 2
+                                               1
+                                    12
+                        V   =                  Ls +  R
+                          0                       2
+                        V 0                    Ls +  R 2
 
-             Exercise
+                         V  =        2   (           )
+                          i   RLC s +     RR C +   L s +  R +  1  R 2
+                                           12
+                                1
+                                V
+                         Hs       0
+                           ( ) =
+                                V
+                                  i
+                                               L  s +  R
+                               =                     2
+                                 RLC s +  2  ( RR C +  L s + )  R +  R
+                                  1           12              1    2
 
-
-                                    0
-             Determine whether  x   is an ordinary point, singular point, or irregular singular point of the given
-                                                           2
-                                                    
-                                              
-             differential equation    xy  1 cos x y   x y  0
-             Solution
-
-                                                              1499</code></pre>
+                               =   1                 Ls +  R 2
+                                 RLC        RR C +       L  R +  R
+                                  1    s +  2  12       s +  1    2
+                                               R LC          R LC
+                                                1             1</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 704 - ODE Solution</title>
+        <title>Page 704 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 704 - ODE Solution</div>
+        <div id="content-top1">Page 704 - DE Solution</div>
         <div id="content-top2">P. 704</div>
      </div>
      <div id="content-middle">
@@ -152,102 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                         4                2
-        Find the general solution     y    2y   y   x    2
-
-        Solution
-
-                                                          2
-                                                 2
-                                          4
-            The characteristic equation:    2         1  2    0      i  3,4    i 
-                                                    1
-
-                                                                            1,2
-                                               
-                                    
-            y   C  cos x C    sin x C x  cos x C x  sin x
-                          
-              h    1         2         3          4
-                     2
-                           
-            y     Ax   Bx C
-              p
-                  y   2Ax   B
-                   p
-                  y   2A
-                   p
-                  y   y   4    0
-                   p     p
-                4           2
-                                      4
-            y     2y   y   x  4x 
-                     2
-                   x       A  1
-                    x     B     4
-                           
-                   x 0  4A C    4   C   0
-
-            y     x   2  4x
-              p
-                                                               2
-                                     
-                           
-                                                 
-            y x      cos x C    sin x C x  cos x C x  sin x   x  4x
-                C
-                     1         2         3          4
+    <pre style="white-space:pre-line"><code>694 | S O LU TI O N
 
 
-        Exercise
-                                         4              x
-        Find the general solution     y     y   4x  2xe
-        Solution
-                                                             
-                                                2
-                                                         2
-                                          4
-            The characteristic equation:          2    1   0          0, 0, 
-                                                                                         1
-                                                                          1,2,3,4
-                                          x
-                           
-            y   C   C x C e     x   C e
-              h    1    2      3        4
-                                  
-                     3
-                            2
-            y     Ax   Bx  Cx e  x
-              p
-                                                   
-                                             2
+          Exercise
+
+                                    ()
+                         ()
+          Explain why  yt  and  yt  are linearly independent solutions. Calculate Wronskian and use it to
+                        1          2
+          explain the independence of the given solutions.
+                                             ( ) =
+                                                               ( ) sin3t
+                         y′′ +  9y =  0    yt     cos3t      yt   =
+                                            1                 2
+          Solution
+                     y   y
+              wt      1    2
+               () =
+                     y′  y′
+                      1    2
+                      cos3t    sin3t
+                  =
+                    − 3sin3t  3cos3t
+                          2
+                                    2
+                    =  3cos 3t + 3sin 3t
+                                       )
+                       (
                            2
-                                    
-                  y   3Ax    2Bx C   Bx   Cx e  x
-                   p
-                                                        
-                                 2
-                                         
-                  y   6Ax   Bx  4Bx Cx   2B  2C e  x
-                   p
-                                                                      
-                                               2
-                                       
-                                                       
-                  y   6A   2Bx  4B C   Bx   4Bx Cx  2B   2C e  x
-                   p
-                                                        
-                            
-                                 2
-                                         
-                       6A   Bx   6Bx Cx    6B  3C e  x
-                4    2                                      x
-                                                         
-                               
-            y      Bx   6Bx Cx    6B  3C  2Bx   6B C e
-              p
-                                                          692</code></pre>
+                                    2
+                    =  3 cos 3t + sin 3t
+                    = ≠
+                      3 0
+                                () & y
+                                        t
+               The solutions  yt        () are linearly independent.
+                              1       2
+
+
+          Exercise
+
+                             t
+                       ()
+                                      ()
+          Show that  yt =   e  and  yt =   e − 3t   form a fundamental set of solutions for  y′′ +  2y′ −  3y =  0,
+                      1             2
+          then find a solution satisfying  (0) 1y  =  and  (0)y′  = − 2.
+          Solution
+
+              yt     e t
+                () =
+               1
+                                       t
+                                            t
+                 y′′ +  2y′ −  3y =  e +  t  2e − 3e = 0
+              yt     e − 3t
+                 () =
+               2
+                 y′′ +  2y′ −  3y =  9e −  3t  −  6e −  3t  −  3e −  3t  =  0
+
+
+                        t
+              y () t = C e +  C e − 3t
+                     1      2
+                      =
+                 y (0) 1
+                 C +  C =   1
+                   1    2
+                        t
+                t
+              y′ () =  Ce − 3C e − 3t
+                      1       2
+                 y′ (0) = −
+                          2
+                 C −  3C =   −  2
+                   1     2</code></pre>
      	</div>
     
      </div>

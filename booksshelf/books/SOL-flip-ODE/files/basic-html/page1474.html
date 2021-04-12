@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1474 - ODE Solution</title>
+        <title>Page 1474 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1474 - ODE Solution</div>
+        <div id="content-top1">Page 1474 - DE Solution</div>
         <div id="content-top2">P. 1474</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                             
-                    n   2 n    1 a n 2 x   x 2   a x   0
-                                        n
-                                                      n
-                                                    n
-                 n  0                         n  0
-                                            
-                    n   2 n    1 a n 2   x   a x n 2    0
-                                        n
-                                                 n
-                 n  0                      n  0
-                                            
-                    n   2 n    1 a n   2   x   a n   2 x   0
-                                                      n
-                                        n
-                 n 0                       n 2
-                                                         
-                                                      n
-                                                                    n
-                2a    6a x   3   n   2 n    1 a  2   x   a  x   0
-                   2                             n            n  2
-                              n 2                       n 2
-                               
-                                                                n
-                2a    6a x        n  1 n    2 a    a  2      x  0
-                   2     3                       n  2  n
-                              n 2
-
-                n  1 n    2 a n  2   a n  2    0
+    <pre style="white-space:pre-line"><code>1460 | S O LU TI O N
 
 
-                a             1      a
-                  n  2   n   1 n    2  n  2
-
-                                   
-                Given:       ( y  0)  1 a  ,  y ( ) 0    0  a
-                                      0                 1
-                2a    6a x  0      a   a   0
-                   2     3             2     3
-
-                         a  1                                           a   a   a   0
-                          0                                               1    2    3
-                  n   2    a     1  a    1                n   3    a    1  a   0
-                               4    12  0     12                           5    20  1       n  5    a      *a 
-                                                                                                                 0
-                                                                n   4    a      *a                 7     3
-                                                                                     0
-                                                                           6     2
-                  n   6    a    1  a   1
-                             8    56  4   672
-                  n  10     a     1  a     1
-                             12     132  8   88,704
-
-
-
-                                        8
-                               4
-                    1
-                 y x      1  x    1  x     1   x 12  
-                           12     672      88,704
+                         s 5            A C =   0
+                                           +
+                        
+                         s 4         −−   2C +  D =  0
+                                       A
+                        
+                         s   3    2A C −   2D +  E =  0
+                                       +
+                        
+                          s   2  −  2A +  2B −  2C +  2D −  2E +  F =  0
+                        
+                          s   1   A C −  2D +  E −  2F =  0
+                                    +
+                          0
+                                      A
+                         s         −+   B +  D +  F =  4
+                            A =  −  16  B =  28  C =  16
+                        →        17       17      17
+                           
+                             D = 16   E =  48  F =  8
+                                17        17      17
 
 
-             Exercise
+             Ys       16 1    +  28   1   +  16   s  +  16  1   +  48    s     +  8    1
+               ( ) = −
+                      17 s − 1 17        2  17  2      17  2      17         2  17         2
+                                   (s −  ) 1   s +  1     s +  1     ( s +  2  1 )  ( s +  2  1 )
 
-             Find the series solution to the initial value problem  y   2xy   8y  0;  y   0    3,  y   0   0
+                                    − 16 1  +  28  1    +  16  s   +  16  1  
+                                    17 s − 1 17  (s −  ) 1  2  17  s +  2  1  17  s +  2  1 
+                      ( )} £
+              £   − 1 {Ys  =    − 1     24  2s   4     2                      
+                                    +  17     2  +  17      2                
+                                       ( s +  2  1 )  ( s +  2  1 )          
+                                                                             
+
+                         e +
+                                te +
+              yt =    16 t   28 t    16 cost +  16 sint +  27 t sint +  4  sint t−  cos   t
+               ( ) −
+                      17     17      17       17       17        17
 
 
-             Solution
-                         
-                               n
-                 y   x   a x
-                             n
-                        n 0
+          Exercise
 
-                                                              1445</code></pre>
+
+                                                                                                       0
+          Solve using the Laplace transform:  y (4)  −  y =  0 ; y ( ) 0 = 1, y′ ( ) 0 = 0, y′′ ( ) 0 =  0, y (3) ( ) 0 =
+          Solution
+                {
+              £   y (4)  −  y } ( ) s =  0
+
+                                2
+                       3
+              s Ys − 4  ( ) s y ( ) 0 −  s y′ ( ) 0 −  sy′′ ( ) 0 −  y′′′ ( ) 0 −  Ys =  ( ) 0
+              ( s −  4  1 Ys  s
+                    )
+                             3
+                      ( ) =
+             Ys              s 3         =  A   +  B 1 +  Cs +  D
+               ( ) =
+                                 (
+                                                          2
+                                   2
+                     (s −  1 )(s +  ) 1 s + 1 )  s −  1 s +  s + 1
+                                                        2
+                                                                                   2
+                                                                        3
+                                  2
+                            3
+                                                 3
+                      3
+                     s =  As +  As +  As +  A +  Bs −  Bs +  Bs − B ++ Cs − Cs +  Ds −  D</code></pre>
      	</div>
     
      </div>

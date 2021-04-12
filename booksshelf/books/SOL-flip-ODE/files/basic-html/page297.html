@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 297 - ODE Solution</title>
+        <title>Page 297 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 297 - ODE Solution</div>
+        <div id="content-top1">Page 297 - DE Solution</div>
         <div id="content-top2">P. 297</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>dx    1    x
-                    dt   4   50
-                    x   1  x   1
-                        50     4
-                           dt  t  /50
-                        e  50   e
-                          1 t /50 dt   25 t /50
-                                        e
-                            e
-                                      2
-                          4
-                                              
-                    x   t   1   25 t /50    C
-                                    e
-                           e t /50 2
-                           25    Ce  t   /50
-                           2
-
-                                         0
-                           x   0   0     5 2    C
-                                             2
-                                  C   25
-                                         2
-
-                                
-                    x   t   25  1 e  t   /50 
-                           2
-
-                b)     x  25  25  1 e  1/2 
-                                 
-                             2
-                           4.92   lb
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 291
 
 
-                                         
-                c)  lim x t      lim  25  1 e  t   /50 
-                    t        t   2
-                             =  25
-                               2
-                                                   
-                    As t     , the amount of salt is  12.5 b
-                                                           l
+                 Exercise
+
+                                                                             π
+                                                             )
+                                                                       x
+                 Solve the initial value problem:   y − ′  (sin xy =  2sin , y ( )  = 1
+                                                                             2
+                 Solution
+                          ∫ − sin xdx
+                        e           = e cos x
 
 
-             Exercise
-
-                                                                                        0
-             A tank of 50-gallon capacity is initially full of pure water. Starting at time t   brine containing  2 lb  of
-
-             salt per gallon flows into the tank also at the rate of 3 gal/min. The mixture flows out at the rate of
-             3 gal/min.
-
-                a)  Find the amount of salt in the tank after t minutes.
-                b)  How much salt is present at the end of 25 minutes?
-                c)  How much salt is present after a long time?             3 gal/min
+                        ∫  2sin xe cos x dx = − 2 e cos x  d  (cos x
+                                             ∫
+                                                             )
 
 
-             Solution                                                     2 lb/gal
-                a)    50V t    3 3 t      50
+                                          = − 2e cos x
+                                                )
+                      ( ) =
+                     yx       1   ( −  2e cos x  +  C
+                            e cos x
+                          = − 2 +  C
+                                 e cos x
+
+                            ( )
+                             π
+                          y  2  = 1
+
+                                +
+                          1= − 2 C
+                          C =  3
 
 
-                                  x   t
-                    Rate out  3        3  x   t  lb
+                      ( ) −=
+                     yx      2 +   3
+                                 e cos x
 
-                                   50    50       min                                            3 gal/min
-                    Rate in   2 3 6    lb
-                               
-                                   
-                                       min
-                                                               293</code></pre>
+
+                 Exercise
+
+                 Solve the initial value problem:   L  di  +  RI =  , E  i ( ) 0 =  i
+                                                     dt                   0
+                 Solution
+                          ∫    R dt
+                            e     e Rt
+                                 =
+
+                        ∫  Ee Rt dt =  E e Rt
+                                     R
+
+                                           )
+                     It      1  ( E  e Rt  +  C
+                      ( ) =
+                           e Rt R
+                          i ( ) 0 =  i
+                                 0
+
+                          i =  E  + C
+                           0   R
+
+                          C = i −  E
+                               0   R</code></pre>
      	</div>
     
      </div>

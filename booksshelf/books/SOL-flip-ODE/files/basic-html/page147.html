@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 147 - ODE Solution</title>
+        <title>Page 147 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 147 - ODE Solution</div>
+        <div id="content-top1">Page 147 - DE Solution</div>
         <div id="content-top2">P. 147</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  98t  980e  0.1t    C
-                                           3
-                           x   0   0   C   98 0
-                                           3
-
-                 x t     98t  980e  0.1t    980  1000
-
-                98t  980e  0.1t   1980 0
-                                       
-                t  18.7  sec
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 141
 
 
-             Exercise
+                 Exercise
 
-             A 400-lb object is released from rest 500 ft above the ground and allowed to fall under the influence of
-                                                                            
-             gravity. Assuming that the force in pounds due to air resistance is  10v , where v is the velocity of the
-             object in  ft/s , determine the equation of motion of the object. When will the object hit the ground?
+                 A thermometer is removed from a room where the temperature is 70  F°   and is taken outside, where
+                                        °
+                 the air temperature is 10  F . After one-half minute the thermometer reads 50  F°  .
+                   a)  What is the reading of the thermometer at t = 1 min ?
+                   b)  How long will it take for the thermometer to reach 15  F°  ?
 
-             Solution
+                 Solution
+                                                         )
+                     dT  =  −  ( kT −  ) A  →  T =  A +  ( T −  A e − kt
+                     dt                             0
 
-                Given:   g   32, m   400   12.5,  10v v   0   0, x   0 
-                                                                             0
-                                        32
-                By Newton second law:  m    dv    mg   10v
-                                            dt
-                              
-                12.5 dv    400 10v
-                     dt
-                 dv    32 0.8v
-                         
-                 dt
+                    a)  Given: T =  70 F °     &  A =  10 F °
+                                 0
+                        Tt        +  (70 10 e−  )  − kt
+                          ( ) 10=
 
-                       dv
-                    0.8v  32      dt
+                              = 10 60e  − kt
+                                  +
+                          ( )                k −  /2
+                              1
+                                      +
+                        Tt =   2  = 10 60e      =  0 5
+                                60e − k /2  =  40
 
-                  1  ln 0.8v  32     C
-                                    t
-                 0.8                    1
-                ln 0.8v  32   0.8t   C
-                                       1
-
-                          
-                0.8v   32 C e  0.8t
-                             1
-                            C
-                v   t   40   2  0.8t
-                               e
-                            0.8
-                        v   0  0       1  C   40   0
-                                        0.8  2
-                                  C   32
-                                    2
-                          
-                            
-                v   t   40 1 e  0.8t 
-
-                                0.8t 
-                    t 
-                 x     40   1 e        dt
-
-                        40t  50e  0.8t   C
-                                          3
-                        x   0   0   50   C   0
-                                            3
+                                e − k /2  =  2
+                                        3
+                                        2
+                                k = − 2ln
+                                        3
+                                 ≈ 0.811
 
 
-                                                               143</code></pre>
+                          ( ) 10 60e=
+                        Tt        +    − .811t
+
+                        T  ( ) 10 601 =  +  e − .811
+                                     °
+                             ≈  36.67    F
+
+                    b)  ( ) 10 60e=  +  − .811t  = 15  F°
+                        Tt
+                        60e − .811t  = 5
+
+                        e − .811t  =  1
+                                  12
+
+                        t = −  1  ln  1
+                             .811 12
+                          ≈ 3.06 min</code></pre>
      	</div>
     
      </div>

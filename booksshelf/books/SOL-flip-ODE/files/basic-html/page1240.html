@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1240 - ODE Solution</title>
+        <title>Page 1240 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1240 - ODE Solution</div>
+        <div id="content-top1">Page 1240 - DE Solution</div>
         <div id="content-top2">P. 1240</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>    1      1 
-                 V      R C     C    V 
-                            2
-                                     
-                  I
-                                         I
-                                R    
-                          1        1  
-                          L        L 
-                            1      1 
-                           1
-                               1  1         V   
-                           1       5     I  
-                           1       1 
-                            1   1 V 
-                                
-                               
-                                   I
-                          1   5  
-                                1 
-                                         1
-                       
-                det  A    I 
-                                           
-                                 1        5 
-
-                                                
-                                1       5      1
-                                 2  6     6 
-                                             0
-                 The eigenvalues are:        3
-                                             3
-
-                                                
-                For       3   3      A       I V   0
-                      1                      1    1
-                                                                       
-                          2   3      1     x    0        2   3 x   y  0
-                                                               
-                                                     
-                                                                           
-                                                   0
-                                             y
-                                          
-                          1         2   3                x   2   3 y  0
-                                                               
-                                                                 
-                          2   3               2   3      3   3 t
-                    V                x    t      e 
-                     1                   1
-                            1                    1   
-                For         3
-                           3
-                      2
-                                                                  
-                          2   3                2   3      3   3 t
-                    V                x    t       e 
-                     2                    2
-                            1                     1   
-                            3    3 t    2  3    3   3 t    2  3 
-                            
-                                                    
-                 x   t   C e                C e              
-                         1                       2
-                                       1                     1   
-                Given:     V   12 V   I   0A
-                             0          0
-                      12     2   3      2   3 
-                           C         C       
-                             1
-                                           2
-                      0        1           1   
-                                    
-                                                 
-                               2   3 C   2   3 C  12
-                                     1             2           C   2 3,  C    2 3
-                                                                  1
-                                                                              2
-                                    C   1  C   2  0
-                           
-                             3    3 t    2  3    3    3 t    2  3 
-                 x   t   2 3e                2 3e               
-                                        1                       1   
+    <pre style="white-space:pre-line"><code>1230 | S O LU TI O N
 
 
 
-                                                              1219</code></pre>
+                 q′ =  e − 20t ( −  20C  cos15t −  20C  sin15t −  15C  sin15t +  15C  cos15t )
+                                 1              2            1             2
+                      −  840 sin10 +  t  640 cos10t
+                        697          697
+
+
+                        q′ ( ) 0 = 20  84  +  15C +  640  =  0
+                                   697       2  697
+
+                        C   = −  464
+                          2     2091
+
+                                              464
+                                                            84
+                                 84
+                                                                         64
+                 q ( ) t =  e − 20t ( −  697 cos15t −  2091 sin15t +  )  697 cos10t +  697 sin10t
+             b)  ( ) t =  I  q = ′ −  1  e − 20t  ( 5040cos15t−  −  9280sin15t −  3780sin15t +  6960cos15t )
+                              2091
+                                   −  840 sin10t +  640 cos10t
+                                     697          697
+
+
+                      =  −  1  e − 20t  (1,920cos15t −  13,060sin15t ) −  840 sin10t +  640 cos10t
+                         2091                                      697          697
+                                                                                             )
+                                 (
+             c)  lim q t =  ( )  lim e − 20t ( −  84  cos15t −  464  sin15t +  )  84  cos10t +  64  sin10t
+                 t→∞         t→∞           697          2091          697          697
+                                                       )
+                                                      t
+                  lim e − 20t ( −  84  cos15t −  464  sin15  = 0     q : is steady state solution
+                                             01
+                 t→∞          697          2 9                       p
+                  lim (  84  cos10t +  64  sin10t =  )  ∃
+                 t→∞   697          697
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Exercise
+
+          A series circuit consists of a resistor with  R  =  20 Ω , an inductor with  L = 1 H , a capacitor with
+          C =  0.002 F , and a 12-V battery. If the initial charge and current are both 0, find the charge and
+          current at time t.
+
+          Solution
+
+              q′′ +  20q′ +  1  q =  12              Lq′′ +  Rq′ +  1  q =  E ( ) t
+                         .002                                   C
+
+                                                       0
+              q′′  20q′ +  +  500q =  2 1 ; q ( ) 0 =  0, i ( ) 0 =</code></pre>
      	</div>
     
      </div>

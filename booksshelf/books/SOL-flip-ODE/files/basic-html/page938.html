@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 938 - ODE Solution</title>
+        <title>Page 938 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 938 - ODE Solution</div>
+        <div id="content-top1">Page 938 - DE Solution</div>
         <div id="content-top2">P. 938</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  e 7
-                       s  1
-
-
-             Exercise
-
-                                                                                           t
-             Use Definition of Laplace transform to find the Laplace transform of      t   e   2 5
-                                                                                 f
-             Solution
-
-                               t
-                                  e
-                 F ( ) s   0  e  2 5  st dt
-
-
-                        e  5  0  e   s   2 t dt
-
-                                             
-                                     
-                                      s
-                                            2 t 
-                         1    1     e                           e     0 e   0  1
-                          e 5 s   2         0
-                        1    1
-                        e 5 s   2
-
-
-             Exercise
-
-
-             Use Definition of Laplace transform to find the Laplace transform of      t  te 4t
-                                                                                 f
-             Solution
-                           te 4t  st                                        e   s   4 t dt
-                   ( ) s 
-                  F       0     e   dt                                                s
-                                                                               1
-                           e t    s   4 t                      t        s  4 e    4 t
-                      
-                         0           dt                                        1   e   s   4 t
-
-                                                                  1     s    4  2
-                        
-                           t      1      e   s   4 t
-                          s  4  s    2          0
-                                        4  
-
-                          1
-                        s    4  2
+    <pre style="white-space:pre-line"><code>928 | S O LU TI O N
 
 
 
-             Exercise
-             Use Definition of Laplace transform to find the Laplace transform of
-                            2 
-                     f    t   t e  2t
+             The characteristic equation: λ      2  3 =  λ +  0
+                 λ    = 0, − 3
+                  1,2
 
-             Solution
+              y =  C +  C e − 3x
+               h    1     2
 
-                          t e  2t   st
-                            2 
-                  ( ) 
-                 F  s    0        e   dt
+                      2
+              y  =  Ax +  Bx
+               P
+                   y′ =  2Ax + B
+                     P
+                   y′′ =  2A
+                     P
+              y′′ +  3y′ =  4x −  5
 
-                                                               917</code></pre>
+                  x      6A  =  4     A =  2
+                                          3
+
+                 x 0  2 +  A  3B =  −  5 B =  −  19
+                                           9
+
+                      2
+              y  =  2 x − 19    x
+               P    3      9
+
+              y ( ) Cx =  1  +  C e − 3x  +  2  x −  2 19    x
+                           2
+                                    3
+                                           9
+
+
+          Exercise
+
+
+          Find the general solution:   y′′ −  3y′ =  8e 3x  +  4sin x
+
+          Solution
+
+                                          2
+                                                   0
+             The characteristic equation: λ − 3λ =
+                 λ    =  0, 3
+                   1,2
+              y =  C +  Ce  3x
+               h    1     2
+
+             The particular equation:   y  =  Ae 3x  +  B cos x C sin x
+                                                          +
+                                        p
+                                      y′ =  3Ae 3x  −  B sin x C cos x
+                                                           +
+                                        p
+                                      y′′ =  9Ae 3x  −  B cos x C sin x
+                                                           −
+                                        p
+              y′′ −  3y′ =  8e 3x  +  4sin x
+
+              9Ae 3x  −  B cos xC sin x − 9 e 3x  +  3 sin x −  B  3 cos x =  C  8e 3x  +  4sin x
+                              −
+                                         A
+             The particular equation:   y  =  Axe 3x  +  B cos x C sin x
+                                                           +
+                                        p
+                                      y′ =  3Axe 3x  +  Ae 3x  −  B sin x C cos x
+                                                                   +
+                                        p</code></pre>
      	</div>
     
      </div>

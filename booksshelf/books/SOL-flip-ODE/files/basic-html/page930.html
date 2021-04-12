@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 930 - ODE Solution</title>
+        <title>Page 930 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 930 - ODE Solution</div>
+        <div id="content-top1">Page 930 - DE Solution</div>
         <div id="content-top2">P. 930</div>
      </div>
      <div id="content-middle">
@@ -152,23 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Lecture 3  Laplace and Linear Systems
+    <pre style="white-space:pre-line"><code>920 | S O LU TI O N
 
 
-                Section 3.1    Definition of Laplace Transform …………………………………………. 911
+                        
+                     e x  cos x  2A +  2B −  2A +  (2B −  2A −  2B +  2A ) x     e x sin x
+                                                                        =
+                        
+                          sin x  2B −  2A −  2B +  ( 2A − −  2B +  2A +  2B ) x
+                          2B =  0            1
+                                  →    A =  −  ,  B =  0
+                         −  2 =  A  1        2
 
-                Section 3.2    Basic Properties of the Laplace Transform ………………………………. 923
+                                 +
+              y ( ) x =  e x ( C 1 cos xC 2  sin x −  )  1  xe x cos
+                                                       x
+                                             2
 
-                Section 3.3    Inverse Laplace Transform ………………………….……………………. 946
 
-                Section 3.4    Using the Laplace Transform to Solve Differential Equations ..…………. 981
+          Exercise
 
-                Section 3.5   Introduction & Basic Theory of linear Systems  ………...………………. 1073
-                Section 3.6    Planar Systems – Distinct, Complex, and Repeated Eigenvalues -
+          Find the general solution:   y′′ −  2y′ +  2y e 2x (cos x −  3sin  ) x
+                                                    =
+          Solution
+                                                    2
+             The characteristic equation: λ      2  2λ −  += 0
+                         ±
+                 λ    =  22i
+                  1,2
+                          2
+                      = 1 i
+                         ±
+              y =  e x ( C  cos xC  sin x )
+                               +
+               h        1         2
+              y  = e 2x  ( cos x +  B sin  ) x
+                        A
+               P
+                 y′ =  e 2x  (2 cosA  x +  2 sin x − B  A sin x +  B cos  ) x
+                   P
+                                                         )
+                      =  e 2x  ( ( 2AB+  )cos x +  (2B −  A )sin x
 
-                                                Eigenvectors …………..……………………………… 1100
+                                                                                          )
+                 y′′ =  e 2x  ( ( 4A +  2B )cos x +  (4B −  2A )sin x −  (2A B )sin x +  (2B −  A )cos x
+                                                                  +
+                   p
+                                                           )
+                     =  e 2x  ( ( 3A +  4B )cos x +  (3B −  4A )sin x
 
-                Section 3.7    Phase Plane Portraits & Applications …………………………………… 1221</code></pre>
+                           =
+              y′′ −  2y′ +  2y e 2x (cos x −  3sin  ) x
+                     e 2x  cos x  3A +  4B −  4A −  2B +  2A =  1
+                        
+                         sin x  3B −  4A −  4B +  2A +  2B =  −  3
+
+                        A +   2B =  1
+                     
+                           +
+                      −  2AB =  −  3
+                        ∆  =  5 ∆   =  7 ∆   =  −  1
+                                  A        B
+
+                     A =  7 ,  B = − 1
+                         5        5
+
+              y ( ) x =  e x ( C 1 cos xC 2  sin x +  )  e 2x ( 7  cos x +  1 sin x )
+                                 +
+                                                  5
+                                                           5</code></pre>
      	</div>
     
      </div>

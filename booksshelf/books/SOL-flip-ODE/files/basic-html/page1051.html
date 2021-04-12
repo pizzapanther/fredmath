@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1051 - ODE Solution</title>
+        <title>Page 1051 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1051 - ODE Solution</div>
+        <div id="content-top1">Page 1051 - DE Solution</div>
         <div id="content-top2">P. 1051</div>
      </div>
      <div id="content-middle">
@@ -152,97 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                   
-                                                                      
-                                       
-                                          2
-                                                                        2
-                                   2
-                  2
-                                                              
-                                                          
-                3s  10s  3   A s  1 s    2s  1  Bs C s       2 s  2s  1 
-                                                 
-                                                        
-                                                              2
-                                                   2
-                                             D s  1 s    2 s  1   E s  1  s    2
-                                  2     2           2                   2       
-                              A s  1 s    2s  1   Bs   2Bs  Cs  2C s     2s  1
+    <pre style="white-space:pre-line"><code>2. 5 − V ar i a t i o n   o f  P ar am et er s  | 1041
 
-                                                         
-                                      
-                                                  
-                                                               3
-                                        2
-                                                     2
-                                                                      2
-                                        D s   3s  2 s  1   Es  2Es   Es   2E
-                                                                 4
-                                 4
+
+
+                                 2 −
+
+                                                                        1
+                     v =  ∫  ( ) t  t e  t    dt            v  ( ) t = ∫  xg ( ) t  dt
+                      2          − 2                          2          W
+                                   t
+                                   e
+                        = − 1 ∫  t 4 − t     dt
+                           2
+
+
+                                              ∫   e  t −     dt
+
+                                          4
+                                                    t −
+                                 +    − 1 t     − e
+                                       2
                                          3
-                                                                                2
-                                                                                            3
-                                                                        3
-                                                2
-                              As   2As   2As    2As   A   Bs   4Bs  5Bs   2Bs   Cs   4Cs 2
+                                                   t −
+                                 −    − 2t       e
+                                                    t −
+                                         2
+                                 +    − 6 t     − e
+                                                   t −
+                                 −    − 12 t     e
+                                                    t −
+                                 +    − 12      − e
 
-                                                                 2
-                                                          3
-                                                                                   2
-                                                  4
-                                       5Cs   2C   Ds   3Ds  3Ds   3Ds  2D   Es  3Es   2E
-                 s 4       A   B   D   0
-                
-                 s 3  2A   4B  C  3D   E   0
-                                                        A   1 B   1 C   2
-                
-                 s   2  2A  5B   4C  3D   2E   3    
-                                                        D  2   E   2
-                 s   1  2A   2B  5C  3D   E  10
-                  0
-                 s     A   2C  2D   2E  3
-                                                                       
-            L    Y s               1    s    2    2       2     
-                        L
-                                     s   2  s   2  1  s   2  1  s   1  s    1   2  
-            y   t   e  2t   cost  2sint  2e  t     2te  t 
+                                                   )
+                                   3
+                                  t
+                        =  ( 1 t +  4  2 +  6t +  2  12t +  12 e  t −
+                           2
+                                        )
+                                                                            )
+                                                  (
+                     x  =   t −  ( 1 t +  2  t +  1 e  t −  +  11 t +  4  2t +  3  6t +  2  12t +  12 e  t −     x  = vx + v x
+                      p       2                 t  2                                       p    11     2 2
+                            =  ( −  1 t −  3  t 2  t +−  1 t +  3  2t +  2  6t +  12 +  12 ) e  t −
+                                                                 t
+                              2
+                                           2
+                          (  2          12 )   t −
+                        =  t    5t + +  12 +  t  e
+                    Thus, the general solution is:
 
-
-        Exercise
-        Solve using the Laplace transform:  y (4)    2y   y   4te t ;  y   0   y   0   y   0   y (3)   0 
-                                                                                                  0
-        Solution
-                               
-            L   y (4)    2y  y  L  4te
-                                       t
-             4        3       2                          2                                 4
-                                                  0 
-                                                              2sy
-            s Y   s   s y   0  s y   0   sy   0   y   2s Y s     0  2y   0  Y   s 
-                                                                                        s    1  2
-                        
-             s   2s  1 Y    s   4                    y   0   y   0   y   0   y (3)   0 
-                    2
-              4
-                                                                                          0
-                                s    1  2
-             s   2  1 Y    s   4
-                  
-                   2
-                            s    1  2
-                                        A
-            Y    s     4       2      s  1   B  2    Cs   2  D    Es   F 2
-                                                                   2
-                             2
-                   s    1  2  s  1     s    1  s  1     s  1 
-                         4    2        4    2                2        2               2      
-                A s    1 s   2s  1   B s  2s  1  Cs   D  s  2s  1 s  1   Es   F  s  2s  1 
-                                                                                                          4
+                         x t = () C t +  C  1 +  ( t 2  5t + +  12 +  12 ) e  t −
+                                1     2 t                 t
 
 
-                                                          1030</code></pre>
+                 Exercise
+
+                 Find the general solution to the given differential equation with the set of homogenous equations
+                 (Use variation of parameters).
+
+                                                                             1
+                                2 x′′ +  t 2  3 x t ′ − =  x  1  x  ( ) t =  t , x  ( ) t =
+                                                 t      1             2      t
+                 Solution
+
+
+                         t
+                     x  ( ) C=   t +  C  1
+                      h       1       2 t
+                            t     1
+                                  t
+                     W =
+                           1    −  1
+                          2 t     t 2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1427 - ODE Solution</title>
+        <title>Page 1427 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1427 - ODE Solution</div>
+        <div id="content-top1">Page 1427 - DE Solution</div>
         <div id="content-top2">P. 1427</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>    2a   2  0     a   0
-            
-                               2
-            
-             n  2 n    1 a n  2    a n  1    0
-            
-                          a
-            a            n 1
-              n 2   n   1 n    2
-
-                         a                                 a                              a   0
-                          0                                 1                              2
-                                a                                                                      a
-                n  1   a      0    1 a        n   2    a    1  a            n   3     a    2    0
-
-                          3     2 3    6  0                   4    3  4   1                    5     20
-                                 a                                   a                                 a
-                n   4    a    3    1  a        n   5     a    3    1  a     n   6    a    5    0
-                           6    5 6   180  0                  7    6 7   504  1                8     56
-                                 a
-                n   7     a    6     1   a
-                           9    8 9    12,960   0
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1413
 
 
-
-                        1  3    1   6     1     9    
-             y 1    x      1  6  x  180  x  12,960  x       a 0
-            
-            
-             y    x    x   1  x   4  1  x   7   a
-               2         12     504           1
+                 Exercise
 
 
-                                               9
-                                                                    4
-                                                                             7
-                           3
-                                   6
-            y   x      1  1  x   1  x   1  x       a   x   1  x   1  x    a
-                       6     180      12,960          0       12     504           1
+                                                                                                =
+                                                                                                  2
+                 Solve using the Laplace transform:     y′′ −  2y′ +  5y = − 8e π  t −  ;  y π  ( ) = 2,  y π  ′ ( ) 1
+                 Solution
+
+                    Let:  ( ) = wt  ( y t π  +  ) ↔  y ( ) t =  w (t π  −  )
+
+                     y′′ −  2y′ +  5y =  −  8e π  t −
+
+                     w′′ −  2w′ +  5w =  −  8e  t −
+                     £  {w′′ −  2w′ +  5w =  } £ −  {  8e  t − }
 
 
-        Exercise
-        Find a power series solution.   y   xy   y  0
+                      2
+                                                  () 2w
+                     s Ws   −    ( ) 0 −  w′ ( ) 0 −  2sWs  +  ( ) 0 +  5 () =  Ws  −  8
+                         () sw
+                                                                          s + 1
+                            y π  ( ) =  w ( ) 0 =  2,  y π  ′  ( ) =  w′  ( ) 0 = 12
+                                )
+                     ( s −  2  2s +  5 Ws = ( )  −  s + 1 +  2s +  12 4
+                                            8
+                                                        −
+                                )
+                     ( s −  2  2s +  5 Ws = ()  2s + 10s
+                                           2
+                                              1
+                                           s +
+                                   2
+                                                          ( −
+                     W () =      2s +  10s      =  A 1 +  Bs    ) 1 +  C
+                        s
+                            (s +  1 ) (s −  (  ) 1  2  +  4 )  s +  (s −  ) 1  2  +  4
+                            2s +  2  10s =  As −  2  2As +  5A Bs −  2  B Cs C
+                                                       +
+                                                                 +
+                                                                      +
+                                 s 2   AB =    2
+                                          +
+                                
+                                 s 1  −  2AC+  =  10
+                                
+                                  0
+                                         −
+                                            +
+                                 s  5A B C =     0
+                                
+                                    1    1   0            2    1   0
+                                ∆= − 2   0   1 =  8  ∆ A  =  10  0  1 = −
+                                                                        8
+                                    5   −  11             0   −  11
+                                A =  −  1 B =  3 C =  8
 
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n  1          n  0
-                                          
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n   2                n   0
 
-            y   xy   y   0
-                                                       
-               n   2 n    1 a n 2 x   x  na x n 1    a x   0
-                                    n
-                                                                n
-                                                             n
-                                               n
-            n 0                         n 1           n 0
+                                                                       ( )
+                     £   −  1 { ()Ws  } £=    −  1       −  1  +  ( 3 s −  ) 1  +  42      
+                                             s + 1  (s −  ) 1  2  +  2 2  (s −  ) 1  2  +  2   2 
 
-
-
-
-
-                                                          1398</code></pre>
+                                     t
+                                                t
+                                               e
+                                    e
+                     w ( ) t =  −  e  t −  +  3 cos2t +  4 sin 2t
+                     y ( ) t =  w −  (t π  ) =  −  e − (t π−  )  3e t π  −  cos  ( 2 t π +  −  ) 4e t π  −  sin  ( 2 t π +  −  )
+                                t π
+                          =  −  e −+  +  3e t π  −  cos2t +  4e t π  −  sin 2   t</code></pre>
      	</div>
     
      </div>

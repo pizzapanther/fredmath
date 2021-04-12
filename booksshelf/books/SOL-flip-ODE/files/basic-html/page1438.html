@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1438 - ODE Solution</title>
+        <title>Page 1438 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1438 - ODE Solution</div>
+        <div id="content-top1">Page 1438 - DE Solution</div>
         <div id="content-top2">P. 1438</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                 2
-                2a     6a  a   x   0        a  0
-                                            
-                   2      3    0                    1
-                                             a     6 a 0
-                                            
-                                              3
-                n   2 n    1 a n  2   na n  1    0    a n  2      n   1 n   n   2  a n  1
-                   a      2  a   1  a          a     3  a   0        a     4  a    1  a
-                     4    3 4   1   6  1           5     4 5   2           6     5 6   3  45  0
-
-                   a      5  a    5  a          a     6  a   0        a     7  a      7   a
-                                                            
-                            
-                     7    6 7   4    5 2 2  1       8     7 8  5             9     8 9   3   3,240  0
-
-                            1  3   1   6     7    9     
-                 y 1   x      1  6 x   45  x   3,240  x      a 0
-                
-                
-                  y    x    x   1  x   5  x    a
-                                  4
-                                           7
-                   2         6      252          1
-
-
-             Exercise
-
-
-                                                2
-             Find a power series solution.   y   x y  2xy 
-                                                           0
-             Solution
-                         
-                               n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n  1          n  0
-                                               
-                                       n 2                         n
-                 y   x    n n    1 a x    n   2 n    1 a n 2 x
-                                      n
-                         n  2                 n  0
-
-                      2
-                 y   x y   2xy 
-                                  0
-                                                                    
-                                                               n
-                                        n
-                                                                             n
-                     n  2 n    1 a     x   x 2  n    1 a  x  2x  a x   0
-                                   n  2                   n   1          n
-                 n 0                         n 0                   n 0
-                                                                 
-                                        n
-                     n  2 n    1 a n  2  n    1 a n  1 x n  2    2a x n  1   0
-                                       x 
-                                                                         n
-                 n 0                       n 0                  n 0
-                                                               
-                    n   2 n    1 a n 2  n    1 a n 1  2a n 1 x  0
-                                                                           n
-                                        n
-                                                            n
-                                                           x 
-                                       x 
-                 n 0                       n   2              n   1
+    <pre style="white-space:pre-line"><code>1424 | S O LU TI O N
 
 
 
-                                                              1409</code></pre>
+                 (k +  ) 4 e −  1  =  e −  1
+                     4 1
+                 k +=
+                 k  = − 3
+
+
+                      2 t e
+              y ( ) t = − + −  t −  + te  t −
+
+
+          Exercise
+
+          Solve using the Laplace transform:     y′′  2y′ −  −  y e 2t  − e t  ;    y ( ) 0 =  , 1  y′ ( ) 30 =
+                                                          =
+          Solution
+                                           }
+              £  {y′′ −  2y′ −  } y £=  { e 2t  −  e
+                                          t
+               2
+                                                                                                   3
+              s Y  ( ) sys −  ( ) 0 −  y′ ( ) 0 −  2sY ( ) 2ys +  ( ) 0 −  Y  ( ) s =  s −  1  2  −  s −  1 1    y ( ) 0 = 1 y′ ( ) 0 =
+                         )
+              ( s −  2s − 1 Y ( ) s =  (s −  2 1  ) 1  ++ 1
+                2
+                                                s
+                                      )(s −
+                                      2
+                                3
+                                          s
+             Y ( ) s =         s −  2s −+    3           =   A  +  B   +     C     +     D
+                                            )(
+                                 )(
+                                                                            1
+                                                                                        1
+                     (s −  2 )(s − 1 s −−  2 s − 1+   2 )  s −  2  s −  1  s −−  2   s −+    2
+                                      1
+                 s −  3  2s −  2  s +  3 =  A (s −  ) 1 s − (  2  2s −  1 +  )  B (s −  ) 2 s − (  2  2s −  1 )
+
+                                                    )(
+                                                                                )(
+                                                                )
+                                                                     (
+                                                       2
+                                                                                   2
+                                             1
+                                                                         1
+                                                C s+  (  −+  2 s − 3s + 2 +  D s −−  2 s − 3s + 2 )
+                      s 3             A B C +     D =  1
+                                             +
+                                         +
+                     
+                                              ) (
+                                                            )
+                      s 2  −  3A −  4B +  ( − 4 +  2 C + − −  2 D = − 2
+                                                      4
+                     
+                     
+                                                     +
+                                       −
+                      s   1  A +  3B +  ( 5 3 2 C + ) ( 5 3 2 D = )  −  1
+                     
+                                                            )
+                                                     (
+                      s   0  A +  2B +  ( − +  )   21+    2 D =  3
+                                       2 2 2 C −
+                     
+                         A =  −  1 B =  1  C =  3 ( 1+  2 )  D =  3 ( 1−  2 )
+                                     2       4               4
+              £  −  1 {Y s     −  1     − 1  +  1 1  +  3 ( 1+  2 )  1  +  3 ( 1−  2 )  1    
+                      ( )} £=
+                                                                                      1
+                                                                1
+                                    s −  2  2 s −  1  4     s −−    2   4         s −+    2 
+              y ( ) t =  −  e 2t  +  1 t      3  +  3 2     e (1 +  2 )t  +      3  −  3 2     e (1 −  2 )t
+                             e +
+                            2       4  4                4   4  </code></pre>
      	</div>
     
      </div>

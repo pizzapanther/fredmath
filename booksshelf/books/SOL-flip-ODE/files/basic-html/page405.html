@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 405 - ODE Solution</title>
+        <title>Page 405 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 405 - ODE Solution</div>
+        <div id="content-top1">Page 405 - DE Solution</div>
         <div id="content-top2">P. 405</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                       P    1 .0025P  dP   0.4 dt
-                        1
-                              .0025
-                             
-                    ln P  ln 1 .0025P   0.4t   C
-                                                  1
-                    ln     P       0.4t   C
-                        
-                      1 .0025P            1
-                                     
-                        P        e 0.4t C 1    Ce 0.4t  C e C 1
-                                                       
-                     
-                    1 .0025P
-                                 
-                    Ce  0.4t P   1 .0025P
-                    Ce  0.4t P   .0025P   1
-                     Ce  0.4t    .0025 P     1
+    <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 399
+
+                 Exercise
+
+                 A 1500 gallon tank initially contains 600 gallon of water with 5 lbs. of salt dissolved in it. Water
+                 enters the tank at a rate of 9 gal/hr. and the water entering the tank at a rate has a salt concentration of
+                 1 (1 cost+  )  lbs./gal. If a well mixed solution leaves the tank at a rate of  6 gal/hr., how much salt is
+                 5
+                 in the tank when it overflows?
+
+                 Solution
+                                     5
+                    Given:    y ( ) 0 =
+                                  (  gal   gal )
+                                                   )
+                                                t
+                     V  ( ) t =  600 +  9  hr  −  6  hr  ( hr
+                                +
+                          = 600 3t
+                     dy  =  Rate in −   Rate out
+                     dt
+                     dy  =   1 (1 cost )  lb  9  gal   −    y  lb    6  gal 
+                               +
+                                                            +
+                                           
+                     dt      5        gal    hr        600 3 t  gal        hr   
+                        =  9 (1 cost+  ) −  2y
+                          5
+                                        200 t +
+                     dy  +   2   y =  9 (1 cost+  )
+                              +
+                     dt   200 t      5
+                          ∫   2  dt
+                            e  200 t +  =  e 2ln (200 t +  )
+
+                                               2
+                                     = (200 t  )
+                                            +
+
+                                                            ∫ cos  dtt
+
+                                            4           2     sint
+                                                     +
+                                   +  4 10×   +  400t t
+                                   −  400 2t+                − cost
+                                   +  400                    − sint
 
 
-
-
-                    P   t      1
-                           Ce  0.4t   .0025
-
-                           P   0    1       50  C   1   .0025  .0175
-                                   C  .0025            50
-                    P   t        1
-                           .0175e  0.4t   .0025
-
-                    P   t   400
-                           7e  0.4t   1
-
-
-                     lim P   t   lim    400
-                    t         t  1 7e   0.4t
-                                       
-                               400
-
-                    The carrying capacity is 400.
-                b)  P   0   dP  t 0
-                            dt
-                                                2
-                                 0.001 50
-                            0.4 50         
-                           17.5
-
-                       
-                c)  P t       400      200
-                           7e  0.4t   1
-                               
-                    7e  0.4t    1 2
-                    e  0.4t    1
-                             7
-                               1
-                      0.4t   ln  
-                               7
-                           1
-                       ln  
-                    t     7
-                         0.4
-                        4.86 years
-
-
-
-
-
-
-
-
-                                                               401</code></pre>
+                                                                                        (
+                                                                 2
+                         9 ∫  (1 cost+  )(200 t+  ) dt =  9 ∫  (200 t+  ) d (200 t+  ) +  9 ∫  cos 4 10 +  4  400t t+  2 ) dt
+                                              2
+                                                                                       t
+                                                                                          ×
+                         5                           5                         5
+                                                                              2
+                                                                                                              
+                                                   =  3 (200 t+  ) +  3  9   (200 t+  ) sint +  (400 2 cost+  )  t −  400sint
+                                                     5            5                                           
+                                                                2
+                                                                                                     
+                                                                                 ) t
+                     y ( ) t =  1   2 5   3   (200 t ) +  3  9 ( (200 t ) sint +  (400 2 cost −  400sint +  )  C
+                                                             +
+                                              +
+                                                                             +
+                                                                                                     
+                            (200 t )                5                                               
+                                 +</code></pre>
      	</div>
     
      </div>

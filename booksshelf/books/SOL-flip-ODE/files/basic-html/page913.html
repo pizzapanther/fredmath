@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 913 - ODE Solution</title>
+        <title>Page 913 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 913 - ODE Solution</div>
+        <div id="content-top1">Page 913 - DE Solution</div>
         <div id="content-top2">P. 913</div>
      </div>
      <div id="content-middle">
@@ -152,59 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>2. 4 − I nh om oge ne ous   E qns . :  U nd e r de r t m i n e d  C oe f .    | 903
 
-                                                        
-        Consider the initial value problem  y   t  y (0) 1
-                                               y 2
-                                                                                             
-        Use Runge-Kutta method with step size  h   0.04  to sketch solution on the interval 0, 2
 
-        Solution
-                        
-              y t   ( ) 3 1/3 1 t   2  1  1/3
-                                3
-                         2
+                 Exercise
 
-                   Runge-Kutta 4th Order
-                 t           Approx.            Exact          Difference
-                ----------------------------------------------------------------
-                0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                0.04   |   1.00079936   |   1.00079936   |   -0.00000000
-                0.08   |   1.00318981   |   1.00318981   |   -0.00000000
-                0.12   |   1.00714877   |   1.00714877   |   -0.00000000
-                0.16   |   1.01263957   |   1.01263957   |   -0.00000000
-                0.20   |   1.01961283   |   1.01961282   |   -0.00000000
-                0.24   |   1.02800822   |   1.02800822   |   -0.00000000
-                0.28   |   1.03775651   |   1.03775651   |   -0.00000000
-                0.32   |   1.04878166   |   1.04878166   |   -0.00000001
-                0.36   |   1.06100297   |   1.06100297   |   -0.00000001
-                0.40   |   1.07433708   |   1.07433707   |   -0.00000001
-                0.44   |   1.08869975   |   1.08869974   |   -0.00000001
-                0.48   |   1.10400743   |   1.10400742   |   -0.00000001
-                0.52   |   1.12017855   |   1.12017854   |   -0.00000001
-                0.56   |   1.13713450   |   1.13713449   |   -0.00000001
-                0.60   |   1.15480036   |   1.15480035   |   -0.00000001
-                0.64   |   1.17310545   |   1.17310544   |   -0.00000001
-                0.68   |   1.19198361   |   1.19198360   |   -0.00000001
-                0.72   |   1.21137336   |   1.21137335   |   -0.00000001
-                0.76   |   1.23121787   |   1.23121787   |   -0.00000001
-                0.80   |   1.25146496   |   1.25146495   |   -0.00000001
-                0.84   |   1.27206683   |   1.27206682   |   -0.00000001
-                0.88   |   1.29297992   |   1.29297991   |   -0.00000001
-                0.92   |   1.31416464   |   1.31416463   |   -0.00000001
-                0.96   |   1.33558509   |   1.33558508   |   -0.00000001
-                1.00   |   1.35720882   |   1.35720881   |   -0.00000001
-                1.04   |   1.37900650   |   1.37900650   |   -0.00000001
-                1.08   |   1.40095174   |   1.40095173   |   -0.00000001
-                1.12   |   1.42302075   |   1.42302075   |   -0.00000001
-                1.16   |   1.44519217   |   1.44519216   |   -0.00000001
-                1.20   |   1.46744679   |   1.46744678   |   -0.00000001
-                1.24   |   1.48976740   |   1.48976739   |   -0.00000001
-                1.28   |   1.51213855   |   1.51213854   |   -0.00000001
-                1.32   |   1.53454641   |   1.53454640   |   -0.00000001
 
-                                                          900</code></pre>
+                 Find the general solution for the given DE:   y′′ +  y e x sin x
+                                                                     =
+                 Solution
+                    The characteristic equation: λ +  2  λ =  ( λ λ +  ) 1 =  0
+
+                         λ    =  0, − 1
+                          1,2
+
+                     y =  C +  C e − x
+                      h     1    2
+
+                              A
+                     y   = e x ( cos x +  B sin  ) x
+                      P
+                         y′ =  e x ( cos x + A  B sin x −  A sin x +  B cos  ) x
+                          P
+                                                             )
+                             =  e x  ( ( AB+  )cos x +  (B −  A )sin x
+
+                                                                                         )
+                                                                 +
+                                     +
+                         y′′ =  e x  ( ( AB )cos x +  (B −  A )sin x −  ( AB )sin x +  (B −  A )cos x
+                          P
+                                        B
+                             y′′ =  e x (2 cos x − 2 sin  ) x
+                                                  A
+                              P
+                     y′′ +  y e x sin x
+                           =
+                     e x  (2 cosB  x −  2 sin x +  A  A cos x +  B sin  ) x =  e x sin x
+
+                     ( A +  2B )cos x +  (B −  2A )sin x =  sin x
+
+                          A +  2B =  0
+                        
+                              +
+                         −  2AB =  1
+                                 1   2            0  2              1   0
+                            ∆  =       =  5  ∆  =      =  −  2  ∆  =       =  1
+                                −  2  1       A   1  1          B   −  2  1
+
+                         A =  −  2 , B =  1
+                              5        5
+
+                     y   =  e x ( −  2 cos x +  1 sin x )
+                      P         5        5
+
+
+                                     −
+                                       xx
+                     y x =  ( ) C +  1  C e e  ( −  2 cos x +  1 sin x )
+                                                      5
+                                             5
+                                   2
+
+
+                 Exercise
+
+                                                          2
+                 Find the general solution:   y′′ −  4y =  4x
+                 Solution
+                                                   2
+                    The characteristic equation: λ −=
+                                                       4
+                                                          0</code></pre>
      	</div>
     
      </div>

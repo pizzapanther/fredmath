@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 344 - ODE Solution</title>
+        <title>Page 344 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 344 - ODE Solution</div>
+        <div id="content-top1">Page 344 - DE Solution</div>
         <div id="content-top2">P. 344</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,50 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                             2
-                M  y     y    2x   y  1
-                                                     M  y    N
-                                                              x
-                N       x y  2  x     2xy   1
-                  x    x 
-
-            M      N                       
-                          
-               y     x   1 2xy   1    2 1 xy   
-                                                  2
-                           2
-                N         x y   x      x xy    1  x
-                   2 dx                                    M  y   N  x  dx
-               e   x    e  2ln x    x   2            e    N
-
-               2   2           2   2  
-            x    2x   y dx   x   x y   x dy   0
-
-                 y         1 
-              2     dx   y   dy   0
-                x   2        x
+    <pre style="white-space:pre-line"><code>338 | S O LU TI O N
 
 
-                M           2   y       1
-                  y     y     2      2
-                             x     x       M  y    N
-                                                      x
-                 N      y   1    1
-                   x    x    x    x 2
+          Exercise
 
-                       y 
-                  2  x      dx
-                        2
-                      y
-                 2x     h   y
-                      x
+                                                                                  =
+                                                                     =
+          Find the solution of the initial value problem   y t ′ +  (t +  ) 1 y t  y ( 2ln  ) 1
+          Solution
 
-                                   1
-                    1
-                    h   y   y 
-              y     x              x
-                                     2
-            h   y   y     h   y   1  y
-                                 2
-                 y   1  2
-            2x       y   C
-                 x   2
+              y′ +  t + 1 y =  1
+                   t
 
+                      t ∫
+                     t+ 1 dt  ∫  ( ) dt
+                                  1
+                                1+
+                 e        =  e    t
+                          = e t+ ln t
+                             t
+                          =  ee ln t
+                          = te t
 
-        Exercise
-                                                                    2          2     
-        Find an integrating factor and solve the given equation    3x   y dx   x y   x dy  0
-
-        Solution
-                              
-                         2
-            M        3x   y  1
-               y    y                      M     N
-                             
-                       2
-            N       x y   x   2xy  1      y     x
-              x    x 
-            M      N
-                          
-               y     x   1 2xy   1
-                N         x y  x
-                           2
+                 ∫ te t  dt =  (t −  ) 1 e
+                                  t
 
 
 
-                                                          340</code></pre>
+                                     )
+              y ( ) t =  1  ( (t −  ) 1 e +  t  C
+                     te t
+
+
+                   y (ln2 ) 1=
+
+                   1=   1   ( ( ln2 1 2−  )( ) C+  )
+                      2ln2
+                        −
+                   2ln2 2 C =     2ln2
+                            +
+                   C  =  2
+
+              y ( ) t =  1  ( (t −  ) 1 e +  t  2 )
+                     e t  t</code></pre>
      	</div>
     
      </div>

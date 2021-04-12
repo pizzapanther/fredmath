@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 276 - ODE Solution</title>
+        <title>Page 276 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 276 - ODE Solution</div>
+        <div id="content-top1">Page 276 - DE Solution</div>
         <div id="content-top2">P. 276</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>t      800 ln 3500
-             m      3    3998
-                 35.475  hrs
-
-              2  y          2        y
-                   2     400   t   35.475   2
-            dy
-               2       2      y
-                             
-             dt      435.475 t   2
-              dy 2 2      435.475 t  d 435.475 t
-                            2
-                                                
-                                              
-                                
-               y
-            ln y   2ln 435.475 t 
-                                
-                                    lnC
-                2                         2
-                                      2
-            ln y   lnC  435.475 t  
-                                  
-                2       2
-                                     2
-                                 
-                t 
-            y    C    435.475 t  
-              2       2
-                                                                             2
-                    t
-                                      500 
-                                                     
-                                                                    
-                y       y  35.475            500 C   435.475 35.475    
-                 2   m     2                             2
-                         C     1
-                            2   320
-                                     2
-                                  
-            y    t   1  435.475 t 
-              2      320
-                                     3
-                                   800 t
-                                                
-                          
-            y   t    4,000 3,998e         0 t   35.475
-                   
-                                                 
-                     1  435.475 t   2  35.475 t   435.4758
-                     320
+    <pre style="white-space:pre-line"><code>270 | S O LU TI O N
 
 
-        Exercise
-        A tank contains 50 gallons of a solution composed of 90% water and 10% alcohol. A second solution
-        containing 50% water and 50% alcohol is added to the tank at the rate of  4  gal  / min . As the second
-        solution is being added, the tank is being drained at a rate of 5  gal  / min . The solution in the tank is stirred
-        constantly. How much alcohol is in the tank after 10 minutes?
+                 ∫ 10 (sin t eω  )  500t dt =  ω +  2  10 ×  4  ( ω  −  cos t ω  +  500sinω  ) t e 500t
 
-        Solution
+                                            25 10
 
-            Let y be the amount (in lb.) of additive in the tank at time t and    0y   100
-                          gal    gal 
-            V    t   50   4  min   5  min   mint   
-                                                                          4  gal  / min
-                    50 t 
-
-                         y
-            Rate out          5
-                          
-                       50 t                                                                 5  gal  / min
-                         5y     lb
-                     
-                          
-                       50 t    min
+                                                                         
+              it =  ( ) e − 500t      10  ( ω  −  cos t +  ω  500sin ω  ) t e 500t  +  C
+                                                                         
+                                   ×
+                            ω +   2  25 10 4                            
+                 =      10      ( ω  −  cos t +  ω  500sin ω  ) t +  Ce − 500t
+                           ×
+                   ω +  2  25 10 4
 
 
-                                                          272</code></pre>
+          Exercise
+
+
+                                        dQ
+          Find the general solution of   2  +  100Q =  10sin60t
+                                         dt
+          Solution
+
+               dQ     1
+              2    +    Q =  10sin60t
+                dt   .01
+              dQ  +  50Q =  5sin60t
+              dt
+                   ∫ 50 dt
+                    e     =  e 50t
+
+                  ∫
+                                )
+                 5 e 50t  (sin60t dt =
+
+
+                                                       d
+                                              ∫ sin60tt
+                                   50t          1
+                              +  e            −  60 cos60t
+                              −  50e  50t     −   1  sin60t
+                                                3600
+                                                  1
+                              +   2500e 50t    − 3600∫ sin60t
+
+
+                                                          )
+                                                  1
+                                       1
+                                                                 25
+                                                                                 )
+                 ∫  e 50t  (sin60t dt =  )  ( −  60 cos60t +  72 sin60t e 50t  −  36 ∫  e 50t  (sin60t dt
+                                                                )
+                 61 ∫ e 50t  (sin60t dt =  )  ( −  1  cos60t +  1  sin60t e 50t
+                 36                        60         72
+
+                 ∫  e 50t  (sin60t dt =  )  21,960 ( 6cos60t−  +  5sin60t )e 50t
+                                       36
+
+
+                          ∫
+                                              1
+                        5 e  50t (sin60t dt =  )  122 ( 6cos60t−  +  5sin60t )e 50t</code></pre>
      	</div>
     
      </div>

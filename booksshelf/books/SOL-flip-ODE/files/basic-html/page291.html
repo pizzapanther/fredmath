@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 291 - ODE Solution</title>
+        <title>Page 291 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 291 - ODE Solution</div>
+        <div id="content-top1">Page 291 - DE Solution</div>
         <div id="content-top2">P. 291</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             A tank, having a capacity of 700 gal, initially contains 10 lb. of salt dissolved in 100 gal of water. At time
-             t  0 , a solution containing 0.5 lb. of salt per gallon flows into the tank at a rate of 3 gal/min and the well-
-
-             stirred mixture flows out of the tank at a rate of 2 gal/min.
-              a)  How much time will elapse before the tank is filled to capacity?
-              b)  What is the salt concentration in the tank when it contains 400 gal of solution?
-              c)  What is the salt concentration at the instant the tank is filled to capacity?
-             Solution
-
-                                   
-                    V t 
-                                              
-                a)    100     3 2 t  100 t
-                    V    100 tt     700   t   600  min
-
-                b)    t   y ( ) t
-                    c
-                              
-                          100 t
-                                 
-                    Rate in   0.5 3
-                             3   lb/min
-                             2
-
-                                     y
-                    Rate out   2
-                                      
-                                  100 t
-                                 2y     lb/min
-                                100  t
-
-                    dy    3    2y
-                                 
-                    dt   2 100 t
-                    dy    2y      3
-                             
-                    dt   100 t     2
-                           2  dt    2ln 100 t  
-                             
-                        e  100 t    e
-                                             2
-                                         
-                                    100 t 
-                          3 100 t   dt   1 100 t  3
-                                    2
-                                                 
-                                
-                          2                2        
-                                                      
-                                      
-                                                 3
-                        100 t
-                    y t            2 1 100 t   C
-                                             
-                                       2
-                                  
-                                              
-                                      C
-                           1 100 t     100 t   2
-                            2
-                                                
-                               y   0   0 1   10 5    4 C
-                                                   0 10
-                                       C       5
-                                             4 10
-                                          
-                    y   t   1 100 t     4 10 5
-                           2                    2
-                                       100 t  
-                    V   100t    t   400    t  300
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 285
 
 
+                        2 ∫  1 dt
+                     e      =  e t /2
 
-                                                               287</code></pre>
+                                   ∫ e t /2 dt
+
+                         +    t        t /2
+                                    2e
+                         −    1     4e t /2
+
+                     ∫ te t /2  dt = ( 2t −  ) 4 e t /2
+
+
+                                                 )
+                      ( ) =
+                     yt      1  ( (2t −  ) 4 e t /2  +  C
+                            e t /2
+                        =  2 − 4 Ce   t −  /2
+                            t
+                                +
+                            y (0) 1
+                                 =
+                               +
+                            − 4 C =  1
+                            C = 5
+
+
+                       t
+                                 +
+                     y ( ) = 2t −  45e  t −  /2
+
+
+                 Exercise
+
+                 Solve the initial value problem:   y′ =  x + 5y , y ( ) 0 =  3
+
+                 Solution
+
+                     y′ −  5y =  x
+                          ∫ − 5dx
+                             e    =  e − 5x
+
+
+                                    ∫ e − 5x dx
+
+                                        e
+                            +   x     − 1 − 5x
+                                       5
+
+                                      1 −
+                            −   1    25 e  5x
+
+                        ∫  xe −  5x dx =  ( −  1  x −  25 ) e −  5x
+                                              1
+                                        5
+                                                     )
+                                         1
+                     yx      5x  ( (  −  1 x −  25 ) e − 5x  +  C
+                      ( ) e=
+                                   5
+                         =  −  1 x −  1  +  C e 5x
+                             5    25</code></pre>
      	</div>
     
      </div>

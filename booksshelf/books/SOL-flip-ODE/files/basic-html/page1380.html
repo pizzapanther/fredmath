@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1380 - ODE Solution</title>
+        <title>Page 1380 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1380 - ODE Solution</div>
+        <div id="content-top1">Page 1380 - DE Solution</div>
         <div id="content-top2">P. 1380</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   n    n    
-                At  x   4   1  , the series is    e      1    1   which converges (p-series).
-                           e                   n 3 e        n 3
-                                          n  1         n  1
-                                                     n         n
-                At  x   4   1  , the series is    e n      1      1   which also converges (p-series).
-                           e                   n 3  e           n 3
-                                          n  1           n  1
-
-                Hence, the interval of convergence is 4         1 , 4     1  e     .
-                                                         e
-
-
-             Exercise                                                                     
-
-                                                                                              4x    1  n
-             Determine the centre, radius, and interval of convergence of the power series         n
-                                                                                         n 1     n
-             Solution
-
-                            n        4 n  x   1  n
-                     4x  n   1        n  4
-
-                 n  1   n        n  1    n
+    <pre style="white-space:pre-line"><code>1366 | S O LU TI O N
 
 
 
-                 R   lim  4 n    n    1  n 1             R   lim  a n
-                     n  n n    4 n 1                            n   a n 1
+
+              y () t £   − 1       4  s − 1      
+                  =
+                            (s −   1) +  2  4   
+                      t
+                            t
+                     e
+                  =  4 cos2
 
 
-                              n 
-                                 1
-                     1  lim     n n    1
-                     4  n    n
-                    
-                The radius of convergence is  .
-
-                The centre of convergence is  x   1   .
-                                                 4
-                The interval of convergence is the real line  ,  
+          Exercise
 
 
-
-             Exercise                                                                     
-                                                                                             1 5  n  n
-                                                                                                
-             Determine the centre, radius, and interval of convergence of the power series        ! n  x
-
-                                                                                         n 0
-             Solution
-                            
-                 R   lim  1 5 n    n    1 !                       R   lim  a n
-                     n     ! n  1 5 n 1                                n   a n 1
-                                   
-                             
-                     lim   1 5 n  n    1
-                     n   1 5 n 1
-                            
-                        
+          Find the inverse Laplace Transform of      Ys        2s − 3
+                                                       () =
+                                                            (s −  1) +  2  5
+          Solution
 
 
+              y () t £   − 1       2s − 3      
+                  =
+                           (s −  1) +  2  5   
 
-                                                              1351</code></pre>
+                                 21
+                  = £   − 1       2s − −      
+                                 2
+                           (s −  1) +  5   
+
+                  = £   − 1       2(s − 2 1)  −  1 2      
+                           (s −  1) +  5  (s −  1) +  5   
+
+                  = £   − 1       2  s − 2 1  −  1 5  5 2        £   − 1       s + 2 a  2       =  e − at  cos tω
+
+                             (s −   1) +  5  (s −  1) +  5             (s +   a ) +  ω    
+                                                                    £   − 1       ω        = e − at  sin tω
+
+                                                                           (s +   ) a  2  +  ω    2  
+                                    e
+                  =  2e t  cos 5t −  1 t  sin 5t
+                                   5
+                     t             5        
+                                            t
+                                             
+                  = e    2cos 5t −  5  sin 5
+                                            
+
+
+          /Exercise
+
+          Find the inverse Laplace Transform of      Ys        2s − 1
+                                                       () =
+                                                            (s +  1)(s −  2)
+          Solution
+
+             Use partial fraction      2s − 1   =   A  +  B
+                                   (s +  1)(s −  2)  s +  1  s −  2
+                                                          +
+                                                =  As −  2A Bs +  B
+                                                    (s +  1 )(s −  ) 2
+                  1
+              2s −=  ( AB s+  ) − 2AB
+                                    +
+
+                          +
+                       AB =    2
+                                     ⇒  A =  B =  1
+                           +
+                      −  2AB =  −  1</code></pre>
      	</div>
     
      </div>

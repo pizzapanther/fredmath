@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1084 - ODE Solution</title>
+        <title>Page 1084 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1084 - ODE Solution</div>
+        <div id="content-top1">Page 1084 - DE Solution</div>
         <div id="content-top2">P. 1084</div>
      </div>
      <div id="content-middle">
@@ -152,107 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1074 | S O LU TI O N
 
-                                                i
-                               i
-             Solve the currents    t ,    t  and    t  in the given electrical network.
-                                     i
-                               1      2          3
-             Given  R   5   L  0.01 , L     0.0125 , E    100 V  and    0   i  0 i    0   0
-                                                        h
-                                       h
-                               1            2                               2          3
-             Solution
-                i   i   i
-                 1   2    3
-                           
-                 Ri   1  L i   1 2  E   t
-                
-                           
-                 Ri   1  L i   2 3  E   t
-                
-                                 
-                 Ri   Ri   L i   E   t
-                
-                          3
-                               1 2
-                    2
-                
-                                 
-                 Ri   Ri   L i   E   t
-                
-                          3
-                               2 3
-                    2
-                                 
-                  5i  5i   .01i  100
-                
-                     2
-                                 2
-                          3
-                                  
-                  5i  5i  .0125i  100
-                         3
-                                   3
-                    2
-                  5I 2    5I 3    .01sI  2    i   2    0  100
-                        s 
-                                 s 
-                                             s
-                
-                
-                                s 
-                                              s
-                       s 
-                 5I  2   5I  3   .0125sI  3   i   3   0  100
-                
-                           
-                  5   1  s I    5I    s  100
-                                s 
-                     100    2         3       s
-                
-                                    
-                  5I    s   5   1  s I    s  100
-                    2          80    3        s
-                   500s s 2  I    500sI    10  4
-                         
-                                               s 
-                                   s 
-                               2           3
-                
-                 400sI    s   400s s 2  I    8 10 3
-                                    
-                                              s  
-                       2                  3
-                          2
-                         s   500s    500s       4       3         10 4    500s        4 2
-                                              s  900s                         10 s
+
+
+                                       )
+                                   2
+                                                )
+                                      t
+                      =  1 ∫ ( 1 cos 2  d  (cos2t
+                              −
+                        4
+                                           )
+                                       3
+                      =  1 ( cos2t −  1 cos 2
+                                          t
+                        4         3
+                                   2
+                                                                        1
+               v   ( ) t = ∫  cos2t  sin 2  dtt             v  ( ) x = ∫  yg ( ) x  dx
+                 2          2                                 2          W
+                               2
+                                           )
+                      =  1 ∫ sin 2  dt  (sin 2t
+                        4
+                             3
+                      =  1  sin 2   t
+                        12
+                                                         4
+                 y   =  ( 1 cos2t −  1  cos 2 cos2t +  3  t )  1  sin 2t    y  = uy +  u y
+                   p    4        12                 12                      p    11     2 2
+                                                   4
+                     =  1  cos 2t −  2  1  cos 2t +  4  1  sin 2t
+                       4          12         12
+                                                     )
+                                                 4
+                     =  1  cos 2t +  2  1 ( sin 2t −  4  cos 2t
+                       4          12
+                                                                       )
+                                                 2
+                                                                   2
+                     =  1 cos 2t +  2  1 ( sin 2t −  2  cos 2t )( sin 2t +  2  cos 2t
+                       4          12
+                                                   2
+                     =  1  cos 2t +  2  1  sin 2t −  2  1  cos 2t
+                       4          12         12
+                                       2
+                            2
+                     =  1 cos 2t +  1  sin 2   t
+                       6         12
+             The general solution:
                                                               2
-                           400s     s   2  400s                  8000   s   2  400s
-                                  2
-                                 s   500s   10 4        3 2
-                                                 
-                                                    8 10 s
-                             3                  3
-                                             
-                                   400s    8 10
-                                         
-                 I    s   10 4    10 4 A    B    
-                  2        s s  900     s   s  900
-                                  
-                            s   A B    0
-                                               A   1  ,  B    1
-                           s 0  900A   1           900         900
-                          I 2    L     100 1  L  100  1 900 
-                              s
-                                                   9 s 
-                                            9 s
-                                
-                    i    t   100 100  900t
-                                      e
-                     2       9     9
-                                                              1063</code></pre>
+                                                         1
+                    t
+                 y ( ) C=  1 cos2t +  C 2  sin2t +  1 cos 2t +  2  12 sin 2t
+                                              6
+
+
+          Exercise
+
+
+          Find the general solution to the given differential equation.   y′′ −  4y′ +  4y =  2e 2x
+
+          Solution
+               2
+                         =
+              λ −  4λ+  4 0 ⇒ λ         =  2
+                                    1,2
+              y =  C e 2x  + C xe 2x
+               h    1        2
+
+
+                   e 2x      xe 2x
+             W =
+                   2e 2x  e 2x  +  2xe 2x
+
+                =  e 4x  +  2xe 4x  −  2xe 4x
+
+                =  e 4x  ≠  0</code></pre>
      	</div>
     
      </div>

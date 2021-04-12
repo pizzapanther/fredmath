@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 376 - ODE Solution</title>
+        <title>Page 376 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 376 - ODE Solution</div>
+        <div id="content-top1">Page 376 - DE Solution</div>
         <div id="content-top2">P. 376</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-            u e  2x      x   1  e  2x   C
-              
-                           2
-             1    x   1   Ce 2x
-             y 2       2
-
-            y   x       1
-                       Ce 2x    x   1
-                                  2
+    <pre style="white-space:pre-line"><code>370 | S O LU TI O N
 
 
-        Exercise
-                                                                            2      2
-        Find the general solution by using homogeneous equations.      xy   y  dx   x dy  0
+             c)  If the distance s, measured from the point where the mass was released above ground, is
 
-        Solution
+                                                                                s
+                 related to velocity v by  ds  =  v ( ) t , find an explicit expression for  ( ) t  if  ( ) 0s  =  0
+                                        dt
+          Solution
 
-            dy    xy   y 2      y      y   2
-            dx      x 2      x      x    
-                    y
-            Let v      y   xv     y  v   xv 
-                    x
-                  
-            v   xv     2
-                     v v
-                    2
-            x dv    v
-              dx
-              v 2     dx
-               dv
-                       x
+             a)   dv  +  k  v =  g
+                  dt  m
 
-              1
-                ln x  C
-              v
-              x    ln x   C
-              y
-
-            y   x     x
-                     ln x  C
+                        m ∫  k  dt
+                                 t
+                                  /
+                        e    = e km
+                     ∫ ge km  dt =  mg  e km
+                            / t
+                                          / t
+                                    k
 
 
-        Exercise
-                                                                        2   2 
-        Find the general solution by using homogeneous equations.      x   y  dx   2xydy 
-                                                                                            0
-        Solution
+                                              
+                               
+                            / t
+                                       / t
+                   ( ) e
+                 vt =    − km mg    e km  +  C
+                                              
+                               
+                                 k           
+                        mg      − km
+                                   / t
+                      =     + Ce
+                         k
+                        v ( ) 0 =  v
+                                0
+                              mg
+                        v =      +  C
+                          0    k
+                                  mg
+                        C v=    −
+                              0    k
+                                            / t
+                 v ( ) t =  mg  +     v −  mg     e − km
+                         k     0   k  
 
-                    2
-            dy      x   y 2
-            dx       2xy
-                     
-                  1 x    y   
-                     
-                   2 y     x  
-                     
-                    y
-            Let v      y   xv     y    xv
-                                          v
-                    x
-                  
-            v   xv    1 v   1
-                       2    2v
-                                                          372</code></pre>
+
+                                                          / 
+                                                         t
+             b)  lim vt =  ( )  lim    mg  +       v −  mg     e − km 
+                 t→∞         t→∞    k      0   k         
+                              mg
+                            =
+                               k
+
+
+             c)   ds  =  v ( ) t
+                 dt
+
+                 st         mg  +          v −  0  mg   k      e − km   / t   ∫     dt
+                   ( ) =
+                            k
+                        mg     m      mg   − km
+                                               t
+                                                /
+                      =    t −     v −     e     +  C
+                         k     k    0  k  
+                                   0
+                            s ( ) 0 =
+
+                            0 =  −  m     v −  mg     +  C
+                                  k    0  k  </code></pre>
      	</div>
     
      </div>

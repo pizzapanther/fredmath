@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 716 - ODE Solution</title>
+        <title>Page 716 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 716 - ODE Solution</div>
+        <div id="content-top1">Page 716 - DE Solution</div>
         <div id="content-top2">P. 716</div>
      </div>
      <div id="content-middle">
@@ -152,116 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                  t 
-            y   C   C   C t e     cost
-                              2
-                   2
-                         1
-                                           1 0 
-                    y   0   0  C  C           C   2
-                                   2    1               2
-                3 2t e
-            y t           t     sint
+    <pre style="white-space:pre-line"><code>706 | S O LU TI O N
 
 
-        Exercise
+                 C = −  e  C
+                   1       2
 
-        Find the general solution that satisfy the given initial conditions
-                                               
-                                          y
-                       y  2y     y    t 3 ;      (0) 1     y (0) 
-                                                  ,
-                                                            0
-        Solution
-            The homogeneous eq.: y  2y   y   0
+                 C =  −  4, C =   4
+                   1         2   e
 
-                                   2
-                                            1 0   
-            The characteristic eq.:    2          1,2   1
 
-                           
-            y    C   C t e t
-              h     1    2
-                    3
-                         2
-            y     at   bt   ct   d
-              p
-                         2
-                y   3at   2bt  c
-                 p
-                y   6at   2b
-                 p
-                                           2
-                                                                2
-                                                          3
-                y  2y   y   6at   2b  6at  4bt  2c at   bt   ct   d
-                                                       
-                                            2
-                               3
-                                                                      
-                             at  b  6a t  6a  4b    c t  2b  2c d
-                            a  1
-                          b  6a   0       b   6
-                       
-                       
-                                
-                        6a  4b c   0      c  18
-                        2b  2c d   0     d  24
-                                
-                       
-                                                 2
-                                            3
-            The particular solution is:  y   t   6t  18t   24
-                                       p
-                                               
-                                                          2
-                                                 t
-                                                     3
-            The general solution:  y   C  C t e  t  6t  18t   24
-                                             2
-                                       1
-                                     
-                                                      2
-                                        0
-                                              3
-                     0
-                                   0
-                                             0
-                                                    0
-                                                            0
-                    y ( )   C  C 2 ( ) e ( )   ( )  6( )  1 8( )   24
-                            1
-                   1 C    24
-                     
-                        1
-                      
-                               
-                    t
-                                 t
-                                       2
-            y  C e C     C t e   3t  12t  18
-                  2     1    2
-                                            
-                                                       2
-                               0
-                    y ( )  C e ( )  C  C  ( ) e (0)   3(0)  12( 0 ) 18
-                                                               
-                                          0
-                      0
-                            2      1    2
-                   0   C  C  18
-                        2    1
-                C   23 C     5
-                 1           2
-                                                                2
-                                                           3
-                                                       t
-                                             
-                                                 
-                                                    t
-            The general solution:     y   t  ( 23 5 )e  t   6t  18t  24
+                           e
+              y ( ) t = − +  4 t /2
+                      4
+                         e
 
-                                                          704</code></pre>
+
+          Exercise
+
+          Find a particular solution satisfying the given initial conditions
+
+                                                                         ( ) 1 =
+              y′′ −  3y′ +  2y =  0;  y  ( ) t =  2, ye t  ( ) t =  e 2t ;  y −  ( ) 1 =  1,  y′ −  0
+                                  1             2
+          Solution
+
+
+                   2e t  e 2t
+             W =
+                   2e t  2e 2t
+
+                =  2e 3t   ≠  0
+
+             ∴   y  and y  are linearly independent.
+                 1       2
+              y ( ) t =  C y  ( ) t +  C y  ( ) t
+                     11        2 2
+                                 2t
+                         t
+              y ( ) t =  2C e + C e
+                       1      2
+                 y ( ) 1−  =  1
+
+                 2 e −  1 C +  e −  2 C =  1
+                       1        2
+
+                          t
+                                  2t
+              y′ ( ) t =  2C e + 2C e
+                        1       2
+                 y′ ( ) 1−  =  0
+
+                 2 e −  1 C +  2e −  2 C =  2
+                       1         2
+
+
+                  2 C + e  C =  e 2
+                     1     2
+                 
+                   e C +  1  C =  2  e 2
+                 
+
+                             2e  1           e 2  1            2ee   2    3
+                        ∆=         =  e  ∆ =        = 0  ∆ =           = e
+                             e   1       1   e 2  1        2   e   e 2
+
+
+                 C =  0, C =    e 2
+                   1        2
+                       t+
+                t
+              y ( ) e=  22</code></pre>
      	</div>
     
      </div>

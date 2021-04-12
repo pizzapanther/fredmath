@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 384 - ODE Solution</title>
+        <title>Page 384 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 384 - ODE Solution</div>
+        <div id="content-top1">Page 384 - DE Solution</div>
         <div id="content-top2">P. 384</div>
      </div>
      <div id="content-middle">
@@ -152,102 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-            3    xy dx  3 x   xy dy 
-                                            0
-                 y
-                                     y
-                       M  y     y   3    xy  
-                                            1 x
-
-                       N       3 x   xy  
-                                  
-                                           1 y
-                         x    x 
-            N    M                       
-                               
-                                       
-              x      y       1 y   1 x
-              M   N     3    xy  3 x   xy 
-                                       
-                             y
-                         y   x
-                       
-                         y   x
-                        1
-                           d x y 
-                              
-              x    y   e
-                         
-                       e x y
-
-                                    
-               
-                                          
-                                
-            e x y  3    xy dx e x y 3 x   xy dy 
-                      y
-                                                       0
-                                       
-                                                     
-                                                                                              
-                                                                        
-                                                 
-                                              
-                                                                                
-                                                              y
-                M  y     y   3    xy e x y   1 x e x y   3    xy e x y    4 x    xy e x y
-                                                                                     y
-                              y
-
-                                       
-                                                                       
-                                                                                              
-                                                     
-                                                 
-                                              
-                N       3 x   xy e x y    1 y e x y   3 x   xy e x y    4 x    xy e x y
-                                                                               
-                                                            
-                           
-                                                                                     y
-                  x    x 
-                M     N
-                   y     x
-                                
-               3     xy e x y dx
-                       y
-                                    
-                3      y x  1 e x y   h   y
-                     y
-                            
-                        
-                    
-                3 xy e   x y   h   y
-               
-                                                          
-                                
-                                      
-                                         3 xy 
-                     
-                3 xy     x e x y   h y          x e x y
-              y
-                       h   y   0     h   y   C
-                      
-                   
-               
-            3 xy e  x y    C
+    <pre style="white-space:pre-line"><code>378 | S O LU TI O N
 
 
-        Exercise
-        A portion of a uniform chain of length 8 feet is loosely coiled around a peg at the edge of a high horizontal
-        platform, and the remaining portion of the chain hangs at rest over the edge of the platform.
-        Suppose the length of the overhanging chain is 3 feet, that the chain weighs 2  2 lb/ft   , and that the positive
-                                             0
-        direction is downward. Starting at t   seconds, the weight of the overhanging portion causes the chain on
-        the table to uncoil smoothly and to fall to the floor. If    t  denotes the length of the chain overhanging the
-                                                            x
-                                                          380</code></pre>
+          Solution
+
+                          +
+             a)  y′ −  y =  1 3sint
+                      ∫ − dt
+                                t −
+                     e      =  e
+
+                     ∫  (1 3sinte   t −  dt =  ∫  e  t −  dt +  ∫  (3sinte  t −   dt
+                                                            )
+                                )
+                         +
+
+
+                                              ∫ sint  dt
+
+
+                              +     3e  t −      − cost
+
+                              −    − 3e  t −      − sint
+
+
+                              +     3e  t −
+
+                            ∫  3sinte  t −  dt =  ( 3 −  cost −  sin  ) t e  t −  −  ∫  3sinte  t −  dt
+
+
+
+
+                                                                t −
+                            2 ∫  3sinte  t −  dt =  ( 3 −  cost −  sin  ) t e
+
+
+                            ∫  3sinte  t −  dt =  3 ( cost−  −  sin  ) t e  t −
+
+                                             2
+
+                     ∫ (1 3sinte+  )  t −  dt e  t −  +  3 ( cost−  −  sin  ) t e
+                                                                 t −
+                                       =
+                                               2
+
+                                                          )
+                 y ( ) t =  1  ( e  t −  +  3 ( cost−  −  sin  ) t e  t −  +  C
+                        e  t −     2
+                                              t
+                                             e
+                       =  1−  3 cost −  3 sint C
+                                          +
+                            2       2
+                          y ( ) 0 =  y
+                                   0
+                          y =  1−  3  +  C
+                            0      2
+
+                          C  =  y +  1
+                                0   2
+
+                 yt =  ( ) 1−  3 cost −  3 sint +  ( y +  0  1 ) e t
+                           2
+                                   2
+                                                 2</code></pre>
      	</div>
     
      </div>

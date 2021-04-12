@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1532 - ODE Solution</title>
+        <title>Page 1532 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1532 - ODE Solution</div>
+        <div id="content-top1">Page 1532 - DE Solution</div>
         <div id="content-top2">P. 1532</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-             2r    1 a    2r   5r  2 a x           n r 2n   2r    1    1 a   a n 2  x n r   0
-                                          
-                                            1 
-                                                                                           
-                                 2
-               2
-                                                          
-                   r
-                                                                             
-                                                                               n
-                          0
-                                                 n 2
-                               2      
-            For   n   0    2r     1 a    0
-                                   r
-                                          0
-
-                       r   1 or   r   1   
-                                       2
-                              2         
-            For   n  1     2r   5r   2 a   0
-                                           1
-
-                       r   2 or r    1    Therefore  a 
-                                                            0
-                                         2              1
-                
-                n r 2n   2r    1    1 a   a n 2    0
-                                   
-                                     n
-            a              1           a
-              n   n r   2 n r     1  n 2
-                                  1 
-                             
-                    
-
-                           1          a n 2      for  n   2
-                          2
-                      
-                                
-                    2 n r    n r 
-                                    1
-
-                   r   1                                                r     1
-                       2
-            a              1          a         1    a          b             1          b
-                   
-                                                 2
-              n           2             n 2  2n        n 2      n      2 n   2   n    1   n 2
-                  2 n   1   n   1   1         3n                         1          1
-                           
-                                  2
-                       2
-                a    1  a                                    b    1 b
-                 2   14  0                                      2   2  0
-                a    1  a   0                               b    1 b   0
-                 3   24  1                                      3   9  1
-                a    1  a    1  a                           b    1  b   1  b
-                 4   44  2   616   0                            4   20  2   40  0
-
-                a   0                                        b   0
-                 5                                              5
-
-                a    1  a     1   a                         b    1  b     1  b
-                 6   90  4   55440   0                          6   54  4   2160  0
+    <pre style="white-space:pre-line"><code>1518 | S O LU TI O N
 
 
-            y  ( ) x   a x 1/2     1  x 2    x 4    x 6        y  ( ) x   b x  1     1  x 2    x 4    x 6      
-              1       0        14   616   55,440              2       0        2    40   2160      
+          Exercise
 
-                                                                                          
-                                                    
-                     1             4          n       1/2           4 n        n 
-                      
-            y   Cx   1     n ! 1 3 5  2n    1  x    C x  1   n ! 3 5  (2n   1) x  
-                                                                           
-                                     
-                                   
-                                                         2
-                      
-                                                                                          
-                          n   0                                n   0                
-                                                    
+          Consider the given circuit below with all initial conditions are zero:
 
 
-                                                          1502</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+                                             V  ( ) s
+             a)  Find the transfer function of   0
+                                                ( )
+                                             Vs
+                                               i
+             b)  Solve the transfer function under the conditions
+                         R = 10 MΩ     R =  50 k Ω   C =  2 10 −  4  f  C =  10 −  4  f
+                                                           ×
+                          1             2             1                 2
+             c)  Find the transfer function in function in time.
+             d)  Draw the block diagram for the given circuit.
+
+          Solution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             a)  V s =  ( )  R I  ( ) s +  1  ( I  ( ) s −  I  ( )) ( ) 1s
+                  i        11      sC     1      2
+                                      1
+                 R I   ( ) s +  1  I  ( ) s +  1  ( I  ( ) s −  I  ( ))  =  0  ( ) 2
+                                                          s
+                   22       sC    2      sC    2       1
+                               2            1
+                                  s
+                 V  ( ) s =  1   I  ( ) ( ) 3
+                   0      s C   2
+                             2
+
+                  ( ) 3 →  I =  s CV
+                            2      2  0
+
+                 ( ) 2  →   1  ( I −  I  )  =  −    R +   1    I 
+                           sC    2   1        2  sC    2
+                             1                      2 
+                   1  ( I −  I  =    RC   s + 1
+                                    22
+                 sC     1   2  )     sC      I   2
+                    1                  2    
+                           C
+                                          )
+                 I −  I =    1 ( RC   s +  1 I
+                  1    2   C     22         2
+                             2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1281 - ODE Solution</title>
+        <title>Page 1281 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1281 - ODE Solution</div>
+        <div id="content-top1">Page 1281 - DE Solution</div>
         <div id="content-top2">P. 1281</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                       .25        .4      .1
-                        2  .65     0
-            The eigenvalues are:    0      .65
-                                  1       2
-            For    0       A  0I V 
-                                          0
-                 1                    1
-                  .4  .25    a   1   0                       5   
-                                        .4a   .25b 1    V     
-                                                               1
-                                               1
-                                    0
-                  .4   .25      b   1                       8 
-            For     .65      A  .65I V 
-                                                0
-                  2                         2
-                 .25 .25   a   2   0                              1 
-                                      .25a   .25b 2    V     
-                                                                  2
-                                               2
-                                   0
-                  .4  .4     b   2                              1 
-                          5       1 
-               x   t  C     C     e  .65t
-                        1      2    1 
-                          8
-                                   x    t   5C   C e  0.65t
-            The general solution:     1     1    2
-                                  
-                                    x    8C   C e  0.65t
-                                       t 
-                                    2        1    2
-                 x 1   0  5C  C  15
-                
-                            1
-                                 2
-                                            C   15 , C   120
-                                                         2
-                                               1
-                 x 2    0   8C   1  C   0    13        13
-                
-                                  2
-             x    t  15  5 8e  0.6t 
-                          
-              1     13
-            
-             x    t   120  1 e  0.6t 
-                           
-              2      13
+    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1271
 
 
-        Exercise
-                                                                           0
-                                   t
-        Find the amount   , x     , x    t  of salt in each tank at time t  , if
-                         x t
-                          1      2      3
-        V   30 gal , V   15 gal , V   10 gal , r   30 gal  / min      0  27 lb  x    0   x    0 
-                                                                                                 0
-                                                                 x
-          1            2             3                            1              2        3
-        Solution
-              x     k x
-              1     1 1
-            
-             x   2  k x   1 1  k x      where  k   i  r  i   1,2,3
-                           2 2
-             x              k x                     v i
-               3        2 2    k x
-                                  3 3
-            k   30   1 k   30    2 k   30   3
-             1   30       2   15        3   10
+                 Exercise
+
+                 Consider the given initial value problem. Find the general solution then uses Runge-Kutta method
+                 with step size  h =  0.05  to sketch solution with the given interval
+
+                                y′ =  y − t  ; y ( ) 0 =  1 ,  [0,  ] 2
+                                                   2
+                 Solution
+
+                     y′ −  y =  t −
+
+                            ∫ − dt
+                                      t −
+                             e    =  e
+                          ∫  −  t e  t −  dt =  (t +  ) 1 e  t −
 
 
 
 
+                                             )
+                      ( ) t =  y  e t ( (t +  ) 1 e  t −  +  C
+
+                                       t
+                                      e
+                          =  (t +  ) 1 +  C
+                                      1 C =
+                                y ( ) 0 = +   1
+                                              2
+                                C  = −  1
+                                      2
+
+                                     e
+                     y ( ) (t= t  +  ) 1 −  1 t
+                                    2
+
+                                Euler Method
 
 
-
-                                                          1260</code></pre>
+                     t                  Euler      Exact              Difference
+                    -----------------------------------------------------------------
+                    0.000       0.5                    0.50000000            0
+                    0.050       0.52500000           0.52436445         -0.00063555
+                    0.100       0.54875000           0.54741454         -0.00133546
+                    0.150       0.57118750           0.56908288         -0.00210462
+                    0.200       0.59224688           0.58929862         -0.00294826
+                    0.250       0.61185922           0.60798729         -0.00387193
+                    0.300       0.62995218           0.62507060         -0.00488158
+                    0.350       0.64644979           0.64046623         -0.00598356
+                    0.400       0.66127228           0.65408765         -0.00718463
+                    0.450       0.67433589           0.66584391         -0.00849198
+                    0.500       0.68555269           0.67563936         -0.00991333
+                    0.550       0.69483032           0.68337349         -0.01145683
+                    0.600       0.70207184           0.68894060         -0.01313124
+                    0.650       0.70717543           0.69222959         -0.01494584
+                    0.700       0.71003420           0.69312365         -0.01691055
+                    0.750       0.71053591           0.69149999         -0.01903592
+                    0.800       0.70856271           0.68722954         -0.02133317
+                    0.850       0.70399084           0.68017657         -0.02381427</code></pre>
      	</div>
     
      </div>

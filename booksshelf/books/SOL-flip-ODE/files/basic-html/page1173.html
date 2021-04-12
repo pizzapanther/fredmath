@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1173 - ODE Solution</title>
+        <title>Page 1173 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1173 - ODE Solution</div>
+        <div id="content-top1">Page 1173 - DE Solution</div>
         <div id="content-top2">P. 1173</div>
      </div>
      <div id="content-middle">
@@ -152,104 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                                   x    t   x   x   e t
-                                                                   
-                                                   1      1    2
-                                                 
-        Find the general solution of the system    x 2    t   x   x   e 2t
-                                                                   
-                                                 
-                                                                2
-                                                           1
-                                                 
-                                                  x    t               3x   te 3t
-                                                   3              3
-        Solution
-                      1       1      0            1 1 0
-                        
-                                                          
-             A     I  1    1      0     A       1 1 0
-                                                          
-                                     
-                        0      0    3               0 0 3   
-                                2 
-                                     
-                             
-                        
-                      1 2       3          
-                                          3 
-                                      
-                             
-                            
-                               2
-                         
-                      3       2   0
-            The eigenvalues:        0, 2, 3
-                              1,2,3
-                                     
-            For     0      A      I V   0
-                 1                 1   1
-                                    0
-                              x
-                 1   1   0                                     1
-                                        x     y             
-                              y 
-                                    0
-                 1   1   0              z           V     1
-                                                                      
-                                                               1
-                                            0                 
-                                    0
-                              z
-                 0   0   3                                    0  
-                                      
-            For     2       A      I V  0
-                  2                2    2
-                  1  1    0                                  1   
-                                      0
-                                x
-                                        x   y      V     
-                                 y 
-                                      0
-                                                                     
-                  1    1   0              z            2     1
-                                             0               
-                                 z
-                                      0
-                  0   0    1                                   0 
-                                     
-            For     3       A      I V   0
-                 3                 3    3
-                                       0
-                  2   1    0                                  0
-                                 x
-                                         2x   y       V     
-                                 y 
-                                       0
-                                                                     
-                  1    2    0              x   2y      3     0
-                                                             
-                                       0
-                                 z
-                  0    0    0                                  1 
-                       1     1          0
-                         
-            X    C    1  C     2t    C     3t
-                                 1 e
-                                             0 e
-              h     1       2         3  
-                                         
-                                             1
-                                 0
-                       0                 
-                      1 e 2t  0  
-                                
-               t    1  e 2t  0  
-                                
-                     0   0   e 3t  
-                                
-                                                          1152</code></pre>
+    <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1163
+
+
+                 Exercise
+
+                 A mass of 64 pounds is attached to a spring with a spring constant 32 lb/ft  and then comes to rest in
+                 the equilibrium position. Neglect the damping.
+
+                                                                                        f
+                   a)  Find the equation of motion with a starting external force equal to   ( ) t = 68e − 2t  cos4t  at
+                       t = 0
+                   b)  Graph the transient, steady-state, and the equation of motion solutions on the same coordinate
+                      axes.
+                 Solution
+                                                             0
+                    Given:    m =  64  =  2 slu gs, k =  32, c =
+                                  32
+
+                                                t
+                                                                      0
+                    a)  2x′′ +  32x =  68e − 2t cos4  ; x ( ) 0 = 0, x′ ( ) 0 =          mx′′ +  cx′ +  kx =  f  ( ) t
+                        2λ  2  32 0 →      λ +  =  ±  4i
+                                  =
+                                             1,2
+                                     t
+                         x =  C  cos4 +  C  sin 4t   (Transient solution)
+                          h    1          2
+                         x  = e − 2t  ( cos4A  t +  B sin 4t )
+                          p
+
+                                                                      B
+                         x′ =  e − 2t  ( 2 cos4t −  A  2 sin 4t −  B  4 sin 4t +  A  4 cos4t )
+                                    −
+                          p
+                         x′′ = e − 2t  (4 cos4A  t +  4 sin 4t +  B  8 sin 4t −  A  8 cos4t +  B  8 sin 4t −  A  8 cos4t −  B  16 cos4t −  A  16 sin4t )
+                                                                                                            B
+                          p
+                                       −
+                                =  e − 2t  ( 12 cos4A  t −  16 cos4t +  B  16 sin 4t −  A  12 sin 4t )
+                                                                              B
+                        2x′′ +  32x =  68e − 2t cos4t
+
+                             cos4t  −  24A −  32B +  32A =  68
+                            
+                             sin 4t  32A −  24B +  32B =  0
+
+                                 8A −   32B =  68 →  136A =  68
+                                
+                                  32A +  8B =  0  B =  −  4A
+
+
+                                A  =  1 ,  B = − 2
+                                    2
+                                   (
+                                 t
+                         x  = e − 2 1 cos4t −  2sin 4t )           (Steady-state solution)
+                          p         2
+                                                                      )
+                         x t =  ( ) C 1  cos4t +  C 2  sin 4t +  ( 1 cos4t −  2sin 4te − 2t
+                                                      2
+
+                                   x ( ) 0 =  C +  1  1  =  0
+                                               2
+                                   C   = − 1
+                                     1    2
+
+                                                                                               )
+                            x ( ) t = − 4C 1 sin 4t +  4C 2  cos4t + −  4sin 4t −  2sin 4t − 8cos4te − 2t
+                                                            ( cos4t +</code></pre>
      	</div>
     
      </div>

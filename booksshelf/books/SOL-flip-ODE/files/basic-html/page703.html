@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 703 - ODE Solution</title>
+        <title>Page 703 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 703 - ODE Solution</div>
+        <div id="content-top1">Page 703 - DE Solution</div>
         <div id="content-top2">P. 703</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,90 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>2. 1 − D e f in iti o n s   o f  2  nd    &  h i ghe r  O r de r   E q ns .  | 693
 
-                                                       2
-             Find the general solution:   y   4    y  3x   4sin x   2cos x
-             Solution
-                                                     2
-                                               4
-                The characteristic equation:    2    0          0    3,4    2i
+                                                  (
+                                                                       t
+                                                                      e
+                                        e
+                                                          −
+                     y′′ −  2y′ +  2y =  −  2 sint − t  2 e t cost e t  sint +  )  2 cost
+                      1     1     1
+                                                                       t
+                                                                      e
+                                    =  −  2 sint −  e t  2 cost +  e t  2 sint +  e t  2 cost
 
-                                                                  1,2
-                                          
-                                
-                 y   C   C x C     cos x C   sin x
-                  h    1     2     3         4
-                         4
-                                     2
-                               3
-                 y    Ax   Bx   Cx   Ex cos x   Fx sin x
-                  p
-                                     2
-                              3
-                                                      
-                    y   4Ax   3Bx    2Cx  E cos x Ex  sin x  F sin x   Fx cos x
-                      p
-                              3
-                                     2
-                          4Ax  3Bx   2Cx   E   Fx cos x   F   Ex sin x
-                               2
-                                                                    
-                    y  12Ax   6Bx  2C   F cos x  E   Fx sin x E sin x  F   Ex cos x
-                      p
-                               2
-                         12Ax   6Bx   2C  2F   Ex cos x  2E   Fx sin x
-                                                              
-                    y   24Ax  6B   E cos x  2F   Ex sin x F sin x  2E   Fx cos x
-                      p
-                          24Ax  6B  3E   Fx cos x  3F   Ex sin x
-                               
-                    y   4    24A F  cos x   3E   Fx sin x   E sin x  3F  Ex cos x
-                           24A  4F   Ex cos x  4E   Fx sin x
+                                    =  0
 
+                     y  ( ) t =  e t  sint
+                      2
+                          ′
+                           ( ) =
+                         yt     e t  sint +  e t  cost
+                          2
+                                                         −
+                         y′′  ( ) t =  e t  sint +  e t  cost +  e t  cost e t sint
+                          2
+                                   t
+                                  e
+                               =  2 cost
 
-                              2
-                 y   4    y  3x   4sin x   2cos x
-                     x 2    12A   3       A   1
-                                                4
-                    
-                      x     6B   0        B  0
-                      0
-                     x   24A   2C  0    C   3
-                    
+                                                 (
+                                        t
+                                                                      t
+                                                                     e
+                                       e
+                     y′′ −  2y′ +  2y =  2 cost −  2 e t  cost +  e t  sint +  )  2 sint
+                      1     1     1
+                                                                      t
+                                    =  2 cost −  e t  2 cost −  e t  2 sint +  e t  2 sint
+                                                                     e
+                                    =  0
 
-                     cos x  x       E   E
-                    
-                           x 0   4F   2F   2   F  1
-                    
-                     sin x  x       F   F
-                            0
-                           x     4E   2E   4    E   2
-
-                               2
-                         4
-                                    x
-                 y    1 x  3x   2 cos x   x sin x
-                  p   4
-                                                                2
-                                                          4
-                                 
-                                            
-                                                                     x
-                 y   Cx    C x C  cos x C    sin x   1 x  3x   2 cos x   x sin x
-                         1    2      3         4        4
-
-
-
-
-
-                                                               691</code></pre>
+                        y
+                                        +
+                     If  ( ) t =  Ce t cost C e t  sint
+                                1          2
+                     y′ ( ) t =  Ce t  cost Ce t  sint C e t  sint C e t  cost
+                                                            +
+                                     −
+                                                +
+                                                               2
+                                                    2
+                             1
+                                         1
+                                                        )
+                          =  ( C +  1  C 2 ) e t  cost +  ( C −  2  Ce t sint
+                                                       1
+                                                                           )
+                                                                                             )
+                     y t =  ′′ ( ) ( C +  1  C 2 ) e t  cost −  ( C +  1  C 2 ) e t  sint +  ( C −  2  Ce t sint +  ( C −  2  Ce t cost
+                                                                                            1
+                                                                          1
+                                                )
+                          =  ( C +  1  C +  2  C −  2  C e t  cost +  ( C −  2  C −  1  C −  1  C 2 ) e t  sint
+                                              1
+                          =  2C e t  cost − 2Ce t  sint
+                               2            1
+                                                                                           )
+                     y′′ −  2y′ +  2y =  2C e t  cost −  2C e t  sint −  2 C + ( (  C  ) e t  cost +  ( C −  C e t  sint )
+                                       2           1              1    2             2    1
+                                            (
+                                                       2 Ce t  cost C e t sint )
+                                         +
+                                                       +
+                                               1
+                                                          2
+                                  =  2C e t  cost −  2C e t sint −  2C e t cost −  2C e t  cost +  2C e t sint −  2C e t  sint
+                                                                                          2
+                                                                             2
+                                                                1
+                                                                                                      1
+                                       2
+                                                    1
+                                                                    +  2Ce t  cost +  2C e t sint
+                                                           1            2
+                                  =  0</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 634 - ODE Solution</title>
+        <title>Page 634 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 634 - ODE Solution</div>
+        <div id="content-top1">Page 634 - DE Solution</div>
         <div id="content-top2">P. 634</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>14b   2a cos2t  2b  14a sin 2t   3sin 2t
-
-                    14b    2a   0
-                                     a    21  b   3
-                    2b   14a   3        100      100
-
-            The particular solution:  y  ( ) t     21  cos2t   3  sin2   t
-                                     p       100         10 0
+    <pre style="white-space:pre-line"><code>628 | S O LU TI O N
 
 
-        Exercise
-        Find the particular solution for  y  5y   4y  
-                                                     2 3t
-        Solution
-                                            
-            The particular solution:  ( ) t   at b
-                                    y
-                    a
-                y 
-                y   0
-            y  5y   4y  
-                           2 3t
-              
-            0 5a      4 at    b  
-                               2 3t
-            5a  4b   4at  
-                           2 3t
-                                     b     7
-                 5a    4b   2         16
-                                       3
-                  4a  3             a   4
-                                    
+          Exercise
 
-            The particular solution:  y  (t )   3 t   7
-                                     p      4   16
+                                                                           dQ    1
+          Solve the general initial value problem modeling the RC circuit     R  +  Q =  , E  Q ( ) 0 =  0
+                                                                            dt   C
+             Where E is a constant source of emf
 
+          Solution
+              dQ  +  1  Q =  E
+              dt    RC      R
 
-        Exercise
+                     RC ∫  1  dt
+                    e     =  e  / t RC
 
-        Find the particular solution for  y  6y  8y   2t 
-                                                          3
-        Solution
-                                            
-            The particular solution:  ( ) t   at b
-                                    y
+                 ∫  E  e  / t RC dt =  E  RCe  / t RC
+                                R
+                    R
 
-            y  6y  8y   2t  3
-              
-            0 6a      8 at    b   2t  3
-            6a  8at  8b   2t  3
-            8at   6a  8b   2t  3
+                               =  ECe  / t RC
+                                         )
+              Q ( ) t =  1  ( ECe  / t RC  − K
+                     e  / t RC
 
-                                     a   1
-                 6a  8b   3         4
-                                       9
-                   8a   2         b    
-                                        16
+                   =  EC −  Ke −  / t RC
 
-            The particular solution:  y  (t )   1 t   9
-                                     p      4   16
+                       Q (t =  ) 0 =  EC − K
+                       0 =  EC − K
+                       K =  EC
 
 
+              Qt     EC ( 1 e −  / t RC )
+                ( ) =
+                          −
 
 
-                                                          622</code></pre>
+          Exercise
+
+          Solve the general initial value problem modeling the LR circuit   L  dI  +  RI =  , E  I ( ) 0 =  I
+                                                                          dt                    0
+             Where E is a constant source of emf
+          Solution
+
+              dI  +  R  I =  E
+              dt   L     L
+
+                     L ∫  R dt
+
+                    e    =  e ( /R L )t
+                 ∫  E  e ( / )t dt =  EL  e ( /RL )t
+                        RL
+                    L
+                                  LR
+                                =  E  e ( /RL )t
+                                  R</code></pre>
      	</div>
     
      </div>

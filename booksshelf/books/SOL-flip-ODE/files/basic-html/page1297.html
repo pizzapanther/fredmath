@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1297 - ODE Solution</title>
+        <title>Page 1297 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1297 - ODE Solution</div>
+        <div id="content-top1">Page 1297 - DE Solution</div>
         <div id="content-top2">P. 1297</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,56 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        Two large tanks, each holding 24 L of liquid, are interconnected by pipes, with the liquid following from
-        tank A into tank B at a rate of 8 L/min and from B to into A at a rate of 2 L/min.
+    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1287
 
 
+                 Exercise
+
+                 Consider the given initial value problem. Find the general solution then uses Runge-Kutta method
+                 with step size  h =  0.05  to sketch solution with the given interval
+                                dy  =      2  ; y        13 ,
+                                dt   ( y −  ) 1    ( ) 0 = − 10  [0,  ] 1
+                 Solution
+
+                     dy  =  ( y −  ) 1
+                                2
+                     dt
+
+                       ( y − ∫  dy  ) 1 ∫  2 ) 1  =  dt
+                         ( −
 
 
 
+                               +
+                     −  1   =  tC
+                       y − 1
+                     ( y −  1 )(tC+  ) =  −  1
 
+                                 +
+                     (tC y+  ) =  tC −  1
+                             +
+                     y ( ) t =  tC −  1
+                             tC
+                              +
+                          y ( ) 0 =  C − 1  =  − 13
+                                   C      10
 
+                              1 −
+                          C −=     13 C
+                                   10
+                          23 C = 1
+                          10
 
+                          C  =  10
+                               23
 
-        The liquid inside each tank is kept well stirred. A brine solution flows into tank A at a rate of 6 L/min. The
-        diluted solution flows out the system from tank B at 6 L/min. If, initially, tank A contains pure water and
-                                                                                    0
-        tank B contains 5 kg of salt, determine the mass of salt in each tank at time t  .
-        Solution
+                            t +  10  −  1
+                     y ( ) t =  23
+                             t +  10
+                                 23
 
-            Tank A:        dx     8  x   2  y
-                           dt     24    24
-                           dy   8      2      6
-            Tank B:               x    y     y
-                           dt   24    24     24
-             x   1 x   1  y
-               
-                  3    12
-            
-              y 
-                1  x   1  y
-                 3    3
-                        1      1                         1  1 
-               
-             A    I   3        12                 A     3  12 
-                         1       1                       1     1 
-                         3       3                        3    3 
-                        2  2      1    1
-                           3     9   36
-
-                         2  2    1    0   12   2  8  
-                                                          1 0
-                           3     12
-                                          
-            The eigenvalues are:        8 4            1 ,    1
-                                  1,2    24         1,2    2     6
-                                       
-            For       1       A       I V   0
-                 1     2             1    1
-                  1  1 
-                  6  12       a   1       0       a   1    V     1
-                  1  1     b     0   1   2 b 1       1    2  
-                         1                                 
-                  3  6 
-                                        
-            For       1       A       I V   0
-                  2    6             2    2
-                    1  1     a 
-                  6  12     2        0       a   1    V     1
-                       1     b        2   2 b 2       2     
-                  1       2     0                          2 
-                  3    6 
-                        1  t   /2   1  t   /6
-            X    t   C     e    C    e
-                     1   2         2   
-                                        2
-
-                                                          1276</code></pre>
+                         =  23 t − 13
+                           23 t + 10</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1232 - ODE Solution</title>
+        <title>Page 1232 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1232 - ODE Solution</div>
+        <div id="content-top1">Page 1232 - DE Solution</div>
         <div id="content-top2">P. 1232</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>     2 
-                               
-                            4      5
-
-                                3       0
-                The eigenvalues:     0,       i 
-                                   1       2,3
-
-                                         
-                For     0       A      I V   0
-                      1                1   1
-                     0   1     0       0       y   0              1
-                                     x
-                                                            V    
-                                     y 
-                                           0
-                                                                           
-                     0   2     5              z  0          1    0
-                                                                  
-                                     z
-                                           0
-                     0     1    2                                0 
-                                           
-                For        i      A       I V   0
-                      2                  2    2
-                     i    1        0    x   0         ix    y
-                                                  
-                                          y 
-                            
-                                                            
-                                                0
-                     0   2 i       5               2 i  y   5z
-                                                  
-                                   2 i
-                                                               2 i
-                                                0
-                                          z
-                     0     1                     y       z
-                                                        2 i
-                           x  1     y   i      i       z
-                                                  
-                                          
-                           z     i     2 i      1 2i
-                                   2 i    2 i  5
-                                          
-                                               
-                                         1     
-                                V       i   
-                                 2             
-                                       1  1 2i       
-                                       5       
-                                            
-                     1                1     
-                      i    e    it     i    cost  i sin   t
-                                            
-                           
-                                              
-                  1  1 2i          1  1 2i 
-                     
-                                        
-                  5                 5       
-                                                                     
-                                              cost  i sint          
-                                                    
-                                             sint i cost           
-                                                                     
-                                     1  cost  2sint  i 2cost  sint  
-                                      
-                                     5                               
-                                                                       
-                                         cost                sint     
-                                         sint       i     cost     
-                                                                       
-                                    1  cost   2sin   t    1 2cost  sin   t 
-                                    5                    5             
-                                                                         
-                           1           cost                  sint     
-                            
-                 X     C    0  C      sint        C       cost     
-                   h    1      2                      3                
-                           
-                           0       1  cost    2sin   t     1 2cost   sin   t 
-                                     5                     5             
+    <pre style="white-space:pre-line"><code>1222 | S O LU TI O N
 
 
 
-                                                              1211</code></pre>
+                 λ  2  2λ +  +  2 =  0 →  λ  = −±
+                                               1 i
+                                        1,2
+                 t
+             V   ( ) e=  t −  ( C  cost + C  sint )
+               h            1         2
+             V =   A cost +  B sint
+               p
+                 V′ =  −  A sint +  B cost
+                   p
+                 V′′ =  −  A cost −  B sint
+                   p
+
+             V′′ +  2V′ +  2V =  −  10sint
+
+                  cost   − A + 2B +  2A = 0
+                 
+                  sint  − B −  2A + 2B = − 10
+
+                     A +   2B =  0
+                 
+                       +
+                  −  2AB =  −  10
+
+                             1   2              0   2              1    0
+                        ∆  =       =  5  ∆  =         =  20  ∆  =           =  −  10
+                             −  2  1      A   −  10  1        B    −  2  −  10
+                     A  = 4, B = − 2
+
+
+                  t
+             V   ( ) =  4cost −  2sint
+               p
+             V  ( ) t =  e  t −  ( C 1 cost +  C 2  sint +  )  4cost −  2sint
+
+                     V  ( ) 0 = C +=  0
+                                 4
+                              1
+                     C  = − 4
+                      1
+
+             V  ( ) t ′  =  e  t −  ( −  C 1  sint + C 2  cost −  C 1 cost −  C 2  sint −  )  4sint −  2cost
+
+
+                     V′ ( ) 0 =  − C +−   0
+                                   4 2 =
+                                2
+                     C   =  2
+                       2
+
+                t
+             V  ( ) e  t −  ( 4cost−=  −  2sint +  ) 4cost −  2sint
+
+
+          Exercise
+
+
+          Consider the parallel RLC network. Assume that at time t = , the voltage  ( ) t  and its time rate of
+                                                                                  V
+                                                                    0
+          change are both zero. Determine the voltage  ( ) t  for
+                                                     V
+                 R = 2  kΩ , L = 1 H , C =  1  µ  , F  I  ( ) t = e  t −    mA
+                                            4         s
+          Solution</code></pre>
      	</div>
     
      </div>

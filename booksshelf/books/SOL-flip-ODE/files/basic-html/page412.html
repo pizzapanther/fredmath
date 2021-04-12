@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 412 - ODE Solution</title>
+        <title>Page 412 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 412 - ODE Solution</div>
+        <div id="content-top1">Page 412 - DE Solution</div>
         <div id="content-top2">P. 412</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>     0.1t  e 0.5t dt    5e 0.4t
-                   5e                       dt
+    <pre style="white-space:pre-line"><code>406 | S O LU TI O N
 
-                                         t
-                                    25 e 2 /5
-                                    2
-                         
-                                      
-                               t
-            Q   t   e  t   /2 25 e 2 /5    K
-                           2
-                    25   e  t /10    Ke  t   /2
-                    2
-                   Q   0   0   0   25   K
-                                      2
+          Exercise
 
-                          K   25
-                                 2
+          Suppose that in the cascade tank 1 initially 100 gal of pure ethanol and tank 2 initially contains 100
+          gal of pure water. Pure water flows into tank 1 at 10 gal/min, and the other two flow rates are also 10
+          gal/min.
+                                   x
+                                            yt
+                                                                                      0
+             a)  Find the amounts  ( ) t  and  ( )  of ethanol in the two tanks at time t ≥  .
+             b)  Find the maximum amount of ethanol ever in tank 2.
+          Solution
 
-            Q   t   25  e  t   /10    e  t   /2 
-                    2
+             a)  The initial value problem   dx  = −  x  , x ( ) 0 = 10 0
+                                          dt     10
 
-
-        Exercise
-
-        A resistor  R   20    and a capacitor of C  0.1 F  are joined in series with an electronic force (emf)
-         E   E ( ) and no charge on the capacitor at t  . Find the ensuing charge on the capacitor at time t for the
-               t
-                                                      0
-                              0.1t 
-        given  ( ) 100 1E t     e
-        Solution
-                              
-            20Q   1  Q  100 1 e  0.1t          R  dQ    1  Q   E
-                                
-                   0.1                                dt   C
-                        
-            Q   1 Q  5 1 e  0.1t 
-                          
-                 2
-                  2   1 dt  t /2
-                e       e
-                       0.1t  e 0.5t dt      e t /2   e 0.4t 
-                  5 1 e                5                dt
-                                           t /2  5  2 /5 
-                                                     t
-                                       5 2e     2 e
-
-                                               
-                                        t
-            Q   t   e  t   /2  10e t /2    25 e 2 /5   K
-                                   2
-                           e
-                   10   25  t /10    Ke  t   /2
-                         2
-                                       
-                       Q   0   0   0 10   25    K
-                                              2
-                             K   5
-                                   2
+                 For Tank 1:
+                     1 dx = −  1  dt
+                     x       10
+                     ∫  1 dx = − 10 ∫  dt
+                                1
+                       x
 
 
-            Q   10t     25   e  t /10    5   e  t /2
-                        2          2
+                     ln x =  −  1  tC
+                                 +
+                             10
+                                 +
+                     x ( ) t =  e  t −  /10 C
+                             C −
+                          =  e e  t /10
+                          =  A e  t −  /10
+
+                            x ( ) 0 = 100
+
+                            100 =  A
+
+                      ( ) 100e
+                     x t =       t −  /10
 
 
+                                          dy    x    y
+                                                                 0
+                 The initial value problem   =    −    ,  y ( ) 0 =
+                                          dt   10 10
+                 For Tank 2:
+                     dy   100e  t −  /10  y
+                     dt  =    10    − 10
+                        = 10e  t −  /10  −  y
+                                     10
 
+                     dy  +  y  =  10e  t −  /10
+                     dt   10
+                            10 ∫  1  dt
 
-                                                          408</code></pre>
+                            e   = e t /10
+                                               ∫
+                        ∫  10e  t −  /10 /10  dt = 10 dt
+                                    t
+                                   e</code></pre>
      	</div>
     
      </div>

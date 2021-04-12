@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 586 - ODE Solution</title>
+        <title>Page 586 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 586 - ODE Solution</div>
+        <div id="content-top1">Page 586 - DE Solution</div>
         <div id="content-top2">P. 586</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                x   t   e  t     3C 1 sin3t  3C 2  cos 3t  C 1 cos3t  C 2  sin3t
+    <pre style="white-space:pre-line"><code>580 | S O LU TI O N
 
 
-                   x   0   0  3C  C   0     C    2
-                                    2    1            2    3
-                                        
-                                       t
-            x   t   e  t    2cos3t   2 sin3
-                                  3
-                                             x(t)
-                                         
+              (3 y xy dx+ +  )  + (3 x xy dy++  )  =  0
 
-                                         
-                                                                                      t
+                         M   =  ∂  (3 y   xy = +
+                                             ) 1 x
+                                     ++
+                           y     y ∂
+                                    ++
+                                           ) 1 y
+                         N =   ∂  (3 x   xy = +
+                           x    x ∂
+              N −   M                       )
+                x     y  =     1 y+−  (1 x+
+               M −  N     3 + +   xy − (3 x++  xy )
+                              y
+                            −
+                           y x
+                        =
+                           y x
+                            −
+                        = 1
 
-                                                                           
-                                        
+                          ∫  ( d x y )
+                               +
+              µ ( x +  ) y =  e
+                           +
+                       =  e xy
+                                      +
+                +
+                                                   )
+                                                         0
+              e xy (3 y +  xy )dx e+  xy  (3 x xy dy =
+                      +
+                                           ++
+                                        +
+                               y
+                 M    =  ∂  (3 ++  xy )e xy
+                    y    y ∂
+                                                   +
+                                +
+                      =  (1 x e+  )  xy  + (3 ++  xy )e xy
+                                          y
+                                          +
+                       (4 x=  ++  y +  xy )e xy
+                                        +
+                 N =    ∂  (3 x   xy )e xy
+                            ++
+                   x    x ∂
+                                                   +
+                                 +
+                      =  (1 y e+  )  xy  + (3 x++  xy )e xy
+                                         +
+                                y
+                      =  (4 x++ +  xy )e xy
+                 ⇒   M =    N
+                        y     x
+                  ∫              xy
+                                  +
+                      +
+              ψ=    (3 y +  xy )e     dx
 
-                                        
-                                        
-
-                                        
-
-
-
-
-        Exercise
-                                                             8
-        A 16-lb  mass weight is attached to a spring, stretches   ft  by itself. There is no damping and no external
-                                                             9
-        forces acting on the system. The spring is initially displaced 6 inches upwards from its equilibrium position
-                                                                                y
-        and given an initial velocity of 1 ft   /sec downward. Find the displacement    t  at any time t.
-        Solution
-
-            m   16    1  slug             W   mg
-                      2
-                32
-               
-               8
-            k  9   16     k  18  lb/ft    kL   mg
-
-            1  y   18y   0               my    y   ky   0
-            2
-            y  36y   0 ;    y   0    6 in    1  , f   t  y   0  1 ft/sec
-
-                                    12 in    2
-                  2  36   0           6i
-                                    1,2
-
-            y   t   C  cos6t   C  sin 6t
-                    1          2
-
-                    y   0     1    C   1
-                            2         1    2
-
-                y   6C  sin6t   6C  cos 6t
-                        1           2
-                    y   0  1   6   C  1   C      1
-                                     2           2   6
-
-
-
-                                                          574</code></pre>
+                                      +
+               =  (3 y++    ( yx − 1 ))e xy  + h ( ) y
+                             +
+                          )
+                 (3 xy e    xy  +  h ( ) y
+                 =
+                     +
+                                                           +
+                                 +
+              ψ   =  (3 xy +  ) x e x y  +  h′ ( ) (3 xyy =  +  +  ) x e xy
+                      +
+                y
+                     h′ ( ) y =  0  ⇒   h ( ) y =  C
+                        +
+              (3 +  xy )e xy  =  C</code></pre>
      	</div>
     
      </div>

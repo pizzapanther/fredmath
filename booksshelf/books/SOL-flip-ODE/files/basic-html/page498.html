@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 498 - ODE Solution</title>
+        <title>Page 498 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 498 - ODE Solution</div>
+        <div id="content-top1">Page 498 - DE Solution</div>
         <div id="content-top2">P. 498</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        Find a particular solution satisfying the given initial conditions   y   3    9y   0
-
-                                                                              x 
-                                                x 
-         y   0   3,  y   0   1,  y   0     y    1,  y    x   cos3 , x  y    sin3x
-                                        2
-                                              1           2                3
-        Solution
-                 1    cos3x      sin3x
-            W   0     3sin3x  3cos3x
-                 0   9cos3x    9sin3x
-
-                                   2
-                  27sin 3x   2  27cos 3x
-                 27   0
-              y  , y  , and y  are linearly independent.
-                1   2       3
-            y   x   C y    x  C y    x  C y    x
-                    1 1        2 2        3 3
-
-                                  
-            y   x  C  C  cos3x C   sin3x        y   0   3   C  C   3
-                     1    2          3                              1    2
-            y   x   3C  sin3x  3C  cos3x      y   0    1   3C     1
-                        2           3                                  3
-            y    x   9C  cos3x  9C  sin3x    y   0   0     9C 
-                                                                            0
-                        2            3                                  2
-
-                C   3, C    0, C     1
-                 1         2        3    3
-
-            y x       1 sin3x
-                3
-                       3
+    <pre style="white-space:pre-line"><code>492 | S O LU TI O N
 
 
-        Exercise
+                 ⇒   M   =  N
+                       y     x
+
+              ∂ψ  =  xy −  1
+                      2
+               x ∂       x
+
+                       2
+              ψ=  ∫ ( xy −  1 ) dx
+                           x
+
+               =  1  x y −  22  ln x +  h ( ) y
+                  2
+
+                     2
+              ψ   =  x y h′ ( ) y =  1  +  x 2 y
+                        +
+                y                 y
+                     h′ ( ) y =  1  →   h ( ) lny =  y
+                             y
+
+              1  x y − 22  ln x +  ln y C
+                                 =
+              2
 
 
-        Find a particular solution satisfying the given initial conditions   y   3   3y  4y  2y 
-                                                                                                0
-         y   0  1,  y   0   0,  y   0      y    x   e x ,  y    x   e x cos ,  y    x   e x  sin x
-                                       0
-                                                                         x
-                                              1             2                  3
-        Solution
+          Exercise
 
-                 e x      e x cos x         e x sin x
-                                                       x
-            W   e x  cos x  sin   x e x  sin x   cos   x e
-                 e x      2e x sin x       2e x cos x
+          The given equation is not exact. However, if you multiply by the given integrating factor, then it
+          becomes exact. Then solve the equation
 
-                      2                   2        2                   2        2                      2    3x
-                  2cos x  sin cos x  cos x   2sin x  sin cos x  sin x  2sin x  2sin cos x  2cos x e
-                                                             x
-                                                                                           x
-                                x
-                 e 3x    0
+                                                                                             x
+                                                                                       )
+                            sin y  −  2e − x sin x dx +          cos y +  2e − x  cos x     dy =  0,  µ ( ,x y =  ye
+                           y                          y          
+          Solution
+                      sin y    − x                    cos y +  2e − x cos x
+                 M =       −  2e  sin x           N =
+                        y                                     y
+                  M    =  y cos y − sin y   N =   1 ( − 2e −  x cos x − 2e −  x sin x )
+                     y        y 2             x    y
 
-              y  , y  , and y  are linearly independent.
-                1   2       3
+                         ⇒   M ≠   N
+                               y     x
 
 
-                                                          486</code></pre>
+                                               x
+                                             ye
+              ( )  ye x   sin y  −  2e − x  sin x dx +      ( )     cos y +  2e − x  cos x     dy =  0
+                      y                                y          
+              ( e sin y −  x  2 sin x dx + y  ) ( e x  cos y +  2cos x dy =  )  0
+
+
+                                 y
+                  M =  e x sin y −  2 sin x   N =  e x  cos y +  2cos x
+
+                 M    =  e x  cos y −  2sin x  N =  e x cos y −  2sin x
+                    y                          x
+
+                 ⇒   M   =  N
+                       y     x
+
+                  ∫
+                                      )
+                      x
+                                y
+              ψ=    ( e sin y −  2 sin x dx</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 632 - ODE Solution</title>
+        <title>Page 632 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 632 - ODE Solution</div>
+        <div id="content-top1">Page 632 - DE Solution</div>
         <div id="content-top2">P. 632</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-        Find the particular solution for  y  6y  8y   3e  t 
-
-        Solution
-
-            y ( ) t   Ae  t 
-
-                y     Ae  t 
-
-                y   Ae  t 
-
-            y  6y  8y   3e  t 
-
-                t       t      t      t 
-            Ae     6Ae    8Ae     3e
-            A  6A  8A   3
-
-            3A   3      A   1
-
-            Therefore, the particular solution is: ( ) t     e  t 
-                                                y
+    <pre style="white-space:pre-line"><code>626 | S O LU TI O N
 
 
 
-        Exercise
-
-        Find the particular solution for  y  2y  5y  12e  t 
-
-        Solution
-
-            y ( )   Ae  t 
-              t
-                y     Ae  t 
-
-                y   Ae  t 
-
-            y  2y  5y  12e  t 
-
-                t        t      t      t 
-            Ae     2  Ae    5Ae     12e
-                 t      t 
-            4Ae     12e
-            4A  12       A  3
-
-            The particular solution:  ( ) t  3e  t 
-                                    y
+                        1=  5  ( ) 5 +  K
+                            61
+                         K  =  36
+                             61
 
 
-        Exercise
+                                                  e
+              I ( ) t =  5  (6sin120t +  5cos120t ) +  36 − 100t
+                    61                         61
+             The voltage at the resistor:
+                 E   ( ) t =  RI
+                   R
+                                                         e
+                        =  25 (6sin120t +  5cos120t ) +  180 − 100t
+                           61                         61
+             The voltage at the inductor:
 
-                                                                                            2t
-        Find the particular solution for the given differential equation   y  3y  18y  18e
-        Solution
-                       2t
-              y ( )   Ae
-                t
-                        2t
-                y  2Ae
-                y   4Ae 2t
+                 E   ( ) t =  L dI
+                   L        dt
+
+                                                                        e
+                        =  (0.05 )( 25 (720cos120t −  600sin120t ) −  18000 − 100t )
+                                  61                               61
+                        =  14.754cos120t −  12.295sin120t −  14.754e − 100t
 
 
 
-                                                          620</code></pre>
+          Exercise
+
+          An RC circuit with a 1− Ω  resistor and a 10 − 6  F -  capacitor is driven by a voltage  ( ) sin100 VE t =  t  .
+          If the initial capacitor current is zero, determine the subsequence resistor and capacitor current and
+          the voltages.
+          Solution
+
+
+              Q′ +  10 Q =  6  sin100t        R  dQ  +  1  Q =  E
+                                                dt   C
+
+                   ∫ 10 dt     6
+                       6
+                    e     = e 10 t
+
+
+                                              ∫ sin100t  dt
+                                      6         1
+                             +     e 10 t     − 100 cos100t
+                                        6        − 4
+                                    6 10 t
+                             −   10 e         − 10  sin100t
+                             +     12 10 t
+                                         6
+                                 10 e
+
+                                                                  )
+                                                                      6
+                                6
+                                                                                             6
+                                          1
+                                                                                         )
+                            )
+                 ∫  (sin100te 10 t dt =  ( −  100 cos100t +  100sin100t e 10 t  −  10 8 ∫  (sin100te 10 t dt</code></pre>
      	</div>
     
      </div>

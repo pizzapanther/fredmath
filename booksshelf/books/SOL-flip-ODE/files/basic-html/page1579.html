@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1579 - ODE Solution</title>
+        <title>Page 1579 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1579 - ODE Solution</div>
+        <div id="content-top1">Page 1579 - DE Solution</div>
         <div id="content-top2">P. 1579</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                           n r
-                              
-                 y     a x
-                          n
-                     n 0
-                      
-                                   n r   1
-                                     
-                 y     n r a x    n
-                     n 0
-                      
-                                             n r  2
-                                               
-                 y    n r n r        1 a x
-                            
-                                
-                                           n
-                     n 0
-                   2
-                3x y   xy   y   0
-                                                                            
-                                              
-                                                                      
-                                                                                       
-                                                                
-                           
-                                                             
-                               
-                3x 2   n r n r        1 a x n r 2    x  n r a x n r 1   a x n r    0
-                                                                                   n
-                                                                   n
-                                          n
-                    n 0                               n 0                   n 0
-                                                                    
-                      3 n r n r    1 a x n r     n r a x n r     a x n r     0
-                                                          
-                             
-                         
-                                                       
-                                                                           n
-                                                             n
-                                        n
-                 n 0                           n 0                 n 0
-                  
-                                                     
-                                                           
-                                         n r  
-                         n r 3n  3r  3      1 a x n r    0
-                        
-                                                       n
-                 n 0
-                Since neither of  , then let assume  a   0, n   1
-                                                    n
-                           
-                                  n
-                                     
-                 y    x   x  a x   a x
-                  1             n       0
-                          n 0
-                              
-                                     n
-                                        
-                 y    x   x 1/3  b x   b x 1/3
-                  2                n       0
-                              n 0
-                            
-                 y   x   a x b x 1/3
-                         0     0
+    <pre style="white-space:pre-line"><code>3. 5 − I nt r o d u c tio n  &  B a s ic  T h e o r y  o f  L i n e a r  S y s te m s  | 1565
 
 
-             Exercise
-             Find the Frobenius series solutions of   4xy  2y   y   0
-             Solution
-                           x
-                 x  4xy   2 y   x  y   0
-                 4         4     4
-                  2
-                 x y   1  xy   x  y   0
-                        2      4
-                 y   1  y   1  y   0
-                     2x     4x
-                That implies to    x   1   and    x   1  .
-                                p
-                                               q
-                                       2x              4x
-                                                              1549</code></pre>
+                 Exercise
+
+                 Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and I
+                 represent the current across the inductor.
+
+                    Show that: CV′     I −−  V        LI′ =  = − R I V
+                                                                 +
+                                           R                  1
+                                             2
+                 Solution
+
+                    Using Kirchhoff’s current law:   I +  I +  I =  0 (1)
+                                                        2    3
+                    In the  R LR loop:     R I +  LI′ −  R I =  0  (2)
+                            1   2            1          22
+
+                    In the  RC  loop:      RI −    V =  0          (3)
+                             2               22
+
+                    From (3): V =  RI ⇒     I =  V
+                                    22       2   R
+                                                   2
+                    From (2): LI′ =  −  R I +  R I       V =  R I
+                                       1     22               22
+                                  =  −  R I V
+                                          +
+                                       1
+                                     I
+                    From (1):  I = −−    I
+                                2         3
+                                V   =  I −−  I
+                                R 2        3
+
+                                                                          q
+                    However, the voltage drop across the capacitor is: V =
+                                                                          C
+                        CV =
+                              q
+                        CV′    q′ =                         I =  q′
+                                                             3
+                        CV′ =  I
+                                3
+                      V  =  I −− CV′
+                     R
+                       2
+                             I
+                     CV′ = −−    V
+                                R
+                                  2
+
+
+                 Exercise
+
+                 Let  I  and  I  represent the current flow across the indicators  L  and  L respectively. Show that the
+                      1       2                                                1       2
+                 circuit is modeled by the system
+
+                                    L I′ =  −  RI −  RI +  E
+                                     11       11     1 2
+                                
+                                 L I′ = 2 2  −  RI −  11  ( R +  1  R 2 ) I +  2  E
+                                
+                 Solution</code></pre>
      	</div>
     
      </div>

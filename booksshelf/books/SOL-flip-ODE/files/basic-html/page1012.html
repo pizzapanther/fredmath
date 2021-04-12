@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1012 - ODE Solution</title>
+        <title>Page 1012 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1012 - ODE Solution</div>
+        <div id="content-top1">Page 1012 - DE Solution</div>
         <div id="content-top2">P. 1012</div>
      </div>
      <div id="content-middle">
@@ -152,95 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                  2
-                 s Y   s       s   2 2s 2
-                             1 Y
-                          s
-                                           3
-                                          s
-                 s  1 Y   s   2 2s 2    s  1
-                       
-                                 
-                  2
-                                  s 3
-                              2
-                                  4
-                         
-                Y    s   2 2s   s  s 3    A    B 2    C 3    Ds   E
-                                                           2
-                                2
-                           s 3  s  1    s   s    s     s  1
-                                                                               4
-                                                          3
-                             3
-                         4
-                                                                                     3
-                                   2
-                                             4
-                                                                    2
-                                                   2
-                                                                
-                                       2
-                        s   s  2s      As   As   Bs   Bs Cs     C   Ds   Es
-                            s 4  A   D   1  D  1
-                           
-                            s 3  B   E   1 E     1
-                           
-                           
-                            s 2  A C   2    A   0
-                                   
-                           
-                             s    B   0
-                             0
-                             s    C   2
-                Y    s   2 3    2 s    2 1
-                        s    s   1  s   1
-                    t  
-                 y t    2   cost   sint
+    <pre style="white-space:pre-line"><code>1002 | S O LU TI O N
 
 
-             Exercise
-                                                                             
-             Solve using the Laplace transform:    y   y   2sin 2 ; t  y (0) 10,  y (0) 
-                                                                                           0
-             Solution
-                                           
-                   y  L   y   L   2 sin 2t
+               2
+                         =
+              λ +  4λ+ 8 0
+                          i
+              λ   = − 2 2
+                       ±
+               1,2
+              y =  ( C  cos2t + C  sin 2 et )  − 2t
+               h     1          2
 
-                  2
-                                                                                   
-                 s Y    s  sy   0   y   0  Y    s   2  2         y (0) 10;   (0)   y  0
-                                                     2
-                                                    s   2
-                       
-                 s  1 Y s         s 
-                                        2
-                  2
-                            10s 
-                                      2
-                                          2
-                       
-                 s  1 Y    s   2   10s
-                  2
-                                 2
-                                s  2
-                       
-                 s   2  1 Y    s   10s   3  20s   2
-                                     2
-                                    s   2
-                            3
-                Y    s   10s   20s   2      As   B    Cs   D
-                         s   2  1 s     2  2   s   2  1  s   2  2
-                                                                         3
-                          3
-                                                  3
-                                       2
-                                                              2
-                                              
-                                                                                  2
-                        As   2As   Bs  2B Cs      Cs   Ds  D  10s   20s 
-                                                               991</code></pre>
+              y  =  A cost +  B sint
+               p
+               y′ =  −  A sint +  B cost
+                 p
+               y′′ =  −  A cost −  B sint
+                 p
+              y′′ +  4y′ +  8y =  sint
+
+                 cost   − A +  4B + 8A =  0
+
+                 sint   − B −  4A + 8B = 1
+
+                   7A +   4B =  0
+                 
+                  −  4A +  7B =  1
+
+                             7   4              0  4              7   0
+                        ∆  =       =  65  ∆  =       =  −  4  ∆  =      =  7
+                             −  4  7       A    1  7         B   −  4  1
+
+                 A =  −  4  , B =  7
+                       65        65
+
+              y  =  −  4  cost +  7  sint
+               p     65       65
+
+
+              y t =  ( ) ( C  cos2t +  C  sin2 et )  − 2t  −  4  cost +  7  sint
+                       1          2             65        65
+                     y ( ) 0 = C −  4  =  1
+                             1   65
+
+                     C  =  69
+                      1   65
+                                                                  )
+                                                                          4
+                                                                                   7
+                                                                 t
+              y′ =  ( −  2C 1 sin 2t +  2C 2  cos2t −  2C 1  cos2t −  2C 2  sin 2 e − 2t  +  65 sint +  65 cost
+                                         7
+                     y ( ) 0 =  2C −  2  138  +  65  =  0
+                                    5 6
+                     C  =  131
+                       2  130
+
+                                         )
+                                                           7
+                                                  4
+                                        t
+              y ( ) t =  ( 69 cos2t +  130 sin 2 e − 2t  −  65 cost +  65 sin   t
+                                131
+                     65</code></pre>
      	</div>
     
      </div>

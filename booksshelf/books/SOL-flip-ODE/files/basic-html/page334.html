@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 334 - ODE Solution</title>
+        <title>Page 334 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 334 - ODE Solution</div>
+        <div id="content-top1">Page 334 - DE Solution</div>
         <div id="content-top2">P. 334</div>
      </div>
      <div id="content-middle">
@@ -152,89 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>    1    1
-              x   x  y
-
-                      1  1 
-                  x    y      dx
+    <pre style="white-space:pre-line"><code>328 | S O LU TI O N
 
 
-                 ln x   x    h   y
-                        y
-
-                 x   h   y   x
-              y     2            2
-                   y            y
-                   h   y   0    h   y   C
-
-            ln x   x    C
-                   y
+          Exercise
 
 
-        Exercise
+                                                                          s
+          Find the solution of the initial value problem      y −  1  y = ′  2co 2t  y ( ) 0 =  y
+                                                                 4                      0
+          Solution
 
-        The given equation is not exact. However, if you multiply by the given integrating factor, then it becomes
-        exact. Then solve the equation
-                                         2 2
-                        2 3
-                                                                    1
-                                                                
-                                      
-                              y
-                       x y      x  1 x y    y   0,    , x  y   xy
-        Solution
-                               
-                                                                          2 2
-                        2 3
-                                     2
-                                                             3 2
-                                                                      
-            M         x y   y  3y  1     N       x   x y    1 3x y        M    N
-               y    y                           x    x                               y     x
-             x y   y   1    x  1 x y    1    y   0
-                                     2 2 
-                       
-              2 3
-                                  
-                           
-                         xy               xy  
-             xy   1          1    x y y   0
-                              2 
-               2
-                                 
-                   x
-                         y
-                                 
-                             2
-                M       xy   1     2xy
-                   y    y      x
-                                              M  y    N
-                               2 
-                                                       x
-                N          1    x y   2xy
-                                  
-                  x    x y       
-                        
-                xy   2  1
-              x        x
-                      2
-                xy   1  dx
-                          x
-                    2 2
-                 1  x y  ln x   h   y
-                 2
-                                     2
-                   2
-                      
-                x y h    y   1    x y
-              y                 y
-                   h   y   1    h   lny   y
-                            y
-               2 2
-            1  x y  ln x  ln y  C
-            2
+              y′ −  1  y =  2cos2t
+                  4
 
-                                                          330</code></pre>
+                   −  4 ∫  1 dt
+                    e     =  e  t −  /4
+
+                 ∫  2e  t −  /4 cos2tt
+                                 d
+
+
+
+                                                   d
+                                           ∫ cos2tt
+
+
+                          +     2e  t −  /4     1 sin2t
+                                            2
+
+                                  e
+                          −    − 1 − t /4    − 1 cos2t
+                                 2           4
+                                 e
+                          +     1 − t /4
+                                8
+
+                 ∫  2e  t −  /4  cos2 d tt =  ( sin 2t −  1 cos2t e  t −  /4  −  32 ∫  e  t −  /4  cos2 d tt
+                                                     )
+                                                              1
+                                              8
+                 ∫  2e  t −  /4  cos2 dtt =  ( sin 2t −  1 cos2t e  t −  /4  −  64 ∫  2e  t −  /4  cos2 dtt
+                                                     )
+                                                              1
+                                              8
+                                                        )
+                 65 ∫  2e  t −  /4  cos2 d t t = ( sin 2t −  1 cos2te  t −  /4
+                 64                              8
+
+                 ∫  2e  t −  /4  cos2 dt t =  64 ( sin 2t −  1 cos2te  t −  /4
+                                                        )
+                                                 8
+                                      65
+                                                       )
+                                             )
+               ( ) t =  y  e t /4 64 ( (  sin 2t −  1 cos2te  t −  /4  +  C
+                          65          8
+
+                   =  64 ( sin 2 −  t  1 cos2t +  )  Ce t /4
+                     65         8
+
+                     y ( ) 0 =  y
+                             0
+
+                     y =  −  8  +  C
+                      0     65
+                     C  =  y +  8
+                          0   65
+
+
+               ( ) t = y  64 ( sin 2t −  1 cos2t +  ) (  y +  8 ) e t /4
+                     65         8            0   65</code></pre>
      	</div>
     
      </div>

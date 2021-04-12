@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 922 - ODE Solution</title>
+        <title>Page 922 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 922 - ODE Solution</div>
+        <div id="content-top1">Page 922 - DE Solution</div>
         <div id="content-top2">P. 922</div>
      </div>
      <div id="content-middle">
@@ -152,86 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Euler & Runge-Kutta Approximation
-                                  15
-                                                                                 Exact
-                                                                                 Euler
-                                  10                                             2nd Runge-Kutta
-                                                                                 4th Runge-Kutta
-
-                                  5
-
-
-                               y*(t), y(t)  0
-
-
-
-
-                                  -5
-
-
-
-                                 -10
-
-
-
-                                 -15
-                                    0    0.5   1     1.5   2    2.5    3    3.5    4    4.5    5
-                                                                Time
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                               909</code></pre>
+    <pre style="white-space:pre-line"><code>912 | S O LU TI O N
+
+
+              y′′ −  2y′ =  12x −  10
+              2A −  4Ax −  2B =  12x −  10
+
+                     −   4A =  12
+                 
+                  2A −  2B =  −  10
+                 A =  −  3,  B =  2
+
+
+              y  =  −  3x +  2  2
+                            x
+               P
+              y ( ) Cx =  1  +  C e 2x  −  3x +  2  2   x
+                            2
+
+
+          Exercise
+
+          Find the general solution:   y′′ +  2y′ +  y =  sin x +  3cos2x
+
+          Solution
+
+                                                      =
+             The characteristic equation: λ      2  2 + 10
+                                                 λ +
+                 λ    = − 1
+                  1,2
+                             )
+              y =  ( C + C x e − x
+               h     1     2
+
+              y  =  A cos x +  B sin x C cos2x +  D sin 2x
+                                   +
+               P
+                 y′ =  −  A sin x +  B cos x −  2 sin 2x +  2 cos2x
+                                           C
+                                                      D
+                   P
+                 y′′ =  −  A cos x B sin x −  4 cos2x −  4 sin 2x
+                               −
+                                           C
+                                                      D
+                   P
+              y′′ +  2y′ +  y =  sin x +  3cos2x
+                     cos x  − A +  2B +  A =  0
+                     sin x  − B −  2AB =  1
+                                      +
+                   
+                   
+                                      +
+                    cos2x  −  4C +  4DC =  3
+                    sin 2x  −  4D −  4C +  D =  0
+                   
+                         − A +  2B +  A = 0
+                        
+                                  +
+                         − B −  2AB =  1
+                              B =  0,  A = −  1
+                                          2
+
+                          −   3C +  4D =  3
+                        
+                         −  4C −  3D =  0
+                                    −  3  4             3   4              −  3  3
+                                ∆=          =  25  ∆  =        = − 9  ∆  =        = 12
+                                    −  4  −  3     C    0  −  3        D   −  4  0</code></pre>
      	</div>
     
      </div>

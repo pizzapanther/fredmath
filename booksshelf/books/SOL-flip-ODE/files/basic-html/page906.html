@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 906 - ODE Solution</title>
+        <title>Page 906 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 906 - ODE Solution</div>
+        <div id="content-top1">Page 906 - DE Solution</div>
         <div id="content-top2">P. 906</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.84   |   4.00643771   |   4.00000000   |   -0.00643771
-                     1.88   |   3.99405741   |   4.00000000   |   0.00594259
-                     1.92   |   4.00545023   |   4.00000000   |   -0.00545023
-                     1.96   |   3.99497153   |   4.00000000   |   0.00502847
-                     2.00   |   4.00461405   |   4.00000000   |   -0.00461405
-
-
-             Exercise
-                                                                                                      
-             You've seen that the error in Euler's method varies directly as the first power of the step size  .    e E    h 
-                                                                                                       i
-                                                                                                            h
-             . This makes Euler's method an order to halve the error? How does this affect the number of required
-             iterations?
-             Solution
-
-                Because  E     h halving the step size should halve the error.
-                           h
-
-                                  1
-                                    h 
-                           E         1    h   1  E h
-                                  2
-                                               2
-                                         2
-                                                           
-                The number of iterations is given by:  N   b a  , therefore halving the step size should double the
-                                                           h
-                number of iterations.
-                                                  
-                                         
-                                   N   b a    2 b a    2N
-                                        1  h      h        h
-                                        2
-
-
-             Exercise
-
-             Use Euler’s method to provide an approximate solution over the given time interval using the given steps
-             sizes. Provide a plot of v versus y for each step size
-
-                                y   4y   0,  y   0   4,  y   0   0,  0, 2    ; h   0.1, 0.01, 0.001
-
-
-             Solution
+    <pre style="white-space:pre-line"><code>896 | S O LU TI O N
 
 
 
+              y =  C e − x  + C e x
+               h    1        2
+
+              y  =  ( Ax +  3  Bx +  2  Cx e + )  x  D
+               p
+                                                         )
+                                                           x
+                                                     +
+                 y′ =  ( Ax +  3  Bx +  2  Cx +  3Ax +  2  2Bx C e
+                   p
+                                                                      )
+                                                                        x
+                 y′′ =  ( Ax +  3  Bx +  2  6Ax +  2  Cx +  4Bx +  6Ax +  2C +  2B e
+                   P
+                       2 x
+              y′′ −  y =  x e +  5
+              ( Ax +  3  Bx +  2  6Ax +  2  Cx +  4Bx +  6Ax +  2C +  2B −  Ax −  3  Bx −  2  Cx e − )  x  D =  x e +  2 x  5
 
 
+                         D  = − 5
+
+                           A
+                  x 2     6 =  1      A =  1
+                                          6
+                                           1
+                   x   4 +  B  6A =  0 B =  −
+                                           4
+                  x 0  2 +  C  2B =  0  C =  1
+                                          4
 
 
+              y  =  ( 1 x −  3  1  Bx +  2  1  x e −  )  x  5
+               p    6      4       4
+
+               ( ) C e
+              y x =   1  − x  +  C e +  2  x  ( 1  x −  3  1  B x +  2  1  x e −  )  x  5
+                                      6
+                                             4
+                                                     4
 
 
+          Exercise
 
 
+          Find the general solution for the given DE:   y′′ −  y′ =  −  3
+          Solution
 
 
+             The characteristic equation: λ      2  λ −  =  0
+                 λ    = 0, 1
+                  1,2
 
 
+              y =  C +  C e x
+               h    1     2
 
+              y  =  Ax
+               P
+                 y′ =  A
+                   P
+                 y′′ = 0
+                   P
 
-                                    h = 0.1                                       h = 0.01
+              y′′ −  y′ =  −  3
 
-
-
-
-
-
-
-
-                                                               893</code></pre>
+              A  = 3</code></pre>
      	</div>
     
      </div>

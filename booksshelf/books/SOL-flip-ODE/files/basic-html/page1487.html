@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1487 - ODE Solution</title>
+        <title>Page 1487 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1487 - ODE Solution</div>
+        <div id="content-top1">Page 1487 - DE Solution</div>
         <div id="content-top2">P. 1487</div>
      </div>
      <div id="content-middle">
@@ -152,91 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                     
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
-             x  1 y  2xy 
-                   
-              2
-                               0
-             x  1     n  2 n    1 a n   2 x   2x     n    1 a n  1 x   0
-                                           n
-                                                                  n
-              2
-                    n  0                         n  0
-                                                                    
-               n   2 n    1 a n 2 x n  2    n   2 n    1 a n 2    2 n    1 a n 1 x n  1    0
-                                                                 n
-                                                                x 
-            n 0                          n 0                       n 0
-                                                          
-                  n n    1 a x   n   2 n    1 a n 2  2na x 
-                         n 
-                            n
-                                                                     n
-                                                       n
-                                                      x 
-                                                                         0
-                                                                   n
-            n  2               n 0                       n  1
-                                                                               
-                                                                           1 
-                                        3 
-                  n n    1 a x   2a   6a x   n   2 n    1 a n 2 x   2a x   2na x 
-                            n
-                                                                     n
-                                                                                          n
-                                                                                              0
-                                  2
-                         n
-                                                                                       n
-            n 2                             n  2                              n  2
-                                   
-                             
-                                                                               n
-                              x 
-            2a    6a   2a 1          n n    1  2n a  n   2 n    1 a    x   0
-               2      3                               n                 n 2 
-                                  n 2
-               Given:     0  0   a  ,  y   0    1 a
-                       y
-                                   0               1
-                                                   a   0
-                                                     2
-                2a    6a   2a   x   0   
-                                              
-                  2      3     1               a    1 a     1
-                                                3    3  1    3
-                                              
-                  n n    1 a  n   2 n    1 a    0
-                         n                 n 2
-                   a        n  a    n   2,3,
-                     n 2    n   2 n
-                   a      1 a   0                       a    3 a   1
-                     4    2  2                              5     5  3  5
-                                                                          1
-                   a      2 a   0                       a    5  a  
-                     6    3  4                              7     7  5    7
-
-                                       7
-                                5
-                          3
-            y   x   1 x   1 x   1  x 
-                   x
-                       3     5      7
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1473
 
 
-        Exercise
-        Find the series solution to the initial value problem
-                         2   
+                 Exercise
 
-                        x   1 y   3xy   xy  0 ;  y   0   4,  y   0   6
-        Solution
+                 A  2-kg  mass is attached to a spring hanging vertically and come to rest at equilibrium. The damping
+                                                                                                  0
+                 constant is given by c = 8 kg/sec  and the spring constant is k =  80 N/m. At time t = , the resulting
+                 spring-mass system is disturbed from its rest state by the force  ( ) 20F  t =  e  t −  N . (t in seconds). Find
+
+                 the equation of motion.
+                 Solution
 
 
-                                                          1458</code></pre>
+                     2y′′ + 8y +  80y = ′  20e  t −  ;  y ( ) 0,0 =  y′ ( ) 00 =     my′′ +  cy′ +  ky =  F ( ) t
+                     £  {2y′′ +  8y′ +  80  } y £=  { 20e  t − }
+
+
+                                                                            20
+                       2
+                     2s Ys         ( ) 0 −  2y′ ( ) 0 +  8sYs  ( ) 0 +  80Ys  s + 1
+                                                                      ( ) =
+                          ( ) 2sy−
+                                                     ( ) 8y−
+                      (  2         )        20
+                     2 s +  4s +  40 Ys    s + 1
+                                      ( ) =
+                                                            ( +
+                       ( ) =
+                     Ys              10          =   A  +  Bs     ) 2 +  C
+                            (s + 1 ) (s + (  ) 2  2  +  36 )  s + 1  (s +  ) 2  2  +  36
+                             s 2      AB =   0
+                                        +
+                            
+                            
+                              s   4A +  3B C =   0
+                                            +
+                              0
+                                            +
+                              s  40A +  2B C =  10
+                                    1   1  0             0   1  0
+                                ∆=  4   3  1 = 37  ∆   =  0  3  1 = 10
+                                                     A
+                                    40  2  1             10  2  1
+
+                                A =  10  B =  −  10  C =  −  10
+                                    37         37        37
+
+
+                                                           s
+                     £  −  1 {Ys  =   −  1        10 1  −  10  ( +  ) 2  −  10 1  6      
+                             ( )} £
+                                             37 s + 1 37  (s +  ) 2  2  +  6 2  37 6  (s +  ) 2  2  +  6   2 
+                                                         )
+                     y ( ) t =  10 −  e  t  − ( 10  cos6t +  5  sin6te −  2t
+                            37       37         111
+
+
+                 Exercise
+
+
+                 A 10-kg  mass is attached to a spring having a spring constant of 140 N/m .  The mass is started in
+                 motion initially from the equilibrium position with an initial velocity 1  m/sec in the upward
+                 direction and with an applied external force  ( ) 5sinF t =  t . If the force due to air resistance is
+
+                 − 90  N . Find the equation motion of the mass.
+                     y′
+                 Solution</code></pre>
      	</div>
     
      </div>

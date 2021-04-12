@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 406 - ODE Solution</title>
+        <title>Page 406 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 406 - ODE Solution</div>
+        <div id="content-top1">Page 406 - DE Solution</div>
         <div id="content-top2">P. 406</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        The board of directors of a corporation is calculating the price to pay for a business that is forecast to yield
-        a continuous flow of profit of $500,000 per year. The money will earn a nominal rate of 5% per year
-        compounded continuously. What is the present value of the business?
-            a)  For 20 years?
-            b)  Forever (in perpetuity)?
-        Solution
+    <pre style="white-space:pre-line"><code>400 | S O LU TI O N
 
 
-            PV    t 0 500,000e  0.05t dt
-                    0
-                                t 0
-                      7 
-                     10 e  0.05t
-                                0
-                                     
-                   10 7     e  0.05t 0   1
-                                     
-                                    
+                   =  3 (200 t+  ) +  9 sint +  18 cos t  −  720sint  +  C
+                     5            5       5 200 t+    (200 t+  ) 2  (200 t+  ) 2
 
-                                        
-                                              
-                    20
-            a)  PV      10 7     e  0.05 20   1
-                                              
-                                             
-                          $6,321,205.59
-                   
-                            
-            b)  PV t        10 7 0 1  
+
+                     y ( ) 0 =
+                            5
+                     5 120 +  =  18 1  +  C
+                               5 200   200 2
+
+                     C  = − 4,600,720
+
+
+              y t         3 t +  9 sin +  t  18 cost  −  720sint  −  4,600,720
+               ( ) 120 +=
+                          5    5       5 200 t+    (200 t  ) 2  (200 t ) 2
+                                                                    +
+                                                        +
+             V  ( ) 600 3tt =  +  = 150 0
+              3t = 900
+
+              t =  300  hr    s
+
+              y (300 =  ) 120 180 +  9 sin (300 +  )  18 cos300  −  720sin300  −  4,600,720
+                           +
+                                                5
+                                                                  2
+                                                    500
+                                                                               2
+                                   5
+                                                                           500
+                                                              500
+
+                     ≈  279.797  lbs
+             The amount of salt in the full tank is 279.797  lbs
+
+
+          Exercise
+          Suppose that an Iowa class battleship has mass 51,000 metric tons (51,000,000 kg) and
+          k ≈ 59,000 kg  / sec . Assume that the ship loses power when it is moving at a speed of 9 m/sec.
+             a)  About how far will the ship coast before it is dead in the water?
+             b)  About how long will it take the ship’s speed to drop to 1 m/sec?
+
+          Solution
+
+                          km
+              vt    ve  − (/ )t
+               ( ) =
                      0
-                             $10,000,000
+                  =  9e − (59,000/51,000,000)t
+                  =  9e − (59/51,000)t
 
 
-        Exercise
-
-        The population of a community is known to increase at a rate proportional to the number of people present
-        at a time t. If the population has doubled in 6 years, how long it will take to triple?
-
-        Solution
-
-            k   ln2
-                 6
-            T   ln3
-                 k
-               6  ln3
-                 ln2
-               9.5 yrs
+                        ∫          ∫   − (59/51,000)t dt
+                 s
+             a)  ( ) t =  v ( ) t dt =  9e
 
 
-        Exercise
+                      =  9 −  (  51000 ) e − (59/51,000)t  +  C
+                             59
 
-        Let  population  of country  be decreasing at  the rate proportional  to  its population.  If the population  has
-        decreased to 25% in 10 years, how long will it take to be half?
-
-        Solution
-
-
-
-
-                                                          402</code></pre>
+                      =  −  459,000 − (59/51,000)t  +  C
+                                  e
+                            59
+                               0
+                        s ( ) 0 =
+                              51,000
+                        0 =  −       +  C
+                                59</code></pre>
      	</div>
     
      </div>

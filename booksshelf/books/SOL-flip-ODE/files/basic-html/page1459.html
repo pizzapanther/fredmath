@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1459 - ODE Solution</title>
+        <title>Page 1459 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1459 - ODE Solution</div>
+        <div id="content-top1">Page 1459 - DE Solution</div>
         <div id="content-top2">P. 1459</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                          
-               n   2 n    1 a n 2    n n    1 a x   6na x      4a x 
-                                                     n 
-                                                                   n 
-                                    n
-                                                       n
-                                                                     n
-                                                                                  n
-                                   x 
-                                                                                      0
-                                                                                n
-            n 0                       n 2                n 1          n 0
-                                                                       
-                                                     n 
-                                                                   n 
-               n   2 n    1 a n 2    n n    1 a x   6na x      4a x 
-                                                                     n
-                                                       n
-                                                                                  n
-                                    n
-                                   x 
-                                                                                      0
-                                                                                n
-            n 0                       n 0                n 0          n 0
-             
-                                                             n
-                  n  2 n    1 a     n n    1  6n    4 a n      x  0
-                               n 2
-            n 0
-                                            
-                                   2
-            n   2 n    1 a n 2    n  5n  4 a 
-                                                   0
-                                               n
-            n   2 n    1 a    n   4 n    1 a
-                           n 2                n
-            a       n   4 a
-              n 2  n   2 n
-                   a                                               a
-                     0                                              1
-             n   2     a   2a                             3     a   5
-                        2     0                          n          3   3 a
-                                                                           1
-             n   4     a   6 a   3a                  n   5     a   7  a   7  a
-                        4   4  2      0                             5   5  3   3  1
-             n   6     a   8 a   4a                  n   7     a  11 a   11 a
-                        6   6  3      0                             7    7  5    3  1
-
-                    a      k    1 a                      a       2k  3
-                      2k          0                           2k 1    3   a
-                                                                            1
-                                   4
-                                                                          7
-                                         6
-                             2
-                                                            3
-                                                                  5
-                        
-                                                
-            y   x   a   1 2x   3x   4x      x   5 x   7  x  11 x   
-                                                  a
-                     0                             1     3     3      3
-                       a        3x   3
-                       0           x    a 1
-                     1  x 2  2  3 1 x 2  2
-                                
-                                  
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1445
 
 
-        Exercise
-        Find a power series solution.   y   x    1  2  y    4 x    1 y 
-                                                                 0
-        Solution
-            Let   z   1      dz  dx
-                     x
-                    
-                           n
-            y   x   a z
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na z n 1     n    1 a n 1 z
-                          n
-                    n   1         n   0
+                              A =  −  1 B =  −  1 C =  1
 
-                                                          1430</code></pre>
+
+                     £  −  1 {Ys  =    −  1 { s +  − 1 1 −  s +  1 5  +  s −  1 1 }
+                             ( )} £
+
+
+                     y ( ) t = −  e  t −  −  e −  5t  + e t
+
+
+
+                 Exercise
+
+                                                                                                            4
+                 Solve using the Laplace transform:    y′′ −  7y′ + 10y = 9cost +  7sin  ; yt  ( ) 0 =  , 5  y′ ( ) 0 = −
+                 Solution
+                     £  {y′′ −  7y′ +  10  } y £  {9cost +  7sin  } t
+                                       =
+
+                                                                                                               4
+                     s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  7sYs +  ( ) 7y ( ) 0 +  10Ys  9s  +  7      y ( ) 0 =  5, y′ ( ) 0 = −
+                                                                  ( ) =
+                                                                        s +  2  1  s +  2  1
+                     ( s −  2  7s +  10 Ys  9s +  7  +  5s −  39
+                                 )
+                                    ( ) =
+                                           2
+                                          s + 1
+                     Y ( ) s =  5s −  3  39s +  2  14s −  32  =  A  +  B  +  Cs +  D
+                                         (
+                                                                   2
+                                           2
+                            (s −  2 )(s −  ) 5 s + 1 )  s −  2  s −  5  s + 1
+                             s 3       A B C =    5
+                                              +
+                                          +
+                            
+                             s 2  −  5A −  2B −  7C +  D =  −  39
+                            
+                                     +
+                              s    A B +  10C −  7D =  14
+                              0
+                             s    −  5A −  2B +  10D =  −  32
+
+                            A =  8,  B =  −  4,  C =  1,  D =  0
+
+                     £  −  1 {Ys  =    −  1     8  −  4  +  s    
+                             ( )} £
+                                                          2
+                                           s −  2  s −  5  s + 1
+
+                     y ( ) t = 8e 2t  −  4e 5t  +  cost
+
+
+                 Exercise
+
+
+                 Solve using the Laplace transform:  y′′ +  8y +  ′  25y  0 ,    y ( ) 0π =  , y′ ( ) 6π =  =
+
+                 Solution
+
+                    Let:    w ( ) t =  ( y t π  +  ) ↔  y ( ) wt =  (t π  −  )
+
+                     y′′ ( ) 8yt +  ( ) 25yt ′  +  ( ) 0t =</code></pre>
      	</div>
     
      </div>

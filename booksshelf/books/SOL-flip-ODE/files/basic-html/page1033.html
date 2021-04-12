@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1033 - ODE Solution</title>
+        <title>Page 1033 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1033 - ODE Solution</div>
+        <div id="content-top1">Page 1033 - DE Solution</div>
         <div id="content-top2">P. 1033</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-                                      3
-                      2
-                                                      2
-                                                                                  3
-                   7s   12s     B s   4B s   B s    4B s   B s  4B   B s
+    <pre style="white-space:pre-line"><code>2. 4 − I nh om oge ne ous   E qns . :  U nd e r de r t m i n e d  C oe f .    | 1023
+
+
+
+                         y ( ) 4  =  24A
+                          p
+
+                                   2
+                     y ( ) 4  −  4y′′ =  x
+                                                     2
+                        24A −  48Ax −  2  24Bx −  8C =  x
+
+                               −   48A =  1
+                             24B =  0
+                            
+                                        0
+                             24A −  8C =
+                            A =  −  1  ,  B =  0,  C =  −  1
+                                  48                16
                                4
-                                    1       1       2        2     3      3    4
-                    s 3  B   B    0     B    17
-                           1    4            4    16
-                   
-                     s   2  4B   B   7    B   17
-                           1     2            1  16
-                   
-                     s  4B    B   12     B    11
-                           2    3             2   4
-                     0
-                    s      4B    4         B   1
-                   
-                               3
-                                                3
-                    7s   2  12s   4   17 1   11 1    1   17 1
-                      s 3 s    4  16 s  4  s 2  s 3  16 s   4
+                     y   =  1  x +  1  x 2
+                       p   48     16
 
-            X    s   1  1    1   s   4   17 1   11 1    1   17 1
-                    17 s   4  17  s  1  16 s  4  s 2  s 3  16 s   4
-                                  2
-                    17 1   11 1    1    273 1    1  s    4  1
-                   16 s   4  s 2  s 3  272 s  4  17  s   2  1  17  s   2  1
+                                                                      2
+                     yx =  ( ) C +  C x C e − 2x  +  C e 2x  −  1  x −  4  1  x
+                                      +
+                             1     2     3         4       48     16
+                            y ( ) 0 = C +  1  C +  3  C = 1
+                                               4
+                                                        1
+                     yx =  ′ ( ) C −  2  2C e − 2x  +  2C e 2x  −  12 x −  3  1 x
+                                                4
+                                                               8
+                                     3
+                            y′ ( ) 0 =  C −  2  2C +  3  2C = 1
+                                                  4
+                     yx      4C e − 2x  +  4C e 2x  −  1  x −  2  1
+                       ( ) =
+                      ′′
+                                3          4      4      8
+                            y′′ ( ) 0 =  4C +  4C −  1  =  − 1
+                                       3     4  8
+                            4C +   4C =  −  7
+                               3     4     8
 
-            L    X s              17 1    11 1    1    273 1    1  s    4  1    
-                        L
-                                   16 s  4  s 2  s 3  272 s   4  17  s   2  1  17  s   2  1
+                     y ( ) 3  ( ) x =  −  8C e − 2x  +  8C e 2x  −  1  x
+                                                      2
+                                   3
+                                              4
+                            y ( ) 3  ( ) 0 =  −  8C +  3  8C = − 1
+                                                 4
 
-                                 2
-                                                                           
-                                        e
-            x   v  17    11 v   1 v   273  4v    1  cosv   4  sinv    v t   3
-                   16   4     2     272        17        17
-            y   t   17    11 t    3   1 t    3  2    273   e   4 t   3    1  cos t    3   4  sin t    3
-                   16   4         2           272           17            17
-                                     2
-                    17    11 t  33   1 t  3t   9    273   e   4 t   3    1  4sin t    3  cos t  3 
-                   16    4    4    2         2   272           17
-                                2
-                    43    1 t   1 t   273   e   4 t   3    1  4sin t    3   cos t  3 
-                    16  4    2     272            17
+                                  C +   C +  C =  1
+                                   1    3    4
+                                 C −  2  2C +  3  2C =  4  1
+                                                7
+                                
+                                  4C +  3  4C =  4  −  8
+                                
+                                  −  8C +  3  8C =  4  −  1
+                                
+                                C =  117 ,  C =  5 ,  C =  −  3  ,  C =  −  11
+                                 1   96      2   4    3     64    4     64
 
 
-        Exercise
-
-        Solve using the Laplace transform:  y   4y  8y   sin ,   t  y   0   , 1  y   0 
-                                                                                     0
-        Solution
-            L  y  4y  8y   s  L sint s
-                                           
-             2
-            s Y   s  sy   0   y   0  4sY   4ys     0  8Y   s   1     y   0   1,  y   0   0
-                                                               2
-                                                              s  1
-                       
-             s   4s  8 Y s     4     1
-              2
-                            s  
-                                        2
-                                       s  1
-                        
-             s   4s  8 Y   s   1    s   4
-              2
-                                 2
-                                s  1
-                       3
-                             2
-                                s
-            Y   s   s   4s    5     As   B    Cs   D
-                    s  1 s    4s  8   s  1   s   4s  8
-                          
-                                            2
-                                                    2
-                             2
-                     2
-                                                          1012</code></pre>
+                     y ( ) x =  117  +  5  x −  3  e − 2x  −  11 e 2x  −  1  x −  4  1  x 2
+                             96   4     64        64       48     16</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1307 - ODE Solution</title>
+        <title>Page 1307 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1307 - ODE Solution</div>
+        <div id="content-top1">Page 1307 - DE Solution</div>
         <div id="content-top2">P. 1307</div>
      </div>
      <div id="content-middle">
@@ -152,96 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1297
 
-        The electrical network shown below
-                                                                   i
-                                                         i
-            a)  Find the system equations for the currents    t  and    t
-                                                         1         2
-            b)  Solve the system for the given:  R   8   , R   3   , L  1 , h    L  1 , E  100sin  V , with
-                                                                                                      t
-                                                                                       h
-                                                1          2           1         2
-               the initial values    0   i  0 & i    0   0
-                                 1              2
-            c)  Determine the current    t
-                                     i
-                                      3
-        Solution
-                                  
-                           
-                 R i   L i   L i   E   t
-                
-            a)    1 1   1 2    2 1
-                                  
-                 R i   R i   L i   E   t
-                
-                                2 1
-                  1 1
-                         2 3
-                           
-                    
-                 L i   L i   R i   E
-                
-                         2 1
-                  1 2
-                                  1 1
-                   
-                  L i   R i   R i   E
-                                  2 3
-                           1 1
-                  2 1
-                                   
-                 L i   R i   R i   i      E
-                    
-                  2 1     1 1   2   1   2
-                                 
-                    
-                 L i    1 2  R i   2  1  i 2
-                                        R
-                                   
-                  
-                 i    1   R   R i   2  i   E
-                  1   L 2   1    2  1   L 2  2  L 2
-                
-                    R 2     R 2
-                 i   2  L  i   1  L  i
-                                  2
-                       1      1
-                     11i   3i  100sint
-                 i  
-                
-            b)    1     1     2
-                  i   2  3i   1  3i
-                             2
-                       11  3 
-                A           
-                      3    3 
-                            11       3
-                              
-                A    I
-                  
-                                        
-                             3         3 
-                                          0
-                            2  14      24 
-               Thus, the eigenvalues are:      2  and          12
-                                           1             2
-                                          
-               For       2      A       I V  0
-                     1                 1    1
-                                x
-                     9   3      0                           1  
-                                       3   x   y      V   
-                                                                   3
-                                      0
-                                y
-                     3    1                             1   
-                                            
-               For       12       A       I V   0
-                     2                   2    2
-                                                          1286</code></pre>
+
+                 Exercise
+
+                 Consider the given initial value problem. Find the general solution then uses Runge-Kutta method
+                 with step size  h =  0.05  to sketch solution with the given interval
+                                dy  =  y e  ;  y ( ) 0 =  1  ,  [0, 2
+                                      2 t
+                                                                ]
+                                dt                   0 10
+                 Solution
+
+                     dy  =  y e
+                           2 t
+                     dt
+                        y ∫∫   e t dt
+                        dy
+                           =
+                         2
+
+
+                     −  1  =  e +  t  C
+                       y
+
+                     y ( ) t = −  t  1
+                             e +  C
+
+
+                          y ( ) 0 =  −  1  =  1
+                                   1 C    100
+                                    +
+                          1 C+  =  −  100
+                          C  = − 101
+
+
+                     y ( ) t = −  1
+                              t
+                             e − 101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                Euler Method
+
+
+                             t            Euler
+                             1           1.2718</code></pre>
      	</div>
     
      </div>

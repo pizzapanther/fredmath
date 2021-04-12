@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1156 - ODE Solution</title>
+        <title>Page 1156 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1156 - ODE Solution</div>
+        <div id="content-top1">Page 1156 - DE Solution</div>
         <div id="content-top2">P. 1156</div>
      </div>
      <div id="content-middle">
@@ -152,91 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                                           y    t   6y   y   6t
-                                                         
-             Find the general solution of the system        1       1    2
-                                                          y 2    t   4y   3y  10t   4
-                                                         
-                                                                           2
-                                                                     1
-             Solution
-                           6       1                  6 1
-                            
-                   
-                 A    I                        A       
-                                   
-                             4    3                   4 3 
-                             2  9     14 
-                                         0
-                The eigenvalues:       2, 7
-                                   1,2
-                                         
-                For     2       A      I V  0
-                      1                1   1
-                     4   1     0                             1 
-                             x
-                                                   y
-                                    4x            V     
-                                                              1
-                             y
-                                   0
-                     4   1                                    4 
-                                          
-                For      7      A      I V   0
-                      2                2    2
-                                x
-                      1   1      0                         1  
-                                       x   y        V     
-                                                              1
-                                      0
-                                y
-                      4    4                                1 
-                           1          1  
-                                           7t
-                Y    C      e 2t    C    e
-                  h    1    4     2   
-                                        1
-                         e 2t  e 7t 
-                   t           
-                           2t    7t 
-                          4e  e   
-                              e 7t   e 7t 
-                  1    1             
-                       5e 9t      4e 2t  e 2t   
+    <pre style="white-space:pre-line"><code>1146 | S O LU TI O N
 
-                           e   2t   e   2t 
-                       1                                             7t
-                       5     7t     7t                            e                             e  2t
-                           4e    e     
 
-                                                                       e
-                                                                                                      e
-                                                               4
-                                                                                              4
-                               t
-                  6y   y   6                      +   14t        1  7t        +   16t        1  2t
-                                                                      7
-                
-                                                                                                     2
-                      1
-                           2
-                                                                    1   7t                        1  2t
-                  4y   3y  10t  4                     14      49 e                 16        4 e
-                    1
-                          2
-                           6t   
-                 F   t       
-                           10t   4 
-                          e 2t  e 7t     e   2t   e   2t    6t  
-                Y     1                                     dt              X        t      1    dtt  F t
-                  p   5     2t   7t       7t       7t      10t   4            p
-                          4e   e       4e     e     
-                           e 2t  e 7t     16t    4 e  2t 
-                       1                             dt
-                       5     2t   7t     14t    7t 
-                            4e  e              4 e  
-                                                              1135</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Complex Method
+
+              x′′ +  7x′ +  10x =  3cos3t
+
+
+             The particular solution:  z =  Ae  3 it
+                                          3
+                                     z′ = ( ) Aei  3 it
+                                             2
+                                     z′′ =  ( ) Ae  3 it
+                                          3i
+
+              z′′ +  7z′ +  10z =  3e  3 it
+
+                            ( ) Aei
+              ( ) Aei  2  3 it  +  7 3  3 it  +  10Ae  3 it  =  3e  3 it
+              3
+              ( 9 21i− +  + 10 ) A = 3
+              (1 21iA+  ) =  3
+
+
+              A = 3   1   ⋅ 1− 21i
+                        i
+                   121 1−     21i
+                    +
+                      −
+                =  3. 1 21i
+                    1 441
+                     +
+                =   3   i −  63
+                  442     442
+                 (  3     63 )  3 it
+              z =  442  − i  442  e
+
+               (  442  −  i 442 ) (cos3ti+  sin3t )
+                    3
+                          63
+               =
+                                            3
+                              63
+                   3
+                                                       63
+                                       +
+                =  442 cos3t +  442 sin3ti ( 442 sin3t −  442 cos3t )
+                                                                                       t
+             The particular solution (steady-state solution):  x  (t ) =  3  cos3t +  63  sin3
+                                                             p     442         442</code></pre>
      	</div>
     
      </div>

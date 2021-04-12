@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 882 - ODE Solution</title>
+        <title>Page 882 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 882 - ODE Solution</div>
+        <div id="content-top1">Page 882 - DE Solution</div>
         <div id="content-top2">P. 882</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                V    t    e  t      3C 1  sin 3t   3C 2  cos 3t  C 1  cos 3t  C 2  sin 3t   4   3 e  t
+    <pre style="white-space:pre-line"><code>872 | S O LU TI O N
 
 
-                       V   0  0   3C    4    4    0   C  0
-                                          2   3   3            2
 
-                V   t   4   e  t cos 3t   4   e  t
-                        3             3
+                     x′ =  e − 15 /2   t    −  15 C  cos 5 7  t −  15 C  sin 5 7  t −  5 7  C  sin 5 7  t +  5 7  C  cos 5 7   t
+                                                                                                          
+                                   2   1     2      2   2     2       2    1     2       2    2     2    
+
+                         x′ ( ) 0 = −  15 C +  5 7 C =  0
+                                  2   1    2    2
+                        C   = −   3
+                          2     10 7
 
 
-             Exercise
+                 x ( ) t =  e − 15 /2   t    −  1  cos 5 7  t −  3  sin  5 7   t 
+                                 10      2     10 7       2   
+
+             For c =  20
+
+                 λ  2  20 +  λ +  100 =  0
+                 λ    = − 10
+                  1,2
+
+                 ∴ The motion is critically damped
+                                  )
+                   ( ) (
+                 x t =   C +  C te  − 10t
+                               2
+                          1
+                         x ( ) 0 =  C =  − 0.1
+                                 1
+                        C   = −  1
+                          1    10
+                                            )
+                     x′ =  ( C −  2  10C −  1  10C te − 10t
+                                          2
+                         x′ ( ) 0 =  C + 1 =  0
+                                  2
+                        C   = − 1
+                          2
+
+                                )
+                 x ( ) ( 0.1 te   − 10t
+                             −
+                    t =
+                         −
+             For c =  25
+
+                 λ  2  25 +  λ +  100 =  0
+                            ±
+                 λ    =  −  25 15
+                  1,2      2
+                      =  −  20, −  5
+
+                 ∴ The motion is overdamped
 
 
-             An RCL circuit connected in series has  R  180  , C   1   , F    L   20 H , and applied voltage
-                                                                    280
-             E t        t                                                                                0
-                 10sin  V . Assuming no initial charge on the capacitor, but an initial current of 1 A at t   when
-             the voltage is first applied.
-                a)  Find the subsequent charge on the capacitor.
-                b)  Plot the transient, steady-state, and the charge on the capacitor.
-                c)  Find the current on the capacitor.
-             Solution
-
-                a)  20q  180q   280q  10sint                     Lq   Rq   1  q   E   t
-                                                                                  C
-
-                    q  9q  14q   1 sin  ; q   0  0 i   0  1
-                                        t
+                 x ( ) t = C e −  20t  +  C e −  5t
+                         1
                                     2
-                                                        
-                         2
-                           9  14  0             9 5    7,   2
-                                               1,2     2
-                        t 
-                    q    C e    7t    C e   2t
-                     h        1        2
-                    q     A cost   B sint
-                      p
-                      q   A sint   B cost
-                       p
-                      q   A cost   B sint
-                       p
-
-                    q  9q  14q   1 sint
-                                    2
-                            cost   A  9B  14A   0       13A   9B   0
-                                                           
-                           
-                                                   1                  1
-                            sint   B  9A  14B   2       9A  13B   2
-                           
-                                                           
-                               13   9                0  9               13   0
-                                       250               9              13
-                                 9 13          A    1  13    2     B    9  1   2
-                                                     2                       2
-                        A    9  , B   13
-                             500        500
-
-
-                    q    t    9  cost   13  sint
-                      p       500        500
-
-
-
-                                                               869</code></pre>
+                                            1
+                         x ( ) 0 = C + C = − 10
+                                      2
+                                 1
+                 x′ =  −  20C e −  20t  −  5C e −  5t
+                           1          2
+                         x′ ( ) 0 =  −  20C −  5C =  0
+                                     1     2</code></pre>
      	</div>
     
      </div>

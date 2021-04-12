@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1338 - ODE Solution</title>
+        <title>Page 1338 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1338 - ODE Solution</div>
+        <div id="content-top1">Page 1338 - DE Solution</div>
         <div id="content-top2">P. 1338</div>
      </div>
      <div id="content-middle">
@@ -152,106 +152,135 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1    0    0  
-                 750    0    0         3000  3000      0           750  0     0    1    750        
-                                 x                                                       1       
-                  0   500    0         3000    6000   3000 x         0   500    0       0   500   0  
-                                                               
-                                                                                                     
-                  0     0   750        0      3000     3000        0    0    750       0    0    1  
-                                                                                                       750 
-                       1    0    0  
-                       750              3000  3000     0    
-                                                               
-                             1
-                 x       0  500  0        3000    6000  3000 x
-                                                              
-                                       0     3000     3000 
-                       0    0     1                        
-                                 750 
-                        4  4    0                           4  4    0 
-                                                                           
-                                    
-                         6    12  6 x               A       6    12  6
-                                    
-                                                                           
-                                                                        
-                       0   4     4                         0   4     4 
-                             4      4        0
-                              
-                 A     I   6      12      6
-                                                
-                             0        4        4 
-                                   2
-                                                                       
-                           4 
-                                         
-                                                           24  
-                                     
-                                              24  
-                                 12         4         4 
-                                                2
-                                   
-                                                      
-                                       
-                                             
-                           4 
-                                48 16       48
-                                                      
-                                   
-                                                      
-                                   
-                             4 
-                                               0
-                                  16  
-                The eigenvalues are:           0,            2,      16      4
-                                                              4
-                                          0
-                                      1         1        2          2         3           3
-                For     0         0      A  0I V 
-                                                        0
-                      1       1                     1
-                            4  4  0    a  0      a   b
-                                          
-                                         b 
-                                               0
-                          6   12  6         
-                                          
-                                               0
-                                         c
-                          0   4      4           b   c
-                                 1                       1   
-                                              
-                                                            
-                          V     1     x t   a   b t    1
-                             1          1        1   1   
-                                                         
-                                                           1
-                                 1                       
-                For       4          2      A  4I V 
-                                                          0
-                      2         2                     2
-                          0  4  0   a  0      b   0
-                          6             
-                                     b 
-                                                         c
-                                           0
-                             8 6              a  
-                                      
-                                     c
-                                           0
-                          0  4  0      
-                                   1                                    1 
-                                               t 
-                           V     0       x     a  cos2t b  sin2t    0  
-                                                             
-                             2            2        2          2         
-                                                                        
-                                   1                                    1 
-                For       16          4      A  16I V 
-                                                            0
-                      3          3                      3
-                                                              1317</code></pre>
+    <pre style="white-space:pre-line"><code>1324 | S O LU TI O N
+
+
+                                   −
+                                       )( +
+                                                         ( +
+                                                                    ( +
+                                 (b a s a s b −     ) bs s b +  ) as s a  )
+                                             )( +
+                               =
+                                            ( s b as as b       )
+                                               −
+                                                         )( +
+                                                  )( +
+                                                                              2
+                                                                   2
+                                       )
+                                                                     +
+                                 (b a s + (  2  as bs ab −  )  bs −  2  b s as +  2  a s
+                                                    +
+                                                +
+                                   −
+                               =
+                                                  −
+                                               ( s b as as b      )
+                                                     )( +
+                                                            )( +
+                                             2
+                                                               2
+                                                                                                  2
+                                                                                      2
+                                                                           2
+                                                                             −
+                                                                                         +
+                                                +
+                                                                       −
+                                                                  −
+                                          +
+                               =  bs +  2  abs b s ab −  2  as −  2  a s abs a b bs −  2  b s as +  2  a s
+                                                         ( s b as as b      )
+                                                               )( +
+                                                                      )( +
+                                                            −
+                                            −
+                                       ab (b a )
+                               =
+                                  ( s b as as b      )
+                                     −
+                                        )( +
+                                               )( +
+                               =       ab
+                                  ( ss a s b+  )( +  )
+              £ { 1−  ba e −  at  +  ba e −  bt } ( ) s =  ( ss a s +  ab  ) b     √
+                      b
+                                  a
+                                                       )(
+                                  −
+                      −
+                                                    +
+
+
+          Exercise
+          Use Definition of Laplace transform to show the Laplace transform of
+                 £      e −  at  +     e −  bt   +     e −  ct      ( ) s =   1
+                                                                           +
+                                                              −
+                                                                               )( +
+                                                       −
+                                                                                     )( +
+                           )( −
+                        −
+                                        −
+                                           )( −
+                      (b a c a  ) (a b c b      ) (a c   )(b c  )      (s a s b s c       )
+          Solution
+              £     e −  at  +      e −  bt  +     e −  ct      ( ) s =
+                  (b a c a−  )( −  ) (a b c b−  )( −  ) (a c−  )(b c−  ) 
+                             ∞       −  at          −  bt           −  ct   
+                                                    e
+                                                                    e
+                                    e
+                        =        (b a c a  ) (a b c b      ) (a c   )(b c  )  ∫    e − st  dt
+                                              +
+                                                              +
+                                                                  −
+                                                                         −
+                                   −
+                                                      )( −
+                                                   −
+                                      )( −
+                            0  
+                                                                               (sb
+                                                s
+                        =       1      )∫  ∞  e  ( −+  ) a t  dt +  1  )∫  ∞  e −+  )t  dt
+                          (b a c a−  )( −                 (a bc b−  )( −
+                                          0        ∞                      0
+                                                        (sc
+                                       +  1     )∫    e −+  )t  dt
+                                      −
+                                   (a cb c
+                                         )( −
+                                                   0
+                                                   (s a
+                                                                                  (sb
+                        =  −         1          e −+   )t  −         1          e −+   )t
+                                                                        )( +
+                               −
+                                  )( −
+                                         )( +
+                                                              −
+                            (b a c a s a       )            (a bc b s b        )
+                                                                 )( −
+                                                          (sc
+                                       −     1          e −+  )t       ∞
+                                      −
+                                         )( −
+                                                )( +
+                                   (a cb c s c        )           0
+                        =           1          +          1          +           1
+                                                                                    )( +
+                                                                                 −
+                                                       )( −
+                                )( −
+                                       )( +
+                                                    −
+                          (b a c a s a        ) (a b c b s b        ) (a c   )(b c s c    )
+                                                                          −
+                                                             )( +
+                             −</code></pre>
      	</div>
     
      </div>

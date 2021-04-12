@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 636 - ODE Solution</title>
+        <title>Page 636 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 636 - ODE Solution</div>
+        <div id="content-top1">Page 636 - DE Solution</div>
         <div id="content-top2">P. 636</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>   2    4  i
-                 10   10
-                 1    1 i
-                 10   5
-                 
-                    1
-            z     10    1 i  e  2 i t
-              p
-                         5
-                  
-                   1    1 i cos2t i sin 2t 
-                                   
-                    10   5
-                                       
-                                     
-                   1  cos2t   1 sin 2t i  1 cos2t   1  sin 2t 
-                   10         5           5        10
-                                             1
-                                      1
-            The general solution:      y t   10 cos2t   1 sin2   t
-                                                       5
+    <pre style="white-space:pre-line"><code>630 | S O LU TI O N
 
 
-        Exercise
+                         E
+                          0  −  K =  I
+                         R          0
+                             E
+                         K =   0  −  I
+                              R     0
 
-        Find the particular solution for  y   y    t 
-                                               t e
-        Solution
-
-                                   2
-                                       1 0      
-            The characteristic eq.:             1    1,     1
-
-                                                             2
-                                          
-            The particular solution:  y   at b
-                                   y 
-                                       a
-                                   y  0
-                y   y   t
-                 at    t     a     1,  b   0
-                     b
-                y   t   t 
-
-            The homogenous solution: y     C e  t     C e t
-                                        h    1        2
-            Because the inhomogeneous part of y   y   e  t     is also the solution.
-
-            Therefore:   y     Ate  t 
-                          p
-
-                         y   Ate  t     Ae  t     Ae  t   1 t   
-                          p
-                         y   Ae  t     Ate  t     Ae  t     Ae  t   t    2
-                          p
-            y   y   e  t 
-
-            Ate  t    2Ae  t     Ate  t     e  t 
-
-              2Ae  t     e  t 
-             2A  1      A   1
-                                2
-
-            y       1 te  t 
-              p     2
-
-            y   t   t     1 te  t 
-                        2
+                    E       E             )t
+              I ( ) t =  0  −  0  −   I   e − ( /RL
+                     R        R  0   
 
 
-                                                          624</code></pre>
+
+          Exercise
+
+          For the given RL−circuit, wWhere  E =  E  sin t ω  is the impressed voltage.
+                                                  0
+                          I
+          Find the current  ( ) t  flowing in the circuit.
+          Solution
+
+
+              L  dI  +  RI =  E  sin tω
+                dt         0
+              dI  +  R  I =  E 0  sin tω
+              dt   L      L
+
+                      L ∫
+                      R dt
+                     e    =  e ( / R L )t
+
+
+                                                  R
+                                              ∫ e ( / )Lt dt
+                                               L  ( /)Lt
+                                                   R
+                             +  sin tω         R  e
+                                              ( ) 2  ( / )Lt
+                                                L
+                                                      R
+                             −  ω  cos t        R   e
+                                       ω
+
+                             +  −  ω  2 sin t ω
+
+                 ∫  E L 0  (sin tω  )e ( / ) Lt dt =  E L 0 ( sin tω  L ω−  cos tω  ) e ( /) Lt  ω −  2  E L 0 L 2 2  (sin tω  )e ( /) Lt dt
+                                                                                   R ∫
+                                                                                                  R
+                                                                    R
+                                 R
+                                                       R
+                 E      LE ω  2                       E
+                                                                                 R
+                                              R
+                   0   1+  R ∫     (sin tω  )e ( / ) Lt dt =  0 ( sin t  L ω−  cos t ) e ( / ) Lt
+                                 
+                            0
+                                                               ω
+                                                                           ω
+                  L         2                          L          R
+                                
+                 ∫  E L 0  (sin tω  )e ( / )Lt dt =  R 2  2 L 0 ( sin tω  R ω−  cos tω  ) e ( /)Lt
+                                                      E
+                                                                               R
+                                 R
+                                                                  L
+                                          1 LE ω
+                                            +
+                                                 0</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1155 - ODE Solution</title>
+        <title>Page 1155 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1155 - ODE Solution</div>
+        <div id="content-top1">Page 1155 - DE Solution</div>
         <div id="content-top2">P. 1155</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  5  9 
-            A         
-                   1 11 
-
-                        
-                      5         9
-             A    I
-               
-                          1  11 
-                                 
-                        2  16     64 
-                                      0
-            Thus, the eigenvalues are:     8
-                                       1,2
-                                     
-            For     8       A      I V   0
-                 1                 1   1
-
-                                 0
-                           x
-                  3  9                                 3   
-                              
-                                   x   3y       V    
-                                                          1
-                                 0
-                           y
-                  1  3                                  1 
-                                        3   
-               The solution is:  x t       e 8t
-                                  ( )
-                                1        1 
-            For the second eigenvector V         AV   V
-                                        2           2    1
-                  3  9      3  
-                           x
-                                     x  3y  1
-                           y
-                                 1
-                  1  3      
-                                                   2
-                  if    y  1   x   2     V     
-                                              2     1 
-                                         2       8t                             t 
-                                               3 
-               The solution is:  x  ( ) t       t e                   x  ( ) t   e   V   V t  
-                                                      
-                                 2       1     1                           2           2     1
-                                             
-                                            3 
-                        3    8t     2       8t
-            x  ( ) t   C  e    C         t e
-                                                   
-             h        1         2          1  1
-                        1
-                 5a  9a    2            5   9               2  9             5     2
-                
-                         2
-                   1
-                                                  64             32    2          32
-                                                          1
-                    a 1 11a   6        1 11              6 11               1  6
-                         2
-                                                       1 
-                       a   1   a    1       x      2 
-                        1   2    2     2         p     1 
-                                                        
-                                                       2 
-                                                          1 
-                          3    8t    2       8t     2 
-                                             3 
-               ( x  ) t   C  e    C        t e  
-                                                    
-                                                            
-                       1         2          1  1      
-                         1
-                                                           1
-                                                          2 
+    <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1145
 
 
+                                a +  21b =  3       3        63
+                                − 21ab    0 ⇒  a =  442  b =  442
+                                     +=
+
+                    The particular solution (steady-state solution):
 
 
+                         x  (t ) =  3  cos3t +  63  sin3t
+                          p      442         442
 
 
+                    The homogeneous eq.: x′′ +    7x′ +  10x =  0
+
+                    The characteristic eq.: λ     2  +  7 +  λ  10 =  0   ⇒    λ  1  =  −  5,   λ  2  =  −  2
+
+                     x  () t = Ce −  5t  + C e −  2t
+                      h       1        2
+
+                     xt     3  cos3t +  63  sin3t C e+  −  5t  +  C e −  2t  x (0) =  −  1,   (0) =  x′  0
+                      ( ) =
+                           442         442          1        2
+                                                                            (
+                                                                 0
+                         x () 0 =  3  cos3() +  0  63  sin3( ) 0 +  Ce −  5( )  +  C e −  2 0)
+                               442           442            1          2
+                          1
+                        −=     3  + C + C
+                             442     1    2
+                        C +  C =   −  445
+                          1    2     442
+
+                     x′ ( ) t =  −  9  sin3t +  189  cos3t −  5Ce −  5t  −  2C e −  2t
+                             442         442           1         2
+                                                                                 0
+                                                                    0
+                         x′ () 0 =  −  9  sin3() 0 +  189  cos3() 5Ce−  0  −  5()  −  2C e −  2()
+                                 442           442             1            2
+                        5C +   2C =  189
+                           1      2   442
 
 
+                         C +  C =   −  445
+                           1    2    442
+                        
+                         5C +  2C =   189
+                           1      2   442
 
-                                                          1134</code></pre>
+                        C =   83     C = −   71
+                          1   102      2    39
+
+
+                                                    ()
+                    Transient response solution:  xt =    83 −  e  5t  −  71 −  e  2t
+                                                   h      0 1 2     39
+                    The general solution:  ( )x t =  3  cos3t +  63  sin3t +  83 −  e  5t  −  71 −  e  2t
+                                               442         442        102        39</code></pre>
      	</div>
     
      </div>

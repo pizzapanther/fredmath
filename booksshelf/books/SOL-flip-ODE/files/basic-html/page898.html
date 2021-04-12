@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 898 - ODE Solution</title>
+        <title>Page 898 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 898 - ODE Solution</div>
+        <div id="content-top1">Page 898 - DE Solution</div>
         <div id="content-top2">P. 898</div>
      </div>
      <div id="content-middle">
@@ -152,63 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                       e
-                    y   t   1   e 2t    1  2t   C
-                           e 2t      2
-
-                          1  1   e  4t    Ce   2t
-                               2
-
-                                       1 1
-                          y   0  1       1   C    C   1
-                                              2                2
-
-                    y   1t    1   e  4t    1   e  2t
-                              2        2
-                b)  h   0.2
-                       Euler Method
-                             t            Approx.             Exact             Difference
-                          -----------------------------------------------------------------
-                           0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                           0.20   |   0.80000000   |   0.88950446   |   0.08950446
-                           0.40   |   0.79013421   |   0.87628378   |   0.08614957
-                           0.60   |   0.83370122   |   0.89476187   |   0.06106065
-                           0.80   |   0.88207714   |   0.91943284   |   0.03735570
-                           1.00   |   0.92109384   |   0.94149018   |   0.02039633
-
-                        Runge-Kutta 2nd Order
-                             t            Approx.             Exact             Difference
-                            --------------------------------------------------------
-                            0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                            0.20   |   0.89506710   |   0.88950446   |   -0.00556264
-                            0.40   |   0.88149624   |   0.87628378   |   -0.00521246
-                            0.60   |   0.89823186   |   0.89476187   |   -0.00346999
-                            0.80   |   0.92127837   |   0.91943284   |   -0.00184552
-                            1.00   |   0.94219199   |   0.94149018   |   -0.00070181
-
-                        Runge-Kutta 4th Order
-                             t            Approx.             Exact             Difference
-                            --------------------------------------------------------
-                            0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                            0.20   |   0.88960071   |   0.88950446   |   -0.00009625
-                            0.40   |   0.87638272   |   0.87628378   |   -0.00009894
-                            0.60   |   0.89483774   |   0.89476187   |   -0.00007587
-                            0.80   |   0.91948402   |   0.91943284   |   -0.00005118
-                            1.00   |   0.94152197   |   0.94149018   |   -0.00003179
+    <pre style="white-space:pre-line"><code>888 | S O LU TI O N
 
 
+                 y′′ =  6at +  2b
+
+              y′′ +  3y′ +  4y =  t 3
+                         (   2         ) (     3    2         )   3
+              6at +  2b +  33at +  2bt +  c +  4 at +  bt +  ct +  d =  t
+
+              6at +  2b +  9at +  2  6bt +  3c +  4at +  3  4bt +  2  4ct +  4d =  t 3
+
+              4at +  3  (9a +  4b )t +  2  (6a +  6b +  4c )t +  2b +  3c +  4d =  t 3
+
+                      4a =  1      →   a =  1
+                                           4
+                    9a +  4b =  0
+                 
+                  6a +  6b +  4c =  0
+                 
+                  2b +  3c +  4d =  0
+
+                             b = − 9 a = −  9
+                                  4      16
+                         6    6      3 1   39    15
+                 ⇒   c =  −  a −  b =  −  +    =  32
+                         4    4      2 4   2 16
+                                             9
+                         d =  −  1 b −  1 d =  − 128
+                    
+                                     2
+                                2
+                                                   9
+                                                                 9
+             The particular solution:  y p ( ) t =  1 t −  3  16 t +  2  15 t −  128
+                                             4
+                                                          32
 
 
+          Exercise
 
+          Find the particular solution for  y′′ +  2y′ +  2y =  2 cos2t
+                                                         +
+          Solution
 
+              y′′ +  2y′ +  2y =  2 when y = 1
 
+             The particular solution:  z =  Ae  2 it
 
+                           2
+                      z′ =  ( ) Aei  2 it
+                              2
+                           2i
+                      z′′ = ( ) Ae  2 it
+              z′′ +  2z′ +  2z =  e  2 it
 
-
-
-
-                                                               885</code></pre>
+              ( ) Aei  2  2 it  +  2 ( ) Aei  2 it  +  2Ae  2 it  =  e  2 it
+               2
+                             2
+               2
+              ( ) Ai  2  +  2 ( ) A +  2A =  1
+                         2i
+              ( 44i− +  +  ) 2 A = 1
+                             −
+              A =    1   ⋅  − 2 4i
+                  − 2 4i −+  2 − 4i
+               =  −  2  −  4  i
+                   10   10</code></pre>
      	</div>
     
      </div>

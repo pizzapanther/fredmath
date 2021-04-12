@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1465 - ODE Solution</title>
+        <title>Page 1465 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1465 - ODE Solution</div>
+        <div id="content-top1">Page 1465 - DE Solution</div>
         <div id="content-top2">P. 1465</div>
      </div>
      <div id="content-middle">
@@ -152,95 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                     
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
-             x  1 y  6xy  12y 
-                   
-              2
-                                     0
-                                                                                  
-                                                            n
-                                                                                            n
-            x 2     n n    1 a x n  2    n   2 n    1 a n 2 x  6x  na x n  1   12  a x   0
-                                                                         n
-                                                                                         n
-                            n
-               n 2                  n 0                          n 1             n 0
-                                                                       
-                                                                   n 
-                         n 
-                  n n    1 a x   n  2 n    1 a n 2  6na x      12a x 
-                                                                     n
-                                                                                   n
-                            n
-                                                       n
-                                                      x 
-                                                                                       0
-                                                                                 n
-            n 2                n 0                       n 1          n 0
-                                                                       
-                         n 
-                                                                   n 
-                  n n    1 a x   n  2 n    1 a n 2  6na x      12a x 
-                                                                                   n
-                                                                     n
-                                                       n
-                            n
-                                                      x 
-                                                                                       0
-                                                                                 n
-            n  0               n  0                      n  0         n  0
-             
-                                                    
-                   n   2 n       n  7n  12 a n      x   0
-                                                           n
-                                          2
-                              1 a n 2               
-            n 0
-             n  1 n    2 a n 2   n  3 n    4 a 
-                                                     0
-                                                 n
-                    n   3 n    4
-            a                    a
-              n 2  n   1 n    2  n
-                   a                                                  a
-                     0                                                 1
-             n   0     a   6a                            n  1      a   a
-                        2     0                                       3    1
-             n   2     a   1 a   a                      n   3      a   5  0
-                        4   6  2     0
-             n   4      a   0
-                        6
-
-                             2
-                        
-                                    
-            y   x   a   1 6x   x 4   x   x 3 
-                                      a
-                     0                 1
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1451
 
 
-        Exercise
-                                            
-                                     
-                                        2
-        Find a power series solution.   x  1 y  8xy  12y 
-                                                              0
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n   1         n   0
-                                                          1436</code></pre>
+
+                            A =  −  192  B =  96  C =  −  2  D =  −  1
+                                  125       125         25        5
+
+                                                                                            
+                     £  −  1 { Ys     −  1     −  192  1  +  96  1  −  2   1    −  1   1     
+                             ( )} £=
+                                                  (
+                                           125  2 s −  1 )  125 s + 2  25  (s +  ) 2  2  5  (s +  ) 2   3
+                                                     2                                      
+
+                                                               2 −
+                     y ( ) t =  −  96  e t /2  +  96 −  e  2t  −  2  te −  2t  −  1 t e  2t
+                             125       125        25         5
+
+
+                 Exercise
+
+
+                 Solve using the Laplace transform:    2y′′ +  20y + ′  51y =  0, y ( ) 20 =  , y′ ( ) 00 =
+
+                 Solution
+                         £  {2y′′ +  20y′ +  51y =  } 0
+
+
+                                          0
+                         y ( ) 0 =  2 y′ ( ) 0 =
+                       2
+                     2s Y  ( ) 2sys −  ( ) 0 −  2y′ ( ) 0 +  20sY  ( ) 20s −  y ( ) 0 +  51Y ( ) 0s =
+                                    )
+                     ( 2s +  2  20s +  51 Ys  4s +  40
+                                      ( ) =
+
+
+                      ( ) =
+                     Ys          4s + 40
+                            2 s + (  2  10s +  51 )
+                                         2
+                          =    2s +  20
+                            (s +  ) 5  2  +  1
+                                      2
+                                                           1
+                          =         2s      2  +  20        2      2
+                                                  2
+                            (s +  ) 5  2  +      1      (s +  ) 5  2  +      1    
+                                        2                     2 
+
+                                                                          1          
+                     £  −  1 {Y s     −  1      2 s       + 10 2          2          
+                             ( )} £=
+                                                2     2   2            2     2   2 
+                                          (s +  ) 5  +    2      (s +  ) 5  +    2    
+                                                                                
+
+
+                     y ( ) t =  2e −  5 t  cos  2 2  t + 10 2e −  5t  sin  2 2  t</code></pre>
      	</div>
     
      </div>

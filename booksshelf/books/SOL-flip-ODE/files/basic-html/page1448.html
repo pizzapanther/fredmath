@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1448 - ODE Solution</title>
+        <title>Page 1448 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1448 - ODE Solution</div>
+        <div id="content-top1">Page 1448 - DE Solution</div>
         <div id="content-top2">P. 1448</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-             Find a power series solution.   x    2 y   xy   y   0
-
-             Solution
-                         
-                               n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n  1          n  0
-                                               
-                                                                      n
-                 y   x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                      n
-                         n  2                 n  0
-
-                 x    2 y   xy   y   0
-                                                                       
-                                                                    n
-                                               n
-                                                                                n
-                                                                   x 
-                 x    2  n   2 n    1 a n  2 x   x  n    1 a n  1  a x   0
-                                                                             n
-                       n 0                         n 0                n 0
-                                                                                               
-                    n  2 n    1 a n 2 x n  1      2 n   2 n    1 a n 2  n    1 a n 1 x n  1   a x  0
-                                                                                                         n
-                                                                       n
-                                                                      x 
-                                                                                                      n
-                 n 0                         n 0                         n 0                  n 0
-                                                                              
-                                                                         n 
-                      n n    1 a n  1    2 n  2 n    1 a n  2  na x   a x   0
-                                  n
-                                                                            n
-                                                               n
-                                                                                        n
-                                                              x 
-                                 x 
-                                                                                     n
-                 n 1                 n  0                        n 1         n  0
-                                                                                               
-                                                                                             0 
-                                         2 
-                                                                           2 
-                      n n    1 a n  1 x   4a    2 n   2 n    1 a n  2 x   4a   a n  n  x  a   a n x  0
-                                                                                        n
-                                                                                                         n
-                                  n
-                                                                     n
-                 n  1                       n 1                               n  1            n 1
-                             
-                                                                            
-                                   
-                                                                                 n
-                4a    a   0   n n    1 a     2 n  2 n    1 a    n  1 a  x   0
-                   2                      n  1                 n  2        n
-                            n 1
-                        4a   a   0      a   1  a    a
-                          2    0            2   4  0     1
-                          n n    1 a n  1     2 n  2 n    1 a n  2   n    1 a 
-                                                                        0
-                                                                    n
-                        a           n  1     a       n    a       n  1, 2,
-
-                         n  2     2 n   2 n    1  n   2 n    2  n  1
-                    a    1 a    1  a
-                     3     6  2      4 2  0
-                    a     1  a   1  a    1  a   1  a   0
-                     4     24  2   4  3     96  0   96  0
-                    a     1  a   3  a   1  a
-                     5     20  3   10  4   480  0
+    <pre style="white-space:pre-line"><code>1434 | S O LU TI O N
 
 
-                                                              1419</code></pre>
+
+              y ( ) t =  3  +  9 t +  3 t +  2  3 t +  3  1 e 2t  −  13 te 2t
+                     4  8    2      2     4      8
+
+
+          Exercise
+
+                                                             =
+                                                                                  0
+          Solve using the Laplace transform:    x′′  4x′ +  +  4x t 2 ; x ( ) 0 =  x′ ( ) 0 =
+          Solution
+              £  {x′′ +  4x′ +  4x } £=  { }
+                                      2
+                                     t
+               2
+                                                                                         0
+              s Xs        ( ) 0 −  x′ ( ) 0 +  4sXs  ( ) 0 +  4Xs  2       x ( ) 0 =  x′ ( ) 0 =
+                                                           ( ) =
+                  ( ) sx−
+                                           ( ) 4x−
+                                                                 s 3
+              ( s +  2  4s +  4 Xs  2
+                         )
+                            ( ) =
+                                  s 3
+              Xs          2     =  A  +  B  +  C  +  D  +  E
+                ( ) =
+                      s 3 (s +  ) 2  2  s 3  s 2  s  s +  2  (s +  ) 2  2
+                         As +  2  4As +  4A +  Bs +  3  4Bs +  2  4Bs +  Cs +  4  4Cs +  3  4Cs +  2  Ds +  4  2Ds +  3  Es =  3  3
+
+                           s 4      C +  D =  0     →  D =  −  9
+                                                            16
+                            3                                3
+                            s   B +  4C +  2D +  E =  0  →  E =  −
+                                                            8
+                            2                               9
+                           s     A +  4B +  4C =  0  →  C =  16
+                          
+                           s 1     4A +  4B =  0    →  B =  −  3
+                                                             4
+                            0
+                            s   4A =  3 →  A =  3
+                                              4
+
+
+              £   −  1 {Xs       −  1       3 1  −  3 1  +  9 1  −  9  1  −  3  1      
+                       ( )} £=
+                                       4  s 3  4  s 2  16 s  16 s + 2  8  (s +  ) 2  2   
+
+              x ( ) t =  3 t −  2  3 t +  9  −  9 −  e  2t  −  3 −  te  2t
+                    8     4    16 16         8
+
+
+          Exercise
+
+          Solve using the Laplace transform:    y′′ +  4y =  4t −  2  4t + 10 ; y ( ) 0 =  , 0  y′ ( ) 30 =
+
+          Solution
+
+                                            }
+              £  {y′′ +  4  } y £=  { 4t −  2  4t +  10</code></pre>
      	</div>
     
      </div>

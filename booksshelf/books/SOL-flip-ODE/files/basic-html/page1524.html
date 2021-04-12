@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1524 - ODE Solution</title>
+        <title>Page 1524 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1524 - ODE Solution</div>
+        <div id="content-top1">Page 1524 - DE Solution</div>
         <div id="content-top2">P. 1524</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>y   1  y   1  y   0
-                 x      x    1  3
+    <pre style="white-space:pre-line"><code>1510 | S O LU TI O N
 
 
-            P ( ) x    1  Q ( ) x   1
-                     x              x    1  3
+                                             E  ( ) s
+             a)  Find the transfer function of   o
+                                             E  ( ) s
+                                               i
+             b)  Solve the transfer function under the conditions  R = 100 Ω  C = 10 − 4  f
 
-            For  ( ) x   1    x   0
-                P
-                         x
-                p ( )  x  x    1 is analytic at  x   0
-                       x
+             c)  Find the transfer function in function in time.
+          Solution
 
-            For  ( ) x   1          x  1
-                Q
-                        x    1  3
+                               E  ( ) s −  E  ( ) s
+                         Is
+             a)  For C:  () =    i       0
+                                    1 Cs
+                               (        )
+                             =  E −  E 0  Cs
+                                 i
 
-                        x    1  2
-                q ( )           1    is not an analytic at  x  1
-                  x
-                        x    1  3  x  1
-            The Regular singular point:  x    0 , and Irregular singular point:  x   1
+                                      ()
+                                    ⋅
+                 For R:    E  ( ) s =  R Is
+                           0
+                              ()
+                             Is
+                   E −  E =
+                   i    0    s C
+                                Is
+                                 ()
+                 E −  R Is
+                          () =
+                        ⋅
+                   i            s C
+                        (
+                 E =  IR +    1  )
+                   i         s C
+                         E
+                 Hs        o
+                    ( ) =
+                         E
+                           i
+                        =    RI ⋅
+                           (
+                                 1
+                          IR +  s C )
+                        =  RC  s
+                          RC  s + 1
+                        =     s
+                           s +  1
+                             RC
 
-
-
-        Exercise
-
-        Determine all the singular points of the given differential equation and classify each singular point as
-        regular or irregular
-                  3    
-                                         0
-                 x  4x y  2xy  6y 
-        Solution
-
-            y    2x     y     6     y  0
-                 x x     2  4   x x     2  4 
-
-
-            P ( ) x    2x         Q ( ) x    6
-                     x x     2  4        x x     2  4 
-
-
-            For  ( ) x    2x          x   0,   2i
-                P
-                          
-                            2
-                         x x   4 
-                p ( )     2   is analytic at  x     2i
-                  x
-                          2
-                         x  4
-            For  ( )Q x   6           x  0,    2i  is analytic
-                         
-                           2
-                        x x   4 
-            The Regular singular points:  x   0,    2
-                                                  i
+             b)  R = 100 Ω   C = 10 − 4  f
 
 
+                 H  ( ) s =     s
+                          s +    1
+                               2
+                             10 10 − 4
+
+                        =    s
+                           s + 100
 
 
+                    ( )
+             c)  Hs =        s
+                          s + 100
 
 
-
-
-
-
-
-
-
-                                                          1494</code></pre>
+                           =  1−  100
+                             s + 100</code></pre>
      	</div>
     
      </div>

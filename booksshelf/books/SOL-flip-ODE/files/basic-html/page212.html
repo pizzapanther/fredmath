@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 212 - ODE Solution</title>
+        <title>Page 212 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 212 - ODE Solution</div>
+        <div id="content-top1">Page 212 - DE Solution</div>
         <div id="content-top2">P. 212</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                                                 
-        Solve the initial value problem:   y  1 y  cos ,x  y   2
-        Solution
-
-            y   cos x y     cos x
-
-                  cos xdx
-                e          e sin x
-                 cos xe sin x  dx e sin x
-                                
-
-                                    
-            y   x   1   e sin x    C
-                   e sin x
-                     
-                    1 Ce  sin x
-                       
-                                  2 1 C 
-                    y     2                C  1
-            y x        sin x
-                1 e
-
-
-        Exercise
-
-                                                
-                                             
-        Solve the initial value problem:   1 x y   y   cos , x  y   0  1
-        Solution
-
-            y   1   y   cos x
-                           
-                 x   1  1 x
-                      1  dx  ln   
-                e  1 x     e  1 x   
-                                     1 x
-                     
-                          
-                  cos x 1 x  dx     sin x
-                  1 x
-                                  
-                              
-            y   x   1  sin x C
-                     
-                   1 x
-                       y   0  1   C   1
-
-            y   x   1  sin x    1
-                     
-                   1 x
-
-
-        Exercise
-
-                                               1 x  
-        Solve the initial value problem:   y       y  xy ,  y   0 
-                                                                      0
-        Solution
-                            
-            y  1 x y    1 x
+    <pre style="white-space:pre-line"><code>206 |  S O L UT I ON
 
 
 
 
-                                                          208</code></pre>
+              −  9.86e − 1.2t  +  8.1667t −  1936.28 =  0
+              t ≈  237  se    c
+
+
+          Exercise
+
+          An object of mass 5 kg is released from rest 1000 m above the ground and allowed to fall under the
+
+                                                                                      2
+          influence of gravity. Assume the gravitational force constant, with  g =  9.8  m/s , and the force due to
+          air resistance is proportional to the velocity of the object with proportionality constant
+          κ = 50 N-sec/m . Determine when the object will hit the ground.
+
+          Solution
+
+             By Newton’s second law:
+
+                            v
+                         −
+              m dv  =  mg κ
+                dt
+              m    dv    = − dt
+                κ v − mg
+                    ( v −
+              m ∫  d κ    mg )  = − ∫  dt
+              κ     κ  v −  mg
+
+              m ln v −  mg = −+   C
+                               t
+                  κ
+              κ                    1
+             κ v −  mg =  Ce −  t κ /m
+
+                                                                   0
+             Given:   m =  5, g =  9.8, κ =  50, v ( ) 0 =  0, x ( ) 0 =
+
+                       e
+              vt    C −    t κ /m  +  ( 5 9.8 )
+               ( ) =
+                    50            50
+                       e
+                  =  C −  10t  + 0.98
+                    50
+                               0
+                        v ( ) 0 =
+                                  =
+                         C  +  0.98 0
+                         50
+                           =
+                        C −   49
+
+              vt    −  0.98e − 10t  +  0.98
+               ( ) =
+
+
+              x ( ) t =  0.98 ∫ ( 1 e−  − 10t ) dt
+
+
+                   = 0.98t + 0.098e − 10t  +  C
+                                           2
+                                0
+                         x ( ) 0 =
+                        C   = − 0.098
+                          2</code></pre>
      	</div>
     
      </div>

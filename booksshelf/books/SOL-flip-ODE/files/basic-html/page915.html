@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 915 - ODE Solution</title>
+        <title>Page 915 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 915 - ODE Solution</div>
+        <div id="content-top1">Page 915 - DE Solution</div>
         <div id="content-top2">P. 915</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                                             
-                                      
-                          
-               e  t   /2 cos5 dt e  t   /2 1 sin5t   50 cos5t  100    e  t   /2 cos5 dt
-                                                            1
-                                                1
-                         t
-                                                                            t
-                              
-                                       5
-                101   e  t   /2 cos5 dt   t   1   e  t /2 10sin5t   cos5t 
-                100                     50
-                  e  t   /2 cos5 dt   t   101 e  t   /2 10sin5t   cos5t 
-                                     2
-                                         
-                                                                                              
-                1 t /2 sin5t  5e t /2 cos5t e  t   dt   101 cos5t  101 sin5t  100 sin5t  101 cos5t e  t   /2
-                                                   10
-                                                                                     10
-                                                               1
-                   e
-                 2
-                                                                         101
-                                                  e  t   /2 sin5t
-                                     
-                     
-                    t
-            y   t   e e  t   /2 sin5t   C
-                                  t
-                    e t /2 sin5t   Ce
-                       y   0   0   C   0
-            y t    t /2 sin5 t
-                e
+    <pre style="white-space:pre-line"><code>2. 4 − I nh om oge ne ous   E qns . :  U nd e r de r t m i n e d  C oe f .    | 905
 
-               Euler Method
-                 t         Approx.               Exact            Difference
-                ------------------------------------------------------------------
-                0.00   |   0.00000000    |   0.00000000    |   0.00000000
-                0.05   |   0.25000000    |   0.25366702    |   0.00366702
-                0.10   |   0.50451846    |   0.50400621    |   -0.00051225
-                0.15   |   0.74778853    |   0.73472762    |   -0.01306091
-                0.20   |   0.96397872    |   0.92996926    |   -0.03400946
-                0.25   |   1.13821003    |   1.07534045    |   -0.06286957
-                0.30   |   1.25756378    |   1.15892383    |   -0.09863994
-                0.35   |   1.31201510    |   1.17216954    |   -0.13984556
-                0.40   |   1.29522788    |   1.11061839    |   -0.18460949
-                0.45   |   1.20515309    |   0.97439874    |   -0.23075435
-                0.50   |   1.04438175    |   0.76845344    |   -0.27592831
-                0.55   |   0.82021731    |   0.50246840    |   -0.31774891
-                0.60   |   0.54444836    |   0.19049209    |   -0.35395627
-                0.65   |   0.23282095    |   -0.14974538   |   -0.38256633
-                0.70   |   -0.09577085   |   -0.49778510   |   -0.40201424
-                0.75   |   -0.42033859   |   -0.83161681   |   -0.41127822
-                0.80   |   -0.71904181   |   -1.12901665   |   -0.40997485
-                0.85   |   -0.97054890   |   -1.36896715   |   -0.39841824
-                0.90   |   -1.15543496   |   -1.53307240   |   -0.37763744
-                0.95   |   -1.25752830   |   -1.60687699   |   -0.34934869
-                1.00   |   -1.26511659   |   -1.58099885   |   -0.31588225
-                1.05   |   -1.17192748   |   -1.45199341   |   -0.28006593
-                1.10   |   -0.97780916   |   -1.22287990   |   -0.24507073
-                1.15   |   -0.68905162   |   -0.90327826   |   -0.21422665
-                1.20   |   -0.31830941   |   -0.50912823   |   -0.19081882
-                                                          902</code></pre>
+
+                            A =  −  6,  B =  −  2
+
+                                         x
+                     y   =  −  6cos x −  2sin
+                      P
+
+                     y ( ) x =  C e − x  +  C e 2x  −  6cos x − 2sin   x
+                             1        2
+
+
+                 Exercise
+
+
+                                                              +
+                 Find the general solution:   y′′ −  y′ +  1  y =  3 e x /2
+                                                       4
+                 Solution
+
+                    The characteristic equation: λ      2  λ −+  1  = 0
+                                                           4
+
+                         λ    =  1
+                          1,2   2
+                                    )
+                     y =  ( C + C x e  x /2
+                      h      1    2
+
+                                 2 x
+                             +
+                     y   =  A Bx e   /2
+                      P
+                                           )
+                                          2
+                         y′ = ( 2Bx +  1  Bx e x /2
+                          P          2
+                                                )
+                         y′′ =  ( 2Bx +  1  Bx +  2  2B e x /2
+                          P          4
+                     y′′ −  y′ +  1  y =  3 e x /2
+                                     +
+                              4
+                                                             )
+                     ( 2Bx +  1  Bx +  2  2B −  2Bx −  1  Bx +  2  1  Bx e x /2  +  1  A =  3 e+  x /2
+                                                            2
+                                                        4
+                                                                     4
+                            4
+                                                2
+                                 1  A = 3 A = 12
+                                 4
+                                  B
+                            x 0  2 =  1   B =  1
+                                              2
+                                  2 x
+                     y   = 12 +  1  x e  /2
+                      P        2
+                      ( ) (
+                                      )
+                                                      2 x
+                     y x =   C +  C x e  x /2  +  12 +  1  x e  /2
+                                                   2
+                              1
+                                    2
+
+
+                 Exercise
+
+                 Find the general solution:   y′′ +  y′ +  1  y e x (sin3x −  cos3x )
+                                                          =
+                                                       4
+                 Solution</code></pre>
      	</div>
     
      </div>

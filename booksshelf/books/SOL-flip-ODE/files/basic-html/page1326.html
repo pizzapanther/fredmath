@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1326 - ODE Solution</title>
+        <title>Page 1326 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1326 - ODE Solution</div>
+        <div id="content-top1">Page 1326 - DE Solution</div>
         <div id="content-top2">P. 1326</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1312 | S O LU TI O N
 
-                                                              ,
-             Derive three equations for the unknown currents  I  I  , and  I  with thegiven values of the given electric
-                                                             1   2        3
-             circuit shown below, then find the general solution
-                    R   R   1  , C  1 F   , and  L   1 H .
-                     1     2
-             Solution
 
-                Applying Kirchhoff’s voltage law to Loops 1 and 2.
-                             q
-                Loop 1:           R I   0
-                             C     2 2
-                Loop 2:      R I    R I   LI   0
-                               2 2    1 3      3
-                  I     I   I   0   I   I   I  0
-                   1   2    3            1    2   3
-                     dq
-                 I 
-                 1    dt
-                 R   R   1  , C  1 F   , and  L   1 H
-                  1    2
-                 q   I                   1
-                      2
-                
-                             
-                 I   2  I   3  I         2
-                             3
-                
-                 q   I   I   0    3
-                
-                       2
-                            3
-                  1       q  I 
-                              2
-                   3  I   I  I 3
-                
-                               2
-                        2
-                
-                   2  I   3  I   2  I  3
-                
-                                       1                            1   1
-                                1 
-                       
-                     A    I                                  A         
-                                         
-                                 1       1                         1   1 
-                               2  2     2 
-                                           0
-                The eigenvalues are:      
-                                             1 i
-                                      1,2
-                                              
-                For       1 i       A        I V   0
-                      1                    1    1
-                      i      1    a   1    0             i   
-                                        a   ib 1    V    
-                                                            1
-                                              1
-                                                                 1
-                      1   i       b   1     0           
-                             
-                        i    1 i   t
-                 z ( ) t      e
-                        1 
-                        0    
-                               1 
-                           i      cost i  sint e  t 
-                        1
-                              0
-                        0        1         1       0       
-                                         
-                         cost    sint i   cost    sint       e  t 
-                        1         0           0         1       
-                                                        
 
-                                                              1305</code></pre>
+                                                          
+                       (1 st )sint t −  cost  2s (cost +  s sin  ) t    st  ∞
+                        −
+              Fs                         −                  e   −
+               () = 
+                           s +  2  1         (  2   ) 2         0
+                                              s +  1      
+                                                          
+                  =    2s
+                    ( s + 1 ) 2
+                      2
+
+
+
+
+          Exercise
+
+                                                                                ( ) t=
+          Use Definition of Laplace transform to find the Laplace transform of   f t  cost
+          Solution
+
+
+                              t
+              F ( ) = ∫ 0 ∞ t  cos  e − st dt
+                s
+
+
+                                               t
+                                           ∫ cos  dt
+
+                            te − st          sint
+                                − st
+                              )
+                          −
+                        (1 st e             − cost
+                                 )
+                          2
+                        ( st − 2s e − st
+
+
+                 ∫  t cost e −  st dt =  (t sint +  (1 st )cost e −  st  −  s 2 ∫  t cost e −  st dt +  2s ∫  cost e −  st dt
+                                                     )
+                                            −
+
+
+
+                                               t
+                                          ∫ cos  dt
+
+                              e − st        sint
+
+                            − se − st      − cost
+                              2 − st
+                             se
+
+                     ∫  cost e −  st dt =  ( sint −  s cost )e −  st  −  s 2 ∫  cost e −  st dt
+
+
+
+
+                     ( s +  2  1 ) ∫ cost e −  st dt =  ( sint s cost )e −  st
+                                                 −</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 637 - ODE Solution</title>
+        <title>Page 637 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 637 - ODE Solution</div>
+        <div id="content-top1">Page 637 - DE Solution</div>
         <div id="content-top2">P. 637</div>
      </div>
      <div id="content-middle">
@@ -152,110 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Find the particular solution for  y   2y   y  10e  2t  cost
-
-             Solution
-
-                The particular solution:  y    e  2t   cost   A  B sin   t
-                                         P
-                 y   2e   2t  cost   B sin   t  e   2t  A sint   B cost 
-                                                    
-                             A
-                                                       
-                    e  2t    B   2A cost   A   2B sint
-                                                                                              
-                                                                      
-                 y   2e   2t    B   2A cost   A   2B sint     2t    2A B sint   A  2B cost
-                                                          e
-                                                         
-                    e  2t    3A  4B cost   4A  3B sint
-                 y   2y   y  10e  2t cost
-
-                    2t                                     2t
-                                                     2e
-                e       3A  4B cost  4A   3B sint      B  2A cost   A  2B sint 
-                          
-                                                 10e
-                                 e   2t  cost   B sint     2t  cost
-                                  A
-                   3A  4B   2B  4A   A cost  4A  3B   2A  4B   B sint 
-                                                                             10cost
-                     8A    6B   10
-                                                         3
-                                   A   80    4  B  
-                      6A   8B   0     100    5        5
-                           
-                                          
-                          t
-                                         t
-                 y    e  2 4 cost   3 sin
-                  P         5       5
+    <pre style="white-space:pre-line"><code>1. 8 − B a s ic  E le c tr i c a l  C ir c u it  | 631
 
 
-             Exercise
-
-                                                             2
-                                                                              5t
-                                                                       2 t
-             Find the particular solution for  y  4y   4y  5t  6t  4t e  3e
-             Solution
-                                        3
-                                              2
-                Characteristic equation:   4   4       2  2   0      0,      2
-                                                                          1       2,3
-                                                            2t
-                Homogeneous equation:  y   C   C  C t  e
-                                        h    1     2    3
-                                              
-                                                                            
-                                                             
-                                                  2
-                                                                  2
-                                                                                    5t
-                                                                              t
-                                                                         
-                                                        
-                The particular solution:  y   t At   Bt C    Et   Ft G e     He
-                                         P
-                                                                   
-                                                                            5t
-                          2
-                                                                     t
-                                                         2
-                                                  t
-                                 
-                                                               
-                 y  3At   2Bt C    2Et  F e   Et   Ft G e    5He
-                  P
-                                                                
-                                                                  t
-                                                                         5t
-                          2
                                           2
-                                 
-                      3At   2Bt C    Et  2E   F t   F  G e   5He
-                                                                              
-                                                                                        5t
-                                                 t
-                                                                                t
-                                                        2
-                 y   6At   2B  2Et  2E   F e   Et  2E   F t   F  G e  25He
-                  P
-                                                                 
-                                    2
-                                                                           5t
-                                                                   t
-                      6At   2B   Et   4E   F t   2E   2F  G e  25He
-                                                                              
-                                                  2
-                                                                                t
-                                           t
-                                                                                         5t
-                 y  6A  2Et  4E   F e   Et   4E   F t   2E   2F  G e  125He
-                  p
-                                                               625</code></pre>
+                                       RE                                       
+                                                                       R
+                                                                                 
+                      ( ) =
+                     It        1           0    ( sin tω  L ω−  cos tω  ) e ( / ) Lt  +  K
+                                             22
+                                       +
+                           e ( / RL   )t    L E L ω     R                        
+                                          0
+                                 2
+                               RE
+                                                                   RL
+                          =         0    ( sin t ω  Lω cos t ω −  ) +  Ke − ( /)t
+                                    22
+                            L +  E L ω            R
+                                  0
+                                 ( It =  ) 0 =  I
+                                           0
+                                          2
+                                −  Lω   RE   0    +  K =  I
+                                  R  L +  E L ω          0
+                                             2 2
+                                           0
+                                            ω
+                                           RE
+                                K =  I +        0
+                                     0   1+  E Lω 2
+                                              0
+                                2
+                                                                       ω
+                               RE                                    R E        ( /)t
+                     I ( ) t =     0    ( sinω  t  Lω cos t ω −  ) +    I +  0    e −  RL
+                            L E L ω  +  22        R            0  1 E Lω  +  2 
+                                 0                                     0      
+
+
+                 Exercise
+
+
+                 For the given RL−circuit
+                 Which has a constant impressed voltage E, a resistor of resistance R, and a coil of impedance L.
+                                 I
+                 Find the current  ( ) t  flowing in the circuit.
+                 Solution
+
+                     L  dI  +  RI =  E
+                       dt
+                     dI  +  R  I =  E
+                     dt   L     L
+
+                            L ∫  R dt
+                            e   =  e ( / R L )t
+
+                        ∫  E  e ( / ) Lt dt =  EL e ( / R L )t
+                               R
+                           L
+                                         LR
+
+                                       =  E  e ( /RL )t
+                                         R
+
+
+                      ( ) =
+                     It        1       E  e ( / RL )t  −  K   
+                           e ( / RL   )t  R       
+                         =  E  − Ke − ( /RL )t
+                            R
+                                 ( It =  ) 0 =
+                                          0</code></pre>
      	</div>
     
      </div>

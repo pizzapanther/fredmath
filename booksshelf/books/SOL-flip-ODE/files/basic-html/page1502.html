@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1502 - ODE Solution</title>
+        <title>Page 1502 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1502 - ODE Solution</div>
+        <div id="content-top1">Page 1502 - DE Solution</div>
         <div id="content-top2">P. 1502</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a                                   a                                   a   0
-                            0                                   1                                    2
-                    n  1      a   2 a                    n  2     a   1 a      n  3     a   2  a   0
-                              3   3  0                                 4   4  1                 5   20  2
-
-                    n   4     a   1  a   1  a           n  5      a   0       n   6      a   0
-                               6   30  3   45  0                       7                        8
-
-                    n   7     a    2  a     1  a      n  8      a    0      n  9      a    0
-                               9     8 9   6  1,620   0              10                        11
+    <pre style="white-space:pre-line"><code>1488 | S O LU TI O N
 
 
 
-                                       3
-                 y   x   a      1  2  x    1   1  x    1  6    1  x    1  9         a   x    1   1 x    1  4 
-                         0    3          45           1,620                1          4
-                            
-                         0         4 x  1  n     1  3n    1      4 
-                 y   x   a   n                     a 1  x    1   4 x    1
-                           n 0  3  3n   1 3n    4 n !
+                               +
+                        s =  ( A Bs +  )  2  (0.1B C s +  )  4π 2 A +  0.1C
+                                              +
+
+                            AB =    0
+                               +
+                        
+                        
+                                +
+                          0.1B C =   0
+                           2
+                          4π  A +    0.1C =  1
+                        ⇒  A =    100       B =  −  100      C =     10
+                                 +
+                                                   +
+                                                                   +
+                               1 400  π  2       1 400  π  2     1 400  π  2
+                          A        Bs          C     
+              Is =  () 8π     +           +          
+                         s + 0.1  s +  2  4π  2  s +  2  4π  2  
+
+                           100       1        100        s          10         1    
+                   =  8π              0.1 −        22        2  +        22       2  
+                                                                   +
+                                             +
+                          +
+                         1 400  π  2 s +   1 400  π  s +  4 π   1 400  π   s +  4 π  
+                                  π
+                                                        π
+              It        8         100 £  −  1 {  1  } −  100 £  −  1     s      +  10π  1  £  −  1     2π        
+               ( ) =
+                    1 400π  +  2          s +  0.1               s +  2  4π  2  2π         s +  2  4π   2   
+                                 π
+                  =     8    ( 100 e  t −  /10  100 cos2 t +  π−  π  5sin 2 t )
+                                                               π
+                    1 400π+  2
 
 
-             Exercise
+          Exercise
 
 
-                                                                     
-             Find the series solution near the given value  y    x    1 y e x  ; nea r  x  1
-             Solution
+          Solve the general initial value problem modeling the RC circuit
+                          dQ    1
+                        R     +   Q =   , E  Q ( ) 0 =  0
+                           dt   C
 
-                     
-                                 n
-                 y      a n   x    1
+             Where E is a constant source of emf
 
-                     n 0
-                                         
-                                  n 1                       n
-                 y     na n  x    1    n    1 a n 1 x    1
-
-                     n  1               n  0
-                                                 
-                                         n 2                              n
-                 y       n n    1 a n  x    1    n  1 n    2 a n 2  x    1
-                     n  2                       n  0
-
-                             
-                 y  x    1 y e x  1 1 
-                                                                                                
-                    n  1 n    2 a n 2  x    1  n   x    1   a n  x    1  n    e e   x 1    e    x n ! n
-                                                                                             x
-                 n  0                                 n  0                                     n 0
-                                                                              n
-                    n  1 n    2 a n 2   x    1  n    a n  x    1  n 1    e   x  ! n   1
-
-
-                 n 0                            n 0                  n 0
-                                                                         x   n
-                     n  1 n    2 a     x    1  n    a  x    1  n    e    1
-                                   n  2               n   1                   ! n
-                 n   0                          n 1                  n   0
-
-
-
-
-
-                                                              1473</code></pre>
+          Solution
+               £      dQ  +  1  Q £ ( )
+                               
+                                      E
+                                =
+                               
+                    dt  RC          R
+                               1
+                                    () =
+                  () Q
+               sQs   −   (0) +  RC  Qs   E  1        Q (0) =  0
+                                         R s
+               ( s +  RC ) Qs   E  1
+                     1
+                          () =
+                                R s
+                 () =
+               Qs      E     1
+                          (
+                       R  ss +  RC )
+                               1
+                                                               +
+                                                    As +  1  A Bs
+                             1      =  A  +  B    =      RC
+                                               1
+                               1
+                                                             1
+                         ss +  (  RC )  s  s +  RC     ss +  (  RC )</code></pre>
      	</div>
     
      </div>

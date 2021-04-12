@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1512 - ODE Solution</title>
+        <title>Page 1512 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1512 - ODE Solution</div>
+        <div id="content-top1">Page 1512 - DE Solution</div>
         <div id="content-top2">P. 1512</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                                        
-                                                              0
-        The Hermite equation of order α  is  y  2xy   2 y 
-            a)  Find the general solution is    x   y  a y    x   a y    x
-                                                   0 1       1 2
-                          y
-               Show that    x  is a polynomial if α  is an even integer, whereas  y    x  is a polynomial if α is an
-                           1                                                     2
-               odd integer.
-
-                                                                                             4
-                                                                                  2
-                          n
-                                                                           0
-                                 y
-            b)  When   , use    x  to find polynomial solutions for  n  ,  n  , and  n  , then use  y    x
-                                  1                                                                       2
-               to find polynomial solutions for  n  1,  n  3, and  n  .
-                                                                    5
-            c)  The Hermite polynomial of degree n is denoted by  H    x . It is the nth-degree polynomial solution
-                                                                   n
-                                                                                                     n
-                                                                                               n
-               of Hermite’s equation, multiplied by a suitable constant so that the coefficient of  x  is 2 . Use part
-               (b)  to show the first six Hermite polynomials are
-                        x 
-                   H     1
-                     0
-                   H     x   2x
-                     1
-                   H     x   4x   2  2
-                      2
-                        x 
-                   H     8x   3  12x
-                     3
-                                4
-                                       2
-                        x 
-                   H     16x     48x   12
-                      4
-                                5
-                                        3
-                        x 
-                   H     32x    160x    120x
-                     5
-            d)  A general formula for the Hermite polynomials is
-                                        2
-                                      e
-                       H       1x     n x d n      e  x 2    
-                         n                dx   n    
-               Verify that this formula does in fact give an nth-degree polynomial.
-        Solution
-                        
-                              n
-            a)    x     a x
-                y
-                            n
-                       n 0
+    <pre style="white-space:pre-line"><code>1498 | S O LU TI O N
 
 
+                       −  1  −  1                  2
+                                      2
+                                                               2
+                 ∆=              = − s − 1 ∆    =  s +  2  −  1  =  s + 1
+                   1   1   s +  2  2          2    −  1   1
+
+                        −  ( s +  2  1 )
+              X  ( ) s =
+               1       s +  4  4s +  2  3
+
+                               2
+                     = −     s +  1
+                        ( s +  2  1 s +  )(  2  3 )
 
 
+                 £  −  1 { X 1 ( )} = £  −  1       −  s + 3    
+                                             1
+                            s
+                                           2
+                             t
+              x  ( ) t = − sin 3
+               1
+                             2
+              X  ( ) s =    s + 1      =   1
+                2      ( s +  2  1 s +  )(  2  3 )  s + 3
+                                          2
 
-                                                          1482</code></pre>
+                 £  −  1 { X 1 ( )} = £  −  1       −  s + 3    
+                                             1
+                            s
+                                           2
+
+              x  ( ) t = − sin 3    t
+               1
+
+
+          Exercise
+
+                                  it
+                            it
+                                             it
+          Solve the currents  ( ) ,  ( )  and  ( )  in the given electrical network.
+                            1      2          3
+                                                     h
+          Given  R =  5 Ω  L =  0.01 , L =   0.0125 , E =    100  V  and  ( ) 0 = 0 i  ( ) 0 =
+                                    h
+                                                                        i
+                                                                                           0
+                            1             2                              2          3
+          Solution
+              i = i + i
+              1    2   3
+                        ′
+               Ri +  1  L i =  12  E ( ) t
+              
+                        ′
+               Ri +  1  L i =  23  E ( ) t
+              
+                 Ri +  Ri +  L i = ′  E ( ) t
+                2     3    12
+                              ′
+               Ri +  2  Ri +  3  L i =  23  E ( ) t
+              
+                5i +   2  5i +  3  .01i = ′ 2  100
+              
+                5i +  2  5i +  3  .0125i = ′ 3  100
+
+                  5I 2  ( ) 5s +  I 3  ( ) .01ss +  I 2 ( ) is −  2  ( ) 0 =  100
+              
+               5I 2  ( ) 5I+  s  3  ( ) .0125sI+  s  3  ( ) i −  s  3  ( ) 0 =  100
+              </code></pre>
      	</div>
     
      </div>

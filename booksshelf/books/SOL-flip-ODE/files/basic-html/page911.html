@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 911 - ODE Solution</title>
+        <title>Page 911 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 911 - ODE Solution</div>
+        <div id="content-top1">Page 911 - DE Solution</div>
         <div id="content-top2">P. 911</div>
      </div>
      <div id="content-middle">
@@ -152,55 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Runge-Kutta 4th Order
-
-                  t             Approx.            Exact              Difference
-                -----------------------------------------------------------
-                0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                0.10   |   1.00498757   |   1.00498756   |   -0.00000001
-                0.20   |   1.01980393   |   1.01980390   |   -0.00000003
-                0.30   |   1.04403071   |   1.04403065   |   -0.00000006
-                0.40   |   1.07703304   |   1.07703296   |   -0.00000008
-                0.50   |   1.11803409   |   1.11803399   |   -0.00000010
-                0.60   |   1.16619050   |   1.16619038   |   -0.00000012
-                0.70   |   1.22065569   |   1.22065556   |   -0.00000013
-                0.80   |   1.28062498   |   1.28062485   |   -0.00000013
-                0.90   |   1.34536254   |   1.34536240   |   -0.00000013
-                1.00   |   1.41421369   |   1.41421356   |   -0.00000013
-
-                   Runge-Kutta 2th Order
-                  t             Approx.             Exact             Difference
-                -----------------------------------------------------------
-                0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                0.05   |   1.00124844   |   1.00124922   |   0.00000078
-                0.10   |   1.00498447   |   1.00498756   |   0.00000309
-                0.15   |   1.01118058   |   1.01118742   |   0.00000684
-                0.20   |   1.01979199   |   1.01980390   |   0.00001191
-                0.25   |   1.03075829   |   1.03077641   |   0.00001812
-                0.30   |   1.04400537   |   1.04403065   |   0.00002528
-                0.35   |   1.05944783   |   1.05948101   |   0.00003317
-                0.40   |   1.07699136   |   1.07703296   |   0.00004160
-                0.45   |   1.09653524   |   1.09658561   |   0.00005037
-                0.50   |   1.11797470   |   1.11803399   |   0.00005929
-                0.55   |   1.14120301   |   1.14127122   |   0.00006821
-                0.60   |   1.16611337   |   1.16619038   |   0.00007701
-                0.65   |   1.19260047   |   1.19268604   |   0.00008557
-                0.70   |   1.22056174   |   1.22065556   |   0.00009382
-                0.75   |   1.24989830   |   1.25000000   |   0.00010170
-                0.80   |   1.28051568   |   1.28062485   |   0.00010917
-                0.85   |   1.31232426   |   1.31244047   |   0.00011621
-                0.90   |   1.34523959   |   1.34536240   |   0.00012281
-                0.95   |   1.37918245   |   1.37931142   |   0.00012898
-                1.00   |   1.41407885   |   1.41421356   |   0.00013471
+    <pre style="white-space:pre-line"><code>2. 4 − I nh om oge ne ous   E qns . :  U nd e r de r t m i n e d  C oe f .    | 901
 
 
-                   Runge-Kutta 4th Order
-                  t            Approx.              Exact            Difference
-                -----------------------------------------------------------
-                0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                0.05   |   1.00124922   |   1.00124922   |   -0.00000000
+                                                                   2
+                     y ( ) Cx =  1  +  C e − x  +  2x −  5  10x +  4  10x −  3  120x +  242   x
+                                   2
 
-                                                          898</code></pre>
+
+                 Exercise
+
+                 Find the general solution for the given DE:   y′′ −  y′ =  5e −  x  sin 2x
+
+                 Solution
+
+                    The characteristic equation: λ      2  λ −  =  0
+                         λ 1,2  =  0, 1
+
+
+                     y =  C +  C e x
+                      h     1    2
+
+                     y   =  Axe +  x  B cos2x +  D sin 2x
+                      P
+                                                        D
+                         y′ =  ( A +  Ax )e −  x  2 sin 2x + B  2 cos2x
+                          P
+                         y′′ =  (2A +  Ax )e −  x  4 cos2x − B  4 sin 2x
+                                                         D
+                          P
+                     y′′ −  y′ =  5e −  x  sin 2x
+
+                                                                                    D
+                     (2A +  Ax )e −  x  4 cos2x − B  4 sin 2x − D  ( A +  Ax )e +  x  2 sin 2x − B  2 cos2x =  5e −  x  sin 2x
+                        x
+                                                                    x
+                     Ae +−         2D )cos2x + (2B −  4D )sin 2x =  5e − sin 2x
+                           ( 4B −
+                                A = 5
+                             −  4B −  2D =  0
+                            
+                             2B −  4D =  −  1
+                            
+
+                            A =  5,  B =  −  1  ,  D =  1
+                                         10       5
+
+
+                                                   x
+                     y   =  5xe −  x  1  cos2x +  1 sin 2
+                      P           10         5
+                                                1
+                     yx      1   C e +  2  x  5xe −  x  10 cos2x +  1 sin 2   x
+                      ( ) C + =
+                                                           5
+
+
+                 Exercise
+
+                 Find the general solution for the given DE     y′′ +  y =  x cos x −  cos x
+                 Solution
+
+                                                 2
+                    The characteristic equation: λ + 10
+                                                      =
+                        λ    =  ±  i
+                          1,2</code></pre>
      	</div>
     
      </div>

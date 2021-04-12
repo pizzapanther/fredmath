@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 282 - ODE Solution</title>
+        <title>Page 282 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 282 - ODE Solution</div>
+        <div id="content-top1">Page 282 - DE Solution</div>
         <div id="content-top2">P. 282</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>y        y
-            Rate out        4  
-                       300       75
-            Rate in      4   1  4
-
-            dy    4   1  y                                      4 L/min
-             dt      75
-            dy    1  y   4                                    1 g/L
-             dt  75
-                  75   1  dt  t /75
-                e        e                                                               4 L/min
-                   t /75 dt    t /75
-                  4e         300e
-
-                                      
-            y   t   1   300e t /75    C
-                   e t /75
-
-                       
-                   300 Ce   t   /75
-                                      
-                    y   0   20   20 300  C
-                          C   280
-
-                       
-            y   t   300 280e  t   /75
+    <pre style="white-space:pre-line"><code>276 | S O LU TI O N
 
 
-        Exercise
+                   ∫  cos tan θ    e −  θ  d = ∫  sin θ    e −  θ  d
+                                     θ
+                         θ
+                                                     θ
 
-        A 100-gallon tank is full of a concentrate solution containing  y  lb . Starting at time t  , Brine
-                                                                                              0
-                                                                     o
 
-        containing c   lb /gal  is then pumped into the tank at a rate of 10 gal/min , and well-stirred mixture is
-                    0
-        withdrawn at the rate10 gal/min  . Find the amount of concentrate in the solution as a function of t.
+                                                   d
+                                           ∫ sinθθ
 
-        Solution
-                           gal     gal 
-                                              
-            V t         10  min   10  min   min
-                100 
-                                         t
-                   100
+                            +      e − θ     − cosθ
+                            −     − e  θ −      − sinθ
 
-            Let y be the amount (in lb.) of additive in the tank at time t and
-                        y          y
-            Rate out          10
-                       100        10
 
-            Rate in  10c
+                            +      e − θ
 
-                         0                                        10 gal/min
-                                                                c     lb/gal
-            dy    10c   1  y                                   0
-             dt      0  10
-            dy    1  y   10c
-             dt  10        0
+                   ∫  sin θ    e −  θ  d θ  ( cosθ =  −  sin θ −  )e −  θ  ∫  sin θ −    e −  θ  d
+                                                                     θ
 
-                  10   1  dt  t /10                                                    10 gal/min
-                e        e
 
-                                                          278</code></pre>
+
+
+                   2 sinθ ∫    e −  θ  dθ  ( cosθ =  −  sinθ −  )e −  θ
+
+
+
+                   ∫ sin θ    e −  θ  d =  θ  1 ( cosθ −  sin θ −  )e −  θ
+                                   2
+
+                                                    )
+              y ( ) θ  =  1  ( 1 ( cosθ −  sin θ −  )e  θ −  +  C
+                     cosθ  2
+
+
+              y ( ) θ =  1 (1 tanθ −  +  )e − θ +  C sec
+                                             θ
+                       2
+
+
+          Exercise
+
+          Find the general solution of   tanθ  dr  − r =  tan θ  2
+                                            dθ
+          Solution
+
+              dr  −  (cotθ  )r =  tan
+                                 θ
+              dθ
+                             d
+                     −  ∫  cotθθ    −  ∫  cosθ dθ
+                   e            =  e   sinθ
+
+                                    − ∫  1   d (sinθ )
+                                 =    e  sinθ
+
+                                 =    e  − ln sinθ
+
+                                 =  1
+                                   sinθ
+
+                   ∫  sin θ    tanθθ = ∫  cos θ  dθ
+                       1
+                                          1
+                                  d</code></pre>
      	</div>
     
      </div>

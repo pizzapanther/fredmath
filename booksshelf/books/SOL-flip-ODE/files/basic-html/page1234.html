@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1234 - ODE Solution</title>
+        <title>Page 1234 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1234 - ODE Solution</div>
+        <div id="content-top1">Page 1234 - DE Solution</div>
         <div id="content-top2">P. 1234</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Find the real and imaginary part of  ( ) t   e 2 t i      1   
-                                               z
-                                                           
-                                                           1 i 
-             Solution
-                             
-                 z ( ) t   cos2t i sin 2t      1   
-                                         
-                                        1 i 
-                                      
-                               cos2t i  sin 2t       
-                                                    
-                              
-                                      
-                         cos2t i sin 2t i cos2t  sin 2t 
-                                      
-                               cos2t i  sin2t         
-                                                     
-                                     
-                         cos2t  sin2t i sin2t  cos2t  
-                                                      T
-                The real part is: cos2 , cos2t    t  sin2t 
-
-                                                            T
-                The imaginary part is: sin2 , sin2t   cos2t 
-                                            t
+    <pre style="white-space:pre-line"><code>1224 | S O LU TI O N
 
 
-             Exercise
-
-             Two tanks, each containing 360 liters of a salt solution. Pure water pours into tank A at a rate of 5 L/min.
-             There are two pipes connecting tank A to tank B. The first pumps salt solution from tank B into tank A at a
-             rate of 4 L/min. The second pumps salt solution from tank A into tank B at a rate of 9 L/min. Finally, there
-             is a drain on tank B from which salt solution drains at a rate of 5 L/min. Thus, each tank maintains a
-             constant volume of 360 liters of salt solution. Initially, there are 60 kg of salt present in tank A, but tank B
-             contains pure water.
-              a)  Set up, in matrix-vector form, an initial value problem that models the salt content in each tank over
-                  time.
-              b)  Find the eigenvalues and eigenvectors of the coefficient matrix in part (a), then find the general
-                  solution in vector form. Find the solution that satisfies the initial conditions posed in part (a).
-                                                                                                    
-              c)  Plot each component of your solution in part (b) over a period of four time constants  0, 4 T c     . What
-                                                                                                    
-                  is the eventual salt content in each tank? Give both a physical and a mathematical reason for your
-                  answer.
-
-             Solution
-                a)  Let  x    t  and  x    t  represent the number of pounds of salt as a function of time.
-                         A           A
-
-                    Tank A:
-                                             x        x
-                       Rate in  5 4        L  A  kg    A  kg  / min
-                                         min 360 L    40
+          Exercise
 
 
+          An RCL circuit connected in series has  R = 180 Ω ,  C =  1  , F  L =  20  H , and applied voltage
+                                                                 280
+                                                                                                       0
+          E ( ) 10sin  Vt =  t  . Assuming no initial charge on the capacitor, but an initial current of 1 A at t =
+          when the voltage is first applied.
+
+             a)  Find the subsequent charge on the capacitor.
+             b)  Plot the transient, steady-state, and the charge on the capacitor.
+             c)  Find the current on the capacitor.
+          Solution
+
+             a)  20q′′ +  180q′ +  280q =  10sint                   Lq′′ +  Rq′ +  1  q =  E ( ) t
+                                                                               C
+
+                                      t
+                 q′ +  ′  9q′ +  14q =  1 sin  ; q ( ) 0 =  0 i ( ) 10 =
+                                 2
+                     λ  2  9 +  λ +  14 0
+                                  =
+                             95
+                     λ   =  − ±
+                      1,2     2
+                         =  −  7, −  2
 
 
+                     t =
+                 q  ( ) C e  −  7t  + C e −  2t
+                   h       1        2
+                 q   =  A cost +  B sint
+                   p
+                   q′ =  −  A sint +  B cost
+                     p
+
+                   q′′ =  −  A cost −  B sint
+                     p
+
+                 q′′ +  9q′ +  14q =  1 sint
+                                 2
+
+                         c s o t  − A +  9B + 14A =  0    13A +  9B =  0
+                                                1     →             1
+                                                        
+                        
+                          i s nt  − B − 9A + 14B =  2   −  9A +  13B =  2
+                        
+                                                        
+                             13   9               0   9              13   0
+                        ∆  =        =  250  ∆  =        =  −  9  ∆  =       =  13
+                             − 9 13          A    1  13     2    B   − 9  1   2
+                                                  2                       2
+                     A =  −  9  , B =  13
+                           500        500
 
 
+                 q  ( ) =  t  −  9  cost +  13  sint
+                   p       500        500
 
-
-
-
-
-                                                              1213</code></pre>
+                                                       13
+                                             9
+                 q ( ) C e=  t  1  −  7t  +  C e −  2t  −  500 cost +  500 sint
+                                   2
+                                           9
+                        q ( ) 0 =  C +  1  C −  500  =  0
+                                      2</code></pre>
      	</div>
     
      </div>

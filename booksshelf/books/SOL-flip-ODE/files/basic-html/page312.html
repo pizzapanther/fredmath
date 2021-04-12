@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 312 - ODE Solution</title>
+        <title>Page 312 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 312 - ODE Solution</div>
+        <div id="content-top1">Page 312 - DE Solution</div>
         <div id="content-top2">P. 312</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  2 dx   2ln x
-                e  x      e
-
-                          x  2
-                   2 2x  2 dx     2x
-                  2x e   x       2 e    dx
-
-
-                                  e 2x
-                           
-            u   x 2  e 2x    C
-
-                  2 2x
-                            2
-            e   y  x e    Cx
-                    2 2x     2 
-            y   ln x  e    Cx
+    <pre style="white-space:pre-line"><code>306 | S O LU TI O N
 
 
 
+                                      =  e +  x  ( 1  x +  1 ) e 2x
+                                                   4
+                                              2
+                                                 )
+              yx      − 2x ( e +  x  ( 1  x +  1 ) e 2x  +  C
+               ( ) e=
+                                 2
+                                      4
+                   =  e −  x  +  1  x +  1  +  Ce −  2x
+                           2     4
 
-        Exercise
-                                                                 2
-                                        x
-        Find the general solution    2 sin cos y y     4x   2  sin y
-                                            y
-        Solution
-            Let u   sin y    u  cos y y   
+
+                     y ( ) 1 −  =  e
+                                      2
+                     ee −  =  1  1  + +  Ce
+                            2   4
+
+                     C =  1 e  2 −
+                         4
+
+              yx     e −  x  +  1  x +  1  +  1 −  e  2x−  2
+               ( ) =
+                           2    4   4
+
+
+          Exercise
+
+                                                 y     − x
+                                                                   e
+          Solve the initial value problem:   y′ +  =  xe  ; y ( ) 1 = − 1
+                                                 x
+          Solution
+                     x ∫  1 dx
+                    e    =  e ln x
+
+                        =     x
+
+                                     ∫ e − x dx
+
+                           +   x   −  e − x
+                                 2
+
+                           −   2x    e − x
+                           +  2      − e − x
+
+                 ∫  x e  x dx =  ( −  x −  2  2x −  2 e −  x
+                                            )
+                     2 −
+
+
+                                     )
+              yx     1  −  ( (  x +  2  2x +  2 e − x  +  C )
+               ( ) =
+                     x
+                           e
+                     y ( ) 1 = − 1
+                     e −=    5e − 1 + C
+                        1 −
+                                e
+                     C =  5e − 1 +− 1
+                                                       )
+                                     )
                            2
-            2xuu   4x   2  u
-
-            u   2x   1  1  u
-                   u   2x
-            u   1  u   2xu  1
-                2x
-
-            Let   v  u 1 1    u 2    u  v 1/2
-                                               1
-                       v   2uu    u   1   u v   1   v  1/2 v
-                                          2         2
-            1   v  1/2 v   1  v 1/2    2xv   1/2      Multiply both sides by  2v 1/2
-            2          2x
-            v   1 v   4x
-                x
-
-                   1 dx   ln x
-                e   x    e
-
-
-                          e ln x  1
-                          x  1
-                  x  1  dx    4dx
-                       4x
-
-                             4x
-            v   x 4x C  
-
-            u   2  4x   2  Cx
-
-            sin y   2  4x   2  Cx
-
-                                                          308</code></pre>
+                                                   e
+              y ( ) x =  1  − ( (  x + 2x +  2 e −  x  + 5e −  1  +− 1
+                     x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 257 - ODE Solution</title>
+        <title>Page 257 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 257 - ODE Solution</div>
+        <div id="content-top1">Page 257 - DE Solution</div>
         <div id="content-top2">P. 257</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             A tank contains 500 gal of a salt-water solution containing 0.05 lb of salt per gallon of water.  Pure water is
-             poured into the tank and a drain at the bottom of the tank is adjusted so as to keep the volume of solution in
-             the tank constant. At what rate (gal/min) should the water be poured into the tank to lower the salt
-             concentration to 0.01 lb/gal of water in less than one hour?
-             Solution
-
-                V ( ) t   500
-
-                 Rate in   0  lb
-                            min
-
-                 Rate  out   r  gal    x ( ) t      lb    r  x ( )  t  lb
-                             min  500   gal   500      min
-                 dx      r  x
-                 dt    500
-                 dx      r  dt
-                 x     500
-                   x       500   dt
-                   dx       r
-
-
-                             
-                ln x    r  t C
-                        500
-                         r  t
-                 x   Ae  500
-
-                           r  0
-                .05   Ae  500      A  .05
-
-                                                                   r  t
-                                                       c t 
-                The concentration at time t is given by:   .05e  500
-
-                The concentration reaches 1% in one hour or 60 minutes.
-                            r  60
-                    
-                .01 .05e   500
-                        6  r
-                .2   e  50
-
-                  6  r   ln.2
-                  50
-
-                r     25 ln.2
-                      3
-                   13.4 gal/min
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 251
 
 
 
+                     y ( ) x =  1  ( −  1 cos2x +  C )
+                            xe x   2
 
 
-             Exercise
-             Suppose that a large tank initially holds 300 gallons of water in which 50 pounds of salt have been
-             dissolved. Pure water is pumped into the tank at a rate of 3 gal/min, and when the solution is well stirred, it
+                 Exercise
 
-             is then pumped out at the same rate. Determine a differential equation for the amount of salt    t  in the
-                                                                                                      x
-             tank at time t  .
-                            0
-             Solution
+                 Solve the differential equation:   xy′ +  (3x +  ) 1 y e=  3x
 
-                                                               253</code></pre>
+                 Solution
+                         (   1 )    e 3x
+                     y′ +  3 +  x  y =  x
+
+
+                           ∫ ( )  dx
+                                1
+                             3+
+                         e      x    = e 3x+ ln x
+                                     =  x e 3x
+
+                        ∫  xe 3x e 3x   dx = ∫  e 3x  dx
+                                 x
+
+
+                                        =  1 e 3x
+                                          3
+                                          )
+                     yx       1  ( e 3x  + C
+                      ( ) =
+                            xe 3x
+                         =  1  + Ce 3x  x &gt; 0
+                            x
+
+
+                 Exercise
+                                                                     4
+                 Solve the differential equation:   xy′ +  (2x −  ) 3 y =  4x
+                 Solution
+
+                         (    3 )      3
+                     y′ +  2 −  x  y =  4x
+
+
+                          ∫ ( )  dx
+                               3
+                             2−
+                            e  x    =  e 2x− 3ln x
+                                      2x −
+                                   = ee    3ln x
+                                         e
+                                   =  x − 32x
+
+                                            ∫
+                        ∫  4x x e      dx =  4 e 2x dx =  2e 2x
+                                 3 2x
+                             3 −
+
+                                              )
+                     yx        1    ( 2e 2x  + C
+                      ( ) =
+                               32x
+                             −
+                            x e
+                                     3 −
+                               3
+                          =  2x + Cx e  2x</code></pre>
      	</div>
     
      </div>

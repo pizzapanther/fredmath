@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 926 - ODE Solution</title>
+        <title>Page 926 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 926 - ODE Solution</div>
+        <div id="content-top1">Page 926 - DE Solution</div>
         <div id="content-top2">P. 926</div>
      </div>
      <div id="content-middle">
@@ -152,23 +152,84 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Lecture 3  Laplace and Linear Systems
+    <pre style="white-space:pre-line"><code>916 | S O LU TI O N
 
 
-                Section 3.1    Definition of Laplace Transform …………………………………………. 911
+              y  =  A cos2x +  B sin 2x
+               P
+                                    B
+                 y′ =  −  2 sin 2x +  A  2 cos2x
+                   P
+                 y′′ =  −  4 cos2x −  A  4 sin 2x
+                                     B
+                   P
+              y′′ +  2y′ +  y =  6sin 2x
 
-                Section 3.2    Basic Properties of the Laplace Transform ………………………………. 923
+                                                                    +
+              −  4 cos2x −  A  4 sin2x −  B  4 sin2x +  A  4 cos2x +  B  A cos2x B sin2x =  6sin2x
+                    cos2x −  3A +  4B =  0
+                   
+                    sin 2x  −  4A −  3B =  6
 
-                Section 3.3    Inverse Laplace Transform ………………………….……………………. 946
+                            − 3  4              0   4              − 3  0
+                        ∆=          =  25  ∆  =       = − 24  ∆  =       =  −  18
+                            −  4  −  3     A    6  −  3        B   − 4  6
 
-                Section 3.4    Using the Laplace Transform to Solve Differential Equations ..…………. 981
+                  A =  −  24 ,  B =  −  18
+                        25         25
 
-                Section 3.5   Introduction & Basic Theory of linear Systems  ………...………………. 1073
-                Section 3.6    Planar Systems – Distinct, Complex, and Repeated Eigenvalues -
 
-                                                Eigenvectors …………..……………………………… 1100
+              y  =  −  24 cos2x −  18 sin 2   x
+               P     25         25
+                               )
+              yx =  ( ) ( C +  C x e − x  −  24 cos2x −  18 sin 2
+                                                         x
+                       1    2         25          25
 
-                Section 3.7    Phase Plane Portraits & Applications …………………………………… 1221</code></pre>
+
+          Exercise
+
+                                                    (  2   )  2x           x
+          Find the general solution:   y′′ −  2y′ +  y =  x −  1 e  +  (3x +  ) 4 e
+
+          Solution
+
+             The characteristic equation: λ      2  2 + 10
+                                                      =
+                                                 λ −
+                 λ    = 1
+                  1,2
+                             )
+              y =  ( C + C x e  x
+               h     1     2
+                                 )
+                                                    )
+                                                      x
+                                                  2
+                              +
+              y  =  ( Ax +  2  Bx C e 2x  +  ( Dx +  3  Ex e
+               p
+                                                                                   )
+                                                   )
+                                                                                     x
+                                                                                  2
+                 y′ =  ( 2Ax +  B +  2Ax +  2  2Bx +  2C e 2x  +  ( 3Dx +  2  2Ex +  Dx +  3  Ex e
+                   p
+                                                         )
+                                                                                                     )
+                                                                                                       x
+                                                                                                    2
+                 y′′ =  ( 2A +  8Ax +  4B +  4Ax +  2  4Bx +  4C e 2x  +  ( 6Dx +  2E +  6Dx +  2  4Ex +  Dx +  3  Ex e
+                   p
+                           (  2   )  2x           x
+              y′′ −  2y′ +  y =  x −  1 e  +  (3x +  ) 4 e
+                  e 2x  x 2       A = 1
+                 
+                 
+                        x      4 +  AB =  0    →   B =  −  4
+                         0
+                                     +
+                       x   2A +  2B C =  −  1  →   C =  5</code></pre>
      	</div>
     
      </div>

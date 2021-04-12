@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 328 - ODE Solution</title>
+        <title>Page 328 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 328 - ODE Solution</div>
+        <div id="content-top1">Page 328 - DE Solution</div>
         <div id="content-top2">P. 328</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>        ye xy    1         dx
-                          y
-
-                e xy    x   h   y
-                      y
-
-                 xe xy    x    h   y   xe xy    x
-              y            2                   2
-                          y                   y
-                  h   y  0   h   y   C
+    <pre style="white-space:pre-line"><code>322 | S O LU TI O N
 
 
-            e xy    x    C
-                  y
+                                                                 t
+                                  ∫ sin3t  dt                  ∫ e   dt
+                                                        3      t
+                              t
+                        +    e    − 1 cos3t     +      t      e
+                                    3
+                                                         2
+                                                               t
+                                                 −     3t     e
+                              t
+                         −  e    −  1 sin3t     +      6t      t
+                                    9
+                              t                               e
+                                                               t
+                        +    e                   −      6     e
+
+              ∫  e t +  t (  3  sin3t   dt =  ∫  t e  d   t +  ∫  e t  sin3 dt t
+                             )
+                                      3 t
+
+                 ∫  e t  sin3 dt  t =  e −  t (  1 cos3t +  1 sin3t −  )  1 ∫  e t  sin3 dt t
+                                              9
+                                                        9
+                                     3
+                 ( )    ∫ e t  sin3 dt =  t   1 t (sin3t −  3cos3t )
+                     1
+                                        e
+                  1+
+                                       9
+                     9
+                 10 ∫ e t  sin3 dt  t =  1 t  (sin3t − 3cos3t )
+                                     e
+                  9                9
+                 ∫  e t  sin3 dt = 10 e  (sin3t − 3cos3t )
+                                 1 t
+                          t
 
 
-        Exercise
-
-                                                                     
-        Find the general solution  tan x  sin sin   y dx   cos cos y dy 
-                                               x
-                                                               x
-                                                                           0
-        Solution
-                                                
-                    
-                                 x
-                                                       x
-            M   , x  y   tan x  sin sin y  N   , x  y  cos cos y
-                 M      sin cos y
-                           x
-                  y                     M     N
-                                           
-                 N      sin cos y     y    x 
-                           x
-                  x 
-               tan x  sin sin   y  dx
-                             x
-
-                ln sec x  cos sin y   h   y
-                             x
-                cos cos y   h   y  cos cos y
-                      x
-                                         x
-              y
-              h   y  0   h   y   C
-
-            ln sec x   cos sin y   x  C
-
-
-
-        Exercise
-                                                                      
-                                                       
-                                       3
-                                             2
-                                                              2
-                                                                            0
-        Find the general solution    2x   xy   2y  3 dx   x y   2x dy 
-        Solution
-                         3
-                                                        2
+              ∫  e t +  t (  3  sin3t   dt =  ∫  t e  d   t +  ∫  e t  sin3 d
+                             )
+                                      3 t
+                                                       t t
+                                                          1 t
+                                 =  ( t −  3  3t +  2  6t −  6 e + )  t  10 e  (sin3t −  3cos3t )
+                                                                        )
+                                           2
+                                                                 3
+                                     3
+                                                      1
+                                 = ( t − 3t + 6t −+   10 sin3t − 10 cos3te t
+                                                  6
+                                                                    )
+                                                             )
+                                                               t
+                          3
                                2
-                    
-                                                  
-            M   , x  y   2x   xy  2y   3 N  , x  y   x y   2x
-                 M    2xy  2
-                  y                   M    N
-                                        
-                 N      2xy   2   y     x 
-                  x 
-
-
-
-                                                          324</code></pre>
+                                       6
+              y ( ) t =  1  ( (  t − 3t + 6t −+  1  sin3t −  3  cos3te + C
+                     e t                  10        10
+                      3
+                           2
+                                   6
+                   = t − 3t +  6t −+   1  sin3t −  3  cos3t +  Ce  t −
+                                      10        10
+                            0
+                     y ( ) 0 =
+                     − 6 −  3  +  C = 0
+                          10
+                     C  =  63
+                         10
+                           2
+                     3
+                                                             e
+                                   6
+              y ( ) t =  t − 3t + 6t −+  1  sin3t −  3  cos3t +  63 − t
+                                      10        10         10</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1456 - ODE Solution</title>
+        <title>Page 1456 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1456 - ODE Solution</div>
+        <div id="content-top1">Page 1456 - DE Solution</div>
         <div id="content-top2">P. 1456</div>
      </div>
      <div id="content-middle">
@@ -152,99 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                                            
-                    n   2 n    1 a n 2 x n  2    n  2 n    1 a n 2  n    1 a n 1 x n  1    a x   0
-                                                                                                        n
-                                                                      n
-                                                                     x 
-                                                                                                     n
-                 n 0                         n 0                        n 0                  n 0
-                                                                          
-                      n n    1 a x   n   2 n    1 a n 2  na x     a x    0
-                                                                      n 
-                              n 
-                                n
-                                                            n
-                                                                        n
-                                                                                    n
-                                                          x 
-                                                                                  n
-                 n 2               n 0                        n 1        n 0
-                                                
-                                           n 
-                              n 
-                      n n    1 a x   na x          n  2 n    1 a n 2    a n     x   0
-                                             n
-                                n
-                                                                                n
-                 n 2               n 1         n 0
-                                                                              
-                      n n    1 a x   a x   na x   2a   a 0   6a   a 1      n   2 n    1 a n 2   a   n   x  0
-                                    1 
-                                                                          
-                                                 n
-                                                                                                             n
-                                n
-                                                                
-                                                                            x 
-                                               n
-                             n
-                                                                     3
-                                                        2
-                 n  2                   n 2                                  n  2
-                                    
-                                                      
-                              3 
-                                                                                 n
-                                          2
-                2a    a   6a x         n     1 a   n   2 n    1 a    x   0
-                                              n n
-                   2    0                             n                 n 2   
-                                   n 2
-                 2a   a   0    a    1  a
-                   2    0           2   2  0
-                
-                   6a x   0         a   0
-                     3                3
-                n  1 n    1 a   n  2 n    1 a   0
-                              n                  n 2
-                a         n  1  a
-                  n 2    n   2 n
-                        a                                                a
-                         0                                                1
-                  n   0    a   1  a                         n   1       a   3  0
-                            2   2  0
-                  n   2     a    1 a    1  a             n   3     a   2 a   0
-                             4    4  2     2 3  0                         5     5  3
-                                            
-                  n   4     a    3 a   1 3  a             n   5      a   7  0
-                             6    6  4   2  3!  0
-                                           3
-                  n   6     a   5 a   1 3 5    a
-                                            4
-                            8     8  6     2  4!  0
+    <pre style="white-space:pre-line"><code>1442 | S O LU TI O N
 
-                                  
-                          
-                  a        1  n 1 1 3 5   2n    3  a  n    2
-                                       n
-                    2n                2   ! n    0
-                                 2          4         6        8     
-                 y   x   a    1  1  x   1  x   1 3  x  1 3 5  x      a x
-                                       2
-                                                  3
-                         0    2      2  2!     2  3!     2  4!          1
-                                                             4
-                                                2n          
-                                  2
-                               1
-                                 x 
-                        a 0     1 2    1  n 1    3 !! x 2n       a x
-                                                     n
-                                                                    1
-                                                   2   ! n    
-                                     n 2                      
-                                                              1427</code></pre>
+
+          Exercise
+
+                                                                      0
+          Solve using the Laplace transform:    y′′ − 6y′ + 9y t =  ; y ( ) 0=  , y′ ( ) 10 =
+
+          Solution
+              £  {y′′ −  6y′ +  9  } y £  { } t
+                               =
+
+               2
+                                       s
+              s Ys       ( ) 0 −  y′ ( ) 0 −  6 Y ( ) 6ys +  ( ) 0 +  9Ys  1     y ( ) 0 =  0 y′ ( ) 0 = 1
+                                                          ( ) =
+                  ( ) sy−
+                                                                s 2
+                         )
+              ( s −  2  6s +  9 Ys  1  +  1
+                            ( ) =
+                                  s 2
+                        2
+             Y ( ) s =  s + 1   =  A  +  B  +  C  +  D
+                     s 2 (s −  ) 3  2  s  s 2  s − 3  (s −  ) 3  2
+                      s 3       AC =   0        C =  −  2
+                                  +
+                                                      27
+                                                      10
+                      s   2  −  6AB+  −  3C +  D =  1  D =
+                                                      9
+                     
+                       s      9A −  6B =  0      A =  2
+                                                      27
+                       0                              1
+                      s          9B = 1           B =  9
+                     
+
+              £  −  1 {Ys  =   −  1       21  +  1 1  −  2  1  +  10  1      
+                      ( )} £
+                                      27 s  9  s 2  27 s − 3  9  (s −  ) 3  2   
+
+
+              y ( ) t =  2  +  1 t −  2  e +  3t  10 te 3t
+                    27   9    27       9
+
+
+          Exercise
+
+                                                                                               4
+          Solve using the Laplace transform:    y′′ −  6y′ +  15y = 2sin3 , t  y ( ) 0 =  , 1 −  y′ ( ) 0 = −
+          Solution
+              £  {y′′ −  6y′ +  15y }( ) s £  {2sin3ts
+                                                }( )
+                                    =
+               2
+              s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 −  6sY  ( ) 6ys +  ( ) 0 +  15Y  ( ) s =  6     y ( ) 0 =  −  1,  y′ ( ) 0 =  −  4
+                                                                  2
+                                                                 s + 9
+              ( s − 6s + 15 Y s ++ − =         6
+                          )
+                2
+                             ( ) s
+                                     4 6
+                                              2
+                                             s + 9
+              ( s − 6s + 15 Y ( ) s =  6  −+  2
+                          )
+                2
+                                           s
+                                   2
+                                  s +  9</code></pre>
      	</div>
     
      </div>

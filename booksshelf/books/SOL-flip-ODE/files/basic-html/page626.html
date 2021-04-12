@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 626 - ODE Solution</title>
+        <title>Page 626 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 626 - ODE Solution</div>
+        <div id="content-top1">Page 626 - DE Solution</div>
         <div id="content-top2">P. 626</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        A spring and dashpot system is to be designed for a 32-lb  weight so that the overall system is critically
-        damped
-          a)  How must the damping constant c and the spring constant k be related?
-          b)  Assume the system is to be designed so that the mass, when given initial velocity of  4 ft/sec  from its
-              rest position, will have a maximum displacement of  6 in. What values of damping constant c and
-
-              spring constant k are required?
-          c)  It is observed that the time interval between successive zero crossing is 20% larger for the damped
-              vibration displacement than for the undamped vibration displacement. What is the damping constant
-              c? (Spring constant k remains same from part (b)).
-
-        Solution
-
-            a)   32  y   cy   ky   0                 my   cy  ky   F    t
-                32
-                y  cy  ky  0
-                                                       2
-                     2
-                             k
-                      c     0             c   c   4k
-                                          1,2         2
-               Since the system is critically damped, then:
-                                  2
-                 2
-                c  4k   0     c   4k   c   2 k
-            b)  y  2 k y  ky  0 ;    y   0   , 0  y   0 
-                                                         4
-                         c
-                     1,2    2
-                                
-                y t      C   C t e  ct /2
-                         1    2
-                       y   0   0   C   0
-                                       1
-                                             
-                    y   t   C   c  C   c  C t e  ct /2
-                             2
-                                        2
-                                 2
-                                    1
-                                           2
-                       y   0   4  C   c C   4 C    4
-                                      2   2  1        2
-                y   t   4te  ct /2
-                y   4t     2ct e  ct /2    0   t   2
-                                                    c
-                         8  1   6   1
-                      2
-                y t   c    c e    12    2
+    <pre style="white-space:pre-line"><code>620 | S O LU TI O N
 
 
-                c   16    5.886  lb.sec/ft
-                    e
+          Exercise
 
-                k   64    8.66  lb ft
-                                /
-                    e 2
+          An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
 
-            c)  Since, the time interval     between successive zero crossing is 20% larger of undamped .
+                ()  and no charge on the capacitor at t = . Find the ensuing charge current in the current at
+          E =  Et                                      0
+                               ( ) 10 2t
+          time t for the given Et  =  −
+
+          Solution
+
+              dI  +  0.1I =  10 2t            L dI  +  RI =  E ()
+                            −
+                                                           t
+              dt                                dt
+                   ∫ .1dt
+                    e    =  e t /10
 
 
-                                                          614</code></pre>
+                                          −
+                 ∫ (10 2t e−  )  t /10 dt =  (100 20t +  200 )e t /10
+
+
+                                          −
+                                   = (300 20t  ) e t /10
+                                               )
+              I  ( ) t =  e − 10t ( (300 20t e−  )  t /10  +  K
+
+                        −
+                  =  300 20t +  K e − 10t
+                         I ( ) 0 =
+                               0
+                         K  = − 300
+
+
+              I ( ) 300 20tt =  −  −  300e  t −  /10
+
+
+          Exercise
+
+          An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
+
+                ()  and no charge on the capacitor at t = . Find the ensuing current in the current at time t for
+          E =  Et                                      0
+                     ( )
+          the given Et =  4cos3t
+
+          Solution
+              dI  +  0.1I =  4cos3t           L dI       E ()
+                                                           t
+              dt                                dt  +  RI =
+                   ∫ .1dt
+                    e    =  e t /10                         ∫ 4cos3t  dt
+
+                                                            4
+                                             +     e t /10    3 sin3t
+                                                  1 t /10     4
+                                             −   10 e       − 9 cos3t
+                                                  1   t /10
+                                             +   100 e</code></pre>
      	</div>
     
      </div>

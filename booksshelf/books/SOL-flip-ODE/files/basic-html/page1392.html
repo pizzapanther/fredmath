@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1392 - ODE Solution</title>
+        <title>Page 1392 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1392 - ODE Solution</div>
+        <div id="content-top1">Page 1392 - DE Solution</div>
         <div id="content-top2">P. 1392</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>f     2  f    3    3  f    4    4
-                                                                    0
-                                                       0
-                                           0
-                 P    x   f    0   f    0 x   x   x       x
-                  4                      2!          3!          4!
-                                 2
-                     x 
-                 P    1    2  x     4  x 4
-                  4          2       24
-
-
-             Exercise
-
-
-             Find the nth Maclaurin polynomial for the function   f    x   xe x , n   4
-
-             Solution
-
-                 f    x   xe x    f    0 
-                                          0
-                          x
-                 f     x   e   xe x    f     0  1
-
-                           x
-                 f    x   2e   xe x    f    0   2
-
-                           x
-                 f    3e   xe x    f    0 
-                     x 
-                                                  3
-                             x
-                 f    4    x   4e   xe x    f    4    0   4
-
-                                        f     2  f   3    3  f   4    4
-                                                                    0
-                                           0
-                                                       0
-                 P    x   f    0   f    0 x   x   x       x
-                  4                      2!          3!          4!
-                              2
-                                     3
-                 P    x    x   1  x   1  x 4
-                         x
-                  4               2     6
-
-
-             Exercise
-                                                                          2 
-             Find the nth Maclaurin polynomial for the function   f    x   x e  x , n   4
-             Solution
-
-                         2 
-                 f    x   x e  x    f    0 
-                                            0
-                                  2 
-                 f     x   2xe   x    x e  x    f     0   0
-
-                                        2 
-                                    x
-                 f    x   2e   x    4xe   x e  x    f    0   2
-
-                                           2 
-                 f    x   6e  x   6xe  x    x e  x    f    0  
-                                                                 6
-                                            2 
-                 f    4    12x   e  x   8xe  x    x e  x    f    4    0  12
-
-                                        f     2  f   3    3  f   4    4
-                                                       0
-                                                                    0
-                                           0
-                 P    x   f    0   f    0 x   x   x       x
-                  4                      2!          3!          4!
-                          2
-                               3
-                 P    x   x   x   1 x 4
-                  4                2
+    <pre style="white-space:pre-line"><code>1378 | S O LU TI O N
 
 
 
-                                                              1363</code></pre>
+              f ( ) t £   − 1 { 11  −  1 1 3 }
+                   =
+                                 3 s +
+                           3 s
+                           e
+                   =  1 t −  1 − 3t
+                     3    3
+
+
+          Exercise
+
+
+          Find the inverse Laplace Transform of    ()Fs =  s + 1
+                                                         2
+                                                        s −  4s
+          Solution
+
+
+              f ( ) t = L  −1     s + 1    
+                            ( ss −  ) 4  
+                     s + 1  =  A  +  B
+                    ( ss −  ) 4  s  s −  4
+                                  +
+                        =
+                   s + 1 As −  4A Bs
+                    s   A +  B =  1  B =  5
+                                       4
+
+                   s 0  −  4A =  1  A =  −  1
+                                       4
+
+
+              f  ( ) t £=    − 1 { −  11  +  5 1 4 }
+                             4 s
+                                   4 s −
+                   =  −  1 t +  5 e 4t
+                       4    4
+
+
+          Exercise
+
+
+                                                 Fs
+          Find the inverse Laplace Transform of     () =   1
+                                                          3
+                                                         s + 5s
+          Solution
+                                     +
+               () =
+              Fs       1    =  A  +  Bs C
+                     s +  3  5s  s  s +  2  5
+                   As +  2  5A Bs +  2  Cs =  1
+                             +
+                    s 2  A +  B =  0
+                   
+                     1
+                    s    C =    0
+                     0
+                    s    5A = 1
+                   </code></pre>
      	</div>
     
      </div>

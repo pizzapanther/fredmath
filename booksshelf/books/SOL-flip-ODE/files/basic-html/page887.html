@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 887 - ODE Solution</title>
+        <title>Page 887 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 887 - ODE Solution</div>
+        <div id="content-top1">Page 887 - DE Solution</div>
         <div id="content-top2">P. 887</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>q   100 cos10t  100 sin10t
-                                          B
-                            A
-                   p
-                q   40q  625q  100cos10t
-
-                        cos10t   100A   400B  625A  100
-                       
-                        sin10t    100B   400A  625B   0
-                                                             11025    400 B   
-                           525A    400B   100              16              100
-                                            
-                             400A   525B   0  A   21 B
-                                                     16
-                   B   64  ,  A   84
-                        697        697
+    <pre style="white-space:pre-line"><code>2. 3 − H a r mo n i c  M o tio n  | 877
 
 
-                q    84  cos10t   64  sin10t
-                 p   697          697
-                                                  
-                                                      84
-                                                                   64
-                q   t   e  20t  C 1 cos15t  C 2  sin15t   697 cos10t   697 sin10t
-                       q   0   0   C     84
-                                              9
-                                       1     6 7
-                                                                                   
-                 q   e  20t   20C 1 cos15t  20C 2  sin15t  15C 1 sin15t  15C 2  cos15t   840 sin10t   640 cos10t
-                                                                                       697
-                                                                                                   697
-                       q   0   0   20  84   15C   640    0
-                                        697       2  697
+                 Exercise
 
-                             C     464
-                                2     2091
-                                                       
-                                            464
-                               84
-                                                           84
-                                                                        64
-                q   t   e  20t   697 cos15t   2091 sin15t   697 cos10t   697 sin10t
-                                        
-            b)    t   q     1  e  20t   5040cos15t  9280sin15t  3780sin15t  6960cos15t 
-                I
-                            2091
-                                    840  sin10t   640 cos10t
-                                    697         697
+                 A spring and dashpot system is to be designed for a 32-lb  weight so that the overall system is
+                 critically damped
 
-                        1  e  20t  1,920cos15t  13,060sin15t    840 sin10t   640 cos10t
-                        2091                                      697         697
-                                                                                            
-                                
-                                                                 
-                       
-            c)  lim q t    lim e  20t    84  cos15t   464  sin15t   84  cos10t   64  sin10t
-                t        t           697          2091           697          697
-                                                     
-                                                    t
-                lim e  20t    84  cos15t   464  sin15    0     q : is steady state solution
-                t          697          2091                      p
-                lim   84  cos10t   64  sin10t     
-                t   697          697
+                   a)  How must the damping constant c and the spring constant k be related?
+                   b)  Assume the system is to be designed so that the mass, when given initial velocity of  4 ft/sec
+                      from its rest position, will have a maximum displacement of 6 in. What values of damping
+                      constant c and spring constant k are required?
+                   c)  It is observed that the time interval between successive zero crossing is 20% larger for the
+                      damped vibration displacement than for the undamped vibration displacement. What is the
+                      damping constant c? (Spring constant k remains same from part (b)).
+
+                 Solution
+
+                    a)   32  y′′ +  cy′ +  ky =  0                  my′′ +  cy′ +  ky =  F ( ) t
+                         32
+                         y′′ +  cy′ +  ky =  0
+
+                            λ  2  cλ +  +=  0
+                                      k
+                                          2
+                                    c
+                            λ    =  −±   c −  4k
+                             1,2         2
+                        Since the system is critically damped, then:
+                        c −  2  4k =  0
+
+                          2
+                        c =  4k
+                        c =  2 k
 
 
+                                                                 4
+                    b)  y′′ +  2 k y′ + ky =  0 ;   y ( ) 0 =  , 0  y′ ( ) 0 =
+                        λ    = − c
+                          1,2    2
+                          ( ) (
+                                         )
+                         y t =  C +  C te  − ct /2
+                                       2
+                                  1
+                                y ( ) 0 = C =  0
+                                        1
+                                                  )
+                         y′ ( ) t =  ( C −  2  c C −  1  c C te − ct /2
+                                                2
+                                             2
+                                      2
+                                            c
+                                y ( ) 0 = C −  2 C = 4
+                                               1
+                                        2
+                                C  =  4
+                                 2
+                         y ( ) t =  4te − ct /2
 
 
+                         y′ ( ) (4 2t =  −  ct )e − ct /2  =  0
 
-
-
-
-
-
-
-
-                                                          874</code></pre>
+                        t =  2
+                            c</code></pre>
      	</div>
     
      </div>

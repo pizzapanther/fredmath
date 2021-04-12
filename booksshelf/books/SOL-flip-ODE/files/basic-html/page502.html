@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 502 - ODE Solution</title>
+        <title>Page 502 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 502 - ODE Solution</div>
+        <div id="content-top1">Page 502 - DE Solution</div>
         <div id="content-top2">P. 502</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                                                                                y
-        Given the mass, damping, and spring constants of an undriven spring-mass system   my    ky  0
-                                                                              y
-                           m  1 kg ,      2 kg s   1kg s  2 ,    (0)   3  ,    (0)   2  / s
-                                              / ,  k 
-                                                                          m
-                                                                                         m
-                                                          /
-                                                                y
-          a)  Provide separate plots of the position versus time (y vs. t) and the velocity versus time (v vs. t)
-          b)  Provide a combined plot of both position and velocity versus time
-          c)  Provide a plot of the velocity versus position (v vs. y) in the yv phase plane.
-        Solution
-
-                     y
-            my     ky      y      y   k  y
-                                        m      m
-                                
-                                      k
-            Let v   y   v    m v   m  y
-
-                              2 v  1 y
-                                1
-                                     1
-                              2v   y
-
-            The following system of the first-order equations:
-
-             y  v                 y (0)   3
-                          with
-                                          2
-             v   2v   y        y    (0)    v (0)
+    <pre style="white-space:pre-line"><code>496 | S O LU TI O N
 
 
+              M   −  N
+                y     x  =  2y +  2y
+                  N         − 2xy
+                             4y
+                        = −
+                            2xy
+
+                        = − 2
+                            x
+
+                 dµ  = −µ
+                          2
+                  dx      x
+                 ∫  dµ  = − 2 ∫  dx
+
+                    µ
+                               x
+                 lnµ= − 2ln x
+
+                 lnµ=  ln x − 2
+
+                 µ=   1
+                     x 2
+
+              1  ( x +  2  y 2 ) dx −  1  2xy y d =  0
+
+              x 2              x 2
+                 y 2     2y
+                1+    dx −  dy =  0
+                  2       x
+                 x  
+                          y 2           2y
+                 M =  1+   2      N =  −  x
+                          x
+
+                  M    =  2y      N =   2y
+                     y   x 2        x   x 2
+
+                 ⇒   M =   N
+                       y     x
+
+                         y
+              ψ=  ∫          1+  x 2   2       dx
 
 
+                      y 2
+                =  x −   +  h ( ) y
+                       x
+
+                     2y             2y
+              ψ   =  −   + h′ ( ) y = −
+                y     x              x
+
+                     h′ ( ) 0y =     ⇒   h ( ) y =  C
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          490</code></pre>
+                  y 2
+              x −    =  C              multiply by x
+                  x
+              x −  2  y =  2  Cx</code></pre>
      	</div>
     
      </div>

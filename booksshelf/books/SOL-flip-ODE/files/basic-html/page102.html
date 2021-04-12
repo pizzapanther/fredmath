@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 102 - ODE Solution</title>
+        <title>Page 102 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 102 - ODE Solution</div>
+        <div id="content-top1">Page 102 - DE Solution</div>
         <div id="content-top2">P. 102</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>C
-                     C
-                                        
-                    e e ln S k       A e
-                       k
-                    AS
+    <pre style="white-space:pre-line"><code>96 | S O LU TI O N
 
 
-        Exercise
+              ∫ ∫        (12t dt−  )
+                   y dy =
 
-        Barbara weighs 60 kg and is on a diet of 1600 calories per day, of which 850 are used automatically by
-        basal metabolism. She spends about 15 cal/kg/day times her weight doing exercises. If 1 kg of fat contains
-        10,000 cal. and we assume that the storage of calories in the form of fat is 100% efficient, formulate a
-        differential equation and solve it to find her weight as a function of time. Does her weight ultimately
-        approach an equilibrium weight?
+              1  y =  2  tt +  2  C
+                      −
+              2               1
+              y =  2  2t −  2t +  2  C
 
-        Solution
-            m   t   m : mass at time t.
+                     ( ) 2  2  = −  2 ( ) 1 −  2 ( ) 1  2  +  C
 
-            The net intake of calories per day at time t is
-            c t                       
-               1600 850 15m   750 15m
-            m   1  750 c t
-                        
-                            
-                15
-            dm    c   t
-             dt   10,000
-                      
-                  750 15m
-                   10,000
-                    3 m  50
-                     2000
+                     C  =  4
 
-              m    dm 50      2000  3  dt
+               y ( ) t =  −  2t −  2t +  2  4
+
+              ∴ The negative value is taken to satisfy the initial condition.
 
 
+          Exercise
 
-            ln m  50     3  t  C
-                          2000
-                          3  t
-            m   50   Ae  2000
+                                                                  2
+                                                                                 0
+          Find the exact solution of the initial value problem.   y′ =  y − 4, y ( ) 0 =
+          Solution
 
-                   m   0   60   0 1      A
+              dy  =  y − 4
+                    2
+              dt
+                dy   =  dt
+               2
+              y −  4
+                   1   =   A  +  B
+                   2
+                  y − 4   y−  2  y+  2
+                     + 
+                    A B =  0          1        1
+                              ⇒  A =    B = −
+                  2A −  2B =  1      4        4
+                 1          1    
+                       −           dy =  dt
+                ( 4 y −  ) 2  ( 4 y +  ) 2  
 
-                         3  t
-            m   10et   2000   50
+                    1         1     
+                         −           ∫    dy =  ∫  dt
+                  ( 4 y −  ) 2  ( 4 y +  ) 2
 
+              1 (ln y −  2 −  ln y +  2  ) tC=  +
+              4
+                 y − 2
+              ln      =  4tC
+                           +
+                 y + 2
+              y −  2  = ± e 4tC
+                          +
+              y +  2
 
-                                  3  t     
-                             
-             lim m   t   lim 10e  2000    50
-            t         t                  
-                       50
-
-            Thus, Barbara’s mass gradually settles down to 50 kg.
-
-
-
-
-
-
-
-
-
-
-                                                           98</code></pre>
+              y − 2  =  ±  e e 4t  =  4t
+                        C
+              y + 2            ke</code></pre>
      	</div>
     
      </div>

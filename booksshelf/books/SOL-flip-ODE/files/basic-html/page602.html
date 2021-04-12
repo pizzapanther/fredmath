@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 602 - ODE Solution</title>
+        <title>Page 602 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 602 - ODE Solution</div>
+        <div id="content-top1">Page 602 - DE Solution</div>
         <div id="content-top2">P. 602</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-        If it is underdamped, write the position function in the form    t   x  C e  pt  cos     t     .
-                                                                          1           1     1
-
-        Also find the undamped position function    t   u  C  cos     t       that would result if the mass on the
-                                                         0       0     0
-        spring were set in motion with the same initial position and velocity, but with the dashpot disconnected (so
-         c  0). Then, construct a figure that illustrates the effect of damping by comparing the graphs of    t  and
-                                                                                                      x
-                                                                      2
-        u   t               m   3, c   30, k   63; x   2, v 
-                                                                  0
-                                                         0
-        Solution
-            With damping motion
-
-            3x   30x   63x             mx   cx   kx   0
-                              0
-                 2
-                              
-                                                    3
-                   10  21 0             7,  
-                                         1,2
-            x   t   C e   7t    C e   3t
-                    1         2
-                   x   0  C   C   2
-                            1    2
-
-                x   t   7C e   7t   3C e   3t
-                           1         2
-                      x   0   7C  3C   2
-                                  1      2
-
-                         C    1  C   2  2
-                                         C    2   C   4
-                                             1
-                                                       2
-                          7C  3C   2
-                                   2
-                            1
-            x   t   4e   3t    2e   7t      (Overdamped motion)
-            Without damping  c       0
-
-            3x   63x   0                 mx   kx   0
-
-                        
-                  2  21 0           i   21
-                                   1,2
-                                             
-            u   t   A cos   21 t     B sin   21 t
-
-                   u   0   A   2
-                                        
-                                                           
-                u   t   A  21sin   21 t   B  21cos   21 t
-
-                       u   0   21B   2    B   2
-                                                   21
+    <pre style="white-space:pre-line"><code>596 | S O LU TI O N
 
 
-            A    4   4      2  22     tan  1      1         0.2149
-                      21      21                21 
+                           P
+                       =    0
+                        1 P kt−
+                             0
 
-                                                
-            u   t   2cos   21 t     2  sin   21 t
-                                   21
+                      6
+             b)  P =
+                   0
+                 P ( ) t =  6
+                        16kt
+                         −
+                 Given:  ( ) 9P  10 =
 
-                   2  22  cos   21   t  0.2149 
-                      21
+                    6    = 9
+                 1 60k
+                   −
+                 1 60k =   2
+                  −
+                           3
+                 k =  1
+                     180
+                 P ( ) t =  6
+                        1−  1  t
+                           30
+                       =  180
+                         30 t
+                            −
 
-                                                          590</code></pre>
+                 P =  180   → ∞ (doomsday)
+                     30 − t    t→ 30
+                                                             2
+             c)  If the birth & death both are proportional to  P  with  β  δ &lt;
+                 dP  = − kP
+                           2
+                  dt
+                    P ∫  dP  = − ∫    k dt
+
+                     2
+
+
+                         kt C
+                 −  1  = −−
+                   P
+                           1
+                 P ( ) t =  kt C
+                           +
+                       P ( ) 0 =  P
+                               0
+                       1  =  P
+                       C    0
+
+                       C =  1
+                           P
+                            0
+
+                           P
+                 P ( ) t =  0
+                        1 P k+  t
+                             0
+
+                    P
+             d)      0     →     0
+                   +
+                 1 P kt      t→∞
+                      0
+                 Therefore  ( ) t →  0 as t →∞ , so the population die out in the long run.
+                           P</code></pre>
      	</div>
     
      </div>

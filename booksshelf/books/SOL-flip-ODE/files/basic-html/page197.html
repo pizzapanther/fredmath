@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 197 - ODE Solution</title>
+        <title>Page 197 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 197 - ODE Solution</div>
+        <div id="content-top1">Page 197 - DE Solution</div>
         <div id="content-top2">P. 197</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                                           dQ
-             Find the general solution of   2    100Q   10sin60t
-                                            dt                                                sin60t
-             Solution
-                                                                             +  e 50t          1  cos60t
-                  dQ    1                     dQ                                               60
-                2         Q  10sin60t          50Q   5sin60t                    50t
-                   dt   .01                   dt                                50e           1   sin60t
-                      50dt   50t                                                              3600
-                    e        e                                              +   2500e 50t     3600 sin60t
-                                                                                                1
-                       50t        
-                    5 e
-                            sin60t dt 
-
-                                                             
-                                      
-                      e 50t  sin60t dt   60  cos60t   72 sin60t e 50t   36  25  e 50t  sin60t dt
-                                         1
-                                 
-                                                                                   
-                                                     1
-                                                                  
-                                          
-                    36  e 50t sin60t dt   60 cos60t   72 sin60t e 50t
-                    61
-                                              1
-                                     
-                                                          1
-                     e 50t  sin60t dt   21,960  6cos60t  5sin60t e 50t
-                                          36
-                                  
-                                                
-                               50t  sin60t dt   1   6cos60t   5sin60t e 50t
-                                          
-                                                     
-                           5 e
-                                                122
-                                                                  
-                                      
-                    Q   t   1    1   6cos60t   5sin60t e 50t   C
-                               t
-                           e 50 122
-                                
-                                                     Ce
-                            1   6cos60t   5sin60t      50t
-                           122
-                                   Q   0    6   C   0     C   3
-                                            122                  61
-                      Q   t   1    5cos60t   6sin60t  6e  50t 
-                            122
+    <pre style="white-space:pre-line"><code>1. 3  –  Models of Motions | 191
 
 
+                 Exercise
 
-             Exercise
-                                                          
-             Find the general solution of  y   3y   4 ;    (0) 2
-                                                      y
-             Solution
+                 A tank in the form of a right-circular cylinder standing on end is leaking water through a circular hole
+                 in its bottom. When friction and contraction of water at the hole are ignored, the height h of water in
+                 the tank is described by
 
-                    3dt   3t
-                e         e
-                  4e   3t dt     4   3 e  3t
+                                                          dh  = −  A h  2gh
+                                                          dt     A
+                                                                  w
+                 Where  A  and  A  are the cross-sectional areas of the water and the hole, respectively.
+                          w        h
+                             h
+                    a)  Find  ( ) t  if the initial height of the water is H.
+                                         h
+                    b)  Sketch the graph  ( ) t  and give the interval I of definition in terms of the symbols  A ,  A ,
+                                                                                                               h
+                                                                                                          w
+                               (
+                        and H. g =  32  ft/s 2 )
+                                                                                                          1
+                    c)  Suppose the tank is 10 feet high and has radius 2 feet and the circular hole has radius   inch.
+                                                                                                          2
+                        If the tank is initially full, how long will it take to empty?
+
+                 Solution
+
+                    a)   dh  = −  A h  2gh
+                         dt     A
+                                 w
+                                 A
+                            = − 8  h  h
+                                 A
+                                   w
+                        ∫  h − 1/2 dh = − 8  A h    ∫  dt
+
+                                        A
+                                   A      w
+                        2 h =  −  8  h  t +  C
+                                  A
+                                    w
+                                h ( ) 0 =  A
+                                2 H =  C
 
 
-                                       
-                     
-                   t
-                 y ( ) e 3t    4  3t   C
-                              e
-                             3
-                         4
-                         Ce 3t
-                         3
-                                            0
-                                    4
-                              0
-                            y ( )     Ce 3( )
-                                    3
-                                                               193</code></pre>
+                                  A
+                        2 h =  −  8  h  t +  2 H
+                                  A
+                                    w
+                                       A      2
+                        h ( ) t =     H −  4  h  t   
+                                       A w 
+
+                                      A
+                    b)    h =   H − 4   h  t  ≥  0
+                                      A
+                                        w
+                                 A
+                          H ≥  4  h  t
+                                A
+                                  w</code></pre>
      	</div>
     
      </div>

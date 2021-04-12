@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1347 - ODE Solution</title>
+        <title>Page 1347 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1347 - ODE Solution</div>
+        <div id="content-top1">Page 1347 - DE Solution</div>
         <div id="content-top2">P. 1347</div>
      </div>
      <div id="content-middle">
@@ -152,104 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                             
-             x    t   a  cost b  sint  a  cos3t b  sin3t c  cos5t
-                                                          
-            
-              1       1       1        2          2         1
-                                                
-                                     
-                                                          
-                             
-             x 2    t   a 1 cost b 1  sint a 2  cos3t b 2  sin3t c 2  cos5t
-            
-                              
-              x    t   a  cost b  sint  9a  cos3t  9b  sin3t  25 cos5t
-                                                                  c
-            
-              1        1        1         2          2            1
-                              
-             x 2    t   a 1 cost b 1 sint  9a 2  cos3t  9b 2 sin3t   25c 2  cos5t
-            
-                x   5x   4x  96cos5t
-                 1      1     2
-                            
-                    a  cost b  sint  9a  cos3t  9b  sin3t  25c  cos5t 
-                      1        1         2          2            1
-                               5a  cost   5b  sint   5a  cos3t   5b  sin3t   5c  cos5t
-                                  1        1        2          2          1
-                                    4a  cost  4b  sint  4a  cos3t   4b  sin3t   4c  cos5t  96cos5t
-                                    1         1         2         2          2
-                    25c  cos5t   5c  cos5t  4c  cos5t  96cos5t
-                        1            1          2
-                    20c   4c   96     5c  c   24
-                        1     2            1    2
-                x   4x   5x
-                 2     1     2
-                        25c  cos5t   4c  cos5t  5c  cos5t
-                            2          1           2
-                          c   5c
-                            1      2
-                 
-                5  5c 2   c   24    c   1   c  
-                                                ,
-                                                        5
-                           2
-                                           2
-                                                   1
-                            
-             x    t   a  cost b  sint   a  cos3t b  sin3t  5cos5t
-                                                
-            
-              1      1        1        2          2
-                                                
-                                      
-                             
-              x 2    t   a 1  cost b 1 sint a 2  cos3t b 2 sin3t   cos5t
-            
-            Given initial values:    0   x  x    0   0  and    0   x  x    0   0
-                                 1        2             1        2
-                 x 1   0  a   a  
-                                   5 0
-                
-                               2
-                          1
-                                            a   2, a   3
-                                               1
-                                                       2
-                 x 2    0   a  a  1  0
-                
-                           1
-                               2
-                 x 1    0   b  3b   0
-                
-                          1
-                                2
-                                          b   b   0
-                                                  2
-                                             1
-                 x 2    0   b  3b   0
-                
-                                2
-                          1
-             x    t  2cost   3cos3t  5cos5t
-            
-              1
-              x 2    t   2cost   3cos3t   cos5t
-            
-            At frequency    1 the 2 masses move in the same direction with equal amplitudes of oscillation.
-                           1
-            At frequency    the 2 masses move in the opposite direction with equal amplitudes of oscillation.
-                               3
-                           2
-            At frequency    they oscillate in opposite directions with amplitude of oscillation of  m 5 times
-                               5
-                           3                                                                        1
-            that of m .
-                     2
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1333
 
-                                                          1326</code></pre>
+
+                 Exercise
+
+                 Use Definition of Laplace transform to show the Laplace transform of
+                        £  { e at  cos t ω } ( ) s =  sa
+                                                  −
+                                            (sa  ) +  2  ω 2
+                                              −
+                 Solution
+
+
+                     £ { e at  cos t ω  } ( ) s = ∫ 0 ∞ e at cos t ω   e − st dt
+
+
+
+
+                                                      sa
+                                      = ∫ ∞ cos t eω  ( −−  )t  dt
+
+
+                                          0
+                                                               ∫ cos t ω  dt
+
+                                     +        e −−   )t         1  sin t ω
+                                                (sa
+                                                                ω
+                                         −  (sa  )  e −−  )t  −  1  cos tω
+                                                    (sa
+                                             −
+                                     −                          ω 2
+                                                         )t
+                                                    (sa
+                                                   e
+                                     +    (sa  ) 2 −−
+                                            −
+
+                               ∞                              (sa   )                ∞
+                                                                  −
+                                                                                (sa
+                                         (sa
+                                                     1
+                                cos t eω  −−  )t  dt = ∫    ω sin t ω  2  cos t eω −    −−  )t
+                              0                                  ω                    0
+                                                      (sa   ) 2  ∞        −−    )t
+                                                        −
+                                                                           (sa
+                                                   −    ω ∫     0  cosω t e       dt
+                                                          2
+                            (sa−  ) +  2  ω 2  ∞ cos t e  ( −−  )t  dt =  (sa−  ω ∫  )
+                                                        sa
+                                                 ω
+                                 ω  2      0                         2
+                            ∫  ∞ cos t eω  ( −−  )t  dt =  (sa ) +  2  ) ω 2
+                                                       (sa−
+                                          sa
+                                                      −
+
+                              0
+                     £ { e at  cos t ω } ( ) s =  sa        √
+                                              −
+                                        (s a  ) +  2  ω 2
+                                           −</code></pre>
      	</div>
     
      </div>

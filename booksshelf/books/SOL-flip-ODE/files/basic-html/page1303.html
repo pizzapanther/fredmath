@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1303 - ODE Solution</title>
+        <title>Page 1303 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1303 - ODE Solution</div>
+        <div id="content-top1">Page 1303 - DE Solution</div>
         <div id="content-top2">P. 1303</div>
      </div>
      <div id="content-middle">
@@ -152,17 +152,7 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        Many physical and biological systems involve time delays. A pure time delay has its output the same as its
-        input but shifted in time. A more common type of delay is pooling delay.  Here the level of fluid in tank B
-                                                                                                      
-                                                                                                
-                                                                                           
-        determines the rate at which fluid enters tank A. Suppose this rate is given by  R t      V V t  ,
-                                                                                     1             2
-        where α  and V are positive constants and V    t  is the volume of fluid in tank B at time t.
-                                                  2
+    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1293
 
 
 
@@ -184,51 +174,55 @@ function MM_swapImage() { //v3.0
 
 
 
-            a)  If the outflow rate  R  from tank B is constant and the flow rate  R  from tank A into tank B is
-                                   3                                           2
-                R    t   KV    t  is the volume of fluid in tank A at time t, then show that this feedback system is
-                 2         1
-               governed by the system
-                        dV              
-                                    
-                         dt 1     V V t    KV 1   t
-                       
-                                       2
-                       
-                        dV 2
-                         dt    KV 1   R                 t   3
-                       
-            b)  Find a general solution for the system in part (a) when    5 min  1 , V   20 L   ,  K   2 min  1 , and
-
-                R   10 L/min .
-
-                 3
-            c)  Using the general solution obtained in part (b), what can be said about the volume of fluid in each
-               of the tanks as t   ?
-
-        Solution
-                           dV
-                                             
-            a)  Tank A:      1    R t     R t
-                            dt     1       2
-                                            
-                                       
-                                   V V t      KV 1   t
-                                          2
-                           dV
-               Tank B:       2    R    Rt     t
-                            dt     2       3
-                                  KV    Rt 
-                                     1       3
 
 
-            b)  Given:       5 min  1 , V   20 L,  K   2 min  1 ,  R  10 L/min
 
 
-                                                                 3
 
 
-                                                          1282</code></pre>
+
+
+
+
+                 Exercise
+
+                 Consider the given initial value problem. Find the general solution then uses Runge-Kutta method
+                 with step size  h =  0.05  to sketch solution with the given interval
+
+                                dy  +  2y te=  3 − 2t   ; y ( ) 0 = 1,  ]
+                                d t                           [0, 2
+                 Solution
+                     dy  +  2y te=  3 − 2t
+                     dt
+
+                          ∫ 2dt
+                                   2t
+                            e   =  e
+
+                        ∫  te  22t  dt = ∫  t 3  dt
+                                t
+                            3 −
+                                 e
+
+                                       =  1 t 4
+                                         4
+                                         )
+                                   4
+                      ( ) t = e  t −  ( 1 t + C
+                      y
+                                 4
+                            y ( ) 0  = C = 1
+
+                                       )
+                                   4
+                     y ( ) et =  t −  ( 1 t + 1
+                                4
+
+
+                                Euler Method
+
+                         t           Euler     Exact              Difference
+                        ------------------------------------------------------------</code></pre>
      	</div>
     
      </div>

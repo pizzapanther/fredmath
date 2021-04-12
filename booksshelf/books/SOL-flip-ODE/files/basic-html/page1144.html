@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1144 - ODE Solution</title>
+        <title>Page 1144 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1144 - ODE Solution</div>
+        <div id="content-top1">Page 1144 - DE Solution</div>
         <div id="content-top2">P. 1144</div>
      </div>
      <div id="content-middle">
@@ -152,93 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  5         0          5        0           5t
-                         cos3t    sin 3t  i   sin 3t     cos3t          e
-                                                            3
-                                    3
-                                                 1
-                        1
-                                                             
-                           5cos3t            5sin 3t       5t
-                                         i               e
-                          cos3t   3sin 3t    sin 3t   3cos3t 
-                                 5cos3t                  5sin 3t    
-                   x   t   C 1   cos3t   3sin 3t  e 5t   C 2    sin 3t   3cos3t  e 5t
-                             
-                                                                       
-                                             
+    <pre style="white-space:pre-line"><code>1134 | S O LU TI O N
 
 
-             Exercise
-                                                           
-                                                         x t         4x
-                                                              5x 
-                                                        
-             Find the general solution of the system      1       1     2
-                                                          x 2    t   2x   1  x 2
-                                                        
-             Solution
-                           5          4                     5    4
-                            
-                 A    I                               A         
-                   
-                                      
-                             2       1                      2  1 
-                                      
-                             2  4     3 0
-                Thus, the eigenvalues are:    1  and        3
-                                           1            2
-                                         
-                For     1      A      I V   0
-                      1               1    1
-
-                     4    4                                1   
-                               x
-                                     0
-                                  
-                                        x   y       V    
-                                                             1
-                                     0
-                               y
-                     2    2                                 1 
-                                          
-                For      3      A      I V  0
-                      2                2    2
-                                     0
-                     2    4                                  2
-                               x
-                                  
-                                        x   2y       V     
-                                                              2
-                                     0
-                               y
-                     2    4                                  1 
-                             1    t   2  3t
-                   x ( )   t  C    e   C    e
-                           1        2   
-                                         1
-                             1
 
 
-             Exercise
-                                                         x    t   6x  6x
-                                                        
-             Find the general solution of the system      1        1     2
-                                                         x 2    t   4x   1  4x 2
-                                                        
-             Solution
-                            
-                           6          6                     6    6
-                 A    I                               A         
-                   
-                                      
-                             4       4                      4  4 
-                                  
-                                    0
-                             2  2 
-                Thus, the eigenvalues are:    0    &         2
-                                           1           2
-                                                              1123</code></pre>
+                               4   − e 2  4e 2
+                                                   2
+                                                         2
+                                                                             2
+                        ∆ = −   1   0     1 = −  4e +  4e +−       2   4 2e
+                                                             4 2e = −
+                          2
+                               4    − 1   2
+                               4   4e 2  − e 2
+                                                             2
+                                                 44e −
+                        ∆ = −   1   1     0 = − +      2  4e = −  4
+                          3
+                               4    0     − 1
+
+                                           −
+                     C =   −  2e 2  C =  4 2e  2   C =     − 4
+                      1   88e   2    2   88e   2     3   88e  2
+                                                          +
+                            +
+                                           +
+                                            −
+                     C =    −  e 2  C =   2 e  2   C =     − 1
+                      1   44e   2     2   44e  2     3   22e   2
+                                           +
+                                                           +
+                            +
+                         e 2    1    2 e 2        1           1       2
+                                        −
+              y ( ) t =  −      +            t −         t  lnt +  t (lnt )
+                        44e   +  2 t    44e   +  2    22e   +  2  4
+
+
+          Exercise
+
+          Find the general solution
+
+                 t 3 y ( ) 3  −  4 y′′ + t 2  8 y t ′ −  8y =  4ln ; y ( ) 0 , y′ ( ) 1 =  0, y′′ ( ) 01 =
+                                                t
+                                                       1 =
+          Solution
+
+             Let  y t=  λ  t ≠  0
+
+                 y′ =   t λ  λ 1 −
+
+                 y′′ =  ( λ λ −  ) 1   t λ− 2
+
+                 y′′′ =  ( λ λ −  1 )(λ −  ) 2   t λ− 3
+
+
+              t 3 y ( ) 3  −  4 y′′ + 2  8 y′ −  t  8y =  0
+                       t
+              t 3  ( λ λ −  1 )(λ −  ) 2 t λ  −  3  −  4t 2  ( λ λ −  ) 1 t λ  −  2  +  8ttλ  λ  1 −  −  8t =  λ  0
+
+
+               ( λ λ −  1 )(λ −  ) 2  t λ  −  4λ (λ −  ) 1 t λ  +  8 t λ  −  8t =  λ  0
+                                                  λ
+                                                 80
+               ( λ λ − 1 )(λ −  ) 2 − 4λ (λ −  ) 1 + 8λ −=
+
+
+
+               ( λ λ −  1 )(λ −  ) 2 −      4λ (λ −  ) 1 +     ( 8 λ −  ) 1 =  0
+             Characteristic Eqn.:      (λ   ) 1 λ −  (  2  6 λ −    +  8 =  )  0
+
+
+
+             The roots are: λ     = 1,2,4
+                             1,2,3</code></pre>
      	</div>
     
      </div>

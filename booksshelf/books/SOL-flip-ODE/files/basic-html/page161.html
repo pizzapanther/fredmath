@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 161 - ODE Solution</title>
+        <title>Page 161 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 161 - ODE Solution</div>
+        <div id="content-top1">Page 161 - DE Solution</div>
         <div id="content-top2">P. 161</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>r   k  t   r
-                             0
-                        kt   r 
-                              0
-                           
-
-                    dv     3k    v   g
-                    dt     r     kt
-                            0
+    <pre style="white-space:pre-line"><code>1. 3  –  Models of Motions | 155
 
 
-             Exercise
 
-             A horizontal cylindrical tank of length 9 ft , and radius 5 ft , is filled with oil. At t   a plug at the lowest
-                                                                                              0
-             point of the tank is removed and a flow results.
-             Find y the depth of the oil in the tank at any time t while the tank is draining. The constriction coefficient is
-             k   1
-                 15
+                 Solution             Section 1.3 – Models of Motions
 
-             Solution
-                  2
-                 x    y    5  2    25
-                                        
-                             2
-                  2
-                 x   25   y  10y   25
+
+
+                 Exercise
+
+                 A body of mass m falls from rest subject to gravity in a medium offering resistance proportional to
+                 the square of the velocity. Determine the velocity and position of the body at t seconds.
+
+                 Solution
+                    The resistance force R, according the given, is proportional to the square of the velocity. Since
+                                                             2
+                    this force is an upward direction.  R = −  . rv
+                             g              gv 2
+                    Let  r =      →   R =  −
+                            a 2              a 2
+                     F =  mg +  F
+                                r
+                     m  dv  =  mg −  mR
+                       dt
+
+                     m  dv  =  mg − m  gv 2
+                       dt           a 2
+
+                     dv  =  g   1−  v 2  
+                     dt         a   2  
+                     ∫  1− dv v ∫  2  =  g  dt              ∫  a −  x 2  =  2a ln  a +  x  or  1  tanh − 1 x
+                                                                         1
+                                                                 dx
+                          ( )
+                                                                2
+                                                                                 x
+                                                                                          a
+                                                                              a −
+                                                                                                  a
+                     a  tanh − a 1 v  =  gt +  C
+                              a         1
+                     tanh − 1 v  =  g  t + C
+                            a   a      2
+
+                     v  =  tanh   g  t +  C  
+                     a            a  2    
+
+
+                     vt     a tanh     g  t + C    
+                      ( ) =
+                                    a    2  
+                            v ( ) 0 =
+                                   0
+                                      ( )
+                            0 =  a tanh C 2
+
+                            C   =  0
                               2
-                 x    10y   y
-                              
-                dV   Surface dy
-                                        2
-                                                       2
-                 Surface    9 2 10y   y  18 10y   y
-                When the liquid of volume V flows out the rate at which it flows through that opening is  k y
-
-                  dV    k y
-                   dt
-
-                18 10y   y 2 dy     1  y
-                              dt    15
-
-                    10y   y 2
-                18            dy     1  dt
-                        y           15
-                18 10   ydy    1  dt
-                                15
-
-                                              1
-                   10    y  1/2 d 10    y   270   dt
-
-                 2 10    y  3/2    1  t   C
-                 3              270
-
-                10    y  3/2    1  t  C
-                              180     1
-                      y   0  10   0     C
-                                          1
 
 
+                     vt    a  tanh     g   t 
+                      ( ) =
+                                    a  
 
-
-                                                               157</code></pre>
+                     vt     dy  =  a tanh     g   t
+                      ( ) =
+                                            
+                            dt           a  </code></pre>
      	</div>
     
      </div>

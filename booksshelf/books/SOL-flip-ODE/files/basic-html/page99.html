@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 99 - ODE Solution</title>
+        <title>Page 99 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 99 - ODE Solution</div>
+        <div id="content-top1">Page 99 - DE Solution</div>
         <div id="content-top2">P. 99</div>
      </div>
      <div id="content-middle">
@@ -152,86 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-                                      
-             A thermometer reading 70  F  is placed in an oven preheated to a constant temperature. Through a glass
-                                                                                                 1
-                                                                                       
-             window in the oven door, an observer records that the thermometer reads 110  F  after   minute and
-                                                                                                 2
-                
-             145  F  after 1 minute. How hot is the oven?
-             Solution
-                               
-                Given: T   70  F
-                         0
-                                                                                            
-                                  
-                               
-                T    t   A  70 A e  kt                                  T   A   T   A e  kt
-                                                                                       0
-                  
-                                                                       A
-                T t   1    A  70    A e   k  /2   110   e   k /2    110  A
-                                                                  70 
-                       2
-                                                                 
-                T  t    1   A  70    A e   k   145   e   k   145 A
-                                                              70   A
-                              2
-                                                   
-                                         A
-                                
-                e   k    e   k /2   110   70   A  2    145 A
-                                               70 
-                                                    A
-                 110    A  2
-                                 
-                   70   A    145 A
-                                  2
-                                                        2
-                       
-                12,100 220A     A   10,150 215A    A
-                                             
-                5A   1950      A   390
-                ∴ The temperature in the oven is 390° F.
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 93
 
 
-             Exercise
+                     ∫∫        dx
+                       dy
+                          =
+                        y
+                                x
+                     ln y =  ln x +  C
 
-                   0
-             At t   a sealed test tube containing a chemical is immersed in a liquid bath. The initial temperature of the
-             chemical in the test tube is 80° F. the liquid bath has a controlled temperature given by
+                               +
+                     y = ± e ln x C
+                           C
+                       = ± ee ln x
+                       =  Dx
 
-                 t 
-                         
-                                        0
-             T    100 40e    0.1t  , t  , where t is measured in minutes.
-              m
-                a)  Assume that  k     0.1, describe in words what you expect the temperature    t  of the chemical to
-                                                                                            T
-                    be like in the short term. In the long term.
-                b)  Solve the initial-value problem.
-                           T
-                c)  Graph    t .
-             Solution
+                       =  Dx
 
-                a)  Given: T   80  F
-                                  
-                            0
-                                     
-                                 
-                                          
-                    T    0  100 40 60  F
-                     m
-                    The temperature decreases (or cool off), in the short time.
-                    Over time, the temperature will increase towards 100° since e  0.1t  decrease from 1 to 0 as t
-                    approaches infinity. Thus, in the long term, the temperature of the chemical should increase or
-                    warm toward 100°.
+                     y =  Dx
+                             y
+                        D =
+                             x
+                           =  − 2
+                              1
+                           = − 2
+
+
+                     yx      2x
+                      ( ) = −
+
+
+                 Exercise
+                                                                            (
+                                                                           t
+                                                                          21 y   2 )
+                                                                              +
+                                                                                             =
+                 Find the exact solution of the initial value problem.   y′ −=      ,   y (0) 1
+                                                                              y
+                 Solution
+                              (
+                             t
+                                +
+                     dy  = − 21 y   2 )
+                     dt         y
+                       1 y+ ∫    y dy 2  = ∫  − 2t  dt
 
 
 
-                                                               95</code></pre>
+                                              ∫
+                     1   1 y ∫  1  d ( 1 y 2 )  =  −  2 t  dt
+                                   +
+                     2    +   2
+
+                         (
+                     1 ln 1 y 2 )  =  t −  2  +  C
+                           +
+                     2
+                       (
+                     ln 1 y 2 )  =  −  2t +  2  2C
+                         +
+
+                      +
+                     1 y =  2  e −  2t +  2  2C
+
+                      +
+                                 e
+                     1 y =  2  e 2C − 2t 2
+                     1 y =  2  De − 2t 2
+                      +</code></pre>
      	</div>
     
      </div>

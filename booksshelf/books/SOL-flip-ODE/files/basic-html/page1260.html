@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1260 - ODE Solution</title>
+        <title>Page 1260 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1260 - ODE Solution</div>
+        <div id="content-top1">Page 1260 - DE Solution</div>
         <div id="content-top2">P. 1260</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>For     4       A   4I V 
-                                               0
-                      2                    2
-                      5   5    x   2   0
-                                        x    y
-                                       0
-                       6   6      y   2      2  2
-                                     1                 1   4t
-                             V            x    t      e
-                               2     1       2        1 
+    <pre style="white-space:pre-line"><code>1250 | S O LU TI O N
 
 
-                The general solution:
-                            5   3t      1   4t
-                 x   t   C     e    C     e
-                        1     6    2     1 
-                       x    t   5C e 3t    C e 4t
+                                  2
+                 zx       1   ( 1  x +  C )
+                   ( ) =
+                        e − 2x  2
+                            22x
+                       =  1  x e  + Ce 2x
+                         2
 
-                         1       1       2
-                     
-                      x 2    t   6C e 3t   C e 4t
-                     
-                                   1
-                                           2
-                          x    0   5C  C  1
-                        
-                Given:    1         1    2
-                         x 2    0    6C   1  C   0
-                        
-                                           2
-                             C    1,  C  6
-                                1        2
-                      x    t    5e 3t   6e 4t
+                         z ( ) 0  = C = 1
 
-                         1
-                     
-                       x    t   6e 3t   6e 4t
-                       2
+                           22x
+                 z ( ) =  1  xe  + e 2x
+                    x
+                        2
 
 
-             Exercise
 
-             Find the general solution of the given system. Graph and construct a direction field and typical solution
-             curves for the given system.  x  2x  5x  ,  x     4x  2x  ; x    0   2, x    0 
-                                                                                                3
-                                           1     1     2    2     1      2    1          2
-             Solution
 
-                  x      2    5    x 
-                  1             1  
-                 x      4   2  x 
-                  2              2 
-                The characteristic equation:
-                     2        5     2
-                      
-                                              0
-                                        16 
-                               
-                      4       2 
-                The distinct real eigenvalues:      4i
 
-                For    4i       A       I V 
-                                              0
-                       
-                     2 4i       5      0
-                                      x
-                                             2 4i x     5y
-                                
-                                            0
-                                      y
-                      4       2 4i     
-                                     5 
-                             V        
-                                     
-                                   2 4i 
-                                                              1239</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Exercise
+
+
+                                                                 =
+          Consider the initial value problem  y′ =  12 (4 −  y  ) y  y (0) 1
+                                                                                         ]
+          Use Euler's method with step size  h =  0.04  to sketch solution on the interval [0, 2
+
+          Solution
+
+              y () t =    4
+                         −
+                    e log3 48t  + 1
+                      t      Approx.          Exact          Difference
+                  --------------------------------------------------------
+                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
+                  0.04   |   2.44000000   |   2.77812333   |   0.33812333
+                  0.08   |   4.26707200   |   3.75770045   |   -0.50937155
+                  0.12   |   3.72005658   |   3.96254078   |   0.24248419
+                  0.16   |   4.21993115   |   3.99446397   |   -0.22546718
+                  0.20   |   3.77444588   |   3.99918742   |   0.22474154
+                  0.24   |   4.18308995   |   3.99988085   |   -0.18320910
+                  0.28   |   3.81546672   |   3.99998253   |   0.18451582
+                  0.32   |   4.15342541   |   3.99999744   |   -0.15342797
+                  0.36   |   3.84754974   |   3.99999962   |   0.15244989
+                  0.40   |   4.12909852   |   3.99999994   |   -0.12909858</code></pre>
      	</div>
     
      </div>

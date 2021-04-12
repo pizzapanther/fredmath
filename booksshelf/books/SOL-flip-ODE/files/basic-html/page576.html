@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 576 - ODE Solution</title>
+        <title>Page 576 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 576 - ODE Solution</div>
+        <div id="content-top1">Page 576 - DE Solution</div>
         <div id="content-top2">P. 576</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2 2
-                4      k     0    32
-              0                 5     5
-                              
-            x   0  C  cos  0 C  sin  0      C   2
-                     1     0      2     0          1
-            x   t   C   sin  t C   cos t
-                                  
-                      1 0      0     2 0       0
-                                                                   v
-                                      
-                x   0   C   sin  0 C   c s o   0   C     0
-                          1 0      0      2 0       0          2   
-                                                                    0
-                            v
-            x   t   2cos4t   0  sin 4t
-                             4
-
-                        v 2                                                        2  v 
-            x   t   4   0    cos 4t                                        2,   0  
-                        16                                              v  0           4 
-                                                                                      
-                   v                                               2  2     4 
-            tan    0                                                  
-                    8                                                       
-            The amplitude is 2, therefore:
+    <pre style="white-space:pre-line"><code>570 | S O LU TI O N
 
 
-                     v 2
-                 4   0      2
-                     16
+              ydx +  ( ( 3 y x−  ) +  ) 2 dy =  0
 
-                   v 2
-                4   0    4
-                   16
+              ydx x  (3 y dy−  )  +  2dy =  0
+                  +
+              ydx x  (3 y dy−  )  =  −  2dy
+                  +
+              y dx  +  (3 yx = )  −  2
+                       −
+               dy
+                     −
+              dx  +  3 y  x =  −  2
+              dy     y        y
+                        ( )
+                         y ∫
+                         3
+                           1 dy
+                          −
+                     e          =  e 3ln ( ) y − y
+                                = e ln y 3 e − y
+                                    e
+                                =  y 3 − y
 
-                v 2
-                 0    0    v   0
-                1 6           0
+                             3 −
+                                             2 −
+                     −  2 ∫  1  y e  y dy =  −  2 ∫  y e  y dy
+                          y
+                                                    ∫ e − y  dy
 
 
 
-        Exercise
+                                               2
+                                              y       − e − y
 
-        A body with mass m = 0.5 kg is attached to the end of a spring that is stretched 2 m by a force of 100 N. It
-        is set in motion with initial position  x  1m  and initial velocity v     5 / s . (Note that these initial
-                                                                               m
-                                             0                          0
-        conditions indicate that he body is displaced to the right and is moving to the left at time t = 0.) Find the
-        position function of the body as well as the amplitude, frequency, period of oscillation, and time lag of its
-        motion.
-        Solution
+                                             2y       e − y
 
-            Spring constant:  k   100N    50  / m
-                                       
-                                            N
-                                  2m
-            The differential equation can be written as:
-                0.5x  50x  0    x  100x                  my    y  ky   F ( )
-                                                                                     t
-                                                0
-                 100
-              0
-                         /
-                  10 rad s
 
-                                                          564</code></pre>
+                                              2       − e − y
+
+                                                    (
+                                                                  )
+                                                        2
+                                        3 −
+                                                   2
+                                − 2 ∫  1  y e  y dy = −− y − 2y − 2 e −  y
+                                     y
+                                                               )
+                                                =  ( 2y +  2  4y +  4 e − y
+                                                   )
+                                          )
+              x ( ) y =  1   ( (  2y +  2  4y +  4 e − y  +  C
+                      3 −
+                     y e  y
+                   =  1  ( (  2y +  2  4y +  4 +  )  Ce y )
+                     y 3
+
+
+
+                           e
+             Let     µ =  y 2 − y
+
+                                       2 −
+               3 −
+              y e  y dx +  (3x xy +  ) 2 y e  y dy =  0
+                            −
+                            3 −
+                                                           2 −
+                      M =  y e  y        N = (3x −  xy +  ) 2 y e  y
+                                 )
+                                3
+                                                         2 −
+                 M    = ( 3y −  2  y e − y  N =  (3 −  ) yy e  y
+                    y                        x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1536 - ODE Solution</title>
+        <title>Page 1536 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1536 - ODE Solution</div>
+        <div id="content-top1">Page 1536 - DE Solution</div>
         <div id="content-top2">P. 1536</div>
      </div>
      <div id="content-middle">
@@ -152,100 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                                    
-                                                                                 
+    <pre style="white-space:pre-line"><code>1522 | S O LU TI O N
 
-                                          
-                                                                        
-            x   r   c r 2r    1 x   1    c n n r 2n  2r    1 x n  1    n r    1 c x   n  n     0
-                 0
-                                                                                   
-                                n  1                           n  0              
-                                           k   n   1                  k n        
-                                                                          
-                                                                                     
-                                                                 k
-            x r   c r 2r    1 x  1    c  r   1 2k   2r    1 x    c  r     1 x k     0
-                                                                                k
-                                              k
-                   0                k 1                                k               
-                                k  0                               k  0              
-                                                                                  
-             r              1                                                    k 
-                                                                                
-                                                k
-                                                                           k
-            x    c r 2r    1 x        c k 1 r   1 2k   2r    1  c k  r     1 x     0
-                 0
-                                                                                   
-                                k 0                                               
-                 2r    1                                           r   0     r   1
-              c r          0                                                        2
-                0
-            
-            
-             c   r    1 2k   2r    1  c  r    k  0   c       r   k   1     c
-                       k
-                                                                            k
-              k  1                       k                    k  1  r    1 2k   2r    1  k
-            
-                   r  0                                   r   1
-                                                               2
-                                                                     k   3
-            c        1   c                           c               2     c       1    c
-             k 1    2k  1 k                            k 1    k   3  2k    2  k   2 k    1  k
-                                                                     2
-                c     1 c                                c     1 c
-                 1    1  0                                  1    2  0
-                c    1 c   1 c                          c     1  c     1   c
-                                                                            
-                                                                   
-                                                                               
-                 2     3  1  3  0                           2     2 2  1   2 2 2   0
-                c    1 c     1   c                     c     1  c       1    c      1   c
-                 3    5  2     1 3 5    0                 3     2 3   2   2 3 2 3     0  2   3  3!  0
 
-                c    1 c      1    c                    c     1  c     1   c
-                                   
-                              
-                                 
-                                                                            4
-                 4     7  3  1 3 5 7   0                    4     2 4   3  2  4!  0
+          Exercise
 
-                                                                 
-                            1  n                               1  n
-                c                   c                     c         c
-                        
-                      
-                 n   1 3 5   2n    1  0                  n     n    0
-                                                                 2 n !
-                                      n                                          n    
-            y  ( )   x  c    1      1    x n      y  ( )   x  c x 1/2   1    1  x n    
-                                 
-                                   
-                                                                                    n
-             1       0       1 3 5   2n    1          2       0            2 n !   
-                          n 1                                              n 1        
-                           
-                                    x
-                         x
-            y ( )   x  C y  ( ) C y  ( )
-                    1 1        2 2
-                                                 
-                                                                         
-                     1            1     n  n   2         1  n  n 1/2 
-                      
-                                                        
-                    C  1     1 3 5   2n    1  x    C    n   x     
-                                
-                                  
-                                                 
-                                                        
-                                                                         
-                      
-                          n   1                       n   0  2 n !  
+          Consider the given circuit below with all initial conditions are zero:
 
-                                                          1506</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             V  ( ) s
+             a)  Find the transfer function of   0
+                                                ( )
+                                             Vs
+                                               i
+                                                                                                   f
+             b)  Solve the transfer function under the conditions  R = 1 MΩ  R =  1 MΩ     C = 1 µ
+                                                                 1             2
+             c)  Find the transfer function in function in time.
+
+          Solution
+
+                    ( )
+             a)  V s =   RI   ( ) s +  R I  ( ) ( ) 1s
+                  i        11        2
+                 V  ( ) s =  1  I  ( ) s +  RI  ( ) ( ) 2s
+                  i      Cs  2        2
+
+                 −  RI  ( ) s +  1  I  ( ) s =  0  ( ) 3
+                    11       Cs  2
+
+                 V  ( ) s =  R   Is
+                              ( ) ( ) 4
+                   0       2
+                 ( ) 3  I =  R C I s  1
+                        2
+                             1
+                 I =  I +  I
+                      1   2
+                      I
+                 I = −   I
+                  1       2
+                                    s
+                     =  1  V −  R C I
+                       R    0    1    1
+                         2
+                 ( 1+  R C s )  I =  1  V
+                                 R
+                       1
+                             1
+                                   2  0
+                  I =       1       V
+                  1   R  ( 1 R C+   s )  0
+                        2      1
+                                 R
+                 ( ) 1  V =   (   1     ) V + V
+                                          0
+                                               0
+                       i
+                           R
+                             2  1 R C+  1   s</code></pre>
      	</div>
     
      </div>

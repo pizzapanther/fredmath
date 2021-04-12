@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 880 - ODE Solution</title>
+        <title>Page 880 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 880 - ODE Solution</div>
+        <div id="content-top1">Page 880 - DE Solution</div>
         <div id="content-top2">P. 880</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Consider the parallel RLC network. Assume that at time t  , the voltage    t  and its time rate of change
-                                                                                     V
-                                                                      0
-                                                V
-             are both zero. Determine the voltage    t  for
-                                                          t 
-                                                                   t
-                    R  1 k , L  1 H , C   1    , F  I    5cos   mA
-                                              2         s
-             Solution
-                 I    t   1 V  C  dV    1  V    s ds
-                  S      R       dt    L
-                                                      
-                 d      I    t   1 V   C  dV    1  V    s ds
-                                                      
-                 dt   S     R       dt   L           
-                                       2
-                 d  I    t   1 dV    C  d V    1 V    s
-                 dt  S      R dt      dt 2  L
-
-                  2
-                 d V    1 dV    1  V   1 dI
-                 dt 2   RC dt    LC      C dt
-
-                                           
-                V   2V  2V   2  d  5cost
-                                  dt
-                V   2V  2V     10sin  ; V    0   0, V   0 
-                                       t
-                                                               0
-                      2
-                                                  1 i
-                       2     0           
-                              2
-                                           1,2
-                                              
-                V    t   e  t    C  cost   C  sint
-                  h            1        2
-                V    A cost   B sint
-                  p
-                    V   A sint   B cost
-                      p
-                    V   A cost   B sint
-                      p
-                V   2V  2V   10sint
-
-                     cost    A   2B  2A   0       A    2B   0
-                                                   
-                                                          
-                     sint   B  2A   2B   10     2A B   10
-                                1   2             0    2              1    0
-                                     5                20                10
-                                 2  1       A    10  1         B    2   10
-                        A   4, B  
-                                     2
-
-                V     t   4cost   2sint
-                  p
-                                             
-                V   t   e  t    C 1  cost  C 2  sint   4cost   2sint
+    <pre style="white-space:pre-line"><code>870 | S O LU TI O N
 
 
-                       V   0   0  C   4   0   C        4
-                                       1               1
-                                                                  
-                V    t    e  t     C 1 sint  C 2  cost  C 1  cost  C 2  sint  4sint  2cost
+          Exercise
 
-                                                               867</code></pre>
+          A spring with a mass of  2-kg  is held stretched 0.5 m , has damping constant 14, and a force of 6 N .
+          If the spring is stretched 1 m beyond at its equilibrium and with no initial velocity.
+           a)  Find the position of the mass at any time t.
+           b)  Find the mass that would produce critical damping.
+
+          Solution
+
+             a)    k =  6                     kx =  F
+                      .5
+                   = 12
+
+                                                          0
+                 2x′′ +  14x′ +  12x =  0 ;  x ( ) 0 = 1, x′ ( ) 0 =              mx′′ +  cx′ +  kx =  F ( ) t
+                     λ  2  7λ +  += 0
+                               6
+                     λ    −  6, λ =  =  −  1
+                      1        2
+
+                 x t     1  −  6t  + C e  t −
+                   ( ) C e=
+                                   2
+                         x ( ) 0 = C +  1  C =  2  1
+
+
+                 x′ ( ) t =  −  6C e −  6t  −  C e  t −
+                            1
+                                      2
+                         x′ ( ) 0 = − 6C −  1  C =  2  0
+
+
+                                 1   1              1   1               1   1
+                            ∆=          = 5  ∆    =       = − 1 ∆    =        =  6
+                                −  6  −  1     C 1  0  −  1       C 2   −  6  0
+                        C =   −  1 ,  C =  6
+                          1    5    2   5
+
+                 x ( ) t =  −  1 −  5 e  6t  +  6 −  5 e  t
+
+
+
+             b)  mλ  2  14λ +  +  12 =  0
+
+                                   −
+                 λ    =  −  14 ±  196 48m
+                  1,2          2m
+                 For critical damping:  196 48m−  =  0
+
+                 m =  196
+                      48
+
+                   =  49  kg
+                     12</code></pre>
      	</div>
     
      </div>

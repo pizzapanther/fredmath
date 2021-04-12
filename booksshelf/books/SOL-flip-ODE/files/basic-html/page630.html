@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 630 - ODE Solution</title>
+        <title>Page 630 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 630 - ODE Solution</div>
+        <div id="content-top1">Page 630 - DE Solution</div>
         <div id="content-top2">P. 630</div>
      </div>
      <div id="content-middle">
@@ -152,91 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-            q   t   e  3t  C 1 cos3t   C 2  sin3t
+    <pre style="white-space:pre-line"><code>624 | S O LU TI O N
 
-                   q   0   4   C   4
-                                    1
-                                                                          
-                q   t  e  3t   3C 1 cos3t  3C 2  sin3t  3C 1 sin3t  3C 2  cos3t
 
 
-                                                      0
-                   q   0  i   0  0   3C  3C 
-                                            1     2
-                      C    4
-                         2
+              0.01 dI  +=  sin100t            L dI  +  RI =  E ()
+                       I
+                                                           t
+                  dt                            dt
+              dI  +  100I =  100sin100t
+              dt
+                   ∫ 100dt
+                    e     =  e 100t
 
-            q t     3t 4cos3t   4sin3t 
-                e
+                                                  ∫ 100sin100t  dt
 
+                             +       e 100t          − cos100t
 
+                                                      1
+                             −     100e 100t       − 100 sin100t
+                                     4 100t
+                             +     10 e
 
+                 ∫  (100sin100te      dt =  ( cos100t−  +  sin100t )e  −  ∫  (100sin100te
+                               )  100t                          100t                 )  100t dt
 
 
 
+                                 )
+                 2 ∫ (100sin100te  100t dt =  ( cos100t +  sin100t )e 100t
+                                            −
 
+                               )
+                 ∫ (100sin100te  100t dt =  1 ( cos100t +  sin100t )e 100t
+                                             −
+                                          2
+                           (
+                                                            )
+                          t
+                               −
+              I ( ) t =  e − 100 1 ( cos100t +  sin100t )e 100t  +  K
+                            2
+                   =  1 ( cos100t−  +  sin100t ) K+  e − 100t
+                     2
+                         I ( ) 0 =
+                               0
 
+                        0 =  1 ( ) 1−+  K
+                            2
+                         K  =  1
+                             2
 
+                                               e
+              I ( ) t =  1 ( cos100t−  +  sin100t ) +  1 − 100t
+                    2                        2
+             The voltage at the resistor:
 
+                 E   ( ) t =  RI
+                   R
 
+                        =  1 ( sin100t −  cos100t +  e − 100t )
+                           2
 
+             The voltage at the inductor:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                          618</code></pre>
+                 E   ( ) t =  L dI
+                   L        dt</code></pre>
      	</div>
     
      </div>

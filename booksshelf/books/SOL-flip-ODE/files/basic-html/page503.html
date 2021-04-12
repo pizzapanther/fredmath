@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 503 - ODE Solution</title>
+        <title>Page 503 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 503 - ODE Solution</div>
+        <div id="content-top1">Page 503 - DE Solution</div>
         <div id="content-top2">P. 503</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,69 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             When the values of a solution to a differential equation are specified at two different points, these
-             conditions. (In contrast, initial conditions specify the values of a function and its derivative at the same
-             point). The purpose of this is to show that for boundary value problems there is no existence-uniqueness
-             theorem. Given that every solution to
-                            y   y   0    is of the form     y   t   c  cost   c  sint
-                                                                       1        2
-             Where c  and c  are arbitrary constants, show that
-                     1       2
-
-                a)  There is a unique solution to the given differential equation that satisfies the boundary conditions
-                                    
-                    y   0   and  y     0
-                           2
-                                     2
-                                                                                    y 
-                                                                             0
-                b)  There is no solution to given equation that satisfies    2   and    
-                                                                                           0
-                                                                      y
-                                                                                                       y 
-                c)  There are infinitely many solution to the given DE equation that satisfy    0   and        2
-                                                                                                2
-                                                                                         y
-             Solution
-                a)    2  1 0            i 
-                    y   t   c  cost   c  sint
-                            1        2
-                            y   0   2   2   c
-                                                1
-                              
-                              
-                            y  2   0      0   c 2
+    <pre style="white-space:pre-line"><code>1. 6 − E x a ct   D i f f er en t i al  E q u at i o n s  | 497
 
 
-                    y   t   2cos   t
+                 Exercise
 
-                b)    0   2     2   c
-                    y
-                                        1
-                    y             0     c
-                        0 
-                                          1
-                    This system is inconsistent, so there is no solution satisfying the given boundary.
-                c)    0   2     2   c
-                    y
-                                        1
-                         
-                    y       2        2   c
-                                             1
-
-                    y   t   2cost   c  sint
-                                    2
-                    Which has infinitely many solutions given c  is an arbitrary constant.
-                                                               2
+                 Find the general solution of the homogenous equation      (x +  ) y dx +  ( y x dy−  )  =  0
 
 
+                 Solution
+                     (x +  ) y dx =  −  ( y x dy−  )
+
+                     dy   x +  y
+                     dx  =  x −  y
+                           x +  y
+
+                        =    x
+                           x −  y
+                             x
+                              y
+                          1+
+                        =     x
+                              y
+                          1−
+                              x
+                     dy  =  1 v  =  x dv  + v
+                           +
+                     dx   1 v      dx
+                           −
+                             +
+                     x dv  =  1 v  − v
+                             −
+                      dx   1 v
+                             +
+                         =  1 v 2
+                            1 v
+                             −
+                     1 v   dv =  dx
+                       −
+                     1 v 2       x
+                      +
+
+                       dx  =  1 v ∫  +∫  1  dv −  1 v ∫  v  dv                2 ∫  1  dx =  arctan
+                                                                                             x
+                        x          2         +  2                            a +  x 2        a
 
 
-
-
-
-
-
-
-
-
-
-
-
-                                                               491</code></pre>
+                     ln x =  arctanv −  1  1 v ∫  1  d ( 1 v 2 )
+                                                  +
+                                    2     +  2
+                                            (
+                                              +
+                         +
+                     ln xC =   arctanv −  1 ln 1 v 2 )
+                                        2
+                                     y   1      y 2 
+                     ln xC =   arctan  −  ln 1+    
+                         +
+                                     x   2       2 
+                                                x  
+                           y   1      y 2 
+                     arctan  −   ln 1+     −  ln x =  C
+                           x   2        2 
+                                      x  </code></pre>
      	</div>
     
      </div>

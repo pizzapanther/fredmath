@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 646 - ODE Solution</title>
+        <title>Page 646 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 646 - ODE Solution</div>
+        <div id="content-top1">Page 646 - DE Solution</div>
         <div id="content-top2">P. 646</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>x 4    5A   10
-
-                   x 3  20A   4B   0
-                   x 2  12B   3C   0    A   2, B   10, C   40, D   120, E   242
+    <pre style="white-space:pre-line"><code>640 | S O LU TI O N
 
 
-                   x 1  6C   2D   0
-                    0
-                   x    1D   E   2
 
-                    5
-                                          2
-                                  3
-                           4
-            y     2x  10x   10x  120x    242x
-              P
-                                                          2
-                                    5
-               x 
-            y   C    C e  x    2x  10x   4  10x   3  120x   242   x
-                     1    2
+                                                                 ( )
+             a)  0.1 di  +  50i =  30                L di  +  Ri =  Et
+                    dt                                 dt
+                 di  +  500i =  300
+                 dt
+
+                      ∫ 500dt
+                        e     =  e 500t
+
+                     ∫          dt =  5
+                       300e 500t    3 e 500t
 
 
-        Exercise
-                                                                 x
-        Find the general solution for the given DE:   y   y  5e  sin 2x
-        Solution
-                                          2
-            The characteristic equation:          0       0, 1
-                                                            1,2
-                           x
-            y   C   C e
-              h    1    2
-                      x
-            y     Axe   B cos2x  D sin 2x
-              P
-                               x
-                                               D
-                                    B
-                y    A   Ax e   2 sin 2x   2 cos2x
-                 P
-                                 x
-                                     B
-                y   2A   Ax e  4 cos2x  4 sin 2x
-                                                 D
-                 P
-                       x
-            y   y  5e  sin 2x
-                       x
-                                                           x
-                                                                                        x
-            2A   Ax e   4 cos2x   4 sin 2x   A   Ax e  2 sin 2x  2 cos2x  5e  sin 2x
-                                                                B
-                            B
-                                       D
-                                                                           D
-                                                           x
-               x
-            Ae          2D cos2x  2B  4D  sin 2x  5e  sin 2x
-                    4B 
-                        A  5
-                   
-                     4B  2D   0     A  5,  B    1  ,  D   1
-                                                    10        5
-                    2B  4D   1
-                     x
-            y     5xe   1  cos2x   1 sin2x
-              P          10         5
-                                    x
-                             x
-            y x        C e    5xe    1  cos2x   1 sin2   x
-                C 
-                     1    2            10         5
+                              (
+                                          )
+                             t
+                  ( ) e
+                 it =   − 500 3  e 500t  +  C
+                               5
+                               0
+                        i ( ) 0 =
+                        0 =  3  + C
+                            5
+                        C  = −  3
+                              5
+
+
+                             e
+                 i ( ) t =  3  −  3 − 500t
+                       5   5
+
+                       ( )
+                                       e
+             b)  lim it =    lim ( 3  −  3 − 500t )
+                 t→∞        t→∞   5  5
+                          =  3
+                            5
+
+
+             c)   di  +  500i =  10E  sin t ω
+                 dt              0
+
+
+
+                                               ∫ sin tω  dt
+
+                           +   e 500t          −  1  cos t ω
+                                                 ω
+                            −   500e 500t      −  1  sin tω
+                                                 ω 2
+                           +          4 500t
+                               25 10 e×         −   1 2 ∫  sin tω
+                                                   ω
+
+                 ∫ 10E 0  (sin t eω )  500t dt =
 
 
 
 
-
-
-
-                                                          634</code></pre>
+                                            ∫  (sin t eω  dt    −  ω cos t +  ω=  ω  2  sin t e  −  ω  2  ∫  (sin t eω
+                                                                            ×
+                                 )  500t     1        500         500t  25 10 4        )  500t dt
+                                                              ω
+                                                                 
+                                                                 </code></pre>
      	</div>
     
      </div>

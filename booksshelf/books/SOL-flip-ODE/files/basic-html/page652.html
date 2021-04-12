@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 652 - ODE Solution</title>
+        <title>Page 652 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 652 - ODE Solution</div>
+        <div id="content-top1">Page 652 - DE Solution</div>
         <div id="content-top2">P. 652</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>y   C e  2x    C e 3x
-              h    1         2
-
-            y     Axe  2x
-              P
-
-                y    A   2Ax e  2x
-                 P
-                      4A 
-                y        4Ax e  2x
-                 P
-            y   y   6y   20e  2x
-
-             4A   4Ax   A   2Ax  6Ax e   2x    20e   2x
-             
-                 5Ae   2x    20e   2x    A   4
-
-            y       4xe  2x
-              P
-
-            y   x  C e   2 x   C e 3x   4xe   2x
-                     1         2
+    <pre style="white-space:pre-line"><code>646 | S O LU TI O N
 
 
-        Exercise
-        Find the general solution:    y   y  6y   2x
+               Thus over the initial charging/discharging interval 0 tt&lt;&lt;  +  t the voltage to the heart is
+                                                                        1   2
+               actually modeled by the piecewise-defined differential equation
+                                                     &lt;&lt;
+                                         0,       0 tt    1
+                                dE  =  
+                                     
+                                         1
+                                dt    −  RC  , E  t ≤ &lt;  1  t 2
+                                                     t t +
+                                     
+                                                 1
+               By moving S between P and Q, the charging and discharging over time intervals of lengths t
+                                                                                                        1
+               and t  is repeated indefinitely. Suppose t =  4 s , t =  2 s .  E = 12 V , and  ( ) 0E  =  0,
+                    2                                   1        2         0
+                E ( ) 4 = 12,  ( ) 6 = ,  ( ) 12E  10 =  ,  ( ) 0E  12 = , and  so on.
+                           E
+                                   0
+                           E
+                 Solve for  ( ) t  for 0 t≤≤  24
+           b)  Suppose for the sake of illustration that  R C=  = 1. Graph the solution in part (a) for 0 t≤≤  24
 
-        Solution
-                                          2
-            The characteristic equation:       6   0    1,2    3, 2
-
-            y   C e  3x    C e 2x
-              h    1         2
-
-            y     Ax   B
-              P
-                y   A
-                 P
-                y   0
-                 P
-            y   y  6y   2x
-            A  6Ax  6B   2x
-
-                  x     6A   2
-                
-                  0                  A   1 , B    1
-                  x  A   6B   0          3       18
-
-            y   x  C e  3x   C e 2x   1  x   1
-                     1         2      3    18
+          Solution
 
 
-        Exercise
-
-                                                 
-        Find the general solution:    y   y   6y e  x   7cos x
-        Solution
-                                          2
-                                              
-            The characteristic equation:         0       1,2    2, 3
-                                                  6
+             a)   dE  = −  1  E
+                  dt     RC
+                 dE  = −  1  dt
+                  E      RC
+                 ∫  dE  = − ∫  RC  dt
+                              1
+                    E
 
 
-                                                          640</code></pre>
+                 ln E =  −  1  tC
+                              +
+                         RC
+                               +
+                         −  1  tA
+                 Et        RC    1
+                   ( ) e=
+                           −  1  t
+                       =  Ae  RC
+
+                 For 0 t≤&lt; , 6 t≤&lt;   10, and 12 t≤&lt;  16
+                            4
+                       ( ) =
+                     Et     0
+                 For  ( ) 4E  =  E ( ) E=  ( ) 12=
+                                        16
+                                10
+                           −  1  t
+                         Ae  RC  = 12
+                                 1    t
+                         A = 12e RC
+
+
+                 E ( ) 4 →  A =  12e 4/RC
+
+                 E ( ) →    A =  12e 10/RC
+                    10
+                 E ( ) →    A =  12e 16/RC
+                    16</code></pre>
      	</div>
     
      </div>

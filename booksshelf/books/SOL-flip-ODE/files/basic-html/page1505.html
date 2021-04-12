@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1505 - ODE Solution</title>
+        <title>Page 1505 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1505 - ODE Solution</div>
+        <div id="content-top1">Page 1505 - DE Solution</div>
         <div id="content-top2">P. 1505</div>
      </div>
      <div id="content-middle">
@@ -152,31 +152,15 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2 2 2
-                n  1     a   1 a   1 a   1 a          2
-                          3   3  2  3  1 3   0   3 3 3         3
-                                                     1 1 1
-                n   2    a   1  a   1  a   1 a          1
-                           4   4  3 12   2   6  1    6 6 3      3
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1491
 
 
-                             2
-                                         4
-                                   3
-                   2 2t 
-               t
-            y          3t  1 t   1 t 
-                                3     3
-                                                   3
-            y   x   2    2 x    1    3 x    1  2   1 x    1   1 x    1  4  
-                                            3          3
-
-
-        Exercise
-        As a spring is heated, its spring “constant” decreases. Suppose the spring is heated so that the spring
-                                      
-        “constant” at time t is    t   6 t    N/m.
-                              k
+                 Exercise
+                                                                                        2
+                                                                                      d q     dq    1
+                                                                                                           ( )
+                 Consider a battery of constant voltage  E  that charges the capacitor.  L  dt 2  +  R  dt  +  C  q =  Et
+                                                        0
 
 
 
@@ -187,52 +171,64 @@ function MM_swapImage() { //v3.0
 
 
 
+                                                                        2
+                 Divide the given equation by L and define 2λ =  R   and ω =  1  .
+                                                                L           LC
+                                                                                                     E
+                    a)  Use the Laplace transform to show that the solution  ( ) of q′′ +  2 qλ  ω ′ +  2 q =  0    subject
+                                                                           qt
+                                                                                                      L
+                                     i
+                                            0
+                        to  ( ) 0q  =  0,  ( ) 0 =  is
+                                                                                              
+                                    EC   1 e −  t λ   cosh λ  2  ω −  2 t +  λ  sinh λ  2  ω −  2 t  −  λ   ω &gt;
+                                     0                               2     2                  
+                                                                    λ    ω −                  
+
+                                           −
+                             ( ) =
+                            qt      E C   1 e −  t λ  (1 λ +  ) t                                       λ  ω =
+                                   
+                                      0 
+                                                       
+                                                                                            
+                                     EC   1 e −  t λ    cos ω  2  λ −  2 t +  λ  sin ω  2  λ −  2 t  −        λ  ω &lt;
+                                     0                               2    2                 
+                                                                   ω    λ −                 
+                    b)  Use the Laplace transform to find the charge  ( ) t  in an RC series when  ( ) 0q  =  0 and
+                                                                    q
+                                                                                     1
+                                                                        1
+                                            0
+                          ( ) =
+                         Et     E e − kt , k &gt; . Consider two cases:  k ≠  RC   and  k =  RC
+                                 0
+                 Solution
+                    a)  £  { q′′ +  2 q′ +  λ  ω  2 q £=  }        E   0    
+                                                    L     
 
 
-
-
-
-
-
-        If the unforced mass-spring system has mass  m  2 g  and a damping constant b  1 N-sec/  with initial
-                                                           k
-                                                                                                m
-                                   x
-        conditions    0  3 m  and    0  0 m/se , then the displacement    t  is governed by the initial value
-                                                                          x
-                   x
-                                                 c
-        problem
-                                         
-                                     
-                              
-                                             x
-                       2x t     x t    6 t    t   0 ; x   0   3,  x   0   0
-                                                                                    0
-        Find at least the first four nonzero terms in a power series expansion about t   for the displacement.
-        Solution
-                    
-                          n
-            x   t   a t
-                        n
-                   n 0
-                                  
-                                                 n
-            x   t    na t n 1     n    1 a n 1 t
-                          n
-                   n   1         n   0
-                                         
-                                                                n
-            x   t     n n    1 a t n 2     n   2 n    1 a n 2 t
-                                 n
-                    n   2               n   0
-
-            2x   x   6 t   x 
-                                0
-
-
-
-                                                          1476</code></pre>
+                                                                       ( ) =
+                                              +
+                        s Qs − 2  ( ) sq (0) q′ (0) 2 λ  (sQs −  ( ) q (0) +  ) ω  2 Qs  E 0 1    q ( ) 0 =  0, q′ ( ) =
+                                       −
+                                                                                                     0
+                                                                                                         0
+                                                                             Ls
+                        ( s +  2  2sλω 2 ) Qs   E Ls
+                                                 0 1
+                                  +
+                                          () =
+                                E
+                          () =
+                        Qs       0         1
+                                L  ss + (  2  2sλω 2 )
+                                              +
+                                    1        =  A  +  Bs + C
+                             (  2         2 )  s    2          2
+                            s s +  2s +  λ  ω      s +  2s +  λ  ω
+                                As +  2  2A s ω +  λ  2 A +  Bs +  2  Cs =  1</code></pre>
      	</div>
     
      </div>

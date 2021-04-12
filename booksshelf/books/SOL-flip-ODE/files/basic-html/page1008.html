@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1008 - ODE Solution</title>
+        <title>Page 1008 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1008 - ODE Solution</div>
+        <div id="content-top1">Page 1008 - DE Solution</div>
         <div id="content-top2">P. 1008</div>
      </div>
      <div id="content-middle">
@@ -152,90 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>e
-                 y ( ) t   268  16t    3  cos3t   16  sin3   t
-                       265         265         265
+    <pre style="white-space:pre-line"><code>998 | S O LU TI O N
 
 
-             Exercise
-
-
-                                                                               
-             Solve using the Laplace transform:     y   y   e 2t ;  y (0)   0,  y (0) 1
-             Solution
-                   y  L   y   L  
-                                  2t
-                                 e
-                  2
-                                                1
-                                                                               
-                                                                    
-                                      
-                                         ( )
-                 s Y ( ) s  sy (0)   y (0) Y s   s  2      y (0) 0,  y (0) 1
-                 s  1 Y s     s   2
-                       
-                  2
-                                   1
-                         ( ) 1
-                       
-                 s  1 Y s   s   2   1
-                  2
-                                1
-                         ( )
-                (s  1)(s  1) ( ) s   s  1
-                            Y
-                                   s  2
-                Y ( ) s     1          A       B
-                       s  1 s   2  s  1  s    2
-                                                   A    B   0
-                                                                            1
-                        
-                     (A B  )s   B  2A  1                   A   1 ; B 
-                                                   2A   B  1     3      3
-                L     ( ) s    L          1    1    
-                               1
-                       Y
-                               3        s   1  s    2  
-                 y   t   1  e 2t   e  t  
+                             )
+              y =  ( C + C x e − 2x
+               h     1     2
+                               )
                        3
+                             2
+              y  = ( Ax +  Bx e  − 2x
+               P
+                                                    )
+                 y′ =  ( −  2Ax −  3  2Bx +  2  3Ax +  2  2Bx e − 2x
+                   P
+                                                                            )
+                 y′′ =  ( 4Ax +  3  4Bx −  2  6Ax −  2  4Bx −  6Ax −  2  4Bx +  6Ax +  2B e − 2x
+                   P
+                                                              )
+                     =  ( 4Ax +  3  4Bx −  2  12Ax −  2  8Bx +  6Ax +  2B e − 2x
 
 
-             Exercise
 
-                                                                   
-                                                          t
-             Solve using the Laplace transform:     y    2 ; y (0) 0 ,  y (0 )     1
-                                                      y
-             Solution
-                    y  L   y   L  
-                                 2t
+              y′′ +  4y′ +  4y =  (3 x e+  )  − 2x
 
-                  2
-                                                                    
-                                      
-                       
-                                          s
-                 s Y ( ) sy (0)   y (0) Y ( )   2  1 2       y (0) 0 y (0)   1
-                     s
-                                                s
-                 s  1 Y s      2
-                       
-                  2
-                         ( ) 1
-                                  s 2
-                Y ( )   s    2         (s   1)(s   1
-                       s 2 (s   1)(s   1)       1)
-                                  2         A    B    C
-                            s 2 (s   1)(s   1)  s 2  s   1  s   1
-                                                  2
-                                            3
-                                  2
-                                                        3
-                           2   As   A Bs    Bs   Cs   Cs 2
-                                       
+                     x 3        4A −  8A +  4A =  0
 
-                                                               987</code></pre>
+                     x 2  4B −  12 −  A  8B +  12A +  4B =  0  →  A =  1 , B =  3
+                      x        −  8B +  6A +  8B =  1            6       2
+
+                     x 0             2B = 3
+                               )
+                              2
+                       3
+              y  = ( 1  x +  3  x e − 2x
+               P    6      2
+               ( ) =
+              yx     ( C +  1  C x +  2  3  x +  2  1 x 3 ) e − 2x
+                                        6
+                                 2
+                     y ( ) 0  = C =  2
+                             1
+                 y′ ( ) x =  ( C +  2  3x +  1  x −  2  2C −  1  2C x − 2  3x −  2  1  x 3 ) e − 2x
+                                    2
+                                                              3
+                     y′ ( ) 0 =  C −  2  2 ( ) 52 =
+
+                     C  =  9
+                       2
+
+                  ( ) =
+             ∴    yx   ( 29x +   3  x +  2  1  x 3 ) e − 2x
+                          +
+                                       6
+                                 2
+
+
+          Exercise
+
+          Find the general solution that satisfy the given initial conditions
+
+                                               y
+                         y′′  4y′ +  +  4y =  4 t ;      (0) = − 1,     y′ (0) =  0
+                                         −
+          Solution
+                                       2
+                                               4
+                                                   0
+             The characteristic eqn. : λ + 4λ+ =
+
+                 λ    =  −  2
+                   1,2
+                             )
+              y =  ( C + C t e − 2t
+               h     1     2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 330 - ODE Solution</title>
+        <title>Page 330 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 330 - ODE Solution</div>
+        <div id="content-top1">Page 330 - DE Solution</div>
         <div id="content-top2">P. 330</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> M    1   y   1           y
-                          2
-                  y    2       y   2  2     y   2  2
-                                     x             x                     M      N
-                 N     1   1     y   x   x 2      y            y    x 
-                                           2
-                                      2
-                  x    y    2    2                      2    2
-                            y   x                      y   x
-
-                     x   1  2        dx                                     2   dx    sin  1 x
-                                                                                                   a
-                          2
-                        y   x                                                    a   x 2
-                   2
-                1  x   sin  1 x    h   y
-                2           y
-
-                                                                                                  
-                       1         h   y                                           d  arcsinu    u
-              y                2                                                        dx                 2
-                                                                                                        
-                    y 2  1     x                                                                  1 u
-                             y 
-                                  
-                                     1
-                      1        h y          1
-                    y y   2  x 2           y y   2  x 2
-                
-                   1 
-              h y           h   y 
-                                      y
-               2
-            1  x  sin  1 x    y  C
-            2            y
-
-
-        Exercise
-                                          2                                    y 
-        Find the general solution     2x   y  cos  x   y dx   2xy  cos x    y  e  dy   0
-
-        Solution
-                                2
-                M  y     y    2x   y  cos x   y    2y  sin x    y
-                                                                          M    N
-                                                                              y
-                                                                                   x
-                N       2xy  cos x    y  e y     2y  sin x    y
-                  x    x 
-                                      
-                          2
-                2x   y  cos x   y  dx
-
-                       2
-                 2
-                x   xy  sin x    y   h   y
-                                                                y
-                2xy  cos x    y   h   y   2xy  cos x    y  e
-              y
-                                               y
-                  h   y   e y    h   y   e
-
-                                    y
-                   2
-             2
-            x   xy   sin  x    y  e   C
+    <pre style="white-space:pre-line"><code>324 | S O LU TI O N
 
 
 
+                         1     
+              y ( ) t =  t −    +  C
+                                
+                       2t 2    
+                   =  −  1  +  C  t
+                       2t
+
+                     y ( ) 1 =  y
+                             0
+                       1
+                     − +  C =  y
+                       2        0
+                     C  =  y +  1
+                              2
+                          0
+
+              y ( ) t =  −  1  +  ( y +  1 )    t
+                      2t     0   2
+
+
+          Exercise
+
+
+          Find the solution of the initial value problem   y′ +  ay =  e at  ;    y ( ) 0 =  y 0 , a ≠  0
+
+          Solution
+
+                   ∫ adt
+                           at
+                    e   = e
+                 ∫  ee     d   t = ∫  e 2at dt
+                     at at
 
 
 
-                                                          326</code></pre>
+                             =  1  e 2at
+                               2a
+
+                                     )
+              y ( ) t =  1  (  1  e 2at  + C
+                     e at  2a
+
+                   =  1  e at  + Ce − at
+                     2 a
+
+
+                     y ( ) 0 =  y
+                             0
+                      1  +  C =  y
+                     2a        0
+
+                     C =  y −  1
+                          0   2 a
+
+              y ( ) t =  1  e at  +  ( y −  1 ) e − at
+                    2a         0   2a</code></pre>
      	</div>
     
      </div>

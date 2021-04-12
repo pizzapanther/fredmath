@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 401 - ODE Solution</title>
+        <title>Page 401 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 401 - ODE Solution</div>
+        <div id="content-top1">Page 401 - DE Solution</div>
         <div id="content-top2">P. 401</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 395
 
-                                                                                                   y
-             The reaction of chemical compounds can often be modeled by differential equations. Let    t  be the
-                                                          0
-             concentration of a substance in reaction for t    (typical units of y are moles/L). The change in the
-                                                                         dy      n
-             concentration of a substance, under appropriate conditions, is       ky , where  k   is a rate constant
-                                                                                              0
-                                                                         dt
-             and the positive integer n is the order of the reaction.
-                a)  Show that for a first-order reaction n    1 , the concentration obeys an exponential decay law.
-                b)  Solve the initial value problem for a second-order reaction n    2  assuming    0y    y
-                                                                                                       0
-                c)  Graph and compare the concentration for a first-order and second-order reaction with k  0.1 and
-                    y   1
-                      0
-             Solution
+                 Exercise
 
-                      dy      
-                a)     y       kdt
+                 Suppose that a large mixing tank initially holds 300 gallons of water is which 50 pounds of salt have
+                 been dissolved. Another brine solution is pumped into the tank at a rate of 3 gal/min, and when the
+                 solution is well stirred, it is then pumped out at a faster rate if 3.5 gal/min. If the concentration of the
 
+                                                                                                  x
+                 solution entering is 2 lb/gal, determine a differential equation for the amount of salt  ( ) t  in the tank
+                            0
+                 at time t &gt; .
+                 Solution
 
-                               
-                    ln y   kt C
-                                  1
-                    y   t  Ce  kt
+                                        )t
+                                    −
+                     Vt = ( ) 300 +  (3 3.5
+                         =  300 −  1 t
+                                 2
 
+                         =  1 (600 t−  )
+                           2
 
-                                dy       2
-                b)  n   2          ky
-                                dt
-                        dy
-                       y   2      kdt
+                     Rate in = 3  gal  × 2  lb
+                                min    gal
 
+                            =  6  lb
+                               min
+                                           ( )
+                     Rate out = 3.5  gal  ×  2xt  lb
+                                   min  600 t −  gal
 
-                    1    kt C
-                           
-                     y
-                        y   0   y    1   C
-                                0        y
-                                          0
-                    1    kt   1
-                     y       y
-                              0
-                             y
-                    y   t   0
-                            
-                           1 ky t
-                                0
-                c)    t    1
-                    y
-                            
-                           1 0.1t
-                    y   1      C  1
-                      0
-                    y   t   e  0.1t
+                              =  7x      lb
+                                   −
+                                600 t  min
+                     dx  =  6 −  7x
+                     dt       600 t −
+                     x′ +  7   x =  6
+                            −
+                         600 t
+                          ∫  7dt     − 7 ∫  d (600 t −  )
+                            e  600 t −  =  e  600 t −
+
+                                 =  e −  7ln (600 t−  )
+
+                                 = (600 t−  ) − 7
+
+                        ∫   ( 6 600 t ) −  7 dt =  −  6 ∫  (600 t ) −  7 d (600 t−  )
+                                                      −
+                                 −
+
+                                            = (600 t−  ) − 6
 
 
+                                                       )
+                     x ( ) t =  1      ( (600 t −  ) − 6  +  C
+                            (600 t −  ) − 7
+                                              7
+                         =  600 tC    (600 t−  )
+                               −+
 
-
-
-
-
-
-
-
-
-
-
-                                                               397</code></pre>
+                            x ( ) 0 =  50
+                                              7
+                                             )
+                            50 =  600 C  (600
+                                     +</code></pre>
      	</div>
     
      </div>

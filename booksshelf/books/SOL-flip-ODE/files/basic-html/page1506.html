@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1506 - ODE Solution</title>
+        <title>Page 1506 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1506 - ODE Solution</div>
+        <div id="content-top1">Page 1506 - DE Solution</div>
         <div id="content-top2">P. 1506</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                   
-                                         n
-                                                                              n
-                                                            n
-                                        t 
-                                                                   
-                2     n   2 n    1 a n   2  n    1 a n  1 t  6 t   a t   0
-                                                                            n
-                  n 0                       n 0                      n 0
-                                                                           
-                                                                       n 
-                                                             n
-                                         n
-                                                                         n
-                                        t 
-                       2 n   2 n    1 a n   2  n    1 a n  1  6a t   a t n 1    0
-                                                            t 
-                                                                                  n
-                 n 0                        n 0               n 0         n 0
-                                                                   
-                                                                            n
-                                                               n
-                        2 n   2 n    1 a   n    1 a   6a n      t    a  t   0
-                                     n 2         n 1                 n 1
-                 n 0                                              n 1
-                                                                                    
-                              0 
-                                                                                n
-                                                                                              n
-                4a    a   6a          2 n   2 n    1 a   n    1 a   6a    t    a  t   0
-                   2    1                             n 2          n 1    n           n 1
-                                  n 1                                              n 1
-                                   
-                              0 
-                                                                                        n
-                4a    a  6a           2 n  1 n    2 a   n    1 a    6a  a    t  0
-                   2    1                             n 2          n 1    n    n 1
-                                  n 1
-                Given:    0   3   a  ,  x   0    0  a
-                       x
-                                   0               1
-                4a    a  6a    0      a    9
-                   2    1     0            2     2
-                   2 n  1 n    2 a n 2   n    1 a n 1   6a   a n 1   0
-                                                      n
-                        a      6a  n    1 a
-                a        n  1   n          n  1
-                  n 2          2  n   1 n    2
-
-                n  1     a   1   a   6a   2a     1  3 9      1
-                           3   12   0     1     2    12
-                                                            
-                n   2     a   1   a  6a  3a     1  27 3 
-                                                                1
-                            4   24   1     2     3    24
-                             2
-                                 3
-                                      4
-                    3 
-                 x t      9 t  t  t 
-                           2
+    <pre style="white-space:pre-line"><code>1492 | S O LU TI O N
 
 
 
+                            s 2   AB =    0                 B = −  1
+                                    +
+                                                                 ω 2
+                            s 1  2 A + λ  C =  0           C = −  2λ
+                                                                 ω 2
+                            s 0    ω 2 A =  1  →  A =  1
+                                                      ω 2
+
+                        E                             
+                 Qs       0    11  −  1    s +  2λ    
+                   () =
+                         L   ω   2 s  ω  22  2 s ω +  λ  2  
+                                        s +
+                 For λ   ω &gt;  , then  s +  2  2 s ω +  λ  2  =  s 2  2 s + +  λ  λ −  2  λ +  2  ω  2  =  (s +  λ  ) −  2  ( λ  2  ω −  2 )
+
+                                                         
+                             E                           
+                                                                     2
+                       () =
+                     Qs       0    1  −    s λ +  λ +            ω =    1
+                            Lω 2 s    (s λ +  ) −  2  ( λ  2  ω −  2 )   LC
+                                 
+                                                         
+                                                                                              
+                     £  −  1 { ()Qs =  } E C  £  −  1     1  −  s λ  +  −        λ             
+                                     0          s         2   (  2   2 )         2  (  2    2 )
+                                                  (s λ +  ) −  λ   ω −   (s λ +  ) −  λ  ω −  
+                                                                                              
+                                                                                     
+                     q ( ) t =  EC  0   1 e −  t λ  cosh λ  2  ω −  2 t −  λ  e −  t λ  sinh λ  2  ω −  2 t   
+                                  −
+                                                          λ  2  ω −  2               
 
 
+                 For λ   ω &lt;  , then  s +  2  2 s ω +  λ  2  =  (s λ +  ) +  2  ( ω  2  λ −  2 )
 
+                                                                                              
+                     £  −  1 { ()Qs =  }  E    C £  −  1      1  −  s λ  +  −     λ            
 
+                                                 0  s  (s λ +  ) +  2  ( ω  2  λ −  2 )  (s λ +  ) +  2  ( ω  2  λ −  2 ) 
+                                                                                              
+                                                                                   
+                     q ( ) t =  E 0 C   1 e −  t λ   cos ω  2  λ −  2 t −  λ  sin ω  2  λ −  2 t  −  
 
+                                                         ω  2  λ −  2                
+                                                                         2
+                 For λ   ω =  , then  s +  2  2 sλ  ω +  2  =  s 2  2 sλ+  λ +  2  =  (s λ +  )
+                         1     =  A  +  B  +   C
+                                      +
+                      ( ss λ  +  ) 2  s  s λ  (s λ  +  ) 2
+                         As 2  2A sλ +  λ +  2 A +  Bs 2  B s +  λ+  Cs =  1
+                            s 2     A +  B =  0                 B = −  1
+                                                                     λ 2
 
+                            s 1  2 A + λ  Bλ  +  C =  0 C =  −  2  +  1  C = − 1
+                                                        λ   λ         λ
 
+                            s 0      λ 2 A =  1    →  A =  1
+                                                          λ 2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                              1477</code></pre>
+                     £   −  1 { () =  Qs  }  E L 0  £   −  1            λ  1 1  −  λ  1 2 s λ +  −  λ  1  (s λ )   2       
+                                                                        1
+                                                             1
+                                                  2 s
+                                                                       +</code></pre>
      	</div>
     
      </div>

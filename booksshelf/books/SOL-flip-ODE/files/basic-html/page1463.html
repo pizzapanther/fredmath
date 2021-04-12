@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1463 - ODE Solution</title>
+        <title>Page 1463 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1463 - ODE Solution</div>
+        <div id="content-top1">Page 1463 - DE Solution</div>
         <div id="content-top2">P. 1463</div>
      </div>
      <div id="content-middle">
@@ -152,86 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                   2
-                    n    1 a    n   1 a
-                                       n
-            a              n 1              n
-              n 2            n  1 n    2
-
-            n   0    a   1  a  a  
-                      2   2   1    0
-                                         1
-            n  1   a   1  2a  a     a   a   a      1 a
-                                       
-                      3   6    2    1    6  1    0    1     6  0
-                                           1
-                                         
-            n   2    a   1  3a  3a      1  a   1  a   1 a     1  a   1 a
-                      4   12    3     2    4    6  0   2  1  2  0    12  0   8  1
-                                              
-            n   3    a   1   4a  7a      1 1 a   1  a   7 a      3  a   1  a
-                      5   20     4     3    20 3  0   2  1   6  0    40  0   40  1
-            n   4    a   1   5a  13a      1  3 a   1 a  13 a  13 a       17  a   1  a
-                      6   30     5      4    30 8  0   8  1  12  0    8  1     720   0  20  1
-                                            2
-                                                                        4
-                                                      3
-                                                                       x 
-            y   x   a   a x   1 a   1 a   x   1 a x    1  a   1 a     3  a   1  a   x 5
-                     0   1     2  0   2  1      6  0      12  0   8  1       40  0   40  1
-                          17       1      6
-                              720 a   20  a 1  x 
-                                0
-                                                   5
-                                                            6
-                                           4
-                             2
-                                    3
-            y   x   a   1  1  x   1  x   1  x   3  x   17  x   
-                     0    2      6     12      40      720
-                                        4
-                                  2
-                              a   x   1  x   1 x   1  x   5  1  x   6  
-                         1     2     8      40      20
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1449
 
 
-        Exercise
-                                       2   
-        Find a power series solution.   x  1 y   6xy  4y 
-                                                             0
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n  1          n  0
-                                          
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
-             x  1 y  6xy   4y 
-                   
-              2
-                                    0
-                                                                                 
-                                                            n
-                                                                                           n
-            x 2     n n    1 a x n   2    n  2 n    1 a n 2 x  6x  na x n   1   4  a x   0
-                                                                                        n
-                                                                         n
-                            n
-               n 2                  n 0                          n 1            n 0
+                 Exercise
+
+
+                 Solve using the Laplace transform:     y′ +  16y = ′  2sin4 ;  t  y (0 ) −=  1 , y′ (0) =  0
+                                                                                  2
+                 Solution
+                     £  {y′′ +  16y }( ) s £=  {2sin4ts
+                                                 }( )
 
 
 
-                                                          1434</code></pre>
+                     s Y s − 2  ( ) sy ( ) 0 −  y′ ( ) 0 +  16Y ( ) s =  8
+                                                        2
+                                                      s +  16
+                             )
+                     ( s +  2  16 Ys  s  =  s + 16
+                                            8
+                               ( ) +
+                                     2
+                                          2
+                     ( s +  2  16 Ys    8   −  s
+                             )
+                               ( ) =
+                                      2
+                                     s + 16   2
+                                                                                                           ( )
+                      ( ) =
+                     Ys         8    2  −  1  2  s                         L  −1   2a 3  2    =  sin at −  cos at
+                                                                                                ( ) at
+                                         2
+                            ( s + 16 )    s +  16                               ( s + a 2 )
+                                                                                  2
+                              2
+                                                                    
+                             ( )} £
+                     £  −  1 { Ys  =  −  1       8  128  −  1  s      
+                                                               2
+                                           128 ( s +  4 2 ) 2  2  s + 1 6 
+                                                 2
+                                                                       
+                                        t
+                     y ( ) t =  1  (sin4t −  4 cos4t ) −  1  cos4  t
+                            16                    2
+
+
+                 Exercise
+
+                                                                      t
+
+                 Solve using the Laplace transform:     y′′ −  10y′ +  9y =  5 ; y (0) =  −  1, y′ (0) =  2
+                 Solution
+                     £  {y′′ −  10y′ +  9y }( ) s £=  { }( )
+                                                5ts
+
+
+                     s Y s − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  10sY  ( ) 10s +  y ( ) 0 +  9Y ( ) s =  5
+                                                                         s 2
+                     ( s − 10s + 9 Y ( ) s =  5  −+ 12
+                                 )
+                       2
+                                               s
+                                          s 2
+                     Y  ( ) s =  −  s +  3  12s +  2  5  =  A  +  B  +  C  +  D
+                            s 2 (s −  9 )(s −  ) 1  s  s 2  s −  9  s −  1
+
+                                                                                    3
+                             3
+                                                                                                 3
+                                                                                          2
+                                                                                                        2
+                                                                  2
+                                    2
+                                             3
+                                                      2
+                          − s + 12s +=     As −  10As +  9As +  Bs − 10Bs +  9B + Cs −  Cs +  Ds −  9Ds
+                                       5</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1198 - ODE Solution</title>
+        <title>Page 1198 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1198 - ODE Solution</div>
+        <div id="content-top1">Page 1198 - DE Solution</div>
         <div id="content-top2">P. 1198</div>
      </div>
      <div id="content-middle">
@@ -152,88 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                             5      1                        5  1 
-                   
-                 A    I                               A          
-                                      
-                             4       2                      4   2 
-                                        0
-                             2  7      6 
-                                                     
-                Thus, the eigenvalues are:      1,  6
-                                           1,2
-                                          
-                For       1      A       I V   0
-                      1                 1    1
-                      4   1      0                       1
-                                x
-                                        4   x   y  V     
-                                                           1
-                                y
-                                                                4
-                      4    1     0                      
-                                           
-                For       6      A       I V  0
-                      2                  2    2
-                     1   1      0                        1
-                              x
-                                      x   y  V      
-                                                        2
-                              y
-                                    0
-                     4   4                              1  
-                           1  t       1    6t
-                 y t     C    e    C     e
-                         1         2    1  
-                           4
-                            1       1   1
-                 y   0   C       C        
-                         1      2    1     
-                                            2
-                            4
-                      C    1  C   2  1         3           2
-                                             C    , C  
-                                                         2
-                                               1
-                      4C   1  C   2  2         5           5
-
-                 y   t   3  1 e  t     2   1 e   6t
-                                    
-                          
-                                        
-                       5 4         5 1  
-                                    
-                          
-                  y    t   3   e  t    2   e  6 t
-                  1      5       5
-                
-                  y    t    12   e  t    2   e  6t
-                  2       5       5
+    <pre style="white-space:pre-line"><code>1188 | S O LU TI O N
 
 
-             Exercise
-                                                                 y    3t   y  9y         2 
-                                                               
-             Find the general solution of the system  y   Ay      1     1     2    y (0)     
-                                                                y 2    t   4y   1  3y 2     4 
-                                                               
-             Solution
+                           ( )
+                 ϕ =  tan − 1 4
+                            5
+                   ≈  0.6747
 
-                            
-                           3         9                      3    9
-                 A    I                               A         
-                   
-                                     
-                            4       3                       4  3 
-                              2  27 
-                                    0
-                Thus, the eigenvalues are:        3 3i
-                                           1,2
-                                             
-                For     3 3 i       A      I V  0
-                      1                    1    1
-                                                              1177</code></pre>
+              x  =   41 cos (4t − 0.6747 )
+               p
+
+
+              x ( ) t =  e  t −  ( C 1 cos5t +  C 2  sin5t +  )  5cos4t +  4sin 4t
+
+                 x ( ) 0 = C +=  6
+                             5
+                          1
+                 C  = 1
+                   1
+
+                                                      −
+              x′ =  e  t −  ( 5C 1  sin5t +  5C 2  cos5tC 1 cos5tC 2  sin5t −  )  20sin4t +  16cos4t
+                                            −
+                 x′ ( ) 0 =  5C −  2  C +  1  16 =
+                                         0
+                 C   = − 3
+                   2
+
+              x ( ) t =  e  t −  (cos5t −  3sin5t +  ) 5cos4t +  4sin 4t
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             The forced amplitude at frequency ω is:
+
+              C ω             82
+                ( ) =
+                       26 −  2  48ω  2  ω +  4
+                              (
+                           41 4 ω  3  96 ω −  )
+               ′
+                ( ) = −
+              C ω                         3/2  =  0
+                        ( 676 48 ω −  2  ω +  4 )
+
+                 164ωω − (  2  24 =  )  0
+
+
+                 ω     = 0, ± 2 6
+                   1,2,3</code></pre>
      	</div>
     
      </div>

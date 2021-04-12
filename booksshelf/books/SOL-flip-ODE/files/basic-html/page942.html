@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 942 - ODE Solution</title>
+        <title>Page 942 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 942 - ODE Solution</div>
+        <div id="content-top1">Page 942 - DE Solution</div>
         <div id="content-top2">P. 942</div>
      </div>
      <div id="content-middle">
@@ -152,92 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> s  1   t cos   t e  st dt   sint  1 st cost e  st    2s sint s 1 cost  e  st
-                                                                           
-                                                            
-                  2
-                                                   
-                                         t
-                                                                          2
-                                                                         s 
-                  t cos  e  st dt   s  1  sint  t  1 st  cost e  st    2s sint s 1  cost  e  st
-                                                          
-                                   1
-                       t
-                                                                      
-                                  2
-                                                                             2
-                                                                        2
-                                                                       s 
-                                                             
-                         t sint  1 st cost  2s sint s cost    
-                                                     
-                                  
-                 F ( ) s                                    e    st
-                                2
-                              s   1              2    2         0                        cos   t dt
-                                                 s   1      
-                                                             
-                                                                                 e  st        sint
-                                    2
-                        1       2s                                            se  st         cost
-                        2
-                       s   1   s  1  2                                      s e  st
-                                 2
-                                                                                 2 
-                             1 2s
-                       s   2     2
-                          s  1  2
-                           2
-                          2
-                        s  1 2
-                        s  1 
-                         2
+    <pre style="white-space:pre-line"><code>932 | S O LU TI O N
 
 
-             Exercise
+                 λ    = 1, 2
+                  1,2
+                       x
+              y =  Ce +   C e 2x
+               h    1       2
 
-             Use Definition of Laplace transform to find the Laplace transform of      t   2t 4
-                                                                                 f
-             Solution
+              y  =  A cos2x +  B sin 2x
+               P
+                                    B
+                 y′ =  −  2 sin 2x +  A  2 cos2x
+                   P
+                                     B
+                 y′′ =  −  4 cos2x −  A  4 sin 2x
+                   P
+              y′′ −  3y′ +  2y =  14sin 2x −  18cos2x
 
-                               4 
-                              t
-                  F ( ) s   0  2  e  st dt                                             e  st dt
-                                                                                  4
-                                                                                            e
-                           t 4  4t 3  12t 2  24t         st           +      t        1  st
-                                                                                          s
-                         
-                        2                      24    e                            1   st
-                            s    s 2   s 3   s 4   s   5   0                 4t        2  e
-                                                                                  3
-
-                                                                                       s
-                                                                                             e
-                        2 0     24                                    +        2      1  st
-                             s   5                                            12t       s 3
-                                                                                         1   st
-
-                        48                                                    24t       4  e
-                        s 5                                                              s
-                                                                                            e
-                                                                          +      24       1  st
-                                                                                           5
-                                                                                          s
+              −  4 cos2x −  A  4 sin2x +  B  6 sin2x −  A  6 cos2x +  B  2 cos2x +  A  2 sin2x =  B  14sin2x −  18cos2x
+              ( 2A−  −  6B )cos2x +  ( 2B−  +  6A )sin2x =  14sin2x −  18cos2x
 
 
 
+                      −   2A −  6B =  −  18
+                     
+                       6A −  2B =  14
+
+                      A +   3B =  9
+                     
+                         −
+                      3A B =  7
+                        ∆  =  −  10 ∆  =  −  30 ∆  =  −  20
+                                    A           B
+
+                     A  = 3,  B =  2
+
+               ( ) Ce +
+              y x =   1  x  C e 2x  + 3cos2x +  2sin 2   x
+                              2
 
 
+          Exercise
 
 
+          Find the general solution:   y′′ +  3y′ +  2y e −  x  +  e −  2x  −  x
+                                                    =
+          Solution
+                                                    2
+                                                        0
+                                                 λ +
+             The characteristic equation: λ      2  3 +=
+                 λ    =  −  2, −  1
+                  1,2
+              y =  Ce  −  x  +  C e −  2x
+               h    1        2
 
-
-
-
-
-                                                               921</code></pre>
+              y  =  Axe −  x  +  Bxe −  2x  +  Cx +  D
+               P
+                               )
+                          −
+                 y′ =  ( A Ax e  −  x  +  (B −  2Bx )e −  2x  +  C
+                   P
+                                         −
+                 y′′ =  ( 2A +  Ax )e −  x  +  ( 4B +  4Bx )e −  2x
+                        −
+                   P
+                           =
+              y′′ +  3y′ +  2y e −  x  +  e −  2x  −  x
+              Ae −  x  −  Be −  2x  +  3C +  2Cx +  2D e −  x  +  e −  2x  −  x
+                                             =</code></pre>
      	</div>
     
      </div>

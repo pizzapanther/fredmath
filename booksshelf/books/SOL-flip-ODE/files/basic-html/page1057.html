@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1057 - ODE Solution</title>
+        <title>Page 1057 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1057 - ODE Solution</div>
+        <div id="content-top1">Page 1057 - DE Solution</div>
         <div id="content-top2">P. 1057</div>
      </div>
      <div id="content-middle">
@@ -152,109 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                                                            
-                                            
-            X    s       120           As B    Cs D    Es F
-                                
-                         2  4 s  9   s  1   s  4   s  9
-                                                   2
-                                                           2
-                                           2
-                      2
-                                  2
-                     s 
-                        1 s 
-                             2     2               2    2               2    2   
-                    As   B  s   4 s  9  Cs   D  s  1 s  9  Es   F  s  1 s  4  120
-                                          
-                                                     
-                                                                  
-                                                                             
-                                                                                         
-                            
-                                                                               4
-                              4
-                                                                                     2
-                                    2
-                                                             2
-                                                       4
-                    As   B  s  13s  36  Cs   D  s  10s  9  Es   F  s  5s   4  120
-                        s 5    A C   E   0
-                                  
-                                                             
-                                                          A C   E   0
-                        s 4    B   D   F   0        13A  10C  5E   0     A C   E   0
-                                                                                  
-                                                        
-                                                       
-                        s 3  13A  10C  5E   0        36A  9C   4E   0
-                       
-                         2  13B  10D  5F   0          B   D   F  0
-                        s                              13B  10D  5F   0     B   5 ; D   8 ; F   3
-                                                      
-                         s   36A  9C   4E   0     
-                                                      36B   9D   4F  120
-                           36B  9D   4F   120
-                            
-                             2
-                        120 s  3
-                                                    
-                                                            
-                                            
-            Y   s                     As B    Cs D    Es F
-                                
-                        2  4 s   9    s 2  1   s  4  s  9
-                                                   2
-                                                           2
-                                  2
-                     2
-                        1 s 
-                    s 
-                             2     2               2    2               2    2         2
-                    As   B  s  4 s  9  Cs   D  s  1 s  9   Es  F  s  1 s   4  120s  360
-                        s 5    A C    E   0
-                                  
-                                                        A  C   E   0
-                        s 4    B   D   F   0       13A  10C  5E   0     A  C   E   0
-                                                       
-                                                      
-                        s 3  13A  10C   5E   0      36A  9C   4E   0
-                       
-                        s 2  13B  10D   5F  120       B   D   F   0
-                                                      13B  10D  5F   120     B   10 ; D   8 ; F     18
-                                                      
-                         s   36A   9C   4E   0    
-                                                      36B   9D   4F   360
-                            36B   9D   4F   360
-             X   s   5    8     3                       Y   s   10    8    18
+    <pre style="white-space:pre-line"><code>2. 5 − V ar i a t i o n   o f  P ar am et er s  | 1047
+
+
+                 Exercise
+
+                 Find the general solution    y′′ +  y =  sin x
+                 Solution
+
+                                          2
+                                               =
+                    Characteristic Eqn.: λ +  10 ⇒ λ          = ± i
+                                                           1,2
+                    The homogeneous Eqn.:  y =     C  cos x C+   sin x
+                                               h     1         2
+
+                          cos x   sin x
+                     W =
+                          − sin x  cos x
                                      2
                              2
-                                                                            2
-                      2
-                                                                                    2
-                                                                     2
-                     s  1  s  4   s  9                           s  1  s  4   s  9
-             L    X s               5  1    4  2    3        L    Y s         10  1    4  2    6  3    
-                         L
-                                                                        L
-                                                                                              2
-                                                                                                      2
-                                                                                      2
+                        =  cos x + sin x
+                        1 ≠   0
+                        =
+                                                                                   ()
+                                                                                2
+                     v  ( ) x = − ∫ (sin x )(sin x ) dx             v  ( ) x = − ∫  y gx  dx
+                      1                1                             1           W
+                               ∫  sin x
+                                  (  2  )  dx
+                            = −
+
+                                x
+                                          x
+                            = − +   1 sin 2
+                                2   4
+
+                                                                               1
+                     v  ( ) x = ∫ (cos x )(sin x )  dx              v  ( ) x = ∫  yg ( ) x  dx
+                      2               1                              2          W
+
+                            = ∫ sin x d ( sin  ) x
+
+
+                                   2
+                            =  1  sin x
+
+                              2
+                          (
                                                      2
-                                      2
-                                              2
-                                    s  1   s  4  s  9                          s  1   s  4   s  9
-                                                                10sint  
-             x   t  5sint  4sin 2t   sin3   t           y t            4sin 2t   6sin3   t
+                             x
+                     y   = − +   1 sin 2x ) cos x +  1 sin x sin x         y  = uy +   u y
+                       p     2   4               2                          p    11     2 2
+                                                          3
+                         =  −  1  x cos x +  1 sin 2 cos x +  x  1 sin x
+                             2         4              2
+                                                           3
+                         =  −  1  x cos x +  1 sin cos x +  x  2  1 sin x
+                             2         2              2
+                                                             )
+                                                          2
+                         =  −  1  x cos x +  1 sin x ( cos x +  2  sin x
+                             2         2
+                         =  −  1  x cos x +  1 sin x
+                             2         2
 
-
-        Exercise
-        Consider a mass-spring system with  m   1 , k  17, and  c  .
-                                                                     3
-                                                2
-
-                                                          1036</code></pre>
+                    The general solution:     y ( ) x =  1  cos xC 2  sin x −  1  x cos x +  1 sin  C  x
+                                                             +
+                                                                                    2
+                                                                         2</code></pre>
      	</div>
     
      </div>

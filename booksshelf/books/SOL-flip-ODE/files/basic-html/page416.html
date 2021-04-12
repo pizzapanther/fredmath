@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 416 - ODE Solution</title>
+        <title>Page 416 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 416 - ODE Solution</div>
+        <div id="content-top1">Page 416 - DE Solution</div>
         <div id="content-top2">P. 416</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code> 10sin100t e 10t dt   1   10cos100t        e 10t
-                             
-                                      1010                sin100t
+    <pre style="white-space:pre-line"><code>410 | S O LU TI O N
 
-                                                              
-                           1
-            I    t  e  10t  1010  10cos100t   sin100t e 10t    K
+          Exercise
+                                                        3
+          Assume that Lake Erie has a volume of 480  km  and that its rate of inflow (from Lake Huron) and
+                                                   3
+          outflow (to Lake Ontario) are both 350  km  per year. Suppose that at the time t = 0 (years), the
+          pollutant concentration of Lake Erie – caused by past industrial pollution that has now been ordered
+          to cease – is 5 times that of Lake Huron. If the outflow henceforth is perfectly mixed lake water, how
+          long will it take to reduce the pollution concentration in Lake Erie to twice that of Lake Huron?
+          Solution
 
-                    1    10cos100t   sin100t  Ke   10t                                 10sin100t
-                   1010
-                                                                                               1
-                                                                             +      e 10t      10  cos100t
-                       I    0   0   0   1   10     K                                    1
-                                        1010                                      10e 10t      1000  sin100t
-                          K   1                                            +  100e   10t
-                               101
+                                  3
+             Given:  V = 480  km
+                       r =  r = =  350 km 3  / yr
+                                r
+                       i    o
+                       c =  (The pollutant concentration of Lake Huron)
+                           c
+                        i
+                       x =  x ( ) 0 = 5cV
+                        0
 
+              dx  =  rc −  r  x
+              dt       V
+              dx  +  r  x =  rc
+              dt   V
+                        V ∫  r  dt
+                        e   =  e rt /V
 
-            I    t   1   10cos100t   sin100t    1  e  10t
-                   1010                          101
-
-            The voltage at the resistor:
-                E     t   RI   1   10cos100t    sin100t    1  e  10t
-                  R           1010                           101
-
-            The voltage at the inductor:
-                                                                  
-                                           3
-                                                                        e
-                E    t   L  dI   0.1   1   10 sin100t  100cos100t   10  10t 
-                  L       dt       1010                              101
-                         10  sin100t    1  sin100t   1  e  10t
-                         101          101          101
-
-
-        Exercise
-
-        An RL circuit with a 1  resistor and a 0.01-H  inductor is driven by a voltage    sin100 VE t   t  . If the
-
-        initial inductor current is zero, determine the subsequence resistor and inductor current and the voltages.
-        Solution
-
-            0.01 dI    I   sin100t         L  dI    RI   E ( )
-                                                          t
-                 dt                           dt
-            dI    100I   100sin100t
-            dt
-
-                  100dt   100t
-                e        e
-                               100t dt   cos100t         100t                 100t
-                  100sin100t e                     sin100t e        100sin100t e    dt
+                     ∫ rce rt /V   dt =  rc V  e rt /V
+                                       r
 
 
-                                100t dt    cos100t       100t
-                2  100sin100t e                      sin100t e                                   100sin100t
+                                 =  cV  e rt /V
+                                           )
+                 x ( ) t =  1  ( cVe rt /V  +  C
+                        e rt /V
 
-                               100t dt   1  cos100t       100t
-                  100sin100t e          2            sin100t e                +      e 100t      cos100t
-                                                                                                     1
-                                                                                          100t
-                         
-                                                           
-                                                                                     100e
-                        t
-            I    t  e  100 1  cos100t   sin100t e 100t    K               10000e 100t          100 sin100t
-                           2
-                                                                                +
-                                                          412</code></pre>
+                       =  cV + Ce − rt /V
+
+                     x ( ) 0 =  5cV
+
+                                   0
+                     5cV =  cV + Ce
+                     C =  4cV
+
+              x ( ) =  cV + 4cVe − rt /V   t
+
+             When is  ( ) 2x t =  cV
+
+
+              2cV =  cV +  4cVe − rt /V
+              4cVe − rt /V  =  cV
+
+               e − rt /V  =  1
+                         4
+               e rt /V  =  4</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 417 - ODE Solution</title>
+        <title>Page 417 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 417 - ODE Solution</div>
+        <div id="content-top1">Page 417 - DE Solution</div>
         <div id="content-top2">P. 417</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>  1  cos100t   sin100t  Ke   100t
-                        2
+    <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 411
+
+                       r  t = ln4
+                       V
+
+                     t =  V  ln4
+                         r
+
+                      =  480 ln 4
+                         350
+                      ≈ 1.901  years
 
 
-                           I   0   0   0     1   1   K
-                                             2
-                              K   1
-                                    2
+
+                 Exercise
+
+                 A 120 gal tank initially contains 90 lb. of salt dissolved in 90 gal of water. Brine containing 2 lb./gal
+                 of salt flows into the tank at rate of 4 gal/min, and the well-stirred mixture flows out the tank at the
+                 rate of 3 gal/min. How much salt does the tank contain when it is full?
+                 Solution
 
 
-                                                 e
-                 I   t   1  cos100t   sin100t    1  100t
-                       2                        2
-                The voltage at the resistor:
-                                                       
-                     E    t   R I    1  sin100t   cos100t e  100t 
-                      R            2
-                The voltage at the inductor:
+                    The volume of brine in the tank increase steadily with:    ( ) 90 t=  +
+                                                                           V t
+                    The change  x∆   in the amount x of salt in the tank from time t to time t +∆  is given by:
+                                                                                             t
+                                               x
+                            ∆ x =  42     3 ( 90 t )  t ∆
+                                  ( ) t ∆−
+                                                +
+                          (    3x   )
+                     dx =  8 −  90 t+  dt
 
-                    E     t   L dI    0.01  1  100cos100t  100sin100t  100e  100t 
-                      L        dt         2
-                                                 
-                             1  cos100t   sin100t e  10t 
-                             2
+                     dx  = 8 −  3x
+                     dt      90 t+
+                     dx  +  3x  =  8
+                             +
+                     dt   90 t
+                               90 t + ∫  3  dt
 
+                               e      = e 3ln (90 t +  )
 
-             Exercise
+                                     =  e ln (90 t+  ) 3
 
-             An RL circuit with a 5    resistor and a 0.05-H  inductor is driven by a voltage    5cos120E t   t  V . If
+                                     = (90 t+  ) 3
 
-             the initial inductor current is 1 A, determine the subsequence resistor and inductor current and the voltages.
-             Solution
-
-                0.05 dI    5I   5cos120t       L  dI    RI   E ( )
-                                                              t
-                     dt                            dt
-                 dI    100I   100cos120t
-                 dt
-                      100dt   100t
-                    e         e
-                                   100t dt   5 sin120t   25       100t    25             100t
-                      100cos120t e          6          36 cos120t e        36  100cos120t  e    dt
-
-                       25                 100t      5         25           100t
-                     1  36   100cos120t e   dt   6 sin120t   36 cos120t e
+                            ∫   ( 8 90 t +  ) dt =  3  8 ∫  (90 t +  ) (90d  ) t +
+                                                        3
 
 
-                    61  100cos120t e 100t dt   5  6sin120t   5cos120t e 100t
-                    36                          36
 
-                                   100t dt   5  6sin120t          100t
-                      100cos120t e          61             5cos120t e
+                                           =   ( 2 90 t+  ) 4
 
-                                                                 
-                               5
-                 I   t   e  100t  61 6sin120t  5cos120t e 100t    K
+                                                    )
+                     x ( ) t =  1   (  ( 2 90 t+  ) +  4  C
+                            (90 t+  ) 3
 
-                        5  6sin120t  5cos120t  Ke   100t
-                        61
 
-                           I   0  1   1     5    5   K
-                                            6 1
-                                                               413</code></pre>
+                          =  180 2tC    (90 t+  ) − 3
+                                +
+                                    +
+                         x ( ) 0 = 90</code></pre>
      	</div>
     
      </div>

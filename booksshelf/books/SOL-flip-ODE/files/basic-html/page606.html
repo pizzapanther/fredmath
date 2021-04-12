@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 606 - ODE Solution</title>
+        <title>Page 606 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 606 - ODE Solution</div>
+        <div id="content-top1">Page 606 - DE Solution</div>
         <div id="content-top2">P. 606</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-        A mass of 1 slug is suspended from a spring, the spring constant is 9 lb/ft . The mass is initially released
-        from a point 1 foot above the equilibrium position with an upward velocity of  3 ft/s . Find the times at
-        which the mass is heading downward at a velocity of 3 ft/s
-
-        Solution
-
-            y  9y   0 ;    y   0   1,  y   0    3     mx    x   kx   0
-
-              2  9   0         3i
-                              1,2
-            y   C  cos3t   C  sin3t
-              h    1          2
-                    y   0    1   C     1
-                                     1
-
-                y   3C  sin3t  3C  cos3t
-                 h       1           2
-
-                    y   0     3   C     3
-                                        2     3
+    <pre style="white-space:pre-line"><code>600 | S O LU TI O N
 
 
-            y   t   cos3t   3  sin3t
-                             3
+          Exercise
 
+          The amount of drug in the blood of a patient (in mg) due to an intravenous line is governed by the
+          initial value problem
+                                        y′ ( ) t =  −  0.02y +  3,  y ( ) 0 =  0  for t ≥  0
 
+          Where t is measured in hours
+           a)  Find and graph the solution of the initial value problem.
+           b)  What is the steady-state level of the drug?
+           c)  When does the drug level reach 90% of the steady-state value?
 
-                      
-                A     1  2       3     2    2
-                               3       3
+          Solution
+            a)  y′ +  0.02y =  3
 
-                   tan  1   3    
-                           3      6
+                      ∫ 0.02dt
 
-            y   t   2  cos 3t      
-                     3         6
-                                 
-            y   t   2 3sin 3t   6    3
-
-                          3
-            sin 3t   6     2
-
-
-                3t       4     2n     3t       5    2n
-                    6    3                       6    3
-
-                t   7    2n             t       2n
-                   18     3                     2     3
-
-
-        Exercise
-
-        Two parallel springs, with constants  k  and  k , support a single mass, the effective spring constant of the
-                                             1       2
-                               4k k
-        system is given by  k    1 2  .
-                               k  k
-                                1    2
+                        e     = e 0.02t
+                     ∫ 3e 0.02t dt = 150e 0.02t
 
 
 
 
-                                                          594</code></pre>
+                                         )
+                y =   1   ( 150e 0.02t  + C
+                    e 0.02t
+
+                  = 150 C  e − 0.02t
+                        +
+                     y ( ) 0 =
+                            0
+                       =
+                     0 150 C
+                            +
+                     C  = − 150
+                  y ( ) 150 1t =  (  − e − 0.02t )
+
+
+
+             b)  The steady-state level is
+
+                                              m
+                   lim 50 11  (  − e − 0.02t )  = 150  g
+                  t→∞
+                     (    − 0.02t )
+                                           )
+             c)  150 1 e−        =  0.9 (150
+
+                 1 e − 0.02t  =  0.9
+                  −
+                 e − 0.02t  =  0.1
+                 −  0.02t =  ln0.1
+
+                 t =  ln0.1
+                     − 0.02
+                   ≈ 115  hrs</code></pre>
      	</div>
     
      </div>

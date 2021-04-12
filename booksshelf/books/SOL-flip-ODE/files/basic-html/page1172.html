@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1172 - ODE Solution</title>
+        <title>Page 1172 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1172 - ODE Solution</div>
+        <div id="content-top1">Page 1172 - DE Solution</div>
         <div id="content-top2">P. 1172</div>
      </div>
      <div id="content-middle">
@@ -152,103 +152,58 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>     2 
-                                       
-                              
-                                           14 16 8  
-                                                                  3 3
-                            1    2                 1              1    1  2  5   6       2
-                                                                                                     
-                             3
-                                    2
-                              2   5  6   0                                   1  1  6             6   0
-                                                                                  1  1  6   0
-                Thus, the eigenvalues are:    2,     1,  and    
-                                                                      3
-                                           1         2            3
-                                           
-                For       2      A       I V   0
-                      1                 1    1
-                     3    1   4       0       3x    4z   0
-                                                          y
-                                     x
-                                             3x 
-                                     y 
-                                                              z
-                                                                  0
-                                           0
-                     3   4      1                 4y  
-                                              
-                                     z
-                                                              z
-                                           0
-                     2   1     1                2x   y    0
-                               3x   y   4        3   1             4   1             3    4
-                    z   1                              15                15             15
-                               3x   4y   1        3   4         x    1   4           y   3   1
-                                        1
-                                        
-                               V     1
-                                 1     
-                                       
-                                       1  
-                                          
-                For      1      A      I V   0
-                      2                2    2
-                     0    1   4       0         y  4z   0
-                                     x
-                                              3x   y  
-                                     y 
-                                           0
-                     3   1      1                      z   0
-                                              
-                                     z
-                                           0
-                     2   1      2             2x   y   2z   0
-                                                              1
-                                y   4                      
-                    z   1                         V     4
-                                                              
-                               3x   y   1           2     
-                                                             1  
-                                          
-                For      3      A      I V   0
-                      3                3    3
-                                      x
-                                                             y
-                      2   1    4      0        2x   4z   0
-                                               
-                                      y 
-                                                                z
-                                            0
-                                                            y
-                      3    1    1             3x       0
-                                               
-                                            0
-                                      z
-                      2    1     4              2x   y  4z   0
-                                2x   y   4       2   1            4   1            2   4
-                    z   1                                 5              5              10
-                                3x   y   1         3     1      x   1     1      y    3    1
-                                       1
-                                       
-                               V     2
-                                 3     
-                                      
-                                       1 
-                             1            1       1
-                                          
-                                                        
-                              
-                                                        2 e
-                 x   t   C 1    1 e  2t    C 2   4 e     t  C 3    3t
-                              
-                                              
-                                                    
-                                                        1
-                            1             1         
+    <pre style="white-space:pre-line"><code>1162 | S O LU TI O N
 
-                                                              1151</code></pre>
+
+
+                 x′′ = e  t −  ( cos4t +  A  B sin 4t +  4 sin 4t −  A  4 cos4t +  B  4 sin 4t −  A  4 cos4t −  B  16 cos4t −  A  16 sin 4t )
+                                                                                                  B
+                   p
+                        =  e  t −  ( 15 cos4t −  A  8 cos4t +  B  8 sin 4t −  A  15 sin 4t )
+                               −
+                                                                   B
+                               =
+                 x′′ +  8x′ +  16x e  t −  sin 4t
+                         cos4t  −  15A −  8B −  8A +  32B +  16A =  0
+                        
+                         sin 4t  8A −  15B −  8B −  32A +  16B =  1
+
+                          −   7A +  24B =  0
+                        
+                         −  24B −  7B =  1
+
+                                    −  7  24              0   24               −  7  0
+                                ∆  =         =  625  ∆  =        =  −  24  ∆  =       =  −  7
+                                    −  24  −  7       A   1   −  7        B   −  24  1
+                         A =  −  24  ,  B =  −  7
+                              625         625
+                                                  )
+                 x   =  e  t −  ( −  24  cos4t −  7  sin 4t     (Steady-state solution)
+                   p         625         625
+
+                                  )
+                                           1
+                 x t =  ( ) ( C +  1  C te −  4t  −  625 e  t −  (24cos4t +  7sin 4t )
+                               2
+                            x ( ) 0 =  C −  24  =  0
+                                     1  625
+                            C  =  24
+                              1  625
+
+                                             )
+                                                      1
+                     x t =  ( ) ( C −  2  4C −  1  4C te −  4t  −  625 e  t −  ( 24cos4t −  7sin 4t −  96sin 4t +  28cos4t )
+                                                             −
+                                           2
+                            x′ ( ) 0 = C −  2  4C −  1  6 4  = 0
+                                                25
+                            C   =  100
+                              2   625
+
+
+                 x ( ) t =  1  (24 100te+  )  −  4t  −  1  e  t −  (24cos4t +  7sin 4t )
+                        625                   625
+             b)</code></pre>
      	</div>
     
      </div>

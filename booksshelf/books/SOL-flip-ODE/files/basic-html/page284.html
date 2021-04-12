@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 284 - ODE Solution</title>
+        <title>Page 284 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 284 - ODE Solution</div>
+        <div id="content-top1">Page 284 - DE Solution</div>
         <div id="content-top2">P. 284</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                       y   0  1 0   10 10c   C
-                                              0
-                                        
-                                          
-                                 C  10 1 c 0 
-                                
-                y t         10 1 c     e  t   /10
-                                  
-                   10c 
-                          0          0
-                                
-                                          
-                       
-                                             
-            b)  lim y t    lim 10c    10 1 c    e  t   /10           lim e  t   /10    0
-                t        t      0           0                        t
-                          10c
-                              0
+    <pre style="white-space:pre-line"><code>278 | S O LU TI O N
 
 
-        Exercise
+          Exercise
 
-        A tank contains 200 liters of fluid in which 30 grams of salt is dissolved. Brine containing 1 gram of salt
-        per liter is then pumped into the tank at a rate of 4 L/min; the well-mixed solution is pumped out at the
-        same rate.
 
-                               A
-          a)  Find the number    t  of grams of salt in the tank at time t.
-          b)  Solve by assuming that pure water is pumped into the tank.
+          Find the general solution of    dy  +    1        y =  1
+                                                   )
+                                       dx   ( x + 1 arctan x
+                                              2
+          Solution
+                   2 ∫
+                 ( )   1      dx     ∫   1   d (arctan x )
+                      1 arctan x
+                  x +
+              e                  =  e  arctan x
+                                  =  e ln arctan x
+                                  =  arctan x
 
-        Solution
+              ∫ arctan dx =  x  x  arctan x −  1 ln 1 x 2 )
+                                            (
+                                              +
+                                        2
+                                             (
+                                                      C
+              y ( ) t =  1  (    x  arctan x −  1 ln 1 x 2 ) )
+                                               +
+                                                     +
+                     arctan x            2
+                             (
+                               +
+                           ln 1 x 2 )
+              y ( ) x =    x −  1    +    C
+                         2 arctan x    arctan x
 
-                               
-            a)    t    200   4 4 t   200
-                V
-                        t
-                  t
-                c ( )   A ( )
-                      200
-                                   g
-                               
-                                     
-                Rate  in  4  L    1   4  g  / min
-                           min    L
-                Rate  out    A     A    g  / min
-                           4
-                              200    50
-                dA    4   A
-                dt       50
-                dA    1  A   4
-                dt   50
-                                 50   dt  t /50
-                              e       e
-                                  t /50 dt    t /50
-                                4e         200e
 
-                                           
-                A   t   e  t   /50  200e t /50    C
+          Exercise
 
-                           
-                       200 Ce   t   /50
-                                                  
-               Given:    A   0  30   30   200 C
-                              C   170
+          Find the general solution of   (cos x y′ + )  y =  1 sin x
+                                                       −
+          Solution
+                            −
+              y′ +  1  y =  1 sin x
+                  cos x     cos x
 
-                           
-                A   t   200 170e  t   /50
+                     cos ∫  1  dx  ∫  sec x dx
+                 e      x   =  e
+
+                            = e ln sec x+ tan x
+                            = sec x +  tan x
+
+                                                                           2 
+                                                                 sin x
+                   (1 sin x−  )(sec x +  tan  ) x dx =   ∫      sec x +  tan x −  cos x  −  sin x  ∫    dx
+                                                                        cos x
+
+                                                                      1 cos x
+                                                                             2 
+                                             =     sec x +  tan x −  tan x −  −   ∫     dx
+                                                                        cos x
+                                                           1
+                                             =  ∫ ( sec x −  cos x  +  cos x )  dx
 
 
 
-
-                                                          280</code></pre>
+                                             =  ∫ (sec x −  sec x +  cos  )   x dx</code></pre>
      	</div>
     
      </div>

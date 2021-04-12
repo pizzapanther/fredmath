@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1317 - ODE Solution</title>
+        <title>Page 1317 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1317 - ODE Solution</div>
+        <div id="content-top1">Page 1317 - DE Solution</div>
         <div id="content-top2">P. 1317</div>
      </div>
      <div id="content-middle">
@@ -152,101 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1303
 
-        Find a system of differential equations and solve for the currents in the given network:
-         R  10   , R    40   , L  10 H , L    30 H , V   20 V
-          1            2            1            2
-        With initial values:   0   i    0  i    0 
-                           i
-                                                  0
-                           1       2       3
-        Solution
-              L i     R i   V               1
-              1 1    1 2
-            
-                
-                       
-             L i   L i   R i  V     2
-                     2 3
-                             2 3
-               1 1
-            
-                 
-             L i   R i   R i   0    3
-            
-                      2 3
-               2 3
-                             1 2
-             10i     10i   20
-               1      2
-            
-                       
-                 
-             10i  30i   40i   20
-                1
-                              3
-                       3
-                
-              30i   40i  10i   0
-                              2
-                 3
-                       3
-              i     i   2
-              1   2
-               i     4i  4i   2
-              2     3     3                i   i  i 3     i  i  i
-                                                              1
-                                                 2
-                                             1
-                                                                       3
-                                                                   2
-                 1     4
-             i    3  3 i   2  3 i 3
-            
-                 i   2
-              i  
-              1    2
-             i    4 i   4 i 
-              
-              2    3  2  3  3  2
-             i     1  4
-              3  3 i   2  3 i 3
-                                                                                   
-                              1     0                                0   1  0  
-                             4
-             A     I   0         4                          A       0   4  4    
-                             3         3                                    3   3  
-                       0      1        4                             0  1    4 
-                              3       3                                    3     3 
-                                      2
-                         3 16
-                         9     8    4 
-                                   3
-                                          9
-                                        
-                               2
-                      1   3  8  4   0
-                        3
-               Thus, the eigenvalues are:    2,      2 ,  and     0
-                                           1        2     3         3
-                                          
-               For       2      A       I V  0
-                     1                 1    1
-                                
-                     2   1   0     x   0                          1 
-                                 
-                              4                2x   y               
-                                   y 
-                     0   2                                 V     2  
-                                         0
-                                                                   1
-                         3    3              y     2z             1 
-                                         0
-                                   z
-                    0    1    2                                     
-                         3    3 
-                                                          1296</code></pre>
+
+                     ∫  e −− 2)t  cos3t dt =  1 − (s− 2)t sin3t −  1 (s −  ) 2 e −− 2)t  cos3t −  1 (s −  ) 2  2 ∫  e −− 2)t cos3t dt
+                         (s
+                                                                                                  (s
+                                                                      (s
+                                           e
+                                                           9
+                                                                                    9
+                                          3
+                        ( 1+  1 (s −  ) 2  2 ) ∫ e −− 2)t  cos3t dt =  1 −− 2)t  sin3t −  1 (s −  ) 2 e −− 2)t  cos3t
+                                                                                        (s
+                                                                (s
+                                            (s
+                                                              e
+                                                                              9
+                             9
+                                                            3
+                        ( 9 +  (s −  ) 2  2 ) ∫ e −− 2)t  cos3t dt =  3e −− 2)t sin3t −  (s −  ) 2 e −− 2)t  cos3t
+                                                                                     (s
+                                                              (s
+                                          (s
+                        ∫  e −− 2)t  cos3t dt =  9+−  ) 2  2       3e − (s− 2)t  sin3t −  (s −  ) 2 e −− 2)t  cos3t     
+                                                                                  (s
+                             (s
+                                                  1
+                                                (s
+                                                                              ∞
+                                                                             
+                                         (s
+                                                                  (s
+                     Fs         3    e −−  2)t sin3t −  s− 2  e −−  2)t  cos3t 
+                       ( ) =
+                                    2                        2               
+                                                         (s
+                                (s
+                              9+−  ) 2               9+−    ) 2                0
+                          =    s− 2  2     s &gt;  2
+                               (s
+                            9+−    ) 2
+
+
+                 Exercise
+                 Use Definition of Laplace transform to find the Laplace transform of   ft =  sin3t
+                                                                                       ( )
+                 Solution
+
+                                      )
+                     F ( ) s = ∫ 0 ∞ (sin3t e − st dt
+
+
+
+                                                       t
+                                                 ∫ sin 3  dt
+
+                                   +     e − st     − 1 cos3t
+                                                   3
+                                                   1
+                                    −  − se − st     − 9 sin3t
+
+                                                   1
+                                         2 −
+                                   +    se   st    − 9∫ sin    3t dt
+
+                     ∫  sin3t e −  st dt =  −  1 −  3 e  st  cos3t −  9 e  st sin3t +  s 9 2 ∫  e −  st  sin3t dt
+                                                     s −
+
+
+
+                     ∫  sin3t e −  st dt +  1  s 2 ∫  sin3t e −  st dt =  −  1 −  3 e  st  cos3t −  1 se −  st sin3t
+                                     9
+                                                                          9
+
+                            ( 9 s 2 ) ∫ sin3t e −  st dt =  ( −  3cos3t −  s sin3t )e −  st
+                               +</code></pre>
      	</div>
     
      </div>

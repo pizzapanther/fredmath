@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 111 - ODE Solution</title>
+        <title>Page 111 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 111 - ODE Solution</div>
+        <div id="content-top1">Page 111 - DE Solution</div>
         <div id="content-top2">P. 111</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                   dy     4 1 e  8t  dt
-                              
-                         
-                               e
-                 y   t   4 t   1  8t   C
-                                        4
-                             8
-                                            1
-                                     0
-                        y   0   0    4    C 4    C     1
-                                            8
-                                                                 2
-                                                           4
-                               e
-                 y   t   4  t   1  8t    1
-                             8
-                                       2
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 105
 
 
-             Exercise
-             A stone is released from rest and dropped into a deep well. Eight seconds later, the sound of the stone
-             splashing into the water at the bottom of the well returns to the ear of the person who released the stone.
-             How long does it take the stone to drop to the bottom of the well? How deep is the well? Ignore air
-             resistance. The speed of sound is 340 m/s.
+                 Exercise
 
-             Solution
-                        2
-                d   1  gt
-                     2
+                                                                         dy       x
+                                                                                                 2
+                 Find the exact solution of the initial value problem   2y  =          ;  y ( ) 5 =
+                                                                         dx      2
+                                                                                x − 16
+                 Solution
+                     ∫  2y  dy = ∫  x − 16  dx
+                                     x
+                                    2
+
+                                                     )
+                     y =  2  1 ∫ ( x −  2  16 ) − 1/2 dx −  (  2  16
                           2
-                    1 9.8t
-                    2
-                        2
-                    4.9t
-                d   340s
-
-                    340(8 t   )
-
-                             
-                4.9t   2  2720 340t
-                    2
-                                    
-                4.9t   340t   2720 0
-                  t  7.2438 sec
-
-                d   340(8 7.2438)
-                          
-                    257.1 m
 
 
 
-             Exercise
+                     y =  2  ( x −  2  16 ) 1/2  +  C
 
-                                                                                         2
-             A rocket is fired vertically and ascends with constant acceleration  a  100  / s  for 1.0 min. At that point,
-                                                                                    m
-             the rocket motor shuts off and the rocket continues upward under the influence of gravity. Find the
-             maximum altitude acquired by the rocket and the total time elapsed from the take-off until the rocket
-             returns to the earth. Ignore air resistance.
+                            y ( ) 5 =
+                                   2
+                            4 =  ( ) 9  1/2  + C
 
-             Solution
-
-                d   1 a    g t 2
-                     2
-                    1 100 9.8 t    2
-                    2
+                            C =  43 =   1
+                                  −
+                     y =  2  1+  x −  2  16
 
 
-                                                               107</code></pre>
+
+                 Exercise
+                                                                      dy     3
+                 Find the exact solution of the initial value problem    =  4xy −  ; y  y ( ) 1 = −
+                                                                                              3
+                                                                      dx
+                 Solution
+                                  )
+                     dy   (  3   1 y
+                     dx  =  4x −
+                     ∫∫       ( 4x − 1 dx
+                                      )
+                       dy
+                                  3
+                          =
+                        y
+                             4
+                     ln y =  x −+
+                                 xC
+                            4
+                     y =  Ce x − x
+                            y ( ) 1 = − 3
+                            C  = − 3
+
+                                 4
+                     y ( ) x = − 3e x − x</code></pre>
      	</div>
     
      </div>

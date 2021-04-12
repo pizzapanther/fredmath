@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1112 - ODE Solution</title>
+        <title>Page 1112 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1112 - ODE Solution</div>
+        <div id="content-top1">Page 1112 - DE Solution</div>
         <div id="content-top2">P. 1112</div>
      </div>
      <div id="content-middle">
@@ -152,90 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-                  1     4  0    2         e  t        0          0            e t     x 1   0  1
-                                                                                                
-                   0  1    0    0             0        0          e            0     x    0  3
-                                                                            t
-                                                                        
-             x                    x ; x      , x        , x        , x        ,    2
-                                                                                                
-                  6    12  1  6      1    0       2     e  t    3  0       4       t     x    0   4
-                                                                                3e      3
-                   0    4  0    1          e  t         0       2e t       0       x 4    0   7
-                                                                        
-              a)  Verify that the given vectors are solutions of the given system.
-              b)  Use the Wronskian to show that they are linearly independent.
-              c)  Write the general solution of the system.
-              d)  Find the particular solution that satisfies the given initial conditions
-             Solution
-
-                          e  t       e  t            1    4  0    2   e  t   e   t     
-                                                                                    
-                                                                             
-                                                                                                  
-                a)  x        0         0       x    x       0  1  0  0    0    0      x   √
-                                                                                     
-                                                                                    
-                     1      0        0                  1    6    12  1  6  0        0      1
-                                                                                    
-                            t       t                   0    4  0   1    t       t     
-                                                                             
-                          e       e                                        e     e   
-                            0      0                    1     4  0    2   0    0 
-                                                                              
-                            0      0                                         0     0  
-                                                                                                   
-                                                                                     
-                    x                       x   x    0  1   0    0                x   √
-                     2      t       t            2     6  12  1  6    t      t       2
-                           e       e                                        e     e  
-                                                         0     4  0     1           
-                            0      0                                         0     0  
-                            0      0                    1     4  0    2    0    0 
-                            t       t                                        t     t  
-                                                                              
-                                                                                                    
-                                                                                      
-                    x        e         e      x   x     0  1  0  0   e      e      x   √
-                                
-                                                                               
-                          
-                                          
-                                                                                              
-                                                                                      
-                     3       0         0                3    6    12  1  6   0        0       3
-                                                                                     
-                             t        t                   0    4  0    1    t      t 
-                                                                              
-                             2e       2e                                    2e      2e  
-                            e t      e t                1     4  0    2    e t    e t 
-                                                                                  
-                                                                              
-                                                                                                 
-                                                                                     
-                    x         0         0      x   x     0  1  0  0   0    0      x   √
-                                                                               
-                                                                                    
-                     4       t        t                 3    6    12  1  6   t       t     3
-                           3e    3e                                         3e   3e 
-                                                          0    4  0    1         
-                                                                              
-                            0      0                                         0     0  
-                         e  t   0    0    e t               t                         t
-                                                      0     e     0        0    0     e
-                          0     0    e t    0      t   t         t    t         t 
-                b)  W                           e  e      0    3e   e   0   e      0     0      1 0
-                                                                                                  1  
-                          0    e  t   0   3e t              t             t         t
-                           t           t             0     2e    0       e     0     2e
-                         e      0    2e    0
-                    The solutions  x  ,  x   and  x  are linearly independent.
-                                   1   2       3
+    <pre style="white-space:pre-line"><code>1102 | S O LU TI O N
 
 
-                                                              1091</code></pre>
+
+
+                                                                           ()
+                                                                         2
+                 v  ( ) x = −  e ∫  xe −  x −  e  x   dx    v  ( ) x = − ∫  y gx  dx
+                  1            − 2x  x                        1           W
+                           ∫
+                              dx
+                        = −
+
+                        = − x
+
+
+
+                                                                        1
+                 v  ( ) x =  e ∫  e −  x  e −  x   dx       v  ( ) x = ∫  yg ( ) x  dx
+                   2          − 2x x                          2          W
+                          ∫   x
+                             dx
+                        =
+
+                        = ln x
+
+
+              y   =  −  xe −  x  +  xe −  x ln x     y =   vy +   v y
+
+               p                                       p    11     2 2
+
+              yx =  ( ) C e −  x  +  C xe  x  −  xe − −  x  +  xe −  x ln x
+                               2
+                      1
+                                             )
+                   =  ( C +  1  ( C −  2  1 x +  )  x ln x e − x
+                                       )
+                   =  ( C +  1  C x +  3  x ln x e − x
+                                     )
+                     y ( ) ( C + Ce    − 1  =  0
+                       1 =
+                                   3
+                              1
+                     C +  C =  0
+                      1    3
+                                                    )
+              y′ = ( C x + ln x +−  1   C x −  x ln x e − x
+                                1 C −
+                     3
+                                          3
+                  (
+                                         )
+               = −  C +  ln x +−    ln x e − x
+                                1 x
+                      1
+                                    )
+                     y′ ( ) ( −  C +  1  1 e − 1  =  0
+                        1 =
+                     C  = 1
+                      1
+                     C  = − 1
+                      3
+
+               ( ) (1 x
+              yx =     −+    x ln x )e − x</code></pre>
      	</div>
     
      </div>

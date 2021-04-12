@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1168 - ODE Solution</title>
+        <title>Page 1168 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1168 - ODE Solution</div>
+        <div id="content-top1">Page 1168 - DE Solution</div>
         <div id="content-top2">P. 1168</div>
      </div>
      <div id="content-middle">
@@ -152,113 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2        7     0                        2  7 0
-                            
-                                                                              
-                 A     I  5    10      4                  A       5 10  4
-                                                                              
-                                            
-                            0       5     2                           0  5  2   
-                                 2
-                                                                  
-                             
-                                       
-                                           20 2  
-                                                             
-                          2    10             35 2 
-                                             
-                                      
-                             
-                                                  15
-                          2      10  2     
-                                  
-                                           
-                                     
-                             
-                          2    35 12     2     0
-                Thus, the eigenvalues are:    2,      5  and    
-                                                                     7
-                                           1        2            2
-                                          
-                For      2      A      I V   0
-                      1                1    1
-                     0     7  0      0        y   0                5
-                                    x
-                                                                     
-                                    y 
-                                          0
-                     5   8     4             5x   4z       V     0  
-                                                                     1
-                                                                     
-                                    z
-                     0    5    0      0                             4  
-                                          
-                For      5      A      I V   0
-                      2                 2    2
-                      5   7    0      0       5x   7y               7
-                                      x
-                                                              V      
-                                      y 
-                                            0
-                      5    3     4                                 2    5  
-                                                                        
-                                      z
-                      0    5      5       0      y   z               5  
-                                          
-                For      7      A      I V   0
-                      3                 3   3
-                     0     7  0      0        y   0                5
-                                    x
-                                                                     
-                                    y 
-                                          0
-                     5   8     4             5x   4z       V     0  
-                                                                     1
-                                                                     
-                                    z
-                     0    5    0      0                             4  
-                            4             7          7
-                                                           
-                                             
-                                                       
-                              
-                          
-                                         
-                 x   t   C 1   0 e 2 t    C 2   3 e 5t    C 3   5 e 7t
-                                             
-                              
-                                                           
-                                                      
-                            5           5           5  
+    <pre style="white-space:pre-line"><code>1158 | S O LU TI O N
 
 
-             Exercise
-                                                         x    3t   x   x   x
-                                                          1       1    2    3
-                                                        
-             Find the general solution of the system      x 2    t   x   x   x
-                                                                             3
-                                                                        2
-                                                                   1
-                                                        
-                                                          x 3    t   x   x   x 3
-                                                        
-                                                                   1
-                                                                        2
-             Solution
-                           3       1     1                        3    1   1
-                            
-                                                                               
-                 A     I  1    1       1                 A       1  1    1
-                                                                               
-                                          
-                            1        1  1                            1  1  1    
-                                    2 
-                                  
-                                                              
-                             
-                           1 2       3    2 2 2     3 
-                                                              1147</code></pre>
+                8
+              k ( )    16 →     k =  6        kx =  mg
+                   ft =
+                3
+              1  x′′ +  1  x′ +  6x =  10cos3t    mx′′ +  cx′ +  kx =  F ( ) t
+              2     2
+                                                   0
+              x′′ +  x′ + 12x =  0 ;  x ( ) 0 =  2, x′ ( ) 0 =
+
+                 λ  2  λ +  +  12 =  0
+                         1 i
+                 λ    =  −±    47
+                  1,2       2
+
+
+                 t
+              x  ( ) e=  t −  /2   C  cos  47  t + C  sin  47   t
+               h               1   2       2     2     
+              x  =  A cos3t +  B sin3t
+               p
+                                    B
+                 x′ =  −  3 sin3t +  A  3 cos3t
+                   p
+                                    B
+                 x′′ =  −  9 cos3t −  A  9 sin3t
+                   p
+              x′′ +  x′ +  12x =  20cos3t
+              −  9 cos3t −  A  9 sin3t −  B  3 sin3t +  A  3 cos3t + 12A cos3t +  12 sin3t =  B  20cos3t
+                                               B
+                         cos3t  3A +  3B =  20               0 1
+                                               →    A =  B =
+                         sin3t  −  3 +  A  3B =  0          3
+
+                           t
+              x  = 10 (cos3 + sin3t )
+               p    3
+
+              x ( ) t =  e  t −  /2     C  cos  47  t +  C  sin  47   t +    10 (cos3t +  sin3t )
+                            1     2       2      2      3
+                     x ( ) 0 = C +  10  =  2
+                             1   3
+
+                     C  = − 4
+                      1     3
+
+
+                 x′ ( ) t = e  t −  /2     −  1 C  cos  47  t +  1 C  sin  47  t −  47  C  sin  47  t +  47  C  cos  47   t 
+                                2  1     2     2  2     2       2   1     2       2    2     2   
+                         +  10 ( 3sin3 +  t  3cos3t )
+                               −
+                            3
+
+                     x′ ( ) 0 = −  1 C +  47  C +  10 =  0
+                              2  1    2    2
+                     C  = −   64
+                       2    3 47
+
+
+
+              x ( ) et =  t −  /2    −  4 cos  47  t −  64  sin  47   t +    10 (cos3t +  sin3t )
+                            3      2     3 47       2      3</code></pre>
      	</div>
     
      </div>

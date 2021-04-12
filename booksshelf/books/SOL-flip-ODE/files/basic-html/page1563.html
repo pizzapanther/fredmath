@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1563 - ODE Solution</title>
+        <title>Page 1563 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1563 - ODE Solution</div>
+        <div id="content-top1">Page 1563 - DE Solution</div>
         <div id="content-top2">P. 1563</div>
      </div>
      <div id="content-middle">
@@ -152,94 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                           n r
-                              
-                 y     a x
-                          n
-                     n 0
-                      
-                                   n r   1
-                                     
-                 y     n r a x    n
-                     n 0
-                      
-                                             n r  2
-                                               
-                            
-                                
-                 y    n r n r        1 a x
-                                           n
-                     n 0
-                2xy  3y  
-                                0
-                             y
-                                                                           
-                                          n r   2              n r   1      n r 
-                              
-                                                            
-                          
-                2x     n r n r        1 a x           3 n r a x           a x       0
-                                                                                  n
-                                                                 n
-                                         n
-                   n 0                             n 0                    n 0
-                                                                          
-                      2 n r n r    1 a x n r   1       3 n r a x n r   1     a x n r     0
-                                                              
-                         
-                                                           
-                             
-                                        n
-                                                                                n
-                                                                n
-                 n 0                              n 0                    n 0
-                                                               
-                                                     
-                                                                          
-                                                    
-                        2 n r n r    1 a    3 n r x n r   1      a  x n r 1    0
-                                                    
-                              
-                          
-                                                 
-                                        n                          n 1
-                 n 0                                          n 1
-                                                                  
-                           0                            n r   1        n r   1 
-                                     
-                r 2r    1 a   n r  2n  2r    1 a x         a n 1 x      0
-                                                       n
-                               n 1                               n 1
-                               
-                           0                                    n r  1
-                                                                    
-                                      
-                r 2r    1 a     n r 2n  2r    1 a  a n 1  x    0
-                                                        n
-                               n 1
-                For   n  0     r 2r    1 a   0    r  0,     1    
-                                           0                   2
-
-                n r  2n  2r    1 a  a    0
-                                     n    n 1
-                a             1         a
-                  n   n r  2n  2r    1  n 1
-                         
-                        r  0     a       1     a
-                                     n   n 2n    1  n 1
-                    n   1   a   1 a
-                               1  3  0
-                    n   2   a    1  a   1  a
-                               2   15  1   30  0
-                    n   3   a   1  a    1  a
-                               3   21  2   630  0
-                    n   4   a    1  a     1    a
-                               4   36  3   22,680   0
+    <pre style="white-space:pre-line"><code>3. 5 − I nt r o d u c tio n  &  B a s ic  T h e o r y  o f  L i n e a r  S y s te m s  | 1549
 
 
 
-                                                              1533</code></pre>
+                              1      2t                 2      2t
+                     X =            e     →   X ′ =          e 
+                       1    −−    2               1           
+                             1
+                                                      −  2 −  2 
+                                  1 −  1 −   1      2t     2     2t
+                         AX =                    e    =         e     →    X ′ =  AX
+                            1    − 1  1      −−  2        −  2 −  2       1      1
+                                           1
+
+                              1        2t                 2  −   2t
+                     X =            e   −  →    X ′ =         e   −
+                       2    −+    2                 2          
+                             1
+                                                        2 − 2 
+
+                                  1 −  1 −   1      2t     2     2t
+                         AX =                    e    =         e     →    X ′ =  AX
+                            1    − 1  1      −−  2        −  2 −  2       1      1
+                                           1
+                                             1
+                            1
+                              2   −  2                 2    −  2
+                     X   =   t +     t +    →   X ′ =    t +    
+                       p           4              p          4  
+                            0
+                                             0
+                                                             0
+                                        1
+                             − 1 −      2   − 2         1  2    4    − 1
+                                    1
+                                                         1  
+                     AX    =             t +     t +       +    t +     t +    
+                         p   −  1  1         4      0       −  6     5  
+                                        0
+                                                                1
+                                      
+                                1 −  1  −     t −  2  2t +  1     t +  2  4t −  1 
+                           =                    +          
+                               − 1  1        4t          t −  2  6t +  5   
+                               t −  2  −  2t −  1   t +  2  4t −  1 
+                                           +
+                           =                         
+                               2           2         
+                               t −  +  6t −  1   t −  6t +  5 
+                               2t −   2
+                           =       
+                               4   
+                              2
+                                   − 2
+                           =   t +   
+                              0
+                                    4  
+                           =  X ′
+                               p
+
+                             1         1
+                     W =
+                           1
+                                     1
+                          −−    2   −+    2
+                        =  22 ≠  0
+
+                    ∴  X  and  X  form a fundamental set for  X ′ =  AX   on (−∞ , ∞ )
+                         1       2</code></pre>
      	</div>
     
      </div>

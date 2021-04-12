@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 275 - ODE Solution</title>
+        <title>Page 275 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 275 - ODE Solution</div>
+        <div id="content-top1">Page 275 - DE Solution</div>
         <div id="content-top2">P. 275</div>
      </div>
      <div id="content-middle">
@@ -152,89 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                        800   0 t   t
-                                       m
-                                    
-                                       
-                    t 
-                                 
-                V    800   2 4 t t      
-                  2                       m
-                                
-                             
-                                  
-                        800 2 t t   m     t m     e
-                                                t t
-                 dy    Rate in    Rate out
-                 dt
-                When the maximum amount of pollution is reached:
-                 dy                   gal     y            gal 
-                   1     5  ounces  3          1    ounces  3   
-                                                          
-                                                         
-                 dt        gal     hr        800  gal       hr  
-                                    
-                 y  15   3  y   0 t t        1
-                                        
-                  1       800  1          m
-                After the maximum amount of pollution is reached:
-
-                 dy                   y        
-                   2       3   0    2        4
-                                        
-                  dt             800 2 t t     
-                                     
-                                          
-                                            m 
-                                                t t
-                 y         2       y    t           2
-                  2     400    t t m   2  m      e
-                                
-                  1   y   3  y  15
-                         1   8 0 0  1
-                       3  dt    3  t
-                    e  800    e 800
-
-                     15e 800 t    4,000e 800 t
-                           3
-                                        3
-
-                           3  t       3  t     
-                 y    t   e  800    4,000e 800    C 
-                  1                           1 
-                                                
-                                      3  t
-                               
-                         4,000 C e   800
-                                  1
-
-                    y 1   0   2   2   4 ,000  C
-                                                1
-
-                               C   3,998
-                                 1
-
-                                         3  t
-                              
-                 y    t   4,000 3,998e  800
-                  1
-
-                                           3
-                    
-                                             t
-                 y t      4,000 3,998e   800 m    500
-                                
-                  1  m
-
-                        3  t
-                3998e   800 m    3500
-
-                  3  t    ln  3500
-                  800 m      3998
+    <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 269
 
 
-                                                               271</code></pre>
+                 Exercise
+
+                                                       −
+                 Find the general solution of    dx  =  9.8 0.196x
+                                              dt
+                 Solution
+
+                     x′ +  0.196x =  9.8
+
+                          ∫ 0.196 dx
+                            e       =  e 0.196t
+
+                        ∫  9.8e 0.196t dt =  50e 0.196t
+
+
+                                                  )
+                     x ( ) t =  1  ( 50e 0.196t  + C
+                            e 0.196t
+
+                          = 50 C  e − 0.196t
+                               +
+
+
+                 Exercise
+
+                 Find the general solution of   di  +  500i =  10sin t ω
+                                             dt
+                 Solution
+
+                        ∫ 500 dt
+                          e     = e 500t
+
+                       ∫ 10 (sin t eω )  500t dt
+
+
+
+
+
+                                                    ∫ sin tω  dt
+                                +    500t             1
+                                    e               − ω cos tω
+                                −        500t          1
+                                    500e            − ω 2  sin tω
+                                           4 500t
+                                       ×
+                                +   25 10 e          −   1 2 ∫  sin t ω
+                                                        ω
+
+
+                                              1
+                                                                           ×
+                           (sin t eω  )  500t dt   ∫      −  ω cos t ω=  500 sin t eω +        500t  −  25 10 4 ∫  (sin t eω  )  500t dt
+                                                         2
+                                                                             2
+                                                        ω
+                                                                           ω
+                           2
+                          ω + 25 10 4           500t     1                        500t
+                                 ×
+                                                )
+                                              ω
+                                        ∫ (sin t e  dt =  2  ( ω  −  cos t +  ω  500sin ω  ) t e
+                             ω 2                        ω</code></pre>
      	</div>
     
      </div>

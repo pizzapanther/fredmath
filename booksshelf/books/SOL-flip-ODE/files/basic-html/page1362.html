@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1362 - ODE Solution</title>
+        <title>Page 1362 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1362 - ODE Solution</div>
+        <div id="content-top1">Page 1362 - DE Solution</div>
         <div id="content-top2">P. 1362</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                    The natural frequencies:      40   6.325   rad  / sec       125  11.180  rad  / sec
-                                             1                             2
-                                                 6.325   1.0067   Hz       11.180  1.779  Hz
-                                              1    2                   2    2
-
-                                  20
-                                                                                    
-                b)  v   20     6.325     40.26  ft / s c     40.26 0.681818   27   mph
-                                              
-                                                         e
-                     1      1        
-                                   20
-                                                                                    
-                                                                         
-                    v   20      11.180    71.18  ft /s ec     71.18 0.681818   49   mph
-                                               
-                     2       2        
+    <pre style="white-space:pre-line"><code>1348 | S O LU TI O N
 
 
-             Exercise
-             The system is taken as a model for an undamped car with the given parameters in fps units.
-             m  100; I   1000; L    6,  L   4; k   k    2000
-                                   1        2        1    2
-              a)  Find the two natural frequencies   and  of the car (in hertz).
-                                                   1       2
-              b)  Assume that his car is driven along a sinusoidal washboard surface with a wavelength of 40 ft. The
+          Exercise
 
-                  result is a periodic force on the car with frequency    2  v     v . Resonance occurs when
-                                                                        40     20
-                        or   . Find the corresponding two critical speeds of the car (in ft/sec)
-                               
-                    
-                        1          2
-             Solution
-                      mx    k   k    k L  k L   
-                                        x 
-                                1   2       1 1    2 2
-                a)                                   2 
-                                                2
-                     I    k L  k L   x    k L  k L      
-                            1 1   2 2        1  1  2  2 
+                                               (    2t ) 2
+                                        f
+                                                 +
+          Find the Laplace transform of   ( ) t =  1 e
+          Solution
 
-                         100x   4000x   4000
-                      
-                        1000   4000x   104,000 
-                     x   40x  40              40  40 
-                                           A             
-                         4x   104           4    104 
-
-                                  
-                                40       40
-                     A    I
-                       
-                                             
-                                 4        104 
-                               40        104       160
-                                                                          
-                                2  144      4000   0           72 4 74
-                                                                1,2
-                    The eigenvalues are:      37.591,       106.409
-                                          1              2
-                    The natural frequencies:     37.591   6.1   rad  / sec
-                                                               31
-                                             1
-                                                  6.131  .9758  Hz
-                                                   2
-
-                                106.409   10.315  rad  / sec
-                             2
+              F ( ) s £=  { 12e+  2t  +  e 4t }
 
 
+                   =  1  +  2  +  1
+                     s   s −  2  s −  4
 
-                                                              1341</code></pre>
+                   =  4s −  2  16s +  8
+                      ( ss −  2 )(s −  ) 4
+
+
+          Exercise
+                                                 (  t    t − ) 2
+          Find the Laplace transform of    f  ( ) t =  e − e
+
+          Solution
+                        {
+                              2 e
+              F ( ) s £=    e 2t  − +  − 2t }
+
+                   =   1  −  2  +  1
+                     s −  2  s  s +  2
+                      2
+                               2
+                                   8 s −
+                             −
+                   =  s +  2ss ++      2   2s
+                              (
+                                2
+                             ss −   4 )
+                        2
+                   =   s + 8
+                      (
+                        2
+                     ss −   4 )
+
+
+          Exercise
+
+                                                 2
+                                        f
+          Find the Laplace transform of   ( ) t = 4t − 5sin3t
+          Solution
+                                         }
+                { £  f t    { 4t − 5sin3t
+                               2
+                   ( )} £=
+              F ( ) s =  2  −  15
+                           2
+                     s 3  s +  9
+
+                   =  −  15s +  3  2s +  2  18
+                          5
+                         s +  9s 3</code></pre>
      	</div>
     
      </div>

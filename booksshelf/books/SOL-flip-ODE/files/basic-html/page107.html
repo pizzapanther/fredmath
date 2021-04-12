@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 107 - ODE Solution</title>
+        <title>Page 107 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 107 - ODE Solution</div>
+        <div id="content-top1">Page 107 - DE Solution</div>
         <div id="content-top2">P. 107</div>
      </div>
      <div id="content-middle">
@@ -152,80 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>g                   1   rv   0  
-                v   t   tanh r gt     tanh         
-                        r                        g    
-                                                     
-
-                                     
-                v   t   ds    g  tanh r gt  C  
-                       dt     r                2
-                   ds   r g   tanh r gt     C 2  dt       tanh axdx   1  ln cosh ax    C
-
-                                                                             a
-                                   
-                                        
-                         g
-                 s   t    1  ln cosh r gt    C    C
-                        r  r g                    2       3
-                             
-                                   
-                        1  ln cosh r gt  C 2   C
-                                                    3
-                        r 2
-                                                                 
-                           s   0   s    s   1  ln cosh C 2  C
-                                   0       0     2                  3
-                                                r
-                                        C    s   1  ln cosh C 2 
-                                           3    0    2
-                                                    r
-                                                 rv                             rv    
-                             
-                                                                        
-                                   
-                                                                              
-                 s   t   1  ln cosh r gt   tanh   1   0        s   1  ln cosh tanh   1    0      
-                                                  
-                       r 2                       g     0   r 2              g  
-                                                        
-                                                                                            
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 101
 
 
-             Exercise
-             A body falls from a height of 300 ft. What distance has it traveled after 4 sec. if subject to g, the earth’s
-             acceleration?
+                             y ( ) 1 =
+                                    0
 
-             Solution
-                a   t     g
-
-                         
-                       
-                    t 
-                v          gdt
-                       gt  C
+                                    +
+                                             =
+                             tan −  1 0 tan −  1 1 C
+                                                 1
+                             C =  π
                               1
-                           v   0   0    C   0
-                                           1
-                v   t     32.2t
+                                   4
+                     tan −  1 2y +  tan −  12  π
+                                     x =
+                                           4
+                                 ( π     − 12 )
+                        2y =  tan  4  −  tan  x
+                                          (
+                                                 x
+                                tan π −  tan tan − 12 )
+                            =      4
+                                     π
+                                                  x
+                              1 tan ( ) (       − 12 )
+                                        tan tan
+                               +
+                                      4
+                                 1 x
+                         y ( ) x =  1 −  2
+                                      2
+                                2
+                                 1 x
+                                   +
 
 
-                v   t   dh    32.2t
-                        dt
-                             
-                   dh     32.2 t  dt
+                 Exercise
+                                                                                 +
+                 Find the exact solution of the initial value problem.  e − 2t dy  =  1 e − 2t  , y ( ) 0 =  0
+                                                                          dt       y
+                 Solution
+
+                     ydy = ( 1 e − 2t ) e 2t dt
+                             +
+                     ∫  y dy = ∫  ( e 2t  + 1 dt
+                                        )
 
 
-                             2
-                h   t   16.1t  C
-                                   2
-                     h   0  300   C    300
-                                        2
-                             2
-                h   t   16.1t  300
+                     1  y =  1 e 2t  ++
+                        2
+                                   tC
+                     2      2           1
+                     y =  2  e 2t  +  2tC
+                                  +
+
+                          y ( ) 0 =
+                                 0
+                          0 1 C
+                            = +
+                          C = − 1
 
 
-                                                               103</code></pre>
+                     y =  2  e 2t  +  2t −  1
+
+
+                 Exercise
+
+                                                                      dy   t +  2
+                 Find the exact solution of the initial value problem.   =     , y  ( ) 0 =  2
+                                                                      dt    y
+                 Solution</code></pre>
      	</div>
     
      </div>

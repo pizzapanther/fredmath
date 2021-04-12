@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1574 - ODE Solution</title>
+        <title>Page 1574 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1574 - ODE Solution</div>
+        <div id="content-top1">Page 1574 - DE Solution</div>
         <div id="content-top2">P. 1574</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>n   4   a    2  a   1  a             n   5   a    2  a   0
-                           4    12  2     6  0                        5     25  3
-                n   6   a     2  a    1  a            n   7   a   0
-                           6    252   4   1 26  0                     7
-
-                                                6
-                                2
-                                       4
-                             
-            y  ( )   a x  1  1 x   1  x   1  x   
-                x
-              1       0             6     126
-                   r   3     b          2b n 2           2    b
-                                                               2
-                       2        n      n   3  2n    2  3  2n  5n  n 2
-                                           2
-                n   2   b    2  b   1 b              n   3   b    2  b  0
-                           2    18  0     9  0                        3    33  1
-
-                n   4   b     2  b    1  b            n   5   b   0
-                           4    568   2   2 34  0                     5
-                n   6   b    2  b     1   b            n   7   b   0
-                           6  102   4  11,934   0                     7
-
-                                                        6
-                                            4
-                                   2
-            y  ( ) x   b x 3/2     1  1  x   1  x   1  x     
-              2       0        9      234      11,934        
-                                     4
-                               2
-                                                                                          6
-                                              6
-                                                                     2
-                                                                              4
-                           
-            y ( ) x   a x  1  1 x   1 x   1  x     b x 3/2    1  1  x   1  x   1  x     
-                    0             6      126            0        9      234      11,93 4       
+    <pre style="white-space:pre-line"><code>1560 | S O LU TI O N
 
 
-        Exercise
-        Find the Frobenius series solutions of  3xy   2y   2y 
-                                                               0
-        Solution
-                      x
-                              x
-            x 3 y   2 y   2 y 
-               x
-                                   0
-            3         3       3
-             2
-            x y   2  xy   2  xy   0
-                   3      3
-            y   2  y   2  y   0
-                 3x     3x
-            That implies to    x   2   and    x   2
-                            p
-                                           q
-                                   3x             3x
-            p    lim xp   x   lim x  2     2
-              0   x  0        x  0  3x   3
-                       2
-            q    lim x q   x   lim x 2 2    lim  2 x   0
-             0   x  0          x 0   3x   x  0 3
-
-                                                                             1
-                                                     2
-            The indicial equation is:   r r    1   2 r   r   1 r   0    r   0,
-                                               3         3                    3
-            The two possible Frobenius series solutions are then of the forms
+             d)
+                      x =  Ce 2t  +  C e  t −
+                       1    1       2
+                               2t       t −
+                      x =  Ce    + C e
+                                     3
+                        2
+                             1
+                 
+                  x =  Ce 2t  −  C e  t −  −  C e  t −
+                   3    1       2        3
+                   x  ( ) 0 =  C +  C =  10          1   1  0  10
+                    1       1    2                                
+                 
+                   x 2  ( ) 0 =  C +  1  C =  3  12            →    1  0  1  12
+                                                                    
+                                                    1   −  1 −  1 −  1
+                  x 3  ( ) 0 =  C −  1  C −  2  C =  3  −  1       
+                 
+                            1   1   0
+                                         3
+                        ∆=  1   0   1 =
+                            1 −  1 −  1
+                              10   1   0              1 10    0            1   1  12
+                        ∆ =   12   0   1 =  21 ∆    =  1 12   1 =  9  ∆ =  1   0  12 = 15
+                          1                       2                    3
+                              −  1 −  1 −  1          1 −  1 −  1          1 −  1 −  1
 
 
+                        ⇒    C =  7 C =    3 C =    5
+                              1        2        3
+                  xt     7e 2t  +  3e  t −
+                     ( ) =
+                   1
+                            2t      t −
+                  x 2  ( ) t = 7e  + 5e
+                 
+                  x  ( ) t =  7e 2t  − 8e  t −
+                   3
 
 
+          Exercise
 
+               1   −  4  0  −  2           e  t −     0           0            e t     x 1 ( ) 0 = 1
+                                                                                             
+                 0  1   0    0                        0           t                 x  ( ) 0 =  3
+                                                   
+          x ′ =                  x ; x =     0   , x =      , x =     e   , x =     0   ,    2
+                                                                                             
+                6   −  12 −  1 −  6  1     0    2     e  t −   3    0    4     t    x  ( ) 0 =  4
+                                                                               3e     3
+                 0  −  4  0  −  1            e  t −         0         − 2e t         0        x 4  ( ) 0 = 7
+           a)  Verify that the given vectors are solutions of the given system.
+           b)  Use the Wronskian to show that they are linearly independent.
+           c)  Write the general solution of the system.
+           d)  Find the particular solution that satisfies the given initial conditions
 
-                                                          1544</code></pre>
+          Solution</code></pre>
      	</div>
     
      </div>

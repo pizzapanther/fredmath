@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1464 - ODE Solution</title>
+        <title>Page 1464 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1464 - ODE Solution</div>
+        <div id="content-top1">Page 1464 - DE Solution</div>
         <div id="content-top2">P. 1464</div>
      </div>
      <div id="content-middle">
@@ -152,96 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                                                          
-                              n 
-                      n n    1 a x   n  2 n    1 a n 2  6na x       4a x 
-                                                                       n 
-                                n
-                                                            n
-                                                                          n
-                                                                                       n
-                                                          x 
-                                                                                          0
-                                                                                    n
-                 n 2               n 0                        n 1          n 0
-                                                                            
-                              n 
-                      n n    1 a x   n  2 n    1 a n 2  6na x       4a x 
-                                                                       n 
-                                                                                       n
-                                                                          n
-                                n
-                                                            n
-                                                          x 
-                                                                                          0
-                                                                                    n
-                 n  0              n  0                      n  0          n  0
-                  
-                                                      
-                       n   2 n    1 a    n  5n   4 a n      x  0
-                                            2
-                                                             n
-                                  n 2                  
-                 n 0
-                n  1 n    2 a n 2    n  1 n    4 a 
-                                                       0
-                                                    n
-                a         n   4 a
-                  n 2    n   2 n
-                        a                                                a
-                         0                                                1
-                  n   0    a   2a                                          5
-                            2       0                          n  1     a   3  a
-                                                                          3
-                                                                                  1
-                  n   2     a    3 a   3a                 n  3     a   7  a   7  a
-                             4    2  2      0                             5     5  3   3  1
-                  n   4     a   8 a   4a                 n   5     a   9 a   9  a
-                             6    6  4       0                            7     7  5    3  1
+    <pre style="white-space:pre-line"><code>1450 | S O LU TI O N
 
 
-                              n 
-                      a     1  n      1 a                      a        1  n
-                                                                             2n 
-                       2n                 0                         2n 1               3 a
-                                                                                         1
-                         0       n         2n  1  1       n          2n 1
-                                                           
-                                
-                                 1
-                 y   x   a    n     1 x    3 a     2n      3 x
-                                                            1
-                           n  0                      n  0
-                                                                               7
-                                                                 3
-                                                                        5
-                                 2
-                                             6
-                                       4
-                             
-                 y   x   a   1 2x  3x   4x      1 a   x   5  x   7  x   9  x   
-                         0                            3  1     3     3      3
+                        s 3     A +  C +  D =  −  1
+                       
+                        s 2  −  10A +  BC −  9D =  −  12
+                                     −
+                         1                           →  A =  50
+                       
+                        s        9A −  10B =  0             81
+                       
+                        s   0       9B =  5          →  B =  5
+                                                            9
+
+                         C +  D =  −  131
+                                  81    →   C =  31    D =  −  2
+                       
+                                                  81
+                        C −  9D =  −  517
+                                   81
+                      ( )} £
+              £  −  1 { Y s  =  −  1     50 1  +  5 1  +  31 1  −  2    
+                                    81 s  9  s 2  81 s −  9  s −  1 
+
+              y ( ) t =  50  +  5 t +  31 e 9 t  − 2e t
+                         9
+                              81
+                    81
 
 
-             Exercise
-                                            2  
-             Find a power series solution.   x  1 y  6xy  12y 
-                                                                  0
-             Solution
-                         
-                               n
-                 y   x   a x
-                             n
-                        n 0
-                                       
-                                                       n
-                 y   x    na x n 1     n    1 a n 1 x
-                               n
-                        n   1         n   0
+          Exercise
 
 
+                                                                                            2
+          Solve using the Laplace transform:    2y′′ +  3y′ −  2y te=  − 2t , y ( ) 0 =  , 0  y′ ( ) 0 = −
+          Solution
+              £  {2y′′ +  3y′ −  2y }( ) s £ { te − 2t } ( ) s
+                                    =
+                2
+              2s Y  ( ) 2sys −  ( ) 0 −  2y′ ( ) 0 +  3sY  ( ) 3s −  y ( ) 0 −  2Y ( ) s =  1
+                                                                   (s +  ) 2  2
+                          )
+              ( 2s + 3s − 2 Ys           1
+                 2
+                             ( ) 4+=
+                                      (s +  ) 2  2
+              (2s −  1 )(s +  2 Ys    1    −  4
+                           ) ( ) =
+                                   (s +  ) 2  2
 
-                                                              1435</code></pre>
+
+             Ys      −  4s −  2  16s −  15  =  A  +  B  +  C  +    D
+               ( ) =
+                     (2s −  1 )(s +  ) 2  3  2s −  1 s +  2  (s +  ) 2  2  (s +  ) 2  3
+
+                 −  4s −  2  16s −  15 =  As +  3  6As +  2  12As +  8A +  (2Bs −  B ) s + (  2  4s +  4 )
+
+
+                                               +  2Cs +  2  2Cs −  2C +  2Ds −  D
+
+                      s 3        A +  2B =  0
+                     
+                      s   2  6A +  7B +  2C =  −  4
+                     
+                      s   1  12A +  4B +  3C +  2D =  −  16
+                       0
+                      s   8A −  4B −  2C −  D =  −  15</code></pre>
      	</div>
     
      </div>

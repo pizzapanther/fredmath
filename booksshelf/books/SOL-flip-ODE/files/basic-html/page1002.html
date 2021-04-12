@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1002 - ODE Solution</title>
+        <title>Page 1002 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1002 - ODE Solution</div>
+        <div id="content-top1">Page 1002 - DE Solution</div>
         <div id="content-top2">P. 1002</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution   Section 3.4  Using Laplace Transform to Solve Differential
-                                                      Equations
+    <pre style="white-space:pre-line"><code>992 | S O LU TI O N
 
 
 
+                        2
+              λ  2  3λ −  +=  0 →  λ    = 1, 2
+                                    1,2
+                       x
+              y =  C  e +  C e 2x
+               h    1       2
+              y  =  Ae − x  +  B cos3xC sin3x
+                                   +
+               p
+                                 B
+                                            C
+                 y′ =  −  Ae − x  −  3 sin3x +  3 cos3x
+                   p
+                                           C
+                 y′′ =  Ae − x  −  9 cos3x −  B  9 sin3x
+                   p
+              Ae −  x  −  9 cos3x − B  9 sin3x + C  3Ae −  x  +  9 sin3x − B  9 cos3x + C  2Ae −  x
 
-             Exercise
+                               C
+                 +  2 cos3x +  B  2 sin3x =  3e − x  − 10cos3x
 
-             Solve using the Laplace transform:     y   y  te t ,  y (0)     2
+                             6A =  3       A =  1
+                                               2
+                        −  7B −  9C =  −  10 B =  7
+                                              13
+                          9B −  7C =  0   C =  9
+                                              13
 
-             Solution
+                                   7   9               10   9              7  10
+                               ∆=        = − 130  ∆  =        = − 70  ∆  =       = − 90
+                                   9  −  7         B   0   −  7        C   9   0
 
-                    y  L   y   L  
-                                  t
-                                te
-                     L  y    y  L  L   
-                                       t
-                                     te
-                             
-                 sY ( ) s   y (0) Y s   1  2              y (0)     2
-                                ( )
-                                     s    1
-                      Y s 
-                (s  1) ( ) 2      1
-                                 s    1  2
-                (s  1) ( ) s   1     2
-                      Y
-                             s    1  2
+                                                           9
+                                                7
+                                          e
+             ∴   y ( ) x =  C e +  1  x  C e 2x  +  1 − x  +  13 cos3x +  13 sin3x
+                                        2
+                                 2
+                     y ( ) 0 =  C +  1  C +  1  +  7  = 1
+                                   2
+                                       2 13
+                                                e
+                     yx =  ′ ( ) C e +  x  2C e 2x  −  1 − x  −  21 sin3x +  27 cos3x
+                              1        2      2       13         13
+                     y′ ( ) 0 =  C +  2C −  1  +  27  =  2
+                              1     2   2   13
 
-                Y ( ) s     1          2
-                       (s   1) s    1  2  s  1
+                           C +  C =   −  1
+                         −   1    2     26
+                          
+                           C +  1  2C =  2  11
+                                        26
+                          
+                              C =  12
+                               2    26
 
-                          1          A    B      C
-                    (s  1) s    1  2  s   1  s   1  s    1  2
+                        C   =  6  ,  C = − 1
+                          2   13     1    2
 
-                                2
-                              
-                                                  
-                                                      
-                          
-                    1  A B s    C  2A s   A B C
-
-                              A    B   0
-                                                 1        1       1
-                             C   2A  0        A   B     C 
-                            A B C    1          4        4       2
-                                  
-                              
-                           
-                Y ( ) s   1 1    1 1    1  1      2
-                       4 s  1  4 s  1  2  s    1  2  s  1
-                                                                 
-                L     ( )Y s            L  7 1    1 1    1  1    
-                                        4 s   1  4 s   1  2  s    1   2  
-
-                                  e 
-                           e
-                 y   t   7  t    1 t  1 t
-                                        te
-                         4       4     2
-
-
-             Exercise
-
-                                                                       
-                                                               t
-             Solve using the Laplace transform:     y   y  2cos5 ,  y (0) 0
-             Solution
-                   y  L   y   L 2cos5t
-                                        
-
-
-                                                               981</code></pre>
+                                          e
+                  ( ) =
+                           e +
+             ∴   yx     −  1 x  6  e 2x  +  1 − x  +  7  cos3x +  9  sin3x
+                         2      13       2      13         13</code></pre>
      	</div>
     
      </div>

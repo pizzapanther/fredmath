@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 394 - ODE Solution</title>
+        <title>Page 394 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 394 - ODE Solution</div>
+        <div id="content-top1">Page 394 - DE Solution</div>
         <div id="content-top2">P. 394</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>P   t     1
-                           
-                        kt C
-                       P   0    1    P    C    1
-                                C     0             P
-                                                     0
-                P   t     1
-                        kt   1
-                             P
-                              0
-                          P
-                          0
-                        
-                       1 P kt
-                            0
-            b)  P   6      P   t   6
-                                     
-                 0                  1 6kt
-               Given:    9P  10 
+    <pre style="white-space:pre-line"><code>388 | S O LU TI O N
 
-                   6    9
-                 
-                1 60k
-                1 60k   2
-                 
-                         3
-                k   1
-                   180
+          Exercise
 
-                P   t   6
-                       1  1  t
-                          30
+          A tank contains 100 gal of pure water. At time zero, a sugar-water solution containing 0.2 lb of sugar
+          per gal enters the tank at a rate of 3 gal/min. Simultaneously, a drain is opened at the bottom of the
+          tank allowing the sugar solution to leave the tank at 3 gal/min. Assume that the solution in the tank is
+          kept perfectly mixed at all times.
 
-                       180
-                          
-                       30 t
-                P   180    (doomsday)
-                    30  t  t 30
-
-                                                            2
-            c)  If the birth & death both are proportional to  P  with     
-                         2
-                dP      kP
-                dt
-                  dP        kdt
-
-                    2
-                  P
-                          
-                  1    kt C
-                  P
-                P   t   1
-                         
-                       kt C
-                   P   0   1    P    C   1
-                           C    0            P
-                                              0
-                         P
-                P   t   0
-                        
-                       1 P k t
-                           0
-                  P
-            d)      0        0
-                 
-                1 P kt    t
-                    0
-               Therefore    t  0 as t   , so the population die out in the long run.
-                          P
+           a)  What will be the sugar content in the tank after 20 minutes?
+           b)  How long will it take the sugar content in the tank to reach 15 lb?
+           c)  What will be the eventual sugar content in the tank?
+          Solution
 
 
-                                                          390</code></pre>
+             a)  Rate in =  3  gal  × 0.2  lb
+                             min      gal
+                         =  0.6    lb
+                                min
+
+                                     ()
+                 Rate out = 3    gal  ×  xt     lb
+                              min  100 gal
+                             xt
+                          =  3 ()      lb
+                             100    min
+
+                 dx  =  0.6 −  3x
+                  dt        100
+
+                 x′ +  3  x =  3
+                     100     5
+
+                           100 ∫  3  dt  3t
+
+                        e        =  e 100
+                              3t
+                        ∫  3 e 100 dt =  20 e 100
+                                          3t
+                           5
+
+                                  3t
+                 xt       1      20e 100  +  C     
+                   ( ) =
+                          3t 
+                        e 100           
+                                −  3t
+                       =  20 Ce  100
+                           +
+
+                                   0
+                            x ( ) 0 =
+                                  +
+                            0 =  20 C
+                            C = − 20
+
+                                −  3t
+                 xt    20 20    e  100
+                          −
+                  () =
+
+                    20
+                 x ( ) =  20 20e  − .6
+                            −
+
+                                lb
+                       ≈ 9.038</code></pre>
      	</div>
     
      </div>

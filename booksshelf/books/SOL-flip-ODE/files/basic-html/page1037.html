@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1037 - ODE Solution</title>
+        <title>Page 1037 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1037 - ODE Solution</div>
+        <div id="content-top1">Page 1037 - DE Solution</div>
         <div id="content-top2">P. 1037</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>L    Y s               2 1    1 1    1  s    1    
-                       L
-                                  9 s   3  s 3  9  s   2  6  s   2  6
-
-                     2
-                           2
-            y   t     1 t   1 cos 6t   1  sin 6   t
-                     9   6     9           6
+    <pre style="white-space:pre-line"><code>2. 5 − V ar i a t i o n   o f  P ar am et er s  | 1027
 
 
-        Exercise
+
+                 Solution             Section 2.5 − Variation of Parameters
 
 
-                                                                                    1
-        Solve using the Laplace transform:     y  6y    9y     ; t  y   0   , 0  y   0 
-        Solution
-            L  y  6y  9   y  L   t
 
-             2
-            s Y   s   sy   0   y   0  6 Y   6ys     0  9Y   s   1 2     y   0   0  y   0   1
-                                      s
-                                                              s
-                        
-             s   6s   9 Y    s   1   1
-              2
-                                s 2
-                       2
-            Y   s   s  1    A    B    C     D
-                   s 2 s    3  2  s  s 2  s  3  s    3  2
-
-                    s 3       A C    0        C    2
-                                 
-                                                     27
-                   
-                              
-                     s   2   6A B   3C   D  1  D  10
-                                                     9
-                   
-                     s       9A  6B   0       A   2
-                                                    27
-                     0                               1
-                    s          9B   1           B   9
-                   
-                                                                   
-            L    Y s              2 1    1 1    2  1   10  1    
-                       L
-                                 27 s   9  s 2  27 s  3  9  s    3  2 
-                                
-                                                                    
-            y   t   2    1 t   2  e 3t    10 te 3t
-                   27   9    27       9
+                 Exercise
+                 { y 1  ( ) x = e 2x , y 2  ( ) x =  e − 3x }  is a fundamental set of solutions of  y′′ +  y′ −  6y =  3e 2x .
 
 
-        Exercise
 
-        Solve using the Laplace transform:     y  6y  15y   2sin3 ,   t  y   0     , 1  y   0     4
+                 Find a particular solution of the equation?
 
-        Solution
-            L  y   6y  15y   s  L 2sin3t s
-                                               
+                 Solution
 
-             2
-                                                                                                     4
-            s Y   s   sy   0   y   0  6sY    6ys     0  15Y    s   6     y   0   1,  y   0  
-                                                                2
-                                                               s   9
-                        
-             s  6s  15 Y    ss    4 6   6
-              2
-                                     
-                                            2
-                                           s   9
-                                                          1016</code></pre>
+
+                          e 2x    e − 3x
+                     W =
+                          2e 2x  − 3e − 3x
+
+                        =  −  3e −  x  −  2e −  x
+
+                        = − 5e − x  ≠  0
+
+                                             2x
+                                           3e
+                                     e − 3x ( )                                       y gx
+                                                                                          ()
+                        v  ( ) x = −    − ∫      dx                        v  ( ) x = − ∫  2  dx
+                          1              5e − x                             1           W
+
+                                =  3 ∫ dx
+                                  5
+
+                                =  3    x
+                                  5
+
+                                           2x
+                                         3e
+                                    e 2x ( )                                         yg  ( ) x
+                        v   ( ) x =   − ∫      dx                          v  ( ) x = ∫  1  dx
+                          2            5e − x                               2          W
+
+
+                                        5x
+                                = − 3 ∫ e dx
+                                   5
+
+                                = −  3  e 5x
+                                   25
+
+                    The particular solution:
+                       y =   vy +   v y
+                        p     11     2 2
+                                            x
+                           =  3 xe 2x  −  3 − 35x
+                                         e
+                                             e
+                             5        25
+                           =  3 xe 2x  −  3  e 2x
+                             5        25
+                      The general solution:
+
+                                                            3
+                         y ( ) x =  C e 2x  +  C e − 3x  +  3  xe 2x  −  25 e 2x
+                                 1
+                                          2
+                                                  5</code></pre>
      	</div>
     
      </div>

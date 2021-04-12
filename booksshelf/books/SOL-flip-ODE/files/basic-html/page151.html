@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 151 - ODE Solution</title>
+        <title>Page 151 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 151 - ODE Solution</div>
+        <div id="content-top1">Page 151 - DE Solution</div>
         <div id="content-top2">P. 151</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             We need to design a ballistics chamber to decelerate test projectiles fired into it. Assume the resistive force
-             encountered by the projectile is proportional to the square of its velocity and neglect gravity.
-             The chamber is to be constructed so that the coefficient   associated with this resistive force is not
-             constant but is, in fact, a linearly increasing function of distance into the chamber:
-                                                                                               2
-                                                                                                        2
-                 
-             Let    x    x , where   is a constant; the resistive force then has the form    x v    xv .
-                                                                                        
-                         0            0                                                             0
-             If we use time t as the independent variable, Newton’s law of motion leads us to the differential equation
-                                                            2
-                                                m dv     xv   0 with v    dx
-                                                   dt    0                    dt
-                a)  Adopt distance x into the chamber as the new independent variable and rewrite the given
-                    differential equation as a first order equation in terms of the new independent variable.
-                b)  Determine the value   needed if the chamber is to reduce projectile velocity to 1% of its incoming
-                                          0
-                    value within d units of distance.
-
-             Solution
-                                2
-                a)  m dv     xv   0 with v    dx
-                      dt     0                    dt
-                       v
-                    m d dx      xv   2  0  v   x d
-                      d dt      0                  t d
-                       x
-                                                   0
-                    mv dv      xv   2  0    when  x 
-                       dx     0
+    <pre style="white-space:pre-line"><code>1. 2 −   S ol ut i on s   t o S e pa r a bl e  E qu a t i o n s    | 145
 
 
-                b)   dv     0  xv   0
-                    dx    m
-                         
-                    dv    0  xv   0
-                    dx    m
-                                        
-                               0  xdx    0  x 2
-                           e  m        e   2m
+                 Exercise
 
-                                
-                                 0  x 2
-                    v   x   Ce   2m
+                 Two large containers A and B of the same size are filled with different fluids. The fluids in containers
+                 A and B are maintained at 0 C°   and 100  C°  , respectively. A small metal bar, whose initial
+                 temperature is 100  C°  , is lowered into container A. After 1 minute the temperature of the bar is
+                 90  C . After 2 minutes the bar is removed and instantly transferred to the other container. After 1
+                    °
+                 minute in container B the temperature of the bar rises 10  C°  . How long, measured from the start of
 
-                        v   0   v     v   C
-                                0        0
-                                    2
-                                  0  x
-                    v   x   v e   2m
-                            0
-                    Let v   0.01v  and    x   d
-                                 0
-                                   
-                                    0  d 2
-                    0.01v   v e   2m
-                         0    0
-                       
-                        0  d 2
-                    e   2m     0.01
-                      
-                                      
-                      0  d   2  ln 0.01
-                      2m
-                                                               147</code></pre>
+                 the entire process, will it take the bar to reach 99.9  C°  ?
+                 Solution
+
+                                          °
+                                                                             °
+                                                             C
+                                   :   A =
+                                                           °
+                    Given: Tank A        0   ,  CT  ( ) 0 =  100     &  T  ( ) 1 =  90  C
+                                                 1                  1
+                            Tank B       100      &  T  ( ) 1 =  110  C
+                                              C
+                                             °
+                                   :   A =
+                                                                °
+                                                      2
+                                                                                )
+                       ( ) (100 0 e
+                     Tt =        −  )  − kt                         T =  A +  ( T −  Ae − kt
+                      1                                                     0
+                          = 100e − kt
+                     T  ( ) 1 = 100e  k −  =  0 9
+                      1
+                                 9
+                        k = − ln ( )
+                                 10
+                          ≈  0.10536
+                     Tt          − 0.10536t
+                       ( ) 100e=
+                      1
+                     T  ( ) 2 = 100e − 0.10536(2)
+                      1
+                                 C
+                               °
+                           ≈  81
+                                                           0
+                                                 °
+                        Tank B:        T  ( ) 2 ≈  81 C =  T  ( )
+                                        1               2
+                                                                                )
+                                           )
+                     T  ( ) 100 +  (81 100 e − kt                   T =  A +  ( T −  Ae − kt
+                        t =
+                                      −
+                      2                                                     0
+                                −
+                          = 100 19e  − kt
+                               T  ( ) 1 = 100 19e  k −  =  81 10 91
+                                           −
+                                                           =
+                                                       +
+                                 2
+                                         9
+                                k = − ln ( )
+                                        19
+                                 ≈  0.7472
+                     T  ( ) 100 19e=  −  − 0.7472t
+                         t
+                      2
+                     T  ( ) 100 19t  =  −  e − 0.7472t  =  99 .9
+                      2
+                        −  0.7472t =  ln 0.1
+                                      19</code></pre>
      	</div>
     
      </div>

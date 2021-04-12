@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1526 - ODE Solution</title>
+        <title>Page 1526 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1526 - ODE Solution</div>
+        <div id="content-top1">Page 1526 - DE Solution</div>
         <div id="content-top2">P. 1526</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
+    <pre style="white-space:pre-line"><code>1512 | S O LU TI O N
 
-        Determine all the singular points of the given differential equation and classify each singular point as
-        regular or irregular
-                   2    2
-                x x   1   y   y   0
 
-        Solution
+          Exercise
 
-            y     1    2  y   0
-                  
-                     2
-                 x x   1 
+          Consider the given circuit below with all initial conditions are zero:
 
-            P ( ) x   0  Q ( ) x    1   2
-                                   
-                                     2
-                                 x x   1 
 
-                                                
-            For  ( ) x     1   2       x   0,  i
-                Q
-                         
-                           2
-                        x x  1 
-                           2
-                                                                    
-                q ( ) x   x 2  x  1  2  1  2   is an analytic at  x   0,  i
-                                   
+
+
+
+
+
+
+
+
+
+
+
+
+                                             V  ( ) s
+             a)  Find the transfer function of   0
+                                                ( )
+                                             Vs
+                                               i
+             b)  Solve the transfer function under the conditions  R =  2 Ω  R = 5 Ω  C = 10 − 4  f  L = 1 H
+                                                                 1          2
+             c)  Find the transfer function in function in time.
+
+          Solution
+
+                    ( ) V−
+             a)  V s        ( ) s =  R Is      ( )
+                                     ( ) sL Is+
+                  i       0        1
+                                = ( R +  sL ) ( ) s
+                                            I
+                                    1
+                        V  ( ) s  V  ( ) s
+                 Is      0     +  0
+                   ( ) =
+                          R        1
+                           2      s C
+                                 
+                       =     1  +  s   CV 0  ( ) s
+                                  
+                          R 2    
+                           +
+                          1 s  RC 
+                       =      2      V 0  ( ) s
+                            R 2   
+
+                                                         )
+                 V  ( ) s −  V  ( ) s =  1  ( R +  sL ) ( 1 s+    R C V  ( ) s
+                  i       0      R     1              2     0
+                                   2
+                             1                       
+                 V  ( ) s =    1+  ( R +  sL ) ( 1 s    R C V  ( ) s
+                                              +
+                                                     )
+                  i          R    1              2     0
+                              2                      
+                         R +  ( R +  sL ) ( 1 s+    R C )
+                       =  2     1              2   V   ( ) s
+                                     R               0
                                       2
-                                  x x   1 
-            The Regular singular points:  x   0,  i
-                                               
-
-
-
-        Exercise
-
-        Determine all the singular points of the given differential equation and classify each singular point as
-        regular or irregular
-                     2
-                                                                  0
-                x 3  x  25  x    2  2  y  3x x    2 y    7 x    5 y 
-        Solution
-                      3x x    2                7 x    5
-            y                     y                      y   0
-                                              2
-                      2
-                 x 3  x  25  x    2  2  x 3  x   25  x    2  2
-                           3x  x    2                           7 x    5
-            P ( )   x                           Q ( )   x
-                   x 3  x  5 x  5 x    2  2    x 3 x  5 x  5 x    2  2
-
-                              3x  x    2
-                                                             
-            For  ( )P x                             x   0,  5, 2
-                       x 3  x  5 x  5 x    2  2
-                       3x  x   5  x   5 x    2
-                  x
-                                                                      0
-                p ( )                         is not an analytic at  x 
-                       x 2  x  5  x  5 x    2
-                                 7 x    5
-                                                             
-            For  ( )Q x                             x  0,  5, 2
-                       x 3  x  5  x  5  x    2  2
-
-
-
-
-
-
-                                                          1496</code></pre>
+                         V
+                 Hs       0
+                    ( ) =
+                         V
+                           i
+                                     R
+                        =              2
+                          R +  ( R +  sL ) ( 1 s+  R C )
+                           2     1               2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1493 - ODE Solution</title>
+        <title>Page 1493 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1493 - ODE Solution</div>
+        <div id="content-top1">Page 1493 - DE Solution</div>
         <div id="content-top2">P. 1493</div>
      </div>
      <div id="content-middle">
@@ -152,89 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2
-               4 n  2 n    1 a n 2   n    1 a
-                                           n
-            a        n  1  a
-              n 2    4 n    2  n
-
-                   a    y   0                          a   y   0  1
-                                4
-                     0                                      1
-                n   0    a    1 a   1             n  1       a   2  a   1
-                             2   8  0   2                          3   4 3   1  6
-                n   2    a    3  a   3            n  3      a   1 a    1
-                             4   16  2   32                        5   5  3   30
-
-                n   4     a   5  a    5            n   5     a     6  a    1
-                             6   24  4   256                        7   4 7   5  140
-
-                                                                     7
-                                            4
-                                    3
-                                                             6
-                                                    5
-                             2
-                     
-            y   x   4 x   1 x   1  x   3  x   1  x   5  x   1  x 
-                           2     6      32      30     256      140
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1479
 
 
-        Exercise
-                                           2   
-        Find a power series solution.     x   1 y   2xy  2y   0 ;  y   0   0,  y   0  1
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n   1         n   0
-                                          
-                                   n 2                         n
-            y    x    n n    1 a x    n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
-             x  1 y   2xy  2y 
-                   
-              2
-                                    0
-                                                                            
-                                                                                      n
-            x 2     n n    1 a x n 2      n n    1 a x n 2    2x  na x n 1  2  a x  0
-                                                                                   n
-                            n
-                                                                    n
-                                                  n
-               n 2                  n 2                     n 1            n 0
-                                                                  
-                                                              n 
-                          n 
-                  n n    1 a x    n n    1 a x n 2    2na x   2a x 
-                                                                             n
-                                                                n
-                            n
-                                                                                 0
-                                             n
-                                                                           n
-            n 2                n 2                  n 1          n 0
-                                                                       
-                  n n    1 a x   n   2 n    1 a n 2  2na x     2a x 
-                                                                   n 
-                          n 
-                                                       n
-                                                                                  n
-                            n
-                                                                     n
-                                                      x 
-                                                                                      0
-                                                                                n
-            n   0              n 0                       n   0        n 0
-                                                          1464</code></pre>
+                 Exercise
+
+                                 q
+                 Find the charge  ( ) t  on the capacitor in an LRC−series circuit when  L =  0.25 H ,  R  = 10 Ω ,
+                 C =  0.001 F ,  ( ) 0E t = ,  ( ) 0q  =  q  C , and  ( ) 0i  = 0 .
+                                                  0
+                 Solution
+
+                                      1
+                                                                        1
+                     0.25q′′ +  10q′ +  0.001 q =  0          Lq′′ +  Rq′ +  C  q =  E ( ) t
+                         £  {q′′ +  40q′ +  4,000q =  } 0
+
+
+                      2
+                     s Q ( ) s −  sq ( ) 0 −  q′ ( ) 0 +  40sQ ( ) 40 0s −  q ( ) 4,000Q+  ( ) 0s =     q ( ) 0 =  q 0  q′ ( ) 0 =
+                                                                                                             0
+                                     )
+                     ( s +  2  40s +  4000 Q ( ) s =  sq +  0  40q
+                                                       0
+                     Q ( ) s =  q     s + 40
+                                (s +  0  20 ) +  2  3600
+
+
+                     £  −  1 {Q s      −  1        q 0  s +  20  +  q 0  20       
+                             ( )} £=
+                                             (s +   20 ) +  2  60 2  (s +  20 ) +  2  60   2 
+
+                     q ( ) t =  q e − 20t ( cos60t +  1 sin60t )
+                             0
+                                              3
+
+
+                 Exercise
+
+
+                 Find the charge  ( ) t  on the capacitor in an LRC−series circuit at t  = 0.01 sec  when  L =  0.05 h,
+                                 q
+                                                                  i
+                 R  =  2 Ω , C =  0.01 f ,  ( ) 0E t = ,  ( ) 5q  0 =  C   , and  ( ) 0 =  0 A.
+
+                 Solution
+
+                     0.05q′′ +  2q′ +  1  q =  0              Lq′′ +  Rq′ +  1  q =  E ( ) t
+                                   0.01                                 C
+                         £  {q′′ +  40q′ +  2,000q } =  0
+
+
+                      2
+                                                                                                            0
+                     s Q ( ) s −  sq ( ) 0 −  q′ ( ) 0 +  40sQ ( ) 40 0s −  q ( ) 2,000Q+  ( ) 0s =     q ( ) 0 = 5 q′ ( ) 0 =
+                                      )
+                     ( s +  2  40s +  2,000 Q ( ) s =  5s +  200
+
+                                 ( 5 s +  40 )
+                     Q ( ) s =
+                            (s +  20 ) +  2  1600
+
+
+                     £  −  1 {Q s  =    −  1       s + 20  +     20           
+                             ( )} 5 £
+                                             (s +   20 ) +  2  40 2  (s +  20 ) +  2  40   2 </code></pre>
      	</div>
     
      </div>

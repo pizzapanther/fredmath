@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1043 - ODE Solution</title>
+        <title>Page 1043 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1043 - ODE Solution</div>
+        <div id="content-top1">Page 1043 - DE Solution</div>
         <div id="content-top2">P. 1043</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>                           
-            L     Y s               8  128   L  1  s      
-                      
-                                                      2
-                                  128  s   4 2  2  2  s  16 
-                                        2
-                                                           
-                               t
-            y   t   1  sin4t  4 cos4t    1 cos4 t
-                   16                    2
+    <pre style="white-space:pre-line"><code>2. 5 − V ar i a t i o n   o f  P ar am et er s  | 1033
 
 
-        Exercise
+
+                           =  2  (ln tan5x +  sec5x −  sin5x )(cos5x +  )  2  cos5 sin5x
+                                                                            x
+                             25                                      25
+                           =  2  ln tan5x +  sec5
+                                               x
+                             25
 
 
-        Solve using the Laplace transform:     y   10y   9y   5 ;   t  y (0)    1,  y (0)   2
+                 Exercise
 
-        Solution
-            L  y  10y  9y   s  L    s
-                                       5t
-             2
-            s Y   sys     0   y   0  10sY    10s   y   0  9Y    s   5
-                                                                s 2
-             s  10s  9 Y   s   5   s  12
-                        
-              2
-                                 s 2
-                       3
+                 Find a particular solution to the given second-order differential equation   y′′ −  6y′ +  9y =  5e 3x
+
+                 Solution
+
+
+                     λ  2  6 λ −  9 =  (λ +  −  ) 3  2  =  0
+                     λ    =  3
+                      1,2
+                                     )
+                     y   = ( C + C x e 3x
+                      h      1    2
+
+
+                          e 3x      xe 3x
+                     W =
+                          3e 3x  e 3x  + 3xe 3x
+
+
+                        =  e 6x  +  3xe 6x  −  3xe 6x
+
+                        =  e 6x   ≠  0
+
+                                         3x
+                                       5e
+                                                                                          ()
+                                                                                        2
+                     v  ( ) x = − ∫  xe 3x ( )  dx                         v  ( ) x = − ∫  y gx  dx
+                      1              e 6x                                   1            W
+                            = − 5 ∫    xdx
+
+
+
+                            = −  5  x 2
+                                2
+
+                                      3x
+                                e 3x ( )                                              yg ( ) x
+                                    5e
+                    v  ( ) x =     e ∫    dx                               v  ( ) x = ∫  1  dx
+                     2              6x                                      2           W
+                             ∫
+                          = 5 dx
+
+
+                          = 5
+                             x
+
+                                         2 3x
+                                2 3x
+                     y p  =  −  5  xe  +  5xe                       y p  =  vy +  v y
+                                                                          11
+                                                                                 2 2
                              2
-            Y   s    s  12s  5    A    B    C    D
-                    s 2 s   9 s    1  s  s 2  s   9  s   1
-
-                                                                                     2
-                               2
-                        3
-                                                                               3
-                                                                                            3
-                                                                                                   2
-                                                             2
-                                        3
-                                                 2
-                                                                           
-                      s  12s      As   10As   9As   Bs  10Bs  9B Cs      Cs   Ds   9Ds
-                                  5
-                      s 3      A C   D   1
-                                 
-                     
-                      s 2   10A   B C  9D   12
-                                    
-                     
-                      s 1      9A   10B   0        A   50
-                                                          81
-                     
-                      s   0       9B   5             B   5
-                                                           9
-                       C   D   131
-                                 81       C   31   D   2
-                     
-                      C  9D   517           81
-                                 81
-            L     Y s             50 1    5 1    31 1    2    
-                       L
-                                 81 s  9  s 2  81 s   9  s   1 
-            y   t   50    5 t   31 e 9t   2e t
-                   81   9    81
-
-
-        Exercise
-
-                                                             
-        Solve using the Laplace transform:    2y  3y   2y te  2t ,  y   0   , 0  y   0  
-                                                                                          2
-        Solution
-
-
-
-                                                          1022</code></pre>
+                              2 3x
+                         =  5  xe
+                           2</code></pre>
      	</div>
     
      </div>

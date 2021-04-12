@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1325 - ODE Solution</title>
+        <title>Page 1325 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1325 - ODE Solution</div>
+        <div id="content-top1">Page 1325 - DE Solution</div>
         <div id="content-top2">P. 1325</div>
      </div>
      <div id="content-middle">
@@ -152,89 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>
-                   
-            I   2I   4I    6sin3t
-             3     3     3
-                 2
-                   2                  1  3
-                          4 0 
-                                       1,2
-                                            
-                I    C  cos 3t   C  sin 3t e  t 
-                 h     1            2
-                I    A cos3t   B sin3t
-                 p
-
-                           A
-                   I   3 sin3t  3 cos3t
-                                     B
-                     p
-                                      B
-                   I   9 cos3t  9 sin3t
-                           A
-                     p
-                 9 cos3t  9 sin3t  6 sin3t  6 cos3t   4 cos3t  4 sin3t   6sin3t
-                                       A
-                   A
-                                                 B
-                             B
-                                                                       B
-                                                            A
-                        cos3t   5A   6B   0         36        30
-                                                   A     , B 
-                        sin3t   6A  5B   6         61        61
-                                           
-                t 
-            I     C  cos 3t  C  sin 3t e   t     36 cos3t   30 sin3t
-             3        1            2              61         61
-                   I    0   0   C    36
-                     3               1      1 6
-                                                                           
-                   t  
-                I     C  cos 3t  C  sin 3t   C  3sin 3t  C  3 cos 3t e  t    108 sin3t   90 cos3t
-                 3         1           2          1             2                 61        61
-            -      I    0   0      C   3C   90    0    C    126
-                     3                1       2   61           2     61 3
-                                  42 3           t 
-            I    t   36 cos 3t      sin 3t e      36 cos3t   30 sin3t
-                                                
-                    
-             3        61            61               61        61
-            1 I    I   0
-            2  3    2
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1311
 
 
-            I    t   1  I
-             2      2  3
-                     18         21 3          18 3           63          t   54       45
-                      cos 3t       sin 3t        sin 3t     cos 3t e        sin3t    cos3t
-                                                                        
-                     61          61             61           61              61        61
-                     39 3          45          t   54       45
-                        sin 3t     cos 3t e        sin3t    cos3t
-                                              
-                     61            61              61        61
+                 Exercise
 
-            I    t   I   I
-             1       2    3
-                     3 3           81          t            81
-                         sin 3t    cos 3t e      14 sin3t   cos3t
-                   
-                                              
-                      61           61              61        61
+                                                                                      f
+                 Use Definition of Laplace transform to find the Laplace transform of    ( ) t = t sint
+
+                 Solution
+                            ∫ ∞ t      − st dt
+                     F ( ) =  0  sin  e
+                                    t
+                        s
+
+
+                                                         t
+                                                    ∫ sin  dt
+
+                                      te − st        − cost
+
+                                  (1 st e−  )  − st     − sint
+
+                                          )
+                                    2
+                                  ( st − 2s e − st
+
+                        ∫  t sint e −  st dt =  ( t −  cost +  (1 st )sint e −  st  −  s 2 ∫  t sint e −  st dt +  2s ∫  sint e −  st dt
+                                                              )
+                                                     −
 
 
 
+                                                         t
+                                                    ∫ sin  dt
+
+                                        e − st       − cost
+
+                                      − se − st      − sint
+
+                                        2 − st
+                                      se
+
+
+                            ∫  sint e −  st dt =  (−  cost −  s sin  ) t e −  st  −  s 2 ∫  sint e −  st dt
 
 
 
+                            ( s +  2  1 ) ∫ sint e −  st dt =  (−  cost −  s sin  ) t e −  st
 
 
 
+                            ∫ sin   t e −  st dt = − cost +  s 1  e  st
+                                                     sint −
+                                                  2
+                                                s +
 
-
-                                                          1304</code></pre>
+                     ( s +  2  1 ) ∫ t sint e −  st dt =  ( t −  cost +  (1 st )sint e −  st  −  s + 1 (cost +  s sin  ) t e −  st
+                                                                  )
+                                                                           2s
+                                                         −
+                                                                          2
+                     ∫ t sint e −  st dt =  s + 1 ( t −  cost +  (1 st )sint e −  st  −  ( s + 1 ) 2  (cost +  s sin  ) t e −  st
+                                                                           2s
+                                        1
+                                                                )
+                                                       −
+                                       2
+                                                                          2</code></pre>
      	</div>
     
      </div>

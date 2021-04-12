@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1116 - ODE Solution</title>
+        <title>Page 1116 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1116 - ODE Solution</div>
+        <div id="content-top1">Page 1116 - DE Solution</div>
         <div id="content-top2">P. 1116</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Exercise
-
-             Two tanks are connected by two pipes. Each tank contains 500 gallons of a salt solution. Through on pipe
-             solution is pumped from the first tank to the second at 1 gal/min. Through the other pipe, solution is
-             pumped at the same rate from the second to the first tank. Show the salt content in each tank varies with
-             time.
-             Solution
-
-                 x  ( ) t  and   x t  represent the salt content.
-                              ( )
-                  1          2
-                                        x           x
-
-                Rate out = 1 gal / min   1  lb  / gal   1  lb  / min
-                                       500          500
-                                      x            x
-                Rate in = 1 gal / min   2  lb  / gal   2  lb  / min
-
-                                      500         500
-                 dx                         x     x
-                   1    Rate out    Rate in   2    1
-                                
-                 dt                        500   500
-                      dx     x     x
-                And     2    1    2
-                       dt    500   500
-                                      x       1    1     x 
-                 x   Ax            1        500  500     1  
-                                      x      1       1   x 
-                                      2       500   500       2 
+    <pre style="white-space:pre-line"><code>1106 | S O LU TI O N
 
 
-             Exercise
-             Each tank contains 100 gallons of a salt solution. Pure water flows into the upper tank at a rate of 4
-             gal/min. Salt solution drains from the upper tank into the lower tank at a rate of 4 gal/min. Finally, salt
-             solution drains from the lower tank at a rate of 4 gal/min, effectively keeping the volume of solution in
-             each tank at a constant 100 gal. If the initial salt content of the upper and lower tanks is 10 and 20 pounds,
-             respectively. Set up an initial value problem that models the amount of salt in each tank over time (do not
-             solve).Write the model in matrix-vector form. Is the system homogeneous or inhomogeneous?
 
-             Solution
-                                                 gal  x 1 lb  x 1
-                                           
-                For the first tank:  Rate out  4               lb  / min
-                                               min  100 gal   25
-                                              x
-                                              1  lb  / min
-                                             25
-
-                 dx
-                   1    Rate out   Rate in
-                                 
-                 dt
-                         x
-                         1
-                         25
-
-                                                        x
-                                                  gal
-                For the second tank:  Rate out  4      2 lb
-                                                  min  100 gal
-                                               x
-                                                2 lb
-                                               25 min
+                                ∫               =       3 sin3x −  9 cos3x −  9 ∫
+                                  e −  2x cos3x dx e −  2x ( 1    2      )   4   e −  2x cos3x dx
 
 
-                                                              1095</code></pre>
+
+
+                                13 ∫ e −  2x cos3x dx =  1 −  e  2x ( 3sin3x −  2cos3x )
+                                9                    9
+                                ∫      cos3x dx =  13     ( 3sin3x − 2cos3x )
+                                  e −  2x          1 −  e  2x
+
+
+
+                        =  −  e −  3x  −  10 −  e  2x (3sin3x −  2cos3x )
+                                  13
+
+                                                                                          ))
+                                                    x
+              y   = ( e −  x (3sin3x − cos3x ) +  3 −  e  2x ) (  e −  3x  − 10 −  e  2x (3sin3x −  2cos3x e 2x
+                                                   e +−
+               p                           2                     13
+                  =  3sin3x −  cos3x +  3 −  e  x  −  e −  x  −  30 sin3x +  20  cos3x
+                                     2             13         13
+
+                      e
+                  =  1 − x  +  9  sin3x +  7  cos3   x
+                    2       13        13
+                                       e
+              y ( ) x =  C e +  x  C e 2x  +  1 − x  +  9  sin3x +  7  cos3x
+                      1       2      2       13        13
+
+                     y ( ) 0 =  C +  1  C +  2  1  +  7  =  1
+                                       2 13
+
+                     C +  C =   −  1
+                      1     2    26
+
+                                         e
+              yx =  ′ ( ) C e +  x  2C e 2x  −  1 − x  +  27 cos3x −  21 sin3x
+                       1        2      2       13         13
+                                              7 2
+                     y′ ( ) 0 =  C +  1  2C −  2  1  +  13  =  2
+                                         2
+
+                     C +  2C =   11
+                      1      2   26
+
+                         C +  C =  −  1
+                          1    2     26
+                        
+                         C +  2C =   11
+                          1      2   26
+                                                  1
+                                                                          1
+                                11             −  26  1             1 −  26
+                            ∆=       = 1 ∆ =            = − 1  ∆  =          =  6
+                                1 2        1    11    2    2    2   1    11   13
+                                                26                       26
+                                         6
+                        C =  1  −  1 ,  C =  2  13
+                                2
+
+                                       e
+                                                               x
+                        e +
+              yx     −  1 x   6  e 2x  +  1 − x  +  9  sin3x +  7  cos3
+               ( ) =
+                       2     13       2      13         13</code></pre>
      	</div>
     
      </div>

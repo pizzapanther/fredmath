@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1403 - ODE Solution</title>
+        <title>Page 1403 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1403 - ODE Solution</div>
+        <div id="content-top1">Page 1403 - DE Solution</div>
         <div id="content-top2">P. 1403</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Solution              Section 4.2 – Series Solutions near Ordinary Points
+    <pre style="white-space:pre-line"><code>3. 3 − I nve r s e   L a p l ac e T r an s f o r m  | 1389
 
 
-        Exercise
-
-        Find a power series solution.   y   3y
-
-        Solution
-
-            The equation  y  3y is separable with solution
-
-            dy   3y
-            dx
-               y      3dx
-              dy
+                 Exercise
 
 
-            y   Ce 3x
+                                                        Fs
+                 Find the inverse Laplace Transform of    () =        7s − 1
+                                                               (s +  1 )(s +  2 )(s −  ) 3
+                 Solution
 
 
-                       
-            ln   y   3x C
-                     
-                           n
-            y   x    a x
-                         n
-                    n 0
-                           n 1                 n
-            y   x   na x           n    1 a n 1 x
-                           n
-                    n  1           n  0
+                     f ( ) t £   − 1     7s − 1       
+                          =
+                                   (s +  1 )(s +  2 )(s −  ) 3  
+                                       7s − 1       =  A  +   B   +  C
+                                (s +  1 )(s +  2 )(s −  ) 3  s +  1  s +  2  s −  3
 
-            y   3y   0
-                                  
-                n    1 a n 1 x  3   a x   0
-                             n
-                                          n
-                                       n
-            n  0                 n  0
-             
-                                      n
-                   n    1 a   3a n      x   0
-                        n 1
-            n 0
-                                               3a
-            n    1 a   3a   0     a        n  ;  n 
-                                                          0
-                    n   1  n            n   1  n  1
-            With    0y    3a
-                           0
-                   a   3a
-                     1     0
+                                7s −  1 =  As −  2  As −  6A Bs −  2  2Bs −  3B Cs +  2  3Cs +  2C
+                                                      +
+                                                                       +
+                                 s 2    A B C =    0
+                                           +
+                                              +
+                                
+                                
+                                  s   − A − 2B + 3C =  7
+                                  0
+                                 s    −  6A −  3B +  2C =  −  1
+                                        1    1   1               0   1   1               1    0   1
 
-                   a    3 a   3 3   a
-                     2   2  1    2   0
-                                   
-                                 
-                   a    3 a   3 3 3 a
-                                  
-                     3   3  2    2 3   0
-                                    
-                                 
-                                      
-                   a    3 a   3 3 3 3 a
-                                     
-                                  
-                     4   4  3    2 3 4    0
+                                   ∆  =  −  1 −  2  3 =  −  20  ∆  =  7  −  2  3 =  −  40  ∆  =  −  1  7  3 =  60
+                                                            A                       B
+                                       −  6  −  3  2            −  1 −  3  2             −  6  −  1 2
 
-                                                          1374</code></pre>
+                                   A =  2, B =  −  3, C =  1
+
+
+                          =  £   − 1 { s +  2 1  −  s +  3 2  +  s −  1  3 }
+
+
+
+                          =  2e  t −  −  3e −  2t  +  e 3t
+
+
+                 Exercise
+
+                                                        Fs
+                 Find the inverse Laplace Transform of    () =   s +  2  9s +  2
+                                                               (s −  1 ) (s +  2  ) 3
+                 Solution
+
+                       s +  2  9s +  2  =  A  +  B  +   C
+                     (s −  1 ) (s +  2  ) 3  s −  1  (s −  ) 1  2  s +  3
+
+                        s +  2  9s +  2 =  As +  2  2As −  3A Bs + +  3B Cs −  2  2Cs C
+                                                                           +
+                                                               +
+                             s 2     AC =    1
+                                        +
+                            
+                            
+                              s  2AB −    2C =  9
+                                      +
+                              0
+                                           +
+                             s    −  3A +  3B C =  2
+                             1   0   1              1  0   1               1  1   1
+                        ∆ =  2   1  −=   16   ∆   =  9  1  −=   32  ∆   =  2  9   −=   48
+                                                                                   2
+                                                            2
+                                      2
+                                                A                     B
+                             −  3 3  1              2  3   1              −  3 2  1</code></pre>
      	</div>
     
      </div>

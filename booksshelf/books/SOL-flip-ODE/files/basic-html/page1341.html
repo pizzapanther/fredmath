@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1341 - ODE Solution</title>
+        <title>Page 1341 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1341 - ODE Solution</div>
+        <div id="content-top1">Page 1341 - DE Solution</div>
         <div id="content-top2">P. 1341</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>x    t   x    t   3 v
-                    1       2      16  0
-
-                       3 v   v                   3   5
-                       16  0    0 2                2   16   16
-
-
-                   x    t   v   t   5 
-                     3      0     16
-                           v t   5 v
-                            0   16  0
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1327
 
 
 
+                                                 =  1   2s
+                                                       2
+                                                   ω    s + ω 2
+                     ∫ 0 ∞    t  sin t eω  − st dt = ( s + ω 2 ) 2
+                                             2 s
+                                            2
+                                               ω
+
+                       { sint £  t ω }( ) s =  2 s     √
+                                          ω
+                                     ( s + ω 2 ) 2
+                                       2
 
 
 
+                 Exercise
 
+                 Use Definition of Laplace transform to show the Laplace transform of
 
-                                                                   At rest
+                        £  {cos ( t ω  φ +  )}( ) s =  s cos ( ) φ  ω −  sin ( ) φ
+                                                   2
+                                                  s + ω 2
+                 Solution
 
-
-
-
-
-
-
-
-                                          At rest
-
+                     £ {cos ( t ω  φ +  )}( ) s =  ∫ ∞ cos ( t ω  φ +  )  e − st dt
 
 
 
+                                            0
 
+                                             ∫ cos ( tω  φ +  )  dt
+                               +      − st    1  sin ( tω  ) φ +
+                                     e       ω
+                                −  −   − st  −  1  cos ( tω  ) φ +
+                                     se        ω 2
+                               +    se   st
+                                     2 −
 
+                       ∞                                                            ∞     2   ∞
+                                                                             
+                         cos ( t ω  φ +  ) e −  st dt =   ∫      1  sin ( t ω  ) φ +  −  s 2  cos ( t ω  φ +  ) e −  st    0 ∫  −  s 2  cos ( t ω  φ +  ) e −  st dt
+                                                                             
+                       0                       ω              ω                        ω    0
+                      2
+                     s +  ω 2   ∞ cos ( t ω  φ +  )  e − st dt =  −  1  sin ( ) φ  +  ω ∫  s  cos ( ) φ
+                       ω  2    0                        ω           2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Exercise
-
-        Consider the mass-and-spring system shown below and with the given masses and spring constants values.
-        Find the 2 natural frequencies of the system and describe its natural modes of oscillation.
-                m   m    1; k   0, k   2, k   0   no  walls 
-                 1     2       1       2       3
-        Solution
-
-             m x    k   k   x  k x       x   2x 
-                                                 
-              1 1       1   2   1    2 2          1      1  2x 2
-                                               
-             m x   k x   k   k   x         x   2  2x   1  2x 2
-              2 2     2 1     2    3   2
-
-
-
-                                                          1320</code></pre>
+                                                    =  1  ( coss  φω sinφ )
+                                                                 −
+                                                      ω 2
+                     ∫ 0 ∞ cos ( t ω +  φ )  e − st dt =  s + 1 ω 2  ( cosφω−  s  sinφ )
+                                               2</code></pre>
      	</div>
     
      </div>

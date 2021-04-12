@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1449 - ODE Solution</title>
+        <title>Page 1449 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1449 - ODE Solution</div>
+        <div id="content-top1">Page 1449 - DE Solution</div>
         <div id="content-top2">P. 1449</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>a    3  a   1 a     1   a
-                 6     60  4   3  5    1,440  0
+    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1435
 
 
-             y    x   a
-              1       1
-                        1  2   1   3    1   5     
-             y    x   1  x    x       x      a
-              2          4      24      480          0
+                      2
+                                                                                                 y′
+                     s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 +  4Y ( ) s =  8  −  4  +  10    y (0) =  0   (0) = 3
+                                                      s 3  s 2  s
+                            )
+                     ( s +  2  4 Ys  8 4s +  10s 2  +  3
+                                     −
+                              ( ) =
+                                         s 3
+                                     2
+                     Y  ( ) s =  3s +  3  10s − 4s +  8  =  A  +  B  +  C  +  Ds +  E
+                                                                 2
+                                     2
+                                s 3 ( s + 4 )    s   s 2   s 3  s +  4
+                             s 4  A +  D =  0  D =  − 2
+                            
+                             s 3  B +  E =  3  E =  4
+                            
+                            
+                             s   2  4A C =  10  A =  2
+                                     +
+                            
+                              s   1  4B = − 4  B =  − 1
+                              0
+                             s    4C = 8     C =  2
+
+                     £  −  1 {Ys  =   −  1     2  −  1  +  2  −  2s  +  4    
+                             ( )} £
+                                           s  s 2  s 3  s +  2  2 2  s +  2  2   2
+
+                     y ( ) t = −+  2  2cos2t +  2sin 2  t
+                            2 t t −
 
 
-        Exercise
+                 Exercise
 
-        Find a power series solution.   y   x    1 y 
-                                                    0
-        Solution
-                    
-                           n
-            y   x   a x
-                         n
-                   n 0
-                                   
-                                                   n
-            y   x    na x n 1     n    1 a n 1 x
-                          n
-                    n  1          n  0
-                                          
-                                                                  n
-            y    x     n n    1 a x n 2     n   2 n    1 a n 2 x
-                                 n
-                    n  2                 n  0
+                                                                                                5
+                 Solve using the Laplace transform:    y −  4y = ′ ′  4t − 8e − 2t ; y ( ) 0 = 0, y′ ( ) 0 =
 
-            y   x    1 y 
-                           0
-                                                   
-                                              n 
-               n   2 n    1 a n 2 x   x  a x   a x   0
-                                                 n
-                                                            n
-                                    n
-                                                          n
-            n 0                         n 0       n 0
-                                                    
-               n   2 n    1 a n 2  a x n 1   a x    0
-                                    n
-                                                             n
-                                   x 
-                                             n
-                                                           n
-            n 0                       n 0          n 0
-                                               
-                                           n
-                                                         n
-                  n  2 n    1 a n     a    x    a  x  0
-                                 2    n           n  1
-            n 0                               n 1
-                                                          
-                    0 
-                                                       n
-                                                                    n
-            2a   a          n   2 n    1 a   a    x    a  x   0
-               2                          n  2   n           n  1
-                        n 1                               n 1
-                         
-                    0 
-                                                              n
-            2a   a          n   2 n    1 a   a  a    x   0
-               2                          n  2   n    n  1
-                        n 1
-            2a   a    0      a   1  a
-               2    0            2   2  0
-            n   2 n    1 a    a  a    0
-                           n   2  n   n   1
+                 Solution
+                     £  {y′′ −  4  } y £ { 4t −  8e − 2t }
+                                 =
 
+                      2
+                     s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 −  4Y  ( ) s =  4  −  8     y ( ) 0 = 0       y′ ( ) 0 = 5
+                                                      s 2  s +  2
+                            )
+                     ( s −  2  4 Y ( ) s =  −  8s +  2  4s +  8  +  5
+                                      s 2 (s +  ) 2
 
-                                                          1420</code></pre>
+                     Y  ( ) s =  5s +  3  2s +  2  4s +  8  =  A  +  B  +  C  +  D  +  E
+                            s 2 (s +  2 ) (s −  2  ) 2  s  s 2  s + 2  (s +  ) 2  2  s − 2
+                                                                               )
+                           3
+                                2
+                        5s +  2s +  4s + =  As + (  2  2s )( s −  2  4 +  )  B (s +  ) 2  ( s −  2  4
+                                        8
+                                                                           )
+                                +  C s −  (  4  4s 2 ) (  3  2s 2 ) +  Es 2 ( s +  2  4s +  4
+                                             +
+                                               D s −</code></pre>
      	</div>
     
      </div>

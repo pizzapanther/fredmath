@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 421 - ODE Solution</title>
+        <title>Page 421 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 421 - ODE Solution</div>
+        <div id="content-top1">Page 421 - DE Solution</div>
         <div id="content-top2">P. 421</div>
      </div>
      <div id="content-middle">
@@ -152,119 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>E
-                           K     0    I
-                                 R     0
+    <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 415
 
-                       E       E         /R L t
-                 I   t   0    0     I   e
-                        R        R  0   
+                                  y
+                     Rate out =       ( ) 5
+                                50 t
+                                   −
+                                 5y
+                              =           lb
+                                   −
+                                50 t   min
+                              ( 1  lb )(  gal )
+
+                     Rate in =  2 gal  4   min
+
+                            =  2    lb
+                                 min
+                     dy  =  2 −  5  y
+                                −
+                     dt       50 t
+                     dy  +  5   y =  2
+                             −
+                     dt   50 t
+                          ∫  5  dt    ∫  − 5  d (50 t −  )
+
+                        e   50 t −  = e  50 t −
+                                  =  e −  5ln 50 t −
+
+                                  =  (50 t−  ) − 5
+
+
+                        ∫   ( 2 50 t−  ) −  5 dt =  −  2 ∫  (50 t−  ) −  5 d (50 t−  )
 
 
 
-             Exercise
 
-             For the given RL−circuit, wWhere  E   E  sin t  is the impressed voltage.
-                                                     0
-             Find the current    t  flowing in the circuit.
-                             I
-             Solution
+                                         =  1 (50 t−  ) − 4
+                                           2
+                                                       )
+                     y ( ) t =  1     ( 1 (50 t −  ) − 4  +  C
+                            (50 t −  ) − 5 2
 
 
-                 L dI    RI   E  sin t
-                   dt         0
-                            E
-                 dI    R  I   0  sin t
-                 dt   L     L
-
-                        R dt
-                        L 
-                     e       e  /R L t
-                       E L 0  sin t e ( / )t dt   E L 0  sin t   L  cos t  e ( / )t    2  E L 0 L 2  sin t e ( / )t dt
-                                                                                      R 
-                                                                          L
-                                                                                                     R
-                                                                       R
-                                       L
-                                    R
-                                                                                                        L
-                                                                                        2
-                                                           R
-                     E      LE   2                       E
-                                     
-                                                                                       L
-                                                  R
-                                                    L
-                                                                                     R
-                       0   1  R      sin t e ( / )t dt   0  sin t   L  cos t  e ( / )t
-                                0
-                      L         2                         L           R
-                                    
-                      E L 0  sin t e ( / )t dt   R 2  2 L 0  sin t   R  cos t  e ( / )t
-                                                         E
-                                                                                  R
-                                       L
-                                                                      L
-                                                                                     L
-                                    R
-                                               
-                                              1 LE 
-                                                    0
-                                     2
-                                   R E                                     
-                                                                   R
-                                                                            
-                                                                     L
-                 I   t    /R L   1    0 2 2  sin t   L  cos t  e ( / )t   K
-                                                                            
-                                  
-                       e     t    L E L            R                     
-                                      0
-                             2
-                                                       
-                           R E
-                                                                                                   R
-                                                                                                      L
-                                                                 L
-                                                               R
-                                        
-                                                    
-                               0    sin t   L cos t   Ke  ( / )t                          e ( / )t
-                                2 2
-                          
-                        L E L                R
-                             0                  2                             +  sin t         L e ( / )t
-                                                                                                      L
-                                                                                                    R
-                              I t    0   L  R E 0     K   I                             R  2
-                                                                                                 L
-                                        R  L E L              0              −    cos t          e ( / )t
-                                                   2 2
-                                                                                                         L
-                                                                                                       R
-                                                                                       
-                                             
-                                                0                                                R
-                                        
-                                       R E                                    +     2   
-                           K   I          0                                          sin t
-                                 0            2
-                                      
-                                    1 E L
-                                         0
+                          =  1 (50 t−  ) C+  (50 t−  ) 5
                             2
-                                                      
-                                                                   
-                          R E                                   R E      
-                                                                              R
-                                                                                 L
-                                                   
-                 I   t      0     sin   t   L cos t    I    0     e  ( / )t
-                                                                
-                       L E L     2 2       R             0  1 E L    2 
-                             0                                     0     
 
-                                                               417</code></pre>
+                                       5
+                                y ( ) 0 =
+                                              5
+                                      +
+                                           50
+                                5 =  25 C ( )
+                                      5
+                                C ( ) = −  20
+                                  50
+                                C  = −  20
+                                     50 5
+
+                     y ( ) =  1 (50 t−  ) −  20  (50 t−  ) 5
+                       t
+                            2          50 5
+
+                                                 5
+                                   30
+                      ( yt =  20 ) =  1 ( ) −  20  ( )
+                                              30
+                                 2       50 5
+                               ≈ 13.45  gal</code></pre>
      	</div>
     
      </div>

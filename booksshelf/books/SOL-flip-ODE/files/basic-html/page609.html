@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 609 - ODE Solution</title>
+        <title>Page 609 - DE Solution</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 609 - ODE Solution</div>
+        <div id="content-top1">Page 609 - DE Solution</div>
         <div id="content-top2">P. 609</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>x  128x   0 ; x   0   1 , x   0   2
-
-                                           2
-                      2  128 0            8 2
-                             
-                                                i
-                                        1,2
-                    x   C  cos8 2t   C  sin8 2t
-                     h     1            2
-                           x   0   1    C   1
-                                  2         1   2
-
-                        x   8 2C  sin8 2t  8 2C    cos8 2t
-                         h          1                2
-                           x   0   2   8 2C     2
-                                                 2
-                                  C   1
-                                    2   8
+    <pre style="white-space:pre-line"><code>1. 7 − M o de l i ng  P o pul a t i o n G r o w t h  | 603
 
 
-                    x   t   1 cos8 2t   1 sin8 2t
-                           2           8
 
-                b)  Amplitude:     A   1    1    17
-                                        4   64     8
-                    Phase angle:     tan  1 4   1.326      C  and C    QI
-                                                                 1      2
-                                                   
-                        x   t   17  sin 8 2t     1.326
-                                8
+                        ln    P     =  0.08t − ln3
+                               −
+                           200 P
+                            P    = e 0.08 ln3
+                                        −
+                                        t
+                             −
+                         200 P
+                            P    = e 0.08 ln3 − 1
+                                        t
+                                        e
+                         200 P−
+                            P    =  1 e 0.08t
+                         200 P     3
+                             −
+                        3P =  200e 0.08t  −  Pe 0.08t
 
+                         P ( ) t =  200e 0.08t
+                                3 e 0.08t
+                                 +
+                              =     200
+                                3e − 0.08t  + 1
 
-                    Period:        P   2       2
-                                             8
-
-                    Natural Frequency:    1     8
-                                          P      2
-
-
-                                  
-                                                
-                c)    t   17  sin 8 2t  1.326 
-                    x
-                                                   0
-                            8
-                    8 2t   1.326   n
-                    t   n  1.326
-                          8 2
-                    For  n  1
-
-                        t     1.326
-                             8 2
-                           0.16  sec
+                               ( )
+                    b)  lim P t =    lim     200
+                        t→∞         t→∞  3e − 0.08t  + 1
+                                  =  200
 
 
-             Exercise
 
+                 Exercise
 
-                                                                                                    1
-             A 3-kg  mass is attached to a spring with a spring constant 75 N/m . The mass is displaced   m  to the left
-                                                                                                    4
-             and given a velocity of 1 m/sec  to the right. The damping force is negligible.
-              a)  Determine the equation of motion of the mass
-              b)  Determine the equation of motion amplitude, period, and natural frequency.
+                 When an infected person is introduced into a closed and otherwise healthy community, the number of
+                 people who become infected with the disease (in the absence of any intervention) may be modeled by
+                 the logistic equation
+                                                    dP  =  kP ( 1−  P ) , P ( ) 0 =  P
+                                                    dt          A              0
 
-                                                               597</code></pre>
+                 Where k is a positive infection rate, A is the number of people in the community, and  P  is the
+                                                                                                     0
+                 number of infected people at t = . The model assumes no recovery or intervention.
+                                                 0
+                   a)  Find the solution of the initial value problem in terms of k, A, and  P .
+                                                                                        0
+                   b)  Graph the solution in the case that  k =  0.025,  A =  300, and  P = 1 .
+                                                                                     0
+                   c)  For fixed values of k and A, describe the long-term behavior of the solutions for any  P  with
+                                                                                                         0
+                       0 &lt;  P &lt;  A
+                            0
+                 Solution
+
+                                    −
+                    a)   dP  =  kP (  A P )
+                         dt         A
+                        ∫  PA P    )  dP = ∫    k dt
+                               A
+                             (
+                                −
+
+                        ∫  (  1  +  A P ) dP =  ∫    k dt
+                                  1
+                            P
+                                  −</code></pre>
      	</div>
     
      </div>
