@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1195 - DE Solution</title>
+        <title>Page 1195 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1195 - DE Solution</div>
+        <div id="content-top1">Page 1195 - ODE Solution Manual</div>
         <div id="content-top2">P. 1195</div>
      </div>
      <div id="content-middle">
@@ -156,67 +156,68 @@ function MM_swapImage() { //v3.0
 
 
 
-                                C  =  1
-                                 2   16
-
-                         y ( ) t =  −  1 cos4t +  1  sin4t −  1 t cos4t
-                                 2        16         4
-
-                    b)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                        )
-                    c)  lim y t =  ( )  lim −  (  1 cos4t +  1  sin 4t −  1 t cos4t
-                        t→∞         t→∞    2         16        4
-                                  =     ∞
-
-                        This is a pure resonance,
+                                                                         )
+                             (
+                                                                                                     )
+                    c)  lim e  − 2t (  3  cos6t −  13 sin6t −  )  3  cos8t +  1 sin8t =  lim −  (  3  cos8t +  1 sin8t
+                        t→∞         20        60        20        5         t→∞     20        5
+                                                                           =  doesn't exist
+                        The equation of motion is a steady-state solution.
 
 
                  Exercise
+                 A  2-kg  mass is attached to a spring hanging vertically and come to rest at equilibrium. The damping
 
-                 A 3-kg  object is attached to spring and stretches the spring 39.2 cm  by itself. There is no damping in
+                                                                                                  0
+                 constant is given by c = 8 kg/sec  and the spring constant is k =  80 N/m. At time t = , the resulting
+                 spring-mass system is disturbed from its rest state by the force  ( ) 20sin6 NF t =    t  . (t in seconds)
+                   a)  Find the equation of motion.
+                   b)  Plot the equation of motion.
+                   c)  Determine the long-time behavior of the system, as t →∞
 
-                                                             F t =
-                 the system and a forcing function is given by  ( ) 10cos tω  is attached to the object and the
-                 system will experience resonance. If the object is initially displaced 20 cm downward from its
-
-                 equilibrium position and given a velocity of 10 cm/sec upward.
-                    a)  Find the spring constant k.
-                    b)  Find the natural frequency ω.
-                    c)  Find the displacement at any time t.
-                    d)  Sketch the displacement function.
                  Solution
-                              ( 3 9.8 )                  mg
-                    a)  k =                          k =
-                             0.392                        y
-                          =  75  N/m
+
+                    a)  2y′′ +  8y′ +  80y =  20sin6; t  y ( ) 00 =  ,  y′ ( ) 00 =     my′′ +  cy′ +  ky =  F ( ) t
+
+                                                         =
+                            2λ  2  8λ +  80 λ +  2  4λ + =  +  40 0 →  λ  1,2  2 6  i
+                                                                            ± = −
+
+                         y =  e − 2t ( C  cos6t + C  sin6t )
+                          h          1          2
+
+                         y =  A cos6t +  B sin6t
+                          p
+                                             B
+                          y′ =  −  6 sin6t +  A  6 cos6t
+                            p
+                                               B
+                          y′′ =  −  36 cos6t −  A  36 sin6t
+                            p
+                         y′′ +  4y′ +  40y =  10sin6t
+
+                                               A
+                                cos6t  → −  36 +   24B + 40A = 0
+
+                                              B
+                                sin6t  → −  36 −  24A +  40B = 1 0
+                                   A +   6B =  0
+                                
+                                 −  12A +  2B =  5
+
+                                         1   6              0  6                1   0
+                                   ∆  =        =  74  ∆  =       =  −  30  ∆  =       =  5
+                                       −  12  2        A    5  2          B    −  12  5
+                                A =  −  15 ,  B =  5
+                                     37        74
 
 
-                    b)  ω =   75                     ω =   k
-                               3                           m
-                          =  5
+                         y =  −  15 cos6 +  t  5  sin6t
+                          p     37         74
 
-                    c)  3y′′ +  75y =  10cos5t  ;  y ( ) 00 =  .2, y′ ( ) 0 = − 0. 1
-
-                                                        i
-                            3 λ  2  75 0 →     λ +  =  ±  5
-                                     =
-                                                1,2</code></pre>
+                                                                      5
+                         y ( ) t =  e − 2t ( C 1 cos6t +  C 2  sin6t −  )  15  cos6t +  74 sin6t
+                                                           37</code></pre>
      	</div>
     
      </div>

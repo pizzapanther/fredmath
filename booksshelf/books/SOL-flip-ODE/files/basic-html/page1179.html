@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1179 - DE Solution</title>
+        <title>Page 1179 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1179 - DE Solution</div>
+        <div id="content-top1">Page 1179 - ODE Solution Manual</div>
         <div id="content-top2">P. 1179</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,68 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1169
 
 
-
-                                                                  3
-                                y′ ( ) 0 =  −  5 1,733  +  759 C + 18,482  =  0
-                                         4 36,964
-                                                      4
-                                                           2
-                                         8,641
-                                C  =
-                                 2   36,964 759
-
-                                   t
-                         y ( ) et =  − 5 /4     1,733  cos  759  t +  8,641  sin  759  t +      144  cost +  3  sint
-                                        36,964     4      36,964 759        4     46,205        18,482
-
-
-                                                          t
-                    b)  Transient solution:   y  ( ) t =  e − 5 /4   1,733  cos  759  t +  8,641  sin  759 t 
-                                                             
-                                                                                                        
-                                               h              36,964       4      36,964 759       4
-                                                                                                       
-                        Steady-state solution:  y  ( ) t =  144  cost +  3  sint
-                                                p      46,205       18,482
-
-
                  Exercise
 
-                 A 8-kg  mass is attached to a spring hanging vertically and come to rest at equilibrium. The damping
-                 constant is given by 3 N-sec/m  and the spring constant is 40 N/m. Find steady-state solution if the
-                                                                       (
-                                                            f
-                                                              t
-                 mass is driven by an external force equal to  ( ) =  2sin 2t +  π )  N .
-                                                                             4
+                 A mass of 64 pounds is attached to a spring with a spring constant  32 lb/ft  and then comes to rest in
+                 the equilibrium position. Neglect the damping.
+
+                   a)  Find the equation of motion with a starting external force equal to   ( ) 68f t =  e − 2t  cos4t  at
+
+                       t =  0
+                   b)  Graph the transient, steady-state, and the equation of motion solutions on the same coordinate
+                      axes.
                  Solution
-                    Given: m =  8 k =  40 c =
-                                               3
-                                           (    π )
-                     8y′′ +  3y′ +  40y =  2sin 2t +  4                           my′′ +  cy′ +  ky =  F ( ) t
 
-                                       (
-                                    =  2 sin 2 cos π  4  + cos2 sin π  4 )
-                                             t
-                                                          t
-                                    =   2sin2t +  2 cos2t
+                                                             0
+                    Given:    m =  64  =  2 slu gs, k = 32, c =
+                                  32
+                                                t
+                    a)  2x′′ +  32x =  68e − 2t cos4  ; x ( ) 0,0 =  x′ ( ) 00 =         mx′′ +  cx′ +  kx =  f  ( ) t
+                        2 λ  2  32 0 →     λ +  =  ±  4i
+                                  =
+                                             1,2
+                                     t
+                         x =  C  cos4 + C   sin4t   (Transient solution)
+                          h    1          2
 
-                            8λ  2  3λ +  +  40 =  0
-
-                            λ    =  −  3  ±  1    i  1271
-                             1,2    16 16
-
-
-
-                         y =  e − 3 /16   t    C  cos  1271 t +  C  sin  1271   t
-                                                                    
-                          h            1      16       2      16   
-                         y =  A cos2t +  B sin2t
+                                    A
+                         x  = e − 2t  ( cos4t +  B sin 4t )
                           p
-                                               B
-                            y′ =  −  2 sin2t +  A  2 cos2t
-                              p
-                                               B
-                            y′′ =  −  4 cos2t −  A  4 sin2t
-                              p
-                        8y′′ +  3y′ +  40y =  2sin2t +  2 cos2t
-                                         =</code></pre>
+                                                                      B
+                         x′ =  e − 2t  ( 2 cos4t−  A  −  2 sin 4t −  B  4 sin 4t +  A  4 cos4t )
+                          p
+                                                                                                            B
+                         x′′ = e − 2t  (4 cos4t +  A  4 sin 4t +  B  8 sin 4t −  A  8 cos4t +  B  8 sin 4t −  A  8 cos4t −  B  16 cos4t −  A  16 sin4t )
+                          p
+                                                                              B
+                                =  e − 2t  ( 12 cos4A−  t −  16 cos4t +  B  16 sin4t −  A  12 sin4t )
+                        2x′′ +  32x =  68e − 2t  cos4t
+
+                             cos4t  −  24A −  32B +  32A =  68
+                            
+                             sin 4t  32A −  24B +  32B =  0
+
+                                 8A −   32B =  68 →  136A =  68
+                                
+                                  32A +  8B =  0  B =  −  4A
+
+                                A  =  1 ,  B = − 2
+                                    2
+
+
+                         x  =  e − 2t ( 1 cos4t − 2sin 4t )        (Steady-state solution)
+                          p         2
+                                                                      )
+                         x ( ) t =  C 1 cos4t +  C 2  sin 4t +  ( 1 cos4t −  2sin 4te − 2t
+                                                      2
+                                   x ( ) 0 =  C +  1  1  =  0
+                                               2
+
+                                   C   = −  1
+                                     1    2
+
+                                                                                               )
+                            x ( ) t = − 4C 1 sin 4t +  4C 2  cos4t +  ( cos4t−  +  4sin 4t − 2sin 4t − 8cos4te − 2t</code></pre>
      	</div>
     
      </div>

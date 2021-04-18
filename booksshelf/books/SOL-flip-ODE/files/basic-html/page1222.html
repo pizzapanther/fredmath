@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1222 - DE Solution</title>
+        <title>Page 1222 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1222 - DE Solution</div>
+        <div id="content-top1">Page 1222 - ODE Solution Manual</div>
         <div id="content-top2">P. 1222</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,76 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1212 | S O LU TI O N
 
 
-                   −   2A +  3B =  0
-                 
-                  −  12A −  8B =  1
-                          −  2  3             0   3               −  2  0
-                     ∆  =         =  52  ∆  =        =  −  3 ∆  =        =  −  2
-                         −  12  −  8      A   1   −  8       B   −  12  1
 
-                 A =  −  1  B =  −  3
-                       26         52
-
-
-             The steady-state charge is:  q  ( ) t =  −  1  cos60t −  3  sin60t
-                                          p        26          52
-
-             The steady-state current is:  i  ( ) t =  1  sin60t −  3  cos60t
-                                          p      26         52
+                               0      ω R                    1  − ω 2 L  0
+                                                                                     )
+                        ∆   =                =  ω RE  ∆   =  C            =  (  1  − ω 2 LE
+                          A    E    1  − ω 2 L     0    B                    C          0
+                                0   C                         − ω R   E 0
+                                      2
+                                 ω  RC E                             C (1 ω  −  LC ) E
+                 A =                     0              B =                       0
+                                                                                      R C
+                     12ω  −  2 LC ω  +  4 2 2  ω  2 2 2     12ω  −  2 LC ω  +  4 2 2  ω  2 2 2
+                                                R C
+                                                                            L C +
+                                     L C +
+             Therefore, the steady-state charge is:
+                                    CE
+              q  ( ) t =               2               ( RCω  cos t  (1 ω +  −  LC )sin tω  )
+                                                                ω
+               p      12  ω  2 LC ω  +  4 2 2  ω  2 2 2
+                        −
+                                                R C
+                                      L C +
+             The steady-state current is:     i  ( ) t =  q′  ( ) t
+                                               p       p
+                                   CE
+              i  ( ) t =              2               ( −  ω 2 RC sin tω +  ( ωω 2 LC ) cos tω )
+                                                                          −
+               p     12ω  −  2 LC ω  +  4 2 2  ω  2 2 2
+                                                R C
+                                     L C +
 
 
           Exercise
-          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L =  1   h ,
-                                                                                                  2
-          R  =  20 Ω , C =  0.001 f , and  ( ) 100sin60E t =  t +  200cos40 V  t  .
 
+                          q
+          Find the charge  ( ) t  on the capacitor in an LRC−series circuit when  L =  5   h ,  R  = 10 Ω , C =  1   f ,
+                                                                                 3                   30
+            ( ) 300 V ,  ( ) 00q
+          E t =               =   C   , and  ( ) 0i  =  0 A. Find the maximum charge on the capacitor
           Solution
 
-              1 q′′ +  20q′ +  1  q =  100sin60t +  200cos40t       Lq′′ +  Rq′ +  1  q =  E ( ) t
-              2           0.001                                               C
-              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
+              5 q′′ +  10q′ +  30q =  300                        1      ( ) t
+              3                                        Lq′′ +  Rq′ +  C  q =  E
 
-                                                          i
-                                                      ±
-                 λ  2  40 +  λ +  2000 0 →  λ   =  −  20 40
-                                  =
-                                             1,2
-                  t
-              q  ( ) e=  − 20t ( C  cos40t + C  sin 40t )
-               h              1           2
-              q =  A cos60t +  B sin60t C cos40t +  D sin40t
-                                       +
-               p
-                                                                 D
-                 q′ =  −  60 sin60t +  A  60 cos60t −  B  40 sin40t +  C  40 cos40t
+              q′′ +  6q′ + 18q = 900 ; q ( ) 0, q′ ( ) 0 = i ( ) 00 =
+                                       0 =
+                              =
+                                               3 3
+                 λ  2  6λ +  + 18 0 →   λ   = −±    i
+                                         1,2
+                                             )
+              q ( ) t =  e − 3t ( C 1 cos3t + C 2  sin3t
+
+                 q =   A
                    p
-                 q′′ =  −  3600 cos60t −  A  3600 sin60t −  B  1600 cos40t −  C  1600 sin40t
-                                                                           D
-                   p
-              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
+                 q′ =  q′′ =  0
+                   p    p
+
+              5 q′′ +  10q′ +  30q =  300
+              3
+                 30A =  300
+
+                   A = 10
+
+              q ( ) t =  e − 3t ( C 1 cos3t +  C 2  sin3t +  )  10
 
 
-                  cos60t    −  3600A +  2400B +  2000A =  0
-                 
-                  sin60t  −  3600B −  2400A +  2000B =  0 2 0
-
-                   −   2A +  3B =  0
-                 
-                  −  12A −  8B =  1
-
-                         −  2  3             0   3             −  2  0
-                     ∆  =        =  52  ∆  =       =  −  3  ∆  =      =  −  2
-                         −  12  −  8     A   1  −  8       B   −  12  1
-
-                 A =  −  1  B =  −  3
-                       26         52</code></pre>
+                     q ( ) 0 = C +  1  10 =  0
+                     C  = − 10
+                      1</code></pre>
      	</div>
     
      </div>

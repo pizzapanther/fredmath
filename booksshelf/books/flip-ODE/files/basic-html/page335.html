@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 335 - Differential Book</title>
+        <title>Page 335 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 335 - Differential Book</div>
+        <div id="content-top1">Page 335 - ODE Book</div>
         <div id="content-top2">P. 335</div>
      </div>
      <div id="content-middle">
@@ -152,14 +152,12 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>320 | 3.7 - P h a se  P l a n e  P o r t r a i t s &   A p p l i c a t i o n s
+    <pre style="white-space:pre-line"><code>322 | 3. 4 - Us i n g   L ap l a c e T r an s f o r m   t o  S ol ve   D i f f e r e nt i a l   E qu a t i o ns
 
-          Example 7
 
-          Consider the spring-mass system consisting of two masses that are constraint by the three springs
-                                 k
-          whose constant are  k  , , and  k . Assume there is no damping and there are no external forces.
-                              1   2        3
+          110.  A projectile, such as the canon ball, has weight  w =  mg  and initial velocity v  that is tangent to
+                                                                                          0
+               its path of motion.
 
 
 
@@ -169,62 +167,60 @@ function MM_swapImage() { //v3.0
 
 
 
-          Write an equivalent linear system of the first-order differential equations.
-
-          Solution
-
-              mx′′ =  −  ( k +  k  ) x +  k x
-               1 1       1    2  1    2 2
-              mx′′ =  k x −  ( k +  k  ) x
-               2 2     21      2    3   2
 
 
-                    k + k 2     k 2
-                      1
-               x′′ =  1  −  m  x +  1  m  x 2
-                        1        1
-              
-               x′′ =  k 2  x −  k + k 3  x
+
+
+
+
+
+               If air resistance and all other forces except its weight are ignored, that motion of the projectile is
+               describe by the system of linear differential equations:
+
                               2
-                2   m 2  1    m 2   2
-              
-                                                                         ,
-             To write an equivalent first-order system, let Y = ( y y 2 , y  y 4 ) T
-                                                                ,
-                                                                       3
-                                                               1
-                                               t
-                        t
-                                                               t
-                                                        t
-                                        t
-                               t
-             Where  y  () =  x  ()  y  () =  x′  ()  y  () =  x  ()  y  () =  x′  ()
-                                                                        t
-                                                                                t
-                      1      1        2      1        3      2        4       2
-                          k + k 2    k 2
-                            1
-               y′ =  2  x′′ =  1  −  m  y +  1  m  y 3
-                             1         1
-              
-                y′ =  x′′ =  k 2  y −  k + k 3  y
-                                   2
-                4    2   m 2  1    m 2    3
-              
-                    y′ =  y
-                    1    2
-                          k + k 2    k 2
-                            1
-                    y′ =  2  −  m  y +  1  m  y 3
-                  
-              →              1         1
-                   y′ =  y 4
-                     3
-                         k       k + k
-                    y′ =  2  y −  2   3  y
-                    4    m 2  1    m 2   3
-                  </code></pre>
+                           dx
+                         m   2  =  0
+                           dt
+                        
+                             2
+                         m dy   = − mg
+                             2
+                           dt
+                 a)  Use Laplace transform to solve the system when
+
+                          ( ) 0 =  0 x′  ( ) 0 =  v 0  cosθ  y ( ) 0 =  0  y′  ( ) 0 =  v 0  sinθ
+                         x
+                    Where v =    v  is constant and θ is the constant angle of elevation.
+                             0
+                    The solutions  ( ) t  and  ( ) t  are parametric equations of the trajectory of the projectile.
+                                   x
+                                            y
+                         x
+                                                                       y
+                 b)  Use  ( ) t  in part (a) to eliminate the parameter t in  ( ) t . Use the resulting equation for y
+                    to show that the horizontal range R of the projectile is given by
+                                           v 2
+                                       R =  0  sin 2θ
+                                            g
+
+                 c)  From the formula in part (b), we see that R is a maximum when sin 2θ = 1 or when θ =  π .
+                                                                                                         4
+                    Show that the same range − less than the maximum− can be obtained by firing the gun at
+
+                    either of two complementary angles θ and   π − θ . The only difference is that the smaller
+                                                               2
+                    angle results in a low trajectory whereas the larger angle fives a high trajectory.
+                                       2
+                 d)  Suppose  g = 32 ft/s , θ =  30°, and v =  300 ft/s . Use part (b) to find the horizontal range
+
+                                                         0
+                    of the projectile.
+                 e)  Find the time when the projectile hits the ground.
+
+                 f)  Use the parametric equations  ( ) t  and  ( ) t in part (a) along with the numerical data in part
+                                                 x
+                                                          y
+                    (d) to plot the ballistic curve of the projectile.</code></pre>
      	</div>
     
      </div>

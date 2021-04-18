@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 498 - DE Solution</title>
+        <title>Page 498 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 498 - DE Solution</div>
+        <div id="content-top1">Page 498 - ODE Solution Manual</div>
         <div id="content-top2">P. 498</div>
      </div>
      <div id="content-middle">
@@ -155,73 +155,78 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>492 | S O LU TI O N
 
 
-                 ⇒   M   =  N
-                       y     x
-
-              ∂ψ  =  xy −  1
-                      2
-               x ∂       x
-
-                       2
-              ψ=  ∫ ( xy −  1 ) dx
-                           x
-
-               =  1  x y −  22  ln x +  h ( ) y
-                  2
-
-                     2
-              ψ   =  x y h′ ( ) y =  1  +  x 2 y
-                        +
-                y                 y
-                     h′ ( ) y =  1  →   h ( ) lny =  y
-                             y
-
-              1  x y − 22  ln x +  ln y C
-                                 =
+                               2
+                     hy       y
+                      ( ) = −
+              1  x +  2  x sin y −  y =  2  C
               2
 
 
           Exercise
 
-          The given equation is not exact. However, if you multiply by the given integrating factor, then it
-          becomes exact. Then solve the equation
-
-                                                                                             x
-                                                                                       )
-                            sin y  −  2e − x sin x dx +          cos y +  2e − x  cos x     dy =  0,  µ ( ,x y =  ye
-                           y                          y          
+                                                                      
+          Find the general solution     x +  1       dx +    1−  x      dy =  0
+                                            2    2             2    2 
+                                           y −  x          y y −   x  
           Solution
-                      sin y    − x                    cos y +  2e − x cos x
-                 M =       −  2e  sin x           N =
-                        y                                     y
-                  M    =  y cos y − sin y   N =   1 ( − 2e −  x cos x − 2e −  x sin x )
-                     y        y 2             x    y
-
-                         ⇒   M ≠   N
-                               y     x
 
 
-                                               x
-                                             ye
-              ( )  ye x   sin y  −  2e − x  sin x dx +      ( )     cos y +  2e − x  cos x     dy =  0
-                      y                                y          
-              ( e sin y −  x  2 sin x dx + y  ) ( e x  cos y +  2cos x dy =  )  0
+              M  ( ,x y =  )  x +  1    N ( ,x y ) 1=  −  x
+                              y −  2  x 2             y y −  2  x 2
+                            2
+                 ∂ M  = −  1 ( ) y    1
+                   y ∂   2      ( y −  x 2 ) 3/2
+                                  2
+
+                               y
+                      = −
+                         ( y −  x 2 ) 3/2
+                            2
 
 
-                                 y
-                  M =  e x sin y −  2 sin x   N =  e x  cos y +  2cos x
+                 ∂ N  =  −  1    1      ( y −  2  x +  2  x 2 )
+                   x ∂   y ( y −  x 2 ) 3/2
+                             2
 
-                 M    =  e x  cos y −  2sin x  N =  e x cos y −  2sin x
-                    y                          x
 
-                 ⇒   M   =  N
-                       y     x
+                              y
+                     = −
+                        ( y −  x 2 ) 3/2
+                           2
 
-                  ∫
-                                      )
-                      x
-                                y
-              ψ=    ( e sin y −  2 sin x dx</code></pre>
+
+                 ⇒    ∂  M  =  ∂  N
+                       y ∂   x ∂
+
+                  ∫         1                                 dx         − 1 x
+              ψ=      x +         2    dx                        2 ∫   =  sin  a
+                     
+                             2
+                           y − x                              a −  x 2
+               =  1  x +  2  sin − 1 x  +  h ( ) y
+                  2           y
+
+
+                                      ′
+                                                                       )
+              ψ   =  −     1       +  hy                     d  (arcsinu =   u′
+                                       ( )
+                y                2                           dx                 2
+                                                                             −
+                              x
+                      y 2  1−                                             1 u
+                             
+                              y
+                             
+                 = −      1     +  hy =           1
+                                   ′
+                                    ( ) 1−
+                         2
+                                                  2
+                     y y −   x 2             yy −    x 2
+                    ′
+                   hy
+                     ( ) 1=</code></pre>
      	</div>
     
      </div>

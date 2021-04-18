@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1237 - DE Solution</title>
+        <title>Page 1237 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1237 - DE Solution</div>
+        <div id="content-top1">Page 1237 - ODE Solution Manual</div>
         <div id="content-top2">P. 1237</div>
      </div>
      <div id="content-middle">
@@ -155,79 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1227
 
 
+                          A +   2B =  10
+                        
+                              +
+                         −  2AB =  0
+                                    1   2            10   2              1  10
+                                ∆  =       =  5  ∆  =       =  10  ∆  =         =  20
+                                    −  2  1      A    0   1         B   −  2  0
+                            A  =  2, B =  4
 
-                                        e
-                    c)  ( ) t =  I  q′ =  −  3 − 10t ( 10cos10t −  10sin10t −  10sin10t +  10cos10t )
-                                              −
-                                     25
-                             =  12 − 10t  sin10t
-                                  e
-                               5
-                        ∴ This is a completely transient
+
+                         t
+                     V  ( ) =  2cost +  4sint
+                      p
+                     V  ( ) t =  e  t −  ( C 1 cost +  C 2  sint +  )  2cost +  4sint
+
+                            V  ( ) 0 = C +=  0
+                                        2
+                                     1
+                            C  = − 2
+                             1
+
+
+                     V  ( ) t ′  =  e  t −  ( −  C 1  sint +  C 2  cost −  C 1 cost −  C 2  sint −  )  2sint +  4cost
+
+                            V′ ( ) 0 =  C ++    0
+                                         24 =
+                                      2
+                            C   = − 6
+                              2
+
+                     V  ( ) et =  t −  ( 2cost−  −  6sint ) 2cost+  +  4sint
 
 
                  Exercise
 
-                 An RCL circuit connected in series has  R =  5 Ω , C =  4 10 − 4  F ,  L =  0.05 H , and applied voltage
-                                                                       ×
-                                   t
-                                                                                             0
-                 E ( ) t =  200cos100  V . Assuming no initial charge and no initial current at t =  when the voltage is
-                 first applied.
-                    a)  Find the subsequent charge on the capacitor.
-                    b)  Plot the transient, steady-state, and the charge on the capacitor.
-                    c)  Find the current flowing through this circuit.
 
+                                                                           0
+                                                                                         V
+                 Consider the parallel RLC network. Assume that at time t = , the voltage  ( ) t  and its time rate of
+                                                            V
+                 change are both zero. Determine the voltage  ( ) t  for
+                                                                        t
+                         R = 1  kΩ , L = 1 H , C =  1  µ  , F  I  ( ) 5cos   mA
+                                                               t =
+                                                   2        s
                  Solution
+                     I  ( ) t =  1 V +  C  dV  +  1 ∫ V ( ) s ds
+                      S      R        dt   L
 
-                    a)  .05q′′ +  5q′ +  1   q =  200cos100t               Lq′′ +  Rq′ +  1  q =  E ( ) t
-                                     4 10 − 4                                         C
-                                       ×
-                                                                                0
-                        q′′ + 100q′ +  5 10 q = ×  4  4,000cos100  t  ; q ( ) 0 =  0 i ( ) 0 =
-                                                                        i
-                            λ  2  100 +×      4  0 →     λ    = − 50 50 19
-                                        5 10 =
-                                                                    ±
-                                    λ +
-                                                          1,2
-                            t
-                        q  ( ) e=  − 50t ( C  cos50 19t + C  sin50 19t )
-                          h              1               2
-                        q   =  A cos100t +  B sin100t
-                          p
-                                                    B
-                          q′ =  −  100 sin100t +  A  100 cos100t
-                            p
-                                                   4
-                                    4
-                          q′′ =  −  10 A cos100t −  10 B sin100t
-                            p
-                                    5 10 q =
-                        q′′ + 100q′ +×    4    4,000cos100t
-                                                      4
-                                              4
-                                 cos100t  − 10 A + 10 B +×     4     4 10 3
-                                                           5 10 A =
-                                                                       ×
-                                
-                                
-                                                 4
-                                                         4
-                                                              5 10 B =
-                                 sin100t    − 10 B − 10 A +×      4    0
-                                
-                                  4AB =   2
-                                     +
-                                          5
-                                
-                                − A +  4B =  0
-                                
-                                    4   1              2  1              4   2
-                                ∆  =      =  17  ∆  =  5     =  8  ∆  =      5 =  2
-                                    − 14          A    0  4   5     B   − 1  0   5
-                                A  =  8  B =  2
-                                    85       85</code></pre>
+
+                     d    I     1 V +  C  dV  +  1 ∫ V   
+                     dt     S  ( ) t =   R  dt  L  ( ) s ds     
+
+                                           2
+                     d  I  ( ) t =  1 dV  +  C  d V  +  1 Vs
+                                                    ( )
+                     dt  S      R dt      dt 2   L
+                       2
+                     d V  +  1 dV  +  1  V =  1 dI
+                     dt 2   RC dt    LC      C dt
+
+                                               )
+                     V′′ +  2V′ +  2V =  2  d  (5cost
+                                      dt
+                     V′ + ′  2V + ′  2V = − 10sin  ; V  ( ) 0 =  0, V′ ( ) 0 =
+                                                                   0
+                                           t</code></pre>
      	</div>
     
      </div>

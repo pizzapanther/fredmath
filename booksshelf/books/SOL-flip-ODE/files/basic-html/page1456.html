@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1456 - DE Solution</title>
+        <title>Page 1456 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1456 - DE Solution</div>
+        <div id="content-top1">Page 1456 - ODE Solution Manual</div>
         <div id="content-top2">P. 1456</div>
      </div>
      <div id="content-middle">
@@ -155,75 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1442 | S O LU TI O N
 
 
-          Exercise
+                      s 4        A C +  E =  0                       C +  E =  0
+                                    +
+                     
+                      s 3     2A +  B +  D +  4E =  5               D +  4E =  6
+                     
+                     
+                      s   2  −  4A +  2B −  4C −  2D +  4E =  2  −  4C −  2D +  4E =  4
+                     
+                      s   1      −  8A −  4B =  4      A =  0
+                       0
+                      s           −  8B =  8          B = − 1
+                     C =  −  1 D =  2 E =  1
 
-                                                                      0
-          Solve using the Laplace transform:    y′′ − 6y′ + 9y t =  ; y ( ) 0=  , y′ ( ) 10 =
 
-          Solution
-              £  {y′′ −  6y′ +  9  } y £  { } t
-                               =
-
-               2
-                                       s
-              s Ys       ( ) 0 −  y′ ( ) 0 −  6 Y ( ) 6ys +  ( ) 0 +  9Ys  1     y ( ) 0 =  0 y′ ( ) 0 = 1
-                                                          ( ) =
-                  ( ) sy−
-                                                                s 2
-                         )
-              ( s −  2  6s +  9 Ys  1  +  1
-                            ( ) =
-                                  s 2
-                        2
-             Y ( ) s =  s + 1   =  A  +  B  +  C  +  D
-                     s 2 (s −  ) 3  2  s  s 2  s − 3  (s −  ) 3  2
-                      s 3       AC =   0        C =  −  2
-                                  +
-                                                      27
-                                                      10
-                      s   2  −  6AB+  −  3C +  D =  1  D =
-                                                      9
-                     
-                       s      9A −  6B =  0      A =  2
-                                                      27
-                       0                              1
-                      s          9B = 1           B =  9
-                     
-
-              £  −  1 {Ys  =   −  1       21  +  1 1  −  2  1  +  10  1      
+              £   −  1 {Y s  =    −  1       −  1  −  1  +  2  +  1      
                       ( )} £
-                                      27 s  9  s 2  27 s − 3  9  (s −  ) 3  2   
+                                      s 2  s +  2  (s +  ) 2  2  s −  2   
 
 
-              y ( ) t =  2  +  1 t −  2  e +  3t  10 te 3t
-                    27   9    27       9
+                      t e
+              y ( ) t = −−  −  2t  +  2te −  2t  + e 2t
 
 
           Exercise
 
-                                                                                               4
-          Solve using the Laplace transform:    y′′ −  6y′ +  15y = 2sin3 , t  y ( ) 0 =  , 1 −  y′ ( ) 0 = −
+          Solve using the Laplace transform:    y′′ +  4y′ = co  ( s t −  ) 3 +  4 , t    y ( ) 3 =  0,  y′ ( ) 3 =
+                                                                                              7
           Solution
-              £  {y′′ −  6y′ +  15y }( ) s £  {2sin3ts
-                                                }( )
-                                    =
+
+              y′′ ( ) 4yt +  ( ) t ′  =  cos (t −  ) 3 +  4t
+             Let vt −  =  3 →   t v + =  3
+
+                                                                  3
+                                                                              7
+              x ( ) v =  y ( ) t =  ( y v +  ) 3     y ( ) 3 =  x ( ) 0 = 0  y′ ( ) =  x′ ( ) 0 =
+              x′′ ( ) 4xv +  ′ ( ) v =  cosv +  4v +  12
+
+              £  {x′′ +  4x′ =  } £  {cosv +  4v +  12 }
+
+
                2
-              s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 −  6sY  ( ) 6ys +  ( ) 0 +  15Y  ( ) s =  6     y ( ) 0 =  −  1,  y′ ( ) 0 =  −  4
-                                                                  2
-                                                                 s + 9
-              ( s − 6s + 15 Y s ++ − =         6
-                          )
-                2
-                             ( ) s
-                                     4 6
-                                              2
-                                             s + 9
-              ( s − 6s + 15 Y ( ) s =  6  −+  2
-                          )
-                2
-                                           s
-                                   2
-                                  s +  9</code></pre>
+              s X  ( ) s −  sx ( ) 0 −  x′ ( ) 0 +  4sX s − ( ) 4x ( ) 0 =  s  +  4  +  12
+                                                         2
+                                                        s +  1  s 2   s
+              ( s +  2  4sX  ( ) s =  s  +  4 12s  +  7
+                      )
+                                        +
+                                2
+                               s + 1     s 2
+                     ) ( ) s =
+               ( ss +  4 X      s   +  7s +  2  12s +  4
+                               2
+                             s +  1        s 2
+              X  ( ) s =    1       +  7s +  2  12s +  4
+                     (s +  ) 4 s +  (  2  1 )  s 3 (s +  ) 4
+
+
+                        1       =  A 1  +  As +  A 3
+                                           2
+                                            2
+                 (s +  ) 4 s +  (  2  1 )  s + 4  s + 1
+
+                     1 =  A s +  2  A +  As +  2  4As +  A s +  4A
+                         1       1    2        2     3      3</code></pre>
      	</div>
     
      </div>

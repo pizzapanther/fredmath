@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1344 - DE Solution</title>
+        <title>Page 1344 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1344 - DE Solution</div>
+        <div id="content-top1">Page 1344 - ODE Solution Manual</div>
         <div id="content-top2">P. 1344</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,132 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1330 | S O LU TI O N
 
 
-                                                   2
-                                                =  s − a 2
-                                                   2
-                                                  s +  a 2
-                 ∫ 0 ∞  t  cos at  − st dt = ( s +  a a 2 2 ) 2
-                                           2
-                                          s −
-                           ( ) e
-                                          2
-
-
-
-              £ {sin at     cos at        ∫  0 ∞  sin at  −  st dt −  a ∫  0 ∞  t cos at  −  st dt
-                                                                         ( ) e
-                                                  ( ) e
-                                ( )}( ) s =
-                    ( ) at−
-                                                         2
-                                         =    a    − a  s −  a 2
-                                            2
-                                           s + a 2    ( s + a 2 ) 2
-                                                        2
-
-
-                                         =  as +  2  a −  3  as +  2  a 3
-                                               ( s +  a 2 ) 2
-                                                 2
-
-
-                                         =    2a 3
-                                           ( s +  a 2 ) 2
+                                   −
+                                       )( +
+                                                         ( +
+                                                                    ( +
+                                 (b a s a s b −     ) bs s b +  ) as s a  )
+                                             )( +
+                               =
+                                            ( s b as as b       )
+                                               −
+                                                         )( +
+                                                  )( +
+                                                                              2
+                                                                   2
+                                       )
+                                                                     +
+                                 (b a s + (  2  as bs ab −  )  bs −  2  b s as +  2  a s
+                                                    +
+                                                +
+                                   −
+                               =
+                                                  −
+                                               ( s b as as b      )
+                                                     )( +
+                                                            )( +
                                              2
-
-
-
-              £ {sin at −   cos at            2a 3          √
-                    ( ) at
-                                ( )}( ) s =
-                                           ( s +  a 2 ) 2
-                                             2
+                                                               2
+                                                                                                  2
+                                                                                      2
+                                                                           2
+                                                                             −
+                                                                                         +
+                                                +
+                                                                       −
+                                                                  −
+                                          +
+                               =  bs +  2  abs b s ab −  2  as −  2  a s abs a b bs −  2  b s as +  2  a s
+                                                         ( s b as as b      )
+                                                               )( +
+                                                                      )( +
+                                                            −
+                                            −
+                                       ab (b a )
+                               =
+                                  ( s b as as b      )
+                                     −
+                                        )( +
+                                               )( +
+                               =       ab
+                                  ( ss a s b+  )( +  )
+              £ { 1−  ba e −  at  +  ba e −  bt } ( ) s =  ( ss a s +  ab  ) b     √
+                      b
+                                  a
+                                                       )(
+                                  −
+                      −
+                                                    +
 
 
           Exercise
-
           Use Definition of Laplace transform to show the Laplace transform of
-                                               (
-                                                  2
-                 £ {cos at +  ( ) at sin at   ss +   3a 2 )
-                                   ( )}( ) s =
-                                               ( s +  a 2 ) 2
-                                                 2
-
-
+                 £      e −  at  +     e −  bt   +     e −  ct      ( ) s =   1
+                                                                           +
+                                                              −
+                                                                               )( +
+                                                       −
+                                                                                     )( +
+                           )( −
+                        −
+                                        −
+                                           )( −
+                      (b a c a  ) (a b c b      ) (a c   )(b c  )      (s a s b s c       )
           Solution
-
-
-              £ {cos at +  ( ) at sin at  ∫ 0 ∞ (cos at +  ( ) at sin at  − st dt
-                                                               ( ))e
-                                ( )}( ) s =
-
-
-
-                                                  ( ) e
-                                                                         ( ) e
-                                         = ∫  ∞  cos at  −  st dt + a ∫  ∞  t sin at  −  st dt
-                                            0                     0</code></pre>
+              £     e −  at  +      e −  bt  +     e −  ct      ( ) s =
+                  (b a c a−  )( −  ) (a b c b−  )( −  ) (a c−  )(b c−  ) 
+                             ∞       −  at          −  bt           −  ct   
+                                                    e
+                                                                    e
+                                    e
+                        =        (b a c a  ) (a b c b      ) (a c   )(b c  )  ∫    e − st  dt
+                                              +
+                                                              +
+                                                                  −
+                                                                         −
+                                   −
+                                                      )( −
+                                                   −
+                                      )( −
+                            0  
+                                                                               (sb
+                                                s
+                        =       1      )∫  ∞  e  ( −+  ) a t  dt +  1  )∫  ∞  e −+  )t  dt
+                          (b a c a−  )( −                 (a bc b−  )( −
+                                          0        ∞                      0
+                                                        (sc
+                                       +  1     )∫    e −+  )t  dt
+                                      −
+                                   (a cb c
+                                         )( −
+                                                   0
+                                                   (s a
+                                                                                  (sb
+                        =  −         1          e −+   )t  −         1          e −+   )t
+                                                                        )( +
+                               −
+                                  )( −
+                                         )( +
+                                                              −
+                            (b a c a s a       )            (a bc b s b        )
+                                                                 )( −
+                                                          (sc
+                                       −     1          e −+  )t       ∞
+                                      −
+                                         )( −
+                                                )( +
+                                   (a cb c s c        )           0
+                        =           1          +          1          +           1
+                                                                                    )( +
+                                                                                 −
+                                                       )( −
+                                )( −
+                                       )( +
+                                                    −
+                          (b a c a s a        ) (a b c b s b        ) (a c   )(b c s c    )
+                                                                          −
+                                                             )( +
+                             −</code></pre>
      	</div>
     
      </div>

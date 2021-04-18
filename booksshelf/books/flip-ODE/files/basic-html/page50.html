@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 50 - Differential Book</title>
+        <title>Page 50 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 50 - Differential Book</div>
+        <div id="content-top1">Page 50 - ODE Book</div>
         <div id="content-top2">P. 50</div>
      </div>
      <div id="content-middle">
@@ -152,52 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.2 - S e pa r a b l e  E qua t i ons  | 35
+    <pre style="white-space:pre-line"><code>1. 2 - S ep a r ab l e  E q u a t i o n s  | 37
 
-                       a)  100°F.
-                       b)  140°F.
-                       c)  80°F.
 
-                                                                                     0
-               119.  A pot of boiling water at 100°C is removed from a stove at time t =  and left to cool in the kitchen.
-                     After 5 min, the water temperature has decreased to 80°C, and another 5 min later it has dropped
-                     to 65°C. Assuming Newton’s Law for cooling, determine the (constant) temperature of the kitchen.
+                     1 x+  dx =  2tdt
+                       x
+                     ( )        2tdt
+                      1
+                         1 dx =
+                        +
+                      x
+                     ∫  ( )        ∫     2t dt
+                        1
+                            1 dx =
+                          +
+                        x
+                     ln x +  x t=  2  + c
 
-               120.  A murder victim is discovered at midnight and the temperature of the body is recorded at 31°C.
-                     One hour later, the temperature of the body is 29°C. Assume that the surrounding air temperature
 
-                     remains constant at 21°C. Use Newton’s Law of cooling to calculate the victim’s time of death.
-                     Note: The normal temperature of a living human being is approximately 37°C.
+                    For  (0) 1x  =
+                             2
+                                c
+                        1 0 +
+                          =
+                        c = 1
+                                                 0
+                               x t +
+                        ln x + =   2   c          x &gt;
+                        We can't solve for  ()xt
+                               ⇒ This solution is defined as implicit.
 
-               121.  Suppose a cold beer at 40°F is placed into a warn room at 70°F. suppose 10 minutes later, the
-                     temperature of the beer is 48°F. Use Newton’s Law of cooling to find the temperature 25 minutes
-                     after the beer was placed into the room.
+                    For  (0)x  = − 2
 
-               122.  A thermometer is removed from a room where the temperature is  70  F  and is taken outside,
-                                                                                          °
-                     where the air temperature is 10  F°  . After one-half minute the thermometer reads 50  F°  .
-                       a)  What is the reading of the thermometer at t = 1 min ?
-                       b)  How long will it take for the thermometer to reach 15  F°  ?
+                                        2
+                                            c
+                        ln 2 +  ( 2) 0 +
+                           −
+                                 −
+                                     =
+                        c = − 2 ln 2
+                               +
+                                   2
+                        ln x +  x t −  2 ln 2
+                                 =
+                                         +
+                        Since the initial condition &lt; 0, then:
+                         x +  ln( x ) t=  2  − +
+                                         2 ln 2
+                               −
 
-               123.  A thermometer is taken from an inside room to the outside, where the air temperature is  5 F°  .
-                     After 1 minute the thermometer reads  55  F°  , and after 5 minutes the thermometer reads  30  F°  .
-                     What is the initial temperature of the inside room?
+                    For  (0)x  =  0
+                             2
+                                 c
+                        0 0 +         True statement
+                          =
+                         y′ =  0  ⇒   ( ) =  xt  0 is a solution.
 
-               124.  The temperature inside a house is  70  F°  . A thermometer is taken outside after being inside the
-                     house for enough time for it to read  70  F°  . The outside air temperature is  10  F°  . After three
-                     minutes the thermometer reading is found to be  25  F°  . Find the reading on the thermometer as a
-                     function of time.
 
-               125.  A metal bar at a temperature of 100  F°   is placed in a room at a constant temperature of  0 F°  . If
-                     after 20 minutes the temperature of the bar is 50  F°  .
-                       a)  Find the time it will take the bar to reach a temperature of  25  F°
-                       b)  Find the temperature of the bar after 10 minutes.
 
-               126.  A small metal bar, whose initial temperature was  20  C°  , is dropped into a large container of
-                     boiling water.
-                       a)  How long will it take the bar to reach 90  C°   if it is known that its temperature increases  2°
-                          in 1 second?
-                       b)  How long will it take the bar to reach 98  C°</code></pre>
+                 Example 7
+
+                 Find the general solution of the differential equation:
+
+                                 4x   dx +  1  dy =  0  y ( ) 0 = − 1
+                                 2
+                                x + 1      y 2
+                 Solution
+
+
+                        y ∫  1 2  dy = −  x + ∫  2 4x  1 dx</code></pre>
      	</div>
     
      </div>

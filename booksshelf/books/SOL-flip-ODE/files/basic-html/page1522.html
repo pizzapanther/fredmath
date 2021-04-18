@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1522 - DE Solution</title>
+        <title>Page 1522 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1522 - DE Solution</div>
+        <div id="content-top1">Page 1522 - ODE Solution Manual</div>
         <div id="content-top2">P. 1522</div>
      </div>
      <div id="content-middle">
@@ -155,73 +155,68 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1508 | S O LU TI O N
 
 
+          Exercise
 
-             b)  t =  v  x
-                      0  cosθ
-                   ( ) (
-                                         2
-                 y x =   v  sinθ ) t −  1  gt
-                           0         2
-                       = ( v  sinθ ) v  x  −  1  g  x 2
-                           0
-                                                      2
-                                   0  cosθ   2  v 2  cos θ
-                                                 0
-                       =     1     ( 2v 2 cos sin x −  gx 2 )
-                                            θ
-                                                 θ
-                                2
-                         2v 2  cos θ   0
-                           0
-                                                  )
-                       =     1     ( v 2  sin 2θ −  gx x = 0
-                                2
-                         2v 2 cos θ   0
-                           0
-                 At  x =  y = 0, the projectile hits the ground.
-                 v 2 sin2θ −  gx =  0
-                  0
-                       ( ) =
-                 x =  R θ    1 v 2  sin 2   θ
-                             g
-                                0
-             c)  R ( π  θ −  )  =  1  v 2 sin (π  2θ −  )           sin (π  α −  ) =  sin cos α  −  cos sin
-                                                                                              π
-                                                                                                   α
-                                                                                   π
-                             g
+          Suppose two identical pendulums are coupled by means of a spring with constant k. when the
+          displacement angles  ( ) tθ   and θ  ( ) t  are small, the system of linear differential equations
+                               1          2
+          describing the motion is
+
+                        θ   g θ ′′ +  =  k ( θ −  θ −  )
+                         1  l  1    m   1    2
+                       
+                        θ    g θ ′′ +  k ( θ =  θ −  )
+                         2   l  2   m   1    2
+
+
+
+           a)  Use Laplace transform to solve the system when
+
+                          ( ) 0θ  ′  0 θ =  ( ) 0 = θ  θ  ′  ( ) 0 =  0 θ  ( ) 0 = ψ
+                          1           1       0    2           2       0
+
+                                                  2
+               Where θ  and ψ  constants. Let ω =     g  ,  K =  k
+                        0       0                     l        m
+           b)  Use the solution in part (a) to discuss the motion of the coupled pendulums in the special case
+               when the initial conditions are  ( ) 0θ  ′  0, θ =  ( ) 0 = θ  , θ  ′  ( ) 0 = θ  , θ  ( ) 0 =
+                                                                                             0
+                                              1           1       0     2       0     2
+           c)  Use the solution in part (a) to discuss the motion of the coupled pendulums in the special case
+               when the initial conditions are  ( ) 0θ  ′  0, θ =  ( ) 0 =  θ  , θ  ′  ( ) 0 =  −  θ  , θ  ( ) 0 =  0
+                                              1           1       0     2         0    2
+          Solution
+
+                  θ′′ +  ωθ =  2  −  Kθ +  Kθ
+             a)     1     1       1      2
+                 
+                  θ′′ +  ωθ =  2  Kθ −  Kθ
+                   2       2      1     2
                     2
-                                0
-                           =  1  v 2 sin2θ
-                             g  0
-                                θ
-                           =  R ( )
-                                  2
+                                               2
+                  s θ  ( ) s −  sθ  ( ) 0 −  θ′  ( ) 0 +  ωθ  ( ) s +  Kθ  ( ) s =  +  Kθ  ( ) s
+                     1        1      1          1         1          2
+                 
+                                                2
+                    2
+                  s θ 2  ( ) s −  sθ 2  ( ) 0 −  θ′ 2  ( ) 0 +  ωθ 2  ( ) s +  Kθ 2  ( ) s =  Kθ 1 ( ) s
+                 
+                  ( s +  2  ω  2  K θ +  )  ( ) s −  K θ  ( ) s =  s θ
+                                 1         2         0
+                 
+                    K θ −  ( ) s +  ( s +  2  ω  2  K θ +  )  ( ) s =  s ψ
+                      1                     2         0
 
-             d)  Given:  g =  32 ft/s , θ =  30°, and v =  300 ft/s
-                                                   0
-                                   2
-                           1
-                       )
-                 R (30°=   32 (300 ) sin60°
-                        ≈ 2,436  ft
+                             s +  2  ω +  2  K  −  K      2    2     2    2
+                        ∆=                            = ( s + ω +  K )  −  K
+                                 −  K     s +  2  ω +  2  K
+                                                                                )
+                                                         ( s +  2  ω =  2 )( s +  2  ω  2  +  2K
 
-
-             e)  x = ( v 0  cosθ ) t =  2,436
-                       2,436
-                 t =
-                     300cos30°
-                   ≈ 9.38  sec
-
-
-
-                   ( )
-             f)  y x =       1       (   v 2  sin 2θ ) x −  gx 2   
-                                2
-                         2v 2 cos θ   0              
-                           0
-                                              2
-                       = 0.57735x − 0.000237x</code></pre>
+                              sθ 0      − K
+                        ∆=                      =  s θ +  3  ( ωθ +  2  Kθ +  Kψ  ) s
+                          1   s ψ   s +  2  ω  2  +  K  0     0      0      0
+                                0</code></pre>
      	</div>
     
      </div>

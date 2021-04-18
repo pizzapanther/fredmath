@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 422 - Differential Book</title>
+        <title>Page 422 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 422 - Differential Book</div>
+        <div id="content-top1">Page 422 - ODE Book</div>
         <div id="content-top2">P. 422</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>406 |  A ppe ndi x   C
-
-                ⇒   R =  1 l
-                       σ  A
-                    1   (the inverse of the conductivity of the material) is defined to be the resistivity (ρ) of the
-                   σ
-                       material
-
-                              ρ =  1
-                                  σ
-                R =  1 l
-                    σ A
-
-                        ρ l
-                R =
-                     A
-                   R: resistance of a wire
-                   l: length of the wire
-
-                   A: cross-sectional area
-
-        Therefore; it follows that the resistance of a wire is directly proportional to its length and inversely
-        proportional to its cross-sectional area unit measurement for resistivity is Ωm.
+    <pre style="white-space:pre-line"><code>4. 1 - I nt r o du c t i on &  R e v i e w  o f  P ow e r  S e r i e s  | 409
 
 
-        Series Connection of resistors
-
-        Resistors are said to be connected in series if they are connected in a line as shown
+                 4.1-8  Differentiating Power Series
 
 
+                 Theorem
+                                          ∞
+                                        ∑        (      ) n
+                                                    −
+                 The function:    fx          a n  x x 0
+                                   () =
+                                         n= 0
+                                       =  a +  a  ( x −  x  ) +  a  ( x −  x  ) 2  +  a  ( x −  x  ) 3  +  
+                                          0    1      0     2      0       3      0
+
+                 Can be differentiating the series by terms
+
+                                                                                     
+                         f ′ () =  x  d      a +  a  ( x −  x  )  +  a  ( x −  x  ) 2  +  a  ( x −  x  ) 3  +  
+                                                                                     
+                                dx    0  1      0     2       0      3      0       
+                              =  a +  2a  ( x −  x  ) +  3a  ( x −  x  ) 2  +  
+                                 1     2      0      3       0
+                                 ∞
+                                ∑        (       ) n− 1
+                              =       na n  x −  x 0
+
+                                n= 1
+                                  ∞
+                                ∑               (      ) n− 2
+                                       ( −
+                                                  −
+                         f ′′ ( ) x =   nn  1)a n  x x 0
+                                 n= 2
 
 
-        Consider a series connection of resistors  R R  R   connected to a potential difference  V∆ .
-                                                       ,
-                                                   ,
-                                                           ,
-                                                 1    2   3
-        The current through all the resistors will be the same because they are connected in a single line.
-                I  =  I =  I =  I = 
-                    1    2    3
-        Where I is the total current.
 
-        The total potential difference is equal to the sum of the potential drops across the individual resistors
-
-                ∆ V = ∆ V +∆ V +∆   V + 
-                        1      2      3
+                 In general:   f  ( ) n  ( ) x =  ! n a n  ⇒  a =  n  f  ( ) n  ! n  ( ) a
 
 
-        Equivalent Resistance
 
-        Equivalent Resistance of a combination of resistors is defined to be the ratio between the potential drop
+                 4.1-9  Identity Theorem
 
-        across the combination ( V∆  ) & the current across the combination.
 
-                R   =  ∆ V
-                 eq    I
+                                                ∞
+                                               ∑       (      ) n
+                 Suppose that the series  ()fx =     a n  x x 0   has a positive radius of convergence. Then
+                                                          −
+                                               n= 0
+                                                                  n
+                                                                f  () ( )
+                                                                      x
+                                                          a =          0
+                                                            n        ! n
+                 The coefficients of a power series are determined by the values of the sum  ()fx .
 
-                   R   → Equivalent resistance
-                     eq
-                   ∆ V → Total potential difference
-                   I → Current</code></pre>
+                 If  f  has a series representation, then the series must be
+                                                                              n
+                                                               −
+                                          ( )(xa +
+                                         ′
+                         f  ( ) x =  f  ( ) a +  f a  −  )  f ′′ ( ) a  (xa ) +  2  +  f  () ( ) a  (xa ) +  n  
+                                                                                      −
+                                                        2!                     ! n</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1240 - DE Solution</title>
+        <title>Page 1240 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1240 - DE Solution</div>
+        <div id="content-top1">Page 1240 - ODE Solution Manual</div>
         <div id="content-top2">P. 1240</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1230 | S O LU TI O N
 
 
-
-                 q′ =  e − 20t ( −  20C  cos15t −  20C  sin15t −  15C  sin15t +  15C  cos15t )
-                                 1              2            1             2
-                      −  840 sin10 +  t  640 cos10t
-                        697          697
-
-
-                        q′ ( ) 0 = 20  84  +  15C +  640  =  0
-                                   697       2  697
-
-                        C   = −  464
-                          2     2091
-
-                                              464
-                                                            84
-                                 84
-                                                                         64
-                 q ( ) t =  e − 20t ( −  697 cos15t −  2091 sin15t +  )  697 cos10t +  697 sin10t
-             b)  ( ) t =  I  q = ′ −  1  e − 20t  ( 5040cos15t−  −  9280sin15t −  3780sin15t +  6960cos15t )
-                              2091
-                                   −  840 sin10t +  640 cos10t
-                                     697          697
-
-
-                      =  −  1  e − 20t  (1,920cos15t −  13,060sin15t ) −  840 sin10t +  640 cos10t
-                         2091                                      697          697
-                                                                                             )
-                                 (
-             c)  lim q t =  ( )  lim e − 20t ( −  84  cos15t −  464  sin15t +  )  84  cos10t +  64  sin10t
-                 t→∞         t→∞           697          2091          697          697
-                                                       )
-                                                      t
-                  lim e − 20t ( −  84  cos15t −  464  sin15  = 0     q : is steady state solution
-                                             01
-                 t→∞          697          2 9                       p
-                  lim (  84  cos10t +  64  sin10t =  )  ∃
-                 t→∞   697          697
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           Exercise
 
-          A series circuit consists of a resistor with  R  =  20 Ω , an inductor with  L = 1 H , a capacitor with
-          C =  0.002 F , and a 12-V battery. If the initial charge and current are both 0, find the charge and
-          current at time t.
 
+          An RCL circuit connected in series has  R = 180 Ω ,  C =  1  , F  L =  20  H , and applied voltage
+                                                                 280
+                                                                                                       0
+          E ( ) 10sin  Vt =  t  . Assuming no initial charge on the capacitor, but an initial current of 1 A at t =
+          when the voltage is first applied.
+
+             a)  Find the subsequent charge on the capacitor.
+             b)  Plot the transient, steady-state, and the charge on the capacitor.
+             c)  Find the current on the capacitor.
           Solution
 
-              q′′ +  20q′ +  1  q =  12              Lq′′ +  Rq′ +  1  q =  E ( ) t
-                         .002                                   C
+             a)  20q′′ +  180q′ +  280q =  10sint                   Lq′′ +  Rq′ +  1  q =  E ( ) t
+                                                                               C
 
-                                                       0
-              q′′  20q′ +  +  500q =  2 1 ; q ( ) 0 =  0, i ( ) 0 =</code></pre>
+                                      t
+                 q′ +  ′  9q′ +  14q =  1 sin  ; q ( ) 0 =  0 i ( ) 10 =
+                                 2
+                     λ  2  9 +  λ +  14 0
+                                  =
+                             95
+                     λ   =  − ±
+                      1,2     2
+                         =  −  7, −  2
+
+
+                     t =
+                 q  ( ) C e  −  7t  + C e −  2t
+                   h       1        2
+                 q   =  A cost +  B sint
+                   p
+                   q′ =  −  A sint +  B cost
+                     p
+
+                   q′′ =  −  A cost −  B sint
+                     p
+
+                 q′′ +  9q′ +  14q =  1 sint
+                                 2
+
+                         c s o t  − A +  9B + 14A =  0    13A +  9B =  0
+                                                1     →             1
+                                                        
+                        
+                          i s nt  − B − 9A + 14B =  2   −  9A +  13B =  2
+                        
+                                                        
+                             13   9               0   9              13   0
+                        ∆  =        =  250  ∆  =        =  −  9  ∆  =       =  13
+                             − 9 13          A    1  13     2    B   − 9  1   2
+                                                  2                       2
+                     A =  −  9  , B =  13
+                           500        500
+
+
+                 q  ( ) =  t  −  9  cost +  13  sint
+                   p       500        500
+
+                                                       13
+                                             9
+                 q ( ) C e=  t  1  −  7t  +  C e −  2t  −  500 cost +  500 sint
+                                   2
+                                           9
+                        q ( ) 0 =  C +  1  C −  500  =  0
+                                      2</code></pre>
      	</div>
     
      </div>

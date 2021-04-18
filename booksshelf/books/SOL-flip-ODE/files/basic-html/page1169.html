@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1169 - DE Solution</title>
+        <title>Page 1169 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1169 - DE Solution</div>
+        <div id="content-top1">Page 1169 - ODE Solution Manual</div>
         <div id="content-top2">P. 1169</div>
      </div>
      <div id="content-middle">
@@ -157,68 +157,71 @@ function MM_swapImage() { //v3.0
 
                  Exercise
 
-                 A mass of 32 pounds is attached to a spring with a constant spring 5 lb/ft . Initially, the mass is
-                 released 1 foot below the equilibrium position with a downward velocity of 5 ft/s , and the
-
-                 subsequent motion takes is numerically equal to 2 times the instantaneous velocity.
-                   a)  Find the equation of motion if the mass is driven by an external force equal to
-                       f  ( ) 12cos2t =  t + 3sin 2t .
-                   b)  Graph the transient, steady-state, and the equation of motion solutions on the same coordinate
-                      axes.
-
+                 A forced mass−spring−dashpot system with equation  mx′′ +  cx′ +  kx =  F  cos tω . Investigate the
+                                                                                      0
+                                                                                               C ω
+                 possibility of practical resonance of this system. In particular, find the amplitude  ( )  of steady
+                 state periodic forced oscillations with frequency ω. Sketch the graph  ( )  of and find the practical
+                                                                                    C ω
+                 resonance frequency ω (if any).            m = 1, c =  2, k = 2, F =
+                                                                                         2
+                                                                                     0
                  Solution
+                     x′′ +  2x′ +  2x =  2cos t ω    mx′′ +  cx′ +  kx =  F ( ) t
 
-                     m =  32  = 1 u sl  g
-                         32
+                     x′′ +  2x′ +  2x =  0           mx′′ +  cx′ +  kx =  0
 
-                                                                             5
-                                                       t
-                    a)  x′′ +  2x′ +  5x = 12c os2t + 3sin2  ; x ( ) 0 = 1, x′ ( ) 0 =    mx′′ +  cx′ +  kx =  f  ( ) t
-                                                      12i
-                                  5 0 →
-                        λ  2  2λ +  + =       λ    = −±
-                                               1,2
-                         x =  e  t −  ( C  cos2t + C  sin 2t )
-                          h         1          2
-
-                         x  =  A cos2t +  B sin 2t
+                                   2
+                        λ  2  2λ +  +=  0
+                                     −
+                        λ    =  − 2±  48
+                          1,2     2
+                                1 i
+                             = −±
+                                               )
+                     x =  e  t −  ( C  cost C  sint
+                                      +
+                      h         1         2
+                         x    A cos tω =  B sin tω +
                           p
-                            x′ =  −  2 sin 2t +  A  2 cos2t
-                                               B
-                              p
-                                               B
-                            x′′ =  −  4 cos2t −  A  4 sin 2t
-                              p
-                                                           B
-                        −  4 cos2t −  A  4 sin2t −  B  4 sin2t +  A  4 cos2t + 5A cos2t +  5 sin2t =  B  12cos2t +  3sin2t
-                                 cos2t  A +  4B =  12
-                                 
-                                              +
-                                 sin 2t  −  4A B =  3
+                                                ω
+                         x′ =  A ω −  sin t  B ω+  cos t
+                                    ω
+                         x′′  −  A ω=  2 cos t −  ω  B ω  2 sin t
+                                                   ω
+                      Am ω −  2 cos t −  ω  Bm ω  2 sin t −  ω  2A ω  sin t +  ω  2B ω  cos t +  ω  2 cos t +  A  ω  2 sin t =  B  ω  2cos t
+                                                                                                       ω
+                                    ( 2 ω  −  2 ) A +  2 B =  ω  2
+                                → 
+                                  
+                                              −
+                                  −  2 A + ω  ( 2 m ω  2 ) B =  0
+                                  
+                                    2 ω  −  2  2ω            2
+                                D =                =  ( 2 ω 2 )  +  4ω  2  4 ω = +  4
+                                                        −
+                                     −  2ω  2 ω  −  2
+                                      2    2ω                           2   2
+                                                                     −
+                                D   =           =  22 ω  (  −  2 )  D  =  2 ω  =  4
+                                                                                 ω
+                                  A   0  2 ω  −  2             B     −  2 ω  0
 
-                                    1   4             12  4          1   12
-                                ∆=        = 17  ∆   =       =  0  ∆=        =  51
-                                    −  4  1      A    3   1          −  4  3
-                                A  = 0,  B = 3
+                           −
+                     A =  4 2 ω  2  B =  4 ω
+                          4 ω  +  4    4 ω  +  4
 
-                         x  = 3sin 2 t
-                          p
-
-
-                         x ( ) t =  e  t −  ( C 1 cos2t +  C 2  sin 2t +  )  3sin 2t
-
-                                   x ( ) 0  =  C = 1
-                                            1
-
-                            x′ ( ) t =  e  t −  ( −  C 1  cos2t −  C 2  sin 2t −  2C 1 sin 2t +  2C 2  cos2t +  )  6cos2t
-
-                                   x′ ( ) 0 =  −  C +  1  2C +  2  6 =  5
-
-                                   C   =  0
-                                     2
-
-                           t =
-                         x ( ) e  t −  cos2t + 3sin 2t</code></pre>
+                     C ω         2
+                       ( ) =
+                               4 4ω  4
+                                +
+                                                   F
+                        C ω      A +  2  B =  2     0
+                          ( ) =
+                                            ( km ω  2 ) 2 +  ( ) 2
+                                               −
+                                                         c
+                                                         ω</code></pre>
      	</div>
     
      </div>

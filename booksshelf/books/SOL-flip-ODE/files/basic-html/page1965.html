@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1965 - DE Solution</title>
+        <title>Page 1965 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1965 - DE Solution</div>
+        <div id="content-top1">Page 1965 - ODE Solution Manual</div>
         <div id="content-top2">P. 1965</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,86 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 2 −   S e r i e s   S ol ut i on s  n e a r  O r di n a r y P oi nt s  | 1947
 
 
-
-                       2 ∑  ∞                   2 ∑  n  ∞        n
-                     2a +      (n +  2 )(n +  ) 1 a n +  x −  a n −  1 x =  0
-
-                            n= 1                       n= 1
-                            ∞
-                       2 ∑                                  n
-                     2a +         (n +  2 )(n +  ) 1 a n+  2  −  a n−  1  x =  0
-
-                            n= 1
-                        2 a  =  0 →  a =  0
-                          2           2
-                                                                   a
-                                                                    n−
-                                                                      1
-                     (n +  2 )(n +  ) 1 a n+  2  −  a n−  1  = 0 →   a n+ 2  =  (n + 1 )(n +  ) 2
-                             a                          a                         a
-                        a =    0  =  1 a          a =    1  =  1  a         a =    2  =  0
-                         3   23    6  0            4   3 4   12  1           5   45
-                                                                                   ⋅
-                                                         ⋅
-                               ⋅
-                              a                         a                         a
-                        a =    3  =  1  a         a =    3  =  1  a         a =    5  =  0
-                         6   5 6 ⋅  180  0         7   6 7 ⋅  504  1         8   78 ⋅
-                                                                               
-                       y  ( ) x =  ( 1+  1  x +  3  1  x +  6   ) a
-                       1          6      180          0
-                     
-                      y  ( ) x = ( x +  1  x +  4  1  x +  7   ) a
-                       2          12      504          1
-
-
-                 Exercise
-
-                 Find a power series solution.   y′′ +  xy =  0
-
-                 Solution
+                            y ( ) 0 = C =  a 0
+                                     2
+                      ′
+                     yx     C 1 cos x C 2  sin x
+                       ( ) =
+                                     −
+                            y ( ) 0 = C =  a 1
+                                     1
+                      ( ) =
+                     yx     a 1  sin x a+  0  cos x
+                          =  a  cos x a  sin x
+                                    +
+                             0         1
                              ∞
                             ∑        n
                      yx           a x
                       ( ) =
                                   n
-                            n= ∞  0           ∞
-
-                            ∑         n− 1  ∑                n
+                            n= 0
+                            ∑  ∞      n− 1  ∑  ∞             n
                      y′ ( ) x =  na x     =      (n +  ) 1 a n+ 1 x
                                     n
                              n= 1            n= 0
-
                              ∑  ∞             n− 2   ∑  ∞                     n
                      y′′ ( ) x =   nn    ) 1 a x    =      (   n +  2 )(n +  ) 1 a n+ 2 x
                                     ( −
                                            n
                              n= 2                    n= 0
+                     y′′ +  y =  0
 
-                     y′′ +  xy =  0
+                      ∞                           ∞
+                     ∑   (n +  2 )(n +  ) 1 a n+ 2 ∑  x +  n  ax =  n  n  0
 
-                     ∑  ∞  (n +  2 )(n +  ) 1 a n+ 2 ∑  x +  n  x  ∞  ax =  n  n  0
+
+                     n= 0                        n= 0
+                      ∞
+                           (n +  2 )(n +  ) 1 a  +  a n  ∑    x =  n  0
+                                        n+ 2
+                     n= 0
+
+                        (n +  2 )(n +  ) 1 a n+ 2  +  a =  n  0 →  a n+ 2  =  (n +  2 − )(n +  1  ) 1  a n  , n ≥  0
 
 
-                     n= 0                         n= 0</code></pre>
+                            a =     1   a = −  1 a                  a =    1   a = −   1    a
+                             2   ( )( )  0     2  0                  3   ( )( ) 2  1  23 ⋅  1
+                                  21
+                                                                          3
+                                     1           1                           1            1
+                            a =  −        a =         a             a =  −       a =           a
+                                                 ⋅⋅
+                                                                                             ⋅
+                             4     ( )( ) 3  2  2 34   0             5    ( )( )  3   2345       1
+                                    4
+                                                                           54
+                                                                                        ⋅⋅
+
+                            a =  −   1    a =  −  1  a              a =  −   1   a =  −  1  a
+                                    6
+                                                                            76
+                             6     ( )( ) 5  4    ! 6  0             7     ( )( )  5      ! 7  1
+
+                                                                              −
+                                  ( ) 1−  n                                  ( ) 1  n
+                            a   =       a                           a     =         a
+                                    2
+                             2n    ( )!n  0                          2n+ 1  (2n +  ) 1!  1
+
+                                                     ( ) 1−  n                                ( ) 1−  n        
+                                                                                     1
+                                                                              1
+                                    1
+                                           1
+                      ( )
+                     yx     a 0  1 =  −  2! x +  2  4! x −  4    +  x 2n  +    a  +   1  x −  3! x +  3  5! x −  5    +  x 2n+ 1  +    
+                                                       2n
+                                                    ( )!                                  (2n +  ) 1 !        
+                          =  a  cos x a  sin x
+                                    +
+
+                             0         1          √</code></pre>
      	</div>
     
      </div>

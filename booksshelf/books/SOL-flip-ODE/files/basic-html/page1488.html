@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1488 - DE Solution</title>
+        <title>Page 1488 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1488 - DE Solution</div>
+        <div id="content-top1">Page 1488 - ODE Solution Manual</div>
         <div id="content-top2">P. 1488</div>
      </div>
      <div id="content-middle">
@@ -155,73 +155,77 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1474 | S O LU TI O N
 
 
-             10y′′ +  90y′ +  140y =  5sint
-
-              y′′ +  9y′ +  14y =  1 sin ; yt   ( ) 0 =  0, y′ ( ) 0 = − 1
-                              2
-                                           }
-                { £  y′′ +  9y′ +  14  } y £ { 1 sint
-                                =
-                                      2
-                                                                     1
-                                                           ( ) =
-              s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 +  9sYs −  ( ) 9y ( ) 0 +  14Ys  1  s + 1
-                                                                    2
-                                                                 2
-              ( s +  2  9s +  14 Ys  1  s + 1 −  1
-                          )
-                                      1
-                             ( ) =
-                                     2
-                                  2
-                           −  s −  2  1
-               ( ) =
-             Ys                   2       =   A   +  B   +  Cs +  D
-                                                             2
-                     (s +  2 )(s +  ) 7 s +  (  2  1 )  s +  2  s +  7  s + 1
-                      s 3     A B C =     0
-                                     +
-                                 +
-                     
-                      s   2  7A +  2B +  9C +  D =  −  1
-                     
-                              +
-                       s   AB +   14C +  9D =  0
-                       0                     1
-                      s    7A +  2B +  14D =  −  2
-                     
-
-                     A =  −  9  B =  99   C =  −  9   D =  13
-                           50       500         500       500
-
-              £  −  1 {Ys  =   −  1     −  9  1  +  99  1  −  9  s  +  13  1     
-                      ( )} £
-                                    50 s +  2  500 s +  7  500  s +  2  1  500  s +  2  1
-
-              y ( ) t =  −  9 −  e  2t  +  99 −  e  7t  −  9  cost +  13  sint
-                      50        500        500       500
-                                                          )
-                                                         t
-                  =  1  ( 99e −  7t  −  90e −  2t  +  13sint −  9cos
-                    500
-
-
           Exercise
 
-          A 128-lb  weight is attached to a spring having a spring constant of 64 lb/ft .  The weight is started in
-          motion initially by displacing it 6 in above the equilibrium position with no initial velocity and with
-          an applied external force  ( ) 8sin4F t =  t . Assume no air resistance. Find the equation motion of the
-
-          mass.
-
+          A  4 lb  weight stretches a spring 2 feet. The weight is released from rest 18 inches above the
+              −
+          equilibrium position, and the resulting motion takes place in a medium offering a damping force
+                              7
+          numerically equal to   times the instantaneous velocity. Use the Laplace transform to find the
+                              8
+                             x
+          equation of motion  ( ) t .
           Solution
 
-              m  = 128  =  4
-                   32
-              4y′′ +  64y =  8sin 4t
-                              t
-              y′ +  16y = ′  2sin4 ; y ( ) 0 = −  6  = −  1 , y′ ( ) 00 =
-                                           12    2</code></pre>
+              m =  4  =  1    (w =  mg )
+                  32   8
+
+              k =  4  =  2  ( xk =  mg )
+                  2
+              c =  7
+                 8
+
+              1 x′′ +  7  x′ +  2x =  0       mx′′ +  cx′ +  kx =  f  ( ) t
+              8     8
+
+              x′  7x′ + ′  + 1 6x =  0; x ( ) 0 = −  18  =  −  3 ,  x′ ( ) 0 =
+                                                             0
+                                          12     2
+                  £  {x′′ +  7x′ +  16x } 0=
+
+
+               2
+                  ( ) sx−
+                                                            ( ) =
+                                          ( ) 7x−
+              s Xs        ( ) 0 −  x′ ( ) 0 +  7sXs  ( ) 0 +  16Xs  0
+                          )
+              ( s +  2  7s +  16 Xs  −  3 s −  21
+                             ( ) =
+                                          2
+                                     2
+              Xs       3     s +  7
+                ( ) = −
+                       2        2
+                         ( s +  7 )  +  15
+                             2
+                                    4
+                                         (
+                                       As +  7 )
+                         s + 7     =         2    +       B
+                     ( s +  7 ) 2  +  15  ( s +  7 ) 2  +  15  ( s +  7 ) 2  +  15
+                                         2
+                                4
+                                                         2
+                         2
+                                                               4
+                                                4
+                          s     A =  1
+                          0  7                 7
+                        
+                         s   2  A +  B =  7 B =  2
+                        
+                                          7                                15          
+             {Xs       −  3 £  −  1     s +  2        −  37  2  £  −  1     2          
+                 ( )} =
+                         2           7  2    15   2    22  15           7  2    15   2  
+                                  (   s +  2 )  +    2               (   s +  2 )  +    2    
+                                                                                     
+
+                                                t
+                          t
+              x ( ) t =  − 3 e 7 /2 cos  15  t −  7 15 e 7 /2 sin  15  t
+                      2           2       10            2</code></pre>
      	</div>
     
      </div>

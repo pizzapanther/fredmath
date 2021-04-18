@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1887 - DE Solution</title>
+        <title>Page 1887 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1887 - DE Solution</div>
+        <div id="content-top1">Page 1887 - ODE Solution Manual</div>
         <div id="content-top2">P. 1887</div>
      </div>
      <div id="content-middle">
@@ -155,77 +155,92 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 7 − P h a s e  P la n e  P o r tr a it s   & A p p li c a ti o n s  | 1873
 
 
-                 Exercise
 
-                 Consider a mass-and-spring system shown below. Assume that
-                               1
-                 m =   2, m =    ; k =  75, k =  25; F =    100 and ω =   10  (in mks units).
-                   1       2   2     1       2          0
+                             =  λ  2  100λ +  + 1 44 =
+                                                 0
+                        The eigenvalues are: λ    −  36, λ =  =  −  64
+                                              1           2
 
+                        The natural frequencies: ω    6 ω =  =  8
+                                                  1        2
 
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                   
-                 Find the solution of the system  Mx′′ =  Kx F  that satisfies the initial conditions  ( ) 0x  =  x′ ( ) 0 = 0
-                                                         +
-                 Solution
-
-                      mx′′ =  −  ( k +  k  ) x +  k x +  100cos10t
-                       1 1      1    2   1    2 2
-                                  (       )
-                      mx′′ =   22  −  k 2  x −  2  x 1
-
-                      2x′′ =   −  100x +  25x +  100cos10t
-                       1         1      2
-                      1
-                       x′′ =  25x − 25x
-                      2  2      1      2
-
-                       x′′ =  −  50x +  25  x +  50cos10t
-                       1       1   2   2
-                     
-                      x′′ =  50x − 50x 2
-                     
-                               1
-                       2
-                              − 50  25 
-                         A =        2 
-                                       
-                              50   − 50 
-
-
-                               −  50 λ−    25
-                     A λ−  I =              2
-                                 50      −  50 λ−
-
-                             =  ( 50 λ−  −  ) −  2  625
-
-                             =  λ  2  100 − 1875 =  0
-                                       λ +
-                    The eigenvalues are: λ    −  25, λ =  =  −  75
-                                          1           2
-
-                    The natural frequencies: ω    5 ω =  =  53
-                                              1        2
-                    For λ =   −  25 ⇒   ( A +  25IV = )  0
-                          1                        1
-                          − 25  25    a   
+                        For λ =  −  36 ⇒    ( A +  36IV = )  0
+                              1                        1
+                                              0
+                                        a
+                             − 4  8    
+                                           =
+                                             ⇒   a =  2b
+                                              0
+                                        b
+                             12  − 24    
+                                      2
+                                    
+                            ⇒   V =  
+                                 1  
+                                      1
+                                                         2
+                              ( ) (                    
+                                             +
+                            xt =     a  cos6t b  sin6t )
+                             1        1         1       
+                                                         1
+                        For λ =   −  64 ⇒   ( A +  64IV = )  0
+                              2                        2
+                                      a
                                             0
-                                2      =    ⇒  2a =  b
+                             24 8   
+                                         =
+                                          ⇒    3a =  −  b
+                                            0
                                       b
-                                            0
-                                25      
-                                   
-                          50   −  </code></pre>
+                             12 4    
+                                       1 
+                            ⇒   V =     
+                                 2     − 3 
+                              ( ) (                       1 
+                                              +
+                            x   t =  a  cos8tb    sin8t )   
+                             2        2          2         − 3 
+                          
+                                             b
+                                                     +
+                                                                +
+                         x   ( ) t =  2a 1  cos6t +  2 sin6t a 2  cos8tb 2  sin8t
+                                              1
+                         
+                                         +
+                         y ( ) t =  a 1  cos6tb 1 sin6t −  3a 2  cos8t −  3b 2  sin8t
+                        
+                        In mode 1: At frequency ω =   6, the 2 masses oscillate in the same direction of  m twice of
+                                                  1                                                    1
+                                   m .
+                                     2
+                        In mode 2: At frequency ω =   8,  the 2 masses oscillate in opposite directions of oscillation of
+                                                  2
+                                   m 3 times that of m .
+                                     1                 2
+
+                                                                       6
+                                                                                ( )
+                    b)  Given  ( ) 0x  = 19,  x′  ( ) 0 = 12 y ( ) 0 = 3,  y′  ( ) 0 =  and  Ft =  F  ( ) t = − 195cos7t
+                                                                               1       2
+                         x′′ =  −  40x +  8y −  195cos7t
+                         y′′ =  12x −  60y −  195cos7t
+                          
+                           x ( ) t =  2a  cos6t +  2 sin6t a+  cos8t b+  sin8t c+  cos7t
+                                             b
+                                 1          1         2          2         1
+                           ( ) =
+                         yt    a 1 cos6t b+  1  sin6t −  3a 2  cos8t −  3b 2  sin8t c+  2  cos7t
+                        
+                         x′′ = − 49c 1  cos7t
+                        
+                            p
+                        
+                         y′′ = − 49c 2  cos7t
+                           p
+                        </code></pre>
      	</div>
     
      </div>

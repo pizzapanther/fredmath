@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 120 - Differential Book</title>
+        <title>Page 120 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 120 - Differential Book</div>
+        <div id="content-top1">Page 120 - ODE Book</div>
         <div id="content-top2">P. 120</div>
      </div>
      <div id="content-middle">
@@ -152,29 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.7 - M ode l i ng  P opul a t i o n G r ow t h  | 105
+    <pre style="white-space:pre-line"><code>1. 6 - E x a c t  D i f f e r e n t i a l  E q u a t i o n s  | 107
 
 
-               1.7-4  Pollution
-                                                               3
-               Consider a lake that has a volume of V = 100 km , it is fed by an input river, and there is another river
-               which is fed by the lake at a rate that keeps the volume of the lake constant.
+                 Example 3
 
-                                                  
-               The input rate:    rt    50 20cos 2π   ( t −  1   4   ) 
-                                   ( ) =
-                                           +
-                                                  
-                                                  
-               The maximum flow into the lake occurs when t =   1
-                                                                4
-               In addition, there is a factory on the lake that introduces a pollutant into the lake at the rate of 2 km 3  / yr
-               . Let  ()  denote the total amount of pollution in the lake at time t. If we make the assumption that the
-                     xt
-               pollutant is rapidly mixed throughout the lake, then
+                 Solve the differential equation:    3xy +  y +  2  ( x +  2  xy y′ = )  0
 
-                              dx  =  2 −  ( 50 20cos 2π+    ( t −  1   ) ) .  x
-                               dt                        4     100</code></pre>
+                 Solution
+
+                                              2
+                     M =  3xy +  y 2    N =  x +  xy                   N
+                     M   = 3x +  2y     N =   2x +  y       ⇒   M  y  ≠  x
+                       y                  x
+                    Cannot be solved by this procedure.
+
+
+
+                 1.6-2  Integrating Factors
+
+
+                 It is sometimes possible to convert a differential equation that is not exact equation by multiplying
+                 the equation by a suitable integrating factor.
+
+
+
+                 1.6-3  Definition
+
+
+                 An integrating factor for the differential equation ω=  Mdx +  Ndy =  0 is a function  ( ,x yµ  )  such that
+                                              )
+                                                                   )
+                 the form µω = µ ( ,x y ) ( ,M x y dx + µ ( ,x y ) ( ,N x y dy is exact.
+                        ( Mµ  ) =  ( Nµ  )
+                              y        x
+
+                        Mµ −    Nµ +   ( M   −  N  ) µ=  0
+                             y      x      y     x
+
+                 Assuming that µ is a function of x only, we have
+
+                                                                dµ
+                         µ
+                        ( M  ) =  µ  M    &   ( N ) =  µ  N +  N
+                                               µ
+                              y       y            x      x     dx
+                                         dµ
+                        µ  M  =  µ  N +  N
+                            y      x      dx
+
+
+                         dµ  =  M  y  −  N x    µ
+                         dx       N
+
+
+                  ∫ ∫         M  y  N  N x  dx
+                                  −
+                     dµ
+                        =
+                     µ
+                        ∫   M  y  −  N x  dx
+                  lnµ=          N</code></pre>
      	</div>
     
      </div>

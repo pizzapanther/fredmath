@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 264 - Differential Book</title>
+        <title>Page 264 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 264 - Differential Book</div>
+        <div id="content-top1">Page 264 - ODE Book</div>
         <div id="content-top2">P. 264</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.4 − Using Laplace Transform to Solve Differential
+    <pre style="white-space:pre-line"><code>2. 6 - F o r c e d H a r m o ni c  M ot i o n  | 251
 
 
-                                     Equations
+                 Example 1
+
+                 Suppose  F =  23, ω     11, ω =  = 12  with these values of the parameters the solution becomes
+                           0         0
+
+                 Solution
+                             F
+                     xt        0   ( cos tω− cosω  t )
+                      ( ) =
+                             2
+                           ω −ω  2               0
+                             0
+                         =     23    (cos12t − cos11t )
+                              2
+                           ( 11 12 2 )
+                               −
+                         =  −  (cos12t −  cos11t )
+
+                         =  cos11t − cos12  t
 
 
-               Both the Laplace transform and the inverse Laplace transform come into play in solving some simple
-               ordinary differential equations with initial conditions.
 
 
-               3.4-1  Homogeneous Equations
 
 
-               Example 1
-
-               Use Laplace transform to find the solution to the initial value problem
-
-                                                 =
-                                                                 =
-                       y′′ −  2y′ −  3y =  0   y (0) 1 and  y′ (0) 0
-               Solution
-                   £  ( y′′ −  2y′ −  3y ) =  s Ys −  ( ) sy (0) −  y′ (0) −  ( 2 sYs −  ( )  y (0) −  ) 3 ( )Y s
-                                        2
-
-                                                   )
-                                         2
-                                                     () s
-                                     = ( s − 2s − 3 Ys −+    2
-                                     =  0
-
-                   Ys        s − 2
-                     () =
-                          s −  2  2s −  3
-                         =  A   +  B
-                           s −  3  s +  1
-                              +
-                           (A Bs + )  A −  3B
-                         =   (s −  3 )(s +  ) 1
-
-                                 AB =   1           1       3
-                                   + 
-                                             ⇒  A =  4 ,  B =  4
-                               A −  3B =  −  2
-                                  1   1                  1    1             1   1
-                              ∆          =  −  4  ∆ =  =        =  −  1 ∆  =       =  −  3
-                                  1 −  3            A   −  2  −  3      B   1 −  2
-
-                              A =  1  B =  3
-                                  4       4
 
 
-                         =  11  3  +  3 1  1
-                                    4 s +
-                           4 s −
-                          1
-                                    1
-                    y () £    −1 { }    +  3 £ −1   1
-                      t
-                        =
-                          4       s − 3   4      { }
-                                                      1
-                                                   s +
-                                    e
-                         =  1 e 3t  +  3 − t
-                                  4
-                           4</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         ω +ω                                                ω − ω
+                 Mean frequency:     ω=    0                       Half difference:      δ=    0
+                                            2                                                   2
+
+
+                 2.6-3  Case 2  ω= ω
+                                           0
+                                                                   (
+                                                                                        )
+                                                                             +
+                 The particular solution is given by the form:  x  =  ta cosω  t b sinω  t
+                                                              p            0         0
+                     x′ =  a cosω  t +  b sinω  t −  at ω  sinω  t +  bt ω  cosω  t
+                       p         0          0       0     0       0      0
+                     x′′ =  −  a ω  sinω  t +  b ω  cosω  t −  a ω  sinω  t +  b ω  cosω  t −  at ω  2 cosω  t bt ω  2 sinω  t
+                                                                                           −
+                                                                                   0
+                                                                                                0
+                       p       0     0      0     0      0     0     0      0            0            0
+                                                                     +
+                                          −
+                        =  −  2 ω  ( a sinω  tb cosω  t −  )  t ω  2 ( a cosω  t b sinω  t )
+                                                          0
+                               0       0          0                0         0
+                     x′′ +ω 2 x    − =  2 ω  ( a sin ω  t −  b cosω  t −  )  t ω  2 ( a cosω  t +  b sin ω  t +  )  t ω  2 ( a cosω  t +  b sin ω  t )
+                      p     0  p       0       0         0      0        0        0      0        0         0
+                                    2
+                                                  −
+                                 = −ω   ( a sinω  tb cosω  t )
+                                       0        0         0</code></pre>
      	</div>
     
      </div>

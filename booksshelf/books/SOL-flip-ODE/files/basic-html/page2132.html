@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2132 - DE Solution</title>
+        <title>Page 2132 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2132 - DE Solution</div>
+        <div id="content-top1">Page 2132 - ODE Solution Manual</div>
         <div id="content-top2">P. 2132</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,83 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2114 | S O LU TI O N
 
 
+                    ∞
+                  ∑                        nr +− 2
+                            )( +−
+              y′′ =    (nr nr         ) 1 a x
+                         +
+                                         n
+                   n= 0
 
-                     b =  1  b
-                      n   n  n− 2
-
-                 n   2 →=  b =  1 b                         n   3 →=  b =  1 b =  0
-                            2   2  0                                   3   3  1
-
-                 n   4 →=  b =  1 b =  1 b                  n   5 →=  b =  1 b =  0
-                            4   4  2   8  0                            5   5  3
-                 n   6 →=  b =  1 b =  1  b                 n = 7 →   b =  0
-                            6   6  4   48  0                           7
-
-                                                                             
-                 n   8 →=  b =  1 b =   1  b                              
-                            8   8  6   384  0
-                                    
+              x y′′ + 2  ( x −  2  2xy′ + )  2y =  0
 
 
-              y  () =  x  bx 1/2 ( 1+  1  x +  2  1  x +  4  1  x +  6  1  x +  8   )
-               2       0         2      8      48     384
+                                                    2
+              x 2 ∑  ∞  (n r n r+  )( +−  ) 1 ax nr +− 2  + ( x −  2x ) ∑  ∞  (n r ax+  )  n  nr +− 1 + 2 ∑  ∞  ax nr +  =  0
+                                                                                         n
+                                      n
+                 n= 0                                      n= 0                    n= 0
+              ∑  ∞  (n r n r     ) 1 ax nr +  + ∑  ∞  (n r ax nr ++ 1 − ∑  ∞  ( 2 n r ax nr +  + ∑  ∞  2ax nr +  = 0
+                                                                               )
+                                                      )
+                        )( +−
+                                                   +
+                                                                            +
+                     +
+                                    n
+                                                                                 n
+                                                                                                 n
+                                                         n
+              n= 0                           n= 0            ∞      n= 0                  n= 0
+               ∞
+              ∑       (nr nr+  )( +−  ) 1 −  ( 2 nr+  ) 2 a x+     n  nr +  + ∑  (nr a x+  )  n  nr ++ 1  =  0
+              n= 0                                           n= 0
+              ∑  ∞      (nr nr   ) 3 +   2 a x nr +  + ∑  ∞  (nr  ) 1 a n− 1 x nr +  = 0
+                                                         +−
+                      +
+                         )( +−
+                                       
+                                          n
+              n= 0                                 n= 1
+              ( r −  2  3r +  2 a + 0 ∑  ∞      (nr nr  ) 3 +   2 a x nr +  + ∑  ∞  (nr  ) 1 a n− 1 x nr +  =  0
+                         )
+                                       +
+                                                                           +−
+                                          )( +−
+                                                         
+                                                           n
+                                n= 1                                n= 1
+                                ∞
+              ( r −  2  3r + 2 a +  )  0 ∑     ( ( nr nr  3 +  n  (n r  ) 1 a n− 1   x nr +  =  0
+                                        +
+                                                                  +−
+                                           )( +−
+                                                     ) ) 2 a +
+                                n= 1
+             For   n =
+                      0
+                     ( r −  2  3r +  2 a =  0  0
+                                )
+                     ⇒    r = 1, 2   √
 
 
-              y () x  a  ( 1+ =  2 x +  2  4  x +  4  8  x +  6  16  x +  8   )
-                      0     3     21      231      3465
-                                bx 1/2 ( 1+  1  x +  2  1  x +  4  1  x +  6  1  x +  8   )
-                        +
-                           0         2      8      48     384
+              ( ( nr nr+  )( +−  ) 3 +  ) 2 a +  (nr+−  ) 1 a n− 1  =  0
+                                     n
+                                 1
+                            +−
+              a = − (nr   nr     +−    ) 2  a n− 1
+               n
+                             )(nr
+                       +−
+                            1
+                 = −    1    a
+                     nr+−   2 n− 1
+                     r =  2
+                     a = −  1  a
+                      n     n  n− 1
 
-
-          Exercise
-
-                                                  2
-                                                               +
-          Find the Frobenius series solutions of   2x y′′ +  xy′ −  ( 12x 2 ) y =  0
-          Solution
-
-              1 2x y′′ +  2  1  xy′ −  1 ( 12x 2 ) y =  0
-                                   +
-              2         2      2
-              x y′′ +  2  1  xy′ −  1 ( 12x 2 ) y =  0
-                                +
-                     2      2
-              y′′ +  1  y′ −      1  +  1 y =      0
-                  2x       2x 2  
-
-
-             That implies to  ( ) =  1   and  ( ) = qx  −  1  −  1
-                             px
-                                    2x               2x 2
-              p =   lim   xp ( ) x
-               0   x→ 0
-
-                 =  lim   x  1
-                   x→ 0   2x
-                         1
-                 =  lim
-                   x→ 0  2
-                 =  1
-                   2
-
-                         2
-              q =  lim   xq ( ) x
-               0   x→ 0</code></pre>
+                 n   1  →=   a =  −  a
+                            1     0</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1520 - DE Solution</title>
+        <title>Page 1520 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1520 - DE Solution</div>
+        <div id="content-top1">Page 1520 - ODE Solution Manual</div>
         <div id="content-top2">P. 1520</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,88 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1506 | S O LU TI O N
 
 
+                                                       0
+             a)  ( ) 0y  =  y′′ ( ) 0 =  0&  y π  ( ) =  y π  ′′ ( ) =
+                 Let:  ( ) 0y′  =  c  y′  ( ) 0 =  c
+                              1            2
+                       4
+                               
+                 £        dy  +  4y £       wx  
+                                        ( )
+                                =
+                               
+                      dx 4             EI  
+                                    2
+                  4
+                     ( ) s y−
+                                                                ( ) =
+                 s Ys      3  ( ) 0 −  s y′ ( ) 0 −  sy′′ ( ) 0 −  y′′′ ( ) 0 +  4Ys  w 0 1
+                                                                      EI s
+                        )
+                 ( s +  4  4 Ys  w 0 1  +  c 1 s +  2  c
+                           ( ) =
+                                                2
+                                 EI s
+                         w               c  s 2   c
+                 Ys       0     1     +   1   +    2
+                   ( ) =
+                             (
+                         EI  ss 4  4 )  s + +  4  4  s +  4  4
+                           1     =  A  +  B (s −  ) 1 +  C  +  D (s +  ) 1 +  E
+                        (
+                          4
+                       ss +   4 )  s    (s −  ) 1  2  +  1  (s +  ) 1  2  +  1
+                            s 4       AB +    D =  0
+                                        +
+                            s 3     B C −   D +  E =  0
+                                      +
+                            s 2        2C −  2E =  0
 
-                        C ψ =   −  A →    C =   1 ( θ −  ψ −  )
-                              0                 2   0    0
-                        b d =   0
-                          =
-                         1
-                     t =
-                 θ  ( ) (   θ   ψ +  ) cosω  t  1 ( θ  ψ −  ) cos ω −  2  +  2K   t
-                   2     2   0    0          2   0    0
-
-
-                                                                 0
-             b)  θ  ′  ( ) 0 =  0, θ  ( ) 0 = θ  , θ  ′  ( ) 0 = θ  , θ  ( ) 0 =
-                  1           1        0    2       0     2
-                       ψ⇒  θ =
-                       0    0
-
-                 θ  ( ) t = θ  cos t    &     θ  ( ) t = θ  cosω t
-                               ω
-                  1       0                    2       0
-                 ∴ This means that both pendulums swing in the same direction (free) and the spring exerts no
-                 influence on the motion.
-
-
-             c)  θ  ′  ( ) 0 =  0, θ  ( ) 0 =  θ  , θ  ′  ( ) 0 =  −  θ  , θ  ( ) 0 =  0
-                  1           1       0     2         0    2
-                      ψ ⇒  =  −  θ
-                       0     0
-
-                                   2
-                                                                        2
-                 θ  ( ) t = θ  cos ω +  2K    t   &    θ  ( ) t = − θ  cos ω +  2K    t
-                  1       0                            2        0
-                 ∴ This means that both pendulums swing in the opposite directions, stretching and
-
-                 compressing the spring. The amplitude of both displacements is  θ . Which the spring is
-                                                                                 0
-                 stretched to its maximum.
-
-
-          Exercise
-
-          A projectile, such as the canon ball, has weight  w =  mg  and initial velocity v  that is tangent to its
-                                                                                    0
-          path of motion.
+                             s   −  2B +  2C +  2D +  2E =  0
+                            s 0          4A = 1
 
 
+                            A =  1 ,  B =  −  1 ,  C =  0,  D =  −  1 ,  E =  0
+                                4        8               8
 
+                                          
+                 £  −  1 {Ys  =    −  1       w 0 11  −  1  s −  1  −  1  s +  1      +  c 1 2s 2  +  c 2  4      
+                          ( )} £
+                                          
+                                          EI     4 s  8 (s −  ) 1  2  +  1  8  (s +  ) 1  2  1     2  s + +  4  4  4  s +  4  4   
 
-
-
-
-
-
-
-
-
-
-
-          If air resistance and all other forces except its weight are ignored, that motion of the projectile is
-          describe by the system of linear differential equations:</code></pre>
+                            (
+                                                       )
+                         w                                c
+                                              e
+                                  e
+                   ( ) =
+                                                                              x
+                 yx       0 1  −  1 x  cos x −  1 − x  cos x +  1  (sin coshx  x +  cos sinh  ) x
+                         EI  4   8          8              2
+                                 c
+                              +   2  (sin cosh x −  cos sinh  ) x
+                                        x
+                                                     x
+                                 4
+                         w                     c                             c
+                 y ( ) x =  0  (1 cos coshx−  ) x +  1  (sin coshx  x +  cos sinh  ) x +  2  (sin coshx  x −  cos sinh  ) x
+                                                                                                  x
+                                                                   x
+                         4EI                    2                             4
+                         w
+                           0
+                 y π  ( ) =  4EI  (1 coshπ  +  ) −  1 c  sinhπ  1 c 2  sinhπ +  = 0
+                                                       4
+                                           2 1
+                                            w
+                     2c  sinhπ   c  sinhπ −  =  0  (1 coshπ  +  )
+                       1          2         EI
+                      w
+                                           x
+                                                                             x
+                 y′ =   0  (sin coshx  x −  cos sinh  ) x +  c  cos cosh x +  x  1  c  sin sinh x
+                      4EI                             1              2  2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 636 - DE Solution</title>
+        <title>Page 636 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 636 - DE Solution</div>
+        <div id="content-top1">Page 636 - ODE Solution Manual</div>
         <div id="content-top2">P. 636</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>630 | S O LU TI O N
-
-
-                         E
-                          0  −  K =  I
-                         R          0
-                             E
-                         K =   0  −  I
-                              R     0
-
-                    E       E             )t
-              I ( ) t =  0  −  0  −   I   e − ( /RL
-                     R        R  0   
+    <pre style="white-space:pre-line"><code>630 | 1. 8 − S OL U T I ON
 
 
 
-          Exercise
+              0.01 dI  +=  sin100t            L dI  +  RI =  E () t
+                       I
+                  dt                            dt
+              dI  +  100I =  100sin100t
+              dt
 
-          For the given RL−circuit, wWhere  E =  E  sin t ω  is the impressed voltage.
-                                                  0
-                          I
-          Find the current  ( ) t  flowing in the circuit.
-          Solution
+                   ∫ 100dt
+                    e     =  e 100t
+
+                                                  ∫ 100sin100t  dt
+
+                             +       e 100t          − cos100t
+
+                                                      1
+                             −     100e 100t       − 100 sin100t
+                                     4 100t
+                             +     10 e
 
 
-              L  dI  +  RI =  E  sin tω
-                dt         0
-              dI  +  R  I =  E 0  sin tω
-              dt   L      L
+                                                                                    )
+                               )
+                 ∫  (100sin100te 100t dt =  ( cos100t +  sin100t )e 100t  −  ∫  (100sin100te 100t dt
+                                           −
+                                 )
+                 2 ∫ (100sin100te  100t dt =  ( cos100t +  sin100t )e 100t
+                                            −
 
-                      L ∫
-                      R dt
-                     e    =  e ( / R L )t
+                               )
+                                             −
+                 ∫ (100sin100te  100t dt =  1 ( cos100t +  sin100t )e 100t
+                                          2
+                           (
+                                                            )
+                          t
+                               −
+              I ( ) t =  e − 100 1 ( cos100t +  sin100t )e 100t  +  K
+                            2
+                   =  1 ( cos100t +  sin100t +  ) K e − 100t
+                        −
+                     2
+                         I  ( ) 0 =
+                               0
 
+                        0 =  1 ( ) 1−+  K
+                            2
+                        K  =  1
+                             2
 
-                                                  R
-                                              ∫ e ( / )Lt dt
-                                               L  ( /)Lt
-                                                   R
-                             +  sin tω         R  e
-                                              ( ) 2  ( / )Lt
-                                                L
-                                                      R
-                             −  ω  cos t        R   e
-                                       ω
+                                               e
+              I ( ) t =  1 ( cos100t−  +  sin100t ) +  1 − 100t
+                    2                        2
+             The voltage at the resistor:
 
-                             +  −  ω  2 sin t ω
+                 E   ( ) t =  RI
+                   R
 
-                 ∫  E L 0  (sin tω  )e ( / ) Lt dt =  E L 0 ( sin tω  L ω−  cos tω  ) e ( /) Lt  ω −  2  E L 0 L 2 2  (sin tω  )e ( /) Lt dt
-                                                                                   R ∫
-                                                                                                  R
-                                                                    R
-                                 R
-                                                       R
-                 E      LE ω  2                       E
-                                                                                 R
-                                              R
-                   0   1+  R ∫     (sin tω  )e ( / ) Lt dt =  0 ( sin t  L ω−  cos t ) e ( / ) Lt
-                                 
-                            0
-                                                               ω
-                                                                           ω
-                  L         2                          L          R
-                                
-                 ∫  E L 0  (sin tω  )e ( / )Lt dt =  R 2  2 L 0 ( sin tω  R ω−  cos tω  ) e ( /)Lt
-                                                      E
-                                                                               R
-                                 R
-                                                                  L
-                                          1 LE ω
-                                            +
-                                                 0</code></pre>
+                        =  1 ( sin100t −  cos100t +  e − 100t )
+                           2
+
+             The voltage at the inductor:
+
+                 E   ( ) t =  L dI
+                   L        dt</code></pre>
      	</div>
     
      </div>

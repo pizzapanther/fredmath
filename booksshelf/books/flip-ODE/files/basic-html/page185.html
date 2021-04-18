@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 185 - Differential Book</title>
+        <title>Page 185 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 185 - Differential Book</div>
+        <div id="content-top1">Page 185 - ODE Book</div>
         <div id="content-top2">P. 185</div>
      </div>
      <div id="content-middle">
@@ -152,55 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>170 | 2.3 - H a r m oni c  M o t i on
-
-        Example 4
-
-                                                                                        2
-                                                                                     /
-        A mass of 4  kg is attached to a spring with a spring constant  of  k = 169 kg s   and damping constant
-                                             y
-                    /
-         µ =  77.6 kg s .With initial values of  (0) 0.1 m=   and  (0) 1.3  /y′  =  ms . Find the general solution.
-        Solution
-                               t
-            my′′ +  µ y′ +  ky =  F ()
-            4y′′ +  77.6y′ +  169y =  0
-
-            y′′ +  19.4y′ +  42.25y =  0
-
-                               =
-            λ  2  19.4 +  λ +  42.25 0
-                λ= −  16.9, λ = −  2.5
-                 1           2
-
-            The general solution:
-
-            y () =  C e −  16.9t  +  C e −  2.5t
-              t
-                    1
-                                2
-                       =
-                   0.1 C e  −  16.9( 0)  +  C e −  2.5(  ) 0
-                                        2
-                          1
-                       =
-                   0.1 C +    C
-                          1    2
-            y′ =  −  16.9C e −  16.9t  −  2.5C e −  2.5t
-                        1              2
-                   1.3 =  −  16.9C e −  16.9 (0)  −  2.5C e −  2.5 (0)
-                                1                2
-                   1.3 =  −  16.9C −  1  2.5C 2
+    <pre style="white-space:pre-line"><code>172 | 2. 1 - D e f i ni t i on s  o f  S e c on d  a nd  H i gh e r  O r d e r  E qu a t i on s
 
 
-                0.1 C=   + C      
-                       1    2       →  C =   −  31  , C =  299
-            1.3 =  −  16.9C −  2.5C      1    288     2  1440
-                        1        2  
+          Example 2
 
-            y () =  t  −  31 −  e  16.9t  +  299 −  e  2.5t
-                    288          1440</code></pre>
+          Use the Wronskian to show that f  =  , x  f  = sin x  are linearly independence
+                                          1        2
+          Solution
+
+             The Wronskian is
+                          x  sin x
+                    ( ) =
+                 Wx
+                          1 cos x
+                                         0
+                        =  x cos x − sin x ≠
+             This function is not identically zero. Thus, the functions are linearly independent.
+
+
+          2.1-7  System Equations
+
+
+          A Planar System of first-order equations is a set of two first-order differential equations involving two
+          unknowns
+                 x′ =  f  (, , )
+                        tx
+                            y
+                       (, , )
+                 y′ =  gt  x  y
+          where  f and g are functions of the independent variable t and the unknown x and y.
+
+
+          2.1-8  Second Order Equations and Planar Systems
+
+
+                 y′′ =  ft  y  y′
+                        ( , ,  )
+
+          Let's re-write in first-order system:
+                 y′ =  v
+                          y
+                            v
+                        t
+                 v′ =  F (, , )
+
+                                 t
+                ()y′ +
+          y′′ +  pt    qt     F ()
+                        ()y =
+                               ()y
+          y′′ =  F () −  t  pt  qt
+                       ()y′ −
+                             ()y
+                      ()v −
+          v =  F () − ′  t  pt  qt
+                   y′ =  v
+                 
+                               ()v qt y
+                  v′ =  F () −  t  pt  −  ()</code></pre>
      	</div>
     
      </div>

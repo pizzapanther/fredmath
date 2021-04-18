@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1509 - DE Solution</title>
+        <title>Page 1509 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1509 - DE Solution</div>
+        <div id="content-top1">Page 1509 - ODE Solution Manual</div>
         <div id="content-top2">P. 1509</div>
      </div>
      <div id="content-middle">
@@ -152,79 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1495
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1495
+
+
+                 Exercise
+                                                                                        2
+                                                                                      d q      dq   1
+                                                                                                            ( )
+                 Consider a battery of constant voltage  E  that charges the capacitor.  L  dt 2  +  R  dt  +  C  q =  Et
+                                                        0
 
 
 
-                        ( s +  2  200s +  10 4 ) I 2  ( ) s =  12000
-                                                     s
-                            I  ( ) s =  12000
-                             2                2
-                                      ( ss + 100 )
 
 
-                        sI  ( ) s =  60  − 50  12,000
-                          1       s       ( ss + 100 ) 2
 
 
-                                    2
-                                                6 10 − ×
-                               =  60s + 12,000s − ×  5   6 10 5
-                                            ( ss + 100 ) 2
-
-                                    60s + 12,000
-                            I  ( ) s =
-                             1
-                                      ( ss + 100 ) 2
 
 
-                        I  ( ) s =  60s + 12,000  =  A  +  B  +  C
-                         1                 2    s   s + 100           2
-                                  ( s s + 100 )              (s + 100 )
 
-                                                               +
+                                                                        2
+                 Divide the given equation by L and define  2λ =  R   and ω =  1  .
+                                                                L           LC
+                                                                                                     E
+                    a)  Use the Laplace transform to show that the solution  ( )  of  q′′ +  2 q′ +  λ  ω  2 q =  0    subject to
+                                                                           qt
+                                                                                                     L
+                               0
+                        q ( ) 0 = ,  ( ) 0i  =  0 is
+                                                                                             
+                                    EC   1 e −  t λ   cosh λ  2  ω −  2 t +  λ  sinh λ  2  ω −  2 t  −  λ   ω &gt;
+                                     0                               2    2                  
+                                                                    λ    ω −                 
+                            qt      E C   1 e −  t λ (1 λ +  ) t                                        λ  ω =
+                                           −
+                             ( ) =
+                                   
+                                     0 
+                                                       
+                                                                                           
+                                     EC   1 e −  t λ   cos ω  2  λ −  2 t +  λ  sin ω  2  λ −  2 t  −        λ  ω &lt;
+                                     0                              2     2                
+                                                                   ω    λ −                
+                    b)  Use the Laplace transform to find the charge  ( ) t  in an RC series when  ( ) 0q  =  0 and
+                                                                    q
+                                            0
+                         Et    E e − kt ,  k &gt; . Consider two cases:  k ≠  1   and  k =  1
+                          ( ) =
+                                 0                                     RC           RC
+                 Solution
+                    a)  £  { q′′ +  2 q′ +  λ  ω  2 q £=  }        E   0    
+
+                                                    L     
+                                                                              0 1
+                          2
+                                                      ( ) q−
+                                                                                                     0
+                                                                                                         0
+                                                                       ( ) =
+                                       −
+                        s Qs        (0) q′ (0) 2λ  +  (sQs   (0) +  ) ω  2 Qs  E Ls      q ( ) 0 = 0, q′ ( ) =
+                            ( ) sq−
+                        ( s +  2  2sλω 2 ) Qs  E Ls
+                                                 0 1
+                                          () =
+                                  +
+                                E
+                          () =
+                        Qs       0         1
+                                L  ss + (  2  2sλω 2 )
+                                              +
+                                    1        =  A  +  Bs + C
+                             (  2         2 )  s    2          2
+                            s s    2sλ +  ω +      s   2sλ +  ω +
                                                   +
-                            As +  2  200As +  10,000A Bs +  2  100Bs Cs =  60s +  12,000
-                                    A B =   0                B = −  6
-                                       +
-                                                                   5
-                              
-                               200A +  100BC+   =  60  C =  60 −  240 120 = − 60
-                                                                  +
-                              
-                                                                  6
-                                10,000A = 12,000              A =
-                                                                  5
-                     £  −  1 { I  ( )} =  £  −  1       6 1  −  6  1  −  60      
-                               s
-                                            1    5 s  5 s + 100  (s + 100 )   2 
-
-                     i  ( ) t =  6  −  6 −  e  100t  −  60te −  100t
-                     1      5   5
-
-                    I  ( ) s =  12000   =  A  +  B    +     C
-                     2                2    s   s + 100          2
-                            s (s + 100 )                (s + 100 )
-
-                                          +
-                                                       +
-                    As +  2  200As +  10,000A Bs +  2  100Bs Cs =  12,000
-                            A B =  0               B = −  6
-                               +
-                                                         5
-                      
-                                                      +
-                       200A +  100BC+   =  0  C =  − 240 120 = − 120
-                      
-                                                        6
-                        10,000A = 12,000            A =
-                                                        5
-                     £   −  1 { I  ( )}  =  £   −  1        6 1  −  6  1  −  120      
-                               s
-                                            2    5 s  5 s + 100  (s + 100 )   2 
-
-                     i  ( ) t =  6  −  6 −  e  100t  −  120te −  100t
-                      2      5  5</code></pre>
+                                As +  2  2A s ω +  λ  2 A Bs +  2  Cs =  1</code></pre>
      	</div>
     
      </div>

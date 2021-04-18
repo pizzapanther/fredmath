@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 640 - DE Solution</title>
+        <title>Page 640 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 640 - DE Solution</div>
+        <div id="content-top1">Page 640 - ODE Solution Manual</div>
         <div id="content-top2">P. 640</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,63 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>634 | S O LU TI O N
-
-
-             b)  Consider the right node. The current is given by  I +  I . The current leaving the node is  I−
-                                                                 1    2                                   3
-                                                                 ( )
-                 . Hence the cursing through the node is  I +  I −− I  .
-                                                        1    2      3
-                 Based on Kirchhoff’s first law,  I +  I +  I =  0
-                                                 1   2    3
-             c)  In the capacitor   CV′ =  I
-                                      1    1
-                 In the resistor   V =  RI
-                                     2     2
-                 In the inductor   LI′ = V
-                                      3    3
-
-             d)  Based on part (a), V = V =  V . Based on part (b),
-                                    1    2    3
-                 CV′ +  1 V +  I =  0
-                    1   R  2    3
-                                        V
-                 It follows: CV′    I −  −  1  , LI′ =  =  V
-                               1     3   R      3    1
+    <pre style="white-space:pre-line"><code>634 | 1. 8 − S OL U T I ON
 
 
           Exercise
 
-          Consider the circuit. Use the method outlined to show that the current I through the inductor and the
-          voltage V across the capacitor satisfy the system of differential equations.
+                                                                           dQ    1
+          Solve the general initial value problem modeling the RC circuit     R  +  Q =  , E  Q ( ) 0 =  0
+                                                                            dt   C
+             Where E is a constant source of emf
 
-                                          L  dI  =  −  RI −  , V  C  dV  =  I −  V
-                                            dt      1          dt       R
-                                                                          2
+          Solution
+              dQ  +  1  Q =  E
+              dt    RC      R
+
+                     RC ∫  1  dt
+                    e     =  e  / t RC
+
+                 ∫  E  e  / t RC dt =  E  RCe  / t RC
+                                R
+                    R
+
+                               =  ECe  / t RC
+                                         )
+              Q ( ) t =  1  ( ECe  / t RC  − K
+                     e  / t RC
+
+                   =  EC −  Ke −  / t RC
+
+                       Q (t =  ) 0 =  EC −  K
+                       0 =  EC − K
+                       K =  EC
+
+
+                          −
+              Qt     EC ( 1 e −  / t RC )
+                ( ) =
+
+
+          Exercise
+
+          Solve the general initial value problem modeling the LR circuit   L  dI  +  RI =  , E  I ( ) 0 =  I
+                                                                          dt                    0
+             Where E is a constant source of emf
           Solution
 
-             let  I ,  I ,  I  and  I  be the current through the resistors, inductor, and capacitor, respectively.
-                  1   2   3       4
-             Assign V , V , V  and V  to be the corresponding voltage drops.
-                      1   2   3       4
-             Based on Kirchhoff’s second law, the net voltage drops, around each loop, satisfy
-                 V +  V +  V =  0, V +  V +  V =   0 and V −     V =   0
-                  1    3    4        1    3    2              4    2
+              dI  +  R  I =  E
+              dt   L     L
 
-             Applying Kirchhoff’s first law:
-                    Node a:     I −  ( I +  I  )  =  0                               b  I
-                                 1    2    4                                             3
-                    Node b:     I −  I =  0 →    I =  I
-                                 1   3            1    3                         V      V 3
-                    Node c:     I +  I −  I =  0 →    I +  I =  I         I 1     1
-                                 2    4   1            2    4    1       a                       c
+                     L ∫  R dt
 
-                     I +  I =  I                                                  V 2       I 2
-                      2    4    3
-                     I +  I −  I =  0                                            V
-                       2   4    3                                                 4         I 4
-
-             Using the current-voltage relations:
-
-                 V =  RI =   RI        V =  RI
-                  1    1 1    1 3       2     22</code></pre>
+                    e    =  e ( / R L )t
+                 ∫  E  e ( / )t dt =  EL  e ( / RL )t
+                        RL
+                    L
+                                  LR
+                                =  E  e ( /RL )t
+                                  R</code></pre>
      	</div>
     
      </div>

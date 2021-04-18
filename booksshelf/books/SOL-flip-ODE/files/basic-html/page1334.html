@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1334 - DE Solution</title>
+        <title>Page 1334 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1334 - DE Solution</div>
+        <div id="content-top1">Page 1334 - ODE Solution Manual</div>
         <div id="content-top2">P. 1334</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1320 | S O LU TI O N
 
 
-
-              ∫  0 ∞  sin3 e −−  ) 3 t dt =  ( −  1 cos3t −  1 (s −  ) 3 sin3 e −−  ) 3 t     ∞    −  (s − 9  ) 3  2 ∫  0 ∞  sin3 e −−  ) 3 t dt
-                                                             )
-                                                                                                   (s
-                                                                 (s
-                          (s
-                                                            t
-                      t
-                                                                                               t
-                                                9
-                                       3
-                                                                        0
-              (s −  ) 3  2  +  9 ∫  ∞ sin3  e −−  ) 3 t  1
-                                      (s
-                                  t
-                   9       0               dt =  3
-              ∫ 0 ∞ sin3 e −−  ) 3 t dt =  (s −  3 ) 3  2  +  9
-                          (s
-                      t
-
-
           Exercise
 
-          Use Definition of Laplace transform to show the Laplace transform of
-                 £ {cos t s =       s
-                          }( )
-                        ω
-                                  2
-                                 s +  ω 2
+          Use Definition of Laplace transform to find the Laplace transform of    ( )ft = t 2 cos2t
+
           Solution
 
+                     ∫ ∞ t 2    t  − st dt
+              F ( ) =  0   cos2  e
+                s
 
 
-              F ( ) s = ∫ 0 ∞ (cos t eω )  − st dt
+                                                                  t
+                                                            ∫ cos2  dt
+                                         2 −
+                          +             te  st               1 sin2t
+                                                             2
+                                    (      2 )  − st          1
+                          −          2t − st e              − 4 cos2t
+
+                                 (          22  )  − st
+                                         +
+                                    −
+                          +       2 4st s t e
+                                                    )
+                                                           ∞
+                                                               1
+                                                                                22
+                                                             −
+                                                                             +
+                                                                        −
+              F ( ) s =  (   1 t 2 sin 2t +  1 ( 2t −  st 2 ) cos2t e −   st    0 ∫ ∞ ( 2 4st s t  ) e −  st  cos t   2 dt
+                       2          4                           4
+                                                                   0    ∞
+                                                ∞
+                             ∞
+                                                                           2 −
+                                                                                     t
+                   =  0 −  1 ∫  e −  st cos2 dt +  t  ∫  st e −  st  cos2 dt −  t  s 2 ∫  t e  st  cos2 dt
+                         2  0                  0                    4   0
+                 s 2   ∞  2 −  st          1   ∞  −  st           ∞     −  st
+                                                                                  t
+                1+  4    ∫  t e  cos2 dt =  t  −  2 ∫  e  cos2 dt +  t  ∫  st e  cos2 dt
+                      0                       0                  0
+                                         ∫ cos2  dt
+                                               t
+
+                             e − st       1 sin2t
+                                          2
+
+                           −    se − st    − 1 cos2t
+                                           4
+                            2 −
+                           se    st
 
 
-                     ∫  cos t e −  st dt =  ω e  st  sin t ω  ω  s 2  e −  st  cos t ω −  ω  s 2 2 ∫  e −  st  cos t dt
-                                       1 −
-                          ω
-                                                                                   ω +
-
-
-                                             ∫ cos tω  dt
-
-                                              1
-                               +     e − st     ω sin t ω
-                                             −  1  cos tω
-                                −  − se − st     2
-                                               ω
-                                     2 −
-                               +    se   st
-
-
-                 s 2    −  st          1 −  st        s   −  st
-                                                                   ω
-                1−  2    ∫ e  cos t dt =  ω  ω e  sin t −  ω  2  e  cos t
-                 ω                                    ω 
-                 2
-                ω −  s 2   −  st         1 (        s      )  −  st
-                                                           ω −
-                                   ω
-                       
-                ω ∫       e   cos t dt =  ω  sin t ω  ω  cos t e
-                   2
-                      
-              ∫ e −  st  cos t dt =  ω  2 ω 2 s ω −  2  1 2  (ω  sin t −  s cos ω  ) t e −  st
-                                                 ω
-                        ω</code></pre>
+                        ∫  e −  st  cos2 dt =  t  ( 1 sin 2 −  1  s cos2t e −  st  −  s 4 2 ∫  e −  st  cos2 dt
+                                                            )
+                                                                                  t
+                                                   4
+                                           2
+                          2
+                         s +  4 ∫ e −  st  cos t   2 dt =  1 (2sin 2t − s cos2te −  st
+                                                                   )
+                           4                    4
+                        ∫  e −  st  cos t   2 dt =  s +  4 (2sin 2t − s cos2te −  st
+                                            1
+                                                                 )
+                                           2</code></pre>
      	</div>
     
      </div>

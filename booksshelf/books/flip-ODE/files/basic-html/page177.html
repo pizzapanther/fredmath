@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 177 - Differential Book</title>
+        <title>Page 177 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 177 - Differential Book</div>
+        <div id="content-top1">Page 177 - ODE Book</div>
         <div id="content-top2">P. 177</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>162 | 2.3 - H a r m oni c  M o t i on
-
-        Mathematical model:          my′′ =  −  ky cy′
-                                                −
-                                      y′′ +  c  y′ +  k  y =  0  ( ,  ,  c m k are  co stantsn  )
-                                          m      m
+    <pre style="white-space:pre-line"><code>164 | 1. 10 - A ut o nom ous   E q ua t i o ns   a n d  S t a bi l i t y
 
 
-        The equation for the motion of a vibrating spring is given by
-
-                                          t
-                       my′′ +  µ y′ +  ky =  F ()
-        Where the constant coefficients are:
-               m     mass
-               µ     damping constant
-               k     spring constant
-               F(t)  external force
+           1.10-3 Autonomous first- order DE
 
 
-        The differential equation that modeled simple RLC circuits is given by
-                   2
-                L d I  +  R  dI  +  1  I =  dE
-                  dt 2    dt   C     dt
-
-                                                                                 it
-                                                 qt
-        The charge on the capacitor is denoted by  ( )  and is related to the current  ( )  by i =  dq  , so
-                                                                                             dt
-                   2
-                  d q     dq    1
-                L     +  R   +   q =  E ( ) t
-                  dt 2    dt   C
-        If the electrical vibrations of a circuit are said to be free, when  ( ) 0E t =
-
-                                                       2
-                                               − R ±  R −  4L
-                L λ  2  R +  λ +  1  =  0 →  λ  =          C
-                            C            1,2         2L
-
-                       If   R −  2  4L  &gt;  0   overdamped
-                                C
-
-                       If   R −  2  4L  =  0   critically damped
-                                C
-
-                       If   R −  2  4L  &lt;  0    underdamped
-                                C
+                             y
+                     
+           A system y =  rx −−   xz = 0 , which does not explicitly contain the independent variable  t  is
+           called an autonomous system. Otherwise, the system is called non-autonomous system.
 
 
-        Comparing the Motion to electrical systems are almost identical.
+                                       Autonomous           Non−Autonomous
 
-        Combine the two systems:
+                                       x′ =  sin x          x′ = sin ( ) xt
+
+                                             2
+                                                                  2
+                                                                     t
+                                       y′ =  y + 1           y′ =  y +
+                                                                 2
+                                             z
+                                       z′ =  e              z′ =  t
 
 
-            y′′ +  µ y′ +  k  y =  1  Ft
-                                  ()
-                 m      m     m
-              2
-            d I  +  R dI  +  1  I =  1 dE
-             dt 2  L dt   LC     L dt</code></pre>
+           1.10-4        Equilibrium Points & Solutions
+
+
+                         0
+                   xt ′ () = =  ( f x  ) ⇒  x  is an  equilibrium point and also, called a critical point.
+                                 0       0
+                   xt ′ ( ) =  x  called equilibrium  solution
+                           0
+
+           From these equilibrium points, we can determine the stability of the system.
+               •   An equilibrium point is stable if all nearby solutions stay nearby.
+
+
+
+
+
+
+
+
+
+               •  An equilibrium point is asymptotically stable if all nearby solutions not only stay nearby,
+                  but also tend to the equilibrium point. An equilibrium point is stable if all nearby solutions.
+
+
+
+
+
+
+
+
+
+
+
+                      ( )
+             1.  If  fx 0  &lt;  0, then f is decreasing at  x and  x is asymptotically stable.
+                     ′
+                                                       0
+                                                              0
+                     ( )
+                     ′
+             2.  If  fx 0  &gt; 0 , then f is increasing at  x and  x is unstable.
+                                                      0
+                                                              0
+                      ( )
+             3.  If  fx 0  =  0, no conclusion can be drawn.
+                     ′</code></pre>
      	</div>
     
      </div>

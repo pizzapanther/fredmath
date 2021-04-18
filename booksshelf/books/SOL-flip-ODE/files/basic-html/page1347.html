@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1347 - DE Solution</title>
+        <title>Page 1347 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1347 - DE Solution</div>
+        <div id="content-top1">Page 1347 - ODE Solution Manual</div>
         <div id="content-top2">P. 1347</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,59 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1333
 
 
+
+                                                 =  1   2s
+                                                       2
+                                                   ω    s + ω 2
+                     ∫ 0 ∞    t  sin t eω  − st dt = ( s + ω 2 ) 2
+                                             2 s
+                                            2
+                                               ω
+
+                       { sint £  t ω }( ) s =  2 s     √
+                                          ω
+                                     ( s + ω 2 ) 2
+                                       2
+
+
+
                  Exercise
 
                  Use Definition of Laplace transform to show the Laplace transform of
-                        £  { e at  cos t ω } ( ) s =  sa
-                                                  −
-                                            (sa  ) +  2  ω 2
-                                              −
+
+                        £  {cos ( t ω  φ +  )}( ) s =  s cos ( ) φ  ω −  sin ( ) φ
+                                                   2
+                                                  s + ω 2
                  Solution
 
-
-                     £ { e at  cos t ω  } ( ) s = ∫ 0 ∞ e at cos t ω   e − st dt
-
+                     £ {cos ( t ω  φ +  )}( ) s =  ∫ ∞ cos ( t ω  φ +  )  e − st dt
 
 
 
-                                                      sa
-                                      = ∫ ∞ cos t eω  ( −−  )t  dt
+                                            0
 
+                                             ∫ cos ( tω  φ +  )  dt
+                               +      − st    1  sin ( tω  ) φ +
+                                     e       ω
+                                −  −   − st  −  1  cos ( tω  ) φ +
+                                     se        ω 2
+                               +    se   st
+                                     2 −
 
-                                          0
-                                                               ∫ cos t ω  dt
+                       ∞                                                            ∞     2   ∞
+                                                                             
+                         cos ( t ω  φ +  ) e −  st dt =   ∫      1  sin ( t ω  ) φ +  −  s 2  cos ( t ω  φ +  ) e −  st    0 ∫  −  s 2  cos ( t ω  φ +  ) e −  st dt
+                                                                             
+                       0                       ω              ω                        ω    0
+                      2
+                     s +  ω 2   ∞ cos ( t ω  φ +  )  e − st dt =  −  1  sin ( ) φ  +  ω ∫  s  cos ( ) φ
+                       ω  2    0                        ω           2
 
-                                     +        e −−   )t         1  sin t ω
-                                                (sa
-                                                                ω
-                                         −  (sa  )  e −−  )t  −  1  cos tω
-                                                    (sa
-                                             −
-                                     −                          ω 2
-                                                         )t
-                                                    (sa
-                                                   e
-                                     +    (sa  ) 2 −−
-                                            −
-
-                               ∞                              (sa   )                ∞
-                                                                  −
-                                                                                (sa
-                                         (sa
-                                                     1
-                                cos t eω  −−  )t  dt = ∫    ω sin t ω  2  cos t eω −    −−  )t
-                              0                                  ω                    0
-                                                      (sa   ) 2  ∞        −−    )t
-                                                        −
-                                                                           (sa
-                                                   −    ω ∫     0  cosω t e       dt
-                                                          2
-                            (sa−  ) +  2  ω 2  ∞ cos t e  ( −−  )t  dt =  (sa−  ω ∫  )
-                                                        sa
-                                                 ω
-                                 ω  2      0                         2
-                            ∫  ∞ cos t eω  ( −−  )t  dt =  (sa ) +  2  ) ω 2
-                                                       (sa−
-                                          sa
-                                                      −
-
-                              0
-                     £ { e at  cos t ω } ( ) s =  sa        √
-                                              −
-                                        (s a  ) +  2  ω 2
-                                           −</code></pre>
+                                                    =  1  ( coss  φω sinφ )
+                                                                 −
+                                                      ω 2
+                     ∫ 0 ∞ cos ( t ω +  φ )  e − st dt =  s + 1 ω 2  ( cosφω−  s  sinφ )
+                                               2</code></pre>
      	</div>
     
      </div>

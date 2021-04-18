@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1669 - DE Solution</title>
+        <title>Page 1669 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1669 - DE Solution</div>
+        <div id="content-top1">Page 1669 - ODE Solution Manual</div>
         <div id="content-top2">P. 1669</div>
      </div>
      <div id="content-middle">
@@ -155,89 +155,94 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 6 − Pl an ar  S y s t em s  | 1655
 
 
-                 Exercise
-                                                                       ′
-                                                                        yt     −  y              1 
-                                                                        ( ) 3y=
-                 Find the general solution of the system  y′ =  Ay      1      1    2     y (0) =    
-                                                                         t
-                                                                     y′ 2  ( ) 5y=  1  − 3y 2    − 1 
-                                                                    
-                 Solution
-                           3 − 1
-                     A =       
-                           5 − 3 
-
+                                              2
+                             = 12 2λ−   6λ+ λ +   4
                                  −
-                               3 λ      −  1
-                     A λ =  I
-                       −
-                                 5    −−
-                                       3 λ
+                             = λ −  8λ + 16  = 0
                                 2
-                             =  λ −  4 =
-                                        0
-                    Thus, the eigenvalues are: λ   = ± 2
-                                                1,2
-                    For λ     −  2  ⇒  ( A λ =  −  IV = )  0
-                          1                  1   1
-                                   x
-                                         0
-                          5   − 1   
-                                      =
-                                         →  5 =  x  y
-                                   y
-                                         0
-                         5   − 1    
-                                   5 
-                        ⇒     V =  
-                              1  
-                                  1
-                    For λ     2    ⇒  ( A λ =  −  IV = )  0
-                          2                 2   2
-                                         0
-                                   x
-                         1   − 1   
-                                      =
-                                         →   x =  y
-                                         0
-                                   y
-                         5   − 5    
-                                  1  
-                        ⇒   V    =   
-                             2    
-                                  1
-                                5    − 2t  1    2t
-                     y ( ) C 1   e   + C 2    e
-                       t =
-                               1
-                                             1
-                                             
-                               
-                                     5      1     1 
-                          y ( ) 0 =  C 1   +  C 2     − 1 
-                                                 =
-                                              1
-                                     1
-                                             
-                                                 
-                                                       
-                                                   
-                                    
-                           5C +   1  C =  2  1
-                          
-                            C +  1  C =  2  −  1
-                                    51              1   1           5   1
-                                ∆=       =  4  ∆ =       =  2  ∆ =         = − 6
-                                    1 1        1   −  11        2   1   −  1
-                           C  =  1 , C = −  3
-                             1   2     2    2
-                                           1  
-                               5
-                     y ( ) t =  1    e − 2t  −  3   e 2t
-                            2 1         2 1
-                              
-                                           </code></pre>
+
+                    Thus, the eigenvalues are: λ   λ =  =  4
+                                                1    2
+
+                    For λ =  4   ⇒  ( A −  4IV = )  1  0
+
+                                    x
+                         − 2   4     0
+                                   =  
+                                          0
+                                    y
+                          − 1  2     
+                             −   2x +  4y =  0
+                                           x =    2
+                                           ⇒
+                                                    y
+                               x
+                              −+  2y =  0
+                                                 2 
+                        The eigenvector is: V = 
+                                            1   
+                                                 1
+                                         2
+                        ⇒     y t =  1 ()  e 4t 
+                                       
+                                         1
+                                       
+                    For the second eigenvector V      ⇒  ( A −  4IV = )  V
+                                                 2                2    1
+                                    x
+                         − 2   4     2
+                                   =  
+                                          1
+                                    y
+                          − 1  2     
+                             −   2x +  4y =  2
+                                           ⇒   if y =  0 ⇒  x =  −  1
+                                x
+                              −+  2y = 1
+                                                   − 1
+                        The eigenvector is: V =     
+                                             2     0  
+
+
+                        The solution is:  y  () t =  e 4t ( V +  V t  )
+                                          2           2     1
+                                                          2  −
+                                          =  e 4t       1   + t  
+                                                         
+                                                    0      1
+
+                    Therefore, the final solution can be written as:  ()y t =  C y  () C y  ()
+                                                                                +
+                                                                              t
+                                                                                         t
+                                                                          11        2 2
+                                                         1  
+                                                
+                     y () t =  C e −  2t  1    +  C e −  2t  − 1 +  t    
+                                                 
+                                                    
+                             1         2         0       1
+                                   1
+                                                        2 
+                                    2 
+                         =  e 4t      C    +  C   −  1 +  C t  
+                                                       
+                                            
+                                                
+                                 1     2    0    2    1
+                                    1
+                                       2
+                                              − 1
+                            y (0 ) C    +  C    
+                                 =
+                                    1      2    0
+                                       1
+                                                  
+                             3      2C − C   2
+                                      1
+                               =          
+                             1
+                                   C 1   </code></pre>
      	</div>
     
      </div>

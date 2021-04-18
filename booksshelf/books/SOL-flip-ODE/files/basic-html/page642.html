@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 642 - DE Solution</title>
+        <title>Page 642 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 642 - DE Solution</div>
+        <div id="content-top1">Page 642 - ODE Solution Manual</div>
         <div id="content-top2">P. 642</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>636 | S O LU TI O N
+    <pre style="white-space:pre-line"><code>636 | 1. 8 − S OL U T I ON
 
 
-                    dQ        1
-                 Q CV     = −  RC  dt
-                    −
-                 ∫  Q CV    = − ∫  RC  dt
-                      dQ
-                                   1
-                      −
+                         E
+                          0  −  K =  I
+                         R          0
+                             E
+                         K =   0  −  I
+                              R     0
 
-                 ln Q CV =    −  t  +  A
-                      −
-                                C R
-                                  +
-                 Q CV =    e −  / t CR A
-                   −
-                 Q ( ) t =  De −  / t CR  +  CV
-
-                              0
-                       Q ( ) 0 =
-
-                       0 =  De − 0  + CV
-                       D = − CV
+                    E       E        − ( /RL )t
+              I ( ) t =  R 0  −    R 0  −   I   0   e
+                                   
 
 
-                 Q =  −  CVe −  / t CR  +  CV
-                   ( ) =
-                              −
-                 Qt     CV  ( 1 e −  / t CR )
-                                     (
-                        ( )
-             b)  lim Q t =   CV  lim 1 e   −  / t CR )
-                                        −
-                 t→∞             t→∞
-                                      )
-                           =  CV (10                         lim e −  / t CR  =  lim  1  →  1  =  0
-                                   −
-                                                            t→∞           t→∞  e  / t CR  ∞
-                           = CV
+          Exercise
 
-                               dQ    Q
-                                              ( )
-             c)  In this case,  R  +   =  0 , Q t  =  CV
-                                dt   C          1
-                 dQ  = −  Q
-                  dt     CR
-
-                 ∫  dQ  = − CR ∫  dt
-                            1
-                    Q
+          For the given RL−circuit, wWhere  E =  E  sin t ω  is the impressed voltage.
+                                                  0
+                          I
+          Find the current  ( ) t  flowing in the circuit.
+          Solution
 
 
-                 ln Q = −  t  +  A
-                          C R
-                 The solution is Q =  Ee −  / t CR
+              L  dI  +  RI =  E  sin tω
+                dt         0
+              dI  +  R  I =  E 0  sin tω
+              dt   L      L
 
-                       ( )
-                 So, Q t 1  =  Ee − 1 / t CR  =  CV
+                      L ∫
+                      R dt
+                     e    =  e ( / R L )t
 
-                      E = CVe t 1 /CR
 
-                                  e
-                 Q ( ) t =  CVe 1 / t CR −  / t CR
+                                                  R
+                                              ∫ e ( / )Lt dt
+                                               L  ( / )Lt
+                                                   R
+                             +  sin tω         R  e
+                                              ( ) 2  ( / )Lt
+                                                L
+                                                      R
+                             −  ω  cos t        R   e
+                                       ω
 
-                              1
-                       = CVe (t t −  )/CR
-                              (
-                               t t
-                             −−    ) /CR
-                       = CVe     1         for t ≥  t
-                                                    1</code></pre>
+                             +  −  ω  2 sin t ω
+
+                 ∫  E L 0  (sin tω  )e ( / )Lt dt =  E L 0 ( sin tω  L ω−  cos tω  ) e ( / )Lt  ω −  2  E L 0 L 2 2  (sin tω  )e ( / )Lt dt
+                                                                                   R ∫
+                                                                    R
+                                                                                                  R
+                                 R
+                                                       R
+                 E      LE ω  2                       E
+                                                                                 R
+                                              R
+                   0   1+  R ∫     (sin tω  )e ( / )Lt dt =  0 ( sin t  L ω−  cos t ) e ( /)Lt
+                                 
+                            0
+                                                                           ω
+                                                               ω
+                  L         2                          L          R
+                                
+                 ∫  E L 0  (sin tω  )e ( / )Lt dt =  R 2  2 L 0 ( sin tω  R ω−  cos tω  ) e ( /)Lt
+                                                      E
+                                                                               R
+                                 R
+                                                                  L
+                                          1 LE ω
+                                            +
+                                                 0</code></pre>
      	</div>
     
      </div>

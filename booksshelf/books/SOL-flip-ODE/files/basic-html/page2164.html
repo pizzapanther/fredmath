@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2164 - DE Solution</title>
+        <title>Page 2164 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2164 - DE Solution</div>
+        <div id="content-top1">Page 2164 - ODE Solution Manual</div>
         <div id="content-top2">P. 2164</div>
      </div>
      <div id="content-middle">
@@ -155,92 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2146 | S O LU TI O N
 
 
-                   ∞
-                 ∑        nr
-                           +
-              y =     ax
-                       n
-                  n= 0
-                   ∞
-                  ∑              nr +− 1
-                            )
-                         +
-              y′ =    (n ra x
-                              n
-                  n= 0
-                    ∞
-                  ∑                        nr +− 2
-                            )( +−
-              y′′ =    (nr nr         ) 1 a x
-                         +
-                                         n
-                   n= 0
-                         ( +
-             18x y′′ +  2  3xx  ) 5 y′ −  (10x +  ) 1 y =  0
-                    ∞                                           ∞
-                                                       2
-                                                                         )
-                         +
-                                                                      +
-                            )( +−
-             18x 2 ∑   (nr nr         ) 1 a x nr +− 2  + ( 3x + 15x ) ∑  (nr a x nr +− 1
-                                         n
-                                                                           n
-                   n= 0                                        n= 0
-                                     ∞
-                                    ∑       nr +
-                                  −  (10x +  ) 1  ax  =  0
-                                          n
-                                    n= 0
-              ∑  ∞  18 (nr nr       ) 1 a x nr +  + ∑  ∞  ( 3 nr a x nr ++ 1 + ∑  ∞  15 (nr a x nr +
-                                                          )
-                                                                                   )
-                          )( +−
-                                                       +
-                       +
-                                                                                +
-                                                                                      n
-                                                            n
-                                      n
-              n= 0                             n= 0                    n= 0
-                                   ∞                 ∞
-                                 ∑          nr ++ 1  ∑      nr +
-                                            −  10ax  −  ax       =  0
-                                                          n
-                                         n
-                                  n= 0              n= 0
-              ∑  ∞      18 (nr nr  ) 1 + 15 (nr −   +  ) 1 a x nr  + ∑  ∞  (3n + 3r − 10 )a x nr++ 1  =  0
-                                                          +
-                        +
-                           )( +−
-                                                    
-                                                                                  n
-                                                      n
-              n= 0                                             n= 0
-              ∑  ∞    (n r+   )(18n +  18r −  ) 3 −  1 ax nr  +  ∑  ∞  (3n +  3r −  13 )a n− 1 x nr  =  0
-                                                                               +
-                                                 +
-                                           
-                                           
-                                             n
-              n= 0                                     n= 1
-                                     ∞                                        ∞
-                              0 ∑  r                                  nr +  ∑                       n r +
-                                                                 
-               r ( ( 18r −  3 ) ) 1 a x−  +     (n r+  )(18n +  18r −  ) 3 −  1 ax  +  (3n +  3r −  13 )a n− 1 x  =  0
-                                                                 
-                                                                    n
-                                    n= 1                                     n= 1
-                                     ∞
-                              0 ∑                                                          nr +
-                                r
-                                             +
-               r ( ( 18r −  3 −  ) ) 1 a  x +    ( ( nr )(18n +  18r −  3 −  ) ) 1 a +  n  (3n +  3r −  13 )a n− 1 x  =  0
-                                    n= 1
-             For   n =
-                      0
-                                  )
-                     ( 18r −  2  3r −  1 a =  0  0</code></pre>
+
+                     r =  1
+                         2
+                     a =      1     a
+                      n   n (6n +  ) 7  n− 2
+
+
+                 n = 2 →   a =   1  a                       n   3 →=  a =   1  a =  0
+                            2   38  0                                  3   75  1
+                 n   4 →=  a =   1  a =     1   a           n   5 →=  a =   1  a =  0
+                            4   124   2   4,712  0                     5   185  3
+
+                 n   6 →=  a =   1  a =       1     a       n = 7 →   a =  0
+                            6   258   4  1,215,696   0                 7
+                                                                       
+                                                                            
+                                 
+              y  () =  x  ax 1/2     1+  1  x +  2  1  x +  4  1  x +  6       
+               1       0        38      4,712     1,215,696        
+                          2
+                     r = −
+                          3
+                     b =      1    b
+                      n   n (6n −  ) 7  n− 2
+
+
+                 n =  2 →  b =   1  b                       n   3 →=  b =   1  b =  0
+                            2   10  0                                  3   33  1
+                 n   4 →=  b =   1  b =  1  b               n = 5 →   b =  0
+                            4   68  2   680  0                         5
+                 n   6 →=  b =   1  b =      1   b          n = 7 →   b =  0
+                            6   174  4   118,320   0                   7
+
+                                                                         
+                                 
+
+                  x =
+              y  () bx    − 2/3    1+  1  x +  2  1  x +  4  1  x +  6     
+               2       0          10      680     118,320         
+
+
+              yx    a x 1/2     1+  x 2  +  x 4  +  x 6  +      +  bx − 2/3     1+  x 2  +  x 4  +  x 6  +      
+               () =
+                      0         38   4,712   1,215,696         0           10   680  118,320
+                                                                                              
+
+
+          Exercise
+
+          Find the Frobenius series solutions of   xy′′ +  y′ +  2y =  0
+
+          Solution
+
+              x ×  xy′′ +  y′ +  2y =  0
+
+              x y′′ + 2  xy′ +  2xy =  0
+
+              y′′ +  1  y′ +  2  y =  0
+                  x     x
+                                           qx
+             That implies to  ( ) =  1   and  ( ) =  2  .
+                             px
+                                    x              x</code></pre>
      	</div>
     
      </div>

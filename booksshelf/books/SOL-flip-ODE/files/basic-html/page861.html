@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 861 - DE Solution</title>
+        <title>Page 861 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 861 - DE Solution</div>
+        <div id="content-top1">Page 861 - ODE Solution Manual</div>
         <div id="content-top2">P. 861</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 3 − H a r mo n i c  M o tio n  | 851
 
 
-
-                            e  t −  /10  =  4
-                                     5
-                                      4
-                            t = − 10ln
-                                      5
-                              ≈  2.2314
-
-                            The farthest distance to the right of the mass is:
-
-                                x t =  (  10ln  4 ) = −  −  50e 5ln 4/5  +  50e 4ln 4/5
-                                            5
-
-                                                       5      4  
-                                              =  50 −    ( ) ( )   4  +  4
-                                                     5      5   
-
-                                                      4
-                                                           4
-                                                   4
-                                              =  50 ( ) ( )
-                                                        1−
-                                                           5
-                                                   5
-                                                  ( ) 4
-                                                   4
-                                              = 10  5     =  4.096
-
-
                  Exercise
 
-                 Suppose that the mass in a mass−spring−dashpot system with  m =  25, c = 10, and k = 226 is set in
-
-                                            x′
+                                                                           x
+                 If it is underdamped, write the position function in the form  ( ) t =  Ce − pt  cos ω  (  t α −  ) .
+                                                                                   1           1     1
+                                                          ut =
+                 Also find the undamped position function  ( ) C  0  cos ω  (  0 t α  −  0 )  that would result if the mass on
+                 the spring were set in motion with the same initial position and velocity, but with the dashpot
+                                     0
+                 disconnected (so  c = ). Then, construct a figure that illustrates the effect of damping by comparing
                               x
-                 motion with  ( ) 0 =  20 and  ( ) 0 =  41
-                                                  x
-                    a)  Find the position function  ( ) t  and graph the function
-                    b)  Find the pseudoperiod of the oscillations and the equations of the “envelope curves” that are
-                        dashed.
+                                        ut
+                                                                                             4
+                 the graphs of  ( ) t  and  ( )      m =  2, c = 16, k =  40; x =   5, v =
+                                                                                0        0
                  Solution
+                    With damping motion
+                     2x′′ +  16x′ +  40x =  0        mx′′ +  cx′ +  kx =  0
 
-                    a)  25x′′ +  10x′ +  226x =  0          mx′′ +  cx′ +  kx =  0
-
-                        The characteristic equation: 25λ      2  10 +  λ +  226 =  0
-
-                                   ±
-                        λ    =  −  10 150 i
-                          1,2      50
-                                 1
+                        λ  2  8 +  λ +  20 0
+                                     =
                                      i
-                             = − ±  3
-                                 5
-                                                         )
-                         x ( ) t =  e  t −  /5 ( C 1  cos3t + C 2  sin3t
+                        λ    = − 42
+                                  ±
+                          1,2
+                     x ( ) t =  e − 4t  ( cos2t +  B sin 2t )
+                                 A
+                            x ( ) 0  =  A =  5
 
-                            x ( ) 0 = C =  20
-                                    1
-                                                                                     )
-                         xt ′ ( ) e=  t −  /5 ( −  1 C 1  cos3t −  1 C 2  sin3t − 3C 1 sin3t +  3C 2  cos3t
-                                        5
-                                                    5
-                            x′ ( ) 0 =  −  1 C +  3C = 41
-                                     5  1      2
-                            C   = 15
-                              2</code></pre>
+                     xt ′ ( ) ( 4 cos2t +− 4 sin 2t − 2 sin 2t +  2 cos2t )e − 4t
+                          = −
+                                                      A
+                                A
+                                                                B
+                                            B
+                            x′ ( ) 0 =  −  4A +  2B =  4
+                            B  = 12
+                             +
+                     A =   25 144
+                      = 13
+                              ( )
+                     φ =  tan − 1 12
+                                5
+                      ≈ 1.176
+
+                     x ( ) t =  e − 4t  (5cos2t + 12sin 2t )
+
+                         = 12 e − 4t  cos (2t − 1.176 )   (Overdamped motion)
+
+
+
+                    Without damping  (c =     ) 0
+                     2x′′ +  40x =  0                mx′′ +  kx =  0
+
+
+                                =
+                        λ +  2  20 0
+                        λ    = ± 2 5  i
+                          1,2
+                                 (
+                                                      )
+                                               (
+                                       )
+                                                     t
+                     ut     A cos 2 5 t +  B sin 2 5
+                      ( ) =
+                            u ( ) 0  =  A =  5</code></pre>
      	</div>
     
      </div>

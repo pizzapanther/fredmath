@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 212 - DE Solution</title>
+        <title>Page 212 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 212 - DE Solution</div>
+        <div id="content-top1">Page 212 - ODE Solution Manual</div>
         <div id="content-top2">P. 212</div>
      </div>
      <div id="content-middle">
@@ -168,18 +168,17 @@ function MM_swapImage() { //v3.0
                                                                                       2
           influence of gravity. Assume the gravitational force constant, with  g =  9.8  m/s , and the force due to
           air resistance is proportional to the velocity of the object with proportionality constant
-          κ = 50 N-sec/m . Determine when the object will hit the ground.
 
+          κ = 50 N-sec/m . Determine when the object will hit the ground.
           Solution
 
              By Newton’s second law:
 
-                            v
-                         −
-              m dv  =  mg κ
+              m dv  =  mg κ−  v
                 dt
               m    dv    = − dt
                 κ v − mg
+
                     ( v −
               m ∫  d κ    mg )  = − ∫  dt
               κ     κ  v −  mg
@@ -190,8 +189,8 @@ function MM_swapImage() { //v3.0
               κ                    1
              κ v −  mg =  Ce −  t κ /m
 
-                                                                   0
              Given:   m =  5, g =  9.8, κ =  50, v ( ) 0 =  0, x ( ) 0 =
+                                                                   0
 
                        e
               vt    C −    t κ /m  +  ( 5 9.8 )
@@ -202,8 +201,8 @@ function MM_swapImage() { //v3.0
                     50
                                0
                         v ( ) 0 =
-                                  =
                          C  +  0.98 0
+                                  =
                          50
                            =
                         C −   49
@@ -211,12 +210,12 @@ function MM_swapImage() { //v3.0
               vt    −  0.98e − 10t  +  0.98
                ( ) =
 
-
-              x ( ) t =  0.98 ∫ ( 1 e−  − 10t ) dt
-
+              x ( ) t =  0.98 ∫ ( 1 e − 10t ) dt
+                            −
 
                    = 0.98t + 0.098e − 10t  +  C
                                            2
+
                                 0
                          x ( ) 0 =
                         C   = − 0.098

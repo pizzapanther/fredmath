@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2170 - DE Solution</title>
+        <title>Page 2170 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2170 - DE Solution</div>
+        <div id="content-top1">Page 2170 - ODE Solution Manual</div>
         <div id="content-top2">P. 2170</div>
      </div>
      <div id="content-middle">
@@ -155,97 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2152 | S O LU TI O N
 
 
-                   ∞
-                  ∑              nr +− 1
-                            )
-              y′ =    (n ra x
-                         +
-                              n
-                  n= 0
+                        ∞                                                       ∞
+                                      n
+              y  () x =  x ∑   1     x                              y  ( ) x =  x r 1 ∑ ax n  ( a = 1 )
+               1              ( ! nn +  ) 1 !                        1               n       0
+                        n= 1                                                   n= 0
+                       ∞
+                      ∑       1      n+ 1
+                    =        ( ! nn +  ) 1 ! x
+
+                      n= 1
+
+                                 ∞
+                                        n
+              y  ( ) x = α y 1 ∑    dx
+                          ln x +
+               2                      n
+                                n= 0
+                                    ∞
+                                                     )
+              y  ( ) x = α y  ( )ln x + ∑ dx n  ( d = 1
+                           x
+               2         1              n        0
+                                   n= ∞
+                                     0
+
+              y′   α y′ =  ln x +  α y +  1 ∑ nd x n− 1
+               2      1      x             n
+                                    n= 0
+              xy′′ −  y =  0
+                2    2
+                                  ∞            ′            ∞       
+              x α    y′  ln x +  α y +  1 ∑  ndx n− 1  −    α  y  ln x +  ∑  dx n   =  0
+                   1     x            n             1        n     
+                                 n= 0                      n= 0     
+
+               (          α   1 ∑  ) ′  ∞           n− 2            ∑  ∞    n
+              x α  y′ 1  ln x +  x  y  +  x  ( n n −  ) 1 dx  −  α  y 1 ln x −  dx =  n  0
+                                                 n
+                                    n= 0                            n= 0
+
+                                                                ∞                    ∞
+                         α       α      α                                      1          n
+              x α    y′′  ln x +  y′ −  y +  y′ −    α  y  ( )lnx  x +  ∑  ( n n −  ) 1 dx n−  −  ∑  dx =  0
+                  1       x  1   x 2  1  x  1     1                       n             n
+                                                               n= 0                 n= 0
+
+               (       1   ) (           )      ∑  ∞           1 ∑  n  ∞      n
+             α  2y′ −  1  x  y 1  +  α  xy′′ −  1  y 1  ln x +  ( n n +  ) 1 d n+  x −  d x =  n  0
+                                                n= 0                  n= 0
+
+             Since:  xy′′ −  y =  0
+                      1    1
+                       ∞
+              y  ( ) x = ∑    1     x n+ 1
+               1             ( ! nn +  ) 1 !
+                       n= 1
                     ∞
-                  ∑                        nr +− 2
-                            )( +−
-                         +
-              y′′ =    (nr nr         ) 1 a x
-                                         n
-                   n= 0
-                                          
-                                 +
-              x (1 x y′′ +   −  )    c − (a b +  ) 1 x y′ − aby = 0
-                                          
-                       ∞                                                 ∞
-              ( x x 2 ) ∑  (nr nr+  )( +−  ) 1 a x nr +− 2  +     c − (a b+ +  ) 1 x    ∑  (nr a x+  )  n  nr +− 1
-                −
-                                            n
-                      n= 0                                              n= 0
-                                      ∞
-                                     ∑        nr +
-                                              ab  a x  =  0
-                                 −
-                                           n
-                                     n= 0
-               ∞                                ∞                             ∞
-              ∑   (nr nr         ) 1 a x nr +− 1 − ∑  (nr nr      ) 1 a x nr +  + ∑  ( c nr a x nr +− 1
-                                                                                         )
-                                                                                      +
-                                                     +
-                                                         )( +−
-                     +
-                        )( +−
-                                    n
-                                                                     n
-                                                                                           n
-              n= 0                             n= 0                           n= 0
-                              ∞                                ∞
-                             ∑                        nr +    ∑       nr +
-                                                 )
-                                    −  (a b + 1 )(n r ax  −  ab   ax       =  0
-                                              +
-                                    +
-                                                                    n
-                                                   n
-                             n= 0                             n= 0
-               ∞
-              ∑       (nr nr     ) 1 +  ( c nr   +  ) a x nr +− 1
-                      +
-                         )( +−
-                                              
-                                                n
-              n= 0        ∞
-                        ∑                                                  nr +
-                             −        (nr nr  1 +  +   1 )(nr +         n   =  0
-                                                                 ) ab a x
-                                              ) (a b +
-                                    )( +−
-                                 +
-                                                              +
-                         n= 0
-              ∑  ∞  (nr nr      1    ) c a x nr +− 1 − ∑  ∞        (nr  1 )(nr  2 a b +  ) 1 +  ab a n− 1 x nr +− 1  =  0
-                     +
-                                                           +−
-                                                                    +− + +
-                                                                                           
-                        )( +− +
-                                                                                           
-                                       n
-              n= 0                                n= 1
-                                   ∞
-                                            )( +
-                                         +
-               ( rr +−  ) 1 a x r− 1 + ∑ (nr nr −+       ) c a x nr +− 1
-                   c
-                                                     1
-                          0
-                                                           n
-                                  n= 1
-                          ∞
-                         ∑                                           nr +− 1
-                                                             
-                                 +−
-                                           +− +
-                              −      (n r  1 )(n r  1 a +  ) b +  ab a n− 1 x  =  0
-                                                             
-                          n= 1</code></pre>
+                                  n
+              y′ = ∑      n + 1  x
+               1         ( ! nn +  ) 1 !
+                   n= 1</code></pre>
      	</div>
     
      </div>

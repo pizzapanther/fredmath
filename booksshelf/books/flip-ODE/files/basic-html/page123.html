@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 123 - Differential Book</title>
+        <title>Page 123 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 123 - Differential Book</div>
+        <div id="content-top1">Page 123 - ODE Book</div>
         <div id="content-top2">P. 123</div>
      </div>
      <div id="content-middle">
@@ -152,64 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>108 | 1.7 - M ode l i n g  P opul a t i on G r ow t h
-
-          14.  The amount of drug in the blood of a patient (in mg) due to an intravenous line is governed by the
-               initial value problem
-                                         y′ ( ) t =  −  0.02y +  3,  y ( ) 0 =  0  for t ≥  0
-
-               Where t is measured in hours
-
-                 a)  Find and graph the solution of the initial value problem.
-                 b)  What is the steady-state level of the drug?
-
-                 c)  When does the drug level reach 90% of the steady-state value?
+    <pre style="white-space:pre-line"><code>110 | 1. 6 - E x a ct   D i f f e r en t i al  E q u at i o n s
 
 
-          15.  A fish hatchery has 500 fish at time  t = , when harvesting begins at a rate of b fish/yr. where
-                                                       0
-               b &gt;  0 . The fish population is modeled by the initial value problem.
 
-                                       y′ ( ) 0.1t =  y −  , b  y ( ) 0 =  500    for  t ≥  0
+                 y =  y 1/2  ⇒  n =  1
+                                    2
+                        1− 1   1/2            2
+               Let u =  y  2  =  y   ⇒   y =  u
 
-               Where t is measured in years.
+                   du  =  1 − 1/2 dy
+                          y
+                   dx   2       dx
 
-                                                   0
-                 a)  Find the fish population for t ≥  in terms of the harvesting rate b.
-                 b)  Graph the solution in the case that b =  40 fish yr . Describe the solution.
-                                                                 /
-                                                                 /
-                 c)  Graph the solution in the case that b =  60 fish yr . Describe the solution.
+                   2y 1/2 du  =  dy
+                         dx   dx
 
-                                                                                                      0
-          16.  A community of hares on an island has a population of 50 when observations begin at  t = . The
-                                 0
-               population for t ≥  is modeled by the initial value problem.
-                                           dP  =  0.08P ( 1−  P  ) , P ( ) 0 =  50
-                                           dt             200
+               dy  −  4y =  2eu
+                            x
+               dx
+                                 x
+               2u  du  −  4u =  2  2ue    Divide by  2u
+                  dx
+                         x
+               u′ −  2u =  e
+                     ∫ − 2 dx
+                   e        = e − 2x
 
-                 a)  Find the solution of the initial value problem.
-                 b)  What is the steady-state population?
+                   ∫  e e  2x dx = ∫  e −  x dx
+                      x −
 
-          17.  When an infected person is introduced into a closed and otherwise healthy community, the number
-               of people who become  infected with the disease (in the absence of any  intervention) may be
-               modeled by the logistic equation
 
-                                             dP  =  kP ( 1−  P ) , P ( ) 0 =  P
-                                              dt          A             0
 
-               Where k is a positive infection rate, A is the number of people in the community, and  P  is the
-                                                                                                   0
-               number of infected people at t = . The model assumes no recovery or intervention.
-                                               0
-                 a)  Find the solution of the initial value problem in terms of k, A, and  P .
-                                                                                      0
-                 b)  Graph the solution in the case that  k = 0.025,  A =  300, and  P = 1 .
-                                                                                   0
-                 c)  For fixed values of k and A, describe the long-term behavior of the solutions for any  P
-                                                                                                       0
-                    with 0 &lt;  P &lt;  A
-                               0</code></pre>
+                               = − e − x
+                                  )
+               u =   1  ( −  e − x  +  C
+                   e − 2x
+
+               y 1/2  =  −  e +  x  Ce 2x
+
+
+               yx     ( Ce 2x  −  e x ) 2
+                 ( ) =
+
+
+           Example 6
+
+                                               32
+           Find the general solution  xy′ +  y =  3x y
+
+           Solution
+                           22
+               y′ +  1  y =  3x y
+                    x
+               Let u =  y 1 −  2  =  y −  1  ⇒  y =  1
+                                            u
+
+                   du  = −  1  dy
+                   dx     y 2 dx
+
+
+                   y′    yu′ = −  2</code></pre>
      	</div>
     
      </div>

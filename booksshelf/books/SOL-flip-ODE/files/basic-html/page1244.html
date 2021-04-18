@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1244 - DE Solution</title>
+        <title>Page 1244 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1244 - DE Solution</div>
+        <div id="content-top1">Page 1244 - ODE Solution Manual</div>
         <div id="content-top2">P. 1244</div>
      </div>
      <div id="content-middle">
@@ -155,66 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1234 | S O LU TI O N
 
 
-             Applying Kirkoff Voltage law:  v    +  v  −  v =  0
-                                               R    C     s
-              v  +  v  =  v
-               R    C     s
 
-              Ri +  1  q v
-                      =
-                  C       s
-              R di  +  1  dq  =  dv s         i =  dq
-                dt  C dt     dt                   dt
+                     t
+                 q  ( ) =  8  cos100t +  2  sin100t
+                   p      85          85
+                                                                            2
+                                                                8
+                 q ( ) t =  e − 50t ( C 1  cos50 19t +  C 2  sin50 19t +  )  85 cos100t +  85 sin100t
+                                     8
+                        q ( ) 0 =  C +  1  85  =  0
 
-              R  di  +  1  i =  dv s
-                dt  C      dt
-              di  +  1  i =  1  dv s      1           1           1   50
-                                                   (
-              dt   RC     R dt           RC  =  (100 ) 200 10×  − 6 )  =  .02  =
-
-              di  +  50i =  0
-              dt
-                   ∫ 50dt
-                    e    =  e 50t
+                        C   = −  8
+                          1    85
 
 
-              i ( ) t =  Ke − 50t
-                   i ( ) 0 =  0.15
+                     q′ ( ) t =  e − 50t ( −  50C  cos50 19t −  50in50 19t −  50 19C  sin50 19t +  50 19C  cos50 19t )
+                                       1                                 1                   2
+                                    +  160 sin100 +  t  40 cos100t
+                                      17          17
 
-                   K  =  0.15
+                                                    40
+                        q′ ( ) 0 = −  50C +  1  50 19C +  2  17  =  0
 
-              i ( ) t = 0.15e − 50t
-
-
-              v  =  Ri t   15e − 50t
-                      ( ) =
-               R
-              v  =  v − v
-               C    s    R
-
-                      −
-                 =  25 15e − 50t
+                        C   = −   12
+                          2     85 19
 
 
-          Exercise
+                                                                 
+                 q ( ) et =  − 50t    −  8  cos50 19t −  12  sin50 19t +  8  cos100t +  2  sin100t
+                                                                 
+                                85             85 19              85           85
+             b)
 
-          Find the steady-state solution  q  ( ) t   and the steady-state current in and LRC−series circuit when the
-                                        p
-                           E
-          source voltage is  ( ) t =  E  sin tω
-                                    0
-          Solution
 
-              Lq′′ +  Rq′ +  1  q =  E  sin tω
-                         C       0
 
-              L λ  2  R +  λ +  1  =  0
-                          C
 
-                                2
-                        − R ±  R −  4L
-                 λ    =              C
-                  1,2         2L</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+             c)
+
+                                  e
+                 I ( ) t =  q′ =  −  200 − 50t     −  2cos50 19t −  3  sin50 19t −  2 19 sin50 19t +  3cos50 19t   
+                              85                         19                                           
+
+                                                             +  160 sin100t +  40 cos100t
+                                              17           17
+                                                                
+                 I ( ) t =  −  200 e − 50t   cos50 19t −  41  sin50 19t + 160 sin100t +  40 cos100t
+                          85                      19              17           17
+                                   
+                                                                </code></pre>
      	</div>
     
      </div>

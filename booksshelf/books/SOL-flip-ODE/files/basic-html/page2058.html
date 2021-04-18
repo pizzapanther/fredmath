@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2058 - DE Solution</title>
+        <title>Page 2058 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2058 - DE Solution</div>
+        <div id="content-top1">Page 2058 - ODE Solution Manual</div>
         <div id="content-top2">P. 2058</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,65 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2040 | S O LU TI O N
 
 
-          Exercise
+              y′′ −  (x −  ) 2 y′ +  2y =  0
 
 
-                        0 =
-                                         −
-                              −
-          Show that  P′  ( ) ( ) 1  n+ 1 P′  ( ) 1 =  ( nn +  ) 1
-                      n               n           2
-                                        (     2 )
-          Hint: Use Legendre’s equation  1 x−   y′′ −  2xy′ +  ( n n +  ) 1 y =  0
-
-          Solution
-
-             Because  P n  ( ) x  is a solution of Legendre’s equation, then
-                 ( 1 x 2 ) P′′ ( ) 2x −  xP′  ( ) x +  ( n n +  ) 1 P n  ( ) x =  0
-                   −
-                                     n
-                          n
-             Let  x = 1, then
-                 −  2P′  ( ) 1 +  ( nn +  ) 1 P  ( ) 1 =  0
-                     n               n
-                           ( nn +  ) 1
-                 P′  ( ) 1 =      P  ( ) 1
-                   n         2     n
-
-             Let  x = − 1, then
-                     ( ) 1
-                                       ( ) 1 =
-                 2P′ −+      ( nn +  ) 1 P −  0
-                    n                n
-                              ( nn +  ) 1
-                 P′ −  ( ) 1 =  −    P  ( ) 1
-                                         −
-                   n            2     n
-             However,  P   ( ) 1 =  P  ( ) 1−  =  1
-                         n       n
-
-                  −
-                 ( ) 1  n + 1 P′ − n  ( ) 1 =  ( nn +  ) 1
-                                      2
+              ∑  ∞  (n +  1 )(n +  ) 2 a n+  2  (x −  ) 2  n  −  (x −  ) 2 ∑  ∞  (n +  ) 1 a n+  1  (x −  ) 2  n  +  2 ∑  ∞  a n  (x −  ) 2  n  =  0
 
 
-          Exercise
+              n= 0                                    n= 0                       n= 0
 
-          The differential equation  y′′ +  xy =  0  is called Airy’s equation, and its solutions are called Airy
+               ∞                                ∞                           ∞
+                  (n +  1 )(n +  ) 2 a  + ∑  (x −  ) 2  n  −  ∑  (n +  ) 1 a  (x −  ) 2  n+ 1 +  ∑  2a  (x −  ) 2  n  =  0
+                                 n  2                      n +  1                 n
+              n= 0                             n= 0                        n= 0
 
-          functions. Find the series for the solutions  y  and  y  where  ( ) 0y  = 1 and  ( ) 0y′  =  0 , while
-                                                     1       2         1             1
-                   0
-          y  ( ) 0 =  and  y′  ( ) 0 = 1. What is the radius of convergence for these two series?
-           2               2
-          Solution
-                      ∞
-                             n
-               ( ) =
-              yx     ∑   a x
-                          n
-                     n= 0
-                      ∞              ∞
-                                                    n
-              y′ ( ) x = ∑  na x n− 1  = ∑  (n +  ) 1 a n+ 1 x
-                            n
-                      n= 1          n= 0
-                       ∞                     ∞
-                                                                   n
-              y′′ ( ) x =  ∑  ( nn −  ) 1 a x n− 2  =  ∑  (n +  2 )(n +  ) 1 a n+ 2 x
-                                   n
-                      n= 2                  n= 0</code></pre>
+               ∞                                         ∞
+                    (n +  1 )(n +  ) 2 a  +  2a n  ∑    (x −  ) 2  n  −  ∑  (n +  ) 1 a  (x −  ) 2  n+ 1  =  0
+                                 n+  2                             n+  1
+              n= 0                                      n= 0
+               ∞                                        ∞
+                    (n +  1 )(n +  ) 2 a  +  2a n  ∑    (x −  ) 2  n  −  ∑  na  (x −  ) 2  n  =  0
+                                 n+ 2                        n
+              n= 0                                      n= 1
+                            ∞                                        ∞
+              2a +  2a +         (n +  1 )(n +  ) 2 a  +  2a n  ∑    (x −  ) 2  n  −  ∑  na  (x −  ) 2  n  =  0
+                2      0                      n+ 2                        n
+                           n= 1                                      n= 1
+
+                            ∞
+              2a +  2a +          (n +  1 )(n +  ) 2 a  −  (n −  ) 2 a n  ∑    (x −  ) 2  n  =  0
+                2      0                      n+ 2
+                           n= 1
+
+              For n   0 →=    2a +  2a =   0 ⇒    a = −  a
+                                2      0           2      0
+
+              (n +  1 )(n +  ) 2 a  −  (n −  ) 2 a =  0
+                            n+ 2          n
+
+              a    =     n − 2     a
+               n+ 2  (n +  1 )(n +  ) 2  n
+
+
+                        a                                           a
+                          0                                          1
+                 n   0  →=  a =  −  a                       n = 1  →  a =  −  1 a
+                            2      0                                   3    6  1
+
+                 n   2 →=     a =  0                        n   3  →=  a =  1  a =  −  1  a
+                            4                                          5   20  3     120  1
+                 n   4 →=     a =  0                        n   5  →=  a =  3  a =  −  1  a
+                            6                                          7   42  5     1680  1
+                                                                      
+                                                                                 
+                                     
+                                                                           
+                                
+                                       a
+              y ( ) ax =  ( 1−  (x −  ) 2  2 ) ( (x −  ) 2 −  1 (x −  ) 2  3  −  1  (x −  ) 2  5  −  1  ( −  x  ) 2  7  −   )
+                                     +
+                      0                 1          6           120           1680</code></pre>
      	</div>
     
      </div>

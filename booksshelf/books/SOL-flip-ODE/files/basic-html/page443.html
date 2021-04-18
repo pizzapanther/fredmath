@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 443 - DE Solution</title>
+        <title>Page 443 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 443 - DE Solution</div>
+        <div id="content-top1">Page 443 - ODE Solution Manual</div>
         <div id="content-top2">P. 443</div>
      </div>
      <div id="content-middle">
@@ -154,67 +154,78 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 437
 
-                 Exercise
+                                    2y
+                                =         lb/min
+                                  400 − t
 
-                 Suppose a brine containing 0.2 kg of salt per liter runs into a tank initially filled with 500 L of water
-                 containing 5 kg of salt The brine enter the tank at a rate of 5 L/min   . The mixture, kept uniform by
-                 stirring, is flowing out at the rate at the same rate.
-
-                    a)  Find the concentration, in  kg/L, of salt in the tank after 10 min.
-                    b)  After 10 min, a leak develops in the tank and an additional liter per minute of mixture flows
-                        out of the tank. What will be the concentration, in  kg/L, of salt in the tank 20 min after the
-                        leak develops?
-
-                 Solution
-
-                    a)  ( ) 500V t =  +  (5 5 t−  )
-                              = 500
+                         dy  =  0.1−  2y
+                                       −
+                         dt        400 t
+                         dy  +  2    y =  1
+                                  −
+                         dt   400 t     10
+                                 2   dt   − ∫
+                               e  400 t−  =  e  2ln (400 t−  )
 
 
-                                       x ( ) t
-                         Rate out =  5×
-                                       500
-                                      t
-                                    x ( )  kg
-                                 =
-                                    100  min
-                        Rate in =  5 0.2
-                                   ×
-                                     kg
-                                 = 1  min
+                                        =  (400 t−  ) − 2
 
-                         dx  = 1−  x
-                         dt      100
-
-                         x′ +  x  =  1
-                             100
-
-                               100 ∫  dt
-                               e   =  e t /100
-
-                            ∫       dt =
-                              e t /100  100e t /100
+                            ∫ 10 (400 t−  )   dt =  4000 10t
+                               1          − 2         1
+                                                       −
 
 
-                                                     )
-                         x ( ) t =  e  t −  /100 ( 100e t /100  + C
+                                                          
+                         y t =  ( ) (400 t )   2   1  +  C
+                                    −
+                                                          
+                                                  −
+                                           10 (400 t )   
+                              =  1  (400 −  t +  ) C (400 t ) 2
+                                                    −
+                                10
+                                  y ( ) 40 160 =  +  ×  0 1 C = 4  0
+
+                                 C  = −  1
+                                       4000
+
+                                                        2
+                                                    −
+                         y ( ) t =  40 −  1  t −  1  (400 t )
+                                    10    4000
+
+                        V =  400 t = 100
+                                −
+                        t = 300
 
 
-                             = 100 C  e  t −  /100
-                                  +
+                                                      2
+                                     −
+                         y (300 =  )  40 30 −  1  (100 )
+                                           4000
                                        5
-                                x ( ) 0 =
-                                5 = 100 C
-                                       +
-                                C  = − 95
+                                 = 10 −
+                                       2
+
+                                 =  7.5 lbs
+
+                    c)  y t ′ ( ) =  −  1  +  1  (400 t−  ) 0
+                                                     =
+                                 10   2 000
+                        400 t− =  200
 
 
-                           t
-                         x ( ) 100 95e=  −  t −  /100
-                           10
-                         x ( ) 100 95e=  −  − 0.1
+                        t =  200 min
+                                                      2
+                                             1
+                         y (200 =  )  40 20 −  4000 (200 )
+                                     −
+                                 =  20 10
+                                     −
 
-                              ≈ 14.04  kg</code></pre>
+                                 = 10 lbs
+
+                    d)  t =  200 min</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 418 - DE Solution</title>
+        <title>Page 418 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 418 - DE Solution</div>
+        <div id="content-top1">Page 418 - ODE Solution Manual</div>
         <div id="content-top2">P. 418</div>
      </div>
      <div id="content-middle">
@@ -154,68 +154,66 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>412 | S O LU TI O N
 
-
-                          90
-                     =
-                 −  90 C ( ) − 3
-                 C  = − ( ) 4
-                        90
-
-                                  4
-              x t       +   −  ( ) (90 t+  ) − 3
-                               90
-               ( ) 180 2t=
-                   =  180 2t+  −  90 4
-                               (90 + t ) 3
-
-             The tank is full after 30 min, Therefore when t = 30,
-
-
-                             +
-               ( x t =  30 =  ) 180 2 ( ) −  30  90 4
-                                      (90 +  30 ) 3
-
-                 x ( ) =  240 −  90 4
-                    30
-                               120 3
-
-                        ≈  202   lb
-             The tank contains 202 lb. of salt.
-
-
           Exercise
 
-          A 1000 gallon holding tank that catches runoff from some chemical process initially has 800 gallons
-          of water with 2 ounces of pollution dissolved in it. Polluted water flows into the tank at a rate of 3
-          gal/hr. and contains 5 ounces/gal of pollution in it. A well mixed solution leaves the tank at 3 gal/hr.
-          as well. When the amount of pollution in the holding tank reaches 500 ounces the inflow of polluted
-          water is cut off and fresh water will enter the tank at a decreased rate of 2 gallons while the outflow is
-          increased to 4 gal/hr. Determine the amount of pollution in the tank at time t.
+          Suppose that in the cascade tank 1 initially 100 gal of pure ethanol and tank 2 initially contains 100
+          gal of pure water. Pure water flows into tank 1 at 10 gal/min, and the other two flow rates are also 10
+          gal/min.
+                                            yt
+                                                                                      0
+                                   x
+             a)  Find the amounts  ( ) t  and  ( )  of ethanol in the two tanks at time t ≥  .
+             b)  Find the maximum amount of ethanol ever in tank 2.
           Solution
 
-              t  : the time when maximum amount of pollution is reached.
-              m
-             V   : Volume when maximum amount of pollution is reached.
-               2
-              t  : the time when tank is empty.
-              e
-             Let  y   be the amount (in ounces) of additive in the tank at time zeroand  y  ( ) 0 =
-                                                                                            2
-                   1                                                                 1
-                                                                                      ( )
-             Let  y  be the amount (in ounces) of additive in the tank at time t and  y t  =  500
-                   2                                                         m       2  m
+             a)  The initial value problem   dx  = −  x  , x ( ) 0 = 10 0
+                                          dt     10
 
-             V  ( ) t =  800 +  ( 3 gal  −  3 gal ) ( hrt   )
-               1              hr     hr
-                    =  800   0 t≤≤  t
-                                     m
+                 For Tank 1:
+                     1 dx = −  1  dt
+                     x       10
+                     ∫  1 dx = − 10 ∫  dt
+                                1
+                       x
 
-             V   ( ) 800t =  +  (2 4 tt−  )(  −  )
-               2                       m
 
-                    =  800 2 tt−  (  −  m )    t m  ≤  t ≤ t
-                                                  e</code></pre>
+                     ln x =  −  1  tC
+                                 +
+                             10
+                                 +
+                     x ( ) t =  e  t −  /10 C
+                             C −
+                          =  e e  t /10
+                          =  A e  t −  /10
+
+                            x ( ) 0 = 100
+
+                            100 =  A
+
+                     x ( ) 100t =  e  t −  /10
+
+
+
+                                          dy    x    y
+                                                                 0
+                 The initial value problem   =    −    ,  y ( ) 0 =
+                                          dt   10 10
+                 For Tank 2:
+                     dy  =  100e  t −  /10  −  y
+                     dt       10      10
+
+                        = 10e  t −  /10  −  y
+                                     10
+
+                     dy  +  y  =  10e  t −  /10
+                     dt   10
+                            10 ∫  1  dt
+
+                            e   = e t /10
+                                               ∫
+                        ∫  10e  t −  /10 /10  dt = 10 dt
+                                    t
+                                   e</code></pre>
      	</div>
     
      </div>

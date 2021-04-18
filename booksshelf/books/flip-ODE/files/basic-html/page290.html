@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 290 - Differential Book</title>
+        <title>Page 290 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 290 - Differential Book</div>
+        <div id="content-top1">Page 290 - ODE Book</div>
         <div id="content-top2">P. 290</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.5 - I nt r oduc t i on  &  B a s i c   T h e or y  of  L i n e a r  S y s t e m s  | 275
-
-               3.5-6  Example of a parallel LRC circuit
+    <pre style="white-space:pre-line"><code>2. 7 - E ul e r ’ s  &  R u nge - K ut t a  M e t ho ds  | 277
 
 
-               Consider the parallel LRC circuit as shown below
+                 2.7-4  Fourth-Order Runge-Kutta Method
 
 
+                 This method is the most commonly used solution algorithm. For most equations and systems, it is
+                 suitably fast, simple, and accurate. It is generally referred to as “RK4”.
+                 It is the best for numerical solution of differential equations when combined with an intelligent
+                 adaptive step-size routine.
+                                                    (
+                 Starting from the initial value point  t 0  , y 0 ) , we compute two slopes:
+                               (
+                        s =   ft  , y  )
+                         1       0   0
 
 
+                        s =   ft +  (  h ,  y +  h  s  )
+                          2      0   2    0  2  1
+
+                        s =   ft +  (  h ,  y +  h  s  )
+                         3       0   2    0   2  2
 
 
+                        s =   f t +  (  h ,  y +  hs  )
+                          4      0       0     3
+                                    s +  2s +  2s +  s
+                         y =  y +  h  1    2     3    4
+                          1    0             6
 
 
+                 Example 3
+
+                 Compute the first four step in the Second-Order Runge-Kutta method approximation to the solution of
+                        −
+                                    =
+                 y′ =  yt  with (1) 1, using the step size  h =  0.1. Compare the result with the actual solution to the
+                                y
+                 initial value problem.
+                 Solution
+
+                    Given:  t =   1  and   y = 1
+                               0           0
+
+                    The first step:
+                               (
+                        s =   ft  , y  )
+                         1       0   0
+                            = 11
+                               −
+                            =  0
 
 
+                        s =   ft +  (  h ,  y +  h  s  )
+                          2      0   2    0  2  1
+                                       )
+                            =  f  (1.05 ,1
+
+                               −
+                            = 1 1.05
+                            = − 0.05
 
 
-
-
-
-               Let V be the voltage drop across the capacitor and I current through the inductor.
-
-               The current is described by the equation:   dI  =  V
-                                                           dt   L
-
-               The voltage is described by the equation:   dV  =  −  1  −  V
-                                                            dt     C   RC
-
-               Therefore, we can rewrite the equation as system equations
-
-                                I′ =  1 V
-                                    L
-                                     1    1
-
-                               V′ =   −  C  −  RC V
-
-
-               Example 3
-
-
-               Find a first-order system the models the circuit below
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               Solution
-                   Using Kirchhoff’s current law:   I =  I +  I
-                                                        1    2
-                   Kirchhoff’s voltage law applied to the loop containing the source and the inductor:
-
-                   E =  RI +  LI′
-                               1
-                     =  R I + (  1  I 2 )  +  LI′
-                                      1
-
-                   LI′ =  E −  R I +  (  I  )
-                      1          1    2</code></pre>
+                        s =   ft +  (  h ,  y +  h  s  )
+                         3       0   2    0   2  2</code></pre>
      	</div>
     
      </div>

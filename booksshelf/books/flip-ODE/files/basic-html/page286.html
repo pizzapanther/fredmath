@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 286 - Differential Book</title>
+        <title>Page 286 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 286 - Differential Book</div>
+        <div id="content-top1">Page 286 - ODE Book</div>
         <div id="content-top2">P. 286</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.5 - I nt r oduc t i on  &  B a s i c   T h e or y  of  L i n e a r  S y s t e m s  | 271
-
-                                                                            5
+    <pre style="white-space:pre-line"><code>2. 7 - E ul e r ’ s  &  R u nge - K ut t a  M e t ho ds  | 273
 
 
-                                                                            4
-                    4
+                            =  0.9359
 
-                                                                            3
-                    3
+                                   h
+                         x =  x +
+                          3    2
+                                 +
+                            = 1.3 0.1
+                            = 1.4
 
-                                                                            2
-                    2
+                                                          () 1 x e= +−
+                                                  x
+                    The exact solution to  y′ =  y −  is   yx          x− 1
 
-                    1                                                       1
+                                        x           y : Euler's     y  - exact         Error
+                                                                      k
+                                                     k
+                                         k
+                                        1.0            1.0             1.0               0
+                                        1.1           0.990           0.9948         −0.0052
+                                        1.2           0.969           0.9786         −0.0114
 
-
-                               1         2        3         4                      1      2      3     4      5
-                                     (a)                                        (b) Flow direction.
-                                                               x  xy
-                                                             x = −
-                                                           
-                                                                  y
-                                                            
-                                                            y = −+  xy
-                                                   Where  ()xt  is the prey,    () t is the predator.
-                                                                           y
-
-
-               3.5-3  Definition
+                                        1.3          0.9359           0.9501         −0.0189
 
 
-               A linear system  of differential  equations  is any  set of differential  equations having the  following
-               standard form:
+                 2.7-2  Runge-Kutta Methods
 
-                              x′ =  a  ()tx +   +  a  ()tx +  f  ()
-                                                                t
-                               1    11    1        1n    n    1
-                              x′ =  a  ()tx +    +  a  ()tx +  f  ()
-                                                                 t
-                               2     21    1        2n    n    2
-                                                          
-                              x′ =  a  () tx +  +  a  () tx +  f  () t
-                               n      1 n  1        nn    n    n
 
-                                                                                            ()
-                                                                                   t
-               Where  x  , , and x  are the unknown functions. The coefficients a  ()  and  ft  are known functions
-                        1          n                                             ij        i
-                                                   )
-               of the independent variable t ∈ ( ,a b  is an interval in R.
-               If all of the  ft = , the system said to be homogeneous. Otherwise it is inhomogeneous.
-                                  0
-                             ()
-                            i
-               The inhomogeneous part is sometimes called the forcing term.</code></pre>
+                 Like Euler's method, the Runge-Kutta methods are fixed-step solvers.
+
+
+                 2.7-3  The Second-Order Runge-Kutta Method
+
+
+                 The Second-Order Runge-Kutta method is also known as the improved Euler's method.
+                 It is generally referred to as “RK2”
+
+                                                    (
+                 Starting from the initial value point  x 0   , y 0 ) , we compute two slopes:
+
+                               (
+                        s =   ft   , y  )
+                         1       0   0
+                                                )
+                        s =   f t +  (  h  , y +  hs
+                          2      0       0     1
+                                    s +  s
+                         y =  y +  h  1   2
+                          1    0       2
+                 But an analysis using Taylor's theorem reveals that there is an improvement in the estimate for the
+                 truncation error.
+                 For the Second-Order Runge-Kutta method, we have
+
+                                        3
+                         y () −  t 1  y ≤  1  Mh
+
+                 The constant M depends on the function  (, )f ty .
+
+
+                 The Second-Order Runge-Kutta method is controlled by the cube of the step size instead of the square.</code></pre>
      	</div>
     
      </div>

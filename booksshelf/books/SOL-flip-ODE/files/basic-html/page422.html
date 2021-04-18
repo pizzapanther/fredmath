@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 422 - DE Solution</title>
+        <title>Page 422 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 422 - DE Solution</div>
+        <div id="content-top1">Page 422 - ODE Solution Manual</div>
         <div id="content-top2">P. 422</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,61 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>416 | S O LU TI O N
 
           Exercise
-
-                                                                   0
-          A 200-gallon tank is half full of distilled water. At time t = , a concentrate solution containing
-
-          0.5 lb/gal  enters the tank at the rate of 5  gal  / min , and well-stirred mixture is withdrawn at the rate
-          of 3  gal  / min .
-           a)  At what time will the tank be full?
-           b)  At the time the tank is full, how many pounds of concentrate will it contain?
+                                                        3
+          Assume that Lake Erie has a volume of 480  km  and that its rate of inflow (from Lake Huron) and
+                                                   3
+          outflow (to Lake Ontario) are both 350  km  per year. Suppose that at the time t = 0 (years), the
+          pollutant concentration of Lake Erie – caused by past industrial pollution that has now been ordered
+          to cease – is 5 times that of Lake Huron. If the outflow henceforth is perfectly mixed lake water, how
+          long will it take to reduce the pollution concentration in Lake Erie to twice that of Lake Huron?
           Solution
 
-             a)  ( ) 100V t =  +  (5 3 t =−  )  200
+                                  3
+             Given:  V = 480  km
+                       r =  r = =  350 km 3  / yr
+                                r
+                       i    o
+                       c =  (The pollutant concentration of Lake Huron)
+                           c
+                        i
+                       x =  x ( ) 0 = 5cV
+                        0
 
-                 2t = 100
-                 t  =  50 min
+              dx  =  rc −  r  x
+              dt       V
+              dx  +  r  x =  rc
+              dt   V
+                        V ∫  r  dt
+                        e   =  e rt /V
 
-                                y
-             b)  Rate out =         ( ) 3
-                            100 2t
-                                +
-                               3y
-                          =              lb
-                                +
-                            100 2t    min
-                           (    lb )(   gal )
-                 Rate in =  0.5   gal  5   min
-
-                        =  2.5    lb
-                               min
-
-                 dy  =  2.5 −  3y
-                                +
-                  dt        100 2t
-                 dy  +    3    y =  2.5
-                          +
-                  dt  100 2t
-                      ∫    3  dt    3 ∫  1  d (50 t +  )
-                           +
-                     e  100 2t   =  e  2  50 t +
-                                    3 ln 50 t
-                                         +
-                                 =  e 2
-                                 =  (50 t+  ) 3/2
+                     ∫ rce rt /V   dt =  rc V  e rt /V
+                                       r
 
 
+                                  =  cV   e rt /V
+                                           )
+                 x ( ) t =  1  ( cVe rt /V  +  C
+                        e rt /V
 
-                     2.5 ∫  (50 t+  ) 3/2 dt =  5 ∫  (50 t+  ) 3/2  d (50 t+  )
-                                          2
+                       =  cV + Ce − rt /V
+
+                     x ( ) 0 =  5cV
+
+                                   0
+                     5cV =  cV + Ce
+                     C =  4cV
+
+              x ( ) =  cV + 4cVe − rt /V   t
+
+             When is  ( ) 2x t =  cV
 
 
-                                        =  (50 t+  ) 5/2
-                                                   )
-                 y ( ) t =   1     ( (50 t+  ) 5/2  +  C
-                        (50 t  ) 3/2
-                            +
-                             t
-                       = 50 + + C (50 t+  ) − 3/2
-                                 0
-                          y ( ) 0 =
+              2cV =  cV +  4cVe − rt /V
+              4cVe − rt /V  =  cV
 
-                                  50
-                          50 C   ( ) − 3/2  =  0
-                             +</code></pre>
+               e − rt /V  =  1
+                         4
+               e rt /V  =  4</code></pre>
      	</div>
     
      </div>

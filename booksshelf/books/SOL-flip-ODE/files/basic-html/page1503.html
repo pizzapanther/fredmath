@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1503 - DE Solution</title>
+        <title>Page 1503 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1503 - DE Solution</div>
+        <div id="content-top1">Page 1503 - ODE Solution Manual</div>
         <div id="content-top2">P. 1503</div>
      </div>
      <div id="content-middle">
@@ -152,97 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1489
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1489
 
 
-                                   + 
-                                 AB =   0
-                                  1     1    →  A =  RC   B =  −  RC
-                                  RC  A =
-                                
-                                       −  1           −  1        
-                                           1
-                       Q () =  E   RC£   { } − RC£           1      
-                         t
-                              R           s               s +  1      
-                                                             RC   
-                           =  E ( RC − RCe −  / t RC )
-                             R
-
-                           =  EC ( 1 e−  −  / t RC )
-
+                                 −  1          −  1             −  1       
+                                      1
+                     Qt      10   £  { } +  5  £      1      −  25  £        1      
+                       ( ) =
+                                     s    2        s +  1   2         s +  1 
+                                                      2              1 0     
+                         =  10 +  5 −  e  t /2  −  25 −  e  t /10
+                                2         2
 
 
                  Exercise
 
+                 A resistor  R  =  20 Ω  and a capacitor of C =  0.1  F  are joined in series with an electronic force (emf)
+                       ()  and no charge on the capacitor at t = . Find the ensuing charge on the capacitor at time t
+                 E =  Et                                      0
+                 for the given  ( ) 100cos3Et =  t
 
-                 Solve the general initial value problem modeling the LR circuit   L  dI  +  RI =  , E  I ( ) 0 =  I
-                                                                                 dt                    0
-                    Where E is a constant source of emf
                  Solution
-                                   )
-                       £ ( dI  +  R I £  ( )
-                                          E
-                                    =
-                                           L
-                           dt
-                                L
-                                       () =
-                       sIs −  () I (0) +  R  Is  E  1       I (0) =  I
-                                    L        Ls                    0
-                       ( s +  R ) Is  E  1  +  I 0
-                               () =
-                                     Ls
-                           L
-                        () =
-                       Is    E     1     +  I     1
-                                 (
-                             L  ss +  R )   0  s +  R
-                                                 L
-                                      L
-                                                        As +  R  A Bs
-                                                                 +
-                                   1     =  A  +  B  =       L
-                                ss +  (  R )  s  s +  R   ss +  (  R )
-                                                   L
-                                                                L
-                                      L
-                                 AB =    0
-                                   + 
-                                                     L         L
-                                  R        →    A =      B =  −
-                                  L  A = 1          R         R
-                                
-                                    −  1          −  1             −  1     
-                               
-                                         1
-                       It    EL   £     { } −  L £        1        +  I £      1    
-                        () =
-                               
-                             LR          s    R         s +  R       0    s +  R  
-                               
-                                                         L                L 
-                               (
-                                           t
-                                                       t
-                                           /
-                                                        /
-                           =  EL   −  L −  R e  RL )  +  Ie −  RL
-                                                  0
-                             LR
 
-                                                   t
-                                       t
-                                        /
-                                                    /
-                           =  E  −  E −  e  RL  +  Ie −  RL
-                             R    R           0
-                                                       t
-                                         t
-                                          /
-                                                        /
-                           =  1 ( E −  Ee −  RL  +  RI e −  RL )
-                             R                    0</code></pre>
+
+                     R dQ  +  1  Q =  E
+                       dt   C
+                     20Q′ +  1  Q =  100cos3t
+                            0.1
+
+                     Q′ +    1   Q =  100 cos3t
+                            ( )
+                         0.1 20       20
+                     £  (Q′ +  0.5Q ) 5£=  (cos3t )
+
+
+                     sQs      (0) 0.5 ( ) = Qs  5  s                Q (0) =  0
+                        ( ) Q−
+                                  +
+                                                2
+                                               s + 9
+                            ) ( ) =
+                     (s +  0.5 Qs   5   s
+                                       2
+                                      s + 9
+                       () 5
+                     Qs   =          s
+                             (s +  0.5 ) s +  (  2  9 )
+                                       s         =   A    +  Bs C
+                                                               +
+                                                             2
+                                (s +  0.5 ) s +  (  2  9 )  s +  0.5  s + 9
+
+                                s =  As +  2  9A Bs+  2  +  0.5Bs Cs+  +  0.5C
+                                s =  ( A Bs+  )  2  +  (0.5B C s+  ) +  9A +  0.5C
+
+                                            +
+                                         AB =    0
+                                       
+                                              +
+                                         0.5B C =  1
+                                        9A +  0.5C =  0
+                                       
+                                       A =  −  2  B =  2  C =  36
+                                             37       37       37
+                                                              
+                     Qs     5 −    2  1  +  2  s   +  36  1   
+                       () =
+                               37  s +  1  37  s +  2  9  37  s +  2  9 
+                                      2                       </code></pre>
      	</div>
     
      </div>

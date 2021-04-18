@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1812 - DE Solution</title>
+        <title>Page 1812 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1812 - DE Solution</div>
+        <div id="content-top1">Page 1812 - ODE Solution Manual</div>
         <div id="content-top2">P. 1812</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,75 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1798 | S O LU TI O N
 
 
+              dx  =  0.2 kg ( 6  L  ) +  3 L/min   y ( ) −  kg  5  x −  4  x
+              dt       L   min    100 L         100     100
 
-                       −   C +  1  C =  2  0
-                     
-                       2C +  1  2C =  2  5
+                 =  −  9  x +  3  y +  6
+                     100    100     5
 
-                     C  =  5 , C =  5
-                      1   4     2   4
+             Tank B:
+              dy    5       3      2
+              dt  =  100 x −  100  y −  100  y
 
-               x ( ) t = −  5 −  e  t /2  +  5 −  e  t /6
-                      4         4
-                         t        t
-                ( ) =
-               yt    5 −  e  /2  +  5 −  e  /6
-                     2        2
+                 =  1  x −  1  y
+                   20     20
 
+               x′ = −  9  x +  3  y +  6
+                    100    100     5
+              
+               y′ =  1  x −  1  y
+                  20     20
 
+                       −  9   3 
+                 A =      100  100   
+                       1    −  1  
+                       20     20 
 
+                        −  9  −  λ    3
+                −
+              A λ =  I   100         100
+                            1      −  1  −  λ
+                           20       20
+                      =   9   +  14  λ  λ +  2  −  3
+                        2,000   100          2,000
+                      =  14  λ  λ +  2  +  3  =  0
+                        100         1,000
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          Exercise
-
-          Two large tanks, each holding 100 L of liquid, are interconnected by pipes, with the liquid following
-          from tank A into tank B at a rate of 1 L/min and from B to into A at a rate of 4 L/min.
-
-
-
+                 10 λ  32  140λ +  + 3 =
+                                    0
+                                                         7
+             The eigenvalues are: λ    =  −  140 ±  20 19  =  −±  19
+                                   1,2       2000         100
 
 
-
-
-
-
-
-
-
-
-          The liquid inside each tank is kept well stirred. A brine solution flows into tank A at a rate of 4 L/min.
-          The diluted solution flows out the system from tank A at 4 L/min. If, initially, tank A contains pure
-                                                                                                 0
-          water and tank B contains 20 kg of salt, determine the mass of salt in each tank at time t ≥ .
-          Solution
-
-
-             Tank A:     dx  =  0.2 kg ( 4  L  ) +  4 L/min  y ( ) −  kg  1  x −  4  x
-                         dt      L    min    100 L         100    100
-
-                         dy    1      4
-             Tank B:        =     x −    y
-                         dt   100    100</code></pre>
+             For λ     − 7  −  19  ⇒   ( A λ =  −  IV =  )  0
+                   1  100    100             1    1
+                    2    19      3    
+                       +
+                                                0
+                   −  100 100   100       a   1    (        )
+                                            b     =    ⇒  − 2 +  19 a = − 3b
+                                                                    1
+                                                                           1
+                                                0
+                      1       1  +  19      1   
+                     20       50 100 
+                                    3    
+                            V =  →       
+                             1    2 −  19
+                                         
+             For λ     −  7  +  19   ⇒   ( A λ =  −  IV = )  0
+                   2    100    100              2    2
+                    2    19      3   
+                       −
+                                                0
+                   −  100 100   100      a   2    (         )
+                                           b     =   ⇒  − 2 −  19 a = − 3b
+                                                                    2
+                                                                            2
+                                                0
+                      1       1  −  19      2   
+                     20       50 100 </code></pre>
      	</div>
     
      </div>

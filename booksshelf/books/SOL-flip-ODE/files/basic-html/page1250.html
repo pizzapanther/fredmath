@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1250 - DE Solution</title>
+        <title>Page 1250 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1250 - DE Solution</div>
+        <div id="content-top1">Page 1250 - ODE Solution Manual</div>
         <div id="content-top2">P. 1250</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1240 | S O LU TI O N
 
 
-          z′ +  2z =  x
-                  ∫ 2 dx
-                            x
-                 e       = e
-                 ∫     xe x dx =  ( x −  ) 1 e
-                                    x
+             Applying Kirkoff Voltage law:  v    +  v  −  v =  0
+                                               R    C     s
+              v  +  v  =  v
+               R    C     s
+
+              Ri +  1  q v
+                      =
+                  C       s
+              R di  +  1  dq  =  dv s         i =  dq
+                dt  C dt     dt                   dt
+
+              R  di  +  1  i =  dv s
+                dt  C      dt
+              di  +  1  i =  1  dv s      1           1           1   50
+                                                   (
+              dt   RC     R dt           RC  =  (100 ) 200 10×  − 6 )  =  .02  =
+
+              di  +  50i =  0
+              dt
+                   ∫ 50dt
+                    e    =  e 50t
 
 
-                                      )
-              z ( ) x =  1  ( ( x −  ) 1 e +  x  C
-                     e x
-                   =  x −+  C
-                        1
-                            e x
+              i ( ) t =  Ke − 50t
+                   i ( ) 0 =  0.15
 
-                              1 C =
-                       z (0) = −+     1
-                       C  =  2
+                   K  =  0.15
 
-              z ( ) x =  x −+  2
-                        1
-                           e x
+              i ( ) t = 0.15e − 50t
+
+
+              v  =  Ri t   15e − 50t
+                      ( ) =
+               R
+              v  =  v − v
+               C    s    R
+
+                      −
+                 =  25 15e − 50t
 
 
           Exercise
 
-
-          Calculate the first five iterations of Euler's method with step  h = 0.1 of: z′ =          5 z  z (0) 0
-                                                                                                =
-                                                                                      −
+          Find the steady-state solution  q  ( ) t   and the steady-state current in and LRC−series circuit when the
+                                        p
+                           E
+          source voltage is  ( ) t =  E  sin tω
+                                    0
           Solution
 
-              x =  0; z =   0
-               0        0
-             The first step:
+              Lq′′ +  Rq′ +  1  q =  E  sin tω
+                         C       0
 
-                               −
-                                        +
-                 z =  z +  h ( 5 z  )  =  0 0.1 (5 0−  ) =  0.5
-                  1    0          0
-                                +
-                           h
-                 x =  x + =    0 0.1 =  0.1
-                  1    0
-             The second step:
-                               −
-                                                 −
-                 z =  z +  h ( 5 z  )  =  0.5 0.1 (5 0.5 =  ) 0.95
-                                          +
-                  2    1          1
-                 x =   x + =   0.1 0.1 =  02
-                                  +
-                                          .
-                           h
-                   2    1
-                           Euler Method
-                           t            Approx.             Exact             Difference
-                         ----------------------------------------------------------------
-                         0.00   |   0.00000000   |   0.00000000   |   0.00000000
-                         0.10   |   0.50000000   |   0.47581291   |   -0.02418709
-                         0.20   |   0.95000000   |   0.90634623   |   -0.04365377
-                         0.30   |   1.35500000   |   1.29590890   |   -0.05909110
-                         0.40   |   1.71950000   |   1.64839977   |   -0.07110023
-                         0.50   |   2.04755000   |   1.96734670   |   -0.08020330</code></pre>
+              L λ  2  R +  λ +  1  =  0
+                          C
+
+                                2
+                        − R ±  R −  4L
+                 λ    =              C
+                  1,2         2L</code></pre>
      	</div>
     
      </div>

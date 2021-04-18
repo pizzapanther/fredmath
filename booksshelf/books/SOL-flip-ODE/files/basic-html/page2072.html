@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2072 - DE Solution</title>
+        <title>Page 2072 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2072 - DE Solution</div>
+        <div id="content-top1">Page 2072 - ODE Solution Manual</div>
         <div id="content-top2">P. 2072</div>
      </div>
      <div id="content-middle">
@@ -155,64 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2054 | S O LU TI O N
 
 
+          Exercise
 
-                         x −  1  x +  3  
-                       =    3!
-                              x
 
-                       =  1−  1  x +  2    is analytic everywhere ( x =  is removable).
-                                                                 0
-                            3!
-             The only singular point is  x  = 1
+                        0 =
+                                         −
+                              −
+          Show that  P′  ( ) ( ) 1  n+ 1 P′  ( ) 1 =  ( nn +  ) 1
+                      n               n           2
+                                        (     2 )
+          Hint: Use Legendre’s equation  1 x−   y′′ −  2xy′ +  ( n n +  ) 1 y =  0
+
+          Solution
+
+             Because  P n  ( ) x  is a solution of Legendre’s equation, then
+                 ( 1 x 2 ) P′′ ( ) 2x −  xP′  ( ) x +  ( n n +  ) 1 P n  ( ) x =  0
+                   −
+                                     n
+                          n
+             Let  x = 1, then
+                 −  2P′  ( ) 1 +  ( nn +  ) 1 P  ( ) 1 =  0
+                     n               n
+                           ( nn +  ) 1
+                 P′  ( ) 1 =      P  ( ) 1
+                   n         2     n
+
+             Let  x = − 1, then
+                     ( ) 1
+                                       ( ) 1 =
+                 2P′ −+      ( nn +  ) 1 P −  0
+                    n                n
+                              ( nn +  ) 1
+                 P′ −  ( ) 1 =  −    P  ( ) 1
+                                         −
+                   n            2     n
+             However,  P   ( ) 1 =  P  ( ) 1−  =  1
+                         n       n
+
+                  −
+                 ( ) 1  n + 1 P′ − n  ( ) 1 =  ( nn +  ) 1
+                                      2
 
 
           Exercise
 
-          Determine all the singular points of the given differential equation and classify each singular point as
-          regular or irregular
+          The differential equation  y′′ +  xy =  0  is called Airy’s equation, and its solutions are called Airy
 
-                   ( xx +  ) 3  2  y′′ −  y =    0
-
+          functions. Find the series for the solutions  y  and  y  where  ( ) 0y  = 1 and  ( ) 0y′  =  0 , while
+                                                     1       2         1             1
+                   0
+          y  ( ) 0 =  and  y′  ( ) 0 = 1. What is the radius of convergence for these two series?
+           2               2
           Solution
-
-              y′′ −   1     y =  0
-                    ( xx +  ) 3  2
-
-              P () x =  0  Qx           1
-                             () = −
-                                      ( xx +  ) 3  2
-
-                                                 −
-             For  ( )q x =  −  1      →   x =  0, 3  , is analytic elsewhere
-                           ( xx +  ) 3  2
-
-             The Regular singular points are  x  = 0, − 3
-
-
-          Exercise
-
-          Determine all the singular points of the given differential equation and classify each singular point as
-          regular or irregular
-
-                 ( x −  2  9 ) 2  y′′ +  ( x +  ) 3 y′ +  2y =  0
-
-
-          Solution
-
-              y′′ +  x + 3  y′ +    2     y =  0
-                  ( x −  2  9 ) 2  ( x −  2  9 ) 2
-
-
-
-                                     () =
-                x
-              P () =   x +  3       Qx         2
-                     ( x −  2  9 ) 2       ( x −  2  9 ) 2
-
-                  Px
-             For  ( ) =    x + 3    →    x =  ±  3
-                         ( x − 9 ) 2
-                           2</code></pre>
+                      ∞
+                             n
+               ( ) =
+              yx     ∑   a x
+                          n
+                     n= 0
+                      ∞              ∞
+                                                    n
+              y′ ( ) x = ∑  na x n− 1  = ∑  (n +  ) 1 a n+ 1 x
+                            n
+                      n= 1          n= 0
+                       ∞                     ∞
+                                                                   n
+              y′′ ( ) x =  ∑  ( nn −  ) 1 a x n− 2  =  ∑  (n +  2 )(n +  ) 1 a n+ 2 x
+                                   n
+                      n= 2                  n= 0</code></pre>
      	</div>
     
      </div>

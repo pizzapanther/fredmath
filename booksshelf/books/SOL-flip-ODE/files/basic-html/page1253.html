@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1253 - DE Solution</title>
+        <title>Page 1253 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1253 - DE Solution</div>
+        <div id="content-top1">Page 1253 - ODE Solution Manual</div>
         <div id="content-top2">P. 1253</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,52 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1243
+    <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1243
 
 
-                         0.75   |   4.87862689   |   4.77337119   |   -0.10525570
-                         0.80   |   4.55022987   |   4.45469318   |   -0.09553669
-                         0.85   |   4.22621148   |   4.14152671   |   -0.08468477
-                         0.90   |   3.90948351   |   3.83643550   |   -0.07304801
-                         0.95   |   3.60262999   |   3.54165879   |   -0.06097120
-                         1.00   |   3.30788014   |   3.25909581   |   -0.04878433
+                            ∫ e 5t cos ttω   d =  ω + 25 e 5t  ( sin tω  ω  +  5cosω  ) t
+                                                1
+                                              2
 
 
-                 Exercise
+                        ∫  e   5t       ω  100 0  cos tω          dt =  100 ω + 0 25 e 5t  ( sin tω  ω  + 5cosω  ) t
+                                                        E
+                                 E
+                                                      ω
+                                                  1
+                                                      2
 
-
-                 Given:  y′ +  2y =  2 e−  − 4t  y ( ) 0 = 1
-
-                   a)  Solve the differential equation
-                   b)  Use Euler's method and Runge-Kutta methods to calculate three separate approximate solutions
-                                         ]
-                      on the interval [0, 1 , one with step size  h =  0.2 , a second with step size  h = 0.1, a second with
-                      step size  h = 0.05 Plot the exact solution and approximate solutions as discrete points.
-                 Solution
-
-                          ∫ 2 dt
-                                   2t
-                    a)  e       =  e
-                        ∫  ( 2 e−  −  4t ) e 2t dt =  ∫  ( 2e 2t  −  e −  2t ) dt e=  2t  +  1 −  2 e  2t
-
-
-
-                                                    )
-                                           e
-                         yt     1  ( e 2t  +  1 − 2t  +  C
-                          ( ) =
-                               e 2t       2
-                              =  1+  1 −  e  4t  +  Ce −  2t
-                                   2
-
-                                y ( ) 10 =  +  1  +  C =  1
-                                          2
-                                C  = −  1
+                     i ( ) t =  1      1  ω E 0  e 5t ( sin tω  ω  +  5cos ω  ) t +  K   
                                       2
+                           e 5t     100 ω +  25                        
+                               ω E
+                         =         0     ( sin tω  ω  +  5cos ω  ) t +  K
+                               (
+                                  2
+                           100 ω +   25 )                     e 5t
+                                        ω E
+                              i ( ) 0 =    0     +  K =  0
+                                       (
+                                          2
+                                    20 ω +   25 )
+                                        ω E
+                              K = −        0
+                                       (
+                                         2
+                                    20 ω +   25 )
 
-                         y t =  ( ) 1+  1 −  e  4t  −  1 −  e  2t
-                                  2        2
-
-                    b)  h = 0.2
-                           Euler Method
-                                 t            Approx.             Exact             Difference
-                              -----------------------------------------------------------------
-                               0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                               0.20   |   0.80000000   |   0.88950446   |   0.08950446
-                               0.40   |   0.79013421   |   0.87628378   |   0.08614957
-                               0.60   |   0.83370122   |   0.89476187   |   0.06106065
-                               0.80   |   0.88207714   |   0.91943284   |   0.03735570
-                               1.00   |   0.92109384   |   0.94149018   |   0.02039633</code></pre>
+                               ω  E                              ω  E
+                     it           0     ( sin t ω  +  5cosω  ) t −   0    e − 5t
+                      ( ) =
+                                         ω
+                           100 ω  (  2  25 )                  20 ω +  (  2  +  25 )
+                               ω E
+                         =        0     ( ω sin t ω  cos t e − 5t )
+                                                      ω +
+                                                         −
+                              (
+                                 2
+                           20 ω +   25 )  5</code></pre>
      	</div>
     
      </div>

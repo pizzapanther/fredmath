@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 30 - Differential Book</title>
+        <title>Page 30 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 30 - Differential Book</div>
+        <div id="content-top1">Page 30 - ODE Book</div>
         <div id="content-top2">P. 30</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>I nt e gr a t i on  | 15
-
-               Formula – Integration exponential & trigonometry by parts.
-
-
-               Evaluate    ∫ e ax  cosbx dx
+    <pre style="white-space:pre-line"><code>I n t eg r at i o n  | 17
 
 
 
-                ∫  e ax  cosbx dx =  1 ax sinbx +  b a 2  e ax  cosbx −  a 2 ∫  e ax  cosbx  dx          ∫ cosbx dx
-                                   e
-                                 b
-                                                              2
-                                                             b
-                   a 2    ax           e ax                                        +     e ax     1 sinbx
-                                                                                                  b
-                                              b
-                                                     +
-                  1+  2    ∫ e  cosbx  dx =  2  ( sinbx a cosbx )
-                   b                    b                                          −    ae ax     − b 1 2  cosbx
-                ∫ e ax  cosbx  dx =  a + b 2  ( sinbx a cosbx +  ) C                 +  ae         − b 1 2∫ cosbx dx
-                                    ax
-                                   e
-                                          b
-                                                 +
-                                                                                           2 ax
-                                  2
-
-
-               Proof
-                           ∫
-               Find          e ax  cosbx dx
-
-               Solution
-
-                             u =  e ax        dv =  cosbxdx
-                   Let:
-                           d u =  ae ax dx  v = ∫ cosbxdx =  1 sinbx
-                                                         b
-
-                   ∫  e ax c sbx dx =  1 ax sinbx −  a ∫  e ax sin xdx           ∫  udv    =     v − ∫  vd u
-                                      e
-                                                                                           u
-                                                            b
-                          o
-                                                 b
-                                    b
-                                               u =  e ax         dv = si nbx dx
-                                     Let:
-                                                                            1
-                                                    ax
-                                             du =  ae dx   v = ∫ sinbxdx = − b  cosbx
-                   ∫  e ax  cosbx dx =  1 ax sinbx −  b        −  1 ax  cosbx +  a ∫  e ax  cosbx dx
-                                                                                    
-                                                  a
-                                      e
-                                                        e
-                                                                                    
-                                    b
-                                                      b
-                                                                   b
-                                                                                    
-                                  =  1 ax sinbx +  a  e ax  cosbx −  a 2 ∫ e ax cosbx dx
-                                     e
-                                    b            b 2            b 2
-                   ∫  e ax  cosbx dx +  b 2 ∫  e ax  cosbx dx =  1 ax sinbx +  b a 2  e ax  cosbx C
-                                    a
-                                                          e
-                                                                                  +
-                                      2
-                                                        b
-                                                                                      1
-                     2
-                    a + b 2 ∫ e ax  cosbx dx =  1  e ax ( sinbx a+  b  cosbx ) C+
-                      b 2                   b 2                          1
-                   ∫ e ax  cosbx  dx =  a +  b 2 ( sinbx a+  b  cosbx ) C +
-                                        ax
+                                                         e
+                                        e
+                       e ax cosbx dx =  1 ax  sinbx −  a ∫      −  1 ax cosbx +  a ∫  e ax cosbx dx  
+                                      b            b    b           b                  
+                                                                  2
+                                                                 a
+                                   =  1 ax  sinbx +  a  e ax cosbx −  b ∫ e ax  cosbx dx
                                        e
-                                      2</code></pre>
+                                     b            b 2             2
+                     ∫  e ax cosbx dx +  b ∫  a 2  e ax cosbx dx =  1 ax  sinbx +  b a 2  e ax cosbx C
+                                                            e
+                                                                                    +
+                                       2
+                                                          b
+                                                                                       1
+                       b ∫     e   cosbx dx =  b 2  e  ( sinbx a cosbx +  ) C
+                      2
+                     a +  b 2   ax             1  ax
+                                                             +
+                                                      b
+                                                                           1
+                         2
+                     ∫ e ax cosbx  dx =  a + b 2  ( sinbx a cosbx ) C+
+                                         ax
+                                        e
+                                                      +
+                                               b
+                                        2
+
+
+                 R.2-7 – Particular Solutions
+
+
+                 In many applications of integrations, we are given enough information to determine a particular
+                 solution. To do this, we need to know the value of F(x) for one value of x. This information is called
+                 an initial condition.
+
+
+
+                 Example 6
+
+                                                      t
+                 Solve the differential equation:  y′ =  te  that satisfies  (0)y  = 2
+
+                 Solution
+
+                          ∫   t
+                       y =   te dt
+
+
+                                          ∫
+                      Integration by part:  udv =  uv − ∫  vdu
+
+
+                         u =   t ⇒  du =  dt
+                             t          t
+                                    v
+                         dv = e dt ⇒ =  e
+                               ∫  e dt
+                                   t
+                            t
+                       y =  te −
+
+
+                        =  te −  t  e +  t  C
+
+                         0
+                       y () = (0)e −  0  e +  0  C =  2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 428 - Differential Book</title>
+        <title>Page 428 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 428 - Differential Book</div>
+        <div id="content-top1">Page 428 - ODE Book</div>
         <div id="content-top2">P. 428</div>
      </div>
      <div id="content-middle">
@@ -152,64 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>412 |  A ppe ndi x   C
+    <pre style="white-space:pre-line"><code>Section 4.2 – Series Solutions near Ordinary
 
-             Q      Q    Q     Q
-            C    =  C  +  C  +  C  +   
-              eq     1    2     3
-
-              1  =  1  +  1  +  1    +  
-            C      C    C     C
-              eq     1    2    3
-            Equivalent capacitance of capacitors connected in series
-
-
-        Energy Density of a parallel plate capacitor
-
-        If the area of the plates is A and the separation between the plates is d, then the volume of the parallel plate
-        capacitor is  Ad .
+                                              Points
 
 
 
 
 
+                 In this section, we consider methods of solving second order linear equations when the coefficients
+                 are function of the independent variable.
+                 The second order linear homogeneous equation is given by:
+
+                                       2
+                                     d y         dy
+                                P ( ) x   +  Q ( ) x  +  R ( ) x y =  0
+                                     dt 2        dt
 
 
+                 4.2-1  Example of a First-Order Equation
 
 
+                 Find the series solution for the differential equation  y′ −  2xy =  0
 
+                 Solution
+                                                               ∞
+                                                              ∑        n
+                                                       yx
+                    We look for a solution of the form:  () =      a x
+                                                                    n
+                                                              n= 0
+                                                                ∞
+                                                              ∑          n− 1
+                                                       y′ () x =    na x
+                                                                      n
+                                                               n= 1
+                     y′ −  2xy =  0
 
+                      ∞                 ∞
+                     ∑    nax  n− 1  −  2x ∑   ax =  n  n  0
+                            n
+                     n= 1              n= 0
+                      ∞               ∞
+                     ∑    nax  n− 1 −  ∑  2   ax n+ 1  =  0
 
+                                            n
+                            n
+                     n= 1            n= 0
+                      ∞                    ∞
+                     ∑    (  n +  ) 1 a n+ 1 ∑  x −  n  2   ax n+ 1  =  0
+                                                 n
+                     n= 0                 n= 0
+                           ∞                      ∞
+                      1 ∑                  n+  1  ∑        n+  1
+                     a +      (  n +  2)a n+ 2 x  −   2   ax   =  0
+                                                        n
+                          n= 0                   n= 0
+                           ∞
+                      1 ∑                          n+ 1
+                     a +         ( +  n  2)a n+ 2  −  2a n   x  =  0
 
-
-                           ( )
-        The energy density  U E   is given by
-
-                                           2
-                                        ∆
-            U   =  U       but u =   1 C V
-              E    Ad                2
-        For a parallel plate capacitor
-
-            ∆=    Ed          Where E is the electric field strength
-              V
-                   ε  A
-            & C =   0
-                    d
-
-                   1  CV 2
-                      ∆
-            U   =  2
-              E      Ad
-                     ε  A
-                   1  0   (Ed ) 2
-                 =  2 d
-                        Ad
-
-
-                        2
-            U   =  1 ε  E     Energy density of a parallel plate capacitor.
-              E   2  0</code></pre>
+                          n= 0</code></pre>
      	</div>
     
      </div>

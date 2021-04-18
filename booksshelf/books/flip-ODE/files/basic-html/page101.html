@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 101 - Differential Book</title>
+        <title>Page 101 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 101 - Differential Book</div>
+        <div id="content-top1">Page 101 - ODE Book</div>
         <div id="content-top2">P. 101</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>86 | 1.6 - E xa c t  D i f f e r e nt i a l  E qua t i ons
+    <pre style="white-space:pre-line"><code>88 | 1. 5 - M i x i ng P r obl e m s
 
 
-              ψ  ( ,x  y =  )  x +  2  xy +  2  C
+                      =  6  lb  / min
 
-              x +  2  xy =  2  C
+               Rate out = Volume Rate x Concentration
+                                     t
+                        =  3  gal  ×  x ()  lb
+                           min     100 gal
+                           xt
+                        =  3 ()    lb  /min
+                           100
 
+               dx  = rate of change
+               dt
 
-          Example 2
-
-
-          Solve the differential equation:    y cos x +  2xe +  y  ( sin x +  x e −  2 y  1 y′ =  )  0
-
-          Solution
-
-                                                              y
-              M =  y cos x +  2xe =  y  ∂ψ  ⇒  M  =  cos x +  2xe
-                                    x ∂        y
-              ∂ψ  =  N =  sin x +  x e − 2 y  1 ⇒  N =  cos x +  2xe
-                                                              y
-               y ∂                             x
-
-                 ⇒   M   =  N
-                       y     x
+                   = rate in − rate out
+                   =  6 −  3x
+                        100
 
 
-              ψ=  ∫ ( y cos x +  2xe y ) dx
+               dx  +  3  x =  6
+               dt   100
 
+                        ∫ ( ) dt    0.03t
+                           3
+                         e  100  = e
 
-                =  y sin x +  xe +  2 y  h ( ) y
-
-                           2 y
-              ψ   =  sin x +  xe +  h′ ( ) y
-                y
-                  =  sin x +  xe −  2 y  1
-
-
-                ⇒    hy     −  1
-                      ′
-                       ( ) =
-                    ( ) =
-               ⇒   hy     −  y
-                                 2 y
-              ψ  ( ,x y =  )  y sin x +  x e −  y =  C
-                       2 y
-              y sin x +  x e −  y =  C
+                      ∫  6e 0.03t dt =  0.03 e 0.03t
+                                      6
 
 
 
-          Example 3
+                                  =  200e 0.03t
+
+                                            )
+               x ( ) t =  e − 0.03t ( 200e 0.03t  +  C
 
 
-          Solve the differential equation:    3xy +  y +  2  ( x +  2  xy y′ = )  0
+               xt    200 Ce   − 0.03t
+                         +
+                ( ) =
+                                                                                      x
+                                                                                             0
+               Since there was no salt present in the tank initially, the initial condition is  ( ) 0 =
+                          0
+                   x ( ) 0 =
+                   200 C =   0
+                       +
+                   C = − 200
 
-          Solution
+               xt    200 200e   − 0.03t
+                ( ) =
+                         −
+               After 60 min:
+                   x (60 =  200 200e − 0.03( 60)
+                              −
+                       )
+                         ≈ 167   lb
 
-              M =  3xy +  y =  2  ∂ψ  ⇒  M  =  3x +  2y
-                               x ∂        y
-
-              N =  x +  2  xy =  ∂ψ  ⇒  N =  2x +  y
-                             y ∂        x
-
-                 ⇒   M   ≠  N
-                       y     x
-             Can be solved by this procedure.</code></pre>
+                                         (
+                                              −
+               As t →∞  then  ( )xt =  lim 200 200e  − 0.03t )
+                                    t→∞
+                                                   (
+                                                                                 (
+                                   =  200 200 lim e  − 0.03t )               lim e − 0.03t ) =  e −∞  = 0
+                                         −
+                                              t→∞                           t→∞
+                                   =  200   lb</code></pre>
      	</div>
     
      </div>

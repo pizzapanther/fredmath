@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1523 - DE Solution</title>
+        <title>Page 1523 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1523 - DE Solution</div>
+        <div id="content-top1">Page 1523 - ODE Solution Manual</div>
         <div id="content-top2">P. 1523</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1509
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1509
 
 
 
+                                      s +  2  ω  2  K  sθ +
+                                ∆  =                 0  =  s ψ +  3  ( ωψ +  2  Kψ +  Kθ ) s
+                                 2        − K      sψ        0         0      0      0
+                                                     0
 
+                                 s θ +  3  ( ωθ +  2  Kθ +  Kψ  ) s
+                        θ  ( ) s =  0        0      0       0   =  As +  B  +    Cs +  D
+                         1          ( s +  2  ω  2 )( s +  2  ω  2  + 2K )  s + ω 2  s + ( ω +  2K )
+                                                                   2
+                                                                                    2
+                                                                              2
+                               s 3               A C θ
+                                                        =
+                                                    +
+                                                          0
+                                2
+                               s                  B +  D =  0
+                                   (  2     )     2     2
+                                                +
+                                s  ω +  2KA ω      C =  ωθ 0  +  Kθ 0  +  Kψ 0
+                              
+                               s 0         ( ω  2  2KB ω +  )  +  2 D =  0
+                              
+                                (  2     )     2 (      )   2
+                                ω +   2KA ω      θ −  0  A =  ωθ +  0  Kθ +  0  Kψ
+                                            +
+                                                                            0
+                               2 AK   K θ=   K ψ+   →   A =  1 ( θ  ψ +  )
+                                         0      0           2   0    0
 
+                               C =  θ  −  A →    C =  1 ( θ  ψ −  )
+                                     0               2   0    0
+                               B  =  D =  0
 
-
-
-
-
-
-
-
-
-
-                                         2
-                    g)  Given:  g =  32 ft/s , θ =  52°, and v =  300 ft/s
-
-                                                          0
-                                          2
-                               )
-                         R (30°=   1  (300 ) sin104°
-                                  32
-                                 ≈  2729  ft
-
-
-                         y
-                    h)  ( ) x =     1       (   v 2  sin 2θ ) x −  gx 2   
-                                       2
-                                2v 2 cos θ   0               
-                                  0
-                                                    2
-                              = 1.2799x − 0.000469x
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 Exercise
-
-                 Consider an RC circuit as shown with all initial conditions are zero
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 The RC circuit is used as a simple example in deriving a transfer function.
-
-                              E  : is applied at the input voltage.
-                          i
-                               E  : is applied at the output voltage.
-                           o</code></pre>
+                        { θ 1 ( )} ( θ =  0  ψ +  0 ) £  −  1     2  s  2      1 ( θ +  0  ψ −  0 ) £  −  1  s  2
+                                  1
+                             s
+                                   2
+                                                                 2
+                                                          ω 
+                                                    
+                                                     s +
+                                                                                  s +  2      ω +  2  2K    
+                                                                                                 
+                                1
+                            t =
+                        θ  ( ) (   θ   ψ +  ) cosω  t  1 ( θ  ψ −  ) cos ω +  2  + 2K  t
+                         1      2   0    0          2   0    0
+                                           2
+                                  3
+                                 s ψ   +  ( ωψ  +  Kψ   +  Kθ  ) s
+                                                                                     +
+                                                                       +
+                        θ  ( ) s =   0        0       0      0   =   as b   +     cs d
+                          2         ( s +  2  ω  2 )( s +  2  ω  2  +  2K )  s + ω 2  s + ( ω +  2K )
+                                                                     2
+                                                                                     2
+                                                                               2
+                               s 3               a +=
+                                                     c ψ
+                                                         0
+                                2
+                               s                  b +  d =  0
+                                   (  2     )     2     2
+                                               +
+                                                     =
+                                s  ω +  2Ka ω      c ωψ   0  +  Kψ 0  +  Kθ 0
+                              
+                               s 0          ( ω  2  2Kb ω +  )  +  2 d =  0
+                              
+                                (  2     )     2 (     )    2
+                                ω +   2Ka ω ψ      0  −  a =  ωψ 0  +  Kψ 0  +  Kθ
+                                           +
+                                                                            0
+                               2 aK   K θ=   K ψ+  →    a =  1 ( θ  ψ +  )
+                                         0      0           2   0    0</code></pre>
      	</div>
     
      </div>

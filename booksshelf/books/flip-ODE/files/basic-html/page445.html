@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 445 - Differential Book</title>
+        <title>Page 445 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 445 - Differential Book</div>
+        <div id="content-top1">Page 445 - ODE Book</div>
         <div id="content-top2">P. 445</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>A ppe ndi x   E  | 429
+    <pre style="white-space:pre-line"><code>Section 4.4 – Solution about Singular Points
 
 
-                 ∫   a − x 2  dx =  a 2 2  sin − 1 x  −  x  a −  2  x 2
-                       2
-                      x
-                                         a
-                                             2
-                      2
-                    x − ∫  2 dx a 2  =  2a ln  xa  or  − 1  coth − 1 x     x − ∫  2 xdx a 2  =  1 ln x − a 2
-                                     −
-                              1
-                                    x a
-                                                                                       2
-                                                          a
-                                                 a
-                                                                                 2
-                                     +
-                                                                                             2
-                    x − ∫  2 x dx 2  =  x +  a ln  x a              ∫  xx −   a 2 )  =  2a 2  ln  x − 2 a 2
-                      2
-                                                                           xdx
-                                                                                      1
-                                        −
-                                                                        (
-                                                                           2
-                                      xa
-                                 2
-                                        +
-                                                                                              x
-                        a
-                                                                         2 ∫
-                    x ∫  2 ( x − a 2 )  =  2ax  +  2a 3  ln  x a       ( x − a 2 ) 2  =  2 x − a 2 )
-                                                                           xdx
-                                                                                          1
-                                                                                         −
-                        xdx
-                                                   −
-                                    1
-                                           1
-                                                                                      (
-                                                                                        2
-                                                 xa
-                                     2
-                                                   +
-                        2
-                      2 ∫  dx  =      −  x     −  1  ln  x a
-                                                          −
-                   ( x − a 2 ) 2  2a 2 ( x − a 2 )  4a 3  xa
-                                                          +
-                                       2
-                 ∫ x 2  x −  2  a dx =  2  a 8 4  sin − 1 x  −  1  x x −  2  a 2 ( a −  2  2x 2 )
-                                                8
-                                             a
 
-                      2 ∫  dx  =       x       +  1  ln  x a
-                                                          +
-                                                          −
-                   ( x − a 2 ) 2  2a 2 ( x − a 2 )  4a 3  xa
-                                       2
-                 ∫   x −  a 2  =  cosh − 1 x  +  C =  ln x +  x −  2  a 2
-                       dx
-                                       a
-                      2
-                 ∫   x −  2  a dx = 2  x  x −  2  a −  2  a 2 2  ln x +  x −  2  a 2
-                                 2
 
-                                          2
-                      2    2   n    x  x − a 2  na 2       2   2   n− 2
-                     x −  a   ∫    dx =      −          x −  a    ∫    dx  n ≠  − 1
-                                        n +  1   n +  1
+          4.4-1  Solution about Singular Points
 
-                                               −
-                                        2
-                        dx 2  ∫  =  x       x − a 2       2 n  −  n − ) 2 a ∫  3  dx  n ≠  − 2
-                      2      n      ( −  2  ) na 2  (n −   2       2   2   n− 2
-                     x −  a                                      x −  a  
-                                                                        </code></pre>
+
+          The Standard form            y′′ +  P ()xy′ +  Q ()xy =  0
+
+          In the neighborhood of a singular point, as the behavior of the solutions.
+
+
+
+          Definition
+
+                                                           Qx
+                                                 P
+          A point  x  is an ordinary point if both  ( ) x  and  ( )  are analytic at  x . If a point in not ordinary
+                   0                                                             0
+          it is a singular point.
+
+
+          4.4-2  Definition   (Regular and Irregular Singular Points)
+
+
+          A singular point  x =  x  is said to be a regular singular point of a differential equation if the functions
+                               0
+            ( ) (
+          p x =   x x  0 ) ( ) x   and  ( ) ( x −  x 0 ) 2 Qx                   0
+                                                       ( )  are both analytic at  x .
+                          P
+                    −
+                                    q x =
+          A singular point is not regular is said to be an irregular singular point of the equation.
+          The singular points are those points where  ( )  or  ( )  fails to be analytic, when the denominators
+                                                            qx
+                                                    px
+          are zero.
+
+                                                                              P
+             If  x −  x appears at most to the first power in the denominator of  ( ) x  and at most to the second
+                      0
+                                           Qx
+               power in the denominator of  ( ) , then  x =  x is a regular singular point.
+                                                            0
+
+
+          Example 1
+
+
+          Determine the singular points for   ( x −  2  4 ) 2  y′′ +  3(x −  2)y′ +  5y =  0
+          Solution
+
+
+              ( x −  2 ) ( x + 2  ) 2  2  y′′ +  3(x −  2)y′ +  5y =  0
+
+              y′′ +  3   x − 2      y′ +       5         y =  0
+                    (x −  2 ) (x +  2  ) 2  2  (x −  2 ) (x +  2  ) 2  2
+
+                 Px            3              Qx             5
+                                                () =
+                   () =
+                        (x −  2 )(x +  ) 2  2        (x −  2 ) (x +  2  ) 2  2</code></pre>
      	</div>
     
      </div>

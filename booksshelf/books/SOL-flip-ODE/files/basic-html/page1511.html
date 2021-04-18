@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1511 - DE Solution</title>
+        <title>Page 1511 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1511 - DE Solution</div>
+        <div id="content-top1">Page 1511 - ODE Solution Manual</div>
         <div id="content-top2">P. 1511</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,93 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1497
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1497
 
 
+                                   E
+                            qt      0 1   ( 1 e −  t λ  −  λ te −  t λ  )    ω  2  λ =  2  =  1
+                             ( ) =
+                                            −
+                                    L  λ 2                                     LC
+                                 =  EC ( 1 e−  −  t λ  −  λ te −  t λ  )
+                                    0
 
-                            s 3    AC =    0
-                                     +
-                            s 2    B +  D =  −  1
-                             s   12A +  2C =  0
+                          dq    1         − kt
+                    b)  R     +   q =  E e
+                           dt   C      0
+                                                         1
+                                           1
+                                                                           0
+                                              () =
+                         R (sQs −  () q (0) ) +  C  Qs  E 0 sk+     q ( ) 0 =
+                        ( Rs +  C ) Q () s =  E 0 sk+
+                               1
+                                              1
+                        ( RCs + 1 ) Qs   E 0 sk
+                                              1
+                                    () =
+                                              +
+                            C
+                          () =
+                        Qs     E  C         1        =  EC  (  A  +    B    )
+                                          )(
+                                 0  (s k RCs +     ) 1  0    s k    RCs + 1
+                                                              +
+                                       +
+                                              +
+                                          +
+                                RCAs +  A Bs kB =    1
+                                       s 1  (RC A + )  B =  0
+                                                              ( 1 kRC ) A =  1
+                                                                − →
+                                                +
+                                       s 0    A kB =  1
+                                       A =   1         B = −  RC
+                                                           −
+                                           1 kRC          1 kRC
+                                            −
+                          () =
+                        Qs     E C  (   1     1   −    1     RC    )
+                                 0   1 kRC s k      1 kRC RCs +  −  1
+                                              +
+                                      −
+                                 EC                    
+                              =    0      1  −    1    
+                                1 kRC s k       s +  1   
+                                        
+                                 −
+                                           +
+                                        
+                                                   RC 
+                        When  k ≠   1
+                                   RC
+                                              0
+                                        }
+                                   Qs
+                                £  { () =    EC    £      1  −  1     
+                                           1 kRC          s k  s +  1   
+                                                         +
+                                             −
+                                                                 RC 
+                                        EC
+                                q ( ) t =  0  ( e −  kt  − e  t −  /RC )
+                                        −
+                                      1 kRC
+                        When  k =   1    ⇒  Qs     E C          1
+                                             () =
+                                                             1
+                                   RC               0  ( s +  RC ) (RCs +  ) 1
+                                                                                                     
+                                                 =  E RC 2     1      =  E RC 2    A    +     B      
+                                                    0               2    0       RCs + 1           2  
+                                                           (RCs +  ) 1                    ( CRs +  ) 1  
+                                                 +
+                                       RCAs +  A B =  1
+                                               )
+                                       s 1  (RC A = →    A =  0
+                                                    0
 
-                            s 0  12B +  2D =  −  6
-
-                            A =  0 B =  −  2  C =  0 D =  −  3
-                                         5                 5
-
-                     £  −  1 { X 2 ( )} =  £  −  1     −  5 2 2  s +   2  2  2  −  5  3 12  s +  2 2 3    
-                                s
-                                                                      12
-
-
-                     x  ( ) t =  −  2  sin 2 −  t  3 sin 2 3t
-                      1        5            10
-
-
-                 Exercise
-
-                 Derive the system of differential equations describing the straight-line vertical motion of the coupled
-                 springs. Use the Laplace transform to solve the system when
-                   k =  1,  k = 1,  k = 1,  m = 1,  m = 1  and
-                    1      2      3       1       2
-                   x  ( ) 0 =  0,  x′  ( ) 0 =  −  1,  x  ( ) 0 =  0,  x′  ( ) 0 =  1
-                    1          1            2          2
-                 Solution
-
-
-                      x +  ′′  2x −  x =  0           mx′′ =  −  k x +  k  ( x −  x  )
-                       1     1   2                     11      11     2   2   1
-                     x′′ +  2x −  x =  0                      k  (     x  )  kx
-                      2     2    1                   m x′′ = 2 2  −  2  x −  2  1  −  32
-
-                     £   x′′ + {  1  2x −  1  x 2 } =  0
-
-
-                      2
-                     s X  ( ) s −  sx  ( ) 0 −  x′  ( ) 0 +  2X  ( ) s −  X  ( ) s =  0
-                         1        1      1         1        2
-                     £   x′′ + {  2  2x −  2  x 1 } =  0
-
-
-                      2
-                     s X 2  ( ) s −  sx 2  ( ) 0 −  x′ 2  ( ) 0 +  2X 2  ( ) s −  X 1  ( ) s =  0
-
-                     ( s +  2  2 X 1 ( ) s −  X 2  ( ) s =  −  1
-                            )
-
-                                      )
-                     −  X  ( ) s +  ( s +  2  2 X  ( ) 1s =
-                        1                2
-
-                             s +  2  2  −  1        2
-                                               2
-                        ∆=                 = ( s +  2 )  − 1
-                              −  1  s +  2  2</code></pre>
+                                       s 0   A +  B =  1 →  B = 1</code></pre>
      	</div>
     
      </div>

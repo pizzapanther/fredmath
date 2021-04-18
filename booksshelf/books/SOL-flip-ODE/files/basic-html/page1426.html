@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1426 - DE Solution</title>
+        <title>Page 1426 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1426 - DE Solution</div>
+        <div id="content-top1">Page 1426 - ODE Solution Manual</div>
         <div id="content-top2">P. 1426</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,77 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1412 | S O LU TI O N
 
 
-                           t
-                      t
-              w ( ) t = −+ 2e +  2e  t −
-              y ( ) t =  w (t −  ) 2 =  −  (t −  2 +  ) 2e t − 2  +  2e − (t −  ) 2
+          Exercise
 
+          Solve using the Laplace transform:     y′ +  4y = cos ,  y  0 () =  0
+                                                           t
+          Solution
+              £  ( y′ +  4  ) y £  (cost )
+                          =
 
-                   =  2 t−+ 2e t − 2  +  2e  t −+ 2
+              sYs    y (0) 4 () = Ys  s                  y (0) =  0
+                () −
+                          +
+                                     2
+                                    s + 1
+              (s +  ) 4 Ys =  ()  s
+                            2
+                           s +  1
+             Ys            s
+               () =
+                    (s +  ) 4 s +  (  2  1 )
+
+                                                +
+                           s        =  A   +  Bs C
+                                               2
+                     (s +  ) 4 s +  (  2  1 )  s + 4  s + 1
+
+                                             +
+                                 +
+                     s =  As +  2  A Bs +  2  4Bs Cs +  4C
+                     s =  ( A Bs+  )  2  +  (4B C s+  ) +  A +  4C
+                          A +   B =  0
+                        
+                             +
+                         4BC =   1
+                        
+                         A +  4C =  0
+
+                         A =  −  4  B =  4  C =  1
+                              17       17       17
+
+             Ys     −  4  1   +  4   s   +  1   1
+               () =
+                      17 s +  4  17 2  1   17 2   1
+                                   s +
+                                             s +
+                                 1
+              y () t =  −  4  £  −  1 { } +  4  £  −  1     s      +  1  £   −  1     1    
+                     17         s +  4  17        s +  2  1  17     s +  2  1
+
+                  =  −  4 − 4t  +  4  cost +  1  sin   t
+                        e
+                      17       17       17
 
 
           Exercise
 
-                                                                          0
-          Solve using the Laplace transform:     y′′ +  y =   ; t  y π  ( ) =  y π  ′ ( ) =
+          Solve using the Laplace transform:     y +  4y e − 4t ,  y ( ) 0 =
+                                                     = ′
+                                                                      2
           Solution
-
-             Let:  ( ) = wt  ( y t π  +  ) ↔  y ( ) t =  w (t π  −  )
-
-                                    =
-                    =
-              y′′ +  y t →    w′′ +  w t π
-                                        +
-                { £  w′′ +  w =  } £  {t π }
-                                +
-                                         () =
-              s Ws − 2  () sw ( ) 0 −  w′ ( ) 0 +  Ws  1  +  π
-                                              s 2   s
-                     y π  ( ) =  w (π π  −  ) =  w ( ) 0 =  0,  y π  ′  ( ) =  w′  ( ) 0 =  0
-
-              ( s +  2  1 Ws =  )  ()  1 π s
-                              +
-                              s 2
-
-             W  (s ) =  1 π+  s  =  A  +  B  +  Cs +  D
-                                             2
-                          2
-                     s 2 ( s + 1 )  s  s 2  s + 1
-                                                           2
-                     1 π =  s  As +  3  As +  Bs +  2  B Cs +  3  Ds
-                      +
-                                                +
-                         s 3  A C =  0 C = −     π
-                                +
-                        
-                         s   2  B +  D =  0  D = − 1
-                        
-                          s   1  A =    π
-                          0
-                         s    B = 1
-
-
-              £  −  1 { () £   −  1     π  +  1  −  π  s  −  1    
-                    Ws
-                         } =
-                                    s  s 2  s +  2  1  s +  2  1
-              w ( ) t = π  t π + −  cost − sint
-
-
-              y ( ) t =  w (t π  ) π  (t π = −  −  ) π +  cos −  (t π −  ) sin−  (t π  −  )
-
-                                         t
-                                                                 π −
-                    t π =  −  (cos cost  π  −  sin sin π  ) (cos sint  π  cos sin  ) t
-                                                −
-                  =  t π+  cost +  sint</code></pre>
+              £  {y′ +  4  } y £=  { }
+                                  4t
+                                −
+                               e
+                () −
+                                                            2
+              sYs    y (0) 4 () = Ys  1              y ( ) 0 =
+                          +
+                                    s +  4
+              (s +  4 Ys     1   +  2
+                   ) ( ) =
+                            s + 4</code></pre>
      	</div>
     
      </div>

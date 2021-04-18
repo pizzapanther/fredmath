@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1454 - DE Solution</title>
+        <title>Page 1454 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1454 - DE Solution</div>
+        <div id="content-top1">Page 1454 - ODE Solution Manual</div>
         <div id="content-top2">P. 1454</div>
      </div>
      <div id="content-middle">
@@ -155,80 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1440 | S O LU TI O N
 
 
-               2
-              s W  ( ) s −  sw ( ) 0 −  w′ ( ) 0 +  5sW s −  ( ) 5w ( ) 0 −  6W s =  ( ) 21  1
-                                                                     s − 1
-                 y ( ) 1 =  w ( ) 0 =  −  1, y′ ( ) 1 =  w ( ) 0 =  9
+
+              y ( ) t =  3  +  9 t +  3 t +  2  3 t +  3  1 e 2t  −  13 te 2t
+                                    2
+                                          4
+                             2
+                     4
+                        8
+                                                 8
+
+
+          Exercise
+          Solve using the Laplace transform:    x′′  4x′ +  +  4x = t 2 ; x ( ) 0 =  x′ ( ) 0 =
+                                                                                  0
+          Solution
+              £  {x′′ +  4x′ +  4x } £=  { }
+                                     2
+                                    t
+
+                                                                                         0
+              s Xs − 2  ( ) sx ( ) 0 −  x′ ( ) 0 +  4sXs −  ( ) 4x ( ) 0 +  4Xs  2      x ( ) 0 =  x′ ( ) 0 =
+                                                           ( ) =
+                                                                 s 3
+              ( s +  2  4s +  4 Xs  2
                          )
-              ( s +  5s − 6 Ws    s − 1 −+  4
-                2
-                                   21
-                                        s
                             ( ) =
-             W  ( ) s =  s −  2  +  5s +  17  =  A 6  +  B 1 +  C
-                     (s +  6 )(s −  ) 1  2  s +  s −  (s −  ) 1  2
+                                  s 3
+              Xs          2     =  A  +  B  +  C  +  D  +  E
+                ( ) =
+                      s 3 (s +  ) 2  2  s 3  s 2  s  s +  2  (s +  ) 2  2
+
+                                                            +
+                                        +
+                         As +  2  4As +  4A Bs +  3  4Bs +  2  4Bs Cs +  4  4Cs +  3  4Cs +  2  Ds +  4  2Ds +  3  Es =  3  3
+                           s 4      C +  D =  0     →  D =  −  9
+                                                            16
+                            3                                3
+                            s   B +  4C +  2D +  E =  0  →  E =  −
+                                                            8
+                            2                               9
+                           s     A +  4B +  4C =  0  →  C =  16
+                          
+                           s 1     4A +  4B =  0    →  B =  −  3
+                                                             4
+                            0
+                            s   4A =  3 →  A =  3
+                                              4
 
 
-                    s 2    AB =    −  1
-                              +
-                   
-                                   +
-                    s 1  −  2A +  5B C =  5
-                   
-                     0
-                    s   A −  6B +  6C =  17
-                   
-                         1    1   0
-                     ∆= − 2   5   1 =  49
-
-                         1   − 6  6
-                           −  1  1  0             1   −  1  0           1   1   −  1
-                     ∆  =  5   5   1 =  −  49  ∆  =  −  2  5  1 =  0  ∆  =  −  2  5  5 =  147
-                      A                       B                    C
-                          17   −  6  6            1   17  6             1  −  6  17
-
-                   A =  −  1, B =  0, C =  3
-
-
-              £  −  1 {Ws       −  1       − 1  +  3      
+              £   −  1 {Xs       −  1        3 1  −  3 1  +  9 1  −  9  1  −  3  1      
                        ( )} £=
-                                       s + 6  (s −  ) 1   2 
-                                t
-              w ( ) t =  −  e − 6t  +  3te
+                                       4  s 3  4  s 2  16 s  16 s +  2  8  (s +  ) 2  2   
 
-
-                t
-              y ( ) =  w (t −  ) 1 =  −  e −  ( 6 t −  ) 1  +  ( 3 t −  ) 1 e (t −  ) 1
+              x ( ) t =  3 t −  2  3 t +  9  −  9 −  e  2t  −  3 −  te  2t
+                    8     4    16 16         8
 
 
           Exercise
 
+          Solve using the Laplace transform:    y′′ +  4y =  4t −  2  4t + 10 ;  y ( ) 0 =  , 0  y′ ( ) 30 =
 
-                                                                        =
-          Solve using the Laplace transform:    y′′ +  5y′ +  4y =  ; 0  y (0) 1, y′ (0) 0
-                                                                                  =
           Solution
-                  £  {y′′ +  5y′ +  4y } 0=
-
-               2
-                                                          ( ) 0=
-              s Ys       ( ) 0 −  y′ ( ) 0 +  5sYs  ( ) 0 +  4Ys           y (0) 1;   (0) =
-                  ( ) sy−
-                                          ( ) 5y−
-                                                                                           0
-                                                                                    y′
-                                                                                =
-                         )
-              ( s + 5s +  4 Ys   s  50
-                2
-                            ( ) −−
-                                      =
-               ( ) =
-             Ys         s +  5    =  A  +  B
-                     s +  2  5s +  4  s +  1  s +  4
-                                     +
-                         As +  4A Bs B s + =  5
-                                 +</code></pre>
+                                            }
+              £  {y′′ +  4  } y £ { 4t −  2  4t +  10
+                          =</code></pre>
      	</div>
     
      </div>

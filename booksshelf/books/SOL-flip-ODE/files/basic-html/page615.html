@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 615 - DE Solution</title>
+        <title>Page 615 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 615 - DE Solution</div>
+        <div id="content-top1">Page 615 - ODE Solution Manual</div>
         <div id="content-top2">P. 615</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 7 − M o de l i ng  P o pul a t i o n G r o w t h  | 609
 
 
-                                       7
 
-                             ≈  3.23 10 kg
-                                   ×
-                                   ×
-                                             4 10
-                         yt
-                    b)  ( ) =    8 10  7   = ×    7
-                               1 3e  − 0. 71t
-                                +
-                                        ×
-                        13e   − 0.71t  =  8 10 7
-                          +
-                                        ×
-                                      4 10  7
-                                    =  2
-                        3e − 0.71t  = 1
+                        ln    P     =  0.08t −  ln3
+                           200 P
+                               −
+                            P    = e 0.08 ln3
+                                        t−
+                         200 P
+                             −
+                            P    = e 0.08 ln3 − 1
+                                        t
+                                        e
+                             −
+                         200 P
+                            P    =  1 e 0.08t
+                             −
+                         200 P     3
+                        3P =  200e 0.08t  −  Pe 0.08t
 
-                                  1
-                        e − 0.71t  =
-                                  3
-                                   1
-                        −  .071t =  ln
-                                   3
-                        t =  ln3
-                            0.71
+                         P ( ) t =  200e 0.08t
+                                3 e 0.08t
+                                 +
+                              =     200
+                                3e − 0.08t  + 1
 
-                          ≈ 1.55 years
+                               ( )
+                    b)  lim P t =    lim     200
+                        t→∞         t→∞  3e − 0.08t  + 1
+                                  =  200
+
 
 
                  Exercise
-                                       P
-                 Suppose a population  ( ) t  satisfies   dP  =  0.4P −  0.001P 2 , P ( ) 0 =  50
-                                                        dt
-                 Where t is measured in years.
-                    a)  What is the carrying capacity?
-                    b)  What is  ( ) 0P′  ?
 
-                    c)  When will the population reach 50% of the carrying capacity?
+                 When an infected person is introduced into a closed and otherwise healthy community, the number of
+                 people who become infected with the disease (in the absence of any intervention) may be modeled by
+                 the logistic equation
+                                                    dP  =  kP ( 1−  P ) , P ( ) 0 =  P
+                                                    dt          A              0
 
+                 Where k is a positive infection rate, A is the number of people in the community, and  P  is the
+                                                                                                     0
+                 number of infected people at t = . The model assumes no recovery or intervention.
+                                                 0
+                   a)  Find the solution of the initial value problem in terms of k, A, and  P .
+                                                                                        0
+                   b)  Graph the solution in the case that  k =  0.025,  A =  300, and  P = 1 .
+                                                                                     0
+                   c)  For fixed values of k and A, describe the long-term behavior of the solutions for any  P  with
+                                                                                                         0
+                       0 &lt;  P &lt;  A
+                            0
                  Solution
-                    a)           1         dP =  dt
-                         0.4P (1 0.0025P−  )
-                               1        =  A  +    B
-                                                −
-                         P (1 0.0025P−  )  P  1 0.0025P
-                                         +
-                            A −  .0025PA PB =   1
-                                       A= 1
-                                → 
-                                           +=
-                                   − .0025A B  0 B= .0025
-                        ∫  (  1  +  1 .0025P ) dP =  0.4 dt
-                                                    ∫
-                                  .0025
-                            P
-                                 −
-                        ln P −  ln (1 .0025P−  ) =  0.4t +  C
-                                                      1
-                        ln     P     =  0.4t + C
-                           1 .0025P            1
-                            −</code></pre>
+
+                                    −
+                    a)   dP  =  kP (  A P )
+                         dt         A
+                        ∫  PA P    )  dP = ∫    k dt
+                               A
+                             (
+                                −
+
+                        ∫  (  1  +  A P ) dP =  ∫    k dt
+                                  1
+                                  −
+                            P</code></pre>
      	</div>
     
      </div>

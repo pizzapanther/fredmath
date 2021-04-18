@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 269 - Differential Book</title>
+        <title>Page 269 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 269 - Differential Book</div>
+        <div id="content-top1">Page 269 - ODE Book</div>
         <div id="content-top2">P. 269</div>
      </div>
      <div id="content-middle">
@@ -152,50 +152,66 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>254 | 3.4 - Us i n g   L a pl a c e  T r a ns f or m   t o  S o l v e  D i f f e r e n t i a l  E q u a t i o n s
-
-                                   Xs =
-                                                                                              Hs
-          If the input is  ( ) tδ  , then  ( ) 1 and  ( ) =  H ( ) s . Hence, the physical meaning of  ( )  is in fact
-                                                Ys
-          the Laplace transform of the impulse response of the corresponding circuit.
-
-
-          3.4-7  Circuit Element Models
-
-          The method used as follow:
-           1.  Write the differential equation model.
-
-           2.  Use Laplace transform to convert the model to s−domain.
-           3.  Solve the ODE in s−domain.
-           4.  Convert to t−time domain using the inverse Laplace transform.
-
-
-          Another approach, more direct approach is as follow:
-
-           1.  Develop s−domain models for the circuit elements.
-           2.  Draw the Laplace equivalent circuit keeping the interconnections and replacing the elements by
-               their s−domain models.
-           3.  Analyze the Laplace equivalent circuit.
-           4.  Convert to t−time domain using the inverse Laplace transform.
+    <pre style="white-space:pre-line"><code>256 | 2. 6 - F o r c e d H a r m o ni c  M ot i o n
 
 
 
-          3.4-8  Resistor
+                 sinφ=         2cω
+                         ( ω −ω 2 ) 2 + 4c ω
+                                       22
+                            2
+                            0
+                      2
+                     ω −ω  2
+              cotφ=    0
+                       2cω
+                              2
+                             ω −ω 2  
+             φ ( ) arc  cot   0             0 &lt; φ&lt; π
+                   =
+                ω
+                               2cω   
+                                    
+                () =
+              Hiω        1
+                        ()
+                       Piω
+                         e
+                     =  1 − iφ
+                       R
+             We will define the gain G by:
 
-             Laplace Transform
-
-                                        s
-                          I  ().sR V   ()
-                                  =
-                           R         R
-                                                                 V =  RI
-                                                               R
-              The block diagram:
-
-                                     System
-
-                Input Signal           R            Output Signal</code></pre>
+                     ()G ω=  1  =         1                         Hi ω=     ()e  i − φ
+                                                                               ω
+                                                                      ( ) G
+                           R                2
+                                 ( ω − ω 2 )  +  4c ω
+                                    2
+                                                  22
+                                    0
+             The solution:
+                       i
+               () =
+                       ω
+              zt    H ( )Ae  it ω
+                      ()Ae
+                  =  G ω     ( i ω t−φ )
+                  t
+                         zt
+              x  () =  Re ()
+               p
+                    =  G ( ) cos( t − φ
+                           A
+                                       )
+                        ω
+                                 ω
+              x ( ) et =  − ct ( C 1 cos tC 2  sin t +  η  )  G ( ) cos( t φ −  A  ω  )
+                                                   ω
+                                   +
+                                η
+                 e − ct  :transient term.
+                 T =  1 : time constant.
+                  c   c</code></pre>
      	</div>
     
      </div>

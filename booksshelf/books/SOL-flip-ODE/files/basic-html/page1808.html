@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1808 - DE Solution</title>
+        <title>Page 1808 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1808 - DE Solution</div>
+        <div id="content-top1">Page 1808 - ODE Solution Manual</div>
         <div id="content-top2">P. 1808</div>
      </div>
      <div id="content-middle">
@@ -155,75 +155,79 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1794 | S O LU TI O N
 
 
-              dx  =  0.2 kg ( 6  L  ) +  3 L/min   y ( ) −  kg  5  x −  4  x
-              dt       L   min    100 L         100     100
-
-                 =  −  9  x +  3  y +  6
-                     100    100     5
-
-             Tank B:
-              dy    5       3      2
-              dt  =  100 x −  100  y −  100  y
-
-                 =  1  x −  1  y
-                   20     20
-
-               x′ = −  9  x +  3  y +  6
-                    100    100     5
-              
-               y′ =  1  x −  1  y
-                  20     20
-
-                       −  9   3 
-                 A =      100  100   
-                       1    −  1  
-                       20     20 
-
-                        −  9  −  λ    3
-                −
-              A λ =  I   100         100
-                            1      −  1  −  λ
-                           20       20
-                      =   9   +  14  λ  λ +  2  −  3
-                        2,000   100          2,000
-                      =  14  λ  λ +  2  +  3  =  0
-                        100         1,000
-
-                 10 λ  32  140λ +  + 3 =
-                                    0
-                                                         7
-             The eigenvalues are: λ    =  −  140 ±  20 19  =  −±  19
-                                   1,2       2000         100
+                     +
+                  .2 .2i   0     .2   a    0  
+                                               0
+                                         b =
+                    .2   .2i    0           ⇒       (.2 .2i a+  ) =  −  .2c
+                                         
+                                                     .2a = − .2ib
+                                               0
+                                  +
+                                         c
+                    0     .4  .2 .2i    
+                                          1 i
+                 Let b i=   ⇒  a = 1 c = −−
+                                 1 
+                     ⇒   V =     i  
+                           2        
+                                    
+                                 1 i
+                                −−  
+                             1 
+                 x    ( ) t =   i  e −   .4t −  e  .2ti
+                   2,3          
+                                
+                             1 i
+                             −−  
+                         1 
+                                        ( ) i −
+              x   ( ) t =   i    e − .4t  (cos .2t  sin .2t
+                                                   ( ))
+               2,3           
+                             
+                          1 i
+                         −−  
+                                 cos.2ti−  sin.2t        
+                     =         sin.2ti+  cos.2t             e − .4t
+                         −  cos.2t −  sin.2t i−  (cos.2t −  sin.2t ) 
+                                                         
 
 
-             For λ     − 7  −  19  ⇒   ( A λ =  −  IV =  )  0
-                   1  100    100             1    1
-                    2    19      3    
-                       +
-                                                0
-                   −  100 100   100       a   1    (        )
-                                            b     =    ⇒  − 2 +  19 a = − 3b
-                                                                    1
-                                                                           1
-                                                0
-                      1       1  +  19      1   
-                     20       50 100 
-                                    3    
-                            V =  →       
-                             1    2 −  19
-                                         
-             For λ     −  7  +  19   ⇒   ( A λ =  −  IV = )  0
-                   2    100    100              2    2
-                    2    19      3   
-                       −
-                                                0
-                   −  100 100   100      a   2    (         )
-                                           b     =   ⇒  − 2 −  19 a = − 3b
-                                                                    2
-                                                                            2
-                                                0
-                      1       1  −  19      2   
-                     20       50 100 </code></pre>
+                      2
+                     
+              xt     
+                ( ) =
+                      1
+               1     
+                     
+                      2
+                     
+                          cos.2t     
+              x  ( ) t =    sin.2t     e − .4t
+               2                     
+                                     
+                        −  cos.2t −  sin.2t 
+
+                         − sin.2t  
+              x  ( ) t =    cos.2t    e − .4t
+               3                   
+                                   
+                       sin.2t −  cos.2t 
+
+                                                     )
+               x  ( ) t =  2C +  ( C  cos0.2t C  sin0.2t e − .4t
+                                         −
+                1       1      2           3
+                                                     − .4t
+                                                    )
+                                       +
+               x 2  ( ) t =  C +  1  ( C 2  sin0.2t C 3  cos0.2t e
+              
+                              ( (
+                                                                     )
+               x  ( ) t =  2C +− C − C  ) cos0.2t + ( C − C  ) sin0.2t e − .4t
+                3        1       2    3              3    2</code></pre>
      	</div>
     
      </div>

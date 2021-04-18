@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 359 - Differential Book</title>
+        <title>Page 359 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 359 - Differential Book</div>
+        <div id="content-top1">Page 359 - ODE Book</div>
         <div id="content-top2">P. 359</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>344 | 4.1 - I nt r oduc t i on  &  R e vi e w  o f  P ow e r  S e r i e s
-
-                        N
-                N ∑          n
-              S   () =      x
-                   x
-                       n= 0
-
-                         −
-                      =  1 x N+ 1  ,    x ≠ 1
-                          1 x
-                           −
-             If  x &lt; 1, then  x N  1 +  →  0  as N →∞
-
-                     ⇒  S   () x →  1
-                          N       1 x−
-
-                                                                 x
-             If  x &gt; 1, then  x N+ 1  diverges and therefore the   S  ()  diverges
-                                                              N
-             If  x = 1, then  S  (1) =  N + 1
-                              N
+    <pre style="white-space:pre-line"><code>346 | 3. 6 - P l an a r  S y s t em s
 
 
-          4.1-2  Radius of Convergence of a Power Series
-
-          Corollary to Theorem
-
-                                       ∑              n
-          The convergence of the series     c n  (xa−  )  is described by one of the following three cases:
+                 −
+              Av λ  Iv =  0
+              ( A λ−  ) I v =  0
 
 
+                a     a     λ    1   0      v 
+                                 1 
+                11     12                   1   =  0
+                            −
+                                                 
+                           
+                 a 21  a 22  λ    0  1        v   2 
+                                 2 
+                
+               a  − λ       a       v 
+                11   1       12     1   =  0
+                a        a    −  λ  v 
+                 21        22    2   2 
+          Since v is a nonzero vector that implies that the matrix  A λ−  I  has a nontrivial null space.
+          This exists if and only if (iff):
 
-           1.  There is a positive number  R  such the series  diverges for  x  with  xa−  &gt;  R   but converges
+                               −
+                        det ( A λ  I =  ) 0
 
-               absolutely for x with  xa−  &lt;  R . The series may or may not converge at either of the endpoints
-                     −
-                                   +
-                x =  aR  and  x =  a R .
+          Therefore, the eigenvalues (λ’s) are the roots which can be determined by solving the determinant:
 
-                                                                 )
-           2.  The series converges absolutely for every x (R = ∞ .
-           3.  The series converges at x = a and diverges elsewhere (R = 0)
-
-
-          R is called the radius of convergence of the power series, and the interval of radius R centered at x = a
-
-          is called the interval of convergence.
+                  a   − λ       a
+                   11   1        12    = 0
+                    a        a   − λ
+                     21        22    2
+                 ( a 11  −  λ  1 )( a 22  −  λ  2 )  −  aa  =  0
+                                         12 21
 
 
-          4.1-3  Interval of convergence
+          Example 1
 
-          Theorem
+                                                        − 4  6
+          Find the eigenvalues of the matrix      A =        
+                                                        − 3  5 
+          Solution
+              A λ =  I  0
+                −
+              − 4 λ−      6    ( 4 λ = − −  )(5 λ  −  ) 18
+                                               +
+                −  3    5 λ−
+                              =  −  20 4 −  λ  5 +  λ  λ  2  +  18
+                                    +
+                                λ =  2  λ −−  2
 
-                                ∞
-                               ∑       (      ) n
-          For any power series      a n  x −  x 0   there is an R, either a nonnegative number or ∞, such that the
-
-                               n= 0
-          series converges if  x −  x &lt;  R  and diverges if  x −  x  &gt;  R
-                                  0                          0</code></pre>
+                                                       2
+             The characteristic polynomial is: λ  2  λ −  −=  0
+             Thus, the eigenvalues of A are 2 and −1.</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2028 - DE Solution</title>
+        <title>Page 2028 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2028 - DE Solution</div>
+        <div id="content-top1">Page 2028 - ODE Solution Manual</div>
         <div id="content-top2">P. 2028</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2010 | S O LU TI O N
 
 
+
+              a    =   1   a
+               n+ 2  n + 2 n
+
+                                      =
+                    Given:  a =   y (0) 1                   a =  y′ (0) 0
+                                                                      =
+                              0                               1
+                     a =  1 a =  1                          a =   1 a =  0
+                      2   2  0   2                            3   3  1
+                     a =  1  a =  22 ⋅   1  2               a =   1 a =  0
+                                                                     3
+                                                                  5
+                                                              5
+                             2
+                          4
+                      4
+
+                                                                         
+                     a =  1 a =    1                                  
+                                  3
+                      6   6  4   2 ⋅ 3!
+                               
+                                  
+
+               yx      +  1  x +  2  1  x +  4  1  x +  6  
+                ( ) 1=
+                         2     8      48
+
+
+          Exercise
+
+
+          Find a power series solution.     y′′ +  xy′ − 2y = 0;  y (0) 1  y′ (0) 0
+                                                                    =
+                                                                               =
+          Solution
+                      ∞
+                     ∑        n
+               ( ) =
+              yx          a x
+                           n
+                     n= 0
                        ∞              ∞
                      ∑         n− 1  ∑                n
               y′ ( ) x =  na x     =     (n +  ) 1 a n+ 1 x
                             n
                       n= 1           n= 0
-                      ∑  ∞            n− 2   ∑  ∞                     n
-                            ( −
+                       ∞                       ∞
+                      ∑               n− 2   ∑                        n
               y′′ ( ) x =   nn   ) 1 a x    =      (   n +  2 )(n +  ) 1 a n+ 2 x
+                            ( −
                                     n
                       n= 2                    n= 0
-                              )
-                           −
-              (x +  ) 1 y′′ −  (2 x y′ +  y =  0
-                     ∞                                 ∞                   ∞
-                    ∑                       n         ∑             1 ∑  n        n
-              (x +  ) 1  (n +  2 )(n +  ) 1 a n+  2 x −  (2 x−  )  (n +  ) 1 a n+  x +  a x =  0
-                                                                                n
-                    n= 0                              n= 0                n= 0
-               ∞                            ∞                          ∞
-                 (n +  2 )(n +  ) 1 a n + ∑  2 x n+ 1 +  (n +  2 )(n +  ) 1 a n + ∑  2 ∑  x −  n  ( 2 n +  ) 1 a n +  1 x n
-              n= 0                         n= 0                       n= 0
-                         ∞                     ∞
-                        ∑               n+ 1  ∑       n
-                            +  (n +  ) 1 a n+ 1 x  +  ax =  n  0
 
-                        n= 0                  n= 0
-               ∞                                         ∞
-              ∑    (n +   2 )(n +  ) 1 a n +  2  +  (n +  ) 1 a n +  1   x   n+ 1 +  ∑    (n +   2 )(n +  ) 1 a n +  2  −  ( 2 n +  ) 1 a n +  1  +  a   n   x =  n  0
+              y′′ +  xy′ −  2y =  0
+              ∑  ∞  (n +  2)(n +  1)a n+ 2 x +  n  x ∑  ∞  nax n− 1 −  ∑  ∞  2ax =  n  n  0
 
-              n= 0                                       n= 0
-               ∞                             ∞
-                    ( n n +  ) 1 a  + ∑  +  na    x +  n  ∑    (n +  2 )(n +  ) 1 a  −  ( 2 n +  ) 1 a  +  a    x =  n  0
-                           n  1    n                        n +  2         n +  1  n 
-              n= 1                          n= 0
+                                                n
+              n= 0                        n= 1           n= 0
+              ∑  ∞  (n +  2)(n +  1)a n+ 2 ∑  x +  n  ∞  nax − n ∑  n  ∞  2ax =  n  n  0
 
+
+              n= 0                       n= 0         n= 0
                ∞
-              ∑       ( n n +   ) 1 a n+ 1  +  na   n   x +  n  2a −  2  2a + a 0
-                                                    1
-              n= 1      ∞
-                       ∑                                       a   n
-                          +    ( +   n  2 )(n +  ) 1 a n+  2  −  ( 2 n +  ) 1 a n+  1  +  n   x =  0
-                       n= 1
-
-                                ∞
-              2a −  2a +  a +  0 ∑    (n +  2 )(n +  ) 1 a  +  (n −  2 )(n +  ) 1 a  +  (n +  ) 1 a    x =  n  0
-                2     1                           n +  2               n +  1       n 
-                               n= 1
-                                                   =
-                 Given:   ( ) 0y  =  2 =  a 0 ,  y′ ( ) 0 = − 1 a
-                                                      1
-                 2a −  2a +  a =   0
-                    2     1    0
-
-                 a =   1 ( 2a −  a  )  = − 2
-                   2   2    1    0
-
-                                                                   0
-                 (n +  2 )(n +  ) 1 a  +  (n −  2 )(n +  ) 1 a  +  (n +  ) 1 a =
-                               n +  2              n +  1       n</code></pre>
+                    (n +  1)(n +  2)a  +  (n −  ) 2 a n  ∑    x =  n  0
+                                n+ 2
+              n= 0</code></pre>
      	</div>
     
      </div>

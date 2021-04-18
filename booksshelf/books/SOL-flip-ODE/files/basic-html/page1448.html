@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1448 - DE Solution</title>
+        <title>Page 1448 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1448 - DE Solution</div>
+        <div id="content-top1">Page 1448 - ODE Solution Manual</div>
         <div id="content-top2">P. 1448</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,83 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1434 | S O LU TI O N
 
 
-
-              y ( ) t =  3  +  9 t +  3 t +  2  3 t +  3  1 e 2t  −  13 te 2t
-                     4  8    2      2     4      8
-
-
-          Exercise
-
-                                                             =
-                                                                                  0
-          Solve using the Laplace transform:    x′′  4x′ +  +  4x t 2 ; x ( ) 0 =  x′ ( ) 0 =
-          Solution
-              £  {x′′ +  4x′ +  4x } £=  { }
-                                      2
-                                     t
                2
-                                                                                         0
-              s Xs        ( ) 0 −  x′ ( ) 0 +  4sXs  ( ) 0 +  4Xs  2       x ( ) 0 =  x′ ( ) 0 =
-                                                           ( ) =
-                  ( ) sx−
-                                           ( ) 4x−
-                                                                 s 3
-              ( s +  2  4s +  4 Xs  2
-                         )
-                            ( ) =
-                                  s 3
-              Xs          2     =  A  +  B  +  C  +  D  +  E
-                ( ) =
-                      s 3 (s +  ) 2  2  s 3  s 2  s  s +  2  (s +  ) 2  2
-                         As +  2  4As +  4A +  Bs +  3  4Bs +  2  4Bs +  Cs +  4  4Cs +  3  4Cs +  2  Ds +  4  2Ds +  3  Es =  3  3
+                                () 3
+                 () s −+
+              s Ys +     1 3sY s + = −     3
+                                           s 2
+              ( s + 3sY () = −  3  −−  2
+                     )
+                2
+                                    s
+                         s
+                               s 2
+               () =
+             Ys     −     3    −  s +  2
+                       3
+                        ( +
+                      ss     3)   ( ss + 3)
+                          3     =  A  +  B  +  C  +  D
+                        3
+                       ss    3)   s   s 2  s 3  s + 3
+                         ( +
+                            3 =  As 2 (s +  3) Bs+  (s +  3) C+  (s +  3) Ds+  3
+                                        3             2
+                            3 =  ( AD s+  )  +  (3AB s+  )  +  (3B C+  ) 3C+
 
-                           s 4      C +  D =  0     →  D =  −  9
-                                                            16
-                            3                                3
-                            s   B +  4C +  2D +  E =  0  →  E =  −
-                                                            8
-                            2                               9
-                           s     A +  4B +  4C =  0  →  C =  16
-                          
-                           s 1     4A +  4B =  0    →  B =  −  3
-                                                             4
-                            0
-                            s   4A =  3 →  A =  3
-                                              4
+                                 A +   D =  0
+                                 3A +   B =  0  A =  1  B = − 1
+                                                             3
+                                                    9
+                                              ⇒
+                                                             1
+                                    +
+                                 3BC =  0      C = 1  D = −
+                                  3C =  3                   9
+                                
+                          s + 2  =  E  +  F
+                          ( ss +  3)  s  s +  3
 
+                               E +   F =  1
+                                           ⇒  E =  2  F =  1
+                                3E =  2         3       3
 
-              £   −  1 {Xs       −  1       3 1  −  3 1  +  9 1  −  9  1  −  3  1      
-                       ( )} £=
-                                       4  s 3  4  s 2  16 s  16 s + 2  8  (s +  ) 2  2   
+                        11  1 1    1   1 1       21    1 1
+             Ys     −     −      +   −          −  (  +      )
+               () =
+                        9 s  3  s 2  s 3  9 s +  3   3 s  3 s +  3
 
-              x ( ) t =  3 t −  2  3 t +  9  −  9 −  e  2t  −  3 −  te  2t
-                    8     4    16 16         8
+                  =  −  11  +  1 1  −  1  +  1 1  −  21  −  1 1
+                      9 s  3  s 2  s 3  9 s +  3  3 s  3 s +  3
+
+                  =  −  7 1  +  11  −  1  −  2 1
+                      9 s  3  s 2  s 3  9 s + 3
+
+                              1
+                                                                             1
+              y () =  t  −  7  £  −  1 { } +  1 £  −  1     1      −  £   −  1      1 2!     −  2 £  −  1 { }
+                      9        s   3         s   2      2! s   3  9    s +  3
+                                 2
+                      7
+               ( y  ) t =  −+  1 t −  1 t −  2 − 3t
+                                      e
+                      9   3   2     9
 
 
           Exercise
 
-          Solve using the Laplace transform:    y′′ +  4y =  4t −  2  4t + 10 ; y ( ) 0 =  , 0  y′ ( ) 30 =
 
+                                                                               0
+          Solve using the Laplace transform:     y′ + ′  3y t 3  ;  y (0) = 0,  y′ (0) =
+                                                      =
           Solution
-
-                                            }
-              £  {y′′ +  4  } y £=  { 4t −  2  4t +  10</code></pre>
+              £  {y′′ +  3y′ } £=  { }
+                                 3
+                                t
+               2
+                                                                                             0
+              s Y  ( ) sys −  ( ) 0 −  y′ ( ) 0 +  3Y ( ) s =  6 4         y ( ) 0 = 0  y′ ( ) 0 =
+                                              s</code></pre>
      	</div>
     
      </div>

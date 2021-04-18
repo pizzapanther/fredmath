@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 299 - Differential Book</title>
+        <title>Page 299 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 299 - Differential Book</div>
+        <div id="content-top1">Page 299 - ODE Book</div>
         <div id="content-top2">P. 299</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,46 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>284 | 3.5 - I nt r oduc t i on &  B a s i c   T h e or y  of  L i ne a r  S y s t e m s
-
-          35.  Each tank contains 100 gallons of a salt solution. Pure water flows into the upper tank at a rate of
-               4 gal/min. Salt solution drains from the upper tank into the lower tank at a rate of 4 gal/min. Finally,
-               salt solution drains from the lower tank at a rate of 4 gal/min, effectively keeping the volume of
-               solution in each tank at a constant 100 gal. If the initial salt content of the upper and lower tanks is
-               10 and 20 pounds, respectively. Set up an initial value problem that models the amount of salt in
-               each tank over time (do not solve). Write  the model in matrix-vector form.  Is the system
-               homogeneous or inhomogeneous?
+    <pre style="white-space:pre-line"><code>286 | 3. 1 - D e f i ni t i on  of  t h e   L a p l a c e  T r a ns f or m
 
 
+                a ∫    e   sin at dt =  −  a e  cosat −  a 2  e  sin at
+               2
+              a + s 2   −  st          1 −  st        s  −  st
+                 2
+
+              ∫ e − st  sin at dt =  −  a +  ae − st 2  cosat −  a +  se − st 2  sinat
+                                  2
+                                                2
+                                                   s
+                                    s
 
 
+              F ( ) s = T→∞∫ 0 T e − st sin at  dt
+                      lim
 
 
+                                 −  sT          −  sT             s −  (0)          s −  (0)    
+                   =  lim    −  ae   cosaT −  se    sin aT −−    ae     cosa (0) −  se    sin a (0)   
+                                                            
+                     T→∞        a +  2  s 2  a +  2  s 2      a +  2  s 2       a +  2  s 2   
+                                 − sT           − sT                   
+                   =  lim    −  ae   cosaT −  se    sin aT −−      a     
+                                                            
+                                                               
+                     T→∞       a +  2  s 2    a +  2  s 2       a +  2  s   2  
+                                                                                              ( )
+                                − sT           − sT      
+                   =  lim    −  ae  cosaT −  se    sin aT +    a                        lim e − sT  =  0
+                     T→∞     a +  2  s 2     a +  2  s 2    a +  2  s 2                T →∞
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          36.  Two masses on a frictionless tabletop are connected with a spring having spring constant  k . The
-                                                                                                       2
-               first mass is connected to a vertical support with a spring having spring constant  k .  The second
-                                                                                               1
-               mass is shaken harmonically via a force equaling  F =  A cos tω . Let  ()xt  and  ()y t  measure the
-               displacements of the masses  m and  m , respectively, from their equilibrium positions as a
-                                               1       2
-                                                                                                   0
-               function of time. If both masses start from rest at their equilibrium positions at time t = .
-
-                                                                         F(t)=Acos ωt
-                                    k 1               k 2
-                                           m 1                   m 2
-
-                                     x(t)                y(t)
-
-               Set up an initial value problem that models the position of the masses over time (do not solve).
-               Write the model in matrix-vector form. Is the system homogeneous or inhomogeneous?</code></pre>
+                   =    a
+                      2
+                     a + s 2
+                  £  (sin at )( )  =  a
+                         s
+                               2
+                              a + s 2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 242 - Differential Book</title>
+        <title>Page 242 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 242 - Differential Book</div>
+        <div id="content-top1">Page 242 - ODE Book</div>
         <div id="content-top2">P. 242</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.7 - E ul e r ’ s  &  R ung e - K ut t a  M e t h ods  | 227
-
-             2.7-4  Fourth-Order  Runge-Kutta Method
-
-             This method is the most commonly used solution algorithm. For most equations and systems, it is suitably
-             fast, simple and accurate. It is generally referred to as “RK4”.
-             It is the best for numerical solution of differential equations when combined with an intelligent adaptive
-             step-size routine.
-                                               (
-             Starting from the initial value point  t 0  , y 0 ) , we compute two slopes:
-
-                           (
-                    s =  ft   , y  )
-                     1      0   0
-
-                    s =   ft +  (  h ,  y +  h s  )
-                     2       0   2   0   2  1
+    <pre style="white-space:pre-line"><code>2. 4 - I n hom og e n e ous   E q ua t i o ns ;   M e t h od  of   U n d e t e r m i n e d
+                                                                                            C o e f f i ci en t s  | 229
 
 
-                    s =  ft +  (  h ,  y +  h  s  )
-                     3       0   2   0   2  2
+                 Exercises            Section 2.4 − Inhomogeneous Equations; the Method of
 
-                    s =   f t +  (  h ,  y +  hs  )
-                     4       0       0     3
-                                s +  2s +  2s +  s
-                    y =  y +  h  1     2     3   4
-                     1    0              6
+                                                         Undetermined Coefficients
 
 
-             Example 3
 
-             Compute the first four step in the  Second-Order  Runge-Kutta  method  approximation to the solution of
-                 yt
-             y′ = −  with (1) 1y  = , using the step size  h =  0.1. Compare the result with the actual solution to the initial
-             value problem.
+                                                                            2
+                 1.   Show that the 3 solutions  y =  , x  y =  x lnx,  y =  x  of the 3  order equation
+                                                                                      rd
+                                                 1        2            3
+                                                                                                     0
+                         x y′′′ − 3  x y′′ + 2  2xy′ −  2y =  0  are linearly independent on an open interval  x &gt; . Then find a
+                        particular solution that satisfies the initial conditions  ( ) 1y  = 3, y′ ( ) 1 =  2, y′′ ( ) 1 = 1
 
-             Solution
-                ⇒  t =  1  and   y =  1
-                    0           0
-                The first step:
-                           (
-                    s =  ft   , y  )
-                     1      0   0
-                        = 11
-                           −
-                        =  0
+                 (2 − 14)   Find the particular solution for the given differential equation
 
 
-                    s =   ft +  (  h ,  y +  h s  )
-                     2       0   2   0   2  1
-                                   )
-                        =  f  (1.05 ,1
+                 2.    y′′ +  3y′ +  2y =  4e − 3t           9.     y′′ +  6y′ +  8y =  2t −  3
+                                                                                   3
+                                          t −
+                 3.    y′′ +  6y′ +  8y =  −  3e             10.    y′′ +  3y′ +  4y =  t
+                                                                                    +
+                                          t −
+                 4.    y′′ +  2y′ +  5y =  12e               11.    y′′ +  2y′ +  2y =  t −  2 cos2t
+                                                                             −
+                                          2t
+                 5.    y′′ +  3y′ −  18y =  18e              12.    y′′ −  y =  te    − 2t
+                 6.    y′′ +  4y =  cos3t                    13.    y′′ −  2y′ +  y =  10e  cost
+                                                                                                       5t
+                 7.    y′′ +  7y′ +  6y =  3sin 2t           14.    y′′′ −  4y′′ +  4y′ =  5t −  2  6t +  4te + 2 t  3e
+                 8.    y′′ +  5y′ +  4y =  23t
+                                       +
 
-                        = 1 1.05
-                           −
-                        = − 0.05
+                 (15 − 16)  Use the complex method to find the particular solution for
+                  15.   y′′ +  4y′ +  3y =  cos2t +  3sin 2t      16.   y′′ +  4y =  cos3t
 
-                    s =  ft +  (  h ,  y +  h  s  )
-                     3       0   2   0   2  2
 
-                       =  f  (1.05 ,.9975 )
+                 (17 − 124) Find the general solution for the given differential equation
+                  17.   y′′ +  y =  2cos x                 29.    y′′ +  y =  x cos x −  cos x
 
-                       = .9975 1.05
-                              −</code></pre>
+                  18.   y′′ +  y =  cos3x                  30.    y′′ +  y e x  sin x
+                                                                        =
+                  19.   y′′ +  y =  2 sin x                31.    y′′ −  y′ −  2y =  20cos x
+                                 x
+                                 2 x
+                  20.   y′′ −  y =  x e +  5               32.    y′′ −  y′ +  1  y =  3 e x /2
+                                                                                 +
+                  21.   y′′ −  y′ =  −  3                                 4
+                                                                              =
+                  22.   y′′ −  y′ =  2sin x                33.    y′′ +  y′ +  1  y e x  (sin3x −  cos3x )
+                                                                          4
+                  23.   y′′ −  y′ =  sin x                 34.    y′′ −  y′ −  2y e 3x
+                                                                             =
+                  24.   y′′ −  y′ =  −  8x +  3                                    − 2x
+                                       x
+                  25.   y′′ +  y =  2x +  3e               35.    y′′ − y′′ +  y′ −  y′ −  6y = 6y =  20e
+                                                                               2x
+                                                           36.
+                                      x
+                  26.   y′′ −  y =  x +  2  e              37.    y′′ −  y′ −  6y e − x  −  7cos x
+                                                                             =
+                                                                                                        )
+                  27.   y′′ +  y′ =  10x +  4  2           38.    y′′ +  y′ +  8y =  x cos3x +  ( 10x +  2  21x +  9 sin3x
+                  28.   y′′ −  y′ =  5e −  x  sin 2x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 102 - Differential Book</title>
+        <title>Page 102 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 102 - Differential Book</div>
+        <div id="content-top1">Page 102 - ODE Book</div>
         <div id="content-top2">P. 102</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.6 - E xa c t  D i f f e r e nt i a l  E qua t i on s  | 87
-
-               1.6-2  Integrating Factors
-
-               It is sometimes possible to convert a differential equation that is not exact equation by multiplying the
-               equation by a suitable integrating factor.
-
-
-               1.6-3  Definition
-
-               An integrating factor for the differential equation ω=  Mdx +  Ndy =  0 is a function  ( ,x yµ  )  such that the
-
-                                                              )
-                                         )
-               form µω = µ  ( ,x y ) ( ,M x y dx + µ ( ,x y ) ( ,N x y dy  is exact.
-                       ( Mµ  ) =  ( Nµ  )
-                             y        x
-                       Mµ −    Nµ +   ( M  −  N  ) µ= 0
-                           y      x      y     x
-               Assuming that µ is a function of x only, we have
-
-                       ( Mµ  ) =  µ  M  &   ( Nµ  ) =  µ  N +  N  dµ
-                             y       y            x      x     dx
-                                            dµ
-                       ⇒µ   M    = µ N +  N
-                               y      x     dx
-
-                         dµ  =  M  y  −  N x  µ
-                         dx       N
-
-                 ∫ ∫        M  y  N  N x  dx
-                                 −
-                   dµ
-                       =
-                    µ
-                       ∫  M  y  −  N x  dx
-                 lnµ=         N
+    <pre style="white-space:pre-line"><code>1. 5 - M i xi ng P r o bl e m s  | 89
 
 
 
-                        M −  N
-                      ∫   y   x  dx
-                 µ =  e    N
 
 
 
-               Example 4
 
 
-               Find an integrating factor for the equation    ( 3xy +  y 2 ) ( x +  2  xy y′ = )  0, and then solve the equation.
-                                                                      +
-               Solution
 
 
-                   M    =  ∂ ( 3xy +  y 2 )  =  3x +  2y
-                      y    y ∂                     ⇒   M   ≠  N
-                                      )
-                                2
-                     N =   ∂  ( x +  xy =  2x +  y       y     x
-                       x    x ∂</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Example 2
+
+                 The 600-gal tank is filled with 300 gal of pure water. A spigot is opened above the tank and a salt
+                 solution containing 1.5 lb. of salt per gallon of solution begins flowing into the tank at the rate of 3
+                 gal/min. simultaneously, a drain is opened at the bottom of the tank allowing the solution to leave
+                 tank at a rate of 1 gal/min.
+
+                 What will be the salt content in the tank at the precise moment that the volume of solution in the tank
+                 is equal to the tank's capacity (600 gal)?
+                 Solution
+
+                      ( ) 300 (3 1)t=
+                     Vt        +   −
+                         =  300 2t+
+
+                              ()
+                      () =
+                     ct      xt
+                           300 2t
+                              +
+                                    ×
+                            =
+                    Rate in  3  gal   1.5  lb
+                                min      gal
+
+                            =  4.5  lb  / min
+                    Rate out  1   ×    x
+                             =
+                                       +
+                                    300 2t
+                              =    x     lb  / min
+                                300 2t+
+                     dx  =  4.5 −  x
+                     dt        300 2t
+                                   +
+                     dx  +   1    x =  9
+                              +
+                     dt   300 2t      2
+                              ∫   1    dt   2 ∫  1  1   ( d  300 2t )
+                                                             +
+                                                   +
+                                   +
+                            e   300 2t   = e    300 2t                     d (300 +  2t ) =  2dt
+                                             1  ln (300 2t+  )
+                                          =  e 2</code></pre>
      	</div>
     
      </div>

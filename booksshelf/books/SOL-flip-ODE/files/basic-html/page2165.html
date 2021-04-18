@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2165 - DE Solution</title>
+        <title>Page 2165 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2165 - DE Solution</div>
+        <div id="content-top1">Page 2165 - ODE Solution Manual</div>
         <div id="content-top2">P. 2165</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 4 − S ol ut i on a b ou t   S i ng ul a r  P oi nt s  | 2147
 
 
-
-                                       ,
-                            ⇒    r = − 11     √
-                                     63
-
-                      ( ( nr )(18n +  18r −  3 −  ) ) 1 a +  n  (3n +  3r −  13 )a n− 1  =  0
-                        +
-
-                     a = −        3n +  3r −  13    a
-                      n     ( +  nr )(18n +  18r −  ) 3 −  1  n− 1
+                     p =   lim  xp ( ) x
+                      0   x→  0
 
                                  1
-                            r = −
-                                 6
+                        =  lim  x
+                          x→  0  x
+                        = 1
+                                2
+                     q =   lim   xq ( ) x
+                      0   x→ 0
 
-                                       3n −  1  −  13
-                            a = −           2         a
-                             n     ( n −  1 )(18n −  ) 6 −  1  n− 1
-                                        6
+                        =  lim    x 2 2
+                          x→  0   x
+                        =  lim 2x
 
-                                = − 1     6n −  27     a
-                                            )(
-                                   2 (6n −  13n −  ) 1 −  1  n− 1
-                                          −
-                        n   1 →=  a =  −  1 21 a =  7 a
-                                   1    29     0   6  0
+                          x→  0
+                        =  0
 
-                        n   2 →=  a =  −  1 − 15 a =  5 7 a =  35  a
-                                   2     2 54   1   36 6  0   216  0
-                        n   3 →=  a =  −  1 − 9  a =  1  35  a =  7   a
-                                   3     2 135  2   30 216  0   1,296  0
-                                      
-                                        
+                                               2
+                                                        )
+                                                            0
+                                                     −
+                    The indicial equation is:  r +  (11 r =
+                                →  r   =  0
+                                    1,2
+                    The two possible Frobenius series solutions are then of the forms
+                                  ∞                                      ∞
+                         y  ( ) x = ∑  a x n  and  y  ( ) x =  y  ( )lnx  x + ∑  c x n
+                          1            n            2        1                n
+                                 n= 0                                    n= 0
+                          ∞             ∞
+                         ∑       nr    ∑       n            (          )
+                                  +
+                     y =     ax      =     ax                r  =  r =  0
+                              n
+                                                                  1
+                                            n
+                         n= 0          n= 0
+                          ∞                 ∞
+                         ∑        nr +− 1  ∑        n− 1
+                     y′ =    na x        =     na x
+                                n
+                                                 n
+                         n= 0              n= 0
+                           ∞                                ∞
+                         ∑                        nr +− 2  ∑               n− 2
+                     y′′ =    (n r n r+  )( +−  ) 1 ax   =      ( n n −  ) 1 ax
+                                                                        n
+                                               n
+                          n= 0                             n= 0
+                     xy′′ +  y′ +  2y =  0
 
-                     y  () =  x  ax − 1/6     1+  7  x +  35  x +  2  7  x +  3     
-                      1       0          6    216      1,296        
+                      ∑  ∞            n −  2  ∑  ∞    n −  1  ∑  ∞   n
+                     x      ( n n −  ) 1 ax  +   nax      +     2ax =  n  0
+                                    n
+                                                   n
+                      n= 0                   n= 0           n= 0
 
-
-                            r =  1
-                                3
-                            b = −        3n − 12      b
-                             n     ( n +  1 )(18n +  ) 3 −  1  n− 1
-                                       3
-
-                                          ( 3 n −  ) 4
-                                = −                  b
-                                          )(
-                                   (3n +  16n +  ) 1 −  1  n− 1
-                        n   1 →=  b =  −  − 9 b =  1 b
-                                   1    27  0    3  0
-                        n   2 →=  b =   6  b =  11 b =   1  b
-                                   2   90  1   15 3  0  45  0
-
-                        n   3 →=  b =   3  b =   11   b =    1   b
-                                   3   189  2   63 45  0   2,835  0
-                        n =  4 →  b =  0b =  0
-                                   4      3
-                                        
-                                      
-                     y  () x =  bx 1/3 ( 1+  1  x +  1  x +  2  1  x 3 )
-                      2        0        3    45      2835
-
-                       x
-                     y () =  a  1  ( 1+  7  x +  35  x +  2  7  x +  3  )  +  bx 1/3 ( 1+  1  x +  1  x +  2  1  x 3 )
-                             0 1/6     6     216      1296            0         3    45      2835
-                               x</code></pre>
+                     ∑  ∞  ( n n −  ) 1 ax n −  1  +  ∑  ∞  nax n −  1  +  ∑  ∞  2ax =  n  n  0
+                                  n
+                                                  n
+                     n= 0              ∞   n= 0           n= 0
+                      ∞
+                     ∑   n ax   n− 1 +  ∑  2ax =  n  n  0
+                           2
+                             n
+                     n= 0             n= 0</code></pre>
      	</div>
     
      </div>

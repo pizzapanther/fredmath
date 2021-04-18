@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 170 - Differential Book</title>
+        <title>Page 170 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 170 - Differential Book</div>
+        <div id="content-top1">Page 170 - ODE Book</div>
         <div id="content-top2">P. 170</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,64 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.2 - L i ne a r , H om og e ne ous  E qua t i ons  w i t h C ons t a nt  C oe f f i c i e nt s  | 155
-
-             2.2-8  Higher-Order Equations
-
-             In general, to solve an nth-order differential equation, we must solve an nth degree characteristic polynomial
-             equation
-
-                                       n
-                                                              2
-                                  a λ +   a    λ n− 1  + +  a λ +  a λ+ a =  0
-                                    n       n− 1           2       1     0
-             If all roots are real and distinct, then the general solution is
-
-                                             λ  x      λ  x           λ  x
-                                   y ( ) x =  Ce  1  +  C e  2  +  +  C e  n
-                                                                    n
-                                           1
-                                                     2
-             If all roots are equal to λ, then the general solution is
-                                                                                  1 x
-                                                                2 λ
-                                   y ( ) x =  C e  x λ  +  C xe  x λ  +  C x e  x  +  +  C x n−λ
-                                                                                   e
-                                           1        2         3              n
+    <pre style="white-space:pre-line"><code>1. 9 - E xi s t e n c e   a nd  U n i qu e ne s s  o f  S o l ut i on s  | 157
 
 
-             Example 6
 
-             Find the general solution of     y′′′ +  3y′′ −  4y =  0
-
-             Solution
-                  3
-                        2
-                                                                                        4
-                     3
-                             =
-                 λ +λ −     4 0          Solve for  λ            Rational zero theorem:   ±  { }  =  ±  {1,2,4    }
-                                                                                        1
-                 λ=  1, λ      = − 2                             λ =  1,  λ = − 2
-                                                                   1
-
-                  1        2, 3                                  (λ−  1 )(λ+ 2 2 )(λ− a ) 0=
-                                           )
-                   ( ) Ce +=
-                  yx      1  x  ( C +  2  C x e − 2x             ( )( )( ) a−  12 −  =  −  4  ⇒  a =  −  2
-                                        3
+                 Exercises            Section 1.9 - Existence and Uniqueness of Solutions
 
 
-             Example 7
-                                                                      )
-                                                                 2
-                                                                         0
-             Find the general solution of    λ 4 (λ+ 1 )(λ+  ) 2  2 ( λ + 4 =
-             Solution
 
-                  2
-                                  2
-                                                   2
-                λ +  4 = 0 ⇒ λ = −      4 → λ = ±
-                                                    i
-                The solution: λ  =  0, 0, 0, 0,     −  1,  −  2,  −  2,  ±  2i
-                                                                      )
-                                 +
-                 y ( ) x =  C +  1  Cx C x +  3  2  Cx +  4  3  C e −  x  +  ( C +  6  Cx e −  2x  +  C 8  cos2x C 9  sin 2x
-                                                                                       +
-                                                                   7
-                              2
-                                                    5</code></pre>
+                 (1 – 12)   Which of the initial value problems are guaranteed a unique solution
+
+                  1.    y =  4 +  y 2 ,   (0) = 1              8.    y =  y t  2  −  1  ,  y ( ) 10 =
+
+                                                                      ′
+                                     y
+                         ′
+                                                                               3y t
+                                                                                  +
+                                  y
+                  2.    y =   y ,    (4) =  0                  9.    y =  xy ,  y ( ) 1
+                         ′
+                                                                      ′
+                                                                                 0 =
+                         ′
+                  3.    y =  t tan − 1  y ,   (0) =  2                       t 2            1
+
+                                       y
+                                                                                     ( ) 1 =
+                  4.   ω    ω′ =  si nω  +  , s  ω ( ) 0 = − 1   10.  y′ =  − 1 y 2  ,  y −  2
+                                                                            −
+                  5.    x =   t  , x ( ) 0 =                               y      ( )
+                         ′
+                                          0
+                                                                                   π
+                                                                      ′
+                            x + 1                              11.  y =   i snt  ,  y  2  = 1
+                  6.    y′ =  1  y +  , 2  y ( ) 10 =
+                            x                                  12.  y =    1 y 2 ,  y ( ) 0 = 1
+                                                                      ′
+                                                                            −
+                  7.    y =  e t y −  y 3 ,  y ( ) 0 =
+                         ′
+                                              0
+
+                                                     3
+                                        0
+                                              y
+                 13.  Show that  ()y t = and  () t = t  are both solutions of the initial value problem  y′ =  3y 2/3 ,
+                      where  (0)y  =  0 . Explain why this fact doesn't contradict Theorem
+
+                 14.  Use a numerical solver to sketch the solution of the given initial value problem
+                                                     dy  =  t   ,      y ( ) 2 =
+
+                                                                            0
+                                                     dt    y + 1
+                    a)  Where does your solver experience difficulty?  why? Use the image of your solution to
+                        estimate the interval of existence.
+                    b)  Find an explicit solution; then use your formula to determine the interval of existence. How
+                        does it compare with the approximation found in part (a)?</code></pre>
      	</div>
     
      </div>

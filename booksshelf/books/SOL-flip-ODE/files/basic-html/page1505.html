@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1505 - DE Solution</title>
+        <title>Page 1505 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1505 - DE Solution</div>
+        <div id="content-top1">Page 1505 - ODE Solution Manual</div>
         <div id="content-top2">P. 1505</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,82 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1491
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1491
+
+
+
+                      () =
+                     Is     A  +  B  +  C
+                            s   s 2  s + 0.1
+
+                          =  300 −  1  20  1  −  300  1
+                                                   1
+                                s      s 2     s + 10
+
+                                   −  1          −  1            −  1       
+                                        1
+                      ( ) =
+                     It      3000£   { }  −  20£      1    −  300£        1      
+                                       s              s   2           s +  1   
+                                                                          10   
+                               −
+                         =  300 20t −  300e  t −  /10
 
 
                  Exercise
-                                                                                        2
-                                                                                      d q     dq    1
-                                                                                                           ( )
-                 Consider a battery of constant voltage  E  that charges the capacitor.  L  dt 2  +  R  dt  +  C  q =  Et
-                                                        0
 
 
+                 An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
 
+                       ()  and no charge on the capacitor at t = . Find the ensuing current in the current at time t for
+                 E =  Et                                      0
+                            ( )
+                 the given Et =  4cos3t
 
-
-
-
-
-
-
-                                                                        2
-                 Divide the given equation by L and define 2λ =  R   and ω =  1  .
-                                                                L           LC
-                                                                                                     E
-                    a)  Use the Laplace transform to show that the solution  ( ) of q′′ +  2 qλ  ω ′ +  2 q =  0    subject
-                                                                           qt
-                                                                                                      L
-                                     i
-                                            0
-                        to  ( ) 0q  =  0,  ( ) 0 =  is
-                                                                                              
-                                    EC   1 e −  t λ   cosh λ  2  ω −  2 t +  λ  sinh λ  2  ω −  2 t  −  λ   ω &gt;
-                                     0                               2     2                  
-                                                                    λ    ω −                  
-
-                                           −
-                             ( ) =
-                            qt      E C   1 e −  t λ  (1 λ +  ) t                                       λ  ω =
-                                   
-                                      0 
-                                                       
-                                                                                            
-                                     EC   1 e −  t λ    cos ω  2  λ −  2 t +  λ  sin ω  2  λ −  2 t  −        λ  ω &lt;
-                                     0                               2    2                 
-                                                                   ω    λ −                 
-                    b)  Use the Laplace transform to find the charge  ( ) t  in an RC series when  ( ) 0q  =  0 and
-                                                                    q
-                                                                                     1
-                                                                        1
-                                            0
-                          ( ) =
-                         Et     E e − kt , k &gt; . Consider two cases:  k ≠  RC   and  k =  RC
-                                 0
                  Solution
-                    a)  £  { q′′ +  2 q′ +  λ  ω  2 q £=  }        E   0    
-                                                    L     
+
+                     L  I d  +  RI =  E ()
+                                   t
+                       dt
+                     dI  +  0.1I =  4cos3t
+                     dt
+                     £  (I′ +  0.1I ) =  4£  (cos3t )
 
 
-                                                                       ( ) =
+
+                     sIs     (0) 0.1 ( ) =  Is  4  s                I (0) = 0
+                                +
+                       ( ) I−
+                                              2
+                                             s +  9
+                     (s +  0.1 Is  4   s
+                            ) ( ) =
+                                      2
+                                     s +  9
+                      () =
+                     Is    4        s
+                             (s +  0.1 )(s +  2  9)
+
+                                                              +
+                                       s        =    A   +  Bs C
+                                (s +  0.1 )(s +  2  9)  s + 0.1  s +  2  9
+
+                                             +
+                                s =  As +  2  9A Bs +  2  0.1Bs Cs +  0.1C
+                                                          +
+
+                                s =  ( A Bs+  )  2  +  (0.1B C s+  ) +  9A +  0.1C
+
+                                            +
+                                         AB =    0
+                                       
                                               +
-                        s Qs − 2  ( ) sq (0) q′ (0) 2 λ  (sQs −  ( ) q (0) +  ) ω  2 Qs  E 0 1    q ( ) 0 =  0, q′ ( ) =
-                                       −
-                                                                                                     0
-                                                                                                         0
-                                                                             Ls
-                        ( s +  2  2sλω 2 ) Qs   E Ls
-                                                 0 1
-                                  +
-                                          () =
-                                E
-                          () =
-                        Qs       0         1
-                                L  ss + (  2  2sλω 2 )
-                                              +
-                                    1        =  A  +  Bs + C
-                             (  2         2 )  s    2          2
-                            s s +  2s +  λ  ω      s +  2s +  λ  ω
-                                As +  2  2A s ω +  λ  2 A +  Bs +  2  Cs =  1</code></pre>
+                                         0.1B C =  1
+                                        9A +  0.1C =  0
+                                       
+
+                                       A =  −  10  B =  10  C =  900
+                                             901       901       901</code></pre>
      	</div>
     
      </div>

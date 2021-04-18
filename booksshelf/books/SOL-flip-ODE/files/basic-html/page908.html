@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 908 - DE Solution</title>
+        <title>Page 908 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 908 - DE Solution</div>
+        <div id="content-top1">Page 908 - ODE Solution Manual</div>
         <div id="content-top2">P. 908</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,68 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>898 | S O LU TI O N
 
 
-                 y′′ =  −  A cos x B sin x
-                               −
-                   P
-              y′′ −  y′ =  sin x
-              −  A cos x B sin x −  A sin x B cos x =  sin x
-                      −
-                                       +
-                             +
-                         − AB =   0
-                        
-                             −
-                         − A B =  1
-                         A =  −  1 ,  B =  −  1
-                              2         2
-
-              y  =  −  1  cos x −  1 sin   x
-               P     2        2
-
-              y ( ) x =  C + C e −  2  x  1 cos x −  1 sin   x
-                                           2
-                                  2
-                      1
-
-
           Exercise
 
-          Find the general solution for the given DE:   y′′ −  y′ =  −  8x +  3
+          Use the complex method to find the particular solution for  y′′ +  4y′ +  3y =  cos2t +  3sin 2t
 
           Solution
 
-             The characteristic equation: λ      2  λ −  =  0
-                  λ 1,2  =  0, 1
+                                     2
+                                             30
+             The characteristic eq.: λ + 4λ+ =
 
+                        λ= −   3,  λ = − 1
+                          1         2
+                                                                  )
+                                                         +
+             The homogenous solution: y =    e  t −  ( C  costC  sint
+                                          h        1         2
+             The particular solution:  z =  Ae  2 it
+                                         2i
+                                    z′ =  ( ) Ae  2 it
+                                            2
+                                         2i
+                                    z′′ = ( ) Ae  2 it
+              z′′ +  4z′ +  3z =  e  2 it
 
-              y =  C +  C e x
-               h    1     2
-                      2
-              y  =  Ax +  Bx
-               P
-                 y′ =  2Ax +  B
-                   P
-                 y′′ = 2A
-                   P
+                 2
+                            ( ) Ae
+              ( ) Ae  2 it  +  42i  2 it  +  3Ae  2 it  =  e  2 it
+               2i
+              ( 48i− +  +  ) 3 A = 1
+              ( 18iA−+  ) = 1
+                           1 8i
+              A =   1    ⋅  −−
+                  −+       1− 8i
+                   1 8i −
+                   1 8i
+                =  −−
+                    65
+                          8
+                    1
+                =  −  65  i −  65
+             This gives the particular solution:
+                 (  1     8  )  2 it
+              z =  −  65  −  i 65  e
 
-              y′′ −  y′ =  −  8x +  3
-              2A −  2Ax B =  −  8x +  3
-                       +
-                   −   2A =  −  8
-                 
-                      +
-                  2AB =    3
-                 A  = 4,  B = − 5
+               =  ( −  1  −  i  8 ) (cos2ti+  sin 2t )
+                    65    65
+               =  ( −  1  cos2t +  8  sin 2t +  ) (  8  cos2t −  1  sin 2t )
+                                          i −
+                    65         65            65         65
 
-                      2
-              y  =  4x − 5  x
-               p
+              y =  −  1  cos2t +  8  sin 2t  is a solution of  y′′ +  4y′ +  3y =  cos2t
+                   65         65
 
-                                    2
-                                         x
-              y ( ) Cx =  +  C e +  x  4x − 5
-                      1     2</code></pre>
+              y =  −  8  cos2t −  1  sin 2t  is a solution of  y′′ +  4y′ +  3y =  sin 2t
+                   65         65
+             Therefore,
+
+                 y ( ) t =  −  1  cos2t +  8  sin 2t +  3 −  (  8  cos2t −  1  sin 2t )
+                          65        65             65        65
+
+                      =  −  1  cos2t +  8  sin 2t −  24 cos2t −  3  sin 2t
+                         65         65        65         65</code></pre>
      	</div>
     
      </div>

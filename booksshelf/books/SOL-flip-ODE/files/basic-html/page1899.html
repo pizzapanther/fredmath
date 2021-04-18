@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1899 - DE Solution</title>
+        <title>Page 1899 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1899 - DE Solution</div>
+        <div id="content-top1">Page 1899 - ODE Solution Manual</div>
         <div id="content-top2">P. 1899</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,72 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 7 − P h a s e  P la n e  P o r tr a it s   & A p p li c a ti o n s  | 1885
 
 
-                             ( )(5.0424  )
-                              20
-                           =
-                                   π
-                          ≈  32.10   ft  / sec
-
-
-                                             )
-                          =  (32.1 )(0.681818
-                          ≈  22   mph
-
-
-
-                        v =   20 ω
-                          2   π   2
-                               20
-                              ( )(9.9158  )
-                            =
-                                    π
-                            ≈  63.13   ft  / sec
-
-                                               )
-                            = (63.13 )(0.681818
-                            ≈  43   mph
-
-
-
                  Exercise
 
-                 A double pendulum swinging in a vertical plane under the influence of gravity satisfies the system
-                                                             )
-                      ( m +  m  )  2 θ  m ll  θ′′ +l  ′′ +  ( m +  m l  gθ  =  0
-                        1    2 1   1    2 1 2 2      1    2   1  1
-                     
-                            m l 2 θ  2  m ll  θ ′′ +  m l  gθ′′ +  2  =  0
-                               2 2
-                     
-                                                     2 2
-                                         21 2 1
-                 Where θ  and θ  are small angles.
-                         1       2
-                 Solve the system when  m =  3 kg ,  m =  2 kg , l  = l  = 5  m
-                                          1           2           1   2
-                                                                  0
-                        θ  ( ) 0  π , θ=  ( ) 0 = 0, θ  ( ) 0 = θ′  ′  ( ) 0 =
-                          1      6     2           1       2
+                 The system is taken as a model for an undamped car with the given parameters in fps units.
+
+                 m = 100; I =  800; L =   L =   5; k =  k =  2000
+                                       1    2        1    2
+                   a)  Find the two natural frequencies ω  and ω of the car (in hertz).
+                                                        1       2
+                   b)  Assume that his car is driven along a sinusoidal washboard surface with a wavelength of 40 ft.
+
+                      The result is a periodic force on the car with frequency ω =  2π  v =  π  v . Resonance occurs
+                                                                                40     20
+                                    or
+                      when ω    ω =    ω   ω =  . Find the corresponding two critical speeds of the car (in ft/sec)
+                                  1          2
                  Solution
 
-                      125 ′′ +   θ  1  50 ′′ =  θ  2  25g θ −  1
-                     
-                       50 ′′ +  θ  2  50 ′′ =  θ  1  10g θ −  2
+                           mx′′ =  −  ( k +  k  ) ( k L −  k L  ) θ
+                                            x +
+                                    1    2      11     2 2
+                    a)                                    2 
+                          I ′′ =   θ  ( k L −  k L  ) x −    k L +  2  k L    θ
+                                11     2 2       1  1   2  2 
+                                        x
+                         100x′′ = − 4000
+                        
+                             θ
+                         800 ′′ = − 100,000 θ
+                                  x
+                         x′′ = − 40
+                        
+                          θ    125 θ′′ = −
+                                  − 40  0 
+                            A =            
+                                  0   − 125 
+                                   −  40 λ−     0
+                         A λ−  I =
+                                      0     −  125 λ−
 
+                                  ( 40 λ =  −  −  )( 125 λ −  −  ) 0=
 
-                      5 ′′ +  θ  1  2 ′′ =  θ  2  9.8 θ −  1
-                     
-                       5 ′′ +  θ  1  5 ′′ =  θ  2  9.8 θ −  2
-                      θ  ′′ =  9.8 (  5 θ −  2 θ +  )
-                       1  15      1     2
-                     
-                      θ   ′′ =  9.8 ( θ  θ −  )
-                       2   3    1    2</code></pre>
+                        The eigenvalues are: λ    −  40, λ =  =  −  125
+                                              1           2
+
+                        The natural frequencies:
+                          ω =    40 ≈  6.325    rad  / sec
+                           1
+                        
+                         ω =    125 ≈  1 1 .180   rad  / sec
+                        
+                           2
+                         ω =  6.325    1.0067   Hz
+                                     ≈
+                           1    2π
+                        
+                                      ≈
+                         ω =  11.180    1.779    Hz
+                          2     2π
+                    b)  v =   20 ω
+                         1    π   1
+
+                              20
+                             ( )(6.325  )
+                           =
+                                  π
+                            40.26   ft≈  /sec</code></pre>
      	</div>
     
      </div>

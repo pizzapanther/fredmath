@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1459 - DE Solution</title>
+        <title>Page 1459 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1459 - DE Solution</div>
+        <div id="content-top1">Page 1459 - ODE Solution Manual</div>
         <div id="content-top2">P. 1459</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1445
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1445
 
 
-                              A =  −  1 B =  −  1 C =  1
-
-
-                     £  −  1 {Ys  =    −  1 { s +  − 1 1 −  s +  1 5  +  s −  1 1 }
+                 Exercise
+                                                                      t
+                                                                   =
+                 Solve using the Laplace transform:    y′ + ′  5y′ −  y e − 1 ;  y ( ) 0 = 1,  y′ ( ) 10 =
+                 Solution
+                     £  {y′′ +  5y′ −  } y £=  { }
+                                            t
+                                               1
+                                           e −
+                                                                       1
+                      2
+                     s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 +  5sY s −  ( ) 5y ( ) 0 −  Y  ( ) s =  s − 1  −  1    y ( ) 0 = 1 y′ ( ) 1
+                                                                                                   0 =
+                                                                            s
+                                )
+                     ( s + 5s − 1 Ys       1    ++   6
+                       2
+                                  ( ) =
+                                                  s
+                                         ( ss −  ) 1
+                       ( ) =
+                     Ys               s +  3  5s −  2  6s +  1
+                             ( ss −  ) 1 s +   5  −  29  s +  5  +  29  
+                                   
+                                                 
+                                       2     2      2    2  
+                                =  A  +  B  +     C      +      D
+                                  s   s − 1     5     29       5    29
+                                             s +  −        s +  +
+                                                2     2        2    2
+                           s 3                A C +  D = 1
+                                                 +
+                          
+                            2              3   29      3   29 
+                           s     4A +  B +    2  +  2    C +    2  −  2    D =  5
+                                                             
+                           s 1  6A +  5B −    5  + −  29   C −    5  −  29   D = − 6
+                                              2  2          2  2    
+                          
+                                                   −
+                           s   0               AB =   1
+                                                                                                             
                              ( )} £
-
-
-                     y ( ) t = −  e  t −  −  e −  5t  + e t
-
+                     £  −  1 {Ys  =   −  1     1  +  11  +−  1  +  3      1   −     1  +  3      1      
+                                                       
+                                                       
+                                           s  5 s − 1    10  10 29   s +  5  −  29    10  10 29   s +  5  +  29  
+                                                                         2    2                      2    2 
+                                                                               5
+                                                      5
+                                e +−
+                      ( ) 1+
+                     y t =     1 t     1  +  3 29   e −+ 2  29 t  −   1  +  3 29   e −− 2  29 t
+                               5         10  290               10  290    
 
 
                  Exercise
 
-                                                                                                            4
-                 Solve using the Laplace transform:    y′′ −  7y′ + 10y = 9cost +  7sin  ; yt  ( ) 0 =  , 5  y′ ( ) 0 = −
-                 Solution
-                     £  {y′′ −  7y′ +  10  } y £  {9cost +  7sin  } t
-                                       =
 
-                                                                                                               4
-                     s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  7sYs +  ( ) 7y ( ) 0 +  10Ys  9s  +  7      y ( ) 0 =  5, y′ ( ) 0 = −
-                                                                  ( ) =
-                                                                        s +  2  1  s +  2  1
-                     ( s −  2  7s +  10 Ys  9s +  7  +  5s −  39
-                                 )
-                                    ( ) =
-                                           2
-                                          s + 1
-                     Y ( ) s =  5s −  3  39s +  2  14s −  32  =  A  +  B  +  Cs +  D
-                                         (
-                                                                   2
-                                           2
-                            (s −  2 )(s −  ) 5 s + 1 )  s −  2  s −  5  s + 1
-                             s 3       A B C =    5
-                                              +
-                                          +
-                            
-                             s 2  −  5A −  2B −  7C +  D =  −  39
-                            
-                                     +
-                              s    A B +  10C −  7D =  14
-                              0
-                             s    −  5A −  2B +  10D =  −  32
-
-                            A =  8,  B =  −  4,  C =  1,  D =  0
-
-                     £  −  1 {Ys  =    −  1     8  −  4  +  s    
-                             ( )} £
-                                                          2
-                                           s −  2  s −  5  s + 1
-
-                     y ( ) t = 8e 2t  −  4e 5t  +  cost
-
-
-                 Exercise
-
-
-                 Solve using the Laplace transform:  y′′ +  8y +  ′  25y  0 ,    y ( ) 0π =  , y′ ( ) 6π =  =
-
+                                                                                                 9
+                 Solve using the Laplace transform:    y′ + ′  5y′  − 6y =  21e t− 1  y ( ) 1 = − 1,  y′ ( ) 1 =
                  Solution
 
-                    Let:    w ( ) t =  ( y t π  +  ) ↔  y ( ) wt =  (t π  −  )
+                    Let:  ( ) = wt  ( y t +  ) 1  ↔  y ( ) t =  w (t −  ) 1
 
-                     y′′ ( ) 8yt +  ( ) 25yt ′  +  ( ) 0t =</code></pre>
+                     £  {w′′ +  5w′ −  6ws = }( ) £ { } ( ) s
+                                                   t
+                                                21e</code></pre>
      	</div>
     
      </div>

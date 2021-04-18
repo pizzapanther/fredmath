@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2194 - DE Solution</title>
+        <title>Page 2194 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2194 - DE Solution</div>
+        <div id="content-top1">Page 2194 - ODE Solution Manual</div>
         <div id="content-top2">P. 2194</div>
      </div>
      <div id="content-middle">
@@ -155,86 +155,97 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2176 | S O LU TI O N
 
 
+          Exercise
 
-                                      ∑  ∞     ( ) 1 υ  −  n  ( ) 2n υ  +  ∑  ∞  ( ) (υ  −  1  n  +  ) n  ( )( ) 2n υ  +− 1
-                                                                                          x
-                                                           x
-                                                                                             x
-                                   =  −      ! n Γ (1 υ  ++  n ) 2  +     ! n Γ (1 υ  ++  ) n  2  2  2
-                                       n= 0                          n= 0
-                                       ∞
-                                     ∑    ( ) ( υ − 1  n  −  2n + 2υ +  ) ( ) 2n υ
-                                                                    +
-                                                                x
-                                   =          ! n Γ (1 υ  ) n  2
-                                                   ++
-                                      n= 0
-                                       ∞
-                                              n
-                                     ∑    ( ) (2n υ    ) ( ) 2n υ
-                                                              +
-                                                    +
-                                            1
-                                           −
-                                                         x
-                                   =       ! n Γ (1 υ  n ) 2
-                                                ++
-                                      n= 0
-                                        ∞
-                                               n
-                                      ∑    ( ) (2n υ    ) ( ) 2n υ  1
-                                                               +−
-                                            −
-                                                     +
-                                              1
-                                                           x
-                                   =  x      ! n Γ (1 υ  n ) 2
-                                                 ++
-                                       n= 0
-                                   =    xJ′  ( ) x
-                                        υ
-                           ∞
-                                  n
-                                1
-                               −
-                                             x
-                 xJ′  ( ) x =  x ∑ ( ) (2n +υ ) ( ) 2n+υ− 1
-                 υ             ! n Γ (1+ υ+ n ) 2
-                          n= 0
-                          ∞      n             2n+υ
-                        ∑    ( ) (2n +υ   ) ( )
-                              −
-                               1
-                                             x
-                       =       ! n Γ (1+ υ+ n ) 2
-                         n= 0
-                           ∞          n         2n+υ      ∞          n         2n+υ
-                          ∑       ( ) 1 n−  ( )          ∑       ( ) 1−    ( )
-                                                                            x
+          Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
+          functions.
+
+                         xy′′ +  ( 4x −  3  1 y =  )  0
+
+          Solution
+                              3
+                                   0
+                        y
+              x ×  xy′′ −+  4x y =
+                                                                 2
+              x y′′ − 2  xy +  4x y = 4  0                   x 2 d y  +  Ax  dy  +  ( B +  Cx p )  y =  0
+                                                               dx 2     dx
+              A = − 1, B = 0, C =  4,  p =  4
+
+
+             α   1, β =  =  2, k = 1, υ  =  1               α   1 A−  , β =  =  p ,  k  2 C  , υ=  =  (1 A−  ) −  2  4B
+                                         2                        2       2       p             p
+
+                                2
+                      
+                                               2 
+                                                                                                    β
+                                                                                       β
+                               x
                                               x
-                       =  2     ! n Γ (1+ υ+  n ) 2  +υ        ! n Γ (1+ υ+ n ) 2
-                          n= 0                           n= 0
-                          ∞          n         2n+υ
-                        ∑       ( ) 1 n    ( )
-                                 −
-                                            x
-                       =      ! n Γ (1+ υ+  n ) 2   +υ  J v  ( ) x
-                         n= 0
-                                     ∞         ( ) 1  n        2n+υ− 1
-                                                             x
-                       =  υ   J  ( ) x +  x ∑   −           ( )
-                            v            (n − 1!    + υ+  n ) 2
-                                              ) (1 Γ
-                                    n= 1
-                                     ∞      ( ) 1  n− 1    2n+υ+ 1
-                                                         x
-                       =  υ   J  ( ) x +  x ∑  −       ( )
-                            v            n ! Γ (2 + υ+  n ) 2
-                                    n= 0
-                       = υ J  ( ) x −  xJ  ( ) x
-                            υ         υ  + 1
-              xJ′  ( ) x =  −  υ J  ( ) x +  xJ  ( ) x
-                 υ          υ          υ  1 −</code></pre>
+              y ( ) x =  x cJ  ( )  +  c J  1/2 ( )                y ( ) x =  x α      c J  ( )  +  c J  − υ  ( )   
+                                                                                     kx
+                                                                                                  kx
+                      
+                        1 1/2
+                      
+                                      2 −
+                                                                                1 υ
+                                                                                            2
+                                                                                                          
+                      
+                                    2
+                                                                                                2
+                                                                                 2
+                   =  xc  12    sin x +  c  12  cos x 2          y ( ) z =  x α     c  ( ) 1/2 sin z + c  ( ) 1/2 cos z
+                      
+                                                                                                          
+                        1 x π           2 x π                               1 π  z        2 π  z       
+                               2
+                                                                                      2
+                                              2
+                   =  c  2  sin x + c  2  cos x                            z =  kx β =  x
+                      1 π           2 π
+                                        2
+                            2
+                   = C  sin x + C  cos x
+                      1           2
+
+
+          Exercise
+          Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
+          functions.
+                         x y′′ + 2  xy′ −  ( 1  +  x 2 )  y =  0
+                                      4
+          Solution
+                          (
+                                                                 2
+                            1
+               2
+              x y′′ +  xy′ +− − x 2 )  y =  0                x 2 d y  +  Ax  dy  +  ( B +  Cx p )  y =  0
+                            4
+                                                                        dx
+                                                                  2
+                                                               dx
+              A =  1, B =  −  1 , C =  1,  p =−  2
+                           4
+                                                                                             −
+                                                                 −
+             α    0, β =  = 1, k i , υ  =  1                α   1 A , β =  =  p ,  k  2 C  , υ=  =  (1 A ) −  2  4B
+                               =
+                                         2                        2       2       p             p
+                                                                                           β
+                                                                              β
+              y ( ) x =  cI  ( ) x + c I  1/2 ( ) x          y ( ) x =  x α      c I  ( )  +  c I  υ  ( )   
+                                                                                         kx
+                                                                            kx
+                      1 1/2
+                                  2 −
+                                                                        1 υ
+                                                                                    2 −
+                                  +
+              y ( ) x =  c  2  sinh xc   2  cosh x          I   ( ) x =  2  sinh x
+                      1 π  x         2 π  x                  1/2       π x</code></pre>
      	</div>
     
      </div>

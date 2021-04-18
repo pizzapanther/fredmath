@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1960 - DE Solution</title>
+        <title>Page 1960 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1960 - DE Solution</div>
+        <div id="content-top1">Page 1960 - ODE Solution Manual</div>
         <div id="content-top2">P. 1960</div>
      </div>
      <div id="content-middle">
@@ -155,94 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1942 | S O LU TI O N
 
 
-                           3 2  2  3 4  4  3 6  6             3 2  3  3 4  5  3 6  7   
-               ( ) =
-              yx     a    1+  x +     x +     x +      +  a    x +  x +  x +   x +    
-                          0  2!    4!      6!           1     3!      5!     7!        
 
-                     3a +  a        3a −  a
-              yx       0    1 3x  +   0    1 − 3x
-               ( ) =
-                                             e
-                              e
-                         6              6
-                     3a +  a          ( ) 2   ( ) 3        3a −  a         ( 3x ) 2  ( 3x ) 3   
-                                                                                         −
-                                                                               −
-                                                3x
-                                        3x
-                        0   1   =  1 3x +           +    +   0    1   +   13x +            +     +
-                                                                        −
-                                +
-                         6              2!      3!            6               2!       3!       
-                                                                                                
-                     3a          ( ) 2   ( )  3  ( )  4       a          ( ) 2   ( ) 3   ( ) 4     
-                                                                             3x
-                                                   3x
-                                   3x
-                                                                                     3x
-                                                                                             3x
-                                           3x
-                   =    0    13x +     +       +        +     +  +  1    13x +  +     +       +     +
-                      6            2!      3!      4!          6           2!      3!      4!      
-                                                                                                   
-                          3a          ( ) 2   ( ) 3        a         ( ) 2   ( ) 3     
-                                                3x
-                                        3x
-                                                                                 3x
-                                                                         3x
-                        +   0    13 +  x    −       +    −  −   1    13x +  −     +     −
-                           6            2!      3!         6           2!      3!      
-                                                                                       
-                                  ( ) 2   ( ) 3   ( ) 4               ( ) 2   ( ) 3   ( ) 4     
-                                                    3x
-                                            3x
-                                    3x
-                                                                                3x
-                                                                        3x
-                                                                                        3x
-                   =  1  a   1 3x +     +       +       +   +  13x +  −    −       +       +     +
-                     2  0           2!      3!      4!                  2!      3!      4!      
-                                                                                                
-                        a          ( ) 2   ( ) 3   ( ) 4               ( ) 2   ( ) 3   ( ) 4     
-                                     3x
-                                             3x
-                                                                                         3x
-                                                                         3x
-                                                                                 3x
-                                                     3x
-                                                                 +
-                      +  1    13 +  x    +       +       +   −   13x −      +       −       +     +
-                         6           2!      3!      4!                  2!      3!      4!      
-                                                                                                 
-                               ( ) 2     ( ) 4       a        ( )  3    ( ) 5     
-                     1  a  =  22  3x  +  2  3x     +  1   +  6x +  2  3x  +  2  3x     +
-                            +
-                     2  0        2!       4!          6         3!        5!      
-                                                                                  
-                           ( )  2  ( )  4               23     45       
-                             3x
-                                     3x
-                   =  a    1+    +        +      +  a    x +  3 x  +  3 x  +    
-                      0      2!      4!          1      3!      5!      
-                                              
-             Which are identical.
+              ∑  ∞  nax +  n ∑  n  ∞  ax =  n  n  0
+
+
+              n= 0         n= 0
+               ∞
+              ∑   (n +  ) 1 ax =  n  n  0
+
+
+              n= 0
+
+              ( +  ) 1 a =  0 →  a =  0
+               n
+                     n
+                                   n
+              yx     0
+               ( ) ≡
+             ∴ The equation has no non-trivial power series.
 
 
           Exercise
-          Find a power series solution.   y′′ +  y =  0
+
+
+          Find a power series solution.   xy′ − 3  2y =  0
+
           Solution
-             The equation y′′ +  y =  0 has a characteristic equation:
+                      ∞
+                     ∑        n
+              yx          a x
+               ( ) =
+                           n
+                     n= 0
+                       ∞
+                     ∑         n− 1
+              y′ ( ) x =   na x
+                             n
+                      n= 1
 
+              xy′ − 3  2y =  0
+                 ∞                ∞
 
-                     =
-              λ  2  10 ⇒      λ +  = ± i
-                                                    +
-                                      yx
-             ∴ The general solution:  ( ) =  C  sin x C  cos x
-                                              1         2
-             With  ( ) 0y  =  a  and  y′ ( ) 0 =  a
-                           0                  1</code></pre>
+              x 3 ∑  nax  n− 1  −  2 ∑  ax =  n  n  0
+                       n
+                 n= 1            n= 0
+               ∞                ∞
+              ∑   nax  n+ 2  −  2 ∑  ax =  n  n  0
+                     n
+              n= 1             n= 0
+
+              ∑  ∞  (n −  ) 2 a n− 2 x −  n  2 a + (  0  ax a x 2 )  −  ∑  ∞  2a x = n  n  0
+                                              +
+                                           1
+                                                 2
+              n= 3                                      n= 3
+               ∞
+                     (n −  ) 2 a  −  2a n  ∑    x −  n  2 a + (  ax a x 2 )  =  0
+                                                        +
+                           n− 2                0    1     2
+
+              n= 3</code></pre>
      	</div>
     
      </div>

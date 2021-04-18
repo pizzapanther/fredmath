@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 632 - DE Solution</title>
+        <title>Page 632 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 632 - DE Solution</div>
+        <div id="content-top1">Page 632 - ODE Solution Manual</div>
         <div id="content-top2">P. 632</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>626 | S O LU TI O N
-
-
-
-                        1=  5  ( ) 5 +  K
-                            61
-                         K  =  36
-                             61
-
-
-                                                  e
-              I ( ) t =  5  (6sin120t +  5cos120t ) +  36 − 100t
-                    61                         61
-             The voltage at the resistor:
-                 E   ( ) t =  RI
-                   R
-                                                         e
-                        =  25 (6sin120t +  5cos120t ) +  180 − 100t
-                           61                         61
-             The voltage at the inductor:
-
-                 E   ( ) t =  L dI
-                   L        dt
-
-                                                                        e
-                        =  (0.05 )( 25 (720cos120t −  600sin120t ) −  18000 − 100t )
-                                  61                               61
-                        =  14.754cos120t −  12.295sin120t −  14.754e − 100t
-
+    <pre style="white-space:pre-line"><code>626 | 1. 8 − S OL U T I ON
 
 
           Exercise
 
-          An RC circuit with a 1− Ω  resistor and a 10 − 6  F -  capacitor is driven by a voltage  ( ) sin100 VE t =  t  .
-          If the initial capacitor current is zero, determine the subsequence resistor and capacitor current and
-          the voltages.
+          An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
+
+                ()  and no charge on the capacitor at t = . Find the ensuing charge current in the current at
+          E =  Et                                      0
+          time t for the given Et     −
+                               ( ) 10 2t=
+
           Solution
 
+              dI  +  0.1I =  10 2t            L dI  +  RI =  E ()
+                            −
+                                                           t
+              dt                                dt
+                   ∫ .1dt
+                    e    =  e t /10
 
-              Q′ +  10 Q =  6  sin100t        R  dQ  +  1  Q =  E
-                                                dt   C
 
-                   ∫ 10 dt     6
-                       6
-                    e     = e 10 t
+                           )
+                                          −
+                 ∫ (10 2t e  t /10 dt =  (100 20t +  200 )e t /10
+                       −
+                                   = (300 20t  ) e t /10
+                                          −
+                                               )
+              I  ( ) t =  e − 10t ( (300 20t e−  )  t /10  +  K
+
+                  =  300 20t +  K e − 10t
+                        −
+                         I  ( ) 0 =
+                               0
+                         K  = − 300
 
 
-                                              ∫ sin100t  dt
-                                      6         1
-                             +     e 10 t     − 100 cos100t
-                                        6        − 4
-                                    6 10 t
-                             −   10 e         − 10  sin100t
-                             +     12 10 t
-                                         6
-                                 10 e
+              I ( ) 300 20tt =  −  −  300e  t −  /10
 
-                                                                  )
-                                                                      6
-                                6
-                                                                                             6
-                                          1
-                                                                                         )
-                            )
-                 ∫  (sin100te 10 t dt =  ( −  100 cos100t +  100sin100t e 10 t  −  10 8 ∫  (sin100te 10 t dt</code></pre>
+
+          Exercise
+
+          An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
+
+          E =  Et                                      0
+                ()  and no charge on the capacitor at t = . Find the ensuing current in the current at time t for
+                     ( )
+          the given Et =  4cos3t
+
+          Solution
+              dI  +  0.1I =  4cos3t             dI         ()
+              dt                              L  dt  +  RI =  E  t
+                   ∫ .1dt
+
+                    e    =  e t /10                         ∫ 4cos3t  dt
+                                                            4
+                                             +     e t /10    3 sin3t
+                                                  1 t /10     4
+                                             −   10 e       − 9 cos3t
+                                                  1   t /10
+                                             +   100 e</code></pre>
      	</div>
     
      </div>

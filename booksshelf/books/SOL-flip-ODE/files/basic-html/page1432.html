@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1432 - DE Solution</title>
+        <title>Page 1432 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1432 - DE Solution</div>
+        <div id="content-top1">Page 1432 - ODE Solution Manual</div>
         <div id="content-top2">P. 1432</div>
      </div>
      <div id="content-middle">
@@ -155,83 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1418 | S O LU TI O N
 
 
-
-                   s 5             A +  E +  F =  1                  E +  F =  19
-
-                   s 4  A +  B +    1   5  +    E +    1   5  −    F = 1    1   5  +    E +   1   5  −    F = 31
-                                  2         2              2         2   
-
-                   s 3            −+   BC =   0                       A = − 18
-                                   A
-                                         +
-                   s 2            −+      D =  0                     B = − 12
-                                   B C +
-                                     C
-                   s 1             −+    D =  0                       C = − 6
-                   s 0               −  D =  6                        D = − 6
+                           t
+                      t
+              w ( ) t = −+ 2e +  2e  t −
+              y ( ) t =  w (t −  ) 2 =  −  (t −  2 +  ) 2e t − 2  +  2e − (t −  ) 2
 
 
-                       F =  19  −  43 5  E =  −  19  +  43 5
-                            2    10           2     10
-
-                                                         19   43 5    19   43 5 
-              £  −  1 {Y s  =  −  1     −  18  −  12  −  6  −  6  +  −  2  +  10  +  2  −  10    
-                      ( )} £
-                                     s   s 2  s 3  s 4  s +  1  −  5  s +  1  +  5  
-                                                            2    2        2   2 
-
-                                                            −+  5      t      −     1+  5      t
-                                                           1
-                                      3 
-                                 2
-                        −
-              y ( ) t = − 18 12t − 3t − t +− 19  +  43 5     e   2    +     19  −  43 5  e    2  
-                                                                                
-                                         
-                                            2    10                 2    10  
+                   =  2 t−+ 2e t − 2  +  2e  t −+ 2
 
 
           Exercise
-                                                              2
-                                                             t
-                                                                                    4
-          Solve using the Laplace transform:   y′′ −  y′ − 2y =  4,  y ( ) 0 = 1,  y′ ( ) 0 =
+
+                                                                          0
+          Solve using the Laplace transform:     y′′ +  y =   ; t  y π  ( ) =  y π  ′ ( ) =
           Solution
-                                                                             { }
-              £  {y′′ −  y′ −  2y }( ) s £ { } ( ) s                       £   t n  ( ) s =  ! n
-                                         2
-                                       4t
-                                 =
-                                                                                       s n+ 1
-               2
-              s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 −  sY ( ) s +  y ( ) 0 −  2Y  ( ) s =  8     y ( ) 0 = 1,  y′ ( ) 0 =
-                                                                                            4
-                                                             s 3
-              ( s −−  2 Y  ( ) ss −− + =  8
-                        )
-                2
-                   s
-                                   41
-                                          s 3
-                                       s
-              (s + 1 )(s −  2 Y   8  ++   3
-                         ) ( ) s =
-                                  s 3
-             Y  ( ) s =  s +  4  3s +  3  8  =  A  +  B  +  C  +  D  +  E
-                     s 3 (s +  1 )(s −  ) 2  s  s 2  s 3  s +  1 s −  2
-                                                            )
-                                            ) (
-                                                                                   3
-                                                                  2
-                 4
-                      3
-                                    2
-                                                    2
-                                       s
-                                                        s
-               s +  3s + =    As 2 ( s −−  2 +  Bs s −−    2 + Cs −   Cs −  2C +  Dss     ) 2 +  Es 3 (s +  ) 1
-                          8
-                                                                                    ( −</code></pre>
+
+             Let:  ( ) = wt  ( y t π  +  ) ↔  y ( ) t =  w (t π  −  )
+
+                                    =
+                    =
+              y′′ +  y t →    w′′ +  w t π
+                                        +
+                { £  w′′ +  w =  } £  {t π }
+                                +
+                                         () =
+              s Ws − 2  () sw ( ) 0 −  w′ ( ) 0 +  Ws  1  +  π
+                                              s 2   s
+                     y π  ( ) =  w (π π  −  ) =  w ( ) 0 =  0,  y π  ′  ( ) =  w′  ( ) 0 =  0
+
+              ( s +  2  1 Ws =  )  ()  1 π s
+                              +
+                              s 2
+
+             W  (s ) =  1 π+  s  =  A  +  B  +  Cs +  D
+                                             2
+                          2
+                     s 2 ( s + 1 )  s  s 2  s + 1
+                                                           2
+                     1 π =  s  As +  3  As +  Bs +  2  B Cs +  3  Ds
+                      +
+                                                +
+                         s 3  A C =  0 C = −     π
+                                +
+                        
+                         s   2  B +  D =  0  D = − 1
+                        
+                          s   1  A =    π
+                          0
+                         s    B = 1
+
+
+              £  −  1 { () £   −  1     π  +  1  −  π  s  −  1    
+                    Ws
+                         } =
+                                    s  s 2  s +  2  1  s +  2  1
+              w ( ) t = π  t π + −  cost − sint
+
+
+              y ( ) t =  w (t π  ) π  (t π = −  −  ) π +  cos −  (t π −  ) sin−  (t π  −  )
+
+                                         t
+                                                                 π −
+                    t π =  −  (cos cost  π  −  sin sin π  ) (cos sint  π  cos sin  ) t
+                                                −
+                  =  t π+  cost +  sint</code></pre>
      	</div>
     
      </div>

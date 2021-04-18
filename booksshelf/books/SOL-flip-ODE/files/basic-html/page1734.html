@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1734 - DE Solution</title>
+        <title>Page 1734 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1734 - DE Solution</div>
+        <div id="content-top1">Page 1734 - ODE Solution Manual</div>
         <div id="content-top2">P. 1734</div>
      </div>
      <div id="content-middle">
@@ -155,58 +155,76 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1720 | S O LU TI O N
 
 
-                          −+     t it
-                          1 i 
-                                 −
-                 zt            ee
-                   ( ) =
-                          2  
-                                                   1 
-                                          
-                      =  e  t −  (costi+  sin  ) t   − 1  i +   
-                                         
-                                              
-                                                  
-                                             2      0
-                                            1 
-                                                                      1 
-                      =  e t      cost   1  −  sint    +  ie    t   −  sint   −  1 +  cos       
-                                                                     
-                                          
-                                                              
-                                2         0           2      0    
-                      =  e  t −      −  cost −  sint     +  ie  t −    cost −   sint   
-                               2cost             2sint   
-                                                         sint 
-              x ( ) t = Ce  t −        −  cost −  2cost sint       + C e  t −      cost −   2sint    
-                                            2
-                      1
-                         −−           10  −
-                          10
-              x ( ) ( ) 1       i +  ( ) 1    
-                0 =
-                           ( )
-                         21            0  
-                                   1
-               10      − 1    
-                 = C 1     +  C 2  
-                                   0
-                0       2     
-                10    −  1C +  1  C   2
-                  =              ⇒  C =  0 C =  10
-                                                   2
-                                          1
-                0      2C 1   
-               ( ) 10e
-              xt =       t −      cost − sint   
-                             2sint   
+                     dx A                         x A  x B
+                                   −
+                      dt  =  Rate in Rate out =  −  40  +  90
+                 Tank B:
+                                      x
+                    Rate in  9 =  L     A    kg
+                                 min 360   L
+                              x
+                            =   A    kg  / min
+                              40
+                                            x
+                                              B
+                                        L
+                    Rate out  (5 4   )  min 360  kg
 
-               V  ( ) t      10e  t −  (cost − sin  ) t  
-                        ( ) =
-                     =  xt                       
-                I ( ) t         20e  t −  sint  
-                             
-                                                 </code></pre>
+                                  +
+                             =
+                                                  L
+                                x
+                              =  B    kg  / min
+                                40
+                     dx B                       x A   x B
+                                   −
+                      dt  =  Rate in Rate out =  40  −  40
+                         x A   x B
+                  x′ =   A  −  40  +  90
+                 
+                        x A   x B
+                   x′ =  40  −  40
+                 
+                     B
+                                   x   ′    −  1  1     x 
+                 The system is:    A    =    40  90     A            x′ =  Ax ()
+                                                                                   t
+                                   x      1      1     x 
+                                   B        40  −  40       B 
+                                                     x   ( ) 0     60
+                 With initial 60 kg of salt in tank A;   A    =    
+                                                     x  ( ) 0     0  
+                                                     B    
+
+                                −  1  −  λ    1
+             b)  det A λ−  (  ) I =  40       90
+                                   1       −  1  −  λ
+                                  40         40
+                                             1
+                                                      1 1
+                                   1
+                                ( −  40  −  λ =  )(  40  −  λ −  ) −  90 40
+                              =   1     1  λ +  λ +  2  −  1
+                                1600   20          3600
+                              =  λ  2  1  λ +  +  5
+                                     20    14400
+
+                 ∴ The eigenvalues are: λ    −  1    λ =  =  −  1
+                                          1    120    2     24
+
+
+                 For λ    −  1     ⇒    ( A λ =  −  IV =  )  0, we have
+                      1     120               1    1
+
+                          −  1  +  1      1     
+                                                          0
+                          40   120        90        x   =  
+                            1        −  1  +  1        
+                                                          0
+                                                    y
+                                                   
+                                                         
+                            40          40   120 </code></pre>
      	</div>
     
      </div>

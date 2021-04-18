@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2121 - DE Solution</title>
+        <title>Page 2121 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2121 - DE Solution</div>
+        <div id="content-top1">Page 2121 - ODE Solution Manual</div>
         <div id="content-top2">P. 2121</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 4 − S ol ut i on a b ou t   S i ng ul a r  P oi nt s  | 2103
 
 
+                     p =   lim   xp ( ) x
+                      0   x→  0
 
-                            a = −    1  a
-                             n     n +  3 n− 1
+                                     6
+                        =  lim   x ( )
+                                 1−
+                          x→  0      x
+                        =  lim    ( x −  ) 6
+                          x→  0
+                        = − 6
 
-                        n = 1 →   a = − 1  a
-                                   1    4  0
+                                2
+                     q =   lim  xq ( ) x
+                      0   x→ 0
 
-                        n   2 →=  a =  −  1 a =  1  a
-                                    2    5  1   20  0
-                        n   3 →=  a =  −  1 a =  −  1  a
-                                   3     6  2    120   0
+                        = −  lim   x 2 3
+                            x→ 0    x
+                        = −  lim 3x
 
-                        n   4 →=  a =  −  1  a =  1  a
-                                    4    7  3   840   0
-                                        
+                            x→ 0
+                        = 0
 
+                                                             2
+                    The indicial equation is:  ( rr −  ) 1 −  6r =  r −  7r = 0
+                                →     r =  0, 7
 
-                     y  () x =  ax ( 1−  1  x +     1  x −  2  1  x +  3  1  x −  4   )
-                      1       0      4     20     120      840
-
-                            r =  2
-                            b = −    1  b
-                             n     n +  4 n− 1
-
-                        n = 1 →   b = − 1 b
-                                   1    5  0
-                        n   2 →=  b =  −  1 b =  1  b
-                                   2     6  1  30  0
-
-                        n   3 →=  b =  −  1 b =  −  1  b
-                                   3     7  2    210  0
-                        n   4 →=  b =  −  1 b =  1   b
-                                   4     8  3  1,680  0
-                                           
+                    The two possible Frobenius series solutions are then of the forms
 
 
-                     y  () x =  bx 2     1−  x  +  x 2  −  x 3  +  x 4  −     
-                      2        0      5   30   210   1,680     
+
+                         y 1  ( ) x =  x 0 ∑  ∞  a x n  and  y 2  ( ) x =  x 7 ∑  ∞  b x n
+                                                                      n
+                                         n
+                                    n= 0                         n= 0
+                          ∞
+                         ∑       nr
+                                  +
+                     y =     ax
+                              n
+                         n= 0
+                          ∞
+                         ∑              nr +− 1
+                                   )
+                     y′ =     (n ra x
+                                +
+                                      n
+                         n= 0
+                           ∞
+                         ∑                        nr+− 2
+                                    )( +−
+                     y′′ =    (nr nr         ) 1 a x
+                                 +
+                                                n
+                          n= 0
+                     xy′′ +  (x −  ) 6 y′ −  3y =  0
 
 
-                                   x   x 2   x 3   x 4          2    x   x 2   x 3    x 4     
-                     yx     ax    1−  +   −     +     −     +   b x    1−  +  −   +      −    
-                      () =
-                             0      4   20   120   840          0       5   30   210   1,680
-                                                                                              
-
-
-                 Exercise
-
-                 Find the Frobenius series solutions of   2xy′′ +  3y′ −  y =  0
-
-                 Solution
-                     x 2xy′′ +  3 y′ − x  x  y =  0
-                     2         2     2
-                     x y′′ +  2  3  xy′ −  1  xy =  0
-                            2      2
-
-                     y′′ +  3  y′ −  1  y =  0
-                         2x      2x</code></pre>
+                      ∑  ∞                     nr+− 2         ∑  ∞           nr+− 1   ∑  ∞     nr
+                                                                                                +
+                                                                        )
+                                                                     +
+                     x    (n r n r        ) 1 ax     + (x −  ) 6  (n r ax          − 3     ax      = 0
+                                )( +−
+                             +
+                                                                                            n
+                                                                          n
+                                            n
+                      n= 0                                    n= 0                    n= 0</code></pre>
      	</div>
     
      </div>

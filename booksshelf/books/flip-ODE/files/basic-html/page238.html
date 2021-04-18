@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 238 - Differential Book</title>
+        <title>Page 238 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 238 - Differential Book</div>
+        <div id="content-top1">Page 238 - ODE Book</div>
         <div id="content-top2">P. 238</div>
      </div>
      <div id="content-middle">
@@ -152,54 +152,46 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.7 - E ul e r ’ s  &  R ung e - K ut t a  M e t h ods  | 223
-
-             2.7-2  Runge-Kutta Methods
-
-             Like Euler's method, the Runge-Kutta methods are fixed-step solvers.
-
-             2.7-3  The Second-Order Runge-Kutta Method
-
-             The Second-Order Runge-Kutta method is also known as the improved Euler's method.
-             It is generally referred to as “RK2”
-
-                                               (
-             Starting from the initial value point  x 0   , y 0 )  , we compute two slopes:
-                           (
-                    s =  ft    , y  )
-                     1      0    0
-
-                    s =   f t +  (  h  , y +  hs  )
-                     2       0       0    1
-                                s +  s
-                    y =  y +  h  1   2
-                     1    0        2
-             But an analysis using Taylor's theorem reveals that there is an improvement in the estimate for the truncation
-             error.
-             For the Second-Order Runge-Kutta method, we have
-
-                                    3
-                     y () −  t 1  y ≤  1  Mh
+    <pre style="white-space:pre-line"><code>2. 4 - I n hom og e n e ous   E q ua t i o ns ;   M e t h od  of   U n d e t e r m i n e d
+                                                                                            C o e f f i ci en t s  | 225
 
 
-             The constant M depends on the function  (, )f ty .
-             The Second-Order Runge-Kutta method is controlled by the cube of the step size instead of the square.
+                 2.4-7  Exceptional Cases
 
-                    Input t   and   y
-                          0          0
-                    For k = 1 to N
-                           (
-                    s =  ft      , y  )
-                     1      k  1 −  k  1 −
-                           (
-                    s =   f t    +  h  , y  +  hs  )
-                     2       k  1 −     k  1 −  1
-                                  s +  s
-                    y =  y    +  h  1  2
-                      k    k  1 −   2
+                 Example 5
 
-                    t =  t   + h
-                     k    k  1 −</code></pre>
+
+                 Find a particular solution to the equation  y′′ −  y′ −  2y =  3e  t −
+                 Solution
+
+
+                    The particular solution  y =  ae  t −
+
+                     y′′ −  y′ −  2y =  ae  t −  +  ae  t −  −  2ae  t −  =  0
+
+                                                   t −
+                                                              2 −
+                                                t
+                                                             t
+                    The particular solution  y =  ae  or  y =  ae  t
+                                           t −
+                            y′ =  ae  t −  −  ate
+                              =  ae  t −  (1 t−  )
+
+                            y′′ =  −  ae  t −  −  ae  t −  +  ate  t −
+                               =  ate  t −  − 2ae  t −
+
+
+                     y′′ −  y′ −  2y =  ate  t −  −  2ae  t −  −  ae  t −  +  ate  t −  −  2ate  t −
+
+                                 = − 3ae  t −
+
+                     −  3ae  t −  =  3e  t −
+                     a = − 1
+
+
+                    The particular solution  y  =  e t −  t −
+                                             p</code></pre>
      	</div>
     
      </div>

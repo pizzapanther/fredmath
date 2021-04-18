@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1533 - DE Solution</title>
+        <title>Page 1533 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1533 - DE Solution</div>
+        <div id="content-top1">Page 1533 - ODE Solution Manual</div>
         <div id="content-top2">P. 1533</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1519
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1519
 
 
-                                   C
-                                                  )
-                                 =  1  ( R C s + 1 CV s
-                                   C 2   2 2        20
-                                             2
-                                 = ( R CC s +    C s ) V
-                                                  1
-                                     21 2
-                                                       0
-                         I =  ( R CC s +  2  C s ) V +  I
-                         1      21 2         1    0    2
-                                          C     
-                           =      R CC s +  1  +  1 s     C V
-                               21 2       C 2       2  0
-                                                      s
-                           =  ( R CC s + 2 22  ( C +  1  C 2 ) ) V
-                                21
-                                                          0
-                                         (
-                                                                           1
-                                                                  s
-                        ( ) 1   →  V =  i  R R CC s + 2 22  ( C +  1  C 2 ) ) V +  0  sC 1 ( R CC s +  2  C s ) V
-                                       1
-                                                                                21 2
-                                           21
-                                                                                                   0
-                                                                                              1
-                                                                                       
-                            =      R R CC s +  22  R C +  (  C  ) s +  1  ( R CC s +  2  C s )     V
-                                1 21    2       1   1    2     sC 1   21 2         1     0
-                                                                          )
-                            =  ( R RC C s +  22  R C +  1 (  1  C 2 ) s +  RC s + 2 2  1 V
-                                12 1
-                                                                            0
-                                         2
-                              (          22                          ) )
-                            =  R R C C   2  s +  ( R C +  11  R C +  1 2  R C  s +  1 V
-                                                                             0
-                                                                 2 2
-                                1 2 1
+                                                   (
+                                                  ) ( ) I−
+                    a)  V s =  ( )  R Is +  ( ) ( R +  sL Is  ( )) ( ) 1s
+                          i       1         2               2
+                        ( R +  2  sL I 2  ( ) s −  I s +  ( ))  sC  I 2  ( ) s =  0  ( ) 2
+                                 )(
+                                                   1
+                                        s
+                        V  ( ) s =  1   I  ( ) ( ) 3
+                          0      s C  2
+
+                         ( ) 3 →  I =  2  s CV
+                                            0
+                                                       1
+                        ( ) 2  →  ( R +  2  sL I −  )(  I 2 )  =  sC  I
+                                                          2
+                        ( R +  2  sL I −  )(  I 2 )  =  V
+                                              0
+
+                         I −  I =   1    V
+                             2   R +  sL  0
+                                   2
+                                1         
+                         I =     R +  sL  +  sC V
+                                           
+                                           
+                                             0
+                              2           
+                              1 R C s +  LC s 2 
+                               +
+                          =      2              V
+                                     Ls +  R    0
+                                        2     
+                                           1 R C s +  LC s 2 
+                                           +
+                        ( ) 1   →  V =  i  R 1      2   Ls +  R      V +  0  ( R +  2  sL )  R +  1  sL V
+                                                                                     0
+                                                    2                       2
+
+                               R +  RR C s +  RLC s 2    
+                        V =    1    12         1      + 1    V
+                          i              Ls + R            0
+                                            2            
+
+
+                         V i  R +  1  RR C s +  RLC s +  2  Ls +  R 2
+                                               1
+                                    12
+                        V   =                  Ls +  R
+                          0                       2
+                        V 0                    Ls +  R 2
+
+                         V  =        2   (           )
+                          i   RLC s +     RR C +   L s +  R +  1  R 2
+                                           12
+                                1
                                 V
                          Hs       0
                            ( ) =
                                 V
                                   i
-                               =                      1
-                                 R R C C   22    ( R C +  R C +  R C   ) s +  1
-                                             s +
-                                  1 2 1   2        11      1 2     2 2
-                                       6
-                    b)  Given:  R = 10 Ω     R = ×      4     C = ×     −  4  f  C = 10 −  4  f
-                                                  5 10 Ω
-                                                                   2 10
-                                 1             2               1                 2
-                           ( ) =
-                         Hs                           1
-                                R R C C   22    ( R C +  R C +   R C   ) s +  1
-                                             s +
-                                  1 2 1   2        11     1 2     2 2
-                              =                      1
-                                ( 5 10 10 ) ⋅×  − 12 2  (200 100 5 s+  +  ) + 1
-                                                    s +
-                                           2 10
-                                  ×
-                              =        1
-                                0.1s +  2  305s +  1
+                                               L  s +  R
+                               =                     2
+                                 RLC s +  2  ( RR C +  L s + )  R +  R
+                                  1           12              1    2
 
-
-
-                        c)  =         1
-                              10 s + − 12  305 s +  1
-
-
-                                   10 s +  − 12  305 s +  1</code></pre>
+                               =   1                 Ls +  R 2
+                                 RLC        RR C +       L  R +  R
+                                  1    s +  2  12       s +  1    2
+                                               R LC          R LC
+                                                1             1</code></pre>
      	</div>
     
      </div>

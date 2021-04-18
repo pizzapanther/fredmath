@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 366 - Differential Book</title>
+        <title>Page 366 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 366 - Differential Book</div>
+        <div id="content-top1">Page 366 - ODE Book</div>
         <div id="content-top2">P. 366</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.1 - I nt r oduc t i on  &  R e v i e w  o f  P o w e r  S e r i e s  | 351
+    <pre style="white-space:pre-line"><code>3. 6 - P l an a r  S y s t em s  | 353
 
-               Example 5
 
-                                                              2
-               Find the Taylor series for ln x  in powers of  x − . Where does the series converge to ln x ?
-               Solution
+                 3.6-8  Complex Eigenvalues
 
-                   Let t =  x − 2  , then
-                            2
-                                22
-                   ln x =  ln (x − +  )
-                                        )
-                            
-                                         
-                        =  ln 2 (  x − 2  + 1
-                                2        
+
+
+                 If T −  2  4D &lt;  0 , then the solutions of the characteristic equation are the complex conjugate:
+
+                                                                              −
+                                     T +  i  4DT  2                 T −  i  4DT  2
+                                               −
+                                λ                      and     λ =  =
+                                 1          2                   2          2
+
+
+                 Example 4
+
+                                                                             0  1
+                 Find the eigenvalues and eigenvectors for the matrix    A =      
+                                                                             − 2 2 
+                 Solution
+                                   − λ    1
+                     det ( A λ−  ) I =
+                                   −  2  2 λ
+                                          −
+                                  −  λ =  (2 λ  −  ) 2+
+
+                                 =  λ  2  2 +  λ −  2
+                                 = 0
+
+
+                               2
+                     λ  2  2λ −  += 0 ⇒  λ  = 1 i λ+  = 1 i −
+                                                 x
+                                               
                               +
-                        =  ln2 ln (t +  ) 1
-                    f  ( ) lnt =  (t +  ) 1         f  ( ) 0 = ln ( ) 1 =
-                                                                   0
-                            1
-                    ft ′ ( ) = 1 t                  f ′ ( ) 0 = 1
+                    For λ = 1 i ;      ( A λ  ) I    =  0
+                                          −
+                                                 y
+                                               
+                           1 i
+                         −−        1     x 
+                                          =  0
+                                           y
+                          − 2   2 i−− 1  
+                                        x
+                           1 i
+                         −−      1  
+                                      =  0
+                                        y
+                          −  2  1 i −   
+                                   −+    )    y =  0
+                                      (1 ix +
+                                →  
+                                            −
+                                    −  2x +  (1 iy = )  0
+                                →   (    1 ix+  ) =  y
+                            1                   1   (1 )t
+                                                          i
+                     V =         ⇒     xt  ) =      e  +
+                                           (
+                      1    1 i          1      1 i+  
                             +
-                    f ′′ ( ) t =  − 1               f ′′ ( ) 0 = − 1
-                           (1 t ) 2
-                              +
-                                                            2
-                    f ′′′ ( ) t =  2                f ′′′ ( ) 0 =
-                            (1 t ) 3
-                              +
-                                                              6
-                    f  ( ) 4  ( ) t =  − 6          f ′′′ ( ) 0 = −
-                             (1 t ) 4
-                                +
-                      n
-                    f  () ( ) ( ) 1t = −  n+ 1  (n −  ) 1 !
-                                    (1 t+  ) n
+                    For λ =  1 i ;   V = −  V  ⇒     x  () t =  Ve  t λ
+                                     2    1           2       2
 
-                                                                     ( )
-                                                                      IV
-                                              f ′′ ( ) 0  2  f ′′′ ( ) 0  3  f  ( ) 0  4
-                   ln (1 t+  ) =  f  ( ) 0 +  f ′ ( ) 0 t +  t +  t +        t +  
-                                                2!         3!          4!
-
-                            =  t −  t 2  +  t 3  −  t 4  +  
-                                  2    3   4
-
-                   ln x =  ln2 ln (1 t+  )
-                             +
-                        =  ln2 t+  −  t 2  +  t 3  −  t 4  +  
-                                   2    3   4
-
-
-                        =  ln2 +  x −  2  −  ( x −  ) 2  2  +  ( x −  ) 2  3  −  ( x −  ) 2  4  +  
-                                 2      22   2     3 2 3     42  4
-                                          ×
-                                                              ×
-                                                    ×
-                                 ∞
-                               ∑      ( ) 1  n− 1   n
-                                       −
-                        =  ln2 +          2 n  ( −  x  ) 2
-                                n= 1   n×
-
-                   Since the series for  (1 t+  )  is valid for  1 t− &lt; ≤ 1, this series for ln x  is valid for  1− &lt;  x −  2  ≤ 1
-                                      ln
-                                                                                                         2
-                   − 2 &lt;  x −≤         0 &lt;  x ≤  4
-                            2 2 →</code></pre>
+                            1                    1   (1 )t
+                                                           i
+                                                          −
+                                            (
+                     V =         ⇒     xt   ) =      e
+                      2    1 i −         2      1 i −  </code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1844 - DE Solution</title>
+        <title>Page 1844 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1844 - DE Solution</div>
+        <div id="content-top1">Page 1844 - ODE Solution Manual</div>
         <div id="content-top2">P. 1844</div>
      </div>
      <div id="content-middle">
@@ -155,76 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1830 | S O LU TI O N
 
 
-
-                      −
-              I t = ( ) 13q −  1  I
-               1             2  3
-                                                            t
-                             t
-                                        t
-                                                  t
-                   =  1+  4 −  e  3 /2  −  9 −  e  2 /3  −  1 −  e  3 /2  +  1 −  e  2 /3
-                        5          5         5         5
-                             t
-                                        t
-                   =  1+  3 −  e  3 /2  −  8 −  e  2 /3
-                        5         5
-              I  ( ) t =  I −  I
-               2       1   3
-                              t
-                                        t
-                    =  1+  1 −  e  3 /2  −  6 −  e  2 /3
-                         5         5
-
-
-          Exercise
-
-          Find a system of differential equations and solve for the currents in the given network with initial
-
-                                                  1 ,
-          values:  ( ) 0I  =  I  ( ) 0 =  I  ( ) 0 =   R = Ω  L =  0.5  H , C =  0.5 , F    E =  cos3 V
-                                                                                         t
-                                          0
-                  1        2       3
-          Solution
-               1  q +  RI =  E  ( ) 1
-               C      2
-                1
-               C  q +  LI =  ′ 3  E  ( ) 2
+                   − ′
+                I =  2  500I +  1  500
               
-               LI −   ′  RI =  0  ( ) 3
-                 3     2
-
-                2q +  I =  cos3t
-                     2
-                   1
-               2q +  2  I =  ′ 3  cos3t    I =  1  I +  2  I =  3  q′
+                I =  3  − ′  400 I +  1  400
               
-                1 I − ′  I =  0
-                2  3    2
+               0.025I =  ′  0.045 −  (  500 I +  500 )
+                    1               1
 
-               2q +  1  I = ′  cos3t →  q =  1 cos3t −  1  I′
-                   2  3                  2        4  3
-              
-               1 I − ′  q′ +  I =  0
-               2  3       3
+               ′   −  900I +  900
+                I =
+                1        1
+              
+               I =  2  − ′  500I +  1  500
+              
+               I =  3  − ′  400 I +  1  400
+              
+              I +  ′  900I =  900
+               1       1
+                   ∫ 900dt
+                    e      =  e 900t
 
-              1  I − ′  ( 1  cos3t −  1  I′  ) ′  +  I =  0
-              2  3   2         4  3     3
-              1  I + ′  3 sin3t +  1  I + ′′  I =  0
-              2  3  2         4  3   3
 
-              I +  ′′  2I +  ′  4I =  −  6sin3t
-               3     3     3
-                                               1
-                 λ  2  2 +  4 0 →      λ    = −±    3
-                        λ +
-                             =
-                                        1,2
-                                              )
-                                t
-                 I =  ( C  cos 3 + C   sin 3te   t −
-                  h      1           2</code></pre>
+                               =
+                 ∫ 900e 900t dt e 900t
+
+
+
+              I  ( ) t =  e − 900t ( e 900t  + C  )
+               1                      1
+                   = 1 C+  e − 900t
+                         1
+
+                     I  ( ) 0 = C + 1 =  0
+                      1       1
+                     C  = − 1
+                      1
+
+               I  ( ) 1 et =  −  − 900t
+               1
+              I =  − ′  500I +  500
+               2         1
+                 = 500e − 900t
+
+
+
+              I  ( ) t = ∫ 500 e − 900t dt
+               2
+
+                        e
+                   =  −  5 − 900t  +  C
+                       9           2
+
+                         I  ( ) 0 =  − +  5  C =  0
+                          2       9     2
+                        C   =  5
+                          2   9
+
+
+                            e
+              I  ( ) t =  5  −  5 − 900 t
+                2     9   9
+              I  ( ) 1t =  −  e −  900t  −  5  +  5 −  e  900t    I =  I +  I
+               3                 9   9                1    2    3</code></pre>
      	</div>
     
      </div>

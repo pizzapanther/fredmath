@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 29 - Differential Book</title>
+        <title>Page 29 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 29 - Differential Book</div>
+        <div id="content-top1">Page 29 - ODE Book</div>
         <div id="content-top2">P. 29</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>14 | I nt e g r a t i on
+    <pre style="white-space:pre-line"><code>16 | I n t eg r at i o n
 
+          Formula – Integration exponential & trigonometry by parts.
 
-                        =  1  ln u + C
-                          4
-                                  1 C
-                        =  1  ln 4x ++
-                          4
-
-
-          R.2-6 – Integration by Parts
-
-          Let u and v be differentiable functions of x.
-                                                  ∫  udv uv −  ∫  vdu
-                                                        =
+                     ∫ e
+          Evaluate      ax cosbx dx
 
 
 
-          Guidelines for integration by Parts
-
-             1.  Let dv be the most complicated portion of the integrand that fits a basic integration formula. Let
-                 u be the remaining factor.
-             2.  Let u be the portion of the integrand whose derivative is a function simpler than u. Let dv be the
-                 remaining factor.
 
 
-          Example 4
+                            ∫ cosbx dx
+
+               +    e ax    1 sinbx
+                            b
+
+               −    ae ax    − b 1 2  cosbx
 
 
-          Evaluate        ∫ x cos xdx
+                    2 ax
+               +  ae        −  1 2∫ cosbx dx
+                             b
 
+
+          ∫  e ax cosbx dx =  1 ax sinbx +  b a 2  e ax cosbx −  b ∫  a 2  e ax cosbx  dx
+                                                         2
+                             e
+                           b
+
+             a 2    ax            e ax
+                                                +
+                                        b
+            1+  2    ∫ e  cosbx  dx =  2  ( sinbx a cosbx )
+             b                    b
+          ∫ e ax cosbx  dx =  a + b 2  ( sinbx a+  b  cosbx ) C +
+                              ax
+                             e
+                             2
+
+
+          Proof
+
+
+
+          Find       ∫ e ax cosbx dx
 
           Solution
-                      u =  x          dv =  cos xdx
+
+                       u =  e ax        dv =  cosbxdx
              Let:
-                                    dv =
-                                              x
-                     du =  x d  v = ∫∫     cos dx =  sin x
-              ∫  x cos dx =  x sin x − ∫  sin xdx           ∫  udv    =     v − ∫  vd u
-                     x
-                                                                       u
+                     d u =  ae ax dx  v = ∫ cosbxdx =  1 sinbx
+                                                   b
 
-                                        +
-                         =  x sin x +  cos xC
+              ∫  e ax  cosbx dx =  1 ax  sinbx −  a ∫  e ax sinbxdx        ∫  udv    =     v − ∫  vd u
+                                                                                     u
+                                e
+                               b
+                                            b
 
-
-          Example 5
-                                                                                derivative    ∫ e dx
-                                                                                                 x
-                            2 x
-          Evaluate      ∫  x e dx                                                   2            x
-
-          Solution                                                      ( ) +      x            e
-                                                                                                 x
-                                                                        ( ) −      2x           e
-                                        x
-              f  ( ) x =  x 2  and  g ( ) x = e                         ( ) +       2           e
-                                                                                                 x
-              ∫ x 2 x    xe −  2 x  2xe +  x  2e +  x  C                            0
-                  e dx =</code></pre>
+                                  u =  e ax         dv =  si nbx dx
+                        Let:
+                                       ax
+                                du =  ae dx   v = ∫ sinbxdx = − 1 cosbx
+                                                               b</code></pre>
      	</div>
     
      </div>

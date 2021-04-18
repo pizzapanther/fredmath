@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 88 - Differential Book</title>
+        <title>Page 88 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 88 - Differential Book</div>
+        <div id="content-top1">Page 88 - ODE Book</div>
         <div id="content-top2">P. 88</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.5 - M i xi ng  P r ob l e m s  | 73
-
-               Example 2
-
-               The 600-gal tank is filled with 300 gal of pure water. A spigot is opened above the tank and a salt
-               solution containing 1.5 lb. of salt per gallon of solution begins flowing into the tank at the rate of 3
-               gal/min. simultaneously, a drain is opened at the bottom of the tank allowing the solution to leave tank
-               at a rate of 1 gal/min. What will be the salt content in the tank at the precise moment that the volume of
-               solution in the tank is equal to the tank's capacity (600 gal)?
-
-               Solution
-
-                   Vt     300 (3 1)t+  −
-                     ( ) =
-                        = 300 2t+
-
-                            ()
-                   ct      xt
-                    () =
-                          300 2t                                      1.5 lb/gal
-                             +
+    <pre style="white-space:pre-line"><code>1. 4 - L i n e a r  E qu a t i ons  | 75
 
 
-                                                                      3 gal/min
-                                   ×
-                   Rate in  3=  gal   1.5  lb
-                              min       gal
-                           =  4.5  lb  / min
-                   Rate out  1  =  ×  x
-                                   300 2t
-                                      +
-                            =    x     lb /m in
+                                    ∫  p dx    − ∫  p dx
+                                             ∫
+                                             
+                         u =      f  e     dx e
+                                             
+                             
+                                            
 
-                              300 2t                                                        1 gal/min
-                                  +
-                    dx  =  4.5 −  x
-                                  +
-                    dt        300 2t
-                    dx  +   1    x =  4.5
-                    dt   300 2t+
+                            − ∫  p dx     ∫  p dx
+                     y   =  e       ∫  f e      dx                  y =  y +  y
+                       p                                                 h    p
 
-                                  ∫   1   dt
-                                      +
-                           ut    e  300 2t                 d  (300 +  2t ) =  2dt
-                            () =
-                                  1 ∫  1   d (300 2t+  )
-                                        +
-                               =  e 2 300 2t
-                                  1 ln (300 2t+  )
-                               =  e 2
 
-                                        +
-                               =  e ln (300 2t ) 1/2
-                               =   300 2t
-                                       +
-                           ∫ 4.5 300 2t dt =  4.5 1 2 (300 2t+  ) 2/3
-                                     +
-                                                  23
 
-                                                         )
-                     ( ) =
-                   xt         1     ( 1.5 (300 2t+  ) 3/2  +  C
-                               +
-                           300 2t
-                        =  1.5 (300 2t+  ) +  C
-                                          300 2t
-                                              +
-                              +
-                        =  450 3t +    C
-                                     300 2t
-                                         +</code></pre>
+
+                        −  ∫  p dx  −  ∫  p dx  ∫  p dx
+                 y =  Ce       + e        ∫  f e     dx
+
+
+
+
+                                                 ∫
+                            − ∫  p dx          p dx      
+                       y e            C + ∫  . f e   dx
+                         =
+                                                         
+                                                        
+                                                        
+
+
+
+                 Example 3
+
+
+                                                                                                        x
+                                                                                                            =
+                 Find the general solution of  x′ =  x sint +  2te − cost   and the particular solution that satisfies (0) 1.
+                 Solution
+
+                     x′ −  x sint =  2te − cost
+
+                                      t
+                                 − ∫ sin  dt
+                          x =  e
+                            h
+                                   = e cost
+
+                          ∫  2te − cos cost dt = ∫  2t  dt
+                                    t
+                                     e
+
+                                               2
+                                            = t
+                                         )
+                                    2
+                      () =
+                     xt    e − cost ( t + C
+                               (   2    )  − cos0
+                                                  =
+                         x (0) =  (0) +  Ce      1
+
+                        Ce − 1  = 1
+                        C =     e
+                           (  2  )  − cost
+                     x () =  t + e e
+                       t</code></pre>
      	</div>
     
      </div>

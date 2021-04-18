@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 404 - DE Solution</title>
+        <title>Page 404 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 404 - DE Solution</div>
+        <div id="content-top1">Page 404 - ODE Solution Manual</div>
         <div id="content-top2">P. 404</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>398 | S O LU TI O N
 
 
-                 t =  50 min
+                              ( )
+                       =  r  xt   lb
+                         500      min
+              dx  = −  r  x
+              dt     500
+              dx  = −  r  dt
+              x      500
+              ∫∫         500 dt
+                          r
+                dx
+                   = −
+                 x
 
-             b)  Let y(t) be the amount of concentrate in the tank at time t.
-                 dy  =  Rate in −   Rate out
-
-                  dt
-                 dy    0.5  lb  5  gal   −   y   lb    3  gal 
-                                                +
-                                                                  
-                  dt  =    gal    min        100 2 t  gal        min 
-                               
-                     =  5  −  3y
-                       2 100 2t
-                               +
-                 dy  +    3    y =  5
-                          +
-                  dt  100 2t       2
-                      ∫   3dt     2∫  3  dt
+              ln x =  −  r  tC
                            +
-                                       +
-                        e  100 2t  =  e  50 t
-                                 3 ln(50 )
-                                        t +
-                              =  e 2
-                                       t
-                                     +
-                              =  e ln(50 ) 3/2
-                              =  (50 t ) 3/2
-                                   +
+                     500
+                       −  r  t
+                t
+              x ( ) =  Ae  500
 
-                     ∫  5 (50 t ) 3/2 dt =  (t +  50 ) 5/2
-                             +
-                       2
+                 x ( ) 0 =  0.05 =  1
+                               20
 
+                 A  =  1
+                     20
 
+                           r
+              x ( ) t =  1  e − 500 t
+                    20
 
-                                                   
-                 yt          1  3/2     (t +  50 ) 5/2  +  C
-                   ( ) =
-                                                   
-                        (t + 50 )                 
-                       =  t +  50 +  C
-                                 t
-                                ( + 50 ) 3/2
-                         y ( ) 0 =
-                               0
-                        0 =  50 +  C
-                                 50 3/2
-                          C    = − 50
-                         50 3/2
-                        C  = − 50 5/2
+                                                                 r
+             The concentration at time t is given by: ( ) t =  1  e − 500 t
+                                                    c
+                                                          20
+             The concentration reaches 1% in one hour or 60 minutes.
 
+                          r
+               1  =  1  e − 500 60
+              100   20
+                     3
+              1  =  e − 25 r
+              5
 
+              −  3  r =  −  ln5
+               25
 
-                 y ( ) t =  t +  50 −  50 5/2
-                                (t + 50 ) 3/2
+              r =  25 ln5
+                  3
+
+               ≈ 13.4 gal/min
 
 
 
-                   ( yt =  50 ) 50 50=  +  −  50 5/2
-                                      (50 50+  ) 3/2
-                           ≈ 83.22 lb of  concentrate</code></pre>
+          Exercise
+
+
+          Suppose that a large tank initially holds 300 gallons of water in which 50 pounds of salt have been
+          dissolved. Pure water is pumped into the tank at a rate of 3 gal/min, and when the solution is well
+          stirred, it is then pumped out at the same rate. Determine a differential equation for the amount of salt
+                                     0
+          x ( ) t  in the tank at time t &gt; .
+          Solution
+
+               ( ) 300 +
+             Vt   =       (3 3−  )t</code></pre>
      	</div>
     
      </div>

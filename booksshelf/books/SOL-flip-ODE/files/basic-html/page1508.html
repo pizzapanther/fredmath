@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1508 - DE Solution</title>
+        <title>Page 1508 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1508 - DE Solution</div>
+        <div id="content-top1">Page 1508 - ODE Solution Manual</div>
         <div id="content-top2">P. 1508</div>
      </div>
      <div id="content-middle">
@@ -156,72 +156,86 @@ function MM_swapImage() { //v3.0
 
 
 
+                           −
+                    =  EC ( 1 e −  / t RC )
 
-                                   }
-                        £    −  1 { ()Q s =  E RC 2  £   −  1        1      
-                                         0
-                                                         (RCs +  ) 1   2  
-                                                                   
-
-                                             2
-                                     = E RC L          1   1         
-                                         0             2          2
-                                                   (RC )  ( s +  1  )  
-                                                             RC       
-                        E
-                 q ( ) t =  0  te  t −  /RC
-                         R
 
 
           Exercise
 
-          Solve the system under the conditions  ( ) 60 Et =  V ,  L = 1 h ,  R = 50 Ω, C = 10 − 4  f , and the
 
-          currents i  and i  are initially zero.
-                   1      2
+          Solve the general initial value problem modeling the LR circuit   L  dI  +  RI =  , E  I ( ) 0 =  I
+                                                                          dt                    0
+             Where E is a constant source of emf
           Solution
+                            )
+               £  ( dI  +  R I £  ( )
+                                   E
+                             =
+                                   L
+                        L
+                   dt
+               sIs −  () I (0) +  R  Is  E  1        I (0) =  I 0
+                                () =
+                             L
+                                      Ls
+               ( s +  R ) Is  E  1  +  I 0
+                        () =
+                    L
+                              Ls
+                Is    E     1    +  I     1
+                 () =
+                          (
+                      L  ss +  R )  0  s +  R
+                                          L
+                              L
+                                                          +
+                                                 As +  R  A Bs
+                            1     =  A  +  B  =       L
+                         ss +  (  R )  s  s +  R   ss +  (  R )
+                                            L
+                               L
+                                                         L
+                          AB =    0
+                            + 
+                                             L         L
+                          R         →    A =  R  B =  −  R
+                          L  A = 1
+                        
+                             −  1          −  1             −  1     
+                        
+                                  1
+                It    EL   £     { } −  L £        1        +  I £      1    
+                 () =
+                        
+                      LR          s    R         s +  R       0    s +  R  
+                        
+                                                  L                L 
+                        (
+                                   t
+                                                t
+                                                 /
+                                    /
+                    =  EL  −  L −  R e  RL )  +  Ie −  RL
+                      LR
+                                           0
 
-                di
-                L  dt 1  +  Ri =  2  E ( ) t
-              
-              
-                  di 2
-               RC  dt  +  i −  2  i =  1  0
-              
-                   di 1
-                    dt  +  50i =  2  60
-              
-                                                         0
-                                         i 2  ( ) 0 =  i 1 ( ) 0 =
-               50 10 − 4  di 2        0
-                ×       dt   i +  2  i −  1  =
-              
-                       di      
-                                       60
-                 £    1  +  50i    =  £ { }
-                     dt     2    
-              
-               £      − 4  di 2        
-                      ×
-                  
-                  50 10     dt  +  i −  2  i 1   =  0
-                                         
-                   sI  ( ) s −  i  ( ) 0 +  50I  ( ) s =  60
-                     1      1         2       s
-              
-                1  ( sI  ( ) s −  i  ( ))  I  ( ) s −  I  ( ) 0s =
-                                0 +
-               200   2       2       2       1
-                  sI  ( ) 50s +  I  ( ) s =  60
-                    1          2      s
-              
-               −   200I 1 ( ) (s+  s  +  200 ) ( ) 0I 2  s =
-
-                   200sI  ( ) 10s +  4 I  ( ) s =  12000
-                 
-              →         1          2         s
-                           s +
-                  −   20 0 I s  1 ( ) (s +  200 ) I s  2  ( ) 0s =</code></pre>
+                                            t
+                                t
+                                 /
+                                             /
+                    =  E  −  E −  e  RL  +  Ie −  RL
+                      R   R            0
+                                  t
+                                               t
+                                                /
+                                   /
+                    =  1 ( E −  Ee −  RL  +  RI e −  RL )
+                      R                   0
+                                      )
+                                            / t
+                      1
+                    =  R ( E +  ( RI −  0  E e − RL )</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1324 - DE Solution</title>
+        <title>Page 1324 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1324 - DE Solution</div>
+        <div id="content-top1">Page 1324 - ODE Solution Manual</div>
         <div id="content-top2">P. 1324</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,79 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1310 | S O LU TI O N
 
 
+                     ∫ sin3   t e −  st dt = − 3cos3t −  s 9 sin3t −  e  st
 
-              ∫ 0 ∞ cos3  e −+  ) 2 t dt =  3sin3t −  (s +  (s +  ) 2  2  +  ) 2 cos3t  e −+  ) 2 t
-                                                            (s
-                          (s
-                      t
-                                                    9
+                                             2
+                                            s +
 
-                     3sin3t −  (s +  ) 2 cos3t  −+  ) 2 t  ∞
-                                            (s
-              Fs                          e
-               () =
-                         (s +  ) 2  2  +  9         0
-                 =     s +  2
-                   (s +  ) 2  2  +  9
+              Fs      3cos3t −  s sin3t − st    ∞
+               () = −
+                                      e
+                            2
+                           s +  9           0
+
+                          3cos3(0) s−  sin3(0) − s (0)
+                   = − 0 +                   e
+                                  2
+                                 s + 9
+
+                   =   3       s &gt;  0
+                      2
+                     s +  9
 
 
 
           Exercise
 
-
-          Use Definition of Laplace transform to find the Laplace transform of   f  ( ) t =  e  t −  sin2t
+          Use Definition of Laplace transform to find the Laplace transform of   ft = sin 2t
+                                                                                ( )
           Solution
 
-                     ∫ ∞ e  t −    −  st dt
-              F ( ) s =  0  sin 2   t e                                   ∫ sin 2  dt
-                                                                                t
+                               )
+              F ( ) = ∫ ∞ (sin 2t e − st dt
+                s
+
+                      0
+                                      ∫ sin 2   t dt
+
+                               − st     1
+                        +     e       −  2  cos2t
+                                − st  − 1
+                         −  − se        4 sin 2t
+
+                              2 −
+                        +    se  st
+              ∫  sin2t e −  st dt =  −  1 −  2  e  st  cos2t −  4 e  st sin2t +  s 4 2 ∫  e −  st  sin2t dt
+                                              s −
 
 
-                                                             (s
-                                 (s
-                   = ∫ ∞ sin 2   t e −+  ) 1 t dt          e −+   ) 1 t     − 1 cost
-                                                                            2
-                                                                 (s
-                                                                            4
-                       0                               −  (s +  ) 1 e −+  ) 1 t    − 1 sint
-                                                             2 −+
-                                                       (s +  ) 1 e  (s  ) 1 t
+
+                 ( 4 s 2 ) ∫ sin 2t e −  st dt =  ( −  2cos2t s sin 2t )e −  st
+                    +
+                                                    −
+
+                 ∫ sin2  e −  st dt = −  2cos2t −  s 4 sin2t −  e  st
+                        t
+                                          2
+                                         s +
 
 
-               ∫  sin2t e −+  ) 1 t dt =  ( −  1 cos2t −  1 (s +  ) 1 sin2t e −+  ) 1 t  −  1 (s +  ) 1  2 ∫  sin2t e −+  ) 1 t dt
-                                                             )
-                                                                 (s
-                          (s
-                                                                                            (s
-                                                                         4
-                                       2
-                                                4
-               ( (s +  ) 1  2  +  4 ) ∫ sin2t e −+  ) 1 t dt =  ( −  2cos2t +  (s +  ) 1 sin2t e −+  ) 1 t
-                                                                           (s
-                                                                        )
-                                       (s
-              ∫ 0 ∞ sin 2  e −+  ) 1 t dt = −  2cos2t + (s +  (s +  ) 1  2  +  ) 1 sin 2t  e −+  ) 1 t
-                                                             (s
-                          (s
-                      t
-                                                    4
-
-                      2cos2t +  (s +  ) 1 sin 2t  −+  ) 1 t  ∞
-                                             (s
-              Fs                           e
+                                      e
+              Fs      2cos2t −  s sin 2t − st     ∞
                () = −
-                           (s +  ) 1  2  +  4        0
-                 =      2
-                   (s +  ) 1  2  +  4</code></pre>
+                            2
+                           s +  4           0
+
+                          2cos2(0) s sin 2(0) − s (0)
+                                  −
+                      0
+                   = −+                     e
+                                 2
+                                s + 4
+
+                   =    2
+                      2
+                     s +  4</code></pre>
      	</div>
     
      </div>

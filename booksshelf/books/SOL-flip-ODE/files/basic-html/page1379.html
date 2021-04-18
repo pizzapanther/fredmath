@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1379 - DE Solution</title>
+        <title>Page 1379 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1379 - DE Solution</div>
+        <div id="content-top1">Page 1379 - ODE Solution Manual</div>
         <div id="content-top2">P. 1379</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,90 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 3 − I nve r s e   L a p l ac e T r an s f o r m  | 1365
+    <pre style="white-space:pre-line"><code>3. 2 − B a s i c P r o p er t i e s  o f   t h e L ap l ac e  T r an s f o r m  | 1365
 
 
                  Exercise
 
-                                                       Ys
-                 Find the inverse Laplace Transform of  () =     5
-                                                              (s + 2) 3
+                 Transform the initial value problem into an algebraic equation involving £  ( ) . Solve the resulting
+                                                                                           y
+                 equation for the Laplace transform of y.
+
+
+                                                     =
+                                2y ( ) 3  +  3y′′ −  3y′ −  2y e  t −  ;  y ( ) 0 = 0,  y′ ( ) 0 =  0,  y′′ ( ) 10 =
                  Solution
-                     £   − 1       ! n        =  te  at    n =  2 a =  2
-                                          n −
-                               (s +  ) a  n+ 1   
+                                              } { }
+                     £ { 2y ( ) 3  +  3y′′ −  3y′ −  2y £  e  t −
+                                               =
 
-                      () =
-                     Ys     5    2!
-                            2! (s + 2) 3
-
-
-                     y () £=    − 1       5      
-                       t
-                                   (s +  2)    3 
-                              2 −
-                         =  5 te  2t
-                           2
+                                                             2
+                                                                                                                1
+                       3
+                     2s Ys       2  ( ) 0 −  2sy′ ( ) 0 −  2y′′ ( ) 0 +  3s Ys  ( ) 0 −  3y′ ( ) 0 −  3sYs  ( ) 0 −  2Ys  s + 1
+                          ( ) 2s y−
+                                                               ( ) 3sy−
+                                                                                                         ( ) =
+                                                                                         ( ) 3y+
+                                       )
+                     ( 2s +  3s − 3s − 2 Ys        s + 1                   y ( ) 0 =  y′ ( ) 0 =  0,  y′′ ( ) 0 = 1
+                        3
+                                                     1
+                              2
+                                          ( ) 2− =
+                     (s −  12s + )(  1 )(s +  2 Ys  1  +  2
+                                        ) ( ) =
+                                                 s + 1
+                     Ys                2s +  3          =  A   +   B   +  C   +  D
+                       ( ) =
+                            (s −  12s + )(  1 )(s +  2 )(s +  ) 1  s −  1  2s +  1  s +  2  s +  1
+                                 (
+                                                                                                     )
+                                                       (
+                                                                                           (
+                                                                         (
+                                                                                             2
+                                                                                                 s
+                                                                                                            3
+                         A (2s +  ) 1 s +  2  3s +  2 +  )  B (s +  ) 2 s −  2  1 +  )  C (2s +  ) 1 s −  2  1 +  )  D (2s +  ) 1 s + −  2 =  2s +
+                                 s 3  2A +  B +  2C +  2D =  0
+                                
+                                 s   2  7A +  2B +  C + 3D =  0
+                                
+                                 s   1  7A B −  2C −  3D =  2
+                                         −
+                                  0
+                                 s   2A −  2B C − −  2D =  3
+                             ⇒  A =  5  B =  −  16  C =  1  D =  1
+                                   18         9       9       2
+                     Y  ( ) s =  5  1  −  16  1  +  1 1  +  11
+                            18 s −  1  9 2s +  1  9 s +  2  2 s +  1
 
 
                  Exercise
 
-                 Find the inverse Laplace Transform of  ()Ys =   1
-                                                              (s − 1) 6
+                 Transform the initial value problem into an algebraic equation involving £  ( )y . Solve the resulting
+
+                 equation for the Laplace transform of y.
+
+
+                                                         t
+                                y ( ) 3  +  2y′′ −  y′ −  2y =  si n3 ;  y ( ) 0 = 0,  y′ ( ) 0 =  , 0  y′′ ( ) 10 =
                  Solution
 
-                     £   − 1       ! n        =  te  at    n = 5 a = − 1
-                                          n −
-                               (s +  ) a  n+ 1   
-
-                     Ys     1    5!
-                      () =
-                            5! (s − 1) 6
+                     £ { y ( ) 3  +  2y′′ −  y′ −  2y £=  }  {sin3t
+                                                       }
 
 
-                       t =
-                     y () £    − 1       1  5!      
-                                   5! (s − 1)    6 
-                                5 t
-                            1
-                         = 120 te
-
-
-                 Exercise
-
-                                                                      ( 4 s −  ) 1
-                 Find the inverse Laplace Transform of      Ys
-                                                              () =
-                                                                   (s −  1) +  2  4
-                 Solution
-
-                     £   − 1        sa        =  e − at  cos t ω    a =  −  1 ω =  2
-                                  +
-                              + 
-                             (sa ) +  2  ω   2  
-                      () =
-                     Ys     4   s − 1
-                             (s −  1) +  2  4</code></pre>
+                                                       2
+                      3
+                     s Ys     2  ( ) 0 −  sy′ ( ) 0 −  y′′ ( ) 0 +  2s Ys  ( ) 0 −  2y′ ( ) 0 −  sYs  y ( ) 0 −  2Ys  3
+                                                                                  ( ) +
+                        ( ) s y−
+                                                                                                 ( ) =
+                                                          ( ) 2sy−
+                                                                                                       2
+                                                                                                      s +  9</code></pre>
      	</div>
     
      </div>

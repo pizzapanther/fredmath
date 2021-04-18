@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1943 - DE Solution</title>
+        <title>Page 1943 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1943 - DE Solution</div>
+        <div id="content-top1">Page 1943 - ODE Solution Manual</div>
         <div id="content-top2">P. 1943</div>
      </div>
      <div id="content-middle">
@@ -156,71 +156,65 @@ function MM_swapImage() { //v3.0
 
 
 
-                                a =  1 a =  0
-                                 5   5  2
-                                     1       1
+                 Solution             Section 4.2 – Series Solutions near Ordinary Points
 
-                                a =    a =      a
-                                 6   6  3   36 ⋅  0
-                                a =  1  a =  0
-                                 7   7  4
-                                a =  1  a =   1   a =       1     a
-                                             ⋅⋅
-                                 9   9  6   36 9    0   3 3 (12 3⋅⋅  )  0
-
-                                a   =  1  a =     1     a =        1      a
-                                                  ⋅⋅
-                                               ⋅
-                                 12   12  9   3 6 9 12   0   3 4 (1 234  )  0
-                                                                  ⋅ ⋅⋅
-                          a    =   1   a
-                                  n
-                            3n   3 ⋅  ! n  0
-                             ∞
-                            ∑       1      3n
-                     yx             n  a x
-                      ( ) =
-                                         0
-                            n= 0  3 ⋅  ! n
-                                 ∞
-                             0∑      1 x  3   n
-                                       
-                          =  a       n !3  
-                                       
-                                n= 0      
-                                                                k
-                          =  a  e x 3 /3             P =  lim  3 k !  = ∞
-
-                             0         √                 n →∞    1
 
 
                  Exercise
 
-                 Find a power series solution.   y′ +  2xy =  0
+                 Find a power series solution.   y′ =  3y
 
                  Solution
+
+                    The equation  y′ =  3y is separable with solution
+
+                     dy  =  3y
+                     dx
+                     ∫∫        3 dx
+                       dy
+                          =
+                        y
+
+                     y =  Ce 3x
+
+                               +
+                     ln ( ) y = 3x C
                              ∞
                             ∑        n
-                     yx           a x
                       ( ) =
+                     yx          a x
                                   n
                             n= 0
-                              ∞
-                            ∑          n− 1
-                     y′ ( ) x =   na x
+
+                            ∑  ∞       n− 1  ∑  ∞             n
+                     y′ ( ) x =  na x      =     (n +  ) 1 a n+ 1 x
                                     n
-                             n= 1
-                     y′ +  2xy =  0
+                             n= 1            n= 0
 
-                      ∞                 ∞
-                     ∑   nax  n− 1 +  2x ∑  ax =  n  n  0
-                            n
-                     n= 1              n= 0
+                     y′ −  3y =  0
 
-                     ∑  ∞  (n +  ) 1 a n+ 1 ∑  x +  n  ∞  2ax n+ 1  =  0
+                     ∑  ∞  (n +  ) 1 a n+ 1 ∑  x −  n  3  ∞  ax =  n  n  0
 
-                                                n
-                     n= 0                n= 0</code></pre>
+
+                     n= 0                  n= 0
+                      ∞
+                            (n +  ) 1 a  −  3a n  ∑    x =  n  0
+                                  n+ 1
+                     n= 0
+
+                     (n +  ) 1 a n+ 1  −  3a =  n  0
+
+                            3a
+                     a    =    n  ; n   ≥  0
+                      n+ 1  n + 1
+
+                    With  ( ) 0y  = 3a
+                                    0
+                            a =  3a
+                             1     0
+
+                            a =  3 a =  33 ⋅  a
+                             2   2  1    2   0</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 637 - DE Solution</title>
+        <title>Page 637 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 637 - DE Solution</div>
+        <div id="content-top1">Page 637 - ODE Solution Manual</div>
         <div id="content-top2">P. 637</div>
      </div>
      <div id="content-middle">
@@ -155,76 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 8 − B a s ic  E le c tr i c a l  C ir c u it  | 631
 
 
-                                          2
-                                       RE                                       
-                                                                       R
-                                                                                 
-                      ( ) =
-                     It        1           0    ( sin tω  L ω−  cos tω  ) e ( / ) Lt  +  K
-                                             22
-                                       +
-                           e ( / RL   )t    L E L ω     R                        
-                                          0
-                                 2
-                               RE
-                                                                   RL
-                          =         0    ( sin t ω  Lω cos t ω −  ) +  Ke − ( /)t
-                                    22
-                            L +  E L ω            R
-                                  0
-                                 ( It =  ) 0 =  I
-                                           0
-                                          2
-                                −  Lω   RE   0    +  K =  I
-                                  R  L +  E L ω          0
-                                             2 2
-                                           0
-                                            ω
-                                           RE
-                                K =  I +        0
-                                     0   1+  E Lω 2
-                                              0
-                                2
-                                                                       ω
-                               RE                                    R E        ( /)t
-                     I ( ) t =     0    ( sinω  t  Lω cos t ω −  ) +    I +  0    e −  RL
-                            L E L ω  +  22        R            0  1 E Lω  +  2 
-                                 0                                     0      
+
+                                =  (0.01 ) 1 ( 100cos100t +  100sin100t −  100e − 100t )
+                                        2
+                                =  1 ( cos100t +  sin100t +  e − 10t )
+                                  2
 
 
                  Exercise
 
 
-                 For the given RL−circuit
-                 Which has a constant impressed voltage E, a resistor of resistance R, and a coil of impedance L.
-                                 I
-                 Find the current  ( ) t  flowing in the circuit.
+                 An RL circuit with a 5 − Ω  resistor and a 0.05-H  inductor is driven by a voltage  ( ) 5cos120E t =  t  V
+                 . If the initial inductor current is 1 A, determine the subsequence resistor and inductor current and the
+                 voltages.
                  Solution
 
-                     L  dI  +  RI =  E
-                       dt
-                     dI  +  R  I =  E
-                     dt   L     L
 
-                            L ∫  R dt
-                            e   =  e ( / R L )t
+                     0.05 dI  +  5I =  5cos120t      L dI  +  RI =  E ()
+                                                                   t
+                          dt                           dt
+                     dI  +  100I =  100cos120t
+                     dt
 
-                        ∫  E  e ( / ) Lt dt =  EL e ( / R L )t
-                               R
-                           L
-                                         LR
+                          ∫ 100dt
+                            e    =  e 100t
 
-                                       =  E  e ( /RL )t
-                                         R
+                                                  ∫ 100cos120t   dt
 
+                                   +     e 100t    5 sin120t
+                                                   6
+                                   −  100e 100t    −  1  cos120t
+                                                    144
+                                         4 100t
+                                   +   10 e
 
-                      ( ) =
-                     It        1       E  e ( / RL )t  −  K   
-                           e ( / RL   )t  R       
-                         =  E  − Ke − ( /RL )t
-                            R
-                                 ( It =  ) 0 =
-                                          0</code></pre>
+                                                                        )
+                                                                                 25
+                                       )
+                                                                                                  )
+                        ∫  (100cos120te  100t dt =  ( 5 sin120t +  25 cos120t e 100t  −  36 ∫  (100cos120te 100t dt
+                                                   6
+                                                              36
+                        (    25 )                100t    ( 5          25        )  100t
+                                               )
+                         1+  36 ∫  (100cos120te      dt =  6 sin120t +  36 cos120t e
+
+                                          )
+                         61 ∫ (100cos120te  100t dt =  5  (6sin120t + 5cos120t )e 100t
+                         36                          36
+
+                                                  5
+                                       )
+                        ∫  (100cos120te  100t dt =  61 (6sin120t +  5cos120t )e 100t
+                                                                     )
+                                    5
+                     I ( ) t =  e − 100t ( 61 (6sin120t +  5cos120t )e 100t  +  K
+
+                          =  5  (6sin120t +  5cos120t +  ) K e − 100t
+                            61
+
+                                I ( ) 0 = 1</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 446 - DE Solution</title>
+        <title>Page 446 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 446 - DE Solution</div>
+        <div id="content-top1">Page 446 - ODE Solution Manual</div>
         <div id="content-top2">P. 446</div>
      </div>
      <div id="content-middle">
@@ -154,69 +154,57 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>440 | S O LU TI O N
 
-
-                    25
-                 x
-             b)  ( ) =    25 ( 1 e − 1/2 )
-                              −
-                          2
-                        ≈  4.92   lb
-                       ( )
-             c)  lim x t =   lim  25 ( 1 e  t −  /50 )
-                                      −
-                 t→∞         t→∞  2
-                          = 25
-                             2
-
-                                                =
-                                                        l
-                 As t →∞, the amount of salt is  12.5 b
-
-
-          Exercise
-
-          A tank of 100-gallon capacity is initially empty. Pure water is allowed to run into the tank at the rate
-          of  2 gal   /min , and at the same time  another you run  pure water  flows into the tank at the rate of
-                                                               1
-          2 gal/min . After 1 minute, you pour brine containing   lb  of salt per gallon. The mixture flows out
-
-                                                               8
-          at the rate of  2 gal   /min .
-
-                 a)  Find the amount of salt in the tank after t minutes.
-                 b)  How long it will take to fill the tank or empty the tank?
-                 c)  How much salt is present at the end of 20 minutes?
-                 d)  How much salt is present when the tank is full?
           Solution
 
+                          ( )
+                        Qt
+                 ct
+             a)  ( ) =
+                        V  ( ) t
+                         Q
+                       =
+                         500
+                         ( )( ) ct
+                 Q′ = α ct  15 −   ( )( )
+                                       15
+                         Q         Q
+                             15
+                                       15
+                    = α     ( ) −     ( )
+                        500       500
+                   =   3  (α −  ) 1 Q
+                      100
 
-             a)  ( ) (2 2 2V t =  +−  )t
-                          t
-                       =  2
-                               x ( ) t
-                 Rate out =  2×
-                                2t
-                            x ( ) t
-                          =          lb
-                              t    min
+                 ∫  Q   =  100 ∫  (α −  ) 1 dt
+             b)     dQ     3
 
-                                       1
-                                    2×
-                 Rate in =  (20×  ) +  ( )
-                                       8
-                         =  1     lb
-                           4   min
 
-                 dx  =  1  −  x
-                  dt   4   t
-                 x′ +  1 x =  1
-                     t     4
+                 lnQ =   3  (α −  ) 1 t +  C
+                        100
 
-                         t ∫
-                        dt
-                        e  =  e ln t
-
-                           =    t</code></pre>
+                    t =
+                 Q ( ) Q    e .03 (α−  ) 1  t
+                          0
+                 t = 3 hrs = 180 min
+                        )
+                 Q (180 =  .01Q
+                                0
+                 .01Q =  Q e  .03 (α− 1 )(180 )
+                      0    0
+                  1   =  e 5.4 (α −  ) 1
+                 100
+                                 ( )
+                 54 (α −  ) 1 =  −  ln 10 2
+                 10
+                          ( )
+                            5
+                     1 −
+                 α −=      27  2ln 10
+                                   ( )
+                 α = 1−  10  ln 10
+                              ( )
+                         27
+                   ≈  0.1472</code></pre>
      	</div>
     
      </div>

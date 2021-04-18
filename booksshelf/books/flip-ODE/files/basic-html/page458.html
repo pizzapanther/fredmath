@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 458 - Differential Book</title>
+        <title>Page 458 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 458 - Differential Book</div>
+        <div id="content-top1">Page 458 - ODE Book</div>
         <div id="content-top2">P. 458</div>
      </div>
      <div id="content-middle">
@@ -152,58 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>442 |  A ppe ndi x   G
+    <pre style="white-space:pre-line"><code>Section 4.5 – Bessel’s Equation and Bessel
 
-
-                                                                                        n
-                      Derivative: Rational Function to Power ‘n’ in the form             ax + b      m
-                                                                                        n
-                                                                                       cx + d 
-
-                                                  n
-                 n
-           d    ax + b    m   mn (ad bc ) x n− 1  ( ax + b ) m− 1
-                                   −
-                          =
-                n
-          dx    cx + d                     ( cx +  d ) m+ 1
-                                                  n
+                                              Functions
 
 
 
 
-          Proof
-                                            n
-                               n
-                        u =  ax + b   v =  cx + d
 
-                        u′ =  nax n− 1  v′ = ncx n− 1
+                 4.5-1  Bessel’s Equation
 
-                                             )
-                                                          n
-                                        n
-                                                                                                 ′
-           d    ax +  n  b   m  = m nax n− 1 ( cx + d − ncx n− 1 ( ax + b )   ax +  n  b    m− 1    ( ) ′  u v v u ′ −
-                                                                                          u
-          dx     cx +  n  d          (  x c  n  + d ) 2         cx +  n  d        v   =   v 2
-                             (
-                           m nacx  2n −  1  +  nadx n −  1  −  nacx 2n −  1  −  nbcx n −  1 )( ax +  n  b ) m− 1
-                         =
-                                             ( cx +  n  d ) ( cx +  n  d ) m− 1
+
+                 In this section we consider three special cases of Bessel’s equation
+
                                                       2
+                                                                   2
+                                                     x y′′ +  xy′ + ( x −υ 2 )  y = 0
+                 Where υ  is a constant, and the solutions are called Bessel functions.
+                 When solving partial differential equations involving the Laplacian in polar and cylindrical
+                 coordinates. The Bessel’s equation is a whole family of differential equations, one for each value of
+                 υ.
 
-                             (
-                           m nadx  n−  1 −  nbcx n−  1 )( ax +  n  b ) m− 1
-                         =                         1
-                                       ( cx +  d ) m+
-                                          n
+
+                 From the Frobenius model:  x y′′ +  2  p xy′ +  q y =  0
+                                                     0       0
+                                             2
+                     →   p =  1& q =      −  υ
+                          0            0
+                 The indicial equation is given by:
+                                          +
+                     I ( ) r =  ( rr −  ) 1 +  p r q
+                                       0     0
+                                          2
+                                      r
+                          =  ( rr −  ) 1 + −υ = 0
+                           2
+                     r 2  −υ =  0 →    r = ±υ
 
 
+                                                     0
+                 We will consider the three cases  υ= ,  υ=  1  , and  υ= 1 for the interval  x &gt; .
+                                                                                            0
+                                                            2
+                          ∞
+                         ∑        nr +
+                     y =       ax
 
-                           mn  (ad bc x−  )  n− 1 ( ax +  n  b ) m− 1
-                         =
-                                    ( cx +  d ) m+ 1
-                                       n</code></pre>
+                               n
+                         n= 0
+                           ∞
+                         ∑                nr +− 1
+                                     )
+                     y′ =      (  n ra n  x
+                                  +
+                          n= 0
+                           ∞
+                         ∑                          nr +− 2
+                                  +
+                                     )( +−
+                     y′′ =     (  nr nr        ) 1 a n  x
+                          n= 0
+
+                        ∑  2  ∞                   nr+− 2     ∑  ∞             nr+− 1  (  2   2 ) ∑  ∞     nr
+                                                                                                           +
+                     x        (nr+  )(nr+−  1)a x        +  x     (nr a x+  )  n    +  x − υ         a x      = 0
+                                                                                                       n
+                                               n
+                         n= 0                                n= 1                               n= 0</code></pre>
      	</div>
     
      </div>

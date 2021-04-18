@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 587 - DE Solution</title>
+        <title>Page 587 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 587 - DE Solution</div>
+        <div id="content-top1">Page 587 - ODE Solution Manual</div>
         <div id="content-top2">P. 587</div>
      </div>
      <div id="content-middle">
@@ -155,66 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 6 − E x a ct   D i f f er en t i al  E q u at i o n s  | 581
 
 
+
+                    ψ    =  1  +  h′ ( ) y =  1  + 1
+                       y   xy 2           y x  2
+
+                     h′ ( ) 1y =  ⇒  hy    y
+                                     ( ) =
+                     −  1  −  ln x +  y =  C
+                       xy
+
+
                  Exercise
 
-                 A portion of a uniform chain of length 8 feet is loosely coiled around a peg at the edge of a high
-                 horizontal platform, and the remaining portion of the chain hangs at rest over the edge of the
-                 platform.
-                 Suppose the length of the overhanging chain is 3 feet, that the chain weighs 2  2 lb/ft   , and that the
-
-                                                              0
-                 positive direction is downward. Starting at t =  seconds, the weight of the overhanging portion
-                                                                                        x
-                 causes the chain on the table to uncoil smoothly and to fall to the floor. If  ( ) t  denotes the length of
-                 the chain overhanging the table at time t &gt; , then v =  dx   is its velocity. When all resistive forces
-                                                          0
-                                                                      dt
-                 are ignored, it can be shown that a mathematical model relating v to x is given by
-                                                          xv  dv  +  v =  2  32x
-                                                            dx
-                   a)  Rewrite this model in differential form and solve the DE for v in terms of x by finding am
-                                                                            vx
-                      appropriate integrating factor. Find an explicit solution  ( ) .
-                   b)  Determine the velocity with which the chain leaves the platform.
-
+                 Use any method to find the general solution:
+                                          )
+                                                           π
+                         x sin ydx +  ( x +  2  1 cos yy =   d  0  y ( ) = 1
+                                                           2
                  Solution
-                        (  2      )
-                    a)  v −   32x dx +  x dv =  v  0
+                                            (  2  )
+                         M =  x sin y  N =   x + 1 co s y
 
-                                                        )
-                        M  ( , x v =  2  32x     N ( , x v =  xv
-                                ) v −
-                              ∂  M  =  2v           ∂  N  =  v
-                                v ∂                   x ∂
-                        ⇒    ∂  M  ≠  ∂  N
-                              v ∂   x ∂
+                                                x
+                        M =    x cos y   N =   2 cos y
+                                           x
+                           y
+                                M ≠   N
+                                  y
+                                        x
+                     M −   N x      − x cos y
+                        y
+                                        )
+                         N     = ( x + 1 cos y
+                                   2
+                               = −   x
+                                    2
+                                   x + 1
 
-                         M −   N
-                           v     x  =  2vv−
-                             N         xv
+                          −   2 ∫  x  dx
+                     µ =  e  x + 1
+                                     ( )
+                            1
+                           −  2∫  1  d x 2  1 +
+                        =  e   x 2  1 +
 
-                                   =  1
-                                     x
+                                 2
+                                    1
+                           −  1 ln x +  ( )
+                      =  e  2
+                        =    1
+                             2
+                           x +  1
+                        x    sin y dx +  x +  2  1 cos dy =  y  0
+                        2
+                       x + 1
 
-                         d µ  =  µ
-                         dx   x
-
-                        ∫∫         dx
-                           dµ
-                              =
-                            µ
-                                   x
-                        lnµ=  ln x
-                        → µ   ( ) =  x
-                               x
-                          (  2     )      2
-                         x v −  32x dx +  x v dv =  0
-
-
-                                 M =  vx −  2  32x 2   N =   x v  2
-                                                              v
-                                    M =    2vx         N =   2 x
-                                       v                 x</code></pre>
+                                                      2
+                         M =      x   sin y   N =   x +  1 co s y
+                                 2
+                                x +  1
+                        M =       x    cos y  N =      x    cos y
+                                                x
+                           y
+                                                       2
+                                  2
+                                 x + 1               x +  1
+                                M =   N
+                                  y
+                                        x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 381 - DE Solution</title>
+        <title>Page 381 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 381 - DE Solution</div>
+        <div id="content-top1">Page 381 - ODE Solution Manual</div>
         <div id="content-top2">P. 381</div>
      </div>
      <div id="content-middle">
@@ -155,59 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 375
 
 
-                     300 T =   20T −  1000
-                         −
-                                  w
-                     T =   1  (1300 T −  )
-                      w   20
-                                                             (
-                                                                −
-                    Using Newton’s law of cooling: −  dT  =  kT T  w )
-                                                      dt
-                     dT  =  −  kT −  (  1  (1300 T ))
-                                           −
-                     dt           20
-                                           )
-                                       1
-                        =  −  kT − (  65 +  20 T
+                                      − λ t
+                     y′ +  λ  y =  x λ  e  1
+                          2      01
 
-                        =  −  21 kT +  65k
-                            20
+                              ∫ λ  dt   λ  t
+                               e  2  =  e  2
 
-                     dT  +  21 kT =  65k
-                     dt    20
+                                 ∫  e  λ −  1 t λ  e  2 t  ∫  e ( λ  2  λ −  1 ) t
+                            x λ              dt =  x λ             dt
+                             01                    01
 
-                            20 ∫  21 kdt  21 kt
-                            e     =  e 20
-
-                        ∫  (65k e 21 kt dt =  1,300 e 21 kt
-                               )
-                                  20
-                                                 20
-                                            21
-
-                              1
-                                          20
-                     T ( ) t =  21        1,300 e 21 kt  + C     
-                                     21
-                            e 20 kt              
-                            1,300      − 21 kt
-                          =       +  C e  20
-                              21
-
-                            T ( ) 0 =  300
+                                                   x λ     ( λ  λ −  )  t
+                                                =   01    e  2   1
+                                                  λ    λ −
+                                                   2    1
 
 
-                            300 =  1300  +  C
-                                   21
-                            C  =  5,000
-                                  21
+                                     01
+                     y ( ) t =  1      x λ  e ( λ  2  λ −  1 ) t  +  C   
+                            e λ 2 t λ     2  λ −  1      
+                              x λ    −  λ  t   −  λ  t
+                          =    01   e   1  + Ce  2
+                            λ    λ −
+                              2   1
+
+                                        x λ
+                                y ( ) 0 =  01  +  C =  y
+                                       λ    λ −       0
+                                        2    1
+                                           x λ
+                                C =  y −     01
+                                      0   λ    λ −
+                                           2    1
+                                     λ  y −  λ  y −  x λ
+                                   =   2 0    1 0     01
+                                            λ    λ −
+                                             2    1
+                             x λ     −  λ  t  λ  y −  λ  y −  x λ  −  λ  t
+                     y ( ) t =  01  e  1  +  2 0     1 0    01  e   2
+                            λ    λ −              λ    λ −
+                             2    1                 2   1
 
 
-                     T
-                                             20
-                      ( ) t =  1,300  +  5,000 e − 21 kt
-                              21      21</code></pre>
+                 Exercise
+
+                     P
+                 Let  ( ) t  be the performance level of someone learning a skill as a function of the training time t.
+                 The graph of P is called a learning curve. We proposed the differential equation
+                                                         dP  =  ( kM − P t
+                                                                       ( ))
+                                                         dt
+                 As a reasonable model for learning, where k is a positive constant. Solve it as a linear differential
+                 equation and use your solution to graph the learning curve.
+
+                 Solution
+
+                     dP  +  kP =  kM
+                     dt
+                          ∫ kdt
+                                   kt
+                            e  =  e</code></pre>
      	</div>
     
      </div>

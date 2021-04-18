@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1478 - DE Solution</title>
+        <title>Page 1478 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1478 - DE Solution</div>
+        <div id="content-top1">Page 1478 - ODE Solution Manual</div>
         <div id="content-top2">P. 1478</div>
      </div>
      <div id="content-middle">
@@ -155,64 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1464 | S O LU TI O N
 
 
+
+                              =  As +  4  2As +  3  2As +  2  2As +  A +  Bs +  4  4Bs +  3  5Bs +  2  2Bs +  Cs +  3  4Cs 2
+
+                                   +  5Cs +  2C +  Ds +  4  3Ds +  3  3Ds +  2  3Ds +  2D +  Es +  2  3Es +  2E
+
+
+                  s 4        A +  B +  D =  0
+                 
+                  s 3  2A +  4BC +  3D +  E =  0
+                                +
+                 
+                 
+                   s   2  2A +  5B +  4C +  3D +  2E =  3
+                 
+                   s   1  2A +  2B +  5C +  3D +  E =  10
+                   0
+                  s     A +  2C +  2D +  2E =  3
+                      A =  −  1 B =  −  1 C =  2
+                 →
+                      D =  2   E = − 2
+
+
+              £   −  1 {Ys  =    −  1       − 1  −  s  +  2  +  2  −  2      
+                      ( )} £
+                                      s +  2  s +  2  1  s +  2  1  s +  1  (s +  ) 1   2  
+
+
+                                                   t
+              y ( ) t =  −  e −  2 t  −  cost +  2sint +  2e  t −  −  2 e  t −
+
+
           Exercise
 
-                                                     t
-          Solve the initial value problem  x′′ +  4x =  sin3 ; x ( ) 0 =  x′ ( ) 0 =  0.
-          Such problem arises in the motion of a mass-and-spring system with external force as shown below.
+
+          Solve using the Laplace transform:  y (4)  +  2y′′ +  y =  4te t ;  y ( ) 0 =  y′ ( ) 0 =  y′′ ( ) 0 =  y (3) ( ) 0 =  0
 
           Solution
-              £  {x′′ +  4x } £=  {sin3t
-                                    }
-
-               2
-                                          ( ) =
-              s Xs        ( ) 0 −  x′ ( ) 0 +  4Xs  3
-                  ( ) sx−
-                                                2
-                                               s +  9
-                                 0
-                   x ( ) 0 =  x′ ( ) 0 =
-                     )
-              ( s +  2  4 Xs    3
+                               } { }
+              £ { y (4)  +  2y′′ +  y £  4te
+                                         t
+                                 =
+                                2
+                       3
+              s Ys −  4  ( ) s y ( ) 0 −  s y′ ( ) 0 −  sy′′ ( ) 0 −  y′′′  ( ) 0 +  2s Ys −  2  ( ) 2sy ( ) 0 −  2y′ ( ) 0 +  Ys  4
+                                                                                    ( ) =
+                                                                                          (s −  ) 1  2
+                         )
+              ( s +  4  2s +  2  1 Ys  4                     y ( ) 0 =  y′ ( ) 0 =  y′′ ( ) 0 =  y (3) ( ) 0 =
+                            ( ) =
+                                                                                           0
+                                 (s −  ) 1  2
+              ( s +  2  1 ) 2 Ys  4
                         ( ) =
-                               2
-                              s + 9
-              Xs             3        =  As +  B  +  Cs +  D
-                ( ) =
-                     ( s +  2  4 s +  )(  2  9 )  s +  2  4  s +  2  9
+                             (s −  ) 1  2
 
-                     As +  3  9AS +  Bs +  2  9B +  Cs +  3  4CS +  Ds +  2  4C =  3
-
-                         s 3  A +  C =  0
-                        
-                         s   2  B +  D =  0
-                        
-                          s   1  9A +  4C =  0
-                          0
-                         s   9B +  4D =  3
-
-                        
-                               =
-                            A C =   0
-                                        3
-                         5B =  3  ⇒   B =  5
-                        
-                             D = − 3
-                                   5
-
-                ( ) =
-              Xs     3  s +  2 1  4  −  3  s +  2 1  9
-                               5
-                     5
-              £  −  1 {Xs  =    −  1     10  s +   2 2  4  −  1  s +  2 3  9    
-                      ( )} £
-                                    3
-                                               5
-
-                                    t
-              x ( ) t =  3  sin2t −  1 sin3
-                    10        5</code></pre>
+                                          A
+             Ys             4      2    =  s − 1 +  B  2  +  Cs +  2  D  +  Es +  F 2
+               ( ) =
+                                                                    2
+                              2
+                     (s −  ) 1  2 ( s + 1 )    (s −  ) 1  s + 1   ( s + 1 )
+                     (  4    2   ) (    4    2   )           (  2      )(  2  )           (  2      )
+                                                                                                       4
+              A (s −  ) 1 s +  2s +  1 +  B s +  2s +  1 +  (Cs +  D ) s −  2s +  1 s +  1 +  (Es +  F ) s −  2s +  1 =</code></pre>
      	</div>
     
      </div>

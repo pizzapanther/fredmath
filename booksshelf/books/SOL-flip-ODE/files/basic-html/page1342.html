@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1342 - DE Solution</title>
+        <title>Page 1342 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1342 - DE Solution</div>
+        <div id="content-top1">Page 1342 - ODE Solution Manual</div>
         <div id="content-top2">P. 1342</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1328 | S O LU TI O N
 
 
-              £ {cos ( tω  φ +  )}( ) s =  s cos ( ) φ  ω −  sin ( ) φ    √
-                                         2
-                                        s + ω 2
+          Exercise
+
+          Use Definition of Laplace transform to show the Laplace transform of
+
+                 £ { 1−  (at +  ) 1 e − at } ( ) s =  a 2
+
+                                           ( ss a ) 2
+                                              +
+          Solution
+
+              £ { 1−  (at +  ) 1 e −  at } ( ) s =  ∫ 0 ∞ ( 1−  (at +  ) 1 e −  at ) e −  st dt
+
+
+
+
+
+                                                                 (s
+                                    =  ∫  ∞  e − st dt −  ∫  ∞  (at +  ) 1 e −+  ) a t dt
+
+
+                                        0            0
+                                              (s
+                                          ∫ e −+   ) a t dt
+
+                                                  (s
+                          +   at + 1    −   1   e −+  ) a t
+                                          sa
+                                            +
+                                                   (s
+                                           1     e −+  ) a t
+                         −      a             2
+                                          +
+                                       (sa   )
+
+
+              £ { 1−  (at +  ) 1 e −  at } ( ) s =  −  1 −  e  st  +      at + 1 +  a       e −+  ) a t     ∞
+                                                                     (s
+                                                   +
+                                                            +
+                                                  s    sa  (sa ) 2       0
+                                   =  1  −  1  −   a
+                                          +
+                                     s   sa     (sa+  ) 2
+
+                                                            −
+                                   =  s +  2  2as a+  2  −  s −  2  as as
+                                               ( ss a ) 2
+                                                  +
+
+                                   =     a 2         √
+                                       ( ss a+  ) 2
+
 
 
           Exercise
 
           Use Definition of Laplace transform to show the Laplace transform of
 
-                 £ {sin at −  ( ) at cos at       2a 3
-                                   ( )}( ) s =
-                                              ( s +  a 2 ) 2
-                                                2
-
-          Solution
-
-
-              £ {sin at −  ( ) at cos at  ∫ 0 ∞ (sin at −  ( ) at cos at  − st dt
-                                                               ( ))e
-                                ( )}( ) s =
-
-
-
-                                                  ( ) e
-                                                                         ( ) e
-                                         = ∫  ∞  sin at  −  st dt −  a ∫  ∞  t cos at  −  st dt
-                                            0                     0
-                                                        ∫ sin at  dt
-
-                                 +        e − st        −  1 cosat
-                                                          a
-                                 −       −    se − st     −  1  sin at
-                                                          a 2
-                                 +       s e  st
-                                          2 −
-
-                       ∞                                          ∞     2   ∞
-                         sin at e −  st dt =   ∫    −  1  cosat −  s 2  sin ate −  st    0 ∫  −  s 2  sin at e −  st dt
-                                                             
-                                           a
-                       0                            a                  a    0
-
-
-                       a ∫     0  sin at e  dt =  a
-                      2
-                     s +  a 2   ∞       − st    1
-                         2
-
-                     ∫ 0 ∞ sinat e − st dt =  s +  a 2
-                                           a
-                                         2
-
-
-
-
-
-                                                                  ∫ cosat  dt
-
-
-                                 +               te − st           1 sinat
-                                                                   a</code></pre>
+                 £ { at −+   − at } ( ) s =  a 2
+                         1 e
+                                            +
+                                       s 2 (sa )
+          Solution</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1582 - DE Solution</title>
+        <title>Page 1582 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1582 - DE Solution</div>
+        <div id="content-top1">Page 1582 - ODE Solution Manual</div>
         <div id="content-top2">P. 1582</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,55 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1568 | S O LU TI O N
 
 
-                         1
-                x′     −  25  0      x 
-                1    =             1  
-                x  ′    1    1     x 
-                2       25  −  25      2 
-
-
-
           Exercise
 
-          Two masses on a frictionless tabletop are connected with a spring having spring constant  k . The
-                                                                                                 2
-          first mass is connected to a vertical support with a spring having spring constant  k .  The second
-                                                                                         1
-          mass is shaken harmonically via a force equaling F =  A cos t ω . Let  ()xt  and  ()y t  measure the
+          Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and I
+          represent the current across the inductor.
 
-          displacements of the masses  m and m , respectively, from their equilibrium positions as a function
-                                       1       2
-          of time. If both masses start from rest at their equilibrium positions at time t = .
-                                                                                     0
-
-
-
-
-
-
-
-
-          Set up an initial value problem that models the position of the masses over time (do not solve).
-          Write the model in matrix-vector form. Is the system homogeneous or inhomogeneous?
-
+                 Show that:    V′   −  V  −  1        I′ =  =  V
+                                      RC    C             L
           Solution
 
-             By Newton’s Law; the first mass:
+             Using Kirchhoff’s current law:  I +  I +  I =  0
+                                             1    2   3
 
-                 mx′′ =  −  k x k  ( y −  ) x
-                              +
-                   1       1     2
-                        k      k
-                 x′′ =  −  1  x +  2  ( y −  ) x
-                        m 1   m 1
+             In the RC loop:     V −  V =  0
+                                   1   2
+             In the LC loop:     V −  V =  0
+                                   2    3
+             V =   RI  ,   CV′    I  ,  LI′ =  = V
+               2     2        1   1       3    3
 
-             The second mass:
-                 my′′ =  −  k  ( y −  ) x +  A cos tω
-                   2        2
-                        k
-                 y′′ =  −  2  ( y −  ) x +  A  cos tω
-                        m 2          m 2
+             Since the circuit elements are in parallel, therefore V = V = V = V
+                                                                1    2    3
+              LI′ = V
+                3    1
+                  V
+              I′ =  1
+               3   L
 
-             Let assume:  x =   , x  x =  , x′  x =  , y  x =  y′
-                           1        2         3        4
-                   x′ =  x
-                   1     2
-                          k 1    k 2 (       )
-                   x′ =  2  −  m  x +  1  m  x −  3  x 1
-                           1       1
-                 
-                   x′ =  x 4
-                    3
-                 
-                  x′ =  −  k 2  ( x −  x  ) +  A  cos t ω
-                   4     m 2  3    1    m 2
-                 </code></pre>
+
+              CV′ =  I
+                1    1
+                  =  I −  −  I         V =  RI
+                       2   3            2     2
+                      V
+                  =  −  2  −  I        V =  V
+                      R     3           2    1
+                      V
+                  =  −  1  −  I
+                      R     3
+                    V     I
+             V′ =  −  1  −  3
+               1    CR    C
+                                          I
+             Since V =  V     and    I =
+                     1                3
+                I′ = V
+                   L
+              
+               V′ = −  V  −  I
+                    CR    C</code></pre>
      	</div>
     
      </div>

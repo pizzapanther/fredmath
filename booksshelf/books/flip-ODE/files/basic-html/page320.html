@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 320 - Differential Book</title>
+        <title>Page 320 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 320 - Differential Book</div>
+        <div id="content-top1">Page 320 - ODE Book</div>
         <div id="content-top2">P. 320</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.6 - P l a n a r  S y st e m s  | 305
+    <pre style="white-space:pre-line"><code>3. 4 -   Us i n g   L ap l a c e T r an s f o r m   t o  S o l v e  D i f f e r e n t i a l  E q u a t i o n s  | 307
 
-                      xt     3x −  2x −  2e  t −
-                         ( ) =
-                        ′
-               92.     1       1     2           X ( ) 0 =     2  
-                     
-                      x′ 2  ( ) t =  x      − 2e  t −            − 1 
-                     
-                                1
-                      y′  ( ) t =  y                         −
-                       1      1                             1   
-                     
-               93.    y′ 2  ( ) t =  −  4y +  1  y           y (0) =   2  
-                                        2
-                                                          − 30 
-                      y′ 3  ( ) 3t =  y +  1  6y +  2  2y 3    
-                     
-                      yt     −  5  y +  y +  y
-                         ( ) =
-                        ′
-                       1       2  1    2    3            2 
-                                                            
-               94.     y′ 2  ( ) t =  y −  1  5  y +  2  y 3  y (0) =      3
-                     
-                                                            
-                                   2                    − 1 
-                       y′  ( ) t =  y +  y −  5  y        
-                        3      1    2   2  3
-                       ′
-                      x t = ( ) 3x −  1  x −  2  x             1 
-                                          3
-                        1
-                                                               
-               95.    x′  ( ) t =  x +  x −  x +  t  X  ( ) 0 =     1
-                     
-                                                               
-                       2       1   2    3                   − 1 
-                      x′  ( ) t =  x −  x +  x +  2e t       
-                       3      1    2    3
-                       x′  ( ) t =  x +  x   e+  t
-                       1       1    2                      2 
-                                                              
-               96.    x′  ( ) t =  x +  x   e+  2t       X  ( ) 0 =      3
-                     
-                                                              
-                       2       1    2                      − 1 
-                      x′  ( ) t =   3 x + te 3t             
-                       3              3
 
-               (97 – 103)  Find the general solution of the system
+                 3.4-4  Electrical Circuit
 
-                          x
-                                                    2
-               97.  x′′ + =  3 ; x ( ) 1π  , x π =  ′ ( ) =
-                           x
-                      x′′ = −  y     x ( ) 3 =  5,  x′ ( ) 3 =  2
-                                     
-               98.                  
-                           x
-                      y′′ = −  y      y ( ) 3 = 1,  y′ ( ) 3 = − 1
-                            x
-                       x′′ = −  y     x ( ) 0 =  −   1,  x′ ( ) 0 =  0
-               99.                    
-                             x
-                      y′′ = −+  y       y ( ) 0 = 1,  y′ ( ) 0 = 0
-                        2
-                      dx
-                        2  =  ; y  x ( ) 0 = 3,  x′ ( ) 0 = 1
-               100.    dt
-                     
-                        2
-                      dy  =  ; x  y ( ) 0 = 1,  y′ ( ) 0 = − 1
-                        2
-                       dt
-                       x′′ +   5x −  2y =  0  x ( ) 0 =  x′ ( ) 0 =  0
-               101.  
-                      y′′ +  2y −  2x =  3sin2t  y ( ) 0 = 1,  y′ ( ) 0 =  0</code></pre>
+
+                 Similar to the application of phasor transform to solve the steady state AC circuits, Laplace transform
+                 can be used to transform the time domain circuits into s−domain circuits to simplify the solution of
+                 integral differential equations to the manipulation of a set of algebraic equations.
+
+                 The elegance of using the Laplace transform in circuit analysis lies in the automatic inclusion of the
+                 initial conditions in the transformation process, thus providing a complete (transient and steady state)
+                 solution.
+
+
+
+                 3.4-5  Transfer Function
+
+
+                 If we have a circuit with impulse-response  ( ) t  in the time domain, with input  ( ) t  and output  ( ) t
+                                                                                                              y
+                                                                                              x
+                                                           h
+                 , we can find the Transfer Function of the circuit, in the Laplace domain, by transforming all three
+                                                                          Xs
+                                                 Hs
+                                                                                                ( ) ( ) s  is the
+                                                                                      Y
+                 elements: The transfer function  ( )  and input function  ( ) , then  ( ) s =  H sX
+                 output function.
+
+                                                                                 ( )*h t
+                                            x ( ) t       h ( ) t        y ( ) t =  x t  ( )
+
+
+                                           L aplace     L aplace       Inverse L
+                                                                                aplace
+
+
+
+                                             ( )
+                                                           ( )
+                                           Xs            Hs             Y  ( ) s =  X sH
+                                                                                 ( ) ( ) s
+
+
+
+                                     ( )}
+                         Hs        {h t
+                           ( ) £=
+                                   ( )
+                                 Ys
+                               =
+                                   ( )
+                                 Xs
+                 Transfer functions are powerful tools for analyzing circuits.
+
+
+                 3.4-6  Convolution Integral
+
+
+                 The output of a system from the input and the impulse response by using the convolution operation.
+                 We can calculate the output using the convolution operation:
+
+                         y ( ) t =  x ( )*ht  ( ) t
+
+                 Where the asterisk * operator denotes the convolution operation.</code></pre>
      	</div>
     
      </div>

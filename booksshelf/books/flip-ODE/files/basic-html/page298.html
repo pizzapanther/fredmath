@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 298 - Differential Book</title>
+        <title>Page 298 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 298 - Differential Book</div>
+        <div id="content-top1">Page 298 - ODE Book</div>
         <div id="content-top2">P. 298</div>
      </div>
      <div id="content-middle">
@@ -152,58 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.5 - I nt r oduc t i on  &  B a s i c   T h e or y  of  L i n e a r  S y s t e m s  | 283
-
-               32.  Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and
-                     I represent the current across the inductor.
-
-                                          CV′ = −−   V
-                                                  I
-                         Show that:                  R 2
-                                         
-                                          LI′ =  −  R I V
-                                                     +
-                                                  1
-
-                                                                         L
-                                                      R 1
-
-                                                               R 2
+    <pre style="white-space:pre-line"><code>3. 1 - D e f i ni t i on  of  t h e   L a p l a c e  T r a n s f or m  | 285
 
 
 
-                                                                C
+                     ∫ 0 ∞ te −  st dt =  −  1 −  s  te  st  −  s 1 −  2  e  st     ∞
+                                                      0
+
+                                                                 ( )
+                                 =  00 0 +   1 2             lim e − sT  =  0
+                                    −+
+                                             s              T →∞
+                                 =  1
+                                   s 2
+
+                     £   t       1
+                        ( )( ) s =
+                                 s 2
 
 
 
-               33.  Consider the circuit below.
-                                                           R          R
-                                                            1           2
+                                                      n
+                 Laplace transform to any powert
+                                   ( )
+                                £   t n  () s =  ! n
+                                            s n + 1
 
 
 
+                 Example 3
 
-                                                E                  L 1         L 2
+                 Use Definition of Laplace transform to find the Laplace transform of:  ( ) sinf t =  at
+
+                 Solution
 
 
+                        s
+                     F ( ) = ∫ 0 ∞ e − st  sin at  dt
 
 
+                                             ∫ sin at  dt
+
+                               +   e − st    −  1  cosat
+                                               a
+                               −       − st     1
+                                   − se     −  a 2  sin at
+
+                                     2 −
+                               +    se  st
 
 
-                       Let  I  and  I  represent the current flow across the indicators  L  and  L respectively. Show
-                            1       2                                                  1       2
-                       that the circuit is modeled by the system
+                     ∫  e −  st  sin at dt =  −  1 −  a e  st  cosat −  a s 2  e −  st  sin at −  a ∫  s 2  e −  st sin at dt
+                                                                      2
 
-                                                     L I′ =  11  −  RI −  11  RI +  1 2  E
-                                                
-                                                                (        )
-                                                 L I′ = 2 2  −  RI −  11  R +  1  R 2  I +  2  E
-                                                
 
-               34.  Two tanks are connected by two pipes. Each tank contains 500 gallons of a salt solution. Through
-                     on pipe solution is pumped from the first tank to the second at 1 gal/min. Through the other pipe,
-                     solution is pumped at the same rate from the second to the first tank. Show the salt content in each
-                     tank varies with time.</code></pre>
+                     ∫  e −  st  sin at dt +  a ∫  s 2 2  e −  st  sinat dt =  −  1 −  a e  st  cosat −  a s 2  e −  st  sinat</code></pre>
      	</div>
     
      </div>

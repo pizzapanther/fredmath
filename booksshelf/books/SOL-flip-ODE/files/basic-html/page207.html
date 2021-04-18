@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 207 - DE Solution</title>
+        <title>Page 207 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 207 - DE Solution</div>
+        <div id="content-top1">Page 207 - ODE Solution Manual</div>
         <div id="content-top2">P. 207</div>
      </div>
      <div id="content-middle">
@@ -159,7 +159,7 @@ function MM_swapImage() { //v3.0
 
                  An object of mass 3 kg is released from rest 500 m above the ground and allowed to fall under the
                                                                                               2
-                 influence of gravity. Assume the gravitational force constant, with  g = 9.81  m/s , and the force due
+                 influence of gravity. Assume the gravitational force constant, with  g = 9.81 m/s , and the force due
                  to air resistance is proportional to the velocity of the object with proportionality constant
 
                  κ =  3 N-sec/m. Determine when the object will hit the ground.
@@ -170,8 +170,8 @@ function MM_swapImage() { //v3.0
                      m    dv    = − dt
                        κ v − mg
 
-                           ( v −
-                     m ∫  d κ    mg  )  = − ∫  dt
+
+                     m ∫  d ( vκ −  mg )  = − ∫  dt
                      κ     κ  v −  mg
 
 
@@ -179,17 +179,18 @@ function MM_swapImage() { //v3.0
                                       t
                           κ
                      κ                    1
-                     ln ( vκ −  mg ) =  −  κ t +  C
+                     ln κ    mg ) =  −  κ t +  C
+                       ( v −
                                      m      2
-
                      κ v −  mg =  Ce −  t κ /m
 
                               e
                      vt     C −  t κ /m  +  mg
                       ( ) =
                             κ           κ
-                                 0
                           v ( ) 0 =
+                                 0
+
                           C  +  mg  =  0
                           κ    κ
                           C = − mg
@@ -198,15 +199,15 @@ function MM_swapImage() { //v3.0
                     Given:   m =  3, g =  9.81, κ =  3
 
 
-                     vt    −  mg −  t κ /m  +  mg
                                 e
+                     vt    −  mg −  t κ /m  +  mg
                       ( ) =
                               κ            κ
-                             ( 3 9.81 )  t −
-                         =         ( 1 e−  )
+                             ( 3 9.81 )
+                         =         ( 1 e−  t −  )
                               3
-                               (
-                         =  9.81 1 e  t −  )
+                               (      t −  )
+                         =  9.81 1 e
                                   −
 
 
@@ -215,8 +216,8 @@ function MM_swapImage() { //v3.0
 
                           = 9.81t + 9.81e  t −  +  C
                                                3
-                                       0
                                 x ( ) 0 =
+                                       0
                                 C  = − 9.81
                                  3</code></pre>
      	</div>

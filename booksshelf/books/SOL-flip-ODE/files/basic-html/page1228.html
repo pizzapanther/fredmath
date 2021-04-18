@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1228 - DE Solution</title>
+        <title>Page 1228 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1228 - DE Solution</div>
+        <div id="content-top1">Page 1228 - ODE Solution Manual</div>
         <div id="content-top2">P. 1228</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1218 | S O LU TI O N
 
 
-          Exercise
+                   −   2A +  3B =  0
+                 
+                  −  12A −  8B =  1
+                          −  2  3             0   3               −  2  0
+                     ∆  =         =  52  ∆  =        =  −  3 ∆  =        =  −  2
+                         −  12  −  8      A   1   −  8       B   −  12  1
 
-                          q
-                                   i
-          Find the charge  ( ) t  and  ( ) t  on the capacitor in an LC−series circuit when
-                                       t
-              L = 1 H , C =  4 µ  , F  E ( ) 10te=  t −   V, q ( ) 0 =  0 ,  and  i ( ) 0 =  0 A
-                                                               C
+                 A =  −  1  B =  −  3
+                       26         52
+
+
+             The steady-state charge is:  q  ( ) t =  −  1  cos60t −  3  sin60t
+                                          p        26          52
+
+             The steady-state current is:  i  ( ) t =  1  sin60t −  3  cos60t
+                                          p      26         52
+
+
+          Exercise
+          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L =  1   h ,
+                                                                                                  2
+          R  =  20 Ω , C =  0.001 f , and  ( ) 100sin60E t =  t +  200cos40 V  t  .
+
           Solution
 
-                                                  0
-              q′ +  ′  1  q =  10te  t −   ; q ( ) 0 = 0 i ( ) 0 =    Lq′′ +  Rq′ +  1  q =  E ( ) t
-                  4                                                           C
-                 λ  2  1  =  0 →  λ +  =  ±  1    i
-                      4            1,2    2
+              1 q′′ +  20q′ +  1  q =  100sin60t +  200cos40t       Lq′′ +  Rq′ +  1  q =  E ( ) t
+              2           0.001                                               C
+              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
 
-                            t
-              q t        cos +  C  sin  t
-                 ( ) C=
-               h       1    2     2    2
-              q  = ( At +  B )e  t −
-               p
-
-                                  )
-                 q′ =  ( A B −  Ate  t −
-                          −
-                   p
-                                     )
-                 q′′ =  ( 2AB−  +  +  Ate  t −
-                   p
-                   q
-              4q′′ +=  40te  t −
-                  e   t −  t  4A +  A =  40        A = 8
-                                              →        64
-                       t 0  −  8A +  4B +  B =  0  B =  5
-                 
-
+                                                          i
+                                                      ±
+                 λ  2  40 +  λ +  2000 0 →  λ   =  −  20 40
+                                  =
+                                             1,2
                   t
-              q  ( ) = ( 8t +  64 ) e  t −
-               p            5
-                           t
-                                     t
-              q ( ) t =  C 1 cos 2  +  C 2  sin  2  +  ( 8t +  64 ) e  t −
-                                               5
-                        q ( ) 0 =  C +  64  =  0
-                                 1   5
-                        C   = − 64
-                          1     5
+              q  ( ) e=  − 20t ( C  cos40t + C  sin 40t )
+               h              1           2
+              q =  A cos60t +  B sin60t C cos40t +  D sin40t
+                                       +
+               p
+                                                                 D
+                 q′ =  −  60 sin60t +  A  60 cos60t −  B  40 sin40t +  C  40 cos40t
+                   p
+                 q′′ =  −  3600 cos60t −  A  3600 sin60t −  B  1600 cos40t −  C  1600 sin40t
+                                                                           D
+                   p
+              q′′ +  40q′ +  2,000q =  200sin60t +  400cos40t
 
 
-              q′ ( ) t =  −  1 C  sin t +  1  1 C  cos t −  1  ( 8t +  24 ) e  t −
-                       2  1   2    2   2    2          5
+                  cos60t    −  3600A +  2400B +  2000A =  0
+                 
+                  sin60t  −  3600B −  2400A +  2000B =  0 2 0
 
-                        q′ ( ) 0 =  1 C −  24  =  0
-                                2  2    5
+                   −   2A +  3B =  0
+                 
+                  −  12A −  8B =  1
 
-                        C   =  48
-                          2    5
+                         −  2  3             0   3             −  2  0
+                     ∆  =        =  52  ∆  =       =  −  3  ∆  =      =  −  2
+                         −  12  −  8     A   1  −  8       B   −  12  1
 
-              q ( ) t =  −  64 cos +  t  48 sin  t  +  ( 8t +  64 ) e  t −
-                       5    2    5    2         5
-
-                                            t
-              it    q′ ( ) t =  32 sin  t 2  +  24 cos 2  − ( 8t +  24 ) e  t −
-               ( ) =
-                                                     5
-                            5
-                                      5</code></pre>
+                 A =  −  1  B =  −  3
+                       26         52</code></pre>
      	</div>
     
      </div>

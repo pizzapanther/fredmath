@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2060 - DE Solution</title>
+        <title>Page 2060 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2060 - DE Solution</div>
+        <div id="content-top1">Page 2060 - ODE Solution Manual</div>
         <div id="content-top2">P. 2060</div>
      </div>
      <div id="content-middle">
@@ -155,86 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2042 | S O LU TI O N
 
 
-                                                                 1
-                                         1
-                             1
-                                                                            1
-              yx     a 0       1−  23  x +  3  23 56  x −  6        +  a 1       x −  34  x +  4  34 6 7  x −  7        
-               ( ) =
-                                      ⋅⋅
-                                                                               ⋅
-                              ⋅
-                                                                 ⋅
-                                                                          ⋅
-                                                                            ⋅
-                                           ⋅
+                 2a =  0        →  a =  0
+                    2                2
+                                       2
+               6 a −  3  4a =  0  0 →   a =  3 a
+                                    3
+                                           0
+              
+              (n +  1 )(n +  ) 2 a n+  2  +  (n −  ) 5 a n−  1  =  0
 
-              y  ( ) 1x =  −  1  x +  3  1  x −  6  
-               1         23       23 56
-                           ⋅
-                                        ⋅
-                                    ⋅⋅
-                          ∞                n  3n
-                                        −
-                    = 1+        (23 ⋅ ∑  ) (56 ⋅ ⋅  ( ) 1   x (3n −  1 3n
-                                                    )( )
-                                          ) ⋅
-                         n= 1
-              y  ( ) x =  x −  1  x +  4  1  x −  7  
-               2          34 ⋅     34 6 7
-                                    ⋅ ⋅⋅
-                            ∞               n  3n+ 1
-                                              x
-                                         −
-                     =  x +      (34 ⋅ ∑  ) (6 7 ⋅ ⋅  ( ) 1 ) ⋅   ( )(3n +  ) 1
-                                                3n
-                           n= 1
+                          (n −  ) 5
+              a    = −              a
+               n+  2   ( +  n  1 )(n +  ) 2  n−  1
 
 
+                        a                                   a                                   a =  0
+                          0                                   1                                   2
+                 n   1  → =  a =  2 a                    n   2  →=  a =  1 a      n   3  →=  a =  2  a =  0
+                            3   3  0                                4   4  1                 5   20  2
 
+                 n   4  →=  a =  1  a =  1  a            n  5 →=     a =  0       n   6 →=     a =  0
+                            6   30   3   45  0                      7                        8
 
+                 n   7  →=  a =  −  2  a =  −  1   a     n  8  → =  a  =  0       n   9  → =  a  =  0
+                            9     8 9 ⋅  6   1,620  0               10                       11
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                                                                          
+                              
+                                                                   
+                                                                         
+                                                                                                   
+                                                                                              
+                                        1
+                                                      1
+               ( ) a
+              yx      0       1+ =  2 (x −  ) 1 +  3  45 (x −  ) 1  6  −  1,620 (x −  ) 1 +  9        +   a 1 ( (x −  ) 1 +  1 (x −  ) 1  4 )
+                                                                                     4
+                            3
+                         ∞
+                      0∑       ( ) ( x − 14  ) 1  3n   (         1      4 )
+                                   n
+                                −
+              y ( ) x =  a    n                   +  a 1  ( x −  ) 1 +  4 ( x −  ) 1
+                        n= 0  3  (3n −  13n −  )(  ) 4 n !
 
 
           Exercise
 
-          The Hermite equation of order α is  y′′ −  2xy′ +  2 y =  α  0
+          Find the series solution near the given value  y′′ +  (x −  ) 1 y e=  x  ; nea r  x = 1
+          Solution
 
-             a)  Find the general solution is  ( ) x =  a y  ( ) x + ay  ( ) x
-                                            y
-                                                    01         1 2
-                            y
-                 Show that  ( ) x  is a polynomial if α is an even integer, whereas  y  ( ) x  is a polynomial if α
-                             1                                                    2
-                 is an odd integer.
+                   ∞
+                 ∑             n
+              y =     a n  (x −  ) 1
 
-                            n
-                                                                                              4
-                                                                                   2
-             b)  When α = , use  ( ) x  to find polynomial solutions for  n = ,  n = , and  n = , then use
-                                                                             0
-                                   y
-                                    1
-                                                                             5
-                 y  ( ) x  to find polynomial solutions for  n = 1,  n =  3, and  n = .
-                   2</code></pre>
+                  n= 0                  ∞
+                   ∞
+                  ∑              n− 1  ∑                     n
+              y′ =    na n  (x −  ) 1  =   (n +  ) 1 a n+ 1 (x −  ) 1
+
+                  n= 1                 n= 0    ∞
+                    ∞
+                  ∑                     n− 2  ∑                            n
+              y′′ =     ( nn −  ) 1 a n  (x −  ) 1  =  (n +  1 )(n +  ) 2 a n+ 2  (x −  ) 1
+                   n= 2                       n= 0
+
+
+                                11
+              y′′ +  (x −  ) 1 y e=  x−+</code></pre>
      	</div>
     
      </div>

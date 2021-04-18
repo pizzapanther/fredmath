@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1463 - DE Solution</title>
+        <title>Page 1463 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1463 - DE Solution</div>
+        <div id="content-top1">Page 1463 - ODE Solution Manual</div>
         <div id="content-top2">P. 1463</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1449
-
-
-                 Exercise
-
-
-                 Solve using the Laplace transform:     y′ +  16y = ′  2sin4 ;  t  y (0 ) −=  1 , y′ (0) =  0
-                                                                                  2
-                 Solution
-                     £  {y′′ +  16y }( ) s £=  {2sin4ts
-                                                 }( )
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1449
 
 
 
-                     s Y s − 2  ( ) sy ( ) 0 −  y′ ( ) 0 +  16Y ( ) s =  8
-                                                        2
-                                                      s +  16
-                             )
-                     ( s +  2  16 Ys  s  =  s + 16
-                                            8
-                               ( ) +
-                                     2
-                                          2
-                     ( s +  2  16 Ys    8   −  s
-                             )
-                               ( ) =
-                                      2
-                                     s + 16   2
-                                                                                                           ( )
-                      ( ) =
-                     Ys         8    2  −  1  2  s                         L  −1   2a 3  2    =  sin at −  cos at
-                                                                                                ( ) at
-                                         2
-                            ( s + 16 )    s +  16                               ( s + a 2 )
-                                                                                  2
-                              2
-                                                                    
-                             ( )} £
-                     £  −  1 { Ys  =  −  1       8  128  −  1  s      
-                                                               2
-                                           128 ( s +  4 2 ) 2  2  s + 1 6 
-                                                 2
-                                                                       
-                                        t
-                     y ( ) t =  1  (sin4t −  4 cos4t ) −  1  cos4  t
-                            16                    2
+                     Y  ( ) s =  s −  3  +  2s −  2  9s +  24  =  As +  B  +  Cs +  D
+                                   )(
+                            ( s +  2  9 s −  2  6s +  15 )  s +  2  9  s −  2  6s +  15
+
+
+                          s −  3  +  2s −  2  9s +  24 =  As −  3  6As +  2  15As +  Bs −  2  6Bs +  15B Cs +  3  9Cs +  Ds +  2  9D
+                                                                                   +
+                             s 3     AC =    −  1
+                                        +
+                            
+                             s   2  −  6A B+  +  D =  2
+                            
+                              s  15A −  6B +  9C =  −  9
+                              0
+                             s    15B +  9D =  24
+
+                                  A =  1   B =  1
+                            →        10        10
+                                 C =  −  11  D =  5
+                                      10        2
+
+
+                     Y  ( ) s =  1  s  +  1  1   +  1  −  11 (s −  ) 3 − 33 +  25
+                            10  s +  2  9  10  s +  2  9  10  (s −  ) 3  2  − 9 + 15
+
+
+                          =  1   s    +  1   1   3 11      s − 3   −  1     8        6
+                                                  −
+                            10  s +  2  9  10  s +  2  9  3 10 (s −  ) 3  2  +  6  10 (s −  ) 3  2  +  6  6
+
+
+                     £  −  1 {Y s      −  1       1  s  +  1  3  −  11  s − 3  −  8       6         
+                             ( )} £=
+                                             10  s +  2  9  30  s +  2  9  10 (s −  ) 3  2  +  6  10  6  (s −  ) 3  2  +  6  
+
+                     y ( ) t =  1  cos3t +  1  sin3t −  11 e 3t  cos  6 t −  8  e 3t  sin  6  t
+                           10         30        10              10  6
+
 
 
                  Exercise
 
-                                                                      t
 
-                 Solve using the Laplace transform:     y′′ −  10y′ +  9y =  5 ; y (0) =  −  1, y′ (0) =  2
+                 Solve using the Laplace transform:    y′′ − 6y +  13y = ′  0 ;  y ( ) 0 =  , 0  y′ ( ) 0 = −
+                                                                                                3
                  Solution
-                     £  {y′′ −  10y′ +  9y }( ) s £=  { }( )
-                                                5ts
+                         £  {y′′ −  6y′ +  13y =  } 0
 
 
-                     s Y s − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  10sY  ( ) 10s +  y ( ) 0 +  9Y ( ) s =  5
-                                                                         s 2
-                     ( s − 10s + 9 Y ( ) s =  5  −+ 12
+                      2
+                     s Ys       ( ) 0 −  y′ ( ) 0 −  6 Ys  ( ) 6ys +  ( ) 0 +  13Ys  0    y ( ) 0 = 0  y′ ( ) 0 = − 3
+                         ( ) sy−
+                                                                  ( ) =
                                  )
-                       2
-                                               s
-                                          s 2
-                     Y  ( ) s =  −  s +  3  12s +  2  5  =  A  +  B  +  C  +  D
-                            s 2 (s −  9 )(s −  ) 1  s  s 2  s −  9  s −  1
+                     ( s −  2  6s +  13 Ys  −  3
+                                    ( ) =
+                     £  −  1 {Ys      −  1       − 3      
+                             ( )} £=
+                                           (s −   ) 3  2  +  4  
 
-                                                                                    3
-                             3
-                                                                                                 3
-                                                                                          2
-                                                                                                        2
-                                                                  2
-                                    2
-                                             3
-                                                      2
-                          − s + 12s +=     As −  10As +  9As +  Bs − 10Bs +  9B + Cs −  Cs +  Ds −  9Ds
-                                       5</code></pre>
+
+                     y ( ) t = −  3 e 3t sin 2  t
+                             2</code></pre>
      	</div>
     
      </div>

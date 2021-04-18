@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 509 - DE Solution</title>
+        <title>Page 509 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 509 - DE Solution</div>
+        <div id="content-top1">Page 509 - ODE Solution Manual</div>
         <div id="content-top2">P. 509</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 6 − E x a ct   D i f f er en t i al  E q u at i o n s  | 503
 
 
-                                   1
-                                = −
-                                   x
-
-                          −  1 x ∫  dx                    ∫  M  y  − N x  dx
-                     µ =  e                          µ =  e    N
-                        =  e − ln x
-
-                        =  1
-                          x
-                                    )
-                     1 ( x +  3x 3 sin ydx +  1 ( x 4 co s yd =  )  y  0
-                     x                    x
-                     ( 1 3x 2 sin y dx +  ) ( x 3 cos y dy =  )  0
-                       +
-
-                             1 3x
-                        M = +      2 sin y      N =  x 3 cos y
-
-                         M    =  3x 2 cos y    N =  3x 2 cos y
-                            y                   x
-
-                        ⇒   M   =  N
-                               y    x
-                                        )
-                         ∫
-                     ψ=    ( 1 3x+  2 sin y dx
-
-
-                        =  x +  x 3 sin y h ( ) y
-                                     +
-
-                                       ′
-                                        ( ) = −
-                     ψ   =  −  x 3 cos y +  hy  x 3 cos y
-                       y
-                             ′
-                            h y       ⇒   h ( ) y =  C
-                              ( ) 0 =
-                     x +  x 3 sin y =  C
-
-
                  Exercise
 
+                 Find the general solution of the homogenous equation      (x +  ) y dx +  ( y x dy−  )  =  0
 
-                 Find an integrating factor and solve the given equation   ( 2x +  2  y dx +  ) ( x y −  2  x dy =  )  0
 
                  Solution
-                        M =  2x +  2  y    N =  x y −  2  x
+                     (x +  ) y dx =  −  ( y x dy−  )
 
-                           M    = 1       N =   2xy − 1
-                              y             x
-                        ⇒   M   ≠  N
-                               y    x
-                     M −   N
-                                   −
-                        y    x  = 12xy +  1
-                         N         x y x
-                                    2
-                                       −
-                                   ( 21 xy−  )
-                                =
-                                   ( x xy −  ) 1</code></pre>
+                     dy   x +  y
+                     dx  =  x −  y
+                           x +  y
+
+                        =    x
+                           x −  y
+                             x
+                              y
+                          1+
+                        =     x
+                              y
+                          1−
+                              x
+                     dy  =  1 v  =  x dv  + v
+                           +
+                     dx   1 v      dx
+                           −
+                             +
+                     x dv  =  1 v  − v
+                             −
+                      dx   1 v
+                             +
+                         =  1 v 2
+                            1 v
+                             −
+                     1 v   dv =  dx
+                       −
+                     1 v 2       x
+                      +
+
+                       dx  =  1 v ∫  +∫  1  dv −  1 v ∫  v  dv                2 ∫  1  dx =  arctan
+                                                                                             x
+                        x          2         +  2                            a +  x 2        a
+
+
+                     ln x =  arctanv −  1  1 v ∫  1  d ( 1 v 2 )
+                                                  +
+                                    2     +  2
+                                            (
+                                              +
+                         +
+                     ln xC =   arctanv −  1 ln 1 v 2 )
+                                        2
+                                     y   1      y 2 
+                     ln xC =   arctan  −  ln 1+    
+                         +
+                                     x   2       2 
+                                                x  
+                           y   1      y 2 
+                     arctan  −   ln 1+     −  ln x =  C
+                           x   2        2 
+                                      x  </code></pre>
      	</div>
     
      </div>

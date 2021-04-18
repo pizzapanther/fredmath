@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 248 - Differential Book</title>
+        <title>Page 248 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 248 - Differential Book</div>
+        <div id="content-top1">Page 248 - ODE Book</div>
         <div id="content-top2">P. 248</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.1 - D e f i n i t i o n  o f  t h e  L a p l a c e   T r a n sf o r m  | 233
-
-                                                     n
-               Laplace transform to any powert
-
-                                 ( ) () s =   ! n
-                                  t £
-                                   n
-                                           s n + 1
+    <pre style="white-space:pre-line"><code>Section 2.5 − Variation of Parameters
 
 
 
-               Example 3
-
-               Use Definition of Laplace transform to find the Laplace transform of:  ( )f t = sin at
-
-               Solution
-
-                          ∫  ∞  − st
-                   F ( ) s =  0  e  sin at  dt
 
 
-
-                                             ∫ sin at  dt
-
-                               +   e − st     −  1  cosat
-                                               a
-                               −  −  se − st     −  1  sin at
-                                               a 2
-
-                                     2 −
-                               +    se  st
-
-                   ∫  e −  st sin at dt =  −  1 −  a e  st  cosat −  a s 2  e −  st  sin at −  a ∫  s 2  e −  st  sin at dt
-
-                                                                    2
-
-                   ∫  e −  st sin at dt +  a ∫  s 2  e −  st  sin at dt =  −  1 −  a  e  st  cosat −  a s 2  e −  st  sin at
-
-                                      2
-
-                     a ∫    e    sin at dt =  −  a e  cosat −  a 2  e  sin at
-                     2
-                    a + s 2   −  st          1 −  st        s  −  st
-                       2
-
-                   ∫  e − st sinat dt =  −  a +  ae − st 2  cosat −  a +  se − st 2  sinat
-                                       2
-                                                      2
-                                          s
-                                                         s
+                 In this section, we will introduce a technique called variation of parameters, which is a general
+                 method that we can use in many more cases.
 
 
-                   F ( ) s = T→∞∫ 0 T  e − st sin at  dt
-                           lim
+                                                                   ( )y +
+                                                                            ()y = ′
+                                                                                      t
+                 The inhomogeneous equation is given by:     y +  ′′  pt   qt      g ()
+
+                 A fundamental set of solutions  y and  y  to associated homogeneous equation  y′′ +  py′ +  qy =  0.
+                                                 1      2
+                 Then the general solution to the inhomogeneous equation is given by
+
+                                       y =  Cy +    C y
+                                        k     11     2 2
+
+                 C and C are arbitrary constants.
+                   1       2
 
 
-                                       −  sT          −  sT            −  ( s  0)        s −  (0)     
-                         =  lim    −  ae   cosaT −  se    sin aT −−    ae     cosa (0) −  se    sin a (0)   
-                                                                 
-                           T→∞       a +  2  s 2   a +  2  s 2      a +  2  s 2      a +  2  s 2    </code></pre>
+
+                 2.5-1  General Case
+
+
+                 A differential system can be written in a form:
+                          y   y 
+                          1    2  
+                          y′  y   ′
+                          1    2 
+
+                 y and y fundamental set of solution to the homogeneous equation, they are linearly independent.
+                  1      2
+                 Then the determinant will be recognized as the Wronskian:
+
+                              y   y
+                        W =    1    2  ≠ 0
+                              y′  y′
+                               1    2
+
+                 Which we can obtain:
+
+                                      ()
+                                  y gt
+                        v′ = −     2
+                          1    yy′  12  yy ′ −  12
+                               y
+                                   ()
+                           = −  2  gt
+                               W
+                                        ()
+                                     2
+                        v  () = − ∫  y gt  dt
+                            t
+                          1           W
+
+                                 y gt
+                                    ()
+                        v′ =      1
+                          2   yy′  12  yy ′ −  12</code></pre>
      	</div>
     
      </div>

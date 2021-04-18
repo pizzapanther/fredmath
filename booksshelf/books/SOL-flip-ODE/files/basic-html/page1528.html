@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1528 - DE Solution</title>
+        <title>Page 1528 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1528 - DE Solution</div>
+        <div id="content-top1">Page 1528 - ODE Solution Manual</div>
         <div id="content-top2">P. 1528</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1514 | S O LU TI O N
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          Exercise
-
-          Consider the given circuit below with all initial conditions are zero:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                             V  ( ) s
-             a)  Find the transfer function of   0
-                                                ( )
-                                             Vs
+                                             E  ( ) s
+             a)  Find the transfer function of   o
+                                             E  ( ) s
                                                i
-             b)  Solve the transfer function under the conditions
+             b)  Solve the transfer function under the conditions  R = 100 Ω  C = 10 − 4  f
 
-                         R =  2 Ω   R =  5 Ω   C = 10 − 4  f  L = 1 H
-                          1          2
              c)  Find the transfer function in function in time.
+          Solution
 
-          Solution</code></pre>
+                               E  ( ) s −  E  ( ) s
+             a)  For C:  ()Is =  i       0
+                                    1 Cs
+                               (        )
+                             =  E −  E 0  Cs
+                                 i
+
+                                      ()
+                 For R:    E  ( ) s =  R Is
+                                    ⋅
+                           0
+                              ()
+                             Is
+                   E −  E =
+                   i    0    s C
+                                Is
+                                 ()
+                          () =
+                 E −  R Is
+                        ⋅
+                   i            s C
+                        (
+                 E =  IR +    1  )
+                   i         s C
+                         E
+                 Hs        o
+                    ( ) =
+                         E
+                           i
+                        =    RI ⋅
+                           (
+                                 1
+                          IR +  s C )
+                        =  RC  s
+                          RC  s + 1
+                        =     s
+                           s +  1
+                             R C
+
+             b)  R = 100 Ω   C = 10 − 4  f
+
+
+                 H  ( ) s =     s
+                          s +    1
+                               2
+                             10 10 − 4
+
+                        =    s
+                           s + 100
+
+
+                    ( )
+             c)  Hs =        s
+                          s + 100
+
+
+                           =
+                         1−   100
+                             s + 100</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1536 - DE Solution</title>
+        <title>Page 1536 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1536 - DE Solution</div>
+        <div id="content-top1">Page 1536 - ODE Solution Manual</div>
         <div id="content-top2">P. 1536</div>
      </div>
      <div id="content-middle">
@@ -171,63 +171,60 @@ function MM_swapImage() { //v3.0
 
 
 
-
-
-
-
-
-
                                              V  ( ) s
              a)  Find the transfer function of   0
                                                 ( )
                                              Vs
                                                i
-                                                                                                   f
-             b)  Solve the transfer function under the conditions  R = 1 MΩ  R =  1 MΩ     C = 1 µ
-                                                                 1             2
+             b)  Solve the transfer function under the conditions
+                         R = 10 MΩ     R =  50 kΩ    C = ×  2 10 −  4  f  C =  10 −  4  f
+                          1             2             1                 2
+
              c)  Find the transfer function in function in time.
+             d)  Draw the block diagram for the given circuit.
 
           Solution
 
-                    ( )
-             a)  V s =   RI   ( ) s +  R I  ( ) ( ) 1s
-                  i        11        2
-                 V  ( ) s =  1  I  ( ) s +  RI  ( ) ( ) 2s
-                  i      Cs  2        2
 
-                 −  RI  ( ) s +  1  I  ( ) s =  0  ( ) 3
-                    11       Cs  2
 
-                 V  ( ) s =  R   Is
-                              ( ) ( ) 4
-                   0       2
-                 ( ) 3  I =  R C I s  1
-                        2
-                             1
-                 I =  I +  I
-                      1   2
-                      I
-                 I = −   I
-                  1       2
-                                    s
-                     =  1  V −  R C I
-                       R    0    1    1
-                         2
-                 ( 1+  R C s )  I =  1  V
-                                 R
-                       1
-                             1
-                                   2  0
-                  I =       1       V
-                  1   R  ( 1 R C+   s )  0
-                        2      1
-                                 R
-                 ( ) 1  V =   (   1     ) V + V
-                                          0
-                                               0
-                       i
-                           R
-                             2  1 R C+  1   s</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+             a)  V s =  ( )  R I  ( ) s +  1  ( I  ( ) s −  I  ( )) ( ) 1s
+                  i        11      sC     1      2
+                                      1
+                 R I   ( ) s +  1  I  ( ) s +  1  ( I  ( ) s −  I  ( ))  =  0  ( ) 2
+                                                          s
+                   22       sC    2      sC    2       1
+                               2            1
+                 V  ( ) s =  1   I  ( ) ( ) 3s
+                   0      s C   2
+                             2
+
+
+                  ( ) 3 →  I =  2  s CV
+                                      0
+                                   2
+                 ( ) 2  →   1  ( I −  I  )  =  −    R +   1    I 
+                           sC    2   1        2  sC    2
+                             1                      2 
+                   1  ( I −  I  =    RC   s + 1  I 
+                                    22
+                 sC     1   2  )     sC      2
+                    1                  2    
+                           C
+                                          )
+                 I −  I =    1 ( RC   s +  1 I
+                  1    2   C     22         2
+                             2</code></pre>
      	</div>
     
      </div>

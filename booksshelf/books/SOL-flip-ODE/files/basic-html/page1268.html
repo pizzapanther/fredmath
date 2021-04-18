@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1268 - DE Solution</title>
+        <title>Page 1268 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1268 - DE Solution</div>
+        <div id="content-top1">Page 1268 - ODE Solution Manual</div>
         <div id="content-top2">P. 1268</div>
      </div>
      <div id="content-middle">
@@ -155,55 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1258 | S O LU TI O N
 
 
-                  0.20   |   1.01980437   |   1.01980390   |   -0.00000046
-                  0.40   |   1.07703431   |   1.07703296   |   -0.00000135
-                  0.60   |   1.16619234   |   1.16619038   |   -0.00000196
-                  0.80   |   1.28062701   |   1.28062485   |   -0.00000216
-                  1.00   |   1.41421570   |   1.41421356   |   -0.00000214
+          Exercise
 
-                     Runge-Kutta 2th Order
+          You have seen that the error in Euler's method varies directly as the first power of the step size
+          ( ie  h   λ h . This makes Euler's method an order to halve the error? How does this affect the
+                       )
+            .   E ≈
+          number of required iterations?
+          Solution
 
-                    t           Approx.           Exact            Difference
-                  --------------------------------------------------------
-                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.10   |   1.00497519   |   1.00498756   |   0.00001238
-                  0.20   |   1.01975618   |   1.01980390   |   0.00004772
-                  0.30   |   1.04392938   |   1.04403065   |   0.00010127
-                  0.40   |   1.07686631   |   1.07703296   |   0.00016665
-                  0.50   |   1.11779652   |   1.11803399   |   0.00023747
-                  0.60   |   1.16588199   |   1.16619038   |   0.00030839
-                  0.70   |   1.22027989   |   1.22065556   |   0.00037567
-                  0.80   |   1.28018776   |   1.28062485   |   0.00043708
-                  0.90   |   1.34487075   |   1.34536240   |   0.00049165
-                  1.00   |   1.41367433   |   1.41421356   |   0.00053923
+             Because  E ≈   λ h halving the step size should halve the error.
+                        h
+
+                               1
+                                 h ≈
+                         E λ  ≈  ( )  1 λ  h ≈  1  E h
+                               2
+                                      2
+                                             2
+                                                        −
+             The number of iterations is given by:  N =  ba  , therefore halving the step size should double the
+                                                        h
+             number of iterations.
+                                               −
+                                      −
+                                N =  ba   =  2 ba  ≈  2N
+                                     1 h       h        h
+                                     2
 
 
-                     Runge-Kutta 4th Order
-                    t             Approx.            Exact              Difference
-                  -----------------------------------------------------------
-                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.10   |   1.00498757   |   1.00498756   |   -0.00000001
-                  0.20   |   1.01980393   |   1.01980390   |   -0.00000003
-                  0.30   |   1.04403071   |   1.04403065   |   -0.00000006
-                  0.40   |   1.07703304   |   1.07703296   |   -0.00000008
-                  0.50   |   1.11803409   |   1.11803399   |   -0.00000010
-                  0.60   |   1.16619050   |   1.16619038   |   -0.00000012
-                  0.70   |   1.22065569   |   1.22065556   |   -0.00000013
-                  0.80   |   1.28062498   |   1.28062485   |   -0.00000013
-                  0.90   |   1.34536254   |   1.34536240   |   -0.00000013
-                  1.00   |   1.41421369   |   1.41421356   |   -0.00000013
+          Exercise
 
-                     Runge-Kutta 2th Order
-                    t             Approx.             Exact             Difference
-                  -----------------------------------------------------------
-                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.05   |   1.00124844   |   1.00124922   |   0.00000078
-                  0.10   |   1.00498447   |   1.00498756   |   0.00000309
-                  0.15   |   1.01118058   |   1.01118742   |   0.00000684
-                  0.20   |   1.01979199   |   1.01980390   |   0.00001191
-                  0.25   |   1.03075829   |   1.03077641   |   0.00001812
-                  0.30   |   1.04400537   |   1.04403065   |   0.00002528
-                  0.35   |   1.05944783   |   1.05948101   |   0.00003317</code></pre>
+          Use Euler’s method to provide an approximate solution over the given time interval using the given
+          steps sizes. Provide a plot of v versus y for each step size
+
+                          y′′ +  4y =  0,  y ( ) 0 =  4,  y′ ( ) 0 =  0,  [0, 2 π ];  h =  0.1, 0.01, 0.001
+
+          Solution
+               2
+              λ +=    0
+                   4
+              λ   = ± 2   i
+               1,2
+
+              y ( ) Ct =  1  cos2t + C 2  sin 2t
+
+                 y ( ) 0  =  C =  4
+                          1
+              y′ ( ) t =  −  2C 1 sin 2t +  2C 2  cos2t
+
+                 y′ ( ) 0 =  2C =  0
+                            2
+
+                t
+              y ( ) =  4cos2t
+
+                t
+              v ( ) = − 8sin 2t
+              cos 2t +  2  sin 2t =  2  1
+
+               y
+                2  ( )  2
+                       v
+                  +       =  1
+               4
+                     − 8</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1352 - DE Solution</title>
+        <title>Page 1352 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1352 - DE Solution</div>
+        <div id="content-top1">Page 1352 - ODE Solution Manual</div>
         <div id="content-top2">P. 1352</div>
      </div>
      <div id="content-middle">
@@ -155,57 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1338 | S O LU TI O N
 
 
-          Exercise
+                                                        ∫
+                                                          sin at  dt
+                                          e − st          1
+                                 +                      − a  cosat
+                                         −    se − st   −  1  sin at
+                                 −                       a 2
+                                          2 − st
+                                 +       s e
+                       ∞                                          ∞     2   ∞
+                         sin at e −  st dt =   ∫    −  1  cosat −  s 2  sin ate −  st    0 ∫  −  s 2  sin at e −  st dt
+                                                             
+                                           a
+                       0                            a                  a    0
+                       a ∫     0  sin at e  dt =  a
+                      2
+                     s +  a 2   ∞       − st    1
+                         2
 
-                                                      3
-          Find the Laplace transform of   ( ) (2f t =  t −  ) 1
-
-          Solution
-                                         }
-              F ( ) s £=  { 8t −  3  12t +  2  6t −  1
-
-
-
-                   =  48  −  24  +  6  −  1
-                     s 4  s 3  s 2  s
-
-                        −
-                   =  48 24s +  6s −  2  s 3
-                             s 4
-
-
-          Exercise
-
-                                                     4
-                                        f t
-          Find the Laplace transform of   ( ) (t=  −  ) 1
-          Solution
-
-              F ( ) s £=  { t −  4  4t +  3  6t −  2  4t +  1 } ( ) s
+                     ∫ 0 ∞ sin at e − st dt =  s +  a 2
+                                           a
+                                         2
 
 
-                   =  4!  −  24  +  12  −  4  +  1
-                     s 5  s 4  s 3  s 2  s
-
-                   =  s −  4  4s +  3  12s −  2  24s +  24
-                                 s 5
 
 
-          Exercise
+                a ∫  2  0    t  sin at e  dt = a ∫  2  0  sin at e  dt
+               2
+              s +  a 2  ∞          −  st  2s    ∞        −  st
 
 
-                                        f
-          Find the Laplace transform of   ( ) t =  t +  2  6t −  3
-          Solution
-                                      }
-              £ { f t      { t +  2  6t −  3
-                   ( )} £=
+                                          =  2s   a
+                                             2 2
+                                            a s +   a 2
+                                          =  1   2s
+                                               2
+                                            a     s +  a 2
+              ∫ 0 ∞    t  sin at e − st dt = ( s +  a 2 ) 2
+                                      2as
+                                    2
 
-              F ( ) s =  2  +  6  −  3
-                     s 3  s 2  s
 
-                   =  2s +  2  6s −  3
-                          s 3</code></pre>
+
+
+              £ {cos at +  ( ) at sin at  ∫  0 ∞  cos at  −  st dt +  a ∫  0 ∞  t sin at  −  st dt
+                                                                         ( ) e
+                                                  ( ) e
+                                ( )}( ) s =
+                                                           2
+                                          =    s    +    2a s
+                                             2
+                                                        2
+                                            s +  a 2  ( s + a 2 ) 2
+                                                         2
+                                          =  s +  3  as +  2  2as
+                                              ( s +  a 2 ) 2
+                                                2
+
+
+                                            (
+                                              2
+              £ {cos at      sin at        ss +  3a 2 )     √
+                                ( )}( ) s =
+                    ( ) at+
+                                           ( s +  a 2 ) 2
+                                             2</code></pre>
      	</div>
     
      </div>

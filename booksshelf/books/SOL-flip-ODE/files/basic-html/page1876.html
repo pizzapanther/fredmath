@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1876 - DE Solution</title>
+        <title>Page 1876 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1876 - DE Solution</div>
+        <div id="content-top1">Page 1876 - ODE Solution Manual</div>
         <div id="content-top2">P. 1876</div>
      </div>
      <div id="content-middle">
@@ -155,32 +155,40 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1862 | S O LU TI O N
 
 
-                                                  0
-                                  x′
-                                                                          0
-             Given initial values:  ( ) 0 =  x′  ( ) 0 =  and  ( ) 0x  =  x  ( ) 0 =
-                                   1       2              1       2
-                   
-                  x   1 ( ) 0 =  a +  a −  5 = 0
-                            1
-                                 2
-                                         →    a =  1  2, a =  2  3
-                  x 2  ( ) 0 =  a − a + 1= 0
-                 
-                                 2
-                            1
-                   
-                    x′ 1 ( ) 0 =  b +  1  3b =  2  0
-                                       →   b =  1  b =  2  0
-                  x′ 2  ( ) 0 =  b −  1  3b =  2  0
-                 
+             For λ =   −  4 ⇒   ( A +  4IV = )  0
+                   2                      2
+                            a
+                      11      0
+                            =     ⇒   a =  −  b
+                                  0
+                            b
+                      11      
+                                1 
+                     ⇒   V =    
+                          2     − 1 
+                       ( ) (                       1 
+                                       +
+                     x   t =  a  cos2tb    sin 2t )  
+                      2        2          2         − 1 
                
-                 ( ) = 
-               xt     2cost +  3cos3t −  5cos5t
+                  ( ) = 
+               xt     a 1 cost  2 b+  1  sint  2 +  a 2  cos2tb+  2  sin 2t
                 1
                
-                x 2  ( ) t =  2cost −  3cos3t +  cos5t
+               x 2  ( ) t =  a 1 cost  2 b+  1 sint  2 −  a 2  cos2tb−  2  sin 2t
               
+             In the degenerate natural mode with frequency ω =    2  the 2 masses move in the same direction
+                                                            1
+                                                                    2
+             with equal amplitudes of oscillation. At frequency ω =  they oscillate in opposite directions
+                                                                2
+             with equal amplitudes.
+
+
+          Exercise
+
+          Consider the mass-and-spring system shown below and with the given masses and spring constants
+          values.
 
 
 
@@ -192,21 +200,27 @@ function MM_swapImage() { //v3.0
 
 
 
+          Find the 2 natural frequencies of the system and describe its natural modes of oscillation.
+                 m =  1, m =  2; k =   2, k =  k =  4
+                   1       2       1       2    3
+          Solution
 
+               mx′′ =  −  ( k +  k  ) x +  k x
+                1 1      1    2   1   2 2
+              
+               mx′′ =  k x −  ( k +  k  ) x
+                2 2    21       2   3   2
 
-
-             At frequency ω =   1 the 2 masses move in the same direction with equal amplitudes of
+                    x′′ =   1  −  6x +  1  4x 2
+              ⇒   
+                    2x′′ =  4x − 8x 2
                             1
-             oscillation.
-             At frequency ω =  the 2 masses move in the opposite direction with equal amplitudes of
-                                3
-                            2
-             oscillation.
-                                5
-             At frequency ω =  they oscillate in opposite directions with amplitude of oscillation of  m 5
-                            3                                                                         1
-             times that of m .
-                            2</code></pre>
+                      2
+               x′′ =  1  −  6x +  1  4x 2
+              
+                x′′ =  2x − 4x 2
+                      1
+                2</code></pre>
      	</div>
     
      </div>

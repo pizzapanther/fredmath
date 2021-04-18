@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 65 - Differential Book</title>
+        <title>Page 65 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 65 - Differential Book</div>
+        <div id="content-top1">Page 65 - ODE Book</div>
         <div id="content-top2">P. 65</div>
      </div>
      <div id="content-middle">
@@ -152,34 +152,12 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>50 | 1.3 - M ode l   of  M ot i ons
-
-                                                                                2
-                                                                   v′
-               a)  Show that the equation can be written in the form  ( ) t =  g − av  where  a =  k
-                                                                                             m
-                                                  vt ′
-               b)  For what (positive) value of v is  ( ) =  0? (This equilibrium solution is called the terminal
-                   velocity.)
+    <pre style="white-space:pre-line"><code>52 | 1. 3 - M od e l  of  M ot i on s
 
 
-                                                                                                          0
-                                                                                      &lt;
-               c)  Find the solution of this separable equation assuming  ( ) 0v  =  0 and   0 v ( ) t  2  &lt;  g   for t ≥
-                                                                                                a
-                                                                       2
-                                                                        ,
-                                                                                  ,
-                                                                                                    /
-               d)  Graph the solution found in part (c) with  g =  9.8 m s   m = 1 kg   and  k =  0.1 kg m , and
-                                                                    /
-                   verify the terminal velocity agrees with the value found in part (b).
+           1.3-5  Torricelli’s Law
 
-          24.  Suppose a small cannonball weighing 16 pounds is shot vertically upward, with an initial velocity
-               v =  300  ft/ s
-                 0
-               The answer to the question “How high does the cannonball go?” depends on whether we take air
-               resistance into account.
+           Suppose that a water tank has a hole with area a at its bottom, from which water is leaking.
 
 
 
@@ -200,32 +178,47 @@ function MM_swapImage() { //v3.0
 
 
 
+           Denote by  ( )  the depth of water in the tank at time t, and by  ( ) t  the volume of water in the tank
+                      yt
+                                                                        V
+           then. It is plausible – and true, under ideal conditions – that the velocity of water exiting through the
+           hole is
+
+                          v =  2gy
+
+           Which is the velocity a drop of water would acquire in falling freely from the surface of the water to
+           the hole. One can derive this formula beginning with the assumption that the sum of the kinetic and
+           potential energy of the system remains constant. Under real conditions, taking into account  the
+           construction of a water jet from an orifice,  v = c  2gy , where c is an empirical constant between 0
+
+           and 1 (usually about 0.6 for a small continuous stream of water). For simplicity, we take c = 1 in the
+           following discussion.
+
+                                                 dV  =  −  av =  −  a  2gy
+                                                  dt
+
+                                          dV  =  −  k y    where k =   a  2g
+                                           dt
+
+           This is a statement of Torricelli’s Law for a draining tank.
+
+           Let  ( ) y  denote the horizontal cross-sectional area of the tank at height y. Then, applied to a thin
+               A
+           horizontal slice of water at height  y  with area  ( ) y  and thickness  dy , the integral method of
+                                                         A
+
+           cross sections gives
+
+
+                  V ( ) y = ∫ 0 y A ( ) y dy
 
 
 
+           The fundamental theorem of calculus therefore implies that   dV  =  A ( ) y   and hence that
+                                                                      dy
 
-
-                 a)  Suppose air resistance is ignored. If the positive direction is upward, then a model for the
-                                                        2
-                                                                              ( )  the last differential equation
-                    state of the cannonball is given by   d s  = − g . Since   ds  =  vt
-                                                       dt 2             dt
-                                                                      2
-                    is the same as   dv  = − g , where we take  g =  32  ft/s . Find the velocity  ( ) t  of the
-                                                                                          v
-                                   dt
-                    cannonball at time t.
-                 b)  Use the result in part (a) to determine the height  ( ) t  of the cannonball measured from
-                                                                    s
-                    ground level. Find the maximum height attained by the cannonball.
-
-          25.  Two chemicals A and B are combined to form a chemical C. The resulting reaction between the
-               two chemicals is such that for each gram of A, 4 grams of B is used. It is observed that 30 grams
-               of the compound C is formed in 10 minutes.
-                 a)  Determine the amount of C at time t if the rate of the reaction is proportional to the amounts
-                    of A and B remaining and if initially there are 50 grams of A and 32 grams of B.
-                 b)  How much of the compound C is present at 15 minutes?
-                 c)  Interpret the solution as t → ∞</code></pre>
+                   dV  =  dV  ⋅  dy
+                   dt    dy dt</code></pre>
      	</div>
     
      </div>

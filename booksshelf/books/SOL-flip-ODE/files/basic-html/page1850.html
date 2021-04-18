@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1850 - DE Solution</title>
+        <title>Page 1850 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1850 - DE Solution</div>
+        <div id="content-top1">Page 1850 - ODE Solution Manual</div>
         <div id="content-top2">P. 1850</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,82 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1836 | S O LU TI O N
 
 
-
-                     2 10
-              i  ( ) t = ×  3  q ( ) t
-              2
-                   ≈  6.05 10 −  3 −  e  1,994.98 t  −  1.72e 1,994.98t  +  1.72
-                         ×
-
-              i  ( ) t =  q′ ( ) t
-              3
-                   ≈− 6.04 10 e×  −  3 −  1,994.98t  − 1.72 e 1,994.98t
-
-
-                        t
-                ( ) i
-              i t =    ( ) i t+  ( )
-              1      2       3
-                   ≈− 3.4  e 1,994.98t  + 1.72
-
-
-
           Exercise
 
-                                                k
-          On a smooth horizontal surface m =  2 g  is attached to a fixed wall by a spring with spring constant
+                                                           ,
+          Derive three equations for the unknown currents  I  I  , and  I  with thegiven values of the given
+                                                          1   2        3
+          electric circuit shown below, then find the general solution
 
-                                          1
-          k =  4 N/ . Another mass  m =   1 g  is attached to the first object by a spring with spring constant
-                                            k
-                   m
-           1                          2
-                   m
-          k =  2 N/ . The object are aligned horizontally so that the springs are their natural lengths. If both
-           2
-          objects are displaced 3 m to the right of their equilibrium positions and then released, what are the
-          equations of motion for the two objects?
+                 R  =  R = 1 Ω, C =  1 F , and  L  = 1 H .
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                   1    2
           Solution
-             Applying Hooke’s law:
-                         F = − k x
-                          1     1
-                        F =   k  ( y −  ) x
-                          2    2
-                        F =   −  k  ( y −  ) x
-                          3     2
-             Applying Newton’s second law:</code></pre>
+             Applying Kirchhoff’s voltage law to Loops 1 and 2.
+
+                           q
+             Loop 1:         −  RI =   0
+                          C     22
+             Loop 2:      R I −   R I −  LI′ =  0
+                            2 2    13       3
+
+               I −  −  I −  I =  0
+                1    2   3
+              I +  I +  I =  0
+               1   2    3
+                   dq
+              I =
+               1   dt
+
+              R  =  R = 1 Ω, C = 1 F , and  L  = 1 H
+               1    2
+               q =  I                ( ) 1
+                   2
+              
+                          ′
+               I =  I +  I      ( ) 2
+                     3
+                2
+                          3
+              
+               q′ +  I +  2  I =  3  0  ( ) 3
+              
+              ( ) 1 →  q′  I′ =  2
+               ( ) 3  I′ =  2  I −  2  −  I 3
+              
+              
+               ( ) 2  I′ =  I − I 3
+              
+                           2
+                      3
+                   −   1 −  1
+              A =       
+                   1  − 1 
+                             1 λ
+                           −−         − 1
+                    −
+                  A λ =  I
+                              1     −−
+                                     1 λ
+                        = λ  2  2 + =
+                                        0
+                                    2
+                                 λ +
+                                          1
+             The eigenvalues are: λ   = −±   i
+                                   1,2
+                                           )
+             For λ      1 i ⇒     ( A λ = −+  +  IV =  0
+                   1                    1    1
+                    i −   −  1    a   1  0 
+                              =    ⇒  a =  1  ib
+                                                 1
+                                   0
+                   1   i −       b   1   
+                           i  
+                 ⇒   V =   
+                      1    
+                           1</code></pre>
      	</div>
     
      </div>

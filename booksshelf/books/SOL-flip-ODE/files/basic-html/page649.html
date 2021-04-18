@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 649 - DE Solution</title>
+        <title>Page 649 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 649 - DE Solution</div>
+        <div id="content-top1">Page 649 - ODE Solution Manual</div>
         <div id="content-top2">P. 649</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 8 − B a s ic  E le c tr i c a l  C ir c u it  | 643
 
 
-
-                                C = −  1
-                                     500
-
-                        q ( ) t =  1  −  1  e − 200t
-                               1000   500
-
-
-                               ( )
-                    b)  lim  qt =    lim   (  1  −  1  e − 200t )          lim  ( e − 200t ) =  lim      1     = 0
-                        t→∞         t→∞    1000   500                      t→∞            t→∞   e 200t  
-
-                                   =   1
-                                     1000
-
-
                  Exercise
 
-                 An electromotive force
-                                                       ≤≤
-                                               120, 0 t    20
-                                         ( ) =
-                                       Et     
-                                                0,    t &gt;  20
-                 Is applied to an LR-series circuit in which the inductance is 20 henries and resistance is 2 ohms. Find
-                            i
-                 the current  ( ) t  if  ( ) 0i  =  0
+                 A circuit containing an electromotive force, a capacitor with a capacitance of C farads (F), and a
+                                                                                                Q
+                 resistor with a resistance of R ohms ( ). The voltage drop across the capacitor is   , where Q is the
+                                                     Ω
+                                                                                                C
+                 charge (in coulombs), so in this case Kirchhoff’s Law gives
+                                                       Q
+                                                  RI +   =  E ( ) t
+                                                       C
+                         dQ                         dQ    1
+                                                                  ( )
+                 But  I =    , so we have         R    +   Q =  Et
+                          dt                        dt   C
+                 Find the charge and the current at time t
+
+                    a)  Suppose the resistance is 5 Ω , the capacitance is 0.05 F, a battery gives voltage of 60 V and
+                        initial charge is  ( ) 0Q  =  0  C
+                                                                                Et =
+                    b)  Suppose the resistance is  2 Ω , the capacitance is 0.01 F,  ( ) 10sin60t  and initial charge
+                        is  ( ) 0Q  =  0  C
+
                  Solution
 
-                    For 0 t≤≤   20
+                          dQ    1              dQ
+                    a)  5     +    Q =  60 →       +  4 =  Q  12
+                          dt   .05              dt
 
-                        20 di  +  2i =  120                  L  di  +  Ri =  E ( ) t
-                           dt                                 dt
-                         di  +  1  i =  6
-                         dt  10
-                               10 ∫  1  dt
+                                         4t
+                                e ∫ 4dt  =  e
+                                ∫      dt =
+                                              4t
+                                 12e 4t    3e
+                                             )
+                          ( ) =
+                        Qt       1  ( 3e 4t  +  C
+                                e 4t
+                                3 C
+                              = +    e − 4t
+                                       0
+                                Q ( ) 0 =
+                                3 C+  =  0
+                                C  = − 3
 
-                               e    =  e t /10
-                            ∫       dt =
-                              6e t /10   60e t /10
+                                 (
+                         Q ( ) t = 31 e−  − 4t )
 
 
-                                                  )
-                          ( ) e  t −  /10 ( 60e t /10  + C
-                         it =
-                             =  60 C e  t −  /10
-                                  +
-                                      0
-                                i ( ) 0 =
-                                      +
-                                0 60 C
-                                 =
-                                C = − 60
-                        i ( ) t = 60 60e  t −  /10
-                                 −
+                            dQ        − 4t
+                         I =    = 12e
+                             dt
 
-                    For t &gt;  20
-                        20  di  +  2i =  0                   L  di  +  Ri =  E ( ) t
-                           dt                                 dt</code></pre>
+                          dQ    1
+                    b)  2     +    Q =  10sin60t
+                           dt   .01
+                         dQ          5sin60t
+                         dt  +  50Q =
+
+                                 ∫ 50dt
+                                   e    = e 50t</code></pre>
      	</div>
     
      </div>

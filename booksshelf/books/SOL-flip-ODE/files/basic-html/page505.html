@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 505 - DE Solution</title>
+        <title>Page 505 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 505 - DE Solution</div>
+        <div id="content-top1">Page 505 - ODE Solution Manual</div>
         <div id="content-top2">P. 505</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 6 − E x a ct   D i f f er en t i al  E q u at i o n s  | 499
 
 
+
+                      =  e sin y +  x  2 cos x h ( ) y
+                                    y
+                                           +
+                                           +
+                     ψ   =  e x cos y +  2cos xh′ ( )  y =  e x cos y + 2cos x
+                       y
+                            h′ ( ) 0y =  →   h ( ) y =  C
+
+
+                     e sin y +  x  2 cos x =  y  C
+
+
                  Exercise
 
-                 Find an integrating factor and solve the given equation
-                        ( 3x y +  2  2xy +  y 3 ) ( x +  2  y 2 ) dy =  0
-                                          dx +
-
+                 The given equation is not exact. However, if you multiply by the given integrating factor, then it
+                 becomes exact. Then solve the equation
+                                                                              x
+                                (x +  ) 2 sin ydx x+  cos ydy =  0,  µ  ( ,x y =  )  xe
                  Solution
 
-                     M =  3x y +  2  2xy +  y 3  N =  x +  2  y 2
+                      M =  (x +  ) 2 sin y    N =  x cos y
+                     M   =  (x +  ) 2 cos y  N =   −  x sin y
+                       y                       x
 
-                     M   =  3x +  2  2x +  3y 2  N =   2x
-                       y                           x
-                     ⇒  M ≠    N
-                           y     x
+                        ⇒   M   ≠  N
+                               y    x
+                     ( )  ( x +  ) 2 sin ydx +  ( ) x cos yd =  y  0
+                                              x
+                        x
+                      xe
+                                           xe
+                     ( x +  2  2x e x  sin ydx +  x e  cos ydy =  0
+                             )
+                                           2 x
+                              (  2     )  x                      2 x
+                         M =   x +  2x e  si n y           N =  x e  cos y
 
-                     M −   N        2         2
-                        y    x  =  3x +  2x +  3y −  2x
-                         N             x +  y 2
-                                        2
-                               =  3
-
-                         dµ  = 3µ
-                         dx
-                        ∫∫
-                           dµ
-                                3 dx
-                              =
-                            µ
-                        lnµ=  3x
-
-                        µ=  e 3x
-
-                     e 3x ( 3x y +  2  2xy +  y 3 ) dx +  e 3x ( x +  2  y 2 ) dy =  0
-
-
-                         M =  e 3x ( 3x y +  2  2xy +  y 3 )  N =  e 3x ( x +  2  y 2 )
-
-                                                                      2
-                                                           x
-                        M    =  e 3x ( 3x +  2  2x +  3y 2 )  N =  3e 3x ( x +  y 2 ) + 2xe 3x
-                           y                                    3x (  2     2     )
-                                                             = e   3x +  3y +  2x
-
-                        ⇒   M =   N
-                              y     x
-
-                                   2
-                     ψ=  ∫ ( e 3x ( 3x y + 2xy +  y 3 )) dx
+                                       )
+                                                                x
+                        M    =  ( x +  2  2x e x  cos y  N =  ( 2xe +  x 2 ) e x  cos y
+                           y                           x
+                        ⇒   M   =  N
+                               y    x
+                         ∫ (  2 x     )
+                     ψ=     x e  cos y dy
 
 
-                                                  ∫ e 3x
+                           2 x
+                        =  xe  sin y h ( ) x
+                                   +
+                                                              )
+                                   )
+                                                       2
+                             2
+                     ψ=    ( x + 2x e x  si n y +  h′ ( ) x = ( x +  2x e x sin y
+                       x
+                                h′ ( ) 0x =    →   h ( ) x =  C
 
-                                              3
-                                3x y +  2  2xy +  y    1 e 3x
-                                                  3
-                                6xy + 2y          1 e 3x
-                                                  9
-                                6y                 1  e 3x
-                                                  27</code></pre>
+                      2 x
+                     x e  sin y = C</code></pre>
      	</div>
     
      </div>

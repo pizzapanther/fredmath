@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1999 - DE Solution</title>
+        <title>Page 1999 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1999 - DE Solution</div>
+        <div id="content-top1">Page 1999 - ODE Solution Manual</div>
         <div id="content-top2">P. 1999</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 2 −   S e r i e s   S ol ut i on s  n e a r  O r di n a r y P oi nt s  | 1981
 
 
+                      ∞                                           ∞
+                     ∑    ( nn −  ) 1 a x + n  n  4a −  2  a +  0  ( 12a −  3  a 1 ∑  ) x +    ( 2 n +   2 )(n +  ) 1 a n+ 2  −  a   n   x n
+
+
+                     n= 2                                        n= 2
+                                                 ∞
+                                            1 ∑           n
+
+                                                     +  3a x +  3na x =  n  0
+                                                 n= 2
+
+                                                  ∞
+                                            )
+                                             x +
+                     4a −  a +  (  2 1 a +  2a 1 ∑     ( nn −  ) 1 a +  ( 2 n +  2 )(n +  ) 1 a  +  (3n −  ) 1 a    x =  n  0
+                       2    0        3                        n                   n+ 2           n 
+                                                 n= 2
+                            4a −  a +  ( 12a +  2a  ) x
+                               2    0       3     1
+
+                            a =  1 a          a = −  1 a
+                             2    4  0         3     6  1
+
+                                                             )
+                             ( 2 n +  2 )(n +  ) 1 a  +  ( n +  2  2n −  1 a =  0
+                                            n+ 2                n
+
+                            →    a    = −   n +  2  2n −  1  a  n =  2, ,
+                                                                   3
+                                  n+ 2      ( 2 n +  2 )(n +  ) 1  n
+
+                        a = −   7  a = −  7  a              a = −   7  a =  7  a
+                          4    24   2     6 9  0              5    20  3   120  1
+
+                        a = −  23 a =   161  a              a =   −  17  a =  −  17  a
+                          6    60  4   5760   0               7    42  5     720  1
+
+                                
+
+                      y  ( ) x =  ( 1+  1  x −  2  7  x +  4  161  x −  6   ) a
+                       1         4      96      5760          0
+                     
+                      y  ( ) x = ( 1−  1  x +  3  7  x −  5  17  x +  7   ) a
+                       2          6     120      720          1
+
+
+                 Exercise
+
+                                              (  2   )
+                 Find a power series solution.   x −  1 y′′ +  xy′ −  y =  0
+
+                 Solution
+                             ∞
+                            ∑        n
+                     yx           a x
+                      ( ) =
+                                  n
+                            n= 0
                               ∞              ∞
                             ∑         n− 1  ∑                n
                      y′ ( ) x =  na x     =     (n +  ) 1 a n+ 1 x
                                     n
-                             n= 1           n= 0
-                              ∞                       ∞
-                             ∑                n− 2   ∑                       n
-                     y′′ ( ) x =   nn    ) 1 a x    =     (   n +  2 )(n +  ) 1 a n+ 2 x
-                                   ( −
-                                           n
-                             n= 2                    n= 0
-                     ( x +  2  1 y′′ −  xy′ +  y =  0
-                           )
-
-
-                     ( x +  2  1 )  ∞  (n +  2 )(n +  ) 1 a n +∑  2 x −  n  x ∑  ∞  (n +  ) 1 a n +  1 ∑  x +  n  ∞  a x =  n  n  0
-
-
-                             n= 0                        n= 0                n= 0
-                         ∞                          ∞                           ∞                   ∞
-                     x 2    (n +  2 )(n +  ) 1 a n +∑  2 ∑  x +  n  (n +  2 )(n +  ) 1 a n +  2 x −  n  x ∑  (n +  ) 1 a n +  1 ∑  x +  n  a x =  n  n  0
-                        n= 0                       n= 0                        n= 0                n= 0
-                      ∞                             ∞                          ∞                     ∞
-                         (n +  2 )(n +  ) 1 a n +∑  2 x n+  2  +  (n +  2 )(n +  ) 1 a n +∑  2 ∑  x −  n  (n +  ) 1 a n +  1 x n+  1  +  ∑  a x =  n  n  0
-
-                     n= 0                          n= 0                       n= 0                  n= 0
-                      ∞                  ∞                          ∞            ∞
-                     ∑    ( n n −  ) 1 ax +  n ∑  n  (n +  2 )(n +  ) 1 a n+ 2 ∑  x −  n  nax + n ∑  n  ax =  n  n  0
-
-
-                     n= 2               n= 0                        n= 1        n= 0
-                      ∞                   ∞           ∞
-                     ∑    ( n n −  ) 1 ax −  n ∑  n  nax +  n ∑  n      (n +  2 )(n +  ) 1 a n+ 2  +  a n     x =  n  0
-
-                     n= 2                n= 1         n= 0
-
-
-                     ∑  ∞  ( n n −  ) 1 ax −  n  n  ax −  1 ∑  ∞  nax +  n  n  ( 2a +  2  a 0 ) ( 6a +  3  a 1 ) x
-                                                                    +
-
-                     n= 2                     n= 2
-                               ∞
-                                                           n
-                                 +      (n +  2 )(n +  ) 1 a n+ 2  + a   n  ∑  x =  0
-
-                              n= 2
-                                         ∞
-                                                         )
-                                              (
-                                             
-                     2a +  a +  6a x + 3 ∑    n −  2  2n +  1 a +  (n +  2 )(n +  ) 1 a    x =  n  0
-                       2    0                             n                 n+ 2   
-                                        n= 2
-                      2a +  a =  0 →    a = −  1 a
-                        2    0            2    2  0
-                     
-
-                       6 ax =  0       →    a =  0
-                          3                 3
-                           2
-                     (n −  ) 1 a +  n  (n +  1 )(n +  ) 2 a n+ 2  =  0</code></pre>
+                             n= 1           n= 0</code></pre>
      	</div>
     
      </div>

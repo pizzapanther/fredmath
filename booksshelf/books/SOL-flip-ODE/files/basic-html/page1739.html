@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1739 - DE Solution</title>
+        <title>Page 1739 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1739 - DE Solution</div>
+        <div id="content-top1">Page 1739 - ODE Solution Manual</div>
         <div id="content-top2">P. 1739</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 7 − P h a s e  P la n e  P o r tr a it s   & A p p li c a ti o n s  | 1725
-
-
-
-                 Solution             Section 3.7 – Phase Plane Portraits & Applications
-
+    <pre style="white-space:pre-line"><code>3. 6 − Pl an ar  S y s t em s  | 1725
 
 
                  Exercise
 
-                 Sketch a rough approximation of a solution in each region determined by the half-line solutions. Use
-                 arrows to indicate the direction of motion on all solutions. Determine the behavior of the equilibrium
-                 point and the stability.
+                 Show that the voltage V across the capacitor and the current I through the inductor satisfy the system
 
-                                   2
-                                              − 1  2t
-                         y () t = C    e  t −  + C     e −
-                                1          2    1  
+                                 R 1    1
+                            I′ =   −  L  I +  L V
+                          
+                           V′ =  −  1  I −  1  V
+                                 C     RC
+                          
+                                         2
+                 Suppose that the capacitance is C = 1 farad, the inductance is  L = 1 henry , the leftmost resistor has
+                 resistance  R  = 1 Ω , and the rightmost resistor has resistance  R  = 5 Ω . If the initial voltage across
+                             2                                                1
+                 the capacitor is 12 volts and the initial current through the inductor is zero, determine the voltage V
+                 across the capacitor and the current I through the inductor as functions of time. Plot the voltage and
+                 current as functions of time. Assume current flows in the directions indicated.
+                 Solution
+
+                    The current coming into the node at a must equal the current coming out,
+
+                         I +  I +  I =  0
+                             1    2
+
+                     −  RI +  V =  0
+                        22
+                        − R  (  I −−  I  ) + V = 0
+                           2        1
+
+                        RI +   RI =   −  V
+                          2     21
+                    The voltage across the capacitor follows the law
+
+                     V =  1  q , where  q  is the charge in the capacitor.
+                         C  1          1
+                     CV =  q
+                            1
+                          ′
+                              q
+                           =
+                     (CV ) ( )   ′
+                               1
+                             ′
+                     CV′ =  q =  I
+                            1    1
+                     RI +  R I =   −  V  →   R I +  R  (CV′ =  )  −  V
+                      2      2 1              2     2
+                               V
+                     R CV′ = − −   R I
+                      2              2
+                     V′ =  −  1  V −  1  I
+                           RC       C
+                             2
+
+                    Loop 2:
+                        − V +  LI′ + R I =  0
+                                    1
+                         LI′ = V −  R I
                                    1
-                 Solution
-                    Both eigenvalues are negative, so the equilibrium point at the origin is a sink.
 
-                                                                                         2
-                    Solutions dive toward the origin to the slow exponential solution, e  t −   .
-                                                                                        
-                                                                                         1
-                                                                                        
-
-                    Solutions dive toward the origin to the fast exponential solution, e − 2t     − 1    .
-                                                                                          1  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 Exercise
-
-                 Sketch a rough approximation of a solution in each region determined by the half-line solutions. Use
-                 arrows to indicate the direction of motion on all solutions. Determine the behavior of the equilibrium
-                 point and the stability.
-
-
-                           t
-                         y () = C e t     − 1    + C e 2t      3   
-                                1    −  2   2    −  1 
-                 Solution
-
-                    Both eigenvalues are positive, so the equilibrium point at the origin is a source.</code></pre>
+                         I′ =  1 V −  R 1  I
+                             L     L</code></pre>
      	</div>
     
      </div>

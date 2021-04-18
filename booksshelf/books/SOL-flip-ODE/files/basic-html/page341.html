@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 341 - DE Solution</title>
+        <title>Page 341 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 341 - DE Solution</div>
+        <div id="content-top1">Page 341 - ODE Solution Manual</div>
         <div id="content-top2">P. 341</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,72 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 335
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                  Exercise
 
 
-                 Find the solution of the initial value problem     y − ′  y =  2te 2t  y ( ) 0 = 1
+                 Find the solution of the initial value problem   y′ −  1  y =  3sint  y ( ) 0 =  y
+                                                                    3                    0
                  Solution
 
-
-                     y′ −  y =  2te 2t
-
-                          − ∫ dt
-                        e       =  e  t −
-
-                        ∫  2te e   t  dt = ∫  2te t  dt
-                               t −
-                              2
+                     y′ −  1  y =  3sint
+                         3
 
 
-                                           t
-                                        ∫ et
-                                             d
+                          −  3 ∫ 1 dt
+                            e    =  e  t −  /3
 
-                                           t
-                          +     2t        e
-                                           t
-                          −      2        e
-
-                                          = (2t −  ) 2  e    t
-
-                                               )
-                     y ( ) t =  1  ( (2t −  ) 2 e +    t  C
-                               e  t −
-                         =  (2t −  ) 2  e  2 t  +  Ce t
+                        ∫  3e  t −  /3  sin d tt
 
 
-                            y ( ) 0 = 1
-
-                                  +
-                            1= − 2 C
-                            C  = 3
 
 
-                     y ( ) (2tt =  −  ) 2 e 2 t  +  3e t</code></pre>
+                                                  ∫ sintt
+                                                         d
+
+                                 +     3e  t −  /3     − cost
+
+
+                                 −     − e  t −  /3     − sint
+
+                                         e
+                                 +     1 − t /3
+                                       3
+
+                        ∫  3e  t −  /3  sin d tt =  ( 3cost−  −  sin  ) t e  t −  /3  −  1 ∫  e  t −  /3  sin d tt
+                                                                  3
+
+                        ∫  3e  t −  /3  sin dtt =  ( 3cost −  sin  ) t e  t −  /3  −  1 ∫  3e  t −  /3  sin dtt
+                                            −
+                                                                 9
+
+                        ( )    ∫ 3e  t −  /3  sin d t t =  ( 3cost−  −  sin  ) te  t −  /3
+                         1
+                           +
+                             1
+                         9
+                        ∫  3e  t −  /3  sin d t t =  10 ( 3cost−  −  sin  ) te  t −  /3
+                                           3
+
+
+                                                             )
+                                (
+                                     −
+                      ( ) t =  y  e t /3 3  ( 3cost −  sin  ) te  t −  /3  +  C
+                                 10
+                                −
+                          =  3  ( 3cos −  t  sint ) Ce+  t /3
+                            10
+                            y ( ) 0 =  y
+                                    0
+
+                            y =   3  ( ) 3 −  +  C
+                             0   10
+                            C  =  y +  9
+                                  0  10
+
+
+                      ( ) t = y  3  (3cost −  sin  ) t +  (  y +  9 ) e t /3
+                            10                   0   10</code></pre>
      	</div>
     
      </div>

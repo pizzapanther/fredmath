@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2120 - DE Solution</title>
+        <title>Page 2120 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2120 - DE Solution</div>
+        <div id="content-top1">Page 2120 - ODE Solution Manual</div>
         <div id="content-top2">P. 2120</div>
      </div>
      <div id="content-middle">
@@ -155,87 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2102 | S O LU TI O N
 
 
-                   ∞
-                 ∑        nr
-                           +
-              y =     ax
-                       n
-                  n= 0
-                   ∞
-                  ∑              nr +− 1
-                            )
-              y′ =    (n ra x
-                         +
-                              n
-                  n= 0
-                    ∞
-                  ∑                        nr +− 2
-                         +
-                            )( +−
-              y′′ =    (nr nr         ) 1 a x
-                                         n
-                   n= 0
-              x y′′ + 2  ( x +  2  2xy′ − )  2y =  0
+
+                 n   2 →=  a =  −  1 a =  −  1 a
+                            2     2  1    6  0
+                 n   3 → =  a =  −  a =  −  1  a
+                            3      2    6  0
+
+                 n   4 →=  a =   5  a =  −  5  a
+                            4   12  3     72  0
+                                 
 
 
-                                                    2
-              x 2 ∑  ∞  (n r n r+  )( +−  ) 1 ax nr +− 2  + ( x +  2x ) ∑  ∞  (n r ax+  )  n  nr +− 1 − 2 ∑  ∞  ax nr +  =  0
-                                                                                         n
-                                      n
-                 n= 0                                      n= 0                    n= 0
-              ∑  ∞  (n r n r     ) 1 ax nr +  + ∑  ∞  (n r ax nr ++ 1 + ∑  ∞  ( 2 n r ax nr +  −  2 ∑  ∞  ax nr +  = 0
-                                                      )
-                                                                               )
-                                                                            +
-                        )( +−
-                     +
-                                                   +
-                                                                                                 n
-                                                         n
-                                    n
-                                                                                 n
-              n= 0                           n= 0             ∞     n= 0                    n= 0
-               ∞
-              ∑       (nr nr     ) 1 +  ( 2 nr −   +  ) 2 a x nr +  + ∑  (nr  ) 1 a n− 1 x nr +  =  0
-                      +
-                                                                   +−
-                         )( +−
-                                                 
-                                                    n
-              n= 0                                           n= 1
-              ( r +  2  r − 2 a +  )  0 ∑  ∞   (nr nr  ) 1 −   n  nr +  + ∑  ∞  (nr  ) 1 a n− 1 x n r +  =  0
-                                      +
-                                                      2 a x
-                                                                         +−
-                                         )( ++
-                                  
-                                                       
-                              n= 1                                 n= 1
-                          0 ∑
-                        )
-              ( r + r − 2 a +  ∞       ( ( nr nr  1 −    n   (nr −    ) 1 a n− 1   x nr +  =  0
-                2
-                                           )( ++
-                                                                  +
-                                                     ) ) 2 a +
-                                        +
-                              n= 0
-                      0
-             For   n =
-                               )
-                     ( r +−   2 a =
-                       2
-                          r
-                                     0
-                                 0
+              y  () =  x  a  ( 1+  1 x −  1  x −  2  1 x −  3  5  x −  4   )
+               1       0     3    6      6     72
 
-                     ⇒    r = 1, 2   √
-              ( (nr+  ) +  2  (nr+  ) 2 a−  )    n  +  (nr+  −  ) 1 a n− 1  =  0
-              a = −        nr+−  1       a
-               n     (nr+−  1 )(nr++    ) 2  n− 1
-                 = −    1    a
-                     nr++   2 n− 1
-                     r = 1</code></pre>
+                     r =  5
+                         2
+
+                 b =     2n +  2  b
+                  n      (    5 )  n− 1
+                      2nn +   2
+
+                     =   2n +  2  b
+                       n (2n +  ) 5  n− 1
+
+
+                 n   1 →=  b =  4 b
+                            1   7  0
+                 n   2 →=  b =  1 b =  4  b
+                            2   3  1  21  0
+
+                 n   3 →=  b =   8  b =  32  b
+                            3   33  2   693  0
+                 n   4 →=  b =   5  b =   80  b
+                            4   26  3   9,00 9  0
+                                    
+
+                    =
+              y  () bx    5/2     1+  4  x +  4  x +  2  32  x +  3  80  x +  4     
+                 x
+               1       0        7     21      693     9,009         
+
+              yx ) =  a  ( 1+  1  x −  1  x −  2  1 x −  3  5  x −  4  )  +  bx 5/2 ( 1+  4  x +  4  x +  2  32  x +  3  )
+               (
+                                                                                    9
+                      0    3     6     6      72            0         7    21      6 3
+
+
+          Exercise
+
+
+          Find the Frobenius series solutions of   xy′′ +  (x −  ) 6 y′ −  3y =  0
+          Solution
+
+              xxy′′ +  x (x −  ) 6 y′ −  3xy =  0
+
+
+              x y′′ +  2  ( x −  2  6x y′ − )  3xy =  0
+                  ( )        3
+                      6
+              y′′ +  1−  x  y′ −  x  y =  0
+                                                       3
+                                              qx
+             That implies to  ( ) 1px = −  6   and  ( ) = − .
+                                       x               x</code></pre>
      	</div>
     
      </div>

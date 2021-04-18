@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1251 - DE Solution</title>
+        <title>Page 1251 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1251 - DE Solution</div>
+        <div id="content-top1">Page 1251 - ODE Solution Manual</div>
         <div id="content-top2">P. 1251</div>
      </div>
      <div id="content-middle">
@@ -152,59 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2. 7 − E ul e r ’ s  &   R un ge - K ut t a  M e t ho ds  | 1241
+    <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1241
 
 
 
-                           5 5e
-                     y ( ) t = −  t −
-                 Exercise
 
+                             =  −  R C ±  R C −  2  4L
+                                      2L C
 
-                 Given:  y′ +  2xy =  x  y (0) 8
-                                           =
-                 a)  Use a computer and Euler's method to calculate three separate approximate solutions on the
-                                 ]
-                    interval [0, 1 , one with step size  h =  0.2 , a second with step size  h =  0.1, a second with step size
-                     h = 0.05 .
-                 b)  Use the appropriate analytic to compute the exact solution
-                 c)  Plot the exact solution and approximate solutions as discrete points.
+                     q     A cos t ω =  B sin t ω +
+                       p
+                        q′    −  ω=  A sin t ω +  ω  B cos t
+                                                 ω
+                          p
+                        q′′   −  ω=  2 A cos t ω −  ω  2 B sin t
+                                                    ω
+                          p
+                      ω −  2 LA cos tω  ω −  2 LB sin tω  ω −  RA sin tω  ω +  RB cos tω  +  1  A cos tω  +  1  B sin tω  =  E  sin tω
+                                                                            C           C             0
 
-                 Solution
+                             cos tω  ( −  ω  2 L +  1 ) A ω  +  RB =  0
+                                              C
+                            
+                             sin t ω  −  ω  RA +  (  1  −  ω  2 L B = )  E
+                                              C              0
 
-                                  x           y
-                                 0.0     8.00000000
-                                 0.2     8.00000000
-                                 0.4     7.40000000
-                                 0.6     6.29600000
-                                 0.8     4.90496000
-                                 1.0     3.49537280
-                                  x           y
-                                 0.0     8.00000000
-                                 0.1     8.00000000
-                                 0.2     7.85000000
-                                 0.3     7.55600000
-                                 0.4     7.13264000
-                                 0.5     6.60202880
-                                 0.6     5.99182592
-                                 0.7     5.33280681
-                                 0.8     4.65621386
-                                 0.9     3.99121964
-                                 1.0     3.36280010
+                                 1  − ω  2 L  ω  R
+                            ∆=  C
+                                  −  ω  R  1  −  ω  2 L
+                                           C
 
+                              =  1  −  2ω 2 L  +  ω  42  ω  2 2
+                                                       R
+                                                L +
+                                C 2    C
+                              =  1  ( 12ω−  2 LC ω  +  42 2  ω  2 2 2 )
+                                                            R C
+                                                  L C +
+                                C 2
+                                       0     ω R                    1  − ω 2 L  0
+                                                                                            )
+                                ∆  =                =  ω RE   ∆  =  C            =  (  1  − ω 2 LE
+                                 A    E    1  − ω 2 L     0    B                    C          0
+                                       0   C                         − ω R   E 0
 
-                                  x            y           x            y
-                                 0.0     8.00000000
-                                 0.05    8.00000000       0.55     6.16870319
-                                 0.10    7.96250000       0.60     5.85692451
-                                 0.15    7.88787500       0.65     5.53550904
-                                 0.20    7.77705688       0.70     5.20820096
-                                 0.25    7.63151574       0.75     4.87862689
-                                 0.30    7.45322784       0.80     4.55022987
-                                 0.35    7.24463101       0.85     4.22621148
-                                 0.40    7.00856892       0.90     3.90948351
-                                 0.45    6.74822617       0.95     3.60262999
-                                 0.50    6.46705599       1.00     3.30788014</code></pre>
+                                             2
+                                        ω RC E
+                         A =                    0
+                                                       R C
+                                            L C +
+                            12ω  −  2 LC ω  +  4 2 2  ω  2 2 2
+                                     C (1 ω−  LC ) E
+                         B =                       0
+                            12   ω  2 LC ω  +  4 2 2  ω  2 2 2
+                                                       R C
+                              −
+                                            L C +
+                    Therefore, the steady-state charge is:
+                                           CE
+                     q  ( ) t =               2               ( RCω  cos t  (1 ω +  −  LC )sin tω  )
+                                                                       ω
+                       p     12   ω  2 LC ω  +  4 2 2  ω  2 2 2
+                               −
+                                                        R C
+                                             L C +
+                    The steady-state current is:     i  ( ) t =  q′  ( ) t
+                                                      p        p
+                                          CE
+                     i  ( ) t =               2              ( −  ω 2 RC sin t ω +  ( ωω 2 LC ) cos t ω )
+                                                                                 −
+                      p      12ω  −  2 LC ω  +  4 2 2  ω  2 2 2
+                                            L C +
+                                                       R C</code></pre>
      	</div>
     
      </div>

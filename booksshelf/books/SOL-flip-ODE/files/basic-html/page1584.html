@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1584 - DE Solution</title>
+        <title>Page 1584 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1584 - DE Solution</div>
+        <div id="content-top1">Page 1584 - ODE Solution Manual</div>
         <div id="content-top2">P. 1584</div>
      </div>
      <div id="content-middle">
@@ -155,11 +155,42 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1570 | S O LU TI O N
 
 
+             By Kirchhoff’s second law:
+
+                 I =  I +  I
+                      1   2
+             From loop 1:
+
+                   E
+                 −+    R I +  LI′ =  0
+                        1     11
+
+                 LI′ =  E − R I
+                  11          1
+                       =  E −  RI +  (    I  )
+                              1  1    2
+
+                       =  −  RI −  RI +  E
+                           11     1 2
+
+             From loop 2:
+                   E
+                 −+    RI +  R I +  L I′ =  0
+                        1     22      22
+
+                 L I′ =  −  RI −  R I +  E
+                   22       1     22
+                        =  −  R I + (  I  ) −  RI +    E
+                            1   1   2     22
+                        =  −  RI −  RI −  R I +  E
+                            11     1 2     2 2
+
+
           Exercise
 
-          Two particles each of mass m are attached to a string under (constant) tension T. Assume that the
-          particles oscillate vertically (that is, parallel to the y-axis) with amplitudes so small that the sines of
-          the angles shown are accurately approximated by their tangents.
+          Two tanks are connected by two pipes. Each tank contains 500 gallons of a salt solution. Through on
+          pipe solution is pumped from the first tank to the second at 1 gal/min. Through the other pipe,
+          solution is pumped at the same rate from the second to the first tank.
 
 
 
@@ -173,52 +204,22 @@ function MM_swapImage() { //v3.0
 
 
 
+           Show the salt content in each tank varies with time.
 
-
-
-
-
-           Show that the displacement  y  and  y  satisfy the equations
-                                       1       2
-
-               ky′′ =   1  −  2y +  1  y 2   mL
-                                   where  k =  T
-                 ky′′ =  y − 2y 2
-                       1
-                  2
           Solution
-             For the first mass:
 
-                 my′′ =  T  sin θ −  T sin θ +
-                    1          1         2
-                         T  tanθ≈−  T  tanθ +
-                               1         2
-                           y      y −  y
-                 my′′ =  −  T  1  +  T  2  1
-                    1       L        L
-
-                  L  my′′ =  −  L T  y 1  +  L T  y −  y 1     where  k =  mL
-                                          2
-                 T    1    T    L    T      L                   T
-                 ky′′ =  −  y +  y −  y
-                   1      1    2    1
-                      =  −  2 y +  y
-                           1    2
-
-             For the second mass:
-                 my′′   −  T  sinθ =  T  sinθ +
-                    2           2        3
-                         T  tan θ ≈−  T  tan θ +
-                               2         3
-                            y −  y      y
-                 my′′ =  −  T  2  1  +  T  2
-                    2          L        L
-                  L  my′′ =  −  L T  y −  y 1  +  L T  y 2     where  k =  mL
-                                 2
-                 T    2     T      L      T    L                       T
-
-                 ky′′ =  −  y +  y −  y
-                    2     2    1    2</code></pre>
+              xt           ()
+                ()  and   xt  represent the salt content.
+               1          2
+                                     x            x
+             Rate out = 1 gal / min   ×  1  lb  / gal =  1  lb / min
+                                    500          500
+                                   x            x
+             Rate in = 1 gal / min   ×  2  lb  / gal =  2  lb / min
+                                   500          500
+              dx 1                       x 2   x 1
+                             −
+               dt  =  Rate out    Rate in =  500  −  500</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1270 - DE Solution</title>
+        <title>Page 1270 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1270 - DE Solution</div>
+        <div id="content-top1">Page 1270 - ODE Solution Manual</div>
         <div id="content-top2">P. 1270</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1260 | S O LU TI O N
 
 
-                 ∫∫         tdt
-                    xdx =
+
+                                      ∫ cos x  dx
 
 
-                    2
-                 1  x =  1 t + C
-                           2
-                 2      2
-                       2
-                   2
-                 x =  t +  2C
-                       2
-                 x =  t +  2C
-                         x ( ) 0 =  2C
+                                 x
+                          +     e       sin x
+                                 x
+                          −     e      − cos x
+                                 x
+                          +     e
 
-                        1=   2C
-                        12C
-                          =
-                        C =  1
-                             2
+                        ∫  e x cos x dx e x  (sin x +  cos  ) x −  ∫  e x cos x dx
+                                      =
 
-                          2
-                 x ( ) t =  t + 1
+                          ∫            =    (sin x +  cos  ) x
+                        2 e  x cos x dx e x
 
 
-          Exercise
+                     ∫ e x cos x dx =  1 x  (sin x +  cos  ) x
+                                      e
+                                    2
+                       (
+                                              )
+                          e
+              zx     11 x    (sin x +  cos  ) x +  C
+               ( ) =
+                    e x  2
+                  =  1 sin x +  1 cos x Ce − x
+                                   +
+                    2        2
+                     z ( ) 0 =  1  +  C =  1
+                            2
+                     C  =  1
+                         2
 
 
-                                                          =
-          Consider the initial value problem  y′ =  t  y (0) 1
-                                                y 2
-                                                                                               ]
-          Use Runge-Kutta method with step size h =  0.04  to sketch solution on the interval [0, 2
-          Solution
+              z ( ) x =  1 − x  +  1 cos x +  1 sin x
+                      e
+                    2       2        2
 
 
-                          (
-                             2
-                y () 3 1/3 1 t +  1 ) 1/3
-                    =
-                  t
-                           2
-                                 3
+                     Runge-Kutta 2nd Order
+
+                      t         Approx.           Exact          Difference
+                  --------------------------------------------------------
+                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
+                  0.20   |   0.99800666   |   0.99873333   |   0.00072667
+                  0.40   |   0.98887689   |   0.99039969   |   0.00152281
+                  0.60   |   0.96709749   |   0.96939486   |   0.00229738
+                  0.80   |   0.92871746   |   0.93169588   |   0.00297842
+                  1.00   |   0.87131508   |   0.87482637   |   0.00351128
+
 
                      Runge-Kutta 4th Order
-                   t           Approx.          Exact         Difference
-                  -------------------------------------------------------------
+
+                      t         Approx.           Exact          Difference
+                  --------------------------------------------------------
                   0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.04   |   1.00079936   |   1.00079936   |   -0.00000000
-                  0.08   |   1.00318981   |   1.00318981   |   -0.00000000
-                  0.12   |   1.00714877   |   1.00714877   |   -0.00000000
-                  0.16   |   1.01263957   |   1.01263957   |   -0.00000000
-                  0.20   |   1.01961283   |   1.01961282   |   -0.00000000
-                  0.24   |   1.02800822   |   1.02800822   |   -0.00000000
-                  0.28   |   1.03775651   |   1.03775651   |   -0.00000000
-                  0.32   |   1.04878166   |   1.04878166   |   -0.00000001
-                  0.36   |   1.06100297   |   1.06100297   |   -0.00000001
-                  0.40   |   1.07433708   |   1.07433707   |   -0.00000001
-                  0.44   |   1.08869975   |   1.08869974   |   -0.00000001
-                  0.48   |   1.10400743   |   1.10400742   |   -0.00000001
-                  0.52   |   1.12017855   |   1.12017854   |   -0.00000001
-                  0.56   |   1.13713450   |   1.13713449   |   -0.00000001</code></pre>
+                  0.20   |   0.99873272   |   0.99873333   |   0.00000061
+                  0.40   |   0.99039822   |   0.99039969   |   0.00000147</code></pre>
      	</div>
     
      </div>

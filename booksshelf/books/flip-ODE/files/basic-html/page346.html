@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 346 - Differential Book</title>
+        <title>Page 346 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 346 - Differential Book</div>
+        <div id="content-top1">Page 346 - ODE Book</div>
         <div id="content-top2">P. 346</div>
      </div>
      <div id="content-middle">
@@ -152,15 +152,13 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.7 - P h a se  P l a n e   P o r t r a i t s &  A p p l i c a t i o n s  | 331
-
-               48.  Two large tanks,  each  holding 100  L  of liquid, are interconnected by  pipes, with the liquid
-                     following from tank A into tank B at a rate of 1 L/min and from B to into A at a rate of 4 L/min.
+    <pre style="white-space:pre-line"><code>3. 5 - I nt r o du c t i on &  B a s i c   T h e or y o f   L i n e a r  S ys t e m s  | 333
 
 
+                 3.5-6  Example of a parallel LRC circuit
 
 
-
+                 Consider the parallel LRC circuit as shown below
 
 
 
@@ -168,37 +166,34 @@ function MM_swapImage() { //v3.0
 
 
 
-                     The liquid inside each tank is kept well stirred. A brine solution flows into tank A at a rate of 4
-                     L/min. The diluted solution flows out the system from tank A at 4 L/min. If, initially, tank A contains
-                                                                                                                 0
-                     pure water and tank B contains 20 kg of salt, determine the mass of salt in each tank at time t ≥ .
 
-               49.  Two 1,000-liter tanks are with salt water. Tank A contains 800 liters of water initially containing
-                     20 grams of salt dissolved in it and Tank B contains 1,000 liters of water initially containing 80
-                                                                                   1
-                     grams of salt dissolved in it. Salt water with a concentration of     g/ L  of salt enters Tank A at a
-                                                                                   2
 
-                     rate of  4  L/h   r . Fresh water enters Tank B at a rate of  7  L/h . Through a connecting pipe water
-                                                                                r
-                     flows from Tank B into Tank A at a rate of 10  L/h   r . Through a different connecting pipe 14  L/h
 
-                                                                                                                 r
-                     flows out of Tank  A  and  11  L/h   are drained out of the pipe (and hence out of the system
 
-                                                      r
-                     completely) and only 3  L/h   r  flows back into Tank B.
-                       Find the amount of salt in each tank at any time.
 
-               50.  Many physical and biological systems involve time delays. A pure time delay has its output the
-                     same as its input but shifted in time. A more common type of delay is pooling delay.  Here the
-                     level of fluid in tank B determines the rate at which fluid enters tank A. Suppose this rate is given
-                           ( ) (
-                                          ( ))
-                     by  R t =  α  V V t      , where α and V are positive constants and V  ( ) t  is the volume of fluid
-                                     −
-                          1             2                                                2
-                     in tank B at time t.
+
+
+
+                 Let V be the voltage drop across the capacitor and I current through the inductor.
+
+                 The current is described by the equation:   dI  =  V
+                                                             dt   L
+
+                 The voltage is described by the equation:   dV  =  −  1  −  V
+                                                             dt     C    RC
+
+                 Therefore, we can rewrite the equation as system equations
+
+                                  I′ =  1 V
+                                     L
+                                      1     1
+
+                                 V′ =   −  C  −  RC V
+
+
+                 Example 3
+
+                 Find a first-order system the models the circuit below
 
 
 
@@ -216,13 +211,15 @@ function MM_swapImage() { //v3.0
 
 
 
+                 Solution
+                    Using Kirchhoff’s current law:   I =  I +  I
+                                                          1   2
+                    Kirchhoff’s voltage law applied to the loop containing the source and the inductor:
 
-
-                   a)  If the outflow rate  R  from tank B is constant and the flow rate  R  from tank A into tank B is
-                                           3                                           2
-                       R  ( ) t =  KV  ( ) t  is the volume of fluid in tank A at time t, then show that this feedback system
-                         2        1
-                       is governed by the system</code></pre>
+                     E =  RI +  LI′
+                                1
+                      =  R I + (  1  I 2 ) +  LI′
+                                        1</code></pre>
      	</div>
     
      </div>

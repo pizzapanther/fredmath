@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 732 - DE Solution</title>
+        <title>Page 732 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 732 - DE Solution</div>
+        <div id="content-top1">Page 732 - ODE Solution Manual</div>
         <div id="content-top2">P. 732</div>
      </div>
      <div id="content-middle">
@@ -157,62 +157,72 @@ function MM_swapImage() { //v3.0
 
           Exercise
 
-          When the values of a solution to a differential equation are specified at two different points, these
-          conditions. (In contrast, initial conditions specify the values of a function and its derivative at the
-          same point). The purpose of this is to show that for boundary value problems there is no existence-
-          uniqueness theorem. Given that every solution to
 
-                         y′′ +  y =  0    is of the form     y ( ) t =  c  cost + c  sint
-                                                                    1        2
-          Where  c  and c  are arbitrary constants, show that
-                  1       2
-             a)  There is a unique solution to the given differential equation that satisfies the boundary
-                                            π
-                 conditions  ( ) 0y  =  2 and  y ( )  = 0
-                                            2
-                                                                                        0
-             b)  There is no solution to given equation that satisfies  ( ) 2y  =  0 and  ( ) =
-                                                                                 y π
-             c)  There are infinitely many solution to the given DE equation that satisfy  ( ) 0y  =  2 and
+          Find a particular solution satisfying the given initial conditions   y ( ) 3  −  3y′′ +  4y′ −  2y =  0
 
-                   ( ) = −
-                 y π      2
+                                                                           x
+                                        0
+          y ( ) 0 = 1,  y′ ( ) 0 =  0,  y′′ ( ) 0 =     y 1  ( ) x = e x ,  y 2  ( ) x = e x cos ,  y 3  ( ) x = e x sin x
           Solution
-                   2
-             a)  λ +  10
-                        =
-                 λ =     i ±
 
-                    t
-                 y ( ) =  c 1  cost + c 2  sint
+                   e x      e x  cos x        e x sin x
 
-                     y ( ) 0 =  2 →  2 =  c 1
-
-                        π
-                     y ( ) =  0 →    0 = c
-                        2
-                                          2
-                             t
-                 y ( ) t =  2cos
-
-             b)  ( ) 0y  =  2 →  2 =  c
-                                     1
-                 y ( ) 0π =  →   0 = − c
-                                       1
-                 This system is inconsistent, so there is no solution satisfying the given boundary.
+                                                        x
+             W =   e x  (cos x −  sin  ) x e x  (sin x +  cos  ) x e
+                   e x     − 2e x sin x      2e x cos x
 
 
-                 y
-             c)  ( ) 0 =  2 →    2 =  c
-                                     1
-                 y ( ) π = − 2 →   −= −  c
-                                    2
-                                          1
-                 y ( ) t =  2cost +  c  sint
-                                 2
+                    2cos x −  2  sin cos x +  x  cos x −  2  2sin x −  2  sin cos x 
+                                                              x
+                =                                                     e 3x
+                       2        2                      2           
+                    +  sin x +  2sin x +  2sin cos x − x  2cos x   
+                =  e 3x  ≠  0
 
-                 Which has infinitely many solutions given c  is an arbitrary constant.
-                                                            2</code></pre>
+
+             ∴   y  , y  , and y  are linearly independent.
+                 1   2        3
+
+
+              yx      1  x  +  C e x  cos x C e+  3  x sin x        y ( ) x =  C y  ( ) x +  C y  ( ) x +  C y  ( ) x
+               ( ) C e=
+                              2
+                                                                                                 3 3
+                                                                            11
+                                                                                      2 2
+                 y ( ) 0 = 1
+                 C +  C =   1
+                   1    2
+                                                                    x
+              yx =  ′ ( ) C e +  1  x  C 2  (cos x −  sin  ) x e +  x  C 3  (sin x +  cos  ) x e
+
+                 y′ ( ) 0 =
+                         0
+                 C +  C +   C =  0
+                   1    2    3
+
+               ′′
+              yx       1  x  −  2C e x sin x +  2C e x cos x
+                ( ) C e=
+                                2
+                                             3
+                 y′′ ( ) 0 =
+                         0
+                 C +  2C =   0
+                   1     3
+                        C +  C =  1
+                         1     2
+                     
+                      C +  1  C +  2  C =  3  0
+                     
+                       C +  1  2C =  3  0
+                     
+                                1 1   0            1  1  0
+
+                                                             2
+                            ∆=  1 1   1 = 1 ∆ =    0  1  1 =
+                                               1
+                                1 0    2           0  0  2</code></pre>
      	</div>
     
      </div>

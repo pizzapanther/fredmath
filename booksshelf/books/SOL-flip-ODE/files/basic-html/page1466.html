@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1466 - DE Solution</title>
+        <title>Page 1466 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1466 - DE Solution</div>
+        <div id="content-top1">Page 1466 - ODE Solution Manual</div>
         <div id="content-top2">P. 1466</div>
      </div>
      <div id="content-middle">
@@ -155,81 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1452 | S O LU TI O N
 
 
+               2
+              s W  ( ) s −  sw ( ) 0 −  w′ ( ) 0 +  8sW  ( ) 8ws −  ( ) 0 +  25W  ( ) s =  0
+                 y π  ( ) =  w ( ) 0 =  0,  y π  ′ ( ) =  w ( ) 0 =
+                                                  6
+              ( s + 8s +  25 W s −    0
+                          )
+                2
+                              ( ) 6 =
+             W  ( ) s =      6
+                      (s +  ) 4  2  − 16 +  25
+
+                                         ( )
+                       ( )} £
+              £  −  1 {W s  =   −  1        2 3      
+                                     (s +   ) 4  2  +  9  
+
+
+              w ( ) t =  2e − 4t sin3t        y ( ) t =  w (t π−  )
+
+              y ( ) t =  2e −  ( 4 t π−  ) sin  ( 3 t π−  )
+
+                                                                             0
+                        sin (3t − 3π  ) sin3 cos3t  π =  cos3 sin3π −  t  = sin3t −−
+                                                                       ( ) 1
+                                    = − sin3t
+
+                   = − 2e −  ( 4 t π−  ) sin3t
+
+
           Exercise
 
 
-                                                                                    0
-                                                                            y′
-          Solve using the Laplace transform:   y′′ + ′ ′  y =  e t  ,    y ( ) 0 =  y′  ( ) 0 = ′ ( ) 0 =
+          Solve using the Laplace transform:     y′′ + 9y = 2sin 2;t  y  0 ( ) = 0,  y′ (0) = − 1
+
           Solution
-              £  {y′′′ +  y′ =  } £ { }
-                                t
-                               e
-
-                        2
-                                                                 1
-               3
-              s Y ( ) s −  s y ( ) 0 −  sy′ ( ) 0 −  y′′ ( ) 0 +  sY  ( ) s −  y ( ) 0 =  s − 1
-              ( s +  3  sY ( ) s =  s − 1
-                    )
-                              1
-             Y  ( ) s =     1        =  A  +  B  +  Cs +  D
-                                                   2
-                      ( ss −  ) 1 s +  (  2  1 )  s  s − 1  s + 1
+              £  ( y′′ +  9  ) y £=  (2sin 2t )
 
 
-                 1 =  As −  3  As +  2  As −  A +  Bs +  3  Bs +  Cs −  3  Cs +  2  Ds −  2  Ds
-                        s 3  A B C =    0     B C =   1
-                                                 +
-                               +
                                    +
-                       
-                        s   2  −  A C +  D =  0 −  C +  D =  −  1
-                                −
-                       
-                                                 −
-                                   −
-                               +
-                         s  A B D =     0     B D =   1
-                         0
-                                  A
-                        s      −=   1       →  A = − 1
-                       B =  1  C =  1  D = − 1
-                           2       2        2
-              £   −  1 {Y s  =    −  1     −+  1 B  +  1  s  −  1  1    
-                      ( )} £
-                                     1
-                                    s   2 s − 1  2  s +  2  1  2  s +  2  1
-                                            t
-                           e +
-              y ( ) t =  −+  1 t  1 cost −  1 sin
-                      1
-                         2     2        2
+              s Ys − 2  ( ) sy (0) −  y′ (0) 9 ( ) =  Ys  2  2  2    y (0) = 0  y′ (0) = − 1
+                                               2
+                                              s +  2
+              ( s + 9 Ys  +       4
+                    )
+                2
+                       () 1 =
+                                 2
+                               s +  4
+             Ys             4        −   1
+               () =
+                    ( s +  2  9 s +  )(  2  4 )  s + 9
+                                        2
+                                4        =   A    +   B
+                         ( s +  2  9 s +  )(  2  4 )  s +  2  9  s +  2  4
 
 
-          Exercise
+                            4 =  ( A Bs+  )  2  +  4A +  9B
 
-          Solve using the Laplace transform:  2y ( ) 3  +  3y′′ −  3y′ −  2y =  e  t −  ;  y ( ) 0 =  0,  y′ ( ) 0 =  0,  y′′ ( ) 0 =  1
+                                  A +   B =  0
+                                
+                                 4A +  9B =  4
 
-          Solution
-              £ { 2y ( ) 3  +  3y′′ −  3y′ −  2y £=  } { }
-                                                t −
-                                             e
-
-                          2
-                                                                                                ( )
-              2s Ys −  3  ( ) 2s y ( ) 0 −  2sy′ ( ) 0 −  2y′′ ( ) 0 + 3s Ys −  2  ( ) 3sy ( ) 0 −  3y′ ( ) 0 −  3sYs +  ( ) 3y ( ) 0 −  2Ys
-                    =  1
-                   s + 1
-                                )
-              ( 2s + 3s − 3s −  2 Ys       s + 1             y ( ) 0 =  y′ ( ) 0 = 0,  y′′ ( ) 0 = 1
-                                             1
-                      2
-                 3
-                                  ( ) 2−=
-                                 ) ( ) =
-              (s −  12s + )(  1 )(s +  2 Ys  1  +  2
-                                         s + 1</code></pre>
+                            A =  −  4  B =  4
+                                  5      5</code></pre>
      	</div>
     
      </div>

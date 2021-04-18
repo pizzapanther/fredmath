@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1060 - DE Solution</title>
+        <title>Page 1060 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1060 - DE Solution</div>
+        <div id="content-top1">Page 1060 - ODE Solution Manual</div>
         <div id="content-top2">P. 1060</div>
      </div>
      <div id="content-middle">
@@ -155,77 +155,66 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1050 | S O LU TI O N
 
 
+                           (
+                      =  −  11 e 3x  +  e − x )
+                         43
 
-                 2 ∫          x    x                        v 2  ( ) x = ∫  W
-               v          cos tan  dx                                  yg ( ) x  dx
-                                                                        1
-                   ( ) x =
-                        ∫    x
-                          sin  dx
-                      =
 
-                      = − cos x
+               v   ( ) x = ∫  e − x sinh 2x  dx                     v  ( ) x = ∫  yg ( ) x  dx
+                                                                               1
+                 2              2                                    2          W
 
-                                                      x
-              y  =  ( ln sec x−  +  tan x +  sin x )cos x −  cos sin x    y  = uy + u y
-               p                                                     p    11     2 2
-                 =  −  (cos x )ln sec x +  tan
-                                        x
-             The general solution:
+                      =  1 ∫ e −  x ( e 2x  − e −  2x ) dx
+                        4
 
-                                 +
-                                                                x
-                 y ( ) x =  C 1  cos xC 2  sin x −  (cos x )ln sec x + tan
+
+                              x
+                      =  1 ∫ ( e −  e − 3x ) dx
+                        4
+                            x
+                                 e
+                      =  1 ( e +  1 − 3x )
+                        4      3
+                                                             x
+                                              e +
+              y  =  ( −  1  e 3x  −  1 −  e  x ) e −  x  +  ( 1 x  1 −  e  3x ) e    y  = uy + u y
+               p      12      4             4      12                       p    11     2 2
+                 =  −  1  e 2x  −  1 −  e  2x  +  1 e 2x  +  1 −  e  x
+                     12       4        4      12
+
+                 =  −  1 −  e  2x  +  1 e 2x  +  1 −  e  x
+                     4        6      12
+
+             The general solution:     y ( ) Cex =  −  x  +  C e −  x  1 −  e  2x  +  1 e 2x  +  1 −  e  x
+                                               1        2     4        6       12
 
 
           Exercise
 
-          Find the general solution    y′′ +  y =  sin x
+          Find the general solution    y′′ −  y =  x
 
           Solution
                                         2
-                                            10 → λ
-             Characteristic Eqn.:      λ + =                =     i ±
-                                                        1,2
-                           +
-              y =  C  cos xC    sin x
-               h    1         2
-                   cos x   sin x
+                                            10
+             Characteristic Eqn.:      λ −=
+              λ   =  ±  1
+               1,2
+                                x
+              y =  Ce  − x  +  C e
+               h    1        2
+
+                   e − x  e x
              W =
-                   − sin x  cos x
+                   − e − x  e x
 
-                      2
-                              2
-                =  cos x + sin x
-                = 1 ≠  0
+                =  2 ≠  0
 
+
+                             x
                                                                     ()
-                              2
-               v  ( ) x = − ∫ sin x  dx              v  ( ) x = − ∫  y gx  dx
+               v  ( ) x = − ∫ ex  dx                 v  ( ) x = − ∫  y gx  dx
                                                                   2
-                 1                                    1            W
-                       =  −  1 ∫ (1 cos2x−  ) dx
-                          2
-
-
-                       =  −  1 ( x −  1 sin 2x )
-                          2      2
-
-
-                                   x
-                                                                1
-               v   ( ) x = ∫ cos sin  dx             v  ( ) x = ∫  yg ( ) x  dx
-                              x
-                 2                                    2          W
-                      =  1 ∫ sin2  dx
-                                x
-                        2
-                                x
-                      = − 1 cos2
-                         4
-                                                 x
-              y  =  ( −  1  x +  1 sin 2x ) cos x −  1  cos2 sin x    y  = uy + u y
-               p      2    4               4                         p    11     2 2</code></pre>
+                 1           2                        1            W</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 425 - DE Solution</title>
+        <title>Page 425 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 425 - DE Solution</div>
+        <div id="content-top1">Page 425 - ODE Solution Manual</div>
         <div id="content-top2">P. 425</div>
      </div>
      <div id="content-middle">
@@ -154,66 +154,73 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>1. 5 − M i xi ng P r ob l e m s    | 419
 
-                        ∫  dy  = − 20 ∫  dt
-                                  1
-                            y
+                     dy  =  Rate in −   Rate out
+                     dt
 
-                                    +
-                        ln y = −  1  t C
-                                20      1
+                    When the maximum amount of pollution is reached:
+                     dy                            y         
+                       1  =     5  ounces       3  gal     −    1  ounces       3  gal   
+                      dt       gal      hr        800  gal       hr  
 
-                         y ( ) t =  Ce  t −  /20
+                     y′ = 15 −  3  y   0 tt        ( ) 1
+                                         ≤≤
+                      1       800  1          m
+                    After the maximum amount of pollution is reached:
 
-
-                                y ( ) 00 =
-
-                                C =  25
-
-                          ( ) =
-                         yt    25e  t −  /20
-
-
-                    b)  ( ) 25yt =  e  t −  /20  = 15
-
-                        e  t −  /20  =  3
-                                  5
-                                   3
-                        −  t  =  ln ( )
-                          20       5
-                                  ( )
-                                   3
-                        t = − 20ln  5
-                          ≈ 10.2 min
-
-                               ( )
-                    c)  lim yt =     lim 25e  t −  /20
-                        t→∞         t→∞
-                                 =  0
-
-
-                 Exercise
-
-                                                                                                      0
-                 A 500-gallon tank is full of a concentrate solution containing 50 lb  . Starting at time t = , distilled
-                 water is admitted to the tank at the rate of 10 gal  / min , and well-stirred mixture is withdrawn at the
-                 rate 15 gal  / min .
-                      a)  At what time will the tank be empty?
-                      b)  Find the amount of concentrate in the solution as a function of t.
-
-                 Solution
-                    a)  ( ) 500V t =  +  (10 15 t−  )
-
+                     dy                   y        
+                       2  = ( )( ) 3 −      2        ( ) 4
+                            0
+                                            (
+                      dt              800 2 tt    ) 
+                                               −
+                                         −
+                                                m 
+                                                    t t
+                     y′ = −       2       y    t  ≤≤        ( ) 2
+                      2     400 −  ( tt m )  2  m       e
                                     −
-                              =  500 5t
-                                 −
-                        V =  500 5t =  0
-                        t = 100  min
+                     ( ) 1 →  y′ +  3  y =  15
+                              1   80   1
+                                   0
+                            800 ∫  3  dt  3  t
+                            e     =  e 800
+                        ∫ 15e 800 t  =  4,000e 800 t
+                               3
+                                             3
 
 
-                        It will take 100 minutes to empty the tank.
-                                   15y
-                    b)  Rate out =
-                                    500</code></pre>
+
+                              −  3  t      3  t     
+                     y  ( ) t =  e  800    4,000e 800  +  C 
+                      1                           1 
+                                                    
+                                         −  3  t
+                                   +
+                           =  4,000 C 1 e  800
+
+                                y 1  ( ) 0 =
+                                        2
+                                         +
+                                2 =  4,000 C
+                                             1
+                                C  = − 3,998
+                                 1
+
+                                           −  3  t
+                                   −
+                     y 1  ( ) t =  4,000 3,998e  800
+
+                                               3
+                                                 t
+                       ( )
+                     y t     =  4,000 3,998e − 800 m  = 50 0
+                                    −
+                      1  m
+                           −  3  t
+                     3,998e  800 m  = 3,500
+
+                     −  3  t  =  ln  3,500
+                       800 m      3,998</code></pre>
      	</div>
     
      </div>

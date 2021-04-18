@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1506 - DE Solution</title>
+        <title>Page 1506 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1506 - DE Solution</div>
+        <div id="content-top1">Page 1506 - ODE Solution Manual</div>
         <div id="content-top2">P. 1506</div>
      </div>
      <div id="content-middle">
@@ -156,71 +156,75 @@ function MM_swapImage() { //v3.0
 
 
 
-                            s 2   AB =    0                 B = −  1
-                                    +
-                                                                 ω 2
-                            s 1  2 A + λ  C =  0           C = −  2λ
-                                                                 ω 2
-                            s 0    ω 2 A =  1  →  A =  1
-                                                      ω 2
-
-                        E                             
-                 Qs       0    11  −  1    s +  2λ    
-                   () =
-                         L   ω   2 s  ω  22  2 s ω +  λ  2  
-                                        s +
-                 For λ   ω &gt;  , then  s +  2  2 s ω +  λ  2  =  s 2  2 s + +  λ  λ −  2  λ +  2  ω  2  =  (s +  λ  ) −  2  ( λ  2  ω −  2 )
-
-                                                         
-                             E                           
-                                                                     2
-                       () =
-                     Qs       0    1  −    s λ +  λ +            ω =    1
-                            Lω 2 s    (s λ +  ) −  2  ( λ  2  ω −  2 )   LC
-                                 
-                                                         
-                                                                                              
-                     £  −  1 { ()Qs =  } E C  £  −  1     1  −  s λ  +  −        λ             
-                                     0          s         2   (  2   2 )         2  (  2    2 )
-                                                  (s λ +  ) −  λ   ω −   (s λ +  ) −  λ  ω −  
-                                                                                              
-                                                                                     
-                     q ( ) t =  EC  0   1 e −  t λ  cosh λ  2  ω −  2 t −  λ  e −  t λ  sinh λ  2  ω −  2 t   
-                                  −
-                                                          λ  2  ω −  2               
+                        A       Bs       C   
+              Is    4        +       +       
+               () =
+                       s +  0.1  s +  2  9  s +  2  9 
+                         10    1      10    s     900 1   3   
+                   =  4 −          +            +             
+                        901 s + 0.1  901  s +  2  9  901 3  s +  2  9 
 
 
-                 For λ   ω &lt;  , then  s +  2  2 s ω +  λ  2  =  (s λ +  ) +  2  ( ω  2  λ −  2 )
 
-                                                                                              
-                     £  −  1 { ()Qs =  }  E    C £  −  1      1  −  s λ  +  −     λ            
+              It     1      −  40£   −  1 {  1  } +  40£  −  1      s      +  1200£  −  1      3        
+               ( ) =
+                    901            s +  0.1            s +  2  9           s +  2  9  
+                                                         )
+                                                        t
+                  =  1  ( −  40e  t −  /10  +  40cos3t +  1200sin3
+                    901
 
-                                                 0  s  (s λ +  ) +  2  ( ω  2  λ −  2 )  (s λ +  ) +  2  ( ω  2  λ −  2 ) 
-                                                                                              
-                                                                                   
-                     q ( ) t =  E 0 C   1 e −  t λ   cos ω  2  λ −  2 t −  λ  sin ω  2  λ −  2 t  −  
 
-                                                         ω  2  λ −  2                
-                                                                         2
-                 For λ   ω =  , then  s +  2  2 sλ  ω +  2  =  s 2  2 sλ+  λ +  2  =  (s λ +  )
-                         1     =  A  +  B  +   C
-                                      +
-                      ( ss λ  +  ) 2  s  s λ  (s λ  +  ) 2
-                         As 2  2A sλ +  λ +  2 A +  Bs 2  B s +  λ+  Cs =  1
-                            s 2     A +  B =  0                 B = −  1
-                                                                     λ 2
+          Exercise
 
-                            s 1  2 A + λ  Bλ  +  C =  0 C =  −  2  +  1  C = − 1
-                                                        λ   λ         λ
+          An inductor (L  = 1 H )  and a resistor (R  = 0.1 Ω ) are joined in series with an electronic force (emf)
 
-                            s 0      λ 2 A =  1    →  A =  1
-                                                          λ 2
+                ()  and no charge on the capacitor at t = . Find the ensuing current in the current at time t for
+          E =  Et                                      0
+                     ( )
+          the given Et =  4sin 2 t π
 
-                     £   −  1 { () =  Qs  }  E L 0  £   −  1            λ  1 1  −  λ  1 2 s λ +  −  λ  1  (s λ )   2       
-                                                                        1
-                                                             1
-                                                  2 s
-                                                                       +</code></pre>
+          Solution
+
+                            t
+              L  I d  +  RI =  E ()
+                dt
+              dI  + 0.1I =  4sin 2 t
+                               π
+              dt
+              £  (I′ +  0.1I ) =  4£  (sin 2 tπ )
+
+
+
+                         +
+              sIs −  ( ) I (0) 0.1 ( ) =  Is  4  2π         I (0) = 0
+                                       2
+                                      s + 4π 2
+              (s +  0.1 ) ( ) 8Is =  π  1
+                                2
+                               s +  4π 2
+              Is                1
+               () 8π=
+                       (s +  0.1 ) s +  (  2  4π 2 )
+
+                                 1          =    A   +  Bs C
+                                                           +
+                                                        2
+                         (s +  0.1 ) s +  (  2  4π 2 )  s + 0.1  s +  4π 2
+                        s =  As +  2  4π 2 A Bs +  2  0.1Bs Cs +  0.1C
+                                        +
+                                                      +
+
+                        s =  ( A Bs+  )  2  +  (0.1B C s+  ) +  4π 2 A +  0.1C
+
+                            AB =    0
+                               +
+                        
+                        
+                                +
+                          0.1B C =   0
+                            2
+                          4π  A +    0.1C =  1</code></pre>
      	</div>
     
      </div>

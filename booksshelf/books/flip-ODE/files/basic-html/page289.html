@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 289 - Differential Book</title>
+        <title>Page 289 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 289 - Differential Book</div>
+        <div id="content-top1">Page 289 - ODE Book</div>
         <div id="content-top2">P. 289</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,50 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>274 | 3.5 - I nt r oduc t i on &  B a s i c   T h e or y  of  L i ne a r  S y s t e m s
-
-          Example 2
-
-                           k 1             k 2            k           k
-
-                                   m                m       3   m       4
-                                     1                2            3
+    <pre style="white-space:pre-line"><code>276 | 2. 7 - E ul e r ’ s  &  R u nge - K ut t a  M e t ho ds
 
 
-                              x              x              x
-                               1              2              3
+                 s =  y −  t
+                  1    3   3
+                                −
+                   =  0.9507673 1.3
+                   = − 0.3492327
 
-                                       Equilibrium
-                                        positions
+                                         )
+                                 −
+                 s =  ( y +  hs  ) ( t +  h
+                  2      3    1     3
+                                                             )
+                                                         +
+                     =  (0.9507673 .1( 0.3492327) −  ) (1.3 .1
+                                      −
+                                  +
+                     = − 0.48415597
+                             s + s
+                 y =   y + h  1    2
+                   4    3       2
+                                                 −
+                     = .9507673 0.1  ( −  .3492327 .48415597 )
+                                +
+                                                2
+                     = 0.9090979
+                          h
+                 t =  t +
+                  4    3
+                   =  1.4
 
-          Consider the mass-and–spring systems, as shown above. Three masses connected to each other and to
-          two walls by 4 indicated springs. Assume the  masses slide without friction and  each spring  obeys
-          Hooke’s Law (F = −  kx ) .
 
-          By applying Newton’s law  F =  ma  to the 3-masses:
+                     t       y : Runge-Kutta      y  - Exact    Runge-Kutta Error  Euler's Error
+                     k
+                              k
+                                                   k
+                    1.0            1.0               1.0                 0                 0
+                    1.1        0.9950000        0.994829081       −0.000170918          −0.0052
+                    1.2        0.9789750        0.978597241       −0.000377758          −0.0114
 
-                                       +
-                 mx′′ =  −  k x                k  ( x −  x  )
-                   11      11             2   2    1
-                 mx′′ =  −  k  ( x −  x  ) +  k  ( x −  x  )
-                   22       2   2    1    3   3    2
-                 mx′′ =  −  k  ( x −  x  ) −  k x
-                   33       3   3   2     4 3
+                    1.3        0.9507673        0.950141192       −0.000626182          −0.0189
 
-
-                        k + k 2     k 2
-                          1
-                   x′′ =  1  −  m  x +  1  m  x 2
-                            1        1
-                       k       k + k        k
-                 
-                  x′′ =  2  m 2  x −  1  2 m  3  x +  2  m 3  x
-                                                 3
-                         2         2         2
-                                k       k + k
-                  x′′ =                  3  x −  3  4  x
-                    3         m 3  2     m 3   3
-
-                                             x  
-                                            1  
-          The displacement vector:     x =    x 
-                                             2  
-                                             x 
-                                             3 
-
-                                              m   0    0  
-                                              1           
-          The mass matrix              M =    0  m     0 
-                                                   2      
-                                              0   0   m 
-                                                        3 
-
-                                             −  k −  k   k           0     
-                                              1    2       2               
-          The stiffness matrix         K =    k       −  k −  k      k     
-                                                2        2    3       3    
-                                               0         k       −  k −  k 
-                                                           3        3    4 </code></pre>
+                    1.4        0.9090979        0.908175302       −0.000922647          −0.0277</code></pre>
      	</div>
     
      </div>

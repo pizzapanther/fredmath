@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 416 - DE Solution</title>
+        <title>Page 416 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 416 - DE Solution</div>
+        <div id="content-top1">Page 416 - ODE Solution Manual</div>
         <div id="content-top2">P. 416</div>
      </div>
      <div id="content-middle">
@@ -154,62 +154,70 @@ function MM_swapImage() { //v3.0
     <p class="use-as-video-title"></p>
     <pre style="white-space:pre-line"><code>410 | S O LU TI O N
 
+                           3,591
+                − 1  t = ln ( )
+              15,000       3600
+
+
+              t = 15,000 ln     3,600   
+
+                            3,591 
+                          i
+
+               ≈ 37.55 mn
+
+
+
           Exercise
-                                                        3
-          Assume that Lake Erie has a volume of 480  km  and that its rate of inflow (from Lake Huron) and
-                                                   3
-          outflow (to Lake Ontario) are both 350  km  per year. Suppose that at the time t = 0 (years), the
-          pollutant concentration of Lake Erie – caused by past industrial pollution that has now been ordered
-          to cease – is 5 times that of Lake Huron. If the outflow henceforth is perfectly mixed lake water, how
-          long will it take to reduce the pollution concentration in Lake Erie to twice that of Lake Huron?
+
+          Consider the cascade of 2 tanks with V = 100 gal  and V =  200 gal  the volumes of brine in the 2
+                                               1                 2
+          tanks. Each tank also initially contains 50 lb. of salt. The three flow rates indicated in the figure are
+          each 5 gal/min, with pure water flowing into tank.
+             a)  Find the amount  ( ) t  of salt in tank 1 at time t.
+                                  x
+             b)  Suppose that  ( )  is the amount of salt in tank 2 at time t. Show first that
+                              yt
+                                dy   5x     5y
+                                   =     −
+                                dt   100   200
+                 And then solve for  ( ) , using the function  ( ) t  found in part (a).
+                                                            x
+                                    yt
+             c)  Finally, find the maximum amount of salt ever in tank 2.
           Solution
 
-                                  3
-             Given:  V = 480  km
-                       r =  r = =  350 km 3  / yr
-                                r
-                       i    o
-                       c =  (The pollutant concentration of Lake Huron)
-                           c
-                        i
-                       x =  x ( ) 0 = 5cV
-                        0
-
-              dx  =  rc −  r  x
-              dt       V
-              dx  +  r  x =  rc
-              dt   V
-                        V ∫  r  dt
-                        e   =  e rt /V
-
-                     ∫ rce rt /V   dt =  rc V  e rt /V
-                                       r
+             a)   dx  =  −  x  and  x ( ) 0 =  0 5
+                  dt    20
+                 dx  = −  1  dt
+                  x     20
+                 ∫  dx  = − 20 ∫  dt
+                           1
+                    x
 
 
-                                 =  cV  e rt /V
-                                           )
-                 x ( ) t =  1  ( cVe rt /V  +  C
-                        e rt /V
+                 ln x =  −  t  +  C
+                          20
+                         −  t  +  C
+                 x ( ) t =  e  20
 
-                       =  cV + Ce − rt /V
-
-                     x ( ) 0 =  5cV
-
-                                   0
-                     5cV =  cV + Ce
-                     C =  4cV
-
-              x ( ) =  cV + 4cVe − rt /V   t
-
-             When is  ( ) 2x t =  cV
+                           −  t
+                      =  A e  20
 
 
-              2cV =  cV +  4cVe − rt /V
-              4cVe − rt /V  =  cV
+                            −  0
+                     50 =  Ae  20
+                     50 =  A
 
-               e − rt /V  =  1
-                         4
-               e rt /V  =  4</code></pre>
+                 x ( ) t =  50e  t −  /20
+
+
+                 dy    5x    5y
+             b)      =     −
+                  dt  100    200
+
+                     =  1 ( 50e  t −  /20 ) −  y
+                       20              40</code></pre>
      	</div>
     
      </div>

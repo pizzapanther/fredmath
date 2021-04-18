@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 503 - DE Solution</title>
+        <title>Page 503 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 503 - DE Solution</div>
+        <div id="content-top1">Page 503 - ODE Solution Manual</div>
         <div id="content-top2">P. 503</div>
      </div>
      <div id="content-middle">
@@ -155,66 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 6 − E x a ct   D i f f er en t i al  E q u at i o n s  | 497
 
 
+
+                       1  1     x  
+                       −     +    y′ =  0
+                       x  y       y 2   
+
+                        M =  1  −  1     N =   x
+                              x   y           y 2
+
+                         M   =  1        N =   1
+                            y   y 2        x   y 2
+
+                        ⇒   M   =  N
+                              y     x
+                     ∂ψ  =  1  −  1
+                      x ∂  x   y
+                            ∫   1  1 
+                     ψ=      x  −  y      dx
+
+
+                      =  ln x −  x  +  h ( ) y
+                                y
+
+
+                     ψ   =  x  +  hy     x
+                                 ′
+                                  ( ) =
+                       y   y 2          y 2
+                            h′ ( ) 0y =  →   h ( ) y =  C
+
+
+                     ln x −  x  =  C
+                            y
+
+
                  Exercise
 
-                 Find the general solution of the homogenous equation      (x +  ) y dx +  ( y x dy−  )  =  0
-
-
-                 Solution
-                     (x +  ) y dx =  −  ( y x dy−  )
-
-                     dy   x +  y
-                     dx  =  x −  y
-                           x +  y
-
-                        =    x
-                           x −  y
-                             x
-                              y
-                          1+
-                        =     x
-                              y
-                          1−
-                              x
-                     dy  =  1 v  =  x dv  + v
-                           +
-                     dx   1 v      dx
-                           −
-                             +
-                     x dv  =  1 v  − v
-                             −
-                      dx   1 v
-                             +
-                         =  1 v 2
-                            1 v
-                             −
-                     1 v   dv =  dx
-                       −
-                     1 v 2       x
-                      +
-
-                       dx  =  1 v ∫  +∫  1  dv −  1 v ∫  v  dv                2 ∫  1  dx =  arctan
-                                                                                             x
-                        x          2         +  2                            a +  x 2        a
-
-
-                     ln x =  arctanv −  1  1 v ∫  1  d ( 1 v 2 )
-                                                  +
-                                    2     +  2
-                                            (
+                 The given equation is not exact. However, if you multiply by the given integrating factor, then it
+                 becomes exact. Then solve the equation
+                                                 2 2
+                                 23
+                                                                            1
+                                                                        )
+                                x y −+     x ( 1 x y  ) y′ =  0,  µ ( ,x y =  xy
+                                       y
                                               +
-                         +
-                     ln xC =   arctanv −  1 ln 1 v 2 )
-                                        2
-                                     y   1      y 2 
-                     ln xC =   arctan  −  ln 1+    
-                         +
-                                     x   2       2 
-                                                x  
-                           y   1      y 2 
-                     arctan  −   ln 1+     −  ln x =  C
-                           x   2        2 
-                                      x  </code></pre>
+                 Solution
+                           23
+                                                  3 2
+                     M =  x y −  y       N = +   xy
+                                              x
+                     M    =  3y −  2  1  N =  13x y+  22
+                        y                 x
+                        ⇒   M ≠   N
+                              y     x
+                     ( x y − 23  y )    1     +  x ( 1 x y  )  1     y′ =  0
+                                              2 2 
+                                           +
+                                  xy               xy  
+                     ( xy −  2  1 )   +      1  +  x y y′ =     0
+                                       2 
+                            x
+                                  y
+                                                    2
+                        M =  xy −  2  1    N =  1  +  x y
+                                    x          y
+                          M   = 2xy         N =   2xy
+                            y                 x</code></pre>
      	</div>
     
      </div>

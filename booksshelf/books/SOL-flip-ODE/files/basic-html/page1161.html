@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1161 - DE Solution</title>
+        <title>Page 1161 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1161 - DE Solution</div>
+        <div id="content-top1">Page 1161 - ODE Solution Manual</div>
         <div id="content-top2">P. 1161</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,62 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1151
 
 
-                     x  =  A cos t ω+  B sin t ω
-                      P
-                         x′ = − Aω sin tω+  Bω cos t
-                                                 ω
-                          P
-                         x′′′ = − Aω 2 cos tω−  Bω 2 sin tω
-                          P
-                       (    2            2      )
-                     m − Aω   cos t ω−  Bω  sin t ω +  kA       B sin  ) t ω =  F 0 cos t ω
-                                                     ( cos t ω+
-                     ( kA m−ω 2 A ) cos t + ( kB m−ω 2 B ) sin t =  F 0 cos t
-                                     ω
-                                                          ω
-                                                                     ω
-                                 ( k −ω 2 ) A =  F
-                                     m
-                                                0
-                                
-                                 ( k −ω 2 ) B =  0
-                                      m
-                                
-                                       F
-                                A =     0   ,  B = 0
-                                       m
-                                    k −ω   2
-                             F
-                     x  =      0   cos tω
-                      P    k −ω  2
-                              m
-                                                     F
-                     x ( ) Ct =  cos t ω  C  sin t ω +  +  0  cos t ω
-                             1          2         k − mω 2
+                                a +  21b =  3       3        63
+                                − 21ab    0 ⇒  a =  442  b =  442
+                                     +=
 
-                                               F    
-                         =  C  sin tω   C +     0     cos tω +
-                             2          1          2 
-                                            k −  mω 
+                    The particular solution (steady-state solution):
 
-                                               F
-                                x ( ) 0 = C +   0    =  0
-                                        1
-                                            k −  mω 2
-                                         F
-                                C = −      0
-                                 1            2
-                                       k −  mω
 
-                                                       F     
-                         x′ ( ) t =  ω  C  cos tω  ω −    C +   0  2   sin t ω 
-                                                2  1  k −  mω 
+                         x  (t ) =  3  cos3t +  63  sin3t
+                          p      442         442
 
-                                x′ ( ) 0 =  ω C =  v
-                                          2
-                                               0
-                                     v
-                                C =    0
-                                 2    ω
 
-                            v              F          F     
-                     x ( ) t =  0  sin tω    0   +     0      cos t ω +−
-                            ω           k −  m ω   2  k −  m ω  2   
+                    The homogeneous eq.: x′′ +    7x′ +  10x =  0
 
-                            v
-                          =   0  sin t
-                                  ω
-                             ω</code></pre>
+                    The characteristic eq.: λ     2  +  7 +  λ  10 =  0   ⇒    λ  1  =  −  5,   λ  2  =  −  2
+
+                     x  () t = Ce −  5t  + C e −  2t
+                      h       1        2
+
+                     xt     3  cos3t +  63  sin3t C e+  −  5t  +  C e −  2t  x (0) =  −  1,   (0) =  x′  0
+                      ( ) =
+                           442         442          1        2
+                                                                            (
+                                                                 0
+                         x () 0 =  3  cos3() +  0  63  sin3( ) 0 +  Ce −  5( )  +  C e −  2 0)
+                               442           442            1          2
+                          1
+                        −=     3  + C + C
+                             442     1    2
+                        C +  C =   −  445
+                          1    2     442
+
+                     x′ ( ) t =  −  9  sin3t +  189  cos3t −  5Ce −  5t  −  2C e −  2t
+                             442         442           1         2
+                                                                                 0
+                                                                    0
+                         x′ () 0 =  −  9  sin3() 0 +  189  cos3() 5Ce−  0  −  5()  −  2C e −  2()
+                                 442           442             1            2
+                        5C +   2C =  189
+                           1      2   442
+
+
+                         C +  C =   −  445
+                           1    2    442
+                        
+                         5C +  2C =   189
+                           1      2   442
+
+                        C =   83     C = −   71
+                          1   102      2    39
+
+
+                                                    ()
+                    Transient response solution:  xt =    83 −  e  5t  −  71 −  e  2t
+                                                   h      0 1 2     39
+                    The general solution:  ( )x t =  3  cos3t +  63  sin3t +  83 −  e  5t  −  71 −  e  2t
+                                               442         442        102        39</code></pre>
      	</div>
     
      </div>

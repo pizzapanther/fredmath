@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1406 - DE Solution</title>
+        <title>Page 1406 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1406 - DE Solution</div>
+        <div id="content-top1">Page 1406 - ODE Solution Manual</div>
         <div id="content-top2">P. 1406</div>
      </div>
      <div id="content-middle">
@@ -156,69 +156,72 @@ function MM_swapImage() { //v3.0
 
 
 
-                   =  £   − 1 { −  8 1 1 +  5 1  2 }
-                                      3 s +
-                             3 s −
-                              e
-                   =  −  8 t  5 − 2t
-                        e +
-                       3     3
+                   = £   − 1     1−  3  1  + 1+  3  1    
+                             2    s −  3     2   s +  3 
+
+
+                   = 1−   3  e  3t  + 1+  3 e  3t
+                       2             2
 
 
           Exercise
 
-                                                 Fs
-          Find the inverse Laplace Transform of    () =    −  8s −  2  5s +  9
-                                                        ( s −  2  3s +  2 ) (s +  ) 1
 
+          Find the inverse Laplace Transform of    () =        1
+                                                 Fs
+                                                        ( s +  2  1 s +  )(  2  4 )
           Solution
 
 
-              ( s −  2 −  8s −  3s +  2  5s + 2 ) (s +  9  ) 1  =  (s −  −  1 8s − )(s −  2  5s +  2 )(s +  9  ) 1
+              Fs            1        =   A   +   B
+               () =
+                     ( s +  2  1 s +  )(  2  4 )  s +  2  1  s +  2  4
 
 
-                                 =   A  +   B   +  C
-                                    s −  1  s −  2  s +  1
+                                    +
+                     ( AB s+  )  2  +  4AB =  1
+                          AB =    0
+                            + 
+                        
+                         4AB+   =  1
 
-                 −  8s −  2  5s +  9 =  As −  2  As −  2A Bs+  2  −  B Cs −  2  3Cs +  2C
-                                                         +
+                         A =  1 ;  B = − 1
+                            3        3
 
-                      s 2  A B C =     −  8
-                              +
-                                  +
-                     
-                     
-                       s    − A − 3C = − 5
-                       0
-                               −
-                      s    −  2A B +  2C =  9
-                          1   1    1            −  8  1   1              1   −  8  1
-                     ∆ = − 1  0   −=   6  ∆   = − 5  0   −=   12   ∆  = − 1 − 5   −= −  66
-                                   3
-                                                           3
-                                                                                   3
-                                            A                       B
-                         −  2  −  1  2           9   −  1  2             −  2  9  2
-                 A =  2, B =  −  11, C =  1
-
-
-                            1                
-              f ( ) t £   −      (  2 −  8s −  2  5s +  )  9    
-                   =
-                            s −   3s +  2  (s +  ) 1   
-
-                   =  £   − 1 { s −  2 1  −  s −  11 2  +  s +  1 1 }
-
-
-                   =  2e −  t  11e 2t  +  e  t −
+              £  −  1 { () £   −  1      1  1  −  1 2  1    
+                         } =
+                    Fs
+                                    3  s +  2  1  3 2  s +  2  4
+                                   t
+              f  ( ) t =  1 sint −  1 sin 2
+                     3       6
 
 
           Exercise
 
+          Find the inverse Laplace Transform of    ()Fs =    2s − 4
+                                                        ( s +  2  ss +  )(  2  1 )
 
-          Find the inverse Laplace Transform of    ()Fs =  −  2s +  2  8s −  14
-                                                        (s +  ) 1 s − (  2  2s +  5 )
-          Solution</code></pre>
+
+          Solution
+
+              Fs         2s −  4     =  A  +  B  +  Cs +  D
+               () =
+                     ( s +  2  ss +  )(  2  1 )  s  s + 1  s + 1
+                                                    2
+
+                       As +  3  4As +  As +  2  4A Bs +  3  Bs Cs +  3  Cs +  2  Ds +  2  Ds =  2s −  4
+                                             +
+                                                       +
+                         s 3  A +  BC =  0
+                                    +
+                        
+                         s   2  A C +  D =  0
+                                 +
+                        
+                          s   1  4A +  B +  D =  2
+                          0
+                         s     4A = − 4     A = − 1</code></pre>
      	</div>
     
      </div>

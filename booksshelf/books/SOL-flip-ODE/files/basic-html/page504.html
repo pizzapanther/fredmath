@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 504 - DE Solution</title>
+        <title>Page 504 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 504 - DE Solution</div>
+        <div id="content-top1">Page 504 - ODE Solution Manual</div>
         <div id="content-top2">P. 504</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>498 | S O LU TI O N
 
 
-          Exercise
-                                                                           (
-                                                                             2
-                                                                    dy   yx +    y 2 )
-          Find the general solution of the homogenous equation         =
-                                                                    dx    xy −  2x 3
-                                                                            2
-          Solution
-                       2
-                      x +  y 2
-              dy   y     x 2
-              dx  =  x  y − 2x 2
-                       2
-                         x 2
+                 ⇒   M   =  N
+                       y     x
 
-                          y
-                     1+    2
-                        
-                          x
-                    y   
-                 =
-                   x   2
-                       y
-                         − 2
-                       x
-                     
-                      +
-                 =  v 1 v 2  =  x  dv  + v
+              ∂ψ  =  xy −  1
                       2
-                     v − 2     dx
-              v v 3  −  v =  x dv
-                +
-               2
-              v −  2        dx
-                      +
-              x dv  =  v v −  3  v +  3  2v
-                          2
-               dx        v −  2
-                  =   3v
+               x ∂       x
+
+                       2
+              ψ=  ∫ ( xy −  1 ) dx
+                           x
+
+               =  1  x y −  22  ln x +  h ( ) y
+                  2
+
                      2
-                    v −  2
-              ∫ ∫       v −  2 dv
-                         2
-                dx
-                   =
-                          3v
-                 x
-                   =  1 ∫ ( v −  2 ) dv
-                     3        v
+              ψ   =  x y h′ ( ) y =  1  +  x 2 y
+                        +
+                y                 y
+                     h′ ( ) y =  1  →   h ( ) lny =  y
+                             y
+
+              1  x y − 22  ln x +  ln y C
+                                 =
+              2
 
 
-              3ln xC =   1 v −  2  2lnv
-                   +
-                         2
+          Exercise
 
-              3ln xC =   1  y 2  −  2ln  y
-                   +
-                         2  x 2     x
+          The given equation is not exact. However, if you multiply by the given integrating factor, then it
+          becomes exact. Then solve the equation
 
-              3ln xC+  =  1  y 2  −  ( 2 ln y −  ln  ) x
-                         2  x 2
+                                                                                             x
+                                                                                       )
+                            sin y  −  2e − x sin x dx +          cos y +  2e − x  cos x     dy =  0,  µ ( ,x y =  ye
+                           y                          y          
+          Solution
+                      sin y    − x                    cos y +  2e − x cos x
+                 M =       −  2e  sin x           N =
+                        y                                     y
+                  M    =  y cos y − sin y   N =   1 ( − 2e −  x cos x − 2e −  x sin x )
+                     y        y 2             x    y
 
-                         y 2
-              6ln xC+  =    −  4ln y +  4ln x
-                         x 2
-              y 2  −  4ln y −  2ln x C
-                               =
-              x 2</code></pre>
+                         ⇒   M ≠   N
+                               y     x
+
+
+                                               x
+                                             ye
+              ( )  ye x   sin y  −  2e − x  sin x dx +      ( )     cos y +  2e − x  cos x     dy =  0
+                      y                                y          
+              ( e sin y −  x  2 sin x dx + y  ) ( e x  cos y +  2cos x dy =  )  0
+
+
+                                 y
+                  M =  e x sin y −  2 sin x   N =  e x  cos y +  2cos x
+
+                 M    =  e x  cos y −  2sin x  N =  e x cos y −  2sin x
+                    y                          x
+
+                 ⇒   M   =  N
+                       y     x
+
+                  ∫
+                                      )
+                      x
+                                y
+              ψ=    ( e sin y −  2 sin x dx</code></pre>
      	</div>
     
      </div>

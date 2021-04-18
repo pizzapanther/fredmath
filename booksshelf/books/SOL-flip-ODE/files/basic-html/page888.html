@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 888 - DE Solution</title>
+        <title>Page 888 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 888 - DE Solution</div>
+        <div id="content-top1">Page 888 - ODE Solution Manual</div>
         <div id="content-top2">P. 888</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>878 | S O LU TI O N
 
 
-                   ( )      8 − 1   6   1
-                       2
-                 y t =  c  =  c e  = 12  =  2
+
+                     x′ =  e − 15 /2   t    −  15 C  cos 5 7  t −  15 C  sin 5 7  t −  5 7  C  sin 5 7  t +  5 7  C  cos 5 7   t
+                                                                                                          
+                                   2   1     2      2   2     2       2    1     2       2    2     2    
+
+                         x′ ( ) 0 = −  15 C +  5 7 C =  0
+                                  2   1    2    2
+                        C   = −   3
+                          2     10 7
 
 
-                 c =  16   ≈  5.886   lb.sec/ft
-                     e
+                 x ( ) t =  e − 15 /2   t    −  1  cos 5 7  t −  3  sin  5 7   t 
+                                 10      2     10 7       2   
 
-                                 /
-                 k =  64  ≈  8.66  lb ft
-                     e 2
+             For c =  20
 
-             c)  Since, the time interval ( ) τ  between successive zero crossing is 20% larger of undamped.
+                 λ  2  20 +  λ +  100 0
+                                =
+                 λ    = − 10
+                  1,2
 
+                 ∴ The motion is critically damped
+                                  )
+                   ( ) (
+                 x t =   C +  C te  − 10t
+                          1
                                2
-                         c
-                 λ    =  −±   c −  4k
-                  1,2         2
+                         x ( ) 0 =  C =  − 0.1
+                                 1
+                        C   = −  1
+                          1    10
+                                            )
+                     x′ =  ( C −  2  10C −  1  10C te − 10t
+                                          2
+                         x′ ( ) 0 =  C + 1 =  0
+                                  2
+                        C   = − 1
+                          2
 
-                         c
-                      = − ±  i  4k − c 2
-                         2        2
-                 1.2 damped =  undamped  (c =  ) 0
+                                )
+                 x ( ) ( 0.1 te   − 10t
+                             −
+                    t =
+                         −
+             For c =  25
 
+                 λ  2  25 +  λ +  100 0
+                                =
+                            ±
+                 λ    =  −  25 15
+                  1,2      2
+                      =  −  20, −  5
 
-                   4k − c 2  (1.2τ  ) =  4k  τ
-                     2               2
-
-                 0.6 4k −  c =  2  k
-
-                 1   256 e−  22    8  =  40
-                             c =
-                 e                0.6e  3e
-                   256 c−  2  =  40
-                               3
-
-                 256 e−  22   1600
-                         c =
-                                9
-                 e 22    704
-                    c =
-                          9
-                 c =  8 11  ≈ 3.254  lb.sec/ft
-                      3e
+                 ∴ The motion is overdamped
 
 
-          Exercise
-
-
-                          q
-          Find the charge  ( ) t  on the capacitor in an LRC−series circuit when  L =  0.25 H ,  R  = 10 Ω ,
-                               0
-
-          C =  0.001 F ,  ( ) t = ,  ( ) 0q  =  q  C , and  ( ) 0i  =  0 .
-                        E
-                                          0
-          Solution
-              0.25q′′ +  10q′ +  1  q =  0             Lq′′ +  Rq′ +  1  q =  E ( ) t
-                             0.001                               C
-              q′′ +  40q′ +  4,000q =  0
-
-              λ  2  40 +  λ +  4000 =  0
-
-                        ±
-              λ   =  −  40 120i
-               1,2       2
-                  =  −  20 i 60
-                        ±</code></pre>
+                 x ( ) t = C e −  20t  +  C e −  5t
+                                    2
+                         1
+                                            1
+                         x ( ) 0 = C + C = − 10
+                                 1
+                                      2
+                 x′ =  −  20C e −  20t  −  5C e −  5t
+                           1          2
+                         x′ ( ) 0 =  −  20C −  1  5C =  0
+                                           2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 304 - Differential Book</title>
+        <title>Page 304 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 304 - Differential Book</div>
+        <div id="content-top1">Page 304 - ODE Book</div>
         <div id="content-top2">P. 304</div>
      </div>
      <div id="content-middle">
@@ -152,87 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.6 - P l a n a r  S y st e m s  | 289
-
-               3.6-3  Eigenvectors
-
-                                                                        x 
-               From the eigenvalues, the eigenvectors, in the formV =   i    , of the system can be determined by
-                                                                   i    y 
-                                                                        i 
-               letting:
-                              ( A λ 1 IV =  )  1  0    and A λ−  (  2 IV =  )  2  0
-                                 −
+    <pre style="white-space:pre-line"><code>3. 2 - B a s i c  P r o p e r t i e s   o f  t h e  L a p l ac e  T r an s f o r m  | 291
 
 
-                                                            () V e
-               The general solution can be written as:     xt =       t λ
-                                                                  i
+                 Example 2
+
+                 Transform the initial value problem into an algebraic equation involving  ( ) y£  . Solve the resulting
 
 
-               Example 2
-                                                             − 4  6
-               Find the eigenvectors of the matrix      A =        
-                                                             − 3  5 
-               Solution
+                 equation for the Laplace transform of y.
+                                         2t
+                                                                   y′
+                                y′′ −  y =  e   with      (0) =  0  and     (0) 1
+                                                                        =
+                                                     y
+                 Solution
+                    For the right-hand side
+                     £ ( )   () s =  s − 2
+                                    1
+                          2t
+                        e
+                     £ {y′′ −  ys =  }() £ { }()y′′  s £ { }()y s
+                                               −
 
-                   The eigenvalues of A are 2 and −1.
+                                                                       ys
+                                                                  −
+                                             ys −
+                                   = s 2 . £ ( )( ) sy (0) −  y′ (0) £ ( )( )
+                                           s −
+                                                     −
+                                                                                                       y′
+                                   =  s 2 .Y ( ) sy (0) y′ (0) Y ( )                     y (0) = 0  and    (0) 1
+                                                                s
+                                                            −
+                                                                                                             =
+                                   =  s 2 .Y () 1 Ys −−  () s
+                                          1
+                     s 2 .Y () Ys −  () 1  s −  2
+                                 s −=
+                         (
+                                     1
+                       s
+                     Y () s −  2  1 =  )  s − 2  + 1
+                                           )
+                       s
+                     Y () =   1   (  1  + 1
+                             2
+                            s − 1  s − 2
+                          =      1      (  s − 1 )
+                            (s −  1)(s +  1) s −  2
+                          =       1
+                            (s −  2)(s +  1)
 
-                                            −
-                           2
-                   For λ = , we have     ( A λ 1 IV =  )  1  0
-                         4 2
-                                               0
-                                         x
-                        − −       6    
-                                            =
-                                        
-                                               0
-                                         y
-                                   −
-                         −  3   52      
-                                        0
-                                  x
-                        − 6  6   
-                                     =
-                                  
-                                  y
-                                        0
-                        − 3  3    
-                            −   6x +  6y =  0
-                                        ⇒=    y
-                                            x
-                            −  3x +  3y =  0
-                          If  x =  c  ⇒  y =  c
-                              1             1  
-                       V =  c     ⇒   V =   
-                        1              1    
-                                              1
-                              1
-                                         (
-                   For λ = − 1, we have  A λ   2 IV =  )  2  0
-                                            −
-                                        0
-                                  x
-                        − 3  6   
-                                     =
-                                 
-                                  y
-                                        0
-                        − 3  6    
-                            −   3x +  6y =  0
-                                            x
-                                       ⇒=     2y
-                            −  3x +  6y =  0
-                                     x
-                       If  y =  c  ⇒=   2c
-                               2
-                                               2
-                                           
-                       V =  c     ⇒   V =  
-                        2               2   
-                                               1
-                               1</code></pre>
+
+
+                 3.2-6  Laplace Transform of the Product of an Exponential with a
+
+                            Function
+
+
+                 The result is a translation in the Laplace transform
+                                   )
+                        £  ( e ct  f  () () =  Fs  ) c
+                                     s
+                                 t
+                                           ( −
+
+
+                 Example 3
+
+                 Compute the Laplace transform of the function  ( )gt =  e 2t  sin3t
+
+                 Solution</code></pre>
      	</div>
     
      </div>

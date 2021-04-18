@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1226 - DE Solution</title>
+        <title>Page 1226 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1226 - DE Solution</div>
+        <div id="content-top1">Page 1226 - ODE Solution Manual</div>
         <div id="content-top2">P. 1226</div>
      </div>
      <div id="content-middle">
@@ -155,77 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1216 | S O LU TI O N
 
 
+              q′′ +  50q′ +  5000q =  50
 
-                                                                          0
-                                     0
-              i ( ) t = −  1      q −  EC      sin  1  t +   i  cos  1  t −  ECω  sin t
-                                                                                   ω
-                       LC      0  1 LCω  −  2   LC    0      LC    1 LCω   −  2
+                 5000A =  50
+                   A  =  0.01
+
+
+              q ( ) t =  e − 25t ( C 1  cos25 7t +  C 2  sin25 7t +  )  .01
+
+
+                     q ( ) 0 =  C + 0.01= 0
+                             1
+                                    1
+                     C =  1  −  0.01=  −  100
+
+
+                                                                                                        )
+                 q′ ( ) t =  e − 25t ( −  25C 1 cos25 7t −  25C 2  sin25 7t −  25 7C 1  sin25 7t +  25 7C 2  cos25 7t
+
+                     q′ ( ) 0 =  −  25C +  25 7C =  0
+                                 1          2
+
+                     C  = −    1
+                       2    100 7
+
+
+              q ( ) t =  −  1  e − 25t (  7 cos25 7t + sin25 7t +  )  1
+                      100 7                                    100
+
+
+              i ( ) t =  q′ ( ) t
+                                                                                                     )
+                  =  −  1    e − 25t ( −  25 7 cos25 7t −  25sin 25 7t − 4,375sin 25 7t +  4,375cos25 7t
+                      100 7
+                                                                       )
+                                                                      t
+                  =  −  1    e − 25t ( 4,350 7 cos25 7t −  4,400sin25 7
+                      100 7
 
 
           Exercise
 
+          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L = 1 h ,
 
-                                   i
-                          q
-          Find the charge  ( ) t  and  ( ) t  on the capacitor in an LC−series circuit when
-                     h
-                                 f
-              L =  0.1 , C =  0.1 , E t                V,  q ( ) 0 = 0 C, a nd i ( ) 0 =  0 A
-                                       ( ) 100 is n tω=
+          R  =  2 Ω , C = 0.25 f , and  ( ) 50cos  VE t =  t  .
           Solution
-              0.1q′′ +  1  q =  100sin tω                           Lq′′ +  Rq′ +  1  q =  E ( ) t
-                     0.1                                                      C
-                                                    0 =
-              q′′ + 100q = 1,000sin tω  ; q ( ) 0 i ( ) 0
-                                          0 =
-                          =
-                 λ  2  100 0 →      λ +  =  ±  10   i
-                                     1,2
-                  t
-              q  ( ) C=  cos10t + C  sin10t
-               h       1           2
-                        ω
-              q =  A cos t B   sin t
-                                  ω +
+
+              q′′ +  2q′ +  1  q =  50cost           Lq′′ +  Rq′ +  1  q =  E ( ) t
+                        0.25                                    C
+
+              q′′ +  2q′ +  4q =  0
+                                               1 i
+                             =
+                 λ  2  2 +  4 0 →      λ    = −±    3
+                        λ +
+                                        1,2
+              q =  e  t −  ( C  cos 3t +  C  sin 3t )
+               h         1            2
+
+              q =  A cost +  B sint
                p
-                                          ω
-                 q′    −  ω=  A sin t ω +  ω  B cos t
-                   p
-                 q′′   −  ω=  2 A cos tω  ω −  2 B sin tω
-                   p
-
-              q′′ +  100q =  1,000sin tω
-                  cosω t   ( −  ω +  2  10 0 A = )  0     A = 0
-
-                                                 →    B =   1000
-                 
-                   i sn t ω  ( −  ω +  2  100 B = )  1,0 00  100 ω 2
-                                                               −
-                 
-                                  ω
-              q  ( ) t =  1000  sin t
-               p      100 ω   2
-                          −
-                                              1000
-              q ( ) t =  C 1 cos10t + C 2  sin10t + 100 ω 2 sin tω
-                                                −
-                        q ( ) 0  =  C = 0
-                                 1
-                                                   1000ω
-              q′ ( ) t =  −  10C 1 sin10t +  10C 2  cos10t + 100 ω 2  cos tω
-                                                      −
-
-                        q′ ( ) 0 = 0C +  1000ω  =  0
-                                   2
-                                      100 ω   2
-                                          −
-                        C =   −  100ω
-                          2     100 ω  2
-                                    −
-
-              q ( ) t = −  100  sin10t +  1000   sin t ω
-                      100 ω  −  2      100 ω  −  2</code></pre>
+                              +
+                 q′ =  −  A sint B cost
+                   p</code></pre>
      	</div>
     
      </div>

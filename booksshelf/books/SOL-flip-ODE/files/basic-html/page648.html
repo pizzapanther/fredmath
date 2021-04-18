@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 648 - DE Solution</title>
+        <title>Page 648 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 648 - DE Solution</div>
+        <div id="content-top1">Page 648 - ODE Solution Manual</div>
         <div id="content-top2">P. 648</div>
      </div>
      <div id="content-middle">
@@ -152,73 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>642 | S O LU TI O N
+    <pre style="white-space:pre-line"><code>642 | 1. 8 − S OL U T I ON
 
 
+                    dQ        1
+                 Q CV     = −  RC  dt
+                    −
+                 ∫  Q CV    = − ∫  RC  dt
+                      dQ
+                                   1
+                      −
 
-                       =  1  + C e − 50t
-                        100
+                 ln Q CV =    −  t  +  A
+                      −
+                                C R
+                                  +
+                   −
+                 Q CV =    e −  / t CR A
+                 Q ( ) t =  De −  / t CR  +  CV
 
-                               0
-                        q ( ) 0 =
-                        0 =  1  + C
-                            100
+                              0
+                       Q ( ) 0 =
 
-                        C = −  1
-                              100
+                       0 =  De − 0  + CV
+                       D = − CV
 
-                 qt      1  −  1  e − 50t
+
+                 Q =  −  CVe −  / t CR  +  CV
                    ( ) =
-                        100 100
+                 Qt     CV  ( 1 e −  / t CR )
+                              −
+                                     (
+                        ( )
+             b)  lim Q t =   CV  lim 1 e   −  / t CR )
+                                        −
+                 t→∞             t→∞
+                                      )
+                                   −
+                           =  CV (10                         lim e −  / t CR  =  lim  1  →  1  =  0
+                                                            t→∞           t→∞  e  / t CR  ∞
+                           = CV
+
+                                              ( )
+                               dQ    Q
+             c)  In this case,  R  +   =  0 , Q t  =  CV
+                                dt   C          1
+                 dQ  = −  Q
+                  dt     CR
+
+                 ∫  dQ  = − CR ∫  dt
+                            1
+                    Q
 
 
-                         e
-             b)  ( ) ti  =  1 − 50t                   ( ) t i  =  dq
-                        2                                  dt
+                 ln Q = −  t  +  A
+                          C R
+                 The solution is Q =  Ee −  / t CR
 
+                       ( )
+                 So, Q t 1  =  Ee − 1 / t CR  =  CV
 
-          Exercise
+                      E = CVe t 1 /CR
 
-          A 200−volt electromotive force is applied to an RC-series circuit in which the resistance is 1000
+                                  e
+                 Q ( ) t =  CVe 1 / t CR −  / t CR
 
-          ohms and the capacitance is 5 10×  − 6   farad.
-                                 q
-             a)  Find the charge  ( ) t  if  ( ) 0i  = 0.4
-             b)  Determine the charge as t → ∞
-          Solution
-
-                                            ×
-                 Given:  R =  1000 ,  C =  5 10 − 6  F  Et
-                                                        ( ) 200 V=
-                                  Ω
-                      dq   1   6                       dq
-             a)  1000    +   10 q =  200             R    +  1  q =  Et
-                                                                   ( )
-                      dt   5                           dt   C
-                 dq  +  200q =  1
-                  dt          5
-
-                      ∫ 200dt
-                        e     =  e 200t
-
-                     ∫ 5      dt =  1000
-                       1 e 200t     1   e 200t
-
-
-                                              )
-                   ( ) =
-                 qt       1   (  1  e 200t  + C
-                            t
-                        e 200 1000
-                       =  1   + C e − 200t
-                        1000
-
-
-                 i ( ) t = − 200Ce − 200t             ( ) t i  =  dq
-                                                           dt
-                        i ( ) 0 = 0.4
-
-                        0.4 = − 200C</code></pre>
+                              1
+                       = CVe (t t −  )/CR
+                              (
+                               t t
+                             −−    ) /CR
+                       = CVe     1         for t ≥  t
+                                                    1</code></pre>
      	</div>
     
      </div>

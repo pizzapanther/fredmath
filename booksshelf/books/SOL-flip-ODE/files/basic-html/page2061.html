@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2061 - DE Solution</title>
+        <title>Page 2061 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2061 - DE Solution</div>
+        <div id="content-top1">Page 2061 - ODE Solution Manual</div>
         <div id="content-top2">P. 2061</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4. 3 − L eg en d r e’ s  E q u a t i o n  | 2043
+    <pre style="white-space:pre-line"><code>4. 2 −   S e r i e s   S ol ut i on s  n e a r  O r di n a r y P oi nt s  | 2043
 
 
-                    c)  The Hermite polynomial of degree n is denoted by  H  ( ) x . It is the nth-degree polynomial
-                                                                            n
-                                                                                                                n
-                        solution of Hermite’s equation, multiplied by a suitable constant so that the coefficient of  x
-                            n
-                        is  2 . Use part (b)  to show the first six Hermite polynomials are
-                            H   ( ) 1x =
-                              0
-                            H  ( ) x =  2x
-                              1
-                                        2
-                            H   ( ) x =  4x −
-                                           2
-                              2
-                            H   ( ) 8x=  3  − 12x
-                                 x
-                              3
-                            H   ( ) 16x =  x −  4  48x +  2  12
-                              4
+                                                                                                       ∞
+                     ∑  ∞  (n +  1 )(n +  ) 2 a n+ 2  (x −  ) 1  n  +  (x −  ) 1 ∑  ∞  a n  (x −  ) 1  n  =  ee x− 1    e = ∑ x n ! n
+                                                                                                  x
+                                                                               ⋅
+                     n= 0                              ∞    n= 0             ∞                        n= 0
+                      ∞
+                     ∑   (n +  1 )(n +  ) 2 a n+ 2  (x −  ) 1  n  +  ∑  a n  (x −  ) 1  n+ 1  =  e⋅ ∑  (x − ! n  ) 1  n
 
-                            H   ( ) 32x=  x  5  −  160x +  3  120x
-                              5
-                    d)  A general formula for the Hermite polynomials is
-                                                 2
-                                H  ( ) ( ) 1 e= −  n x d n      e − x 2    
-                                    x
-                                  n                dx   n    
-                        Verify that this formula does in fact give an nth-degree polynomial.
-                 Solution
 
-                                 ∞
-                               ∑        n
-                    a)  ( ) =        a x
-                         yx
-                                      n
-                                n= ∞  0          ∞
-                                ∑         n− 1  ∑               n
-                         y′ ( ) x =  na x     =     (n +  ) 1 a n+ 1 x
-                                       n
-                                 n= 1           n= 0
-                                ∑  ∞             n− 2   ∑  ∞                     n
-                         y′′ ( ) x =   nn   ) 1 a x    =      (   n +  2 )(n +  ) 1 a n+ 2 x
-                                       ( −
-                                               n
-                                 n= 2                    n= 0
-                         y′′ −  2xy′ +  2 y =  α  0
-                          ∞                             ∞                      ∞
+                     n= 0                             n= 0                  n= 0
+                      ∞                                ∞                     ∞        n
+                         (n +  1 )(n +  ) 2 a n+ ∑  2  (x −  ) 1  n  +  ∑  a n−  1 (x −  ) 1  n  =  e⋅ ∑  (x − ! n  ) 1
 
-                             (n +  2 )(n +  ) 1 a n+ ∑  2 x −  n  2x ∑  (n +  ) 1 a n+  1 x +  n  2α ∑  a x =  n  n  0
-                         n= 0                          n= 0                   n= 0
-                          ∞                          ∞                       ∞
-                                                                                 α
-                             (n +  2 )(n +  ) 1 a n+∑  2 ∑  x −  n  ( 2 n +  ) 1 a n+  1 x n+ 1 +  ∑  2 a x =  n  n  0
-                         n= 0                       n= 0                    n= 0
-                          ∞                          ∞              ∞
-                        ∑    (n +  1 )(n +  ) 2 a n+ 2 ∑  x −  n  2nax + n ∑  n  2 ax = n  n  0
-                                                                        α
+                     n= 0                             n= 1                  n= 0
+                       2 ∑  ∞                           n   ∑  ∞           n         ∑  ∞  (x −  ) 1  n
+                     2a +      (n +  1 )(n +  ) 2 a n+  2  (x −  ) 1  +  a n−  1 (x −  ) 1  =  e e⋅  ! n
+                                                                                 +
+                            n= 1                            n= 1                     n= 1
+                            ∞                                               ∞         n
+                       2 ∑                                     n         ∑    (x −  ) 1
+                     2a +        (n +  1 )(n +  ) 2 a n+  2  +  a n−  1 (x −  ) 1  =  e +  e⋅  ! n
 
-                         n= 0                       n= 1           n= 0</code></pre>
+                            n= 1                                            n= 1
+                     2 a =  e →     a =  e
+                        2            2   2
+                     (n +  1 )(n +  ) 2 a n+  2  +  a n−  1  =  e ! n
+
+
+                     a     =        e        −       1      a
+                      n+  2  ( +  n  1 )(n +  ) 2  n !  (n +  1 )(n +  ) 2  n−  1
+
+                       a
+                        0
+
+                       n  1  → =  a =  e  −  1 a
+                                 3   6   6  0
+                       n   4  →=  a =   e  −  1  a =  −  11e  +  1  a
+                                  6   720    30  3     720   180  0
+
+                       a
+                        1
+                       n  2 → =  a =  e  −  1  a
+                                 4   24 12    1
+                       n  5 → =  a =   e  −  1  a =   e   +  1  a
+                                 7   5040   42   4   1260   504  0
+
+                       a =  e
+                        2   2
+
+                       n =  3  →  a =  e  −  1  a =  e  −  e  =  −  e
+                                  5  120   20  2  120   40     60
+                       n =  6  →  a =   e   −  1  a =   e    +  e   =  13e
+                                                                          2
+                                  8   40,320  56  5   40,320   3360   40,3 0
+                                      
+                                         
+                                              
+                                                                                                  e
+                                                                             e
+                                                                                  1
+                     yx     a +  0  ( x −  ) 1 a +  1  e ( x −  ) 1  2  +  ( e  −  1 a 0 ) ( x −  ) 1  3  +  ( 24  −  12 a 1 ) ( x −  ) 1  4  −  60 ( x −  ) 1  5  +  
+                      ( ) =
+                                            2
+                                                         6
+                                                            6</code></pre>
      	</div>
     
      </div>

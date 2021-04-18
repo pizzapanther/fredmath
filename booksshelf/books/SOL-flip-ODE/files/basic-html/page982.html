@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 982 - DE Solution</title>
+        <title>Page 982 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 982 - DE Solution</div>
+        <div id="content-top1">Page 982 - ODE Solution Manual</div>
         <div id="content-top2">P. 982</div>
      </div>
      <div id="content-middle">
@@ -156,57 +156,74 @@ function MM_swapImage() { //v3.0
 
 
 
-                 ⇒    A =  1  ; B =  −  1  ; C =   1
-                          780         507         2197
+                 y′′ =  12Ax +  2  6Bx +  2C
+                   p
+                 y′′ =  24Ax +  6B
+                   p
+              y′′′ +  8y′′ =  −  6x +  2  9x +  2
 
-                 y    =  (  1  x −  5  1  x +  4  1  x 3 ) e 2x
-                    1 p  780      507      2197
+              24Ax +  6B +  96Ax +  2  48Bx +  16C =  −  6x +  2  9x +  2
 
-
-              y   =  ( Dx +  2  Ex ) cos3x +  ( Fx +  2  Gx ) sin3x
-               p 2
-                                                (
-                                                     2
-                         2
-              y′  = ( 3Fx + 3Gx+ 2Dx E ) cos3x +− 3Dx − 3Ex+ 2Fx G  ) sin3x
-                                    +
-                                                                 +
-               p 2
-                                                       (
-                                                             2
-                          2
-              y′′  = ( − 9Dx − 9Ex+ 12Fx+ 6G+ 2D ) cos3x +− 9Fx − 9Gx− 12Dx− 9E+ 2F ) sin3x
-               p 2
-              y ( ) 3  ( − =  27Fx −  2  27Gx−  54Dx−  36E+  18F ) cos3x +  ( 27Dx +  2  27Ex−  54Fx−  27G−  18D ) sin3x
-                  p 2
-              y ( ) 4  = ( 81Dx +  2  81Ex −  216Fx −  108G −  108D ) cos3x +  ( 81Fx +  2  81Gx +  216Dx +  135E −  108F ) sin3x
-                  p 2
-              y ( ) 5  = ( 243Fx +  2  243Gx+  810Dx−  108E−  540F ) cos3x +  ( −  243Dx −  2  243Ex+  810Fx+  405G+  540D ) sin3x
-                  p 2
-
-              y ( ) 5  −  6y ( ) 4  +  21y ( ) 3  −  62y′′ +  108y′ −  2 7 y x=  sin3x
-
-
-                     c s o 3x  x 2   x      x 0
-                            − 486 810     648
-                       D    558    − 1134   124
-                            − 72   216    −
-                                   −  486  −  16 2
-                       E           558    − 756
-                                   − 72   108
-                            243    1296     540
-                       F    −  567  −  744  −
-                                          378
-                            324
-                                   243
-                       G           − 567  648
-                                   324    − 372
+                                            A = −  1
+                    96A =  −  6          →        16
+                 
+                 
+                                         1
+                                                     21
+                                                           7
+                  24 +  A  48B =  9  →  B =  96 ( 9 +  3 ) =  108  =  32
+                                                2
+                 
+                   6 +  B  16C =  2  →  C =  1 ( 2 −  21 )  =  11
+                                          16     16    256
+                 
+                                                        11
+                                        1
+                                                            2
+                                                7
+               ( ) C + =
+                               +
+              yx      1   C x e   − 8x  −  16  x +  4  32  x +  3  256  x
+                            2
 
 
-                                              =
-                             x 2            00
-                        →    x         −  108D +  552F=  0
-                             x 0  524D −  810E −  162F+  276G =  0</code></pre>
+          Exercise
+          Find the general solution:   y ( ) 4  +  y′′ =  3x +  2  4sin x −  2cos x
+          Solution
+             The characteristic equation: λ      4  2 λ +  2  =  0
+                                                             i
+                                          λ    = 0,   λ  = ± 2
+                                            1,2       3,4
+
+                             +
+              y =  C +  C xC      cos xC    sin x
+                                       +
+               h    1     2     3         4
+              y  =  Ax +  4  Bx +  3  Cx +  2  Ex cos x +  Fx sin x
+               p
+                 y′ =  4Ax +  3  3Bx +  2  2Cx +  E cos x Ex−  sin x +  F sin x +  Fx cos x
+                   p
+
+                     =  4Ax +  3  3Bx +  2  2Cx +  (E +  Fx )cos x +  (F −  Ex )sin x
+
+
+                 y′′ =  12Ax +  2  6Bx +  2C +  F cos x −  (E +  Fx )sin x E−  sin x +  (F −  Ex )cos x
+                   p
+                     =  12Ax +  2  6Bx +  2C +  (2F −  Ex )cos x −  (2E +  Fx )sin x
+
+
+                 y′′′ =  24Ax +  6B E cos x −  (2F −  Ex )sin x F−  sin x −  (2E +  Fx )cos x
+                                  −
+                   p
+                     =  24Ax +  6B −  (3E +  Fx )cos x −  (3F −  Ex )sin x
+
+
+                 y ( ) 4  =  24A F  cos x +  (3E +  Fx )sin x +  E sin x −  (3F −  Ex )cos x
+                            −
+                       =  24A −  (4F −  Ex )cos x +  (4E +  Fx )sin x
+
+
+              y ( ) 4  +  y′′ =  3x +  2  4sin x −  2cos x</code></pre>
      	</div>
     
      </div>

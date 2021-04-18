@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1343 - DE Solution</title>
+        <title>Page 1343 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1343 - DE Solution</div>
+        <div id="content-top1">Page 1343 - ODE Solution Manual</div>
         <div id="content-top2">P. 1343</div>
      </div>
      <div id="content-middle">
@@ -155,76 +155,81 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1329
 
 
-                                           (1 ste−  )  − st      −  1
-                                −                                  a 2  cosat
-                                                 2   − st
-                                                   )
-                                 +       ( −  2s +  s te
 
-                           ∞                                              ∞          ∞
-                                                           −
-                                                                                                 2
-                                                                                                        ( ) e
-                                 ( ) e
-                             t cos at  −  st dt =   ∫    1 sin at +  1 st  cosat e −  st     −  a ∫  1 2  ( −  2s +  s t ) cos at  −  st dt
-                                                                    
-                                                            2
-                                                a
-                          0                               a                0         0
-                                                      2s
-                                                                                           ( ) e
-                                                                 ( ) e
-                                             =  −  a ∫  1 2  +  a 2  0 ∞  cos at  −  st dt −  a ∫  s 2  0 ∞  t  cos at  −  st dt
-                                                                                2
-                           a ∫  2  0  t  cos at    dt =  −  a ∫  2  +  a 2  0  cos at  dt
-                          2
-                         s + a 2   ∞           −  st     1    2s    ∞          −  st
-                                                                         ( ) e
-                                          ( ) e
-                        ( s + a 2 ) ∫  ∞  t  cos at  −  st dt = −+  ∫  ∞  cos at  −  st dt
-                          2
-                                                          1 2s
-                                           ( ) e
-                                                                        ( ) e
-                                    0                            0
-                                                       ∫ cosat  dt
+                     £ { at −+   −  at } ( ) s = ∫ 0 ∞ ( at −+  −  at ) e −  st dt
+                                                    1 e
+                            1 e
 
-                                 +       e − st          1  sinat
-                                                         a
-                                        −    se − st     −  1  cosat
-                                −                        a 2
-                                 +       2 − st
+
+
+                                                                             (sa
+                                         =  ∫  0 ∞    at e −  st dt −  ∫  0 ∞  e −  st dt +  ∫  0 ∞  e −+  )t dt
+
+
+                                                                ∫ e − st dt
+
+
+                                                                    e
+                                             +      at          − 1 − st
+                                                                  s
+                                                                 1   − st
+                                             −      a            2   e
+                                                                s
+
+                                          
+                     £ { at −+   −  at } ( ) s = −  a t −  a  +  1  −  1      e −  st     ∞
+                            1 e
+                                          
+                                                             +
+                                             s   s 2   s  sa         0
+                                                1
+                                         =  a  −+    1
+                                                     +
+                                           s 2  s   sa
+                                             +
+                                         =  as a −  2  s −  2  as +  s 2
+                                                 s 2 (s +  ) a
+
+                                         =    a 2           √
+                                           s 2 (s +  ) a
+
+
+
+                 Exercise
+
+                 Use Definition of Laplace transform to show the Laplace transform of
+                        £  { 1−  ba e −  at  +  ba e −  bt } ( ) s =  ( ss a s b )
+                                 b
+                                             a
+                                                                 ab
+                                 −
+                                             −
+                                                                  )( +
+                                                               +
+                 Solution
+                     £ { 1−  ba e −  at  +  ba  e −  bt } ( ) s =  ∫ 0 ∞ ( 1−  ba e −  at  +  ba  e −  bt ) e −  st dt
+                                                                  b
+                                         a
+                                                                              a
+                             b
+                                                                              −
+                                                                  −
+                                         −
+                             −
+                                                                                (s a
+                                                                                                       (sb
+                                                                      b
+                                                                                            a
+                                                     =  ∫  0 ∞  e − st dt −  ba ∫  0 ∞  e −+  )t dt +  ba ∫  0 ∞  e −+  )t dt
+                                                                      −
+                                                                                            −
+                                                                                           (sb
+                                                                  (s a
+                                      =  −  1 − st  +   b        e −+  )t  −     a      e −+   )t     ∞
                                            e
-                                        s
-                                  ∞                                           ∞     2    ∞
-                                        ( ) e
-                                                                                                  at
-                                     cos at   −  st dt =   ∫    1  sin at −  s 2  cosat e −  st     −  a ∫  s 2  cos ( ) e −  st dt
-                                                                         
-                                                      a
-                                 0                              a              0         0
-                                  a ∫    0   cos at      dt =  a 2
-                                 2
-                                s +  a 2  ∞           − st    s
-                                                ( ) e
-                                    2
-                                ∫ 0 ∞  cos at  − st dt =  s + a 2
-                                                         s
-                                        ( ) e
-                                                      2
-
-
-                        ( s +  2  a 2 ) ∫ 0 ∞  t  cos at  − st dt = − 1 2s      s +  a 
-                                                                         
-                                                                    s
-                                           ( ) e
-                                                           +
-                                                                         
-                                                                       2
-                                                                  2
-                                                       =   s − −  2  a +  2  2s 2
-                                                              2
-                                                             s +  a 2</code></pre>
+                                          s       (b as a−  )( +  )        (b as b−  )( +  )       0
+                                      =  1  −     b       +      a
+                                        s   (b as a−  )( +  ) (b as b−  )( +  )</code></pre>
      	</div>
     
      </div>

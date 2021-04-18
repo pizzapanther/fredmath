@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2202 - DE Solution</title>
+        <title>Page 2202 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2202 - DE Solution</div>
+        <div id="content-top1">Page 2202 - ODE Solution Manual</div>
         <div id="content-top2">P. 2202</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,84 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2184 | S O LU TI O N
 
 
+                                                                                      β 
+                                                                                                   β
+              yx     x − 1     cJ  ( ) x + cY  ( )  x           y ( ) x =  x α      c J  ( ) +  c Y  ( )     
+               ( ) =
+                                                                                                 kx
+                                                                                     kx
+                                     20
+                           1 0
+                                                                                            2 υ
+                                                                               1 υ
+
+
           Exercise
-
-          For a practical application, we now consider the problem of determining when a uniform vertical
-          column will buckle under its own weight (after, perhaps, being nudged laterally just a bit by a passing
-                              0
-          breeze). We take  x =  at the free top end of the column and  x =  L &gt;  0  at its bottom; we assume that
-          the bottom is rigidly imbedded in the ground, perhaps in concrete.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          Denote the angular deflection of the column at the point x by  ( ) xθ  . From the theory of elasticity it
-          follows that
-                                                      2
-                                                 EI  d θ +  g xρθ =  0
-                                                     dx 2
-          Where E is the Young’s modulus of the material of the column,
-                 I is its cross-sectional moment of inertia
-                 ρ  is the linear density of the column
-                 g is gravitational acceleration.
-
-          For physical reasons − no bending at the free top of the column and no deflection at its imbedded
-          bottom − the boundary conditions are       θ  ( ) 0 =  0, θ′  ( ) 0L =
-
-          Determine the general equation of the length L.
+          Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
+          functions.
+                        4x y′′ − 2  12xy′ +  (15 16x y+  ) =  0
 
           Solution
-
-              EIθ′′ +  g xρθ =  0
-                  gρ
-             θ        xθ′′ +  =  0
-                   EI
-                       gρ     2
-             Let  λ =      = γ
-                       EI
-               2
-              x ×   θ   γ ′′ +  2 x =  θ  0
-              x θ  2  γ′ +  23  = ′  0; θ θ  ( ) 0 = 0, θ′  ( ) 0L =
-                       x
-
-              A = 0, B =  0, C γ   2 ,  p =  3
-                                =
-                                             1
+                                                                        2
+              x y′′ −  2  3xy′ +  ( 15  +  4x y =  )  0             x 2 d y  +  Ax  dy  +  ( B +  Cx  p ) y =  0
+                            4
+                                                                        2
+                                                                               dx
+                                                                      dx
+              A = −  3, B =  15 , C =  4,  p = 1
+                            4
+                                                                                             −
                                                                  −
-             α    1 , β =  =  3 , k  2γ , υ=  =             α   1 A , β =  =  p ,  k  2 C  , υ=  =  (1 A−  ) −  2  4B
-                  2        2        3        3                    2       2       p             p</code></pre>
+             α    2, β =  =  1 , k =  4, υ  =  ( ) 4  2  − 15  = 1   α  1 A , β =  =  p ,  k  2 C  , υ=  =  (1 A ) −  2  4B
+                          2                    1                  2       2       p             p
+                                                  )
+                                                                                                   β
+                                                                                      β 
+              yx     x 2  cJ  ( 4x 1/2 ) + c Y  ( 4x 1/2          y ( ) x =  x α      c J  ( ) +  c Y  ( )     
+               ( ) =
+                                                                                     kx
+                                                                                                 kx
+                                                   
+                        
+                                        21
+                          1 1
+                        
+                                                                                            2 υ
+                                                   
+                                                                               1 υ
+
+
+          Exercise
+          Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
+          functions.
+                            2
+                        16x y′′ −  ( 5 144x−  3 )  y =  0
+          Solution
+                                                                        2
+                            5
+              x y′′ +  2  ( 9x −  3  16 ) y =  0                    x 2 d y  +  Ax  dy  +  ( B +  Cx p ) y =  0
+                                                                               dx
+                                                                        2
+                                                                      dx
+              A = 0, B = −  5  , C =  9,  p =  3
+                           16
+                                            1+  5                                             (1 A ) −  2  4B
+                                                                                                −
+                                                                    −
+             α    1 , β =  =  3 , k =  2, υ  =  4  =  1        α   1 A , β =  =  p ,  k  2 C  , υ=  =
+                  2        2                 3      2               2        2       p            p
+                                                          )
+                                                                                                    β
+                                                                                      β 
+              y ( ) x =  x 1/2  cJ  ( 2x 3/2 )  +  c J  1/2 ( 2x 3/2           y ( ) x =  x α      c J  ( ) +  c J  ( )     
+                                                                                                  kx
+                                                                                     kx
+                         
+                           1 1/2
+                         
+                                            2 −
+                                                                                            2 −υ
+                                                                               1 υ</code></pre>
      	</div>
     
      </div>
@@ -223,7 +242,7 @@ function MM_swapImage() { //v3.0
            <tr>
              <td width="22%" height="44"><a href="page2201.html"><img src="images/previous.png" width="26" height="19" id="Image2" onmouseover="MM_swapImage('Image2','','images/previous2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
              <td width="43%">
-             	&nbsp;&nbsp;&nbsp;<a href="page2197.html">2197</a>&nbsp;&nbsp;&nbsp;<a href="page2198.html">2198</a>&nbsp;&nbsp;&nbsp;<a href="page2199.html">2199</a>&nbsp;&nbsp;&nbsp;<a href="page2200.html">2200</a>&nbsp;&nbsp;&nbsp;<a href="page2201.html">2201</a>&nbsp;&nbsp;&nbsp;<a href="page2202.html">2202</a>&nbsp;&nbsp;&nbsp;<a href="page2203.html">2203</a>&nbsp;&nbsp;&nbsp;<a href="page2204.html">2204</a>&nbsp;&nbsp;&nbsp;<a href="page2205.html">2205</a>&nbsp;&nbsp;&nbsp;<a href="page2206.html">2206</a>
+             	&nbsp;&nbsp;&nbsp;<a href="page2197.html">2197</a>&nbsp;&nbsp;&nbsp;<a href="page2198.html">2198</a>&nbsp;&nbsp;&nbsp;<a href="page2199.html">2199</a>&nbsp;&nbsp;&nbsp;<a href="page2200.html">2200</a>&nbsp;&nbsp;&nbsp;<a href="page2201.html">2201</a>&nbsp;&nbsp;&nbsp;<a href="page2202.html">2202</a>&nbsp;&nbsp;&nbsp;<a href="page2203.html">2203</a>&nbsp;&nbsp;&nbsp;<a href="page2204.html">2204</a>&nbsp;&nbsp;&nbsp;<a href="page2205.html">2205</a>&nbsp;&nbsp;&nbsp;<a href="page2206.html">2206</a>&nbsp;&nbsp;&nbsp;<a href="page2207.html">2207</a>
              </td>
              <td width="35%"><a href="page2203.html"><img src="images/next.png" width="26" height="19" id="Image1" onmouseover="MM_swapImage('Image1','','images/next2.png',1)" onmouseout="MM_swapImgRestore()" /></a></td>
            </tr>

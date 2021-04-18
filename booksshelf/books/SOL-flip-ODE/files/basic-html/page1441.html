@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1441 - DE Solution</title>
+        <title>Page 1441 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1441 - DE Solution</div>
+        <div id="content-top1">Page 1441 - ODE Solution Manual</div>
         <div id="content-top2">P. 1441</div>
      </div>
      <div id="content-middle">
@@ -152,78 +152,83 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1427
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1427
 
 
 
-                      ( ) 2 cos2te
-                     y t =   e t     +  t  sin2t
-
-
-                 Exercise
-
-                                                                                              0
-                 Solve using the Laplace transform:     y′′  2y′ −  +  5y =  1 t +  ,    y ( ) 0 =  0, y′ ( ) 0 =
-                 Solution
-                     £  {y′′ −  2y′ +  5y =  } £  {1 t +  }
-
-
-                                                                                                           0
-                     s Y s − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  2sY s +  ( ) 2y ( ) 0 +  5Y  ( ) s =  1  +  s 1 2     y ( ) 0 =  0 y′ ( ) 0 =
-                                                                       s
-                                )
-                     ( s −  2  2s +  5 Y  ( ) s =  s + 1
-                                         s 2
-
-                                                         ( −
-                     Y ( ) s =    s + 1     =  A  +  B  +  Cs  ) 1 +  D
-                            s 2 ( (s −  ) 1  2  +  4 )  s  s 2  (s −  ) 1  2  +  4
-
-
-                                                                                   2
-                                  3
-                                         2
-                                                                             2
-                                                     2
-                                                                       3
-                        s + 1 =  As −  2As + 5As +  Bs −  2Bs + 5B + Cs − Cs +  Ds
-                             s 3      A C =  0        C = −  7
-                                         +
-                                                            25
-                            
-                                                            2
-                             s   2  −  2A +  BC +  D =  0  D =  25
-                                          −
-                            
-                            
-                              s   1  5A −  2B =  1     A =  7
-                                                           25
-                              0                            1
-                             s         5B = 1          B =  5
-                            
-                     £   −  1 {Y s      −  1       7 1  +  11  −  7  s − 1  +  1  2       
-                             ( )} £=
-                                             25 s  5  s 2  25 (s −  ) 1  2  +  2 2  25  (s −  ) 1  2  +  2   2  
-
-                                                     e
-                                        e
-                     y ( ) t =  7  +  1 t −  7 t  cos2t +  1 t  sin 2t
-                            25   5   25           25
-
-
-                 Exercise
-
-                                                                  t
-                                                                           =
-                 Solve using the Laplace transform:     y′′  3y′ +  = − 3 ; y (0) − 1, y′ (0) 1
-                                                                                       =
-                 Solution
-                     £  ( y′′ +  3y′ =  ) £ −  ( 3t )
-
+                     w′′ −  w′ −  2w =  −  8cos t +  (  π  2 )  −  2sin t +  (  π  2 )
+                                      (
+                                                      t
+                                                               2 sin cos
+                                                                                 t
+                                          t
+                                 =  −  8 cos cos π  2  −  sin sin π  2 ) (  t  π  2  +  cos sin π  2 )
+                                                              −
+                     £  {w′′ −  w′ −  2w =  } £  {8sint −  2cost }
                       2
-                                                                                           =
-                     s Y ( ) −  s  sy (0) −  y′ (0) +  ( 3 sY ( ) −  s  y (0) ) =  −  3  1     y (0) =  −  1 y′ (0) 1
-                                                                s 2</code></pre>
+                     s W  ( ) sws −  ( ) 0 −  w′ ( ) 0 −  sW  ( ) ws +  ( ) 0 −  2W  ( ) s =  8  −  2s
+                                                                       s +  2  1  s +  2  1
+
+                                                     π
+                                  π
+                                y ( )  =  w ( ) 0 = 1,  y′  ( )  =  w′  ( ) 0 =
+                                                                 0
+                                                     2
+                                  2
+                               )
+                     ( s −−   2 W  ( ) s =  82s  +  s − 1
+                       2
+                                          −
+                          s
+                                         2
+                                        s +  1
+                     W  ( ) s =  s −  3  s −  2  s + 7  =  A  +  B  +  Cs +  D
+                                         (
+                                                                   2
+                                            2
+                             (s +  1 )(s −  ) 2 s + 1 )  s +  1  s −  2  s + 1
+                        3
+                            2
+                      s −  s −+    7 =  As −  3  2As +  2  As −  2A +  Bs +  3  Bs +  2  Bs +  B +  Cs −  3  Cs −  2  2Cs +  Ds −  2  Ds −  2D
+                                s
+                                 s 3    A +  BC =  1
+                                               +
+                                
+                                 s   2  −  2A +  BC +  D =  −  1
+                                             −
+                                
+                                 s   1  A +  B −  2C −  D =  −  1
+                                  0
+                                 s   −  2A +  B −  2D =  7
+                                A =  −  1,  B =  3 ,  C =  7 ,  D =  −  11
+                                            5      5        5
+                     £   −  1 {W s  =    −  1      −  13 1  +  74 1  +  7  s  −  11  1    
+                              ( )} £
+                                            3 s +  1 15 s −  2  5  s +  2  1  5  s +  2  1
+
+
+                     w ( ) t =  −  e  t −  +  3 e 2t  +  7  cost −  11 sint
+                                   5      5        5
+                                                     ( )
+                                                         2
+                                             2
+                     y ( ) t =  w t −  (  π  2 )  =  −  e  t − + π +  3 e 2 t − π  +  7 cos t −  (  π  2 ) −  11 sin t −  (  π  2 )
+                                                                             5
+                                                              5
+                                                 5
+                                t − + π  3      7                          11
+                                           −
+                                                                          −
+                          =  −  e  2  +  e 2t π +  ( cos cos π  +  sin sin π  ) ( sin cos π  −  cos sin π  )
+                                                                  t
+                                                      t
+                                                                                  t
+                                                                                              t
+                                      5          5         2           2    5          2           2
+                                 −
+                                           2
+                          =  3 e 2t π −  e  t − + π +  7 sint +  11 cost
+                            5                  5       5</code></pre>
      	</div>
     
      </div>

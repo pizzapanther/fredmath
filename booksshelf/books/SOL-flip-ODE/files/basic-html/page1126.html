@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1126 - DE Solution</title>
+        <title>Page 1126 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1126 - DE Solution</div>
+        <div id="content-top1">Page 1126 - ODE Solution Manual</div>
         <div id="content-top2">P. 1126</div>
      </div>
      <div id="content-middle">
@@ -156,72 +156,71 @@ function MM_swapImage() { //v3.0
 
 
 
-                              =  22
-
-                           C +  C =  2ln (  2 1 )
-                                              −
-                            1    2
-                              C +  C =   22
-                             −   1  2
-                         2C =   2ln (  2 1 +  )  2 2
-                                        −
-                            2
-                        C =   ln (  2 1 +  )  2
-                                     −
-                          2
-                                    −
-                        C =   ln (  2 1 −  )  2
-                          1
-               ( ) (
-                            −
-                                                                      −
-              yx =    ln (  2 1 −  )  2 −    ln sec x +  tan x ) cos x +  ln ( (  2 1 +  )  2 +  ln csc x −  cot x ) sin   x
-
-
           Exercise
 
-                                                  =
-          Find the general solution    y′′ − 2y′ +  y e x ln ; x   y ( ) 1 =  0, y′ ( ) 01 =
-
+          Find the general solution by to variation of parameters with the give n initial conditions.
+                         (   2      )  2x
+                                                              0
+                 ′
+          y′ −  ′  4y +  4y =  12x −  6x  e  ;  y ( ) 10 =  ,  y′ ( ) 0 =
           Solution
-                                            2
-                                                    10
-             The characteristic equation:  λ − 2λ+ =
-             The roots are:     λ   =  1
-                                 1,2
 
-                       x
-              y =  C e +  C xe  x
-               h    1       2
-                                          x
-              y  ( ) x = e x  &  y  ( ) x =  xe
-               1                2
-                   e x    xe x
-             W =
-                         x
-                   e x  e +  xe x
-               =  e 2x  ≠  0
+               2
+                       4
+              λ −  4λ+ =   (λ−   ) 2  2  = 0 ⇒ λ 1,2  =  2
 
+              y =  C e 2x  + C xe 2x
+               h    1        2
 
-                                xx
+                    e 2x      xe 2x
+              W =
+                                 )
+                   2e 2x  (12x e   2x
+                             +
+                =  e 4x  +  2xe 4x  −  2xe 4x
+                =  e 4x  ≠  0
+
+                              e ∫
+                                             )
                                                                                    ()
+                 v  ( ) x =  −  xe 2x ( 12x −  2  6x e 2x  dx       v  ( ) x = − ∫  y gx  dx
                                                                                 2
-                 v  ( ) x = − ∫  xe e  ln x   dx                    v  ( ) x = − ∫  y gx  dx
-                  1              e 2x                                1           W
-                           ∫ x   x
-                               ln  dx
-                        = −
+                  1            4x                                    1           W
+                           ∫  12x −  6x
+                             (   3     2 )  dx
+                        =
+                         −
+                            3
+                        =  2 x − 3x 4
+
+                                           )
+                                     2
+                                                                               1
+                 v  ( ) x =  e ∫ e 2x ( 12x − 6x e 2x  dx           v  ( ) x = ∫  yg ( ) x  dx
+                   2          4x                                     2          W
+                         ∫  12x −  6x
+                            (   2     )  dx
+                        =
+                                  2
+                            3
+                        =  4x − 3x
+
+              y   =  ( 2x −  3  3x 4 ) e 2x  +  ( 4x −  3  3x 2 ) xe 2x    y =  vy + v y
+               p                                                     p    11     2 2
+                                         )
+                                        3
+                 =  ( 2x −  3  3x +  4  4x −  4  3x e 2x
+                     4
+                 = ( x − x 3 ) e 2x
 
 
+              yx     ( C +  1  C x −  2  x +  3  x 4 ) e 2x
+               ( ) =
+                         y ( ) 0  = C = 1
+                                 1
 
-                             u =  ln x  v = ∫    xdx
 
-                            du =  1 dx   =  1  x 2
-                                 x         2
-
-
-                        =  −  1  x 2 ln x +  1 ∫ xdx
-                           2          2</code></pre>
+                   y′ ( ) x =  ( C −  2  3x +  2  4x +  3  2C +  1  2C x −  2  2x +  3  2x 4 ) e 2x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 266 - Differential Book</title>
+        <title>Page 266 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 266 - Differential Book</div>
+        <div id="content-top1">Page 266 - ODE Book</div>
         <div id="content-top2">P. 266</div>
      </div>
      <div id="content-middle">
@@ -152,85 +152,81 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.4 -   Us i n g   L a p l a c e  T r a n sf o r m   t o  S ol v e  D i f f e r e nt i a l  E qu a t i ons  | 251
+    <pre style="white-space:pre-line"><code>2. 6 - F o r c e d H a r m o ni c  M ot i o n  | 253
 
-                                  17
-                                            1
-                          1
-                        =  10 ( (s +  s ++  1 )  − 10 ( s +  s −  4 4 )
+
+                 2.6-4  Forced Damped Harmonic Motion
+
+
+                 In real physical systems, there is always some damping, from frictional effects if nothing else.
+                 Let's add damping to the system
+
+                                mx′′ +  cx′ +  kx =  F  cos t ω     x′′ +  2cx′ +ω 2 x =  F  cos t
+                                                                                           ω
+                                                 0                              0     0
+
+                 The homogeneous equation (transient solution) is:
+
+                      mx′′ +  cx′ +  kx =  0                x′′ +  2cx′ +ω 2  x = 0
+
+                                  k
+                              λ +
+                      m λ  2  c +=   0                                  0
+                                                             2
+                                                                        2
+                                                                            0
+                                                            λ +  2cλ +ω =
+                                                                        0
                                     2
-                                                2
-                                  1) +
-
-                        =  1     s + 1   +  7       1      −  1    s    +  1    4
-                          10 ( (s +  1) +  2  1 )  10 ( (s +  1) +  2  1 )  10 ( s +  2  4 )  10 ( s +  2  4 )
-
-                     ( ) t £ −1      1  s + 1    7       1        1     s       1    4      
-                    y   =                       +                −            +            
-                                                                                           )
+                                   c −
+                      λ  1,2  =  c −±  2m  4mk
                                                                          2
-                                 10 ( (s +  1) +  2  1 )  10 ( (s +  1) +  2  1 )  10 ( s +  4 )  10 ( s +  2  4 
-                                                                                           
-                        =  1 −  e  t  cost +  7 −  e  t  sint −  1  cos2t +  1  2sin 2t
-                          10          10           10        10
-                                                               )
-                                                              t
-                        =  1 ( e  t −  (cost +  7sint ) 2sin 2t+  −  cos2
-                          10
+                                                                              2
+                                                            λ 1,2  =  c − ±  c − ω
+                                                                              0
 
-
-
-               3.4-3  Higher-Order Equations
-
-
-               Example 3
-
-               Find the solution to the initial value problem
-
-
-                                                           y′′
-                                                                         y′′′
-                                                 y′
-                                                                                 0
-                                                      =
-                       y (4)  −  y =  0   y (0) =  0, (0) 1,  (0) =  0, and   (0) =
-               Solution
-                   £  { y (4)  −  y =  }  0
-
-                                      2
-                             3
-                                            −
-                                   −
-                   s Ys − 4  ( ) s y (0) s y′ (0) sy′′ (0) −  y′′′ (0) Y ( ) =  s  0
-                                                            −
-                          )
-                   ( s −  4  1 Ys  2  =  0
-                            () s−
-                   ( s −  4  1 Ys =  )  ()  s
-                                   2
-                     () =
-                   Ys       s 2
-                           4
-                          s −  1
-                         =          s 2
-                           (s −  1 )(s +  ) 1 s + (  2  1 )
-
-                                               +
-                         =   A   +    B   +  Cs D
-                           (s −  1 ) (s +  ) 1  ( s + 1 )
-                                              2
-                             3
-                                  2
-                                              3
-                                                                       2
-                                                              3
-                                                   2
-                                                        −+
+                 The particular solution is:   x    A cos t ω =  B sin t ω +
+                                                p
+                                                                        ω
+                                                                +
+                                                             ω
+                                              xt ′ ( ) =  A ω −  sin t B ω  cos t
+                                               ′′
+                                                               ω
+                                                ( ) −
+                                                                           ω
+                                              xt       A ω=  2 cos t B ω −  2 sin t
+                                                                                                         ω
+                      Am ω −  2 cos t −  ω  Bm ω  2 sin t −  ω  Ac ω  sin t +  ω  Bc ω  cos t +  ω  Ak cos t +  ω  Bk sin t =  ω  F  cos t
+                                                                                                    0
+                              Amω −  2  Bcω +  +  Ak =  F
+                                                   0
+                            
+                               Bmω  −  2  Acω −  +  Bk =  0
+                             ( k −  mω  2 ) A cB =  ω  F
                                           +
-                                                                   +
-                                       +
-                         =  As + As + As A Bs −  Bs + Bs B Cs −  Cs Ds −  D
-                                         (s −  1 )(s +  ) 1 s + (  2  1 )</code></pre>
+                                                   0
+                            
+                            −  cA + ω  ( k −  mω  2 ) B =  0
+                            
+                                    k − m ω  2   c ω
+                                D =
+                                      −  cω   k −  mω  2
+
+                                                       2
+                                     ( k −  mω=  2 ) 2  +  ( )
+                                                   cω
+                                      F      − cω
+                                                            −
+                                D =     0           =  F  ( k mω 2 )
+                                  A               2     0
+                                       0   k mω
+                                             −
+                                       k −  mω 2  F
+                                 D  =             0  =  cF
+                                                       ω
+                                  B                       0
+                                         − cω    0</code></pre>
      	</div>
     
      </div>

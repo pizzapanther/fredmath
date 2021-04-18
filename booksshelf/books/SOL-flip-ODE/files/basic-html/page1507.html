@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1507 - DE Solution</title>
+        <title>Page 1507 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1507 - DE Solution</div>
+        <div id="content-top1">Page 1507 - ODE Solution Manual</div>
         <div id="content-top2">P. 1507</div>
      </div>
      <div id="content-middle">
@@ -152,90 +152,85 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1493
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1493
 
 
-                                   E
-                            qt      0 1   ( 1 e −  t λ  −  λ te −  t λ  )    ω  2  λ =  2  =  1
-                             ( ) =
-                                            −
-                                    L  λ 2                                     LC
-                                 =  EC ( 1 e −  t λ  −  λ te −  t λ  )
-                                         −
-                                    0
-                          dq    1         − kt
-                    b)  R     +   q =  E e
-                           dt   C      0
-                                                         1
+
+                                ⇒  A =    100      B =  −  100       C =    10   2
+                                       1 400π  +  2     1 400π  +  2     1 400π  +
+                                 A        Bs          C     
+                     Is =  () 8π     +           +          
+                                s +  0.1  s +  2  4π  2  s +  2  4π  2  
+
+                                  100       1        100         s          10        1     
+                          =  8π                 −                     +                     
+                                                              s +
+                                                                          +
+                                  +
+                                                     +
+                                                                                   s +
+                                1 400  π  2 s +  0.1  1 400 π  22  4 π  2  1 400 π  22  4 π  2  
+                     It        8         100 £  −  1 {  1  } −  100 £  −  1     s      +  10 π  1  £  −  1     2π        
+                                                               π
+                      ( ) =
+                                         π
+                           1 400π  +  2          s +  0.1               s +  2  4π  2  2π         s +  2  4π   2   
+                         =     8    ( 100 eπ  t −  /10  100 cos2 tπ−  π  5sin 2 tπ +  )
+                           1 400π 2
+                            +
+
+
+                 Exercise
+
+                 Solve the general initial value problem modeling the RC circuit
+
+                                  dQ    1
+                                R    +   Q =   , E  Q ( ) 0 =  0
+                                  dt   C
+                    Where E is a constant source of emf
+
+                 Solution
+
+                       £      dQ  +  1  Q £ ( )
+                                      
+                                              E
+                                        =
+                                      
+                           dt   RC          R
+                                      1
+                                           () =
+                       sQs   −  (0) +  RC  Qs   E  1        Q (0) =  0
+                         () Q
+                                                R s
+                       ( s +  RC ) Qs  E  1
+                            1
+                                 () =
+                                       R s
+                        () =
+                       Qs     E      1
+                                 (
+                              R  ss +  RC )
+                                       1
+                                                           As +  1  A Bs
+                                                                      +
+                                    1      =  A  +  B    =      RC
+                                                      1
+                                       1
+                                                                    1
+                                ss +  (  RC )  s  s +  RC     ss +  (  RC )
+                                   + 
+                                 AB =   0
+                                  1         →   A =  RC   B =  −  RC
+                                  RC  A = 1
+                                
+                                      −  1           −  1         
                                            1
-                                                                           0
-                                              () =
-                        R (sQs −  () q (0) ) +  C Qs  E 0 sk        q ( ) 0 =
-                                                        +
-                        ( Rs +  C ) Q () =  s  E 0 sk+
-                                              1
-                               1
-                        ( RCs + 1 ) Qs   E 0 sk
-                                              1
-                                    () =
-                            C
-                                              +
-                          () =
-                        Qs     E  C         1        =  EC  (  A  +    B    )
-                                          )(
-                                                              +
-                                 0  (s k RCs +     ) 1   0   s k    RCs + 1
-                                       +
-                                          +
-                                               +
-                                RCAs +  A Bs kB =    1
-                                       s 1  (RC A B+ )  =  0
-                                                              ( 1 kRC ) A =  1
-                                                                − →
-                                                +
-                                       s 0    A kB =  1
-                                       A =    1        B = −  RC
-                                            −
-                                           1 kRC          1 kRC
-                                                           −
-                        Qs     E C  (   1     1   −    1     RC    )
-                          () =
-                                 0   1 kRC s−  +  k  1 kRC RCs−  +  1
-                                 EC                    
-                              =    0      1  −    1    
-                                1 kRC s +      k  s +  1   
-                                 −
-                                                   RC 
-                        When  k ≠   1
-                                   RC
-
-                                             EC
-                                        }
-                                              0
-                                £  { () =  1 kRC   £        s  1 k  −  1  1  +    
-                                   Qs
-                                             −
-                                                             s +  RC   
-                                        EC
-                                q ( ) t =  0  ( e −  kt  −  e  t −  /RC )
-                                      1 kRC
-                                        −
-                        When  k =   1    ⇒  Qs     E C          1
-                                             () =
-                                   RC               0   ( s +  RC ) (RCs +  ) 1
-                                                             1
-                                                                                                     
-                                                 =  E RC 2     1      =  E RC 2    A    +     B      
-                                                    0               2    0       RCs + 1           2  
-                                                           (RCs +  ) 1                    ( CRs +  ) 1  
-                                                 +
-                                       RCAs +  A B =  1
-                                               )
-                                                    0
-                                       s 1  (RC A = →    A =  0
-
-                                       s 0   A B =  1 →  B = 1
-                                              +</code></pre>
+                         t
+                       Q () =  E   RC£   { } − RC£          1      
+                              R          s               s +  1      
+                                                            RC   
+                           =  E ( RC − RCe −  / t RC )
+                             R</code></pre>
      	</div>
     
      </div>

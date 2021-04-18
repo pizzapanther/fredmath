@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 202 - DE Solution</title>
+        <title>Page 202 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 202 - DE Solution</div>
+        <div id="content-top1">Page 202 - ODE Solution Manual</div>
         <div id="content-top2">P. 202</div>
      </div>
      <div id="content-middle">
@@ -165,7 +165,7 @@ function MM_swapImage() { //v3.0
 
 
 
-              t = 1024 5 sec  ≈ 38.16 m in
+              t = 1024 5 sec   ≈ 38.16 min
              The tank empties more slowly when the base of the cone is on the bottom.
 
 
@@ -174,12 +174,14 @@ function MM_swapImage() { //v3.0
           A differential equation for the velocity v of a falling mass m subjected to air resistance proportional
           to the square of the instantaneous velocity is
 
-                                       m dv  =  mg kv−  2
+                                                      2
+                                       m dv  =  mg kv
+                                                  −
                                          dt
-
                      0
           Where  k &gt;  is a constant of proportionality. The positive direction is downward.
-             a)  Solve the equation subject to the initial condition  ( ) 0v  = v .
+                                                                 v
+             a)  Solve the equation subject to the initial condition  ( ) 0 =  v .
                                                                          0
              b)  Use the solution in part (a) to determine the limiting, or terminal, velocity of the mass.
              c)  If the distance s, measured from the point where the mass was released above the ground, is
@@ -188,13 +190,15 @@ function MM_swapImage() { //v3.0
                                         dt
           Solution
 
-                    mg kv ∫  − ∫  m  dv =  dt           2 ∫  dx  =  1 tanh − 1 x
-             a)            2                           a −  x 2  a       a
 
-
+                                                        2 ∫
+                                                          dx
+             a)     mg kv− ∫  m  2  dv = ∫  dt         a −  x 2  =  1 tanh − 1 x
+                                                                         a
+                                                                 a
                                          
-                  1    m  tanh  1 −      k  v = tC
-                                              +
+                  1    m  tanh  1 −      k  v = +
+                                            tC
                                          
                    k   mg            mg      1
                                 
@@ -207,7 +211,6 @@ function MM_swapImage() { //v3.0
 
                         tanh − 1     k  v      = C
                                  mg    0  
-
 
                     k  v =  tanh   kg t +  tanh − 1   k   v    
                    mg              m            mg  0        

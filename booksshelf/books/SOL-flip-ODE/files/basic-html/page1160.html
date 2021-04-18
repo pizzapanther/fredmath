@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1160 - DE Solution</title>
+        <title>Page 1160 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1160 - DE Solution</div>
+        <div id="content-top1">Page 1160 - ODE Solution Manual</div>
         <div id="content-top2">P. 1160</div>
      </div>
      <div id="content-middle">
@@ -155,75 +155,80 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1150 | S O LU TI O N
 
 
-              ( kA m−ω 2 A ) cos t + ( kB m−ω 2 B ) sin t =  F 0 cos t
-                              ω
-                                                              ω
-                                                   ω
-                      ( k −ω 2 ) A =  F
-                           m
-                                     0
-                     
-                      ( k −ω  2 ) B =  0
-                           m
-                     
-                            F
-                     A =     0    ,  B = 0
-                             m
-                         k −ω   2
-                      F
-              x  =     0    cos t
-                               ω
-               P   k −ω   2
-                       m
-                                                F
-              x t =  ( ) C  cosω  t +  C  sinω  t +  0  cos t ω
-                      1     0     2      0   k − mω 2
-                                       F
-                         x ( ) 0 = C +   0    =  x
-                                 1
-                                     k −  mω 2   0
+                          22
+                        = ωδ
 
-                                      F
-                        C =   x −      0
-                          1    0          2
-                                   k − mω
-                                                          ω  F
-                 x′ ( ) t =  −  ω  01  sin ω  0 t ω  +  0 2  cos ω  0 t −  k − 00 2  sin t
-                                                                    ω
-                             C
-                                            C
-                                                            mω
-                         x′ ( ) 0 =  C =  0
-                                  2
-                            F                 F
-                             0
-                                                0
-              x ( ) t =  x −  0  k −  m ω  2  cos ω  0 t +  k −  m ω  2  cos t
-                                                        ω
-                             F
-                   =  x +     0    ( cos tω  cosω −  t )
-                      0   k − mω 2               0
+                        =  4ωδ
+
+
+              xt     8   sin t sin t
+               ( ) =
+                                  δ
+                            ϖ
+                    4ωδ
+
+                          ϖ
+                                δ
+                 =  2  sin t sin t
+                   ωδ
+                                                2
+             If we choose ω = 1.8  near to ω =
+                                            0
+             That implies to: ω=  2 + 1.8  ≈ 1. 9 and δ=  2 − 1.8  ≈ 0. 1
+                                    2                    2
+
+                              t
+              xt     2  sin0.1 sin1.9t
+               ( ) =
+                    0.19
+                  =  200 sin  t    sin 19    t
+                     19    10     10
 
 
 
-           Exercise
 
-          Find the general solution:   mx′′ +  kx =  F  cos t ω  ; x ( ) 0 =  0, x′ ( ) 0 = v  ( ω  ω =  )
-                                                   0                             0          0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Exercise
+
+          Find a particular solution to the differential equation using undetermined coefficients. Find and plot
+          the solution of the initial value problem. Superimpose the plots of the transient response and the
+          steady state solution.
+
+                     x′′ +  7x′ +  10x =  3cos3t   x (0) =  −  1,   (0) =  x′  0
           Solution
-                 2
-              mλ +=     0   →   ( &gt;   ) 0
-                                 k
-                    k
-              λ   =  i ±  k
-               1,2      m
 
-                  = ± ω  i          ω =  k   
-                       0          0    m  
+                                                  +
+             The particular solution:  ( )xt =  a cos3t b sin3t
+                 x′ =  −  3 sin3t +  a  3 cos3t
+                                  b
+                                  b
+                 x′′ =  −  9 cos3t −  a  9 sin3t
 
-              x =  C  cos ω  t + C  sin t  ω    ω =
-                                    ω
-               h    1           2           0</code></pre>
+                                                  b
+                                        a
+              −  9 cos3t −  9 sin3t +  ( 7 −  3 sin3t +  3 cos3t ) 10+  ( cos3a  t b sin3t ) 3cos3t=
+                                                                      +
+                a
+                          b
+              −  9 cos3t −  a  9 sin3t −  b  21 sin3t +  a  21 cos3t +  b  10 cos3t +  a  10 sin3t =  b  3cos3t
+                                    b
+              a cos3t −  21 sin3t +  a  21 cos3tb sin3t =  3cos3t
+                                           +
+              (a +  21b )cos3t +  (b −  21a )sin3t =  3cos3t</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1452 - DE Solution</title>
+        <title>Page 1452 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1452 - DE Solution</div>
+        <div id="content-top1">Page 1452 - ODE Solution Manual</div>
         <div id="content-top2">P. 1452</div>
      </div>
      <div id="content-middle">
@@ -155,78 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1438 | S O LU TI O N
 
 
+                                    D +   E =  1
+                                 
+                                  2D −  2E =  0
+                                  D =  1  E =  1
+                                      2       2
+
+
+               () =
+             Ys     −  1 1   +  1  1   +  11    −  1 1   −  11
+                      3 s +  1 12 s −  2  4 s +  2  2 s −  2  2 s +  2
+              £  −  1 {Ys  =   −  1 { −  11  −  5  1  −  1 1  }
+                      ( )} £
+                                          1 12 s −
+                                                   2
+                                                       4 s +
+                                     3 s +
+                                                            2
+
+               ( y  ) t = −  1 −  e  t  −  5  e 2t  −  1 −  e  2t
+                      3      12      4
+
+
           Exercise
 
-          Solve using the Laplace transform:  y′ + ′  4y′ + 8y =  sin ,  t  y ( ) 0 =  , 1  y′ ( ) 0
-                                                                                  0 =
-
+          Solve using the Laplace transform:    y′′ −  4y′ =  6e −  3t  3e  t −  ,  y (0) 1 y′ (0) =  −  1
+                                                                            =
           Solution
-              £  {y′′ +  4y′ +  8y }( ) s £  {sints
-                                            }( )
-                                   =
-               2
-                                                                                             0
-              s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 +  4sY ( ) 4ys −  ( ) 0 +  8Y ( ) s =  1     y ( ) 0 = 1, y′ ( ) 0 =
-                                                                 2
-                                                                s + 1
-                         )
-              ( s + 4s + 8 Y  ( ) ss −− =  1
-                2
-                                    4
-                                         2
-                                        s +  1
-                         )
-              ( s + 4s + 8 Y ( ) s =  1  ++  4
-                2
-                                         s
-                                  2
-                                 s +  1
-                              2
-                        3
-                                  s
-             Y  ( ) s =  s + 4s ++   5   =  As +  B  +  Cs +  D
-                     ( s +  2  1 s +  2  4s +  8 )  s +  2  1  s +  2  4s +  8
-                           )(
-                                                                           3
-                        2
-                                                                                      2
-                                                         2
-                  3
-                                             2
-                                      3
-                            s
-                               5
-                 s +  4s ++ =      As +  4As +   8As +  Bs + 4Bs + 8B +  Cs + Cs +  Ds +  D
-                        s 3    AC =   1
-                                  +
-                       
-                        s   2  4AB +  D =  4
-                                +
-                       
-                                     +
-                         s  8A +  4B C =  1
-                         0
-                        s    8B +  D =  5
-                           A =  −  4   B =  7
-                       ⇒         65        65
-                            C =  69   D =  269
-                                65         65
-                                           69 (s +  ) 2 − 18  269  
-                                                        3 +
-             Y  ( ) s =  1    −  4  s  +  7  +                  
-                     65    s +  2  1  s +  2  1       2   4     
-                                                (s +  ) 2  +    
-                                                                      
-                   =  1    −  4  s  +  7  +    69s     +  2    131    
-                     65    s +  2  1  s +  2  1  (s +  ) 2  2  +  4  2 (s +  ) 2  2  +  4 
-                                                                      
-              £   −  1 {Y s  1   £   −  1      −  4  s  +  7  +  69s  +  131  2        
-                      ( )} =
-                            65            2  1   s +  2  1     2        2        2    
-                                         s +            (s +  ) 2  +  4  (s +  ) 2  +  4  
 
-              y ( ) t =  −  4  cost +  7  sint +  69 −  e  2t  cos2t +  131 −  e  2t  sin2  t
-                      65        65       65             130</code></pre>
+              £  {y′′ −  4y′ }( ) s £ { 6e 3t  −  3e  t − } ( ) s
+                              =
+
+               2
+                                                                                             1
+                                                                                =
+              s Y  ( ) s −  sy ( ) 0 −  y′ ( ) 0 −  4sY ( ) 4s +  y ( ) 0 =  0   y (0) 1;   (0) = −
+                                                                                    y′
+              ( s − 4sY  ( ) s − ++ =
+                      )
+                2
+                              s
+                                        0
+                                 14
+               ( ) =
+             Ys        s − 5    =  A  +  B
+                      ( ss −  ) 4  s  s −  4
+                       As −  4A Bs =  s −  5
+                               +
+                          AB =    1
+                            + 
+                        
+                         −  4A =  −  5
+                         A =  5 , B = − 1
+                             4       4
+              £  −  1 {Ys      −  1 { 5 1  −  11  4 }
+                      ( )} £=
+                                         4 s −
+                                   4 s
+
+              y ( ) t =  5 t −  1  e 4t
+                    4    4
+
+
+          Exercise
+
+                                                                32t
+                                                                                          0
+          Solve using the Laplace transform:    y′′  4y + −  4y = ′  t e  ;  y ( ) 0 = 0,  y′ ( ) 0 =
+          Solution</code></pre>
      	</div>
     
      </div>

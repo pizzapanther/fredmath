@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 395 - Differential Book</title>
+        <title>Page 395 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 395 - Differential Book</div>
+        <div id="content-top1">Page 395 - ODE Book</div>
         <div id="content-top2">P. 395</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 4.5 – Bessel’s Equation and Bessel Functions
+    <pre style="white-space:pre-line"><code>382 | 3. 7 - P h as e P l an e P o r t r ai t s  &  A p p l i c at i o n s
 
 
-          4.5-1  Bessel’s Equation
 
-          In this section we consider three special cases of Bessel’s equation
-
-                                                            2
-                                               2
-                                              x y′′ +  xy′ + ( x −υ 2 ) y =  0
-          Where υ  is a constant, and the solutions are called Bessel functions.
-
-          When solving partial differential equations involving the Laplacian in polar and cylindrical
-          coordinates. The Bessel’s equation is a whole family of differential equations, one for each value of υ.
-
-          From the Frobenius model:  x y′′ +  2  p xy′ +  q y =  0
-                                              0      0
-                                      2
-              →   p =  0  1& q =  0  −  υ
-          The indicial equation is given by:
-
-              I  ( ) r =  ( rr −  ) 1 +  p r q
-                                  +
-                                      0
-                                0
-                                   2
-                              r
-                   =  ( rr −  ) 1 + −υ =  0
-                    2
-              r 2  −υ =  0 →   r = ±υ
-                                             0
-          We will consider the three cases  υ= ,  υ=  1  , and  υ= 1 for the interval  x &gt; .
-                                                                                     0
-                                                     2
-                   ∞
-                 ∑         nr +
-              y =      ax
-
-                        n
-                  n= 0
-                   ∞
-                  ∑               nr +− 1
-                             )
-                          +
-              y′ =     (  n ra n  x
-                  n= 0
-                    ∞
-                  ∑                         nr +− 2
-                          +
-              y′′ =     (  nr nr       ) 1 a n  x
-                             )( +−
-                   n= 0
+                                                         (
+          λ =  −  ( k +  1  2k +  2  k 3 ) ±  1  ( k +  1  2k +  2  k 3 ) 2  −  4 k k +  1 2  k k +  1 3  k k  )
+                                 2
+                                                                         2 3
+                                            (
+                        ( k +  1  2k +  2  k 3 ) 2  −  4 k k +  1 2  k k +  1 3  k k  ) ( k + &lt;  1  2k +  2  k 3 ) 2
+                                                           2 3
+          That implies:  λ    &lt;  0
+                          1, 2
 
 
-                                                                                2
-                                                                )
-                                +−
-              x 2 ∑  ∞  (nr )(nr    1)a x  nr +− 2  +  x ∑  ∞  (nr a x nr +− 1  + ( x − υ 2 ) ∑  ∞  a x nr +  = 0
-                         +
-                                                             +
-                                        n
-                                                                                               n
-                                                                   n
-                 n= 0                                 n= 1                               n= 0
-              ∑  ∞  (n r+  )(n r+− 1)ax nr +  + ∑  ∞  (n r ax+  )  n  nr +  + ∑  ∞  ax nr ++ 2  − υ 2 ∑  ∞  ax nr +  =  0
-                                    n
-                                                                           n
-                                                                                                n
-              n= 0                            n= 1                   n= 0                 n= 0</code></pre>
+                                
+          To solve the system  x t       t α
+                                 ( ) ve=
+                 t α
+          x′ = α ve
+               2 α    t    t α
+          x′′ = α  ve  =  Ave
+                                   2 
+          That implies        Av α=  v
+                             t α                                   2
+                     x
+                                                      x
+          Therefore,  ( ) t = ve   is a solution of  x′′ = A  if and only if α  λ = , an eigenvalue of the matrix A,
+              
+          and v  is an associated eigenvector.
+          α  2  λ =  −  ω =  2  &lt;  0
+
+          Then α = ±   i ω , which in this case the solution is given by
+                         it ω  
+                                     ω =
+                 x ( ) t = ve   v (cos t i sinω +  ) t
+
+
+          3.7-5  Theorem  Second-Order Homogeneous Linear Systems
+
+
+
+          If a matrix A (nn×  ) has distinct negative eigenvalues  ω  −  2 ,  ω  −  2 ,   ,    ω  −  2    with associated real
+                                                              1      2           n
+          eigenvectors  v  , v  ,  , v , then a general solution of the form  ′′ =x  Ax  is given by
+                        1   2       n
+
+
+                                                  )
+                         n                         
+                 x ( ) t = ∑ ( a i  cosω  i t  b i  sinω +  i tv
+                                                     i
+                         i= 1
+          With  a  and b  arbitrary constants.
+                 i      i
+
+          Where λ     ω = −  2
+                        i
+          In the special case of non-repeated zero eigenvalue λ  with associated v
+                                                             0                  0
+                                    
+                                   )
+                   ( ) ( a +  b tv
+                     t =
+                 x
+                   0       0    0    0</code></pre>
      	</div>
     
      </div>

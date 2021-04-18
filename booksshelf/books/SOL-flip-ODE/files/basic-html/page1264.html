@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1264 - DE Solution</title>
+        <title>Page 1264 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1264 - DE Solution</div>
+        <div id="content-top1">Page 1264 - ODE Solution Manual</div>
         <div id="content-top2">P. 1264</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1254 | S O LU TI O N
 
 
-
-                                      ∫ cos x  dx
-
-
-                                 x
-                          +     e       sin x
-                                 x
-                          −     e      − cos x
-                                 x
-                          +     e
-
-                        ∫  e x cos x dx e=  x  (sin x +  cos  ) x −  ∫  e x cos x dx
+                         0.85   |   0.92534499   |   0.92534487   |   -0.00000011
+                         0.90   |   0.93101252   |   0.93101242   |   -0.00000010
+                         0.95   |   0.93640117   |   0.93640108   |   -0.00000009
+                         1.00   |   0.94149026   |   0.94149018   |   -0.00000008
 
 
 
-                          ∫    cos x dx e=  (sin x +  cos  ) x
-                        2 e  x            x
 
 
-                     ∫ e x cos x dx =  1 x  (sin x +  cos  ) x
-                                      e
-                                    2
-                                              )
-                       (
-                          e
-              zx     11 x    (sin x +  cos  ) x +  C
-               ( ) =
-                    e x  2
-                  =  1 sin x +  1 cos x Ce − x
-                                   +
-                    2        2
-                     z ( ) 0 =  1  +  C =  1
-                            2
-                     C  =  1
-                         2
 
 
-                      e
-              z ( ) x =  1 − x  +  1 cos x +  1 sin x
-                    2       2        2
 
 
-                     Runge-Kutta 2nd Order
-                      t         Approx.           Exact          Difference
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Exercise
+
+
+          Given:  z′ −  2z =  xe 2x  z (0) 1
+                                      =
+           a)  Use a computer and Euler's method to calculate three separate approximate solutions on the
+                            ]
+               interval [0, 1 , one with step size h =  0.2, a second with step size  h =  0.1, a third with step size
+               h = 0.05 .
+           b)  Use the appropriate analytic to compute the exact solution
+           c)  Plot the exact solution and approximate solutions as discrete points.
+
+          Solution
+
+             a)
+                     Euler Method
+                    t         Approx.        Exact          Difference
                   --------------------------------------------------------
                   0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.20   |   0.99800666   |   0.99873333   |   0.00072667
-                  0.40   |   0.98887689   |   0.99039969   |   0.00152281
-                  0.60   |   0.96709749   |   0.96939486   |   0.00229738
-                  0.80   |   0.92871746   |   0.93169588   |   0.00297842
-                  1.00   |   0.87131508   |   0.87482637   |   0.00351128
-
-
-                     Runge-Kutta 4th Order
-                      t         Approx.           Exact          Difference
-                  --------------------------------------------------------
-                  0.00   |   1.00000000   |   1.00000000   |   0.00000000
-                  0.20   |   0.99873272   |   0.99873333   |   0.00000061
-                  0.40   |   0.99039822   |   0.99039969   |   0.00000147</code></pre>
+                  0.20   |   1.40000000   |   1.52166119   |   0.12166119
+                  0.40   |   2.01967299   |   2.40358420   |   0.38391121
+                  0.60   |   3.00558546   |   3.91773797   |   0.91215251
+                  0.80   |   4.60623367   |   6.53800280   |   1.93176913
+                  1.00   |   7.24121233   |   11.08358415   |   3.84237182</code></pre>
      	</div>
     
      </div>

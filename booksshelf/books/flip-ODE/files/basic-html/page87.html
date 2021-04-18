@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 87 - Differential Book</title>
+        <title>Page 87 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 87 - Differential Book</div>
+        <div id="content-top1">Page 87 - ODE Book</div>
         <div id="content-top2">P. 87</div>
      </div>
      <div id="content-middle">
@@ -152,55 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>72 | 1.5 - M i xi ng  P r obl e m s
+    <pre style="white-space:pre-line"><code>74 | 1. 4 - L i ne a r   E q ua t i o ns
 
 
-                 = 6 −  3x
-                      100
-              dx  +  3  x =  6
-              dt   100
-                               3
-                            ∫ ( ) dt    0.03t
-                      () =
-                     ut    e  100    =  e
-                     ∫ 6e 0.03t dt =  0.03 e 0.03t  =  200e 0.03t
-                                    6
+           1.4-4  Solution of the Nonhomogeneous Equation                           y′ +  px     f () x
+                                                                                          ()y =
+
+                                                      y   Homogeneous  Solution
+                                                     
+           Let assume:   y =  y +  y        where       h
+                               h     p                y      Paticular   Solution
+                                                       p
+                                                     
+               The homogeneous equation is given by  y′ +   p () x y =  0
+                                                        h         h
+                   y′ = − p () x y h
+                    h
+
+                         − ∫    p dx
+                   y =  e
+                    h
+
+                      ()y
+               y   = ux
+                 p        h
+                        ∫    p dx
+
+                   =        u e
+
+               y′ +  p () x y  =  f  () x
+                 p         p
+
+                   ( )  ′  +  puy =  h  f
+                    uy
+                      h
+                   u y ′  +  uy′  +  puy =  f
+                      h     h      h
+                   u y ′  +  u y′  (  +  py  )  =  f    Since  y′ +  py =  0    homogeneous
+                      h      h      h                        h      h
+                   uy ′  =  f
+                      h
+
+                   du  =  f
+                   dx   y h
+                           f
+                   du =         dx
+
+                        e ∫  p dx
+                            ∫    pdx
 
 
-                                          )
-              x ( ) t = e − 0.03t ( 200e 0.03t  + C
+                      =   . f e     dx
 
 
-               ( ) =
-              xt    200 Ce+  − 0.03t
-             Since there was no salt present in the tank initially, the initial condition is  ( ) 0x  = 0
 
-                                         0
-                  ( x t =  ) 0 =  20 Ce+  − 0.03( )  =  0
-                            0
-                 200 C+  =  0
-                 C = − 200
+                   u = ∫  f e ∫    p dx dx
 
-                        −
-              xt    200 200e  − 0.03t
-               ( ) =
-             After 60 min:
 
-                      )
-                 x (60 =  200 200e  − 0.03( 60)
-                             −
-                             lb
-                        ≈ 167
-                                        (
-                             xt
-             As t →∞  then  ( ) =   lim 200 200e−  − 0.03t )
-                                   t→∞
-                                                  (
-                                                                               (
-                                 =  200 200 lim e   − 0.03t )              lim e − 0.03t ) =  e −∞  = 0
-                                       −
-                                             t→∞                           t→∞
-                                 =  200  lb</code></pre>
+                         ∫    pdx
+
+               y   =        fe
+                 p</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1206 - DE Solution</title>
+        <title>Page 1206 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1206 - DE Solution</div>
+        <div id="content-top1">Page 1206 - ODE Solution Manual</div>
         <div id="content-top2">P. 1206</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,77 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1196 | S O LU TI O N
 
 
-          Exercise
+                                                       (
+                     y ( ) 0 = e  t −  ( C 1 cos 2 2 t +  (  )  C 2  sin 22 t )) =  6
 
-          A mass m is attached to the end of a spring with a spring constant k. After the mass reaches
-          equilibrium, its support begins to oscillate vertically about a horizontal line L according to a formula
-          h ( ) t . The value of h represents the distance in feet measured from L.
+                     C  =  6
+                      1
+                                                                                                      ))
+                                                                                                (
+                 y′  ( ) t =  e  t −  ( −  C  cos 22 t −  (  )  C  sin 22 t −  (  )  22C  sin 22 t +  (  )  22C  cos 22 t
+                   h             1               2                    1                   2
+                     y′ ( ) 0 = − 6 22 C+  =  0
+                                        2
+                              3
+                      2  C =
+                          2
+                      C  =  32
 
-           a)  Determine the differential equation of motion if the entire system moves through a medium
+                       2     2
+                                                                 )
+                                                                            (
+                                                          (
+                 The transient motion:   y  ( ) t =  e  t −     6cos 22 t +  32  sin 22 t )   
 
-               offering a damping force that is numerically equal to  µ dx
-                                                                     dt
-           b)  Solve the differential equation in part (a) if the spring is stretched 4 feet by a mass weighing 16
-                                                                0
-               pounds and  µ =  2, h ( ) 5cos ,tt =  x ( ) 0 =  x′ ( ) 0 =
-          Solution
+                                          h                          2             
+             b)
 
-             a)  The external force is  ( ) t =  kh ( ) t
-                                      F
-                                    ( )
-                 mx′′ +  µ x′ +  kx =  kh t          mx′′ +  µ x′ +  kx =  F ( ) t
 
-             b)  Given: m =  16  =  1  slug , k (4 ft =  k   4
-                                                ) 16 →=
-                            32   2
-                                                              0
-                        µ =  2, h ( ) 5cos ,tt =  x ( ) 0 =  x′ ( ) 0 =
-                 1  x′′ +  2x +  ′  4x =  20cos ; x ( ) 0 =  x′ ( ) 00 =
-                                        t
-                 2
-                                              22
-                 λ  2  4λ +  + =       λ   = − ±   i
-                           8 0 →
-                                        1,2
-                 x =  e − 2t ( C  cos2t + C  sin 2t )
-                   h         1          2
 
-                 x =   A cost +  B sint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   2
+                 d y      dy
+             c)       +  2   +  9y =  5sin2t  y ( ) 0 =  6  y′ ( ) 00 =
+                  dt 2    dt
+                                                            ))
+                                    (
+                                                     (
+                                           )
+                 y  ( ) t = e  t −  ( C  cos 22 t + C  sin 22 t
+                   h            1               2
+                 y =   a cos2tb  sin2t
+                              +
                    p
+                                   b
+                 y′ =  −  2 sin2t +  a  2 cos2t
+                   p
+                                    b
+                 y′′ =  −  4 cos2t −  a  4 sin2t
+                   p
+                 y′′ +  2y′ +  9y =  5sin 2t
 
-                   x′ =  −  A sint +  B cost
-                     p
-                   x′′ =  −  A cost −  B sint
-                     p
-                 x′′ +  4x′ +  8x =  40cost
+                 −  4 cos2t −  a  4 sin2t −  b  4 sin2t +  a  4 cos2t +  b  9 cos2t +  a  9 sin2t =  b  5sin2t
 
-
-                      cost  − A +  4B + 8A = 40
+                      sin2t  −  4b −  4a +  9b =  5
                      
-                      sint  − B − 4A + 8B = 0
-                      7A +   4B =  40
+                        s
+                      co 2t −  4a +  4b +  9a =  0
+                      −   4a +  5b =  5
                      
-                      −  4A +  7B =  0
-                                 7   4             40   4               7   40
-                            ∆  =       =  65  ∆  =        =  280  ∆  =         =  160
-                                −  4  7        A    0   7          B   −  4  0
-
-                         A  =  56 ,  B =  32
-                             13       13
-
-
-                             t
-                 x =   56 cos +  32 sint
-                   p   13       13</code></pre>
+                       5a +  4b =  0</code></pre>
      	</div>
     
      </div>

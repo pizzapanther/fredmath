@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 630 - DE Solution</title>
+        <title>Page 630 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 630 - DE Solution</div>
+        <div id="content-top1">Page 630 - ODE Solution Manual</div>
         <div id="content-top2">P. 630</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>624 | S O LU TI O N
+    <pre style="white-space:pre-line"><code>624 | 1. 8 − S OL U T I ON
 
 
 
-              0.01 dI  +=  sin100t            L dI  +  RI =  E ()
-                       I
-                                                           t
-                  dt                            dt
-              dI  +  100I =  100sin100t
-              dt
-                   ∫ 100dt
-                    e     =  e 100t
-
-                                                  ∫ 100sin100t  dt
-
-                             +       e 100t          − cos100t
-
-                                                      1
-                             −     100e 100t       − 100 sin100t
-                                     4 100t
-                             +     10 e
-
-                 ∫  (100sin100te      dt =  ( cos100t−  +  sin100t )e  −  ∫  (100sin100te
-                               )  100t                          100t                 )  100t dt
-
-
-
-                                 )
-                 2 ∫ (100sin100te  100t dt =  ( cos100t +  sin100t )e 100t
-                                            −
-
-                               )
-                 ∫ (100sin100te  100t dt =  1 ( cos100t +  sin100t )e 100t
-                                             −
-                                          2
-                           (
-                                                            )
-                          t
-                               −
-              I ( ) t =  e − 100 1 ( cos100t +  sin100t )e 100t  +  K
-                            2
-                   =  1 ( cos100t−  +  sin100t ) K+  e − 100t
-                     2
-                         I ( ) 0 =
-                               0
-
-                        0 =  1 ( ) 1−+  K
-                            2
-                         K  =  1
-                             2
-
-                                               e
-              I ( ) t =  1 ( cos100t−  +  sin100t ) +  1 − 100t
-                    2                        2
-             The voltage at the resistor:
-
-                 E   ( ) t =  RI
-                   R
-
-                        =  1 ( sin100t −  cos100t +  e − 100t )
+                   =  25 −  e  t /10  +  Ke  t −  /2
+                      2
+                       Q ( ) 0 =
+                              0
+                       0 =  25  +  K
                            2
 
-             The voltage at the inductor:
+                       K  = − 25
+                             2
 
-                 E   ( ) t =  L dI
-                   L        dt</code></pre>
+                t
+              Q ( ) =  25 ( e  t −  /10  −  e  t −  /2 )
+                     2
+
+
+          Exercise
+
+          A resistor  R  =  20 Ω  and a capacitor of C =  0.1  F  are joined in series with an electronic force (emf)
+                ()  and no charge on the capacitor at t = . Find the ensuing charge on the capacitor at time t
+          E =  Et                                      0
+                                 (    − 0.1t )
+          for the given  ( ) 100 1Et =  −  e
+
+          Solution
+                                (
+                                  −
+              20Q′ +  1  Q =  100 1 e − 0.1t )       R  dQ  +  1  Q =  E
+                     0.1                                dt  C
+                         (
+              Q′ +  1 Q =  51 e − 0.1t )
+                            −
+                  2
+                     2 ∫  1 dt
+
+                    e    = e t /2
+
+                     (
+                 ∫  51 e  − 0.1t ) e 0.5t dt =  5 ∫  ( e t /2  −  e 0.4t ) dt
+                       −
+                                          (
+                                                       t
+                                       = 5 2e t /2  −  5 e 2 /5 )
+                                                   2
+                                                )
+                                         t
+              Q ( ) t =  e  t −  /2 ( 10e t /2  −  25 e 2 /5  +  K
+                                     2
+                   =  10 −  25 − t /10  +  Ke  t −  /2
+                            e
+                          2
+                                0
+                        Q ( ) 0 =
+                        0 10 − =  25  +  K
+                                 2
+                        K  =  5
+                             2
+
+              Q ( ) 10t =  −  25 −  2  e  t /10  +  5 −  2  e  t /2</code></pre>
      	</div>
     
      </div>

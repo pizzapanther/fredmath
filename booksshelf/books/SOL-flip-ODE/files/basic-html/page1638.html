@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1638 - DE Solution</title>
+        <title>Page 1638 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1638 - DE Solution</div>
+        <div id="content-top1">Page 1638 - ODE Solution Manual</div>
         <div id="content-top2">P. 1638</div>
      </div>
      <div id="content-middle">
@@ -155,82 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1624 | S O LU TI O N
 
 
-                      e −  2t  cos2t  1 −  e  2t sin2t  
 
-                  =              2             
-                      − e −  2t  sin2t  1 −  e  2t cos2t 
-                                  2           
+                                              ∫ e − 4t dt                        ∫ e − 2t dt
 
-
-                             )
-                       (sin2te 2t 
-              F ( ) t =          
-                       (2cos2te 2t 
-                              )
-                                 
-                              e −  2t cos2t  1 −  e  2t  sin2t     (sin2te 2t 
-                                                                )
-                   t
-                     F
-             ϕ − 1 ( ) ( ) t =           2                      
-                                                                 )
-                              e −  2t  sin2t  1 −  e  2t  cos2t −      (2cos2te 2t   
-                                          2           
-                              2cos2 sin 2t   t
-                          =                 
-                                2       2   
-                              cos 2t − sin 2t 
-                              sin4t 
-                          =       
-                              cos4t 
-
-                     e 2t  cos2t  − e 2t  sin 2t      sin 4t 
-                                           
-             Y   =                  cos2t ∫            dt               X   = ϕ  ( ) t ∫ ϕ  − 1 ( ) ( )dtt  F t
-
-               p      2t          2t           cos4t                       p
-                     2e  sin 2t  2e                 
-                     e 2t  cos2t  − e 2t  sin 2t      − 1 cos4t 
-                 =                               4  
-                     2e 2t     2e 2t          1     
-                        sin 2t      cos2t       4 sin 4t   
-
-                     −  1 cos2 cos4t −  t  1 sin 2 sin 4t 
-                                           t
-                 =     4           4                e 2t
-                     1  sin 2 cos4t +  t  1  cos2 sin 4t −  t
-                     2              2            
+                                         8    − 1 − 4t                             1 − 2t
+                                                 e
+                                                                                    e
+                                +  5t −         4                +  −  15t +  22  − 2
+                                −      5       1 − 4t                             1 − 2t
+                                                 e
+                                              16                 −      − 15      4 e
 
 
-                                                          −  1 cos2 cos4t −  t  1 sin2 sin4t 
-                                                                                t
-                         cos2t   2t      − sin2t   2t    4           4              2t
-             Y t =  ( ) C 1   2sin2t   e  +  C 2    2cos2t   e  +    1  1           e
-                       
-                                                                  −  2 sin2 cos4t +  t  2 cos2 sin4t   t  
-                                                                       )
-               x ( ) t = ( C  cos2tC  sin 2t −  1 cos2 cos4t −  t  1 sin 2 sin 4t e 2t
-                               −
-                                                                 t
-                       1          2        4              4
+                        −  e 2t  −  3e 4t       −  1 −  3 e  3t  +  ( 15 t −  11+  15 ) e −  2t   
+                                                   2
+                                                             4
+                  =  1                
+                    2   2t     4t     1 −  5t  (  5       5 )  −  4t  
+                        e     e         e   +−     t +  2 −  e    −
+                                        5          4       16       
+                        −  e 2t  −  3e 4t       −  1 −  3 e  3t  +  ( 15 t −  29 ) e −  2t   
+                                                         4
+                                                   2
+                  =  1                
+                    2   2t     4t     1 −  5t  (  5   27 )  −  4t  
+                        e     e         e    +−    t +    e    −
+                                        5          4    16       
+                        1 −  e  t  −  15 t +  29  +  3 −  e  t  +  15 t −  81 
+                  =  1   3     2     4   5       4    16 
+                    2   −   1 −  e  t  +  15 t −  29  −  1 −  e  t  −  5 t +  27   
+                        3       2     4   5       4   16 
+                        14 − t  −  15 t +  35 
+                           e
+                  =  1   15     4    16 
+                    2     −  8 − t  +  25 t −  89   
+                           e
+                        15       4    16 
+                      14 − t  −  15 t +  35 
+                         e
+                  =      30  8     32   
+                          e
+                      −  8 − t  +  25 t −  89 
+                      30       8     32 
+                                                  14        − 15     35 
+                         −  1  2t    −  3  4t    30      4      32 
+             Y t =  ( ) C      e  +  C      e  +   e  t −  +   t +
+                      1   1       2    1        −  8          25         − 89   
+                                                  30        8       32 
+
+               y  ( ) t = − C e 2t  −  3C e 4t  +  14 − t  −  15 t +  35
+                                             e
+                1        1        2      30       4    32
               
-                                                                          )
-               yt   ( 2C  sin 2t +  2C  cos2t −  1 sin 2 cos4t +  t  1 cos2 sin 4t e 2t
-                ( ) =
-                                                                   t
-                        1           2        2              2
+                                            e
+                y  ( ) C et =  2t  +  C e 4t  −  8 − t  +  25 t −  89
+                 2       1       2      30        8    32
 
 
           Exercise
-                                                                    t
-                                                   xt ′ ( ) =         2y e
-                                                                 +
 
-                                                  
-          Find the general solution of the system    
-                                                            x
-                                                   y′ ( ) t = −+  3y e−  t
-                                                  
+                                                                     y
+                                                        xt ′ ( ) = − 3x ++ 3t
+                                                      
+          Find the general solution of the system                        t −
+                                                                      +
+                                                        y′ ( ) t =  2x −  4y e
           Solution</code></pre>
      	</div>
     

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 360 - Differential Book</title>
+        <title>Page 360 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 360 - Differential Book</div>
+        <div id="content-top1">Page 360 - ODE Book</div>
         <div id="content-top2">P. 360</div>
      </div>
      <div id="content-middle">
@@ -152,60 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.1 - I nt r oduc t i on  &  R e v i e w  o f  P o w e r  S e r i e s  | 345
-
-               4.1-4  The ratio Test
-
-               Theorem
-
-                                                ∞
-                                              ∑
-               Suppose the terms of the series     A  have the property that
-                                                     n
-                                               n= 0
-                                     A
-                               lim     n+ 1  =  L
-                              n→∞     A
-                                        n
-               exists. If  L &lt; 1 the series converges, while if  L &gt; 1 the series diverges
+    <pre style="white-space:pre-line"><code>3. 6 - P l an a r  S y s t em s  | 347
 
 
+                 3.6-3  Eigenvectors
 
-               4.1-5  Definition
-
-                                        a                                                           n
-               Suppose that  L =  lim    n+ 1    exists or is ∞. Then the power series  ∑ c  (xa−  )  has radius of
-                                 n→∞     a n                                               n
-
-               convergence  R =  1  .
-                                 L
-               If L = 0, then R = ∞
-
-               If L = ∞, then R = 0
-
-                                a
-               And R =   lim     n
-                        n→∞    a n+ 1
+                                                                         x 
+                 From the eigenvalues, the eigenvectors, in the formV =    i    , of the system can be determined by
+                                                                   i     y 
+                                                                         i 
+                 letting:
+                                ( A λ 1 IV =  )  1  0    and A λ−  (  2 IV =  )  2  0
+                                   −
 
 
+                 The general solution can be written as:     xt  =     t λ
+                                                              () V e
+                                                                    i
 
-               4.1-6  How to Test a Power Series for Convergence
 
-                 1.  Use the Ratio Test (or Root Test) to find the interval where the series converges. Ordinarily, this
-                     is an open interval
-                                                                     −
-                                                                           x
-                                                                                 +
-                                                    xa &lt;   R   or a R &lt; &lt;      a R
-                                                     −
-                 2.  If the interval of absolute convergence is finite, test for convergence or divergence at each endpoint.
-                     Use the Comparison Test, the Integral Test, or the Alternating Series Test.
+                 Example 2
 
-                                                                          +
-                                                                       &lt;
-                 3.  If the interval of absolute convergence is  aR−  &lt;  x a R , the series diverges for  xa−  &gt;  R  (it
-                     does not even converge conditionally) because the nth term does not approach zero for those values
-                     of x.</code></pre>
+                                                               − 4  6
+                 Find the eigenvectors of the matrix     A =         
+                                                               − 3  5 
+                 Solution
+                    The eigenvalues of A are 2 and −1.
+
+                    For λ = , we have     ( A λ 1 IV =  )  1  0
+                             2
+                                             −
+                                                0
+                           4 2
+                                          x
+                         − −        6    
+                                             =
+                                          
+                                     −
+                                          y
+                                                0
+                          −  3    52      
+                                    x
+                                         0
+                         − 6   6   
+                                      =
+                                   
+                                    y
+                                         0
+                         − 3   3    
+                             −   6x +  6y =  0
+                                         ⇒=     y
+                                             x
+                             −  3x +  3y =  0
+                            If  x =  c  ⇒  y =  c
+                               1             1  
+                        V =  c     ⇒   V =   
+                          1    1         1   
+                                               1
+                    For λ = − 1, we have   ( A λ 2 IV =  )  2  0
+                                             −
+                                   x
+                                         0
+                         − 3  6   
+                                      =
+                                   
+                                   y
+                                         0
+                         − 3  6    
+                             −   3x +  6y =  0
+                                         ⇒=     2y
+                                             x
+                             −  3x +  6y =  0
+                        If  y =  c  ⇒=    2c
+                                      x
+                                                2
+                                2
+                                             
+                        V =   c     ⇒  V =   
+                          2              2    
+                                1
+                                                1</code></pre>
      	</div>
     
      </div>

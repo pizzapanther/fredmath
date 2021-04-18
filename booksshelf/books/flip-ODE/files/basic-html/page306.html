@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 306 - Differential Book</title>
+        <title>Page 306 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 306 - Differential Book</div>
+        <div id="content-top1">Page 306 - ODE Book</div>
         <div id="content-top2">P. 306</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.6 - P l a n a r  S y st e m s  | 291
-
-               3.6-4  Planar Systems
-
-
-               2-dimension linear systems are also called planar systems, we will enable to solve the system
-                       y′ =  Ay
-
-
-                                    a     a             y  () t 
-                   where      A   =  11    12    y () t =    1  
-                                    a    a              y  () t 
-                                    21     22           2   
-
-                                     a   − λ     a
-                       det(A λ   ) I =  11        12
-                             −
-                                       a       a    − λ
-                                        21       22
-                              =  λ  2  ( a 11  +  a 22 ) λ −  +  a a  −  a a
-                                                               12 21
-                                                      11 22
-
-                   D =  det( ) =  a a   − a a
-                            A
-                                 11 22     12 21
-
-                          A
-                                                A
-                   T = tr () =  a  +  a      tr () :trace
-                                11    22
-                   λ  2  Tλ −  +  D =  0
-
-                       T ±   T −  2  4D
-                   λ =
-                              2
-
-
-               3.6-5  Summary
-
-               In general, a polynomial of degree n has n roots. Each root λ  is an eigenvalue, and for each we can find
-
-               an eigenvectorv . From these, we can form the solution ()y t =  ve  t λ .
-               However, the numbers of the eigenvalue solutions are as follow:
-                                           (  2         )
-                 1.  Two Distinct real roots T −  4D &gt;  0
-                                                  (  2         )
-                 2.  Two complex conjugate roots T −    4D &lt;  0
-
-                                            (  2         )
-                 3.  One real Repeated root  T −  4D =  0
+    <pre style="white-space:pre-line"><code>3. 2 - B a s i c  P r o p e r t i e s   o f  t h e  L a p l ac e  T r an s f o r m  | 293
 
 
 
-               3.6-6  Proposition
+                 Exercises            Section 3.2 - Basic Properties of the Laplace Transform
 
-               Suppose  λ  and  λ  are eigenvalues of an  nn×   matrix A. Suppose V ≠  is an eigenvector for  λ
-                                                                                         0
-                          1       2                                                  1                           1
-               and V ≠  is an eigenvector for λ . If λ      λ ≠   then V  and V  are linearly independent.
-                         0
-                     2                           2      1    2        1      2</code></pre>
+
+
+                 (1 − 3)  Find the Laplace transform and defined the time domain of
+
+                 1.    y () t +  2  4t +  5
+                         t
+                           =
+                 2.    y ( ) =  t  −  2cost +  4sin3t
+
+                 3.    y ( ) =  2sin3t +  3cos5t
+                         t
+
+
+                 (4 − 55)   Find the Laplace transform of   { f t£  ( )}
+
+                                 4
+                  4.    f  ( ) t =  2t                            24.   f  ( ) t =  t −  2  3t −  2e  t −  sin3t
+                  5.    f  ( ) tt =  5                            25.   f  ( ) sint =  2 t
+
+                                                                                     2
+                  6.    f  ( ) t =  4t − 10                       26.   f  ( ) t =  e 7t sin t
+                  7.    f  ( ) t = 7t +                           27.   f  ( ) t =  t sin t
+                                   3
+                                                                                  2
+                          ( ) 3t=
+                  8.    f t      4  −  2t +  2  1                 28.   f  ( ) t =  cos t
+                                                                                  3
+                                    3
+                  9.    f t      +  ) 1                           29.   f  ( ) t =  te  t −  sin 2t
+                          ( ) (t=
+                                      3
+                  10.   f  ( ) (2t =  t −  ) 1                    30.   f  ( ) t =  te 2t  cos5t
+                                    4
+                  11.   f t      −  ) 1                           31.   f  ( ) tt =  2  +  e t sin 2t
+                          ( ) (t=
+                  12.   f  ( ) t =  t +  2  6t −  3               32.   f  ( ) t =  e  t −  cos3t e 6t  −  1
+                                                                                        +
+                  13.   f  ( ) t =  −  4t +  2  16t +  9          33.   f  ( ) t =  e − 2t sin 2t te+  23t
+                                     2t
+                                                                                2 −
+                  14.   f t =    2  e                             34.   f  ( ) t =  2t e  2t  −+  cos4t
+                          ( ) 3t −
+                                                                                        t
+                  15.   f  ( ) t =  t −  2  e − 9t  +  9          35.   f  ( ) t =  t sin3t
+                  16.   f  ( ) t =  6e − 3t  −  t +  2  2t −  8    36.   f  ( ) tt =  2 cos2t
+
+                                          2
+                  17.   f  ( ) 5t =  −  e 2t  +  6t               37.   f  ( ) t = ( 1 e+  t − ) 2
+
+                  18.   f  ( ) tet =  22t                                     (    2t ) 2
+                                                                                +
+                  19.   f  ( ) t = e − 2t  (2t +  ) 3             38.   f  ( ) t =  1 e
+                                             )
+                                                                                t
+                  20.   f  ( ) t =  e  t −  ( t +  2  3t +  4     39.   f  ( ) t = ( e − e  t −  ) 2
+                                                                                2
+                  21.   f t        4t                             40.   f  ( ) t =  4t − 5sin3t
+                          ( ) 1 e= +
+                  22.   f  ( ) t = e 2t cos2t                     41.   f  ( ) t =  cos5t + sin 2t
+                                                                                              t
+                  23.   f  ( ) t =  t −  3  te +  t  e 4t  cost     42.   f  ( ) t =  e 3t sin6tt −  3  +  e</code></pre>
      	</div>
     
      </div>

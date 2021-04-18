@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1038 - DE Solution</title>
+        <title>Page 1038 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1038 - DE Solution</div>
+        <div id="content-top1">Page 1038 - ODE Solution Manual</div>
         <div id="content-top2">P. 1038</div>
      </div>
      <div id="content-middle">
@@ -155,73 +155,72 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1028 | S O LU TI O N
 
 
+                     C +  C +  C =   −  5
+                      1     2    3
 
-                               3
-                       =  ( C −  1  25 ) e 2x  +  C e − 3x  +  3  xe 2x
-                                          2
-                                                  5
-                       =  C e 2x  +  C e − 3x  +  3 xe 2x
-                                   2
-                          3
-                                            5
+              yx     −  C e − x  +  C e −  x  C  sin x C  cos x
+                                               +
+                ( ) =
+               ′
+                        1        2       3         4
+                     y′ ( ) 0 =  −  C +  1  C +  2  C =  0
+                                          4
+              yx       1  − x  +  C e −  2  x  C 3  cos x C−  4  sin x
+               ′′
+                ( ) C e=
+                     y ′′ ( ) 0 = C +  C −  C =  0
+                              1    2     3
+
+              y′′′ ( ) x =  −  C e − x  +  C e +  2  x  C 3 sin xC 4  cos x
+                                                −
+                         1
+                     y ( ) 3  ( ) 0 =  −  C +  1  C −  2  C =  4  0
+
+                          C +   C +  C =  −  5
+                          1    2     3
+                          C +  1  C −  2  C =  3  0
+                        
+                        
+                         −  C +  1  C +  2  C =  4  0
+                                          0
+                          −  C +  1  C −  2  C =  4
+
+                        C   =  5 ,  C =  5 ,  C =  5 ,  C = 0
+                          1   4    2   4     3   2    4
+
+
+                       e
+                               e +
+              y ( ) x =  5 − x  +  5 x  5 cos x −  5
+                     4
+                             4
+                                    2
 
 
           Exercise
+          Find the general solution that satisfy the given initial conditions
 
-          Find a particular solution to:  y′′ −  y =  t +  3
-
+                                  ′′
+                          y ( ) 4  − 4y =  x 2  ;    y ( ) 0 =  y′ ( ) 0 = 1,  y′′ ( ) 0 =  y ( ) 3  ( ) 0 = − 1
           Solution
 
-             The homogeneous equation for the differential equation y′′ −  y =  0
+             The characteristic equation: λ      4  4λ −  2  =  0
+                 λ       = 0, 0,   ± 2
+                  1,2,3,4
 
-                   2
-                      10
-                 λ −=                         Solve for λ
-                     λ= −  1 λ =    1
-                      1         2
+                             +
+              y =  C +  C x C e   − 2x  +  C e 2x
+               h    1     2     3         4
+                                   2
+              y  =  Ax +  4  Bx +  3  Cx
+               p
 
-             Therefore;  y = e  t −     and    y = e t
-                          1              2
-
-
-                   e  t −  e t
-             W =
-                   − e  t −  e t
-
-                =  2 ≠  0
-
-                                                                                   ()
-                                                                                2
-              v  () t =  −  1 ∫ (t +  ) 3 e t  dt                   v  ( ) x = − ∫  y gx  dx
-               1       2                                             1           W
-
-                                           t
-                                            d
-                                        ∫ et
-                                           t
-                          +    t + 3      e
-                                           t
-                         −      1         e
-
-                         31
-                = − 1 (t +−  )e t
-                   2
-
-                =  −  1 (t +  ) 2 e t
-                   2
-
-
-                              t −
-                                                                                1
-          v  () =  1 ∫ (t +  ) 3 e dt                               v  ( ) x = ∫    yg ( ) x   dx
-             t
-           1      2                                                  2           W
-                                        ∫ e  t −  dt
-
-                                             t −
-                          +    t + 3     − e
-                                            t −
-                         −      1        e</code></pre>
+                 y′ =  4Ax +  3  3Bx +  2  2Cx
+                   p
+                 y′′ =  12Ax +  2  6Bx +  2C
+                   p
+                 y′′′ =  24Ax +  6B
+                   p</code></pre>
      	</div>
     
      </div>

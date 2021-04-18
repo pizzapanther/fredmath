@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2103 - DE Solution</title>
+        <title>Page 2103 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2103 - DE Solution</div>
+        <div id="content-top1">Page 2103 - ODE Solution Manual</div>
         <div id="content-top2">P. 2103</div>
      </div>
      <div id="content-middle">
@@ -156,68 +156,83 @@ function MM_swapImage() { //v3.0
 
 
 
-                        n   1 →=  a =  1 a
-                                   1   2  0
-                        n   2 →=  a =  1  a =  1  a
-                                    2   5  1  10  0
+                        c =  −  1 c =  −  1  c                      c =  −  1  c =  −    1    c =  −   1  c
+                                                                            ⋅
+                                         ⋅⋅
+                          3    5  2    1 3 5   0                     3    23    2    2 3 (2 3⋅  )  0  2 ⋅  3  3!  0
+                        c =  −  1 c =    1    c                     c =  −  1  c =    1   c
+                                            ⋅
+                                       ⋅⋅
+                                                                                     4
+                          4    7  3   1 3 5 7   0                    4    24 ⋅  3   2 ⋅ 4!  0
+                                                                               
 
-                        n   3 →=  a =  1 a =   1  a
-                                   3   8  2   80  0
-                                        
-
-
-                     y  () =  x  a  ( 1+  1  x +  1  x +  2  1  x +  3   )
-                      1       0     2    10      80
-
-                            r =  1
-                                3
-                        b =   1  b
-                          n   3n  n− 1
-
-
-                        n   1 →=  b =  1 b
-                                   1  3  0
-                        n   2 →=  b =  1 b =  1  b
-                                   2   6  1   18  0
-
-                        n   3 →=  b =  1 b =   1  b
-                                   3   9  2   162  0
-
-                                           
-
-                     y  () =  x  bx 1/3 ( 1+  1   x +  1  x +  2  1  x +  3   )
-                      2        0        3    18      162
-
-                       x
-                     y () =  a  ( 1+  1  x +  1  x +  2  1  x +  3  ) +  b x 1/3 ( 1+  1  x +  1  x +  2  1  x +  3  )
-                             0     2    10      80            0        3    18      162
+                                   ( ) 1−  n                             ( ) 1−  n
+                        c =                  c                      c =       c
+                                                                          n
+                               ⋅⋅
+                          n  1 3 5   (2n −  ) 1  0                  n   2 n !  0
+                                    ∞           n                                    ∞      n   
+                                                                                            −
+                                              −
+                       () =
+                     yx      c    1+        ( ) 1      x n    ∑  y  () x =  c x 1/2   1+  ( ) 1  x n    ∑
+                                                                                             n
+                                         ⋅⋅
+                      1       0       1 3 5  (2n −  ) 1          2       0            2 n !  
+                                   n= 1                                             n= 1        
+                     yx   =      () C y     ()
+                                             x
+                                    +
+                                  x
+                      () C y
+                             11         2 2
+                                   ∞             n              ∞      n       
+                                                                       −
+                                              −
+                          =  C    1+  ∑     ( ) 1     x n   +  C    ∑  ( ) 1  x n+ 1/2 
+                                                                        n
+                              1      1 3 5   (2n −  ) 1      2     2 n !     
+                                         ⋅⋅
+                                   n= 1                         n= 0           
 
 
                  Exercise
-
-                                                                    )
-                 Find the Frobenius series solutions of  2xy′′ −  (32x y′ +  y =  0
-                                                                +
+                 Find the Frobenius series solutions of   xy′′ +  2y′ +  xy =  0
                  Solution
+                     1 ( xy′′ +  2y′ +  xy =  ) 0
+                     x
 
-                     x 2xy′′ −  x (32x y′ +  )  x  y =  0
-                                  +
-                     2        2            2
-                     x y′′ −  2  ( 3 x +  x 2 ) y′ +  1  xy =  0
-                                          2
-                             2
-                         (  3   )     1
-                     y′′ −  2x  +  1 y′ +  2x  y =  0
+                     y′′ +  2 y′ +  1  x 2  y =  0
+                           x     x 2
 
-                                                        qx
-                                    px
-                    That implies to  ( ) =  −  3  −  1 and  ( ) =  1  .
-                                             2x                 2x
-                     p =   lim  xp ( ) x
-                      0   x→  0
-                                          )
-                        =  lim  x −  (  3  −  1
-                          x→  0     2x</code></pre>
+                                                                             0
+                                                                2
+                    ∴  x =  is a regular singular point with  p =   and  q =
+                          0
+                                                             0           0
+                    The indicial equation is:  ( rr −  ) 1 +  2r =  ( rr +  ) 1 =  0 →  r =  0,
+                                                                                     −
+                                                                                      1
+                    The two possible Frobenius series solutions are then of the forms
+                                                ∞
+                                                                              ∞
+                                    ∞
+                                         n ∑
+                                           n
+                         y  ( ) x =  x 0 ∑ ax =    ax  n   a d   y  ( ) x =  x − 1 ∑  b x n
+                                                            n
+                          1                          n            2                n
+                                    n= 0       n= 0                          n= 0
+                          ∞
+                         ∑      nr +
+                     y =     a x
+                              n
+                         n= 0
+                          ∞
+                         ∑              nr +− 1
+                     y′ =    (n r a x+  )  n
+                         n= 0</code></pre>
      	</div>
     
      </div>

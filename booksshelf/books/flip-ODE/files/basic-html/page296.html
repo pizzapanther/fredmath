@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 296 - Differential Book</title>
+        <title>Page 296 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 296 - Differential Book</div>
+        <div id="content-top1">Page 296 - ODE Book</div>
         <div id="content-top2">P. 296</div>
      </div>
      <div id="content-middle">
@@ -152,84 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.5 - I nt r oduc t i on  &  B a s i c   T h e or y  of  L i n e a r  S y s t e m s  | 281
+    <pre style="white-space:pre-line"><code>Lecture Three
 
-               (9 – 13)   Rewrite the given equation into a system in normal form with initial value.
 
-                                                                                            2
-               9.    y ( ) 4  −  y ( ) 3  +  7y =  cost ;   y ( ) 0 =  y′ ( ) 0 = 1,  y′′ ( ) 0 = 0,  y ( ) 3  ( ) 0 =
 
-                                                                                                4
-               10.  y  ( ) 4  +  3y′′ −  (sint ) y′ + 8y t 2  ,    y ( ) 0 = 1,  y′ ( ) 0 =  2,  y′′ ( ) 30 =  ,  y′′′ ( ) 0 =
-                                               =
-                                                                                                        0
-               11.  y  ( ) 6  −  ( ) =  y′  3  e 2t  −  sin y ;   y ( ) 0 =  y′ ( ) 0 =  y′′ ( ) 0 =  y ( ) 3  ( ) 0 =  y ( ) 4  ( ) 0 =  y ( ) 5  ( ) 0 =
-                      3x′′ =   −  5x +  2y   x ( ) 0 =  −   1,  x′ ( ) 0 =  0
-               12.                           
-                       4y′′ =  6x − 2y         y ( ) 0 = 1,  y′ ( ) 0 =  2
 
-                               =
-                       x′′′ −  y t           x ( ) 0 =  x ′ ( ) 0 =  x′′ ( ) 0 =  4
-                                             
-               13.                           
-                      2x′′ +  5y′′ −  2y =  1    y ( ) 0 =  y′ ( ) 0 = 1
 
-                                                                                                         st
-               (14 – 21)  Transform the given differential equation or system into an equivalent system of 1 -order
-               differential equation
-                                     2
-                14.  x′′ +  3x′ +  7x =  t              18.  x′′ −  5x +  4y =  0,  y′′ +  4x −  5y =  0
-                15.  x (4)  +  6x′′ − 3x′ + = cos3t     19.  x′′ −  3x′ +  4x −  2y =  0,  y′′ +  2y′ −  3x +  y =  cost
-                                       x
-                                                                                        y
-                                                                                             z
-                                                                            z
-                                                                                    x
-                                                                                                          y
-                                                                                                             z
-                                                                       y
-                16.  t x′′ + 2  tx′ +  ( t −  2  1 x = )  0    20.  x′′ =  3x −+ 2,  y′′ = + − 4, z′′ = 5x −−
-                                                        21.  x′′ =  (1 yx−  ) ,  y′′ =  (1 x y−  )
-                      3 (3)
-                17.  t x    −  2t x′′ + 2  3tx′ +  5x =  lnt
 
-               22.  Prove that the general solution of
-                                     060
-                                             
-                              X ′ =      1 01 X
-                                             
-                                            
-                                     11 0   
-                     On the interval (−∞ , ∞ )  is
+                 Laplace and Linear Systems
 
-                                                                    2
-                                        6          − 3         
-                                                                   
-                                                        
-                                      
-                                          
-                                                                    1 e
-                              X =  C 1  −  1 e  t −  +  C 2    1 e −  2t  +  C 3   3t
-                                                        
-                                          
-                                        5           1          
-                                                                    1
-                                       −                       
 
-               23.  Prove that the general solution of
-                                    −   1 −  1  1      4    −   1
-                              X ′ =        X +    t +  2     t +    
-                                                  1
-                                    −  1  1           −  6     5  
-                     On the interval (−∞ , ∞ )  is
-                                                                                              1
-                                         1       2t         1       2t          − 2  
-                                                                              1
-                              X =  C           e   +  C          e   −  +   t +  2     t +  
-                                    1  −−    2           2  −+    2           0        4      0
-                                        1
-                                                             1
-                                                                                     </code></pre>
+
+
+
+
+
+                 Section 3.1 − Definition of the Laplace
+
+                                              Transform
+
+
+
+
+
+                 3.1-1  Definition
+
+                 In mathematics, the Laplace Transform is an integral transform named
+                 after its discoverer Pierre-Simon Laplace. Pierre-Simon Laplace was a
+                 French astronomer and mathematician, he introduced Laplace transform
+                 to differential equation in 1979.
+
+                 Laplace transforms are restricted to functions of t and transform a
+                 function of a complex variable s. The Laplace operator will transform a
+                 linear differential equation with constant coefficients into an algebraic
+                 equation in the transformed function.                                    Pierre Simon Laplace
+                                                                                             (1749 – 1827)
+                          ft
+                                                              0
+                 Suppose  () is a function of t defined for t &gt; .
+                 Then, the Laplace transform of  f  is given by the formula:
+
+                                       £ { }( ) f s =  F ()
+                                                       s
+
+
+
+                                                   = ∫ 0 ∞  f  ( ) e − st  dt
+                                                            t
+
+
+
+                 The integral of the Laplace transform is an improper integral because the upper limit is ∞.
+
+
+
+                                       t
+                         F ( ) = ∫ 0 ∞  f  ()e − st dt
+                           s
+                                T→∞∫    T  f  () t e − st
+                              =
+                                 lim   0          dt
+
+
+
+                 The domain of F is the set of real number s for which the improper integral converges.</code></pre>
      	</div>
     
      </div>

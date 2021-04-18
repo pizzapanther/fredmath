@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 500 - DE Solution</title>
+        <title>Page 500 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 500 - DE Solution</div>
+        <div id="content-top1">Page 500 - ODE Solution Manual</div>
         <div id="content-top2">P. 500</div>
      </div>
      <div id="content-middle">
@@ -155,71 +155,79 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>494 | S O LU TI O N
 
 
+
+               =  sin xy   3  y 2/3  +  h ( ) x
+                    ( ) −
+                           2
+              ψ=    y cos xy +  ′ ( )     2    +  y co s ( ) yx
+                        ( ) h x =
+                x                            2
+                                        1 x−
+
+                       ′
+                        ( ) =
+                      hx         2
+                                −
+                               1 x 2
+                      h ( ) x =  2arcsin x
+
+                                         =
+              sin xy   3  y 2/3  +  2arcsin x C
+                 ( ) −
+                       2
+
+
           Exercise
 
-          The given equation is not exact. However, if you multiply by the given integrating factor, then it
-          becomes exact. Then solve the equation
-                        (  2    2    )                               1
-                         x +  y −  xdx −  ydy =  0,     µ  ( , x y =  )
-                                                                   2
-                                                                  x +  y 2
+          Find the general solution  (2x +  y cos xy      ( cos xy       )   =  0
+                                                           x
+                                                               ( ) 2y dy−
+                                                ( ))dx +
           Solution
-
-                    M =      x +  2  y −  2  x N = − y
-
-                 M    =  2y               N =   0
-                    y                       x
-
-                     ⇒   M ≠   N
-                           y     x
-
-                 1    ( x +  2  y −  2  xdx − )  y  y d =  0
-              x +  2  y 2               x +  2  y 2
-
-                                 y
-                1−  x      dx −       dy =  0
-                  2    2       2    2
-                 x +  y       x +  y
-
-                  M =  1−    x             N =    − y
-                          x +  2  y 2          x +  2  y 2
-                           2xy                    2xy
-                 M    =                 N =
-                        ( x +  2  y 2 )       ( x +  2  y 2 )
-                    y            2        x             2
-
-                 ⇒  M =    N
-                       y    x
-
-              dψ  = 1−    x
-              dx       x +  y 2
-                        2
+                                ( )
+                 M =  2x +  y cos xy             N =  x cos ( ) 2xy −  y
+                                                                   ( )
+                                    ( )
+              M   =  cos xy      sin xy       N =  c s xy        i sn xy
+                                                    o
+                                                       ( ) xy−
+                       ( ) xy−
+                y                               x
+                 ⇒   M =   N
+                       y
                              x
-              ψ=  ∫          1−  x +  y 2           dx
-                           2
+              ψ=  ∫ (2x +  y cos xy
+                               ( ))  dy
 
-                  ∫  =  dx −  2  x + ∫  2  y 2  d x +  y
-                          1       1     (  2    2 )
+                          ( ) h y  +
+               =  x +  2  sin xy  ( )
 
+                        ( ) h y+
+              ψ   =  x cos xy   ′ ( ) =  x cos ( ) 2yxy −
+                y
+                      ′
+                     hy       2
+                       ( ) = −
+                               2
+                     hy       y
+                      ( ) = −
 
-
-                =  x −  1 ln x + (  2  y 2 ) +  h ( ) y
-                      2
-                        y
-                                ′
-                                 ( )
-             ψ   =  −        +  hy
-                y    x +  y 2
-                      2
-                        y
-                 = −
-                      2
-                     x +  y 2
-                     h′ ( ) 0y =  →   h ( ) y =  C
+                      ( ) −
+              x +  2  sin xy  y =  2  C
 
 
-              x −  1 ln x + (  2  y 2 )  =  C
-                 2</code></pre>
+          Exercise
+
+          Find the general solution   ( e x sin y −  3x 2 ) ( e x cos y +  1 − 2/3 ) dy =  0
+                                                    dx +
+                                                                      y
+                                                                    3
+          Solution
+              M =  e x sin y −  3x 2  N =  e x  cos y +  1 − 2/3
+                                                      y
+                                                    3
+                M   = e x cos y           N =  e x  cos y
+                  y                         x</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 302 - Differential Book</title>
+        <title>Page 302 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 302 - Differential Book</div>
+        <div id="content-top1">Page 302 - ODE Book</div>
         <div id="content-top2">P. 302</div>
      </div>
      <div id="content-middle">
@@ -152,64 +152,65 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.6 – Planar Systems – Distinct, Complex, and Repeated
+    <pre style="white-space:pre-line"><code>Section 3.2 − Basic Properties of the Laplace
 
-                                                             Eigenvalues − Eigenvectors
-
-
-
-               Consider the system equation:    x′ =  Ax
-
-                                                        
-               Where A is a matrix with constant entries  a ij     
-                                                        
-                                                        
-                     st
-               The 1 -order homogeneous equation can be written as   x′ =  ax
-                                                              at
-               The solution to this system is given by:  x =  Ce
-                                                                      t λ
-               We can rewrite the solution in form of vector:   x v e
-                                                                =
-               The first derivative of the solution:  x′ = λ e v  t λ
-                              x′ =  Ax
-
-                                        v
-                              λ  e v  t λ  =  A e  t λ
-                                v λ =  Av
+                                            Transform
 
 
-               3.6-1  Definition
-
-               Suppose A is an nxn matrix and       Av λ=   v
 
 
-               The values of  λ   are called eigenvalues  of the matrix A  and the nonzero vectors  v   are called the
-               eigenvectors corresponding to that eigenvalue.
+
+                 3.2-1  The Laplace Transform of Derivatives
 
 
-               3.6-2  Eigenvalues
+                 To find the Laplace Transform of a derivative, integrate the expression for the definition of the Laplace
+                 Transform by parts.  Some useful  properties that will help us  derive Laplace Transform.  These
+                 properties, will let us use Laplace Transform to solve differential equations and even to do higher order
+                 systems with initial conditions.
 
 
-               Let’s change the form of the system to a general matrix form and is defined by the form:   X ′ =  AX ()
-                                                                                                               t
-               Where A is a square matrix (n x n)
+                 3.2-2  Proposition
 
-               The behavior of a system can be determined from equilibrium point(s) by finding the eigenvalues and
-               the eigenvectors of the system.
-               Therefore; the equation can be rewritten into the form:
 
-                         x′  ()   t    a  a      x  ()   t
-                         1    =   11   12      1  
-                         x′  ()   t    a  a      x  ()   t
-                         2       21    22     2  
-               Let’s rewrite the equation  Av λ=  v .
+                 Suppose y is a piecewise differentiable function of exponential order. Suppose also that  y′ is of the
+                 exponential order.
 
-                    Av λ =  v  0                    λ :  are the eigenvalues and not a vector
-                       −
-                       −
-                    Av λ  Iv =  0
-                   ( A λ−  ) I v =  0</code></pre>
+                                £ ( )() s =  .  s £ ( )( ) −  y (0)
+                                                  ys
+                                   y′
+                                               s
+                                          =  sY ( ) −  y (0)
+
+                 Proof
+
+                     £ ( )( ) s = ∫ 0 ∞  y′  () t e − st dt
+                         y′
+
+
+
+                                 T→∞ ∫   0    ( ) t e
+                                   lim    T  y′   − st dt
+                                =
+
+
+                                          u e − st     v = ∫  y′ ( ) t dt
+                                           =
+
+                                       du =  −  se − st dt  v =  y ( ) t
+
+
+                                                  T         T           
+                                                                         
+                                                          s
+                                =  lim    e −  st y () t  0 ∫  y () t e −  st dt
+                                                        +
+                                 T→∞              t=                    
+                                                           0            
+                                =  lim e − st y ( ) t −  y (0) s+  . £ ( )( ) s
+                                                               y
+                                 T→∞
+                                   at
+                    Let:  ()y t ≤  Ce</code></pre>
      	</div>
     
      </div>

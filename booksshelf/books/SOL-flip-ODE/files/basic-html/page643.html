@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 643 - DE Solution</title>
+        <title>Page 643 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 643 - DE Solution</div>
+        <div id="content-top1">Page 643 - ODE Solution Manual</div>
         <div id="content-top2">P. 643</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,77 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 8 − B a s ic  E le c tr i c a l  C ir c u it  | 637
 
 
+                                          2
+                                       RE                                       
+                                                                       R
+                                                                                 
+                      ( ) =
+                     It        1           0    ( sin tω  L ω−  cos tω  ) e ( / ) Lt  +  K
+                                             22
+                                       +
+                           e ( / RL   )t    L E L ω     R                        
+                                          0
+                                 2
+                               RE
+                                                                   RL
+                          =         0    ( sin t ω  Lω cos t ω −  ) +  Ke − ( /)t
+                                    22
+                            L +  E L ω            R
+                                  0
+                                 ( It =  ) 0 =  I
+                                           0
+                                          2
+                                −  Lω   RE   0    +  K =  I
+                                             2 2
+                                  R  L +  E L ω          0
+                                           0
+                                            ω
+                                           RE
+                                K =  I +        0
+                                     0            2
+                                         1+  E Lω
+                                              0
+                                2
+                                                                       ω
+                               RE                                    R E        ( /)t
+                     I ( ) t =     0    ( sinω  t  Lω cos t ω −  ) +    I +  0    e −  RL
+                            L E L ω  +  22        R            0  1 E Lω  +  2 
+                                 0                                     0      
+
+
                  Exercise
 
-                 A circuit containing an electromotive force, a capacitor with a capacitance of C farads (F), and a
-                                                                                                Q
-                 resistor with a resistance of R ohms ( ). The voltage drop across the capacitor is   , where Q is the
-                                                     Ω
-                                                                                                C
-                 charge (in coulombs), so in this case Kirchhoff’s Law gives
-                                                       Q
-                                                  RI +   =  E ( ) t
-                                                       C
-                         dQ                         dQ    1
-                 But  I =    , so we have         R    +   Q =  Et
-                                                                  ( )
-                          dt                        dt   C
-                 Find the charge and the current at time t
 
-                    a)  Suppose the resistance is 5 Ω , the capacitance is 0.05 F, a battery gives voltage of 60 V and
-                        initial charge is  ( ) 0Q  =  0  C
-                                                                                Et =
-                    b)  Suppose the resistance is  2 Ω , the capacitance is 0.01 F,  ( ) 10sin60t  and initial charge
-                        is  ( ) 0Q  =  0  C
-
+                 For the given RL−circuit
+                 Which has a constant impressed voltage E, a resistor of resistance R, and a coil of impedance L.
+                                 I
+                 Find the current  ( ) t  flowing in the circuit.
                  Solution
 
-                          dQ    1              dQ
-                    a)  5     +    Q =  60 →       +  4 =  Q  12
-                          dt   .05              dt
+                     L  dI  +  RI =  E
+                       dt
+                     dI  +  R  I =  E
+                     dt   L     L
 
-                                         4t
-                                e ∫ 4dt  =  e
-                                ∫      dt =
-                                              4t
-                                 12e 4t    3e
-                                             )
-                        Qt       1  ( 3e 4t  +  C
-                          ( ) =
-                                e 4t
-                                3 C
-                              = +    e − 4t
-                                       0
-                                Q ( ) 0 =
-                                 +
-                                3 C =  0
-                                C  = − 3
+                            L ∫  R dt
+                            e   =  e ( /R L )t
 
-                                 (
-                         Q ( ) t = 31 e−  − 4t )
+                        ∫  E  e ( / ) Lt dt =  EL e ( / R L )t
+                               R
+                           L
+                                         LR
+
+                                       =  E  e ( /RL )t
+                                         R
 
 
-                            dQ        − 4t
-                         I =    = 12e
-                             dt
-
-                          dQ    1
-                    b)  2     +    Q =  10sin60t
-                           dt   .01
-                         dQ  +  50Q =  5sin60t
-                         dt
-
-                                 ∫ 50dt
-                                   e    = e 50t</code></pre>
+                      ( ) =
+                     It        1       E  e ( / RL )t  −  K   
+                           e ( / RL   )t  R       
+                         =  E  − Ke − ( /RL )t
+                            R
+                                 ( It =  ) 0 =
+                                          0</code></pre>
      	</div>
     
      </div>

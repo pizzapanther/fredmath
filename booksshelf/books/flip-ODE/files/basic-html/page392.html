@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 392 - Differential Book</title>
+        <title>Page 392 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 392 - Differential Book</div>
+        <div id="content-top1">Page 392 - ODE Book</div>
         <div id="content-top2">P. 392</div>
      </div>
      <div id="content-middle">
@@ -152,50 +152,80 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.4 - S ol ut i on  a bo ut  S i n gul a r  p oi n t s  | 377
-
-               4.4-6  Theorem        The Extended Theorem and Procedure of Frobenius
+    <pre style="white-space:pre-line"><code>3. 7 - P h as e P l an e P o r t r ai t s  &   A p p l i c a t i o n s  | 379
 
 
-               The ODE is given by:          x y′′ +  2  xpx  qx      0
-                                                      ( ) y′ +
-                                                               ( ) y =
-                                                   0
-               Has a regular singular point at  x = . The extended Method of Frobenius produce two independent
-               solutions of the ODE if the indicial roots are real.
-                                                                                               )
-                 Find the indicial roots  r  and  r of the indicial polynomial  ( ) =  r +  2  ( p −  1 r q
-                                                                             fr
-                                                                                                  +
-                                          1      2                                         0         0
-                       Verify that they are real; index them such that  r ≤  r
-                                                                     2   1
+                 Example 7
 
-                                                   r   ∞       n
-                                                                          )
-                 Construct the solution  ( ) x =  x  1 ∑  ax      ( a = 1  by the method of Frobenius. The
-                                         y
-                                          1                 n        0
-                                                      n= 0 1
-                                                       n−
-                   recursion formula is  f r +  (  1  na =  )  n ∑      ( k +  r 1 )  p nk  +  q nk   −    a
-                                                                                    k
-                                                                       −
-                                                      k= 0
+                 Consider the spring-mass system consisting of two masses that are constraint by the three springs
+                                        k
+                 whose constant are  k  , , and  k . Assume there is no damping and there are no external forces.
+                                     1   2        3
 
-                                                         r   ∞       n
-                 If  r =  r  ⇒    y  ( ) x =  y  ( )lnx  x +  x  1 ∑  cx     ( x &gt;  ) 0
-                      1    2        2        1                    n
-                                                            n= 0
 
-                 If  r − r  is a positive integer, then a second independent solution has the form
-                      1    2
-                                                             ∞         
-                                                     r               n 
-                              y  ( ) x =  α y  ( )lnx  x +  x  2  1+  ∑  d x
-                                2         1                       n    
-                                                                       
-                                                            n= 1       </code></pre>
+
+
+
+
+
+
+
+                 Write an equivalent linear system of the first-order differential equations.
+                 Solution
+
+
+                     mx′′ =  −  ( k +  k  ) x +  k x
+                      1 1       1    2  1    2 2
+                     mx′′ =  k x −  ( k +  k  ) x
+                       2 2    21      2    3   2
+
+
+                            k + k 2    k 2
+                              1
+                      x′′ =  1  −  m  x +  1  m  x 2
+                               1         1
+                     
+                       x′′ =  k 2  x −  k + k 3  x
+                                     2
+                       2   m 2  1    m 2   2
+                     
+                                                                        ,
+                                                                                ,
+                    To write an equivalent first-order system, let Y = ( y y 2 , y  y 4 ) T
+                                                                      1
+                                                                              3
+                                                                       t
+                               t
+                                      t
+                                               t
+                                                               t
+                                                      t
+                                                                                       t
+                    Where  y  () =  x  ()   y  () =  x′  ()  y  () =  x  ()  y  () =  x′  ()
+                                                                               t
+                             1      1        2      1        3      2        4       2
+                                 k + k 2     k 2
+                                   1
+                      y′ =  2  x′′ =  1  −  m  y +  1  m  y 3
+                                    1         1
+                     
+                       y′ =  x′′ =  k 2  y −  k + k 3  y
+                                           2
+                       4    2   m 2  1    m 2    3
+                     
+                           y′ =  y
+                           1    2
+                                 k + k 2     k 2
+                                   1
+                           y′ =  2  −  m  y +  1  m  y 3
+                         
+                     →              1         1
+                          y′ =  y 4
+                            3
+                                k       k + k
+                           y′ =  2  y −  2   3  y
+                            4   m 2  1    m 2    3
+                         </code></pre>
      	</div>
     
      </div>

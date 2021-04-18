@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 270 - Differential Book</title>
+        <title>Page 270 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 270 - Differential Book</div>
+        <div id="content-top1">Page 270 - ODE Book</div>
         <div id="content-top2">P. 270</div>
      </div>
      <div id="content-middle">
@@ -152,25 +152,15 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.4 -   Us i n g   L a p l a c e  T r a n sf o r m   t o  S ol v e  D i f f e r e nt i a l  E qu a t i ons  | 255
-
-               3.4-9  Inductor
-
-                                                     Laplace Transform
-                                                                 di  () t  £
-                                                                                                           )
-                                                                                            (
-                                                       v  ( ) t =  L  L    ←→   V  () s =  L sI  () s −  I  (0)
-                                                         L         dt              L           L      L
+    <pre style="white-space:pre-line"><code>2. 6 - F o r c e d H a r m o ni c  M ot i o n  | 257
 
 
-                       The block diagram:
+                 2.6-6  Transient and Steady-State
 
-                                     I    ( ) s         Ls            V  ( ) s =  s    LI  ( ) s
-                                       L                                L         L
-
-
-               3.4-10  Capacitance
+                 A motion or current is transient solution if the solution approaches zero as t → ∞ .
+                 A steady-state motion or current is one that is not transient and does not become unbounded.
+                 Free damped systems always yield transient motions, while forced damped systems (assuming the
+                 external force to be sinusoidal) yield both transient and steady-state motions.
 
 
 
@@ -179,48 +169,61 @@ function MM_swapImage() { //v3.0
 
 
 
-                       Laplace Transform
-
-                                 dV  () t   £
-                                                           s
-                        i  ( ) t =  C  c    ←→  I  () s =  CV  () s
-                                                            .
-                         c         dt              c          c
-
-
-
-                                       Cs
 
 
 
 
-               Example 4
-
-
-               Suppose the electrical circuit has a resistor of  R =  2Ω and a capacitor of C =  1 F . Assume the voltage
-                                                                                           5
-               source is  E =  cost  ( ). If the initial current is 0 A, find the resulting current.
-                                   V
-
-               Solution
-
-                   R dQ  +  1  Q =  E
-                      dt   C
-
-                   2Q′ +  5Q =  cost
-                   £  (2Q′ +  5Q ) £=  (cost )
 
 
 
 
-                                   +
-                              Q
-                   2sQs −  () 2 (0) 5 () =  Qs  s
-                                              2
-                                             s + 1
-                   (2s +  ) 5 Qs =  ()  s
-                                   2
-                                  s +  1</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+                 Example 2
+
+
+                                                                                    si
+                 Determine the transient and steady state to:  x′′ +  2x′ +  2x =  4cost +  2 n ; xt   ( ) 0,0 =  x′ ( ) 0 = v
+                                                                                                                0
+                 Solution
+
+                           λ +
+                               2
+                                   0
+                     λ  2  2 +=
+                                22i
+                        λ    =  − ±
+                          1,2     2
+                                 1 i
+                              = −±
+
+                     x =  e  t −  ( C  cost + C  sint )
+                      h         1         2
+
+                     x =   A cost +  B sint
+                      p
+
+                         x′ =  −  A sint +  B cost
+                          p
+                         x′′ =  −  A cost −  B sint
+                          p
+
+                     x′′ +  2x′ +  2x =  4cost +  2sint
+                     −  A cost −  B sint −  2 sint +  A  2 cost +  B  2 cost +  A  2 sint =  B  4cost +  2sint
+
+                             cost   A +  2B =  4
+                                                 →   B =  2,  A =  0
+                                        +
+                             sint  −  2A B =  2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 380 - DE Solution</title>
+        <title>Page 380 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 380 - DE Solution</div>
+        <div id="content-top1">Page 380 - ODE Solution Manual</div>
         <div id="content-top2">P. 380</div>
      </div>
      <div id="content-middle">
@@ -156,71 +156,73 @@ function MM_swapImage() { //v3.0
 
 
 
-                                =  h
-                                  k
+                     C =  1
+                         2
 
-                     P ( ) t  remains constant as time increases
-
-
-                 For  P &lt;  h
-                      0    k
-
-                        P −  h  &lt;  0
-                          0  k
-                                                      kt
-                                                     e
-                      lim P t =  ( )  lim  h  +  ( (  P −  h ) )
-                     t→∞         t→∞    k     0   k
-                                = −∞
-
-                     P ( ) t  decreases as time increases.
+                        t
+              y ( ) t =  1 ( e + e  t − )
+                     2
+               ( ) =
+              yt    cosh ( ) t
 
 
 
-                 P
-             c)  ( ) T =  h  +  ( P −  h ) e kT  = 0
-                         k     0   k
-                   kP −   h  kT  h
-                     0 k    e   = −
-                                   k
-                         
-                 e kT  = −  h
-                         kP −  h
-                            0
-                                
-                 kT =  ln     h  
-                          h kP  −  0 
 
-                 T =  1  ln     h      
-                     k       h kP  −  0 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           Exercise
 
+          The following system of differential equations is encountered in the study of the decay of a special
+          type of radioactive series of elements
 
-                                                                                       0
-          A certain body weighing 45 lb, is heated to a temperature of 300°. Then at t =  it is plunged into
-                                                                                           1
-          100 lb of water at a temperature of 50°. Given that the specific heat of the body is  , find the
-                                                                                           9
-          formula for the temperature T of the body during its cooling.
+                                dx  = − λ x
+                                dt     1
+                                dy
+                                   =  λ  x λ  −  y
+                                dt    1     2
 
+          Where λ    and  λ   are constants.
+                  1       2
+          Discuss how to solve this system subject to  ( ) 0x  =  x y ( ) 0 =  y
+                                                              ,
+                                                            0           0
           Solution
+              ∫  dx  = − λ 1 ∫  dt
 
-              H =  mc t        c: specific heat
-                     ∆
-             Let T   : temperature of the water
-                   w
-                                                            1
-             The amount of heat lost by the body is:     45 ( ) (300 T−  ) =  ( 5 300 T−  )
-                                                            9
-                                                                                       )
-                                                            ( )(
-             The amount of heat gained by the body is:   100 1 T −   50 =  )  100 T − (  50
-                                                                 w               w
-             The 2 amounts are the same
-                                       )
-               ( 5 300 T−  ) 100 T=  (  w  −  50</code></pre>
+                 x
+
+                        +
+              ln x =  −  λ tC
+                      1
+                          +
+                     −  λ tC
+              x ( ) t =  e  1
+                       − λ    t
+                  =  Ae  1
+
+                              =
+                     x ( ) 0 =  A x
+                                 0
+                        − λ t
+              x ( ) t =  x e  1
+                     0
+              dy        e − λ t
+                           1
+              dt  =  x λ  01  − λ  2  y</code></pre>
      	</div>
     
      </div>

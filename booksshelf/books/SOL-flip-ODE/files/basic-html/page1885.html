@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1885 - DE Solution</title>
+        <title>Page 1885 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1885 - DE Solution</div>
+        <div id="content-top1">Page 1885 - ODE Solution Manual</div>
         <div id="content-top2">P. 1885</div>
      </div>
      <div id="content-middle">
@@ -155,71 +155,80 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 7 − P h a s e  P la n e  P o r tr a it s   & A p p li c a ti o n s  | 1871
 
 
-
-                    At frequency ω =   6, the 2 masses oscillate in the same direction with amplitude of motion of
-                                    1
-                     m twice that of m .
-                       1               2
-                    At frequency ω =   7,  the 2 masses oscillate in the same direction with amplitude of motion of
-                                    3
-                     m being  19  times that of m .
-                       1       3                2
-
-                    At frequency ω =   8, the expected oscillation is missing.
-                                    2
-
-
-                 Exercise
-
-                                                                                                                5
-                 Consider a mass-and-spring system shown below. Assume that   m =   1; k =   50, k = 10; F =
-                                                                                 1       1        2         0
-                 in mks units, and that ω = 10 . Then find m  so that in the resulting steady periodic oscillations, the
-                                                           2
-                 mass  m will remain at rest (!).
+                                 a
+                                       0
+                         46   
+                                    =
+                                     ⇒    2a =  −  3b
+                                 b
+                                       0
+                         64     
+                                       3 
+                            ⇒   V =     
+                                 2     − 2 
+                              ( ) (                       3 
+                            x   t =  a  cos4tb    sin 4t )  
+                                              +
+                             2        2          2         − 2 
+                       
+                         ( ) a=
+                                                                       +
+                                       +
+                         xt  1 cos2t b 1 sin2t +  3a 2  cos3t +  3b 2  sin3t c 1 cost
                         1
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 Thus the effect of the second mass-and-spring pair will be to neutralize the effect of the force on the
-                 first mass. This is an example of a dynamic damper. It has an electrical analogy that some cable
-                 companies use to prevent your reception of certain cable channels.
-
-                 Solution
-
-                     F ( ) t =  F 0  cos t ω = 5cos10t
-                       mx′′ =  −  ( k +  k  ) x +  k x +  5cos10   t
-                       1 1       1    2  1    2 2
-                                  (       )
-                      mx′′ =   22  −  k 2  x −  2  x 1
-
-
-                        x′′ =   1  −  60x +  1  10x +  2  5cos10t
-                     
-                       mx′′ = 10x − 10x 2
-                        22
-                                  1
-                       x  = c  cos10t
-                       1p    1
-                     
-                      x 2 p  = c 2  cos10t
+                     
+                                                                       +
+                                       +
+                      x 2  ( ) t =  a 1 cos2tb 1 sin2t −  2a 2  cos3t −  2b 2  sin3t c 2  cost
                      
-                       x′′ = − 100c 1  cos10t
-                     
-                        1p
-                     
-                      x′′ 2 p  = − 100c 2  cos10t
-                     </code></pre>
+                       
+                       x′′ = − c  cost
+                       1p     1
+                     
+                      x′′ 2 p  =  c −  2  cost
+                     
+                         x′′ =  −  10x +  6x +  30cost
+                          1       1     2
+                            −  c  cost =  −  10c  cost +  6c  cost +  30cost
+                              1            1          2
+                            9c −  6c =  3
+                              1     2
+                            3c −  2c =  10
+                              1     2
+                         x′′ =  6x −  10x +  60cost
+                          2     1      2
+                            −  c  cost =  6c  cost −  10c  cost +  60cost
+                               2         1          2
+                            −  6c +  9c =  60
+                               1     2
+                            −  2c +  3c =  20
+                               1     2
+
+                            5c =  70
+                              1
+                            c = 14,  c =  16
+                             1        2
+                       
+                         ( ) =
+                        xt  a 1 cos2t b+  1 sin2t +  3a 2  cos3t +  3b 2  sin3t +  14cost
+                       1
+                     
+                                       +
+                      x 2  ( ) t =  a 1  cos2tb 1  sin2t −  2a 2  cos3t −  2b 2  sin3t +  16cost
+                     
+                    Given initial values:  ( ) 0x′  1  =  x′  2  ( ) 0 =  and  ( ) 0x 1  =  x 2  ( ) 0 = .
+                                                                                 0
+                                                          0
+                       
+                        x 1 ( ) 0 =  a +  1  3a +  2  14 =  0
+                     
+                      x 2  ( ) 0 =  a −  1  2a +  2  16 =  0
+                     
+                         a +   1  3a =  2  −  14
+                        
+                          a −  1  2a =  2  −  16
+                        a =  1, a = − 5
+                          1      2</code></pre>
      	</div>
     
      </div>

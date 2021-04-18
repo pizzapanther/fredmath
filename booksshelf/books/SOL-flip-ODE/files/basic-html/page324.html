@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 324 - DE Solution</title>
+        <title>Page 324 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 324 - DE Solution</div>
+        <div id="content-top1">Page 324 - ODE Solution Manual</div>
         <div id="content-top2">P. 324</div>
      </div>
      <div id="content-middle">
@@ -155,62 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>318 | S O LU TI O N
 
 
+                   ∫ tan  x dx  ln    )
+                    e       =  e  (sec x
+
+                            = sec x
+                 ∫  cos x (sec x dx = ∫
+                               )
+                       2               cos x dx
+
+                                   =  sin x
+
+
+              yx       1  (sin x C+  )
+               ( ) =
+                     sec x
+                        x
+                               +
+                   = sin cos x C  cos x
+                         y ( ) 0 = C =  1 −
+
+               ( ) =
+                        x
+              yx     sin cos x −  cos x
+
+
           Exercise
 
-                                                                                 5
-          Find the solution of the initial value problem   y′ +  y =  cos2 ; t  y ( ) 0 =
+
+          Find the solution of the initial value problem   y t ′ +  2y t − =  2  t + 1 y ( ) 1 =  1
+                                                                                     2
           Solution
 
-               ∫ dt
-                       t
-                 e  =  e
+                              1
+                          1
+              y′ +  2  y t −+
+                      =
+                  t           t
+                     t ∫  2 dt
+                    e   = e 2ln t
 
-
-                                    ∫ cos2   t dt
-                                t   1
-                          +   e     2 sin2t
-                                t    1
-                           −  e    − 4 cos2t
-                          +    e
-                                t
-
-              ∫  e t  cos2 dt  t =  e t ( 1 sin 2t +  1 cos2t −  )  1 ∫  e t  cos2 dt  t
-                                                    4
-                                          4
-                                2
-                                                           )
-                 ( )    ∫ e t  cos2 dt =  t   e t ( 1 sin 2t +  1 cos2t
-                     1
-                  1+
-                                           2
-                     4
-                                                    4
-                 5 ∫ e t cos2 dt  t =  1 t  (2sin 2t + cos2t )
-                                    e
-                 4                 4
-                 ∫  e t  cos2 dt =  1 t (2sin 2t +  cos2t )
-                                  e
-                          t
-                                 5
+                        =  t 2
+                 ∫  ( t −+ 1 ) t 2 dt = ∫  ( t − t + t ) dt
+                                            2
+                                       3
+                       1
+                           t
+                                                  2
+                                 =  1 t −  4  1 t +  3  1 t
+                                    4     3     2
+                                            )
                        (
-                                                 )
-                          e
-              y ( ) t =  11 t (2sin2t +  cos2t +  ) C
-                     e t  5
-                   =  1 (2sin2 +  t  cos2t ) Ce+  t −
-                     5
+              y ( ) t =  1 1 t −  4  1 t +  3  1 t +  2  C
+                     t 2 4    3      2
 
-                     y ( ) 0 =
-                            5
-                     1  +  C =  5
-                     5
-                           e
-                     C =  1 π
-                         2
+                  =  1 t −  2  1 t +  1  +  C
+                    4     3    2   t 2
 
-                                           e
-              y ( ) t =  1 (2sin2 +  t  cos2t ) +  25 − t
-                    5                    5</code></pre>
+                       y ( ) 1 =  1  −  1  1  + +  C =  1
+                              4  3   2       2
+
+                       C  =  1
+                           12
+
+              y ( ) t =  1 t −  2 1 t +  1  +  1
+                     4     3   2   2t 2</code></pre>
      	</div>
     
      </div>

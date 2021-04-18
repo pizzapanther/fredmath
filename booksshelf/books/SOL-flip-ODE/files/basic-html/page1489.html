@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1489 - DE Solution</title>
+        <title>Page 1489 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1489 - DE Solution</div>
+        <div id="content-top1">Page 1489 - ODE Solution Manual</div>
         <div id="content-top2">P. 1489</div>
      </div>
      <div id="content-middle">
@@ -152,82 +152,79 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1475
-
-
-                       { £  y′′ +  16  } y £  {2sin4t
-                                              }
-                                  =
-                                                 ( ) =
-                     s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 +  16Ys  8
-                                                        2
-                                                       s + 16
-                     ( s +  2  16 Ys    8   −  1  s
-                             )
-                               ( ) =
-                                      2
-                                     s + 16   2
-                       ( ) =
-                     Ys         8    2  −  1  2  s
-                            ( s + 16 )     s + 16
-                                         2
-                              2
-                                                        (
-                                                          2
-                                                      Cs −   16 )
-                                    8      =  As +  B  +         +     Ds
-                                ( s +  2  16 ) 2  s + 16  ( s +  2  16 ) ( s +  2  16 ) 2
-                                              2
-                                                               2
-                                 s 3     A =  0
-                                
-                                 s 2   B C =  0
-                                          +
-                                
-                                  s  16A +  D =  0
-                                  0
-                                 s  16B −  16C =  8
-
-                                A =  0 B =  1  C =  −  1  D =  0
-                                           4         4
-
-                                                                            
-                                                          2
-                     £  −  1 {Ys      −  1       1  1  −  1  s − 16  −  1  s      
-                             ( )} £=
-                                           4  s +  2  16  4 ( s + 16 ) 2  2  s +  2  16 
-                                                          2
-                                                                               
-                     y ( ) t =  1  sin4t −  1 t cos4t −  1 cos4t
-                           16         4         2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1475
 
 
                  Exercise
 
-                                                                              1
-                 Find the motion of a damped mass-and-spring system with m = , c = , and k =    26 under the
-                                                                                     2
-                 influence of an external force  ( ) 82cos4F t =  t  with  ( ) 0x  =  6 and   ( ) 0x′  =  0 .
+                 Consider a mass-spring-dashpot system with  m =  1 , k = 17, c =  3, and f  ( ) t = 15sin 2t  with
+                                                                 2
 
-                 Solution</code></pre>
+                                                0
+                                                       x
+                 initial conditions  ( ) 0x  =  x′ ( ) 0 = . Let  ( ) t  be the displacement of the mass m from its equilibrium
+                 position. Find the resulting transient motion and steady periodic motion of the mass.
+                 Solution
+
+                     1  x′′ +  3x′ +  17x =  15sin 2t     mx′′ +  cx′ +  kx =  0
+                     2
+                                                                  0
+                     x′′ +  6x′ +  34x =  30sin 2t    x ( ) 0 =  x′ ( ) 0 =
+                     £  {x′′ +  6x′ +  34x =  } £  {30sin 2t
+                                                    }
+
+                                                                   ( ) =
+                     s Xs − 2  ( ) sx ( ) 0 −  x′ ( ) 0 +  6sXs −  ( ) 6x ( ) 0 +  34Xs  60
+                                                                          2
+                                                                         s +  4
+                                 )
+                     ( s +  2  6s +  34 Xs  60
+                                     ( ) =
+                                           2
+                                          s +  4
+                       ( ) =
+                     Xs               60           =  As +  B  +  Cs +  D
+                             ( s +  2  4 )( (s +  ) 3  2  +  25 )  s +  4  (s +  ) 3  2  +  25
+                                                       2
+                                As +  3  6As +  2  34sA +  Bs +  2  6sB +  34B +  Cs +  3  4Cs +  Ds +  2  4D =  60
+
+                                    s 3     A C =   0
+                                               +
+                                   
+                                    s   2  6A +  B +  D =  0
+                                   
+                                     s   1  34A +  6B +  4C =  0
+                                     0
+                                    s    34B +  4D =  60
+
+                                      C =  −  A   6A −  15 B =  −  15
+                                                       2
+                                   
+                                                   30A +  6B =  0
+                                            17
+                                    D = 15 −  2  B
+                                   
+                                    −  30A +  75 B =  75
+                                   
+                                           2
+                                     30A +  6B =  0
+                                   
+
+                                   B =  150 =  50
+                                        87   29
+
+                                   A =  −  10 ; B =  50 ; C =  10 ; D =  10
+                                         29        29        29        29
+
+
+                                                     
+                                  s
+                               
+                       ( ) =
+                     Xs      10 −+    5  +    s + 1   
+                                  2
+                             29   s +  4  (s +  ) 3  2  +  25 
+                                                     </code></pre>
      	</div>
     
      </div>

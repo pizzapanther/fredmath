@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 437 - Differential Book</title>
+        <title>Page 437 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 437 - Differential Book</div>
+        <div id="content-top1">Page 437 - ODE Book</div>
         <div id="content-top2">P. 437</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,74 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>A ppe ndi x   C  | 421
-
-             4.  After a sufficiently long time, v  will charge to V . The current drops to zero.
-                                               c                 f
-                The transient is complete.
+    <pre style="white-space:pre-line"><code>Section 4.3 – Legendre’s Equation
 
 
-             i =  i
-              c   R
-               dv  ( ) t  V − v
-             C    c    =  f    c
-                 dt         R
-               dv c      1
-             V −  v   =  CR  dt
-               f    c              t
-
-             ∫  v c  V − v  dv = ∫   CR  dt
-                      1
-                                      1
-                             c
-              V
-                i   f    c         0
-                 (        )  v c   t
-             −  ln V −  f  v c  V i  =  CR
 
 
-                 V − v 
-             ln   f   c    = −  t
-                 V − V      CR
-                 f    i  
-             V −  v        t
-               f    c  =  e − CR
-             V −  V
-               f    i
-                                     t
-                                )
-             V −  v =  ( V −  V e − CR
-               f   c      f    i
-                                   )
-                                        t
-             v  ( ) V −   ( V −  V e − CR
-                 t =
-              c        f     f    i
-                                     −  − 6 ( t  3 ) ×  10 − 3
-                                             1 ×
-                                  )
-             v  ( t   ) =  6 −  (62 e  10  50
+
+          Solving a homogeneous linear differential equation with constant coefficients can be reduced to the
+          algebraic problem of finding the roots of its characteristic equation.
+
+          4.3-1  Legendre’s Equation of order n
+
+
+          The Legendre’s equation of order n is important in many applications. It has the form
+                                           ( 1 x 2 ) y′′ −  2xy′ +  ( n n +  ) 1 y =  0
+                                             −
+
+
+
+                                             y′′ −  2x  y′ +  ( nn +  ) 1  y =  0
+                                                 1 x 2      1 x  2
+                                                  −
+                                                              −
+                                               y′′ +  P ( ) x y′ +  Q ( ) x y =  0
+
+
+          Any solution of that equation is called a Legendre function.
+
+
+                                                                           0
+                    P
+                                        Qx
+          Note that:  ( ) x = −  2x  and  ( ) =  ( nn +  ) 1   are analytic at  x = . P at  x = ± 1.
+                             1 x  2             1 x  2
                                −
-                    e
-              c   m sc
-                        = −    − .2t
-                          64e
-                At  t =  0 →   v =  V    √
-                                 c    i
-                         V −  v
-                    i =   f    c
-                     c      R
-                           dv
-                       = C   c
-                            dt
-                         V −  V   −  t
-                       =   f    i  e  CR
-                            R
+                                                  −
+          Hence Legendre’s equation has power series solutions of the form
+                      ∞
+                     ∑         m
+                 y =       ax
+                            m
+                     m= 0
+                       ∞
+                      ∑          m− 1
+                 y′ =      ma x
+                              m
+                      m= 1
+                       ∞
+                      ∑                 m− 2
+                             ( −
+                 y′′ =      mm     ) 1 a x
+                                     m
+                      m= 2
+
+          ( 1 x 2 )  y′′ −  2xy′ +  ( n n +  ) 1 y =  0
+            −
 
 
-                           e
-                       =  4 − .2t
-                         5
-                At  t = ∞→      v →   V      √
-                                 c      f</code></pre>
+          ( 1 x 2 ) ∑  ∞   m (m −  ) 1 ax m−  2  −  2x ∑  ∞   max m−  1  +  ( n n +  ) 1 ∑  ∞   ax m  =  0
+            −
+                                                                             m
+                                 m
+                                                      m
+                  m= 2                        m= 1                     m= 0
+          ∑  ∞  m (m −  ) 1 ax m− 2  −  ∑  ∞  m (m −  ) 1 ax −  m ∑  m  ∞  2  max +  m ∑  m  ∞  ( n n +  ) 1 ax m  =  0
+
+                         m
+                                                                                       m
+          m= 2                     m= 2                  m= 1             m= 0</code></pre>
      	</div>
     
      </div>

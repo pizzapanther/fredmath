@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1231 - DE Solution</title>
+        <title>Page 1231 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1231 - DE Solution</div>
+        <div id="content-top1">Page 1231 - ODE Solution Manual</div>
         <div id="content-top2">P. 1231</div>
      </div>
      <div id="content-middle">
@@ -155,73 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1221
 
 
-                          A +   2B =  10
-                        
-                              +
-                         −  2AB =  0
-                                    1   2            10   2              1  10
-                                ∆  =       =  5  ∆  =       =  10  ∆  =         =  20
-                                    −  2  1      A    0   1         B   −  2  0
-                            A  =  2, B =  4
+                 Exercise
+
+                                          i
+                                 q
+                 Find the charge  ( ) t  and  ( ) t  on the capacitor in an LC−series circuit when
+                     E ( ) t =  E 0  cos tω  V, q ( ) 0 = q C , a nd  i ( ) 0 =  i 0  A
+                                                  0
+                 Solution
+
+                     Lq′′ +  1  q =  E  sin t ω  ;    q ( ) 0 =  q  i ( ) 0 =  i    Lq′′ +  Rq′ +  1  q =  E ( ) t
+                           C      0                   0         0                     C
+
+                        λ  2   1  =  0 →   λ +  =  ±  1     i
+                              LC             1,2     LC
 
 
                          t
-                     V  ( ) =  2cost +  4sint
+                     q  ( ) C=  cos  1   t + C  sin  1  t
+                      h       1      LC       2     LC
+                     q    A cos t Bω =  sin tω +
                       p
-                     V  ( ) t =  e  t −  ( C 1 cost +  C 2  sint +  )  2cost +  4sint
 
-                            V  ( ) 0 = C +=  0
+                        q′    −  ω=  A sin t ω  ω +  B cos t ω
+                          p
+                        q′′   −  ω=  2 A cos tω  ω −  2 B sin tω
+                          p
+
+                     Lq′′ +  1  q =  E  cos t ω
+                           C       0
+                         cos t ω  ( −  Lω +  2  1 ) A =  E        EC
+                                                                    0
+                                          C        0  →    A = 1−  LCω 2
+                        
                                         2
-                                     1
-                            C  = − 2
-                             1
-
-
-                     V  ( ) t ′  =  e  t −  ( −  C 1  sint +  C 2  cost −  C 1 cost −  C 2  sint −  )  2sint +  4cost
-
-                            V′ ( ) 0 =  C ++    0
-                                         24 =
-                                      2
-                            C   = − 6
-                              2
-
-                     V  ( ) et =  t −  ( 2cost−  −  6sint ) 2cost+  +  4sint
-
-
-                 Exercise
-
-
-                                                                           0
-                                                                                         V
-                 Consider the parallel RLC network. Assume that at time t = , the voltage  ( ) t  and its time rate of
-                                                            V
-                 change are both zero. Determine the voltage  ( ) t  for
-                                                                        t
-                         R = 1  kΩ , L = 1 H , C =  1  µ  , F  I  ( ) 5cos   mA
-                                                               t =
-                                                   2        s
-                 Solution
-                     I  ( ) t =  1 V +  C  dV  +  1 ∫ V ( ) s ds
-                      S      R        dt   L
-
-
-                     d    I     1 V +  C  dV  +  1 ∫ V   
-                     dt     S  ( ) t =   R  dt  L  ( ) s ds     
-
-                                           2
-                     d  I  ( ) t =  1 dV  +  C  d V  +  1 Vs
-                                                    ( )
-                     dt  S      R dt      dt 2   L
-                       2
-                     d V  +  1 dV  +  1  V =  1 dI
-                     dt 2   RC dt    LC      C dt
-
-                                               )
-                     V′′ +  2V′ +  2V =  2  d  (5cost
-                                      dt
-                     V′ + ′  2V + ′  2V = − 10sin  ; V  ( ) 0 =  0, V′ ( ) 0 =
-                                                                   0
-                                           t</code></pre>
+                         sin t ω  ( −  Lω +  1 ) B =  0
+                                           C                   B =  0
+                                EC
+                     q  ( ) t =  0     cos t
+                                          ω
+                      p              2
+                             1 LCω
+                               −
+                                                            EC
+                                                   1
+                     q ( ) t =  C 1 cos  1  t +  C 2  sin  LC  t +  1 LCω−  0  2  cos t ω
+                                    LC
+                                         EC
+                          q ( ) 0 =  C +  1  1 LCω−  0  2  =  q
+                                                   0
+                                       EC
+                          C =  q −       0
+                            1
+                                 0
+                                    1−  LCω  2
+                                                                        ECω
+                     q′ ( ) t =  −  1  C  sin  1  t +  1  C  cos  1  t −  0     sin tω
+                               LC   1      LC      LC    2      LC    1 LCω   2
+                                                                        −
+                          q′ ( ) 0 =  1  C =  i
+                                    LC   2   0
+                          C =    i  LC
+                            2    0
+                                   EC                                       EC
+                     q ( ) t =      q −  0  0  2     cos  1  t +   i 0  LC  sin  1  t +  0  cos t ω
+                                1 LCω  −         LC                 LC     1 LCω   −  2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1189 - DE Solution</title>
+        <title>Page 1189 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1189 - DE Solution</div>
+        <div id="content-top1">Page 1189 - ODE Solution Manual</div>
         <div id="content-top2">P. 1189</div>
      </div>
      <div id="content-middle">
@@ -155,71 +155,68 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1179
 
 
-                                                                         )
-                             (
-                                                                                                     )
-                    c)  lim e  − 2t (  3  cos6t −  13 sin6t −  )  3  cos8t +  1 sin8t =  lim −  (  3  cos8t +  1 sin8t
-                        t→∞         20        60        20        5         t→∞     20        5
-                                                                           =  doesn't exist
-                        The equation of motion is a steady-state solution.
-
-
                  Exercise
 
-                 A  2-kg  mass is attached to a spring hanging vertically and come to rest at equilibrium. The damping
-
+                 A 10-kg  mass is attached to a spring hanging vertically stretches the spring 0.098 m  from its
                                                                                                   0
-                 constant is given by c = 8 kg/sec  and the spring constant is k =  80 N/m. At time t = , the resulting
-                                                                                            t
-                                                                              F
+                 equilibrium rest position, measured positive in the downward direction. At time t = , the resulting
+                 spring-mass system is disturbed from its rest state by the force  ( ) 20cos10 NF  t =  t  . (t in seconds)
 
-                 spring-mass system is disturbed from its rest state by the force  ( ) t =  20sin6 N . (t in seconds)
-                   a)  Find the equation of motion.
-                   b)  Plot the equation of motion.
-                   c)  Determine the long-time behavior of the system, as t →∞
+                   a)  Determine the spring constant k.
+                   b)  Find the equation of motion.
+                   c)  Plot the equation of motion.
+                   d)  Determine the maximum excursion from equilibrium made of the object on the t-interval
+                       0 t ≤ &lt;∞
+
                  Solution
 
-                    a)  2y′′ +  8y′ +  80y =  20sin6; t  y ( ) 0 = 0,  y′ ( ) 0 =     my′′ +  cy′ +  ky =  F ( ) t
-                                                                        0
-
-                            2λ  2  8λ +  80 λ +  2  4λ + =  +  40 =  0 →  λ  2 6   i± = −
-                                                                    1,2
-
-                         y =  e − 2t ( C  cos6t + C  sin6t )
-                          h          1          2
-
-                         y  =  A cos6t +  B sin6t
+                            10 (9.8 )
+                    a)  k =                                 ky =  mg
+                             0.098
+                          = 1,000  N/m
+                                                 t
+                                                                         0
+                    b)  10y′′ +  1000y =  20cos10 ; y   ( ) 0 =  , 0  y′ ( ) 0 =     my′′ +  cy′ +  ky =  F ( ) t
+                                                             i
+                            10 λ  2  1000 0 → =   λ +  =  ±  10
+                                                    1,2
+                                      t
+                         y =  C  cos10 +  C  sin10t
+                          h    1           2
+                         y =  At cos10t + Bt sin10t
                           p
-                                             B
-                          y′ =  −  6 sin6t +  A  6 cos6t
-                            p
-                                               B
-                          y′′ =  −  36 cos6t −  A  36 sin6t
-                            p
-                         y′′ +  4y′ +  40y =  10sin6t
+                                y′ =  A cos10t +  B sin10t −  10At sin10t +  10Bt cos10t
+                                 p
 
-                                cos6t  → −  36 +   24B + 40A = 0
-                                               A
+                                    =  ( A + 10Bt )cos10t + ( 10At−  +  B )sin10t
 
-                                              B
-                                sin6t  → −  36 −  24A +  40B = 1 0
-                                   A +   6B =  0
-                                
-                                 −  12A +  2B =  5
+                                y′′ = 10 cos10t − 10 sin10t − (10A + 100Bt )sin10t + −         10B )cos10t
+                                                                                    ( 100At +
+                                                    A
+                                       B
+                                 p
+                                      −
+                                   =  ( 100At +  20B )cos10t −  (20A +  100Bt )sin10t
+                         y′′ +  100y =  2cos10t
 
-                                         1   6              0  6                1   0
-                                   ∆  =        =  74  ∆  =       =  −  30  ∆  =       =  5
-                                       −  12  2        A    5  2          B    −  12  5
+                                            t  −  100A +  100A =  0
+                                cos10t  →    0
+                                           t       20B =  2          ⇒     A =  0,  B =  1
+                                            t  −  100B +  100B =  0                  10
+                                sin1 0t  → 
+                                           t    0  −  20A =  0
+                         y =   1  t sin10t
+                          p   10
 
-                                A =  −  15 ,  B =  5
-                                     37        74
+                                                       1
+                         y ( ) Ct =  1  cos10t +  C 2  sin10t +  10 t sin10t
 
-                         y =  −  15 cos6 +  t  5  sin6t
-                          p     37         74
+                                y ( ) 0  =  C =  0
+                                        1
 
-                                                                      5
-                         y ( ) t =  e − 2t ( C 1 cos6t +  C 2  sin6t −  )  15  cos6t +  74 sin6t
-                                                           37</code></pre>
+                         y′ =  −  10C  sin10t +  10C  cos10t +  1  sin10t − 10 cos10t
+                                                                       t
+                                  1             2         10</code></pre>
      	</div>
     
      </div>

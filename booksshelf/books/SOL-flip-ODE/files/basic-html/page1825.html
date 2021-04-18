@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1825 - DE Solution</title>
+        <title>Page 1825 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1825 - DE Solution</div>
+        <div id="content-top1">Page 1825 - ODE Solution Manual</div>
         <div id="content-top2">P. 1825</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,80 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 7 − P h a s e  P la n e  P o r tr a it s   & A p p li c a ti o n s  | 1811
 
 
-                                  10e 2t  sint  
-                           =        − ∫         dt
-                                     12t  sint 
-                                  30e       
+                 Exercise
+
+                 The electrical network shown below
+
+                                                                            it
+                                                                 it
+                    a)  Find the system equations for the currents  ( )  and  ( )
+                                                                  2         3
+
+                                                                                     h
+                    b)  Solve the system for the given:  R =  2 Ω  ,  R =  3 Ω  ,  L = 1,  L = 1 , E =  60  V , with
+                                                                                                h
+                                                        1           2           1         2
+                                                                0
+                        the initial values  ( ) 0i  = 0 & i  ( ) 0 =
+                                          2              3
+                    c)  Determine the current  ( )
+                                              it
+                                               1
+                 Solution
+                    a)  i =  i + i
+                         1   2    3
+                                   ′
+                         R i +   11  L i =  1 2  E ( ) t
+                        
+                                           ′
+                         R i +  1 1  R i +  23  L i =  23  E ( ) t
+                        
+                         L i + ′  R i + (  i  )  =  E ( ) t
+                          12     1  2    3
+                        
+                         L i + ′  R i + (  i  )  +  R i =  E ( ) t
+                          23     1  2    3     23
+
+                               R       R       1
+                          i =   − ′  1  i −  1  i +  E ( ) t
+                          2    L 1  2  L 1  3  L 1
+                        
+                         i =  − ′  R 1  i −  1  ( R +  R i +  )  1  E ( ) t
+                          3    L   2   L    1     2  3   L
+                                2       2                 2
 
 
-                                                         ∫ sint  dt
+                         i =  2  −′  2i −  2  2i +  3  60
+                    b)  
+                          i =  3  −′  2i −  2  5i +  3  60
 
+                                 −   2 −  2
+                            A =         
+                                  −  2 −  5 
+                                   − 2 λ−     − 2
+                           −
+                         A λ =  I
+                                              5 λ
+                                    − 2     −−
+                                            6
+                                                0
+                                 =  λ  2  7 + =
+                                         λ +
+                        Thus, the eigenvalues are: λ  1  −  1  and    λ =  2  =  −  6
 
-                                            +    e at     − cost
-                                            −    ae at     − sint
-
-                                            +   a e
-                                                 2 at
-
-
-
-
-                                   ∫  e at sint dt =  e at  ( cost−  +  a sin  ) t −  a 2 ∫  e at sint dt
-
-
-                                                    1
-                                   ∫ e at sint dt =  1 a 2  e at  ( cost +  a sin  ) t
-                                                           −
-                                                   +
-
-                                2e 2t  (2sint − cost )  
-                           =                         
-                               −  6  e 12t  (12sint −  cost ) 
-                               29                    
-
-                        i p  ( ) t = ϕ X
-
-
-                                   e −  2t  − 3e −  12t     2e 2t (2sint − cost )  
-                               =                                         
-                                   −  2t   −  12t     −  6  e 12t  (12sint −  cost ) 
-                                   3e     e          29                  
-                                   4sint −  2cost +  216 sint −  18  cost 
-                               =                29        29       
-                                                            6
-                                                   72
-                                   12sint −   6cost −  29 sint +  29 cost   
-                                   332 sint −  76 cost  
-                               =      29  29        
-                                   276 sint − 168 cost 
-                                   29      29      
-
-                                                              332 sint −  76 cost  
-                                  1    2t     − 3  12t    29       29     
-                         () t i  =  C 1   e −  +  C 2    1   e −  +    276  168  
-                                  3
-                                  
-                                                                    29  sint −  29  cost   
-                                                        − 76 
-                                       1      − 3   29     0 
-                            i ( ) 0 =  C 1   +  C 2    1   +    168   =   0 
-                                       3
-                                               
-                                      
-                                                            −
-                                                   
-                                                        29    </code></pre>
+                        For λ    −  1  ⇒  ( A λ =  −  IV = )  0
+                              1                 1   1
+                                        x
+                                              0
+                             −  1  −  2   
+                                              →   x =  −  2y
+                                           =
+                                              0
+                                        y
+                             −  2  −  4    
+                                       2 
+                            ⇒    V =    
+                                 1     − 1 </code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 61 - Differential Book</title>
+        <title>Page 61 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 61 - Differential Book</div>
+        <div id="content-top1">Page 61 - ODE Book</div>
         <div id="content-top2">P. 61</div>
      </div>
      <div id="content-middle">
@@ -152,62 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>46 | 1.3 - M ode l   of  M ot i ons
-
-          11.  A ball is projected vertically upward with initial velocity  v from ground level. Ignore air
-                                                                        0
-               resistance.
-                 a)  What is the maximum height acquired by the ball?
-                 b)  How long does it take the ball to reach its maximum height? How long does it take the ball
-                    to return to the ground? Are these times identical?
-                 c)  What is the speed of the ball when it impacts with the ground on its return?
-
-          12.  An object having mass 70 kg falls from rest under the influence of gravity. The terminal velocity
-               of the object is  20 ms−  / . Assume that the air resistance is proportional to the velocity.
-                 a)  Find the velocity and distance traveled at the end of 2 seconds.
-                 b)  How long does it take the object to reach 80% of its terminal velocity?
-
-          13.  A lunar lander is falling freely toward the surface of the moon at a speed of 450 m/s. Its retrorockets,
-                                                                     2
-               when fired, provide a constant deceleration of 2.5  ms  (the gravitational acceleration produced
-                                                                  /
-               by the moon is assumed to be included in the given acceleration). At What height above the lunar
-               surface should the retrorockets be activated to ensure a “soft touchdown? (v = 0 at impact)?
+    <pre style="white-space:pre-line"><code>48 | 1. 3 - M od e l  of  M ot i on s
 
 
+                                     2
+                               g
+           Motion ball:  a = − =   dx
+                                   dt 2
+
+            g =  32 ft  2   9.8 m   2
+                   / sec =
+                                 / s
 
 
+           1.3-3 Air Resistance
+
+           The application of force on an object causes an acceleration of that object. A force is not the only
+           factor in the movement, or acceleration of an object. Air resistance involves movement through
+           the air.  Air resistance is a significant factor in how fast an object falls, according to this law.
+
+                          R (, ) = − r (, ).v
+                            xv
+                                      xv
+
+                  R: resistance force (has sign opposite of the velocity)
+                  r: is a function that is always nonnegative
 
 
+               when a ball is falling from a high altitude, the density of the air has to be taken into account.
 
+                             v
+               F =  −  mg +  R ( )
+               m dv  =  −  mg −  rv
+                 dt
+               dv  = −−   r  v
+                      g
+               dt        m
+                             )
+                    (
+                          r
+                      g
+               dv = −−    m  v dt
+                 dv   = − dt            Integrate both sides
+               g+  r  v
+                  m
+               ∫  g+ m v  = − ∫  dt
+                   dv
+                     r
 
+                            )
+                    (
+               m ln g +  r  v = −+
+                                tC
+                r        m           1
+                      r
+                               r
+               ln g + (  m v =  )  −  m tC
+                                  +
+                                     2
+                            r
+                              +
+               g +  r  v =  e −  m tC 2
+                   m
+               v () t =  Ce − rt /m  −  mg
+                                 r
+                                   mg
 
-
-
-
-
-
-
-
-
-
-          14.  A body falling in a relatively dense fluid, oil for example, is acted on by three
-               forces: a resistance force R, a buoyant force B, and its weight w due to
-               gravity. The buoyant force is equal to the weight of the fluid displaced by the
-               object. For a slowly moving spherical body of radius a, the resistive force is
-                                             µ a
-
-               given by Stokes’s Law  R =  6π    , where v is the velocity of the body, and µ
-                                              v
-               is the coefficient of viscosity of the surrounding fluid?
-                 a)  Find the limiting velocity of a solid sphere of radius a and density ρ
-                    falling freely in a medium of density  ρ′ and coefficient of viscosity µ.
-                 b)   In 1910 R. A. Millikan studied the motion of tiny droplets of oil falling
-                    in an electric field. A field of strength E exerts a force  E on a droplet with charge e. Assume
-                                                                          e
-                    that E has been adjusted so the droplet is held stationary  (v =  ) 0  and that w and B are as
-
-                    given. Find an expression for e.</code></pre>
+           When t →∞ ⇒        v = −             (Terminal Velocity)
+                                    r
+            xt    −  mC − rt /m  −  mg t +  A   (A: is a constant)
+                       e
+             () =
+                     r           r</code></pre>
      	</div>
     
      </div>

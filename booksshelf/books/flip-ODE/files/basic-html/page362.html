@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 362 - Differential Book</title>
+        <title>Page 362 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 362 - Differential Book</div>
+        <div id="content-top1">Page 362 - ODE Book</div>
         <div id="content-top2">P. 362</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4.1 - I nt r oduc t i on  &  R e v i e w  o f  P o w e r  S e r i e s  | 347
+    <pre style="white-space:pre-line"><code>3. 6 - P l an a r  S y s t em s  | 349
 
 
-                     =  2
-                       3
+                 3.6-4  Planar Systems
 
 
-                   R =  1
-                        L
-                     =  3
-                       2
+                 2-dimension linear systems are also called planar systems, we will enable to solve the system
 
-                   The series converges absolutely on interval
-                       ( −  5  3  ,  − −  5  3 ) = +  ( 4,−  −  ) 1       a −  R &lt;  x &lt;  a +  R
+                         y′ =  Ay
 
-                                       2
-                          2
-                             2
-                                   2
-                                          ) ( 1,− ∞
-                                     ,
-                   It diverges on (−∞ −  4         )
-                                   ∑  ∞     ( ) 3  n n ∑  ∞  ( ) 1  n
-                                                              −
-                                             −
-                   At  x =  −  4 ⇒        (  2  )    =        2
-                                    n= 0   n + 1 3     n= 0  n + 1
+                                      a    a              y  ()   t
+                     where      A   =  11   12    y () =   1  
+                                                      t
+                                      a    a              y  ()   t
+                                      21    22            2  
+                                      a   −  λ     a
+                        det(A λ−   ) I =  11        12
+                                        a        a   − λ
+                                         21       22
 
-                                   &lt;+
-                              1.  nn    1
-                                             2
-                                  n &lt;  2  (n +  ) 1
-                                   2
-                                      1
-                                  n +&lt;    (n +  ) 1  2  + 1
-                                    1   &gt;      1
-                                   2
-                                  n + 1   (n +  ) 1  2  +  1
-                              2.   lim    1    = 0
-                                          2
-                                  x→∞   n +  1
-                              Therefore, the series converges by Alternating Series Test.
+                                =  λ  2  ( a 11  +  a 22 ) λ −  +  a a  −  a a
+                                                                12 21
+                                                       11 22
+
+                     D =  det( ) =  a a  − a a
+                             A
+                                   11 22    12 21
+
+                                                 A
+                            A
+                     T = tr () =  a  + a      tr () :trace
+                                 11    22
+                     λ  2  Tλ −  +  D =  0
+
+                         T ±  T −  2  4D
+                     λ =
+                               2
 
 
-                                   ∑  ∞      3 n  n ∑   ∞     1
-                   At  x =  −  1 ⇒       (  2   )   =         2
-
-                                    n= 0  n +  13      n= 0  n + 1
-
-                              ∫ 0 ∞  x + 1 = arctan  x  ∞
-                                     dx
-                                     2
-                                                     0
-
-                                          =  arctan ∞− arctan 0
-
-                                          =  π − 0
-                                            2
+                 3.6-5  Summary
 
 
-                                          =  π
-                                            2
+                 In general, a polynomial of degree n has n roots. Each root  λ  is an eigenvalue, and for each we can
 
-                                 Therefore, the series converges by Integral Test.
+                 find an eigenvectorv . From these, we can form the solution ()y t =  ve  t λ  .
+                 However, the numbers of the eigenvalue solutions are as follow:
+                                             (  2         )
+                   1.  Two Distinct real roots T −  4D &gt;  0
+                                                   (  2         )
+                   2.  Two complex conjugate roots T −   4D &lt;  0
 
-                   Both series converge (absolutely).</code></pre>
+                                             (  2         )
+                   3.  One real Repeated root  T −  4D =  0
+
+
+
+                 3.6-6  Proposition
+
+
+                 Suppose  λ  and  λ  are eigenvalues of an  nn×   matrix A. Suppose V ≠  is an eigenvector for λ
+                                                                                         0
+                           1       2                                                 1                           1
+                 and V ≠  is an eigenvector for λ . If λ     λ ≠   then V  and V  are linearly independent.
+                          0
+                       2                           2     1    2        1       2</code></pre>
      	</div>
     
      </div>

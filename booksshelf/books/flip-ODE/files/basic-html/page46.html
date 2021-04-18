@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 46 - Differential Book</title>
+        <title>Page 46 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 46 - Differential Book</div>
+        <div id="content-top1">Page 46 - ODE Book</div>
         <div id="content-top2">P. 46</div>
      </div>
      <div id="content-middle">
@@ -152,41 +152,62 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>1.2 - S e pa r a b l e  E qua t i ons  | 31
+    <pre style="white-space:pre-line"><code>1. 2 - S ep a r ab l e  E q u a t i o n s  | 33
 
 
-                                                0
-                       ln x +  x t=  2  + c          x &gt;
-                       We can't solve for  ()
-                                         xt
-                              ⇒ This solution is defined as implicit.
+                 General Method
 
-                   For  (0)x  = − 2
-                                       2
-                               −
+                    1.  Separate the variables
+
+                    2.  Integrate both sides
+                    3.  Solve for the solution  ()y t , if possible
+
+
+                 1.2-3 Newton's Law of Cooling
+
+
+                 Newton's Law of Cooling states that the rate of change of an object's temperature (T) is proportional
+                 to the difference between its temperature and the ambient temperature (A) (i.e., the temperature of its
+                 surroundings).
+                                       dT  =  −  ( kT −  ) A
+                                       dt
+
+
+                 Example 3
+
+                 A can of beer at 40° F is placed into a room when the temperature is 70° F. After 10 minutes the
+                 temperature of the beer is 50° F. What is the temperature of the beer as a function of time? What is
+                 the temperature of the beer 30 minutes after the beer was placed into the room?
+
+                 Solution
+
+                   By Newton's Law of cooling: The rate of change of an object's temperature (T) is proportional to
+                   the difference between its temperature and the ambient temperature (A).
+                     dT  =  −  ( kT −  ) A
+                     dt
+                      dT   = − kdt                   Integrate both sides
+                     T −  A          t
+                       T
+                     ∫   T −  A  = − ∫    k dt
+                           dT
+                       T
+                        0           0
+                                T          t
+                     ln T −  A      =  −  kt
+                               T
+                                 0         0
+                     ln T −  A −  ln T −  A =  −  kt
+                                   0
                          −
-                                          c
-                                   =
-                       ln 2 +  ( 2) 0 +
-                            2 ln2
-                       c = − +
-                                  2
-                               =
-                                       +
-                       ln x +  x t − 2 ln2
-                       Since the initial condition &lt; 0, then:
-                                    2
-                       x + ln( x ) t − 2 ln 2
-                                         +
-                             −
-                                 =
-
-                   For  (0)x  = 0
-                            2
-                       0 0 +         True statement
-                         =
-                               c
-                       y′ =  0  ⇒   ( ) =  xt  0 is a solution</code></pre>
+                     ln  TA  = − kt                         Quotient Rule
+                       T − A
+                        0
+                     T −  A  =  e − kt
+                     T −  A
+                      0
+                                        )
+                    ⇒  T −  A =  ( T −  A e − kt
+                                  0</code></pre>
      	</div>
     
      </div>

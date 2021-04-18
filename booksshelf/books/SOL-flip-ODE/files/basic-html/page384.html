@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 384 - DE Solution</title>
+        <title>Page 384 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 384 - DE Solution</div>
+        <div id="content-top1">Page 384 - ODE Solution Manual</div>
         <div id="content-top2">P. 384</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,78 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>378 | S O LU TI O N
 
 
+
+                                                               r
+             b)  Show that the radius of the raindrop at time t is  ( ) t =  k  t +  r .
+                                                                      ρ     0
+                                              f
+             c)  If  r = 0.01 t  and r =  0.007 t  10 seconds after the raindrop falls from a cloud, determine
+                             f
+                    0
+                 the time at which the raindrop has evaporated completely.
           Solution
 
-                          +
-             a)  y′ −  y =  1 3sint
-                      ∫ − dt
-                                t −
-                     e      =  e
+                  3 k    tr + ∫  dt
+                    ρ   k        3ln ( k  tr +  )
+             a)  e      ρ   0  = e    ρ   0
 
-                     ∫  (1 3sinte   t −  dt =  ∫  e  t −  dt +  ∫  (3sinte  t −   dt
-                                                            )
-                                )
+                                (  k    ) 3
+                                    +
+                              =  ρ t r 0
+
+                 ∫  g ( ρ  k  t r 0 ) 3 dt =  ρ  k g ∫  (  k  t r 0 ) (  k  t r 0 )  =  ρ  4k ρ  g (  k  t r 0 ) 4
+                                                   3
+                                              +
+                                                    d
+                                                          +
                          +
+                                                                          +
+                                           ρ
+                                                       ρ
+                        ( k     ) − 3   ρ g (  k  ) 4  
+                 vt        t +  r         t +  r  +  C   
+                   ( ) =
+                                      ρ  0  4k ρ  0    
+                                            +
+                        ρ g ( k     )      kt ρ r   − 3
+                                +
+                      =       t r    +  C      0  
+                        4 k ρ     0         ρ    
+                                v ( ) 00 =
+
+                                    ρ gr         − 3
+                                             ( )
+                                0 =    0  + Cr
+                                     4k        0
+                                      ρ gr 4
+                                C = −    0
+                                       4 k
 
 
-                                              ∫ sint  dt
 
 
-                              +     3e  t −      − cost
-
-                              −    − 3e  t −      − sint
-
-
-                              +     3e  t −
-
-                            ∫  3sinte  t −  dt =  ( 3 −  cost −  sin  ) t e  t −  −  ∫  3sinte  t −  dt
-
-
-
-
-                                                                t −
-                            2 ∫  3sinte  t −  dt =  ( 3 −  cost −  sin  ) t e
+                 vt     ρ g (  k  t +  r  ) −  ρ 4k   gr 0 4     ρ r       3
+                   ( ) =
+                        4
+                         k ρ
+                                  0
+                                                 +
+                                               kt ρ 0 
+             b)   dr  =  k
+                  dt   ρ
+                 ∫∫        ρ dt
+                           k
+                    dr =
 
 
-                            ∫  3sinte  t −  dt =  3 ( cost−  −  sin  ) t e  t −
 
-                                             2
+                 r ( ) t =  k  t + C
+                        ρ
 
-                     ∫ (1 3sinte+  )  t −  dt e  t −  +  3 ( cost−  −  sin  ) t e
-                                                                 t −
-                                       =
-                                               2
-
-                                                          )
-                 y ( ) t =  1  ( e  t −  +  3 ( cost−  −  sin  ) t e  t −  +  C
-                        e  t −     2
-                                              t
-                                             e
-                       =  1−  3 cost −  3 sint C
-                                          +
-                            2       2
-                          y ( ) 0 =  y
-                                   0
-                          y =  1−  3  +  C
-                            0      2
-
-                          C  =  y +  1
-                                0   2
-
-                 yt =  ( ) 1−  3 cost −  3 sint +  ( y +  0  1 ) e t
-                           2
-                                   2
-                                                 2</code></pre>
+                       r ( ) 0 =  r
+                              0
+                       r = C
+                       0</code></pre>
      	</div>
     
      </div>

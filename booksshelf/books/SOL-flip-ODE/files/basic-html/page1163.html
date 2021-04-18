@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1163 - DE Solution</title>
+        <title>Page 1163 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1163 - DE Solution</div>
+        <div id="content-top1">Page 1163 - ODE Solution Manual</div>
         <div id="content-top2">P. 1163</div>
      </div>
      <div id="content-middle">
@@ -157,71 +157,69 @@ function MM_swapImage() { //v3.0
 
                  Exercise
 
-                 A forced mass−spring−dashpot system with equation  mx′′ +  cx′ +  kx =  F  cos tω . Investigate the
-                                                                                      0
-                                                                                               C ω
-                 possibility of practical resonance of this system. In particular, find the amplitude  ( )  of steady
-                 state periodic forced oscillations with frequency ω. Sketch the graph  ( )  of and find the practical
-                                                                                    C ω
-                 resonance frequency ω (if any).            m = 1, c =  2, k = 2, F =
-                                                                                         2
-                                                                                     0
+                 Find a particular solution to the differential equation using undetermined coefficients. Find and plot
+                 the solution of the initial value problem. Superimpose the plots of the transient response and the
+                 steady state solution.
+
+                                                               x′
+                                x′′ +  4x′ +  5x =  3sint  x (0) =  0,   (0) =  −  3
                  Solution
-                     x′′ +  2x′ +  2x =  2cos t ω    mx′′ +  cx′ +  kx =  F ( ) t
 
-                     x′′ +  2x′ +  2x =  0           mx′′ +  cx′ +  kx =  0
+                     x′′ +  4x′ +  5x =  3sint
 
-                                   2
-                        λ  2  2λ +  +=  0
-                                     −
-                        λ    =  − 2±  48
-                          1,2     2
-                                1 i
-                             = −±
-                                               )
-                     x =  e  t −  ( C  cost C  sint
+                    The particular solution:  z =  Ae it
+
+                                            z′ = ( ) i Ae it
+
+                                                       it
+                                            z′′ =  ( ) i  2  Ae = − Ae it
+                     z′′ +  4z′ +  5z =  3e it
+
+                     −  Ae  3 it  +  4iAe  3 it  +  5Ae  3 it  =  3e it
+                     ( 14i−+  +  ) 5 A =  3
+
+                     (44iA+  ) =  3
+
+                                  −
+                     A =  3 1  ⋅ 1 i
+                         4 1 i  1 i−
+                            +
+                          (
+                       =  3 1  −  i 1 )
+                         42     2
+                       =  3  i −  3
+                         8   8
+                        ( 3   3 )  it
+                     z =  8  − i 8  e
+                      (   3  −  i 3 ) (costi+  sin  ) t
+                       =
+                          8
+                              8
+                       =  3     cost +  sinti (sint −  cost )  
                                       +
-                      h         1         2
-                         x    A cos tω =  B sin tω +
-                          p
-                                                ω
-                         x′ =  A ω −  sin t  B ω+  cos t
-                                    ω
-                         x′′  −  A ω=  2 cos t −  ω  B ω  2 sin t
-                                                   ω
-                      Am ω −  2 cos t −  ω  Bm ω  2 sin t −  ω  2A ω  sin t +  ω  2B ω  cos t +  ω  2 cos t +  A  ω  2 sin t =  B  ω  2cos t
-                                                                                                       ω
-                                    ( 2 ω  −  2 ) A +  2 B =  ω  2
-                                → 
-                                  
-                                              −
-                                  −  2 A + ω  ( 2 m ω  2 ) B =  0
-                                  
-                                    2 ω  −  2  2ω            2
-                                D =                =  ( 2 ω 2 )  +  4ω  2  4 ω = +  4
-                                                        −
-                                     −  2ω  2 ω  −  2
-                                      2    2ω                           2   2
-                                                                     −
-                                D   =           =  22 ω  (  −  2 )  D  =  2 ω  =  4
-                                                                                 ω
-                                  A   0  2 ω  −  2             B     −  2 ω  0
+                         8
+                     x  ( ) t = Im ( )=  3 (sint − cost )
+                                 z
+                      p               8
 
-                           −
-                     A =  4 2 ω  2  B =  4 ω
-                          4 ω  +  4    4 ω  +  4
+                    The homogeneous eq.: x′′ +    4x′ +  5x =  0
 
-                     C ω         2
-                       ( ) =
-                               4 4ω  4
-                                +
-                                                   F
-                        C ω      A +  2  B =  2     0
-                          ( ) =
-                                            ( km ω  2 ) 2 +  ( ) 2
-                                               −
-                                                         c
-                                                         ω</code></pre>
+                                            2
+                                                      =
+                    The characteristic eq.: λ + 4λ+ 5 0   ⇒      λ = − 2 i
+                                                                       ±
+
+                                                   )
+                                                  t
+                        ( ) =
+                     xt     e − 2t ( C  costC  sin
+                                          +
+                      h            1         2
+                     xt    3 (sint −  cost ) e+  − 2t ( C  cost C+  sint )
+                      ( ) =
+                           8                      1         2
+                     x (0) =  0,   (0) = − 3
+                               x′</code></pre>
      	</div>
     
      </div>

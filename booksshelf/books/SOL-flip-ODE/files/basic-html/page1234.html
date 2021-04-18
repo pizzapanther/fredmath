@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1234 - DE Solution</title>
+        <title>Page 1234 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1234 - DE Solution</div>
+        <div id="content-top1">Page 1234 - ODE Solution Manual</div>
         <div id="content-top2">P. 1234</div>
      </div>
      <div id="content-middle">
@@ -157,71 +157,72 @@ function MM_swapImage() { //v3.0
 
           Exercise
 
-
-          An RCL circuit connected in series has  R = 180 Ω ,  C =  1  , F  L =  20  H , and applied voltage
-                                                                 280
-                                                                                                       0
-          E ( ) 10sin  Vt =  t  . Assuming no initial charge on the capacitor, but an initial current of 1 A at t =
-          when the voltage is first applied.
-
-             a)  Find the subsequent charge on the capacitor.
-             b)  Plot the transient, steady-state, and the charge on the capacitor.
-             c)  Find the current on the capacitor.
+                          q
+                                   i
+          Find the charge  ( ) t  and  ( ) t  on the capacitor in an LC−series circuit when
+                                       t
+              L = 1 H , C =  4 µ  , F  E ( ) 10te=  t −   V, q ( ) 0 =  0 ,  and  i ( ) 0 =  0 A
+                                                               C
           Solution
 
-             a)  20q′′ +  180q′ +  280q =  10sint                   Lq′′ +  Rq′ +  1  q =  E ( ) t
-                                                                               C
+                                                  0
+              q′ +  ′  1  q =  10te  t −   ; q ( ) 0 = 0 i ( ) 0 =    Lq′′ +  Rq′ +  1  q =  E ( ) t
+                  4                                                           C
+                 λ  2  1  =  0 →  λ +  =  ±  1    i
+                      4            1,2    2
 
-                                      t
-                 q′ +  ′  9q′ +  14q =  1 sin  ; q ( ) 0 =  0 i ( ) 10 =
-                                 2
-                     λ  2  9 +  λ +  14 0
-                                  =
-                             95
-                     λ   =  − ±
-                      1,2     2
-                         =  −  7, −  2
+                            t
+              q t        cos +  C  sin  t
+                 ( ) C=
+               h       1    2     2    2
+              q  = ( At +  B )e  t −
+               p
 
-
-                     t =
-                 q  ( ) C e  −  7t  + C e −  2t
-                   h       1        2
-                 q   =  A cost +  B sint
+                                  )
+                 q′ =  ( A B −  Ate  t −
+                          −
                    p
-                   q′ =  −  A sint +  B cost
-                     p
+                                     )
+                 q′′ =  ( 2AB−  +  +  Ate  t −
+                   p
+                   q
+              4q′′ +=  40te  t −
+                  e   t −  t  4A +  A =  40        A = 8
+                                              →        64
+                       t 0  −  8A +  4B +  B =  0  B =  5
+                 
 
-                   q′′ =  −  A cost −  B sint
-                     p
-
-                 q′′ +  9q′ +  14q =  1 sint
-                                 2
-
-                         c s o t  − A +  9B + 14A =  0    13A +  9B =  0
-                                                1     →             1
-                                                        
-                        
-                          i s nt  − B − 9A + 14B =  2   −  9A +  13B =  2
-                        
-                                                        
-                             13   9               0   9              13   0
-                        ∆  =        =  250  ∆  =        =  −  9  ∆  =       =  13
-                             − 9 13          A    1  13     2    B   − 9  1   2
-                                                  2                       2
-                     A =  −  9  , B =  13
-                           500        500
+                  t
+              q  ( ) = ( 8t +  64 ) e  t −
+               p            5
+                           t
+                                     t
+              q ( ) t =  C 1 cos 2  +  C 2  sin  2  +  ( 8t +  64 ) e  t −
+                                               5
+                        q ( ) 0 =  C +  64  =  0
+                                 1   5
+                        C   = − 64
+                          1     5
 
 
-                 q  ( ) =  t  −  9  cost +  13  sint
-                   p       500        500
+              q′ ( ) t =  −  1 C  sin t +  1  1 C  cos t −  1  ( 8t +  24 ) e  t −
+                       2  1   2    2   2    2          5
 
-                                                       13
-                                             9
-                 q ( ) C e=  t  1  −  7t  +  C e −  2t  −  500 cost +  500 sint
-                                   2
-                                           9
-                        q ( ) 0 =  C +  1  C −  500  =  0
-                                      2</code></pre>
+                        q′ ( ) 0 =  1 C −  24  =  0
+                                2  2    5
+
+                        C   =  48
+                          2    5
+
+              q ( ) t =  −  64 cos +  t  48 sin  t  +  ( 8t +  64 ) e  t −
+                       5    2    5    2         5
+
+                                            t
+              it    q′ ( ) t =  32 sin  t 2  +  24 cos 2  − ( 8t +  24 ) e  t −
+               ( ) =
+                                                     5
+                            5
+                                      5</code></pre>
      	</div>
     
      </div>

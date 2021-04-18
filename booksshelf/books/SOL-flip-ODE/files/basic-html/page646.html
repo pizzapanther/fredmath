@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 646 - DE Solution</title>
+        <title>Page 646 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 646 - DE Solution</div>
+        <div id="content-top1">Page 646 - ODE Solution Manual</div>
         <div id="content-top2">P. 646</div>
      </div>
      <div id="content-middle">
@@ -152,75 +152,67 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>640 | S O LU TI O N
+    <pre style="white-space:pre-line"><code>640 | 1. 8 − S OL U T I ON
 
 
-
+             b)  Consider the right node. The current is given by  I +  I . The current leaving the node is  I−
+                                                                 1    2                                   3
                                                                  ( )
-             a)  0.1 di  +  50i =  30                L di  +  Ri =  Et
-                    dt                                 dt
-                 di  +  500i =  300
-                 dt
+                 . Hence the cursing through the node is  I +  I −− I  .
+                                                        1    2      3
+                 Based on Kirchhoff’s first law,  I +  I +  I =  0
+                                                 1   2    3
+             c)  In the capacitor   CV′ =  I
+                                      1    1
+                 In the resistor   V =  RI
+                                     2     2
+                 In the inductor   LI′ = V
+                                      3    3
 
-                      ∫ 500dt
-                        e     =  e 500t
-
-                     ∫          dt =  5
-                       300e 500t    3 e 500t
-
-
-                              (
-                                          )
-                             t
-                  ( ) e
-                 it =   − 500 3  e 500t  +  C
-                               5
-                               0
-                        i ( ) 0 =
-                        0 =  3  + C
-                            5
-                        C  = −  3
-                              5
+             d)  Based on part (a), V = V =  V . Based on part (b),
+                                    1    2    3
+                 CV′ +  1 V +  I =  0
+                    1   R  2    3
+                                        V
+                 It follows: CV′    I −  −  1  , LI′ =  =  V
+                               1     3   R      3    1
 
 
-                             e
-                 i ( ) t =  3  −  3 − 500t
-                       5   5
+          Exercise
 
-                       ( )
-                                       e
-             b)  lim it =    lim ( 3  −  3 − 500t )
-                 t→∞        t→∞   5  5
-                          =  3
-                            5
+          Consider the circuit. Use the method outlined to show that the current I through the inductor and the
+          voltage V across the capacitor satisfy the system of differential equations.
 
+                                          L  dI  =  −  RI −  , V  C  dV  =  I −  V
+                                            dt      1          dt       R
+                                                                          2
+          Solution
 
-             c)   di  +  500i =  10E  sin t ω
-                 dt              0
+             let  I ,  I ,  I  and  I  be the current through the resistors, inductor, and capacitor, respectively.
+                  1   2   3       4
+             Assign V , V , V  and V  to be the corresponding voltage drops.
+                      1   2   3       4
+             Based on Kirchhoff’s second law, the net voltage drops, around each loop, satisfy
+                 V +  V +  V =  0, V +  V +  V =   0 and V −     V =   0
+                  1    3    4        1    3    2              4    2
 
+             Applying Kirchhoff’s first law:
+                    Node a:     I −  ( I +  I  )  =  0                               b  I
+                                 1    2    4                                             3
+                    Node b:     I −  I =  0 →    I =  I
+                                 1   3            1    3                         V      V 3
+                    Node c:     I +  I −  I =  0 →    I +  I =  I         I 1     1
+                                 2    4   1            2    4    1       a                       c
 
+                     I +  I =  I                                                  V 2       I 2
+                      2    4    3
+                     I +  I −  I =  0                                            V
+                       2   4    3                                                 4         I 4
 
-                                               ∫ sin tω  dt
+             Using the current-voltage relations:
 
-                           +   e 500t          −  1  cos t ω
-                                                 ω
-                            −   500e 500t      −  1  sin tω
-                                                 ω 2
-                           +          4 500t
-                               25 10 e×         −   1 2 ∫  sin tω
-                                                   ω
-
-                 ∫ 10E 0  (sin t eω )  500t dt =
-
-
-
-
-                                            ∫  (sin t eω  dt    −  ω cos t +  ω=  ω  2  sin t e  −  ω  2  ∫  (sin t eω
-                                                                            ×
-                                 )  500t     1        500         500t  25 10 4        )  500t dt
-                                                              ω
-                                                                 
-                                                                 </code></pre>
+                 V =  RI =   RI        V =  RI
+                  1    1 1    1 3       2     22</code></pre>
      	</div>
     
      </div>

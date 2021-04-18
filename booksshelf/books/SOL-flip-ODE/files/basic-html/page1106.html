@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1106 - DE Solution</title>
+        <title>Page 1106 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1106 - DE Solution</div>
+        <div id="content-top1">Page 1106 - ODE Solution Manual</div>
         <div id="content-top2">P. 1106</div>
      </div>
      <div id="content-middle">
@@ -156,69 +156,72 @@ function MM_swapImage() { //v3.0
 
 
 
-          Exercise
 
-          Find the general solution by to variation of parameters with the give n initial conditions.
+                 =  2e 4x  −  e 4x
+                   1 e −  x  1 e −  x
+                    +
+                            +
+                 =   e 4x
+                     +
+                   1 e − x
 
-                             t
-                      y
-                 y′′ + = sec ; y   ( ) 0 = 1, y′ ( ) 20 =
-          Solution
+
+                    1     0      e 2x
+
+             W =    0     0     2e 2x
                2
-              λ + =                =     i ±
-                  10 ⇒ λ
-                               1,2
-              y =  C  cost +  C  sint
-               h    1         2
+                    0    e x    4e 2x
+                       1 e − x
+                         +
 
-                    cost   sint
-              W =
-                   − sint  cost
-                             2
-                     2
-                =  cos t + sin t
-                = 1 ≠  0
+                 = −  2e 3x
+                     1 e − x
+                      +
+
+                    1 e x     0
 
 
-                                                                           ()
-                                     tt
-                                                                         2
-                 v  ( ) t = − ∫ sint sec  d                 v  ( ) x = − ∫  y gx  dx
-                  1           1                               1           W
-                                tt
-                        = − ∫ tan  d
+             W =    0 e x     0
+               3
+                    0 e x    e x
+                            1 e − x
+                             +
+                 =  e 2x
+                   1 e − x
+                    +
+                                                                            W ∫
+               u  ( ) x =  1  1 e ∫  e x  e x   dx                  u =     W 1
+                 1      2     +  − x x                               1
+                                    e
 
-                        =  ln cos   t
-
-
-
-                                                                        1
-                 v  ( ) t = ∫ cost sec  dtt                 v  ( ) x = ∫  yg ( ) x  dx
-                   2         1                                2          W
-
-                        = ∫ dt
-
-                            t =
+                     =  1  e + ∫  e 2x   dx
+                       2    x  1
 
 
-              y   = ln cos cost t sin                        y =  vy +   v y
-                                      t
-                         t
-                                +
-               p                                              p    11     2 2
-              y ( ) t =  C 1 cost +  C 2  sint +  ln cos cost t+  t  sint
-                     y ( ) 0  = C = 1
-                             1
-                 y′ =  −  C 1 sint +  C 2  cost −  sint −  ln cos sint +  sint t cost
-                                                      t
-                                                                  +
-                     y′ ( ) 0 = C =  2
-                              2
+                             x
+                     =  1      e −  e x   1 ∫     dx
+                       2        e +
+                                  x
+                                                     )
+                     =  1 ∫  e dx −  x  1  e + ∫  1  d e +  (  x  1
+                       2           2    x  1
+                                        )
+                     =  1 x  1 ln e +  (  x  1
+                         e −
+                       2      2
+                                                                            W ∫
+               u   ( ) x = −  1 e ∫  1  e x   dx                    u =      W 2
+                                  e
+                 2           +  − x x                                2
+                             e + ∫  x  1
+                              e x   dx
+                       = −
 
-                                        t
-                                                     t
-              y ( ) t =  cost +  2sint +  ln cos cost t sin
-                                               +</code></pre>
+
+                                          )
+                       =  −   1 1 ∫  de +  (  x  1
+                              x
+                            e +</code></pre>
      	</div>
     
      </div>

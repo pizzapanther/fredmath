@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2139 - DE Solution</title>
+        <title>Page 2139 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2139 - DE Solution</div>
+        <div id="content-top1">Page 2139 - ODE Solution Manual</div>
         <div id="content-top2">P. 2139</div>
      </div>
      <div id="content-middle">
@@ -155,9 +155,23 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 4 − S ol ut i on a b ou t   S i ng ul a r  P oi nt s  | 2121
 
 
+                                  −
+                        =  lim   x 2 1
+                          x→  0   2x
+                                  x
+                        = −  lim
+                            x→ 0  2
+                        = 0
+
+                    The indicial equation is:  ( rr −  ) 1 −  1  r =  r −  2  3  r =  0
+                                                        2         2
+                                →   r  =  0,  3
+                                          2
                     The two possible Frobenius series solutions are then of the forms
-                                     ∞                              ∞
-                         y  ( ) x =  x 0 ∑  a x n  and  y  ( ) x =  x 1/3 ∑  b x n
+
+
+
+                         y  ( ) x =  x 0 ∑  ∞  a x n  and  y  ( ) x =  x 3/2 ∑  ∞  b x n
                           1              n             2                n
                                     n= 0                           n= 0
                           ∞
@@ -168,59 +182,60 @@ function MM_swapImage() { //v3.0
                           ∞
                          ∑              nr +− 1
                                    )
-                     y′ =     (n ra x
                                 +
+                     y′ =     (n ra x
                                       n
                          n= 0
                            ∞
-                         ∑                        nr+− 2
-                                    )( +−
+                         ∑                        nr +− 2
                      y′′ =    (nr nr         ) 1 a x
                                  +
+                                    )( +−
                                                 n
                           n= 0
-                     3xy′′ +  ∞  2y′ +  2y =  0            ∞                       ∞
-
-                       ∑                        nr +− 2   ∑              nr +− 1  ∑       nr +
-                     3x     (n r n r+  )( +−  ) 1 ax   + 2    (n r ax+  )  n   + 2     ax      =  0
-                                                                                        n
-                                             n
-                       n= 0                             ∞  n= 0                  ∞  n= 0
-                      ∞
-                     ∑    ( 3 n r n r+  )( +−  ) 1 ax nr +− 1  + ∑  ( 2 n r ax+  )  n  nr +− 1  + ∑  2ax nr +  =  0
-                                                                                       n
-                                            n
-                     n= 0                              n= 0           ∞         n= 0
-                      ∞
-                     ∑     (nr+   )(3n +  3r −  ) 3 +  ( 2 nr a x+  )    n  nr +− 1 +  ∑  2a n− 1 x nr +− 1  =  0
-
-
-
-                     n= 0                                            n= 1
-                               n ∑  ∞                        nr +− 1  ∑  ∞       nr−+  1
-                     r (3r −  ) 1 a +  (nr   )(3n +  3r −  ) 1 ax   +     2a n− 1 x    =  0
-                                         +
-                                                           n
-                                   n= 1                               n= 1
-                                    ∞
-                     r (3r −  ) 1 a +      (nr )(3n +  3r −  ) 1 a +  2a  1 ∑    x nr +− 1  =  0
-                                           +
-                               n                            n     n−
-                                   n= 1
-
-                             0
-                    For  n =
-                            r (3r −  ) 1 a =  0  0
-
-                            ⇒    r =  0,  1    √
-                                       3
-
-                     (nr   )(3n +  3r −  ) 1 a +  n  2a n− 1  =  0
-                       +
-
-                     a = −          2         a
+                     2xy′′ −  y′ −  y =  0
+                         ∞                                ∞                      ∞
+                       ∑                        nr +− 2  ∑              nr +− 1  ∑      nr +
+                                                                   )
+                                                                +
+                                 )( +−
+                     2x     (n r n r       ) 1 ax      −     (n r ax          −     ax      =  0
                               +
-                      n     ( nr )(3n +  3r −  ) 1  n− 1</code></pre>
+                                                                                     n
+                                              n
+                                                                     n
+                        n= 0                             n= 0                   n= 0
+                      ∞                                 ∞                       ∞
+                     ∑     ( 2 n r n r    ) 1 ax nr+− 1  − ∑  (n r ax nr+− 1  − ∑  ax  nr  =  0
+                                                                                        +
+                                                                 )
+                             +
+                                                              +
+                                )( +−
+                                                                    n
+                                             n
+                                                                                    n
+                     n= 0                              n= 0                    n= 0
+                      ∞                                            ∞
+                                                         ∑
+                                                       )
+                           ( 2 nr nr      ) 1 a − (nr x  nr +− 1 − ∑  a   x nr +− 1  =  0
+                                                        
+                                                    +
+                              +
+                                 )( +−
+                                            n                          n− 1
+                     n= 0                                         n= 1
+                                    ∞                                   ∞
+                               0 ∑                            nr +− 1  ∑         nr +− 1
+                     r (2r −  ) 3 a +  (n r+  )(2n +  2r −  ) 3 ax   −     a n− 1 x    =  0
+                                                            n
+                                   n= 1                                n= 1
+                                    ∞
+                               0 ∑                                     nr+− 1
+                     r (2r −  ) 3 a +     (nr+  )(2n +  2r −  ) 3 a −  a n− 1  x  = 0
+                                                              n
+                                   n= 1</code></pre>
      	</div>
     
      </div>

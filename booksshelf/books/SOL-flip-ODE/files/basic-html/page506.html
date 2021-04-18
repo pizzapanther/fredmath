@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 506 - DE Solution</title>
+        <title>Page 506 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 506 - DE Solution</div>
+        <div id="content-top1">Page 506 - ODE Solution Manual</div>
         <div id="content-top2">P. 506</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>500 | S O LU TI O N
 
 
-
-                                                         )
-                =  e 3x ( x y +  2  2  xy +  1  y −  3  2  xy −  2  y +  2  y
-                             3
-                                   3
-                                          3
-                                                      9
-                                                9
-                =  e 3x ( x y +  2  1  y 3 ) +  h ( ) y
-                             3
-                                                2
-              ψ   =  e 3x ( x +  2  y 2 ) +  hy  e 3x ( x +  y 2 )
-                                     ( ) =
-                                    ′
-                y
-                      ′
-                       ( ) 0=
-                     hy
-                          ( ) C=
-                     ⇒   hy
-              e 3x ( x y +  2  1  y 3 )  =  C
-                         3
-
-
           Exercise
 
-          Find an integrating factor and solve the given equation   dx +      x  −  sin y dy =     0
-                                                                          y      
+          The given equation is not exact. However, if you multiply by the given integrating factor, then it
+          becomes exact. Then solve the equation
+                        (  2    2    )                               1
+                         x +  y −  xdx −  ydy =  0,     µ  ( , x y =  )
+                                                                   2
+                                                                  x +  y 2
           Solution
-              ydx +  (x −  y sin  ) y dy =  0    Multiply by y both sides
 
-                               x
-              M =  y       N = −   y sin y
-              M   = 1         N =   1
-                y               x
-                 ⇒   M   =  N
-                       y     x
+                    M =      x +  2  y −  2  x N = − y
 
-              ∂ψ  =  2x +  y
-                          2
-               x ∂
+                 M    =  2y               N =   0
+                    y                       x
 
-              ψ=  ∫    y dx
+                     ⇒   M ≠   N
+                           y     x
+
+                 1    ( x +  2  y −  2  xdx − )  y  y d =  0
+              x +  2  y 2               x +  2  y 2
+
+                                 y
+                1−  x      dx −       dy =  0
+                  2    2       2    2
+                 x +  y       x +  y
+
+                  M =  1−    x             N =    − y
+                          x +  2  y 2          x +  2  y 2
+                           2xy                    2xy
+                 M    =                 N =
+                        ( x +  2  y 2 )       ( x +  2  y 2 )
+                    y            2        x             2
+
+                 ⇒  M =    N
+                       y    x
+
+              dψ  = 1−    x
+              dx       x +  y 2
+                        2
+                             x
+              ψ=  ∫          1−  x +  y 2           dx
+                           2
+
+                  ∫  =  dx −  2  x + ∫  2  y 2  d x +  y
+                          1       1     (  2    2 )
 
 
-                =  xy + h ( ) y
 
-                        ′
-              ψ   =  x +  hy   x  y sin y
-                         ( ) = −
-                y
-              hy       y sin y
-               ′
-                ( ) = −
-                      ∫         dy
-              h ( ) y = −  y sin y
+                =  x −  1 ln x + (  2  y 2 ) +  h ( ) y
+                      2
+                        y
+                                ′
+                                 ( )
+             ψ   =  −        +  hy
+                y    x +  y 2
+                      2
+                        y
+                 = −
+                      2
+                     x +  y 2
+                     h′ ( ) 0y =  →   h ( ) y =  C
 
 
-
-                                            ∫ − sin y
-
-                                   y        cos y
-
-                                   1        sin y</code></pre>
+              x −  1 ln x + (  2  y 2 )  =  C
+                 2</code></pre>
      	</div>
     
      </div>

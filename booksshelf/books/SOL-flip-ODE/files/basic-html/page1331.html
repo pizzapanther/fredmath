@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1331 - DE Solution</title>
+        <title>Page 1331 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1331 - DE Solution</div>
+        <div id="content-top1">Page 1331 - ODE Solution Manual</div>
         <div id="content-top2">P. 1331</div>
      </div>
      <div id="content-middle">
@@ -155,63 +155,71 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1317
 
 
+                 Exercise
 
-                                                           ∫ sin3  dt
-                                                                 t
+                                                                                      f
+                 Use Definition of Laplace transform to find the Laplace transform of    ( ) t = t sint
 
-                                 +             te − st     − 1 cos3t
-                                                             3
-                                 −       (1 ste  − st      − 1 sin3t
-                                               )
-                                           −
-                                                             9
-                                                 )
-                                               2
-                                 +     ( −  2s +  s te − st
-
-                        ∫  0 ∞  t e −  st  sin3 d tt =  ( (  −  1 t cos3t +  1 (1 st−  )sin3t e −  st    0 ∫  ∞  −  1  0 ∞  ( −  2s +  s t e −  st sin3 d tt
-                                                                        )
-                                                                                                   )
-                                                                                                 2
-                                                                                   9
-                                                3
-                                                          9
-                        ∫  0 ∞  t e −  st  sin3 dtt =  0 +  2s ∫  0 ∞  e −  st sin3 dtt −  s 9 2 ∫  0 ∞  t e −  st sin3 dtt
-
-                                                9
+                 Solution
+                            ∫ ∞ t      − st dt
+                     F ( ) =  0  sin  e
+                                    t
+                        s
 
 
+                                                         t
+                                                    ∫ sin  dt
 
-                                          =  2s ∫  ∞  e −  st sin3 d tt −  s 2 ∫  ∞  t e −  st  sin3 d tt
-                                             9   0                 9   0
+                                      te − st        − cost
+
+                                  (1 st e−  )  − st     − sint
+
+                                          )
+                                    2
+                                  ( st − 2s e − st
+
+                        ∫  t sint e −  st dt =  ( t −  cost +  (1 st )sint e −  st  −  s 2 ∫  t sint e −  st dt +  2s ∫  sint e −  st dt
+                                                              )
+                                                     −
 
 
-                          2
-                         s + 9 ∫  ∞  t e −  st sin3 d tt =  2s ∫  ∞  e −  st sin3 d tt
-                           9     0                 9   0
+
+                                                         t
+                                                    ∫ sin  dt
+
+                                        e − st       − cost
+
+                                      − se − st      − sint
+
+                                        2 − st
+                                      se
 
 
-                                                     ∫ sin3   t dt
+                            ∫  sint e −  st dt =  (−  cost −  s sin  ) t e −  st  −  s 2 ∫  sint e −  st dt
 
-                                 +        e − st     − 1 cos3t
-                                                       3
-                                 −      − se − st    − 1 sin3t
-                                                       9
-                                         2 −
-                                 +      s e  st
 
-                                ∫  0 ∞  e −  st  sin3 dtt =  ( −  1 cos3t −  1  s sin3t e −  st    0 ∫  ∞  −  s 9 2  0 ∞  e −  st  sin3 dtt
-                                                                       )
-                                                              9
-                                                     3
 
-                                 2
-                                                         1
-                                s + 9 ∫  ∞ e − st  sin3 dtt =
-                                  9     0                3
-                                ∫ 0 ∞  e − st  sin3 dtt =  s + 9
-                                                     3
-                                                    2</code></pre>
+                            ( s +  2  1 ) ∫ sint e −  st dt =  (−  cost −  s sin  ) t e −  st
+
+
+
+                            ∫ sin   t e −  st dt = − cost +  s 1  e  st
+                                                     sint −
+                                                  2
+                                                s +
+
+                     ( s +  2  1 ) ∫ t sint e −  st dt =  ( t −  cost +  (1 st )sint e −  st  −  s + 1 (cost +  s sin  ) t e −  st
+                                                                  )
+                                                                           2s
+                                                         −
+                                                                          2
+                     ∫ t sint e −  st dt =  s + 1 ( t −  cost +  (1 st )sint e −  st  −  ( s + 1 ) 2  (cost +  s sin  ) t e −  st
+                                                                           2s
+                                        1
+                                                                )
+                                                       −
+                                       2
+                                                                          2</code></pre>
      	</div>
     
      </div>

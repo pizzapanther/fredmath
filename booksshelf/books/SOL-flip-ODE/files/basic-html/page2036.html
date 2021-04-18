@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2036 - DE Solution</title>
+        <title>Page 2036 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2036 - DE Solution</div>
+        <div id="content-top1">Page 2036 - ODE Solution Manual</div>
         <div id="content-top2">P. 2036</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2018 | S O LU TI O N
 
 
+          Exercise
+
+          Find the series solution to the initial value problem
+
+                        ( x −  2  1 y′′ +  )  3xy′ +  xy =  0 ;  y ( ) 0 =  4,  y′ ( ) 0 =  6
+
+          Solution
                       ∞
-                     ∑       n
+                     ∑        n
               yx          a x
                ( ) =
                            n
-                     n= 0
-                       ∞              ∞
-                     ∑         n− 1  ∑               n
+                     n= 0             ∞
+                       ∞
+                     ∑         n− 1  ∑                n
               y′ ( ) x =  na x     =     (n +  ) 1 a n+ 1 x
                             n
                       n= 1           n= 0
-                       ∞                       ∞
-                      ∑               n− 2   ∑                        n
-                            ( −
+                      ∑  ∞            n− 2   ∑  ∞                     n
               y′′ ( ) x =   nn   ) 1 a x    =      (   n +  2 )(n +  ) 1 a n+ 2 x
+                            ( −
                                     n
                       n= 2                    n= 0
-              ( 4 x 2 )  y′′ +  2y =    0
-                −
-
-                       ∞                      ∞
-              ( 4 x 2 ) ∑   ( n n −  ) 1 ax n− 2  +  2 ∑  ax =  n  n  0
-                −
-                                   n
-                      n= 2                   n= 0
-               ∞                         ∞                      ∞
-              ∑   4n (n −  ) 1 ax n−  2  −  x 2 ∑  ( n n −  ) 1 ax n−  2  +  2 ∑  ax =  n  n  0
-                                                     n
-                            n
-              n= 2                      n= 2                   n= 0
-               ∞                      ∞                    ∞
-              ∑   4n (n −  ) 1 ax n− 2  −  ∑  ( n n −  ) 1 ax +  n  n  2 ∑  ax =  n  n  0
-                            n
-              n= 2                   n= 2                 n= 0
-               ∞                            ∞                    ∞
-              ∑    ( 4 n +  1 )(n +  ) 2 a n+ 2 ∑  x −  n  ( n n −  ) 1 ax +  n  n  2 ∑  ax =  n  n  0
+              ( x −  2  1 y′′ + )  3xy′ +  xy =  0
 
 
-              n= 0                         n= 0                 n= 0
-               ∞
-              ∑           ( 4 n + 1 )(n +  ) 2 a n+ 2  − ( n −− 2 a n       x =  0
-                                                    )
-                                            2
-                                                           n
-                                               n
-              n= 0
-               ( 4 n +  1 )(n +  ) 2 a  −  (n +  1 )(n −  ) 2 a =  0
-                              n+ 2                n
-              a    =   n −  2  a
-               n+ 2    ( 4 n +  ) 2  n
+                       ∞                            ∞                     ∞
+              ( x −  2  1 )  (n +  2 )(n +  ) 1 a n + ∑  2 x +  n  3x ∑  (n +  ) 1 a n +  1 x +  n  x ∑  a x =  n  n  0
 
 
-                 a =   y (0) =    0                  a =  y′ (0) =    1
-                   0                                  1
 
-                 n = 0 →    a =   − 2 a =  0         n = 1→     a = −  1  a = −  1
-                              2   8   0                          3     12  1    12
-                                                                      1         1
-                 n =  2 →   a =   0                  n = 3 →    a =     a = −
-                              4                                   5   20  3    240
-                                                                      3           1
-                                                  n = 5 →    a =      a = −
-                                                                  7   28  5    2,240
-                                                                       </code></pre>
+                      n= 0                         n= 0                  n= 0
+
+              ∑  ∞  (n +  2 )(n +  ) 1 a n+  2 x n+ 2  −  ∑  ∞  (n +  2 )(n +  ) 1 a n+  2 x n
+
+
+              n= 0              ∞           n= 0       ∞
+
+                              ∑                 n+  1  ∑      n+  1
+                                       +  ( 3 n +  ) 1 a n+ 1 x  +  ax  =  0
+                                                            n
+                               n= 0                   n= 0
+
+               ∞                             ∞                              ∞
+                  (n +  1 )(n +  ) 2 a + ∑  x n +  2  +    (3n +  ) 3 a  +  a n  ∑    x n +  1 −  (n +  2 )(n +  ) 1 a + ∑  x =  n  0
+                                 n  2                    n +  1                              n  2
+              n= 0                          n= 0                           n= 0
+               ∞                   ∞                      ∞
+              ∑    ( n n −  ) 1 a x + n ∑  n  ( 3na +  n  a n−  1 ∑  ) x −  n  (n +  1 )(n +  ) 2 a n+  2 x =  n  0
+
+
+              n= 2                n= 1                   n= 0
+
+              ∑  ∞  ( n n −  ) 1 a x +  n  n  ( 3a +  1  a 0 ∑  ) x +  ∞  ( 3na +  n  a n− 1 ) x n
+
+
+              n= 2                              n= 2
+                                                ∞
+                                            −  2a −  6ax −  3 ∑ (n +  1 )(n +  ) 2 a  x =  n  0
+                                    2                             n+ 2
+                                               n= 2</code></pre>
      	</div>
     
      </div>

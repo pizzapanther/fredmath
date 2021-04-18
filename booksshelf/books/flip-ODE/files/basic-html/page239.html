@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 239 - Differential Book</title>
+        <title>Page 239 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 239 - Differential Book</div>
+        <div id="content-top1">Page 239 - ODE Book</div>
         <div id="content-top2">P. 239</div>
      </div>
      <div id="content-middle">
@@ -152,76 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>224 | 2.7 - E ul e r ’ s  &   R ung e - K ut t a  M e t h ods
+    <pre style="white-space:pre-line"><code>226 | 2. 4 - I n hom og e n e ous   E q ua t i o ns ;  M e t ho d o f  U nd e t e r m i n e d
+                        C o e f f i ci en t s
 
-        Example 2
+          2.4-8  Summary
 
-        Compute the first four step in the  Second-Order  Runge-Kutta  method  approximation to the solution of
-                       y
-                           =
-         y′ =  yt  with (1) 1, using the step size  h =  0.1. Compare the result with the actual solution to the initial
-               −
-        value problem.
-        Solution
 
-            ⇒  t =  1  and   y =  1
-                0           0
-            The first step:
-                      (
-                s =  ft    , y  )
-                 1      0    0
-                   =  y − t
-                       0   0
-                   = 11
-                       −
-                   = 0
 
-                s =  f t +  (  h  , y +  hs  )
-                 2      0       0     1
-                                         )
-                                −
-                   =  ( y +  0  hs 1 ) ( t +  0  h
-                                      )
-                                   +
-                       +
-                   =  (1 .1(0) −  ) (1 .1
-                      −
-                   = 1 1.1
-                   = − 0.1
+                        f  ( ) t                          y
+                                                            p
+               Any Constant           A
 
-                            s +  s
-                y =  y +  h  1   2
-                 1    0       2
-                              −
-                     1 0.1
-                   = +     ( 0 0.1 )
-                               2
-                   =  0.995
+                  +
+                at b                  At +  B
+                  2
+                at +                  At +  2  Bt +  C
+                      c
+                at +  3  +  b        At +  3  Bt +  2  Ct +  E
 
-                         h
-                t =  t +
-                1    0
-                      +
-                  = 1 0.1
-                  = 1.1
+                sinat  or   cosat     A cosat +  B sinat
 
-            The second step:
-                         t
-                s =  y −
-                 1    1   1
-                  =  0.995 1.1
-                          −
-                  = − 0.105
-                                       )
-                               −
-                s =  ( y +  hs  ) ( t +  h
-                 2     1    1     1
-                   =  (0.995 .1( 0.105)+  −  ) (1.1 .1−  +  )
-                   = − .2155
+                 at
+                                         at
+                e                     Ae
+                         at
+                                               at
+                (at +  ) be           ( At +  ) Be
+                                                    )
+                                                      at
+                t 2 at                ( At +  2  Bt +  Ce
+                  e
+                                                         at
+                                                       )
+                                                      t
+                e at  sinbt           ( cosA  bt +  B sinbe
+                t 2 sinbt             ( At +  2  Bt +  C ) cosbt +  ( Et +  2  Ft +  G ) sinbt
 
-                            s +  s
-                y =  y +  h  1   2
-                 2    1       2</code></pre>
+
+                                                                        at
+                                                                     )
+                e t  at  cosbt         ( ( At +  B )cosbt +  (Ct +  E )sinb  te
+
+
+            Check the homogeneous solution first, then start with next power for the particular solution.
+                 If we use the same power, we can add  the constants which result with another constant.
+                 Therefore, we do not need to use the same power or the same terms as the homogeneous
+                 solution.
+
+
+          Examples 6
+
+
+
+             y′′ −  y′ −  12y =  e 4x    y h  =  C e − 3x  + C e 4x       y P  =  Axe 4x
+                                                         2
+                                               1
+                                                                                   2
+             y′′ −  2y′ =  12x −  10     y  =  C +  C e 2x                y   =  Ax +  Bx
+                                          h    1    2                       P
+                                                                                                )
+                                                        )
+                                                                                               2
+                           2 −
+             y′′ +  2y′ +  y =  x e  x    y h  = ( C +  Cx e − x          y =  p  ( Ax +  4  Bx +  3  C x e − x
+                                                     2
+                                                1
+                                                                       )
+             y′′ +  6y′ +  13y =  e − 3x cos2x    y h  =  e − 3x ( C 1  cos2x +  C 2  sin 2x   y p  =  e − 3x ( Ax cos2x +  Bx sin 2x )</code></pre>
      	</div>
     
      </div>

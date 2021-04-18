@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 948 - DE Solution</title>
+        <title>Page 948 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 948 - DE Solution</div>
+        <div id="content-top1">Page 948 - ODE Solution Manual</div>
         <div id="content-top2">P. 948</div>
      </div>
      <div id="content-middle">
@@ -155,71 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>938 | S O LU TI O N
 
 
+                 λ    = 1, 2
+                  1,2
+                       x
+              y =  Ce +   C e 2x
+               h    1       2
 
-              y ( ) Cx =  1  cos2x C 2  sin 2x +  4 cos x +  sin x −  2
-                              +
-                                           3
+              y  =  A cos2x +  B sin 2x
+               P
+                                    B
+                 y′ =  −  2 sin 2x +  A  2 cos2x
+                   P
+                                     B
+                 y′′ =  −  4 cos2x −  A  4 sin 2x
+                   P
+              y′′ −  3y′ +  2y =  14sin 2x −  18cos2x
+
+              −  4 cos2x −  A  4 sin2x +  B  6 sin2x −  A  6 cos2x +  B  2 cos2x +  A  2 sin2x =  B  14sin2x −  18cos2x
+              ( 2A−  −  6B )cos2x +  ( 2B−  +  6A )sin2x =  14sin2x −  18cos2x
+
+
+
+                      −   2A −  6B =  −  18
+                     
+                       6A −  2B =  14
+
+                      A +   3B =  9
+                     
+                         −
+                      3A B =  7
+                        ∆  =  −  10 ∆  =  −  30 ∆  =  −  20
+                                    A           B
+
+                     A  = 3,  B =  2
+
+               ( ) Ce +
+              y x =   1  x  C e 2x  + 3cos2x +  2sin 2   x
+                              2
 
 
           Exercise
-                                                       )
-          Find the general solution:   y′′ −  4y =  ( x −  2  3 sin 2x
 
+
+          Find the general solution:   y′′ +  3y′ +  2y e −  x  +  e −  2x  −  x
+                                                    =
           Solution
-                                            2
-                                               4
-             The characteristic equation: λ −=     0
-
-                 λ    = ± 2
+                                                    2
+                                                        0
+                                                 λ +
+             The characteristic equation: λ      2  3 +=
+                 λ    =  −  2, −  1
                   1,2
-              y =  C e − 2x  + C e 2x
-               h    1         2
+              y =  Ce  −  x  +  C e −  2x
+               h    1        2
 
-                              +
-              y  =  ( Ax +  2  Bx C ) cos2x +  ( Dx +  2  Ex +  F ) sin 2x
-               p
-                 y′ =  ( 2Ax +  B +  2Dx +  2  2Ex +  2F ) cos2x +  ( 2Dx +  E −  2Ax −  2  2Bx −  2C ) sin 2x
-                   p
-
-
-                 y′′ =  ( 2A +  4Dx +  2E +  4Dx +  2E −  4Ax −  2  4Bx −  4C ) cos2x
-                   p
-                                  +  ( 2D −  4Ax −  2B −  4Ax −  2B −  4Dx −  2  4Ex −  4F ) sin 2x
-
-
-                       (     2                            )
-                     =  −  4Ax +  8Dx −  4Bx +  2A −  4C +  4E  cos2x
-                        (      2                            )
-                        +− 4Dx −  8Ax −  4Ex +  2D −  4B − 4F  sin 2x
-
-
-                       (  2   )
-              y′′ −  4y =  x −  3 sin 2x
-
-
-                     cos2x   x 2      −  4A −  4A =  0   →      A =  0
-                             x      8 − D  4B −  4B =  0  →    DB =    0
-                                                                 −
-                             x 0  2A −  4C +  4E −  4C =  0 →  E −  2C =  0
-
-                     sin 2x  x 2    −  4D −  4D =  1     D =  −  1
-                                                               8
-                             x   −  8 −  A  4E −  4E =  0  E =  0
-
-                            x 0  2 −  D  4B −  8F =  −  3 →  B +  2F =  11
-                                                                  16
-
-                     B =  D =  −  1  C =  1 E =  0  F =  13
-                               8         2              32
-
-                                (
-                                      2
-              y  = − 1 x cos2x +−  1  x +  13 ) sin 2x
-               p     8             8     32
-
-                                                                    x
-              y ( ) Cx =  e − 2x  C e 2x  − +  1  x cos2x +  ( −  1 x +  2  13 ) sin 2
-                      1         2      8             8      32</code></pre>
+              y  =  Axe −  x  +  Bxe −  2x  +  Cx +  D
+               P
+                               )
+                          −
+                 y′ =  ( A Ax e  −  x  +  (B −  2Bx )e −  2x  +  C
+                   P
+                                         −
+                 y′′ =  ( 2A +  Ax )e −  x  +  ( 4B +  4Bx )e −  2x
+                        −
+                   P
+                           =
+              y′′ +  3y′ +  2y e −  x  +  e −  2x  −  x
+              Ae −  x  −  Be −  2x  +  3C +  2Cx +  2D e −  x  +  e −  2x  −  x
+                                             =</code></pre>
      	</div>
     
      </div>

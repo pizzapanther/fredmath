@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 631 - DE Solution</title>
+        <title>Page 631 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 631 - DE Solution</div>
+        <div id="content-top1">Page 631 - ODE Solution Manual</div>
         <div id="content-top2">P. 631</div>
      </div>
      <div id="content-middle">
@@ -155,66 +155,67 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 8 − B a s ic  E le c tr i c a l  C ir c u it  | 625
 
 
-
-                                =  (0.01 ) 1 ( 100cos100t +  100sin100t −  100e − 100t )
-                                        2
-                                =  1 ( cos100t +  sin100t +  e − 10t )
-                                  2
-
-
                  Exercise
 
+                 A resistor  R  =  20 Ω  and a capacitor of C =  0.1  F  are joined in series with an electronic force (emf)
+                 E =  Et                                      0
+                       ()  and no charge on the capacitor at t = . Find the ensuing charge on the capacitor at time t
+                 for the given  ( ) 100cos3Et =  t
 
-                                                                                                E
-                 An RL circuit with a 5 − Ω  resistor and a 0.05-H  inductor is driven by a voltage  ( ) 5cos120  Vt =  t
-                 . If the initial inductor current is 1 A, determine the subsequence resistor and inductor current and the
-                 voltages.
                  Solution
 
+                     20Q′ +  1  Q =  100cos3t        R  dQ  +  1  Q =  E
+                            0.1                         dt  C
+                     Q′ +  1 Q =  5cos3t
+                          2
+                            2 ∫  1 dt
 
-                     0.05 dI  +  5I =  5cos120t      L dI  +  RI =  E ()
-                                                                   t
-                          dt                           dt
-                     dI  +  100I =  100cos120t
-                     dt
+                            e   = e t /2
 
-                          ∫ 100dt
-                            e    =  e 100t
+                                                   ∫ 5cos3t  dt
 
-                                                  ∫ 100cos120t   dt
+                                      +    e t /2    5 sin3t
+                                                   3
+                                            e
+                                      −   1 t /2   − 5 cos3t
+                                                    9
+                                          2
 
-                                   +     e 100t    5 sin120t
-                                                   6
-                                   −  100e 100t     −  1  cos120t
-                                                    144
-                                         4 100t
-                                   +   10 e
+                                            e
+                                      +   1 t /2
+                                          4
 
-                        ∫  (100cos120te      dt =  6 sin120t +  36             −  36 ∫  (100cos120te
-                                                                        )
-                                       )  100t   ( 5          25 cos120t e 100t  25               )  100t dt
-
-                                                                                )
-                                               )
-                        ( 1+  25 ) ∫ (100cos120te 100t dt =  ( 5 sin120t +  25 cos120t e 100t
-                                                                      36
-                                                          6
-                             36
-                                          )
-                         61 ∫ (100cos120te  100t dt =  5  (6sin120t + 5cos120t )e 100t
-                         36                          36
-                        ∫  (100cos120te      dt =  61 (6sin120t +  5cos120t )e
-                                       )  100t    5                        100t
+                                                              )
+                                                      5
+                                                                      1
+                                  )
+                                                                                  )
+                        ∫  (5cos3te  t /2 dt =  ( 5 sin3t +  18 cos3t e t /2  −  36 ∫  (5cos3te t /2 dt
+                                             3
+                                     )
+                         37 ∫ (5cos3te  t /2 dt =  5  (6sin3t + cos3t )e t /2
+                         36                    18
 
 
-                                                                     )
-                                    5
-                     I ( ) t =  e − 100t ( 61 (6sin120t +  5cos120t )e 100t  +  K
+                                  )
+                        ∫  (5cos3te  t /2 dt =  10 (6sin3t + cos3t )e t /2
+                                            37
+                                                              )
+                                  (
+                     Q ( ) t =  e  t −  /2 10 (6sin3t +  cos3t )e t /2  +  K
+                                   37
+                          =  10 (6sin3t +  cos3t +  ) K e  t −  /2
+                            37
+                                Q ( ) 0 =
+                                       0
+                                0 =  10  ( ) 1 +  K
+                                   37
+                                K  = − 10
+                                      37
 
-                          =  5  (6sin120t +  5cos120t ) K+  e − 100t
-                            61
 
-                                I ( ) 0 = 1</code></pre>
+                     Q ( ) t =  10 ( 6sin3t +  cos3te−  t −  /2 )
+                            37</code></pre>
      	</div>
     
      </div>

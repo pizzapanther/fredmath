@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 86 - Differential Book</title>
+        <title>Page 86 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 86 - Differential Book</div>
+        <div id="content-top1">Page 86 - ODE Book</div>
         <div id="content-top2">P. 86</div>
      </div>
      <div id="content-middle">
@@ -152,69 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 1.5 – Mixing Problems
+    <pre style="white-space:pre-line"><code>1. 4 - L i n e a r  E qu a t i ons  | 73
 
 
 
+                                                                           − ∫ a ( )  t dt
+                                                                     () e
+                 Solution of the Inhomogeneous Equation  ut =
 
-               A typical mixing problem investigates the behavior of a mixed solution of some substance. Typically,
-               the solution is being mixed in a tank. A solution of a given concentration enters the mixture at some
-               fixed rate and is thoroughly mixed in the tank. The tank is also being drained at some fixed rate.
-               The physical representation of the rate of change:
-
-
-                              dx  = rate of change
-                               dt
-                                 = rate in − rate out
-
-               This is referred to as a balance law.
-
-               The rate in and out is given by:
-               Rate = Volume Rate (gal/min) x Concentration (lb./gal)
+                         x′ =  at   f  ()
+                              ()x +
+                                      t
+                         x′ −  ax =  f
 
 
-               Example 1
+                        ()′  ux  ( u x′ =  −  ax =  ) uf
 
-                                                                       0
-               The tank initially holds 100 gal of pure water. At time t = , a solution containing 2 lb. of salt per gallon
-               begins to enter the tank at the rate of 3 gallons per minute. At the same time a drain is opened at the
-               bottom of the tank so that the volume of solution in the tank remains constant.
-               How much salt is in the tank after 60 min?
-               What will be the eventual salt content in the tank?
 
-               Solution
+                                      () () t dt C+
+                          () () t =
+                        ut x      ∫ ut f
 
-                     ( ):number of pounds of salt in the tank after t min.
-                   xt
-                   Volume:  ( ) 100 (3 3)Vt =  +  −  t =  100
 
-                                                         t
-                                                  ()
-                   Concentration at time t:  ()ct =  xt  =  x ()      lb ga
-                                                               /
-                                                                  l
-                                                   t
-                                                 V ( )  100
-                   Rate in = Volume Rate x Concentration
+                 Example 2
 
-                           = 3  gal  ×  2  lb                                   3 gal/min
-                              min      gal                                     2 lb/gal
 
-                           =  6   /m in
-                               lb
+                                                 xe
+                 Find the general solution to:  x′ = +  t −
+                 Solution
 
-                   Rate out = Volume Rate x Concentration
-                                          t
+                               t −
+                         x
+                     x′ −=  e
 
-                            =  3  gal  ×  x ()  lb                                                   3 gal/min
-                                min     100 gal
-                                xt
-                            =  3 ()     /  min
-                                     lb
-                               100
-                    dx  = rate of change
-                    dt
-                        = rate in − rate out</code></pre>
+                         − ∫ 1 dt
+                                    t −
+                       e        = e
+                     e  t −  (x′ −  ) x =  e  t −  e  t −
+
+
+                     ( )   ′  e −  2t
+                        t −
+                      ex =
+
+
+                       t −
+                     e x () t = ∫ e −  2t dt
+
+
+                       t −
+                         () =
+                     e xt     −  1 −  e  2t  +  C
+                                2
+                     x () =  t  −  1 − t  +  Ce t
+                              e
+                             2</code></pre>
      	</div>
     
      </div>

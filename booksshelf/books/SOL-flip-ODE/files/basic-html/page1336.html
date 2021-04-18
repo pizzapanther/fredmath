@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1336 - DE Solution</title>
+        <title>Page 1336 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1336 - DE Solution</div>
+        <div id="content-top1">Page 1336 - ODE Solution Manual</div>
         <div id="content-top2">P. 1336</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,77 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1322 | S O LU TI O N
 
 
+                                            3
+                                        =  s − 12s 2
+                                           (
+                                             2
+                                          2 s +  4 )
+                                           (
+                                             2
+                        2 −
+                   ∫ 0 ∞ te  st  cos t   2 dt  =  2ss − 4 12 )
+                                                 )
+                                          (
+                                                 3
+                                            2
+                                           s +
+
+
           Exercise
 
-          Use Definition of Laplace transform to show the Laplace transform of
 
-                 £ { 1−  (at +  ) 1 e − at } ( ) s =  a 2
+          Use Definition of Laplace transform to find the Laplace transform of    ( )ft = t 3 sin3t
 
-                                           ( ss a ) 2
-                                              +
           Solution
 
-              £ { 1−  (at +  ) 1 e −  at } ( ) s =  ∫ 0 ∞ ( 1−  (at +  ) 1 e −  at ) e −  st dt
+
+
+              F ( ) s = ∫ 0 ∞ t 3 sin3  et  − st dt
 
 
 
+                                                           ∫ sin3  dt
+                                                                t
 
-
-                                                                 (s
-                                    =  ∫  ∞  e − st dt −  ∫  ∞  (at +  ) 1 e −+  ) a t dt
-
-
-                                        0            0
-                                              (s
-                                          ∫ e −+   ) a t dt
-
-                                                  (s
-                          +   at + 1    −   1   e −+  ) a t
-                                          sa
-                                            +
-                                                   (s
-                                           1     e −+  ) a t
-                         −      a             2
-                                          +
-                                       (sa   )
-
-
-              £ { 1−  (at +  ) 1 e −  at } ( ) s =  −  1 −  e  st  +      at + 1 +  a       e −+  ) a t     ∞
-                                                                     (s
-                                                   +
-                                                            +
-                                                  s    sa  (sa ) 2       0
-                                   =  1  −  1  −   a
-                                          +
-                                     s   sa     (sa+  ) 2
-
-                                                            −
-                                   =  s +  2  2as a+  2  −  s −  2  as as
-                                               ( ss a ) 2
-                                                  +
-
-                                   =     a 2         √
-                                       ( ss a+  ) 2
+                                        3 −
+                        +              te  st              − 1 cos3t
+                                                             3
+                                            )
+                                     2
+                                           3
+                        −         ( 3t − st e − st         − 1 sin3t
+                                                             9
+                                               )
+                                            23
+                        +      ( 6t −  6st +  2  s te − st
 
 
 
-          Exercise
+              ∫ 0 ∞ t 3 sin3 e −  st dt =  ( −  1 t 3 cos3t +  1 ( 3t −  2  st 3 ) )  −  st     ∞
+                        t
+                                                             sin3te
+                                     3
+                                                 9
+                                                                         0
+                                              )
+                                          23
+                           −  1 ∫ ∞ ( 6t −  6st +  2  s t e − st  sin    3 d tt
+                       9   0
 
-          Use Definition of Laplace transform to show the Laplace transform of
+              ∫  0 ∞  t 3 sin3 e −  st dt =  0 −  2 ∫  0 ∞  t e −  st  sin3 d tt +  2s ∫  0 ∞  t e  st  sin3 d tt −  s 9 2 ∫  0 ∞  t e  st  sin3 d tt
+                                                                                           3 −
+                                                                    2 −
+                        t
+                                                            3
+                                      3
+               2
+              s + 9 ∫  ∞ t 3 sin3  et  − st dt =  −  2 ∫ ∞ te − st  si n3 dt t +  2s ∫ ∞ te  t s  sin t   3 dt
+                                                                        2 −
+                9     0                    3  0                  3   0
 
-                 £ { at −+   − at } ( ) s =  a 2
-                         1 e
-                                            +
-                                       s 2 (sa )
-          Solution</code></pre>
+
+                        ∫ 0 ∞ te − st  sin3 dt
+                                       t</code></pre>
      	</div>
     
      </div>

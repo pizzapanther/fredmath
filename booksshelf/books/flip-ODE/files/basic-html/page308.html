@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 308 - Differential Book</title>
+        <title>Page 308 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 308 - Differential Book</div>
+        <div id="content-top1">Page 308 - ODE Book</div>
         <div id="content-top2">P. 308</div>
      </div>
      <div id="content-middle">
@@ -152,83 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.6 - P l a n a r  S y st e m s  | 293
-
-                    dx 2   x 1   x 2
-
-                    dt  =  500  − 500
-                           x 1   x 2
-                    x′ =   1  −  500  +  500
-                   
-                          x 1   x 2
-                     x′ =  500  −  500
-                       2
-                   
-                   The system is:  x′ =  Ax () t
-
-                                −  1     1 
-                   Where  A =    500    500 
-                                  1   −  1   
-                                500      500 
-
-                                  −  1  −  λ      1
-                   det ( A λ  ) I =  500         500
-                          −
-                                      1       −  1  −  λ
-                                     500        500
-                                  ( −  1  −  λ =  )(  1  −  λ −  ) −  1  1
-
-                                     500        500       500 500
-                                =   1  +  2  λ   λ +  2  −  1
-                                  500 2  500          500 2
-
-                                =  λ  2  1  λ +
-                                       250
-
-                                    (
-                                          1
-                                =  λλ +  250 )
-
-                   The eigenvalues are: λ    −  1    λ =  =  0
-                                         1     250     2
-
-                   For λ = −   1  , we have
-                        1     250
-                       ( A λ 1 IV =  )  1  0
-                          −
+    <pre style="white-space:pre-line"><code>Section 3.3 − Inverse Laplace Transform
 
 
-                         −  1  +  1        1     
-                                                           0
-                         500   250        500        x   =  
-                           1         −  1  +  1        
-                                                     y
-                                                           0
-                                                          
-                                                    
-                           500          500   250 
-                         1     1 
-                                            0
-                                      x
-                         500  500     = 
-                                   
-                           1  1        
-                                            0
-                                      y
-                                     
-                                          
-                         500  500 
-                                1  x +  1  y =  0  x +  y =  0
-                                                               x
-                               500    500      ⇒  x +  y =  0  ⇒= − y
-                              
-                                        1
-                                 1
-                               500  x +   500  y =  0
-                              1                  1   /250
-                                            () =
-                       V =        ⇒     xt          e  t −
-                        1     −  1       1       −  1 </code></pre>
+
+
+
+                 The Laplace transform is invertible on a large class of functions. The inverse Laplace transform takes
+                 a function of a complex variable s and yields a function of a real variable t (time).
+
+
+                 3.3-1  Definition
+
+
+                 If  f is a continuous function of exponential order and  ( )()f£  s =  Fs
+                                                                                    () , then we call  f the inverse
+                 Laplace transform of F,
+
+                                                                )
+                                                 t
+                                              f () £   −1 ( ( )Fs
+                                                   =
+                                 ( ) £
+                                                                        )
+                                                       f
+                                Fs   =   ( ()    f t  )  ⇔     () £ −1 ( ( )Fs
+                                                         t
+                                                           =
+
+                                                  Laplace tansform  £−
+                                            ()
+                                           ft                              FS
+                                                                             ()
+                                                     Inverse Laplace
+                                                                   −1
+                                                     tansform  £−
+
+
+                 Note: Inverse transforms are not unique. If  f and  f are identical except at a discrete set of points,
+                                                            1       2
+                            () £
+                 then £  (  ft  )  =  (  f 2 () . However, there is at most one continuous function  f  satisfying
+                                           )
+                                         t
+                           1
+                 £  { f t    Fs
+                              ()
+                       ( )} =
+
+
+                 3.3-2  Laplace Transform Linear
+
+
+                 3.3-3  Proposition
+
+
+                        £  −  1 [aF () bG () ] a=  .£ −  ( ()) b .£ −1  1 ( ())
+                                                              +
+                                                                          s
+                                                                       G
+                                   s
+                                                        F
+                                           s
+                                     +
+                                                           s
+                                               = af () bg   ()
+                                                     t +
+                                                            t</code></pre>
      	</div>
     
      </div>

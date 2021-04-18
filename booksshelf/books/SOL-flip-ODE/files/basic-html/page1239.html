@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1239 - DE Solution</title>
+        <title>Page 1239 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1239 - DE Solution</div>
+        <div id="content-top1">Page 1239 - ODE Solution Manual</div>
         <div id="content-top2">P. 1239</div>
      </div>
      <div id="content-middle">
@@ -155,65 +155,73 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2. 6 − F or c e d H a r m on i c  M ot i o n  | 1229
 
 
-                 Exercise
+
+                     I  ( ) t =  1 V +  C  dV  +  1 ∫ V ( ) s ds
+                      S      R        dt   L
+
+                     d    I     1 V +  C  dV  +  1 ∫ V   
+                     dt     S  ( ) t =   R  dt  L  ( ) s ds     
 
 
-                                                                          ×
-                 An RCL circuit connected in series has  R =  40 Ω ,  C =  16 10 − 4  , F  L =  1 H , and applied voltage
-                   ( ) 100cos10  V . Assuming no initial charge and no initial current at t =  when the voltage is
-                 E t =           t                                                         0
-                 first applied.
-                   a)  Find the charge in the circuit at time t.
-                   b)  Find the current flowing through this circuit.
-                   c)  Find the linit of the charge as t →∞
-                 Solution
+                                           2
+                     d  I  ( ) t =  1 dV  +  C  d V  +  1 Vs
+                                                    ( )
+                     dt  S      R dt      dt 2   L
+                       2
+                     d V  +  1 dV  +  1  V =  1 dI
+                     dt 2   RC dt    LC      C dt
 
+                                            t −
+                                         e
+                     V′′ +  2V′ +  4V =  4  d ( )
+                                      dt
+                     V′′  2V′ +  +  4V =  − 4e  t −  ; V  ( ) 0 =  0, V′ ( ) 0 =
+                                                                 0
+                                                      1 i
+                        λ  2  2 + =   0 →     λ    = −±     3
+                                   4
+                               λ +
+                                               1,2
+                         t
+                     V  ( ) e=  t −  ( C  cos 3t + C  sin 3t )
+                      h            1           2
+                     V =   Ae  t −
+                      p
 
-                    a)  q′′ +  40q′ +  10 4  q =  100cos10t     Lq′′ +  Rq′ +  1  q =  E ( ) t
-                                    16                                 C
-                                                 1 t
-                        q′′  40q′ +  + 625q =  100co0 ; q ( ) 0 =  0, i ( ) 0 =
-                                                s
-                                                                          0
-                            λ  2  40λ +  +  625 0 →  λ    =  −  20 15   i
-                                           =
-                                                                ±
-                                                      1,2
-                        q =   e − 20t ( C  cos15t + C  sin15t )
-                          h           1           2
-                        q   =  A cos10t +  B sin10t
+                        V′ = −  Ae  t −
                           p
-                                                B
-                          q′ =  −  10 sin10t +  A  10 cos10t
-                            p
-                                                   B
-                          q′′ =  −  100 cos10t −  A  100 sin10t
-                            p
-                        q′′ +  40q′ +  625q =  100cos10t
+                        V′′ =  Ae  t −
+                          p
 
-                                 cos10t  −  100A +  400B +  625A =  0 1 0
-                                
-                                 sin10t   −  100B −  400A +  625B =  0
-                                                                    ( 11025  +  400 B =  )  100
-                                    525A +   400B =  100              16
-                                →                     →
-                                     −  400A +  525B =  0  A =  21 B
-                                                              16
+                     V′′ +  2V′ +  4V =  −  4e  t −
+                        e  t −  A −  2A +  4A =  −  4
 
-                            B  =  64  ,  A =  84
-                                697        697
+                         A  = − 4
+                              3
 
-                        q   =  84  cos10t +  64  sin10t
-                          p   697          697
+                                 e
+                     V  ( ) t = − 4 − t
+                      p        3
 
-                                                               84
-                                                                            64
-                        q ( ) t =  e − 20t ( C 1  cos15t +  C 2 sin15t +  )  697 cos10t +  697 sin10t
-                                            84
-                                q ( ) 0 =  C +  697  =  0
-                                        1
-                                C  = −  84
-                                 1     697</code></pre>
+                     V  ( ) t =  e  t −  ( C 1 cos 3t +  C 2  sin 3t −  )  4 −  3 e  t
+
+                            V  ( ) 0 = C −  1  4  =  0
+                                         3
+
+                            C  =  4
+                              1  3
+
+                     V  ( ) t ′  =  e  t −  ( −  3C 1 sin 3t +  3C 2  cos 3t −  C 1 cos 3t −  C 2  sin 3t +  )  4 −  3 e  t
+
+
+                            V′ ( ) 0 =  3C −  2  4  +  4  =  0
+                                                3
+                                            3
+                            C   =  0
+                              2
+
+                     V  ( ) t =  4 −  e  t  cos 3t −  4 −  e  t
+                            3              3</code></pre>
      	</div>
     
      </div>

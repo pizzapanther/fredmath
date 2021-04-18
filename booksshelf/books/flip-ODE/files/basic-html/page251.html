@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 251 - Differential Book</title>
+        <title>Page 251 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 251 - Differential Book</div>
+        <div id="content-top1">Page 251 - ODE Book</div>
         <div id="content-top2">P. 251</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.2 − Basic Properties of the Laplace Transform
+    <pre style="white-space:pre-line"><code>238 | 2. 5 - V a r i at i o n  o f  P a r am et er s
 
 
-
-          3.2-1  The Laplace Transform of Derivatives
-
-          To find the Laplace Transform of a derivative, integrate the expression for the definition of the Laplace
-          Transform by parts. Some useful properties that will help us derive Laplace Transform. These properties,
-          will let us use Laplace Transform to solve differential equations and even to do higher order systems
-          with initial conditions.
-
-
-          3.2-2  Proposition
-
-          Suppose y is a piecewise differentiable function of exponential order. Suppose also that  y′ is of the
-
-          exponential order.
-                        £  ( )()y′  s =  .  s £ ( )( )ys −  y (0)
+                                        )
+                       =  C e 2x  +  ( C −  2  1 xe 2x  +  xe 2x ln x
+                          1
+                       =  C e 2x  +  C xe 2x  +  xe 2x ln x
+                          1
+                                   3
 
 
-                                        s
-                                           −
-                                  =  sY ( ) y (0)
-
-          Proof
-
-              £ ( )( ) s = ∫ 0 ∞  y′  () t e − st dt
-                 y′
+          Example 3
 
 
-                          T→∞ ∫   0    ( ) t e
-                                   T  y′   − st dt
-                        =
-                           lim
+          Find the general solution for  y′′ +  y =  tant
+          Solution
 
-                                  u e  − st    v = ∫  y′ ( ) t dt
-                                    =
+                                                                         2
+                                                                             =
+             The homogeneous equation for the differential equation:   λ +  10
+             The characteristic equation has roots:   λ   =     i ±
+                                                       1,2
 
-                                du =  −  se − st dt  v =  y ( ) t
+             Therefore;  y =  cos     nadt     y =  sint
+                          1               2
 
-                                          T          T           
-                                                                  
-                                                  s
-                                                +
-                        =  lim     e −  st y () t  0 ∫  y () t e −  st dt
-                          T→∞             t=                     
-                                                    0            
-                        =  lim e  − st y ( ) t −  y (0) s+  . £ ( )( ) s
-                                                       y
-                          T→∞
+                         t
+              y =  C  cos +  C  sint
+               h    1         2
+                       cost   sint
+                 W =
+                      − sint  cost
+                         2
+                                 2
+                    =  cos t + sin t
+                    = 1 ≠  0
 
-                            at
-             Let:  ()y t ≤ Ce
 
-                        () ≤
-                 e −  sT  yT  Ce aT −  e  sT
-                                  (s a
-                 e − sT  yT   Ce − −  )T  ; which converges to 0 for  s &gt;  as T →∞ . Therefore,
-                        () ≤
-                                                                       a
-               £    ( )()y′  s =  .  s £ ( )()ys −  y (0)</code></pre>
+             The system has a solution:
+
+                                                                            ()
+                                                                          2
+              v = ∫  (sin  tan  t  ) t dt                   v  ( ) x = − ∫  y gx  dx
+               1                                              1           W
+                   ∫ sin t
+                        2
+                 =    cost   dt
+
+                   ∫ 1 cos t
+                            2
+                       −
+                 =
+                        cost    dt
+                   ∫   cost  −
+                                  )
+                     (  1    costt
+                                    d
+                 =
+                   ∫ (sect −     )  dt
+                             cost
+                 =
+
+                                       t
+                 =  −  ln sect +  tant +  sin
+
+                   ∫           ) dt                         v  ( ) x = ∫  yg ( ) x  dx
+                                                                         1
+              v =    (cos  tant  t                            2           W
+               2</code></pre>
      	</div>
     
      </div>

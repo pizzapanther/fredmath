@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2192 - DE Solution</title>
+        <title>Page 2192 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2192 - DE Solution</div>
+        <div id="content-top1">Page 2192 - ODE Solution Manual</div>
         <div id="content-top2">P. 2192</div>
      </div>
      <div id="content-middle">
@@ -155,86 +155,69 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2174 | S O LU TI O N
 
 
-                    xJ′  ( ) x = υ J  ( ) x −  xJ  ( ) x
-                      υ          υ         υ  + 1
-              −    xJ′  ( ) x =  −  υ J  ( ) x +  xJ  ( ) x
-                      υ           υ         υ  1 −
-                0 =  2 J  ( ) x −  xJ  ( ) x −  xJ  ( ) x
-                     υ
-                        υ         υ  1        υ +  1 −
-              2υ ′  ( ) x =  xJ  ( ) x +  xJ  ( ) x    √
-                 J
-                  υ         υ  1        υ +  1 −
-
-
           Exercise
 
+          Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
+          functions.
 
-          Prove that     d   x υ  1 +  J  ( ) x    =  x υ  1 +  J  ( ) x
-                         dx      υ  1           υ+
+                        4x y′′ +  2  8xy′ +  ( x −  4  3 y =  )  0
 
           Solution
-                                            ∞            n                 
-                                                                       ++
-                                                       −
-                                                                   x
-              d   x υ  1 +   J  ( ) x    =  d   x υ  1 +  ( ) 1  ( ) 2n υ  1  ∑  
-              dx      υ+ 1       dx          ! n Γ (1 υ ++  ) 2
-                                                      +
-                                                           1 n
-                                          n= 0                              
-                                       ∞           n        2n+  2υ+  2 
-                                                −
-                                                           x
-                                 =  d         ( ) 1      ( )         ∑  
-                                   dx       ! n Γ (υ ++  2 ) 2
-                                                    n
-                                         n= 0                         
-                                    ∞
-                                            n
-                                  ∑    ( ) (2n +   2υ +  ) 2  ( ) 2n+  2υ+  1
-                                          1
-                                        −
-                                                           x
-                                 =         ! n Γ (υ ++  ) 2  2
-                                                  n
-                                   n= 0
-                                    ∞
-                                            n
-                                  ∑    ( ) (n υ− 12  ++  ) 1 ( ) 2n+  2υ+  1
-                                                          x
-                                 =      n !2Γ (υ ++    ) 2  2
-                                                  n
-                                   n= 0
-                                 2Γ (υ  n   ) 2 =  ( 2 υ ++  n  1 Γ  ++  ) 1
-                                                                n
-                                                         ) (υ ++
-                                    ∞           n                    2n +  2υ+  1
-                                                                   x
-                                 =         (υ∑  ( ) (n υ− 12  ++  ) 1  ( )
-                                       n !2     n  1 Γ    ++   1 ) 2
-                                                    ) (υ ++
-                                                            n
 
-                                   n= 0
-                                    ∞           n        2n+  2υ+  1
-                                                      ( )
-                                            −
-                                                       x
-                                 =     n ∑  ! Γ ( ) 1  n  1 ) 2
-                                            (υ ++
-                                   n= 0
-                                    ∞           n
-                                                      ( )
-                                            −
-                                                                x
-                                                       x
-                                 =     n ∑  ! Γ ( ) 1  n  1 ) 2  2n υ  +  ( ) υ  1 +
-                                                                2
-                                            (υ ++
-                                   n= 0
-                                 =  x υ  1 +   J  ( ) x      √
-                                          υ</code></pre>
+              1 ×  4x y′′ +  2  8xy′ +  ( x −  4  3 y =  )  0
+              4
+                           (
+                                                                        2
+                              3
+               2
+              x y′′ +  2xy′ +− +  1  x 4 ) y = 0                    x 2 d y  +  Ax  dy  +  ( B +  Cx p )  y =  0
+                              4
+                                 4
+                                                                         2
+                                                                                dx
+                                                                       dx
+              A = 2, B = −  3 , C =  1 ,  p =  4
+                            4       4
+                    −
+               α = 12  = −  1
+                    2      2
+                     4
+                β =  2  =  2
+              
+                   2  1
+                k =   4  =  1
+                    4     4
+              
+                      +
+               υ =  13  =  1
+                    4      2
+                                                   ( )
+                                      2
+                                    1
+                                                    1
+              y ( ) x =  x − 1/2       cJ  ( )  +  c J  1/2 4  x 2     
+                                     x
+                             1 1/2 4
+                                            2 −
+
+                                β
+                     α      ( )          ( )  
+                                             β
+              y ( ) x =  x    c J  kx  + c J − υ  kx  
+                                     2
+                         1 υ
+                                        +
+                   =  x − 1/2     c  2  sin zc  2  cos z   
+                             1 π  z       2 π  z     
+                         2
+                                         2
+                   =  c  ( ) 1/2  sin x +  c  ( ) 1/2 cos x
+                      1 π  x          2 π  x
+                   =  x − 1/2     c  22  sin  x 2  + c  22  cos  x 2        z =  kx β =  x 2
+                             1 x π     4     2 x π      4                           4
+
+                   =  x − 3/2     C  2  sin  x 2  + C  2  cos  x 2   
+                             1 π      4     2 π       4  </code></pre>
      	</div>
     
      </div>

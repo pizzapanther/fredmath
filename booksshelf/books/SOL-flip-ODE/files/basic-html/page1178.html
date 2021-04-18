@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1178 - DE Solution</title>
+        <title>Page 1178 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1178 - DE Solution</div>
+        <div id="content-top1">Page 1178 - ODE Solution Manual</div>
         <div id="content-top2">P. 1178</div>
      </div>
      <div id="content-middle">
@@ -155,67 +155,58 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1168 | S O LU TI O N
 
 
-                          ( 2 9.8 )        mg
-                     k =               k =
-                          0.2               x
-                      = 98
 
-
-             a)  2y′′ + 5y′ + 98y =  3  o c st  ; y ( ) 0 = .05, y′ ( ) 00 =    my′′ +  cy′ +  ky =  F ( ) t
-                                   10
-                     2 λ  2  5 +  λ +  98 0
-                                   =
-                             5
-                     λ   = − ±   1 i  759
-                      1,2    4   4
-
-
-                 y =   e − 5 /4   t  C  cos  759 t + C  sin  759   t
-                   h             1   4       2      4      
-
-
-                 y   =  A cost +  B sint
+                 x′′ = e  t −  ( cos4t +  A  B sin 4t +  4 sin 4t −  A  4 cos4t +  B  4 sin 4t −  A  4 cos4t −  B  16 cos4t −  A  16 sin 4t )
+                                                                                                  B
                    p
-                     y′ =  −  A sint +  B cost
-                       p
-                     y′′ =  −  A cost −  4 sint
-                                      B
-                       p
-                 2y′′ +  5y′ +  98y =  3  cost
-                                   10
-                      cos2t  −  2A +  5B +  98A =  1
-                     
-                      sin 2t  −  2B −  5A +  98B =  0
-                       96A +  5B =  1
-                     
-                      −  5A +  96B =  0
-                                96   5                 3   5               96   3
-                            ∆  =        =  9241 ∆   =  10     =  144  ∆  =      10  =  3
-                                − 5 96            A    0   96    5     B   − 5  0    2
+                                                                   B
+                        =  e  t −  ( 15 cos4A−  t −  8 cos4t +  B  8 sin4t −  A  15 sin4t )
 
-                         A  =  144  ,  B =   3
-                             46,205       18,482
+                 x′′ +  8x′ +  16x e  t −  sin 4t
+                               =
+                         cos4t  −  15A −  8B −  8A +  32B +  16A =  0
+                        
+                         sin 4t  8A −  15B −  8B −  32A +  16B =  1
 
+                          −   7A +  24B =  0
+                        
+                         −  24B −  7B =  1
 
-                                  t
-                 y   =  144   cos +    3    sint
-                   p   46,205        18,482
+                                    −  7  24              0   24               −  7  0
+                                ∆  =         =  625  ∆  =        =  −  24  ∆  =       =  −  7
+                                    −  24  −  7       A   1   −  7        B   −  24  1
 
-                 y ( ) t =  e − 5 /4   t    C  cos  759  t +  C  sin  759   t +    144  cost +  3  sint
-                                 1     4        2      4      46,205       18,482
+                         A =  −  24  ,  B =  −  7
+                              625         625
+                                                  )
+                 x   =  e  t −  ( −  24  cos4t −  7  sin 4t     (Steady-state solution)
+                   p         625         625
 
-                                      144
-                         y ( ) 0 = C +  46,205  =  0. 05 =  2 1 0
-                                 1
-                        C   =  1,733
-                          1   36,964
+                                  )
+                 x t =  ( ) ( C +  C te −  4t  −  1  e  t −  (24cos4t +  7sin4t )
+                          1    2          625
 
-                                 −  5 C  cos  759  t −  5 sin  759 t −  759 C  sin  759   t
-                            t
-                 y t ′ ( ) e − 5 /4     4  1  4  4    4       4    1     4      
-                       =
-                                   +  759  C  cos  759  t −  144  sint +  3  cost    
-                                  4    2      4      46,205     18,482         </code></pre>
+                                         24
+                            x ( ) 0 = C −  625  =  0
+                                     1
+                            C  =  24
+                              1  625
+                                             )
+                                                      1
+                                                              −
+                     x t =  ( ) ( C −  2  4C −  1  4C te −  4t  −  625 e  t −  ( 24cos4t −  7sin4t −  96sin4t +  28cos4t )
+                                           2
+                            x′ ( ) 0 =  C −  4C −  4  =  0
+                                     2      1  6 25
+
+                            C   =  100
+                              2   625
+
+                                      )
+                 x ( ) t =  1  (24 100te −  4t  −  1  e  t −  (24cos4t +  7sin4t )
+                                +
+                        625                   625
+             b)</code></pre>
      	</div>
     
      </div>

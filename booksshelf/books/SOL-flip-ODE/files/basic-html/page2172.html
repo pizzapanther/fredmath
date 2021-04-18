@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2172 - DE Solution</title>
+        <title>Page 2172 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2172 - DE Solution</div>
+        <div id="content-top1">Page 2172 - ODE Solution Manual</div>
         <div id="content-top2">P. 2172</div>
      </div>
      <div id="content-middle">
@@ -155,68 +155,80 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2154 | S O LU TI O N
 
 
-                                 −
-                                        −+
-                               (1 c )(1 c    a +  ) b + ab
-                 n   1 →=  b =                         b
-                                           −
-                           1             2 c             0
-                                (2 c−  )(2 c a b−+ +  ) ab+   (1 c−  )(1 c a b−+ +  ) ab+
-                 n   2 →=  b =                           b =                           b
-                                                                          −
-                            2             ( 23 c )         1            2 c             0
-                                             −
-                                 ( ( 2 c−  )(2 c a b−+ +  ) ab+  ) ( ( 1 c−  )(1 c a b−+ +  ) ab+  )
-                              =                                                      b
-                                                    ( 22 c )(3 c )                    0
-                                                              −
-                                                       −
-                                    
+                                                                                        ∞
+                                                3
+                                        2
+                                                                                              n
+                                  1
+              y  ( ) x  =  y  ( )ln x +−  3  x −  7  x −           y  ( ) x =  y  ( )lnx  x + ∑ d x
+                          x
+               2        1            4      36                       2       1              n
+                                                                                       n= 0
 
-                           ( ( n c n c a b−  )( −+ +  ) ab+  ) ( (1 c−  )(1 c a b−+ +  ) ab+  )
-                                                     
-                 →   b =                                                         b
-                                                              1
-                      n                  ( 22 c−  )(3 c−  )  (n +−  ) c          0
-                               1+  (1 c )(1 c a b +      x                                  
-                                          −+ +
-                                    −
-                                                    ) ab
-                                            2 c
-                                             −
-                           −
-              y  () x =  bx 1 c     ( ( 2 c )(2 c a b +     −  )(1 c a b +        )            
-                                                                               ) ab
-                                                     ) ab
-                                           −+ +
-                                                                     −+ +
-                                    −
-               2       0       +                         ) ( ( 1 c                   x +  2   
-                                                    ( 22 c )(3 c )                          
-                                                              −
-                                                        −
-                                                                                            
-                            ∞                                              
-                                                                  +−
-                                              +−
-               ( y  ) x =  a 0     1+ ∑  ( a a +   1 ) (a n  1   ) ( bb +   1 ) (b n  ) 1  x n   
-                                                   ) (cn
-                                                  1
-                                          ! n ⋅  ( c c +   +−  ) 1        
-                           n= 0                                            
-                                      ∞                                (1 c              ) ab  )   
-                                                              ) ab 
-                                              −
-                                                 )( −+ +
-                                                                                −+ +
-                            +  bx 1 c   −  1+  ∑  ( ( n c n c a b +  ) ( −  )(1 c a b +         x n 
-                                                                     )
-                                                                  −
-                                                         ( −
-                           0                           22 c   )(3 c     (n +−   ) c               
-                                                                              1
-                                                                                                   
-                                     n= 0                                                          </code></pre>
+
+          Exercise
+                                                                  )
+                                                               +
+          Find the Frobenius series solutions of   ( −  ) x y′′ +  (1 x y′ −  y =  0
+                                                 x
+                                               21
+          Solution
+              xy′′ +  x + 1  y′ −  1    y =  0
+                     ( 21 x )    ( 21 x )
+                                   −
+                       −
+              x y′′ +  2  1  ( xx +  ) 1  y′ −  x  y =  0
+                         −
+                     21 x           ( 21 x )
+                                      −
+              y′′ +  1  x + 1  y′ −  1    y =  0
+                        −
+                                  x
+                                   ( −
+                  2 x (1 x )    21      ) x
+             That implies to  ( ) =  1  x + 1   and  ( ) = −    1     .
+                                                   qx
+                             px
+                                    2 x (1 x−  )            21      ) x
+                                                               ( −
+                                                              x
+              p =   lim   xp ( ) x
+               0   x→ 0
+                 =  1  lim   x  x + 1
+                   2  x→ 0  x (1 x )
+                               −
+                 =  1  lim     x + 1
+                   2 x→ 0  1 x−
+
+                 =  1
+                   2
+
+                         2
+              q =  lim   xq ( ) x
+               0   x→ 0
+                 = − 1  lim    x
+                              −
+                     2 x→ 0  1 x
+                   0=
+                                                 )
+             The indicial equation is:  r +  2  ( 1  −  1 r =  r −  2  1 r =  0
+                                             2
+                                                           2
+                        →    r = 0,  1
+                                   2
+
+             The two possible Frobenius series solutions are then of the forms
+                           ∞                              ∞
+
+                 y  ( ) x = ∑  a x n  and   y  ( ) x =  x 1/2 ∑  bx n
+                  1            n             2                n
+                          n= 0                           n= 0
+                   ∞
+                 ∑        nr
+                           +
+              y =     ax
+                       n
+                  n= 0</code></pre>
      	</div>
     
      </div>

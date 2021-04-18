@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1510 - DE Solution</title>
+        <title>Page 1510 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1510 - DE Solution</div>
+        <div id="content-top1">Page 1510 - ODE Solution Manual</div>
         <div id="content-top2">P. 1510</div>
      </div>
      <div id="content-middle">
@@ -155,72 +155,70 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1496 | S O LU TI O N
 
 
-          Exercise
 
-                         x′′ +  10x        −  4x =  0
-          Solve           1     1          2
-                           −  4 x +  x′′ +  4x =  0
-                                1   2      2
-                                                               1
-          Subject to  ( ) 0x  =  0,  x′  ( ) 0 = 1,  x  ( ) 0 =  0,  x′  ( ) 0 = −
-                     1           1          2          2
-          Solution
-               2
-                                                          s =
-                                                s −
-              s X   ( ) s −  sx  ( ) 0 −  x′  ( ) 0 +  10X  ( ) 4X  ( ) 0
-                  1        1       1          1         2
-                          2
-                                                           s =
-              −  4X  ( ) s +  s X  ( ) s −  sx  ( ) 0 −  x′  ( ) 0 +  4X  ( ) 0
-                  1          2        2       2         2
-               ( s +  2  10 X 1 ( ) 4X 2  ( ) 1
-                      )
-                            s −
-                                      s =
-                                )
-              −  4X  ( ) s +  ( s +  2  4 X  ( ) s =  −  1
-                  1                2
-                                                  )(
-                                                         )
-                         s +  2  10  −  4
-                                                     2
-                                            2
-                     ∆=                 = ( s + 10 s +  4 − 16
-                           −  4   s +  2  4
-                           1    − 4               2
-                                                                 2
-                     ∆=              =  s 2  ∆  =  s + 10  1  = − s − 6
-                      1         2            2
-                          −  1 s +  4              −  4   −  1
-              X  ( ) s =    s 2      =  As +  B  +  Cs +  D
-               1       s +  4  14s +  2  24  s +  2  2  s +  2  12
+                            s 2   AB =    0                 B = −  1
+                                    +
+                                                                 ω 2
+                            s 1  2 Aλ +  C =  0             C = −  2λ
+                                                                 ω 2
+                            s 0    ω 2 A =  1  →  A =  1
+                                                      ω 2
 
-                      s 3   AC =   0
-                              +
-                     
-                      s 2   B D =  1
-                               +
-                     
-                       s  12A +  2C =  0
-                       0
-                      s  12B +  2D =  0
+                        E                            
+                   () =
+                 Qs       0    11  −  1    s +  2λ   
+                         L   ω   2 s  ω  22  2 s λ+  ω +  2  
+                                        s
+                 For λ   ω &gt;  , then  s +  2  2 s ω +  λ  2  =  s +  2  2 s λ −  2  λ +  2  ω  2  =  (s λ +  ) −  2  ( λ  2  ω −  2 )
+                                                      λ
+                                                         +
+                                                         
+                             E                           
+                                                                     2
+                     Qs       0    1  −    s λ +  λ +            ω =    1
+                       () =
+                            Lω 2 s    (s λ +  ) −  2  ( λ  2  ω −  2 )   LC
+                                 
+                                                         
+                                                                                              
+                     £  −  1 { ()Qs  } =  E C  £  −  1     1  −  s λ  +  −        λ            
+                                                0  s  (s λ +  ) −  2  ( λ  2  ω −  2 )  (s λ +  ) −  2  ( λ  2  ω −  2 ) 
+                                                                                              
+                                                                                     
+                     q ( ) t =  EC  0   1 e −  t λ  cosh λ  2  ω −  2 t −  λ  e −  t λ  sinh λ  2  ω −  2 t 
+                                  −
+                                                          λ  2  ω −  2                 
 
-                     A =  0 B =  −  1  C =  0 D =  6
-                                  5               5
+                 For λ   ω &lt;  , then  s +  2  2 s ω +  λ  2  =  (s λ +  ) +  2  ( ω  2  λ −  2 )
 
-              £  −  1 { X 1 ( )}  =  £  −  1     −  5 2  s +   2  2 2  +  5  6 12  s +  2  12 12    
-                                        1
-                         s
+                                                                                              
+                     £  −  1 { ()Qs  } =  E C  £  −  1     1  −  s λ  +  −        λ            
+                                                0  s  (s λ +  ) +  2  ( ω  2  λ −  2 )  (s λ +  ) +  2  ( ω  2  λ −  2 ) 
+                                                                                              
+                                                                                   
+                     q ( ) t =  E 0 C   1 e −  t λ    cos ω  2  λ −  2 t −  λ  sin ω  2  λ −  2 t  −  
+                                                        ω  2  λ −  2                 
 
+                                                                        2
+                 For λ   ω =  , then  s +  2  2 s ω +  λ  2  =  s +  2  2 s λ +  λ  2  =  (s λ +  )
+                         1     =  A  +  B  +   C
+                                      +
+                      ( ss λ  +  ) 2  s  s λ  (s λ  +  ) 2
 
+                                                        +
+                                           +
+                                                     λ+
+                         As +  2  2A s λ +  λ  2 A Bs 2  B s Cs =  1
+                            s 2     A +  B =  0                 B = −  1
+                                                                     λ 2
+                            s 1  2 A + λ  Bλ  +  C =  0 C =  −  2  +  1  C = − 1
+                                                        λ   λ         λ
+                            s 0      λ 2 A =  1    →  A =  1
+                                                          λ 2
 
-              x  ( ) t =  −  2  sin 2 t +  3 sin 2 3  t
-               1       10            5
-
-
-              X  ( ) s =     s −  2  −  6  =  As +  B  +  Cs +  D
-                2      ( s +  2  2 s +  )(  2  12 )  s +  2  2  s +  2  12</code></pre>
+                     £   −  1 { ()Qs  } =  E L 0   £   −  1            λ  1 1  −  λ  1 2 s λ +  −  λ  1  (s λ+ 1  )   2       
+                                                             1
+                                                  2 s</code></pre>
      	</div>
     
      </div>

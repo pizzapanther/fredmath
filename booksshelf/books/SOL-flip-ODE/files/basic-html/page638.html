@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 638 - DE Solution</title>
+        <title>Page 638 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 638 - DE Solution</div>
+        <div id="content-top1">Page 638 - ODE Solution Manual</div>
         <div id="content-top2">P. 638</div>
      </div>
      <div id="content-middle">
@@ -152,70 +152,72 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>632 | S O LU TI O N
+    <pre style="white-space:pre-line"><code>632 | 1. 8 − S OL U T I ON
 
 
 
-                         E  −  K =  0
-                         R
-                         K =  E
-                             R
+                        1 =  5  ( ) 5 +  K
+                            61
+                         K  =  36
+                             61
 
 
-                           e
-               ( ) t =  E  −  E − ( /RL )t  I
-                    R    R
+                                                  e
+              I ( ) t =  5  (6sin120t +  5cos120t ) +  36 − 100t
+                    61                         61
+             The voltage at the resistor:
+                 E   ( ) t =  RI
+                   R
 
-                                      e
-              lim I ( ) t =  lim      E  −  E − ( /RL   )t  
-              t→∞        t→∞   R   R          
+                                                         e
+                        =  25 (6sin120t +  5cos120t ) +  180 − 100t
+                           61                         61
+             The voltage at the inductor:
 
-                        =  E
-                          R
+                 E   ( ) t =  L dI
+                   L        dt
+
+                                                                        e
+                        =  (0.05 )( 25 (720cos120t −  600sin120t ) −  18000 − 100t )
+                                  61                               61
+                        =  14.754cos120t −  12.295sin120t −  14.754e − 100t
+
 
 
           Exercise
 
-
-          For the given RL−circuit
-          Which has a constant impressed voltage E, a resistor of resistance R, and a coil of impedance L.
-                          I
-          Find the current  ( ) t  flowing in the circuit.
-
+          An RC circuit with a 1− Ω  resistor and a 10 − 6  F -  capacitor is driven by a voltage  ( ) sin100 VE t =  t  .
+          If the initial capacitor current is zero, determine the subsequence resistor and capacitor current and
+          the voltages.
           Solution
 
-              L  dI  +  RI =  E
-                dt
-              dI  +  50I =  5
-              dt
-                   ∫ 50dt
 
-                    e    =  e 50t
+              Q′ +  10 Q =  6  sin100t        R  dQ  +  1  Q =  E
+                                                dt   C
 
-                 ∫ 5e 50t dt =  10 e 50t
-                              1
+                   ∫ 10 dt     6
+                       6
+                    e     = e 10 t
 
 
-                                     )
-              It      1  (  1  e 50t  +  K
-               ( ) =
-                        t
-                    e 50 10
-                  =  1  +  Ke − 50t
-                    10
+                                              ∫ sin100t  dt
+                                      6         1
+                             +     e 10 t     − 100 cos100t
+                                        6        − 4
+                                    6 10 t
+                             −   10 e         − 10  sin100t
+                             +     12 10 t
+                                         6
+                                 10 e
 
-                                  0
-                          ( I t =  ) 0 =
-
-                         1  +  K =  0
-                        10
-                         K  = −  1
-                              10
-
-
-              I  ( ) t =  1 ( 1 e − 50t )
-                         −
-                    10</code></pre>
+                                                                  )
+                                                                      6
+                                6
+                                                                                             6
+                                          1
+                                                                                         )
+                            )
+                 ∫  (sin100te 10 t dt =  ( −  100 cos100t +  100sin100t e 10 t  −  10 8 ∫  (sin100te 10 t dt</code></pre>
      	</div>
     
      </div>

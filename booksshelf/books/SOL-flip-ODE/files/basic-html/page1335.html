@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1335 - DE Solution</title>
+        <title>Page 1335 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1335 - DE Solution</div>
+        <div id="content-top1">Page 1335 - ODE Solution Manual</div>
         <div id="content-top2">P. 1335</div>
      </div>
      <div id="content-middle">
@@ -156,74 +156,82 @@ function MM_swapImage() { //v3.0
 
 
 
-                                     =   e − st  ( sin t ω  −  s cosω  ) t
-                                                ω
-                                         2
-                                       ω −  s 2
+                                ∫ 0 ∞ e −  st cos t   2 dt =  s + 4 (2sin 2t − s cos2te −  st     ∞
+                                                     1
+                                                                          )
+                                                    2
+                                                                                 0
+                                                 =   s
+                                                    2
+                                                   s +  4
 
-                       ( ) =
-                     Fs      lim   e − st  ( sin t ω  −  s cos t ω  )   T
-                                           ω
-                                    2
-                            T→∞   ω −  s 2                    0
-                                    − sT                                                 
-                                                           ω
-                          =  lim    e     ( sin T −  ω  ω  s cos T ) −  1  ( sin0 s cos  ) 0  
-                                                                          ω
-                                                                                 −
-                            T→∞   ω  2  s 2                     ω −  2  −  s 2           
-                          =  0 −   1    ( ) s−                              lim e − sT  =  lim  1  =  0
-                                 2
-                                ω −  s 2                                   T →∞        T →∞ e − sT
+                                                             ∫ cos2  dt
+                                                                   t
 
-                          =     s       s &gt; 0
-                             2
-                            s +  ω 2
+                           +                 st e − st        1 sin2t
+                                                              2
+                                             )
+                           −          ( ss te  − st          − 1 cos2t
+                                           2
+                                        −
+                                                               4
+                                               )
+                                    ( −  2s +  2  s te − st
+                                             3
+                           +
+
+                        ∫  st e −  st  cos2 dt =  t  ( 1  st sin 2t −  1 ( s s t ) cos2t e −  st  +  s 2 2 ∫  e −  st  cos2 dt
+                                                                        )
+                                                                2
+                                                                                               t
+                                                             −
+                                                         4
+                                             2
+                                                         −  s 2 ∫    st e − st  cos t   2 dt
+                                               4
+
+                                ∫ 0 ∞ e − st  cos t   2 dt =  s + 4
+                                                     s
+                                                    2
 
 
-                 Exercise
-
-                 Use Definition of Laplace transform to show the Laplace transform of
-
-                        £      ae at  − be bt     ( ) s =  s
-                                 −
-                                                 −
-                                                    )( −
-                              a b           (s as b      )
-                 Solution
-
-                     £     ae at  −  be bt     ( ) s = ∫  ∞ ae at  −  be bt  e − st dt
-                                                    −
-                             −
-                           a b            0     a b
-                                                                             (s bt
-                                                       (s a
-                                         =  a   ∫  ∞  e −−  )t dt −  b  ∫  ∞  e −−  )  dt
-                                            −
+                                                                               )
+                          2
+                         s +  4 ∫ st e −  st  cos t   2 dt =  ( 1  st sin 2t −  1 ( s s t ) cos2t e −  st  +  1  s 3
+                                                                      2
                                                                    −
-                                           a b    0              a b    0
-                                                            (s a
-                                                                                    (s bt
-                                         =  a    ( −  1  ) e −−  )t  −  b  ( −  1  ) e −−  )     ∞
-                                                     −
-                                                                              −
-                                                                      −
-                                           a b      s a             a b     s b             0
-                                            −
-                                         =  1     (  a  −  b  )
-                                                           −
-                                            −
-                                                   −
-                                           a b    s a    s b
-                                                         −
-                                         =  1       as −  ab bs +  ab   
-                                            −
-                                           a b    (s −  a )(s −  ) b  
-                                         =  1      (a b s−  )
-                                           a b   (s −  a )(s −  ) b
-                                            −
-                                         =       s          √
-                                           (s −  a )(s −  ) b</code></pre>
+                           4                        2          4                       2  s + 4
+                                                                                          2
+                                                                                   )
+                        ∫ 0 ∞ st e −  st  cos t   2 dt =  s +  4   (   1  st sin 2t −  1 ( s s t ) cos2t e −  st     ∞  +  ( s + 3 4 ) 2
+                                                 4
+                                                                          2
+                                                                                                 2s
+                                                                        −
+                                                                   4
+                                                2
+                                                        2
+                                                      
+                                                                                          0
+                                                                                                 2
+                                            =  −  s   +    2s 3
+                                                 2
+                                                s +  4  ( s +  4 ) 2
+                                                           2
+                                                3
+                                            =  s −  4s 2
+                                              ( s +  4 )
+                                                2
+                      2
+                                 2 −
+                     s +  4 ∫  ∞  t e  st  cos2 dt =  t  −  1 ∫  ∞  e −  st  cos2 dt +  t  ∫  ∞  st e −  st  cos2 dt
+                                                                                       t
+                       4     0                    2   0                  0
+                                                               3
+                                               = −  1  s   +  s −  4s
+                                                   2  s +  4  ( s + 4 ) 2
+                                                      2
+                                                               2</code></pre>
      	</div>
     
      </div>

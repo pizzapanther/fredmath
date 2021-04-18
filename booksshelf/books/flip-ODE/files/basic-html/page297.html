@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 297 - Differential Book</title>
+        <title>Page 297 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 297 - Differential Book</div>
+        <div id="content-top1">Page 297 - ODE Book</div>
         <div id="content-top2">P. 297</div>
      </div>
      <div id="content-middle">
@@ -152,74 +152,76 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>282 | 3.5 - I nt r oduc t i on &  B a s i c   T h e or y  of  L i ne a r  S y s t e m s
-
-          (24 – 30)  For the systems below:
-
-             a)  Verify that the given vectors are solutions of the given system.
-             b)  Use the Wronskian to show that they are linearly independent.
-             c)  Write the general solution of the system.
-             d)  Find the particular solution that satisfies the given initial conditions
-
-                      4  2           2e t        e 2t 
-          24.  x′ =          ; x  x =      , x =     
-                      −  3 −  1   1      −  3e t      2      −  e 2t   
+    <pre style="white-space:pre-line"><code>284 | 3. 1 - D e f i ni t i on  of  t h e   L a p l a c e  T r a ns f or m
 
 
-                     −   32         e 3t        2e − 2t      x  ( ) 0 =  0
-          25.  x ′ =        x ; x =       , x =        ,     1
-                      − 34      1      3e 3t     2      e − 2t       x 2  ( ) 0 =  5
-                                                               
+          Example 1
 
-                     3 − 1         2t  1        2t  1        x  ( ) 0 =  5
-          26.  x ′ =       x ; x =  e   , x =   e −    ,    1
-                                                         5
-                                         1
-                     5 − 3     1            2             x 2  ( ) 0 = − 3
-                                                               
-                      4 − 3         3e 2t       e − 5t      x  ( ) 0 =  8
-          27.  x ′ =        x ; x =       , x =        ,     1
-                      6 − 7     1      2e 2t      2      3e − 5t      x 2  ( ) 0 =  0
-                                                               
+                                                                                    at
+          Use Definition of Laplace transform to find the Laplace transform of  ()ft = e .
 
-                                             2e t           3t          2e 5t   
-                      3  −  2  0                         −  2e             x 1 ( ) 0 =  0
-                                 
-          28.  x ′ =      −  1  3  −  2 x ; x =    1      2e t     , x =    2    0   , x =    3      −  2e 5t     ,   x 2  ( ) 0 =  0
-                                                                                   
-                                 
-                        0  − 1  3        e t         e 3t          e 5t     x  ( ) 0 = 4
-                                                                                   
-                                                                             3
-                                         e 2t         t −         0      x      10
-                      01 1                         e                    1 ( ) 0 =
-                                   
-                             
-          29.  x ′ =      1 0 1 x ; x =      e 2t     , x =    2  0   , x =    3  e  t −  ,    x 2  ( ) 0 = 12
-                                                                              
-                             
-                                    1
-                        11 0         e 2t        −  t −         t −     x  ( ) 0 = − 1
-                                                                              
-                                                     e             −   e       3
-                     1   −  4  0  −  2         e  t −      0          0           e t      x 1 ( ) 0 = 1
-                                                                                                
-                      0  1   0    0            0         0           e   t      0      x  ( ) 0 = 3
-                                                        
-          30.  x ′ =                  x ; x =     , x =       , x =     , x =       ,    2
-                                                                                                
-                     6   −  12  −  1 −  6  1    0    2     e  t −   3    0    4    t     x  ( ) 0 =  4
-                                                                                  3e      3
-                      0  −  4  0  −  1           e  t −         0         − 2e t         0        x 4  ( ) 0 =  7
+          Solution
 
-          31.  Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and
-               I represent the current across the inductor.
 
-                                 V′ =  −  V  −  1
-                 Show that:           RC    C
-                                
-                                 I′ =  V
-                                     L                          R               C     L</code></pre>
+                          at −
+              F () s = ∫ 0 ∞ e e  st  dt
+
+
+
+                            (s at
+                   = ∫ 0 ∞ e −−  )   dt
+
+
+
+
+                                 (s at
+                      lim
+              F ( ) s = T→∞∫ 0 T  e −−  )  dt
+
+                               (s at
+                                                               (sa
+                   =  lim    − e −−  )      T               e −−   )0  = 1
+                                −
+                     T→∞       sa       0
+                                 (s aT
+                             − e −−  )    1                 −−   )∞
+                                                               (sa
+                   =  lim              +                  e         =  1  =  0
+                                 −
+                                           −
+                     T→∞       sa        sa                           e ∞
+                   =   1
+                       −
+                     sa
+              £ ( )  ( )  =  s −  a           for   s &gt;
+                             1
+                  at
+                 e
+                                                      a
+                      s
+
+
+          Example 2
+
+          Find the Laplace transform of  ( ) t , using the definition.
+                                        ft =
+          Solution
+
+
+              F () s = ∫ 0 ∞ te − st dt
+
+
+
+
+                                 ∫ e − st  dt
+
+
+                                     e
+                        +  t     − 1 − st
+                                   s
+                                  1  − st
+                        −  1       2  e
+                                  s</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1465 - DE Solution</title>
+        <title>Page 1465 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1465 - DE Solution</div>
+        <div id="content-top1">Page 1465 - ODE Solution Manual</div>
         <div id="content-top2">P. 1465</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,75 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 4 − U s i n g  L a p l a ce T r a n s f o r m  t o   S o l v e D i f f er en t i al  E q n s .  | 1451
+    <pre style="white-space:pre-line"><code>3. 4 − U s in g   L a p l a c e  T r a n s f o r m to   S o lv e  D if f e r e n ti a l E q n s .  | 1451
 
 
+                              A =  −  1 B =  −  1 C =  1
 
-                            A =  −  192  B =  96  C =  −  2  D =  −  1
-                                  125       125         25        5
 
-                                                                                            
-                     £  −  1 { Ys     −  1     −  192  1  +  96  1  −  2   1    −  1   1     
-                             ( )} £=
-                                                  (
-                                           125  2 s −  1 )  125 s + 2  25  (s +  ) 2  2  5  (s +  ) 2   3
-                                                     2                                      
+                             ( )} £
+                     £  −  1 {Ys  =   −  1 { s +  − 1 1 −  s +  1  5  +  s −  1 1 }
 
-                                                               2 −
-                     y ( ) t =  −  96  e t /2  +  96 −  e  2t  −  2  te −  2t  −  1 t e  2t
-                             125       125        25         5
+
+                     y ( ) t = −  e  t −  −  e −  5t  + e t
 
 
                  Exercise
 
 
-                 Solve using the Laplace transform:    2y′′ +  20y + ′  51y =  0, y ( ) 20 =  , y′ ( ) 00 =
-
+                 Solve using the Laplace transform:    y′′ −  7y′ + 10y = 9cost +  7sin  ; t  y ( ) 0 =  , 5  y′ ( ) 0 = −
+                                                                                                            4
                  Solution
-                         £  {2y′′ +  20y′ +  51y =  } 0
+                     £  {y′′ −  7y′ +  10  } y £=  {9cost +  7sin  } t
 
 
-                                          0
-                         y ( ) 0 =  2 y′ ( ) 0 =
-                       2
-                     2s Y  ( ) 2sys −  ( ) 0 −  2y′ ( ) 0 +  20sY  ( ) 20s −  y ( ) 0 +  51Y ( ) 0s =
-                                    )
-                     ( 2s +  2  20s +  51 Ys  4s +  40
-                                      ( ) =
+
+                     s Ys − 2  ( ) sy ( ) 0 −  y′ ( ) 0 −  7sYs +  ( ) 7y ( ) 0 +  10Ys  9s  +  7      y ( ) 0 = 5,  y′ ( ) 0 = −
+                                                                  ( ) =
+                                                                                                               4
+                                                                        s +  2  1  s +  2  1
+                     ( s −  2  7s +  10 Ys  9s + 7  +  5s −  39
+                                 )
+                                    ( ) =
+                                           2
+                                          s + 1
+                     Y  ( ) s =  5s −  3  39s +  2  14s −  32  =  A  +  B  +  Cs +  D
+                                         (
+                                                                   2
+                                           2
+                            (s −  2 )(s −  ) 5 s + 1 )  s −  2  s −  5  s + 1
+                             s 3       A B C =     5
+                                              +
+                                          +
+                            
+                             s 2  −  5A −  2B −  7C +  D =  −  39
+                            
+                                      +
+                              s    A B +  10C −  7D =  14
+                              0
+                             s    −  5A −  2B +  10D =  −  32
+                            A =  8,  B =  −  4,  C =  1,  D =  0
 
 
-                      ( ) =
-                     Ys          4s + 40
-                            2 s + (  2  10s +  51 )
-                                         2
-                          =    2s +  20
-                            (s +  ) 5  2  +  1
-                                      2
-                                                           1
-                          =         2s      2  +  20        2      2
-                                                  2
-                            (s +  ) 5  2  +      1      (s +  ) 5  2  +      1    
-                                        2                     2 
-
-                                                                          1          
-                     £  −  1 {Y s     −  1      2 s       + 10 2          2          
-                             ( )} £=
-                                                2     2   2            2     2   2 
-                                          (s +  ) 5  +    2      (s +  ) 5  +    2    
-                                                                                
+                     £  −  1 {Ys  =   −  1     8  −  4  +  s    
+                             ( )} £
+                                                          2
+                                           s −  2  s −  5  s + 1
+                     y ( ) 8et =  2t  −  4e 5t  +  cost
 
 
-                     y ( ) t =  2e −  5 t  cos  2 2  t + 10 2e −  5t  sin  2 2  t</code></pre>
+
+                 Exercise
+
+
+                                                                                             6
+                 Solve using the Laplace transform:   y′′ +  8y +  ′  25y =  0 ,  y π  ( ) =  , 0  y π  ′ ( ) =
+                 Solution
+
+                    Let:    w ( ) t =  ( y t π  +  ) ↔  y ( ) t =  w (t π  −  )
+
+                     y′′ ( ) 8yt +  ( ) 25yt ′  +  ( ) t =  0
+                         £  {w′′ +  8w′ +  25w =  } 0</code></pre>
      	</div>
     
      </div>

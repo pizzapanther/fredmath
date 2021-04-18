@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 210 - Differential Book</title>
+        <title>Page 210 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 210 - Differential Book</div>
+        <div id="content-top1">Page 210 - ODE Book</div>
         <div id="content-top2">P. 210</div>
      </div>
      <div id="content-middle">
@@ -152,61 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 2.5 − Variation of Parameters
+    <pre style="white-space:pre-line"><code>2. 3 - H a r m on i c   M ot i on  | 197
 
 
-             In this section, we will introduce a technique called variation of parameters, which is a general method
-             that we can use in many more cases.
+                 2.3-4  Linear Constant-Coefficient Models
 
 
-                                                               ( )y +
-                                                                        ()y = ′
-             The inhomogeneous equation is given by:    y +  ′′  pt   qt       g () t
+                                 Mechanical System                       Electrical System
 
-             A fundamental set of solutions  y and  y  to associated homogeneous equation  y′′ +  py′ +  qy =  0.
-                                            1       2
-             Then the general solution to the inhomogeneous equation is given by
+                                my′′+  µ y′+  ky F () t                Lq′′ +  Rq′ +  1  q =  E ( ) t
+                                               =
+                                                                                  C
+                           : y  displacement                    : q  charge
+                          y′ : velocity                        q′ : current
 
-                                   y =  Cy +   C y
-                                    k    11      2 2
-             C and C are arbitrary constants.
-              1        2
+                          y′′ : acceleration                   q′′ : change in current
+
+                          m : mass                              : L  inductance
+
+                          µ : damping constant                 R : resistance
+                           : k  spring constant                1  : where C is the capacitance
+                                                               C
+                          F ( ) :t  forcing function           E ( ) : voltage sourcet
 
 
-             2.5-1  General Case
+                                   Resistor                  Inductor                 Capacitor
 
-             A differential system can be written in a form:
 
-                      y  y 
-                      1   2  
-                      y′  y   ′
-                      1   2 
 
-             y and y fundamental set of solution to the homogeneous equation, they are linearly independent. Then the
-              1      2
-             determinant will be recognized as the Wronskian:
 
-                         y    y
-                    W =   1    2  ≠  0
-                         y′   y′
-                          1    2
 
-             Which we can obtain:
 
-                              y gt         y                           y g () t
-                                 ()
-                    v′ = −     2       = −  2  gt       ⇒   v  () =  t  −  ∫  2  dt
-                                               ()
-                     1     yy′  12  yy ′ −  1  2  W          1           W
-                                                                          t
-                                ()
-                             y gt       y                             y g ()
-                                            ()
-                    v′ =      1       =  1  gt          ⇒   () =  v  t  ∫  1  dt
-                            y′
-                     2    y 12  yy ′ −  12  W                2          W
-                       y =  vy +   v y
-                        p    11     2 2</code></pre>
+
+
+
+
+
+
+
+
+
+                 2.3-5  Simple Harmonic Motion
+
+
+                 In the special case when there is no damping (c =  ) 0  the motion is called simple harmonic motion.
+
+
+                         x′′ + ω 2 x = 0
+                               0
+
+                 The characteristic equation is:   λ  2  ω +  2  = 0
+                                                         0
+                 The roots are λ  2  ω = −  2  λ →  i ±  ω =
+                                       0            0
+                  ( ) =
+                 xt    a cos ω  t b sin ω  t
+                                 +
+                              0          0
+                    If we define period: T =  2π
+                                            ω
+                                              0
+                                        T ω    2
+                                                π =
+                                            0
+                    Then the periodic of the trigonometry functions implies that  ( x t T+  ) =  xt
+                                                                                           ()  for all t.</code></pre>
      	</div>
     
      </div>

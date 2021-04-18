@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2183 - DE Solution</title>
+        <title>Page 2183 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2183 - DE Solution</div>
+        <div id="content-top1">Page 2183 - ODE Solution Manual</div>
         <div id="content-top2">P. 2183</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>4. 5 − B e s s e l ’ s  E qn.   a nd F un c t i o ns  | 2165
+    <pre style="white-space:pre-line"><code>4. 4 − S ol ut i on a b ou t   S i ng ul a r  P oi nt s  | 2165
+
+
+
+                        n   1 →=  b =  −  7 1 b =  −  7  b
+                                   1    2 9  0    18  0
+                        n   2 →=  b =  −  7 3  b =  −  21 − 7 b =  49  b
+                                   2     2 22  1    44 18  0   264   0
+
+                        n   3 →=  b =  −  7 5  b =  −  35 49  b =  −  1,715  b
+                                   3     2 39  2    78 264   0    20,592   0
+                                        
+                                      
+
+                     y  () bx    1/2     1−  7  x +  49  x −  2  1,715  x +  3     
+                            =
+                         x
+                      2        0       18     264      20,592        
+                     yx     a  1  ( 1−  21 x +  49  x −  2  343  x 3 ) +  b  x     1−  7  x +  49  x −  2  1,715  x +  3     
+                      () =
+                             0 3      5      5       15        0       18    264      20,592         
+                               x
 
 
                  Exercise
 
-                 Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
-                 functions.
-                                 2
-                                x y′′ −  xy′ +  ( 1 x 2 )  y =  0
-                                              +
+                 Find the Frobenius series solutions:
+                                                                                         )
+                         x (1 x y′′ +   −  )    c − (a b+ +  ) 1 x y′ − aby = 0  (Gauss' Hypergeometric
+                                                    
+                                                    
                  Solution
-                                                                        2
-                      2
-                     x y′′ −  xy′ +  ( 1 x+  2 )  y =  0            x 2 d y  +  Ax  dy  +  ( B +  Cx  p ) y =  0
-                                                                      dx 2     dx
-                     A = − 1, B = 1, C =  1,  p = 2
+                                +
+                         c − (ab +    ) 1 x    ab
+                     y′′ +               y′ −        y =  0
+                             x (1 x )        x (1 x )
+                                                −
+                                 −
+                                           c − (ab+ +   ) 1 x
+                                    px
+                                                               qx
+                    That implies to  ( ) =                 and  ( ) = −    ab   .
+                                               x (1 x−  )               x (1 x−  )
+                     p =   lim xp ( ) x
+                      0   x→  0
+                                  c − (ab +  ) 1 x 
+                                        +
+                        =  lim x                
+                                       (1 x
+                          x→  0     x −    )    
+                                      +
+                                 c − (ab +  ) 1 x 
+                        =  lim                
+                                       −
+                          x→  0     1 x       
+                        =  c
 
+                                2
+                     q =   lim xq ( ) x
+                      0   x→ 0
 
-                                                                                                    −
-                                                                        −
-                     α   1, β =  = 1, k = 1, υ  =  0               α   1 A , β =  =  p ,  k  2 C  , υ=  =  (1 A ) −  2  4B
-                                                                         2       2       p             p
-                              
-                                                  
-                     yx     x cJ    ( ) x + c Y  ( ) x
-                      ( ) =
-                              
-                                                  
-                                          20
-                               1 0
+                        = −  lim x 2  ab
+                            x→ 0    x (1 x−  )
 
+                        = −  lim  abx
+                                  −
+                            x→ 0 1 x
+                        =  0
 
-                 Exercise
-                 Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
-                 functions.
-
-                                xy′′ +  3y′ +  xy =  0
-                 Solution
-
-                     x ×  xy′′ +  3y′ +  xy =  0
-                                                                        2
-                     x y′′ +  2  3xy′ +  x y =  2  0                x 2 d y  +  Ax  dy  +  ( B +  Cx  p ) y =  0
-                                                                      dx 2     dx
-                     A = 3, B =  0, C =  1,  p = 2
-
-                                                                        −
-                     α   −  1, β =  =  1, k =  1, υ  =  1          α   1 A , β =  =  p ,  k  2 C  , υ=  =  (1 A−  ) −  2  4B
-                                                                         2       2       p             p
-                     yx     x − 1     cJ  ( ) x +  cY  ( )  x   
-                      ( ) =
-                                            21
-                                  1 1
-
-
-                 Exercise
-
-                 Determine the general solution in terms of Bessel functions or, if possible, in terms of elementary
-
-                 functions.
-
-                                xy′′ −  y′ +  36x y = 3  0
-                 Solution
-
-
-                     x ×  xy′′ −  y′ +  36x y = 3  0</code></pre>
+                                    ) ( )
+                     p =  lim  ( x − 1 px
+                      1   x→ 1</code></pre>
      	</div>
     
      </div>

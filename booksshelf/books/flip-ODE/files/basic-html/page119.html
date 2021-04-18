@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 119 - Differential Book</title>
+        <title>Page 119 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 119 - Differential Book</div>
+        <div id="content-top1">Page 119 - ODE Book</div>
         <div id="content-top2">P. 119</div>
      </div>
      <div id="content-middle">
@@ -152,59 +152,61 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>104 | 1.7 - M ode l i n g  P opul a t i on G r ow t h
+    <pre style="white-space:pre-line"><code>106 | 1. 6 - E x a ct   D i f f e r en t i al  E q u at i o n s
 
-          Example 3
 
-                                       0
-          Suppose we start at time  t =  with a sample of 1000 cells. One day later we see that the population
-                                   0
-          has doubled, and sometime later we notice that the population has stabilized at 100,000.
+                      hy      0
+                       ′
+                        ( ) =
+                      h ( ) y =  C
 
-          Solution
-                                       5
-                                   =
-               Given:  K = 100,000 10         P =  1000
-                                               0
-                                53
-               () =
-              Pt             10 10
-                                    )
-                                   3
-                    10 +  3  ( 10 −  5  10 e −  rt−  ( 0)
-                  =          10 8
-                            3
-                                  −
-                    10 +  3  10 (100 1)e − rt
-                         5
-                  =    10
-                    1 99e  − rt
-                     +
-                          5
-              2P =      10
-                0   1 99e+     ) 1 ( r −
 
-              2 10 =  3  10 5
-               ×
-                       1 99e   r −
-                        +
-               +
-             1 99e   r −  =  10 5
-                         2 10  3
-                           ×
-             1 99e   r −  =  50
-               +
-              e  r −  =  49
-                    99
-                         49
-               r − =  ln ( )
-                      99
-              r ≈  0.7033
+               ψ  ( ,x  y =  )  x +  2  xy +  2  C
 
-                             5
-              P ( ) t =   10
-                      +
-                     1 99e − 0.7033t</code></pre>
+
+               x +  2  xy =  2  C
+
+
+           Example 2
+
+
+           Solve the differential equation:     y cos x +  2xe +  y  ( sin x +  x e −  2 y  1 y′ =  )  0
+
+           Solution
+                                                   2 y
+               M =  y cos x +  2xe y   N =  sin x +  x e − 1
+
+               M    =  cos x +  2xe y   N =   cos x +  2xe y
+                  y                       x
+                   ⇒   M   =  N
+                         y     x
+
+
+               ψ=  ∫ ( y cos x + 2xe y )  dx
+
+
+
+                  =  y sin x +  xe +  2 y  h ( ) y
+
+                                                   2 y
+                                     ( )   =
+               ψ   =  sin x +  xe +  2 y  h y  sin x +  x e − 1
+                                    ′
+                 y
+                   ( ) = −
+                 hy       1
+                  ′
+                 h ( ) y = − ∫ dy
+
+
+                      = − y
+
+
+                                   2 y
+               ψ  ( ,x y =  )  y sin x +  x e −  y =  C
+
+                         2 y
+               y sin x +  x e −  y =  C</code></pre>
      	</div>
     
      </div>

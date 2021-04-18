@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 291 - Differential Book</title>
+        <title>Page 291 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 291 - Differential Book</div>
+        <div id="content-top1">Page 291 - ODE Book</div>
         <div id="content-top2">P. 291</div>
      </div>
      <div id="content-middle">
@@ -152,46 +152,48 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>276 | 3.5 - I nt r oduc t i on &  B a s i c   T h e or y  of  L i ne a r  S y s t e m s
+    <pre style="white-space:pre-line"><code>278 | 2. 7 - E ul e r ’ s  &  R u nge - K ut t a  M e t ho ds
 
 
-              I′ =  1   E −  RI +  (  I  ) 
-               1   L        1    2 
+                    =  f  (1.05 ,.9975 )
 
-             Kirchhoff’s voltage law applied to the loop containing the source, resistor and the capacitor:
+                    = .9975 1.05
+                           −
+                    = − 0.0525
 
-                        E =  RI +  1  Q
-                                  C
-             Differentiate the equation:
+                 s =   f t +  (  h ,  y +  hs  )
+                  4       0       0     3
+                    =  f  (1.1 ,.99475 )
 
-                 E′   RI′ =  1  Q′ +                 Q′ =  I
-                           C                               2
-                                   1
-                      RI′ =  (  1  I′ +  2 ) +  C  I
-                                      2
-                      RI′ =  RI′ +  +  1  I
-                        1     2   C   2
+                             −
+                    = .99475 1.1
+                    = − 0.10525
 
-              RI′   E′ =  RI′ −  −  1  I
-                2          1   C  2
-                   =  E′ −  R  1   E −  RI +  (  I  )   −  1  I
-                           L         1    2    C  2
+                             s +  2s +  2s +  s
+                 y =  y +  h  1     2     3    4
+                   1    0             6
 
+                      1 0.1
+                     = +       0 2( .05) 2( .0525) ( .10525)   +   −  +  −  +  −  
+                                              6                 
+                     = 0.99482916667
 
-              I′   1  E′ =  −  1   E −  RI +  (  I  )   −  1  I
-               2   R      L        1    2    RC   2
+                          h
+                 t = t +
+                  1   0
+                   =  1.1
 
-                 =  1  E′ −  1  E +  R  I +  R  I −  1  I
-                   R      L     L  1   L  2   RC   2
-                 =  R  I +  ( R  −  1  ) I +  E′  −  E
-                   L  1    L   RC    2   R    L
+                              y : Runge-                       Runge-Kutta
+                    t          k               y  - Exact
+                                                k
+                     k
+                                Kutta                              Error
+                    1.0          1.0              1.0                0
+                    1.1     0.994829167       0.994829081      −0.000000086
+                    1.2     0.978597429       0.978597241       0.000000295
 
-
-                I′ =  −  R  I −  R  I +  E         (1)
-                1    L  1   L  2   L
-                                         E′
-               I′ =  R  I +  ( R  −  1  ) I +  −  E  (2)
-                2  L  1    L   RC    2   R    L</code></pre>
+                    1.3     0.950141502       0.950141192      −0.000000310
+                    1.4     0.908175759       0.908175302      −0.000000457</code></pre>
      	</div>
     
      </div>

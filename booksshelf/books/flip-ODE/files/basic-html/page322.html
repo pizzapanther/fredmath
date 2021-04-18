@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 322 - Differential Book</title>
+        <title>Page 322 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 322 - Differential Book</div>
+        <div id="content-top1">Page 322 - ODE Book</div>
         <div id="content-top2">P. 322</div>
      </div>
      <div id="content-middle">
@@ -152,55 +152,78 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.6 - P l a n a r  S y st e m s  | 307
-
-                       current across the inductor, solve the system to determine the voltage and current as a function
-                       of time.
+    <pre style="white-space:pre-line"><code>3. 4 -   Us i n g   L ap l a c e T r an s f o r m   t o  S o l v e  D i f f e r e n t i a l  E q u a t i o n s  | 309
 
 
+                 3.4-9  Inductor
 
 
+                                                      Laplace Transform
+
+                                                                      t
+                                                                  di  ()    £
+                                                                                            (
+                                                                                                            )
+                                                        v L  ( ) =  L  L    ←→   V L () =  L sI L () I L (0)
+                                                            t
+                                                                                                    −
+                                                                                                  s
+                                                                                      s
+                                                                    dt
 
 
-                                                         R               C     L
+                        The block diagram:
+                                       I    ( ) s        Ls            V  ( ) s =  s    LI  ( ) s
+                                        L                                L          L
 
 
-
-
-
-                       Plot the voltage and current  as a function of time. Assume  current flows in the directions
-                       indicated.
-
-               107.  Show that the voltage V across the capacitor and the current I through the inductor satisfy the
-                     system
-
-                                     R 1    1
-                                I′ =   −  L  I +  L V
-                              
-                               V′ =  −  1  I −  1  V
-                                     C     RC
-                              
-                                             2
-                       Suppose that the capacitance is C = 1 farad, the inductance is  L = 1 henry , the leftmost resistor
-                       has resistance  R  = 1 Ω , and the rightmost resistor has resistance  R  =  5 Ω .
-                                      2                                                 1
-
-                                                                         L
+                 3.4-10 Capacitance
 
 
 
 
 
 
-                                                    R 1               C            R 2
+
+
+                        Laplace Transform
+
+                                   dV  () t  £
+                                                            s
+                                                             .
+                         i  ( ) t =  C  c    ←→  I  () s = CV  () s
+                          c          dt             c          c
+
+
+
+                                         Cs
 
 
 
 
-                        If the initial voltage across the capacitor is 12 volts and the initial current through the inductor
-                       is zero, determine the voltage V across the capacitor and the current I through the inductor as
-                       functions of time. Plot the voltage and current as functions of time. Assume current flows in the
-                       directions indicated.</code></pre>
+                 Example 4
+
+
+                 Suppose the electrical circuit has a resistor of  R =  2Ω and a capacitor of C =  1  F . Assume the voltage
+                                                                                           5
+                 source is  E =  cost  ( ). If the initial current is 0 A, find the resulting current.
+                                    V
+                 Solution
+
+                     R dQ  +  1  Q =  E
+                       dt   C
+
+                     2Q′ +  5Q =  cost
+                     £  (2Q′ +  5Q ) £=  (cost )
+
+
+
+
+                                    +
+                     2sQs −  () 2 (0) 5 () =  Qs  s
+                               Q
+                                               2
+                                              s +  1</code></pre>
      	</div>
     
      </div>

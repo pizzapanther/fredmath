@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1353 - DE Solution</title>
+        <title>Page 1353 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1353 - DE Solution</div>
+        <div id="content-top1">Page 1353 - ODE Solution Manual</div>
         <div id="content-top2">P. 1353</div>
      </div>
      <div id="content-middle">
@@ -152,67 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 2 − B a s i c P r o p er t i e s  o f   t h e L ap l ac e  T r an s f o r m  | 1339
+    <pre style="white-space:pre-line"><code>3. 1 − D e f i n i t i on  of  t he   L a pl a c e  T r a n s f or m  | 1339
 
 
                  Exercise
 
-
-                 Find the Laplace transform of     f  ( ) t =  −  4t +  2  16t +  9
-
-                 Solution
-                                                 }
-                     £ { f t  =   {  4t +  2  16t +  9
-                          ( )} £ −
-
-
-                     F ( ) s =  −  8  +  16  +  9
-                              s 3  s 2  s
-
-                          =  9s +  2  16s −  8
-                                 s 3
-
-
-                 Exercise
-
-                                                               2t
-                 Find the Laplace transform of     f  ( ) 3tt =  2  − e
-
+                 Use Definition of Laplace transform to show the Laplace transform of
+                        £  { e at  cos t ω } ( ) s =  sa
+                                                  −
+                                            (sa  ) +  2  ω 2
+                                              −
                  Solution
 
-                                 2
-                     F ( ) s £=  { 3t −  e 2t } ( ) s
 
-                          =  6  −  1
-                            s 3  s −  2
-
-                          =   s −  3  +  6s −  12
-                              s 3 (s −  ) 2
-
-
-                 Exercise
-
-                 Find the Laplace transform of     f  ( ) t =  t −  2  e − 9t  +  9
-
-                 Solution
-
-                     F ( ) s £=  { t −  2  e − 9t  +  9 } ( ) s
-
-
-                          =  2  −  1  +  9
-                            s 3  s +  9  s
-
-
-                          =   s −  3  +  9s +  2  2s +  18
-                                 s 3 (s +  ) 9
+                     £ { e at  cos t ω  } ( ) s = ∫ 0 ∞ e at cos t ω   e − st dt
 
 
 
-                 Exercise
 
-                 Find the Laplace transform of     f  ( ) 6t =  e − 3t  −  t +  2  2t −  8
+                                                      sa
+                                      = ∫ ∞ cos t eω  ( −−  )t  dt
 
-                 Solution</code></pre>
+
+                                          0
+                                                               ∫ cos t ω  dt
+
+                                     +        e −−   )t         1  sin t ω
+                                                (sa
+                                                                ω
+                                         −  (sa  )  e −−  )t  −  1  cos tω
+                                                    (sa
+                                             −
+                                     −                          ω 2
+                                                         )t
+                                                    (sa
+                                                   e
+                                     +    (sa  ) 2 −−
+                                            −
+
+                               ∞                              (sa   )                ∞
+                                                                  −
+                                                                                (sa
+                                         (sa
+                                                     1
+                                cos t eω  −−  )t  dt = ∫    ω sin t ω  2  cos t eω −    −−  )t
+                              0                                  ω                    0
+                                                      (sa   ) 2  ∞        −−    )t
+                                                        −
+                                                                           (sa
+                                                   −    ω ∫     0  cosω t e       dt
+                                                          2
+                            (sa−  ) +  2  ω 2  ∞ cos t e  ( −−  )t  dt =  (sa−  ω ∫  )
+                                                        sa
+                                                 ω
+                                 ω  2      0                         2
+                            ∫  ∞ cos t eω  ( −−  )t  dt =  (sa ) +  2  ) ω 2
+                                                       (sa−
+                                          sa
+                                                      −
+
+                              0
+                     £ { e at  cos t ω } ( ) s =  sa        √
+                                              −
+                                        (s a  ) +  2  ω 2
+                                           −</code></pre>
      	</div>
     
      </div>

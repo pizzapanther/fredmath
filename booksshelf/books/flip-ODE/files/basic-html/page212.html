@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 212 - Differential Book</title>
+        <title>Page 212 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 212 - Differential Book</div>
+        <div id="content-top1">Page 212 - ODE Book</div>
         <div id="content-top2">P. 212</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.5 - V a r i a t i o n  o f  P a r a m e t e r s  | 197
-
-             Example 2
-
-             { y 1 ( ) x =  e 2x , y 2  ( ) x =  xe 2x }  is a fundamental set of solutions of  y′′ −  4y′ +  4y =  e 2x  .
-                                                                                              x
-             Find a general solution of the equation?
-
-             Solution
-
-                      e 2x      xe 2x
-                W =
-                     2e 2x   e 2x  +  2xe 2x
+    <pre style="white-space:pre-line"><code>2. 3 - H a r m on i c   M ot i on  | 199
 
 
-                   =  e 4x  +  2xe 4x  −  2xe 4x
+                     my′′ +  µ y′ +  ky =  F () t
 
-                   = e 4x  ≠  0
+                     4y′′ +  169y =  0               Divide by 4
 
-
-                                  e ∫
-                                                                               ()
-                                                                            2
-                    v  ( ) x = −     xe 2x  e 2x  dx           v  ( ) x = − ∫  y gx  dx
-                     1             4x   x                       1            W
-
-                          = − ∫ dx
-
-                          = −    x
+                     y′′+  169  y =  0
+                          4
+                    The natural frequency:
 
 
+                        ω =     169
+                          0      4
+
+                            = 13
+                               2
+
+                    Period:
+                        T =  2π                             T =  2π
+                             13                                 ω
+                             2                                    0
+
+                           =  4π
+                            13
+
+                                      +
+                     y ( ) t =  C  cosω  t C  sinω  t
+                             1     0     2     0
+                         =  C  cos 13 t + C  sin 13 t
+                             1    2      2     2
+
+                    Stretched 10 cm →   y (0) 10 cm=  =  .1 m
+                                            )
+                         y  0 () =  C  cos ( 13  0 () + C  sin ( 13 (0 ) )
+                                1      2         2     2
+                         1  = C
+                        10     1
+
+                    Initial velocity is 130 cm/s →  y′ (0) 1.3  /ms
+                                                       =
+                         yt ′ ( ) =  −  13 C  sin 13 t +  13 C  cos 13 t
+                                 2   1     2    2   2     2
+
+                         y′ () 0 =  −  13 C  sin ( 13 () 0 +  )  13 C  cos ( 13 () 0 )
+                                 2   1     2       2   2     2
+                        13  = 13 C
+                        10    2   2
+                        C =   1
+                          2   5
 
 
-                                                                           1
-                    v  ( ) x =    e ∫  e 2x  e 2x  dx          v  ( ) x = ∫  yg ( ) x  dx
-                     2            4x x                           2          W
-                             ∫  x
-                                1  dx
-                           =
-
-                           =  ln x
+                     y ( ) t =  1  cos 13 t +  1 sin 13    t
+                            10     2    5    2
 
 
-                The particular solution:
-                                     ( )
-                   y  p  =  −  xe 2x  +  ln x xe 2x             y p  =  vy + v y
-                                                                             2 2
-                                                                      11
-                  The general solution:
 
+                     A =    1  +  1
+                           100   25
 
-                    y ( ) x =  C e 2x  +  C xe 2x  −  xe 2x  +  xe 2x ln x
-                             1
-                                     2
-                                           )
-                         =  C e 2x  +  ( C −  1 xe 2x  +  xe 2x  ln x
-                             1        2
-                         =  C e 2x  +  C xe 2x  +  xe 2x ln x
-                             1        3</code></pre>
+                        =   5
+                           100</code></pre>
      	</div>
     
      </div>

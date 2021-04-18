@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 214 - Differential Book</title>
+        <title>Page 214 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 214 - Differential Book</div>
+        <div id="content-top1">Page 214 - ODE Book</div>
         <div id="content-top2">P. 214</div>
      </div>
      <div id="content-middle">
@@ -152,60 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>2.5 - V a r i a t i o n  o f  P a r a m e t e r s  | 199
-
-             2.5-2  Higher-Order Equations
-
-             The nonhomogeneous higher-order equation is given by:
+    <pre style="white-space:pre-line"><code>2. 3 - H a r m on i c   M ot i on  | 201
 
 
-                    y ( ) n  +  p  () ty (n−  ) 1  +   +  p  () ty′ +  p  () ty =  g () t
-                            n− 1                1         0
-             A fundamental set of solutions  y  , y  , , y   to associated homogeneous equation
-                                            1   2       n
-                    y =  cy +   c y +     +   c y
-                      h   11      2 2         nn
-
-             Then the particular solution is  y  =  uy +  u y +  +   u y
-                                            p    11     2 2          nn
-
-             Where u′  , k  = 1,2,…  are determined by the n equations:
-                                  ,n
-                     k
-                        uy ′  +     u y     +  +      u y =  0
-                                  ′
-                                                   ′
-                         11       2 2              nn
-                                                   ′
-                                  ′ ′
-                        uy ′′ +     u y     +  +      u y′ =  0
-                         11       2 2              nn
-                                           
-                                                                                
-                         
-                                  
-                                ′
-                    uy ′  (n−  ) 1  +  u y (n−  ) 1  +   u y (n−  ) 1  =  g ( ) t
-                                                ′ +
-                     1  1       2  2            n  n
-                                               W
-             Using Cramer’s Rule give:    u′ =   k
-                                           k   W
+                                                                                                       2
+                                                                                                 2
+                                                                                                             2
+                 There are 4 cases to consider damping and depend on the sign of the discriminantc − ω  or ζ −   1
+                                                                                                       0
+                 1.  For Undamped system (ζ =      ) 0
 
 
-                     rd
-             For the 3 -order differential equation:
-                      y    y    y              0     y    y            y      0    y             y   y      0
-                       1    2    3                    2    3            1           3             1    2
-                W =   y′   y′   y′      W =    0     y′   y′     W =   y′     0    y′     W =    y′  y′     0
-                       1    2    3        1           2    3       2    1           3       3     1    2
-                      y′′  y′′  y′′           g ( ) t  y′′  y′′        y′′  g ( ) t  y′′         y′′  y′′  g ( ) t
-                       1    2    3                    2    3            1           3             1    2
+                         x ( ) t =  A cos ω  (  0 t ϕ  −  )
 
 
+                                     2
+                                2
+                         A =  C +  C          Maximum amplitude response
+                                1    2
+                                     C 
+                        ϕ =  arctan     C   2  
+                                     1 
 
-                u =  ∫   W 1      u =  ∫  W 2       u =  ∫  W 3
-                  1      W         2       W         3       W</code></pre>
+                      2
+                 2.  c − ω &lt;  2  0   ⇒    c ω .
+                                        &lt;
+                           0                0
+                                                        &lt;
+                    This is the underdamped case.   (0 ζ &lt;     ) 1
+                    The roots are distinct complex numbers.
+                        The general solution is:
+                                                               )
+                                                                                               2
+                                                                                          2
+                                xt     − ct ( C 1 cos t Cω+  2  sin tω    Where ω =     ω −  c
+                                 ( ) e=
+                                                                                          0
+                                         − ζω  t
+                                    =  Ae    0  cos ω  (  d t ϕ  −  )      ω  d  =  ω  0     1 ζ  −  2
+                                                                           ω : Damped natural frequency
+                                                                            d
+
+                                            2
+                                       2
+                                A =  C +   C
+                                       1    2
+                                            C 
+                               ϕ =  arctan     C   2  
+                                            1 
+
+                        Note: The equilibrium position only if c ζ=  =  0  and the amplitude A is the largest amplitude
+                               or response (no damping).
+
+                      2
+                 3.  c − ω &gt;  2  0   ⇒    c ω  or ζ &gt;  (free response).
+                                        &gt;
+                                                    1
+                           0                0
+                    This is the overdamped case.
+                    The roots are distinct and real numbers.
+                        The general solution is:
+
+                                 () C e
+                                xt =     λ  1 t  +  C e λ  2 t
+                                       1        2
+                                                                                )
+                               Where  ω −  2  c &lt;  2  c &lt;  2  c     ( λ  λ &lt;  &lt;  0
+                                          0                           1    2</code></pre>
      	</div>
     
      </div>

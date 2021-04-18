@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2009 - DE Solution</title>
+        <title>Page 2009 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2009 - DE Solution</div>
+        <div id="content-top1">Page 2009 - ODE Solution Manual</div>
         <div id="content-top2">P. 2009</div>
      </div>
      <div id="content-middle">
@@ -155,70 +155,79 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 2 −   S e r i e s   S ol ut i on s  n e a r  O r di n a r y P oi nt s  | 1991
 
 
+
+
+                     x 2 ∑  ∞  ( n n −  ) 1 ax n−  2  +  ∑  ∞  (n +  2 )(n +  ) 1 a n+ 2 ∑  x −  n  ∞  nax n−  1 +  ∑  ∞  ax =  n  n  0
+                                     n
+                                                                                n
+                        n= 2              ∞   n= 0                   ∞    n= 1       ∞   n= 0
                       ∞
-                                                              )
-                            −    (n +  2 )(n +  ) 1 a  +  ( n +  2  7n +  12 a n  ∑    x =  n  0
-                                         n+ 2                   
+                     ∑     ( n n −  ) 1 ax + n ∑  n  (n +  1 )(n +  ) 2 a n+ 2 ∑  x −  n  nax n− 1 +  ∑  4ax =  n  n  0
+                                                                           n
+                     n= 2                n= 0                        n= 1           n= 0
+
+                     ∑  ∞  ( n n −  ) 1 ax +  n  n  ∞  (n +  1 )(n +  ) 2 a n+∑  2 ∑  x −  n  (n +  ) 1 a n+  1 ∑  x +  n  ∞ ∞  ax =  n  n  0
+
+
+                     n= 0                n= 0                       n= 0                 n= 0
+                      ∞
+                                                            (  2      )  n  ∑    n
+                                                                   n
+                                        n+  2        n+  1               
+                             (n + 1 )(n +  ) 2 a  − (n +  ) 1 a  +  n −+ 1 a  x = 0
                      n= 0
+                                                                 )
+                                                         2
+                     (n + 1 )(n +  ) 2 a  − (n +  ) 1 a  + ( n −+ 1 a =
+                                                             n
+                                                                       0
+                                   n +  2        n +  1            n
+                                                    )
+                                            2
+                                                n
+                             (n +  ) 1 a  − ( n −+ 1 a
+                     a     =        n+ 1               n
+                      n+ 2          ( +  n  1 )(n +  ) 2
+                     n  0 → =  a =  1 ( a −  a  )
+                               2   2   1   0
+                                                 1
+                     n  1→ =  a =  1 ( 2a −  a  ) ( a −  a −  a  )  =  −  1 a
+                                               =
+                               3   6    2   1    6   1    0   1      6  0
+                                                    1
+                                                  =
+                     n   2 → =  a =  1 ( 3a −  3a  ) ( −  1 a −  1 a +  1  a  )  =  1  a −  1 a
+                               4   12    3     2    4   6  0   2  1   2  0   12   0  8  1
+                                                       (
+                     n  3 → =  a =  1  ( 4a −  7a  )  =  11 a −  1 a +  7  a  )  =  3  a −  1  a
+                               5   20    4     3    20 3   0   2  1  6  0    40  0   40  1
 
-                     −  (n +  1 )(n +  ) 2 a n+ 2  +  (n +  3 )(n +  ) 4 a =  n  0
-
-                             (n +  3 )(n +  ) 4
-                     a     =              a
-                      n+ 2   (n +  1 )(n +  ) 2  n
-
-                                a                                           a
-                                 0                                           1
-                      n   0 → =  a =  6a                                        10
-                                2      0                          n = 1  →   a =  3  3  a
-                                                                                    1
-
-                      n   2  →=  a =  5 a =  15a                  n   3  →=  a =  42 a =  21 a
-                                 4   2  2       0                            5    0 2  3  3  1
-
-                      n   4  →=  a =  5 a =  28a                  n   5  →=  a =  12 a =  36 a
-                                 6   2  4       0                            7    7  5    3  1
-                                                                          
-                                   
-                                                                                     
-                                         
-                                                                               
-                             a   =  (n +  12n +  )(  ) 1 a                1      )(
-                              2n                  0               a 2n+ 1  =  3 (n +  12n +  ) 3 a
-                                                                                            0
-                                                            a
-                     y ( ) x =  a 0 ( 1 6x +  2  15x +  4  28x +  6  ) ( x +  10  x +  3  7 x +  5  12x +  7  )
-                                 +
-                                                           +
-                                                                    3
-                                                              1
-                             0∑  ∞                 2n   1  1∑  ∞                2n+ 1
-                          =  a      (n +  12n +  )(  ) 1 x  +  3 a  (n +  12n +  )(  ) 3 x
-                               n= 0                         n= 0
-
-
-                 Exercise
-
-                                              (  2   )
-                 Find a power series solution.   x −  1 y′′ +  4xy′ +  2y =  0
-
-                 Solution
-                             ∞
-                            ∑        n
-                     yx          a x
-                      ( ) =
-                                  n
-                            n= 0
-                            ∑  ∞      n− 1  ∑  ∞             n
-                     y′ ( ) x =  na x     =     (n +  ) 1 a n+ 1 x
-                                    n
-                             n= 1           n= 0      ∞
-                              ∞
-                             ∑                n− 2   ∑                       n
-                     y′′ ( ) x =   nn    ) 1 a x    =     (   n +  2 )(n +  ) 1 a n+ 2 x
-                                   ( −
-                                           n
-                             n= 2                    n= 0</code></pre>
+                     n   4 → =  a =  1  ( 5a −  13a  )  =  1 ( 3 a −  1 a −  13 a +  13 a  ) =  −  17  a +  1  a
+                               6   30    5      4    30 8   0   8  1  12  0   8   1     720  0   20  1
+                                                                                 4
+                                                                   1
+                                                                                              1
+                                                                                      3
+                                                                                x +
+                     y ( ) x =  a +  0  a x +  1  ( 1 a −  0  1 a 1 ) x −  2  1 a x + 0  3  ( 12 a −  0  1 a 1 ) ( 40 a −  0  40 a 1 ) x 5
+                                                         6
+                                        2
+                                                                          8
+                                               2
+                                (
+                                             1
+                                   17
+                                                    6
+                              +−   720  a +  20 a 1 ) x +
+                                        0
+                                                         3
+                                                 1
+                                                                17
+                     y ( ) x =  a 0 ( 1+  1  x −  2  1 x +  3  12  x +  4  40  x −  5  720  x +  6   )
+                                   2
+                                          6
+                              +  a  ( x −  1  x −  2  1  x −  4  1  x +  5  1  x +  6   )
+                                 1      2     8      40     20</code></pre>
      	</div>
     
      </div>

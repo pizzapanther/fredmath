@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 377 - DE Solution</title>
+        <title>Page 377 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 377 - DE Solution</div>
+        <div id="content-top1">Page 377 - ODE Solution Manual</div>
         <div id="content-top2">P. 377</div>
      </div>
      <div id="content-middle">
@@ -155,74 +155,58 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1. 4 − L i n e a r  E q ua t i ons  | 371
 
 
-
-                                    C =  m     v −  mg   
-                                        k    0   k  
-
-
-                                                        / t
-                          ( )
-                        st     mg  t −=  m   k      v −  0  mg   k      e − km  +  m   k      v −  0  mg   k    
-                                k
-
-
                  Exercise
 
-                 As a raindrop falls, it evaporates while retaining its spherical shape. If we make the further
-                 assumptions that the rate at which the raindrop evaporates is proportional to its surface and that air
-                                                                    vt
-                 resistance is negligible, then a model for the velocity  ( )  of the raindrop is
-                                                       /
-                                              dv  +  ( 3 k ρ ) v =  g
-                                              dt    k  t +  r
-                                                    ρ    0
-                                                                                           0
-                                                                                    0
-                 Here  ρ  is the density of water,  r  is the radius of the raindrop at t = ,  k &lt;  is the constant of
-                                                 0
-                 proportionality, and downward direction is taken to be the positive direction.
-                                  vt
-                    a)  Solve for  ( )  if the raindrop falls from rest.
-                                                                      r
-                    b)  Show that the radius of the raindrop at time t is  ( ) t =  k  t +  r .
-                                                                             ρ     0
-                                                     f
-                                    f
-                    c)  If  r = 0.01 t  and r =  0.007 t  10 seconds after the raindrop falls from a cloud, determine
-                            0
-                        the time at which the raindrop has evaporated completely.
+                 Find the solution of the initial value problem. Discuss the interval of existence and provide a sketch
+
+                                                                  ( 1)
+                 of your solution   (2x +  ) 3 y′ =  y +  (2x +  ) 3  1/2 ;  y −= 0
                  Solution
 
-                          3 k   tr + ∫  dt
-                           ρ   k         3ln ( k  tr  )
-                                               +
-                    a)  e      ρ   0  = e    ρ   0
-                                       (  k    ) 3
-                                     =  ρ t r 0
-                                           +
 
-                        ∫  g ( ρ  k  t r 0 ) 3 dt =  ρ  k g ∫  (  k  t r 0 ) (  k  t r 0 )  =  ρ  4k ρ  g (  k  t r 0 ) 4
-                                                          3
-                                 +
-                                                                 +
-                                                     +
-                                                                                  +
-                                                           d
-                                                              ρ
-                                                  ρ
-                        vt     ( k  t +  r  ) − 3       ρ g (  k  t +  r  ) 4  +  C     
-                          ( ) =
-                                             ρ  0  4k ρ  0    
-                                                   +
-                               ρ g ( k     )      kt ρ r   − 3
-                                       +
-                             =        t r   +  C      0  
-                               4 k ρ      0        ρ    
-                                       v ( ) 00 =
-                                           ρ gr         − 3
-                                                    ( )
-                                       0 =    0  + Cr
-                                            4k        0</code></pre>
+                     (2x +  ) 3 y′ −  y =  (2x +  ) 3  1/2
+
+                     y′ −  1    y =  (2x +  ) 3  − 1/2
+                         2x + 3
+
+                              1 −  dx  −  2∫  1  2x+ ∫  1   d (2x+  ) 3
+                            e  2x+  3  = e    3
+
+                                      −  1 ln (2x+  ) 3
+                                   =  e  2
+
+                                   =  2x + 3 − 1/2
+
+                        ∫  (2x +  ) 3  −  1/2 (2x +  ) 3  −  1/2 dx =  ∫  (2x +  ) 3  1 −  dx
+
+
+
+
+
+                                                      =  1 ∫     d (2x + 3  ) 3          d (2x +  ) 3 =  2dx
+                                                        2
+                                                               2x +
+
+                                                      =  1  ln 2x + 3
+                                                        2
+
+
+                      ( ) =
+                     yx           1      ( 1 ln (2x +  ) 3 +  C )
+                            (2x +  ) 3  − 1/2 2
+
+                          =  1 (2x +  ) 3  1/2 ln (2x +  ) 3 +  C (2x +  ) 3  1/2
+                            2
+
+                            y ( 1)−= 0
+
+                            0 =  1 ( ) 1  1/2 ln ( ) 1 +  C ( ) 1  1/2
+                                2
+                            C  =  0
+
+                      ( )
+                     yx   =  1 (2x +  ) 3  1/2 ln (2x +  ) 3
+                            2</code></pre>
      	</div>
     
      </div>

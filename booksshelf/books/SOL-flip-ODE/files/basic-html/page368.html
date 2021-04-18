@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 368 - DE Solution</title>
+        <title>Page 368 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 368 - DE Solution</div>
+        <div id="content-top1">Page 368 - ODE Solution Manual</div>
         <div id="content-top2">P. 368</div>
      </div>
      <div id="content-middle">
@@ -157,70 +157,83 @@ function MM_swapImage() { //v3.0
 
           Exercise
 
-                                                                                              ]
-          Find a solution to the initial value problem that is continuous on the given interval [ ,a b
-                                                 
-                                                            ≤≤
-                                                  2t − 1, 0 t   1
-                                 3
-                                            ( ) =
-                ( ) y =
-          y′ +  pt    0, y  ( ) 0 =        pt       0,   1 t    3         [ ,a b ] [0, 4 =  ]
-                                                            &lt;≤
-                                                 
-                                                    1
-                                                            &lt;≤
-                                                   − t  ,  3 t  4
-                                                 
+
+                                                                    e
+                                                                                                    0
+          Find the solution of the initial value problem   y′ −  y =  −  1 t /2 sin5t +  5e t /2 cos5t  y ( ) 0 =
+                                                                   2
           Solution
-             For 0 t≤≤  1:
-                 y′  (2t − +  ) 1 y =  0, y ( ) 30 =
+                   ∫ − dt
+                            t −
+                    e   =  e
+                 ∫  ( −  1 t /2 sin5t +  5e t /2 cos5te  t −  dt =  −  1 ∫  ( e  t −  /2 sin5 dt +  t )  5 ∫  ( e  t −  /2  cos5 dt
+                                                                                              )
+                                               )
+                                                                                             t
+                        e
+                                                         2
+                      2
 
-                   ∫ (21t−  )dt  2
-                    e        =  e t − t
+                                                     t
+                                               ∫ sin5  dt                            ∫ cos5   t dt
 
-                             2
-                 y ( ) Ce   t − + t
-                    t =
-
-                               3
-                         y ( ) 0 =
-                        C  = 3
-
-
-                 y ( ) 3et =  tt −  2         t =  1  ⇒   y =  3
-
-
-                        3
-             For 1 t≤≤ :
-                                3
-                 y′ =  0, y ( ) 1 =
-                 y ( ) t = C
-
-
-                               3
-                         y ( ) 1 =
-
-                        C  = 3
-
-                 yt                    t =  3  ⇒   y =  3
-                   ( ) 3 =
-
-                         4
-             For 3 t≤≤ :
-                 y′ −  1 y =  0,  y ( ) 3 = 3
-                      t
-
-                     − t ∫  1 dt
-                    e     =  e − lnt
-
-                          =  1
-                            t
-
-                 y ( ) C t =  t
+                               +     e  t −  /2  − 1 cos5t           +     e  t −  /2  1 sin5t
+                                                  5                                    5
+                                     1 − t /2     1                        1 − t /2     1
+                                       e
+                                                                             e
+                               −   − 2         − 25 sin5t            −   −  2         − 25 cos5t
+                                        t /2                                   t /2
+                                                                            e
+                                      e
+                               +    1 −                              +    1 −
+                                                                           4
+                                    4
 
 
-                         y ( ) 3 =  3</code></pre>
+              ∫  ( e  t −  /2 sin5 dtt ) ( −  1 cos5t −  50 sin5t e  t −  /2  −  100 ∫  ( e  t −  /2 sin5 dtt )
+                                                     )
+                                                               1
+                                              1
+                               =
+                                    5
+                 101 ∫ ( e  t −  /2 sin5 dt =  t )  −  1  (10cos5t +  sin5t )e  t −  /2
+                 100                      50
+                 ∫ ( e  t −  /2 sin5 dtt )  =  −  101 (10cos5t +  sin5t )e  t −  /2
+                                        2
+
+
+
+
+              ∫  ( e  t −  /2 cos5 dt =  t )  e  t −  /2 1 sin5t −  50 cos5t −  )  100 ∫  ( e  t −  /2  cos5 dt
+                                                                               )
+                                       (
+                                                  1
+                                                              1
+                                                                              t
+                                        5
+                 101 ∫ ( e  t −  /2 cos5 dtt )  =  1 −  e  t /2 (10sin5t −  cos5t )
+                 100                     50
+
+                 ∫ ( e  t −  /2  cos5 dt = 101 e  t −  /2 (10sin5t − cos5t )
+                                )
+                                      2
+                               t
+
+              ∫ ( −  1 t /2 sin5t +  5e t /2 cos5te  t −  dt =  ( 101 cos5t +  101 sin5t +  100 sin5t −  101 cos5te  t −  /2
+                                                                                               )
+                                           )
+                                                                 1
+                                                     10
+                                                                                       10
+                    e
+                   2
+                                                                           101
+                                                  = e  t −  /2 sin5t
+                                      )
+                       (
+                     t
+              y ( ) t = ee  t −  /2 sin5t + C</code></pre>
      	</div>
     
      </div>

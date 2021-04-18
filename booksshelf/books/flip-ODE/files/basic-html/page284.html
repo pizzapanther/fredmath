@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 284 - Differential Book</title>
+        <title>Page 284 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 284 - Differential Book</div>
+        <div id="content-top1">Page 284 - ODE Book</div>
         <div id="content-top2">P. 284</div>
      </div>
      <div id="content-middle">
@@ -152,65 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 3.5 – Introduction & Basic Theory of Linear Systems
+    <pre style="white-space:pre-line"><code>Section 2.7 − Euler's & Runge-Kutta Methods
 
 
 
-               A system of differential equations is a set of one or more equations, involving one or more differential
-               equations.
-
-               There are several physical problems that involve number of separate elements such as an example:
-               electrical networks, mechanical, and more other fields.
 
 
 
-               3.5-1  Example of Predator-Prey Systems (Ecology)
+                 2.7-1  Euler's method named after Leonhard Euler is an example of a fixed-step solver.
 
-               The dynamical of biological growth of populations is a branch of ecology.
+                 Euler's method is a first-order numerical procedure for solving ordinary differential equations (ODEs)
+                 with a given initial value. It is the most basic kind of explicit method for numerical integration of
+                 ordinary differential equations. The Euler method often serves as the basis to construct more complex
+                 methods.
+                 The Euler method is named after Leonhard Euler
 
-               The growth rate of species is depending on their population. The rate is increased by birth and food
-               supply causes the species to live, and decreased by death, overcrowded, etc.….
 
-               Consider two species that exist together and interact as an example such as wolves and deer, shark and
-               food fish, etc... Vito Volterra, an Italian mathematician, formulated a predator-prey system model.
 
-                   Let the prey population denoted by () .
-                                                     Ft
-                                                         Gt
-                   Let the predator population denoted by () .
 
-                         Ft
-               For each  () and  ()Gt , we have a reproductive rate which denoted by r  and r for prey and predator
-                                                                                     F       G
-               respectively.
-               Therefore, that will imply to:
 
-                                 ()
-                       F′ =  r Ft
-                      
-                             F
-                      
-                                 ()
-                        G′ =  r Gt
-                             G
-               Let assume there is absence of predator, by using Malthusian model, the prey population will be given
-               by
-                       G =  0   ⇒  R   =  a &gt;  0
-                                    F
 
-               When there are predator activities,  then,  and the decrease in the reproductive rate  would also be
-               proportional to  ()Gt .
 
-                               −
-                       R   =  a bG      , a  b &gt;  0
-                         F
-               In the absence of prey, by using Malthusian model, the predator population will be given by
 
-                       F =  0
 
-                       →   R   = −&lt;   0
-                                  c
-                             G</code></pre>
+
+
+
+
+
+                                                                            Leonhard Euler (1707−1783)
+
+
+                         xy
+                 y′ =  f  (, )       ( yx  ) =  y
+                                       0     0
+                                       −
+                 The setting size: h =  b a  &gt;  0 ;   k ∈     
+                                       k
+                        Then,     x =
+                                       a
+                                   0
+                                  x =  x + =   ah
+                                           h
+                                                 +
+                                   1    0
+                                  x =  x    +  h =  a kh
+                                                   +
+                                   k    k  1 −
+                    Last point    x =  a kh =  b
+                                         +
+                                   k
+                 By the definition of the derivative:
+                                           (
+                                                    yx
+                                                  −
+                                  ( )
+                                                       k
+                                 ′
+                                yx  k  ≈  yx k  1 +  ) ( )
+                                                 h
+                                         y    −  y
+                                       ≈  k  1 +  k
+                                             h
+                                           (
+                                       =  fx k  , y k ) : slope</code></pre>
      	</div>
     
      </div>

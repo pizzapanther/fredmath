@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1530 - DE Solution</title>
+        <title>Page 1530 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1530 - DE Solution</div>
+        <div id="content-top1">Page 1530 - ODE Solution Manual</div>
         <div id="content-top2">P. 1530</div>
      </div>
      <div id="content-middle">
@@ -155,85 +155,78 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1516 | S O LU TI O N
 
 
+          Exercise
 
-             b)  Given:  R = 2 Ω    R =  5 Ω   C = 10 − 4  f  L = 1 H
-                          1          2
+          Consider the given circuit below with all initial conditions are zero:
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             V  ( ) s
+             a)  Find the transfer function of   0
+                                                ( )
+                                             Vs
+                                               i
+             b)  Solve the transfer function under the conditions  R =  2 Ω  R = 5 Ω  C = 10 − 4  f  L = 1 H
+                                                                 1          2
+             c)  Find the transfer function in function in time.
+
+          Solution
+
+                                     ( ) sL Is+
+             a)  V s        ( ) s =  R Is      ( )
+                    ( ) V−
+                  i       0        1
+                                = ( R +  sL ) ( ) s
+                                            I
+                                    1
+                        V  ( ) s  V  ( ) s
+                 Is      0     +  0
+                   ( ) =
+                          R        1
+                           2      s C
+                                 
+                       =     1  +  s   CV 0  ( ) s
+                                  
+                          R 2    
+                           +
+                          1 s  RC 
+                       =      2      V 0  ( ) s
+                            R 2   
+
+                                                         )
+                 V  ( ) s −  V  ( ) s =  1  ( R +  sL ) ( 1 s+  R C V  ( ) s
+                  i       0      R     1               2    0
+                                   2
+                             1                       
+                 V  ( ) s =    1+  ( R +  sL ) ( 1 s+  R C V  ( ) s
+                                                     )
+                  i          R    1                2    0
+                              2                      
+                         R +  ( R +  sL ) ( 1 s+    R C )
+                       =  2     1              2   V   ( ) s
+                                     R               0
+                                      2
+
+                         V
                     ( ) =
-                 Hs        1              L  s +  R 2
-                         RLC         RR C +       L  R +  R
-                           1    s +  2  12       s +  1    2
-                                       R LC          R LC
-                                         1             1
-                                            s
-                       =    1                 + 5
-                         2 10 −  4  s +  2  10 −  3 +  1   s +  7
-                          ×
-                                        ×
-                                                    ×
-                                      2 10  −  4   2 10 −  4
-                                           s
-                       = 10 4                + 5
-                          2  s +×      3 (  +  − 3 ) s + × 10 4
-                              2
-                                                      7
-                                  5 10 1 10
-                                                      2
-                                          s
-                       = 5 10 3             + 5
-                          ×
-                                      (
-                                 2
-                                                  7
-                                        +
-                                s +  5 1 10 3 ) s +×  10 4
-                                                  2
-                                           s
-                       = ( 5 10 3 )          + 5
-                           ×
-                                                     ×
-                                  s +  2  ( 5 1001 s + )  35 10 3
-                       = ( 5 10 3 )       s +  5
-                           ×
-                                                 ×
-                                  s +  2  5005s +  35 10 3
-             c)   H  ( ) s = ( 5 10 3 )    s + 5
-                           ×
-                                  s +  2  5005s +  35 10 3
-                                                  ×
-
-                                   −  5005 ±  24,910,025
-                                s =
-                                             2
-                                          ±
-                                 ≈  −  5005 4991
-                                         2
-                                    − 4,998
-                                 ≈  
-                                      − 7
-
-                                         s +
-                       = ( 5 10 3 ) (s +  4,998 5  ) 7
-                           ×
-                                           )(s +
-                       =  ( 5 10 3   )  A  +  B   
-                           ×
-                                   s +  4,998  s +  7  
-                                       +
-                                    AB =   1
-                                
-                                 7A +  4,998 B =  5
-                                   ∆  =  4,991 ∆   =  4,993 ∆    =  −  2
-                                                 A            B
-                                    4,993           2
-                                A  =        B = −
-                                    4,991         4,991
-
-
-                 Hs      ( 5 10 3   )  4,993  1  −   2    1   
-                    ( ) =
-                           ×
-                                   4,991 s +  4,998  4,991 s +  7  </code></pre>
+                 Hs       0
+                         V
+                           i
+                                     R
+                        =              2
+                          R +  ( R +  sL ) ( 1 s+  R C )
+                           2     1               2</code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 139 - Differential Book</title>
+        <title>Page 139 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 139 - Differential Book</div>
+        <div id="content-top1">Page 139 - ODE Book</div>
         <div id="content-top2">P. 139</div>
      </div>
      <div id="content-middle">
@@ -152,66 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>124 | 1.8 - B a si c  E l e c t r i c a l  C i r c u i t
-
-          24.  A circuit containing an electromotive force, a capacitor with a capacitance of C farads (F), and a
-                                                                                               Q
-               resistor with a resistance of R ohms ( ) . The voltage drop across the capacitor is   , where Q is
-                                                   Ω
-                                                                                               C
-               the charge (in coulombs), so in this case Kirchhoff’s Law gives
-                                               Q
-                                          RI +    =  E ( ) t
-                                               C
-                       dQ                   dQ    1
-                                                          ( )
-               But  I =    , so we have   R     +   Q =  Et
-                        dt                   dt   C
-               Find the charge and the current at time t
-
-                a)  Suppose the resistance is 5 Ω , the capacitance is 0.05 F, a
-                    battery gives voltage of 60 V and initial charge is  ( ) 0Q  = 0  C
-
-                b)  Suppose the resistance is  2 Ω , the capacitance is 0.01 F,  ( ) 10sin60t=   and initial charge
-                                                                            Et
-                    is  ( ) 0Q  =  0  C
+    <pre style="white-space:pre-line"><code>126 | 1. 7 - M od e l i ng P opu l a t i o n G r ow t h
 
 
-          25.  A heart pacemaker consists of a switch, a battery voltage E , a capacitor with constant capacitance
-                                                                       0
-               C, and the heart as a resistor with constant resistance R. When the switch is closed, the capacitor
-               charges; when the switch is open, the capacitor discharges, sending an electrical stimulus to the
-               heart. During the time the heart is being stimulated, the voltage E across the heart satisfies the
-               linear differential equation
+                     =  KrP (K −  P )
 
-                                       dE  = −  1  E
-                                       dt     RC
-               Solve the DE, subject to  ( ) 4E  =  E
-                                                0
 
-          26.  A 30−volt electromotive force is applied to an LR-series circuit in which the inductance is 0.1 henry
-               and the resistance is 50 ohms.
-                 a)  Find the current  ( ) ti   if  ( ) 0i  =  0
-                 b)  Determine the current as t →∞
+                                          r
+            P′ =  kP (M −  P ) where k =  K   &  M =  K
 
-                                             Et
-                 c)  Solve the equation when  ( ) =  E  sin tω  and  ( ) 0i  = i
-                                                      0                  0
+           The logistic equation can be solved by separation of variables
 
-          27.  A 100−volt electromotive force is applied to an RC-series circuit in which the resistance is 200
+                   dP  =  rP ( 1−  P )
+                   dt          K
+                     P ∫  ( 1− ∫  dP K )  =  rdt       P ( 1−  K )  =  P (K −  P )  =  P  +  K −  P
+                                                           1
+                                                                      K
+                                                                              1
+                                                                                    1
+                           P
+                                                             P
+                   ∫∫        K −  P  =  ∫ rdt
+                     dP
+                              dP
+                         +
+                      P
+                   ln P −  ln K −  P =  rt C
+                                       +
+                   ln   P   =  rt C
+                                 +
+                      K −  P
+                     P   = e rt C
+                              +
+                   K −  P
+                     P   =  Ae
+                              rt
+                   K −  P
+                                           P
+                          t =  0 ⇒   A =    0
+                                         K −  P
+                                              0
+                                   rt
+                           rt
+                   P =  KAe −  PAe
+                                     rt
+                       +
+                   P ( 1 Ae rt )  =  KAe
+                   P =  KAe rt
+                       1 Ae+  rt
 
-               ohms and the capacitance is 10 − 4  farad.
-               a)  Find the charge  ( ) tq   if  ( ) 0q  =  0
+                     =    KA
+                       e − rt  +  A
 
-               b)  Find the current as  ( ) t
-                                     i
+                              P
+                          K  K − 0 P
 
-          28.  A 200−volt electromotive force is applied to an RC-series circuit in which the resistance is 1000
+                     =          P 0
+                       e − rt  +  0
+                              K −  P
+                                    0
+                              KP
+                     =           0
+                       ( K −  Pe  − rt  +  P 0
+                               )
+                              0
 
-               ohms and the capacitance is 5 10×  − 6   farad.
-                                   q
-               a)  Find the charge  ( ) t  if  ( ) 0i  =  0.4
-               b)  Determine the charge as t → ∞</code></pre>
+                            KP                                            MP
+            P ( ) t =          0         )             or  P ( ) t =          0    kMt
+                                                                                )
+                               )
+                   P +  ( K −  P e −  ( rt t−  0                  P +  ( M −  P e −
+                    0         0                                     0         0</code></pre>
      	</div>
     
      </div>

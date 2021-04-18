@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2166 - DE Solution</title>
+        <title>Page 2166 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2166 - DE Solution</div>
+        <div id="content-top1">Page 2166 - ODE Solution Manual</div>
         <div id="content-top2">P. 2166</div>
      </div>
      <div id="content-middle">
@@ -155,75 +155,76 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>2148 | S O LU TI O N
 
 
-          Exercise
+
+              ∑  ∞  na x n−  1  +  ∑  ∞  2a n− 1 x n−  1  =  0
+                   2
+                      n
+              n= 0             n= 1
+               ∞               ∞
+              ∑   na x  n−  1  +  ∑  2a n− 1 x n−  1  =  0
+                   2
+                      n
+              n= 1             n= 1
+               ∞
+              ∑   ( na +  2  n  2a n− 1 ) x n− 1  =  0
 
 
-                                                          ( +
-          Find the Frobenius series solutions of  2x y′′ + 2  7xx  ) 1 y′ −  3y =  0
-          Solution
+              n= 1
 
-              y′′ +  7 x + 1  y′ −  3  y =  0
-                  2 x        2x 2
+              na +  2  2a   =  0
+                 n      n− 1
 
-                             px
-             That implies to  ( ) =  7 x + 1  and  ( ) = −  3  .
-                                                qx
-                                    2 x                  2x 2
-                  p =  lim   xp ( ) x
-                   0   x→ 0
-                                   1
-                                x +
-                     =  7  lim   x ( )
-                       2 x→ 0     x
-                     =  7  lim  ( x +  ) 1
-                       2 x→ 0
+              a = −  2  a
+               n     n 2  n− 1
 
-                     =  7
-                       2
-                            2
-                 q =   lim   xq ( ) x
-                   0  x→  0
-                              3
-                     = −  lim
-                        x→  0  2
-                         3
-                     = −
-                         2
 
-                                             7
-                                               −
-                                                1 r −
-             The indicial equation is:  r +  2  ( )   3  =  r +  2  5 r −  3  =  0
-                                                      2
-                                                               2
-                                             2
-                                                                    2
-                           2
-                                   3 0 →
-                        2 r + 5r −=           r = −  , 3  1
-                                                      2
-             The two possible Frobenius series solutions are then of the forms
-                               ∞                              ∞
-                 y  ( ) x =  x − 3 ∑  a x n  and  y  ( ) x =  x 1/2 ∑  b x n
-                  1                n             2                n
-                              n= 0                           n= 0
-                   ∞
-                 ∑        nr +
-              y =     ax
-                       n
-                  n= 0
-                   ∞
-                  ∑              nr +− 1
-                            )
-              y′ =    (n ra x
-                         +
-                              n
-                  n= 0
-                    ∞
-                  ∑                        nr+− 2
-              y′′ =    (nr nr+  )( +−  ) 1 a x
-                                         n
-                   n= 0</code></pre>
+                 n   1 →=  a =  −  2a
+                            1      0
+
+                 n   2  →=   a =  −  2  a =  a =  2 2  a
+                            2     2 2  1   0   2 2  0
+
+                 n      3 →=   a =  −  2 a =  −  2 3  a =  −  2 a
+                            3     9  2    (23⋅  ) 2  0   9  0
+
+
+                 n   4 →=  a =  −  2  a =  2 4  a
+                            4      2  3       2  0
+                                  4       ( )
+                                           4!
+                                 
+                               
+
+                                 ( ) 12−  n n
+                           a =            a
+                            n         2    0
+                                  ( ) !n
+
+
+                          ∞       n n                                   ∞
+                                   2
+                              −
+                                                                                         )
+              y  (x =    ∑   ( ) 1    x n                   y  ( ) x =  x r 1 ∑ ax n  ( a = 1
+                   ) 1+
+               1               ( ) ! n  2                    1               n       0
+                         n= 1                                          n= 0
+                                   ∞                                               ∞
+                                          n
+                                                                                         n
+              y  ( ) x =  y  ( )lnx  x + ∑ c x              y  ( ) x =  y  ( )lnx  x +  x r 1 ∑ cx
+               2        1               n                    2       1                 n
+                                  n= 0                                            n= 0
+              xy′′ +  y′ +  2y =  0
+                2    2      2
+                            ∞          ′′            ∞         ′               ∞       
+                                                                      
+               
+              x y  ( )lnx  x +  ∑  c x n     +      y  ( )lnx  x +  ∑  c x n     +  2 y  ( )lnx  x +  ∑  c x n     =  0
+                                                                      
+               
+                 1               n        1              n          1              n   
+                           n= 0                     n= 0                      n= 0     </code></pre>
      	</div>
     
      </div>

@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 2147 - DE Solution</title>
+        <title>Page 2147 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 2147 - DE Solution</div>
+        <div id="content-top1">Page 2147 - ODE Solution Manual</div>
         <div id="content-top2">P. 2147</div>
      </div>
      <div id="content-middle">
@@ -156,64 +156,68 @@ function MM_swapImage() { //v3.0
 
 
 
-                            r =  1
-                                2
-                            b = −       1      b
-                             n      (   1 )      n− 1
-                                            2n
-                                   2 n +  2  ( )
-                                = −    1    b
-                                      2
-                                   4n +  2n  n− 1
-                        n = 1 →   b = − 1 b
-                                   1    6  0
-
-                        n   2 →=  b =  −  1  b =  1  b
-                                   2     20  1   12 0  0
-                        n   3 →=  b =  −  1  b =  −  1  b
-                                   3     42  2    5040   0
-                                           
-
-                         x
-                     y  () bx    1/2     1−  1  x +  1  x −  2  1  x +  3     
-                            =
-                      2        0        6    120      5,040        
-
-                     yx     a    1−   1  x +  1  x −  2  1  x +  3  1  x −  4      +  bx 1/2     1−  1 x +  1  x −  2  1  x +  3      
-                      () =
-                             0    2    24      720      30,240           0        6    120      5,040        
-
-
-                 Exercise
-
-
-                 Find the Frobenius series solutions of  6x y′′ +  2  7xy′ −  ( x +  2  2 y =  )  0
-
-                 Solution
-
-                     1 6x y′′ +  2  1 7xy′ −  1 ( x +  2  2 y =  )  0
-                     6         6       6
-                     x y′′ +  2  7  xy′ −  1 ( x +  2  2 y =  )  0
-                            6      6
-
-                     y′′ +  7  y′ −  1  ( x +  2  2 y =  )  0
-                         6x      6x 2
-                                                                       )
-                    That implies to  ( ) =  7   and  ( ) =  qx  −  1  ( x +  2  2 .
                                     px
-                                           6x               6x 2
-
+                    That implies to  ( ) =  1   and  ( ) = qx  −  1  −  1
+                                           2x               2x 2
                      p =   lim   xp ( ) x
                       0   x→  0
 
-                        =  lim   x  7
-                          x→  0  6x
+                        =  lim   x  1
+                          x→  0  2x
+                                1
+                        =  lim
+                          x→  0  2
+                        =  1
+                           2
 
-                        =  7
-                           6
                                 2
                      q =   lim   xq ( ) x
-                      0   x→ 0</code></pre>
+                      0   x→ 0
+
+                                            
+                        =  lim   x 2     −  1  −  1
+                                            
+                          x→  0     2x 2   
+                                     1
+                        =  lim   x 2 ( − −  x 2 )
+                          x→  0      2
+                            1
+                        = −
+                            2
+                    The indicial equation is:  ( rr −  ) 1 +  1 r −  1  r − =  2  1 r −  1  =  0
+                                                        2    2        2    2
+
+                                →   r  = 1, −  1
+                                            2
+
+                    The two possible Frobenius series solutions are then of the forms
+                                    ∞                                ∞
+                         y  ( ) x =  x 1 ∑  a x n  and  y  ( ) x =  x − 1/2 ∑  b x n
+                          1              n             2                 n
+                                   n= 0                             n= 0
+                          ∞
+                         ∑       nr
+                                  +
+                     y =     ax
+                              n
+                         n= 0
+                          ∞
+                         ∑              nr +− 1
+                                   )
+                                +
+                     y′ =     (n ra x
+                                      n
+                         n= 0
+                           ∞
+                         ∑                        nr+− 2
+                     y′′ =    (nr nr+  )( +−  ) 1 a x
+                                                n
+                          n= 0
+
+
+                       2
+                     2x y′′ +  xy′ −  ( 12x 2 ) y =  0
+                                    +</code></pre>
      	</div>
     
      </div>

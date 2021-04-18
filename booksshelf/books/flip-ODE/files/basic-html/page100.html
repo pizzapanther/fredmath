@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 100 - Differential Book</title>
+        <title>Page 100 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 100 - Differential Book</div>
+        <div id="content-top1">Page 100 - ODE Book</div>
         <div id="content-top2">P. 100</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>Section 1.6 – Exact Differential Equations
+    <pre style="white-space:pre-line"><code>Section 1.5 – Mixing Problems
 
 
 
-               A class of equations known as exact equations for which there is also a well-defined method of solution
-                                                   )
-                                       )
-                               M
-               The expression  ( , x  y dx +  N ( , x  y dy  is called an exact differential form.
+
+                 A typical mixing problem investigates the behavior of a mixed solution of some substance.
+                 Typically, the solution is being mixed in a tank. A solution of a given concentration enters the
+                 mixture at some fixed rate and is thoroughly mixed in the tank. The tank is also being drained at
+                 some fixed rate.
+
+                 The physical representation of the rate of change:
+
+                                dx  = rate of change
+                                dt
+                                  = rate in − rate out
 
 
-               1.6-1  Theorem
+                 This is referred to as a balance law.
 
-               Let the function M, N,  M  and N , where  M       and N are partial derivatives, be continuous in the
-                                         y        x           y        x
+                 The rate in and out is given by:
 
-                                          x
-               rectangular region  R α &lt; &lt;β   ,  γ &lt;  y &lt; δ  then
-                                    :
-                       M  ( ,x y ) N+  ( ,x y y′ =  )  0
+                 Rate = Volume Rate (gal/min) x Concentration (lb./gal)
 
-                                                                                )
-                                                                    )
-               Is an exact differential equation in R, iff   M  ( ,x y =  N  ( ,x y
-                                                              y           x
-               At each point in R. That is, there exists a function ψ  satisfying
-                                                                                            )
-                                                                                                        )
-                                                                       )
-                       ψ   ( ,x y =  )  M  ( ,x y ) and  ψ  ( ,x y =  )  N  ( ,x y    Iff  M  ( ,x y =  N  ( ,x y
-                         x                            y                               y           x
-                                           )
-                       ψ  ( ,x y =  )  ∫ M  ( ,x y dx
+
+                 Example 1
+
+                 The tank initially holds 100 gal of pure water. At time  t = , a solution containing 2 lb. of salt per
+                                                                          0
+                 gallon begins to enter the tank at the rate of 3 gallons per minute. At the same time a drain is opened
+                 at the bottom of the tank so that the volume of solution in the tank remains constant.
+                 How much salt is in the tank after 60 min?
 
 
 
-               Example 1
 
 
-               Solve the differential equation:     2x +  y +  2  2xyy′ =  0
-
-               Solution
-
-                    ∂ψ  =  M =  2x +  y 2  ⇒  M  =  2y
-                     x ∂                       y
-
-                    ∂ψ  =  N =  2xy ⇒   N =   2y
-                     y ∂                  x
-                   ⇒  M    =  N
-                         y     x
-                    ∂ψ  =  2x +  y
-                               2
-                     x ∂
-
-                   ψ=   ∫ ( 2x +  y 2 ) dx
 
 
-                     =  x +  2  xy +  2  h ( ) y
 
 
-                                                                                  hy
-                                                                                   ′
-                   ψ   =  2xy h′  +  ( ) y =  2xy ⇒  h′  ( ) y =  0      Integrate  ( )
-                     y
-                              ⇒   hy
-                                   ( ) C=</code></pre>
+
+
+
+
+
+
+                 What will be the eventual salt content in the tank?
+
+                 Solution
+                      ( ):number of pounds of salt in the tank after t min.
+                     xt
+                    Volume:  ( ) 100 (3 3)Vt =  +  −  t =  100
+                                                    ()
+                                                           t
+                    Concentration at time t:  ()ct =  xt  =  x ()      lb ga
+                                                                    l
+                                                                /
+                                                  Vt     100
+                                                    ( )
+                    Rate in = Volume Rate x Concentration
+                            = 3  gal  ×  2  lb
+                               min      gal</code></pre>
      	</div>
     
      </div>

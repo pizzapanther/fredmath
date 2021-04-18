@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1326 - DE Solution</title>
+        <title>Page 1326 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1326 - DE Solution</div>
+        <div id="content-top1">Page 1326 - ODE Solution Manual</div>
         <div id="content-top2">P. 1326</div>
      </div>
      <div id="content-middle">
@@ -156,68 +156,70 @@ function MM_swapImage() { //v3.0
 
 
 
-                                                          
-                       (1 st )sint t −  cost  2s (cost +  s sin  ) t    st  ∞
-                        −
-              Fs                         −                  e   −
-               () = 
-                           s +  2  1         (  2   ) 2         0
-                                              s +  1      
-                                                          
-                  =    2s
-                    ( s + 1 ) 2
-                      2
 
+              ∫  cosbt e −  st dt =  1 −  b e  st  sinbt −  b s 2  e −  st  cosbt −  b ∫  s 2  e −  st cosbt dt
+
+                                                             2
+
+
+                 ( b +  2  s 2 ) ∫ cosb et  −  st dt =  (b sinbts cosbt )e −  st
+                                                   −
+
+
+                 ∫  cos  e −  st dt =  b sinbt − s cosbt −  2  e  st
+                       bt
+                                        2
+                                       s +
+                                           b
+
+              Fs     b sinbt −  s cosbt − st    ∞
+               () =
+                                     e
+                          2
+                         s +  b 2          0
+
+                   =    s
+                      2
+                     s +  b 2
 
 
 
           Exercise
 
-                                                                                ( ) t=
-          Use Definition of Laplace transform to find the Laplace transform of   f t  cost
+
+          Use Definition of Laplace transform to find the Laplace transform of    ( ) t = e t+ 7
+                                                                              f
           Solution
 
 
-                              t
-              F ( ) = ∫ 0 ∞ t  cos  e − st dt
-                s
-
-
-                                               t
-                                           ∫ cos  dt
-
-                            te − st          sint
-                                − st
-                              )
-                          −
-                        (1 st e             − cost
-                                 )
-                          2
-                        ( st − 2s e − st
-
-
-                 ∫  t cost e −  st dt =  (t sint +  (1 st )cost e −  st  −  s 2 ∫  t cost e −  st dt +  2s ∫  cost e −  st dt
-                                                     )
-                                            −
+              F () s = ∫ 0 ∞ e t+  7 −  e  st dt
 
 
 
-                                               t
-                                          ∫ cos  dt
-
-                              e − st        sint
-
-                            − se − st      − cost
-                              2 − st
-                             se
-
-                     ∫  cost e −  st dt =  ( sint −  s cost )e −  st  −  s 2 ∫  cost e −  st dt
+                             (s
+                           e
+                  = ∫ 0 ∞ e 7 −−  ) 1 t dt
 
 
+                             (s
+                                                                0
+                  = −  e 7  e −−  ) 1 t    ∞         e −∞  =  0 e = 1
+                      s − 1         0
+                  =  e 7
+                    s − 1
 
 
-                     ( s +  2  1 ) ∫ cost e −  st dt =  ( sint s cost )e −  st
-                                                 −</code></pre>
+          Exercise
+
+                                                                                       25
+                                                                                        t
+          Use Definition of Laplace transform to find the Laplace transform of    ( ) t =  e −−
+                                                                              f
+          Solution
+                     ∫ ∞ e −−     st dt
+                           25 −
+                            t
+              F () s =  0      e</code></pre>
      	</div>
     
      </div>

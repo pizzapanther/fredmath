@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 367 - Differential Book</title>
+        <title>Page 367 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 367 - Differential Book</div>
+        <div id="content-top1">Page 367 - ODE Book</div>
         <div id="content-top2">P. 367</div>
      </div>
      <div id="content-middle">
@@ -152,23 +152,70 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>352 | 4.1 - I nt r oduc t i on  &  R e vi e w  o f  P ow e r  S e r i e s
+    <pre style="white-space:pre-line"><code>354 | 3. 6 - P l an a r  S y s t em s
 
-          4.1-11    Integrating Power Series
 
-          Theorem
-                                           ∞
-                                          ∑       (       ) n
-          Suppose the power series  () =        a n  x −  x 0   converges for  x x−  0  &lt;  , R  R &gt;  0
-                                   fx
-                                          n= 0
+          3.6-9  Theorem
 
-                                  ∞
-                 ∫  f ()dx =  C + ∑    a n ( xx 0 1 ) n+ 1
-                                            −
-                      x
-                                             n+
-                                 n= 0</code></pre>
+
+          Suppose that  A is a  22 matrix with complex conjugate eigenvalues  λ and  λ . Suppose that V is an
+                                ×
+          eigenvector associated with  λ . Then the general solution to the system  x′ =  Ax is
+
+
+                                x () t = CV e  t λ  + C V e  t λ
+                                       11         2 2
+
+
+          Example 5
+
+
+          Find the current  I and  I for the circuit below, where  R = 1 Ω ,  L = 1 henry , and  C =  5  farad .
+                            1       2                                                              4
+          Assume that  I  (0) 5A and  I  (0) 1A.
+                                            =
+                            =
+                        1              2
+                                                       R     I     I 2
+
+
+                                                             I 1
+
+                                                              L      C
+
+
+
+
+
+
+
+          Solution
+
+             Kirchhoff’s current law:  I =  I +  I
+                                          1    2
+
+             Since there is no voltage:   0 =  RI +  LI′   ⇒  LI′ =  −  RI =  −  R I + (  I  )
+                                                   1        1               1   2
+                 I′ =  −  R  I −  R  I  ( ) 1
+                  1     L  1   L  2
+
+             Kirchhoff’s law applied to the large loop:
+
+              0 =  RI +  1  Q ⇒  1  Q +  R I +  (  I  ) =  0
+                      C          C         1    2
+
+              1  Q′  RI′ +  (  I′ +  )  =  0
+              C         1    2
+              1  I +  RI′  (  I′ +  )  =  0
+              C  2       1   2
+              RI′   −  1  I −  RI′ =
+                2     C  2     1
+                             (
+              I′ = −  1  I −−   R  I −  R  I  )
+               2     RC  2      L  1   L  2
+
+                 =  R  I +  ( R  −  1  ) I  ( ) 2
+                   L  1    L   RC    2</code></pre>
      	</div>
     
      </div>

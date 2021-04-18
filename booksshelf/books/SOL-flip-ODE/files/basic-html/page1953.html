@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1953 - DE Solution</title>
+        <title>Page 1953 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1953 - DE Solution</div>
+        <div id="content-top1">Page 1953 - ODE Solution Manual</div>
         <div id="content-top2">P. 1953</div>
      </div>
      <div id="content-middle">
@@ -155,23 +155,20 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>4. 2 −   S e r i e s   S ol ut i on s  n e a r  O r di n a r y P oi nt s  | 1935
 
 
-                                    
-                          =  a    1 
-                             0    1−  x 
-                                   4 
-                          =  a  (  4  )
-                             0 4 −  x
-                            − 4a
-                          =     0
-                             x − 4 √
+                         ∫∫        1 x
+                            dy
+                                    dx
+                               =
+                             y
+                                    +
+                         ln ( ) y =  ln ( x +  ) 1 +  C ⇒  y =  Cx  ) 1
+                                                          ( +
+                    With  ( ) 0 =  C (0 +  ) 1 =  a 0  →  C =  a
+                          y
+                                                           0
+                        ⇒     y =  a  ( x +  ) 1
+                                  0
 
-
-                 Exercise
-
-                                               2
-                                                         x
-                 Find a power series solution.   x y′ =  y −− 1
-                 Solution
                              ∞
                             ∑        n
                       ( ) =
@@ -182,50 +179,52 @@ function MM_swapImage() { //v3.0
                      y′ ( ) x =  na x     =      (n +  ) 1 a n+ 1 x
                                     n
                              n= 1            n= 0
-                      2
-                               x
-                     x y′ =  y −−  1
-                         ∞                           ∞
-                                        n
-                                                            n
-                     x 2 ∑  (n +  ) 1 a n+ 1 x = − −+ ∑  ax
-                                                1
-                                             x
-                                                          n
-                        n= 0                        n= 0
-                      ∞                              ∞
-                     ∑   (n +  ) 1 a n+ 1 x n+ 2  = − x −+ ∑  ax
-                                                            n
-                                                1
-                                                         n
-                     n= 0                           n= 0
-                      ∞                           ∞
-                     ∑   (n −  ) 1 a n− 1 x = − −+ ∑  ax
-                                     n
-                                                          n
-                                              1
-                                           x
-                                                       n
-                     n= 2                        n= 0
-                      ∞                                      ∞
-                                                       1 ∑
-                     ∑   (n −  ) 1 a n− 1 x = − −+  0  ax +     a x
-                                     n
-                                                                    n
-                                           x
-                                              1 a +
-                                                                  n
-                     n= 2                                   n= 2
-                             1 a +
-                        − x −+       ax =  0
-                                  0    1
-                        a +  ax =  1 x ⇒       a =  ; 1   a = 1
-                                     +
-                          0    1                0       1
-                     (n −  ) 1 a  =  a
-                             n− 1   n
-                        a =   a = 1
-                          2    1</code></pre>
+                          )
+                     (1 x y′ −  y =  0
+                       +
+                             ∞                   ∞
+                     (1 x+  ) ∑  (n +  ) 1 a n+ 1 ∑  x −  n  ax =  n  n  0
+
+                            n= 0                n= 0
+                      ∞                   ∞                      ∞
+
+                         (n +  ) 1 a n+ ∑  1 ∑  x +  n  (n +  ) 1 a n+  1 x n+ 1 −  ∑  a x =  n  n  0
+                     n= 0                n= 0                   n= 0
+                      ∞                   ∞             ∞
+                     ∑   (n +  ) 1 a n+ 1 ∑  x +  n  nax −  n ∑  n  ax =  n  n  0
+
+
+                     n= 0                 n= 1         n= 0
+
+                     ∑  ∞  (n +  ) 1 a n+ 1 ∑  x +  n  ∞  nax −  n ∑  n  ∞  ax =  n  n  0
+
+
+                     n= 0                n= 0          n= 0
+                      ∞
+                     ∑    n     ) 1 a n+ 1 x +  n  nax −  n  n  ax n )  =  0
+                          (
+                           ( +
+                                                     n
+                     n= 0
+                                (n +  ) 1 a n+ 1  +  (n −  ) 1 a =  n  0
+
+                                            −
+                                →  a    = 1 n  a  ;  n ≥ 0
+
+                                    n+ 1   n + 1 n
+                                                         0
+                          a =  a              a =  0a =             a =  − 3 1 a =  0
+                                                                     3
+                                                      1
+                                                                             2
+                                0
+                           1
+                                               2
+                          a =  0     for   n ≥  2
+                            n
+                     y ( ) x =  a +  ax
+                                  1
+                             0</code></pre>
      	</div>
     
      </div>

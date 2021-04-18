@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1420 - DE Solution</title>
+        <title>Page 1420 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1420 - DE Solution</div>
+        <div id="content-top1">Page 1420 - ODE Solution Manual</div>
         <div id="content-top2">P. 1420</div>
      </div>
      <div id="content-middle">
@@ -155,77 +155,74 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1406 | S O LU TI O N
 
 
+                                                                                         3
+                 25 =  As +  4  4As +  3  5As +  2  Bs +  3  4Bs +  2  5Bs Cs + +  2  4Cs +  5C +  Ds +  4  Es
+
+                  s 4    AD =    0      →   D =  −  11
+                            +
+                                                  5
+                   3                             24
+                           +
+                   s   4AB +    E =  0  →   E =  −
+                                                  5
+                 
+                   2                             11
+                               +
+                  s   5A +  4B C =  0    →   A =  5
+                 
+                   s    5B +  4C =  0    →   B =  −  4
+                   0
+                   s     5C =  25        →   C =  5
+
+
+              F ( ) s =  111  −  4  +  5  −  1  11s + 24
+                      5 s  s 2   s 3  5 (s +  ) 2  2  − 45
+                                                   +
+
+                   = 111  −  4  +  5  −  1 11 (s +  ) 2 − 22 +  24
+                     5 s   s 2  s 3  5     (s +  ) 2  2  + 1
+
+
+
+                   =  111  −  4  +  5  −  1 11 (s +  ) 2 +  2
+                     5 s   s 2  s 3  5  (s +  ) 2  2  +  1
+
+                   =  111  −  4  +  5  −  11  s +  2  −  2  1
+                     5 s   s 2  s 3   5  (s +  ) 2  2  +  1  5  (s +  ) 2  2  +  1
+
+
+
+
+              £  −  1 {F s      −  1        111  −  4  +  5  −  11  s +  2  −  2  1      
+                      ( )} £=
+                                      5 s  s 2  s 3  5  (s +  ) 2  2  +  1  5 (s +  ) 2  2  +  1  
+
+              f  ( ) t =  11 − 4t +  5 t −  2 11 e − 2t  cost −  2 sint
+                     5        2     5             5
+
+
           Exercise
 
-          Solve using the Laplace transform:     y′ +  4y = cos ,  y  0 () =  0
-                                                           t
+
+          Find the inverse Laplace transform of   F ( ) s =  5e −  6s  − 3e −  11s
+                                                         (s +  ) 2 s +  (  2  9 )
           Solution
-              £  ( y′ +  4  ) y £  (cost )
-                          =
 
-              sYs    y (0) 4 () = Ys  s                  y (0) =  0
-                () −
-                          +
-                                     2
-                                    s + 1
-              (s +  ) 4 Ys =  ()  s
-                            2
-                           s +  1
-             Ys            s
-               () =
-                    (s +  ) 4 s +  (  2  1 )
 
-                                                +
-                           s        =  A   +  Bs C
+              F ( ) s = ( 5e −  6s  − 3e −  11s )  1
+                                      (s +  ) 2 s +  (  2  9 )
+                     (  −  6s   −  11s )
+                   =  5e    − 3e      G ( ) s
+
+                                                 +
+              G ( ) s =     1       =   A   +  Bs C
                                                2
-                     (s +  ) 4 s +  (  2  1 )  s + 4  s + 1
-
-                                             +
-                                 +
-                     s =  As +  2  A Bs +  2  4Bs Cs +  4C
-                     s =  ( A Bs+  )  2  +  (4B C s+  ) +  A +  4C
-                          A +   B =  0
-                        
-                             +
-                         4BC =   1
-                        
-                         A +  4C =  0
-
-                         A =  −  4  B =  4  C =  1
-                              17       17       17
-
-             Ys     −  4  1   +  4   s   +  1   1
-               () =
-                      17 s +  4  17 2  1   17 2   1
-                                   s +
-                                             s +
-                                 1
-              y () t =  −  4  £  −  1 { } +  4  £  −  1     s      +  1  £   −  1     1    
-                     17         s +  4  17        s +  2  1  17     s +  2  1
-
-                  =  −  4 − 4t  +  4  cost +  1  sin   t
-                        e
-                      17       17       17
+                     (s +  ) 2 s +  (  2  9 )  s + 2  s +  9
 
 
-          Exercise
-
-          Solve using the Laplace transform:     y +  4y e − 4t ,  y ( ) 0 =
-                                                     = ′
-                                                                      2
-          Solution
-              £  {y′ +  4  } y £=  { }
-                                  4t
-                                −
-                               e
-                () −
-                                                            2
-              sYs    y (0) 4 () = Ys  1              y ( ) 0 =
-                          +
-                                    s +  4
-              (s +  4 Ys     1   +  2
-                   ) ( ) =
-                            s + 4</code></pre>
+                        1 =  As +  2  9A Bs +  2  2Bs Cs +  2C
+                                                 +
+                                     +</code></pre>
      	</div>
     
      </div>

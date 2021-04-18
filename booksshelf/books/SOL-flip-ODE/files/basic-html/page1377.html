@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1377 - DE Solution</title>
+        <title>Page 1377 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1377 - DE Solution</div>
+        <div id="content-top1">Page 1377 - ODE Solution Manual</div>
         <div id="content-top2">P. 1377</div>
      </div>
      <div id="content-middle">
@@ -152,77 +152,86 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3. 3 − I nve r s e   L a p l ac e T r an s f o r m  | 1363
+    <pre style="white-space:pre-line"><code>3. 2 − B a s i c P r o p er t i e s  o f   t h e L ap l ac e  T r an s f o r m  | 1363
 
 
+                     £  ( )() 4 £    ( ) ys =  ()  s
+                         y′
+                            s −
+                                               2
+                                              s +  4
+                     s £  ( ) ys −  ()  y (0) 4 £  ( ) ys =  ()  s
+                                       −
+                                                       2
+                                                      s +  4
+                    Let  ()Ys £=    ( )()ys , then
 
-                 Solution             Section 3.3 − Inverse Laplace Transform
-
-
-
-                 Exercise
-
-                 Find the inverse Laplace Transform of  ()Ys =  1
-                                                              3s + 2
-                 Solution
-
-
-                     Ys     1   1
+                     s Ys +−     Ys        s
+                        () 2 4 () =
+                                         2
+                                        s +  4
+                     (s − 4 Ys       s   − 2
+                           ) () =
+                                    2
+                                   s + 4
+                                               2
+                     Ys            s       −  s − 4
                       () =
-                            3 s +  2/ 3              Factor
-                     y () £    − 1    { 1  1 2/ 3 }
-                       t =
-                                  3 s +
-                         =  1  £   − 1 {  1  }
-                           3        s +  2/ 3
+                                   (
+                                     2
+                            (s −  ) 4 s +  4 )
+                         =    s −  2s −  ( 2 2  8  )
+                           (s −  ) 4 s +  4
 
 
-                             e
-                         =  1 − (2/3)t
-                           3
-
-
-                 Exercise
-
-
-                 Find the inverse Laplace Transform of  ()Ys =  2
-                                                              35s
-                                                               −
-                 Solution
-
-                      () = −
-                     Ys      2   1
-                              5s − 3
-                         = − 21
-                             5  s −  3
-                                  5
-                    Thus, by linearity;
-
-
-                       t
-                     y () = −  2  £   − 1       1      
-                             5           s −  3  
-                                          5 
-                         = − 2 e (3/5)t
-                             5
+                                2
+                                    s
+                                  (
+                         =   − 2s +−   8 )
+                                    2
+                           (s −  ) 4 s +  4
 
 
                  Exercise
 
+                 Transform the initial value problem into an algebraic equation involving £  ( ) . Solve the resulting
+                                                                                           y
+                 equation for the Laplace transform of y.
 
-                 Find the inverse Laplace Transform of  ()Ys =  1
-                                                               2
-                                                              s +  4
+                                                                                =
+                                                               (0) 1  and y′
+                                y′′ +  2y′ +  2y =  cos2 ; t  with y  =      (0) 0
                  Solution
+                     £  ( y′′ +  2y′ +  2ys = )() £  (cos2 ()t s
+                                                     )
 
-                      () =
-                     Ys     1   2
-                            2  s + 4
-                               2
-                       t
-                     y () =  1  £   − 1     2    
-                                      2
-                           2         s +  4</code></pre>
+                    Let  ()Ys £=    ( )()ys , then
+
+                      2
+                         ( ) sy−
+                                                  ( ) −
+                     s Ys       ( ) 0 −  y′ ( ) 0 +  ( 2 sYs  y ( )) 2Ys+  0  ( ) =  s
+                                                                         2
+                                                                        s +  4
+                      2
+                                     ( ) 22Ys− +
+                     s Ys        2sYs            ( ) =   s
+                         ( ) s−+
+                                                        2
+                                                       s + 4
+                                )
+                     ( s + 2s +  2 Ys      s   ++   2
+                       2
+                                   ( ) =
+                                                 s
+                                          2
+                                         s +  4
+                                       =  s +  s +  3  2s +  2  4s +  8
+                                                 2
+                                                s +  4
+                                       =  s +  3  2s +  2  5s +  8
+                                               2
+                                              s +  4</code></pre>
      	</div>
     
      </div>

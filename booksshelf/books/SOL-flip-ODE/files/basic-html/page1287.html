@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1287 - DE Solution</title>
+        <title>Page 1287 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1287 - DE Solution</div>
+        <div id="content-top1">Page 1287 - ODE Solution Manual</div>
         <div id="content-top2">P. 1287</div>
      </div>
      <div id="content-middle">
@@ -189,38 +189,39 @@ function MM_swapImage() { //v3.0
                  Consider the given initial value problem. Find the general solution then uses Runge-Kutta method
                  with step size  h =  0.05  to sketch solution with the given interval
 
-                                                                        ]
-                                         =
-                                y′ +  1  y e  t −  /10  cos ; t   y ( ) 0 =  0,  [0, 1
-                                     0 1
+                                y′ =  y − t  ; y ( ) 0 =  1 ,  [0,  ] 2
+                                                   2
                  Solution
-                     y′ +  1  y e  t −  /10 cost
-                              =
-                         10
-                             10 ∫  1  dt
-                          e       = e t /10
-                          ∫  e t /10 − t /10 cos d tt = ∫  cos d tt
-                                 e
+
+                     y′ −  y =  t −
+
+                            ∫ − dt
+                                      t −
+                             e    =  e
+                          ∫  −  t e  t −  dt =  (t +  ) 1 e  t −
 
 
-                                                     t
-                                                = sin
-                      ( ) t =  e  t −  /10 (sint + C )
-                      y
 
-                          y ( ) 0  = C =  0
+                                             )
+                      ( ) t =  y  e t ( (t +  ) 1 e  t −  +  C
 
-                                     t
-                     y ( ) et =  t −  /10 sin
 
+                                       t
+                                      e
+                          =  (t +  ) 1 +  C
+                                y ( ) 0 = 1 C =  1
+                                        +
+                                              2
+                                C  = −  1
+                                      2
+
+                                     e
+                     y ( ) (t= t  +  ) 1 −  1 t
+                                    2
 
                                 Euler Method
 
-                  t           Euler               Exact             Difference
-                 -------------------------------------------------------------
-                 0.000    0.0                      0                        0
-                 0.050    0.05000000           0.04972990         -0.00027010
-                 0.100    0.09943845           0.09884006         -0.00059839</code></pre>
+                     t                  Euler      Exact              Difference</code></pre>
      	</div>
     
      </div>

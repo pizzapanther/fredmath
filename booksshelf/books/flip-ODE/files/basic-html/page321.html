@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 321 - Differential Book</title>
+        <title>Page 321 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 321 - Differential Book</div>
+        <div id="content-top1">Page 321 - ODE Book</div>
         <div id="content-top2">P. 321</div>
      </div>
      <div id="content-middle">
@@ -152,71 +152,50 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>306 | 3.6 - P l a n a r  S y st e m s
-
-                 x′′ =   −  2x′ −  5y +  3
-                                                                 1
-          102.                        x ( ) 0 =  0,  x′ ( ) 0 =  0,  y ( ) 0 =
-                 y′  x′ =  +  2y
-
-                 x′′ =   2x′ +  5y +  3
-          103.                        x ( ) 0 = 0,  x′ ( ) 0 = 0,  y ( ) 0 = 1
-                       x −
-                y′ = − ′  2y
+    <pre style="white-space:pre-line"><code>308 | 3. 4 - Us i n g   L ap l a c e T r an s f o r m   t o  S ol ve   D i f f e r e nt i a l   E qu a t i o ns
 
 
-                                                  zt
-          104.  Find the real and imaginary part of  () =  e 2 t i      1   
-                                                              +
-                                                              1 i 
-
-          105.  Two tanks, each containing 360 liters of a salt solution. Pure water pours into tank A at a rate of 5
-               L/min. There are two pipes connecting tank A to tank B. The first pumps salt solution from tank B
-               into tank A at a rate of 4 L/min. The second pumps salt solution from tank A into tank B at a rate of
-               9 L/min. Finally, there is a drain on tank B from which salt solution drains at a rate of 5 L/min.
-               Thus, each tank maintains a constant volume of 360 liters of salt solution. Initially, there are 60 kg
-               of salt present in tank A, but tank B contains pure water.
+                                                                                              Hs
+                                                Ys
+          If the input is  ( ) tδ  , then  ( ) 1Xs =  and  ( ) =  H ( ) s . Hence, the physical meaning of  ( )  is in
+          fact the Laplace transform of the impulse response of the corresponding circuit.
 
 
+          3.4-7  Circuit Element Models
 
 
+          The method used as follow:
+           1.  Write the differential equation model.
+           2.  Use Laplace transform to convert the model to s−domain.
 
+           3.  Solve the ODE in s−domain.
+           4.  Convert to t−time domain using the inverse Laplace transform.
+
+
+          Another approach, more direct approach is as follow:
+
+           1.  Develop s−domain models for the circuit elements.
+           2.  Draw the Laplace equivalent circuit keeping the interconnections and replacing the elements by
+               their s−domain models.
+           3.  Analyze the Laplace equivalent circuit.
+           4.  Convert to t−time domain using the inverse Laplace transform.
 
 
 
+          3.4-8  Resistor
 
 
+             Laplace Transform
 
+                          I  (). sR V=  () s
+                           R         R
+                                                                V =  RI
+                                                               R
+              The block diagram:
 
+                                     System
 
-
-
-
-
-
-                   a)  Set up, in matrix-vector form, an initial value problem that models the salt content in each
-                      tank over time.
-                   b)  Find the eigenvalues and eigenvectors of the coefficient matrix in part (a), then find the
-                      general solution in vector form. Find the solution that satisfies the initial conditions posed
-                      in part (a).
-                   c)  Plot each component of  your solution in part (b) over  a period of  four-time  constants
-                         0, 4 T    . What is the eventual salt content in each tank? Give both a physical  and a
-                            c 
-                      mathematical reason for your answer.
-
-          106.  Consider the RLC parallel circuit below. Let V represent the voltage drop across the capacitor and
-               I represent the current across the inductor that satisfied the system.
-
-                                 V′ =  −  V  −  1
-                                      RC    C
-                                
-                                 I′ =  V
-                                     L
-                                                    1
-                 Suppose that the resistance is  R = Ω, the capacitor  is  C  = 1  farad, and the inductance is
-                                                    2
-                 L =  1   henry . If the initial voltage across the capacitor is  ( ) 0V  = 10 volts  and there is no initial
-                     2</code></pre>
+                Input Signal           R            Output Signal</code></pre>
      	</div>
     
      </div>

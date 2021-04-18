@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 219 - Differential Book</title>
+        <title>Page 219 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 219 - Differential Book</div>
+        <div id="content-top1">Page 219 - ODE Book</div>
         <div id="content-top2">P. 219</div>
      </div>
      <div id="content-middle">
@@ -152,81 +152,60 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>204 | 2.6 - F or c e d H a r m oni c  M o t i on
+    <pre style="white-space:pre-line"><code>206 | 2. 3 - H a r m on i c   M ot i on
 
-        Example 1
 
-        Suppose  F =   23, ω    11, ω =  = 12  with these values of the parameters the solution becomes
-                   0        0
+          Example 5
+                                                                                     2
+                                                                                  /
+          A mass of 4 kg is attached to a spring with a spring constant of  k = 169 kg s ; with initial values of
+                                        /
+          y (0) = 0.1 m and  y′ (0) = 1.3 ms . Find the damping constant µ for which there is critical damping
 
-        Solution
-                     F
-            xt        0   ( cos tω− cosω  t )
-             ( ) =
-                    2
-                  ω −ω  2               0
-                    0
-                 =    23    (cos12t − cos11t )
-                     2
-                   ( 11 12 2 )
-                       −
-                 =  −  (cos12t −  cos11t )
+          Solution
 
-                                 t
-                 =  cos11t − cos12
-
-                                                   4π                                 4π
-                                                 ω    ω −                           ω    ω +
-                                                   0                                  0
-
-                   4F
+             Critical damping occurs whenc ω=
+                                                0
+                           µ
+             Since     c =    = ω
+                          2m     0
+              µ=  2mω
                       0
-                 ω  2  ω −  2
-                   0
 
+               =  2m  k
+                      m
 
+               =  2(4)  169
+                        4
+               =  52  kg  /  s
 
+              4y′′ +  52y′ +  169y =  0
+              y′′ +  13y′ +  42.25y =  0
 
+             The characteristic equation: λ  2  13 +  λ +  42.25 =  0
 
+             The roots are:     λ   = − 6.5
+                                 1,2
 
+                                  t
+              y () t =  C e −  6.5t  +  C e −  6.5t
+                     1           2
+                 y (0) C =   0.1
+                      =
+                         1
+              y′ =  −  6.5C e −  6.5t  +  C e −  6.5t  −  6.5C et  −  6.5t
+                                   2
+                        1
+                                                 2
+                 y′ ( ) 0 =  −  6.5C +  1  C =  2  1.3
+                 1.3 =  −  6.5(0.1) C+
+                                   2
+                 C =  1.95
+                   2
 
-
-                                                          Beat
-
-
-                                 ω +ω                                               ω − ω
-        Mean frequency:     ω=    0                        Half difference:      δ=   0
-                                   2                                                   2
-
-
-        2.6-3  Case 2  ω= ω
-                               0
-                                                                               )
-                                                          (
-        The particular solution is given by the form:  x  =  ta cosω  t b sinω  t
-                                                                     +
-                                                     p            0          0
-                                                    +
-                                      −
-            x′ =  a cosω  t b sinω  t at ω   sinω  t bt ω  cosω  t
-                           +
-              p          0         0       0     0       0      0
-            x′′   −  aω =  sinω  t +  bω  cosω  t −  aω  sinω  t +  bω  cosω  t −  atω  2 cosω  t −  btω  2 sinω  t
-              p       0     0      0     0      0     0      0     0      0     0       0     0
-                                 −
-                                                            +
-                =  −  2 ω  ( a sinω  tb cosω  t −  )  t ω  0 2 ( a cosω  t b sinω  t )
-                      0        0          0               0          0
-            x′′ +ω 2 x    − =  2 ω  ( a sin ω  t −  b cosω  t −  )  t ω  2 ( a cosω  t +  b sin ω  t +  )  t ω  2 ( a cosω  t +  b sin ω  t )
-              p    0  p       0       0         0      0        0         0      0       0         0
-
-                        = −ω    ( a sinω  tb cosω  t )
-                           2
-                                         −
-                              0        0          0
-                        =  F  cos t
-                                 ω
-                           0</code></pre>
+                                   t
+              y ( ) = 0.1e −  6.5t  + 1.95 e −  6.5t
+                t</code></pre>
      	</div>
     
      </div>

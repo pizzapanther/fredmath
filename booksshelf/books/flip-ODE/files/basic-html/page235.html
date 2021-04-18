@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 235 - Differential Book</title>
+        <title>Page 235 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 235 - Differential Book</div>
+        <div id="content-top1">Page 235 - ODE Book</div>
         <div id="content-top2">P. 235</div>
      </div>
      <div id="content-middle">
@@ -152,61 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>220 | 2.6 - F or c e d H a r m oni c  M o t i on
+    <pre style="white-space:pre-line"><code>222 | 2. 4 - I n hom og e n e ous   E q ua t i o ns ;  M e t ho d o f  U nd e t e r m i n e d
+                        C o e f f i ci en t s
 
-                                                                        ×
-        59.  An RCL circuit connected in series has  R =  40 Ω ,  C = 16 10 − 4  , F  L =  1 H , and applied voltage
-              E ( ) 100cos10  Vt =  t  . Assuming no initial charge and no initial current at  t =  when the voltage is
-                                                                                          0
-              first applied.
-               a)  Find the charge in the circuit at time t.
-               b)  Find the current flowing through this circuit.
-               c)  Find the linit of the charge as t →∞
-
-        60.  A series  circuit consists of a resistor  with  R  =  20 Ω ,  an inductor  with  L = 1 H , a capacitor  with
-              C = 0.002 F , and a 12-V battery. If the initial charge and current are both 0, find the charge and current
-
-              at time t.
-
-        61.  A series  circuit consists of a resistor  with  R  =  20 Ω ,  an inductor  with  L = 1 H , a capacitor  with
-              C = 0.002 F , and  ( ) 12sin10E t =  t  . If the initial charge and current are both 0, find the charge and
-
-              current at time t.
-
-                                                                                                              0
-        62.  Consider the given circuit. Assuming that the voltage source changes from 10 to 25 V at time  t = ,
-                      +
-                                         u
-              v =  10 15u  ( ) V t  , where  ( ) t  is a unit step function.
-               s
+          2.4-3  Forcing Term
 
 
+          If the forcing term f has a form that is replicated under differentiation, then look for a solution with the
+          same general form as the forcing term.
+
+          Example 1
 
 
+          Find a particular solution to the equation  y′′ −  y′ −  2y =  2e − 2t
+
+          Solution
+
+             The forcing term  () =  2e − 2t  ⇒ the particular solution  y =  ae − 2t
+                               ft
+
+                 y′ = − 2ae − 2t
+                 y′′ =  4ae − 2t
 
 
+              4ae −  2t  +  2ae −  2t  −  2ae −  2t  =  2e −  2t
+              4ae −  2t  =  2e −  2t
+              4a =  2
 
+              a =  1
+                  2
 
+              y  ( ) t =  1 − 2t
+                        e
+               p      2
 
 
 
+          2.4-4  Trigonometric Forcing Term
 
 
-              Find the expressions that describe the voltage drop across the resistor across the capacitor and the
-                                       0
-              current in the loop for t &gt;
+          ft     A cos t   B sin t
+                      ω+
+            ( ) =
+                               ω
+          The general solution:  ( )y t =  a cos tω+ b sin t
+                                                   ω
 
-        63.  Find the steady-state solution  q  ( ) t   and the steady-state current in and LRC−series circuit when the
-                                             p
-              source voltage is  ( ) t =  E  sin tω
-                               E
-                                       0
 
-        64.  Consider the given RC-circuit with impressed emf  is  E =  E sin tω  V   . If no initial current is flowing at
-                                                                       0
-                                    i
-                                                   0
-              t =  0 , find the current  ( ) t  for all t &gt; .</code></pre>
+          Example 2
+
+          Find a particular solution to the equation  y′′ +  2y′ −  3y =  5sin3t
+
+          Solution
+             The particular solution:  ( )y t =  a cos3t + b sin3t
+
+                                  b
+                 y′ =  −  3 sin3t +  a  3 cos3t
+                 y′′ =  −  9 cos3t −  a  9 sin3t
+                                   b
+                                                                b
+                                         b
+              y′′ +  2y′ −  3y =  −  9 cos3t −  9 sin3t +  ( 2 3 sin3a−  t +  3 cos3t ) 3−  ( cos3a  t b sin3t )
+                               a
+                                                                                    +
+                                                                                 b
+                          =  −  9 cos3t −  a  9 sin3t −  b  6 sin3t +  a  6 cos3t −  b  3 cos3t −  a  3 sin3t
+
+                          =  ( 12a−  +  6b )cos3t −  (6a +  12b )sin3t</code></pre>
      	</div>
     
      </div>

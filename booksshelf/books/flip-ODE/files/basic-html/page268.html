@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 268 - Differential Book</title>
+        <title>Page 268 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 268 - Differential Book</div>
+        <div id="content-top1">Page 268 - ODE Book</div>
         <div id="content-top2">P. 268</div>
      </div>
      <div id="content-middle">
@@ -152,68 +152,91 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>3.4 -   Us i n g   L a p l a c e  T r a n sf o r m   t o  S ol v e  D i f f e r e nt i a l  E qu a t i ons  | 253
-
-               3.4-4  Electrical Circuit
+    <pre style="white-space:pre-line"><code>2. 6 - F o r c e d H a r m o ni c  M ot i o n  | 255
 
 
-               Similar to the application of phasor transform to solve the steady state AC circuits, Laplace transform
-               can be used to transform the time domain circuits into s−domain circuits to simplify the solution of
-               integral differential equations to the manipulation of a set of algebraic equations.
-               The elegance of using the Laplace transform in circuit analysis lies in the automatic inclusion of the
-               initial conditions in the transformation process, thus providing a complete (transient and steady state)
-               solution.
+                 2.6-5  Underdamped Case:                c &lt;ω
+                                                              0
 
 
-               3.4-5  Transfer Function
+                                         η
+                         x =  e − ct ( C  cos tC  sin t η )
+                                            +
+                          h         1           2
+                                       2
+                                            2
+                        Where η =    ω −  c
+                                       0
+                    To determine the inhomogeneous equation, it is better to use complex method.
 
+                         z′′ +  2cz′ +ω 2 z =  Ae it ω
+                                     0
+                               xt
+                    However,  () =   Re( ) z
+                                                     ω
+                    The particular solution:  ()zt =  ae it
+                                          2
+                                                             ω
+                                              ω
+                                                                        ω
+                                                      ( )ae
+                     z′′ + 2cz′ +ω 2  z = ( ) ae it  +  2c iω  it  +ω 2 ae it
+                                       iω
+                                 0                                 0
+                                          2
+                                   = ( ( ) +  2ciω      2 ) ae it ω
+                                       iω
+                                                ( ) +ω
+                                                        0
+                                 2
+                       i
+                     P () =  ( ) +  2ciω       2
+                        ω
+                                       ( ) +ω
+                              iω
+                                               0
+                       iω
+                     P ()ae  it ω  =  Ae it ω
+                     a =   A
+                         Pi ω
+                          ()
+                                   ω
+                      () =
+                     zt      A   e it
+                           Pi ω
+                             ()
+                                   ω
+                                                        () is called the transfer function.
+                             ()eω
+                         =  Hi    it                 Hi  ω
+                                2
+                                           2
+                        ω
+                       i
+                     P () = −ω +   2icω + ω
+                                            0
+                                   2
+                              2
+                                        i
+                          = ω − ω +    2 cω
+                              0
+                 Piω=    Re iφ
+                   ()
+                        =  R (cosφ+ i sin  ) φ
 
-                                                                                                             y
-                                                                                            x
-                                                         h
-               If we have a circuit with impulse-response  ( ) t  in the time domain, with input  ( ) t  and output  ( ) t ,
-               we can find the Transfer Function of the circuit, in the Laplace domain, by transforming all three
-                                                                         Xs
-                                               Hs
-               elements: The transfer function  ( )  and input function  ( ) , then  ( ) s =  H sX
-                                                                                              ( ) ( ) s  is the
-                                                                                     Y
-               output function.
-
-                                           x ( ) t       h ( ) t        y ( ) t =  x ( )*t  h ( ) t
-
-
-                                          L aplace      L aplace      Inverse   aplace
-                                                                              L
-
-
-
-                                            ( )
-                                                           ( )
-                                          Xs            Hs             Y ( ) s =  X sH
-                                                                                 ( ) ( ) s
-
-
-
-                                    ( )}
-                         ( ) £=
-                       Hs        {h t
-                                 ( )
-                                Ys
-                             =
-                                  ( )
-                                Xs
-               Transfer functions are powerful tools for analyzing circuits.
-
-
-               3.4-6  Convolution Integral
-
-               The output of a system from the input and the impulse response by using the convolution operation.
-               We can calculate the output using the convolution operation:
-                       y ( ) t =  x ( )*ht  ( ) t
-
-
-               Where the asterisk * operator denotes the convolution operation.</code></pre>
+                                                         2
+                    Polar Coordinates:        R cosφ = ω − ω  2     R sinφ=  2cω
+                                                         0
+                              (  2    2 ) 2   22
+                        R =    ω − ω      +  4c ω
+                                 0
+                                       2
+                                      ω −ω  2
+                        cosφ=          0
+                                 ( ω −ω 2 ) 2 + 4c ω
+                                               22
+                                    2
+                                    0</code></pre>
      	</div>
     
      </div>

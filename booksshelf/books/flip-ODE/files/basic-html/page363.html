@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 363 - Differential Book</title>
+        <title>Page 363 - ODE Book</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 363 - Differential Book</div>
+        <div id="content-top1">Page 363 - ODE Book</div>
         <div id="content-top2">P. 363</div>
      </div>
      <div id="content-middle">
@@ -152,72 +152,77 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>348 | 4.1 - I nt r oduc t i on  &  R e vi e w  o f  P ow e r  S e r i e s
+    <pre style="white-space:pre-line"><code>350 | 3. 6 - P l an a r  S y s t em s
 
-             Therefore, the interval of convergence of the given power is [ 4, −  −  ] 1
 
-          4.1-7  Algebraic Operations on Series
+          3.6-7  Distinct Real Eigenvalues
 
-          The sum and difference of two series
-                  ∞
-                 ∑     a x = n  n  a +  0  ax a x + 2  2  
+
+
+          If T −  2  4D &gt;  0 , then the solutions of the characteristic equation are:
+
+                             T −   T −  2  4D               T +  T −  2  4D
+                        λ                      and    λ =  =
+                          1         2                   2         2
+
+          Then λ    λ &lt;  , and both are real eigenvalues of A.
+                 1    2
+          Let V  and V  be the associated eigenvectors. Then we have two exponential solutions:
+               1       2
+
+                 y  () t = V e λ  1 t  and  y  () t = V e λ  2 t
+                  1       1                2      2
+
+          The general solution is:
+
+                         y () C y   () C y    ()
+                           t
+                                     t
+                                               t
                                        +
-                                    1
-                  n= 0
-                  ∞
-                 ∑     b x = n  n  b +  0  bx b x + 2  2  
-                                      +
-                                    1
-                  n= 0
-           ∞            ∞            ∞
-          ∑    a x ±  n ∑  n   bx =  n ∑  n    a ±  (  n  b n ) x
-                                                    n
-
-          n= 0         n= 0         n= 0
-
-            ∞          ∞            ∞                                 p
-          ∑     ax n      b x m   ∑  =   c x                  c p ∑    a    b
-                      ∑
-                                                p
-                                                                       =
-                                                                                −
-                 n         m             p                                pk k
-            n= 0      m= 0         p= 0                              k= 0
+                             =
+                                11        2 2
+                             =  CV e λ  1 t  + C V e λ  2 t
+                                11         2 2
 
 
-          4.1-8  Differentiating Power Series
+          Example 3
+          Two tanks are connected by two pipes. Each tank contains 500 gallons of a salt solution. Through on
+          pipe solution is pumped from the first tank to the second at 1 gal/min. Through the other pipe, solution
+          is pumped at the same rate from the second to the first tank. Suppose that at time t =  there is no salt
+                                                                                           0
+          in the tank on the right and 100 lb. in the tank on the left. Show the salt content in each tank varies with
+          time.
 
-          Theorem
 
-                                   ∞
-                                 ∑        (      ) n
-                            () =
-          The function:    fx          a n  x −  x 0
-                                  n= 0
 
-                                =  a +  a  ( x −  x  ) +  a  ( x −  x  ) 2  +  a  ( x −  x  ) 3  +  
-                                   0    1      0     2      0      3       0
-          Can be differentiating the series by terms
 
-                                                                              
-                  f ′ () =  x  d      a +  a  ( x −  x  )  +  a  ( x −  x  ) 2  +  a  ( x −  x  ) 3  +  
-                                                                              
-                         dx    0  1      0     2      0       3      0       
 
-                       =  a +  2a  ( x −  x  ) +  3a  ( x −  x  ) 2  +  
-                          1     2      0      3       0
-                          ∞
-                        ∑         (       ) n− 1
-                       =      na n  x −  x 0
 
-                         n= 1
 
-                          ∞
-                         ∑               (      ) n− 2
-                  f ′′ ( ) =  x   nn  1)a n  x x 0
-                                ( −
-                                           −
-                         n= 2</code></pre>
+
+
+
+
+
+
+
+
+          Solution
+                                x            x
+                     =
+             Rate in  1gal / min  2  lb  / gal =  2  lb  / min
+                                500         500
+                                  x           x
+                      =
+             Rate out  1gal / min  1  lb  / gal =  1  lb  / min
+                                 500          500
+              dx 1                       x 2   x 1
+                           −
+               dt  =  Rate in Rate out =  500  −  500
+                       x     x
+                  =  −  1  +  2
+                      500   500</code></pre>
      	</div>
     
      </div>

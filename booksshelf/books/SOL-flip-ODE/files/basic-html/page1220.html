@@ -4,7 +4,7 @@
 				<meta name="robots" content="all"/>
         <meta name="description" content="description">
         <meta name="keywords" content="">
-        <title>Page 1220 - DE Solution</title>
+        <title>Page 1220 - ODE Solution Manual</title>
 <style type="text/css">
 <!--
 body {
@@ -141,7 +141,7 @@ function MM_swapImage() { //v3.0
   </div>
   <div id="content">
      <div id="content-top">
-        <div id="content-top1">Page 1220 - DE Solution</div>
+        <div id="content-top1">Page 1220 - ODE Solution Manual</div>
         <div id="content-top2">P. 1220</div>
      </div>
      <div id="content-middle">
@@ -155,69 +155,75 @@ function MM_swapImage() { //v3.0
     <pre style="white-space:pre-line"><code>1210 | S O LU TI O N
 
 
-              q′′ +  50q′ +  5000q =  50
+                 At the moment when the particle passes through the center of earth, the satellite is travelling
+                 straight downward, and hence  ( ) tv   is vertical.
 
-                 5000A =  50
-                   A  =  0.01
-
-
-              q ( ) t =  e − 25t ( C 1  cos25 7t +  C 2  sin25 7t +  )  .01
-
-
-                     q ( ) 0 =  C + 0.01= 0
-                             1
-                                    1
-                     C =  1  −  0.01=  −  100
-
-
-                                                                                                        )
-                 q′ ( ) t =  e − 25t ( −  25C 1 cos25 7t −  25C 2  sin25 7t −  25 7C 1  sin25 7t +  25 7C 2  cos25 7t
-
-                     q′ ( ) 0 =  −  25C +  25 7C =  0
-                                 1          2
-
-                     C  = −    1
-                       2    100 7
-
-
-              q ( ) t =  −  1  e − 25t (  7 cos25 7t + sin25 7t +  )  1
-                      100 7                                    100
-
-
-              i ( ) t =  q′ ( ) t
-                                                                                                     )
-                  =  −  1    e − 25t ( −  25 7 cos25 7t −  25sin 25 7t − 4,375sin 25 7t +  4,375cos25 7t
-                      100 7
-                                                                       )
-                                                                      t
-                  =  −  1    e − 25t ( 4,350 7 cos25 7t −  4,400sin25 7
-                      100 7
+                                                                                         v
+                 Therefore, the orbital velocity v of the satellite, which is the magnitude of  ( ) t , is equal to
+                 the speed of the particle at this moment.
 
 
           Exercise
 
-          Find the steady-state charge and the steady-state current in an LRC−series circuit when  L = 1 h ,
-
-          R  =  2 Ω , C = 0.25 f , and  ( ) 50cos  VE t =  t  .
+          Express the given circuit in the second-order differential equation
           Solution
 
-              q′′ +  2q′ +  1  q =  50cost           Lq′′ +  Rq′ +  1  q =  E ( ) t
-                        0.25                                    C
 
-              q′′ +  2q′ +  4q =  0
-                                               1 i
-                             =
-                        λ +
-                 λ  2  2 +  4 0 →      λ    = −±    3
-                                        1,2
-              q =  e  t −  ( C  cos 3t +  C  sin 3t )
-               h         1            2
+             V =   R i +  L  di  +  vt
+                                ( )
+               s    1     dt
+                     ( )
+                    vt
+                                ( )
+              i ( ) t =  + C  d  vt
+                    R
+                      2     dt
+                        v     dv         v     dv  
+             V =   R      +  C     +  L  d  +   C    +  v
+               s    1 R        dt     dt R       dt 
+                                         
+                      
+                        2                2        
+                    R                             2
+                 =   1  v +  R C  dv  +  L  dv  +  LC  d v  +  v
+                   R 2      1 dt    R dt         dt 2
+                                      2
+                        2
+                                                       
+                 =  LC  d v  +    R C +   L    dv  +     R 1  +   1 vt
+                                                         ( )
+                                                       
+                       dt 2      1  R   2   dt      R 2    
+                        2
+                                                 1
+                                                           ( )
+                 =  LC  d v  +    R C +   L    dv  +       R +  R   2    vt
+                       dt 2      1  R   2   dt      R 2    
 
-              q =  A cost +  B sint
-               p
-                              +
-                 q′ =  −  A sint B cost
-                   p</code></pre>
+
+          Exercise
+
+          Express the given circuit in the second-order differential equation
+
+          Solution
+
+                               d
+              v ( ) t =  R it  dt it
+                                  ( )
+                        ( ) L+
+                      2
+              i   =  it
+                     ( ) i+
+              R           C
+               1
+                 = i ( ) Ct +  d  vt
+                               ( )
+                           dt
+                                   ( )
+             V   =  R i +  (  C  dv )  +  vt         V =   V    + V
+               S     1      dt                         S    R 1    C
+                  =  R i +  R C  d ( R i +  L  di )  +  R i +  L di
+                     1     1 dt    2      dt     2     dt</code></pre>
      	</div>
     
      </div>
