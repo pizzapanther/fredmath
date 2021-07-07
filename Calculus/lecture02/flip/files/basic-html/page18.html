@@ -152,7 +152,7 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>204 |  2. 2 −  R u le s   o f  D if f e r e n t i a tio n
+    <pre style="white-space:pre-line"><code>204 |  2.2 −  R u le s  o f  D if f e r e n tia ti o n
 
 
           2.2−9      Second− and Higher−Order Derivatives
@@ -163,32 +163,36 @@ function MM_swapImage() { //v3.0
                                       Notation for Higher-Order Derivatives
 
                                                                                          ]
-                                                             ()
+                                                                                                   y
+                                                            ()
                                                             ′
-               1.  1st derivative      y′     y prime      fx           dy        d  [ ()fx    D  [ ] y
+               1.  1st derivative      y′     y prime      fx           dy        d  [ ()fx    D  [ ]
                                                                         dx       dx              x
                                                                         2
+                                             y double                  d y       d 2
                                                                                           ]
                                                                                                  2
                                                             ′′
                                                              ()
-               2.  2 derivative       y′′    y double      fx          d y       d 2  [ ()fx    Dy
                      nd
+               2.  2 derivative       y′′      prime       fx          dx 2      dx 2 [ ()fx    Dy
                                                                                                   [ ]
-                                               prime                   dx 2      dx 2            x
+                                                                                                 x
                                                                         3
+                                              y triple                 dy         3
+                                                                                 d
                                                                                           ]
                                                                                                  3
                                                               x
-                                                                                                  [ ]
-                     rd
-               3.  3  derivative      y′′′    y triple    f ′′′ ()     dy        d 3  [ ()fx    Dy
-                                               prime                   dx 3      dx 3            x
-                                                                        4
-                                                                                          ]
-                                                                                                 4
                                                                                       fx
-               4.  4  derivative      y (4)               f  (4) ()    d y       d 4 4 [ ()    Dy
+               3.  3  derivative      y′′′     prime      f ′′′ ()     dx 3      dx 3 [ ()     Dy
+                     rd
+                                                                                                  [ ]
+                                                                                                 x
+                                                                        4
+                                                                                                 4
+                                                                                          ]
+               4.  4  derivative     y (4)                f  (4) ()    d y       d 4 4 [ ()fx    Dy
                      th
                                                                                                   [ ]
                                                                x
@@ -196,21 +200,21 @@ function MM_swapImage() { //v3.0
                                                                        dx 4      dx
                                                                         n
                                                                                           ]
-                                                            n
-                                       n
                                                                                                  n
+                                       n
                                                                                       fx
+               5.  n  derivative     y ()                 f  () n  () x    dy     d n  [ ()    Dy
                                                                                                   [ ]
                      th
-               5.  n  derivative      y ()                f  () ()     dy        d n n  [ ()    Dy
-                                                               x
                                                                                                  x
-                                                                       dx n      dx
+                                                                       dx n      dx n
 
-                  f  () x =  a x +  n  a n− 1 x n− 1 +  +  ax a    ⇒      f  () n  () x =  ! n a n
+
+                                                                           n
                                                       +
-                                                         0
+                  f  () x =  a x +  n  a n− 1 x n− 1  +  +  ax a    ⇒      f  () () x =  ! n a n
                                                    1
+                                                         0
                           n
 
 
@@ -226,10 +230,10 @@ function MM_swapImage() { //v3.0
 
 
           Example 15
-          Find the first four derivatives of    f  ( ) x =  4x −  5  x +  4  3x −  3  2x +  5,  f ( ) 5  ( ) x
+          Find the first four derivatives of    f  ( ) x =  4x −  5  x +  4  3x −  3  2x +  5,  f  ( ) 5  ( ) x
           Solution
-              f ( ) 5  ( ) x =  4 5!
                          ( )
+              f ( ) 5  ( ) x =  4 5!
                       =  480</code></pre>
      	</div>
     

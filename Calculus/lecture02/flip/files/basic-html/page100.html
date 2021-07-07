@@ -152,69 +152,71 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>286 | 2. 8 − R el a t ed  R at es
+    <pre style="white-space:pre-line"><code>286 | 2.8 − R el ated  R ates
 
 
-          Example 5
+             x = position of car at time t.
+             y = position of cruiser at time t.
 
-          A hot air balloon rising straight up from a level filed is tracked by a range finder 500 feet from the
+             s = distance between car and cruiser at time t.
+                         x =  0.8 i m  y =  0.6 mi
+                       
+             Given:     ds           dy
+                        dt  =  20  mph  dt  = − 60 mph
+                       
+             Using the Pythagorean Theorem to get the distance:
 
-          liftoff point. At the moment the range finder’s elevation angle is  π , the angle is increasing at the rate
-                                                                         4
-          of 0.14 rad/min. How fast is the balloon rising at that moment?
-          Solution
+                          2
+                               2
+                        s =  x +  y 2
+                               2    2
+                        s =   x +  y
 
-             θ  = the angle in rad.
+                          =   0.8 + 0.6
+                                 2
+                                       2
+                          = 1
 
-             y = the height in feet of the balloon
+                                 2
+                                           2
+                        2
+                             d
+                   d  ( ) ( ) ( )
+                                      d
+                       s
+                          =
+                                    +
+                                          y
+                                x
+                   dt        dt       dt
 
-             Given:    d θ  =  0.14 rad  / min  when θ =  π
-                       dt                              4
-                       distance = 500 ft
+                   2s  ds  =  2x  dx  +  2y  dy
+                      dt      dt      dt
 
-                      y
-              tanθ =
-                     500
-              y =  500tanθ
+                   s  ds  −  y  dy  =  x  dx
+                     dt    dt     dt
 
-                       (
-              dy  =  500 sec θ ) dθ
-                           2
-              dt               dt
-                       (
-                                     )
-                 = 500 sec 2 π ) (0.14
-                             4
-                 = 140
+                   x  dx  =  s  ds  −  y dy
+                     dt    dt     dt
 
-             The balloon is rising at the rate of 140 ft/min.
+                   0.8 dx  =  ( )( ) (0.6− 1 20  )( 60−  )
+                       dt
 
+                           +
+                   dx  =  20 36
+                   dt     0.8
+                       = 70  mph
 
-          Example 6
-
-          A police cruiser, approaching a right-angle intersection from the north, is chasing a speeding car that
-          has turned the corner and is now moving straight east. When the cruiser is 0.6 mi north of the
-          intersection and the car is 0.8 mi to the east, the police determined with radar that the distance
-          between them and the car is increasing at 20 mph. If the cruiser is moving at 60 mph at the instant of
-          measurement.
-
-
-
-
-
-
-
-
-
-
-
-
-
+             The car’s speed is 70 mph.
 
 
+          Example 7
 
-
-          what is the speed of the car?
+          A particle moves clockwise at a constant rate along a circle of radius 10 feet centered at the origin.
+          The particles initial position is (0, 10) on the y-axis and its final destination is the point (10, 0) on the
+          x-axis. Once the particle is in motion, the tangent line at P intersects the x-axis at a point Q (which
+          moves over time). If it takes the particle 30 sec to travel from start to finish, how fast is the point Q
+          moving along the x-axis when it is 20 feet from the center of the circle?
 
           Solution</code></pre>
      	</div>

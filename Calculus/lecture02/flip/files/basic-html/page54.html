@@ -152,63 +152,73 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>240 | 2. 5 − D e r iv a t iv e   o f  L o g ,  E x p ,  &   H y p e r b o l ic   F u nc tio ns
+    <pre style="white-space:pre-line"><code>240 | 2.5 − D er iv ativ e   of  L og ,  E x p ,  &  H y p e r b oli c  F u n ct i on s
 
 
-          Example 10
+          2.5−6      General Power Rule for Derivatives
 
 
-                                f
-          Find the derivative of  ( ) x =  e x 3 ln x
+                                                         n
+          For any x &gt; 0 and for any real number n,    d  x =  nx n− 1
+                                                     dx
+
+          Proof
+                  n
+              d  x =  d  e n ln x
+              dx      dx
+                                     )
+                                n
+                    =  e n ln x d  ( ln x
+                            dx
+                       n n
+                    =  x ⋅
+                          x
+                    =  nx n− 1
+
+
+          Example 12
+
+                                        0
+                       f
+          Differentiate  ( ) x =  x x , x &gt;
           Solution
-                             )
-                             ′
-              f ′ ( ) x = ( x 3 ln xe x 3 ln x
+                      d
+               ′
+                ( ) =
+              fx      dx ( e x ln x )
+                                     )
+                                x
+                    =  e x ln x d  ( ln x
+                            dx
+                    =  e x ln x d  ( lnx  ) x
+                            dx
 
-                      (  2        2 )  x 3 ln x
-                    =  3x  ln x +  x   e
-
-
-
-
-          2.5−4      Definition
-
-
-          For any numbers a &gt; 0 and x, the exponential function with base a is
-
-                                                       x
-                                                     a =  e x ln a
-                                                                x
-                                          x
-          When a = e, the function gives  a =  e x ln a  = e x ln e  =  e
-
-
-          2.5−5      Power Rule – Definition
+                    =  e x ln x ( ln x +⋅  1 )
+                                   x
+                                     x
+                    =  x x (ln x +  ) 1    x &gt;  0
 
 
 
-                                                       n
-          For any x &gt; 0 and for any real number n,    x = e n ln x
+          2.5−7      Theorem – The Number e as a Limit
 
 
-          Example 11
 
+          The number e can be calculated as the limit       e =  lim  (1 x+  ) 1/x
+                                                                x→ 0
 
-                                 f
-          Evaluate the derivative  ( ) x =  x 2x
-          Solution
+          Proof
 
-                               x
-                   2x
-              d ( )    =  d ( e 2 ln x )
-                  x
-              dx         dx
-                           x
-                                        ′
-                       =  e 2 ln x  (2 lnx  ) x
-                            x
-                       =  2e 2 ln x  (ln x +  ) 1
-                       =  2 x 2x (ln x +  ) 1</code></pre>
+             If  ( ) ln x=  f x  →  f ′  ( ) x =  1  so   f ′  ( ) 1 =  1
+                                        x
+
+                            f  (1 h+  ) −  f  ( ) 1
+              f ′ ( ) 1 =  lim
+                     h→  0        h
+
+                           f  (1 x+  ) −  f  ( ) 1
+                   =  lim
+                     x→ 0         x</code></pre>
      	</div>
     
      </div>

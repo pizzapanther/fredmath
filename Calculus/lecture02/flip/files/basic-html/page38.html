@@ -152,67 +152,68 @@ function MM_swapImage() { //v3.0
     </div>
 
     <p class="use-as-video-title"></p>
-    <pre style="white-space:pre-line"><code>224 | 2. 4 − C ha i n  R ul e
+    <pre style="white-space:pre-line"><code>224 | 2.4 − C ha i n  R ul e
 
 
-          Section 2.4 – Chain Rule
+          2.4−2  Intuitive “Proof ” of the Chain Rule
 
 
+          Let ∆u be the change in u when x changes by ∆x, so that
+
+                                              ) x
+                                                  ( )
+                                ∆ u =  ( gx +∆ −  gx
+          Let ∆y be the change in y when u changes by ∆u, so that
+
+                                                   ( )
+                                ∆ y =  ( fu +∆  ) u −  fu
+                        ∆  y  ∆  y  ∆ u
+                 0
+            ∆
+          If  u ≠ ⇒        =     ⋅
+                        ∆  x  ∆  u ∆  x
+              dy  =  lim    ∆ y
+              dx   ∆→   0  ∆ x
+                    x
+
+                 =  lim    ∆ y  ⋅  ∆ u
+                     x
+                   ∆→   0  ∆  u ∆  x
+                 =  lim   ∆ y  ⋅   i l m  ∆ u
+                   ∆→   0  ∆  u  ∆→  0  ∆  x
+                                  x
+                    x
+                 =  lim    ∆ y  ⋅  li m  ∆ u
+                                  x
+                   ∆ u→ 0  ∆  u  ∆→  0  ∆  x
+                   dy  du
+                 =    ⋅
+                   du dx
 
 
-          2.4−1  Derivative of a Composite Function
-
-
-
-                        x
-              y =   ( f g ()) =  f  (u )
-
-
-
-                         dy  =  dy      du
-                                   
-                         dx   du     dx
-
-                         dy
-                                           ′
-                                            ()
-                                      ] 
-                                  gx
-                         dx  =  f ′ [ ()   g x
-
-
-
-
-
-
-
-
-
-
-          Example 1
-                                   (   2   ) 2
-          Find the derivative of  y =  3x + 1
-
+          Example 2
+                                                                                                  (
+                                                                                                        )
+                                                                                                    2
+                                                                           0
+          An object moves along the x-axis so that its position at any time t ≥ is given by  ( ) =  cos t + 1 .
+                                                                                        xt
+          Find the velocity of the object as a function of t.
           Solution
 
 
-              u =  3x +  2  1 ⇒  ( ) u =  ′  6x
-              dy  ⋅  du  =  2u ⋅  6x
-              du dx
-                         (
-                                 )
-                      =  23x +  2  1 6x
-                                  ⋅
-                           3
-                                 x
-                      =  36x + 12
-                                                      (   2   ) 2    4     2
-             Calculating from the expand formula:  y =  3x +  1  =  9x +  6x +  1
+             Let: u =  t +  2  1 ⇒  u′ =  2t
+                  x =  cos ( ) u ⇒  x′ =  −  sin ( ) u
 
-                                                          3
-                                                                x
-                                                    ′
-                                                   y =  36x + 12</code></pre>
+             By the Chain Rule:
+
+
+                            ⋅
+                   dx  =  dx du
+                   dt   du dt
+                       =  −  sin ( ) 2u ⋅  t
+                                      )
+                       =  −  2 sin t +  t  (  2  1</code></pre>
      	</div>
     
      </div>
