@@ -159,39 +159,37 @@ function MM_swapImage() { //v3.0
              y = position of cruiser at time t.
 
              s = distance between car and cruiser at time t.
-                         x =  0.8 i m  y =  0.6 mi
+                         x =  0.8 i m  y = 0.6 mi
                        
              Given:     ds           dy
-                        dt  =  20  mph  dt  = − 60 mph
+                        dt  = 20  mph  dt  = − 60 mph
                        
              Using the Pythagorean Theorem to get the distance:
 
                           2
                                2
-                        s =  x +  y 2
+                        s =  x +   y 2
                                2    2
                         s =   x +  y
 
                           =   0.8 + 0.6
-                                 2
                                        2
+                                 2
                           = 1
 
-                                 2
-                                           2
-                        2
-                             d
-                   d  ( ) ( ) ( )
                                       d
+                        2
+                                           2
+                    d ( )  =  d ( ) ( )
+                                 2
                        s
-                          =
-                                    +
-                                          y
                                 x
+                                          y
+                                    +
                    dt        dt       dt
 
-                   2s  ds  =  2x  dx  +  2y  dy
-                      dt      dt      dt
+                   2s  ds  =  2x dx  +  2y dy
+                      dt      dt     dt
 
                    s  ds  −  y  dy  =  x  dx
                      dt    dt     dt
@@ -199,13 +197,14 @@ function MM_swapImage() { //v3.0
                    x  dx  =  s  ds  −  y dy
                      dt    dt     dt
 
-                   0.8 dx  =  ( )( ) (0.6− 1 20  )( 60−  )
+                   0.8 dx  =  ( )( ) ( )( 60− 1 20  0.6 −  )
                        dt
 
                            +
                    dx  =  20 36
                    dt     0.8
                        = 70  mph
+
 
              The car’s speed is 70 mph.
 
